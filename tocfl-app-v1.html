@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>華語TOCFL學習模組 · TOCFL Mandarin Learning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Fraunces:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="logo-title">華語TOCFL</div>
+      <div class="logo-sub">Mandarin Learning Module · v1.0</div>
+    </div>
+
+    <div class="level-selector">
+      <div class="level-label">Level</div>
+      <div class="level-tabs">
+        <button class="level-btn active-N1" onclick="setLevel('N1')">Novice 1</button>
+        <button class="level-btn" onclick="setLevel('N2')">Novice 2</button>
+        <button class="level-btn" onclick="setLevel('A1')">Level 1</button>
+        <button class="level-btn" onclick="setLevel('A2')">Level 2</button>
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-section-title">Topics 主題</div>
+      <div id="tema-nav"></div>
+    </div>
+
+    <div class="sidebar-mode">
+      <div class="nav-section-title">Modules 模組</div>
+      <button class="mode-btn active" onclick="setMode('home')"><span class="mode-icon">⊞</span> Home</button>
+      <button class="mode-btn" onclick="setMode('flashcard')"><span class="mode-icon">◈</span> Flashcard</button>
+      <button class="mode-btn" onclick="setMode('reading')"><span class="mode-icon">▤</span> Reading</button>
+      <button class="mode-btn" onclick="setMode('grammar')"><span class="mode-icon">◎</span> Grammar</button>
+      <button class="mode-btn" onclick="setMode('practice')"><span class="mode-icon">✎</span> Practice</button>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="topbar-title" id="topbar-title">華語TOCFL學習模組</div>
+        <div class="topbar-cn" id="topbar-cn">TOCFL Mandarin Learning — Based on Multimedia Learning (Mayer)</div>
+      </div>
+      <span class="level-badge badge-N1" id="level-badge">Novice 1 · A0</span>
+      <span id="audio-status" style="font-size:11px;color:var(--text3);margin-left:10px;display:flex;align-items:center;gap:4px">
+        <span id="audio-dot" style="width:7px;height:7px;border-radius:50%;background:#D1D5DB;display:inline-block"></span>
+        <span id="audio-label">Loading audio...</span>
+      </span>
+    </div>
+
+    <div class="content-area" id="content-area">
+      <!-- Content rendered by JS -->
+    </div>
+  </main>
+</div>
+
+<div class="tooltip" id="tooltip">
+  <div id="tt-char"></div>
+  <div class="tooltip-pinyin" id="tt-pinyin"></div>
+  <div class="tooltip-meaning" id="tt-meaning"></div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
