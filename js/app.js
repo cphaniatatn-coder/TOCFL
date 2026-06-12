@@ -1,23 +1,23 @@
 const VOLUME_META = [
   {
-    num: 1, title: 'Volume 1', subtitle: 'Novice 1 & 2', level: 'Pre-A1 ~ A1',
+    num: 1, title: 'Volume 1', subtitle: 'Novice 1', level: 'Pre-A1',
     file: 'data/tocfl_volume1.json', available: true,
-    chapters: 10, vocab: 331, grammar: 40
+    chapters: 10, vocab: 160, grammar: 27
   },
   {
     num: 2, title: 'Volume 2', subtitle: 'Elementary', level: 'A1',
     file: 'data/tocfl_volume2.json', available: true,
-    chapters: 10, vocab: 334, grammar: 40
+    chapters: 10, vocab: 313, grammar: 40
   },
   {
     num: 3, title: 'Volume 3', subtitle: 'Pre-Intermediate 1', level: 'A2',
     file: 'data/tocfl_volume3.json', available: true,
-    chapters: 7, vocab: 234, grammar: 28
+    chapters: 10, vocab: 316, grammar: 13
   },
   {
     num: 4, title: 'Volume 4', subtitle: 'Pre-Intermediate 2', level: 'A2',
     file: 'data/tocfl_volume4.json', available: true,
-    chapters: 7, vocab: 237, grammar: 28
+    chapters: 10, vocab: 288, grammar: 14
   },
 ];
 
@@ -236,6 +236,10 @@ const App = {
       'novice2': '<span class="badge badge-novice2">Novice 2</span>',
       'novice1+novice2': '<span class="badge badge-both">Novice 1 & 2</span>',
       'elementary': '<span class="badge badge-elem">Elementary</span>',
+      'A1': '<span class="badge badge-level1">A1 Elementary</span>',
+      'A2': '<span class="badge badge-level2">A2</span>',
+      '基礎級 A2 (Part 1)': '<span class="badge badge-level2">A2 Part 1</span>',
+      '基礎級 A2 (Part 2)': '<span class="badge badge-level2">A2 Part 2</span>',
     };
     const levelBadge = levelMap[chapter.level] || `<span class="badge badge-count">${chapter.level || ''}</span>`;
     let totalVocab = 0;
@@ -281,6 +285,10 @@ const App = {
       'novice2': '<span class="badge badge-novice2">Novice 2</span>',
       'novice1+novice2': '<span class="badge badge-both">Novice 1 & 2</span>',
       'elementary': '<span class="badge badge-elem">Elementary</span>',
+      'A1': '<span class="badge badge-level1">A1 Elementary</span>',
+      'A2': '<span class="badge badge-level2">A2</span>',
+      '基礎級 A2 (Part 1)': '<span class="badge badge-level2">A2 Part 1</span>',
+      '基礎級 A2 (Part 2)': '<span class="badge badge-level2">A2 Part 2</span>',
     };
 
     document.getElementById('breadcrumb').innerHTML = `

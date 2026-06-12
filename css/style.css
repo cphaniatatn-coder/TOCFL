@@ -295,7 +295,7 @@ body {
 
 .flashcard-scene {
   perspective: 1000px;
-  height: 280px;
+  height: 310px;
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -337,14 +337,32 @@ body {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 8px;
-  font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', serif;
+  font-family: '標楷體', 'DFKai-SB', 'BiauKai', serif;
 }
 .fc-pinyin {
   font-size: 1.1rem;
   opacity: .85;
   letter-spacing: .05em;
 }
-.fc-hint { font-size: .75rem; opacity: .5; margin-top: 16px; }
+.fc-hint { font-size: .75rem; opacity: .5; margin-top: 12px; }
+
+.fc-audio-btn {
+  background: rgba(255,255,255,.2);
+  border: 2px solid rgba(255,255,255,.4);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.fc-audio-btn:hover { background: rgba(255,255,255,.35); transform: scale(1.1); }
+.fc-audio-btn:active { transform: scale(.95); }
 
 .fc-meaning { font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
 .fc-pos-badge {
@@ -433,6 +451,32 @@ body {
 .fc-pinyin { transition: opacity .2s ease; }
 .fc-pinyin.pinyin-hidden { visibility: hidden; opacity: 0; }
 
+/* ===== ZHUYIN RUBY ANNOTATION ===== */
+.fc-hanzi ruby rt.zhuyin-rt {
+  font-size: 0.38em;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: '標楷體', 'DFKai-SB', 'BiauKai', serif;
+  letter-spacing: 0.02em;
+  user-select: none;
+  pointer-events: none;
+}
+.fc-hanzi.zhuyin-hidden ruby rt.zhuyin-rt { visibility: hidden; }
+.variant-sep { font-size: 0.6em; opacity: 0.5; vertical-align: middle; margin: 0 2px; }
+
+.btn-toggle-zhuyin {
+  padding: 8px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-sub);
+  cursor: pointer;
+  font-size: .8rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+.btn-toggle-zhuyin:hover { border-color: var(--primary-light); color: var(--primary-light); }
+.btn-toggle-zhuyin.active { background: var(--primary-light); border-color: var(--primary-light); color: #fff; }
+
 .fc-completion {
   text-align: center;
   padding: 48px 24px;
@@ -477,7 +521,7 @@ body {
   flex: 1;
   font-size: 1.1rem;
   font-weight: 700;
-  font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', serif;
+  font-family: '標楷體', 'DFKai-SB', 'BiauKai', serif;
   color: var(--primary);
 }
 .grammar-toggle { color: var(--text-muted); font-size: 1.1rem; transition: transform var(--transition); }
@@ -496,7 +540,7 @@ body {
 .grammar-explanation { color: var(--text); font-size: .925rem; }
 .grammar-example {
   font-size: 1rem;
-  font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', serif;
+  font-family: '標楷體', 'DFKai-SB', 'BiauKai', serif;
   color: var(--primary);
   background: var(--primary-pale);
   padding: 10px 16px;
@@ -533,7 +577,7 @@ body {
   margin-bottom: 20px;
   line-height: 2;
   font-size: 1.05rem;
-  font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', serif;
+  font-family: '標楷體', 'DFKai-SB', 'BiauKai', serif;
   color: var(--text);
 }
 .reading-title {
@@ -565,7 +609,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 16px;
-  font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', serif;
+  font-family: '標楷體', 'DFKai-SB', 'BiauKai', serif;
 }
 .option-list { display: flex; flex-direction: column; gap: 8px; }
 .option-btn {
@@ -580,7 +624,7 @@ body {
   text-align: left;
   font-size: .9rem;
   transition: var(--transition);
-  font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', serif;
+  font-family: '標楷體', 'DFKai-SB', 'BiauKai', serif;
 }
 .option-btn:hover:not(:disabled) { border-color: var(--primary-light); background: var(--primary-pale); }
 .option-btn.correct { border-color: var(--success); background: var(--success-bg); color: var(--success); font-weight: 700; }
@@ -638,7 +682,7 @@ body {
   font-weight: 700;
   color: var(--text);
   margin-bottom: 24px;
-  font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', serif;
+  font-family: '標楷體', 'DFKai-SB', 'BiauKai', serif;
   line-height: 1.8;
 }
 
@@ -764,7 +808,7 @@ body {
   font-size: 2rem;
   font-weight: 700;
   color: var(--primary);
-  font-family: 'Noto Sans TC', 'Microsoft JhengHei', serif;
+  font-family: '標楷體', 'DFKai-SB', 'BiauKai', serif;
 }
 .volume-selector-header p { color: var(--text-sub); margin-top: 6px; }
 
@@ -807,6 +851,8 @@ body {
 }
 .volume-card.vol-1:not(.vol-unavailable):hover { border-color: var(--vol1); }
 .volume-card.vol-2:not(.vol-unavailable):hover { border-color: var(--vol2); }
+.volume-card.vol-3:not(.vol-unavailable):hover { border-color: var(--vol3); }
+.volume-card.vol-4:not(.vol-unavailable):hover { border-color: var(--vol4); }
 
 .vol-unavailable { opacity: .55; cursor: not-allowed; }
 
@@ -875,8 +921,10 @@ body {
   align-self: flex-start;
 }
 
-/* Level badge for elementary */
-.badge-elem { background: #D6EAF8; color: #2E86C1; }
+/* Level badges */
+.badge-elem   { background: #D6EAF8; color: #2E86C1; }
+.badge-level1 { background: #D6EAF8; color: #2E86C1; }
+.badge-level2 { background: #FDEDEC; color: #922B21; }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
@@ -887,7 +935,7 @@ body {
   .tab-btn .tab-icon { font-size: 1.2rem; }
   .overall-progress { flex-wrap: wrap; }
   .progress-divider { display: none; }
-  .flashcard-scene { height: 240px; }
+  .flashcard-scene { height: 265px; }
   .fc-hanzi { font-size: 2.8rem; }
   .reading-passage { padding: 20px; }
 }
