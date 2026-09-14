@@ -1,23 +1,18 @@
 const VOLUME_META = [
   {
-    num: 1, title: 'Volume 1', subtitle: 'Novice 1', level: 'Pre-A1',
+    num: 1, title: 'Volume 1', subtitle: 'TOCFL Level 1', level: 'Pre-A1 / A1',
     file: 'data/tocfl_volume1.json', available: true,
-    chapters: 10, vocab: 160, grammar: 27
+    chapters: 11, vocab: 400, grammar: 15
   },
   {
-    num: 2, title: 'Volume 2', subtitle: 'Elementary', level: 'A1',
+    num: 2, title: 'Volume 2', subtitle: 'TOCFL Level 2', level: 'A1 / A2',
     file: 'data/tocfl_volume2.json', available: true,
-    chapters: 10, vocab: 313, grammar: 40
+    chapters: 12, vocab: 406, grammar: 81
   },
   {
-    num: 3, title: 'Volume 3', subtitle: 'Pre-Intermediate 1', level: 'A2',
+    num: 3, title: 'Volume 3', subtitle: 'TOCFL Level 3', level: 'A2 / B1',
     file: 'data/tocfl_volume3.json', available: true,
-    chapters: 10, vocab: 316, grammar: 13
-  },
-  {
-    num: 4, title: 'Volume 4', subtitle: 'Pre-Intermediate 2', level: 'A2',
-    file: 'data/tocfl_volume4.json', available: true,
-    chapters: 10, vocab: 288, grammar: 14
+    chapters: 13, vocab: 463, grammar: 88
   },
 ];
 
@@ -33,7 +28,35 @@ const App = {
   },
 
   async init() {
+    this._patchQuizReflection();
     this.renderVolumeSelector();
+  },
+
+  /* ===== 反思與進度 — REFLEKSI PASCA-TUGAS (patch Quiz.renderResult) ===== */
+
+  _patchQuizReflection() {
+    if (typeof Quiz === 'undefined' || Quiz._reflectionPatched) return;
+    Quiz._reflectionPatched = true;
+    const origRenderResult = Quiz.renderResult.bind(Quiz);
+    Quiz.renderResult = function () {
+      origRenderResult();
+      App._appendQuizReflection(this.chapterId);
+    };
+  },
+
+  _appendQuizReflection(chapterId) {
+    const container = document.getElementById('tab-quiz');
+    if (!container) return;
+    const diff = (this.getReflection(chapterId).difficulty || '').replace(/</g, '&lt;');
+    container.insertAdjacentHTML('beforeend', `
+      <div class="quiz-reflection" style="max-width:560px; margin:24px auto 0; padding:16px; border:1px solid var(--border,#d4d4d8); border-radius:10px;">
+        <div class="intro-stage-label" style="font-size:.8rem; letter-spacing:.08em; color:var(--text-sub); text-transform:uppercase; margin-bottom:8px;">反思與進度 · Refleksi</div>
+        <label for="quiz-reflection-input" style="display:block; font-weight:600; margin-bottom:8px;">Bagian mana yang masih sulit?</label>
+        <textarea id="quiz-reflection-input" rows="3" style="width:100%; box-sizing:border-box; padding:10px 12px; border:1px solid var(--border,#d4d4d8); border-radius:8px; font:inherit; resize:vertical;"
+          placeholder="Tulis bagian, pola kalimat, atau kosakata yang masih membingungkan…"
+          onblur="App.saveReflectionField(${chapterId}, 'difficulty', this.value)">${diff}</textarea>
+      </div>
+    `);
   },
 
   showLoading() {
@@ -55,6 +78,19 @@ const App = {
     all[chapterId] = data;
     localStorage.setItem(this.getStorageKey(), JSON.stringify(all));
     this.updateHeaderProgress();
+  },
+
+  /* Refleksi/tujuan belajar — field baru "reflection" di dalam tocfl_progress_vol{n},
+     tidak mengubah kunci lama & diabaikan oleh calcChapterProgress(). */
+  getReflection(chapterId) {
+    return this.getProgress(chapterId).reflection || {};
+  },
+
+  saveReflectionField(chapterId, field, value) {
+    const progress = this.getProgress(chapterId);
+    if (!progress.reflection) progress.reflection = {};
+    progress.reflection[field] = (value || '').trim();
+    this.saveProgress(chapterId, progress);
   },
 
   calcChapterProgress(chapterId) {
@@ -273,6 +309,50 @@ const App = {
   navigateChapter(chapterId) {
     this.currentChapterId = chapterId;
     this.currentTab = 'flashcard';
+    this.renderChapterIntro(chapterId);
+  },
+
+  /* ===== 情境導入 — SITUASI + PENETAPAN TUJUAN (SRL forethought) ===== */
+
+  renderChapterIntro(chapterId) {
+    this.currentChapterId = chapterId;
+    const chapter = this.data.chapters.find(c => c.id === chapterId);
+    const meta = VOLUME_META.find(v => v.num === this.currentVolume);
+    const goal = (this.getReflection(chapterId).goal || '').replace(/</g, '&lt;');
+
+    document.getElementById('breadcrumb').innerHTML = `
+      <a onclick="App.renderVolumeSelector()">Pilih Volume</a>
+      <span class="sep">›</span>
+      <a onclick="App.renderDashboard()">${meta.title}</a>
+      <span class="sep">›</span>
+      <span>Bab ${chapter.id}: ${chapter.title}</span>
+    `;
+
+    document.getElementById('app-main').innerHTML = `
+      <div class="chapter-intro" style="max-width:640px; margin:0 auto; padding:8px 4px;">
+        <div class="intro-stage-label" style="font-size:.8rem; letter-spacing:.08em; color:var(--text-sub); text-transform:uppercase; margin-bottom:6px;">情境導入 · Persiapan</div>
+        <h2 style="margin:0 0 16px;">Bab ${chapter.id}: ${chapter.title}</h2>
+        <div class="intro-topic" style="background:var(--surface,#f4f4f5); border-radius:10px; padding:14px 16px; margin-bottom:20px;">
+          <span class="intro-topic-label" style="display:block; font-size:.75rem; text-transform:uppercase; letter-spacing:.06em; color:var(--text-sub); margin-bottom:4px;">Situasi / Topik</span>
+          <p style="margin:0;">${chapter.topic}</p>
+        </div>
+        <div class="intro-goal" style="margin-bottom:20px;">
+          <label for="intro-goal-input" style="display:block; font-weight:600; margin-bottom:8px;">Apa yang ingin kamu kuasai di bab ini?</label>
+          <textarea id="intro-goal-input" rows="3" style="width:100%; box-sizing:border-box; padding:10px 12px; border:1px solid var(--border,#d4d4d8); border-radius:8px; font:inherit; resize:vertical;"
+            placeholder="Contoh: bisa memesan makanan dan menanyakan harga…"
+            onblur="App.saveReflectionField(${chapterId}, 'goal', this.value)">${goal}</textarea>
+        </div>
+        <button class="btn btn-primary" onclick="App.startChapter(${chapterId})">Mulai Belajar →</button>
+      </div>
+    `;
+    this.updateHeaderProgress();
+  },
+
+  startChapter(chapterId) {
+    const input = document.getElementById('intro-goal-input');
+    if (input) this.saveReflectionField(chapterId, 'goal', input.value);
+    this.currentChapterId = chapterId;
+    this.currentTab = 'flashcard';
     this.renderChapterView();
   },
 
@@ -312,20 +392,20 @@ const App = {
         <button class="tab-btn${this.currentTab === 'flashcard' ? ' active' : ''}" onclick="App.switchTab('flashcard')">
           <span class="tab-icon">🃏</span><span class="tab-text">Kosakata</span>
         </button>
-        <button class="tab-btn${this.currentTab === 'grammar' ? ' active' : ''}" onclick="App.switchTab('grammar')">
-          <span class="tab-icon">📝</span><span class="tab-text">Tata Bahasa</span>
-        </button>
         <button class="tab-btn${this.currentTab === 'reading' ? ' active' : ''}" onclick="App.switchTab('reading')">
           <span class="tab-icon">📖</span><span class="tab-text">Membaca</span>
         </button>
         <button class="tab-btn${this.currentTab === 'quiz' ? ' active' : ''}" onclick="App.switchTab('quiz')">
           <span class="tab-icon">✏️</span><span class="tab-text">Latihan Soal</span>
         </button>
+        <button class="tab-btn${this.currentTab === 'grammar' ? ' active' : ''}" onclick="App.switchTab('grammar')">
+          <span class="tab-icon">📝</span><span class="tab-text">Tata Bahasa</span>
+        </button>
       </div>
       <div id="tab-flashcard" class="tab-content${this.currentTab === 'flashcard' ? ' active' : ''}"></div>
-      <div id="tab-grammar" class="tab-content${this.currentTab === 'grammar' ? ' active' : ''}"></div>
       <div id="tab-reading" class="tab-content${this.currentTab === 'reading' ? ' active' : ''}"></div>
       <div id="tab-quiz" class="tab-content${this.currentTab === 'quiz' ? ' active' : ''}"></div>
+      <div id="tab-grammar" class="tab-content${this.currentTab === 'grammar' ? ' active' : ''}"></div>
     `;
 
     this.loadTab(this.currentTab);
