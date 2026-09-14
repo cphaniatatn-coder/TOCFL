@@ -229,7 +229,7 @@ const App = {
     document.getElementById('app-main').innerHTML = `
       <div class="dashboard-header">
         <h1>華語文能力測驗</h1>
-        <p>TOCFL Preparation — ${meta.title}: ${meta.subtitle} &nbsp;·&nbsp; ${this.data.level}</p>
+        <p>TOCFL Preparation — ${meta.title}: ${meta.subtitle}</p>
       </div>
       <div class="overall-progress">
         <div class="progress-stat">
@@ -277,7 +277,7 @@ const App = {
       '基礎級 A2 (Part 1)': '<span class="badge badge-level2">A2 Part 1</span>',
       '基礎級 A2 (Part 2)': '<span class="badge badge-level2">A2 Part 2</span>',
     };
-    const levelBadge = levelMap[chapter.level] || `<span class="badge badge-count">${chapter.level || ''}</span>`;
+    const levelBadge = levelMap[chapter.level] || '';
     let totalVocab = 0;
     Object.keys(chapter.parts).forEach(p => { totalVocab += (chapter.parts[p].vocabulary || []).length; });
     const actLabels = ['Kosakata', 'Tata Bahasa', 'Membaca', 'Latihan'];
