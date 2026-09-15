@@ -353,8 +353,8 @@ const Flashcard = {
       const syllables = syllableGroups[vi] || syllableGroups[0];
       const rubyStr = chars.map((char, i) => {
         const syl = syllables[i];
-        if (!syl) return `<ruby>${char}<rt class="zhuyin-rt"></rt></ruby>`;
-        return `<ruby>${char}<rt class="zhuyin-rt">${this._syllableToZhuyin(syl)}</rt></ruby>`;
+        const mark = syl ? this._syllableToZhuyin(syl) : '';
+        return `<span class="zy-unit"><span class="zy-hanzi">${char}</span><span class="zy-mark">${mark}</span></span>`;
       }).join('');
       return rubyStr;
     }).join('<span class="variant-sep">/</span>');

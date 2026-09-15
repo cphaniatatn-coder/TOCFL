@@ -451,16 +451,30 @@ body {
 .fc-pinyin { transition: opacity .2s ease; }
 .fc-pinyin.pinyin-hidden { visibility: hidden; opacity: 0; }
 
-/* ===== ZHUYIN RUBY ANNOTATION ===== */
-.fc-hanzi ruby rt.zhuyin-rt {
-  font-size: 0.38em;
-  color: rgba(255, 255, 255, 0.9);
+/* ===== ZHUYIN ANNOTATION (vertical, right of character) ===== */
+.zy-unit {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 0.75em;
+}
+.zy-hanzi { display: inline-block; }
+.zy-mark {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 0.2em;
+  line-height: 1.05;
   font-family: '標楷體', 'DFKai-SB', 'BiauKai', serif;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.9);
   user-select: none;
   pointer-events: none;
+  white-space: nowrap;
 }
-.fc-hanzi.zhuyin-hidden ruby rt.zhuyin-rt { visibility: hidden; }
+.fc-hanzi.zhuyin-hidden .zy-mark { visibility: hidden; }
 .variant-sep { font-size: 0.6em; opacity: 0.5; vertical-align: middle; margin: 0 2px; }
 
 .btn-toggle-zhuyin {
