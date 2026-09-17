@@ -1,18 +1,23 @@
 const VOLUME_META = [
   {
-    num: 1, title: 'Volume 1', subtitle: 'TOCFL Level 1', level: 'Pre-A1 / A1',
-    file: 'data/tocfl_volume1.json', available: true,
-    chapters: 11, vocab: 400, grammar: 15
+    num: 1, title: 'Volume 1', subtitle: '時代華語一 L01-L04', level: 'A1',
+    file: 'data/shidai_volume1.json', available: true,
+    chapters: 34, vocab: 204, grammar: 32
   },
   {
-    num: 2, title: 'Volume 2', subtitle: 'TOCFL Level 2', level: 'A1 / A2',
-    file: 'data/tocfl_volume2.json', available: true,
-    chapters: 12, vocab: 406, grammar: 81
+    num: 2, title: 'Volume 2', subtitle: '時代華語一 L05-L08', level: 'A1',
+    file: 'data/shidai_volume2.json', available: true,
+    chapters: 36, vocab: 229, grammar: 32
   },
   {
-    num: 3, title: 'Volume 3', subtitle: 'TOCFL Level 3', level: 'A2 / B1',
-    file: 'data/tocfl_volume3.json', available: true,
-    chapters: 13, vocab: 463, grammar: 88
+    num: 3, title: 'Volume 3', subtitle: '時代華語一 L09-L12', level: 'A1 / A2',
+    file: 'data/shidai_volume3.json', available: true,
+    chapters: 32, vocab: 174, grammar: 28
+  },
+  {
+    num: 4, title: 'Volume 4', subtitle: '時代華語一 L13-L16', level: 'A2',
+    file: 'data/shidai_volume4.json', available: true,
+    chapters: 39, vocab: 198, grammar: 35
   },
 ];
 

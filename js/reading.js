@@ -13,7 +13,7 @@ const Reading = {
     const chapter = App.data?.chapters?.find(c => c.id === this.chapterId);
     if (!chapter) return null;
     const readings = [];
-    for (const part of ['A', 'B']) {
+    for (const part of Object.keys(chapter.parts)) {
       const r = chapter.parts[part]?.reading;
       if (r) readings.push({ part, ...r });
     }
