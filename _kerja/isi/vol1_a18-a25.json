@@ -1,0 +1,376 @@
+{"modules": [
+{
+ "code": "A18",
+ "title_py": "Zhège duōshǎo qián?", "title_id": "Ini berapa harganya?",
+ "scene": "Dawen berbelanja alat tulis di toko dekat kampus: menanyakan harga, membandingkan murah/mahal, membayar, dan menerima kembalian.",
+ "can_do": ["Menanyakan harga (這個多少錢？) dan menyebut harga dengan 塊/元", "Menghitung total (一共) dan menerima kembalian (找你…)", "Menyatakan mahal/murah (好貴！很便宜)"],
+ "exam_link": "Belanja & harga adalah tema SERING di 聽力 Part 1–3 dan 閱讀 Part 1–2. Soal hitung total harga (一共) dan kembalian muncul hampir di setiap paket.",
+ "vocab_override": {"貴": {"meaning": "mahal", "pos": "Vs", "note": "義項 kedua: 貴 'mahal'. 義項 pertama (您貴姓, hormat) sudah dipelajari di A01."}},
+ "dialogs": [
+  {"place": "在店裡", "title_id": "Di toko", "lines": [
+   {"sp": "王大文", "zh": "先生，請問這個多少錢？", "py": "Xiānshēng, qǐngwèn zhège duōshǎo qián?", "id": "Pak, permisi, ini berapa?"},
+   {"sp": "老闆", "zh": "這個一百二十塊。", "py": "Zhège yìbǎi èrshí kuài.", "id": "Ini seratus dua puluh dolar."},
+   {"sp": "王大文", "zh": "好貴！那個呢？", "py": "Hǎo guì! Nàge ne?", "id": "Mahal sekali! Kalau yang itu?"},
+   {"sp": "老闆", "zh": "那個便宜，八十塊。", "py": "Nàge piányí, bāshí kuài.", "id": "Yang itu murah, delapan puluh."},
+   {"sp": "王大文", "zh": "我買兩個。一共多少錢？", "py": "Wǒ mǎi liǎng ge. Yígòng duōshǎo qián?", "id": "Saya beli dua. Semuanya berapa?"},
+   {"sp": "老闆", "zh": "一共一百六十塊。", "py": "Yígòng yìbǎi liùshí kuài.", "id": "Semuanya seratus enam puluh."},
+   {"sp": "王大文", "zh": "給你兩百塊。", "py": "Gěi nǐ liǎngbǎi kuài.", "id": "Ini dua ratus."},
+   {"sp": "老闆", "zh": "找你四十塊。謝謝！", "py": "Zhǎo nǐ sìshí kuài. Xièxie!", "id": "Kembaliannya empat puluh. Terima kasih!"}
+  ]},
+  {"place": "在店門口", "title_id": "Di depan toko", "lines": [
+   {"sp": "李美美", "zh": "大文，你買什麼東西？", "py": "Dàwén, nǐ mǎi shénme dōngxi?", "id": "Dawen, kamu beli apa?"},
+   {"sp": "王大文", "zh": "我買筆和紙。這個店的東西很便宜。", "py": "Wǒ mǎi bǐ hé zhǐ. Zhège diàn de dōngxi hěn piányí.", "id": "Aku beli pulpen dan kertas. Barang di toko ini murah."},
+   {"sp": "李美美", "zh": "你的錢夠嗎？", "py": "Nǐ de qián gòu ma?", "id": "Uangmu cukup?"},
+   {"sp": "王大文", "zh": "夠，我只買一點東西。", "py": "Gòu, wǒ zhǐ mǎi yìdiǎn dōngxi.", "id": "Cukup, aku cuma beli sedikit."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "這個多少錢？", "options": ["一百塊。", "我買這個。", "很便宜。"], "answer": 0,
+   "why": "多少錢 → sebut harga. B dan C satu tema belanja tapi tidak menyebut angka."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih harga yang cocok.",
+   "audio": "一共三百五十塊。", "options": [{"icon": "💵", "label": "NT$350"}, {"icon": "💵", "label": "NT$530"}, {"icon": "💵", "label": "NT$305"}], "answer": 0,
+   "why": "三百五十 = 350. 305 dibaca 三百零五 — angka yang mirip adalah pengecoh favorit."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "這枝筆多少錢？"}, {"sp": "女", "zh": "二十塊。"}, {"sp": "男", "zh": "我買三枝。"}],
+   "question": "他一共要給多少錢？", "options": ["二十塊", "六十塊", "三十塊"], "answer": 1,
+   "why": "3 × 20 = 60. 二十 adalah harga satuan — soal khas yang menuntut menghitung, bukan sekadar mengulang angka."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca daftar harga ini, lalu pilih jawaban yang benar.",
+   "text": "咖啡一杯：六十元　茶一杯：四十元　包子一個：二十五元", "question": "一杯咖啡和一個包子，一共多少錢？",
+   "options": ["六十元", "八十五元", "一百元", "四十元"], "answer": 1,
+   "why": "60 + 25 = 85. 元 adalah bentuk tulis dari 塊 (misalnya di daftar harga)."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "這個多少（1）？九十五塊。我買兩個，（2）一百九十塊。我給他兩百塊，他（3）我十塊。", "options": ["錢", "一共", "找", "便宜"], "answers": [0, 1, 2],
+   "why": "(1) 多少錢. (2) total → 一共. (3) kembalian → 找. 便宜 tidak cocok di titik mana pun."}
+ ],
+ "grammar": [],
+ "recycle": [
+  {"zh": "一百二十塊、兩百塊", "id": "Cara menyebut angka (A04) + ratusan: 兩百 (bukan 二百 dalam percakapan)."},
+  {"zh": "給你兩百塊。找你四十塊。", "id": "給 / 找 + orang + jumlah uang."}
+ ]
+},
+{
+ "code": "A19",
+ "title_py": "Wǒ xiǎng mǎi zhè jiàn yīfú.", "title_id": "Aku mau beli baju ini.",
+ "scene": "Dawen dan Meimei berbelanja baju dan sepatu: memilih warna, mencoba ukuran, dan membandingkan barang baru dan lama.",
+ "can_do": ["Menyebut barang dengan warna/ukuran tanpa mengulang bendanya (紅的、大的)", "Menyatakan 'agak' dengan 有點 (有點小)", "Memakai kata bantu bilangan 件 untuk baju"],
+ "exam_link": "Pakaian (warna, ukuran) adalah tema SERING di 聽力 Part 1 dan 閱讀 Part 1–2. Jawaban sering berbentuk '…的' tanpa benda (白的).",
+ "dialogs": [
+  {"place": "在衣服店", "title_id": "Di toko baju", "lines": [
+   {"sp": "李美美", "zh": "大文，你想買什麼？", "py": "Dàwén, nǐ xiǎng mǎi shénme?", "id": "Dawen, kamu mau beli apa?"},
+   {"sp": "王大文", "zh": "我想買這件衣服。", "py": "Wǒ xiǎng mǎi zhè jiàn yīfú.", "id": "Aku mau beli baju ini."},
+   {"sp": "李美美", "zh": "你喜歡紅的還是白的？", "py": "Nǐ xǐhuān hóng de háishì bái de?", "id": "Kamu suka yang merah atau yang putih?"},
+   {"sp": "王大文", "zh": "我喜歡白的。可是這件有點小。", "py": "Wǒ xǐhuān bái de. Kěshì zhè jiàn yǒudiǎn xiǎo.", "id": "Aku suka yang putih. Tapi yang ini agak kecil."},
+   {"sp": "李美美", "zh": "你穿大的吧！大的不錯。", "py": "Nǐ chuān dà de ba! Dà de búcuò.", "id": "Pakai yang besar saja! Yang besar bagus."},
+   {"sp": "王大文", "zh": "好，我買大的。", "py": "Hǎo, wǒ mǎi dà de.", "id": "Oke, aku beli yang besar."}
+  ]},
+  {"place": "在鞋子店", "title_id": "Di toko sepatu", "lines": [
+   {"sp": "王大文", "zh": "美美，你的鞋子很漂亮！是新的嗎？", "py": "Měiměi, nǐ de xiézi hěn piàoliang! Shì xīn de ma?", "id": "Meimei, sepatumu bagus! Baru ya?"},
+   {"sp": "李美美", "zh": "是新的。我的舊鞋子是黑的。", "py": "Shì xīn de. Wǒ de jiù xiézi shì hēi de.", "id": "Iya baru. Sepatu lamaku yang hitam."},
+   {"sp": "王大文", "zh": "我也想買新鞋子，可是鞋子很貴。", "py": "Wǒ yě xiǎng mǎi xīn xiézi, kěshì xiézi hěn guì.", "id": "Aku juga mau beli sepatu baru, tapi sepatu mahal."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你要紅的還是白的？", "options": ["我要白的。", "我要白。", "我是白的衣服。"], "answer": 0,
+   "why": "紅的/白的 = 'yang merah/yang putih' — jawab dengan pola yang sama: 白的. B kehilangan 的; C strukturnya salah."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我想買黑的鞋子。", "options": [{"icon": "👞", "label": "sepatu hitam"}, {"icon": "👟", "label": "sepatu putih"}, {"icon": "👕", "label": "baju hitam"}], "answer": 0,
+   "why": "黑的鞋子 = sepatu hitam. B warnanya salah; C bendanya salah — dua jenis pengecoh sekaligus."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "這件衣服是新的嗎？"}, {"sp": "女", "zh": "不是，這件是舊的，那件是新的。"}],
+   "question": "哪件是新的？", "options": ["這件", "那件", "兩件都是"], "answer": 1,
+   "why": "這件是舊的，那件是新的. Perhatikan 這 (ini) vs 那 (itu)."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "這件紅的衣服一千塊，那件白的八百塊。白的比紅的便宜，可是有點小。", "question": "哪一個對？",
+   "options": ["紅的一千塊。", "白的一千塊。", "紅的有點小。", "白的很大。"], "answer": 0,
+   "why": "紅的一千塊. Yang agak kecil adalah yang putih (C menukar); D membalik 有點小."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "我想買一（1）衣服。紅的很漂亮，（2）有點小。我穿大（3）。", "options": ["件", "可是", "的", "個"], "answers": [0, 1, 2],
+   "why": "(1) baju → 件. (2) kontras (bagus TAPI kecil) → 可是. (3) 大的 = yang besar. 個 bukan kata bantu bilangan untuk baju."}
+ ],
+ "grammar": [
+  {"tbcl_id": 3, "point": "「的」省略 — 'yang …'", "pattern": "Vs + 的 (benda tidak diulang)", "blocks": [["白", "Vs"], ["的", "的"], ["(衣服)", "dihilangkan"]],
+   "explain": "Kalau bendanya sudah jelas dari konteks, cukup ucapkan sifat + 的: 白的 = 'yang putih', 大的 = 'yang besar', 新的 = 'yang baru'. Jangan lupa 的 — 我要白 ✗.",
+   "examples": [{"zh": "你喜歡紅的還是白的？", "id": "Kamu suka yang merah atau yang putih?"}, {"zh": "我的舊鞋子是黑的。", "id": "Sepatu lamaku yang hitam."}],
+   "check": {"q": "'Aku mau yang kecil' =", "options": ["我要小的。", "我要小。", "我的要小。"], "answer": 0}}
+ ]
+},
+{
+ "code": "A20",
+ "title_py": "Wǒ zuò gōngchē qù xuéxiào.", "title_id": "Aku naik bus ke kampus.",
+ "scene": "Dawen dan Meimei membandingkan cara mereka pergi ke kampus dan ke kota lain: bus, kereta, jalan kaki, taksi, atau mobil.",
+ "can_do": ["Menyebut alat transportasi: 坐 + kendaraan + 去 + tempat", "Menanyakan cara pergi (你怎麼去學校？)", "Memberi alasan sederhana dengan 因為…所以…"],
+ "exam_link": "Transportasi termasuk tema SERING di 聽力 Part 1–2 (pilih gambar kendaraan) dan 閱讀 Part 1–3. 坐 vs 開 (naik vs menyetir) sering diuji.",
+ "dialogs": [
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "李美美", "zh": "大文，你每天怎麼去學校？", "py": "Dàwén, nǐ měitiān zěnme qù xuéxiào?", "id": "Dawen, setiap hari kamu ke kampus naik apa?"},
+   {"sp": "王大文", "zh": "我坐公車去學校。你呢？", "py": "Wǒ zuò gōngchē qù xuéxiào. Nǐ ne?", "id": "Aku naik bus. Kamu?"},
+   {"sp": "李美美", "zh": "我走路去學校，我家在學校附近。", "py": "Wǒ zǒulù qù xuéxiào, wǒ jiā zài xuéxiào fùjìn.", "id": "Aku jalan kaki, rumahku dekat kampus."},
+   {"sp": "王大文", "zh": "走路很方便！公車站在我家門口。", "py": "Zǒulù hěn fāngbiàn! Gōngchē zhàn zài wǒ jiā ménkǒu.", "id": "Jalan kaki praktis! Halte bus ada di depan rumahku."}
+  ]},
+  {"place": "說去台中", "title_id": "Membicarakan pergi ke Taichung", "lines": [
+   {"sp": "王大文", "zh": "美美，你怎麼去台中？", "py": "Měiměi, nǐ zěnme qù Táizhōng?", "id": "Meimei, kamu ke Taichung naik apa?"},
+   {"sp": "李美美", "zh": "我坐火車去。我爸爸有時候開車來台北。", "py": "Wǒ zuò huǒchē qù. Wǒ bàba yǒushíhòu kāi chē lái Táiběi.", "id": "Naik kereta. Ayahku kadang menyetir ke Taipei."},
+   {"sp": "王大文", "zh": "你坐飛機去台中嗎？", "py": "Nǐ zuò fēijī qù Táizhōng ma?", "id": "Kamu naik pesawat ke Taichung?"},
+   {"sp": "李美美", "zh": "不坐飛機。因為火車很方便，所以我坐火車。", "py": "Bú zuò fēijī. Yīnwèi huǒchē hěn fāngbiàn, suǒyǐ wǒ zuò huǒchē.", "id": "Tidak. Karena kereta praktis, jadi aku naik kereta."},
+   {"sp": "王大文", "zh": "我不喜歡坐計程車，因為計程車很貴。", "py": "Wǒ bù xǐhuān zuò jìchéngchē, yīnwèi jìchéngchē hěn guì.", "id": "Aku tidak suka naik taksi, karena mahal."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我坐火車去台中。", "options": [{"icon": "🚌", "label": "bus"}, {"icon": "🚆", "label": "kereta"}, {"icon": "✈️", "label": "pesawat"}], "answer": 1,
+   "why": "火車 = kereta. Semua pilihan kendaraan — pengecoh kategori mirip."},
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你怎麼去學校？", "options": ["我坐公車去。", "我在學校。", "學校很大。"], "answer": 0,
+   "why": "怎麼去 menanyakan CARA pergi → sebut kendaraan. B menjawab lokasi, C memberi komentar."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "妳每天坐公車嗎？"}, {"sp": "女", "zh": "不坐公車，我走路，我家在學校附近。"}],
+   "question": "她怎麼去學校？", "options": ["坐公車", "走路", "開車"], "answer": 1,
+   "why": "不坐公車 → 走路. Bus disebut lebih dulu tapi ditolak."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "我爸爸每天開車去工作。我媽媽坐公車。我坐計程車，因為我早上很忙。", "question": "誰坐公車？",
+   "options": ["他爸爸", "他媽媽", "他", "他哥哥"], "answer": 1,
+   "why": "媽媽坐公車. Ayah menyetir, penulis naik taksi; 哥哥 tidak disebut."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "我家在學校附近，所以我每天（1）去學校。我哥哥有一（2）車子。他說開車很（3）。", "options": ["走路", "輛", "方便", "坐"], "answers": [0, 1, 2],
+   "why": "(1) rumah dekat → 走路. (2) kendaraan → 輛. (3) 很方便. 坐 butuh nama kendaraan (坐公車), jadi tidak cocok di (1)."}
+ ],
+ "grammar": [],
+ "recycle": [
+  {"zh": "我坐公車去學校。", "id": "Urutan: siapa + (naik apa) + 去 + tempat."},
+  {"zh": "因為火車很方便，所以我坐火車。", "id": "因為…所以… = karena…jadi… (dipelajari penuh di Vol.2)."}
+ ]
+},
+{
+ "code": "A21",
+ "title_py": "Qǐngwèn, huǒchē zhàn zěnme zǒu?", "title_id": "Permisi, ke stasiun kereta lewat mana?",
+ "scene": "Dawen dan Meimei tersesat di kota dan bertanya arah ke stasiun kereta kepada orang di jalan.",
+ "can_do": ["Menanyakan arah dengan sopan (請問，…怎麼走？)", "Memahami petunjuk kiri/kanan dan waktu tempuh (走五分鐘就到)", "Menyatakan melihat sesuatu (我看見…)"],
+ "exam_link": "Arah (kiri/kanan, dekat/jauh) adalah tema SERING di 聽力 Part 2 dan 閱讀 Part 2–3.",
+ "dialogs": [
+  {"place": "在路上", "title_id": "Di jalan", "lines": [
+   {"sp": "王大文", "zh": "先生，請問，火車站怎麼走？", "py": "Xiānshēng, qǐngwèn, huǒchē zhàn zěnme zǒu?", "id": "Pak, permisi, ke stasiun kereta lewat mana?"},
+   {"sp": "先生", "zh": "火車站？你從這裡出去，走右邊。", "py": "Huǒchē zhàn? Nǐ cóng zhèlǐ chūqù, zǒu yòubiān.", "id": "Stasiun kereta? Dari sini keluar, lalu ambil kanan."},
+   {"sp": "王大文", "zh": "右邊？", "py": "Yòubiān?", "id": "Kanan?"},
+   {"sp": "先生", "zh": "對，走五分鐘就到。火車站在路的左邊。", "py": "Duì, zǒu wǔ fēnzhōng jiù dào. Huǒchē zhàn zài lù de zuǒbiān.", "id": "Iya, jalan lima menit sudah sampai. Stasiunnya di sisi kiri jalan."},
+   {"sp": "王大文", "zh": "謝謝您！", "py": "Xièxie nín!", "id": "Terima kasih, Pak!"}
+  ]},
+  {"place": "五分鐘以後", "title_id": "Lima menit kemudian", "lines": [
+   {"sp": "李美美", "zh": "大文，你看到火車站嗎？", "py": "Dàwén, nǐ kàndào huǒchē zhàn ma?", "id": "Dawen, kamu lihat stasiunnya?"},
+   {"sp": "王大文", "zh": "我看見火車站！在那裡，左邊。", "py": "Wǒ kànjiàn huǒchē zhàn! Zài nàlǐ, zuǒbiān.", "id": "Aku lihat stasiunnya! Di sana, sebelah kiri."},
+   {"sp": "李美美", "zh": "好，我們馬上去！", "py": "Hǎo, wǒmen mǎshàng qù!", "id": "Oke, kita langsung ke sana!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "請問，火車站怎麼走？", "options": ["你從這裡出去，走右邊。", "火車站很大。", "我坐火車。"], "answer": 0,
+   "why": "怎麼走 menanyakan ARAH jalan. B memberi komentar; C salah paham menjadi 'naik apa'."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "火車站在左邊。", "options": [{"icon": "⬅️🚉", "label": "stasiun di kiri"}, {"icon": "🚉➡️", "label": "stasiun di kanan"}, {"icon": "⬆️🚉", "label": "stasiun di depan"}], "answer": 0,
+   "why": "左邊 = kiri, 右邊 = kanan. Pasangan kiri/kanan adalah pengecoh paling umum."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "請問，公園在哪裡？"}, {"sp": "女", "zh": "從這裡走，右邊就是公園。"}, {"sp": "男", "zh": "走路幾分鐘？"}, {"sp": "女", "zh": "五分鐘就到。"}],
+   "question": "公園在哪裡？", "options": ["左邊", "右邊", "前面"], "answer": 1,
+   "why": "右邊就是公園. 五分鐘 adalah waktu tempuh, bukan arah."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "我早上七點起來。我從家出來，走右邊，又走左邊，就看見學校。走路十分鐘就到。", "question": "他走路幾分鐘到學校？",
+   "options": ["五分鐘", "七分鐘", "十分鐘", "二十分鐘"], "answer": 2,
+   "why": "走路十分鐘就到. 七 adalah jam bangun — pengecoh angka dari teks yang sama."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "你（1）這裡出去，走（2），五分鐘（3）到。", "options": ["從", "右邊", "就", "出"], "answers": [0, 1, 2],
+   "why": "(1) 從 = dari. (2) arah → 右邊. (3) 就到 = sudah sampai. 出 sudah ada di 出去."}
+ ],
+ "grammar": [],
+ "recycle": [
+  {"zh": "火車站在路的左邊。", "id": "Letak (A09): benda + 在 + patokan + posisi."},
+  {"zh": "走五分鐘就到。", "id": "就 = 'sudah/langsung' (pola lengkapnya di Vol.2)."}
+ ]
+},
+{
+ "code": "A22",
+ "title_py": "Wǒ tóu hěn tòng.", "title_id": "Kepalaku sakit sekali.",
+ "scene": "Dawen merasa tidak enak badan di kelas. Meimei menanyakan kabarnya dan bagian tubuh mana yang sakit.",
+ "can_do": ["Menyebut bagian tubuh yang sakit (我頭很痛)", "Menyatakan tidak enak badan (我不舒服、我很累)", "Menanyakan keadaan orang (你今天怎麼樣？)"],
+ "exam_link": "Kesehatan ringan (flu, sakit kepala, ke dokter) termasuk tema SERING di 聽力 Part 4 dan 閱讀 Part 1 & 4.",
+ "dialogs": [
+  {"place": "在教室", "title_id": "Di kelas", "lines": [
+   {"sp": "李美美", "zh": "大文，你今天怎麼樣？", "py": "Dàwén, nǐ jīntiān zěnmeyàng?", "id": "Dawen, bagaimana keadaanmu hari ini?"},
+   {"sp": "王大文", "zh": "我不舒服，我頭很痛。", "py": "Wǒ bù shūfú, wǒ tóu hěn tòng.", "id": "Aku tidak enak badan, kepalaku sakit."},
+   {"sp": "李美美", "zh": "你是不是感冒？", "py": "Nǐ shì bú shì gǎnmào?", "id": "Kamu flu ya?"},
+   {"sp": "王大文", "zh": "可能是。我很累，眼睛也很痛。", "py": "Kěnéng shì. Wǒ hěn lèi, yǎnjīng yě hěn tòng.", "id": "Mungkin. Aku capek, mataku juga sakit."}
+  ]},
+  {"place": "下課的時候", "title_id": "Saat istirahat", "lines": [
+   {"sp": "王大文", "zh": "美美，我身體很不舒服，我的手很痛，腳也很痛。", "py": "Měiměi, wǒ shēntǐ hěn bù shūfú, wǒ de shǒu hěn tòng, jiǎo yě hěn tòng.", "id": "Meimei, badanku tidak enak sekali, tanganku sakit, kakiku juga."},
+   {"sp": "李美美", "zh": "你生病！你沒吃早餐嗎？", "py": "Nǐ shēngbìng! Nǐ méi chī zǎocān ma?", "id": "Kamu sakit! Kamu tidak sarapan?"},
+   {"sp": "王大文", "zh": "我沒吃。我不餓。", "py": "Wǒ méi chī. Wǒ bú è.", "id": "Tidak. Aku tidak lapar."},
+   {"sp": "李美美", "zh": "什麼？我沒聽見。", "py": "Shénme? Wǒ méi tīngjiàn.", "id": "Apa? Aku tidak dengar."},
+   {"sp": "王大文", "zh": "我說：我不餓！", "py": "Wǒ shuō: wǒ bú è!", "id": "Aku bilang: aku tidak lapar!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我頭很痛。", "options": [{"icon": "🤕", "label": "sakit kepala"}, {"icon": "🦶", "label": "sakit kaki"}, {"icon": "✋", "label": "sakit tangan"}], "answer": 0,
+   "why": "頭 = kepala. Pengecoh: bagian tubuh lain."},
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你今天怎麼樣？", "options": ["我不舒服，我很累。", "我很怎麼樣。", "我是感冒。"], "answer": 0,
+   "why": "怎麼樣 menanyakan keadaan. B mengulang kata tanya (tidak bermakna); C memakai 是 dengan tidak wajar."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "妳眼睛痛嗎？"}, {"sp": "女", "zh": "眼睛不痛，我的耳朵很痛。"}],
+   "question": "她哪裡痛？", "options": ["眼睛", "耳朵", "鼻子"], "answer": 1,
+   "why": "眼睛不痛 → 耳朵很痛. Kata pertama yang didengar dinegasikan."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "安妮今天身體不舒服。她頭痛，鼻子也不舒服。她覺得她感冒。", "question": "安妮可能怎麼樣？",
+   "options": ["她感冒。", "她的手很痛。", "她很餓。", "她很快樂。"], "answer": 0,
+   "why": "她覺得她感冒 (kepala sakit + hidung tidak nyaman). Pilihan lain tidak ada dasarnya di teks."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "我今天不（1），我頭很（2），也很（3），我想睡覺。", "options": ["舒服", "痛", "累", "手"], "answers": [0, 1, 2],
+   "why": "(1) 不舒服. (2) 頭很痛. (3) 想睡覺 → 很累. 手 adalah kata benda, tidak cocok setelah 很."}
+ ],
+ "grammar": [],
+ "recycle": [
+  {"zh": "我頭很痛。", "id": "Pola 'topik–keterangan': orang + bagian tubuh + 很 + kata sifat."},
+  {"zh": "你是不是感冒？", "id": "A-not-A (A07) untuk menebak dengan sopan."}
+ ]
+},
+{
+ "code": "A23",
+ "title_py": "Nǐ yīnggāi qù kànbìng.", "title_id": "Sebaiknya kamu ke dokter.",
+ "scene": "Meimei membujuk Dawen yang sakit untuk ke dokter; di klinik, dokter memeriksa dan memberi obat serta saran.",
+ "can_do": ["Memberi saran dengan 應該 (你應該休息)", "Menjelaskan keluhan kepada dokter", "Menanyakan alasan dengan 為什麼"],
+ "exam_link": "Adegan dokter & saran istirahat adalah tema SERING di 聽力 Part 4: soal sering bertanya 'apa saran dokter?'.",
+ "dialogs": [
+  {"place": "在教室", "title_id": "Di kelas", "lines": [
+   {"sp": "李美美", "zh": "大文，你應該去看病！", "py": "Dàwén, nǐ yīnggāi qù kànbìng!", "id": "Dawen, sebaiknya kamu ke dokter!"},
+   {"sp": "王大文", "zh": "為什麼？我沒事。", "py": "Wèishénme? Wǒ méi shì.", "id": "Kenapa? Aku tidak apa-apa."},
+   {"sp": "李美美", "zh": "你生病，你應該告訴老師。", "py": "Nǐ shēngbìng, nǐ yīnggāi gàosù lǎoshī.", "id": "Kamu sakit, sebaiknya bilang ke guru."},
+   {"sp": "王大文", "zh": "好，我自己告訴老師。你等我，我們一起去看病。", "py": "Hǎo, wǒ zìjǐ gàosù lǎoshī. Nǐ děng wǒ, wǒmen yìqǐ qù kànbìng.", "id": "Oke, aku bilang sendiri ke guru. Tunggu aku, kita ke dokter bareng."}
+  ]},
+  {"place": "看醫生", "title_id": "Di dokter", "lines": [
+   {"sp": "醫生", "zh": "你好，你哪裡不舒服？", "py": "Nǐ hǎo, nǐ nǎlǐ bù shūfú?", "id": "Halo, bagian mana yang tidak enak?"},
+   {"sp": "王大文", "zh": "醫生，我頭痛，也很累。", "py": "Yīshēng, wǒ tóu tòng, yě hěn lèi.", "id": "Dok, kepala saya sakit, juga lemas."},
+   {"sp": "醫生", "zh": "你感冒。你應該多休息，多喝水。", "py": "Nǐ gǎnmào. Nǐ yīnggāi duō xiūxí, duō hē shuǐ.", "id": "Kamu flu. Sebaiknya banyak istirahat dan minum air."},
+   {"sp": "醫生", "zh": "這是藥，早上、中午、晚上吃。", "py": "Zhè shì yào, zǎoshang, zhōngwǔ, wǎnshang chī.", "id": "Ini obatnya, diminum pagi, siang, dan malam."},
+   {"sp": "王大文", "zh": "謝謝醫生！", "py": "Xièxie yīshēng!", "id": "Terima kasih, Dok!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你哪裡不舒服？", "options": ["我頭很痛。", "我是醫生。", "我吃藥。"], "answer": 0,
+   "why": "哪裡不舒服 → sebut bagian yang sakit. B dan C satu tema tapi tidak menjawab."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他吃藥。", "options": [{"icon": "💊", "label": "minum obat"}, {"icon": "🍜", "label": "makan mi"}, {"icon": "☕", "label": "minum kopi"}], "answer": 0,
+   "why": "吃藥 = minum obat (Mandarin memakai 吃, bukan 喝, untuk obat)."},
+  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "lines": [{"sp": "男", "zh": "醫生，我今天可以上課嗎？"}, {"sp": "女", "zh": "你應該休息，別上課。"}],
+   "question": "醫生覺得他應該做什麼？", "options": ["上課", "休息", "運動", "告訴老師"], "answer": 1,
+   "why": "你應該休息，別上課. A membalik saran; C dan D tidak disebut dokter."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "王大文生病，他去看病。醫生說：「你感冒，你應該多休息，多喝水。」大文告訴老師他今天不上課。", "question": "醫生說大文應該做什麼？",
+   "options": ["上課", "多休息", "多運動", "告訴老師"], "answer": 1,
+   "why": "Saran dokter: 多休息，多喝水. 告訴老師 memang dilakukan Dawen, tapi BUKAN saran dokter — pengecoh 'benar sebagian'."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "我生病，我去（1）。醫生說我感冒，也給我一些（2）。我應該多（3）。", "options": ["看病", "藥", "休息", "醫生"], "answers": [0, 1, 2],
+   "why": "(1) 去看病 = ke dokter. (2) dokter memberi 藥. (3) saran dokter → 多休息. 醫生 sudah ada sebagai subjek kalimat."}
+ ],
+ "grammar": [],
+ "recycle": [
+  {"zh": "你應該多休息，多喝水。", "id": "應該 + V = sebaiknya; 多 + V = banyak-banyak melakukan."},
+  {"zh": "你哪裡不舒服？", "id": "哪裡 (A08) + 不 + kata sifat."}
+ ]
+},
+{
+ "code": "A24",
+ "title_py": "Jīntiān hǎo rè!", "title_id": "Hari ini panas sekali!",
+ "scene": "Dawen dan Meimei mengobrol tentang cuaca Taiwan dan Indonesia, lalu merencanakan jalan-jalan ke gunung.",
+ "can_do": ["Menyatakan cuaca: 熱、冷、下雨、風很大", "Menanyakan cuaca (天氣怎麼樣？)", "Menyebut yang paling … dengan 最"],
+ "exam_link": "Cuaca adalah tema SERING di 聽力 Part 1 (pilih gambar cuaca) dan 閱讀 Part 1.",
+ "dialogs": [
+  {"place": "在學校外面", "title_id": "Di luar kampus", "lines": [
+   {"sp": "王大文", "zh": "今天好熱！", "py": "Jīntiān hǎo rè!", "id": "Hari ini panas sekali!"},
+   {"sp": "李美美", "zh": "對，臺灣的天氣很熱。印尼熱不熱？", "py": "Duì, Táiwān de tiānqì hěn rè. Yìnní rè bú rè?", "id": "Iya, cuaca Taiwan panas. Indonesia panas tidak?"},
+   {"sp": "王大文", "zh": "印尼也很熱。臺灣一月很冷嗎？", "py": "Yìnní yě hěn rè. Táiwān yī yuè hěn lěng ma?", "id": "Indonesia juga panas. Januari di Taiwan dingin?"},
+   {"sp": "李美美", "zh": "一月很冷，也常常下雨。", "py": "Yī yuè hěn lěng, yě chángcháng xià yǔ.", "id": "Januari dingin, juga sering hujan."}
+  ]},
+  {"place": "說去山上", "title_id": "Membicarakan ke gunung", "lines": [
+   {"sp": "李美美", "zh": "大文，明天我們一起去山上吧！山上的空氣很好。", "py": "Dàwén, míngtiān wǒmen yìqǐ qù shān shàng ba! Shān shàng de kōngqì hěn hǎo.", "id": "Dawen, besok kita ke gunung yuk! Udara di gunung segar."},
+   {"sp": "王大文", "zh": "明天下雨嗎？", "py": "Míngtiān xià yǔ ma?", "id": "Besok hujan?"},
+   {"sp": "李美美", "zh": "明天不下雨，可是風很大。", "py": "Míngtiān bú xià yǔ, kěshì fēng hěn dà.", "id": "Besok tidak hujan, tapi anginnya kencang."},
+   {"sp": "王大文", "zh": "那個山高不高？", "py": "Nàge shān gāo bù gāo?", "id": "Gunungnya tinggi tidak?"},
+   {"sp": "李美美", "zh": "不高，那個山很低。山上的花最漂亮！", "py": "Bù gāo, nàge shān hěn dī. Shān shàng de huā zuì piàoliang!", "id": "Tidak, gunungnya rendah. Bunga di gunung paling cantik!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "今天下雨。", "options": [{"icon": "☀️", "label": "cerah"}, {"icon": "🌧️", "label": "hujan"}, {"icon": "💨", "label": "berangin"}], "answer": 1,
+   "why": "下雨 = hujan. Pengecoh dari kategori cuaca yang sama."},
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "今天天氣怎麼樣？", "options": ["今天很冷。", "今天星期三。", "我很好。"], "answer": 0,
+   "why": "天氣怎麼樣 → sebut cuacanya. B menjawab hari; C menjawab keadaan diri."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "明天下雨嗎？"}, {"sp": "女", "zh": "不下雨，可是風很大。"}],
+   "question": "明天天氣怎麼樣？", "options": ["下雨", "風很大", "很熱"], "answer": 1,
+   "why": "不下雨，可是風很大. A dinegasikan; C tidak disebut."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "臺灣七月最熱，一月很冷，也常常下雨。山上的空氣很好，天氣不熱。", "question": "臺灣幾月最熱？",
+   "options": ["一月", "七月", "十二月", "五月"], "answer": 1,
+   "why": "七月最熱. 一月 disebut sebagai bulan dingin — pengecoh pembalikan."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "今天（1）很好，不冷也不（2）。山上的（3）很好。", "options": ["天氣", "熱", "空氣", "雨"], "answers": [0, 1, 2],
+   "why": "(1) 天氣很好. (2) pasangan 冷 → 熱. (3) di gunung → 空氣很好. 雨 tidak cocok (下雨 adalah kata kerja)."}
+ ],
+ "grammar": [],
+ "recycle": [
+  {"zh": "印尼熱不熱？", "id": "A-not-A (A07)."},
+  {"zh": "山上的花最漂亮！", "id": "最 + kata sifat = paling …; letak (A09): 山上."}
+ ]
+},
+{
+ "code": "A25",
+ "title_py": "Wǒ dǎ diànhuà gěi nǐ.", "title_id": "Aku telepon kamu ya.",
+ "scene": "Dawen menelepon Meimei yang sedang sibuk, lalu esoknya memperkenalkan teman barunya, Annie.",
+ "can_do": ["Menelepon dan berjanji menelepon lagi (我打電話給你)", "Meminta maaf dan menanggapinya (對不起 — 沒關係)", "Memperkenalkan teman kepada orang lain (我給你介紹…)"],
+ "exam_link": "Telepon & perkenalan sosial muncul di 聽力 Part 2–4. Ungkapan 對不起／沒關係／謝謝 adalah pasangan tanya-jawab klasik 聽力 Part 2.",
+ "dialogs": [
+  {"place": "打電話", "title_id": "Menelepon", "lines": [
+   {"sp": "王大文", "zh": "美美，你好！我是大文。", "py": "Měiměi, nǐ hǎo! Wǒ shì Dàwén.", "id": "Halo, Meimei! Ini Dawen."},
+   {"sp": "李美美", "zh": "大文！對不起，我現在上課，不能說話。", "py": "Dàwén! Duìbùqǐ, wǒ xiànzài shàngkè, bù néng shuōhuà.", "id": "Dawen! Maaf, aku sedang kelas, tidak bisa bicara."},
+   {"sp": "王大文", "zh": "沒關係。晚上我打電話給你。", "py": "Méi guānxi. Wǎnshang wǒ dǎ diànhuà gěi nǐ.", "id": "Tidak apa-apa. Nanti malam aku telepon kamu."},
+   {"sp": "李美美", "zh": "大文，你打電話給我，什麼事？", "py": "Dàwén, nǐ dǎ diànhuà gěi wǒ, shénme shì?", "id": "Dawen, kamu meneleponku, ada apa?"},
+   {"sp": "王大文", "zh": "明天我帶一個朋友去學校，我給你介紹。", "py": "Míngtiān wǒ dài yí ge péngyǒu qù xuéxiào, wǒ gěi nǐ jièshào.", "id": "Besok aku ajak teman ke kampus, aku kenalkan ke kamu."},
+   {"sp": "李美美", "zh": "好！明天學校見！", "py": "Hǎo! Míngtiān xuéxiào jiàn!", "id": "Oke! Sampai ketemu besok di kampus!"}
+  ]},
+  {"place": "第二天，在學校", "title_id": "Keesokan harinya, di kampus", "lines": [
+   {"sp": "王大文", "zh": "美美，我給你介紹，這是我的朋友安妮。", "py": "Měiměi, wǒ gěi nǐ jièshào, zhè shì wǒ de péngyǒu Ānní.", "id": "Meimei, kenalkan, ini temanku Annie."},
+   {"sp": "安妮", "zh": "你好！我叫安妮，我是印尼人。", "py": "Nǐ hǎo! Wǒ jiào Ānní, wǒ shì Yìnní rén.", "id": "Halo! Aku Annie, orang Indonesia."},
+   {"sp": "李美美", "zh": "你好！你有手機嗎？我打電話給你。", "py": "Nǐ hǎo! Nǐ yǒu shǒujī ma? Wǒ dǎ diànhuà gěi nǐ.", "id": "Halo! Kamu punya HP? Nanti kutelepon."},
+   {"sp": "安妮", "zh": "有，謝謝！", "py": "Yǒu, xièxie!", "id": "Ada, makasih!"},
+   {"sp": "李美美", "zh": "今天我請你們喝咖啡！", "py": "Jīntiān wǒ qǐng nǐmen hē kāfēi!", "id": "Hari ini aku traktir kalian kopi!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
+   "audio": "對不起！", "options": ["沒關係。", "謝謝。", "再見。"], "answer": 0,
+   "why": "對不起 (maaf) dijawab 沒關係 (tidak apa-apa). B dan C ungkapan sosial lain — pasangan yang salah."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我打電話給媽媽。", "options": [{"icon": "📱", "label": "menelepon"}, {"icon": "📺", "label": "menonton TV"}, {"icon": "✉️", "label": "menulis surat"}], "answer": 0,
+   "why": "打電話 = menelepon."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "明天我可以帶一個朋友去嗎？"}, {"sp": "女", "zh": "可以！她是哪國人？"}, {"sp": "男", "zh": "她是日本人。"}],
+   "question": "男的明天帶誰去？", "options": ["他的朋友", "他媽媽", "他哥哥"], "answer": 0,
+   "why": "帶一個朋友 — temannya orang Jepang. Pilihan lain tidak disebut."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "今天我請美美喝咖啡，因為她是我的好朋友。我給她介紹我的朋友安妮。", "question": "今天誰請美美喝咖啡？",
+   "options": ["他", "美美", "安妮", "老師"], "answer": 0,
+   "why": "我請美美 — penulis yang mentraktir. B membalik peran (pola implikatur 請 khas TOCFL: siapa yang membayar?)."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "我明天（1）電話給你。我給你（2）我的朋友。明天學校（3）！", "options": ["打", "介紹", "見", "說話"], "answers": [0, 1, 2],
+   "why": "(1) 打電話. (2) 介紹 + orang. (3) …見！ = sampai ketemu di …. 說話 tidak cocok di titik mana pun."}
+ ],
+ "grammar": [],
+ "recycle": [
+  {"zh": "晚上我打電話給你。", "id": "打電話 + 給 + orang = menelepon seseorang."},
+  {"zh": "今天我請你們喝咖啡！", "id": "請 (義項: mentraktir) + orang + kegiatan."}
+ ]
+}
+]}

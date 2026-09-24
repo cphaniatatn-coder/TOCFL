@@ -1,0 +1,405 @@
+{"modules": [
+{
+ "code": "A02",
+ "title_py": "Qǐngwèn, nǐ shì nǎ guó rén?", "title_id": "Permisi, kamu orang mana?",
+ "scene": "Istirahat di sela kelas bahasa. Teman sekelasmu dari berbagai negara saling bertanya asal negara dan bahasa yang dikuasai.",
+ "can_do": ["Menanyakan dan menyebut asal negara (你是哪國人？我是印尼人。)", "Menyebut bahasa yang saya gunakan (我說中文、英文)", "Membuat pertanyaan ya/tidak dengan 嗎"],
+ "exam_link": "Pertanyaan identitas (哪國人) adalah pembuka klasik 聽力 Part 2. Partikel 嗎 dan 呢 sering jadi pembeda jawaban di tanya-jawab satu putaran.",
+ "dialogs": [
+  {"place": "在教室", "title_id": "Di kelas", "lines": [
+   {"sp": "李美美", "zh": "大文，請問你是哪國人？", "py": "Dàwén, qǐngwèn nǐ shì nǎ guó rén?", "id": "Dawen, permisi, kamu orang mana?"},
+   {"sp": "王大文", "zh": "我是印尼人。你呢？你是臺灣人嗎？", "py": "Wǒ shì Yìnní rén. Nǐ ne? Nǐ shì Táiwān rén ma?", "id": "Aku orang Indonesia. Kamu? Kamu orang Taiwan?"},
+   {"sp": "李美美", "zh": "是，我是臺灣人。你說中文嗎？", "py": "Shì, wǒ shì Táiwān rén. Nǐ shuō Zhōngwén ma?", "id": "Iya, aku orang Taiwan. Kamu bicara bahasa Mandarin?"},
+   {"sp": "王大文", "zh": "說！我說中文、英文，我說印尼話。", "py": "Shuō! Wǒ shuō Zhōngwén, Yīngwén, wǒ shuō Yìnní huà.", "id": "Iya! Aku bicara Mandarin, Inggris, dan bahasa Indonesia."}
+  ]},
+  {"place": "在教室外面", "title_id": "Di luar kelas", "lines": [
+   {"sp": "王大文", "zh": "美美，他是哪國人？", "py": "Měiměi, tā shì nǎ guó rén?", "id": "Meimei, dia orang mana?"},
+   {"sp": "李美美", "zh": "他是外國人，他是美國人。", "py": "Tā shì wàiguó rén, tā shì Měiguó rén.", "id": "Dia orang asing, dia orang Amerika."},
+   {"sp": "王大文", "zh": "她呢？她是哪國人？", "py": "Tā ne? Tā shì nǎ guó rén?", "id": "Kalau dia (perempuan)? Dia orang mana?"},
+   {"sp": "李美美", "zh": "她是日本人。她說中文，她說日本話。", "py": "Tā shì Rìběn rén. Tā shuō Zhōngwén, tā shuō Rìběn huà.", "id": "Dia orang Jepang. Dia bicara Mandarin dan bahasa Jepang."},
+   {"sp": "王大文", "zh": "妳呢？妳說英文嗎？", "py": "Nǐ ne? Nǐ shuō Yīngwén ma?", "id": "Kalau kamu? Kamu bicara bahasa Inggris?"},
+   {"sp": "李美美", "zh": "說。", "py": "Shuō.", "id": "Iya."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你是哪國人？", "options": ["我是印尼人。", "我叫安妮。", "我說中文。"], "answer": 0,
+   "why": "哪國人 menanyakan negara asal. B menjawab nama, C menjawab bahasa — satu tema perkenalan tapi bukan jawabannya."},
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "他說英文嗎？", "options": ["說，他說英文。", "他是美國人。", "我說中文。"], "answer": 0,
+   "why": "Pertanyaan …嗎 dijawab dengan mengulang kata kerjanya: 說。 B tentang negara, C tentang diri sendiri (bukan 他)."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "請問，妳是臺灣人嗎？"}, {"sp": "女", "zh": "我是日本人。"}, {"sp": "男", "zh": "妳說中文嗎？"}, {"sp": "女", "zh": "說。"}],
+   "question": "她是哪國人？", "options": ["臺灣人", "日本人", "印尼人"], "answer": 1,
+   "why": "Ia menjawab 我是日本人. 臺灣人 hanya ada di pertanyaan si pria — jebakan kata yang terdengar lebih dulu."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "我姓林，我叫林安妮。我是印尼人，我說印尼話、英文，我說中文。", "question": "林安妮是哪國人？",
+   "options": ["臺灣人", "印尼人", "日本人", "美國人"], "answer": 1,
+   "why": "Teks: 我是印尼人. Ia bisa bahasa Mandarin, tapi itu tidak menjadikannya orang Taiwan (pengecoh 'terkait tapi tidak berdasar')."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "請問，你是（1）國人？我是印尼人。你（2）？我是臺灣人。你說中文（3）？", "options": ["哪", "呢", "嗎", "話"], "answers": [0, 1, 2],
+   "why": "(1) 哪國人 = negara mana. (2) 你呢 = 'kalau kamu?' (3) 嗎 mengubah kalimat jadi pertanyaan ya/tidak. 話 tidak cocok di titik mana pun."}
+ ],
+ "grammar": [
+  {"tbcl_id": 7, "point": "嗎 — pertanyaan ya/tidak", "pattern": "Kalimat pernyataan + 嗎？", "blocks": [["你", "S"], ["是", "V"], ["臺灣人", "N"], ["嗎", "?"]],
+   "explain": "Tambahkan 嗎 di akhir kalimat pernyataan, urutan kata TIDAK berubah. Jawab dengan mengulang kata kerjanya: 你說英文嗎？→ 說。",
+   "examples": [{"zh": "你是臺灣人嗎？", "id": "Kamu orang Taiwan?"}, {"zh": "他說中文嗎？", "id": "Dia bicara Mandarin?"}],
+   "check": {"q": "Jadikan pertanyaan: 他是美國人。", "options": ["他是美國人嗎？", "嗎他是美國人？", "他嗎是美國人？"], "answer": 0}},
+  {"tbcl_id": 5, "point": "哪 — yang mana (這/那 menyusul di A03)", "pattern": "哪 + 國 + 人？", "blocks": [["你", "S"], ["是", "V"], ["哪", "?"], ["國人", "N"]],
+   "explain": "哪 = 'yang mana', diletakkan di posisi jawabannya: 你是哪國人？→ 我是印尼人。 Kalimat dengan kata tanya seperti 哪/什麼 TIDAK memakai 嗎.",
+   "examples": [{"zh": "你是哪國人？", "id": "Kamu orang (negara) mana?"}, {"zh": "他是哪國人？他是美國人。", "id": "Dia orang mana? Dia orang Amerika."}],
+   "check": {"q": "Pilih yang benar:", "options": ["你是哪國人？", "你是哪國人嗎？", "哪國人你是？"], "answer": 0}}
+ ]
+},
+{
+ "code": "A03",
+ "title_py": "Zhè shì wǒ bàba.", "title_id": "Ini ayahku.",
+ "scene": "Meimei melihat foto keluarga di ponsel Dawen. Kalian saling menunjuk foto dan bertanya siapa orang di dalamnya.",
+ "can_do": ["Memperkenalkan anggota keluarga dari foto (這是我爸爸)", "Menanyakan siapa seseorang (這是誰？)", "Menyatakan kepemilikan dengan 的 (我的家人)"],
+ "exam_link": "Keluarga termasuk tema yang SERING keluar di 聽力 Part 1–2 dan 閱讀 Part 1. Soal gambar sering membedakan 哥哥/弟弟 atau 姊姊/妹妹.",
+ "dialogs": [
+  {"place": "看大文的照片", "title_id": "Melihat foto Dawen", "lines": [
+   {"sp": "李美美", "zh": "大文，這是誰？", "py": "Dàwén, zhè shì shéi?", "id": "Dawen, ini siapa?"},
+   {"sp": "王大文", "zh": "這是我爸爸。", "py": "Zhè shì wǒ bàba.", "id": "Ini ayahku."},
+   {"sp": "李美美", "zh": "這是你媽媽嗎？", "py": "Zhè shì nǐ māma ma?", "id": "Ini ibumu?"},
+   {"sp": "王大文", "zh": "是，這是我媽媽。這是我哥哥，那是我姊姊。", "py": "Shì, zhè shì wǒ māma. Zhè shì wǒ gēge, nà shì wǒ jiějie.", "id": "Iya, ini ibuku. Ini kakak laki-lakiku, itu kakak perempuanku."},
+   {"sp": "李美美", "zh": "她是誰？她是你妹妹嗎？", "py": "Tā shì shéi? Tā shì nǐ mèimei ma?", "id": "Dia siapa? Adik perempuanmu?"},
+   {"sp": "王大文", "zh": "是，她是我妹妹，她叫王小文。", "py": "Shì, tā shì wǒ mèimei, tā jiào Wáng Xiǎowén.", "id": "Iya, dia adik perempuanku, namanya Wang Xiaowen."},
+   {"sp": "李美美", "zh": "你的家人是印尼人嗎？", "py": "Nǐ de jiārén shì Yìnní rén ma?", "id": "Keluargamu orang Indonesia?"},
+   {"sp": "王大文", "zh": "是，我們是印尼人。", "py": "Shì, wǒmen shì Yìnní rén.", "id": "Iya, kami orang Indonesia."}
+  ]},
+  {"place": "看美美的照片", "title_id": "Melihat foto Meimei", "lines": [
+   {"sp": "王大文", "zh": "美美，這是你的家人嗎？", "py": "Měiměi, zhè shì nǐ de jiārén ma?", "id": "Meimei, ini keluargamu?"},
+   {"sp": "李美美", "zh": "是。這是我爸爸、我媽媽，這是我弟弟。", "py": "Shì. Zhè shì wǒ bàba, wǒ māma, zhè shì wǒ dìdi.", "id": "Iya. Ini ayahku, ibuku, ini adik laki-lakiku."},
+   {"sp": "王大文", "zh": "你弟弟叫什麼名字？", "py": "Nǐ dìdi jiào shénme míngzi?", "id": "Siapa nama adikmu?"},
+   {"sp": "李美美", "zh": "他叫李小明。", "py": "Tā jiào Lǐ Xiǎomíng.", "id": "Namanya Li Xiaoming."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "這是誰？", "options": ["這是我哥哥。", "這是我的。", "他是印尼人。"], "answer": 0,
+   "why": "誰 menanyakan ORANG: jawab dengan hubungan/nama. B menjawab kepemilikan benda, C menjawab asal negara."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "這是我媽媽。", "options": [{"icon": "👨", "label": "ayah"}, {"icon": "👩", "label": "ibu"}, {"icon": "👦", "label": "adik laki-laki"}], "answer": 1,
+   "why": "媽媽 = ibu. Pengecoh dari kategori yang sama (anggota keluarga)."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "那是你姊姊嗎？"}, {"sp": "女", "zh": "那是我妹妹。"}, {"sp": "男", "zh": "她叫什麼名字？"}, {"sp": "女", "zh": "她叫李美美。"}],
+   "question": "李美美是誰？", "options": ["她的姊姊", "她的妹妹", "她的媽媽"], "answer": 1,
+   "why": "Perempuan itu mengoreksi: 那是我妹妹. 姊姊 hanya ada di pertanyaan si pria."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "我叫王大文。這是我的家人：我爸爸、我媽媽、我哥哥，我姊姊。我們是印尼人。", "question": "誰是大文的家人？",
+   "options": ["他的弟弟", "他的姊姊", "他的妹妹", "李美美"], "answer": 1,
+   "why": "Yang disebut: ayah, ibu, 哥哥 dan 姊姊. 弟弟/妹妹 kategori mirip tapi tidak disebut; 李美美 temannya."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "這是（1）？這是我（2）家人。那是你媽媽（3）？", "options": ["誰", "的", "嗎", "呢"], "answers": [0, 1, 2],
+   "why": "(1) 誰 menanyakan orang. (2) 我的家人 = keluargaku. (3) pertanyaan ya/tidak → 嗎. 呢 tidak cocok (tidak ada topik sebelumnya)."}
+ ],
+ "grammar": [
+  {"tbcl_id": 2, "point": "的 — kepemilikan", "pattern": "Pemilik + 的 + N", "blocks": [["我", "pemilik"], ["的", "的"], ["家人", "N"]],
+   "explain": "的 = '-nya/milik'. Urutannya kebalikan bahasa Indonesia: 我的家人 = keluarga-ku. Untuk anggota keluarga dekat, 的 biasanya DIBUANG: 我爸爸, 你媽媽.",
+   "examples": [{"zh": "你的家人是印尼人嗎？", "id": "Keluargamu orang Indonesia?"}, {"zh": "這是我媽媽。", "id": "Ini ibuku. (的 dibuang)"}],
+   "check": {"q": "Pilih yang benar untuk 'nama adikku':", "options": ["我弟弟的名字", "名字的我弟弟", "我的名字弟弟"], "answer": 0}},
+  {"tbcl_id": 13, "point": "誰 — siapa", "pattern": "S + 是 + 誰？", "blocks": [["這", "S"], ["是", "是"], ["誰", "?"]],
+   "explain": "誰 tetap di posisi jawaban: 這是誰？→ 這是我哥哥。 Tanpa 嗎.",
+   "examples": [{"zh": "她是誰？", "id": "Dia siapa?"}, {"zh": "她是我妹妹。", "id": "Dia adik perempuanku."}],
+   "check": {"q": "Pertanyaan untuk jawaban 那是我姊姊。", "options": ["那是誰？", "那是誰嗎？", "誰是那嗎？"], "answer": 0}}
+ ]
+},
+{
+ "code": "A04",
+ "title_py": "Nǐ jiā yǒu jǐ ge rén?", "title_id": "Keluargamu ada berapa orang?",
+ "scene": "Lanjutan obrolan foto keluarga: kalian menghitung anggota keluarga, lalu bertanya kepada Pak Chen tentang anak-anaknya.",
+ "can_do": ["Menyebut jumlah anggota keluarga (我家有五個人)", "Memakai kata bantu bilangan 個 dan membedakan 兩/二", "Menyatakan tidak punya (我沒有妹妹)"],
+ "exam_link": "Angka + kata bantu bilangan adalah dasar soal 聽力 Part 1 (pilih gambar dengan jumlah yang tepat). Beda 兩 dan 二 sering diuji di 閱讀 Part 4.",
+ "dialogs": [
+  {"place": "在教室", "title_id": "Di kelas", "lines": [
+   {"sp": "李美美", "zh": "大文，你家有幾個人？", "py": "Dàwén, nǐ jiā yǒu jǐ ge rén?", "id": "Dawen, keluargamu ada berapa orang?"},
+   {"sp": "王大文", "zh": "我家有五個人：爸爸、媽媽、哥哥、姊姊，我。", "py": "Wǒ jiā yǒu wǔ ge rén: bàba, māma, gēge, jiějie, wǒ.", "id": "Keluargaku lima orang: ayah, ibu, kakak laki-laki, kakak perempuan, dan aku."},
+   {"sp": "李美美", "zh": "你有妹妹嗎？", "py": "Nǐ yǒu mèimei ma?", "id": "Kamu punya adik perempuan?"},
+   {"sp": "王大文", "zh": "我沒有妹妹。你呢？你家有幾個人？", "py": "Wǒ méiyǒu mèimei. Nǐ ne? Nǐ jiā yǒu jǐ ge rén?", "id": "Aku tidak punya adik perempuan. Kamu? Keluargamu berapa orang?"},
+   {"sp": "李美美", "zh": "我家有四個人。我有一個弟弟。", "py": "Wǒ jiā yǒu sì ge rén. Wǒ yǒu yí ge dìdi.", "id": "Keluargaku empat orang. Aku punya satu adik laki-laki."}
+  ]},
+  {"place": "在辦公室", "title_id": "Di kantor kursus", "lines": [
+   {"sp": "王大文", "zh": "陳先生，您有孩子嗎？", "py": "Chén xiānshēng, nín yǒu háizi ma?", "id": "Pak Chen, Bapak punya anak?"},
+   {"sp": "陳先生", "zh": "有，我有三個孩子，兩個兒子，一個女兒。", "py": "Yǒu, wǒ yǒu sān ge háizi, liǎng ge érzi, yí ge nǚ'ér.", "id": "Ada, saya punya tiga anak: dua putra, satu putri."},
+   {"sp": "王大文", "zh": "您太太是臺灣人嗎？", "py": "Nín tàitai shì Táiwān rén ma?", "id": "Istri Bapak orang Taiwan?"},
+   {"sp": "陳先生", "zh": "是，她是臺灣人。", "py": "Shì, tā shì Táiwān rén.", "id": "Iya, dia orang Taiwan."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我有兩個孩子。", "options": [{"icon": "👶", "label": "1 anak"}, {"icon": "👶👶", "label": "2 anak"}, {"icon": "👶👶👶", "label": "3 anak"}], "answer": 1,
+   "why": "兩個 = dua (buah/orang). Sebelum kata bantu bilangan dipakai 兩, bukan 二."},
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你家有幾個人？", "options": ["我家有四個人。", "我是四。", "我家是印尼人。"], "answer": 0,
+   "why": "幾個人 → jawab dengan angka + 個 + 人. B kehilangan 有/個; C menjawab kebangsaan."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "你有哥哥嗎？"}, {"sp": "女", "zh": "沒有，我有兩個姊姊，一個弟弟。"}],
+   "question": "她有幾個姊姊？", "options": ["一個", "兩個", "三個"], "answer": 1,
+   "why": "兩個姊姊. 一個 adalah jumlah 弟弟 — pengecoh detail yang tertukar."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "陳先生家有六個人：陳先生、陳太太，他們有四個孩子——三個兒子，一個女兒。", "question": "陳先生有幾個女兒？",
+   "options": ["一個", "兩個", "三個", "四個"], "answer": 0,
+   "why": "一個女兒. 三個 = putra, 四個 = semua anak — pengecoh 'benar sebagian'."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "我家有（1）個人。我有兩（2）哥哥，我（3）姊姊。", "options": ["五", "個", "沒有", "二"], "answers": [0, 1, 2],
+   "why": "(1) angka. (2) 兩個 — kata bantu bilangan wajib. (3) 沒有 = tidak punya. 二 tidak dipakai di depan kata bantu bilangan (二個 ✗)."}
+ ],
+ "grammar": [
+  {"tbcl_id": 12, "point": "數 + 量 — angka + kata bantu bilangan", "pattern": "Angka + 個 + N", "blocks": [["兩", "angka"], ["個", "M"], ["孩子", "N"]],
+   "explain": "Di antara angka dan benda harus ada kata bantu bilangan (量詞). 個 yang paling umum. Untuk 'dua' sebelum 量詞 dipakai 兩: 兩個人, bukan 二個人.",
+   "examples": [{"zh": "我有一個弟弟。", "id": "Aku punya satu adik laki-laki."}, {"zh": "我家有五個人。", "id": "Keluargaku lima orang."}],
+   "check": {"q": "'dua anak' =", "options": ["兩個孩子", "二個孩子", "兩孩子"], "answer": 0}},
+  {"tbcl_id": 11, "point": "稱數法 — cara menyebut angka", "pattern": "一…十；十一 = 10+1；二十五 = 2×10+5", "blocks": [["二", "×10"], ["十", "10"], ["五", "+5"]],
+   "explain": "Angka Mandarin disusun seperti hitungan: 十一 (10+1), 二十 (2×10), 二十五 (2×10+5). Saat berhitung/menyebut nomor dipakai 二; di depan 量詞 dipakai 兩.",
+   "examples": [{"zh": "十二", "id": "12"}, {"zh": "三十八", "id": "38"}],
+   "check": {"q": "45 =", "options": ["四十五", "五十四", "四五十"], "answer": 0}}
+ ]
+},
+{
+ "code": "A05",
+ "title_py": "Shēngrì kuàilè! Nǐ jīnnián jǐ suì?", "title_id": "Selamat ulang tahun! Tahun ini umurmu berapa?",
+ "scene": "Pesta ulang tahun kecil Dawen di kelas. Teman-teman memberi ucapan, menanyakan umur, tanggal lahir, dan shio keluarga.",
+ "can_do": ["Mengucapkan selamat ulang tahun dan menanyakan umur (你今年幾歲？)", "Menyebut tanggal lahir dengan urutan bulan → tanggal", "Menanyakan umur orang yang lebih tua dengan 多大"],
+ "exam_link": "Tanggal & umur muncul di 聽力 Part 1 (kalender/angka) dan 閱讀 Part 1. Kesalahan urutan tanggal (五月三號 vs 三月五號) adalah pengecoh favorit.",
+ "dialogs": [
+  {"place": "在教室，大文的生日", "title_id": "Di kelas, ulang tahun Dawen", "lines": [
+   {"sp": "李美美", "zh": "大文，生日快樂！", "py": "Dàwén, shēngrì kuàilè!", "id": "Dawen, selamat ulang tahun!"},
+   {"sp": "王大文", "zh": "謝謝！", "py": "Xièxie!", "id": "Terima kasih!"},
+   {"sp": "李美美", "zh": "你今年幾歲？", "py": "Nǐ jīnnián jǐ suì?", "id": "Tahun ini umurmu berapa?"},
+   {"sp": "王大文", "zh": "我今年二十歲。你呢？你多大？", "py": "Wǒ jīnnián èrshí suì. Nǐ ne? Nǐ duō dà?", "id": "Tahun ini dua puluh. Kamu? Umurmu berapa?"},
+   {"sp": "李美美", "zh": "我二十二歲。", "py": "Wǒ èrshí'èr suì.", "id": "Aku dua puluh dua tahun."},
+   {"sp": "王大文", "zh": "你的生日是幾月幾號？", "py": "Nǐ de shēngrì shì jǐ yuè jǐ hào?", "id": "Ulang tahunmu tanggal berapa bulan apa?"},
+   {"sp": "李美美", "zh": "我的生日是十一月九號。", "py": "Wǒ de shēngrì shì shíyī yuè jiǔ hào.", "id": "Ulang tahunku tanggal 9 November."}
+  ]},
+  {"place": "看美美家人的照片", "title_id": "Melihat foto keluarga Meimei", "lines": [
+   {"sp": "王大文", "zh": "美美，你爸爸今年多大？", "py": "Měiměi, nǐ bàba jīnnián duō dà?", "id": "Meimei, ayahmu tahun ini umurnya berapa?"},
+   {"sp": "李美美", "zh": "他五十歲。我媽媽四十八歲。", "py": "Tā wǔshí suì. Wǒ māma sìshíbā suì.", "id": "Dia lima puluh. Ibuku empat puluh delapan."},
+   {"sp": "王大文", "zh": "你爸爸的生日是幾月幾號？", "py": "Nǐ bàba de shēngrì shì jǐ yuè jǐ hào?", "id": "Ulang tahun ayahmu tanggal berapa?"},
+   {"sp": "李美美", "zh": "一月一號。明年一月一號，他五十一歲。", "py": "Yī yuè yī hào. Míngnián yī yuè yī hào, tā wǔshíyī suì.", "id": "1 Januari. Tanggal 1 Januari tahun depan, dia 51 tahun."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你今年幾歲？", "options": ["我今年十九歲。", "我的生日是九月。", "我十九年。"], "answer": 0,
+   "why": "幾歲 → angka + 歲. B menjawab bulan lahir; C memakai 年 (tahun kalender) — kesalahan khas penutur bahasa Indonesia."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih kalender yang cocok.",
+   "audio": "我的生日是五月三號。", "options": [{"icon": "📅", "label": "3 Mei"}, {"icon": "📅", "label": "5 Maret"}, {"icon": "📅", "label": "13 Mei"}], "answer": 0,
+   "why": "Urutan Mandarin: bulan dulu (五月 = Mei), lalu tanggal (三號 = 3). B membalik urutan; C salah dengar angka."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "你妹妹今年幾歲？"}, {"sp": "女", "zh": "她今年八歲，明年九歲。"}],
+   "question": "她妹妹今年幾歲？", "options": ["八歲", "九歲", "十八歲"], "answer": 0,
+   "why": "今年八歲; 九歲 itu 明年 (tahun depan). Perhatikan kata waktu."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "我家有三個人。我爸爸是雞年的，我媽媽是牛年的，我是豬年的。", "question": "誰是牛年的？",
+   "options": ["他爸爸", "他媽媽", "他", "他哥哥"], "answer": 1,
+   "why": "媽媽是牛年的. Ayah = ayam, dia sendiri = babi. 他哥哥 tidak ada (keluarganya hanya 3 orang)."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "十月一號是我的（1），我今年二十（2）。美美說：「生日（3）！」", "options": ["生日", "歲", "快樂", "年"], "answers": [0, 1, 2],
+   "why": "(1) 生日 = ulang tahun. (2) umur memakai 歲. (3) 生日快樂. 年 tidak dipakai untuk umur."}
+ ],
+ "grammar": [
+  {"tbcl_id": 10, "point": "時間表達 — menyebut tanggal & waktu", "pattern": "年 → 月 → 號/日 (besar ke kecil)", "blocks": [["十一月", "月"], ["九號", "號"]],
+   "explain": "Urutan waktu dari satuan besar ke kecil: 年, lalu 月, lalu 號 (lisan) / 日 (tulis). Bertanya: 幾月幾號？ Umur: 幾歲 untuk anak & teman sebaya, 多大 untuk dewasa.",
+   "examples": [{"zh": "我的生日是十一月九號。", "id": "Ulang tahunku 9 November."}, {"zh": "你今年幾歲？", "id": "Tahun ini umurmu berapa?"}],
+   "check": {"q": "'12 Agustus' =", "options": ["八月十二號", "十二號八月", "十二月八號"], "answer": 0}}
+ ]
+},
+{
+ "code": "A06",
+ "title_py": "Wǒ xǐhuān kàn diànyǐng.", "title_id": "Aku suka menonton film.",
+ "scene": "Setelah kelas, kamu dan Meimei saling bercerita tentang hobi dan kegiatan akhir pekan.",
+ "can_do": ["Menyebut hal yang saya suka dan tidak suka (我喜歡…／我不喜歡…)", "Menambahkan 'juga' dengan 也", "Menceritakan kegiatan akhir pekan"],
+ "exam_link": "Hobi termasuk tema yang SERING keluar di 聽力 Part 1–2. Negasi 不 sering membalik jawaban di 聽力 Part 3 — dengarkan sampai akhir kalimat.",
+ "dialogs": [
+  {"place": "下課以後", "title_id": "Sepulang kelas", "lines": [
+   {"sp": "李美美", "zh": "大文，你喜歡運動嗎？", "py": "Dàwén, nǐ xǐhuān yùndòng ma?", "id": "Dawen, kamu suka olahraga?"},
+   {"sp": "王大文", "zh": "喜歡！我喜歡玩球。你呢？", "py": "Xǐhuān! Wǒ xǐhuān wán qiú. Nǐ ne?", "id": "Suka! Aku suka main bola. Kamu?"},
+   {"sp": "李美美", "zh": "我不喜歡運動。我喜歡看電影，也喜歡聽歌。", "py": "Wǒ bù xǐhuān yùndòng. Wǒ xǐhuān kàn diànyǐng, yě xǐhuān tīng gē.", "id": "Aku tidak suka olahraga. Aku suka nonton film, juga suka dengar lagu."},
+   {"sp": "王大文", "zh": "你喜歡唱歌嗎？", "py": "Nǐ xǐhuān chàng gē ma?", "id": "Kamu suka bernyanyi?"},
+   {"sp": "李美美", "zh": "我愛唱歌！我也喜歡跳舞。", "py": "Wǒ ài chàng gē! Wǒ yě xǐhuān tiàowǔ.", "id": "Aku suka sekali bernyanyi! Aku juga suka menari."},
+   {"sp": "王大文", "zh": "我不唱歌，我不跳舞。我喜歡畫畫。", "py": "Wǒ bú chàng gē, wǒ bú tiàowǔ. Wǒ xǐhuān huà huà.", "id": "Aku tidak menyanyi, tidak menari. Aku suka menggambar."}
+  ]},
+  {"place": "說週末", "title_id": "Membicarakan akhir pekan", "lines": [
+   {"sp": "王大文", "zh": "美美，週末你看電影嗎？", "py": "Měiměi, zhōumò nǐ kàn diànyǐng ma?", "id": "Meimei, akhir pekan kamu nonton film?"},
+   {"sp": "李美美", "zh": "看！我週末都看電影。你呢？", "py": "Kàn! Wǒ zhōumò dōu kàn diànyǐng. Nǐ ne?", "id": "Iya! Tiap akhir pekan aku nonton film. Kamu?"},
+   {"sp": "王大文", "zh": "我週末都運動。", "py": "Wǒ zhōumò dōu yùndòng.", "id": "Tiap akhir pekan aku olahraga."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他喜歡唱歌。", "options": [{"icon": "🎤", "label": "bernyanyi"}, {"icon": "🎬", "label": "menonton film"}, {"icon": "⚽", "label": "main bola"}], "answer": 0,
+   "why": "唱歌 = bernyanyi. Semua pilihan adalah hobi — pengecoh kategori mirip."},
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你喜歡看電影嗎？", "options": ["喜歡，我週末都看電影。", "我不喜歡唱歌。", "電影是什麼？"], "answer": 0,
+   "why": "Jawab dengan 喜歡／不喜歡 tentang film. B tentang hal lain; C tidak menjawab."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "妳喜歡運動嗎？"}, {"sp": "女", "zh": "我不喜歡運動，我喜歡畫畫。"}, {"sp": "男", "zh": "妳也喜歡唱歌嗎？"}, {"sp": "女", "zh": "不喜歡。"}],
+   "question": "她喜歡什麼？", "options": ["運動", "畫畫", "唱歌"], "answer": 1,
+   "why": "Dua hal lain dijawab dengan 不喜歡 — jangan hanya menangkap kata bendanya, perhatikan 不."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "我叫安妮。我愛聽歌，也愛跳舞。我不喜歡看電影。週末我都跳舞。", "question": "安妮不喜歡什麼？",
+   "options": ["聽歌", "跳舞", "看電影", "唱歌"], "answer": 2,
+   "why": "我不喜歡看電影. 唱歌 tidak disebut sama sekali — pengecoh 'terkait tapi tidak berdasar teks'."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "我（1）運動。我不喜歡唱歌，（2）不喜歡跳舞。我喜歡（3）歌。", "options": ["喜歡", "也", "聽", "電影"], "answers": [0, 1, 2],
+   "why": "(1) 喜歡運動. (2) 也 = juga (也不 = juga tidak). (3) 聽歌 = mendengar lagu. 電影 tidak cocok di titik mana pun."}
+ ],
+ "grammar": [
+  {"tbcl_id": 4, "point": "不 — tidak", "pattern": "S + 不 + V/Vs", "blocks": [["我", "S"], ["不", "不"], ["喜歡", "V"], ["運動", "O"]],
+   "explain": "不 diletakkan tepat SEBELUM kata kerja/sifat. Nadanya berubah jadi bú di depan nada 4: 不是 (bú shì), 不跳舞 (bú tiàowǔ). Bandingkan urutan dengan 也: 我也不喜歡 (juga tidak suka).",
+   "examples": [{"zh": "我不喜歡運動。", "id": "Aku tidak suka olahraga."}, {"zh": "我不是臺灣人。", "id": "Aku bukan orang Taiwan."}],
+   "check": {"q": "'Aku juga tidak suka menari' =", "options": ["我也不喜歡跳舞。", "我不也喜歡跳舞。", "我喜歡不跳舞也。"], "answer": 0}}
+ ]
+},
+{
+ "code": "A07",
+ "title_py": "Tā hěn piàoliang!", "title_id": "Dia cantik sekali!",
+ "scene": "Dawen dan Meimei melihat foto keluarga masing-masing dan saling mendeskripsikan penampilan orang: tinggi, pendek, kurus, dan mirip siapa.",
+ "can_do": ["Mendeskripsikan penampilan dengan 很 + kata sifat (她很高)", "Bertanya dengan pola A-不-A (高不高？)", "Mengatakan seseorang mirip siapa (我像我爸爸)"],
+ "exam_link": "Deskripsi fisik termasuk tema SERING di 聽力 Part 1 (pilih orang di gambar). Kesalahan 是 + kata sifat (她是高 ✗) sering dipakai sebagai pengecoh.",
+ "dialogs": [
+  {"place": "看美美的照片", "title_id": "Melihat foto Meimei", "lines": [
+   {"sp": "王大文", "zh": "美美，這是誰？她很漂亮！", "py": "Měiměi, zhè shì shéi? Tā hěn piàoliang!", "id": "Meimei, ini siapa? Dia cantik!"},
+   {"sp": "李美美", "zh": "她是我姊姊。", "py": "Tā shì wǒ jiějie.", "id": "Dia kakak perempuanku."},
+   {"sp": "王大文", "zh": "你姊姊高不高？", "py": "Nǐ jiějie gāo bù gāo?", "id": "Kakakmu tinggi atau tidak?"},
+   {"sp": "李美美", "zh": "她很高。我姊姊像我媽媽。", "py": "Tā hěn gāo. Wǒ jiějie xiàng wǒ māma.", "id": "Dia tinggi. Kakakku mirip ibuku."},
+   {"sp": "王大文", "zh": "你像不像你媽媽？", "py": "Nǐ xiàng bú xiàng nǐ māma?", "id": "Kamu mirip ibumu atau tidak?"},
+   {"sp": "李美美", "zh": "不像，我像我爸爸。我不高，我很矮。", "py": "Bú xiàng, wǒ xiàng wǒ bàba. Wǒ bù gāo, wǒ hěn ǎi.", "id": "Tidak, aku mirip ayahku. Aku tidak tinggi, aku pendek."}
+  ]},
+  {"place": "看大文的照片", "title_id": "Melihat foto Dawen", "lines": [
+   {"sp": "李美美", "zh": "這個人是你哥哥嗎？他真高！", "py": "Zhège rén shì nǐ gēge ma? Tā zhēn gāo!", "id": "Orang ini kakakmu? Tinggi sekali!"},
+   {"sp": "王大文", "zh": "是，他很高，也很瘦。", "py": "Shì, tā hěn gāo, yě hěn shòu.", "id": "Iya, dia tinggi, juga kurus."},
+   {"sp": "李美美", "zh": "你們一樣高嗎？", "py": "Nǐmen yíyàng gāo ma?", "id": "Kalian sama tinggi?"},
+   {"sp": "王大文", "zh": "不一樣。我哥哥很高，我不高。我很胖！", "py": "Bù yíyàng. Wǒ gēge hěn gāo, wǒ bù gāo. Wǒ hěn pàng!", "id": "Tidak sama. Kakakku tinggi, aku tidak. Aku gemuk!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你姊姊高不高？", "options": ["她很高。", "她是高。", "她高嗎？"], "answer": 0,
+   "why": "Kata sifat memakai 很, tidak memakai 是 (她是高 ✗). C malah balik bertanya."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "妳像妳爸爸嗎？"}, {"sp": "女", "zh": "不像，我像我媽媽。我媽媽很漂亮！"}],
+   "question": "她像誰？", "options": ["她爸爸", "她媽媽", "她姊姊"], "answer": 1,
+   "why": "不像 (爸爸)，我像我媽媽. Kata pertama yang didengar (爸爸) adalah jebakan."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "我哥哥很高，也很胖。我弟弟很矮，很瘦。我不高也不矮。", "question": "誰很矮？",
+   "options": ["他哥哥", "他弟弟", "他", "他姊姊"], "answer": 1,
+   "why": "弟弟很矮. Penulis sendiri 不高也不矮; 姊姊 tidak disebut."},
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "他是不是你哥哥？", "options": ["是，他是我哥哥。", "他是高。", "不是嗎？"], "answer": 0,
+   "why": "是不是 dijawab 是／不是. B salah struktur; C bukan jawaban."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "我姊姊（1）漂亮，她（2）我媽媽。她很高，我（3）高。", "options": ["很", "像", "不", "是"], "answers": [0, 1, 2],
+   "why": "(1) 很 + kata sifat. (2) 像 = mirip. (3) 不高 = tidak tinggi. 是 tidak dipakai di depan kata sifat."}
+ ],
+ "grammar": [
+  {"tbcl_id": 15, "point": "A-not-A — pertanyaan 'ya atau tidak'", "pattern": "S + V/Vs + 不 + V/Vs？", "blocks": [["你", "S"], ["高", "Vs"], ["不", "不"], ["高", "Vs"]],
+   "explain": "Ulang kata kerja/sifatnya dengan 不 di tengah: 高不高, 是不是, 像不像. Ini sama artinya dengan …嗎？, jadi JANGAN ditambah 嗎 lagi (你高不高嗎 ✗). Kata sifat dalam pernyataan memakai 很, bukan 是.",
+   "examples": [{"zh": "你姊姊高不高？", "id": "Kakakmu tinggi tidak?"}, {"zh": "他是不是你哥哥？", "id": "Dia kakakmu bukan?"}],
+   "check": {"q": "Pilih yang benar:", "options": ["你像不像你媽媽？", "你像不像你媽媽嗎？", "你不像像你媽媽？"], "answer": 0}}
+ ]
+},
+{
+ "code": "A08",
+ "title_py": "Nǐ zhù zài nǎlǐ?", "title_id": "Kamu tinggal di mana?",
+ "scene": "Meimei mampir ke tempat tinggal Dawen. Sebelumnya kalian bertukar informasi tempat tinggal, lantai, dan apa yang ada di sekitar rumah.",
+ "can_do": ["Menanyakan dan menyebut tempat tinggal (你住在哪裡？)", "Menyatakan seseorang ada/tidak ada di suatu tempat (他們在公園／不在家)", "Menyebut lantai tempat tinggal (我住五樓)"],
+ "exam_link": "Lokasi rumah & tempat umum termasuk tema paling SERING di 聽力 Part 1 dan 閱讀 Part 1–2. Beda 在 (berada di) dan 有 (ada) sering diuji.",
+ "dialogs": [
+  {"place": "在教室", "title_id": "Di kelas", "lines": [
+   {"sp": "李美美", "zh": "大文，你住在哪裡？", "py": "Dàwén, nǐ zhù zài nǎlǐ?", "id": "Dawen, kamu tinggal di mana?"},
+   {"sp": "王大文", "zh": "我住在台北。你家在哪裡？", "py": "Wǒ zhù zài Táiběi. Nǐ jiā zài nǎlǐ?", "id": "Aku tinggal di Taipei. Rumahmu di mana?"},
+   {"sp": "李美美", "zh": "我家在台中，我住在台北。", "py": "Wǒ jiā zài Táizhōng, wǒ zhù zài Táiběi.", "id": "Rumah keluargaku di Taichung, aku tinggal di Taipei."},
+   {"sp": "王大文", "zh": "你住幾樓？", "py": "Nǐ zhù jǐ lóu?", "id": "Kamu tinggal di lantai berapa?"},
+   {"sp": "李美美", "zh": "我住五樓。你呢？", "py": "Wǒ zhù wǔ lóu. Nǐ ne?", "id": "Lantai lima. Kamu?"},
+   {"sp": "王大文", "zh": "我住八樓。我的房間很大。", "py": "Wǒ zhù bā lóu. Wǒ de fángjiān hěn dà.", "id": "Lantai delapan. Kamarku besar."}
+  ]},
+  {"place": "在大文家門口", "title_id": "Di depan pintu rumah Dawen", "lines": [
+   {"sp": "李美美", "zh": "大文！我在門口。", "py": "Dàwén! Wǒ zài ménkǒu.", "id": "Dawen! Aku di depan pintu."},
+   {"sp": "王大文", "zh": "好，我開門。", "py": "Hǎo, wǒ kāi mén.", "id": "Oke, aku buka pintunya."},
+   {"sp": "李美美", "zh": "你的房子很漂亮！附近有公園嗎？", "py": "Nǐ de fángzi hěn piàoliang! Fùjìn yǒu gōngyuán ma?", "id": "Rumahmu bagus! Di dekat sini ada taman?"},
+   {"sp": "王大文", "zh": "有，附近有一個公園。", "py": "Yǒu, fùjìn yǒu yí ge gōngyuán.", "id": "Ada, di dekat sini ada sebuah taman."},
+   {"sp": "李美美", "zh": "你爸爸媽媽在家嗎？", "py": "Nǐ bàba māma zài jiā ma?", "id": "Ayah dan ibumu ada di rumah?"},
+   {"sp": "王大文", "zh": "不在，他們在公園。", "py": "Bú zài, tāmen zài gōngyuán.", "id": "Tidak ada, mereka di taman."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你家在哪裡？", "options": ["我家在台北。", "我住八樓。", "我在家。"], "answer": 0,
+   "why": "哪裡 → sebut tempatnya. B menjawab lantai (pertanyaan 幾樓); C menjawab 'aku sedang di rumah'."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "妳住幾樓？"}, {"sp": "女", "zh": "我住五樓，我爸爸媽媽住三樓。"}],
+   "question": "她住幾樓？", "options": ["三樓", "五樓", "八樓"], "answer": 1,
+   "why": "我住五樓. 三樓 adalah lantai orang tuanya — detail yang tertukar."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他們在公園。", "options": [{"icon": "🏠", "label": "rumah"}, {"icon": "🌳", "label": "taman"}, {"icon": "🏢", "label": "gedung bertingkat"}], "answer": 1,
+   "why": "公園 = taman. Semua pilihan adalah tempat — pengecoh kategori mirip."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "我叫安妮，我是印尼人。我住在台北，我的房子在公園附近。我住七樓，我的房間很大。", "question": "安妮住在哪裡？",
+   "options": ["台北", "台中", "印尼", "公園"], "answer": 0,
+   "why": "我住在台北. Rumahnya DEKAT taman, bukan di taman; Indonesia adalah asalnya."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "我家（1）台中，我（2）在台北。你住（3）樓？", "options": ["在", "住", "幾", "哪"], "answers": [0, 1, 2],
+   "why": "(1) 在 = berada di. (2) 住在 = tinggal di. (3) 幾樓 = lantai berapa (angka). 哪 tidak dipakai untuk menanyakan angka."}
+ ],
+ "grammar": [
+  {"tbcl_id": 8, "point": "在1 — berada di", "pattern": "S + (不)在 + tempat", "blocks": [["我", "S"], ["在", "在"], ["門口", "tempat"]],
+   "explain": "在 di sini adalah kata kerja: 'berada di'. Negatifnya 不在. Dengan 住 menjadi 住在 + tempat = tinggal di.",
+   "examples": [{"zh": "他們在公園。", "id": "Mereka di taman."}, {"zh": "我爸爸不在家。", "id": "Ayahku tidak di rumah."}],
+   "check": {"q": "'Ibuku tidak di rumah' =", "options": ["我媽媽不在家。", "我媽媽在不家。", "我媽媽不是家。"], "answer": 0}},
+  {"tbcl_id": 14, "point": "哪裡／哪兒 — di mana", "pattern": "S + 在/住在 + 哪裡？", "blocks": [["你", "S"], ["住在", "V"], ["哪裡", "?"]],
+   "explain": "哪裡 (Taiwan) = 哪兒 (Tiongkok utara) = 'di mana'. Diletakkan di posisi tempat jawabannya, tanpa 嗎.",
+   "examples": [{"zh": "你家在哪裡？", "id": "Rumahmu di mana?"}, {"zh": "我家在台中。", "id": "Rumahku di Taichung."}],
+   "check": {"q": "Pertanyaan untuk 我住在台北。", "options": ["你住在哪裡？", "你住在哪裡嗎？", "哪裡你住？"], "answer": 0}}
+ ]
+},
+{
+ "code": "A09",
+ "title_py": "Zhuōzi shàng yǒu shénme?", "title_id": "Di atas meja ada apa?",
+ "scene": "Meimei masuk ke kamar Dawen dan bertanya letak barang-barang; kemudian Dawen mencari adik perempuannya di rumah.",
+ "can_do": ["Menyebut letak benda dengan kata posisi (桌子上, 床前面, 門旁邊)", "Membedakan 'X ada di Y' (在) dan 'di Y ada X' (有)", "Menanyakan barang/orang ada di mana"],
+ "exam_link": "Letak benda di ruangan adalah soal gambar paling SERING di 聽力 Part 1 dan 閱讀 Part 1–3 (上/下/旁邊/前面).",
+ "dialogs": [
+  {"place": "在大文的房間", "title_id": "Di kamar Dawen", "lines": [
+   {"sp": "李美美", "zh": "大文，你的房間裡有什麼？", "py": "Dàwén, nǐ de fángjiān lǐ yǒu shénme?", "id": "Dawen, di kamarmu ada apa saja?"},
+   {"sp": "王大文", "zh": "有床、桌子、椅子，有一個電視。", "py": "Yǒu chuáng, zhuōzi, yǐzi, yǒu yí ge diànshì.", "id": "Ada tempat tidur, meja, kursi, ada sebuah TV."},
+   {"sp": "李美美", "zh": "電視在哪裡？", "py": "Diànshì zài nǎlǐ?", "id": "TV-nya di mana?"},
+   {"sp": "王大文", "zh": "電視在桌子上。", "py": "Diànshì zài zhuōzi shàng.", "id": "TV-nya di atas meja."},
+   {"sp": "李美美", "zh": "椅子呢？", "py": "Yǐzi ne?", "id": "Kursinya?"},
+   {"sp": "王大文", "zh": "椅子在桌子前面。床在門旁邊。", "py": "Yǐzi zài zhuōzi qiánmiàn. Chuáng zài mén pángbiān.", "id": "Kursi di depan meja. Tempat tidur di samping pintu."}
+  ]},
+  {"place": "在大文家", "title_id": "Di rumah Dawen", "lines": [
+   {"sp": "王大文", "zh": "媽媽，小文在哪裡？", "py": "Māma, Xiǎowén zài nǎlǐ?", "id": "Ma, Xiaowen di mana?"},
+   {"sp": "媽媽", "zh": "她在房間裡，在床上。", "py": "Tā zài fángjiān lǐ, zài chuáng shàng.", "id": "Dia di kamar, di atas tempat tidur."},
+   {"sp": "王大文", "zh": "她看電視嗎？", "py": "Tā kàn diànshì ma?", "id": "Dia sedang nonton TV?"},
+   {"sp": "媽媽", "zh": "是，電視在床前面。", "py": "Shì, diànshì zài chuáng qiánmiàn.", "id": "Iya, TV-nya di depan tempat tidur."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "電視在桌子上。", "options": [{"icon": "📺⬆", "label": "TV di atas meja"}, {"icon": "📺⬇", "label": "TV di bawah meja"}, {"icon": "📺🚪", "label": "TV di samping pintu"}], "answer": 0,
+   "why": "桌子上 = di atas meja. 上/下 sering dipasangkan sebagai pengecoh."},
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "椅子在哪裡？", "options": ["椅子在床旁邊。", "椅子上有電視。", "我有椅子。"], "answer": 0,
+   "why": "X 在 哪裡 → X 在 + tempat. B menjawab 'di atas kursi ada apa' (pola 有); C tidak menyebut letak."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "妳的房間裡有電視嗎？"}, {"sp": "女", "zh": "有，電視在床前面。"}, {"sp": "男", "zh": "桌子呢？"}, {"sp": "女", "zh": "桌子在門旁邊。"}],
+   "question": "桌子在哪裡？", "options": ["床前面", "門旁邊", "電視上"], "answer": 1,
+   "why": "桌子在門旁邊. 床前面 adalah letak TV."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "我的房間不大。門旁邊是床，床前面有電視。桌子在床旁邊，椅子在桌子下。", "question": "電視在哪裡？",
+   "options": ["門旁邊", "床前面", "桌子下", "椅子上"], "answer": 1,
+   "why": "床前面有電視. Pilihan lain adalah letak benda lain di teks yang sama (tertukar)."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "我的房間（1）有一個電視。電視（2）桌子上，椅子在桌子（3）。", "options": ["裡", "在", "前面", "有"], "answers": [0, 1, 2],
+   "why": "(1) 房間裡 = di dalam kamar. (2) benda + 在 + tempat. (3) kata posisi di belakang benda patokan. 有 salah di (2) karena subjeknya benda, bukan tempat."}
+ ],
+ "grammar": [
+  {"tbcl_id": 9, "point": "地點表達 — menyatakan letak", "pattern": "Benda + 在 + patokan + 上/下/裡/前面/旁邊", "blocks": [["電視", "benda"], ["在", "在"], ["桌子", "patokan"], ["上", "posisi"]],
+   "explain": "Kata posisi diletakkan SESUDAH benda patokan (kebalikan bahasa Indonesia: 'di atas meja' = 桌子上). Dua pola: 電視在桌子上 (TV-nya ada di atas meja) dan 桌子上有電視 (di atas meja ada TV) — pola 有 dimulai dengan tempat.",
+   "examples": [{"zh": "椅子在桌子前面。", "id": "Kursi di depan meja."}, {"zh": "房間裡有一個電視。", "id": "Di dalam kamar ada sebuah TV."}],
+   "check": {"q": "'Di samping pintu ada tempat tidur' =", "options": ["門旁邊有床。", "旁邊門有床。", "床有門旁邊。"], "answer": 0}}
+ ]
+}
+]}

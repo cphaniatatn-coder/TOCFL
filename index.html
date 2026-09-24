@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TOCFL 準備課程</title>
+  <title>TOCFL Band A</title>
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div id="app">
 
     <header class="app-header">
-      <a class="logo" onclick="App.currentVolume ? App.renderDashboard() : App.renderVolumeSelector()">
+      <a class="logo" onclick="App.currentVolume ? App.renderDashboard() : App.renderVolumes()">
         <div class="logo-icon">華</div>
-        <span>TOCFL 準備課程</span>
+        <span>TOCFL Band A</span>
       </a>
       <div class="header-right">
         <span id="header-progress"></span>
@@ -27,9 +28,6 @@
   </div>
 
   <script src="js/app.js"></script>
-  <script src="js/flashcard.js"></script>
-  <script src="js/grammar.js"></script>
-  <script src="js/reading.js"></script>
-  <script src="js/quiz.js"></script>
+  <script src="js/modul.js"></script>
 </body>
 </html>

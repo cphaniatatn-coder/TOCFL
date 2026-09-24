@@ -1,0 +1,335 @@
+{
+ "title": "您好！我叫王大文。",
+ "title_py": "Nín hǎo! Wǒ jiào Wáng Dàwén.",
+ "title_id": "Halo! Nama saya Wang Dawen.",
+ "scene": "Hari pertama kursus bahasa Mandarin di Taipei. Kamu bertemu teman sekelas dan petugas kantor kursus, lalu saling menyapa dan menyebutkan nama.",
+ "can_do": [
+  "Menyapa sesuai waktu: 早安 / 晚安 / 再見",
+  "Menyebut marga dan nama sendiri (我姓…，我叫…)",
+  "Menanyakan nama orang lain dengan sopan (您貴姓？你叫什麼名字？)"
+ ],
+ "exam_link": "Di TOCFL Band A, sapaan & perkenalan muncul di 聽力 Part 2 (tanya-jawab satu putaran) dan 閱讀 Part 1–2.",
+ "dialogs": [
+  {
+   "place": "早上，在教室",
+   "title_id": "Pagi hari, di kelas",
+   "lines": [
+    {
+     "sp": "王大文",
+     "zh": "早安！",
+     "py": "Zǎo'ān!",
+     "id": "Selamat pagi!"
+    },
+    {
+     "sp": "李美美",
+     "zh": "早安！",
+     "py": "Zǎo'ān!",
+     "id": "Selamat pagi!"
+    },
+    {
+     "sp": "王大文",
+     "zh": "你好！我姓王，我叫王大文。你叫什麼名字？",
+     "py": "Nǐ hǎo! Wǒ xìng Wáng, wǒ jiào Wáng Dàwén. Nǐ jiào shénme míngzi?",
+     "id": "Halo! Marga saya Wang, nama saya Wang Dawen. Siapa namamu?"
+    },
+    {
+     "sp": "李美美",
+     "zh": "我姓李，我是李美美。",
+     "py": "Wǒ xìng Lǐ, wǒ shì Lǐ Měiměi.",
+     "id": "Marga saya Li, saya Li Meimei."
+    },
+    {
+     "sp": "王大文",
+     "zh": "美美，你好！",
+     "py": "Měiměi, nǐ hǎo!",
+     "id": "Halo, Meimei!"
+    }
+   ]
+  },
+  {
+   "place": "在辦公室",
+   "title_id": "Di kantor kursus",
+   "lines": [
+    {
+     "sp": "王大文",
+     "zh": "先生，您好！您貴姓？",
+     "py": "Xiānshēng, nín hǎo! Nín guìxìng?",
+     "id": "Halo, Pak! Boleh tahu marga Bapak?"
+    },
+    {
+     "sp": "陳先生",
+     "zh": "我姓陳。你叫什麼名字？",
+     "py": "Wǒ xìng Chén. Nǐ jiào shénme míngzi?",
+     "id": "Marga saya Chen. Siapa namamu?"
+    },
+    {
+     "sp": "王大文",
+     "zh": "我叫王大文。",
+     "py": "Wǒ jiào Wáng Dàwén.",
+     "id": "Nama saya Wang Dawen."
+    },
+    {
+     "sp": "陳先生",
+     "zh": "好，謝謝。王大文，再見！",
+     "py": "Hǎo, xièxie. Wáng Dàwén, zàijiàn!",
+     "id": "Baik, terima kasih. Sampai jumpa, Wang Dawen!"
+    },
+    {
+     "sp": "王大文",
+     "zh": "謝謝您！陳先生，再見！",
+     "py": "Xièxie nín! Chén xiānshēng, zàijiàn!",
+     "id": "Terima kasih, Pak Chen! Sampai jumpa!"
+    }
+   ]
+  }
+ ],
+ "tasks": [
+  {
+   "type": "listen_reply",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
+   "audio": "您貴姓？",
+   "options": [
+    "我姓王。",
+    "我叫名字。",
+    "謝謝。"
+   ],
+   "answer": 0,
+   "why": "貴姓 menanyakan MARGA, jadi dijawab 我姓…。 B tidak bermakna (名字 bukan nama orang). C tidak menjawab pertanyaan."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "晚安！",
+   "options": [
+    {
+     "icon": "🌅",
+     "label": "pagi"
+    },
+    {
+     "icon": "🌙",
+     "label": "malam"
+    },
+    {
+     "icon": "👋",
+     "label": "berpisah siang hari"
+    }
+   ],
+   "answer": 1,
+   "why": "晚安 dipakai malam hari. Pengecoh: 早安 (pagi) dan 再見 (berpisah) — satu kategori sapaan."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你好！我叫王大文。你叫什麼名字？"
+    },
+    {
+     "sp": "女",
+     "zh": "我姓林，我叫林美美。"
+    }
+   ],
+   "question": "林小姐叫什麼名字？",
+   "options": [
+    "王大文",
+    "林美美",
+    "李美美"
+   ],
+   "answer": 1,
+   "why": "Perempuan itu berkata 我姓林，我叫林美美。 C mirip bunyinya (美美) tapi marganya salah."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🌅🙋",
+    "label": "pagi hari, dua orang bertemu"
+   },
+   "options": [
+    "晚安！",
+    "早安！",
+    "再見！"
+   ],
+   "answer": 1,
+   "why": "Pagi hari dan bertemu → 早安。 晚安 untuk malam; 再見 untuk berpisah."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "早安！我（1）王，我（2）王大文。你叫（3）名字？",
+   "options": [
+    "姓",
+    "叫",
+    "什麼",
+    "謝謝"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "why": "我姓 + marga；我叫 + nama lengkap；叫什麼名字 = siapa namamu. 謝謝 tidak cocok di titik mana pun (opsi berlebih, pola TOCFL)."
+  }
+ ],
+ "grammar": [
+  {
+   "tbcl_id": 1,
+   "point": "繫動詞「是」",
+   "pattern": "S + 是 + N",
+   "blocks": [
+    [
+     "我",
+     "S"
+    ],
+    [
+     "是",
+     "是"
+    ],
+    [
+     "李美美",
+     "N"
+    ]
+   ],
+   "explain": "是 menghubungkan subjek dengan identitasnya (= 'adalah'). Tidak dipakai untuk kata sifat: bukan *我是好, melainkan 我很好 (nanti di A07).",
+   "examples": [
+    {
+     "zh": "我是王大文。",
+     "id": "Saya Wang Dawen."
+    },
+    {
+     "zh": "您是陳先生。",
+     "id": "Anda Pak Chen."
+    }
+   ],
+   "check": {
+    "q": "Susunan yang benar:",
+    "options": [
+     "我是李美美。",
+     "是我李美美。",
+     "我李美美是。"
+    ],
+    "answer": 0
+   }
+  },
+  {
+   "tbcl_id": 6,
+   "point": "什麼",
+   "pattern": "S + V + 什麼 + (N)？",
+   "blocks": [
+    [
+     "你",
+     "S"
+    ],
+    [
+     "叫",
+     "V"
+    ],
+    [
+     "什麼",
+     "?"
+    ],
+    [
+     "名字",
+     "N"
+    ]
+   ],
+   "explain": "Kata tanya tetap di posisi jawabannya — tidak dipindah ke depan. Untuk menjawab, ganti 什麼 dengan informasinya: 你叫什麼名字？→ 我叫王大文。",
+   "examples": [
+    {
+     "zh": "你叫什麼名字？",
+     "id": "Siapa namamu?"
+    },
+    {
+     "zh": "我叫王大文。",
+     "id": "Nama saya Wang Dawen."
+    }
+   ],
+   "check": {
+    "q": "Jawaban untuk 你叫什麼名字？",
+    "options": [
+     "我叫什麼。",
+     "我叫李美美。",
+     "什麼是名字。"
+    ],
+    "answer": 1
+   }
+  }
+ ],
+ "vocab_override": {
+  "我": {
+   "meaning": "saya, aku",
+   "pos": "N"
+  },
+  "你": {
+   "meaning": "kamu",
+   "pos": "N"
+  },
+  "您": {
+   "meaning": "Anda (hormat)",
+   "pos": "N"
+  },
+  "叫": {
+   "meaning": "bernama",
+   "pos": "V"
+  },
+  "名字": {
+   "meaning": "nama",
+   "pos": "N"
+  },
+  "姓": {
+   "meaning": "bermarga",
+   "pos": "V"
+  },
+  "是": {
+   "meaning": "adalah",
+   "pos": "V"
+  },
+  "什麼": {
+   "meaning": "apa",
+   "pos": "N"
+  },
+  "好": {
+   "meaning": "baik (你好 = halo)",
+   "pos": "Vs"
+  },
+  "謝謝": {
+   "meaning": "terima kasih",
+   "pos": "V"
+  },
+  "先生": {
+   "meaning": "Tuan, Bapak",
+   "pos": "N"
+  },
+  "小姐": {
+   "meaning": "Nona, Mbak",
+   "pos": "N"
+  },
+  "姓名": {
+   "meaning": "nama lengkap (di formulir)",
+   "pos": "N"
+  },
+  "貴": {
+   "meaning": "(您)貴姓 — marga Anda (hormat)",
+   "pos": "Vs",
+   "note": "義項 ini = sapaan hormat. 貴 'mahal' dipelajari di adegan belanja."
+  },
+  "早安": {
+   "meaning": "selamat pagi",
+   "pos": "Ph"
+  },
+  "晚安": {
+   "meaning": "selamat malam (mau tidur/berpisah)",
+   "pos": "Ph"
+  },
+  "再見": {
+   "meaning": "sampai jumpa",
+   "pos": "Ph"
+  }
+ }
+}
