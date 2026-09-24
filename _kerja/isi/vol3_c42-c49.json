@@ -1,0 +1,401 @@
+{"modules": [
+{
+ "code": "C42",
+ "title_py": "Nǐ méiyǒu língqián ma?", "title_id": "Kamu tidak punya uang kecil?",
+ "scene": "Di toko, Dawen tidak bisa membayar pakai kartu untuk belanja kecil. Di restoran, Meimei bertanya soal tip di Taiwan.",
+ "can_do": ["Bertanya dengan heran memakai 不/沒…嗎？ (你沒有零錢嗎？)", "Menanyakan sudah/belum dengan …了沒有？", "Membicarakan cara bayar: 刷卡、零錢、小費、剛好"],
+ "exam_link": "Pertanyaan negatif (你不知道嗎？) mengandung rasa heran — sering diuji di 聽力 Part 4 sebagai makna tersirat.",
+ "dialogs": [
+  {"place": "在店裡", "title_id": "Di toko", "lines": [
+   {"sp": "店員", "zh": "一共三百二十塊。", "py": "Yígòng sānbǎi èrshí kuài.", "id": "Semuanya tiga ratus dua puluh."},
+   {"sp": "王大文", "zh": "可以刷卡嗎？", "py": "Kěyǐ shuākǎ ma?", "id": "Bisa bayar kartu?"},
+   {"sp": "店員", "zh": "對不起，五百塊以下不能刷卡。你沒有零錢嗎？", "py": "Duìbùqǐ, wǔbǎi kuài yǐxià bù néng shuākǎ. Nǐ méiyǒu língqián ma?", "id": "Maaf, di bawah lima ratus tidak bisa pakai kartu. Kamu tidak punya uang kecil?"},
+   {"sp": "王大文", "zh": "有，我剛好有三百二十塊。", "py": "Yǒu, wǒ gānghǎo yǒu sānbǎi èrshí kuài.", "id": "Ada, kebetulan pas tiga ratus dua puluh."}
+  ]},
+  {"place": "在餐廳", "title_id": "Di restoran", "lines": [
+   {"sp": "李美美", "zh": "大文，在臺灣吃飯要給小費嗎？", "py": "Dàwén, zài Táiwān chī fàn yào gěi xiǎofèi ma?", "id": "Dawen, makan di Taiwan perlu kasih tip?"},
+   {"sp": "王大文", "zh": "不用。你不知道嗎？", "py": "Búyòng. Nǐ bù zhīdào ma?", "id": "Tidak perlu. Kamu tidak tahu?"},
+   {"sp": "李美美", "zh": "我以為要給。你付錢了沒有？", "py": "Wǒ yǐwéi yào gěi. Nǐ fù qián le méiyǒu?", "id": "Kukira perlu. Kamu sudah bayar belum?"},
+   {"sp": "王大文", "zh": "付了。店員刷了一下我的信用卡。", "py": "Fù le. Diànyuán shuā le yíxià wǒ de xìnyòngkǎ.", "id": "Sudah. Kasir sudah menggesek kartu kreditku."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你付錢了沒有？", "options": ["付了，我刷卡了。", "我沒有錢。", "付了沒有。"], "answer": 0,
+   "why": "…了沒有？ = sudah … belum? → 付了／還沒."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他在刷卡。", "options": [{"icon": "💳", "label": "gesek kartu"}, {"icon": "💵", "label": "uang kertas"}, {"icon": "🪙", "label": "uang koin"}], "answer": 0,
+   "why": "刷卡 = membayar dengan kartu."},
+  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "lines": [{"sp": "男", "zh": "妳不喜歡這個蛋糕嗎？"}, {"sp": "女", "zh": "不是，我吃飽了。"}],
+   "question": "女的為什麼不吃蛋糕？", "options": ["她吃飽了", "她不喜歡", "蛋糕太甜"], "answer": 0,
+   "why": "不是 (bukan tidak suka) → 我吃飽了. B adalah dugaan si pria yang dibantah."},
+  {"type": "read_mc", "part": "閱讀 Part 1 · Papan & tanda", "instr": "Baca tulisan di kasir ini, lalu pilih jawaban yang benar.",
+   "text": "注意：一百塊以下不能刷卡。請給店員零錢。在臺灣吃飯不用給小費。", "question": "買八十塊的東西，可以刷卡嗎？",
+   "options": ["可以", "不可以"], "answer": 1,
+   "why": "80 < 100 → 一百塊以下不能刷卡."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "你沒有（1）嗎？我（2）有一百塊。我可以（3）嗎？", "options": ["零錢", "剛好", "刷卡", "小費"], "answers": [0, 1, 2],
+   "why": "(1) 零錢 = uang kecil. (2) 剛好 = kebetulan pas. (3) 刷卡. 小費 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 118, "point": "…了沒有？ — sudah … belum?", "pattern": "S + V + (O) + 了 + 沒有？", "blocks": [["你", "S"], ["付錢", "V O"], ["了", "了"], ["沒有", "沒有"]],
+   "explain": "沒有 di akhir kalimat setelah 了 membentuk pertanyaan 'sudah atau belum': 你付錢了沒有？ Jawaban: V了／還沒(有).",
+   "examples": [{"zh": "你付錢了沒有？", "id": "Kamu sudah bayar belum?"}],
+   "check": {"q": "'Kamu sudah makan belum?' =", "options": ["你吃飯了沒有？", "你沒有吃飯了？", "你吃飯沒有了？"], "answer": 0}},
+  {"tbcl_id": 226, "point": "不/沒 … 嗎？ — (lho,) tidak …?", "pattern": "S + 不/沒(有) + VP + 嗎？", "blocks": [["你", "S"], ["沒有", "沒"], ["零錢", "O"], ["嗎", "?"]],
+   "explain": "Pertanyaan dengan kata negatif menunjukkan rasa HERAN atau mengira jawabannya 'ya': 你不知道嗎？ (masa kamu tidak tahu?), 你沒有零錢嗎？",
+   "examples": [{"zh": "你沒有零錢嗎？", "id": "Kamu tidak punya uang kecil?"}, {"zh": "你不知道嗎？", "id": "Kamu tidak tahu?"}],
+   "check": {"q": "你不喜歡嗎？ menunjukkan…", "options": ["rasa heran", "perintah", "ajakan"], "answer": 0}}
+ ]
+},
+{
+ "code": "C43",
+ "title_py": "Lǎobǎnniáng gāogāoxìngxìng de zuò shēngyì.", "title_id": "Ibu pemilik toko berdagang dengan riang.",
+ "scene": "Dawen dan Meimei berbelanja di pasar tradisional dan bertemu pemilik toko buah yang terkenal ramah.",
+ "can_do": ["Menyatakan cara melakukan sesuatu dengan 地 (高興地說)", "Memakai reduplikasi sebagai keterangan (慢慢地、高高興興地)", "Membicarakan berdagang: 老闆娘、主人、做生意"],
+ "exam_link": "Keterangan cara (…地 + V) sering muncul di 閱讀 Part 4. Beda 的/地/得 adalah salah satu soal tata bahasa paling klasik.",
+ "dialogs": [
+  {"place": "在市場", "title_id": "Di pasar", "lines": [
+   {"sp": "李美美", "zh": "大文，這個市場的老闆娘很有名。", "py": "Dàwén, zhège shìchǎng de lǎobǎnniáng hěn yǒumíng.", "id": "Dawen, ibu pemilik toko di pasar ini terkenal."},
+   {"sp": "王大文", "zh": "為什麼？", "py": "Wèishénme?", "id": "Kenapa?"},
+   {"sp": "李美美", "zh": "她每天高高興興地做生意，大家都喜歡她。", "py": "Tā měitiān gāogāoxìngxìng de zuò shēngyì, dàjiā dōu xǐhuān tā.", "id": "Dia berdagang dengan riang setiap hari, semua orang suka dia."},
+   {"sp": "老闆娘", "zh": "你們好！今天的水果很好！", "py": "Nǐmen hǎo! Jīntiān de shuǐguǒ hěn hǎo!", "id": "Halo! Buah hari ini bagus-bagus!"}
+  ]},
+  {"place": "在水果店", "title_id": "Di kios buah", "lines": [
+   {"sp": "王大文", "zh": "老闆娘，我要一籃子蘋果。", "py": "Lǎobǎnniáng, wǒ yào yì lánzi píngguǒ.", "id": "Bu, saya mau sekeranjang apel."},
+   {"sp": "老闆娘", "zh": "好！你慢慢地看。", "py": "Hǎo! Nǐ mànman de kàn.", "id": "Baik! Silakan lihat-lihat pelan-pelan."},
+   {"sp": "李美美", "zh": "老闆娘，您是這個店的主人嗎？", "py": "Lǎobǎnniáng, nín shì zhège diàn de zhǔrén ma?", "id": "Bu, Ibu pemilik toko ini?"},
+   {"sp": "老闆娘", "zh": "對。我做生意做了二十年了。你們要好好地吃飯！", "py": "Duì. Wǒ zuò shēngyì zuò le èrshí nián le. Nǐmen yào hǎohǎo de chī fàn!", "id": "Iya. Saya sudah berdagang dua puluh tahun. Kalian makan yang baik ya!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "她怎麼做生意？", "options": ["她高高興興地做生意。", "她做生意高興。", "她是老闆娘地。"], "answer": 0,
+   "why": "怎麼 (bagaimana caranya) → keterangan + 地 + V."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "老闆娘拿著一個籃子。", "options": [{"icon": "🧺", "label": "keranjang"}, {"icon": "👜", "label": "tas"}, {"icon": "📦", "label": "kotak"}], "answer": 0,
+   "why": "籃子 = keranjang."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "妳走慢一點！"}, {"sp": "女", "zh": "好，我慢慢地走。"}],
+   "question": "女的要怎麼走？", "options": ["慢慢地走", "快快地走", "不走"], "answer": 0,
+   "why": "慢慢地走 = berjalan pelan-pelan."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "王太太是這家店的主人。她做生意做了二十年，每天都高高興興地跟客人說話。", "question": "王太太做生意做了多久？",
+   "options": ["兩年", "十二年", "二十年"], "answer": 2,
+   "why": "做了二十年."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "老闆娘高高興興（1）做生意。你要好（2）地休息。她是這個店的（3）。", "options": ["地", "好", "主人", "籃子"], "answers": [0, 1, 2],
+   "why": "(1) keterangan cara + 地 + V. (2) 好好地 (reduplikasi). (3) 主人 = pemilik. 籃子 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 159, "point": "地 — penanda keterangan cara", "pattern": "keterangan + 地 + V", "blocks": [["高高興興", "keterangan"], ["地", "地"], ["做生意", "V"]],
+   "explain": "地 (de) menghubungkan keterangan CARA dengan kata kerja: 高興地說 (berkata dengan senang), 慢慢地走. Ingat trio: 的 + benda, 地 + kata kerja, V + 得 + hasil.",
+   "examples": [{"zh": "她每天高高興興地做生意。", "id": "Dia berdagang dengan riang setiap hari."}],
+   "check": {"q": "Pilih yang tepat: 他很認真＿學中文。", "options": ["地", "的", "得"], "answer": 0}},
+  {"tbcl_id": 151, "point": "Reduplikasi kata sifat sebagai keterangan", "pattern": "AA地 / AABB地 + V", "blocks": [["慢慢", "AA"], ["地", "地"], ["看", "V"]],
+   "explain": "Kata sifat diulang (慢慢, 好好, 高高興興) lalu + 地 untuk menerangkan cara melakukan sesuatu dengan nuansa hidup: 你慢慢地看 (silakan lihat pelan-pelan), 好好地吃飯.",
+   "examples": [{"zh": "你慢慢地看。", "id": "Silakan lihat pelan-pelan."}, {"zh": "你們要好好地吃飯！", "id": "Makan yang baik ya!"}],
+   "check": {"q": "'Tidurlah dengan nyenyak (baik-baik)' =", "options": ["好好地睡覺吧。", "好地好睡覺吧。", "睡覺好好地吧。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C44",
+ "title_py": "Zhè jiàn tài xiǎo le, kěyǐ huàn yí huàn ma?", "title_id": "Yang ini terlalu kecil, boleh ditukar?",
+ "scene": "Dawen menukar sweter yang kekecilan di toko; kemudian Meimei bertanya apakah Dawen sudah terbiasa dengan kehidupan di Taiwan.",
+ "can_do": ["Meminta menukar dengan halus: V一V (換一換)", "Menyatakan terbiasa: V慣 (住慣了、吃不慣)", "Membicarakan warna & tren: 深、淺、流行"],
+ "exam_link": "V慣 (terbiasa) muncul di 閱讀 Part 5 (cerita adaptasi mahasiswa asing) dan 聽力 Part 4.",
+ "dialogs": [
+  {"place": "在衣服店", "title_id": "Di toko pakaian", "lines": [
+   {"sp": "王大文", "zh": "小姐，這件毛衣太小了，可以換一換嗎？", "py": "Xiǎojiě, zhè jiàn máoyī tài xiǎo le, kěyǐ huàn yí huàn ma?", "id": "Mbak, sweter ini terlalu kecil, boleh ditukar?"},
+   {"sp": "店員", "zh": "可以。你要換什麼顏色？", "py": "Kěyǐ. Nǐ yào huàn shénme yánsè?", "id": "Boleh. Mau tukar warna apa?"},
+   {"sp": "王大文", "zh": "深一點的。這件太淺了。", "py": "Shēn yìdiǎn de. Zhè jiàn tài qiǎn le.", "id": "Yang lebih tua. Yang ini terlalu muda."},
+   {"sp": "店員", "zh": "這件深藍色的現在很流行。", "py": "Zhè jiàn shēn lánsè de xiànzài hěn liúxíng.", "id": "Yang biru tua ini sedang tren."}
+  ]},
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "李美美", "zh": "大文，你在臺灣住慣了嗎？", "py": "Dàwén, nǐ zài Táiwān zhù guàn le ma?", "id": "Dawen, kamu sudah terbiasa tinggal di Taiwan?"},
+   {"sp": "王大文", "zh": "住慣了，可是還吃不慣太甜的東西。", "py": "Zhù guàn le, kěshì hái chī bú guàn tài tián de dōngxi.", "id": "Sudah, tapi masih belum terbiasa makan yang terlalu manis."},
+   {"sp": "李美美", "zh": "你看了看時鐘，現在三點鐘了，我們上課吧！", "py": "Nǐ kàn le kàn shízhōng, xiànzài sān diǎn zhōng le, wǒmen shàngkè ba!", "id": "Coba lihat jam, sudah jam tiga, ayo masuk kelas!"},
+   {"sp": "王大文", "zh": "好。你的包包上有一個圓圓的東西，是什麼？", "py": "Hǎo. Nǐ de bāo shàng yǒu yí ge yuányuán de dōngxi, shì shénme?", "id": "Oke. Di tasmu ada benda bulat, apa itu?"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你在臺灣住慣了嗎？", "options": ["住慣了，可是還吃不慣太甜的菜。", "我住在臺灣。", "住了慣。"], "answer": 0,
+   "why": "住慣了嗎 → 住慣了／還沒住慣. B menjawab 'di mana'."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "她要一件深藍色的。", "options": [{"icon": "🟦", "label": "biru tua"}, {"icon": "🩵", "label": "biru muda"}, {"icon": "⬜", "label": "putih"}], "answer": 0,
+   "why": "深 = tua (warna), 淺 = muda."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "這雙鞋子可以換嗎？"}, {"sp": "女", "zh": "可以，你要換大一點的還是小一點的？"}, {"sp": "男", "zh": "大一點的。"}],
+   "question": "男的要換什麼？", "options": ["大一點的", "小一點的", "別的顏色"], "answer": 0,
+   "why": "大一點的 — jawaban di baris terakhir."},
+  {"type": "read_mc", "part": "閱讀 Part 3 · Membaca informasi", "instr": "Baca aturan toko ini, lalu pilih jawaban yang benar.",
+   "text": "買了東西，一個星期可以換。衣服穿過就不能換了。", "question": "哪一個對？",
+   "options": ["穿過的衣服不能換", "一個月可以換", "都不能換"], "answer": 0,
+   "why": "穿過就不能換了. B salah waktu; C terlalu mutlak."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "這件太小了，我想換（1）換。我要（2）一點的顏色。我在臺灣住（3）了。", "options": ["一", "深", "慣", "圓"], "answers": [0, 1, 2],
+   "why": "(1) 換一換. (2) 深一點 = lebih tua. (3) 住慣了 = sudah terbiasa. 圓 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 221, "point": "V(了)(一)V — (sebentar) …", "pattern": "V + 一 + V ／ V + 了 + V", "blocks": [["換", "V"], ["一", "一"], ["換", "V"]],
+   "explain": "Kata kerja satu suku diulang dengan 一 di tengah (換一換) untuk permintaan ringan; dengan 了 (看了看) untuk tindakan singkat yang sudah terjadi.",
+   "examples": [{"zh": "可以換一換嗎？", "id": "Boleh ditukar?"}, {"zh": "他看了看時鐘。", "id": "Dia melirik jam."}],
+   "check": {"q": "'Dia mencicipi sedikit' (sudah terjadi) =", "options": ["他吃了吃。", "他吃一吃了了。", "他了吃吃。"], "answer": 0}},
+  {"tbcl_id": 213, "point": "V慣 — terbiasa", "pattern": "V + 慣 (+了) ／ V + 不慣", "blocks": [["住", "V"], ["慣", "慣"], ["了", "了"]],
+   "explain": "慣 setelah kata kerja = sudah terbiasa: 住慣了 (sudah betah tinggal), 吃不慣 (belum terbiasa makan). Bentuk potensialnya dengan 不 di tengah.",
+   "examples": [{"zh": "住慣了，可是還吃不慣太甜的東西。", "id": "Sudah betah, tapi belum terbiasa makan yang terlalu manis."}],
+   "check": {"q": "'Aku belum terbiasa minum kopi' =", "options": ["我喝不慣咖啡。", "我不慣喝咖啡。", "我喝咖啡慣不。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C45",
+ "title_py": "Shénme dōu hǎochī, jiù shì tài xián le.", "title_id": "Semuanya enak, cuma terlalu asin.",
+ "scene": "Makan siang bento di kampus: Dawen menilai rasa bentonya, lalu Meimei bercerita tentang tahu buatan ibunya.",
+ "can_do": ["Memakai kata tanya sebagai 'semua/siapa pun' (什麼都、誰都)", "Menyatakan 'semuanya …, hanya saja …': 什麼都…，就是…", "Membicarakan bumbu & bahan: 便當、米、豆腐、醬、油、鹽"],
+ "exam_link": "什麼都…就是… adalah pola penilaian yang sangat khas di 聽力 Part 4: kunci jawabannya ada setelah 就是.",
+ "dialogs": [
+  {"place": "在學校吃午餐", "title_id": "Makan siang di kampus", "lines": [
+   {"sp": "李美美", "zh": "大文，你今天吃什麼便當？", "py": "Dàwén, nǐ jīntiān chī shénme biàndāng?", "id": "Dawen, hari ini makan bento apa?"},
+   {"sp": "王大文", "zh": "雞肉便當。什麼都好吃，就是太鹹了。", "py": "Jīròu biàndāng. Shénme dōu hǎochī, jiù shì tài xián le.", "id": "Bento ayam. Semuanya enak, cuma terlalu asin."},
+   {"sp": "李美美", "zh": "可能是醬和鹽放得太多了。", "py": "Kěnéng shì jiàng hé yán fàng de tài duō le.", "id": "Mungkin kecap dan garamnya kebanyakan."},
+   {"sp": "王大文", "zh": "對，油也很多。", "py": "Duì, yóu yě hěn duō.", "id": "Iya, minyaknya juga banyak."}
+  ]},
+  {"place": "下課以後", "title_id": "Sepulang kelas", "lines": [
+   {"sp": "李美美", "zh": "我媽媽做的豆腐，誰都喜歡。", "py": "Wǒ māma zuò de dòufǔ, shéi dōu xǐhuān.", "id": "Tahu buatan ibuku, siapa pun suka."},
+   {"sp": "王大文", "zh": "我也想吃！你家的米飯也很好吃嗎？", "py": "Wǒ yě xiǎng chī! Nǐ jiā de mǐfàn yě hěn hǎochī ma?", "id": "Aku juga mau! Nasi di rumahmu juga enak?"},
+   {"sp": "李美美", "zh": "很好吃。這個週末來我家吧，我們買兩樣菜，一起吃。", "py": "Hěn hǎochī. Zhège zhōumò lái wǒ jiā ba, wǒmen mǎi liǎng yàng cài, yìqǐ chī.", "id": "Enak. Akhir pekan ini datang ke rumahku, kita beli dua macam lauk, makan bersama."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你想吃什麼？", "options": ["我什麼都想吃！", "我什麼吃。", "什麼都。"], "answer": 0,
+   "why": "什麼都 = apa saja/semuanya."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他在吃便當。", "options": [{"icon": "🍱", "label": "bento"}, {"icon": "🍜", "label": "mi"}, {"icon": "🍔", "label": "hamburger"}], "answer": 0,
+   "why": "便當 = bento/nasi kotak."},
+  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "lines": [{"sp": "男", "zh": "這家餐廳怎麼樣？"}, {"sp": "女", "zh": "什麼都好，就是太貴了。"}],
+   "question": "女的覺得餐廳哪裡不好？", "options": ["太貴", "不好吃", "太遠"], "answer": 0,
+   "why": "什麼都好，就是太貴 — kekurangannya disebut setelah 就是."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "這個便當有米飯、豆腐和青菜。豆腐很香，就是醬太多，有點鹹。", "question": "便當哪裡不好？",
+   "options": ["有點鹹", "太甜", "沒有米飯"], "answer": 0,
+   "why": "就是醬太多，有點鹹."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "這個便當（1）都好吃，（2）是太鹹了。可能（3）放得太多了。", "options": ["什麼", "就", "鹽", "米"], "answers": [0, 1, 2],
+   "why": "(1)+(2) 什麼都…就是…. (3) asin → 鹽 (garam). 米 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 187, "point": "Kata tanya + 都 — semua / siapa pun", "pattern": "什麼/誰/哪裡 + 都 + VP", "blocks": [["誰", "kata tanya"], ["都", "都"], ["喜歡", "VP"]],
+   "explain": "Kata tanya + 都 bukan pertanyaan, melainkan 'semua/siapa pun/di mana pun': 什麼都好吃 (apa saja enak), 誰都喜歡 (siapa pun suka). Negatif: 什麼都不…",
+   "examples": [{"zh": "我媽媽做的豆腐，誰都喜歡。", "id": "Tahu buatan ibuku, siapa pun suka."}],
+   "check": {"q": "'Aku tidak mau pergi ke mana pun' =", "options": ["我哪裡都不想去。", "我不想去哪裡都。", "哪裡我想都不去。"], "answer": 0}},
+  {"tbcl_id": 201, "point": "什麼都…，就是… — semuanya …, hanya saja …", "pattern": "什麼都 + (positif)，就是 + (kekurangan)", "blocks": [["什麼都好吃", "semua positif"], ["就是", "就是"], ["太鹹了", "kekurangan"]],
+   "explain": "Mengakui semuanya baik, lalu menyebut SATU kekurangan setelah 就是. Dalam soal, informasi penting ada setelah 就是.",
+   "examples": [{"zh": "什麼都好吃，就是太鹹了。", "id": "Semuanya enak, cuma terlalu asin."}],
+   "check": {"q": "什麼都好，就是太遠了 — masalahnya…", "options": ["terlalu jauh", "tidak bagus", "terlalu mahal"], "answer": 0}}
+ ]
+},
+{
+ "code": "C46",
+ "title_py": "Táiwān de shuǐguǒ, yóuqí shì mángguǒ, chàbùduō dōu hěn tián.", "title_id": "Buah Taiwan, terutama mangga, hampir semuanya manis.",
+ "scene": "Dawen dan Meimei berbelanja di toko buah dan membicarakan buah musiman Taiwan.",
+ "can_do": ["Menonjolkan satu contoh: 尤其(是)", "Menyatakan 'hampir': 差不多 + 都/一樣", "Menyebut buah: 芒果、鳳梨、木瓜、草莓、葡萄、橘子、番茄 + kata bantu bilangan 顆"],
+ "exam_link": "Buah & makanan termasuk tema SERING di 聽力 Part 1. 尤其 menandai informasi yang ditekankan — sering jadi kunci 閱讀 Part 5.",
+ "dialogs": [
+  {"place": "在水果店", "title_id": "Di toko buah", "lines": [
+   {"sp": "王大文", "zh": "美美，臺灣的水果真多！", "py": "Měiměi, Táiwān de shuǐguǒ zhēn duō!", "id": "Meimei, buah di Taiwan banyak sekali!"},
+   {"sp": "李美美", "zh": "對，臺灣的水果，尤其是芒果，差不多都很甜。", "py": "Duì, Táiwān de shuǐguǒ, yóuqí shì mángguǒ, chàbùduō dōu hěn tián.", "id": "Iya, buah Taiwan, terutama mangga, hampir semuanya manis."},
+   {"sp": "王大文", "zh": "這裡的鳳梨和木瓜也很新鮮。", "py": "Zhèlǐ de fènglí hé mùguā yě hěn xīnxiān.", "id": "Nanas dan pepaya di sini juga segar."},
+   {"sp": "李美美", "zh": "我們買兩顆芒果和一個鳳梨吧。", "py": "Wǒmen mǎi liǎng kē mángguǒ hé yí ge fènglí ba.", "id": "Kita beli dua buah mangga dan satu nanas."}
+  ]},
+  {"place": "在水果店", "title_id": "Di toko buah (lanjutan)", "lines": [
+   {"sp": "王大文", "zh": "草莓和葡萄呢？", "py": "Cǎoméi hé pútáo ne?", "id": "Stroberi dan anggur?"},
+   {"sp": "李美美", "zh": "草莓差不多賣完了。橘子和番茄還有很多。", "py": "Cǎoméi chàbùduō mài wán le. Júzi hé fānqié hái yǒu hěn duō.", "id": "Stroberi hampir habis. Jeruk dan tomat masih banyak."},
+   {"sp": "王大文", "zh": "我最喜歡吃芒果，尤其是夏天的芒果。", "py": "Wǒ zuì xǐhuān chī mángguǒ, yóuqí shì xiàtiān de mángguǒ.", "id": "Aku paling suka mangga, terutama mangga musim panas."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你喜歡什麼水果？", "options": ["我都喜歡，尤其是芒果。", "水果很甜。", "尤其水果。"], "answer": 0,
+   "why": "尤其是 menonjolkan yang paling disukai."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我要三顆芒果。", "options": [{"icon": "🥭🥭🥭", "label": "tiga mangga"}, {"icon": "🍍", "label": "nanas"}, {"icon": "🍓", "label": "stroberi"}], "answer": 0,
+   "why": "三顆芒果. 顆 = kata bantu bilangan untuk buah/benda bulat kecil."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "這兩件衣服一樣嗎？"}, {"sp": "女", "zh": "差不多一樣，只是顏色不同。"}],
+   "question": "兩件衣服哪裡不同？", "options": ["顏色", "大小", "樣子"], "answer": 0,
+   "why": "差不多一樣 (hampir sama), 只是顏色不同."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "臺灣一年都有水果。夏天有芒果和西瓜，冬天有草莓和橘子。尤其是芒果，很多外國人都喜歡。", "question": "冬天有什麼水果？",
+   "options": ["芒果", "草莓和橘子", "西瓜"], "answer": 1,
+   "why": "冬天有草莓和橘子. Mangga ditonjolkan (尤其), tapi buah musim panas."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "臺灣的水果，（1）是芒果，很甜。我買了兩（2）芒果。這裡的水果都很（3）。", "options": ["尤其", "顆", "新鮮", "差不多"], "answers": [0, 1, 2],
+   "why": "(1) 尤其是 = terutama. (2) 兩顆. (3) 新鮮 = segar. 差不多 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 183, "point": "尤其(是) — terutama", "pattern": "…，尤其(是) + contoh", "blocks": [["臺灣的水果", "umum"], ["尤其是", "尤其"], ["芒果", "contoh"]],
+   "explain": "尤其(是) menonjolkan satu contoh yang paling menonjol dari hal umum yang baru disebut.",
+   "examples": [{"zh": "我最喜歡吃芒果，尤其是夏天的芒果。", "id": "Aku paling suka mangga, terutama mangga musim panas."}],
+   "check": {"q": "'Aku suka olahraga, terutama berenang' =", "options": ["我喜歡運動，尤其是游泳。", "我尤其喜歡運動是游泳。", "尤其我喜歡運動游泳。"], "answer": 0}},
+  {"tbcl_id": 188, "point": "差不多 — hampir, kurang lebih", "pattern": "差不多 + 都/一樣/V了 ／ 差不多 + angka", "blocks": [["差不多", "差不多"], ["都", "都"], ["很甜", "Vs"]],
+   "explain": "差不多 sebagai keterangan = hampir: 差不多都很甜 (hampir semua manis), 差不多一樣, 差不多賣完了. Sebelum angka = kira-kira (B14).",
+   "examples": [{"zh": "草莓差不多賣完了。", "id": "Stroberi hampir habis."}],
+   "check": {"q": "'PR-nya hampir selesai' =", "options": ["功課差不多寫完了。", "功課寫完差不多了。", "差不多功課了寫完。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C47",
+ "title_py": "Niúpái zuò hǎo le, wǒ è huài le!", "title_id": "Steaknya sudah jadi, aku lapar sekali!",
+ "scene": "Dawen memasak steak di dapur asrama untuk Meimei: menjelaskan cara memasak, tingkat kematangan, dan minuman.",
+ "can_do": ["Menyatakan selesai dengan baik: V好 (做好了、準備好了)", "Menyatakan keadaan ekstrem: Vs壞了 (餓壞了、累壞了)", "Menjelaskan cara memasak: 做法、熟、泡、汁"],
+ "exam_link": "Resep & urutan memasak muncul di 閱讀 Part 3–4; V好 menandai langkah selesai dalam urutan.",
+ "dialogs": [
+  {"place": "在宿舍廚房", "title_id": "Di dapur asrama", "lines": [
+   {"sp": "李美美", "zh": "大文，你會做牛排嗎？", "py": "Dàwén, nǐ huì zuò niúpái ma?", "id": "Dawen, kamu bisa masak steak?"},
+   {"sp": "王大文", "zh": "會。做法很簡單：先放洋蔥，再放牛排。", "py": "Huì. Zuòfǎ hěn jiǎndān: xiān fàng yángcōng, zài fàng niúpái.", "id": "Bisa. Caranya sederhana: masukkan bawang bombai dulu, lalu steak."},
+   {"sp": "李美美", "zh": "牛排要多熟？", "py": "Niúpái yào duō shú?", "id": "Steaknya mau semateng apa?"},
+   {"sp": "王大文", "zh": "七分熟。你看，牛排做好了！", "py": "Qī fēn shú. Nǐ kàn, niúpái zuò hǎo le!", "id": "Matang tujuh puluh persen. Lihat, steaknya sudah jadi!"},
+   {"sp": "李美美", "zh": "太好了，我餓壞了！", "py": "Tài hǎo le, wǒ è huài le!", "id": "Asyik, aku lapar sekali!"}
+  ]},
+  {"place": "吃飯的時候", "title_id": "Saat makan", "lines": [
+   {"sp": "王大文", "zh": "你要喝什麼？有蘋果汁。", "py": "Nǐ yào hē shénme? Yǒu píngguǒ zhī.", "id": "Mau minum apa? Ada jus apel."},
+   {"sp": "李美美", "zh": "不用，我泡了一杯茶。", "py": "Búyòng, wǒ pào le yì bēi chá.", "id": "Tidak usah, aku sudah menyeduh teh."},
+   {"sp": "王大文", "zh": "豆子也熟了嗎？", "py": "Dòuzi yě shú le ma?", "id": "Kacangnya juga sudah matang?"},
+   {"sp": "李美美", "zh": "熟了，正好可以吃。", "py": "Shú le, zhènghǎo kěyǐ chī.", "id": "Sudah, pas bisa dimakan."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "晚飯做好了嗎？", "options": ["做好了，快來吃吧！", "晚飯好。", "我做晚飯。"], "answer": 0,
+   "why": "做好了嗎 → 做好了／還沒."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "牛排做好了。", "options": [{"icon": "🥩", "label": "steak"}, {"icon": "🍝", "label": "pasta"}, {"icon": "🥗", "label": "salad"}], "answer": 0,
+   "why": "牛排 = steak."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "妳累不累？"}, {"sp": "女", "zh": "我走了三個小時，累壞了！"}],
+   "question": "女的怎麼樣？", "options": ["很累", "不累", "很餓"], "answer": 0,
+   "why": "累壞了 = capek sekali."},
+  {"type": "read_mc", "part": "閱讀 Part 3 · Membaca informasi", "instr": "Baca resep ini, lalu pilih jawaban yang benar.",
+   "text": "做法：一、先把洋蔥炒熟。二、再放牛排。三、放一點汁，牛排就做好了。", "question": "先做什麼？",
+   "options": ["炒洋蔥", "放牛排", "放汁"], "answer": 0,
+   "why": "一、先把洋蔥炒熟."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "牛排做（1）了！我餓（2）了。你的茶（3）好了嗎？", "options": ["好", "壞", "泡", "熟"], "answers": [0, 1, 2],
+   "why": "(1) 做好了. (2) 餓壞了. (3) 泡好 = sudah diseduh. 熟 tidak dipakai untuk teh."}
+ ],
+ "grammar": [
+  {"tbcl_id": 202, "point": "V好 — selesai (dengan baik)", "pattern": "V + 好 + (了)", "blocks": [["做", "V"], ["好", "好"], ["了", "了"]],
+   "explain": "好 setelah kata kerja = tindakan selesai dan siap/beres: 做好了 (sudah jadi), 準備好了 (sudah siap), 寫好了. Negatif: 還沒V好.",
+   "examples": [{"zh": "你看，牛排做好了！", "id": "Lihat, steaknya sudah jadi!"}],
+   "check": {"q": "'Aku sudah siap' =", "options": ["我準備好了。", "我好準備了。", "我準備了好。"], "answer": 0}},
+  {"tbcl_id": 191, "point": "Vs壞了 — … sekali (sampai 'rusak')", "pattern": "S + Vs + 壞了", "blocks": [["我", "S"], ["餓", "Vs"], ["壞了", "壞了"]],
+   "explain": "壞了 setelah kata sifat perasaan/keadaan = sangat sekali (lisan): 餓壞了, 累壞了, 高興壞了. Mirip 死了 (C08).",
+   "examples": [{"zh": "我餓壞了！", "id": "Aku lapar sekali!"}],
+   "check": {"q": "'Dia senang sekali' (lisan) =", "options": ["他高興壞了。", "他壞了高興。", "他很高興壞。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C48",
+ "title_py": "Nǐ shì bú shì dìngwèi le?", "title_id": "Kamu sudah memesan tempat, kan?",
+ "scene": "Dawen dan Meimei tiba di restoran populer; mereka memastikan reservasi, memilih paket, dan menyesuaikan pesanan karena Dawen tidak makan makanan laut.",
+ "can_do": ["Memastikan dugaan dengan 是不是 + VP", "Menyimpulkan 'kalau begitu' dengan 那", "Memesan di restoran: 訂位、位子、套餐、沙拉、海鮮"],
+ "exam_link": "Reservasi & paket menu muncul di 聽力 Part 3 dan 閱讀 Part 3 (membandingkan dua paket).",
+ "dialogs": [
+  {"place": "在餐廳門口", "title_id": "Di depan restoran", "lines": [
+   {"sp": "店員", "zh": "你好，請問幾位？", "py": "Nǐ hǎo, qǐngwèn jǐ wèi?", "id": "Halo, berapa orang?"},
+   {"sp": "王大文", "zh": "兩位。美美，你是不是訂位了？", "py": "Liǎng wèi. Měiměi, nǐ shì bú shì dìngwèi le?", "id": "Dua. Meimei, kamu sudah pesan tempat, kan?"},
+   {"sp": "李美美", "zh": "是，我訂位了，七點，姓李。", "py": "Shì, wǒ dìngwèi le, qī diǎn, xìng Lǐ.", "id": "Iya, sudah kupesan, jam tujuh, atas nama Li."},
+   {"sp": "店員", "zh": "好，這邊請。這是你們的位子。", "py": "Hǎo, zhèbiān qǐng. Zhè shì nǐmen de wèizi.", "id": "Baik, silakan ke sini. Ini tempat duduk kalian."}
+  ]},
+  {"place": "在餐廳", "title_id": "Di restoran", "lines": [
+   {"sp": "李美美", "zh": "這家的套餐很有名：有沙拉、海鮮和一杯果汁。", "py": "Zhè jiā de tàocān hěn yǒumíng: yǒu shālā, hǎixiān hé yì bēi guǒzhī.", "id": "Paket di sini terkenal: ada salad, makanan laut, dan segelas jus."},
+   {"sp": "王大文", "zh": "我不吃海鮮。", "py": "Wǒ bù chī hǎixiān.", "id": "Aku tidak makan makanan laut."},
+   {"sp": "李美美", "zh": "那你吃牛肉套餐吧。", "py": "Nà nǐ chī niúròu tàocān ba.", "id": "Kalau begitu kamu paket daging sapi saja."},
+   {"sp": "王大文", "zh": "好。這裡的食物真好吃！", "py": "Hǎo. Zhèlǐ de shíwù zhēn hǎochī!", "id": "Oke. Makanan di sini enak sekali!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你是不是訂位了？", "options": ["是，我訂了七點的位子。", "我是位子。", "訂位是不是。"], "answer": 0,
+   "why": "是不是 + VP memastikan dugaan → 是／不是."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我們的位子在窗戶旁邊。", "options": [{"icon": "🪟🪑", "label": "di dekat jendela"}, {"icon": "🚪🪑", "label": "di dekat pintu"}, {"icon": "🪜🪑", "label": "di dekat tangga"}], "answer": 0,
+   "why": "窗戶旁邊 = di samping jendela."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "女", "zh": "我不吃海鮮。"}, {"sp": "男", "zh": "那我們吃牛肉套餐吧。"}],
+   "question": "他們要吃什麼？", "options": ["牛肉套餐", "海鮮", "沙拉"], "answer": 0,
+   "why": "那 = kalau begitu → 牛肉套餐."},
+  {"type": "read_mc", "part": "閱讀 Part 3 · Membaca informasi", "instr": "Baca menu paket ini, lalu pilih jawaban yang benar.",
+   "text": "A套餐：沙拉、牛排、果汁，三百五十塊。B套餐：沙拉、海鮮、果汁，四百塊。", "question": "不吃海鮮的人應該吃哪個套餐？",
+   "options": ["A套餐", "B套餐"], "answer": 0,
+   "why": "B berisi 海鮮 → pilih A."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "你是（1）訂位了？（2）我們七點去吧。這裡的（3）很好吃。", "options": ["不是", "那", "食物", "位子"], "answers": [0, 1, 2],
+   "why": "(1) 是不是 + VP. (2) 那 = kalau begitu. (3) 食物 = makanan. 位子 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 156, "point": "是不是 + VP — …, kan? (memastikan)", "pattern": "S + 是不是 + VP？", "blocks": [["你", "S"], ["是不是", "是不是"], ["訂位了", "VP"]],
+   "explain": "是不是 sebelum frasa kerja dipakai untuk MEMASTIKAN dugaan: 你是不是訂位了？ (kamu sudah pesan tempat, kan?). Bisa juga di akhir: 你訂位了，是不是？",
+   "examples": [{"zh": "你是不是訂位了？", "id": "Kamu sudah pesan tempat, kan?"}],
+   "check": {"q": "'Kamu sakit, kan?' =", "options": ["你是不是生病了？", "你生病是不是了？", "是你不是生病了？"], "answer": 0}},
+  {"tbcl_id": 162, "point": "那 — kalau begitu", "pattern": "(situasi)。那 + saran/kesimpulan", "blocks": [["那", "那"], ["你吃牛肉套餐吧", "saran"]],
+   "explain": "那 di awal kalimat menanggapi informasi sebelumnya: 'kalau begitu …'. Sering diikuti 吧 (saran).",
+   "examples": [{"zh": "那你吃牛肉套餐吧。", "id": "Kalau begitu kamu paket daging sapi saja."}],
+   "check": {"q": "A: 我不喝咖啡。 B: ＿＿你喝茶吧。", "options": ["那", "這", "哪"], "answer": 0}}
+ ]
+},
+{
+ "code": "C49",
+ "title_py": "Wǒ yìdiǎn yě bù xiǎng chī sùshí.", "title_id": "Aku sama sekali tidak ingin makan makanan cepat saji.",
+ "scene": "Dawen mengajak makan makanan cepat saji, tetapi Meimei menolak dan bercerita tentang pola makan sehatnya.",
+ "can_do": ["Menyangkal secara total: 一點也/都 + 不/沒", "Menyatakan 'tidak pernah sama sekali': 從來 + 不/沒", "Membicarakan makanan ringan & minuman: 速食、泡麵、餅乾、巧克力、豆漿、飲料"],
+ "exam_link": "Penyangkalan kuat (一點也不、從來沒) sering menjadi kunci soal 閱讀 Part 5 tentang kebiasaan seseorang.",
+ "dialogs": [
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "王大文", "zh": "美美，我們去吃速食吧！", "py": "Měiměi, wǒmen qù chī sùshí ba!", "id": "Meimei, ayo makan makanan cepat saji!"},
+   {"sp": "李美美", "zh": "我一點也不想吃速食。速食對身體不好。", "py": "Wǒ yìdiǎn yě bù xiǎng chī sùshí. Sùshí duì shēntǐ bù hǎo.", "id": "Aku sama sekali tidak ingin. Makanan cepat saji tidak baik untuk tubuh."},
+   {"sp": "王大文", "zh": "那你吃什麼？", "py": "Nà nǐ chī shénme?", "id": "Lalu kamu makan apa?"},
+   {"sp": "李美美", "zh": "我從來不吃泡麵和速食。我早上喝豆漿。", "py": "Wǒ cónglái bù chī pàomiàn hé sùshí. Wǒ zǎoshang hē dòujiāng.", "id": "Aku tidak pernah makan mi instan dan makanan cepat saji. Pagi aku minum susu kedelai."}
+  ]},
+  {"place": "在超商", "title_id": "Di minimarket", "lines": [
+   {"sp": "王大文", "zh": "你喜歡吃餅乾和巧克力嗎？", "py": "Nǐ xǐhuān chī bǐnggān hé qiǎokèlì ma?", "id": "Kamu suka biskuit dan cokelat?"},
+   {"sp": "李美美", "zh": "喜歡，可是這個星期我一點都沒吃，我不想太胖。", "py": "Xǐhuān, kěshì zhège xīngqí wǒ yìdiǎn dōu méi chī, wǒ bù xiǎng tài pàng.", "id": "Suka, tapi minggu ini aku sama sekali belum makan, aku tidak mau terlalu gemuk."},
+   {"sp": "王大文", "zh": "你聞聞看，這杯烏龍茶的香味很好！", "py": "Nǐ wén wen kàn, zhè bēi wūlóngchá de xiāngwèi hěn hǎo!", "id": "Coba cium, aroma teh oolong ini harum!"},
+   {"sp": "李美美", "zh": "飲料我只喝茶。糖果我也從來不吃。", "py": "Yǐnliào wǒ zhǐ hē chá. Tángguǒ wǒ yě cónglái bù chī.", "id": "Minuman aku cuma minum teh. Permen juga tidak pernah kumakan."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你想吃速食嗎？", "options": ["一點也不想。", "我想一點。", "速食一點。"], "answer": 0,
+   "why": "一點也不 = sama sekali tidak."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "她在喝豆漿。", "options": [{"icon": "🥛", "label": "susu kedelai"}, {"icon": "☕", "label": "kopi"}, {"icon": "🧃", "label": "jus"}], "answer": 0,
+   "why": "豆漿 = susu kedelai."},
+  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "lines": [{"sp": "男", "zh": "妳喝過烏龍茶嗎？"}, {"sp": "女", "zh": "我從來沒喝過，我只喝咖啡。"}],
+   "question": "女的喝過烏龍茶嗎？", "options": ["沒喝過", "喝過", "常常喝"], "answer": 0,
+   "why": "從來沒喝過 = belum pernah sama sekali."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "安妮從來不吃速食，也一點都不喜歡糖很多的飲料。她早上喝豆漿，下午喝烏龍茶。", "question": "安妮下午喝什麼？",
+   "options": ["豆漿", "烏龍茶", "咖啡"], "answer": 1,
+   "why": "下午喝烏龍茶. 豆漿 diminum pagi hari."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "我一點（1）不想吃泡麵。我（2）不吃速食。你（3）聞看，這個茶很香！", "options": ["也", "從來", "聞", "香味"], "answers": [0, 1, 2],
+   "why": "(1) 一點也不. (2) 從來不 = tidak pernah. (3) 聞聞看 = coba cium. 香味 adalah kata benda."}
+ ],
+ "grammar": [
+  {"tbcl_id": 224, "point": "一點也/都 + 不/沒 — sama sekali tidak", "pattern": "S + 一點也/都 + 不/沒 + VP", "blocks": [["我", "S"], ["一點也", "一點也"], ["不想", "不"], ["吃速食", "VP"]],
+   "explain": "Penyangkalan total: 一點也不想 (sama sekali tidak ingin), 一點都沒吃 (sama sekali belum makan). 也 dan 都 sama saja di sini.",
+   "examples": [{"zh": "我一點也不想吃速食。", "id": "Aku sama sekali tidak ingin makan makanan cepat saji."}],
+   "check": {"q": "'Aku sama sekali tidak lelah' =", "options": ["我一點也不累。", "我不一點累。", "我一點累也不。"], "answer": 0}},
+  {"tbcl_id": 225, "point": "從來 + 不/沒 — tidak pernah (sama sekali)", "pattern": "S + 從來 + 不 + V ／ 從來 + 沒 + V過", "blocks": [["我", "S"], ["從來", "從來"], ["不", "不"], ["吃泡麵", "VP"]],
+   "explain": "從來不 = tidak pernah (kebiasaan/prinsip); 從來沒V過 = belum pernah sekali pun (pengalaman).",
+   "examples": [{"zh": "我從來不吃泡麵。", "id": "Aku tidak pernah makan mi instan."}, {"zh": "我從來沒喝過烏龍茶。", "id": "Aku belum pernah minum teh oolong."}],
+   "check": {"q": "'Aku belum pernah ke Jepang' =", "options": ["我從來沒去過日本。", "我從來不去過日本。", "我沒從來去日本。"], "answer": 0}}
+ ]
+}
+]}

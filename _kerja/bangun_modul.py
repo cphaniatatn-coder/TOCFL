@@ -31,7 +31,8 @@ for ws in openpyxl.load_workbook(f'{ROOT}/kosakata.xlsx', read_only=True).worksh
 
 def entry(lv, token, override):
     w, _, sense = token.partition('@')
-    o = next(o for o in tb if o['lv'] == lv and (o['w'] == w or w in o['w'].split('/')))
+    cocok = lambda o: o['w'] == w or w in o['w'].split('/')
+    o = next((o for o in tb if o['lv'] == lv and cocok(o)), None) or next(o for o in tb if cocok(o))
     parts = o['w'].split('/')
     idx = parts.index(w) if w in parts else 0
     show = re.sub(r'\d+$', '', parts[0] if w == o['w'] else w)
@@ -42,7 +43,7 @@ def entry(lv, token, override):
     if '/' in o['w'] and w == o['w']:
         e['variants'] = '/'.join(re.sub(r'\d+$', '', p) for p in parts)
     if sense:
-        e['note'] = f'義項 ini = {sense}.'
+        e['note'] = f"義項 ini = {sense.replace('-', ' ')}."
     e.update(override.get(show, {}))
     z = bp.get(show)
     if z and len(z.split()) == len(show):

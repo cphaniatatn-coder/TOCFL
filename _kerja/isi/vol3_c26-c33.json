@@ -1,0 +1,403 @@
+{"modules": [
+{
+ "code": "C26",
+ "title_py": "Māma ràng wǒ qù péi nǎinai.", "title_id": "Ibu menyuruhku menemani nenek.",
+ "scene": "Neneknya Meimei sakit; ibunya menyuruh Meimei menemani dan merawat nenek di akhir pekan. Kunjungan cucu membuat nenek senang.",
+ "can_do": ["Menyatakan izin/suruhan dengan 讓 (媽媽讓我去…)", "Menyatakan akibat pada perasaan dengan 讓 (讓我很高興)", "Membicarakan merawat keluarga: 陪、照顧、關心"],
+ "exam_link": "讓 punya dua makna (menyuruh/mengizinkan vs membuat merasa) — sering diuji di 聽力 Part 4 dan 閱讀 Part 4.",
+ "dialogs": [
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "李美美", "zh": "大文，這個週末我不能出去，媽媽讓我去陪奶奶。", "py": "Dàwén, zhège zhōumò wǒ bù néng chūqù, māma ràng wǒ qù péi nǎinai.", "id": "Dawen, akhir pekan ini aku tidak bisa keluar, ibu menyuruhku menemani nenek."},
+   {"sp": "王大文", "zh": "奶奶怎麼了？", "py": "Nǎinai zěnme le?", "id": "Nenek kenapa?"},
+   {"sp": "李美美", "zh": "奶奶生病了，我們要照顧她。", "py": "Nǎinai shēngbìng le, wǒmen yào zhàogù tā.", "id": "Nenek sakit, kami harus merawatnya."},
+   {"sp": "王大文", "zh": "你真關心奶奶！你爸爸讓你一個人去嗎？", "py": "Nǐ zhēn guānxīn nǎinai! Nǐ bàba ràng nǐ yí ge rén qù ma?", "id": "Kamu perhatian sekali pada nenek! Ayahmu mengizinkanmu pergi sendiri?"},
+   {"sp": "李美美", "zh": "不，他陪我去。", "py": "Bù, tā péi wǒ qù.", "id": "Tidak, dia menemaniku."}
+  ]},
+  {"place": "週末以後", "title_id": "Setelah akhir pekan", "lines": [
+   {"sp": "李美美", "zh": "奶奶說：「你們來看我，讓我很高興。」", "py": "Nǎinai shuō: \"Nǐmen lái kàn wǒ, ràng wǒ hěn gāoxìng.\"", "id": "Nenek bilang: 'Kalian menjengukku, membuatku senang sekali.'"},
+   {"sp": "王大文", "zh": "你跟奶奶的關係很好。", "py": "Nǐ gēn nǎinai de guānxì hěn hǎo.", "id": "Hubunganmu dengan nenek dekat sekali."},
+   {"sp": "李美美", "zh": "對，我小時候奶奶一直在我身邊。", "py": "Duì, wǒ xiǎoshíhòu nǎinai yìzhí zài wǒ shēnbiān.", "id": "Iya, waktu kecil nenek selalu ada di sampingku."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你媽媽讓你一個人去旅行嗎？", "options": ["不讓，她說我太小了。", "我去旅行。", "媽媽旅行。"], "answer": 0,
+   "why": "讓…嗎 (mengizinkan?) → 讓／不讓 + alasan."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "她在照顧奶奶。", "options": [{"icon": "👧👵", "label": "merawat nenek"}, {"icon": "🧒🏫", "label": "ke sekolah"}, {"icon": "👧🎮", "label": "main game"}], "answer": 0,
+   "why": "照顧奶奶 = merawat nenek."},
+  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "lines": [{"sp": "男", "zh": "妳的禮物讓我很高興！"}, {"sp": "女", "zh": "你喜歡就好。"}],
+   "question": "男的覺得禮物怎麼樣？", "options": ["很喜歡", "不喜歡", "太貴了"], "answer": 0,
+   "why": "讓我很高興 = membuatku senang (讓2)."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "美美的奶奶生病了。美美的媽媽讓美美週末去陪奶奶。奶奶說美美來看她，讓她很高興。", "question": "誰讓美美去陪奶奶？",
+   "options": ["她媽媽", "她奶奶", "她爸爸", "大文"], "answer": 0,
+   "why": "媽媽讓美美去 (讓1 = menyuruh). 奶奶 muncul di 讓2 (membuat senang) — dua makna 讓 dalam satu teks."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "媽媽（1）我去（2）奶奶。我們都很（3）奶奶的身體。", "options": ["讓", "陪", "關心", "關係"], "answers": [0, 1, 2],
+   "why": "(1) 讓 = menyuruh. (2) 陪 = menemani. (3) 關心 = memperhatikan. 關係 = hubungan (kata benda)."}
+ ],
+ "grammar": [
+  {"tbcl_id": 113, "point": "讓1 — menyuruh / mengizinkan", "pattern": "A + 讓 + B + V", "blocks": [["媽媽", "A"], ["讓", "讓"], ["我", "B"], ["去陪奶奶", "V"]],
+   "explain": "讓 = membiarkan/mengizinkan atau menyuruh (tergantung konteks): 媽媽讓我去陪奶奶 (ibu menyuruhku), 爸爸不讓我去 (ayah tidak mengizinkan).",
+   "examples": [{"zh": "媽媽讓我去陪奶奶。", "id": "Ibu menyuruhku menemani nenek."}, {"zh": "你爸爸讓你一個人去嗎？", "id": "Ayahmu mengizinkanmu pergi sendiri?"}],
+   "check": {"q": "'Guru tidak mengizinkan kami pakai HP' =", "options": ["老師不讓我們用手機。", "老師讓不我們用手機。", "老師讓我們不手機用。"], "answer": 0}},
+  {"tbcl_id": 114, "point": "讓2 — membuat (merasa)", "pattern": "hal/orang + 讓 + orang + (很) + perasaan", "blocks": [["你們來看我", "penyebab"], ["讓", "讓"], ["我", "orang"], ["很高興", "perasaan"]],
+   "explain": "讓 juga berarti 'membuat seseorang (merasa) …': 你的禮物讓我很高興. Subjeknya sering berupa kejadian/benda.",
+   "examples": [{"zh": "你們來看我，讓我很高興。", "id": "Kalian menjengukku, membuatku senang."}],
+   "check": {"q": "'Film itu membuat semua orang sedih' =", "options": ["那個電影讓大家很難過。", "那個電影大家讓很難過。", "讓那個電影大家很難過。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C27",
+ "title_py": "Wǒ chuán jiǎnxùn gěi nǐ le ne!", "title_id": "Aku sudah kirim pesan ke kamu, lho!",
+ "scene": "Dawen tidak membaca pesan Meimei karena memakai earphone. Lalu Meimei membawa kabar gembira tentang tugas kelompok mereka.",
+ "can_do": ["Menyatakan 'sungguh …!' dengan 真 + kata sifat", "Menegaskan/meyakinkan dengan 呢 di akhir kalimat", "Membicarakan pesan & kabar: 簡訊、傳、消息、開玩笑"],
+ "exam_link": "Pesan singkat & kabar muncul di 閱讀 Part 3–5 (membaca SMS/pesan) dan 聽力 Part 4 ('你在開玩笑吧？' sebagai implikatur).",
+ "dialogs": [
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "王大文", "zh": "美美，你為什麼沒來？", "py": "Měiměi, nǐ wèishénme méi lái?", "id": "Meimei, kenapa kamu tidak datang?"},
+   {"sp": "李美美", "zh": "我傳簡訊給你了呢！你沒看到嗎？", "py": "Wǒ chuán jiǎnxùn gěi nǐ le ne! Nǐ méi kàndào ma?", "id": "Aku sudah kirim pesan ke kamu, lho! Kamu tidak lihat?"},
+   {"sp": "王大文", "zh": "對不起，我戴著耳機，沒聽見手機。", "py": "Duìbùqǐ, wǒ dàizhe ěrjī, méi tīngjiàn shǒujī.", "id": "Maaf, aku pakai earphone, tidak dengar HP."},
+   {"sp": "李美美", "zh": "你真忙！", "py": "Nǐ zhēn máng!", "id": "Sibuk sekali kamu!"}
+  ]},
+  {"place": "下課以後", "title_id": "Sepulang kelas", "lines": [
+   {"sp": "李美美", "zh": "告訴你一個好消息：老師說我們的報告很好！", "py": "Gàosù nǐ yí ge hǎo xiāoxī: lǎoshī shuō wǒmen de bàogào hěn hǎo!", "id": "Ada kabar baik: guru bilang laporan kita bagus!"},
+   {"sp": "王大文", "zh": "真的嗎？你在開玩笑吧？", "py": "Zhēn de ma? Nǐ zài kāi wánxiào ba?", "id": "Serius? Kamu bercanda kan?"},
+   {"sp": "李美美", "zh": "沒有！我們合作得很好呢。老師還在我的本子上留下了一句話。", "py": "Méiyǒu! Wǒmen hézuò de hěn hǎo ne. Lǎoshī hái zài wǒ de běnzi shàng liúxià le yí jù huà.", "id": "Tidak! Kerja sama kita bagus, lho. Guru bahkan meninggalkan satu kalimat di buku catatanku."},
+   {"sp": "王大文", "zh": "你跟老師談了嗎？", "py": "Nǐ gēn lǎoshī tán le ma?", "id": "Kamu sudah bicara dengan guru?"},
+   {"sp": "李美美", "zh": "談了。老師說我們很有禮貌。", "py": "Tán le. Lǎoshī shuō wǒmen hěn yǒu lǐmào.", "id": "Sudah. Guru bilang kita sopan."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你看到我的簡訊了嗎？", "options": ["看到了，謝謝你。", "我有簡訊。", "簡訊傳了呢。"], "answer": 0,
+   "why": "看到了嗎 → 看到了／沒看到."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他戴著耳機聽音樂。", "options": [{"icon": "🎧", "label": "pakai earphone"}, {"icon": "📱", "label": "menelepon"}, {"icon": "📺", "label": "menonton TV"}], "answer": 0,
+   "why": "耳機 = earphone."},
+  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "lines": [{"sp": "女", "zh": "我明天要去日本了。"}, {"sp": "男", "zh": "妳在開玩笑吧？"}, {"sp": "女", "zh": "真的呢，我昨天才決定的。"}],
+   "question": "女的明天要做什麼？", "options": ["去日本", "開玩笑", "留在臺灣"], "answer": 0,
+   "why": "真的呢 = sungguhan (menegaskan). B salah menangkap tuduhan si pria."},
+  {"type": "read_mc", "part": "閱讀 Part 3 · Membaca informasi", "instr": "Baca pesan ini, lalu pilih jawaban yang benar.",
+   "text": "安妮給大文留下一個簡訊：「好消息！我們的報告是第一名。謝謝你的合作！」", "question": "安妮的簡訊說什麼？",
+   "options": ["他們的報告是第一名", "她要去日本", "她在開玩笑"], "answer": 0,
+   "why": "報告是第一名."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "我（1）簡訊給你了（2）！你（3）忙！", "options": ["傳", "呢", "真", "談"], "answers": [0, 1, 2],
+   "why": "(1) 傳簡訊 = mengirim pesan. (2) 呢 menegaskan. (3) 真 + kata sifat. 談 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 127, "point": "真 + Vs — sungguh …!", "pattern": "S + 真 + Vs！", "blocks": [["你", "S"], ["真", "真"], ["忙", "Vs"]],
+   "explain": "真 + kata sifat = seruan 'sungguh/benar-benar …!': 你真忙！ Hanya untuk seruan/predikat — tidak dipakai di depan 的 + benda (真好的人 ✗, pakai 很好的人).",
+   "examples": [{"zh": "你真忙！", "id": "Sibuk sekali kamu!"}, {"zh": "你真關心奶奶！", "id": "Kamu perhatian sekali pada nenek!"}],
+   "check": {"q": "Mana yang BENAR?", "options": ["這裡的風景真漂亮！", "這是真漂亮的風景。", "真漂亮這裡的風景的！"], "answer": 0}},
+  {"tbcl_id": 117, "point": "呢2 — penegasan (lho, kok)", "pattern": "pernyataan + 呢！", "blocks": [["我傳簡訊給你了", "pernyataan"], ["呢", "呢"]],
+   "explain": "呢 di akhir PERNYATAAN menegaskan atau mengoreksi anggapan lawan bicara, seperti 'lho/kok': 我傳簡訊給你了呢！ (Aku sudah kirim pesan, lho!). Beda dengan 呢1 (B04) di pertanyaan.",
+   "examples": [{"zh": "我傳簡訊給你了呢！", "id": "Aku sudah kirim pesan ke kamu, lho!"}, {"zh": "真的呢！", "id": "Beneran, lho!"}],
+   "check": {"q": "還早呢！ artinya…", "options": ["Masih pagi, kok!", "Sudah terlambat.", "Pagi atau tidak?"], "answer": 0}}
+ ]
+},
+{
+ "code": "C28",
+ "title_py": "Wǒ de yào bèi dìdi chī diào le!", "title_id": "Obatku dihabiskan adikku!",
+ "scene": "Dawen terkena flu berat di asrama; di telepon, Meimei juga flu dan obatnya dimakan adiknya yang mengira itu permen.",
+ "can_do": ["Menjelaskan gejala: 發燒、咳嗽、流鼻水、頭痛、流汗", "Menyatakan 'habis/hilang' dengan V掉 (吃掉)", "Menyatakan akibat yang menimpa dengan 被…V得… (被感冒弄得很累)"],
+ "exam_link": "Gejala sakit termasuk tema SERING di 聽力 Part 4 dan 閱讀 Part 1 & 4; soal sering meminta memilih gejala yang TIDAK disebut.",
+ "dialogs": [
+  {"place": "在宿舍", "title_id": "Di asrama", "lines": [
+   {"sp": "志明", "zh": "大文，你怎麼了？", "py": "Dàwén, nǐ zěnme le?", "id": "Dawen, kamu kenapa?"},
+   {"sp": "王大文", "zh": "我發燒了，也一直咳嗽。", "py": "Wǒ fāshāo le, yě yìzhí késòu.", "id": "Aku demam, juga batuk terus."},
+   {"sp": "志明", "zh": "你流了很多汗。你流鼻水嗎？", "py": "Nǐ liú le hěn duō hàn. Nǐ liú bíshuǐ ma?", "id": "Keringatmu banyak. Kamu pilek?"},
+   {"sp": "王大文", "zh": "流鼻水，頭痛，還有一點咳。", "py": "Liú bíshuǐ, tóutòng, hái yǒu yìdiǎn ké.", "id": "Pilek, sakit kepala, juga agak batuk."},
+   {"sp": "志明", "zh": "你的病嚴重嗎？", "py": "Nǐ de bìng yánzhòng ma?", "id": "Sakitmu parah?"},
+   {"sp": "王大文", "zh": "不太嚴重。", "py": "Bú tài yánzhòng.", "id": "Tidak terlalu parah."}
+  ]},
+  {"place": "打電話", "title_id": "Menelepon", "lines": [
+   {"sp": "李美美", "zh": "大文，我也感冒了！我的藥被弟弟吃掉了！", "py": "Dàwén, wǒ yě gǎnmào le! Wǒ de yào bèi dìdi chī diào le!", "id": "Dawen, aku juga flu! Obatku dihabiskan adikku!"},
+   {"sp": "王大文", "zh": "什麼？他為什麼吃你的藥？", "py": "Shénme? Tā wèishénme chī nǐ de yào?", "id": "Apa? Kenapa dia makan obatmu?"},
+   {"sp": "李美美", "zh": "他以為是糖。我被這個感冒弄得很累。", "py": "Tā yǐwéi shì táng. Wǒ bèi zhège gǎnmào nòng de hěn lèi.", "id": "Dia kira permen. Aku dibuat capek sekali oleh flu ini."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你哪裡不舒服？", "options": ["我發燒了，也一直咳嗽。", "我很舒服。", "我吃藥掉。"], "answer": 0,
+   "why": "Sebut gejalanya."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他流鼻水。", "options": [{"icon": "🤧", "label": "pilek"}, {"icon": "🤒", "label": "demam"}, {"icon": "🤕", "label": "sakit kepala"}], "answer": 0,
+   "why": "流鼻水 = pilek (ingus mengalir)."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "我的蛋糕呢？"}, {"sp": "女", "zh": "被弟弟吃掉了。"}],
+   "question": "蛋糕怎麼了？", "options": ["被弟弟吃掉了", "在冰箱裡", "女的吃了"], "answer": 0,
+   "why": "被弟弟吃掉了 = dihabiskan adik."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "醫生說：你發燒三十八度，咳嗽很嚴重。你要多喝水，多休息。", "question": "他哪裡不舒服？",
+   "options": ["發燒、咳嗽", "肚子痛", "腳痛", "眼睛痛"], "answer": 0,
+   "why": "發燒 + 咳嗽很嚴重. Gejala lain tidak disebut."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "我（1）了，頭也很痛。我的藥被弟弟吃（2）了！我被這個感冒弄（3）很累。", "options": ["發燒", "掉", "得", "汗"], "answers": [0, 1, 2],
+   "why": "(1) 發燒 = demam. (2) 吃掉 = dimakan habis. (3) 被…V得 + akibat. 汗 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 199, "point": "被 + (N) + V得 + akibat — dibuat … oleh …", "pattern": "S + 被 + N + V + 得 + akibat", "blocks": [["我", "S"], ["被", "被"], ["這個感冒", "N"], ["弄得", "V得"], ["很累", "akibat"]],
+   "explain": "Pola pasif dengan 得 menekankan AKIBAT yang dialami subjek: 我被這個感冒弄得很累 (aku dibuat sangat lelah oleh flu ini).",
+   "examples": [{"zh": "我被這個感冒弄得很累。", "id": "Aku dibuat capek sekali oleh flu ini."}],
+   "check": {"q": "Susunan yang benar:", "options": ["我被他說得很難過。", "我說得被他很難過。", "被我他說得很難過。"], "answer": 0}},
+  {"tbcl_id": 214, "point": "V掉 — (sampai) habis/hilang", "pattern": "V + 掉 (+了)", "blocks": [["吃", "V"], ["掉", "掉"], ["了", "了"]],
+   "explain": "掉 setelah kata kerja = sesuatu habis/terbuang/hilang karena tindakan itu: 吃掉 (dimakan habis), 丟掉 (dibuang), 用掉 (terpakai habis).",
+   "examples": [{"zh": "我的藥被弟弟吃掉了！", "id": "Obatku dihabiskan adikku!"}],
+   "check": {"q": "'Uangnya sudah habis terpakai' =", "options": ["錢都用掉了。", "錢都掉用了。", "錢用都掉了。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C29",
+ "title_py": "Zhège yào yīnggāi fàn hòu chī.", "title_id": "Obat ini sebaiknya diminum setelah makan.",
+ "scene": "Dawen membeli obat flu di apotek dan mendapat aturan minum; keesokan harinya ia merasa lebih segar dan Meimei memperhatikan wajahnya.",
+ "can_do": ["Memberi aturan/saran dengan 應該 (應該飯後吃)", "Memperkirakan dengan 應該 (三天以後應該就好了)", "Membicarakan apotek & kondisi: 藥局、正常、精神、臉色"],
+ "exam_link": "Aturan minum obat & saran apoteker muncul di 聽力 Part 4 dan 閱讀 Part 3 (membaca label obat).",
+ "dialogs": [
+  {"place": "在藥局", "title_id": "Di apotek", "lines": [
+   {"sp": "王大文", "zh": "你好，我感冒了，要買感冒藥。", "py": "Nǐ hǎo, wǒ gǎnmào le, yào mǎi gǎnmào yào.", "id": "Halo, saya flu, mau beli obat flu."},
+   {"sp": "小姐", "zh": "這個藥應該飯後吃，一天三次。", "py": "Zhège yào yīnggāi fàn hòu chī, yì tiān sān cì.", "id": "Obat ini sebaiknya diminum setelah makan, tiga kali sehari."},
+   {"sp": "王大文", "zh": "我應該吃幾天？", "py": "Wǒ yīnggāi chī jǐ tiān?", "id": "Saya harus minum berapa hari?"},
+   {"sp": "小姐", "zh": "三天。三天以後你應該就好了。", "py": "Sān tiān. Sān tiān yǐhòu nǐ yīnggāi jiù hǎo le.", "id": "Tiga hari. Setelah tiga hari seharusnya sudah sembuh."}
+  ]},
+  {"place": "第二天", "title_id": "Keesokan harinya", "lines": [
+   {"sp": "李美美", "zh": "大文，你的臉色不好。", "py": "Dàwén, nǐ de liǎnsè bù hǎo.", "id": "Dawen, wajahmu pucat."},
+   {"sp": "王大文", "zh": "我吃了藥，現在精神比較好了。", "py": "Wǒ chī le yào, xiànzài jīngshén bǐjiào hǎo le.", "id": "Aku sudah minum obat, sekarang lebih segar."},
+   {"sp": "李美美", "zh": "現在不發燒了嗎？", "py": "Xiànzài bù fāshāo le ma?", "id": "Sekarang sudah tidak demam?"},
+   {"sp": "王大文", "zh": "不發燒了，正常了。藥房今天應該開到九點吧，我還要去買一點。", "py": "Bù fāshāo le, zhèngcháng le. Yàofáng jīntiān yīnggāi kāi dào jiǔ diǎn ba, wǒ hái yào qù mǎi yìdiǎn.", "id": "Sudah tidak, normal. Apotek hari ini mungkin buka sampai jam sembilan, aku mau beli lagi sedikit."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "這個藥什麼時候吃？", "options": ["應該飯後吃。", "這個藥很好。", "我吃藥了嗎。"], "answer": 0,
+   "why": "什麼時候 → waktu minum (飯後)."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "她在藥局買藥。", "options": [{"icon": "💊🏪", "label": "di apotek"}, {"icon": "🍞🏪", "label": "di toko roti"}, {"icon": "🏥", "label": "di rumah sakit"}], "answer": 0,
+   "why": "藥局 = apotek."},
+  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "lines": [{"sp": "男", "zh": "美美怎麼還沒來？"}, {"sp": "女", "zh": "她應該在路上了，再等一下吧。"}],
+   "question": "女的覺得美美現在在哪裡？", "options": ["可能在路上", "在家", "已經到了"], "answer": 0,
+   "why": "應該在路上 = seharusnya/mungkin sedang di jalan (perkiraan, 應該2)."},
+  {"type": "read_mc", "part": "閱讀 Part 3 · Membaca informasi", "instr": "Baca aturan pakai obat ini, lalu pilih jawaban yang benar.",
+   "text": "吃藥：一天三次，飯後吃。要是三天以後還發燒，應該去醫院。", "question": "藥什麼時候吃？",
+   "options": ["飯前", "飯後", "睡覺以前", "早上"], "answer": 1,
+   "why": "飯後吃. 飯前 (sebelum makan) adalah kebalikannya."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "你的（1）不好。你現在的（2）怎麼樣？這個藥（3）飯後吃。", "options": ["臉色", "精神", "應該", "藥局"], "answers": [0, 1, 2],
+   "why": "(1) 臉色 = raut wajah. (2) 精神 = kebugaran/semangat. (3) 應該 = sebaiknya. 藥局 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 166, "point": "應該1 — sebaiknya / seharusnya (saran)", "pattern": "S + 應該 + V", "blocks": [["這個藥", "S"], ["應該", "應該"], ["飯後吃", "VP"]],
+   "explain": "應該 memberi saran atau aturan: 應該飯後吃, 你應該多休息. Negatif: 不應該 (tidak seharusnya).",
+   "examples": [{"zh": "這個藥應該飯後吃。", "id": "Obat ini sebaiknya diminum setelah makan."}],
+   "check": {"q": "'Kamu tidak seharusnya tidur larut' =", "options": ["你不應該很晚睡覺。", "你應該不很晚睡覺了。", "不你應該很晚睡覺。"], "answer": 0}},
+  {"tbcl_id": 167, "point": "應該2 — seharusnya/mungkin (perkiraan)", "pattern": "S + 應該 + (就) + VP", "blocks": [["她", "S"], ["應該", "應該"], ["在路上了", "VP"]],
+   "explain": "應該 juga menyatakan perkiraan yang cukup yakin: 她應該在路上了 (dia mestinya sudah di jalan), 三天以後應該就好了.",
+   "examples": [{"zh": "三天以後你應該就好了。", "id": "Setelah tiga hari seharusnya sudah sembuh."}, {"zh": "藥房今天應該開到九點吧。", "id": "Apotek hari ini mungkin buka sampai jam sembilan."}],
+   "check": {"q": "他應該到家了 artinya…", "options": ["Dia mestinya sudah sampai rumah.", "Dia harus pulang.", "Dia tidak boleh pulang."], "answer": 0}}
+ ]
+},
+{
+ "code": "C30",
+ "title_py": "Duō yùndòng, shēntǐ cái huì hǎo.", "title_id": "Banyak olahraga, baru badan jadi sehat.",
+ "scene": "Meimei menegur Dawen yang terlalu lama duduk di depan layar. Mereka membicarakan olahraga, postur, dan mitos soal tinggi badan.",
+ "can_do": ["Menyatakan syarat: (要)…才… (多運動，身體才會好)", "Menolak/menegaskan dengan tegas: 我才不…呢！", "Menyebut bagian tubuh & gerakan: 腿、背、眼、低頭、動"],
+ "exam_link": "才 dalam kalimat bersyarat & penegasan (我才不要) sering muncul di 聽力 Part 4 dengan makna tersirat penolakan.",
+ "dialogs": [
+  {"place": "在宿舍", "title_id": "Di asrama", "lines": [
+   {"sp": "李美美", "zh": "大文，你每天坐著上網，你應該多動一動。", "py": "Dàwén, nǐ měitiān zuòzhe shàngwǎng, nǐ yīnggāi duō dòng yí dòng.", "id": "Dawen, tiap hari kamu duduk internetan, sebaiknya banyak bergerak."},
+   {"sp": "王大文", "zh": "我的腿和背都很痛。", "py": "Wǒ de tuǐ hé bèi dōu hěn tòng.", "id": "Kaki dan punggungku sakit."},
+   {"sp": "李美美", "zh": "你要多運動，身體才會好。", "py": "Nǐ yào duō yùndòng, shēntǐ cái huì hǎo.", "id": "Kamu harus banyak olahraga, baru badanmu sehat."},
+   {"sp": "王大文", "zh": "可是我沒有時間。", "py": "Kěshì wǒ méiyǒu shíjiān.", "id": "Tapi aku tidak punya waktu."}
+  ]},
+  {"place": "在公園", "title_id": "Di taman", "lines": [
+   {"sp": "王大文", "zh": "你別一直低頭看手機，對眼睛不好。", "py": "Nǐ bié yìzhí dītóu kàn shǒujī, duì yǎnjīng bù hǎo.", "id": "Jangan terus menunduk melihat HP, tidak baik untuk mata."},
+   {"sp": "李美美", "zh": "你說得對。聽說多運動的人，身高會比較高。", "py": "Nǐ shuō de duì. Tīngshuō duō yùndòng de rén, shēngāo huì bǐjiào gāo.", "id": "Kamu benar. Katanya orang yang banyak olahraga, tinggi badannya lebih tinggi."},
+   {"sp": "王大文", "zh": "我才不相信呢！你看那隻貓，毛很長，每天都不動。", "py": "Wǒ cái bù xiāngxìn ne! Nǐ kàn nà zhī māo, máo hěn cháng, měitiān dōu bú dòng.", "id": "Aku sama sekali tidak percaya! Lihat kucing itu, bulunya panjang, tiap hari tidak bergerak."},
+   {"sp": "李美美", "zh": "它不動也不會死！你要多運動才對。", "py": "Tā bú dòng yě bú huì sǐ! Nǐ yào duō yùndòng cái duì.", "id": "Dia tidak bergerak pun tidak akan mati! Kamu yang harus banyak olahraga."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "我怎麼才能長高？", "options": ["你要多運動，才會長高。", "我很高。", "你才高。"], "answer": 0,
+   "why": "要…才… = harus …, baru …. Jawab dengan syaratnya."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他的腿很痛。", "options": [{"icon": "🦵", "label": "kaki"}, {"icon": "👁️", "label": "mata"}, {"icon": "🖐️", "label": "tangan"}], "answer": 0,
+   "why": "腿 = kaki (tungkai)."},
+  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "lines": [{"sp": "女", "zh": "你要不要吃這個？很好吃。"}, {"sp": "男", "zh": "我才不要，它的味道很奇怪。"}],
+   "question": "男的意思是什麼？", "options": ["他不想吃", "他很想吃", "他吃過了"], "answer": 0,
+   "why": "我才不要 = aku sama sekali tidak mau (penolakan tegas, 才3)."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "醫生說：一直低頭看手機，對眼睛和背都不好。每天要多動一動，身體才會好。", "question": "醫生說什麼對身體好？",
+   "options": ["多動一動", "一直看手機", "低頭", "多吃藥"], "answer": 0,
+   "why": "多動一動，身體才會好. B dan C justru disebut tidak baik."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "你要多運動，身體（1）會好。別一直（2）看手機，對（3）不好。", "options": ["才", "低頭", "眼睛", "毛"], "answers": [0, 1, 2],
+   "why": "(1) 要…才…. (2) 低頭 = menunduk. (3) 對眼睛不好. 毛 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 172, "point": "(要)…才… — (harus) …, baru …", "pattern": "(要) + syarat，(S) + 才 + hasil", "blocks": [["多運動", "syarat"], ["身體", "S"], ["才", "才"], ["會好", "hasil"]],
+   "explain": "才 menandai bahwa hasil HANYA terjadi bila syarat dipenuhi: 多運動，身體才會好 (baru sehat kalau banyak olahraga). Bandingkan 就: syarat cukup, hasil mudah terjadi.",
+   "examples": [{"zh": "你要多運動，身體才會好。", "id": "Harus banyak olahraga, baru badan sehat."}],
+   "check": {"q": "'Harus belajar tiap hari, baru bisa lulus ujian' =", "options": ["要每天念書，才考得好。", "要每天念書，就才考得好。", "才每天念書，要考得好。"], "answer": 0}},
+  {"tbcl_id": 173, "point": "才3 — penegasan (sama sekali …)", "pattern": "S + 才 + (不) + V + 呢", "blocks": [["我", "S"], ["才", "才"], ["不相信", "V"], ["呢", "呢"]],
+   "explain": "才 juga menegaskan pendapat, sering bernada membantah: 我才不相信呢！ (aku sama sekali tidak percaya!), 這才對 (nah, ini baru benar).",
+   "examples": [{"zh": "我才不相信呢！", "id": "Aku sama sekali tidak percaya!"}, {"zh": "你要多運動才對。", "id": "Kamu yang seharusnya banyak olahraga."}],
+   "check": {"q": "我才不去呢！ artinya…", "options": ["Aku sama sekali tidak mau pergi!", "Aku baru saja pergi.", "Aku pergi sebentar."], "answer": 0}}
+ ]
+},
+{
+ "code": "C31",
+ "title_py": "Nǐ bú shì shuō bā diǎn shàngkè ma? Wǒ cái chūmén, jiù chídào le!", "title_id": "Bukannya kamu bilang kelas jam delapan? Aku baru keluar, sudah terlambat!",
+ "scene": "Dawen terlambat masuk kelas; di kelas, guru mengadakan kuis dan Dawen menjawab pertanyaan dengan cepat.",
+ "can_do": ["Bertanya retoris 'bukankah …?': 不是…嗎？", "Menyatakan 'baru saja …, sudah …': 才…就…", "Membicarakan kuis: 題目、回答、答案、結果"],
+ "exam_link": "Pertanyaan retoris (不是…嗎) adalah pola implikatur khas 聽力 Part 4 — maknanya adalah pernyataan, bukan pertanyaan.",
+ "dialogs": [
+  {"place": "在教室門口", "title_id": "Di depan kelas", "lines": [
+   {"sp": "李美美", "zh": "大文，你不是說八點上課嗎？現在八點半了！", "py": "Dàwén, nǐ bú shì shuō bā diǎn shàngkè ma? Xiànzài bā diǎn bàn le!", "id": "Dawen, bukannya kamu bilang kelas jam delapan? Sekarang sudah setengah sembilan!"},
+   {"sp": "王大文", "zh": "對！我才出門，就八點了，結果遲到了。", "py": "Duì! Wǒ cái chūmén, jiù bā diǎn le, jiéguǒ chídào le.", "id": "Iya! Aku baru keluar, sudah jam delapan, akhirnya terlambat."},
+   {"sp": "陳老師", "zh": "大文，你又遲到了！", "py": "Dàwén, nǐ yòu chídào le!", "id": "Dawen, kamu terlambat lagi!"}
+  ]},
+  {"place": "上課的時候", "title_id": "Saat pelajaran", "lines": [
+   {"sp": "陳老師", "zh": "這個題目誰會回答？", "py": "Zhège tímù shéi huì huídá?", "id": "Siapa yang bisa menjawab soal ini?"},
+   {"sp": "王大文", "zh": "我！答案是「三」。", "py": "Wǒ! Dá'àn shì \"sān\".", "id": "Saya! Jawabannya 'tiga'."},
+   {"sp": "陳老師", "zh": "對！大文立刻就回答了，很好。", "py": "Duì! Dàwén lìkè jiù huídá le, hěn hǎo.", "id": "Benar! Dawen langsung menjawab, bagus."},
+   {"sp": "李美美", "zh": "第四題你會嗎？我才看，就頭痛了！", "py": "Dì-sì tí nǐ huì ma? Wǒ cái kàn, jiù tóu tòng le!", "id": "Soal nomor empat kamu bisa? Baru kulihat, kepalaku sudah pusing!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你不是說你會來嗎？", "options": ["對不起，我忘了。", "我不是。", "你說嗎。"], "answer": 0,
+   "why": "不是…嗎 = bukankah kamu bilang …? (teguran). Tanggapan wajar: minta maaf/menjelaskan. B salah menangkap 不是 secara harfiah."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他遲到了。", "options": [{"icon": "🏃⏰", "label": "terlambat"}, {"icon": "🪑📚", "label": "tepat waktu"}, {"icon": "😴", "label": "tidur"}], "answer": 0,
+   "why": "遲到 = terlambat."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "這個題目的答案是什麼？"}, {"sp": "女", "zh": "我才看，就知道了，答案是三。"}],
+   "question": "答案是什麼？", "options": ["三", "看", "一"], "answer": 0,
+   "why": "答案是三."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "今天考試有十題。大文才寫了五題，時間就到了。結果他只寫完一半。", "question": "大文寫完了幾題？",
+   "options": ["十題", "五題", "一題"], "answer": 1,
+   "why": "才寫了五題 → 只寫完一半 (5 dari 10)."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "你（1）是說八點上課嗎？我才出門，（2）八點了，（3）遲到了。", "options": ["不", "就", "結果", "立刻"], "answers": [0, 1, 2],
+   "why": "(1) 不是…嗎. (2) 才…就…. (3) 結果 = akibatnya. 立刻 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 227, "point": "不是…嗎？ — bukankah …?", "pattern": "S + 不是 + VP + 嗎？", "blocks": [["你", "S"], ["不是", "不是"], ["說八點上課", "VP"], ["嗎", "?"]],
+   "explain": "Pertanyaan retoris untuk menegur atau mengingatkan: 你不是說八點上課嗎？ = kamu bilang jam 8, kan? (kenyataannya tidak begitu). Maknanya positif, meski ada 不.",
+   "examples": [{"zh": "你不是說八點上課嗎？", "id": "Bukannya kamu bilang kelas jam delapan?"}],
+   "check": {"q": "你不是會游泳嗎？ artinya…", "options": ["Kamu kan bisa berenang?", "Kamu tidak bisa berenang.", "Kamu mau berenang?"], "answer": 0}},
+  {"tbcl_id": 205, "point": "才…就… — baru …, sudah …", "pattern": "S + 才 + V1，就 + V2", "blocks": [["我", "S"], ["才", "才"], ["出門", "V1"], ["就", "就"], ["八點了", "V2"]],
+   "explain": "Kejadian kedua terjadi sangat cepat setelah yang pertama, sering di luar dugaan: 我才出門，就八點了 (baru keluar, sudah jam delapan).",
+   "examples": [{"zh": "我才看，就頭痛了！", "id": "Baru kulihat, kepalaku sudah pusing!"}],
+   "check": {"q": "'Baru duduk, dia sudah tidur' =", "options": ["他才坐下，就睡覺了。", "他就坐下，才睡覺了。", "他坐下才就睡覺了。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C32",
+ "title_py": "Hánjià yǒushíhòu huí jiā, yǒushíhòu qù lǚxíng.", "title_id": "Saat libur musim dingin, kadang pulang, kadang jalan-jalan.",
+ "scene": "Dawen dan Meimei membicarakan kalender akademik Taiwan dan kegiatan mereka saat libur semester.",
+ "can_do": ["Menyatakan kegiatan bergantian: 有時候…，有時候…", "Menyatakan dua hal sekaligus: (也)…也…", "Membicarakan kalender akademik: 學期、寒假、暑假、春假、放假"],
+ "exam_link": "Jadwal libur & semester muncul di 閱讀 Part 3 (kalender akademik) dan 聽力 Part 3.",
+ "dialogs": [
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "李美美", "zh": "大文，寒假你做什麼？", "py": "Dàwén, hánjià nǐ zuò shénme?", "id": "Dawen, libur musim dingin kamu ngapain?"},
+   {"sp": "王大文", "zh": "寒假我有時候回家，有時候去旅行。", "py": "Hánjià wǒ yǒushíhòu huí jiā, yǒushíhòu qù lǚxíng.", "id": "Kadang pulang, kadang jalan-jalan."},
+   {"sp": "李美美", "zh": "暑假呢？", "py": "Shǔjià ne?", "id": "Kalau libur musim panas?"},
+   {"sp": "王大文", "zh": "暑假我也打工，也學中文。", "py": "Shǔjià wǒ yě dǎgōng, yě xué Zhōngwén.", "id": "Libur musim panas aku kerja sambilan sekaligus belajar Mandarin."}
+  ]},
+  {"place": "看學校的日曆", "title_id": "Melihat kalender kampus", "lines": [
+   {"sp": "王大文", "zh": "臺灣的學期什麼時候放假？", "py": "Táiwān de xuéqí shénme shíhòu fàngjià?", "id": "Semester di Taiwan libur kapan?"},
+   {"sp": "李美美", "zh": "一月放寒假，七月放暑假。春假只有幾天。", "py": "Yī yuè fàng hánjià, qī yuè fàng shǔjià. Chūnjià zhǐ yǒu jǐ tiān.", "id": "Januari libur musim dingin, Juli libur musim panas. Libur musim semi hanya beberapa hari."},
+   {"sp": "王大文", "zh": "你放假的時候做什麼？", "py": "Nǐ fàngjià de shíhòu zuò shénme?", "id": "Kamu ngapain saat libur?"},
+   {"sp": "李美美", "zh": "我也看書，也跟朋友出去玩。", "py": "Wǒ yě kàn shū, yě gēn péngyǒu chūqù wán.", "id": "Aku membaca, juga main keluar dengan teman."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "寒假你做什麼？", "options": ["有時候回家，有時候去旅行。", "寒假很好。", "我放假。"], "answer": 0,
+   "why": "做什麼 → sebut kegiatan."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "暑假他去海邊。", "options": [{"icon": "🏖️", "label": "pantai"}, {"icon": "⛷️", "label": "main ski"}, {"icon": "📚", "label": "belajar"}], "answer": 0,
+   "why": "海邊 = tepi laut/pantai."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "這個學期什麼時候放假？"}, {"sp": "女", "zh": "一月二十號放寒假。"}],
+   "question": "什麼時候放寒假？", "options": ["一月二十號", "七月", "二月十號"], "answer": 0,
+   "why": "一月二十號放寒假."},
+  {"type": "read_mc", "part": "閱讀 Part 3 · Membaca informasi", "instr": "Baca kalender ini, lalu pilih jawaban yang benar.",
+   "text": "臺灣的大學一年有兩個學期。一月到二月放寒假，七月到八月放暑假。四月有幾天春假。", "question": "暑假在幾月？",
+   "options": ["一月到二月", "四月", "七月到八月"], "answer": 2,
+   "why": "七月到八月放暑假."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "放假的時候，我（1）時候回家，有時候去旅行。我也打工，（2）學中文。這個（3）很忙。", "options": ["有", "也", "學期", "寒假"], "answers": [0, 1, 2],
+   "why": "(1) 有時候…有時候…. (2) 也…也…. (3) 這個學期. 寒假 tidak cocok (libur bukan 'sibuk')."}
+ ],
+ "grammar": [
+  {"tbcl_id": 142, "point": "(也)…也… — … dan juga …", "pattern": "S + 也 + V1，也 + V2", "blocks": [["我", "S"], ["也", "也"], ["打工", "V1"], ["也", "也"], ["學中文", "V2"]],
+   "explain": "也…也… menyatakan dua kegiatan/keadaan yang sama-sama berlaku: 我也打工，也學中文.",
+   "examples": [{"zh": "暑假我也打工，也學中文。", "id": "Libur musim panas aku kerja sambilan sekaligus belajar Mandarin."}],
+   "check": {"q": "'Dia bisa menyanyi juga bisa menari' =", "options": ["他也會唱歌，也會跳舞。", "他會也唱歌，會也跳舞。", "也他會唱歌，也會跳舞。"], "answer": 0}},
+  {"tbcl_id": 143, "point": "有時候…，有時候… — kadang …, kadang …", "pattern": "有時候 + V1，有時候 + V2", "blocks": [["有時候", "有時候"], ["回家", "V1"], ["有時候", "有時候"], ["去旅行", "V2"]],
+   "explain": "Dua kegiatan yang BERGANTIAN pada waktu yang berbeda (beda dengan 一邊…一邊… yang bersamaan).",
+   "examples": [{"zh": "寒假我有時候回家，有時候去旅行。", "id": "Libur musim dingin, kadang pulang, kadang jalan-jalan."}],
+   "check": {"q": "'Kadang aku naik bus, kadang jalan kaki' =", "options": ["我有時候坐公車，有時候走路。", "我坐公車有時候，走路有時候。", "有時候我坐公車走路。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C33",
+ "title_py": "Cóng míngnián qǐ, wǒ jiù yào bìyè le.", "title_id": "Mulai tahun depan, aku sudah lulus.",
+ "scene": "Dawen hampir lulus; ia bercerita kepada Meimei tentang rencana penelitian di bidang pendidikan dan dukungan profesornya.",
+ "can_do": ["Menyatakan titik mulai: 從…起", "Menegaskan identitas/tempat dengan 就 (就是、就在)", "Membicarakan kelulusan & studi lanjut: 畢業、研究、教授、程度"],
+ "exam_link": "Rencana studi & karier muncul di 閱讀 Part 5 dan 聽力 Part 4. 就是 sering menjadi penunjuk jawaban ('ya itu dia').",
+ "dialogs": [
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "李美美", "zh": "大文，你什麼時候畢業？", "py": "Dàwén, nǐ shénme shíhòu bìyè?", "id": "Dawen, kapan kamu lulus?"},
+   {"sp": "王大文", "zh": "明年六月。從明年起，我就要畢業了！", "py": "Míngnián liù yuè. Cóng míngnián qǐ, wǒ jiù yào bìyè le!", "id": "Juni tahun depan. Mulai tahun depan, aku sudah lulus!"},
+   {"sp": "李美美", "zh": "畢業以後，你要做什麼？", "py": "Bìyè yǐhòu, nǐ yào zuò shénme?", "id": "Setelah lulus, kamu mau apa?"},
+   {"sp": "王大文", "zh": "我想研究教育。陳教授說我的中文程度很高。", "py": "Wǒ xiǎng yánjiū jiàoyù. Chén jiàoshòu shuō wǒ de Zhōngwén chéngdù hěn gāo.", "id": "Aku ingin meneliti pendidikan. Profesor Chen bilang tingkat Mandarinku tinggi."}
+  ]},
+  {"place": "在教授的辦公室門口", "title_id": "Di depan kantor profesor", "lines": [
+   {"sp": "李美美", "zh": "你的研究題目是什麼？", "py": "Nǐ de yánjiū tímù shì shénme?", "id": "Topik penelitianmu apa?"},
+   {"sp": "王大文", "zh": "就是「印尼學生怎麼學中文」。", "py": "Jiù shì \"Yìnní xuéshēng zěnme xué Zhōngwén\".", "id": "Ya itu: 'Bagaimana mahasiswa Indonesia belajar Mandarin'."},
+   {"sp": "李美美", "zh": "很好！你一定會成功。陳教授在哪裡？", "py": "Hěn hǎo! Nǐ yídìng huì chénggōng. Chén jiàoshòu zài nǎlǐ?", "id": "Bagus! Kamu pasti berhasil. Profesor Chen di mana?"},
+   {"sp": "王大文", "zh": "就在那邊。從今天起，我每天看書三個小時。我希望得到教授的幫助，我說了就要做到！", "py": "Jiù zài nàbiān. Cóng jīntiān qǐ, wǒ měitiān kàn shū sān ge xiǎoshí. Wǒ xīwàng dédào jiàoshòu de bāngzhù, wǒ shuō le jiù yào zuòdào!", "id": "Itu di sana. Mulai hari ini, aku membaca tiga jam sehari. Aku berharap mendapat bantuan profesor, yang kukatakan harus kulakukan!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你什麼時候畢業？", "options": ["明年六月就畢業了。", "我畢業了嗎。", "畢業很好。"], "answer": 0,
+   "why": "什麼時候 → waktu."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他畢業了。", "options": [{"icon": "🎓", "label": "wisuda/lulus"}, {"icon": "📚", "label": "belajar"}, {"icon": "🏫", "label": "masuk sekolah"}], "answer": 0,
+   "why": "畢業 = lulus."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "陳教授在哪裡？"}, {"sp": "女", "zh": "就在那邊，穿白衣服的那個人。"}],
+   "question": "陳教授穿什麼顏色的衣服？", "options": ["白色", "黑色", "紅色"], "answer": 0,
+   "why": "穿白衣服的那個人."},
+  {"type": "read_mc", "part": "閱讀 Part 3 · Membaca informasi", "instr": "Baca pengumuman ini, lalu pilih jawaban yang benar.",
+   "text": "從九月起，大學的學生每天要運動三十分鐘。", "question": "從什麼時候開始每天運動？",
+   "options": ["九月", "明年", "今天"], "answer": 0,
+   "why": "從九月起 = mulai September."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "（1）明年起，我就要畢業了。我的中文（2）很高。我說了就要（3）。", "options": ["從", "程度", "做到", "教授"], "answers": [0, 1, 2],
+   "why": "(1) 從…起. (2) 程度 = tingkat. (3) 做到 = melaksanakan. 教授 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 174, "point": "就2 — ya itu / tepat (penegasan)", "pattern": "就 + 是/在 + …", "blocks": [["就", "就"], ["在", "在"], ["那邊", "tempat"]],
+   "explain": "就 di depan 是/在 menegaskan 'justru itu/tepat di situ': 就是這個 (ya ini dia), 就在那邊 (tepat di sebelah sana).",
+   "examples": [{"zh": "就是「印尼學生怎麼學中文」。", "id": "Ya itu: 'Bagaimana mahasiswa Indonesia belajar Mandarin'."}, {"zh": "就在那邊。", "id": "Tepat di sebelah sana."}],
+   "check": {"q": "'Rumahku tepat di depan kampus' =", "options": ["我家就在學校前面。", "我家在就學校前面。", "就我家在學校前面。"], "answer": 0}},
+  {"tbcl_id": 207, "point": "從…起 — mulai …", "pattern": "從 + waktu + 起，…", "blocks": [["從", "從"], ["明年", "waktu"], ["起", "起"]],
+   "explain": "從…起 = mulai (titik waktu) dan seterusnya: 從今天起 (mulai hari ini), 從九月起. Lebih formal dari 從…開始.",
+   "examples": [{"zh": "從今天起，我每天看書三個小時。", "id": "Mulai hari ini, aku membaca tiga jam sehari."}],
+   "check": {"q": "'Mulai besok aku tidak minum kopi' =", "options": ["從明天起，我不喝咖啡了。", "從起明天，我不喝咖啡了。", "明天從起，我不喝咖啡。"], "answer": 0}}
+ ]
+}
+]}

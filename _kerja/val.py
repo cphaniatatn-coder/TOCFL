@@ -22,6 +22,8 @@ for line in open(f'{S}/plan_L{lv}.txt',encoding='utf-8'):
     for layer,ws in (('核心',core),('補充',sup)):
         for w in ws:
             yx='@' in w; w=w.split('@')[0]
+            if yx and w in allw:
+                continue
             if w not in alias:
                 o=allw.get(w); errs.append(f'{mid}: "{w}" bukan kata Level {lv}'+(f" (ada di Level {o['lv']})" if o else ' (tidak ada di daftar TBCL)'))
             elif not yx: seen[alias[w]].append(f'{mid}/{layer}')

@@ -1,0 +1,396 @@
+{"modules": [
+{
+ "code": "C34",
+ "title_py": "Hànzì yào duō xiě xie, kàn kan.", "title_id": "Hanzi harus banyak ditulis dan dilihat.",
+ "scene": "Dawen meminta tips menghafal Hanzi kepada guru, lalu mencoba kelas kaligrafi bersama Meimei.",
+ "can_do": ["Mencoba sesuatu dengan VV看 (試試看、寫寫看)", "Melunakkan ajakan dengan reduplikasi ABAB (休息休息)", "Membicarakan strategi belajar Hanzi: 背、查、遍、拼音、書法"],
+ "exam_link": "Strategi belajar muncul di 閱讀 Part 5. Reduplikasi kata kerja (VV看) sering ada di 聽力 Part 2–3 sebagai ajakan halus.",
+ "dialogs": [
+  {"place": "在教室", "title_id": "Di kelas", "lines": [
+   {"sp": "王大文", "zh": "陳老師，漢字很難，我怎麼學？", "py": "Chén lǎoshī, Hànzì hěn nán, wǒ zěnme xué?", "id": "Bu Chen, Hanzi susah, bagaimana saya belajar?"},
+   {"sp": "陳老師", "zh": "你要多寫寫、看看。每個詞寫十遍。", "py": "Nǐ yào duō xiě xie, kàn kan. Měi ge cí xiě shí biàn.", "id": "Harus banyak menulis dan melihat. Tiap kata tulis sepuluh kali."},
+   {"sp": "王大文", "zh": "我可以用拼音嗎？", "py": "Wǒ kěyǐ yòng pīnyīn ma?", "id": "Boleh pakai pinyin?"},
+   {"sp": "陳老師", "zh": "可以，可是也要背漢字。不會的字，你可以查字典，試試看。", "py": "Kěyǐ, kěshì yě yào bèi Hànzì. Bú huì de zì, nǐ kěyǐ chá zìdiǎn, shì shi kàn.", "id": "Boleh, tapi Hanzi juga harus dihafal. Karakter yang belum tahu, coba cari di kamus."}
+  ]},
+  {"place": "在書法教室", "title_id": "Di kelas kaligrafi", "lines": [
+   {"sp": "李美美", "zh": "大文，你想寫寫看書法嗎？", "py": "Dàwén, nǐ xiǎng xiě xie kàn shūfǎ ma?", "id": "Dawen, kamu mau coba menulis kaligrafi?"},
+   {"sp": "王大文", "zh": "好啊，我想試試看。這個字怎麼寫？我查一下。", "py": "Hǎo a, wǒ xiǎng shì shi kàn. Zhège zì zěnme xiě? Wǒ chá yíxià.", "id": "Boleh, aku mau coba. Karakter ini bagaimana menulisnya? Aku cari dulu."},
+   {"sp": "李美美", "zh": "寫完了，我們休息休息吧。", "py": "Xiě wán le, wǒmen xiūxí xiūxí ba.", "id": "Sudah selesai menulis, kita istirahat sebentar."},
+   {"sp": "王大文", "zh": "好。我每天要背二十個詞！", "py": "Hǎo. Wǒ měitiān yào bèi èrshí ge cí!", "id": "Oke. Tiap hari aku harus menghafal dua puluh kata!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "這個菜你吃過嗎？", "options": ["沒吃過，我吃吃看。", "我吃看。", "吃過看。"], "answer": 0,
+   "why": "VV看 = mencoba (吃吃看). B dan C kehilangan pengulangan kata kerja."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他在寫書法。", "options": [{"icon": "🖌️", "label": "kaligrafi (kuas)"}, {"icon": "✏️", "label": "pensil"}, {"icon": "💻", "label": "komputer"}], "answer": 0,
+   "why": "書法 = kaligrafi dengan kuas."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "這個詞我不會念。"}, {"sp": "女", "zh": "你查查看字典吧。"}],
+   "question": "女的要男的做什麼？", "options": ["查字典", "背詞", "寫十遍"], "answer": 0,
+   "why": "查查看字典 = coba cari di kamus."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca saran guru ini, lalu pilih jawaban yang benar.",
+   "text": "老師說：新詞要寫五遍，每天背十個詞，不會的字要查字典。", "question": "新詞要寫幾遍？",
+   "options": ["五遍", "十遍", "一遍"], "answer": 0,
+   "why": "寫五遍. 十 adalah jumlah kata yang dihafal per hari."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "漢字要多（1）寫。這個字你寫寫（2）。我每天（3）二十個詞。", "options": ["寫", "看", "背", "查"], "answers": [0, 1, 2],
+   "why": "(1) 寫寫 (pengulangan). (2) 寫寫看 = coba tulis. (3) 背 = menghafal. 查 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 148, "point": "Reduplikasi ABAB — melakukan sebentar", "pattern": "AB + AB (休息休息、練習練習)", "blocks": [["休息", "AB"], ["休息", "AB"]],
+   "explain": "Kata kerja dua suku kata diulang utuh (ABAB) untuk membuat tindakan terdengar singkat & santai: 休息休息 (istirahat sebentar), 練習練習. Bukan AABB (休休息息 ✗).",
+   "examples": [{"zh": "我們休息休息吧。", "id": "Kita istirahat sebentar."}],
+   "check": {"q": "'Ayo kita latihan sebentar' =", "options": ["我們練習練習吧。", "我們練習一練習吧。", "我們一練習練習吧。"], "answer": 0}},
+  {"tbcl_id": 152, "point": "VV看 — coba …", "pattern": "V + V + 看", "blocks": [["試", "V"], ["試", "V"], ["看", "看"]],
+   "explain": "Kata kerja satu suku kata diulang lalu ditambah 看 = mencoba melakukan: 試試看 (coba), 吃吃看 (coba makan), 寫寫看 (coba tulis).",
+   "examples": [{"zh": "我想試試看。", "id": "Aku mau coba."}, {"zh": "你想寫寫看書法嗎？", "id": "Kamu mau coba menulis kaligrafi?"}],
+   "check": {"q": "'Coba dengarkan lagu ini' =", "options": ["你聽聽看這個音樂。", "你聽看聽這個音樂。", "你看聽聽這個音樂。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C35",
+ "title_py": "Lǎoshī jiào wǒmen tǎolùn zhège tímù.", "title_id": "Guru menyuruh kami mendiskusikan topik ini.",
+ "scene": "Guru memanggil Dawen dan memberi tugas diskusi kelompok, lalu menjelaskan tata bahasa di papan tulis dan berjanji mengoreksi karangan.",
+ "can_do": ["Memanggil seseorang: 叫 (老師叫你！)", "Menyuruh orang melakukan sesuatu: A 叫 B + V", "Membicarakan kegiatan kelas: 討論、黑板、文法、作文、例子、改"],
+ "exam_link": "Instruksi guru (叫你們…) sering muncul di 聽力 Part 3–4. Tiga makna 叫 (bernama/memanggil/menyuruh) adalah pengecoh klasik.",
+ "dialogs": [
+  {"place": "在教室", "title_id": "Di kelas", "lines": [
+   {"sp": "李美美", "zh": "大文，老師叫你！", "py": "Dàwén, lǎoshī jiào nǐ!", "id": "Dawen, guru memanggilmu!"},
+   {"sp": "王大文", "zh": "老師，有什麼事？", "py": "Lǎoshī, yǒu shénme shì?", "id": "Bu, ada apa?"},
+   {"sp": "陳老師", "zh": "我叫你們討論這個題目：「我的家」。", "py": "Wǒ jiào nǐmen tǎolùn zhège tímù: \"Wǒ de jiā\".", "id": "Saya minta kalian mendiskusikan topik ini: 'Rumahku'."},
+   {"sp": "王大文", "zh": "好。我們先討論，然後寫作文。", "py": "Hǎo. Wǒmen xiān tǎolùn, ránhòu xiě zuòwén.", "id": "Baik. Kami diskusi dulu, lalu menulis karangan."}
+  ]},
+  {"place": "上課的時候", "title_id": "Saat pelajaran", "lines": [
+   {"sp": "陳老師", "zh": "請看黑板。這個文法很重要，例如：「媽媽叫我去買東西」。", "py": "Qǐng kàn hēibǎn. Zhège wénfǎ hěn zhòngyào, lìrú: \"Māma jiào wǒ qù mǎi dōngxi\".", "id": "Lihat papan tulis. Tata bahasa ini penting, misalnya: 'Ibu menyuruhku belanja'."},
+   {"sp": "李美美", "zh": "老師，可以給我們多一點例子嗎？", "py": "Lǎoshī, kěyǐ gěi wǒmen duō yìdiǎn lìzi ma?", "id": "Bu, boleh beri kami lebih banyak contoh?"},
+   {"sp": "陳老師", "zh": "可以。你們寫完作文，我來改。", "py": "Kěyǐ. Nǐmen xiě wán zuòwén, wǒ lái gǎi.", "id": "Boleh. Setelah kalian selesai menulis karangan, saya yang mengoreksi."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "老師叫你做什麼？", "options": ["老師叫我寫作文。", "老師叫陳。", "我叫你。"], "answer": 0,
+   "why": "叫…做什麼 = menyuruh melakukan apa. B memakai 叫 'bernama' — makna lain."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "老師在黑板上寫字。", "options": [{"icon": "🧑‍🏫⬛", "label": "menulis di papan tulis"}, {"icon": "🧑‍🏫📖", "label": "membaca buku"}, {"icon": "🧑‍🏫💻", "label": "memakai komputer"}], "answer": 0,
+   "why": "黑板 = papan tulis."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "媽媽叫妳！"}, {"sp": "女", "zh": "好，我馬上來。"}],
+   "question": "誰叫女的？", "options": ["媽媽", "男的", "老師"], "answer": 0,
+   "why": "媽媽叫妳 = ibu memanggilmu."},
+  {"type": "read_mc", "part": "閱讀 Part 3 · Membaca informasi", "instr": "Baca daftar tugas ini, lalu pilih jawaban yang benar.",
+   "text": "今天的作業：一、跟同學討論「我的家」。二、寫作文，要用三個新文法，例如「叫」、「讓」。三、明天老師改作文。", "question": "作文要用幾個新文法？",
+   "options": ["一個", "兩個", "三個"], "answer": 2,
+   "why": "要用三個新文法. 叫 dan 讓 hanya contoh (dua), bukan jumlahnya."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "老師（1）我們討論這個題目。請看（2）上的例子。老師會（3）我們的作文。", "options": ["叫", "黑板", "改", "文法"], "answers": [0, 1, 2],
+   "why": "(1) 叫 = menyuruh. (2) 黑板上. (3) 改 = mengoreksi. 文法 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 115, "point": "叫1 — memanggil", "pattern": "S + 叫 + orang", "blocks": [["老師", "S"], ["叫", "叫"], ["你", "orang"]],
+   "explain": "叫 + orang = memanggil seseorang: 老師叫你！ (guru memanggilmu). Ingat, 叫 juga berarti 'bernama' (A01).",
+   "examples": [{"zh": "大文，老師叫你！", "id": "Dawen, guru memanggilmu!"}],
+   "check": {"q": "'Ayah memanggilku' =", "options": ["爸爸叫我。", "我叫爸爸。", "爸爸叫。"], "answer": 0}},
+  {"tbcl_id": 116, "point": "叫2 — menyuruh", "pattern": "A + 叫 + B + V", "blocks": [["老師", "A"], ["叫", "叫"], ["我們", "B"], ["討論", "V"]],
+   "explain": "叫 + orang + kata kerja = menyuruh orang melakukan: 老師叫我們討論 (guru menyuruh kami berdiskusi). Mirip 讓1 (C26), tapi 叫 lebih lisan & langsung.",
+   "examples": [{"zh": "我叫你們討論這個題目。", "id": "Saya minta kalian mendiskusikan topik ini."}, {"zh": "媽媽叫我去買東西。", "id": "Ibu menyuruhku belanja."}],
+   "check": {"q": "'Dokter menyuruhnya istirahat' =", "options": ["醫生叫他休息。", "醫生休息叫他。", "他叫醫生休息。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C36",
+ "title_py": "Chúle Zhōngwén yǐwài, wǒ hái xué lìshǐ.", "title_id": "Selain bahasa Mandarin, aku juga belajar sejarah.",
+ "scene": "Dawen dan Meimei membicarakan mata kuliah semester ini, kelas bahasa tingkat lanjut, dan kebiasaan membaca berita.",
+ "can_do": ["Menambah dengan 除了…以外，還/也…", "Mengecualikan dengan 除了…(以外)，…都…", "Membicarakan mata kuliah & tingkat: 歷史、法律、華語、高級、正式"],
+ "exam_link": "除了 punya dua makna (menambah vs mengecualikan) — pengecoh favorit 閱讀 Part 5 dan 聽力 Part 4.",
+ "dialogs": [
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "李美美", "zh": "大文，你這個學期學什麼課？", "py": "Dàwén, nǐ zhège xuéqí xué shénme kè?", "id": "Dawen, semester ini kamu ambil kuliah apa?"},
+   {"sp": "王大文", "zh": "除了中文以外，我還學歷史和法律。", "py": "Chúle Zhōngwén yǐwài, wǒ hái xué lìshǐ hé fǎlǜ.", "id": "Selain Mandarin, aku juga belajar sejarah dan hukum."},
+   {"sp": "李美美", "zh": "你真用功！你學台語嗎？", "py": "Nǐ zhēn yònggōng! Nǐ xué Táiyǔ ma?", "id": "Rajin sekali! Kamu belajar bahasa Taiwan?"},
+   {"sp": "王大文", "zh": "不學。除了台語以外，別的語言我都學過一點。", "py": "Bù xué. Chúle Táiyǔ yǐwài, biéde yǔyán wǒ dōu xué guò yìdiǎn.", "id": "Tidak. Kecuali bahasa Taiwan, bahasa lain sudah pernah kupelajari sedikit."}
+  ]},
+  {"place": "下課以後", "title_id": "Sepulang kelas", "lines": [
+   {"sp": "李美美", "zh": "華語課有高級班嗎？", "py": "Huáyǔ kè yǒu gāojí bān ma?", "id": "Kelas bahasa Mandarin ada kelas tingkat lanjut?"},
+   {"sp": "王大文", "zh": "有。高級班的中文很正式，學很多方面的知識，還有現代的東西。", "py": "Yǒu. Gāojí bān de Zhōngwén hěn zhèngshì, xué hěn duō fāngmiàn de zhīshì, hái yǒu xiàndài de dōngxi.", "id": "Ada. Mandarin di kelas lanjut sangat formal, belajar pengetahuan dari banyak bidang, juga hal-hal modern."},
+   {"sp": "李美美", "zh": "除了上課，你也看新聞嗎？", "py": "Chúle shàngkè, nǐ yě kàn xīnwén ma?", "id": "Selain kuliah, kamu juga menonton berita?"},
+   {"sp": "王大文", "zh": "看！每天都看。", "py": "Kàn! Měitiān dōu kàn.", "id": "Iya! Setiap hari."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "除了中文，你還學什麼？", "options": ["我還學歷史。", "我學中文。", "除了以外。"], "answer": 0,
+   "why": "除了…還… = selain … juga … → sebut tambahannya."},
+  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "lines": [{"sp": "男", "zh": "大家都去了嗎？"}, {"sp": "女", "zh": "除了大文以外，大家都去了。"}],
+   "question": "誰沒去？", "options": ["大文", "大家", "女的"], "answer": 0,
+   "why": "除了…都… = kecuali … semua → Dawen yang tidak pergi."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他在學法律。", "options": [{"icon": "⚖️", "label": "hukum"}, {"icon": "📜", "label": "sejarah"}, {"icon": "🧪", "label": "kimia"}], "answer": 0,
+   "why": "法律 = hukum."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "安妮除了中文以外，還學歷史和法律。除了法律，她的課都很好。", "question": "哪一個對？",
+   "options": ["安妮的法律不太好", "安妮只學中文", "安妮的歷史不好"], "answer": 0,
+   "why": "除了法律，她的課都很好 = kecuali hukum, semuanya bagus → hukumnya kurang bagus. B membalik 除了…還…."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "（1）中文以外，我還學歷史。除了台語，別的語言我（2）想學。我想學很多（3）的知識。", "options": ["除了", "都", "方面", "高級"], "answers": [0, 1, 2],
+   "why": "(1) 除了…以外. (2) 除了…都…. (3) 很多方面的知識. 高級 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 233, "point": "除了…以外，還/也… — selain …, juga …", "pattern": "除了 + A + (以外)，S + 還/也 + B", "blocks": [["除了", "除了"], ["中文", "A"], ["以外", "以外"], ["我還學", "還/也"], ["歷史", "B"]],
+   "explain": "Dengan 還/也, 除了 berarti MENAMBAH: selain A, B juga. A tetap termasuk.",
+   "examples": [{"zh": "除了中文以外，我還學歷史和法律。", "id": "Selain Mandarin, aku juga belajar sejarah dan hukum."}],
+   "check": {"q": "除了咖啡以外，我也喝茶 artinya…", "options": ["Selain kopi, aku juga minum teh.", "Aku tidak minum kopi.", "Aku hanya minum kopi."], "answer": 0}},
+  {"tbcl_id": 232, "point": "除了…(以外)，…都… — kecuali …, semua …", "pattern": "除了 + A + (以外)，(yang lain) + 都 + VP", "blocks": [["除了", "除了"], ["大文", "A"], ["以外", "以外"], ["大家都", "都"], ["去了", "VP"]],
+   "explain": "Dengan 都, 除了 berarti MENGECUALIKAN: kecuali A, semua yang lain … (A tidak termasuk). Perhatikan kata setelahnya: 還/也 (menambah) vs 都 (mengecualikan).",
+   "examples": [{"zh": "除了大文以外，大家都去了。", "id": "Kecuali Dawen, semua pergi."}],
+   "check": {"q": "除了星期天，我每天都上班 artinya…", "options": ["Aku kerja setiap hari kecuali Minggu.", "Aku kerja hanya hari Minggu.", "Selain Minggu, aku juga kerja Sabtu."], "answer": 0}}
+ ]
+},
+{
+ "code": "C37",
+ "title_py": "Sān jiā wǔ shì bā.", "title_id": "Tiga tambah lima sama dengan delapan.",
+ "scene": "Dawen membantu Xiaoming, adik Meimei, mengerjakan PR matematika dalam bahasa Mandarin: operasi hitung dan bilangan desimal.",
+ "can_do": ["Menyebut operasi hitung: 加、減、乘、除", "Membaca bilangan desimal: 二點五、零點五", "Membicarakan kesulitan & kesungguhan belajar (困難、認真)"],
+ "exam_link": "Menghitung (total harga, selisih, kali lipat) adalah keterampilan yang muncul di banyak soal 聽力 Part 3 dan 閱讀 Part 3.",
+ "dialogs": [
+  {"place": "在美美家", "title_id": "Di rumah Meimei", "lines": [
+   {"sp": "王大文", "zh": "小明，三加五是多少？", "py": "Xiǎomíng, sān jiā wǔ shì duōshǎo?", "id": "Xiaoming, tiga tambah lima berapa?"},
+   {"sp": "小明", "zh": "是八！", "py": "Shì bā!", "id": "Delapan!"},
+   {"sp": "王大文", "zh": "很好。十減四呢？", "py": "Hěn hǎo. Shí jiǎn sì ne?", "id": "Bagus. Sepuluh kurang empat?"},
+   {"sp": "小明", "zh": "六。三乘四是十二，十二除四是三。", "py": "Liù. Sān chéng sì shì shí'èr, shí'èr chú sì shì sān.", "id": "Enam. Tiga kali empat dua belas, dua belas bagi empat tiga."}
+  ]},
+  {"place": "在美美家", "title_id": "Di rumah Meimei (lanjutan)", "lines": [
+   {"sp": "小明", "zh": "大文哥哥，二點五加一點五是多少？", "py": "Dàwén gēge, èr diǎn wǔ jiā yī diǎn wǔ shì duōshǎo?", "id": "Kak Dawen, dua koma lima tambah satu koma lima berapa?"},
+   {"sp": "王大文", "zh": "是四。你的數學很好！", "py": "Shì sì. Nǐ de shùxué hěn hǎo!", "id": "Empat. Matematikamu bagus!"},
+   {"sp": "小明", "zh": "數學不困難，我很認真。", "py": "Shùxué bú kùnnán, wǒ hěn rènzhēn.", "id": "Matematika tidak sulit, aku serius belajar."},
+   {"sp": "王大文", "zh": "零點五加零點五呢？你差一點就錯了！", "py": "Líng diǎn wǔ jiā líng diǎn wǔ ne? Nǐ chà yìdiǎn jiù cuò le!", "id": "Nol koma lima tambah nol koma lima? Kamu hampir saja salah!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "三加五是多少？", "options": ["是八。", "是三五。", "加五。"], "answer": 0,
+   "why": "3 + 5 = 8."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih angka yang cocok.",
+   "audio": "二點五", "options": [{"icon": "🔢", "label": "2,5"}, {"icon": "🔢", "label": "25"}, {"icon": "🔢", "label": "2,05"}], "answer": 0,
+   "why": "點 = koma desimal. 二點五 = 2,5; 2,05 dibaca 二點零五."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "一個蛋糕三百塊，四個多少錢？"}, {"sp": "女", "zh": "三百乘四，是一千二百塊。"}],
+   "question": "四個蛋糕多少錢？", "options": ["一千二百塊", "七百塊", "三百四十塊"], "answer": 0,
+   "why": "300 × 4 = 1.200. B menjumlahkan (300+400); C salah membaca angka."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca PR ini, lalu pilih jawaban yang benar.",
+   "text": "小明的數學作業：一、十減三是七。二、四乘五是二十。三、九除三是三。", "question": "哪一題是乘？",
+   "options": ["第一題", "第二題", "第三題"], "answer": 1,
+   "why": "第二題: 四乘五. 減 = kurang, 除 = bagi."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "十（1）四是六。三（2）四是十二。二（3）五加一點五是四。", "options": ["減", "乘", "點", "除"], "answers": [0, 1, 2],
+   "why": "(1) 10 − 4 = 6 → 減. (2) 3 × 4 = 12 → 乘. (3) 2,5 + 1,5 = 4 → 二點五. 除 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 238, "point": "四則運算 — empat operasi hitung", "pattern": "A + 加/減/乘/除 + B + 是 + C", "blocks": [["三", "A"], ["加", "operasi"], ["五", "B"], ["是", "是"], ["八", "hasil"]],
+   "explain": "加 (tambah), 減 (kurang), 乘 (kali), 除 (bagi; dalam bahasa lisan 十二除四 = 12 ÷ 4). Hasil diperkenalkan dengan 是.",
+   "examples": [{"zh": "三加五是八。", "id": "3 + 5 = 8"}, {"zh": "十二除四是三。", "id": "12 ÷ 4 = 3"}],
+   "check": {"q": "'7 × 3 = 21' =", "options": ["七乘三是二十一。", "七加三是二十一。", "七除三是二十一。"], "answer": 0}},
+  {"tbcl_id": 239, "point": "小數點 — bilangan desimal", "pattern": "bilangan bulat + 點 + digit (dibaca satu per satu)", "blocks": [["二", "bulat"], ["點", "點"], ["五", "desimal"]],
+   "explain": "Koma desimal dibaca 點; digit di belakangnya dibaca satu per satu: 3,14 = 三點一四. Angka nol di depan: 零點五 (0,5).",
+   "examples": [{"zh": "二點五加一點五是四。", "id": "2,5 + 1,5 = 4"}, {"zh": "零點五", "id": "0,5"}],
+   "check": {"q": "'3,14' dibaca…", "options": ["三點一四", "三點十四", "三十四點"], "answer": 0}}
+ ]
+},
+{
+ "code": "C38",
+ "title_py": "Sān fēn zhī yī de xuéshēng měitiān yùndòng.", "title_id": "Sepertiga mahasiswa berolahraga setiap hari.",
+ "scene": "Guru membagikan hasil tanya-jawab di kelas tentang kebiasaan mahasiswa: olahraga, kopi, dan jam tidur.",
+ "can_do": ["Menyebut pecahan: 三分之一", "Menyebut persen: 百分之八十", "Membaca hasil survei sederhana: 許多、包括、一切、當中"],
+ "exam_link": "Persen & pecahan muncul di 閱讀 Part 5 (hasil survei, esai opini) dan 聽力 Part 4; soal sering meminta menghitung bagian dari bagian.",
+ "dialogs": [
+  {"place": "上課的時候", "title_id": "Saat pelajaran", "lines": [
+   {"sp": "陳老師", "zh": "我問了我們班的同學。我們班有三十個學生，三分之一的學生每天運動。", "py": "Wǒ wèn le wǒmen bān de tóngxué. Wǒmen bān yǒu sānshí ge xuéshēng, sān fēn zhī yī de xuéshēng měitiān yùndòng.", "id": "Saya sudah bertanya ke kelas kita. Ada tiga puluh mahasiswa, sepertiganya berolahraga setiap hari."},
+   {"sp": "王大文", "zh": "那是十個學生！", "py": "Nà shì shí ge xuéshēng!", "id": "Berarti sepuluh orang!"},
+   {"sp": "陳老師", "zh": "對。百分之八十的學生喜歡喝咖啡。", "py": "Duì. Bǎi fēn zhī bāshí de xuéshēng xǐhuān hē kāfēi.", "id": "Benar. Delapan puluh persen suka minum kopi."}
+  ]},
+  {"place": "上課的時候", "title_id": "Saat pelajaran (lanjutan)", "lines": [
+   {"sp": "李美美", "zh": "包括老師嗎？", "py": "Bāokuò lǎoshī ma?", "id": "Termasuk guru?"},
+   {"sp": "陳老師", "zh": "不包括。一切都是學生說的。", "py": "Bù bāokuò. Yíqiè dōu shì xuéshēng shuō de.", "id": "Tidak termasuk. Semuanya dari jawaban mahasiswa."},
+   {"sp": "王大文", "zh": "許多同學說他們很忙，當中一半每天只睡覺六個小時。", "py": "Xǔduō tóngxué shuō tāmen hěn máng, dāngzhōng yíbàn měitiān zhǐ shuìjiào liù ge xiǎoshí.", "id": "Banyak teman bilang mereka sibuk, di antaranya setengah hanya tidur enam jam sehari."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你們班有多少人每天運動？", "options": ["三分之一。", "三分一。", "分之三。"], "answer": 0,
+   "why": "Pecahan: 三分之一 (1/3). B kehilangan 之; C urutannya salah."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih angka yang cocok.",
+   "audio": "百分之五十", "options": [{"icon": "📊", "label": "50%"}, {"icon": "📊", "label": "15%"}, {"icon": "📊", "label": "5%"}], "answer": 0,
+   "why": "百分之五十 = 50 dari 100 = 50%."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "這個工作包括週末嗎？"}, {"sp": "女", "zh": "不包括，週末不用上班。"}],
+   "question": "週末要上班嗎？", "options": ["不用", "要", "有時候"], "answer": 0,
+   "why": "不包括 → 週末不用上班."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "我們學校許多學生打工。百分之六十的學生打工，當中一半在咖啡店工作。", "question": "在咖啡店工作的學生是百分之多少？",
+   "options": ["百分之六十", "百分之三十", "百分之十"], "answer": 1,
+   "why": "Setengah dari 60% = 30%. A adalah total yang bekerja sambilan — soal 'bagian dari bagian'."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "三（1）一的學生每天運動。（2）同學說他們很忙。門票（3）一杯咖啡。", "options": ["分之", "許多", "包括", "一切"], "answers": [0, 1, 2],
+   "why": "(1) 三分之一 = sepertiga. (2) 許多 = banyak. (3) 包括 = sudah termasuk. 一切 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 237, "point": "分數 — pecahan", "pattern": "penyebut + 分之 + pembilang", "blocks": [["三", "penyebut"], ["分之", "分之"], ["一", "pembilang"]],
+   "explain": "Pecahan dibaca dari PENYEBUT dulu: 三分之一 = 1/3 (satu dari tiga bagian), 四分之三 = 3/4. Kebalikan urutan bahasa Indonesia.",
+   "examples": [{"zh": "三分之一的學生每天運動。", "id": "Sepertiga mahasiswa berolahraga setiap hari."}],
+   "check": {"q": "'3/4' dibaca…", "options": ["四分之三", "三分之四", "三四分之"], "answer": 0}},
+  {"tbcl_id": 235, "point": "百分數 — persen", "pattern": "百分之 + angka", "blocks": [["百分之", "百分之"], ["八十", "angka"]],
+   "explain": "Persen = 'dari seratus bagian': 百分之八十 = 80%, 百分之五 = 5%.",
+   "examples": [{"zh": "百分之八十的學生喜歡喝咖啡。", "id": "Delapan puluh persen mahasiswa suka kopi."}],
+   "check": {"q": "'25%' =", "options": ["百分之二十五", "二十五百分之", "百二十五分"], "answer": 0}}
+ ]
+},
+{
+ "code": "C39",
+ "title_py": "Táiběi de fángzū shì Yǎjiādá de liǎng bèi zuǒyòu.", "title_id": "Sewa di Taipei kira-kira dua kali lipat Jakarta.",
+ "scene": "Dawen membandingkan biaya hidup di Taipei dan Jakarta dengan Meimei: sewa, harga kopi, dan tiket berdasarkan usia.",
+ "can_do": ["Menyatakan kelipatan: A 是 B 的 … 倍", "Menyatakan perkiraan: angka + 左右", "Menyatakan batas: …以上／…以下"],
+ "exam_link": "Kelipatan, kisaran, dan batas usia/harga sering muncul di 閱讀 Part 3 (papan harga tiket) dan 聽力 Part 3–4.",
+ "dialogs": [
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "王大文", "zh": "美美，台北的房租是雅加達的兩倍左右！", "py": "Měiměi, Táiběi de fángzū shì Yǎjiādá de liǎng bèi zuǒyòu!", "id": "Meimei, sewa di Taipei kira-kira dua kali lipat Jakarta!"},
+   {"sp": "李美美", "zh": "真的嗎？你一個月房租多少？", "py": "Zhēn de ma? Nǐ yí ge yuè fángzū duōshǎo?", "id": "Serius? Sewa sebulanmu berapa?"},
+   {"sp": "王大文", "zh": "八千塊左右。雅加達是四千塊左右。", "py": "Bāqiān kuài zuǒyòu. Yǎjiādá shì sìqiān kuài zuǒyòu.", "id": "Sekitar delapan ribu. Di Jakarta sekitar empat ribu."}
+  ]},
+  {"place": "看房子", "title_id": "Melihat rumah", "lines": [
+   {"sp": "李美美", "zh": "這個房子的房租，八千塊以上嗎？", "py": "Zhège fángzi de fángzū, bāqiān kuài yǐshàng ma?", "id": "Sewa rumah ini di atas delapan ribu?"},
+   {"sp": "王大文", "zh": "九千塊以上。可是二十五歲以下的學生可以便宜一點。", "py": "Jiǔqiān kuài yǐshàng. Kěshì èrshíwǔ suì yǐxià de xuéshēng kěyǐ piányí yìdiǎn.", "id": "Di atas sembilan ribu. Tapi mahasiswa di bawah 25 tahun bisa lebih murah."},
+   {"sp": "李美美", "zh": "台北的咖啡也比雅加達貴，差不多是三倍！", "py": "Táiběi de kāfēi yě bǐ Yǎjiādá guì, chàbùduō shì sān bèi!", "id": "Kopi di Taipei juga lebih mahal dari Jakarta, hampir tiga kali lipat!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你的房租多少？", "options": ["八千塊左右。", "房租很大。", "兩倍。"], "answer": 0,
+   "why": "多少 → angka (+左右 bila perkiraan)."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih suhu yang cocok.",
+   "audio": "現在三十度左右。", "options": [{"icon": "🌡️", "label": "sekitar 30°"}, {"icon": "🌡️", "label": "13°"}, {"icon": "🌡️", "label": "3°"}], "answer": 0,
+   "why": "三十度左右 = sekitar 30 derajat."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "台北的咖啡比雅加達貴嗎？"}, {"sp": "女", "zh": "貴很多，差不多是雅加達的三倍。"}],
+   "question": "台北的咖啡是雅加達的幾倍？", "options": ["兩倍", "三倍", "一倍"], "answer": 1,
+   "why": "差不多是…三倍."},
+  {"type": "read_mc", "part": "閱讀 Part 3 · Membaca informasi", "instr": "Baca papan tiket ini, lalu pilih jawaban yang benar.",
+   "text": "門票：十二歲以下，一百塊；十二歲以上，兩百塊。", "question": "一個二十歲的人，門票多少？",
+   "options": ["一百塊", "兩百塊", "三百塊"], "answer": 1,
+   "why": "20 tahun termasuk 十二歲以上 → 200."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "台北的房租是雅加達的兩（1）。我的房租八千塊（2）。六十五歲（3）的老人，門票便宜一點。", "options": ["倍", "左右", "以上", "度"], "answers": [0, 1, 2],
+   "why": "(1) 兩倍 = dua kali lipat. (2) 左右 = sekitar. (3) usia 65 ke atas → 以上. 度 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 236, "point": "倍數 — kelipatan", "pattern": "A + 是 + B + 的 + angka + 倍", "blocks": [["台北的房租", "A"], ["是", "是"], ["雅加達的", "B的"], ["兩倍", "angka倍"]],
+   "explain": "A 是 B 的 X 倍 = A adalah X kali lipat B. Bisa juga dengan 比: A 比 B 貴一倍 (lebih mahal satu kali lipat = dua kali harganya).",
+   "examples": [{"zh": "台北的房租是雅加達的兩倍左右。", "id": "Sewa di Taipei kira-kira dua kali lipat Jakarta."}],
+   "check": {"q": "'Kelasku tiga kali lipat kelasnya' =", "options": ["我們班是他們班的三倍。", "我們班三倍是他們班。", "我們班是三倍他們班的。"], "answer": 0}},
+  {"tbcl_id": 234, "point": "angka + (量) + 左右 — sekitar", "pattern": "angka + (kata bantu bilangan) + 左右", "blocks": [["八千", "angka"], ["塊", "M"], ["左右", "左右"]],
+   "explain": "左右 SETELAH angka = kira-kira/sekitar: 八千塊左右, 三十度左右, 兩倍左右. Beda dengan 差不多 yang diletakkan SEBELUM angka.",
+   "examples": [{"zh": "八千塊左右。", "id": "Sekitar delapan ribu."}],
+   "check": {"q": "'Sekitar jam tiga' =", "options": ["三點左右", "左右三點", "三左右點"], "answer": 0}}
+ ]
+},
+{
+ "code": "C40",
+ "title_py": "Dǎ bā zhé! Yí jiàn bǐ yí jiàn piányí.", "title_id": "Diskon 20%! Makin lama makin murah.",
+ "scene": "Department store sedang diskon besar. Dawen dan Meimei ikut antre, membandingkan harga, dan menilai ukuran baju.",
+ "can_do": ["Memahami diskon Taiwan: 打八折 (bayar 80%)", "Membandingkan berurutan: 一件比一件…", "Menyatakan 'agak terlalu …': Vs了一點 (貴了一點)"],
+ "exam_link": "Diskon ala Taiwan (打X折 = bayar X0%) adalah jebakan klasik bagi pelajar Indonesia di 聽力 Part 3 dan 閱讀 Part 3.",
+ "dialogs": [
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "李美美", "zh": "大文，百貨公司今天打八折！", "py": "Dàwén, bǎihuò gōngsī jīntiān dǎ bā zhé!", "id": "Dawen, department store hari ini diskon 20%!"},
+   {"sp": "王大文", "zh": "真的嗎？我們去逛街吧！", "py": "Zhēn de ma? Wǒmen qù guàngjiē ba!", "id": "Serius? Ayo jalan-jalan belanja!"},
+   {"sp": "李美美", "zh": "人好多，好熱鬧！大家都在排隊。", "py": "Rén hǎo duō, hǎo rènào! Dàjiā dōu zài páiduì.", "id": "Banyak orang, ramai sekali! Semua sedang antre."},
+   {"sp": "王大文", "zh": "你看，這裡的衣服一件比一件便宜！", "py": "Nǐ kàn, zhèlǐ de yīfú yí jiàn bǐ yí jiàn piányí!", "id": "Lihat, baju di sini makin lama makin murah!"}
+  ]},
+  {"place": "在百貨公司", "title_id": "Di department store", "lines": [
+   {"sp": "李美美", "zh": "這件外套打八折，還是貴了一點。", "py": "Zhè jiàn wàitào dǎ bā zhé, háishì guì le yìdiǎn.", "id": "Jaket ini sudah diskon 20%, tapi masih agak kemahalan."},
+   {"sp": "王大文", "zh": "那件呢？", "py": "Nà jiàn ne?", "id": "Yang itu?"},
+   {"sp": "李美美", "zh": "那件大了一點。我們再逛一下吧。", "py": "Nà jiàn dà le yìdiǎn. Wǒmen zài guàng yíxià ba.", "id": "Yang itu agak kebesaran. Kita keliling lagi sebentar."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "這件衣服怎麼樣？", "options": ["好看，可是貴了一點。", "衣服一件。", "打折了一點。"], "answer": 0,
+   "why": "Vs了一點 = agak terlalu (penilaian)."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "大家在排隊。", "options": [{"icon": "🧍🧍🧍", "label": "antre"}, {"icon": "🏃🏃", "label": "berlari"}, {"icon": "🪑🪑", "label": "duduk"}], "answer": 0,
+   "why": "排隊 = antre."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "這個一千塊，打八折是多少？"}, {"sp": "女", "zh": "八百塊。"}],
+   "question": "打八折以後多少錢？", "options": ["八百塊", "兩百塊", "一千塊"], "answer": 0,
+   "why": "打八折 = bayar 80% → 800. Jebakan: menganggap 'potong 80%' (200)."},
+  {"type": "read_mc", "part": "閱讀 Part 3 · Membaca informasi", "instr": "Baca papan diskon ini, lalu pilih jawaban yang benar.",
+   "text": "百貨公司：今天全部打九折，衣服打八折。", "question": "一件一千塊的衣服，今天多少錢？",
+   "options": ["八百塊", "九百塊", "一千塊"], "answer": 0,
+   "why": "Baju khusus 打八折 → 800. 九折 berlaku untuk barang lain."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "今天百貨公司（1）！衣服一件（2）一件便宜。這件大（3）一點。", "options": ["打折", "比", "了", "排隊"], "answers": [0, 1, 2],
+   "why": "(1) 打折 = diskon. (2) 一件比一件. (3) 大了一點 = agak kebesaran. 排隊 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 181, "point": "一 M 比一 M — makin lama makin …", "pattern": "一 + M + 比 + 一 + M + Vs", "blocks": [["一件", "一M"], ["比", "比"], ["一件", "一M"], ["便宜", "Vs"]],
+   "explain": "Membandingkan satu per satu secara berurutan sehingga terasa meningkat: 一件比一件便宜 (tiap potong lebih murah dari sebelumnya), 一天比一天冷 (hari demi hari makin dingin).",
+   "examples": [{"zh": "這裡的衣服一件比一件便宜！", "id": "Baju di sini makin lama makin murah!"}],
+   "check": {"q": "'Hari demi hari makin panas' =", "options": ["天氣一天比一天熱。", "天氣一天熱比一天。", "天氣比一天一天熱。"], "answer": 0}},
+  {"tbcl_id": 192, "point": "Vs了一點 — agak terlalu …", "pattern": "S + Vs + 了一點", "blocks": [["這件", "S"], ["貴", "Vs"], ["了一點", "了一點"]],
+   "explain": "Vs了一點 = sedikit melebihi yang diinginkan (keluhan halus): 貴了一點 (agak kemahalan), 大了一點 (agak kebesaran). Bandingkan 有點貴 (B20) dan 貴一點 (B21, meminta yang lebih …).",
+   "examples": [{"zh": "打八折，還是貴了一點。", "id": "Sudah diskon, tapi masih agak kemahalan."}],
+   "check": {"q": "'Sepatunya agak kekecilan' =", "options": ["鞋子小了一點。", "鞋子一點小了。", "鞋子小一點了了。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C41",
+ "title_py": "Zhè jiàn máoyī hěn shìhé nǐ.", "title_id": "Sweter ini cocok sekali untukmu.",
+ "scene": "Menjelang musim dingin, Dawen dan Meimei membeli pakaian hangat: sweter, sarung tangan, kaus kaki, sepatu, dan piyama.",
+ "can_do": ["Menilai kecocokan: 很適合你／很合適", "Mendeskripsikan dengan reduplikasi kata sifat: 紅紅的毛衣、黑黑的", "Menyebut pakaian musim dingin & di rumah: 毛衣、手套、襪子、拖鞋、睡衣"],
+ "exam_link": "Pakaian & kecocokan muncul di 聽力 Part 1–2. Reduplikasi (紅紅的) sering dipakai dalam deskripsi 閱讀 Part 4.",
+ "dialogs": [
+  {"place": "在衣服店", "title_id": "Di toko pakaian", "lines": [
+   {"sp": "王大文", "zh": "美美，冬天快到了，你要買毛衣嗎？", "py": "Měiměi, dōngtiān kuài dào le, nǐ yào mǎi máoyī ma?", "id": "Meimei, musim dingin hampir tiba, kamu mau beli sweter?"},
+   {"sp": "李美美", "zh": "要。你看這件，紅紅的毛衣很漂亮。", "py": "Yào. Nǐ kàn zhè jiàn, hónghóng de máoyī hěn piàoliang.", "id": "Mau. Lihat yang ini, sweter merah ini cantik."},
+   {"sp": "王大文", "zh": "這件毛衣很適合你！", "py": "Zhè jiàn máoyī hěn shìhé nǐ!", "id": "Sweter ini cocok sekali untukmu!"},
+   {"sp": "李美美", "zh": "謝謝。我還要買手套和襪子。我不喜歡金色的上衣。", "py": "Xièxie. Wǒ hái yào mǎi shǒutào hé wàzi. Wǒ bù xǐhuān jīnsè de shàngyī.", "id": "Makasih. Aku juga mau beli sarung tangan dan kaus kaki. Aku tidak suka atasan warna emas."}
+  ]},
+  {"place": "在鞋子店", "title_id": "Di toko sepatu", "lines": [
+   {"sp": "王大文", "zh": "我的皮鞋舊了，拖鞋也壞了。", "py": "Wǒ de píxié jiù le, tuōxié yě huài le.", "id": "Sepatu kulitku sudah tua, sandal rumah juga rusak."},
+   {"sp": "李美美", "zh": "這雙皮鞋黑黑的，大小很合適。", "py": "Zhè shuāng píxié hēihēi de, dàxiǎo hěn héshì.", "id": "Sepatu ini hitam legam, ukurannya pas."},
+   {"sp": "王大文", "zh": "睡衣呢？", "py": "Shuìyī ne?", "id": "Piyamanya?"},
+   {"sp": "李美美", "zh": "那套睡衣看起來很舒服。", "py": "Nà tào shuìyī kàn qǐlái hěn shūfú.", "id": "Setelan piyama itu kelihatan nyaman."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "這件毛衣適合我嗎？", "options": ["很適合你！", "毛衣適合。", "我適合。"], "answer": 0,
+   "why": "適合 + orang = cocok untuk seseorang."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "她戴著手套。", "options": [{"icon": "🧤", "label": "sarung tangan"}, {"icon": "🧦", "label": "kaus kaki"}, {"icon": "🧣", "label": "syal"}], "answer": 0,
+   "why": "手套 = sarung tangan."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "這雙皮鞋合適嗎？"}, {"sp": "女", "zh": "有點小，我要大一點的。"}],
+   "question": "皮鞋怎麼樣？", "options": ["有點小", "很合適", "太大了"], "answer": 0,
+   "why": "有點小. B dijawab tidak; C membalik."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "冬天到了。安妮買了一件白白的毛衣、一雙手套和三雙襪子。", "question": "安妮買了幾雙襪子？",
+   "options": ["一雙", "兩雙", "三雙"], "answer": 2,
+   "why": "三雙襪子. 一雙 adalah sarung tangan."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "這件毛衣很（1）你。她的頭髮長（2）的，很漂亮。這（3）睡衣很舒服。", "options": ["適合", "長", "套", "金色"], "answers": [0, 1, 2],
+   "why": "(1) 適合 + orang. (2) 長長的 (reduplikasi). (3) 套 = setelan. 金色 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 150, "point": "AA的 + N — reduplikasi kata sifat sebagai penjelas", "pattern": "Vs Vs + 的 + N", "blocks": [["紅紅", "AA"], ["的", "的"], ["毛衣", "N"]],
+   "explain": "Kata sifat satu suku kata diulang lalu + 的 untuk menjelaskan benda dengan nuansa hidup/deskriptif: 紅紅的毛衣 (sweter yang merah merona), 長長的頭髮. Tidak memakai 很.",
+   "examples": [{"zh": "紅紅的毛衣很漂亮。", "id": "Sweter merah ini cantik."}],
+   "check": {"q": "Mana yang BENAR?", "options": ["她有長長的頭髮。", "她有很長長的頭髮。", "她有長長頭髮的。"], "answer": 0}},
+  {"tbcl_id": 149, "point": "AA的 / AABB的 sebagai predikat", "pattern": "S + Vs Vs + 的 ／ S + AABB + 的", "blocks": [["皮鞋", "S"], ["黑黑", "AA"], ["的", "的"]],
+   "explain": "Reduplikasi juga bisa menjadi predikat (dengan 的 di akhir): 皮鞋黑黑的 (sepatunya hitam legam), 房間乾乾淨淨的 (kamarnya bersih sekali). Tidak memakai 很.",
+   "examples": [{"zh": "這雙皮鞋黑黑的。", "id": "Sepatu ini hitam legam."}, {"zh": "房間乾乾淨淨的。", "id": "Kamarnya bersih sekali."}],
+   "check": {"q": "'Kamarnya bersih sekali' (reduplikasi) =", "options": ["房間乾乾淨淨的。", "房間很乾乾淨淨。", "房間乾淨乾淨的。"], "answer": 0}}
+ ]
+}
+]}

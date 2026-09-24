@@ -1,0 +1,443 @@
+{"modules": [
+{
+ "code": "C59",
+ "title_py": "Nàme, nǐ yǒu shénme jiànyì?", "title_id": "Kalau begitu, kamu punya saran apa?",
+ "scene": "Dawen dan Meimei memilih topik laporan kelompok, saling bertukar pendapat, lalu meminta masukan guru.",
+ "can_do": ["Menyambung ke kesimpulan/pertanyaan berikutnya: 那麼", "Menyatakan kesediaan: 願意", "Bertukar pendapat: 建議、意見、看法、同意、選擇"],
+ "exam_link": "Pendapat & saran adalah inti soal 閱讀 Part 5 ('作者的看法是…') dan 聽力 Part 4.",
+ "dialogs": [
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "王大文", "zh": "美美，我們的報告要寫什麼？我有兩個選擇：環保或是交通。", "py": "Měiměi, wǒmen de bàogào yào xiě shénme? Wǒ yǒu liǎng ge xuǎnzé: huánbǎo huòshì jiāotōng.", "id": "Meimei, laporan kita mau tentang apa? Ada dua pilihan: lingkungan atau lalu lintas."},
+   {"sp": "李美美", "zh": "我的看法是寫環保比較好。", "py": "Wǒ de kànfǎ shì xiě huánbǎo bǐjiào hǎo.", "id": "Menurutku lebih baik tentang lingkungan."},
+   {"sp": "王大文", "zh": "那麼，你有什麼建議？", "py": "Nàme, nǐ yǒu shénme jiànyì?", "id": "Kalau begitu, kamu punya saran apa?"},
+   {"sp": "李美美", "zh": "我建議我們先問問老師的意見。", "py": "Wǒ jiànyì wǒmen xiān wèn wen lǎoshī de yìjiàn.", "id": "Aku sarankan kita tanya pendapat guru dulu."}
+  ]},
+  {"place": "在辦公室", "title_id": "Di ruang guru", "lines": [
+   {"sp": "陳老師", "zh": "你們的想法很好，我同意。", "py": "Nǐmen de xiǎngfǎ hěn hǎo, wǒ tóngyì.", "id": "Ide kalian bagus, saya setuju."},
+   {"sp": "王大文", "zh": "老師，你願意幫我們看報告嗎？", "py": "Lǎoshī, nǐ yuànyì bāng wǒmen kàn bàogào ma?", "id": "Bu, Ibu bersedia membantu memeriksa laporan kami?"},
+   {"sp": "陳老師", "zh": "願意。同樣的字別用太多次。", "py": "Yuànyì. Tóngyàng de zì bié yòng tài duō cì.", "id": "Bersedia. Jangan pakai kata yang sama terlalu sering."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你有什麼建議？", "options": ["我建議你多休息。", "我有建議。", "建議很好。"], "answer": 0,
+   "why": "建議 → sebut sarannya (我建議…)."},
+  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "lines": [{"sp": "女", "zh": "你願意跟我一起去嗎？"}, {"sp": "男", "zh": "當然願意！"}],
+   "question": "男的想去嗎？", "options": ["想去", "不想去", "不知道"], "answer": 0,
+   "why": "當然願意 = tentu bersedia."},
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你同意我的看法嗎？", "options": ["同意，你說得很對。", "我看法。", "同意看。"], "answer": 0,
+   "why": "同意嗎 → 同意／不同意."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "班上的意見：一半的同學想寫環保，三分之一想寫交通，別的同學沒有意見。", "question": "最多同學想寫什麼？",
+   "options": ["環保", "交通", "沒有意見"], "answer": 0,
+   "why": "一半 (1/2) > 三分之一 (1/3) → 環保."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "（1），你有什麼建議？你（2）幫我嗎？我（3）你的看法。", "options": ["那麼", "願意", "同意", "選擇"], "answers": [0, 1, 2],
+   "why": "(1) 那麼 = kalau begitu. (2) 願意 = bersedia. (3) 同意 = setuju. 選擇 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 161, "point": "那麼 — kalau begitu (penghubung)", "pattern": "(pernyataan sebelumnya)。那麼，…", "blocks": [["那麼", "那麼"], ["你有什麼建議", "kalimat"]],
+   "explain": "那麼 di awal kalimat menyambung dari yang baru dibicarakan ke pertanyaan/kesimpulan berikutnya (sedikit lebih formal daripada 那, C48).",
+   "examples": [{"zh": "那麼，你有什麼建議？", "id": "Kalau begitu, kamu punya saran apa?"}],
+   "check": {"q": "A: 我不喜歡這個題目。 B: ＿＿，你想寫什麼？", "options": ["那麼", "這麼", "怎麼"], "answer": 0}},
+  {"tbcl_id": 176, "point": "願意 — bersedia", "pattern": "S + (不)願意 + VP", "blocks": [["你", "S"], ["願意", "願意"], ["幫我們", "VP"]],
+   "explain": "願意 = bersedia/mau dengan senang hati. Negatif: 不願意 (tidak bersedia). Lebih sopan dan lebih kuat daripada 想.",
+   "examples": [{"zh": "老師，你願意幫我們看報告嗎？", "id": "Bu, Ibu bersedia membantu memeriksa laporan kami?"}],
+   "check": {"q": "'Dia tidak bersedia datang' =", "options": ["他不願意來。", "他願意不來。", "他沒願意來。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C60",
+ "title_py": "Qíshí zhù sùshè yǒu hǎochù, yě yǒu huàichù.", "title_id": "Sebenarnya tinggal di asrama ada untung dan ruginya.",
+ "scene": "Meimei bertanya kenapa Dawen pindah dari asrama; Dawen menjelaskan untung-rugi tinggal di asrama.",
+ "can_do": ["Mengoreksi anggapan dengan 其實", "Menyatakan rencana/keadaan semula dengan 本來", "Menimbang untung-rugi: 好處、壞處、影響、可惜、還好"],
+ "exam_link": "Esai pro-kontra (好處/壞處) adalah format klasik 閱讀 Part 5. 其實 menandai kebenaran yang berbeda dari anggapan.",
+ "dialogs": [
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "李美美", "zh": "大文，你本來住在宿舍，為什麼搬家？", "py": "Dàwén, nǐ běnlái zhù zài sùshè, wèishénme bānjiā?", "id": "Dawen, tadinya kamu tinggal di asrama, kenapa pindah?"},
+   {"sp": "王大文", "zh": "其實住宿舍有好處，也有壞處。", "py": "Qíshí zhù sùshè yǒu hǎochù, yě yǒu huàichù.", "id": "Sebenarnya tinggal di asrama ada untung dan ruginya."},
+   {"sp": "李美美", "zh": "什麼好處？", "py": "Shénme hǎochù?", "id": "Untungnya apa?"},
+   {"sp": "王大文", "zh": "好處是很便宜，壞處是太吵，影響我念書。", "py": "Hǎochù shì hěn piányí, huàichù shì tài chǎo, yǐngxiǎng wǒ niànshū.", "id": "Untungnya murah, ruginya terlalu berisik, mengganggu belajarku."}
+  ]},
+  {"place": "下課以後", "title_id": "Sepulang kelas", "lines": [
+   {"sp": "李美美", "zh": "可惜你搬走了，我們不能常常見面了。", "py": "Kěxí nǐ bān zǒu le, wǒmen bù néng chángcháng jiànmiàn le.", "id": "Sayang kamu pindah, kita tidak bisa sering bertemu lagi."},
+   {"sp": "王大文", "zh": "還好，我的新家離學校不遠。", "py": "Háihǎo, wǒ de xīn jiā lí xuéxiào bù yuǎn.", "id": "Untungnya, rumah baruku tidak jauh dari kampus."},
+   {"sp": "李美美", "zh": "我了解。你這樣做很自然。", "py": "Wǒ liǎojiě. Nǐ zhèyàng zuò hěn zìrán.", "id": "Aku mengerti. Wajar kamu melakukan itu."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "住宿舍好不好？", "options": ["其實有好處，也有壞處。", "宿舍好不好。", "我住。"], "answer": 0,
+   "why": "其實 memberi jawaban yang lebih seimbang dari dugaan."},
+  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "lines": [{"sp": "男", "zh": "我以為妳是日本人。"}, {"sp": "女", "zh": "其實我是韓國人。"}],
+   "question": "女的是哪國人？", "options": ["韓國人", "日本人", "臺灣人"], "answer": 0,
+   "why": "其實 mengoreksi anggapan (以為) → 韓國人."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "妳本來想學什麼？"}, {"sp": "女", "zh": "我本來想學法律，後來學了中文。"}],
+   "question": "女的現在學什麼？", "options": ["中文", "法律", "歷史"], "answer": 0,
+   "why": "本來 = rencana awal (法律); 後來 = yang terjadi (中文)."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "住宿舍的好處是便宜，也可以認識很多朋友。壞處是很吵，會影響念書。", "question": "住宿舍的壞處是什麼？",
+   "options": ["太吵", "太貴", "朋友太少"], "answer": 0,
+   "why": "壞處是很吵. B dan C membalik keuntungannya."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "（1）住宿舍有好處，也有壞處。我（2）住在宿舍，後來搬家了。太吵會（3）念書。", "options": ["其實", "本來", "影響", "可惜"], "answers": [0, 1, 2],
+   "why": "(1) 其實 = sebenarnya. (2) 本來 = tadinya. (3) 影響 = mengganggu/memengaruhi. 可惜 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 200, "point": "其實 — sebenarnya", "pattern": "(anggapan)，其實 + kenyataan", "blocks": [["其實", "其實"], ["住宿舍有好處，也有壞處", "kenyataan"]],
+   "explain": "其實 memperkenalkan kenyataan yang berbeda atau lebih lengkap daripada anggapan orang: 我以為…，其實….",
+   "examples": [{"zh": "其實住宿舍有好處，也有壞處。", "id": "Sebenarnya tinggal di asrama ada untung dan ruginya."}],
+   "check": {"q": "Pilih yang tepat: 大家都以為他很有錢，＿＿他沒有很多錢。", "options": ["其實", "本來", "一定"], "answer": 0}},
+  {"tbcl_id": 130, "point": "本來 — tadinya / semula", "pattern": "S + 本來 + VP，(後來/可是…)", "blocks": [["你", "S"], ["本來", "本來"], ["住在宿舍", "VP"]],
+   "explain": "本來 = keadaan atau rencana semula yang kemudian berubah: 我本來想學法律，後來學了中文.",
+   "examples": [{"zh": "你本來住在宿舍，為什麼搬家？", "id": "Tadinya kamu tinggal di asrama, kenapa pindah?"}],
+   "check": {"q": "'Tadinya aku mau pergi, tapi hujan' =", "options": ["我本來想去，可是下雨了。", "我想本來去，可是下雨了。", "本來下雨，我想去了。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C61",
+ "title_py": "Zhè běn shū wǒ kàn bú xiàqù le.", "title_id": "Buku ini sudah tidak sanggup kubaca lagi.",
+ "scene": "Dawen mengeluh buku yang dibacanya membosankan; Meimei memintanya melanjutkan cerita, lalu mereka membicarakan rak buku yang penuh.",
+ "can_do": ["Menyatakan melanjutkan / tidak sanggup melanjutkan: V下去 (看不下去、說下去)", "Menyatakan muat/tidak muat: V得下/V不下 (吃不下、放不下)", "Memakai 類、另外、相當 dalam menilai"],
+ "exam_link": "V不下去 (tidak sanggup meneruskan) dan 吃不下 (tidak muat lagi) sering muncul di 聽力 Part 4 sebagai alasan tersirat.",
+ "dialogs": [
+  {"place": "在圖書館", "title_id": "Di perpustakaan", "lines": [
+   {"sp": "李美美", "zh": "大文，那本書你看完了嗎？", "py": "Dàwén, nà běn shū nǐ kàn wán le ma?", "id": "Dawen, buku itu sudah selesai kamu baca?"},
+   {"sp": "王大文", "zh": "這本書我看不下去了，相當無聊。", "py": "Zhè běn shū wǒ kàn bú xiàqù le, xiāngdāng wúliáo.", "id": "Buku ini sudah tidak sanggup kubaca lagi, cukup membosankan."},
+   {"sp": "李美美", "zh": "這類的書我也不喜歡。", "py": "Zhè lèi de shū wǒ yě bù xǐhuān.", "id": "Buku jenis ini aku juga tidak suka."},
+   {"sp": "王大文", "zh": "另外，我中午吃得太飽，現在什麼都吃不下了。", "py": "Lìngwài, wǒ zhōngwǔ chī de tài bǎo, xiànzài shénme dōu chī bú xià le.", "id": "Selain itu, siang tadi aku makan terlalu kenyang, sekarang tidak muat apa-apa lagi."}
+  ]},
+  {"place": "在大文家", "title_id": "Di rumah Dawen", "lines": [
+   {"sp": "李美美", "zh": "你昨天說的故事，後來呢？你說下去吧！", "py": "Nǐ zuótiān shuō de gùshì, hòulái ne? Nǐ shuō xiàqù ba!", "id": "Cerita yang kemarin kamu ceritakan, lalu bagaimana? Lanjutkan!"},
+   {"sp": "王大文", "zh": "後來我買了另外一本書。", "py": "Hòulái wǒ mǎi le lìngwài yì běn shū.", "id": "Lalu aku membeli buku lain."},
+   {"sp": "李美美", "zh": "你的書架放得下嗎？", "py": "Nǐ de shūjià fàng de xià ma?", "id": "Rak bukumu masih muat?"},
+   {"sp": "王大文", "zh": "放不下了！", "py": "Fàng bú xià le!", "id": "Sudah tidak muat!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你還吃得下嗎？", "options": ["吃不下了，我太飽了。", "我吃下。", "吃得嗎。"], "answer": 0,
+   "why": "吃得下嗎 → 吃得下／吃不下."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "書架上的書太多了，放不下了。", "options": [{"icon": "📚📚📚", "label": "rak penuh"}, {"icon": "📚", "label": "rak kosong"}, {"icon": "📖", "label": "satu buku"}], "answer": 0,
+   "why": "放不下 = tidak muat lagi."},
+  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "lines": [{"sp": "女", "zh": "這個故事很好聽，你說下去！"}, {"sp": "男", "zh": "好，後來……"}],
+   "question": "女的要男的做什麼？", "options": ["接著說", "別說了", "說別的"], "answer": 0,
+   "why": "說下去 = lanjutkan bercerita."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "這類的電影相當有名，可是我看了半個小時就看不下去了。另外，電影院太冷了。", "question": "他看了多久？",
+   "options": ["半個小時", "一個小時", "兩個小時"], "answer": 0,
+   "why": "看了半個小時就看不下去了."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "這本書我看不（1）去了。這（2）的書相當無聊。我買了（3）一本。", "options": ["下", "類", "另外", "相當"], "answers": [0, 1, 2],
+   "why": "(1) 看不下去. (2) 這類 = jenis ini. (3) 另外一本 = satu buku lain. 相當 sudah ada di teks."}
+ ],
+ "grammar": [
+  {"tbcl_id": 171, "point": "V下去2 — melanjutkan", "pattern": "V + 下去 ／ V + 不下去", "blocks": [["說", "V"], ["下去", "下去"]],
+   "explain": "下去 setelah kata kerja = terus melanjutkan: 說下去 (lanjutkan bicara). Negatif potensial: 看不下去 (tidak sanggup melanjutkan menonton/membaca).",
+   "examples": [{"zh": "你說下去吧！", "id": "Lanjutkan ceritamu!"}, {"zh": "這本書我看不下去了。", "id": "Buku ini sudah tidak sanggup kubaca lagi."}],
+   "check": {"q": "'Aku tidak sanggup meneruskan pekerjaan ini' =", "options": ["這個工作我做不下去了。", "這個工作我不做下去了。", "這個工作我做下不去了。"], "answer": 0}},
+  {"tbcl_id": 186, "point": "V得下／V不下 — muat / tidak muat", "pattern": "V + 得/不 + 下", "blocks": [["吃", "V"], ["不", "不"], ["下", "下"]],
+   "explain": "下 dengan 得/不 menyatakan ada/tidak ada RUANG: 吃不下 (perut tidak muat lagi), 放得下 (masih muat), 坐不下 (tidak cukup tempat duduk).",
+   "examples": [{"zh": "現在什麼都吃不下了。", "id": "Sekarang tidak muat apa-apa lagi."}, {"zh": "你的書架放得下嗎？", "id": "Rak bukumu masih muat?"}],
+   "check": {"q": "'Mobil ini tidak muat enam orang' =", "options": ["這輛車坐不下六個人。", "這輛車不坐下六個人。", "這輛車坐下不六個人。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C62",
+ "title_py": "Dōngxi tài duō, wǒ ná bú dòng!", "title_id": "Barangnya terlalu banyak, aku tidak kuat mengangkat!",
+ "scene": "Dawen membantu Annie yang baru pulang dari Indonesia membawa banyak barang, lalu mereka melihat jam tangan yang terlalu mahal.",
+ "can_do": ["Menyatakan kuat/tidak kuat secara fisik: V得動/V不動 (拿不動、走不動)", "Menyatakan mampu/tidak mampu membeli: V得起/V不起 (買不起)", "Menyebut barang bawaan: 帶來"],
+ "exam_link": "拿不動/買不起 adalah bentuk potensial yang sering menjadi alasan tersirat di 聽力 Part 4.",
+ "dialogs": [
+  {"place": "在機場", "title_id": "Di bandara", "lines": [
+   {"sp": "安妮", "zh": "大文，東西太多，我拿不動！", "py": "Dàwén, dōngxi tài duō, wǒ ná bú dòng!", "id": "Dawen, barangnya terlalu banyak, aku tidak kuat mengangkat!"},
+   {"sp": "王大文", "zh": "你帶來了什麼？", "py": "Nǐ dàilái le shénme?", "id": "Kamu bawa apa saja?"},
+   {"sp": "安妮", "zh": "書、衣服和印尼的點心。我走不動了。", "py": "Shū, yīfú hé Yìnní de diǎnxīn. Wǒ zǒu bú dòng le.", "id": "Buku, baju, dan kudapan Indonesia. Aku sudah tidak kuat jalan."},
+   {"sp": "王大文", "zh": "我幫你拿。", "py": "Wǒ bāng nǐ ná.", "id": "Aku bantu bawa."}
+  ]},
+  {"place": "在百貨公司", "title_id": "Di department store", "lines": [
+   {"sp": "王大文", "zh": "這個手錶太貴了，我買不起。", "py": "Zhège shǒubiǎo tài guì le, wǒ mǎi bù qǐ.", "id": "Jam tangan ini terlalu mahal, aku tidak mampu beli."},
+   {"sp": "安妮", "zh": "我也買不起。我們去看便宜一點的吧。", "py": "Wǒ yě mǎi bù qǐ. Wǒmen qù kàn piányí yìdiǎn de ba.", "id": "Aku juga tidak mampu. Kita lihat yang lebih murah saja."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你拿得動嗎？", "options": ["拿不動，太重了。", "我拿了。", "拿動嗎。"], "answer": 0,
+   "why": "拿得動嗎 → 拿得動／拿不動 + alasan."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他買不起那個手錶。", "options": [{"icon": "⌚💸", "label": "jam terlalu mahal"}, {"icon": "⌚✅", "label": "membeli jam"}, {"icon": "🎁", "label": "hadiah"}], "answer": 0,
+   "why": "買不起 = tidak mampu membeli (karena mahal)."},
+  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "lines": [{"sp": "男", "zh": "走了這麼久，妳還走得動嗎？"}, {"sp": "女", "zh": "走不動了，我們休息一下吧。"}],
+   "question": "女的想做什麼？", "options": ["休息", "再走一個小時", "回家"], "answer": 0,
+   "why": "走不動了 → 休息一下."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "安妮從印尼帶來了很多東西，她一個人拿不動，所以大文去機場幫她。", "question": "大文為什麼去機場？",
+   "options": ["幫安妮拿東西", "去旅行", "買東西"], "answer": 0,
+   "why": "她一個人拿不動，所以大文去機場幫她."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "東西太重，我拿不（1）。這個太貴了，我買不（2）。你（3）了什麼？", "options": ["動", "起", "帶來", "完"], "answers": [0, 1, 2],
+   "why": "(1) 拿不動 (tenaga). (2) 買不起 (uang). (3) 帶來 = membawa (ke sini). 完 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 212, "point": "V得動／V不動 — kuat / tidak kuat (tenaga)", "pattern": "V + 得/不 + 動", "blocks": [["拿", "V"], ["不", "不"], ["動", "動"]],
+   "explain": "動 dengan 得/不 menyatakan cukup tenaga atau tidak untuk menggerakkan: 拿不動 (tidak kuat mengangkat), 走不動 (tidak kuat berjalan lagi).",
+   "examples": [{"zh": "東西太多，我拿不動！", "id": "Barangnya terlalu banyak, aku tidak kuat mengangkat!"}],
+   "check": {"q": "'Aku sudah tidak kuat berjalan' =", "options": ["我走不動了。", "我不走動了。", "我走動不了。"], "answer": 0}},
+  {"tbcl_id": 208, "point": "V得起／V不起 — mampu / tidak mampu (biaya)", "pattern": "V + 得/不 + 起", "blocks": [["買", "V"], ["不", "不"], ["起", "起"]],
+   "explain": "起 dengan 得/不 menyatakan mampu atau tidak menanggung biayanya: 買不起 (tidak mampu membeli), 住得起 (mampu menyewa/tinggal).",
+   "examples": [{"zh": "這個手錶太貴了，我買不起。", "id": "Jam ini terlalu mahal, aku tidak mampu beli."}],
+   "check": {"q": "Beda 買不起 dan 買不到:", "options": ["買不起 = tak mampu (uang); 買不到 = tidak bisa mendapatkan", "Keduanya sama", "買不起 = tidak mau beli"], "answer": 0}}
+ ]
+},
+{
+ "code": "C63",
+ "title_py": "A, wǒ xiǎng qǐlái le!", "title_id": "Ah, aku ingat sekarang!",
+ "scene": "Dawen lupa ulang tahun Meimei dan baru teringat belakangan; lalu hujan tiba-tiba turun saat mereka berjalan pulang.",
+ "can_do": ["Menyatakan teringat kembali: 想起來", "Menyatakan sesuatu mulai terjadi: V起來 (笑起來、下起雨來)", "Membicarakan lupa & kebenaran: 忘記、原來、等到、完全"],
+ "exam_link": "想起來 (teringat) dan V起來 (mulai) sering diuji bersama 看起來 (kelihatannya) — tiga makna 起來 di 閱讀 Part 4.",
+ "dialogs": [
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "李美美", "zh": "大文，今天是什麼日子？你忘記了嗎？", "py": "Dàwén, jīntiān shì shénme rìzi? Nǐ wàngjì le ma?", "id": "Dawen, hari ini hari apa? Kamu lupa?"},
+   {"sp": "王大文", "zh": "我完全忘記了……啊，我想起來了！今天是你的生日！", "py": "Wǒ wánquán wàngjì le… A, wǒ xiǎng qǐlái le! Jīntiān shì nǐ de shēngrì!", "id": "Aku benar-benar lupa… Ah, aku ingat sekarang! Hari ini ulang tahunmu!"},
+   {"sp": "李美美", "zh": "原來你真的忘了！", "py": "Yuánlái nǐ zhēn de wàng le!", "id": "Ternyata kamu benar-benar lupa!"}
+  ]},
+  {"place": "回家的路上", "title_id": "Di jalan pulang", "lines": [
+   {"sp": "王大文", "zh": "等到下課，我請你吃飯吧。", "py": "Děngdào xiàkè, wǒ qǐng nǐ chī fàn ba.", "id": "Setelah kelas nanti, aku traktir makan ya."},
+   {"sp": "李美美", "zh": "你看，下起雨來了！", "py": "Nǐ kàn, xià qǐ yǔ lái le!", "id": "Lihat, mulai hujan!"},
+   {"sp": "王大文", "zh": "美美看到我沒有帶傘，笑了起來。", "py": "Měiměi kàndào wǒ méiyǒu dài sǎn, xiào le qǐlái.", "id": "Meimei melihatku tidak bawa payung, lalu tertawa."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你還記得她的名字嗎？", "options": ["我想起來了，她叫安妮。", "我記得了嗎。", "她起來了。"], "answer": 0,
+   "why": "想起來了 = sudah teringat."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "天下起雨來了。", "options": [{"icon": "🌧️", "label": "mulai hujan"}, {"icon": "☀️", "label": "cerah"}, {"icon": "❄️", "label": "salju"}], "answer": 0,
+   "why": "下起雨來 = mulai turun hujan."},
+  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "lines": [{"sp": "女", "zh": "你忘記我們的約會了嗎？"}, {"sp": "男", "zh": "啊，我想起來了！對不起！"}],
+   "question": "男的怎麼了？", "options": ["他忘了約會", "他生病了", "他很早到"], "answer": 0,
+   "why": "想起來了 + 對不起 → tadinya lupa janji."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "大文完全忘記了美美的生日。等到晚上他才想起來。原來美美一直在等他的電話。", "question": "大文什麼時候想起來的？",
+   "options": ["晚上", "早上", "中午"], "answer": 0,
+   "why": "等到晚上他才想起來."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "我（1）了你的生日……啊，我想（2）來了！（3）你一直在等我。", "options": ["忘記", "起", "原來", "完全"], "answers": [0, 1, 2],
+   "why": "(1) 忘記 = lupa. (2) 想起來 = teringat. (3) 原來 = ternyata. 完全 tidak cocok di titik mana pun."}
+ ],
+ "grammar": [
+  {"tbcl_id": 169, "point": "V起來2 — teringat / muncul kembali", "pattern": "想 + 起來", "blocks": [["想", "V"], ["起來", "起來"]],
+   "explain": "想起來 = teringat kembali (sesuatu yang tadi terlupa). Negatif: 想不起來 (tidak bisa ingat).",
+   "examples": [{"zh": "啊，我想起來了！", "id": "Ah, aku ingat sekarang!"}],
+   "check": {"q": "'Aku tidak bisa ingat namanya' =", "options": ["我想不起來他的名字。", "我不想起來他的名字。", "我想起不來他的名字。"], "answer": 0}},
+  {"tbcl_id": 170, "point": "V起來3 — mulai …", "pattern": "V + 起來 ／ V + 起 + O + 來", "blocks": [["下", "V"], ["起", "起"], ["雨", "O"], ["來", "來"]],
+   "explain": "起來 setelah kata kerja = tiba-tiba mulai: 笑起來 (mulai tertawa), 下起雨來 (mulai hujan — objek diselipkan di antara 起 dan 來).",
+   "examples": [{"zh": "你看，下起雨來了！", "id": "Lihat, mulai hujan!"}, {"zh": "她笑了起來。", "id": "Dia mulai tertawa."}],
+   "check": {"q": "'Semua orang mulai bernyanyi' =", "options": ["大家唱起歌來了。", "大家唱歌起來了來。", "大家起來唱歌來了。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C64",
+ "title_py": "Wǒmen liáo qǐ le xiǎoshíhòu de shì.", "title_id": "Kami mulai bercerita tentang masa kecil.",
+ "scene": "Dawen bertemu kembali teman SD-nya dari Indonesia dan bercerita kepada Meimei tentang reuni itu.",
+ "can_do": ["Menyatakan mulai membicarakan topik: V起 (聊起、說起)", "Menyatakan tercapai/melekat: V上 (考上、愛上、穿上)", "Menceritakan pertemuan kembali"],
+ "exam_link": "V上 (考上大學) dan V起 (說起) muncul di paragraf naratif 閱讀 Part 4 dan cerita 聽力 Part 4.",
+ "dialogs": [
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "王大文", "zh": "美美，昨天我見到了國小的同學。", "py": "Měiměi, zuótiān wǒ jiàndào le guóxiǎo de tóngxué.", "id": "Meimei, kemarin aku bertemu teman SD-ku."},
+   {"sp": "李美美", "zh": "你們聊了什麼？", "py": "Nǐmen liáo le shénme?", "id": "Kalian ngobrol apa?"},
+   {"sp": "王大文", "zh": "我們聊起了小時候的事。", "py": "Wǒmen liáo qǐ le xiǎoshíhòu de shì.", "id": "Kami mulai bercerita tentang masa kecil."},
+   {"sp": "李美美", "zh": "他還記得你嗎？", "py": "Tā hái jìde nǐ ma?", "id": "Dia masih ingat kamu?"},
+   {"sp": "王大文", "zh": "記得！他說起我以前的樣子，大家都笑了。", "py": "Jìde! Tā shuō qǐ wǒ yǐqián de yàngzi, dàjiā dōu xiào le.", "id": "Ingat! Dia bercerita tentang penampilanku dulu, semua tertawa."}
+  ]},
+  {"place": "在學校", "title_id": "Di kampus (lanjutan)", "lines": [
+   {"sp": "王大文", "zh": "他考上了很好的大學，還愛上了臺灣！", "py": "Tā kǎo shàng le hěn hǎo de dàxué, hái ài shàng le Táiwān!", "id": "Dia diterima di universitas bagus, dan jatuh cinta pada Taiwan!"},
+   {"sp": "李美美", "zh": "真的嗎？天氣冷了，你穿上外套再說吧！", "py": "Zhēn de ma? Tiānqì lěng le, nǐ chuān shàng wàitào zài shuō ba!", "id": "Serius? Udara dingin, pakai jaketmu dulu baru lanjut cerita!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你們聊了什麼？", "options": ["我們聊起了小時候的事。", "我們聊天。", "聊起來了嗎。"], "answer": 0,
+   "why": "聊起 + topik = mulai membicarakan …."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他穿上了外套。", "options": [{"icon": "🧥", "label": "memakai jaket"}, {"icon": "👕", "label": "memakai kaus"}, {"icon": "🧣", "label": "memakai syal"}], "answer": 0,
+   "why": "穿上外套 = memakai jaket."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "妳哥哥考上大學了嗎？"}, {"sp": "女", "zh": "考上了，他很高興。"}],
+   "question": "她哥哥怎麼了？", "options": ["考上了大學", "沒考上", "在工作"], "answer": 0,
+   "why": "考上了 = diterima (lulus seleksi)."},
+  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
+   "text": "大文在印尼的時候，有一個好朋友。昨天他們見面，聊起了小時候的事。朋友說他愛上了臺灣，明年也要來臺灣念書。", "question": "朋友明年要做什麼？",
+   "options": ["來臺灣念書", "回印尼", "結婚"], "answer": 0,
+   "why": "明年也要來臺灣念書."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "我們聊（1）了小時候的事。他考（2）了大學。天氣冷，你（3）上外套吧。", "options": ["起", "上", "穿", "完"], "answers": [0, 1, 2],
+   "why": "(1) 聊起 = mulai membicarakan. (2) 考上. (3) 穿上. 完 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 138, "point": "V上 — tercapai / melekat", "pattern": "V + 上 (+ O)", "blocks": [["考", "V"], ["上", "上"], ["大學", "O"]],
+   "explain": "上 setelah kata kerja = tujuan tercapai atau sesuatu melekat: 考上 (lulus seleksi), 愛上 (jatuh cinta pada), 穿上 (memakai), 關上 (menutup).",
+   "examples": [{"zh": "他考上了很好的大學。", "id": "Dia diterima di universitas bagus."}],
+   "check": {"q": "'Tutup pintunya' =", "options": ["把門關上。", "把門上關。", "關門上把。"], "answer": 0}},
+  {"tbcl_id": 140, "point": "V起 — mulai membicarakan …", "pattern": "聊/說/談 + 起 + topik", "blocks": [["聊", "V"], ["起", "起"], ["小時候的事", "topik"]],
+   "explain": "起 setelah kata kerja komunikasi = mulai menyinggung/membicarakan suatu topik: 聊起小時候的事, 說起以前.",
+   "examples": [{"zh": "我們聊起了小時候的事。", "id": "Kami mulai bercerita tentang masa kecil."}],
+   "check": {"q": "'Dia mulai membicarakan keluarganya' =", "options": ["他說起了他的家人。", "他起說他的家人。", "他說了起家人。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C65",
+ "title_py": "Jīntiān chī ge gòu!", "title_id": "Hari ini makan sepuasnya!",
+ "scene": "Dawen dan Meimei makan di restoran prasmanan sepuasnya; restoran penuh, dan mereka merencanakan liburan untuk bersenang-senang sepuasnya.",
+ "can_do": ["Menyatakan penuh: V滿 (裝滿、坐滿)", "Menyatakan sepuasnya: V個夠 (吃個夠、玩個夠)", "Membicarakan restoran prasmanan"],
+ "exam_link": "坐滿/客滿 (penuh) sering muncul di 聽力 Part 3 sebagai alasan perubahan rencana.",
+ "dialogs": [
+  {"place": "在餐廳", "title_id": "Di restoran", "lines": [
+   {"sp": "李美美", "zh": "大文，今天這家餐廳吃到飽，我們吃個夠！", "py": "Dàwén, jīntiān zhè jiā cāntīng chī dào bǎo, wǒmen chī ge gòu!", "id": "Dawen, restoran ini sepuasnya, kita makan sampai puas!"},
+   {"sp": "王大文", "zh": "好！我的盤子已經裝滿了。", "py": "Hǎo! Wǒ de pánzi yǐjīng zhuāng mǎn le.", "id": "Oke! Piringku sudah penuh."},
+   {"sp": "李美美", "zh": "餐廳的人很多，位子都坐滿了。", "py": "Cāntīng de rén hěn duō, wèizi dōu zuò mǎn le.", "id": "Restorannya ramai, kursinya penuh semua."}
+  ]},
+  {"place": "吃完以後", "title_id": "Setelah makan", "lines": [
+   {"sp": "王大文", "zh": "放假了，我要玩個夠！", "py": "Fàngjià le, wǒ yào wán ge gòu!", "id": "Sudah libur, aku mau main sepuasnya!"},
+   {"sp": "李美美", "zh": "我要看電影看個夠！", "py": "Wǒ yào kàn diànyǐng kàn ge gòu!", "id": "Aku mau nonton film sepuasnya!"}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "今天放假，你要做什麼？", "options": ["我要玩個夠！", "我放假。", "玩夠個。"], "answer": 0,
+   "why": "V個夠 = sepuasnya."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "盤子裝滿了。", "options": [{"icon": "🍽️🍗🍚🥗", "label": "piring penuh"}, {"icon": "🍽️", "label": "piring kosong"}, {"icon": "🥣", "label": "mangkuk"}], "answer": 0,
+   "why": "裝滿 = terisi penuh."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "電影院還有位子嗎？"}, {"sp": "女", "zh": "沒有了，都坐滿了。"}],
+   "question": "電影院怎麼樣？", "options": ["坐滿了", "人很少", "還有位子"], "answer": 0,
+   "why": "坐滿了 = penuh."},
+  {"type": "read_mc", "part": "閱讀 Part 3 · Membaca informasi", "instr": "Baca informasi restoran ini, lalu pilih jawaban yang benar.",
+   "text": "這家餐廳一個人五百塊，可以吃個夠。晚上七點人最多，位子常常坐滿。", "question": "晚上七點餐廳怎麼樣？",
+   "options": ["位子坐滿", "沒有人", "不開"], "answer": 0,
+   "why": "晚上七點人最多，位子常常坐滿."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "今天我們吃個（1）！我的盤子裝（2）了。位子都（3）滿了。", "options": ["夠", "滿", "坐", "完"], "answers": [0, 1, 2],
+   "why": "(1) 吃個夠. (2) 裝滿. (3) 坐滿. 完 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 141, "point": "V滿 — (sampai) penuh", "pattern": "V + 滿 (+了)", "blocks": [["裝", "V"], ["滿", "滿"], ["了", "了"]],
+   "explain": "滿 setelah kata kerja = hasilnya penuh: 裝滿 (terisi penuh), 坐滿 (kursi terisi semua), 寫滿 (penuh tulisan).",
+   "examples": [{"zh": "我的盤子已經裝滿了。", "id": "Piringku sudah penuh."}, {"zh": "位子都坐滿了。", "id": "Kursinya penuh semua."}],
+   "check": {"q": "'Kelasnya sudah penuh (orang duduk)' =", "options": ["教室坐滿了。", "教室滿坐了。", "教室坐了滿。"], "answer": 0}},
+  {"tbcl_id": 216, "point": "V個夠 — sepuasnya", "pattern": "(V O) + V + 個夠", "blocks": [["吃", "V"], ["個夠", "個夠"]],
+   "explain": "V個夠 = melakukan sampai puas: 吃個夠, 玩個夠. Dengan objek, kata kerja diulang: 看電影看個夠.",
+   "examples": [{"zh": "我們吃個夠！", "id": "Kita makan sampai puas!"}, {"zh": "我要看電影看個夠！", "id": "Aku mau nonton film sepuasnya!"}],
+   "check": {"q": "'Nyanyi sepuasnya' =", "options": ["唱個夠", "個唱夠", "唱夠個"], "answer": 0}}
+ ]
+},
+{
+ "code": "C66",
+ "title_py": "Kǎoshì de shíhòu kěyǐ chá zīliào ma?", "title_id": "Saat ujian boleh mencari referensi?",
+ "scene": "Dawen menanyakan aturan ujian akhir kepada guru, lalu mengobrol dengan Meimei tentang kampus dan kebiasaan belajarnya.",
+ "can_do": ["Menilai 'lumayan' dengan 還可以", "Menyatakan 'masih' dengan 還 (還在讀、還在學校)", "Membicarakan aturan ujian & kampus: 資料、學生證、選課、校園、讀書"],
+ "exam_link": "Aturan ujian (boleh/tidak boleh) adalah bahan klasik 閱讀 Part 1 & 3. 還可以 (lumayan) adalah penilaian netral yang sering diuji di 聽力 Part 2.",
+ "dialogs": [
+  {"place": "在教室", "title_id": "Di kelas", "lines": [
+   {"sp": "王大文", "zh": "老師，考試的時候可以查資料嗎？", "py": "Lǎoshī, kǎoshì de shíhòu kěyǐ chá zīliào ma?", "id": "Bu, saat ujian boleh mencari referensi?"},
+   {"sp": "陳老師", "zh": "不可以。你們要帶學生證。", "py": "Bù kěyǐ. Nǐmen yào dài xuéshēngzhèng.", "id": "Tidak boleh. Kalian harus bawa kartu mahasiswa."},
+   {"sp": "王大文", "zh": "好。老師，新學期的課我還沒選。", "py": "Hǎo. Lǎoshī, xīn xuéqí de kè wǒ hái méi xuǎn.", "id": "Baik. Bu, mata kuliah semester baru belum saya pilih."},
+   {"sp": "陳老師", "zh": "你還有時間，星期五以前選就可以。", "py": "Nǐ hái yǒu shíjiān, xīngqíwǔ yǐqián xuǎn jiù kěyǐ.", "id": "Masih ada waktu, pilih sebelum hari Jumat juga bisa."}
+  ]},
+  {"place": "在校園", "title_id": "Di kampus", "lines": [
+   {"sp": "李美美", "zh": "大文，你覺得我們的校園怎麼樣？", "py": "Dàwén, nǐ juéde wǒmen de xiàoyuán zěnmeyàng?", "id": "Dawen, menurutmu kampus kita bagaimana?"},
+   {"sp": "王大文", "zh": "還可以。我常常在圖書館讀書。", "py": "Hái kěyǐ. Wǒ chángcháng zài túshūguǎn dúshū.", "id": "Lumayan. Aku sering belajar di perpustakaan."},
+   {"sp": "李美美", "zh": "你還在讀那本歷史書嗎？", "py": "Nǐ hái zài dú nà běn lìshǐ shū ma?", "id": "Kamu masih membaca buku sejarah itu?"},
+   {"sp": "王大文", "zh": "還在讀，快讀完了。", "py": "Hái zài dú, kuài dú wán le.", "id": "Masih, hampir selesai."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "這家餐廳的菜怎麼樣？", "options": ["還可以，不太貴。", "可以吃。", "還菜。"], "answer": 0,
+   "why": "還可以 = lumayan (penilaian netral)."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "考試要帶學生證。", "options": [{"icon": "🪪", "label": "kartu mahasiswa"}, {"icon": "📱", "label": "HP"}, {"icon": "📚", "label": "buku"}], "answer": 0,
+   "why": "學生證 = kartu mahasiswa."},
+  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "lines": [{"sp": "男", "zh": "妳還在學校嗎？"}, {"sp": "女", "zh": "還在，我在圖書館讀書。"}],
+   "question": "女的現在在哪裡？", "options": ["圖書館", "家", "餐廳"], "answer": 0,
+   "why": "還在 (masih di kampus) → 在圖書館."},
+  {"type": "read_mc", "part": "閱讀 Part 1 · Papan & tanda", "instr": "Baca aturan ujian ini, lalu pilih jawaban yang benar.",
+   "text": "考試注意：一、要帶學生證。二、不可以查資料。三、不可以用手機。", "question": "考試要帶什麼？",
+   "options": ["學生證", "資料", "手機"], "answer": 0,
+   "why": "要帶學生證. Pilihan lain dilarang."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "考試的時候，我們不可以查（1）。你（2）課了嗎？我（3）在讀那本書。", "options": ["資料", "選", "還", "校園"], "answers": [0, 1, 2],
+   "why": "(1) 查資料 = mencari referensi. (2) 選課 = memilih mata kuliah. (3) 還在 = masih. 校園 tidak cocok."}
+ ],
+ "grammar": [
+  {"tbcl_id": 168, "point": "還可以 — lumayan (可以3)", "pattern": "S + 還可以", "blocks": [["校園", "S"], ["還可以", "可以"]],
+   "explain": "可以 juga berarti 'cukup baik/lumayan', biasanya dalam 還可以: penilaian netral, tidak buruk tapi tidak istimewa.",
+   "examples": [{"zh": "還可以。", "id": "Lumayan."}],
+   "check": {"q": "還可以 artinya…", "options": ["lumayan", "sangat bagus", "tidak boleh"], "answer": 0}},
+  {"tbcl_id": 175, "point": "還1 — masih", "pattern": "S + 還 + (在) + VP", "blocks": [["你", "S"], ["還", "還"], ["在讀", "VP"]],
+   "explain": "還 sebelum kata kerja = masih (keadaan berlanjut): 還在讀 (masih membaca), 還在學校 (masih di kampus), 還有時間 (masih ada waktu). Negatif: 還沒 (belum, C07).",
+   "examples": [{"zh": "你還在讀那本歷史書嗎？", "id": "Kamu masih membaca buku sejarah itu?"}, {"zh": "你還有時間。", "id": "Kamu masih punya waktu."}],
+   "check": {"q": "'Dia masih tidur' =", "options": ["他還在睡覺。", "他在還睡覺。", "他睡覺還在。"], "answer": 0}}
+ ]
+},
+{
+ "code": "C67",
+ "title_py": "Yí ge xiǎoshí yǐnèi sòng de dào ma?", "title_id": "Bisa diantar dalam satu jam?",
+ "scene": "Dawen memesan bento lewat telepon untuk diantar; pesanan yang datang ternyata salah, tetapi semuanya berakhir baik.",
+ "can_do": ["Menyatakan batas waktu/wilayah: 以內／以外／以上／以下", "Menjadikan frasa sebagai kata benda dengan 的 (我要的是…)", "Memesan layanan antar & mengoreksi pesanan"],
+ "exam_link": "Batas waktu (…以內) dan koreksi pesanan (我要的是…) muncul di 聽力 Part 3–4; soal sering menanyakan pesanan yang sebenarnya.",
+ "dialogs": [
+  {"place": "打電話到便當店", "title_id": "Menelepon toko bento", "lines": [
+   {"sp": "王大文", "zh": "你好，我要一份牛肉便當。", "py": "Nǐ hǎo, wǒ yào yí fèn niúròu biàndāng.", "id": "Halo, saya pesan satu bento daging sapi."},
+   {"sp": "店員", "zh": "好。還要別的嗎？", "py": "Hǎo. Hái yào biéde ma?", "id": "Baik. Ada lagi?"},
+   {"sp": "王大文", "zh": "不要了。一個小時以內送得到嗎？", "py": "Búyào le. Yí ge xiǎoshí yǐnèi sòng de dào ma?", "id": "Tidak. Bisa diantar dalam satu jam?"},
+   {"sp": "店員", "zh": "送得到，三十分鐘以內就到。", "py": "Sòng de dào, sānshí fēnzhōng yǐnèi jiù dào.", "id": "Bisa, dalam tiga puluh menit sudah sampai."}
+  ]},
+  {"place": "在大文家門口", "title_id": "Di depan rumah Dawen", "lines": [
+   {"sp": "店員", "zh": "先生，這是你要的便當嗎？", "py": "Xiānshēng, zhè shì nǐ yào de biàndāng ma?", "id": "Pak, ini bento yang Bapak pesan?"},
+   {"sp": "王大文", "zh": "不對，我要的是牛肉的，這是雞肉的。", "py": "Bú duì, wǒ yào de shì niúròu de, zhè shì jīròu de.", "id": "Bukan, yang saya pesan daging sapi, ini ayam."},
+   {"sp": "店員", "zh": "對不起！我整個下午都很忙。", "py": "Duìbùqǐ! Wǒ zhěng ge xiàwǔ dōu hěn máng.", "id": "Maaf! Saya sibuk sepanjang sore."},
+   {"sp": "王大文", "zh": "沒關係，我正好很餓，雞肉的也可以。", "py": "Méi guānxi, wǒ zhènghǎo hěn è, jīròu de yě kěyǐ.", "id": "Tidak apa-apa, kebetulan saya lapar, yang ayam juga boleh."}
+  ]}
+ ],
+ "tasks": [
+  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
+   "audio": "多久可以送到？", "options": ["三十分鐘以內。", "送得到。", "以內。"], "answer": 0,
+   "why": "多久 → lamanya + 以內 (dalam waktu …)."},
+  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "這是你要的便當。", "options": [{"icon": "🍱", "label": "bento"}, {"icon": "🍕", "label": "piza"}, {"icon": "🍔", "label": "hamburger"}], "answer": 0,
+   "why": "便當 = bento."},
+  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "lines": [{"sp": "女", "zh": "這是你要的咖啡嗎？"}, {"sp": "男", "zh": "不是，我要的是茶。"}],
+   "question": "男的要什麼？", "options": ["茶", "咖啡", "便當"], "answer": 0,
+   "why": "我要的是茶 = yang kupesan adalah teh (的 menjadikan 我要 sebagai kata benda)."},
+  {"type": "read_mc", "part": "閱讀 Part 3 · Membaca informasi", "instr": "Baca informasi pengantaran ini, lalu pilih jawaban yang benar.",
+   "text": "送便當：台北市以內，一個小時送到；台北市以外，要兩個小時。", "question": "在台北市以外，要多久？",
+   "options": ["一個小時", "兩個小時", "三十分鐘"], "answer": 1,
+   "why": "台北市以外，要兩個小時. 一個小時 untuk dalam kota."},
+  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "三十分鐘（1）就到。這是你要（2）便當嗎？我（3）個下午都很忙。", "options": ["以內", "的", "整", "以外"], "answers": [0, 1, 2],
+   "why": "(1) 以內 = dalam (batas waktu). (2) 你要的便當. (3) 整個下午 = sepanjang sore. 外 berlawanan maknanya."}
+ ],
+ "grammar": [
+  {"tbcl_id": 231, "point": "以 + 上/下/內/外 — di atas/bawah/dalam/luar (batas)", "pattern": "angka/tempat + 以上/以下/以內/以外", "blocks": [["一個小時", "batas"], ["以內", "以內"]],
+   "explain": "以 + kata posisi menyatakan batas: 一個小時以內 (dalam satu jam), 台北市以外 (di luar kota Taipei), 十二歲以上/以下 (di atas/di bawah 12 tahun).",
+   "examples": [{"zh": "一個小時以內送得到嗎？", "id": "Bisa diantar dalam satu jam?"}, {"zh": "台北市以外，要兩個小時。", "id": "Di luar Taipei, perlu dua jam."}],
+   "check": {"q": "'Dalam tiga hari' =", "options": ["三天以內", "以內三天", "三以內天"], "answer": 0}},
+  {"tbcl_id": 240, "point": "VP/S + 的 — yang … (kata benda)", "pattern": "(S) + V + 的 (+ 是 …)", "blocks": [["我要", "S V"], ["的", "的"], ["是牛肉的", "keterangan"]],
+   "explain": "Frasa kerja + 的 bisa berdiri sebagai kata benda: 我要的 (yang kuinginkan), 你說的 (yang kamu katakan). Sering dalam pola 我要的是… untuk mengoreksi.",
+   "examples": [{"zh": "我要的是牛肉的。", "id": "Yang kupesan daging sapi."}, {"zh": "這是你要的便當嗎？", "id": "Ini bento yang kamu pesan?"}],
+   "check": {"q": "'Yang dia katakan benar' =", "options": ["他說的對。", "的他說對。", "他的說對。"], "answer": 0}}
+ ]
+}
+]}
