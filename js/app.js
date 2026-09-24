@@ -1,173 +1,175 @@
-/* TOCFL Band A — app belajar mandiri (SDL): 3 volume × modul adegan.
-   Struktur & jumlah modul: rencana-modul.xlsx / data/rencana.json.
-   Isi modul: data/modul_vol{n}.json. Tampilan tahap: js/modul.js. */
+/* TOCFL Band A — app belajar mandiri (SDL), mobile-first.
+   Rute (hash, supaya tombol Kembali di HP bekerja):
+     #/                 beranda
+     #/v/1              peta modul volume 1   (#/v/1/kata = latihan kosakata, #/v/1/ujian = ujian simulasi)
+     #/m/A01/0          modul A01, tahap ke-0
+     #/latihan          sesi latihan kosakata yang sedang berjalan
+     #/ujian            sesi ujian simulasi yang sedang berjalan */
 
 const VOLUMES = [
-  { num: 1, level: 'A0', tbcl: 'TBCL 第1級', vocab: 396, grammar: 15, approach: 'Vocabulary-first',
-    file: 'data/modul_vol1.json' },
-  { num: 2, level: 'A1', tbcl: 'TBCL 第2級', vocab: 402, grammar: 92, approach: 'TBLL 6 tahap',
-    file: 'data/modul_vol2.json' },
-  { num: 3, level: 'A2', tbcl: 'TBCL 第3級', vocab: 456, grammar: 134, approach: 'TBLL 6 tahap',
-    file: 'data/modul_vol3.json' },
+  { num: 1, level: 'A0', tbcl: 'TBCL 第1級', vocab: 396, grammar: 15, approach: 'Vocabulary-first', color: 'v1' },
+  { num: 2, level: 'A1', tbcl: 'TBCL 第2級', vocab: 402, grammar: 92, approach: 'TBLL 6 tahap', color: 'v2' },
+  { num: 3, level: 'A2', tbcl: 'TBCL 第3級', vocab: 456, grammar: 134, approach: 'TBLL 6 tahap', color: 'v3' },
 ];
-
 const STORAGE_KEY = 'tocfl_modul_progress';
 
-const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const Store = {
+  get(key, def) { try { return JSON.parse(localStorage.getItem(key)) ?? def; } catch { return def; } },
+  set(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch { /* mode privat */ } },
+};
 
 const App = {
-  plan: null,        // data/rencana.json — peta semua modul
-  volData: {},       // isi modul per volume (yang sudah dibuat)
-  currentVolume: null,
+  plan: null, volData: {},
 
   async init() {
     try {
       this.plan = await (await fetch('data/rencana.json')).json();
+      await Promise.all(VOLUMES.map(async v => {
+        this.volData[v.num] = await (await fetch(`data/modul_vol${v.num}.json`)).json();
+      }));
     } catch {
-      this.main(`<div class="loading-screen"><p>Gagal memuat <strong>data/rencana.json</strong>. Jalankan app lewat server lokal (mis. <code>py -m http.server</code>).</p></div>`);
+      this.main(`<div class="empty"><p>Gagal memuat data. Jalankan app lewat server lokal, mis. <code>py -m http.server</code>.</p></div>`);
       return;
     }
-    await Promise.all(VOLUMES.map(async v => {
-      try { this.volData[v.num] = await (await fetch(v.file)).json(); }
-      catch { this.volData[v.num] = { modules: [] }; }
-    }));
-    this.renderVolumes();
+    window.addEventListener('hashchange', () => this.route());
+    this.route();
   },
 
+  go(hash) { if (location.hash === hash) this.route(); else location.hash = hash; },
+
+  route() {
+    Speech.stop();
+    const p = (location.hash.replace(/^#\/?/, '') || '').split('/').filter(Boolean);
+    if (p[0] === 'v' && VOLUMES.some(v => v.num === +p[1])) return this.renderVolume(+p[1], p[2] || 'modul');
+    if (p[0] === 'm' && this.findModule(p[1])) return Modul.open(p[1], +(p[2] || 0));
+    if (p[0] === 'latihan' && Latihan.session) return Latihan.render();
+    if (p[0] === 'ujian' && Ujian.session) return Ujian.render();
+    return this.renderHome();
+  },
+
+  /* ===== util ===== */
   main(html) { document.getElementById('app-main').innerHTML = html; window.scrollTo(0, 0); },
-
-  crumbs(items) {
-    document.getElementById('breadcrumb').innerHTML = items.map(([label, fn], i) =>
-      fn ? `<a onclick="${fn}">${esc(label)}</a>` : `<span>${esc(label)}</span>`
-    ).join('<span class="sep">›</span>');
+  bar(title, back, extra = '') {
+    document.getElementById('app-bar').innerHTML = `
+      ${back ? `<button class="bar-back" onclick="App.go('${back}')" aria-label="Kembali">‹</button>` : `<span class="bar-logo">華</span>`}
+      <div class="bar-title">${title}</div>
+      <div class="bar-extra">${extra}</div>`;
   },
-
-  /* ===== penyimpanan progres (per-pelajar, lokal) ===== */
-  loadAll() {
-    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch { return {}; }
+  findModule(code) {
+    for (const v of VOLUMES) {
+      const m = (this.volData[v.num]?.modules || []).find(x => x.code === code);
+      if (m) return { vol: v.num, m };
+    }
+    return null;
   },
-  getP(code) { return this.loadAll()[code] || {}; },
+  getP(code) { return Store.get(STORAGE_KEY, {})[code] || {}; },
   setP(code, patch) {
-    const all = this.loadAll();
+    const all = Store.get(STORAGE_KEY, {});
     all[code] = Object.assign(all[code] || {}, patch);
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(all)); } catch { /* mode privat: progres tidak tersimpan */ }
-    this.updateHeader();
+    Store.set(STORAGE_KEY, all);
   },
-
   status(code) {
     const p = this.getP(code);
-    if (p.done) return 'done';
-    if (p.goal || p.stage || p.tasks) return 'progress';
-    return 'new';
+    return p.done ? 'done' : (p.goal || p.stage || p.tasks) ? 'progress' : 'new';
+  },
+  volStats(vol) {
+    const mods = this.plan[vol];
+    const done = mods.filter(m => this.status(m.code) === 'done').length;
+    const scores = mods.map(m => this.getP(m.code).tasks?.best).filter(s => s != null);
+    return { done, total: mods.length, pct: Math.round(done / mods.length * 100),
+             avg: scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : null };
+  },
+  ring(pct, label, cls = '') {
+    return `<div class="ring ${cls}" style="--p:${pct}"><span>${label}</span></div>`;
+  },
+  toast(msg) {
+    let t = document.getElementById('toast');
+    if (!t) { t = document.createElement('div'); t.id = 'toast'; document.body.appendChild(t); }
+    t.textContent = msg; t.className = 'show';
+    clearTimeout(t._h); t._h = setTimeout(() => (t.className = ''), 2400);
   },
 
-  updateHeader() {
-    const el = document.getElementById('header-progress');
-    if (!el) return;
-    const done = Object.values(this.loadAll()).filter(p => p.done).length;
-    const total = this.plan ? Object.values(this.plan).reduce((a, m) => a + m.length, 0) : 0;
-    el.textContent = total ? `Modul selesai: ${done}/${total}` : '';
-  },
-
-  moduleContent(vol, code) {
-    return (this.volData[vol]?.modules || []).find(m => m.code === code);
-  },
-
-  /* ===== PILIH VOLUME ===== */
-  renderVolumes() {
-    this.currentVolume = null;
-    this.crumbs([]);
-    this.updateHeader();
+  /* ===== BERANDA ===== */
+  renderHome() {
+    this.bar('TOCFL Band A', null);
+    const last = Store.get('tocfl_last', null);
+    const lastM = last && this.findModule(last.code);
+    const allDone = Object.values(Store.get(STORAGE_KEY, {})).filter(p => p.done).length;
     this.main(`
-      <div class="volume-selector-header">
-        <h1>華語文能力測驗 · Band A</h1>
-        <p>Belajar mandiri per adegan. Satu modul = satu situasi nyata, lengkap dengan latihan soal bergaya TOCFL.</p>
-      </div>
-      <div class="volume-grid">
+      <section class="hero">
+        <div>
+          <h1>華語文能力測驗</h1>
+          <p>Belajar per adegan, latihan gaya TOCFL, dan pantau kemajuanmu sendiri.</p>
+        </div>
+        ${this.ring(Math.round(allDone / 138 * 100), `${allDone}<small>/138</small>`, 'ring-lg')}
+      </section>
+      ${lastM ? `
+      <button class="card continue" onclick="App.go('#/m/${lastM.m.code}/${last.stage || 0}')">
+        ${Pic.scene(lastM.m.categories[0], 'sm')}
+        <div class="continue-txt">
+          <small>Lanjutkan belajar</small>
+          <b lang="zh-TW">${esc(lastM.m.title)}</b>
+          <span>${lastM.m.code} · tahap ${(last.stage || 0) + 1} dari 6</span>
+        </div>
+        <span class="chev">›</span>
+      </button>` : ''}
+      <h2 class="section-title">Pilih volume</h2>
+      <div class="vol-list">
         ${VOLUMES.map(v => {
-          const mods = this.plan[v.num] || [];
-          const built = mods.filter(m => this.moduleContent(v.num, m.code)).length;
-          const done = mods.filter(m => this.status(m.code) === 'done').length;
-          return `
-          <div class="volume-card vol-${v.num}" onclick="App.selectVolume(${v.num})">
-            <div class="vol-header"><div class="vol-num">${v.num}</div><div class="vol-level-badge">${v.level}</div></div>
-            <h3 class="vol-title">Volume ${v.num} · ${v.level}</h3>
-            <div class="vol-subtitle">${v.tbcl} · ${v.approach}</div>
-            <div class="vol-stats">
-              <div class="vol-stat"><span>${mods.length}</span><small>Modul</small></div>
-              <div class="vol-stat"><span>${v.vocab}</span><small>Kosakata</small></div>
-              <div class="vol-stat"><span>${v.grammar}</span><small>Grammar</small></div>
+          const s = this.volStats(v.num);
+          return `<button class="card vol-card ${v.color}" onclick="App.go('#/v/${v.num}')">
+            <div class="vol-badge">${v.level}</div>
+            <div class="vol-info">
+              <b>Volume ${v.num}</b>
+              <span>${v.tbcl} · ${s.total} modul · ${v.vocab} kata · ${v.grammar} grammar</span>
+              <div class="bar"><i style="width:${s.pct}%"></i></div>
+              <small>${s.done}/${s.total} selesai${s.avg != null ? ` · rata-rata tugas ${s.avg}%` : ''}</small>
             </div>
-            <div class="vol-built">${built} modul sudah berisi · ${done} selesai</div>
-            <div class="vol-cta">Buka peta modul →</div>
-          </div>`;
+            <span class="chev">›</span>
+          </button>`;
         }).join('')}
-      </div>`);
+      </div>
+      <p class="credit">Ilustrasi: Twemoji © Twitter/X &amp; kontributor, lisensi CC-BY 4.0.</p>`);
   },
 
-  selectVolume(num) {
-    this.currentVolume = num;
-    this.renderDashboard();
-  },
-
-  /* ===== PETA MODUL (dashboard volume) ===== */
-  renderDashboard() {
-    const v = VOLUMES.find(x => x.num === this.currentVolume);
-    const mods = this.plan[v.num];
-    const all = this.loadAll();
-    const done = mods.filter(m => all[m.code]?.done).length;
-    const scores = mods.map(m => all[m.code]?.tasks?.best).filter(s => s != null);
-    const avg = scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : null;
-
-    this.crumbs([['Pilih Volume', 'App.renderVolumes()'], [`Volume ${v.num} · ${v.level}`]]);
+  /* ===== VOLUME: tab Modul / Kosakata / Ujian ===== */
+  renderVolume(vol, tab) {
+    const v = VOLUMES.find(x => x.num === vol);
+    const s = this.volStats(vol);
+    this.bar(`Volume ${vol} · ${v.level}`, '#/');
+    const tabs = [['modul', 'Modul'], ['kata', 'Kosakata'], ['ujian', 'Ujian simulasi']];
+    const body = tab === 'kata' ? Latihan.menu(vol) : tab === 'ujian' ? Ujian.menu(vol) : this.moduleList(vol);
     this.main(`
-      <div class="dashboard-header">
-        <h1>Volume ${v.num} · ${v.level}</h1>
-        <p>${v.tbcl} · ${mods.length} adegan · ${v.approach}</p>
-      </div>
-      <div class="overall-progress">
-        <div class="progress-stat"><div class="stat-num">${done}</div><div class="stat-label">Modul selesai</div></div>
-        <div class="progress-divider"></div>
-        <div class="progress-stat"><div class="stat-num">${avg ?? '–'}${avg != null ? '%' : ''}</div><div class="stat-label">Rata-rata tugas</div></div>
-        <div class="progress-divider"></div>
-        <div class="overall-bar">
-          <label><span>Kemajuan volume</span><span><strong>${done}</strong>/${mods.length}</span></label>
-          <div class="bar-track"><div class="bar-fill" style="width:${Math.round(done / mods.length * 100)}%"></div></div>
-        </div>
-      </div>
-      <div class="chapter-grid">
-        ${mods.map(m => this.moduleCard(v.num, m)).join('')}
-      </div>`);
-    this.updateHeader();
+      <section class="vol-head ${v.color}">
+        ${this.ring(s.pct, `${s.pct}%`)}
+        <div><b>${v.tbcl}</b><span>${v.approach} · ${s.done}/${s.total} modul selesai</span></div>
+      </section>
+      <nav class="tabs" role="tablist">
+        ${tabs.map(([k, l]) => `<button role="tab" class="${k === tab ? 'on' : ''}" onclick="App.go('#/v/${vol}${k === 'modul' ? '' : '/' + k}')">${l}</button>`).join('')}
+      </nav>
+      ${body}`);
   },
 
-  moduleCard(vol, m) {
-    const built = !!this.moduleContent(vol, m.code);
-    const st = this.status(m.code);
-    const best = this.getP(m.code).tasks?.best;
-    const stLabel = !built ? 'Belum tersedia' : st === 'done' ? '✓ Selesai' : st === 'progress' ? 'Sedang dipelajari' : 'Baru';
-    return `
-      <div class="chapter-card mod-card${built ? '' : ' mod-locked'} st-${built ? st : 'locked'}"
-           ${built ? `onclick="Modul.open(${vol}, '${m.code}')"` : ''}>
-        <div class="card-num">${m.code} <span class="mod-status">${stLabel}</span></div>
-        <h3 class="mod-title-zh" lang="zh-TW">${esc(m.title)}</h3>
-        <div class="card-topic">${esc(m.scene)}</div>
-        <div class="card-meta">
-          ${m.categories.map(c => `<span class="badge badge-count">${esc(c)}</span>`).join('')}
-          <span class="badge badge-soft">${m.n_core} 核心${m.n_sup ? ` + ${m.n_sup} 補充` : ''}</span>
-        </div>
-        ${m.grammar.length ? `<div class="mod-grammar">${m.grammar.map(g => `<span>${esc(g)}</span>`).join('')}</div>` : '<div class="mod-grammar mod-grammar-none">Tanpa grammar baru (daur ulang)</div>'}
-        ${best != null ? `<div class="mod-score">Skor tugas terbaik: ${best}%</div>` : ''}
-      </div>`;
-  },
-
-  showToast(msg) {
-    let t = document.getElementById('app-toast');
-    if (!t) { t = document.createElement('div'); t.id = 'app-toast'; t.className = 'toast'; document.body.appendChild(t); }
-    t.textContent = msg;
-    requestAnimationFrame(() => requestAnimationFrame(() => t.classList.add('show')));
-    clearTimeout(t._timer);
-    t._timer = setTimeout(() => t.classList.remove('show'), 2500);
+  moduleList(vol) {
+    // Kelompokkan per kategori situasi (urutan tetap mengikuti urutan belajar)
+    const groups = [];
+    for (const m of this.plan[vol]) {
+      const cat = m.categories[0];
+      if (!groups.length || groups[groups.length - 1].cat !== cat) groups.push({ cat, mods: [] });
+      groups[groups.length - 1].mods.push(m);
+    }
+    return groups.map(g => `
+      <div class="cat-group">
+        <div class="cat-head">${Pic.html(Pic.SCENE[Pic.catNum(g.cat)][0], 'cat-ic')}<span lang="zh-TW">${esc(g.cat)}</span></div>
+        ${g.mods.map(m => {
+          const st = this.status(m.code), best = this.getP(m.code).tasks?.best;
+          return `<button class="mod-row st-${st}" onclick="App.go('#/m/${m.code}/${this.getP(m.code).stage || 0}')">
+            <span class="mod-code">${m.code}</span>
+            <span class="mod-main"><b lang="zh-TW">${esc(m.title)}</b><small>${esc(m.scene)}</small></span>
+            <span class="mod-state">${st === 'done' ? '✓' : st === 'progress' ? (best != null ? best + '%' : '•') : ''}</span>
+          </button>`;
+        }).join('')}
+      </div>`).join('');
   },
 };
 

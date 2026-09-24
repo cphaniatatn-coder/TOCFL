@@ -1,33 +1,21 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#2F6FDE">
   <title>TOCFL Band A</title>
-  <link rel="icon" href="data:,">
+  <link rel="icon" href="img/twemoji/1f3ee.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div id="app">
+  <header id="app-bar"></header>
+  <main id="app-main"></main>
 
-    <header class="app-header">
-      <a class="logo" onclick="App.currentVolume ? App.renderDashboard() : App.renderVolumes()">
-        <div class="logo-icon">華</div>
-        <span>TOCFL Band A</span>
-      </a>
-      <div class="header-right">
-        <span id="header-progress"></span>
-      </div>
-    </header>
-
-    <div class="main-content">
-      <nav class="breadcrumb" id="breadcrumb"></nav>
-      <main id="app-main"></main>
-    </div>
-
-  </div>
-
+  <script src="js/media.js"></script>
   <script src="js/app.js"></script>
   <script src="js/modul.js"></script>
+  <script src="js/latihan.js"></script>
+  <script src="js/ujian.js"></script>
 </body>
 </html>
