@@ -35,8 +35,9 @@
   - Morfem yang "dibawa" poin grammar & didaftarkan di pemeriksa (PARTIKEL): 看起來/聽起來 (B43), 死了 (C08),
     為了 (C15), 得不得了/極了 (C18), 起 (C33), 以外 (C36), 分之/百分之 (C38), 折 (C40), 慣 (C44),
     睡著/睡不著 (C52), 以內 (C67). Reduplikasi AABB (乾乾淨淨) dikenali otomatis dari kata dasarnya.
-  - 下 'berikutnya' (下個星期/下學期) SENGAJA dihindari di seluruh modul: 義項 itu tidak ada di rencana
-    (下 hanya diajarkan sebagai 'bawah', A09). Kalau mau diajarkan, tambahkan 下@berikutnya ke rencana.
+  - 下 'berikutnya' (下個星期/下學期) dihindari saat membangun modul karena 義項 itu belum ada di rencana.
+    **Update 2026-09-24 (keputusan Carli):** 下@berikutnya ditambahkan sebagai 補充 di A11 (dialog + 1 soal
+    聽力 Part 3). Sejak A11, 下星期/下個月 boleh dipakai di modul mana pun.
   - Interpretasi poin grammar yang labelnya ambigu (mohon dicek Carli): 沒(有)2 #118 = pertanyaan "…了沒有？";
     就2 #174 = penegasan 就是/就在; 叫1/叫2 #115/116 = memanggil / menyuruh; 可以3 #168 = 還可以 'lumayan';
     從2 #85 = 'lewat (jalur)'; 又2 #91 = 又不是… (bantahan); 呢2 #117 = penegasan di akhir pernyataan.
