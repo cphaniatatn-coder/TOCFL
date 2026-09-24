@@ -38,6 +38,6 @@
   - 下 'berikutnya' (下個星期/下學期) dihindari saat membangun modul karena 義項 itu belum ada di rencana.
     **Update 2026-09-24 (keputusan Carli):** 下@berikutnya ditambahkan sebagai 補充 di A11 (dialog + 1 soal
     聽力 Part 3). Sejak A11, 下星期/下個月 boleh dipakai di modul mana pun.
-  - Interpretasi poin grammar yang labelnya ambigu (mohon dicek Carli): 沒(有)2 #118 = pertanyaan "…了沒有？";
+  - Interpretasi poin grammar yang labelnya ambigu — **DIKONFIRMASI Carli 2026-09-24**: 沒(有)2 #118 = pertanyaan "…了沒有？";
     就2 #174 = penegasan 就是/就在; 叫1/叫2 #115/116 = memanggil / menyuruh; 可以3 #168 = 還可以 'lumayan';
     從2 #85 = 'lewat (jalur)'; 又2 #91 = 又不是… (bantahan); 呢2 #117 = penegasan di akhir pernyataan.
