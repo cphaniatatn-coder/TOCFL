@@ -374,7 +374,13 @@ const Modul = {
     const nKnown = this.allVocab().filter(v => known[v.w]).length, nAll = this.allVocab().length;
     const lv = [['😟', 'Belum'], ['🙂', 'Cukup'], ['😎', 'Yakin']];
     const strats = ['Ulangi dialog sambil mendengar', 'Latih kata 核心 dengan audio', 'Kerjakan ulang tugas', 'Lanjut ke modul berikutnya'];
+    const bank = App.bank[m.code], tes = p.tes;
     return `
+      ${bank ? `<button class="card tes-card" onclick="Ujian.startTes('${m.code}')">
+        ${Pic.html('📝', 'mode-ic')}
+        <div><b>Tes Bab · ${bank.length} soal gaya TOCFL</b>
+          <span>± ${Math.round(bank.length * Ujian.SEC_PER_ITEM / 60)} menit · 聽力 + 閱讀 · dinilai setelah dikumpulkan${tes ? ` · terbaik ${tes.best}% (${tes.tries}×)` : ''}</span></div>
+        <span class="chev">›</span></button>` : ''}
       <div class="stats3">
         <div>${App.ring(p.tasks ? p.tasks.best : 0, p.tasks ? p.tasks.best + '%' : '–')}<small>Tugas terbaik</small></div>
         <div>${App.ring(Math.round(nKnown / nAll * 100), `${nKnown}/${nAll}`)}<small>Kata dihafal</small></div>

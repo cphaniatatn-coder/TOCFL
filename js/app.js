@@ -19,7 +19,7 @@ const Store = {
 };
 
 const App = {
-  plan: null, volData: {},
+  plan: null, volData: {}, bank: {},
 
   async init() {
     try {
@@ -27,6 +27,8 @@ const App = {
       await Promise.all(VOLUMES.map(async v => {
         this.volData[v.num] = await (await fetch(`data/modul_vol${v.num}.json`)).json();
       }));
+      // Bank soal Tes Bab (opsional: app tetap jalan tanpa file ini)
+      try { this.bank = await (await fetch('data/bank_soal.json')).json(); } catch { this.bank = {}; }
     } catch {
       this.main(`<div class="empty"><p>Gagal memuat data. Jalankan app lewat server lokal, mis. <code>py -m http.server</code>.</p></div>`);
       return;
@@ -162,7 +164,7 @@ const App = {
       <div class="cat-group">
         <div class="cat-head">${Pic.html(Pic.SCENE[Pic.catNum(g.cat)][0], 'cat-ic')}<span lang="zh-TW">${esc(g.cat)}</span></div>
         ${g.mods.map(m => {
-          const st = this.status(m.code), best = this.getP(m.code).tasks?.best;
+          const st = this.status(m.code), p = this.getP(m.code), best = p.tes?.best ?? p.tasks?.best;
           return `<button class="mod-row st-${st}" onclick="App.go('#/m/${m.code}/${this.getP(m.code).stage || 0}')">
             <span class="mod-code">${m.code}</span>
             <span class="mod-main"><b lang="zh-TW">${esc(m.title)}</b><small>${esc(m.scene)}</small></span>

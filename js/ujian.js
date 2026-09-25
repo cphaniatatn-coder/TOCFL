@@ -1,32 +1,36 @@
-/* Ujian simulasi per volume — urutan & proporsi bagian mengikuti format TOCFL Band A
-   (聽力 lalu 閱讀), dengan batas waktu. Tidak ada umpan balik sampai ujian dikumpulkan,
-   lalu setiap soal bisa ditinjau beserta alasannya dan tautan ke modul asalnya. */
+/* Mesin ujian bergaya TOCFL Band A (聽力 lalu 閱讀, batas waktu, tanpa umpan balik sampai
+   dikumpulkan, lalu tinjauan per soal + alasan). Dipakai untuk dua hal:
+   - Ujian simulasi per volume (kind 'vol'): paket acak menurut bobot bagian resmi.
+   - Tes Bab (kind 'tes'): 10 butir dari bank soal bab itu (data/bank_soal.json). */
 
 const UJIAN_KEY = 'tocfl_ujian';
 
 const Ujian = {
   session: null, timer: null,
   // Bobot tiap bagian (mengikuti jumlah soal ujian resmi Band A: 聽力 25/15/5/5, 閱讀 15/15/10/5/5)
+  // [bagian, bobot, nama, petunjuk Indonesia, petunjuk Mandarin] — petunjuk dwibahasa seperti naskah resmi
   PARTS: [
-    ['聽力 Part 1', 25, 'Deskripsi gambar', 'Dengarkan kalimat, pilih gambar yang cocok.'],
-    ['聽力 Part 2', 15, 'Tanya-jawab', 'Dengarkan pertanyaan/kalimat, pilih tanggapan yang tepat.'],
-    ['聽力 Part 3', 5, 'Dialog', 'Dengarkan dialog beberapa putaran, jawab pertanyaannya.'],
-    ['聽力 Part 4', 5, 'Makna tersirat', 'Dengarkan dialog, tangkap maksud yang tidak diucapkan langsung.'],
-    ['閱讀 Part 1', 15, 'Kalimat → gambar', 'Baca satu kalimat, pilih gambar yang cocok.'],
-    ['閱讀 Part 2', 15, 'Gambar → kalimat', 'Lihat gambar, pilih kalimat yang cocok.'],
-    ['閱讀 Part 3', 10, 'Isian bergambar', 'Lihat gambar, pilih kata yang tepat untuk titik kosong di kalimat.'],
-    ['閱讀 Part 4', 5, 'Melengkapi paragraf', 'Isi titik kosong dalam paragraf. Ada pilihan yang tidak terpakai.'],
-    ['閱讀 Part 5', 5, 'Pemahaman bacaan', 'Baca teks pendek (pesan, pengumuman, cerita), jawab pertanyaannya.'],
+    ['聽力 Part 1', 25, 'Deskripsi gambar', 'Dengarkan kalimat, pilih gambar yang cocok.', '請聽一個句子，選出相符的圖片。'],
+    ['聽力 Part 2', 15, 'Tanya-jawab', 'Dengarkan tanya-jawab singkat, pilih gambar atau tanggapan yang tepat.', '請聽一段簡短的問答，選出正確的答案。'],
+    ['聽力 Part 3', 5, 'Dialog', 'Dengarkan dialog beberapa putaran dan pertanyaannya.', '請聽一段對話和問題，選出正確的答案。'],
+    ['聽力 Part 4', 5, 'Makna tersirat', 'Dengarkan dialog, tangkap maksud yang tidak diucapkan langsung. Pilih A–D.', '請聽一段對話和問題，從四個選項中選出正確的答案。'],
+    ['閱讀 Part 1', 15, 'Kalimat → gambar', 'Baca satu kalimat, pilih gambar yang cocok.', '請看一個句子，從三張圖片中選出相符的圖片。'],
+    ['閱讀 Part 2', 15, 'Gambar → kalimat', 'Lihat gambar, pilih kalimat yang cocok.', '請看圖片，選出與圖片相符的句子。'],
+    ['閱讀 Part 3', 10, 'Isian bergambar', 'Lihat gambar, pilih kata yang tepat untuk titik kosong.', '請看圖片，選出最適合填入空格的詞。'],
+    ['閱讀 Part 4', 5, 'Melengkapi paragraf', 'Isi titik kosong dalam paragraf. Satu pilihan hanya dipakai sekali; ada pilihan yang tidak terpakai.', '請根據短文的上下文，選出最適合的答案。一個選項只能用一次。'],
+    ['閱讀 Part 5', 5, 'Pemahaman bacaan', 'Baca teks pendek, pilih jawaban A–D.', '請閱讀短文，回答問題。'],
   ],
   SEC_PER_ITEM: 72,
   PLAY_LIMIT: 2,
 
   partOf(t) { return this.PARTS.findIndex(p => t.part.startsWith(p[0])); },
+  // Sumber soal ujian volume: bank soal Tes Bab bila bab itu sudah punya; bila belum, soal latihan modul
   bank(vol) {
     const out = [];
-    for (const m of App.volData[vol].modules) m.tasks.forEach(t => out.push({ t, code: m.code }));
+    for (const m of App.volData[vol].modules) (App.bank[m.code] || m.tasks).forEach(t => out.push({ t, code: m.code }));
     return out;
   },
+  nBank(vol) { return App.volData[vol].modules.filter(m => App.bank[m.code]).length; },
   history(vol) { return (Store.get(UJIAN_KEY, {})[vol] || []); },
 
   menu(vol) {
@@ -36,7 +40,7 @@ const Ujian = {
     return `
       <div class="panel exam">
         <div class="panel-k">${Pic.html('📝', 'ic-sm')} Seperti ujian sungguhan</div>
-        <p>Soal diambil acak dari ${bank.length} soal di ${App.volData[vol].modules.length} modul volume ini, disusun menurut urutan bagian TOCFL: <b lang="zh-TW">聽力</b> dulu, lalu <b lang="zh-TW">閱讀</b>.
+        <p>Soal diambil acak dari ${bank.length} soal di ${App.volData[vol].modules.length} modul volume ini${this.nBank(vol) ? ` (${this.nBank(vol)} bab memakai bank soal Tes Bab)` : ''}, disusun menurut urutan bagian TOCFL: <b lang="zh-TW">聽力</b> dulu, lalu <b lang="zh-TW">閱讀</b>.
         Ada batas waktu, audio maksimal diputar ${this.PLAY_LIMIT}×, dan jawaban baru dinilai setelah kamu mengumpulkan.</p>
       </div>
       ${running ? `<button class="card continue" onclick="App.go('#/ujian')">${Pic.html('⏱️', 'mode-ic')}
@@ -77,7 +81,17 @@ const Ujian = {
     clearInterval(this.timer);
     const items = this.compose(vol, n);
     Soal.plays = {}; Soal.limit = this.PLAY_LIMIT;
-    this.session = { vol, items, i: 0, answers: {}, intro: {}, phase: 'q', dur: items.length * this.SEC_PER_ITEM, end: null, grid: false };
+    this.session = { kind: 'vol', vol, items, i: 0, answers: {}, intro: {}, phase: 'q', dur: items.length * this.SEC_PER_ITEM, end: null, grid: false,
+                     title: `Ujian · Vol.${vol}`, back: `#/v/${vol}/ujian` };
+    App.go('#/ujian');
+  },
+  startTes(code) {
+    clearInterval(this.timer);
+    const f = App.findModule(code), items = (App.bank[code] || []).map(t => ({ t, code }));
+    if (!items.length) return App.toast('Bab ini belum punya Tes Bab.');
+    Soal.plays = {}; Soal.limit = this.PLAY_LIMIT;
+    this.session = { kind: 'tes', code, vol: f.vol, items, i: 0, answers: {}, intro: {}, phase: 'q', dur: items.length * this.SEC_PER_ITEM, end: null, grid: false,
+                     title: `Tes Bab · ${code}`, back: `#/m/${code}/5` };
     App.go('#/ujian');
   },
 
@@ -90,7 +104,7 @@ const Ujian = {
     if (!s.end) s.end = Date.now() + s.dur * 1000;
     this.tick();
     const key = 'u' + s.i, n = s.items.length;
-    App.bar(`Ujian · Vol.${s.vol}`, `#/v/${s.vol}/ujian`, `<span class="bar-pill timer" id="ujian-timer"></span>`);
+    App.bar(s.title, s.back, `<span class="bar-pill timer" id="ujian-timer"></span>`);
     this.tick();
     App.main(`
       <div class="lprog"><i style="width:${this.nAnswered() / n * 100}%"></i></div>
@@ -108,13 +122,14 @@ const Ujian = {
     const s = this.session, p = this.PARTS[pi];
     const cnt = s.items.filter(x => this.partOf(x.t) === pi).length;
     const first = s.items.findIndex(x => this.partOf(x.t) === pi) + 1;
-    App.bar(`Ujian · Vol.${s.vol}`, `#/v/${s.vol}/ujian`, s.end ? `<span class="bar-pill timer" id="ujian-timer"></span>` : '');
+    App.bar(s.title, s.back, s.end ? `<span class="bar-pill timer" id="ujian-timer"></span>` : '');
     this.tick();
     App.main(`
       <div class="part-intro">
         ${Pic.html(pi < 4 ? '🎧' : '📖', 'pic-xl')}
         <h2 lang="zh-TW">${p[0].replace(/Part (\d)/, '第$1部分')}</h2>
         <b>${p[2]}</b>
+        <p class="zh-instr" lang="zh-TW">說明：${p[4]}</p>
         <p>${p[3]}</p>
         <small>Soal ${first}–${first + cnt - 1} · ${cnt} soal${pi < 4 ? ` · audio maks. ${this.PLAY_LIMIT}×` : ''}</small>
         ${!s.end ? `<p class="hint">Waktu (${Math.round(s.dur / 60)} menit) mulai berjalan saat kamu menekan Mulai.</p>` : ''}
@@ -162,15 +177,20 @@ const Ujian = {
     s.per = per; s.pct = pc(sum(per)); s.l = pc(sum(per.slice(0, 4))); s.r = pc(sum(per.slice(4)));
     s.used = Math.min(s.dur, Math.round((Date.now() - (s.end - s.dur * 1000)) / 1000));
     s.phase = 'result'; s.filter = 'salah';
-    const all = Store.get(UJIAN_KEY, {});
-    (all[s.vol] = all[s.vol] || []).push({ d: Date.now(), n: s.items.length, pct: s.pct, l: s.l, r: s.r });
-    Store.set(UJIAN_KEY, all);
+    if (s.kind === 'tes') {
+      const t = App.getP(s.code).tes || {};
+      App.setP(s.code, { tes: { last: s.pct, best: Math.max(s.pct, t.best ?? 0), tries: (t.tries || 0) + 1 } });
+    } else {
+      const all = Store.get(UJIAN_KEY, {});
+      (all[s.vol] = all[s.vol] || []).push({ d: Date.now(), n: s.items.length, pct: s.pct, l: s.l, r: s.r });
+      Store.set(UJIAN_KEY, all);
+    }
     App.go('#/ujian');
   },
   result() {
     const s = this.session;
     Soal.limit = null;
-    App.bar(`Hasil ujian · Vol.${s.vol}`, `#/v/${s.vol}/ujian`);
+    App.bar(`Hasil · ${s.title}`, s.back);
     const wrongCodes = [...new Set(s.items.filter((x, i) => { const [g, n] = Soal.score(x.t, s.answers['u' + i]); return g < n; }).map(x => x.code))];
     const list = s.items.map((x, i) => ({ x, i, ok: (([g, n]) => g === n)(Soal.score(x.t, s.answers['u' + i])) }))
       .filter(r => s.filter === 'semua' || !r.ok);
@@ -187,14 +207,14 @@ const Ujian = {
       <div class="partbars">${this.PARTS.map((p, i) => s.per[i][1] ? `<div class="pb">
           <span lang="zh-TW">${p[0]}</span><div class="bar"><i style="width:${s.per[i][0] / s.per[i][1] * 100}%"></i></div><b>${s.per[i][0]}/${s.per[i][1]}</b></div>` : '').join('')}</div>
       <p class="hint">Di 閱讀 Part 4, setiap titik kosong dihitung satu poin, sama seperti di ujian resmi.</p>
-      ${wrongCodes.length ? `<div class="panel"><div class="panel-k">Modul yang perlu diulang</div>
+      ${s.kind === 'vol' && wrongCodes.length ? `<div class="panel"><div class="panel-k">Modul yang perlu diulang</div>
         <div class="chips">${wrongCodes.map(c => `<button class="chip" onclick="App.go('#/m/${c}/0')">${c} <span lang="zh-TW">${esc(App.findModule(c).m.title)}</span></button>`).join('')}</div></div>` : ''}
       <div class="toolbar"><h3 class="sub-title">Tinjau soal</h3><span class="spacer"></span>
         <div class="seg">${[['salah', 'Yang salah'], ['semua', 'Semua']].map(([k, l]) => `<button class="${s.filter === k ? 'on' : ''}" onclick="Ujian.session.filter='${k}';Ujian.keep()">${l}</button>`).join('')}</div></div>
       ${list.map(({ x, i }) => `<div class="q-card review">
           <div class="q-part"><b>${i + 1}.</b> <span lang="zh-TW">${esc(x.t.part)}</span> · <a href="#/m/${x.code}/0">${x.code}</a></div>
           ${Soal.body(x.t, 'r' + i, s.answers['u' + i], 'Ujian', 'review')}</div>`).join('') || '<p class="hint">Tidak ada soal yang salah. 太棒了！</p>'}
-      <div class="row2"><button class="btn primary" onclick="Ujian.start(${s.vol}, ${s.items.length})">Ujian baru</button>
-        <button class="btn ghost" onclick="App.go('#/v/${s.vol}/ujian')">Selesai</button></div>`);
+      <div class="row2"><button class="btn primary" onclick="${s.kind === 'tes' ? `Ujian.startTes('${s.code}')">Ulangi tes` : `Ujian.start(${s.vol}, ${s.items.length})">Ujian baru`}</button>
+        <button class="btn ghost" onclick="App.go('${s.back}')">Selesai</button></div>`);
   },
 };
