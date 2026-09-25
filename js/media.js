@@ -3,51 +3,72 @@
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-/* ===== Audio ===== */
-let _zhVoice = null;
-const _audioCache = {};
+/* ===== Audio =====
+   Utama: rekaman Mandarin Taiwan (zh-TW, Microsoft Neural) yang sudah dibuat oleh _kerja/buat_audio.py —
+   suara mengikuti pembicara (perempuan → suara perempuan, laki-laki → suara laki-laki).
+   Cadangan (teks belum punya rekaman / offline): suara browser zh-TW, dipilih perempuan/laki-laki bila tersedia. */
+const Audio_ = { map: null, speakers: {}, cur: null, token: 0 };
+fetch('data/audio.json').then(r => r.json()).then(d => { Audio_.map = d.clips; Audio_.speakers = d.speakers; }).catch(() => { Audio_.map = {}; });
+
+let _voiceF = null, _voiceM = null;
 if (window.speechSynthesis) {
   const pick = () => {
-    const vs = speechSynthesis.getVoices();
-    _zhVoice = vs.find(v => v.lang === 'zh-TW' && /hsiaoc|hsiaoyu|xiaoc|xiaoyu/i.test(v.name))
-      || vs.find(v => v.lang === 'zh-TW' && /online|natural|neural/i.test(v.name))
-      || vs.find(v => v.lang === 'zh-TW') || vs.find(v => v.lang.startsWith('zh')) || null;
+    const tw = speechSynthesis.getVoices().filter(v => /zh[-_]TW/i.test(v.lang));
+    _voiceF = tw.find(v => /hsiaochen|hsiaoyu|hanhan|yating|mei-?jia|female/i.test(v.name)) || tw[0] || null;
+    _voiceM = tw.find(v => /yunjhe|zhiwei|male/i.test(v.name) && !/female/i.test(v.name)) || null;
   };
   pick();
   speechSynthesis.addEventListener('voiceschanged', pick);
 }
 
 const Speech = {
-  utter(text, pitch = 1) {
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = 'zh-TW'; u.rate = 0.85; u.pitch = pitch;
-    if (_zhVoice) u.voice = _zhVoice;
-    return u;
+  // profil suara per pembicara (sama dengan _kerja/buat_audio.py)
+  profil(sp) { return Audio_.speakers[sp] || 'F1'; },
+  stop() {
+    Audio_.token++;
+    if (Audio_.cur) { Audio_.cur.pause(); Audio_.cur = null; }
+    if (window.speechSynthesis) speechSynthesis.cancel();
   },
-  stop() { if (window.speechSynthesis) speechSynthesis.cancel(); },
-  word(text) {
-    const url = `audio/${encodeURIComponent(text.replace(/\//g, '／'))}.mp3`;
-    if (!_audioCache[url]) _audioCache[url] = new Audio(url);
-    const a = _audioCache[url];
-    a.currentTime = 0;
-    a.play().catch(() => this.say(text));
+  // Putar satu teks dengan profil tertentu; kembalikan Promise yang selesai saat audio berakhir
+  play(text, prof, token) {
+    return new Promise(done => {
+      if (token !== Audio_.token) return done();
+      const id = Audio_.map && Audio_.map[`${prof}|${text}`];
+      if (id) {
+        const a = new Audio(`audio/tts/${id}.mp3`);
+        Audio_.cur = a;
+        a.onended = () => done();
+        a.onerror = () => this.tts(text, prof).then(done);
+        a.play().catch(() => this.tts(text, prof).then(done));
+      } else this.tts(text, prof).then(done);
+    });
   },
-  say(text, onend) {
-    if (!window.speechSynthesis) { App.toast('Browser ini tidak mendukung suara.'); return; }
-    speechSynthesis.cancel();
-    const u = this.utter(text);
-    if (onend) u.onend = onend;
-    speechSynthesis.speak(u);
-  },
-  // Dialog: baris berurutan; suara 男/女 dibedakan lewat pitch
-  lines(lines, onend) {
-    if (!window.speechSynthesis) { App.toast('Browser ini tidak mendukung suara.'); return; }
-    speechSynthesis.cancel();
-    lines.forEach((l, i) => {
-      const u = this.utter(l.zh, Pic.pitch(l.sp));
-      if (onend && i === lines.length - 1) u.onend = onend;
+  tts(text, prof) {
+    return new Promise(done => {
+      if (!window.speechSynthesis) { App.toast('Audio belum tersedia untuk kalimat ini.'); return done(); }
+      const male = /^M|^K/.test(prof);
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = 'zh-TW'; u.rate = 0.9;
+      const v = male ? (_voiceM || _voiceF) : _voiceF;
+      if (v) u.voice = v;
+      // bila tidak ada suara laki-laki zh-TW di perangkat ini, rendahkan nada sebagai pengganti
+      u.pitch = male && !_voiceM ? 0.7 : prof === 'K' ? 1.3 : 1;
+      u.onend = u.onerror = () => done();
       speechSynthesis.speak(u);
     });
+  },
+  word(text) { this.stop(); this.play(text, 'W', Audio_.token); },
+  say(text, onend) { this.stop(); this.play(text, 'N', Audio_.token).then(() => onend && onend()); },
+  // Dialog: baris berurutan, masing-masing dengan suara pembicaranya
+  async lines(lines, onend) {
+    this.stop();
+    const t = Audio_.token;
+    for (const l of lines) {
+      if (t !== Audio_.token) return;
+      await this.play(l.zh, this.profil(l.sp), t);
+      await new Promise(r => setTimeout(r, 250));   // jeda singkat antarbaris
+    }
+    if (t === Audio_.token && onend) onend();
   },
 };
 
@@ -95,11 +116,6 @@ const Pic = {
     '司機': '🧑‍✈️', '男': '👨', '女': '👩',
   },
   avatar(sp) { return this.html(this.AVATAR[sp] || '🧑', 'avatar'); },
-  pitch(sp) {
-    const f = ['李美美', '安妮', '陳老師', '小姐', '店員', '老闆娘', '護士', '媽媽', '美美的媽媽', '女'];
-    const kid = ['小明', '安妮的弟弟'];
-    return kid.includes(sp) ? 1.4 : f.includes(sp) ? 1.2 : 0.85;
-  },
 
   /* Ilustrasi adegan per 情境類別: latar sederhana (SVG buatan sendiri) + 2 ikon penanda situasi */
   SCENE: {

@@ -266,7 +266,7 @@ const Modul = {
               <div class="bubble" onclick="this.classList.toggle('show-id')">
                 <small class="who" lang="zh-TW">${esc(l.sp)}</small>
                 <div class="zh" lang="zh-TW">${this.highlight(l.zh)}
-                  <button class="say-btn" onclick="event.stopPropagation();Speech.say(Modul.m.dialogs[${di}].lines[${li}].zh)" aria-label="Dengarkan">${Pic.html('🔊', 'ic-xs')}</button></div>
+                  <button class="say-btn" onclick="event.stopPropagation();Speech.lines([Modul.m.dialogs[${di}].lines[${li}]])" aria-label="Dengarkan">${Pic.html('🔊', 'ic-xs')}</button></div>
                 ${this.showPy ? `<div class="py">${esc(l.py)}</div>` : ''}
                 <div class="idn">${esc(l.id)}</div>
               </div></div>`;
