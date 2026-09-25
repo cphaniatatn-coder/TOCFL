@@ -202,6 +202,8 @@ const Modul = {
           <span class="vcount">${i + 1}/${all.length}</span></div>
         <button class="vword" lang="zh-TW" onclick="Speech.word('${esc(v.w)}')" aria-label="Dengarkan">${this.hanzi(v.w, v.zy)}</button>
         <div class="vpy">${esc(v.py)} <button class="say-btn" onclick="Speech.word('${esc(v.w)}')" aria-label="Dengarkan">${Pic.html('🔊', 'ic-sm')}</button></div>
+        ${v.variants ? `<div class="vvar">Satu entri dengan: <span lang="zh-TW">${v.variants.split('/').filter(x => x !== v.w).map(esc).join(' · ')}</span></div>` : ''}
+        ${v.extra ? '<div class="vvar extra">di luar daftar resmi TBCL · dari kosakata.xlsx</div>' : ''}
         ${this.vflip ? `<div class="vmean"><span class="pos">${esc(v.pos)}</span> ${esc(v.meaning)}${v.note ? `<small>${esc(v.note)}</small>` : ''}</div>`
                      : `<button class="btn ghost block" onclick="Modul.keepScroll(()=>Modul.vflip=true)">Coba ingat artinya, lalu ketuk untuk melihat</button>`}
         <button class="know ${known[v.w] ? 'on' : ''}" onclick="Modul.toggleKnown('${esc(v.w)}')">${known[v.w] ? '✓ Sudah hafal' : 'Tandai sudah hafal'}</button>

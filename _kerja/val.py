@@ -2,6 +2,7 @@ import json, sys, collections
 S=sys.argv[1]; lv=int(sys.argv[2])
 tb=json.load(open(S+'/tbcl.json',encoding='utf-8'))
 lvw={o['w']:o for o in tb if o['lv']==lv}
+tambahan={k for k,v in json.load(open(S+'/kata_tambahan.json',encoding='utf-8')).items() if not k.startswith('_') and v['lv']==lv}
 alias={}
 for w in lvw:
     alias[w]=w
@@ -23,6 +24,8 @@ for line in open(f'{S}/plan_L{lv}.txt',encoding='utf-8'):
         for w in ws:
             yx='@' in w; w=w.split('@')[0]
             if yx and w in allw:
+                continue
+            if w in tambahan:
                 continue
             if w not in alias:
                 o=allw.get(w); errs.append(f'{mid}: "{w}" bukan kata Level {lv}'+(f" (ada di Level {o['lv']})" if o else ' (tidak ada di daftar TBCL)'))

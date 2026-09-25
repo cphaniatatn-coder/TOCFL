@@ -21,6 +21,8 @@ HEAD = {
 
 tb = json.load(open(f'{K}/tbcl.json', encoding='utf-8'))
 arti = json.load(open(f'{K}/arti.json', encoding='utf-8'))
+# Kata dari kosakata.xlsx yang tidak ada di daftar resmi TBCL (lihat _keterangan di file)
+tambahan = {k: v for k, v in json.load(open(f'{K}/kata_tambahan.json', encoding='utf-8')).items() if not k.startswith('_')}
 bp = {}
 for ws in openpyxl.load_workbook(f'{ROOT}/kosakata.xlsx', read_only=True).worksheets:
     for r in ws.iter_rows(min_row=2, values_only=True):
@@ -31,6 +33,12 @@ for ws in openpyxl.load_workbook(f'{ROOT}/kosakata.xlsx', read_only=True).worksh
 
 def entry(lv, token, override):
     w, _, sense = token.partition('@')
+    if w in tambahan:
+        t = tambahan[w]
+        e = {'w': w, 'py': t['py'], 'pos': t['pos'], 'meaning': t['meaning'], 'zy': t['zy'],
+             'extra': True}
+        e.update(override.get(w, {}))
+        return e
     cocok = lambda o: o['w'] == w or w in o['w'].split('/')
     o = next((o for o in tb if o['lv'] == lv and cocok(o)), None) or next(o for o in tb if cocok(o))
     parts = o['w'].split('/')
@@ -40,7 +48,8 @@ def entry(lv, token, override):
     py = re.sub(r'\s+', '', (pys[idx] if idx < len(pys) else pys[0]).strip())
     a = arti.get(o['w'], {})
     e = {'w': show, 'py': py, 'pos': a.get('pos', ''), 'meaning': a.get('meaning', '')}
-    if '/' in o['w'] and w == o['w']:
+    # Tampilkan semua bentuk dalam satu entri resmi (mis. 這/這裡/這裏/這兒) supaya varian yang dipakai di dialog terlihat
+    if '/' in o['w']:
         e['variants'] = '/'.join(re.sub(r'\d+$', '', p) for p in parts)
     if sense:
         e['note'] = f"義項 ini = {sense.replace('-', ' ')}."
