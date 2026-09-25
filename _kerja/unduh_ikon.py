@@ -32,8 +32,12 @@ def kode(c):
     return '-'.join(f'{ord(x):x}' for x in c)
 
 semua = set(clusters(UI_EMOJI.replace(' ', '')))
-for v in (1, 2, 3):
-    txt = open(f'{R}/data/modul_vol{v}.json', encoding='utf-8').read()
+import socket
+socket.setdefaulttimeout(20)
+for fn in ['modul_vol1.json', 'modul_vol2.json', 'modul_vol3.json', 'bank_soal.json']:
+    if not os.path.exists(f'{R}/data/{fn}'):
+        continue
+    txt = open(f'{R}/data/{fn}', encoding='utf-8').read()
     for icon in re.findall(r'"icon": "([^"]*)"', txt):
         semua.update(clusters(icon))
 emoji = sorted(c for c in semua if is_emoji(c))

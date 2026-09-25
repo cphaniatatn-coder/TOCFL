@@ -1,0 +1,1370 @@
+{
+ "C01": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我吃完飯了。",
+   "options": [
+    {
+     "icon": "🍽️✅",
+     "label": "selesai makan"
+    },
+    {
+     "icon": "🍽️⏳",
+     "label": "belum makan"
+    },
+    {
+     "icon": "🍳",
+     "label": "memasak"
+    }
+   ],
+   "answer": 0,
+   "why": "V完 = selesai melakukan."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "媽媽在廚房。",
+   "options": [
+    {
+     "icon": "🛋️",
+     "label": "di ruang tamu"
+    },
+    {
+     "icon": "🍳",
+     "label": "di dapur"
+    },
+    {
+     "icon": "🛏️",
+     "label": "di kamar tidur"
+    }
+   ],
+   "answer": 1,
+   "why": "廚房 = dapur."
+  },
+  {
+   "type": "listen_reply",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你的作業寫完了嗎？",
+   "options": [
+    "我寫作業完。",
+    "作業很完。",
+    "寫完了，我們去玩吧。"
+   ],
+   "answer": 2,
+   "why": "完 langsung setelah kata kerja: 寫完."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "餐桌上的菜都吃光了。",
+   "options": [
+    {
+     "icon": "🍲",
+     "label": "makanan masih banyak"
+    },
+    {
+     "icon": "🧊",
+     "label": "kulkas"
+    },
+    {
+     "icon": "🍽️",
+     "label": "piring kosong di meja makan"
+    }
+   ],
+   "answer": 2,
+   "why": "吃光 = habis dimakan."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🎬🔚",
+    "label": "film selesai"
+   },
+   "options": [
+    "電影剛開始。",
+    "電影很貴。",
+    "電影結束了。"
+   ],
+   "answer": 2,
+   "why": "結束 = berakhir."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "📚✅",
+    "label": "PR selesai"
+   },
+   "text": "我寫（　）作業了，接著要洗澡。",
+   "options": [
+    "光",
+    "結束",
+    "完"
+   ],
+   "answer": 2,
+   "why": "寫完 = selesai menulis. 光 untuk sesuatu yang habis (吃光); 結束 tidak dipakai sebagai pelengkap."
+  }
+ ],
+ "C02": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他的房間很亂。",
+   "options": [
+    {
+     "icon": "🛏️",
+     "label": "tempat tidur"
+    },
+    {
+     "icon": "🧦📚",
+     "label": "kamar berantakan"
+    },
+    {
+     "icon": "✨",
+     "label": "kamar rapi"
+    }
+   ],
+   "answer": 1,
+   "why": "亂 = berantakan."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "請坐在沙發上。",
+   "options": [
+    {
+     "icon": "🪑",
+     "label": "kursi"
+    },
+    {
+     "icon": "🛋️",
+     "label": "sofa"
+    },
+    {
+     "icon": "🛏️",
+     "label": "kasur"
+    }
+   ],
+   "answer": 1,
+   "why": "沙發 = sofa."
+  },
+  {
+   "type": "listen_reply",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你可以幫我看一下嗎？",
+   "options": [
+    "看一下很好。",
+    "我一下看你。",
+    "好，我看一下。"
+   ],
+   "answer": 2,
+   "why": "V一下 = … sebentar."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "書架上有很多書。",
+   "options": [
+    {
+     "icon": "🖥️",
+     "label": "meja belajar"
+    },
+    {
+     "icon": "👕",
+     "label": "lemari baju"
+    },
+    {
+     "icon": "📚",
+     "label": "rak buku penuh"
+    }
+   ],
+   "answer": 2,
+   "why": "書架 = rak buku."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "👕",
+    "label": "baju di gantungan"
+   },
+   "options": [
+    "衣服在書桌上。",
+    "衣服在衣架上。",
+    "衣服在沙發上。"
+   ],
+   "answer": 1,
+   "why": "衣架 = gantungan baju."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "👕",
+    "label": "baju kotor"
+   },
+   "text": "這件衣服很（　），要洗。",
+   "options": [
+    "髒",
+    "家具",
+    "趕快"
+   ],
+   "answer": 0,
+   "why": "髒 = kotor."
+  }
+ ],
+ "C03": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "請把垃圾拿出去。",
+   "options": [
+    {
+     "icon": "🗑️",
+     "label": "buang sampah"
+    },
+    {
+     "icon": "🧺",
+     "label": "mencuci baju"
+    },
+    {
+     "icon": "🍽️",
+     "label": "mencuci piring"
+    }
+   ],
+   "answer": 0,
+   "why": "垃圾 = sampah."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我的褲子破了。",
+   "options": [
+    {
+     "icon": "👖✨",
+     "label": "celana baru"
+    },
+    {
+     "icon": "👖🕳️",
+     "label": "celana robek"
+    },
+    {
+     "icon": "👕",
+     "label": "baju kotor"
+    }
+   ],
+   "answer": 1,
+   "why": "破 = robek."
+  },
+  {
+   "type": "listen_reply",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
+   "audio": "衣服乾了嗎？",
+   "options": [
+    "衣服很洗衣機。",
+    "我乾衣服。",
+    "乾了，我去拿。"
+   ],
+   "answer": 2,
+   "why": "乾 = kering."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "他把衣服放進洗衣機。",
+   "options": [
+    {
+     "icon": "🍽️",
+     "label": "mencuci piring"
+    },
+    {
+     "icon": "🧺",
+     "label": "memasukkan baju ke mesin cuci"
+    },
+    {
+     "icon": "🗑️",
+     "label": "membuang sampah"
+    }
+   ],
+   "answer": 1,
+   "why": "洗衣機 = mesin cuci."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🗑️",
+    "label": "tempat sampah"
+   },
+   "options": [
+    "請把垃圾放在這裡。",
+    "請把書放在這裡。",
+    "請把衣服放在這裡。"
+   ],
+   "answer": 0,
+   "why": "把 + benda + 放在 + tempat."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "🛍️",
+    "label": "memasukkan baju ke kantong"
+   },
+   "text": "請把衣服（　）進袋子裡。",
+   "options": [
+    "弄",
+    "破",
+    "裝"
+   ],
+   "answer": 2,
+   "why": "裝 = memasukkan/mengisi."
+  }
+ ],
+ "C04": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我們家有三個臥室。",
+   "options": [
+    {
+     "icon": "🛋️",
+     "label": "ruang tamu"
+    },
+    {
+     "icon": "🛏️🛏️🛏️",
+     "label": "tiga kamar tidur"
+    },
+    {
+     "icon": "🛏️🛏️",
+     "label": "dua kamar tidur"
+    }
+   ],
+   "answer": 1,
+   "why": "臥室 = kamar tidur."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "小狗在院子裡玩。",
+   "options": [
+    {
+     "icon": "🐕🌳",
+     "label": "anjing di halaman"
+    },
+    {
+     "icon": "🐕🛋️",
+     "label": "anjing di sofa"
+    },
+    {
+     "icon": "🐈🌳",
+     "label": "kucing di halaman"
+    }
+   ],
+   "answer": 0,
+   "why": "院子 = halaman."
+  },
+  {
+   "type": "listen_reply",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
+   "audio": "沙發要放在哪裡？",
+   "options": [
+    "沙發在放。",
+    "把客廳放沙發。",
+    "把沙發放在客廳吧。"
+   ],
+   "answer": 2,
+   "why": "把 O V在 + tempat."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "桌子底下有一隻貓。",
+   "options": [
+    {
+     "icon": "🐈⬇️",
+     "label": "kucing di bawah meja"
+    },
+    {
+     "icon": "🐕⬇️",
+     "label": "anjing di bawah meja"
+    },
+    {
+     "icon": "🐈⬆️",
+     "label": "kucing di atas meja"
+    }
+   ],
+   "answer": 0,
+   "why": "底下 = di bawah."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🏢",
+    "label": "gedung tiga lantai"
+   },
+   "options": [
+    "這座樓有三層。",
+    "這座樓很舊。",
+    "這座樓有三個門。"
+   ],
+   "answer": 0,
+   "why": "層 = lantai/tingkat; 座 = kata bantu gedung."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "📦",
+    "label": "memindahkan meja ke lantai atas"
+   },
+   "text": "請把書桌搬到樓上（　）。",
+   "options": [
+    "去",
+    "在",
+    "底下"
+   ],
+   "answer": 0,
+   "why": "把 O V到 + tempat + 去."
+  }
+ ],
+ "C05": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "鑰匙在我的口袋裡。",
+   "options": [
+    {
+     "icon": "🔑👖",
+     "label": "kunci di kantong"
+    },
+    {
+     "icon": "🔑👜",
+     "label": "kunci di tas"
+    },
+    {
+     "icon": "🔑🚪",
+     "label": "kunci di pintu"
+    }
+   ],
+   "answer": 0,
+   "why": "口袋 = kantong."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "請把門鎖上。",
+   "options": [
+    {
+     "icon": "🔒",
+     "label": "mengunci pintu"
+    },
+    {
+     "icon": "🪟",
+     "label": "menutup jendela"
+    },
+    {
+     "icon": "🚪",
+     "label": "membuka pintu"
+    }
+   ],
+   "answer": 0,
+   "why": "鎖 = mengunci."
+  },
+  {
+   "type": "listen_reply",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你的零用錢一個月多少？",
+   "options": [
+    "零用錢很多。",
+    "三千塊。",
+    "我給零用錢。"
+   ],
+   "answer": 1,
+   "why": "零用錢 = uang jajan."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "媽媽把零用錢給我。",
+   "options": [
+    {
+     "icon": "👦💵👩",
+     "label": "anak memberi uang ke ibu"
+    },
+    {
+     "icon": "👩🔑",
+     "label": "ibu memberi kunci"
+    },
+    {
+     "icon": "👩💵👦",
+     "label": "ibu memberi uang jajan ke anak"
+    }
+   ],
+   "answer": 2,
+   "why": "把 N1 給 N2 = memberikan N1 kepada N2."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "📬",
+    "label": "kotak surat"
+   },
+   "options": [
+    "信箱裡有信。",
+    "口袋裡有錢。",
+    "院子裡有狗。"
+   ],
+   "answer": 0,
+   "why": "信箱 = kotak surat."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "🔑",
+    "label": "kunci"
+   },
+   "text": "我的（　）不見了，不能開門。",
+   "options": [
+    "信箱",
+    "零用錢",
+    "鑰匙"
+   ],
+   "answer": 2,
+   "why": "鑰匙 = anak kunci."
+  }
+ ],
+ "C06": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我要買牙刷。",
+   "options": [
+    {
+     "icon": "🧻",
+     "label": "tisu"
+    },
+    {
+     "icon": "🧼",
+     "label": "sabun"
+    },
+    {
+     "icon": "🪥",
+     "label": "sikat gigi"
+    }
+   ],
+   "answer": 2,
+   "why": "牙刷 = sikat gigi."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "他笑著說話。",
+   "options": [
+    {
+     "icon": "😢💬",
+     "label": "berbicara sambil menangis"
+    },
+    {
+     "icon": "😄💬",
+     "label": "berbicara sambil tersenyum"
+    },
+    {
+     "icon": "😴",
+     "label": "tidur"
+    }
+   ],
+   "answer": 1,
+   "why": "V1著 V2 = melakukan V2 sambil V1."
+  },
+  {
+   "type": "listen_reply",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
+   "audio": "請問，廁所在哪裡？",
+   "options": [
+    "在樓上，往右走。",
+    "我要衛生紙。",
+    "廁所很乾淨。"
+   ],
+   "answer": 0,
+   "why": "Ditanya letak → 在 + tempat."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "桌子上放著牙膏和牙刷。",
+   "options": [
+    {
+     "icon": "🧼",
+     "label": "sabun"
+    },
+    {
+     "icon": "🪥",
+     "label": "pasta & sikat gigi"
+    },
+    {
+     "icon": "🧻",
+     "label": "tisu"
+    }
+   ],
+   "answer": 1,
+   "why": "PW + V著 + N = di … ada …."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🧼🙌",
+    "label": "mencuci tangan dengan sabun"
+   },
+   "options": [
+    "我用毛巾洗手。",
+    "我用肥皂洗手。",
+    "我用牙膏洗手。"
+   ],
+   "answer": 1,
+   "why": "肥皂 = sabun."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "🧻",
+    "label": "tisu toilet habis"
+   },
+   "text": "廁所沒有（　）了。",
+   "options": [
+    "牙刷",
+    "衛生紙",
+    "洗髮精"
+   ],
+   "answer": 1,
+   "why": "衛生紙 = tisu toilet."
+  }
+ ],
+ "C07": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我半夜才睡覺。",
+   "options": [
+    {
+     "icon": "🌅",
+     "label": "bangun pagi"
+    },
+    {
+     "icon": "🕘",
+     "label": "tidur jam 9"
+    },
+    {
+     "icon": "🌙",
+     "label": "tidur tengah malam"
+    }
+   ],
+   "answer": 2,
+   "why": "半夜 = tengah malam."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我還沒吃早餐。",
+   "options": [
+    {
+     "icon": "🍳✅",
+     "label": "sudah sarapan"
+    },
+    {
+     "icon": "🍜",
+     "label": "makan siang"
+    },
+    {
+     "icon": "🍳❌",
+     "label": "belum sarapan"
+    }
+   ],
+   "answer": 2,
+   "why": "還沒 + V = belum …."
+  },
+  {
+   "type": "listen_reply",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你昨天晚上做夢了嗎？",
+   "options": [
+    "夢在枕頭。",
+    "做了一個很奇怪的夢。",
+    "我夢很晚上。"
+   ],
+   "answer": 1,
+   "why": "做夢 = bermimpi."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "他兩天沒睡覺了。",
+   "options": [
+    {
+     "icon": "😴",
+     "label": "tidur nyenyak"
+    },
+    {
+     "icon": "😵",
+     "label": "dua hari tidak tidur"
+    },
+    {
+     "icon": "⏰",
+     "label": "bangun tepat waktu"
+    }
+   ],
+   "answer": 1,
+   "why": "lamanya + 沒 + V + 了 = sudah … tidak …."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "⏰",
+    "label": "jam weker"
+   },
+   "options": [
+    "這是枕頭。",
+    "這是鬧鐘。",
+    "這是毛巾。"
+   ],
+   "answer": 1,
+   "why": "鬧鐘 = jam weker."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "🛏️",
+    "label": "naik ke tempat tidur"
+   },
+   "text": "你應該早點（　）睡覺。",
+   "options": [
+    "上床",
+    "半夜",
+    "出門"
+   ],
+   "answer": 0,
+   "why": "上床 = naik ke tempat tidur."
+  }
+ ],
+ "C08": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "外頭很吵。",
+   "options": [
+    {
+     "icon": "📢",
+     "label": "berisik"
+    },
+    {
+     "icon": "🌧️",
+     "label": "hujan"
+    },
+    {
+     "icon": "🤫",
+     "label": "sepi"
+    }
+   ],
+   "answer": 0,
+   "why": "吵 = berisik."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "房間裡有很多蚊子。",
+   "options": [
+    {
+     "icon": "🐜",
+     "label": "semut"
+    },
+    {
+     "icon": "🦟",
+     "label": "nyamuk"
+    },
+    {
+     "icon": "🪰",
+     "label": "lalat"
+    }
+   ],
+   "answer": 1,
+   "why": "蚊子 = nyamuk."
+  },
+  {
+   "type": "listen_reply",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你的鄰居怎麼樣？",
+   "options": [
+    "我是鄰居的。",
+    "很好，常常送我水果。",
+    "鄰居很住。"
+   ],
+   "answer": 1,
+   "why": "鄰居 = tetangga."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "我熱死了！",
+   "options": [
+    {
+     "icon": "🥶",
+     "label": "dingin sekali"
+    },
+    {
+     "icon": "😋",
+     "label": "lapar"
+    },
+    {
+     "icon": "🥵",
+     "label": "panas sekali"
+    }
+   ],
+   "answer": 2,
+   "why": "Vs死了 = … sekali."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🐕📢",
+    "label": "anjing menggonggong terus"
+   },
+   "options": [
+    "那隻狗在睡覺。",
+    "那隻狗叫個不停。",
+    "那隻狗很可愛。"
+   ],
+   "answer": 1,
+   "why": "V個不停 = terus-menerus."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "😫",
+    "label": "sangat lelah"
+   },
+   "text": "今天累（　），我想睡覺。",
+   "options": [
+    "日子",
+    "死了",
+    "不停"
+   ],
+   "answer": 1,
+   "why": "Vs死了 = … sekali."
+  }
+ ],
+ "C09": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我住在鄉下。",
+   "options": [
+    {
+     "icon": "🏡🌾",
+     "label": "pedesaan"
+    },
+    {
+     "icon": "🏖️",
+     "label": "pantai"
+    },
+    {
+     "icon": "🏙️",
+     "label": "kota"
+    }
+   ],
+   "answer": 0,
+   "why": "鄉下 = pedesaan."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "山上很涼快。",
+   "options": [
+    {
+     "icon": "⛰️🍃",
+     "label": "gunung yang sejuk"
+    },
+    {
+     "icon": "🏙️🥵",
+     "label": "kota yang panas"
+    },
+    {
+     "icon": "❄️",
+     "label": "salju"
+    }
+   ],
+   "answer": 0,
+   "why": "涼快 = sejuk."
+  },
+  {
+   "type": "listen_reply",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你喜歡城市的生活嗎？",
+   "options": [
+    "我城市喜歡。",
+    "喜歡，城市比鄉下方便得多。",
+    "生活很城市。"
+   ],
+   "answer": 1,
+   "why": "比…Vs得多 = jauh lebih …."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "這裡的環境很好。",
+   "options": [
+    {
+     "icon": "🌳🌸",
+     "label": "lingkungan asri"
+    },
+    {
+     "icon": "🏭",
+     "label": "pabrik"
+    },
+    {
+     "icon": "🗑️",
+     "label": "banyak sampah"
+    }
+   ],
+   "answer": 0,
+   "why": "環境 = lingkungan."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🏙️",
+    "label": "pusat kota"
+   },
+   "options": [
+    "市區的房屋很貴。",
+    "鄉下的生活很慢。",
+    "這裡沒有房屋。"
+   ],
+   "answer": 0,
+   "why": "市區 = pusat kota."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "🏙️",
+    "label": "kota jauh lebih praktis"
+   },
+   "text": "城市比鄉下方便（　）。",
+   "options": [
+    "得多",
+    "那樣",
+    "不同"
+   ],
+   "answer": 0,
+   "why": "比 … Vs得多 = jauh lebih …."
+  }
+ ],
+ "C10": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "天氣越來越冷了。",
+   "options": [
+    {
+     "icon": "🌧️",
+     "label": "hujan"
+    },
+    {
+     "icon": "🥵",
+     "label": "makin panas"
+    },
+    {
+     "icon": "🥶",
+     "label": "makin dingin"
+    }
+   ],
+   "answer": 2,
+   "why": "越來越 + Vs = makin lama makin …."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我每天寫日記。",
+   "options": [
+    {
+     "icon": "📰",
+     "label": "membaca koran"
+    },
+    {
+     "icon": "📖",
+     "label": "membaca buku"
+    },
+    {
+     "icon": "📔",
+     "label": "menulis buku harian"
+    }
+   ],
+   "answer": 2,
+   "why": "日記 = buku harian."
+  },
+  {
+   "type": "listen_reply",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你一個月的生活費多少？",
+   "options": [
+    "我花生活。",
+    "生活費很越。",
+    "差不多一萬塊。"
+   ],
+   "answer": 2,
+   "why": "生活費 = biaya hidup."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "他越吃越胖。",
+   "options": [
+    {
+     "icon": "🍔",
+     "label": "makin makan makin gemuk"
+    },
+    {
+     "icon": "😴",
+     "label": "tidur"
+    },
+    {
+     "icon": "🏃",
+     "label": "makin olahraga makin kurus"
+    }
+   ],
+   "answer": 0,
+   "why": "越 A 越 B = makin A makin B."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "💸",
+    "label": "uang habis dibelanjakan"
+   },
+   "options": [
+    "我有很多錢。",
+    "我沒花錢。",
+    "我花了很多錢。"
+   ],
+   "answer": 2,
+   "why": "花 = membelanjakan."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "📈",
+    "label": "jumlahnya makin banyak"
+   },
+   "text": "學中文的人越來（　）多。",
+   "options": [
+    "越",
+    "更",
+    "很"
+   ],
+   "answer": 0,
+   "why": "Pola tetap: 越來越."
+  }
+ ],
+ "C11": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "出門別忘了帶傘。",
+   "options": [
+    {
+     "icon": "🧥",
+     "label": "jaket"
+    },
+    {
+     "icon": "🕶️",
+     "label": "kacamata hitam"
+    },
+    {
+     "icon": "☂️",
+     "label": "payung"
+    }
+   ],
+   "answer": 2,
+   "why": "傘 = payung."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "今天是晴天。",
+   "options": [
+    {
+     "icon": "☁️",
+     "label": "mendung"
+    },
+    {
+     "icon": "☀️",
+     "label": "cerah"
+    },
+    {
+     "icon": "🌧️",
+     "label": "hujan"
+    }
+   ],
+   "answer": 1,
+   "why": "晴天 = hari cerah."
+  },
+  {
+   "type": "listen_reply",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
+   "audio": "外頭下雨嗎？",
+   "options": [
+    "外頭很雨衣。",
+    "下得很大，你帶雨衣吧。",
+    "雨在下外頭。"
+   ],
+   "answer": 1,
+   "why": "Jawab keadaan + saran."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "我的衣服都溼了。",
+   "options": [
+    {
+     "icon": "👕✨",
+     "label": "baju kering"
+    },
+    {
+     "icon": "👕🔥",
+     "label": "baju terbakar"
+    },
+    {
+     "icon": "💧👕",
+     "label": "baju basah"
+    }
+   ],
+   "answer": 2,
+   "why": "溼 = basah."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "☁️",
+    "label": "langit mendung"
+   },
+   "options": [
+    "今天是陰天。",
+    "今天是晴天。",
+    "今天下雪。"
+   ],
+   "answer": 0,
+   "why": "陰天 = mendung."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "🧥🌧️",
+    "label": "jas hujan"
+   },
+   "text": "下雨了，請穿（　）。",
+   "options": [
+    "晴天",
+    "雨傘",
+    "雨衣"
+   ],
+   "answer": 2,
+   "why": "Jas hujan dipakai (穿); payung dibawa (帶)."
+  }
+ ],
+ "C12": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我在雅加達出生。",
+   "options": [
+    {
+     "icon": "🎓",
+     "label": "lulus"
+    },
+    {
+     "icon": "👶",
+     "label": "lahir"
+    },
+    {
+     "icon": "💍",
+     "label": "menikah"
+    }
+   ],
+   "answer": 1,
+   "why": "出生 = lahir."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
+   "audio": "我小的時候住在鄉下。",
+   "options": [
+    {
+     "icon": "🧑🏙️",
+     "label": "dewasa di kota"
+    },
+    {
+     "icon": "👴",
+     "label": "kakek"
+    },
+    {
+     "icon": "🧒🏡",
+     "label": "waktu kecil tinggal di desa"
+    }
+   ],
+   "answer": 2,
+   "why": "…的時候 = ketika …."
+  },
+  {
+   "type": "listen_reply",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
+   "audio": "你的母語是什麼？",
+   "options": [
+    "母語是在印尼。",
+    "是印尼話。",
+    "我母語很好。"
+   ],
+   "answer": 1,
+   "why": "母語 = bahasa ibu → sebut bahasanya."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "他是大學生。",
+   "options": [
+    {
+     "icon": "🧑‍🎓",
+     "label": "mahasiswa"
+    },
+    {
+     "icon": "👨‍💼",
+     "label": "pegawai"
+    },
+    {
+     "icon": "🎒",
+     "label": "murid SD"
+    }
+   ],
+   "answer": 0,
+   "why": "大學生 = mahasiswa."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "👴",
+    "label": "kakek yang sudah lanjut usia"
+   },
+   "options": [
+    "爺爺很年輕。",
+    "爺爺的年紀很大。",
+    "爺爺是大學生。"
+   ],
+   "answer": 1,
+   "why": "年紀 = usia."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "👶",
+    "label": "bayi yang baru lahir"
+   },
+   "text": "我是在台北（　）的。",
+   "options": [
+    "當時",
+    "出生",
+    "住址"
+   ],
+   "answer": 1,
+   "why": "(是) … 出生的 = lahir di …."
+  }
+ ]
+}
