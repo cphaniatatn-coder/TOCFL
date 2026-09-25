@@ -61,7 +61,14 @@ const Soal = {
       }
       if (t.question) h += `<div class="q-ask" lang="zh-TW">問：${esc(t.question)}</div>`;
     }
-    if (t.type === 'read_pick') h += `<figure class="q-picture">${Pic.html(t.picture.icon, 'pic-xl')}<figcaption>${esc(t.picture.label)}</figcaption></figure>`;
+    // 閱讀 Part 2 (gambar → kalimat) & Part 3 (gambar + kalimat rumpang)
+    if (t.picture) h += `<figure class="q-picture">${Pic.group(t.picture.icon, 'pic-xl')}<figcaption>${esc(t.picture.label)}</figcaption></figure>`;
+    if (t.type === 'read_gap') {
+      const fill = a != null ? `<b class="gap-fill">${esc(t.options[a])}</b>` : '<span class="gap">＿＿＿</span>';
+      h += `<div class="q-text" lang="zh-TW">${esc(t.text).replace(/（\s*）/, fill)}</div>`;
+    }
+    // 閱讀 Part 1 (kalimat → gambar)
+    if (t.type === 'read_sent') h += `<div class="q-text" lang="zh-TW">${esc(t.text)}</div>`;
     if (t.type === 'read_mc') h += `<div class="q-text" lang="zh-TW">${esc(t.text)}</div><div class="q-ask" lang="zh-TW">問：${esc(t.question)}</div>`;
 
     if (t.type === 'cloze') {
@@ -82,10 +89,10 @@ const Soal = {
         if (mode === 'practice') h += `<button class="btn primary block" onclick="${ns}.clozeCheck('${key}')">Periksa jawaban</button>`;
       }
     } else {
-      const pic = t.type === 'listen_pick';
+      const pic = t.options.every(o => typeof o === 'object');
       h += `<div class="opts ${pic ? 'opts-pic' : ''}">${t.options.map((o, oi) => {
         const cls = show ? (oi === t.answer ? 'right' : oi === a ? 'wrong' : 'dim') : (oi === a ? 'sel' : '');
-        const lab = typeof o === 'string' ? `<span lang="zh-TW">${esc(o)}</span>` : `${Pic.html(o.icon, 'pic-opt')}<small>${esc(o.label)}</small>`;
+        const lab = typeof o === 'string' ? `<span lang="zh-TW">${esc(o)}</span>` : `${Pic.group(o.icon, 'pic-opt')}<small>${esc(o.label)}</small>`;
         return `<button class="opt ${cls}" ${show ? 'disabled' : `onclick="${ns}.pick('${key}', ${oi})"`}><b class="opt-l">${L[oi]}</b>${lab}</button>`;
       }).join('')}</div>`;
     }

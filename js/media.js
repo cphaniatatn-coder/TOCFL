@@ -76,8 +76,15 @@ const Pic = {
   // Ubah string emoji (bisa gabungan, mis. "📚⬆") menjadi deretan <img> SVG
   html(s, cls = '') {
     return this.clusters(s || '').map(c => this.isEmoji(c)
-      ? `<img class="tw ${cls}" src="img/twemoji/${this.code(c)}.svg" alt="" draggable="false" onerror="this.replaceWith(document.createTextNode('${c}'))">`
+      ? `<img class="tw ${cls}${this.isSwatch(c) ? ' tw-sw' : ''}" src="img/twemoji/${this.code(c)}.svg" alt="" draggable="false" onerror="this.replaceWith(document.createTextNode('${c}'))">`
       : `<span class="tw-txt">${esc(c)}</span>`).join('');
+  },
+  // Kotak warna (🟥⬜⬛…) dipakai sebagai penanda warna benda di sebelahnya → digambar kecil
+  isSwatch(c) { const cp = c.codePointAt(0); return (cp >= 0x1f7e5 && cp <= 0x1f7eb) || cp === 0x2b1b || cp === 0x2b1c; },
+  // Gambar soal: beberapa ikon disusun sebaris, makin banyak makin kecil
+  group(s, cls) {
+    const n = this.clusters(s || '').filter(c => this.isEmoji(c) && !this.isSwatch(c)).length;
+    return `<span class="pic-row n${Math.min(n, 4)}">${this.html(s, cls)}</span>`;
   },
 
   /* Avatar pembicara — memberi 'wajah' pada suara (dual-coding), konsisten di seluruh modul */

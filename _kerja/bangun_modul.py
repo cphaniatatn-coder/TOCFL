@@ -63,8 +63,61 @@ def load_isi():
     return isi
 
 
+BENTUK = {  # tipe soal → kolom wajib selain PART
+    'listen_pick': {'audio', 'options', 'answer'}, 'listen_reply': {'audio', 'options', 'answer'},
+    'listen_dialog': {'lines', 'question', 'options', 'answer'},
+    'read_sent': {'text', 'options', 'answer'}, 'read_pick': {'picture', 'options', 'answer'},
+    'read_gap': {'picture', 'text', 'options', 'answer'}, 'read_mc': {'text', 'question', 'options', 'answer'},
+    'cloze': {'text', 'options', 'answers'},
+}
+
+
+def urut_part(t):
+    m = re.match(r'(聽力|閱讀) Part (\d)', t['part'])
+    return (0 if m.group(1) == '聽力' else 1, int(m.group(2)))
+
+
+def cek_soal(code, t):
+    """Kembalikan daftar masalah format pada satu soal."""
+    salah = []
+    if t.get('type') not in BENTUK:
+        return [f"tipe tidak dikenal: {t.get('type')}"]
+    kurang = (BENTUK[t['type']] | {'part', 'instr', 'why'}) - set(t)
+    if kurang:
+        salah.append(f"kolom kurang: {sorted(kurang)}")
+    if not re.match(r'(聽力|閱讀) Part \d · ', t.get('part', '')):
+        salah.append(f"part tidak baku: {t.get('part')}")
+    opts = t.get('options', [])
+    if t['type'] == 'cloze':
+        n = len(re.findall(r'（\d）', t.get('text', '')))
+        if n != len(t.get('answers', [])) or len(opts) != n + 1 or len(set(t.get('answers', []))) != n:
+            salah.append('cloze: jumlah titik/jawaban/opsi tidak cocok (opsi = titik + 1)')
+    elif not (0 <= t.get('answer', -1) < len(opts)):
+        salah.append('indeks jawaban di luar opsi')
+    if t['type'] in ('listen_pick', 'read_sent') and not all(isinstance(o, dict) and o.get('icon') for o in opts):
+        salah.append('opsi harus gambar {icon, label}')
+    if t['type'] == 'read_gap' and len(re.findall(r'（\s*）', t.get('text', ''))) != 1:
+        salah.append('read_gap: harus tepat satu （　）')
+    if len({json.dumps(o, ensure_ascii=False) for o in opts}) != len(opts):
+        salah.append('ada opsi kembar')
+    return [f'{code}: {s}' for s in salah]
+
+
+def load_soal():
+    """Soal tambahan di _kerja/soal/*.json: {"A01": [soal, ...], ...}"""
+    out = {}
+    d = f'{K}/soal'
+    for fn in sorted(os.listdir(d)) if os.path.isdir(d) else []:
+        if fn.endswith('.json'):
+            for code, ts in json.load(open(f'{d}/{fn}', encoding='utf-8')).items():
+                out.setdefault(code, []).extend(ts)
+    return out
+
+
 def main():
     isi = load_isi()
+    soal = load_soal()
+    masalah = []
     total = {}
     for lv in (1, 2, 3):
         mods = []
@@ -80,6 +133,10 @@ def main():
             m = {'code': code, 'title': c.pop('title', f[1]),
                  'categories': [f'{x}. {CAT[int(x)]}' for x in f[3].split(',')]}
             m.update(c)
+            # soal inti + soal tambahan, diurutkan seperti ujian: 聽力 P1→P4, lalu 閱讀 P1→P5
+            m['tasks'] = sorted(m.get('tasks', []) + soal.pop(code, []), key=urut_part)
+            for t in m['tasks']:
+                masalah += cek_soal(code, t)
             m['vocab'] = {'core': [entry(lv, t, ov) for t in f[5].split()],
                           'supplement': [entry(lv, t, ov) for t in (f[6].split() if len(f) > 6 else [])]}
             mods.append(m)
@@ -88,6 +145,11 @@ def main():
                   open(f'{ROOT}/data/modul_vol{lv}.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         total[lv] = len(mods)
     print('Modul terakit:', total)
+    masalah += [f'{c}: soal tambahan untuk modul yang tidak ada' for c in soal]
+    for s in masalah:
+        print('   ✗ format soal —', s)
+    if masalah:
+        sys.exit(1)
     r = subprocess.run([sys.executable, f'{K}/cek_dialog.py'] + [f'{ROOT}/data/modul_vol{lv}.json' for lv in (1, 2, 3)])
     sys.exit(r.returncode)
 
