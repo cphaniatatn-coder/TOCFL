@@ -1,0 +1,3632 @@
+{
+ "C37": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "十加十是二十。",
+   "options": [
+    {
+     "icon": "➕",
+     "label": "10 + 10 = 20"
+    },
+    {
+     "icon": "➖",
+     "label": "10 − 10 = 0"
+    },
+    {
+     "icon": "✖️",
+     "label": "10 × 10 = 100"
+    }
+   ],
+   "answer": 0,
+   "why": "加 = tambah."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "他考了九十八點五分。",
+   "options": [
+    {
+     "icon": "📝",
+     "label": "98,5"
+    },
+    {
+     "icon": "📝",
+     "label": "98"
+    },
+    {
+     "icon": "📝",
+     "label": "85,9"
+    }
+   ],
+   "answer": 0,
+   "why": "點 = koma desimal."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "四乘五是多少？"
+    },
+    {
+     "sp": "男",
+     "zh": "二十。"
+    }
+   ],
+   "question": "四乘五是多少？",
+   "options": [
+    {
+     "icon": "➕",
+     "label": "9"
+    },
+    {
+     "icon": "✖️",
+     "label": "20"
+    },
+    {
+     "icon": "➖",
+     "label": "1"
+    }
+   ],
+   "answer": 1,
+   "why": "4 × 5 = 20."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "這個題目很困難。"
+    },
+    {
+     "sp": "女",
+     "zh": "我們一起算吧。"
+    },
+    {
+     "sp": "男",
+     "zh": "八減三，再乘二。"
+    },
+    {
+     "sp": "女",
+     "zh": "是十。"
+    }
+   ],
+   "question": "答案是多少？",
+   "options": [
+    {
+     "icon": "5️⃣",
+     "label": "5"
+    },
+    {
+     "icon": "🔟",
+     "label": "10"
+    },
+    {
+     "icon": "🔢",
+     "label": "16"
+    }
+   ],
+   "answer": 1,
+   "why": "(8 − 3) × 2 = 10."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "你考得怎麼樣？"
+    },
+    {
+     "sp": "男",
+     "zh": "差一分就一百分了。"
+    },
+    {
+     "sp": "女",
+     "zh": "真棒！"
+    },
+    {
+     "sp": "男",
+     "zh": "我很認真準備。"
+    }
+   ],
+   "question": "男的考了幾分？",
+   "options": [
+    "九十分",
+    "一分",
+    "九十九分",
+    "一百分"
+   ],
+   "answer": 2,
+   "why": "差一分 = kurang satu → 99 (simpulan)."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "他念書很認真。",
+   "options": [
+    {
+     "icon": "🎮",
+     "label": "bermain game"
+    },
+    {
+     "icon": "📚🧐",
+     "label": "belajar dengan serius"
+    },
+    {
+     "icon": "😴",
+     "label": "tidur"
+    }
+   ],
+   "answer": 1,
+   "why": "認真 = sungguh-sungguh."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "➖",
+    "label": "pengurangan"
+   },
+   "options": [
+    "十加二是十二。",
+    "十乘二是二十。",
+    "十減二是八。"
+   ],
+   "answer": 2,
+   "why": "減 = kurang."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "➖",
+    "label": "pengurangan"
+   },
+   "text": "一百（　）三十是七十。",
+   "options": [
+    "減",
+    "乘",
+    "加"
+   ],
+   "answer": 0,
+   "why": "100 − 30 = 70."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "我弟弟覺得算數很（1）。我教他：「三（2）四是十二，十二（3）二是十。」他學得很（4）。考試他（5）一分就一百分。",
+   "options": [
+    "困難",
+    "乘",
+    "除",
+    "差",
+    "減",
+    "認真"
+   ],
+   "answers": [
+    0,
+    1,
+    4,
+    5,
+    3
+   ],
+   "why": "困難 / 乘 / 減 / 認真 / 差."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "王老師的班有二十個學生，每個學生交一百塊，一共兩千塊。老師買書花了一千五百塊，還有五百塊。",
+   "question": "老師還有多少錢？",
+   "options": [
+    "五百塊",
+    "一百塊",
+    "兩千塊",
+    "一千五百塊"
+   ],
+   "answer": 0,
+   "why": "2.000 − 1.500 = 500."
+  }
+ ],
+ "C38": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "三分之一的學生是外國人。",
+   "options": [
+    {
+     "icon": "🧑‍🎓",
+     "label": "1/3 murid"
+    },
+    {
+     "icon": "🧑‍🎓",
+     "label": "1/2 murid"
+    },
+    {
+     "icon": "🧑‍🎓",
+     "label": "3/4 murid"
+    }
+   ],
+   "answer": 0,
+   "why": "X分之Y = Y/X."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "百分之九十的人喜歡。",
+   "options": [
+    {
+     "icon": "📊",
+     "label": "90%"
+    },
+    {
+     "icon": "📊",
+     "label": "19%"
+    },
+    {
+     "icon": "📊",
+     "label": "9%"
+    }
+   ],
+   "answer": 0,
+   "why": "百分之九十 = 90%."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你們班當中誰最高？"
+    },
+    {
+     "sp": "女",
+     "zh": "小明最高。"
+    }
+   ],
+   "question": "誰最高？",
+   "options": [
+    {
+     "icon": "🧍",
+     "label": "paling pendek"
+    },
+    {
+     "icon": "🧍",
+     "label": "小明 paling tinggi"
+    },
+    {
+     "icon": "🧑‍🏫",
+     "label": "guru"
+    }
+   ],
+   "answer": 1,
+   "why": "當中 = di antara."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "這次旅行多少錢？"
+    },
+    {
+     "sp": "男",
+     "zh": "一萬塊。"
+    },
+    {
+     "sp": "女",
+     "zh": "包括吃飯嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "包括，也包括旅館。"
+    }
+   ],
+   "question": "一萬塊包括什麼？",
+   "options": [
+    {
+     "icon": "✈️",
+     "label": "tiket pesawat"
+    },
+    {
+     "icon": "🍽️",
+     "label": "hanya makan"
+    },
+    {
+     "icon": "🍽️🏨",
+     "label": "makan dan penginapan"
+    }
+   ],
+   "answer": 2,
+   "why": "包括 = termasuk."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你們班有多少人喜歡運動？"
+    },
+    {
+     "sp": "女",
+     "zh": "許多人，差不多百分之八十。"
+    },
+    {
+     "sp": "男",
+     "zh": "你們班有多少人？"
+    },
+    {
+     "sp": "女",
+     "zh": "二十個。"
+    }
+   ],
+   "question": "女的班大概有幾個人喜歡運動？",
+   "options": [
+    "八十個",
+    "八個",
+    "二十個",
+    "十六個"
+   ],
+   "answer": 3,
+   "why": "80% × 20 = 16."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "我吃了二分之一的蛋糕。",
+   "options": [
+    {
+     "icon": "🍰",
+     "label": "seluruh kue"
+    },
+    {
+     "icon": "🍰",
+     "label": "setengah kue"
+    },
+    {
+     "icon": "🍰",
+     "label": "seperempat kue"
+    }
+   ],
+   "answer": 1,
+   "why": "二分之一 = 1/2."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "📊",
+    "label": "grafik survei"
+   },
+   "options": [
+    "沒有人喜歡喝茶。",
+    "大家都不喝茶。",
+    "百分之六十的人喜歡喝茶。"
+   ],
+   "answer": 2,
+   "why": "Persentase."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "🙏",
+    "label": "terima kasih atas segalanya"
+   },
+   "text": "謝謝你幫我做的（　）。",
+   "options": [
+    "包括",
+    "許多",
+    "一切"
+   ],
+   "answer": 2,
+   "why": "一切 = segalanya."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "我們班有二十個學生，（1）有十個是外國人，就是（2）。百（3）八十的學生每天上網。上網的時間（4）看新聞和玩遊戲。（5）學生說他們上網太久了。",
+   "options": [
+    "包括",
+    "一半",
+    "分之",
+    "一切",
+    "當中",
+    "許多"
+   ],
+   "answers": [
+    4,
+    1,
+    2,
+    0,
+    5
+   ],
+   "why": "當中 / 一半 / 百分之八十 / 包括 / 許多."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "學校問了一百個學生：「你每天運動嗎？」百分之三十說每天運動，百分之五十說有時候運動，其他的學生不運動。",
+   "question": "有多少學生不運動？",
+   "options": [
+    "百分之三十",
+    "百分之二十",
+    "百分之五十",
+    "百分之八十"
+   ],
+   "answer": 1,
+   "why": "100 − 30 − 50 = 20%."
+  }
+ ],
+ "C39": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "我哥哥的年紀是我的兩倍。",
+   "options": [
+    {
+     "icon": "👴",
+     "label": "kakek"
+    },
+    {
+     "icon": "🧑",
+     "label": "umur kakak 2× umurku"
+    },
+    {
+     "icon": "🧑",
+     "label": "umur sama"
+    }
+   ],
+   "answer": 1,
+   "why": "倍 = kali lipat."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "十八歲以上可以開車。",
+   "options": [
+    {
+     "icon": "🚗",
+     "label": "18 tahun ke atas boleh menyetir"
+    },
+    {
+     "icon": "🧒🚗",
+     "label": "anak boleh menyetir"
+    },
+    {
+     "icon": "🚲",
+     "label": "sepeda"
+    }
+   ],
+   "answer": 0,
+   "why": "以上 = ke atas."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "從這裡到車站要多久？"
+    },
+    {
+     "sp": "男",
+     "zh": "二十分鐘左右。"
+    }
+   ],
+   "question": "到車站要多久？",
+   "options": [
+    {
+     "icon": "⏳",
+     "label": "sekitar 20 menit"
+    },
+    {
+     "icon": "⏳",
+     "label": "2 menit"
+    },
+    {
+     "icon": "⏳",
+     "label": "2 jam"
+    }
+   ],
+   "answer": 0,
+   "why": "左右 = sekitar."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "這件衣服多少錢？"
+    },
+    {
+     "sp": "女",
+     "zh": "一千塊。"
+    },
+    {
+     "sp": "男",
+     "zh": "那件呢？"
+    },
+    {
+     "sp": "女",
+     "zh": "那件是這件的兩倍。"
+    }
+   ],
+   "question": "那件衣服多少錢？",
+   "options": [
+    {
+     "icon": "💵",
+     "label": "NT$2.000"
+    },
+    {
+     "icon": "💵",
+     "label": "NT$1.000"
+    },
+    {
+     "icon": "💵",
+     "label": "NT$500"
+    }
+   ],
+   "answer": 0,
+   "why": "1.000 × 2."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "這個工作要多少人？"
+    },
+    {
+     "sp": "男",
+     "zh": "十個人以上。"
+    },
+    {
+     "sp": "女",
+     "zh": "我們只有八個。"
+    },
+    {
+     "sp": "男",
+     "zh": "我們還要找人。"
+    }
+   ],
+   "question": "他們還要找幾個人？",
+   "options": [
+    "八個",
+    "兩個以上",
+    "十個",
+    "不用找"
+   ],
+   "answer": 1,
+   "why": "Minimal 10 − 8 = 2 atau lebih."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "六歲以下的小孩不用買票。",
+   "options": [
+    {
+     "icon": "🧒🎟️",
+     "label": "anak harus beli tiket"
+    },
+    {
+     "icon": "🧒🆓",
+     "label": "anak di bawah 6 tahun gratis"
+    },
+    {
+     "icon": "👴🆓",
+     "label": "lansia gratis"
+    }
+   ],
+   "answer": 1,
+   "why": "以下 = ke bawah."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🌡️",
+    "label": "suhu sekitar 30°"
+   },
+   "options": [
+    "今天下雪。",
+    "今天十度以下。",
+    "今天三十度左右。"
+   ],
+   "answer": 2,
+   "why": "左右."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "✖️",
+    "label": "dua kali lipat"
+   },
+   "text": "台北的房租是這裡的兩（　）。",
+   "options": [
+    "倍",
+    "左右",
+    "以上"
+   ],
+   "answer": 0,
+   "why": "兩倍."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "我在台北的生活費是在雅加達的兩（1）。房租一個月一萬塊（2）。在臺灣，十八歲（3）才可以喝酒，十八歲（4）的小孩不可以。在台北，（5）東西都比雅加達貴。",
+   "options": [
+    "以上",
+    "倍",
+    "以下",
+    "左右",
+    "許多",
+    "當中"
+   ],
+   "answers": [
+    1,
+    3,
+    0,
+    2,
+    4
+   ],
+   "why": "倍 / 左右 / 以上 / 以下 / 許多."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "這家餐廳：一個人三百塊。十個人以上，可以便宜一點；六歲以下的小孩不用錢。",
+   "question": "一個五歲的小孩要付多少錢？",
+   "options": [
+    "三百塊",
+    "一百五十塊",
+    "不用錢",
+    "六百塊"
+   ],
+   "answer": 2,
+   "why": "5 tahun < 6 → gratis."
+  }
+ ],
+ "C40": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "夜市很熱鬧。",
+   "options": [
+    {
+     "icon": "🏮",
+     "label": "sepi"
+    },
+    {
+     "icon": "🌙",
+     "label": "malam"
+    },
+    {
+     "icon": "🏮👥",
+     "label": "pasar malam ramai"
+    }
+   ],
+   "answer": 2,
+   "why": "熱鬧 = ramai."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "這雙鞋子小了一點。",
+   "options": [
+    {
+     "icon": "👟⬇️",
+     "label": "agak kekecilan"
+    },
+    {
+     "icon": "👟✅",
+     "label": "pas"
+    },
+    {
+     "icon": "👟⬆️",
+     "label": "kebesaran"
+    }
+   ],
+   "answer": 0,
+   "why": "Vs了一點 = agak terlalu."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你週末做什麼？"
+    },
+    {
+     "sp": "女",
+     "zh": "跟朋友去逛街。"
+    }
+   ],
+   "question": "女的週末做什麼？",
+   "options": [
+    {
+     "icon": "🛍️",
+     "label": "jalan-jalan belanja"
+    },
+    {
+     "icon": "🏊",
+     "label": "berenang"
+    },
+    {
+     "icon": "📚",
+     "label": "belajar"
+    }
+   ],
+   "answer": 0,
+   "why": "逛街."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "這家店為什麼有這麼多人排隊？"
+    },
+    {
+     "sp": "男",
+     "zh": "今天打五折。"
+    },
+    {
+     "sp": "女",
+     "zh": "真的嗎？我們也去吧！"
+    },
+    {
+     "sp": "男",
+     "zh": "好。"
+    }
+   ],
+   "question": "這家店今天怎麼樣？",
+   "options": [
+    {
+     "icon": "🏷️",
+     "label": "diskon 50%"
+    },
+    {
+     "icon": "🔒",
+     "label": "tutup"
+    },
+    {
+     "icon": "🏷️",
+     "label": "harga normal"
+    }
+   ],
+   "answer": 0,
+   "why": "打五折 = bayar 50%."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "這件衣服一千塊，打八折。"
+    },
+    {
+     "sp": "女",
+     "zh": "打八折是多少錢？"
+    },
+    {
+     "sp": "男",
+     "zh": "八百塊。"
+    },
+    {
+     "sp": "女",
+     "zh": "還是貴了一點。"
+    }
+   ],
+   "question": "女的覺得打折以後怎麼樣？",
+   "options": [
+    "八折太少",
+    "很便宜",
+    "不打折",
+    "還是有點貴"
+   ],
+   "answer": 3,
+   "why": "還是貴了一點."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "孩子們一個比一個高。",
+   "options": [
+    {
+     "icon": "🧒",
+     "label": "satu anak"
+    },
+    {
+     "icon": "🧍🧍🧍",
+     "label": "sama tinggi"
+    },
+    {
+     "icon": "🧒🧑🧑‍🦱",
+     "label": "makin besar makin tinggi"
+    }
+   ],
+   "answer": 2,
+   "why": "一 M 比一 M."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🧍🧍🧍🧍",
+    "label": "antrean panjang"
+   },
+   "options": [
+    "沒有人。",
+    "很多人在排隊。",
+    "大家在跳舞。"
+   ],
+   "answer": 1,
+   "why": "排隊 = mengantre."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "🏷️",
+    "label": "diskon"
+   },
+   "text": "週末百貨公司（　），很多人去買東西。",
+   "options": [
+    "打折",
+    "排隊",
+    "熱鬧"
+   ],
+   "answer": 0,
+   "why": "打折 = diskon."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "週末我跟朋友去（1）。百貨公司今天（2），東西都很便宜，大家都在（3），很（4）。我買了一件衣服，可是大（5）一點。",
+   "options": [
+    "熱鬧",
+    "打折",
+    "了",
+    "排隊",
+    "比",
+    "逛街"
+   ],
+   "answers": [
+    5,
+    1,
+    3,
+    0,
+    2
+   ],
+   "why": "逛街 / 打折 / 排隊 / 熱鬧 / 大了一點."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "夜市的小吃越來越貴。去年一個包子二十塊，今年三十塊，一年比一年貴。",
+   "question": "包子今年比去年貴多少錢？",
+   "options": [
+    "二十塊",
+    "五十塊",
+    "三十塊",
+    "十塊"
+   ],
+   "answer": 3,
+   "why": "30 − 20 = 10."
+  }
+ ],
+ "C41": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "冬天我戴手套。",
+   "options": [
+    {
+     "icon": "🧤",
+     "label": "sarung tangan"
+    },
+    {
+     "icon": "🧣",
+     "label": "syal"
+    },
+    {
+     "icon": "🧢",
+     "label": "topi"
+    }
+   ],
+   "answer": 0,
+   "why": "手套 = sarung tangan."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "在家我穿拖鞋。",
+   "options": [
+    {
+     "icon": "🩴",
+     "label": "sandal di rumah"
+    },
+    {
+     "icon": "👞",
+     "label": "sepatu kulit"
+    },
+    {
+     "icon": "👟",
+     "label": "sepatu olahraga"
+    }
+   ],
+   "answer": 0,
+   "why": "拖鞋 = sandal."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "這件上衣合適嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "有點小，不太合適。"
+    }
+   ],
+   "question": "上衣怎麼樣？",
+   "options": [
+    {
+     "icon": "👕⬆️",
+     "label": "kebesaran"
+    },
+    {
+     "icon": "👕⬇️",
+     "label": "agak kecil"
+    },
+    {
+     "icon": "👕✅",
+     "label": "pas"
+    }
+   ],
+   "answer": 1,
+   "why": "有點小."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你要買什麼？"
+    },
+    {
+     "sp": "女",
+     "zh": "一雙皮鞋和兩雙襪子。"
+    },
+    {
+     "sp": "男",
+     "zh": "什麼顏色的皮鞋？"
+    },
+    {
+     "sp": "女",
+     "zh": "黑色的。"
+    }
+   ],
+   "question": "女的要買什麼？",
+   "options": [
+    {
+     "icon": "👞🧦🧦",
+     "label": "sepatu kulit & dua pasang kaus kaki"
+    },
+    {
+     "icon": "👟🧦",
+     "label": "sepatu olahraga"
+    },
+    {
+     "icon": "🩴",
+     "label": "sandal"
+    }
+   ],
+   "answer": 0,
+   "why": "皮鞋 + 襪子."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "這件金色的毛衣怎麼樣？"
+    },
+    {
+     "sp": "男",
+     "zh": "看起來很漂亮，可是不太適合你。"
+    },
+    {
+     "sp": "女",
+     "zh": "為什麼？"
+    },
+    {
+     "sp": "男",
+     "zh": "你穿白色的比較好看。"
+    }
+   ],
+   "question": "男的覺得女的應該買什麼顏色？",
+   "options": [
+    "白色",
+    "紅色",
+    "黑色",
+    "金色"
+   ],
+   "answer": 0,
+   "why": "穿白色的比較好看."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "她穿著一件長長的裙子。",
+   "options": [
+    {
+     "icon": "👗",
+     "label": "rok pendek"
+    },
+    {
+     "icon": "👖",
+     "label": "celana"
+    },
+    {
+     "icon": "👗",
+     "label": "rok panjang sekali"
+    }
+   ],
+   "answer": 2,
+   "why": "AA的 + N."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🛌👕",
+    "label": "piyama"
+   },
+   "options": [
+    "這是我的外套。",
+    "這是我的睡衣。",
+    "這是我的毛衣。"
+   ],
+   "answer": 1,
+   "why": "睡衣 = piyama."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "🧤",
+    "label": "sarung tangan"
+   },
+   "text": "外頭很冷，戴（　）吧。",
+   "options": [
+    "手套",
+    "上衣",
+    "拖鞋"
+   ],
+   "answer": 0,
+   "why": "戴手套."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "天氣越來越冷了，我要買一件（1）和一雙（2）。在店裡，我試了一件紅色的毛衣，老闆說：「這件很（3）你！」我也買了一雙黑色的（4）。這個帽子看（5）也不錯。",
+   "options": [
+    "適合",
+    "皮鞋",
+    "手套",
+    "拖鞋",
+    "毛衣",
+    "起來"
+   ],
+   "answers": [
+    4,
+    2,
+    0,
+    1,
+    5
+   ],
+   "why": "毛衣 / 手套 / 適合 / 皮鞋 / 看起來."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "王小姐出國前買衣服：一套睡衣、兩雙襪子、一雙拖鞋。她說那裡很冷，所以也買了一雙手套。",
+   "question": "王小姐為什麼買手套？",
+   "options": [
+    "因為很便宜",
+    "因為她要運動",
+    "因為她喜歡金色",
+    "因為那裡很冷"
+   ],
+   "answer": 3,
+   "why": "Alasan: 那裡很冷."
+  }
+ ],
+ "C42": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "我沒有零錢。",
+   "options": [
+    {
+     "icon": "🪙❌",
+     "label": "tidak punya uang receh"
+    },
+    {
+     "icon": "💳",
+     "label": "kartu"
+    },
+    {
+     "icon": "🪙",
+     "label": "punya receh"
+    }
+   ],
+   "answer": 0,
+   "why": "零錢 = uang receh."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "店員很客氣。",
+   "options": [
+    {
+     "icon": "🧑‍💼😊",
+     "label": "pramuniaga ramah"
+    },
+    {
+     "icon": "🧑‍💼😠",
+     "label": "pramuniaga galak"
+    },
+    {
+     "icon": "🧑‍🍳",
+     "label": "koki"
+    }
+   ],
+   "answer": 0,
+   "why": "店員 = pramuniaga."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你吃飯了沒有？"
+    },
+    {
+     "sp": "女",
+     "zh": "還沒。"
+    }
+   ],
+   "question": "女的吃飯了嗎？",
+   "options": [
+    {
+     "icon": "😋",
+     "label": "kenyang"
+    },
+    {
+     "icon": "🍽️❌",
+     "label": "belum makan"
+    },
+    {
+     "icon": "🍽️✅",
+     "label": "sudah makan"
+    }
+   ],
+   "answer": 1,
+   "why": "還沒 = belum."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "一共五百塊。"
+    },
+    {
+     "sp": "男",
+     "zh": "我刷卡。"
+    },
+    {
+     "sp": "女",
+     "zh": "對不起，一千塊以下不能刷卡。"
+    },
+    {
+     "sp": "男",
+     "zh": "好，我給你錢。"
+    }
+   ],
+   "question": "男的最後怎麼付錢？",
+   "options": [
+    {
+     "icon": "📱",
+     "label": "ponsel"
+    },
+    {
+     "icon": "💳",
+     "label": "kartu"
+    },
+    {
+     "icon": "💵",
+     "label": "tunai"
+    }
+   ],
+   "answer": 2,
+   "why": "Kartu ditolak → tunai."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "在美國吃飯要給小費。"
+    },
+    {
+     "sp": "女",
+     "zh": "臺灣呢？"
+    },
+    {
+     "sp": "男",
+     "zh": "臺灣不用。"
+    },
+    {
+     "sp": "女",
+     "zh": "你不是說要給嗎？"
+    }
+   ],
+   "question": "在臺灣吃飯要給小費嗎？",
+   "options": [
+    "不用",
+    "要",
+    "百分之十",
+    "看餐廳"
+   ],
+   "answer": 0,
+   "why": "臺灣不用. 不是…嗎 = heran."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "一共九十九塊，我剛好有。",
+   "options": [
+    {
+     "icon": "💵❌",
+     "label": "kurang"
+    },
+    {
+     "icon": "💵✅",
+     "label": "uang pas"
+    },
+    {
+     "icon": "💳",
+     "label": "kartu"
+    }
+   ],
+   "answer": 1,
+   "why": "剛好 = pas."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "💳",
+    "label": "membayar dengan kartu"
+   },
+   "options": [
+    "我用零錢付錢。",
+    "我不付錢。",
+    "我刷卡付錢。"
+   ],
+   "answer": 2,
+   "why": "刷卡."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "🪙",
+    "label": "uang receh"
+   },
+   "text": "請問，你有（　）嗎？我要打電話。",
+   "options": [
+    "零錢",
+    "店員",
+    "小費"
+   ],
+   "answer": 0,
+   "why": "零錢."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "我去便利商店買東西，一共八十塊。我想（1），可是（2）說一百塊以下不能刷卡。我也沒有（3）。我說：「我給你一百塊，（4）嗎？」店員說：「可以，找你二十塊。」在臺灣不用給（5）。",
+   "options": [
+    "店員",
+    "小費",
+    "零錢",
+    "刷卡",
+    "行",
+    "剛好"
+   ],
+   "answers": [
+    3,
+    0,
+    2,
+    4,
+    1
+   ],
+   "why": "刷卡 / 店員 / 零錢 / 行 / 小費."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "在臺灣：一、很多店可以刷卡。二、吃飯不用給小費。三、在便利商店買東西，最好帶零錢。",
+   "question": "在臺灣吃飯要給小費嗎？",
+   "options": [
+    "要",
+    "刷卡的時候要",
+    "不用",
+    "看便利商店"
+   ],
+   "answer": 2,
+   "why": "Poin kedua."
+  }
+ ],
+ "C43": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "老闆娘高高興興地賣水果。",
+   "options": [
+    {
+     "icon": "👩‍💼🍎😊",
+     "label": "pemilik toko menjual buah dengan gembira"
+    },
+    {
+     "icon": "👨‍🍳",
+     "label": "koki"
+    },
+    {
+     "icon": "👩‍💼😠",
+     "label": "marah"
+    }
+   ],
+   "answer": 0,
+   "why": "AA地 + V."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "他慢慢地走。",
+   "options": [
+    {
+     "icon": "🐢",
+     "label": "berjalan pelan"
+    },
+    {
+     "icon": "🏃",
+     "label": "berlari"
+    },
+    {
+     "icon": "🛌",
+     "label": "tidur"
+    }
+   ],
+   "answer": 0,
+   "why": "慢慢地."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "你爸爸做什麼工作？"
+    },
+    {
+     "sp": "男",
+     "zh": "他做生意。"
+    }
+   ],
+   "question": "男的爸爸做什麼？",
+   "options": [
+    {
+     "icon": "🧑‍🏫",
+     "label": "guru"
+    },
+    {
+     "icon": "💼🤝",
+     "label": "berbisnis"
+    },
+    {
+     "icon": "🧑‍⚕️",
+     "label": "dokter"
+    }
+   ],
+   "answer": 1,
+   "why": "做生意."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "這隻狗的主人是誰？"
+    },
+    {
+     "sp": "女",
+     "zh": "我不知道。"
+    },
+    {
+     "sp": "男",
+     "zh": "它在門口等了很久。"
+    },
+    {
+     "sp": "女",
+     "zh": "我們問問老闆娘吧。"
+    }
+   ],
+   "question": "他們要問誰？",
+   "options": [
+    {
+     "icon": "👮",
+     "label": "polisi"
+    },
+    {
+     "icon": "🧑",
+     "label": "tetangga"
+    },
+    {
+     "icon": "👩‍💼",
+     "label": "pemilik toko (perempuan)"
+    }
+   ],
+   "answer": 2,
+   "why": "問問老闆娘."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "你的店生意怎麼樣？"
+    },
+    {
+     "sp": "男",
+     "zh": "最近不太好。"
+    },
+    {
+     "sp": "女",
+     "zh": "為什麼？"
+    },
+    {
+     "sp": "男",
+     "zh": "附近開了一家新的店。"
+    }
+   ],
+   "question": "男的的生意為什麼不好？",
+   "options": [
+    "附近有新的店",
+    "他常常不在",
+    "東西太貴",
+    "他的店很舊"
+   ],
+   "answer": 0,
+   "why": "Alasan langsung."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "她把水果放在籃子裡。",
+   "options": [
+    {
+     "icon": "📦",
+     "label": "di kotak"
+    },
+    {
+     "icon": "🛍️",
+     "label": "di kantong"
+    },
+    {
+     "icon": "🧺🍎",
+     "label": "buah di keranjang"
+    }
+   ],
+   "answer": 2,
+   "why": "籃子 = keranjang."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "👧😊🎒",
+    "label": "anak berangkat sekolah dengan gembira"
+   },
+   "options": [
+    "小孩高高興興地去上學。",
+    "小孩在睡覺。",
+    "小孩難過地哭。"
+   ],
+   "answer": 0,
+   "why": "AA地."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "🐢",
+    "label": "pelan-pelan"
+   },
+   "text": "請你慢慢（　）說。",
+   "options": [
+    "地",
+    "得",
+    "的"
+   ],
+   "answer": 0,
+   "why": "Keterangan cara → 地."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "我家附近的市場有一家水果店。店的（1）很好，每天有很多客人。（2）很客氣，每天都（3）地跟客人聊天。她把水果放在（4）裡。她說：「（5）生意要客氣。」",
+   "options": [
+    "老闆娘",
+    "生意",
+    "主人",
+    "做",
+    "高高興興",
+    "籃子"
+   ],
+   "answers": [
+    1,
+    0,
+    4,
+    5,
+    3
+   ],
+   "why": "生意 / 老闆娘 / 高高興興地 / 籃子 / 做生意."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "陳先生是這家店的主人。他每天早上六點就開門，很認真地做生意。附近的人都喜歡來他的店。",
+   "question": "附近的人為什麼喜歡這家店？",
+   "options": [
+    "店開到很晚",
+    "店很大",
+    "東西很便宜",
+    "主人很認真"
+   ],
+   "answer": 3,
+   "why": "Tersirat: pemilik rajin & serius. B–D tidak disebut."
+  }
+ ],
+ "C44": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "這件太小了，我想換一件。",
+   "options": [
+    {
+     "icon": "🔄👕",
+     "label": "menukar baju"
+    },
+    {
+     "icon": "🧺",
+     "label": "mencuci"
+    },
+    {
+     "icon": "💵",
+     "label": "membayar"
+    }
+   ],
+   "answer": 0,
+   "why": "換 = menukar."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "這裡的水很淺。",
+   "options": [
+    {
+     "icon": "🧊",
+     "label": "es"
+    },
+    {
+     "icon": "🌊",
+     "label": "air dalam"
+    },
+    {
+     "icon": "💧",
+     "label": "air dangkal"
+    }
+   ],
+   "answer": 2,
+   "why": "淺 = dangkal."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你住得慣嗎？"
+    },
+    {
+     "sp": "女",
+     "zh": "住慣了，這裡很好。"
+    }
+   ],
+   "question": "女的住得怎麼樣？",
+   "options": [
+    {
+     "icon": "✈️",
+     "label": "mau pindah"
+    },
+    {
+     "icon": "🏠😊",
+     "label": "sudah terbiasa"
+    },
+    {
+     "icon": "🏠😟",
+     "label": "belum terbiasa"
+    }
+   ],
+   "answer": 1,
+   "why": "V慣 = terbiasa."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "現在流行什麼顏色？"
+    },
+    {
+     "sp": "男",
+     "zh": "今年流行深藍色。"
+    },
+    {
+     "sp": "女",
+     "zh": "淺藍色呢？"
+    },
+    {
+     "sp": "男",
+     "zh": "去年流行。"
+    }
+   ],
+   "question": "今年流行什麼顏色？",
+   "options": [
+    {
+     "icon": "🟦",
+     "label": "biru tua"
+    },
+    {
+     "icon": "🔵",
+     "label": "biru muda"
+    },
+    {
+     "icon": "⬛",
+     "label": "hitam"
+    }
+   ],
+   "answer": 0,
+   "why": "深藍色 = biru tua."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "這個菜你吃慣了嗎？"
+    },
+    {
+     "sp": "女",
+     "zh": "剛開始不習慣，現在很喜歡。"
+    },
+    {
+     "sp": "男",
+     "zh": "你試一試這個。"
+    },
+    {
+     "sp": "女",
+     "zh": "好。"
+    }
+   ],
+   "question": "女的現在覺得那個菜怎麼樣？",
+   "options": [
+    "沒吃過",
+    "吃不慣",
+    "很喜歡",
+    "很難吃"
+   ],
+   "answer": 2,
+   "why": "現在很喜歡."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "他看了看手錶。",
+   "options": [
+    {
+     "icon": "📖",
+     "label": "buku"
+    },
+    {
+     "icon": "⌚👀",
+     "label": "melirik jam tangan"
+    },
+    {
+     "icon": "📱",
+     "label": "ponsel"
+    }
+   ],
+   "answer": 1,
+   "why": "V了V = sebentar."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🕐",
+    "label": "jam satu tepat"
+   },
+   "options": [
+    "現在一點鐘。",
+    "現在十點鐘。",
+    "現在兩點半。"
+   ],
+   "answer": 0,
+   "why": "一點鐘 = jam satu."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "⭕",
+    "label": "bulat"
+   },
+   "text": "這張桌子是（　）的。",
+   "options": [
+    "深",
+    "淺",
+    "圓"
+   ],
+   "answer": 2,
+   "why": "圓 = bulat."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "我買了一件毛衣，可是太小了，我去店裡（1）一件。老闆說今年（2）深色的，我買了一件（3）綠色的。在臺灣住了一年，我已經（4）慣了。每天早上七點（5），我都去跑步。",
+   "options": [
+    "流行",
+    "住",
+    "圓",
+    "換",
+    "鐘",
+    "深"
+   ],
+   "answers": [
+    3,
+    0,
+    5,
+    1,
+    4
+   ],
+   "why": "換 / 流行 / 深綠色 / 住慣 / 七點鐘."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "小明剛到臺灣的時候，吃不慣臺灣的菜，也住不慣宿舍。三個月以後，他都習慣了。",
+   "question": "小明現在怎麼樣？",
+   "options": [
+    "住在旅館",
+    "要回國",
+    "還吃不慣",
+    "習慣臺灣的生活了"
+   ],
+   "answer": 3,
+   "why": "都習慣了."
+  }
+ ],
+ "C45": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "這個便當很好吃。",
+   "options": [
+    {
+     "icon": "🍱",
+     "label": "bento"
+    },
+    {
+     "icon": "🍔",
+     "label": "burger"
+    },
+    {
+     "icon": "🍜",
+     "label": "mi"
+    }
+   ],
+   "answer": 0,
+   "why": "便當 = bento."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "他什麼都吃，就是不吃豆腐。",
+   "options": [
+    {
+     "icon": "🚫🐟",
+     "label": "tidak makan ikan"
+    },
+    {
+     "icon": "🚫🥩",
+     "label": "tidak makan daging"
+    },
+    {
+     "icon": "🚫🥢",
+     "label": "tidak makan tahu"
+    }
+   ],
+   "answer": 2,
+   "why": "什麼都…，就是…."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "這個菜要放鹽嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "不用，已經放了醬。"
+    }
+   ],
+   "question": "這個菜怎麼樣？",
+   "options": [
+    {
+     "icon": "🥫",
+     "label": "sudah diberi saus"
+    },
+    {
+     "icon": "🍬",
+     "label": "perlu gula"
+    },
+    {
+     "icon": "🧂",
+     "label": "perlu garam"
+    }
+   ],
+   "answer": 0,
+   "why": "已經放了醬."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你想吃什麼？"
+    },
+    {
+     "sp": "女",
+     "zh": "什麼都可以。"
+    },
+    {
+     "sp": "男",
+     "zh": "吃便當好不好？"
+    },
+    {
+     "sp": "女",
+     "zh": "好，我要豆腐便當。"
+    }
+   ],
+   "question": "女的要吃什麼？",
+   "options": [
+    {
+     "icon": "🍱",
+     "label": "bento tahu"
+    },
+    {
+     "icon": "🍜",
+     "label": "mi"
+    },
+    {
+     "icon": "🍱🥩",
+     "label": "bento daging"
+    }
+   ],
+   "answer": 0,
+   "why": "豆腐便當."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "這家的菜怎麼樣？"
+    },
+    {
+     "sp": "男",
+     "zh": "什麼都好吃，就是油太多。"
+    },
+    {
+     "sp": "女",
+     "zh": "我們點少油的吧。"
+    },
+    {
+     "sp": "男",
+     "zh": "好。"
+    }
+   ],
+   "question": "男的覺得這家的菜有什麼問題？",
+   "options": [
+    "不好吃",
+    "油太多",
+    "太貴",
+    "太鹹"
+   ],
+   "answer": 1,
+   "why": "就是油太多."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "哪樣菜他都喜歡。",
+   "options": [
+    {
+     "icon": "🍲🥗🍜",
+     "label": "suka semua masakan"
+    },
+    {
+     "icon": "🍲❌",
+     "label": "tidak suka"
+    },
+    {
+     "icon": "🍜",
+     "label": "hanya mi"
+    }
+   ],
+   "answer": 0,
+   "why": "QW + 都 = semua."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🌾",
+    "label": "beras"
+   },
+   "options": [
+    "這是米。",
+    "這是鹽。",
+    "這是油。"
+   ],
+   "answer": 0,
+   "why": "米 = beras."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "🧂",
+    "label": "garam"
+   },
+   "text": "湯不夠鹹，要放一點（　）。",
+   "options": [
+    "鹽",
+    "油",
+    "米"
+   ],
+   "answer": 0,
+   "why": "鹽 = garam."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "中午我常常吃（1）。這家的便當（2）都好吃，（3）是有點貴。我喜歡吃（4），可是我不喜歡太多（5）的菜。",
+   "options": [
+    "便當",
+    "什麼",
+    "就",
+    "油",
+    "鹽",
+    "豆腐"
+   ],
+   "answers": [
+    0,
+    1,
+    2,
+    5,
+    3
+   ],
+   "why": "便當 / 什麼都 / 就是 / 豆腐 / 油."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "學校附近的便當店：雞肉便當八十塊，豆腐便當六十五塊，魚便當九十塊。每個便當都有米飯和青菜。",
+   "question": "最便宜的是什麼便當？",
+   "options": [
+    "雞肉便當",
+    "豆腐便當",
+    "魚便當",
+    "都一樣"
+   ],
+   "answer": 1,
+   "why": "65 paling murah."
+  }
+ ],
+ "C46": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "我要三顆橘子。",
+   "options": [
+    {
+     "icon": "🍊🍊🍊",
+     "label": "tiga jeruk"
+    },
+    {
+     "icon": "🍊",
+     "label": "satu jeruk"
+    },
+    {
+     "icon": "🍅🍅🍅",
+     "label": "tiga tomat"
+    }
+   ],
+   "answer": 0,
+   "why": "顆 = kata bantu buah bulat."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "夏天的芒果很甜。",
+   "options": [
+    {
+     "icon": "🍓",
+     "label": "stroberi"
+    },
+    {
+     "icon": "🥭",
+     "label": "mangga"
+    },
+    {
+     "icon": "🍍",
+     "label": "nanas"
+    }
+   ],
+   "answer": 1,
+   "why": "芒果 = mangga."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你喜歡什麼水果？"
+    },
+    {
+     "sp": "女",
+     "zh": "我都喜歡，尤其是草莓。"
+    }
+   ],
+   "question": "女的最喜歡什麼？",
+   "options": [
+    {
+     "icon": "🍓",
+     "label": "stroberi"
+    },
+    {
+     "icon": "🍌",
+     "label": "pisang"
+    },
+    {
+     "icon": "🍇",
+     "label": "anggur"
+    }
+   ],
+   "answer": 0,
+   "why": "尤其 = terutama."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "老闆，木瓜一顆多少錢？"
+    },
+    {
+     "sp": "男",
+     "zh": "五十塊。"
+    },
+    {
+     "sp": "女",
+     "zh": "新鮮嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "很新鮮，今天早上才到。"
+    }
+   ],
+   "question": "一顆木瓜多少錢？",
+   "options": [
+    {
+     "icon": "💵",
+     "label": "NT$15"
+    },
+    {
+     "icon": "💵",
+     "label": "NT$500"
+    },
+    {
+     "icon": "💵",
+     "label": "NT$50"
+    }
+   ],
+   "answer": 2,
+   "why": "五十塊."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "臺灣的水果都很甜。"
+    },
+    {
+     "sp": "女",
+     "zh": "差不多都很甜，尤其是鳳梨。"
+    },
+    {
+     "sp": "男",
+     "zh": "番茄也是水果嗎？"
+    },
+    {
+     "sp": "女",
+     "zh": "在臺灣，番茄常常當水果吃。"
+    }
+   ],
+   "question": "女的覺得什麼最甜？",
+   "options": [
+    "木瓜",
+    "芒果",
+    "番茄",
+    "鳳梨"
+   ],
+   "answer": 3,
+   "why": "尤其是鳳梨."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "盤子裡有葡萄和草莓。",
+   "options": [
+    {
+     "icon": "🍇",
+     "label": "hanya anggur"
+    },
+    {
+     "icon": "🍊🍓",
+     "label": "jeruk & stroberi"
+    },
+    {
+     "icon": "🍇🍓",
+     "label": "anggur & stroberi"
+    }
+   ],
+   "answer": 2,
+   "why": "葡萄 + 草莓."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🍅",
+    "label": "tomat"
+   },
+   "options": [
+    "這是番茄。",
+    "這是橘子。",
+    "這是蘋果。"
+   ],
+   "answer": 0,
+   "why": "番茄 = tomat."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "✨🍎",
+    "label": "buah segar"
+   },
+   "text": "這家店的水果很（　）。",
+   "options": [
+    "尤其",
+    "顆",
+    "新鮮"
+   ],
+   "answer": 2,
+   "why": "新鮮 = segar."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "臺灣的水果很多，（1）是夏天。我最喜歡（2），又香又甜。我每次買三（3）。臺灣的水果（4）都很甜，也很（5）。",
+   "options": [
+    "番茄",
+    "差不多",
+    "新鮮",
+    "尤其",
+    "芒果",
+    "顆"
+   ],
+   "answers": [
+    3,
+    4,
+    5,
+    1,
+    2
+   ],
+   "why": "尤其 / 芒果 / 顆 / 差不多 / 新鮮."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "水果店：芒果一顆八十塊，鳳梨一顆一百塊，草莓一盒兩百塊。今天的木瓜打八折。",
+   "question": "今天什麼打折？",
+   "options": [
+    "草莓",
+    "木瓜",
+    "鳳梨",
+    "芒果"
+   ],
+   "answer": 1,
+   "why": "木瓜打八折."
+  }
+ ],
+ "C47": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "牛排熟了。",
+   "options": [
+    {
+     "icon": "🥩✅",
+     "label": "steak matang"
+    },
+    {
+     "icon": "🥩",
+     "label": "masih mentah"
+    },
+    {
+     "icon": "🥗",
+     "label": "salad"
+    }
+   ],
+   "answer": 0,
+   "why": "熟 = matang."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "我累壞了！",
+   "options": [
+    {
+     "icon": "😫",
+     "label": "lelah sekali"
+    },
+    {
+     "icon": "😊",
+     "label": "senang"
+    },
+    {
+     "icon": "😋",
+     "label": "lapar"
+    }
+   ],
+   "answer": 0,
+   "why": "Vs壞了 = … sekali."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "你喝什麼？"
+    },
+    {
+     "sp": "男",
+     "zh": "一杯橘子汁。"
+    }
+   ],
+   "question": "男的喝什麼？",
+   "options": [
+    {
+     "icon": "🍎🥤",
+     "label": "jus apel"
+    },
+    {
+     "icon": "🍊🥤",
+     "label": "jus jeruk"
+    },
+    {
+     "icon": "☕",
+     "label": "kopi"
+    }
+   ],
+   "answer": 1,
+   "why": "橘子汁."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "這個菜的做法很簡單。"
+    },
+    {
+     "sp": "女",
+     "zh": "怎麼做？"
+    },
+    {
+     "sp": "男",
+     "zh": "先炒洋蔥，再放牛肉。"
+    },
+    {
+     "sp": "女",
+     "zh": "我試試看。"
+    }
+   ],
+   "question": "先做什麼？",
+   "options": [
+    {
+     "icon": "🍚",
+     "label": "memasak nasi"
+    },
+    {
+     "icon": "🥩",
+     "label": "memasukkan daging"
+    },
+    {
+     "icon": "🧅🔥",
+     "label": "menumis bawang bombay"
+    }
+   ],
+   "answer": 2,
+   "why": "先炒洋蔥."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "茶泡好了嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "泡好了，正好可以喝。"
+    },
+    {
+     "sp": "女",
+     "zh": "太好了，我渴壞了。"
+    },
+    {
+     "sp": "男",
+     "zh": "來，給你。"
+    }
+   ],
+   "question": "女的現在怎麼樣？",
+   "options": [
+    "很渴",
+    "很累",
+    "很冷",
+    "很餓"
+   ],
+   "answer": 0,
+   "why": "渴壞了."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "我把豆子泡在水裡。",
+   "options": [
+    {
+     "icon": "🥛",
+     "label": "susu"
+    },
+    {
+     "icon": "🫘🔥",
+     "label": "menggoreng kacang"
+    },
+    {
+     "icon": "🫘💧",
+     "label": "merendam kacang"
+    }
+   ],
+   "answer": 2,
+   "why": "泡 = merendam."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🥩",
+    "label": "steak"
+   },
+   "options": [
+    "這是牛排。",
+    "這是洋蔥。",
+    "這是豆腐。"
+   ],
+   "answer": 0,
+   "why": "牛排 = steak."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "✅🍳",
+    "label": "masakan sudah jadi"
+   },
+   "text": "晚飯做（　）了，來吃吧！",
+   "options": [
+    "好",
+    "泡",
+    "汁"
+   ],
+   "answer": 0,
+   "why": "V好 = selesai."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "今天我做（1）。（2）很簡單：先把（3）炒一炒，然後放牛排。牛排要（4）了才能吃。做（5）以後，我們一起吃。",
+   "options": [
+    "做法",
+    "牛排",
+    "好",
+    "洋蔥",
+    "豆",
+    "熟"
+   ],
+   "answers": [
+    1,
+    0,
+    3,
+    5,
+    2
+   ],
+   "why": "牛排 / 做法 / 洋蔥 / 熟 / 做好."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "泡茶：水要很熱，茶放三分鐘就好。泡太久，茶會很苦。",
+   "question": "茶為什麼會很苦？",
+   "options": [
+    "喝太快",
+    "泡太久",
+    "水不熱",
+    "放太少"
+   ],
+   "answer": 1,
+   "why": "泡太久 → 苦."
+  }
+ ],
+ "C48": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "我想訂位。",
+   "options": [
+    {
+     "icon": "🎟️",
+     "label": "beli tiket"
+    },
+    {
+     "icon": "📞🍽️",
+     "label": "reservasi tempat"
+    },
+    {
+     "icon": "🏨",
+     "label": "pesan hotel"
+    }
+   ],
+   "answer": 1,
+   "why": "訂位 = reservasi."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "我要一個套餐。",
+   "options": [
+    {
+     "icon": "🍱",
+     "label": "paket makan"
+    },
+    {
+     "icon": "🍤",
+     "label": "makanan laut"
+    },
+    {
+     "icon": "🥗",
+     "label": "salad"
+    }
+   ],
+   "answer": 0,
+   "why": "套餐 = paket."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "還有位子嗎？"
+    },
+    {
+     "sp": "女",
+     "zh": "有，這邊請。"
+    }
+   ],
+   "question": "還有位子嗎？",
+   "options": [
+    {
+     "icon": "🪑✅",
+     "label": "masih ada tempat"
+    },
+    {
+     "icon": "🪑❌",
+     "label": "penuh"
+    },
+    {
+     "icon": "🚪",
+     "label": "tutup"
+    }
+   ],
+   "answer": 0,
+   "why": "有."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "你們有什麼套餐？"
+    },
+    {
+     "sp": "男",
+     "zh": "A套餐有沙拉和牛排，B套餐有沙拉和海鮮。"
+    },
+    {
+     "sp": "女",
+     "zh": "我不吃海鮮。"
+    },
+    {
+     "sp": "男",
+     "zh": "那您點A套餐吧。"
+    }
+   ],
+   "question": "女的會點什麼？",
+   "options": [
+    {
+     "icon": "🥗🥩",
+     "label": "A: salad & steak"
+    },
+    {
+     "icon": "🥗🍤",
+     "label": "B: salad & seafood"
+    },
+    {
+     "icon": "🍜",
+     "label": "mi"
+    }
+   ],
+   "answer": 0,
+   "why": "不吃海鮮 → A."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你是不是訂位了？"
+    },
+    {
+     "sp": "女",
+     "zh": "對，七點，兩位。"
+    },
+    {
+     "sp": "男",
+     "zh": "現在才六點半。"
+    },
+    {
+     "sp": "女",
+     "zh": "那我們先去逛一逛吧。"
+    }
+   ],
+   "question": "他們現在可能做什麼？",
+   "options": [
+    "先去逛逛再來",
+    "回家",
+    "馬上吃飯",
+    "不吃了"
+   ],
+   "answer": 0,
+   "why": "那 = kalau begitu → jalan-jalan dulu."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "這裡的食物很新鮮。",
+   "options": [
+    {
+     "icon": "🍽️🤢",
+     "label": "makanan basi"
+    },
+    {
+     "icon": "🍽️✨",
+     "label": "makanan segar"
+    },
+    {
+     "icon": "🌶️",
+     "label": "pedas"
+    }
+   ],
+   "answer": 1,
+   "why": "食物 = makanan."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🥗",
+    "label": "salad"
+   },
+   "options": [
+    "我要一份牛排。",
+    "我要一碗湯。",
+    "我要一份沙拉。"
+   ],
+   "answer": 2,
+   "why": "沙拉 = salad."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "🦀",
+    "label": "makanan laut"
+   },
+   "text": "這家餐廳的（　）很有名，魚很新鮮。",
+   "options": [
+    "位子",
+    "訂位",
+    "海鮮"
+   ],
+   "answer": 2,
+   "why": "海鮮 = makanan laut."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "週末我們去一家很有名的餐廳。因為人很多，我先打電話（1）。到了餐廳，我們坐在窗邊的（2）。我點了一個（3），有（4）和牛排。我朋友喜歡吃（5），他點了魚。",
+   "options": [
+    "位子",
+    "食物",
+    "海鮮",
+    "套餐",
+    "沙拉",
+    "訂位"
+   ],
+   "answers": [
+    5,
+    0,
+    3,
+    4,
+    2
+   ],
+   "why": "訂位 / 位子 / 套餐 / 沙拉 / 海鮮."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "這家餐廳週末人很多，最好先訂位。沒訂位的客人可能要等一個小時。",
+   "question": "沒訂位的人可能怎麼樣？",
+   "options": [
+    "要等很久",
+    "要多付錢",
+    "可以馬上吃",
+    "不能吃飯"
+   ],
+   "answer": 0,
+   "why": "要等一個小時."
+  }
+ ],
+ "C49": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "晚上我吃泡麵。",
+   "options": [
+    {
+     "icon": "🍔",
+     "label": "makanan cepat saji"
+    },
+    {
+     "icon": "🍜",
+     "label": "mi instan"
+    },
+    {
+     "icon": "🍱",
+     "label": "bento"
+    }
+   ],
+   "answer": 1,
+   "why": "泡麵 = mi instan."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "我從來不喝可樂。",
+   "options": [
+    {
+     "icon": "☕",
+     "label": "kopi"
+    },
+    {
+     "icon": "🚫🥤",
+     "label": "tidak pernah minum cola"
+    },
+    {
+     "icon": "🥤",
+     "label": "sering minum cola"
+    }
+   ],
+   "answer": 1,
+   "why": "從來不 = tidak pernah."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "你聞到了嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "聞到了，好香！"
+    }
+   ],
+   "question": "男的聞到什麼？",
+   "options": [
+    {
+     "icon": "👃😋",
+     "label": "aroma harum"
+    },
+    {
+     "icon": "👃🤢",
+     "label": "bau busuk"
+    },
+    {
+     "icon": "👂",
+     "label": "suara"
+    }
+   ],
+   "answer": 0,
+   "why": "好香."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你要喝什麼飲料？"
+    },
+    {
+     "sp": "女",
+     "zh": "烏龍茶。"
+    },
+    {
+     "sp": "男",
+     "zh": "要冰的嗎？"
+    },
+    {
+     "sp": "女",
+     "zh": "不要，熱的。"
+    }
+   ],
+   "question": "女的要喝什麼？",
+   "options": [
+    {
+     "icon": "🧊🍵",
+     "label": "teh oolong dingin"
+    },
+    {
+     "icon": "🥤",
+     "label": "cola"
+    },
+    {
+     "icon": "🍵",
+     "label": "teh oolong panas"
+    }
+   ],
+   "answer": 2,
+   "why": "烏龍茶 + 熱的."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "你喜歡吃速食嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "一點也不喜歡。"
+    },
+    {
+     "sp": "女",
+     "zh": "為什麼？"
+    },
+    {
+     "sp": "男",
+     "zh": "吃了對身體不好。"
+    }
+   ],
+   "question": "男的為什麼不吃速食？",
+   "options": [
+    "不好吃",
+    "對身體不好",
+    "太貴",
+    "沒時間"
+   ],
+   "answer": 1,
+   "why": "Alasan: kesehatan."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "桌子上有餅乾和糖果。",
+   "options": [
+    {
+     "icon": "🍎",
+     "label": "buah"
+    },
+    {
+     "icon": "🍫",
+     "label": "cokelat"
+    },
+    {
+     "icon": "🍪🍬",
+     "label": "biskuit & permen"
+    }
+   ],
+   "answer": 2,
+   "why": "餅乾 + 糖果."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🍪",
+    "label": "biskuit"
+   },
+   "options": [
+    "這是巧克力。",
+    "這是糖果。",
+    "這是餅乾。"
+   ],
+   "answer": 2,
+   "why": "餅乾 = biskuit."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "👃☕",
+    "label": "mencium aroma kopi"
+   },
+   "text": "我（　）到咖啡的香味。",
+   "options": [
+    "聞",
+    "喝",
+    "看"
+   ],
+   "answer": 0,
+   "why": "聞 = mencium."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "我（1）不吃速食，也很少吃（2）。可是我很喜歡吃甜的，例如（3）和餅乾。我最喜歡的（4）是烏龍茶。早上我喝（5）。",
+   "options": [
+    "飲料",
+    "豆漿",
+    "從來",
+    "泡麵",
+    "巧克力",
+    "香味"
+   ],
+   "answers": [
+    2,
+    3,
+    4,
+    0,
+    1
+   ],
+   "why": "從來不 / 泡麵 / 巧克力 / 飲料 / 豆漿."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "小明一點也不喜歡喝水，他每天只喝飲料，一天喝三瓶。醫生說他應該多喝水，少喝飲料。",
+   "question": "醫生說小明應該怎麼做？",
+   "options": [
+    "多喝飲料",
+    "每天喝三瓶水",
+    "不喝水",
+    "多喝水"
+   ],
+   "answer": 3,
+   "why": "Saran dokter."
+  }
+ ],
+ "C50": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "這裡的服務很好。",
+   "options": [
+    {
+     "icon": "😠",
+     "label": "pelayanan buruk"
+    },
+    {
+     "icon": "🧑‍💼😊",
+     "label": "pelayanan bagus"
+    },
+    {
+     "icon": "🔒",
+     "label": "tutup"
+    }
+   ],
+   "answer": 1,
+   "why": "服務 = pelayanan."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "只要一百塊就可以。",
+   "options": [
+    {
+     "icon": "💵",
+     "label": "NT$1.000"
+    },
+    {
+     "icon": "💵✅",
+     "label": "cukup NT$100"
+    },
+    {
+     "icon": "🆓",
+     "label": "gratis"
+    }
+   ],
+   "answer": 1,
+   "why": "只要…就… = asal/cukup …."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "辦居留證要多久？"
+    },
+    {
+     "sp": "女",
+     "zh": "一個星期。"
+    }
+   ],
+   "question": "辦居留證要多久？",
+   "options": [
+    {
+     "icon": "📅",
+     "label": "1 minggu"
+    },
+    {
+     "icon": "📅",
+     "label": "1 bulan"
+    },
+    {
+     "icon": "📅",
+     "label": "1 hari"
+    }
+   ],
+   "answer": 0,
+   "why": "一個星期."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "請問，在哪裡辦居留證？"
+    },
+    {
+     "sp": "男",
+     "zh": "在三樓。"
+    },
+    {
+     "sp": "女",
+     "zh": "要帶什麼？"
+    },
+    {
+     "sp": "男",
+     "zh": "只要帶兩張相片。"
+    }
+   ],
+   "question": "辦居留證要帶什麼？",
+   "options": [
+    {
+     "icon": "📖",
+     "label": "buku"
+    },
+    {
+     "icon": "🖼️🖼️",
+     "label": "dua pas foto"
+    },
+    {
+     "icon": "💵",
+     "label": "uang"
+    }
+   ],
+   "answer": 1,
+   "why": "兩張相片."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "我可以替我朋友辦嗎？"
+    },
+    {
+     "sp": "女",
+     "zh": "不行，只有你朋友自己才能辦。"
+    },
+    {
+     "sp": "男",
+     "zh": "好，我叫他來。"
+    },
+    {
+     "sp": "女",
+     "zh": "謝謝。"
+    }
+   ],
+   "question": "女的是什麼意思？",
+   "options": [
+    "朋友要自己來辦",
+    "男的也要辦",
+    "男的可以替朋友辦",
+    "不用辦"
+   ],
+   "answer": 0,
+   "why": "只有…才… = hanya … yang bisa."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "他提著兩個大袋子。",
+   "options": [
+    {
+     "icon": "🎒",
+     "label": "ransel"
+    },
+    {
+     "icon": "🧳",
+     "label": "koper"
+    },
+    {
+     "icon": "🛍️🛍️",
+     "label": "menjinjing dua kantong"
+    }
+   ],
+   "answer": 2,
+   "why": "提 = menjinjing."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🏧💵",
+    "label": "mengambil uang di ATM"
+   },
+   "options": [
+    "我去借錢。",
+    "我去付錢。",
+    "我去提錢。"
+   ],
+   "answer": 2,
+   "why": "提錢 = mengambil uang."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "✅",
+    "label": "asalkan"
+   },
+   "text": "（　）你想學，我就教你。",
+   "options": [
+    "只要",
+    "服務",
+    "只有"
+   ],
+   "answer": 0,
+   "why": "只要…就…."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "外國人在臺灣念書，必須（1）（2）。辦居留證很簡單，（3）帶兩張相片，一個星期（4）好了。可是（5）你自己才能去辦。",
+   "options": [
+    "服務",
+    "居留證",
+    "就",
+    "辦",
+    "只有",
+    "只要"
+   ],
+   "answers": [
+    3,
+    1,
+    5,
+    2,
+    4
+   ],
+   "why": "辦 / 居留證 / 只要…就 / 只有…才."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "銀行：只有星期一到星期五才能辦事，星期六、星期天不服務。",
+   "question": "星期六可以去銀行辦事嗎？",
+   "options": [
+    "要先打電話",
+    "不可以",
+    "可以",
+    "只能上午"
+   ],
+   "answer": 1,
+   "why": "Sabtu tidak melayani."
+  }
+ ],
+ "C51": [
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "我收到一封信。",
+   "options": [
+    {
+     "icon": "📦",
+     "label": "paket"
+    },
+    {
+     "icon": "📤",
+     "label": "mengirim surat"
+    },
+    {
+     "icon": "📩",
+     "label": "menerima surat"
+    }
+   ],
+   "answer": 2,
+   "why": "V到 = sampai/diterima."
+  },
+  {
+   "type": "listen_pick",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
+   "audio": "這是誰寫的？我看不出來。",
+   "options": [
+    {
+     "icon": "✅",
+     "label": "tahu penulisnya"
+    },
+    {
+     "icon": "📖",
+     "label": "membaca"
+    },
+    {
+     "icon": "❓✍️",
+     "label": "tidak bisa mengenali tulisan"
+    }
+   ],
+   "answer": 2,
+   "why": "V不出來 = tidak bisa mengenali."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "你收到我的郵件了嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "收到了，謝謝。"
+    }
+   ],
+   "question": "男的收到郵件了嗎？",
+   "options": [
+    {
+     "icon": "📞",
+     "label": "ditelepon"
+    },
+    {
+     "icon": "📧❌",
+     "label": "belum"
+    },
+    {
+     "icon": "📧✅",
+     "label": "sudah menerima"
+    }
+   ],
+   "answer": 2,
+   "why": "收到了."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 3 · Dialog beberapa putaran",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你給誰寫信？"
+    },
+    {
+     "sp": "女",
+     "zh": "我的外婆。"
+    },
+    {
+     "sp": "男",
+     "zh": "你寫了幾封？"
+    },
+    {
+     "sp": "女",
+     "zh": "兩封，一封給外婆，一封給外公。"
+    }
+   ],
+   "question": "女的寫了幾封信？",
+   "options": [
+    {
+     "icon": "✉️",
+     "label": "satu surat"
+    },
+    {
+     "icon": "✉️✉️✉️",
+     "label": "tiga surat"
+    },
+    {
+     "icon": "✉️✉️",
+     "label": "dua surat"
+    }
+   ],
+   "answer": 2,
+   "why": "兩封."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "你看得出來這是誰嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "看不出來，是誰？"
+    },
+    {
+     "sp": "女",
+     "zh": "是我小時候！"
+    },
+    {
+     "sp": "男",
+     "zh": "真的看不出來！"
+    }
+   ],
+   "question": "相片裡的人是誰？",
+   "options": [
+    "女的小時候",
+    "女的媽媽",
+    "男的小時候",
+    "女的妹妹"
+   ],
+   "answer": 0,
+   "why": "是我小時候."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "他把錢存在銀行。",
+   "options": [
+    {
+     "icon": "🛍️",
+     "label": "berbelanja"
+    },
+    {
+     "icon": "🍽️",
+     "label": "makan"
+    },
+    {
+     "icon": "💵🏦",
+     "label": "menabung di bank"
+    }
+   ],
+   "answer": 2,
+   "why": "存 = menabung."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "✉️",
+    "label": "amplop beralamat"
+   },
+   "options": [
+    "信封裡沒有信。",
+    "這是一張郵票。",
+    "信封上寫著地址。"
+   ],
+   "answer": 2,
+   "why": "信封 = amplop."
+  },
+  {
+   "type": "read_gap",
+   "part": "閱讀 Part 3 · Isian bergambar",
+   "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
+   "picture": {
+    "icon": "📨",
+    "label": "membalas surat"
+   },
+   "text": "收到信以後，我馬上（　）。",
+   "options": [
+    "信封",
+    "郵件",
+    "回信"
+   ],
+   "answer": 2,
+   "why": "回信 = membalas surat."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "昨天我（1）到朋友從日本寄來的信。（2）上有一張很漂亮的郵票。我看得（3）這是她寫的字。今天我給她（4）了。這個月我也（5）了一點錢，想去日本看她。",
+   "options": [
+    "回信",
+    "收",
+    "封",
+    "存",
+    "信封",
+    "出來"
+   ],
+   "answers": [
+    1,
+    4,
+    5,
+    0,
+    3
+   ],
+   "why": "收到 / 信封 / 看得出來 / 回信 / 存."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "小文：我收到你的郵件了。你問的問題，我明天回信告訴你。——林老師",
+   "question": "林老師什麼時候回信？",
+   "options": [
+    "明天",
+    "不回信",
+    "下個月",
+    "今天"
+   ],
+   "answer": 0,
+   "why": "明天回信."
+  }
+ ]
+}
