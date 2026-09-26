@@ -154,6 +154,17 @@ const Modul = {
         ${this.stage < 5 ? `<button class="btn primary" onclick="Modul.next()">${st[this.stage + 1][2]} ›</button>`
                          : `<button class="btn primary" onclick="Modul.finish()">Selesai ✓</button>`}
       </div>`);
+    this.preloadStage();
+  },
+  // Pra-muat audio yang mungkin diklik di tahap ini, supaya tombol audio langsung berbunyi
+  preloadStage() {
+    const m = this.m, k = this.key(), all = this.allVocab();
+    const list = [[m.title, 'N']];
+    if (k === 'dialog') { m.dialogs.forEach(d => Speech.preloadLines(d.lines)); all.forEach(v => list.push([v.w, 'W'])); }
+    if (k === 'vocab') { const i = Math.min(this.vi, all.length - 1); all.slice(i, i + 3).forEach(v => list.push([v.w, 'W'])); }
+    if (k === 'tasks') { Speech.preloadTask(m.tasks[this.ti]); Speech.preloadTask(m.tasks[this.ti + 1]); }
+    if (k === 'grammar') { m.grammar.forEach(g => g.examples.forEach(e => list.push([e.zh, 'N']))); (m.recycle || []).forEach(r => list.push([r.zh, 'N'])); }
+    Speech.preload(list);
   },
   next() { if (this.key() === 'intro') this.saveGoal(); this.go(this.stage + 1); },
   keepScroll(fn) { const y = window.scrollY; fn(); this.render(); window.scrollTo(0, y); },

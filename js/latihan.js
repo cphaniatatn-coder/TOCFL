@@ -120,6 +120,7 @@ const Latihan = {
       ${r != null ? `<button class="btn primary block" onclick="Latihan.next()">${s.i + 1 < n ? 'Berikutnya ›' : 'Lihat hasil ›'}</button>` : ''}`;
     }
     App.main(prog + h);
+    Speech.preload([[v.w, 'W'], ...(s.items[s.i + 1] ? [[s.items[s.i + 1].v.w, 'W']] : [])]);
     if (s.mode === 'dengar' && r == null && !Soal.plays['lw' + s.i]) { Soal.plays['lw' + s.i] = 1; setTimeout(() => Speech.word(v.w), 250); }
   },
   record(v, ok) {

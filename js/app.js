@@ -21,27 +21,48 @@ const Store = {
 const App = {
   plan: null, volData: {}, bank: {},
 
+  // Data dimuat per bagian (bukan semuanya di awal) supaya app cepat terbuka:
+  // rencana.json (kecil) langsung; isi volume & bank soal baru saat dibutuhkan.
+  _load: {},
   async init() {
     try {
       this.plan = await (await fetch('data/rencana.json')).json();
-      await Promise.all(VOLUMES.map(async v => {
-        this.volData[v.num] = await (await fetch(`data/modul_vol${v.num}.json`)).json();
-      }));
-      // Bank soal Tes Bab (opsional: app tetap jalan tanpa file ini)
-      try { this.bank = await (await fetch('data/bank_soal.json')).json(); } catch { this.bank = {}; }
     } catch {
       this.main(`<div class="empty"><p>Gagal memuat data. Jalankan app lewat server lokal, mis. <code>py -m http.server</code>.</p></div>`);
       return;
     }
     window.addEventListener('hashchange', () => this.route());
     this.route();
+    // setelah layar pertama tampil, muat sisanya diam-diam
+    setTimeout(() => { VOLUMES.forEach(v => this.need(v.num)); this.needBank(); }, 1500);
   },
+  need(vol) {
+    if (this.volData[vol]) return Promise.resolve();
+    return this._load[vol] ||= fetch(`data/modul_vol${vol}.json`).then(r => r.json()).then(d => { this.volData[vol] = d; })
+      .catch(() => { delete this._load[vol]; throw new Error('gagal'); });
+  },
+  // Bank soal Tes Bab (opsional: app tetap jalan tanpa file ini)
+  needBank() {
+    return this._load.bank ||= fetch('data/bank_soal.json').then(r => r.json()).then(d => { this.bank = d; }).catch(() => {});
+  },
+  volOf(code) { return VOLUMES.find(v => this.plan[v.num].some(m => m.code === code))?.num; },
 
   go(hash) { if (location.hash === hash) this.route(); else location.hash = hash; },
 
-  route() {
+  async route() {
     Speech.stop();
-    const p = (location.hash.replace(/^#\/?/, '') || '').split('/').filter(Boolean);
+    const hash = location.hash;
+    const p = (hash.replace(/^#\/?/, '') || '').split('/').filter(Boolean);
+    // tunggu data yang dibutuhkan halaman ini saja
+    const butuh = [];
+    if (p[0] === 'v' && p[2]) { butuh.push(this.need(+p[1])); if (p[2] === 'ujian') butuh.push(this.needBank()); }
+    if (p[0] === 'm' && this.volOf(p[1])) { butuh.push(this.need(this.volOf(p[1]))); if (+p[2] === 5) butuh.push(this.needBank()); else this.needBank(); }
+    if (butuh.length) {
+      const t = setTimeout(() => this.main('<div class="empty"><p>Memuat…</p></div>'), 150);
+      try { await Promise.all(butuh); } catch { clearTimeout(t); this.main('<div class="empty"><p>Gagal memuat data. Periksa koneksi, lalu muat ulang.</p></div>'); return; }
+      clearTimeout(t);
+      if (location.hash !== hash) return;       // pengguna sudah pindah halaman
+    }
     if (p[0] === 'v' && VOLUMES.some(v => v.num === +p[1])) return this.renderVolume(+p[1], p[2] || 'modul');
     if (p[0] === 'm' && this.findModule(p[1])) return Modul.open(p[1], +(p[2] || 0));
     if (p[0] === 'latihan' && Latihan.session) return Latihan.render();
@@ -95,7 +116,8 @@ const App = {
   renderHome() {
     this.bar('TOCFL Band A', null);
     const last = Store.get('tocfl_last', null);
-    const lastM = last && this.findModule(last.code);
+    const lastV = last && this.volOf(last.code);
+    const lastM = lastV && { m: this.plan[lastV].find(m => m.code === last.code) };
     const allDone = Object.values(Store.get(STORAGE_KEY, {})).filter(p => p.done).length;
     this.main(`
       <section class="hero">

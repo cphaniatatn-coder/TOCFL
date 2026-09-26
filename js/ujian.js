@@ -117,9 +117,11 @@ const Ujian = {
         ${s.i + 1 < n ? `<button class="btn primary" onclick="Ujian.goto(${s.i + 1})">Berikutnya ›</button>`
                       : `<button class="btn primary" onclick="Ujian.submit()">Kumpulkan</button>`}
       </div>`);
+    Speech.preloadTask(it.t); Speech.preloadTask(s.items[s.i + 1]?.t);
   },
   partIntro(pi) {
     const s = this.session, p = this.PARTS[pi];
+    Speech.preloadTask(s.items[s.i].t);
     const cnt = s.items.filter(x => this.partOf(x.t) === pi).length;
     const first = s.items.findIndex(x => this.partOf(x.t) === pi) + 1;
     App.bar(s.title, s.back, s.end ? `<span class="bar-pill timer" id="ujian-timer"></span>` : '');

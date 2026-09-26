@@ -4,11 +4,33 @@
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 /* ===== Audio =====
-   Utama: rekaman Mandarin Taiwan (zh-TW, Microsoft Neural) yang sudah dibuat oleh _kerja/buat_audio.py —
-   suara mengikuti pembicara (perempuan → suara perempuan, laki-laki → suara laki-laki).
-   Cadangan (teks belum punya rekaman / offline): suara browser zh-TW, dipilih perempuan/laki-laki bila tersedia. */
-const Audio_ = { map: null, speakers: {}, cur: null, token: 0 };
-fetch('data/audio.json').then(r => r.json()).then(d => { Audio_.map = d.clips; Audio_.speakers = d.speakers; }).catch(() => { Audio_.map = {}; });
+   Rekaman Mandarin Taiwan (zh-TW, Microsoft Neural) dibuat oleh _kerja/buat_audio.py.
+   - Nama file = cyrb53("PROFIL|teks") → dihitung langsung di sini, tidak perlu memuat daftar audio.
+   - Suara mengikuti pembicara (SPEAKERS di bawah, juga dibaca oleh buat_audio.py).
+   - Audio di layar yang sedang dibuka dipra-muat, dan klip yang sudah dimuat dipakai ulang,
+     supaya tombol audio langsung berbunyi.
+   Cadangan bila rekaman tidak ada: suara browser zh-TW sesuai jenis kelamin. */
+/* SPEAKERS */ const SPEAKERS = {
+  "李美美": "F1", "小姐": "F1", "店員": "F1", "老闆娘": "F1", "護士": "F1", "陳安安": "F1", "女": "F1",
+  "安妮": "F2", "陳老師": "F2", "媽媽": "F2", "美美的媽媽": "F2",
+  "王大文": "M1", "王先生": "M1", "先生": "M1", "陳先生": "M1", "司機": "M1", "男": "M1",
+  "志明": "M2", "老闆": "M2", "醫生": "M2",
+  "小明": "K", "安妮的弟弟": "K"
+};
+
+const cyrb53 = (str, seed = 0) => {
+  let h1 = 0xdeadbeef ^ seed, h2 = 0x41c6ce57 ^ seed;
+  for (let i = 0, ch; i < str.length; i++) {
+    ch = str.charCodeAt(i);
+    h1 = Math.imul(h1 ^ ch, 2654435761);
+    h2 = Math.imul(h2 ^ ch, 1597334677);
+  }
+  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507);
+  h1 ^= Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+  h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507);
+  h2 ^= Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+  return 4294967296 * (2097151 & h2) + (h1 >>> 0);
+};
 
 let _voiceF = null, _voiceM = null;
 if (window.speechSynthesis) {
@@ -22,25 +44,39 @@ if (window.speechSynthesis) {
 }
 
 const Speech = {
-  // profil suara per pembicara (sama dengan _kerja/buat_audio.py)
-  profil(sp) { return Audio_.speakers[sp] || 'F1'; },
+  cache: new Map(), cur: null, token: 0, MAX: 80,
+  profil(sp) { return SPEAKERS[sp] || 'F1'; },
+  url(text, prof) { return `audio/tts/${cyrb53(`${prof}|${String(text).trim()}`).toString(36)}.mp3`; },
+  // Ambil (atau buat) elemen audio; preload=auto → browser mulai mengunduh sekarang
+  el(text, prof) {
+    const u = this.url(text, prof);
+    let a = this.cache.get(u);
+    if (a) { this.cache.delete(u); this.cache.set(u, a); return a; }   // tandai baru dipakai
+    a = new Audio(); a.preload = 'auto'; a.src = u; a._u = u;
+    this.cache.set(u, a);
+    if (this.cache.size > this.MAX) this.cache.delete(this.cache.keys().next().value);
+    return a;
+  },
+  // Pra-muat daftar [teks, profil] di latar belakang
+  preload(list) { list.forEach(([t, p]) => t && this.el(t, p)); },
+  preloadLines(lines) { this.preload((lines || []).map(l => [l.zh, this.profil(l.sp)])); },
+  preloadTask(t) { if (!t) return; if (t.audio) this.preload([[t.audio, 'N']]); this.preloadLines(t.lines); },
   stop() {
-    Audio_.token++;
-    if (Audio_.cur) { Audio_.cur.pause(); Audio_.cur = null; }
+    this.token++;
+    if (this.cur) { this.cur.pause(); this.cur = null; }
     if (window.speechSynthesis) speechSynthesis.cancel();
   },
-  // Putar satu teks dengan profil tertentu; kembalikan Promise yang selesai saat audio berakhir
   play(text, prof, token) {
     return new Promise(done => {
-      if (token !== Audio_.token) return done();
-      const id = Audio_.map && Audio_.map[`${prof}|${text}`];
-      if (id) {
-        const a = new Audio(`audio/tts/${id}.mp3`);
-        Audio_.cur = a;
-        a.onended = () => done();
-        a.onerror = () => this.tts(text, prof).then(done);
-        a.play().catch(() => this.tts(text, prof).then(done));
-      } else this.tts(text, prof).then(done);
+      if (token !== this.token) return done();
+      const a = this.el(text, prof);
+      this.cur = a;
+      const selesai = () => { a.onended = a.onerror = null; done(); };
+      a.onended = selesai;
+      a.onerror = () => { a.onended = a.onerror = null; this.cache.delete(a._u); this.tts(text, prof).then(done); };
+      try { a.currentTime = 0; } catch { /* belum ada metadata */ }
+      const p = a.play();
+      if (p) p.catch(e => { if (e.name !== 'AbortError') { a.onended = a.onerror = null; this.tts(text, prof).then(done); } });
     });
   },
   tts(text, prof) {
@@ -51,24 +87,24 @@ const Speech = {
       u.lang = 'zh-TW'; u.rate = 0.9;
       const v = male ? (_voiceM || _voiceF) : _voiceF;
       if (v) u.voice = v;
-      // bila tidak ada suara laki-laki zh-TW di perangkat ini, rendahkan nada sebagai pengganti
       u.pitch = male && !_voiceM ? 0.7 : prof === 'K' ? 1.3 : 1;
       u.onend = u.onerror = () => done();
       speechSynthesis.speak(u);
     });
   },
-  word(text) { this.stop(); this.play(text, 'W', Audio_.token); },
-  say(text, onend) { this.stop(); this.play(text, 'N', Audio_.token).then(() => onend && onend()); },
+  word(text) { this.stop(); this.play(text, 'W', this.token); },
+  say(text, onend) { this.stop(); this.play(text, 'N', this.token).then(() => onend && onend()); },
   // Dialog: baris berurutan, masing-masing dengan suara pembicaranya
   async lines(lines, onend) {
     this.stop();
-    const t = Audio_.token;
+    const t = this.token;
+    this.preloadLines(lines);
     for (const l of lines) {
-      if (t !== Audio_.token) return;
+      if (t !== this.token) return;
       await this.play(l.zh, this.profil(l.sp), t);
-      await new Promise(r => setTimeout(r, 250));   // jeda singkat antarbaris
+      await new Promise(r => setTimeout(r, 120));   // jeda singkat antarbaris (hening klip sudah dipotong)
     }
-    if (t === Audio_.token && onend) onend();
+    if (t === this.token && onend) onend();
   },
 };
 
