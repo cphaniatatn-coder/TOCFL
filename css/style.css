@@ -168,7 +168,7 @@ textarea:focus, button:focus-visible { outline: 3px solid var(--pri-pale); outli
 .mod-head.compact .mod-sub { display: none; }
 .mod-title h1 { font-size: 32px; line-height: 1.25; display: inline; }
 .mod-title .say-btn { margin-left: 4px; vertical-align: 4px; }
-.mod-sub { font-size: 14px; color: var(--sub); margin-top: 2px; }
+.mod-sub { font-size: 15.5px; color: var(--sub); margin-top: 2px; }
 .steps { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2px; margin: 16px 0 8px; }
 .step { display: grid; justify-items: center; gap: 2px; padding: 6px 0 4px; border-radius: 10px; font-size: min(10.5px, 2.75vw); color: var(--muted); position: relative; }
 .step::after { content: ''; position: absolute; left: 12%; right: 12%; bottom: 0; height: 3px; border-radius: 3px; background: var(--line); }
@@ -208,7 +208,7 @@ details.panel summary { cursor: pointer; list-style: none; }
 .vcount { font-size: 13px; color: var(--muted); font-weight: 600; }
 .vword { display: block; margin: 18px auto 6px; font-family: var(--zh); font-size: 64px; line-height: 1.15; font-weight: 500; text-align: center; }
 .vword.static { font-size: 56px; margin: 12px auto 18px; }
-.vpy { font-size: 20px; color: var(--sub); }
+.vpy { font-size: 22px; color: var(--sub); }
 .vmean { margin: 14px 0 4px; font-size: 19px; font-weight: 600; animation: pop .25s ease; }
 .vmean small { display: block; font-size: 13.5px; font-weight: 400; color: var(--sub); margin-top: 6px; }
 .pos { font-size: 11.5px; font-weight: 700; color: var(--sub); background: var(--surface2); border-radius: 6px; padding: 2px 6px; vertical-align: 3px; }
@@ -223,16 +223,17 @@ details.panel summary { cursor: pointer; list-style: none; }
 .vcell { position: relative; display: grid; justify-items: center; padding: 12px 4px; border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); border-top: 4px solid var(--hl); }
 .vcell.sup { border-top-color: var(--hl-sup); }
 .vcell b { font-family: var(--zh); font-size: 24px; font-weight: 500; }
-.vcell small { font-size: 12px; color: var(--sub); }
+.vcell small { font-size: 13.5px; color: var(--sub); }
 .known { position: absolute; top: 4px; right: 7px; color: var(--ok); font-style: normal; font-weight: 700; font-size: 13px; }
 .zy-unit { position: relative; display: inline-block; padding-right: .42em; }
 .zy-mark { position: absolute; top: .1em; right: 0; writing-mode: vertical-rl; text-orientation: upright; font-family: var(--kai); font-size: .24em; line-height: 1; color: var(--sub); letter-spacing: -1px; }
 
 /* 情境對話: chat */
 .chat { background: var(--surface2); border-radius: 20px; padding: 12px 10px 14px; margin-bottom: 16px; }
-.chat-head { display: flex; align-items: center; gap: 8px; padding: 0 4px 10px; }
+.chat-head { display: grid; grid-template-columns: 1fr auto; column-gap: 10px; align-items: center; padding: 0 4px 10px; }
 .chat-head span { font-weight: 700; font-size: 17px; }
-.chat-head small { color: var(--sub); font-size: 12.5px; flex: 1; }
+.chat-head small { color: var(--sub); font-size: 12.5px; grid-column: 1; }
+.chat-head .btn { grid-column: 2; grid-row: 1 / span 2; }
 .msg { display: flex; align-items: flex-end; gap: 8px; margin: 10px 0; }
 .msg.me { flex-direction: row-reverse; }
 .msg.new { animation: rise .3s ease; }
@@ -242,14 +243,14 @@ details.panel summary { cursor: pointer; list-style: none; }
 .who { display: block; font-size: 11.5px; color: var(--sub); font-weight: 600; }
 .bubble .zh { font-size: 20px; line-height: 1.6; }
 .bubble .zh .say-btn { width: 28px; height: 28px; }
-.bubble .py { font-size: 13.5px; color: var(--sub); }
+.bubble .py { font-size: 15.5px; color: var(--sub); }
 .bubble .idn { display: none; font-size: 13.5px; color: var(--sub); border-top: 1px dashed var(--line); margin-top: 6px; padding-top: 4px; }
 .bubble.show-id .idn { display: block; animation: pop .2s ease; }
 .kw { font: inherit; background: var(--hl); border-radius: 5px; padding: 0 2px; box-shadow: inset 0 -2px 0 rgba(0,0,0,.08); }
 .kw.sup { background: var(--hl-sup); }
 .bubble { position: relative; }
 .kw-pop { position: absolute; z-index: 4; width: max-content; max-width: 240px; padding: 8px 10px; box-shadow: var(--shadow); font-size: 14px; background: var(--text); color: var(--bg); border-radius: 10px; animation: pop .15s ease; line-height: 1.4; }
-.kw-pop b { font-size: 18px; } .kw-pop p { margin-top: 2px; }
+.kw-pop b { font-size: 18px; } .kw-pop span { font-size: 15.5px; } .kw-pop p { margin-top: 2px; }
 .chat-more { display: flex; gap: 8px; justify-content: center; margin-top: 12px; }
 
 /* 溝通任務 */
@@ -355,7 +356,7 @@ details.panel summary { cursor: pointer; list-style: none; }
 .wlist { display: grid; gap: 6px; }
 .wrow { display: grid; grid-template-columns: auto auto 1fr auto; align-items: center; gap: 10px; padding: 10px 12px; background: var(--surface); border-radius: 12px; box-shadow: var(--shadow); }
 .wrow b { font-family: var(--zh); font-size: 20px; font-weight: 500; }
-.wrow span { color: var(--sub); font-size: 14px; }
+.wrow span { color: var(--sub); font-size: 15.5px; }
 .wrow small { font-size: 13.5px; }
 .exam-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 10px; font-weight: 700; font-size: 14px; color: var(--warn); }
 .part-intro { display: grid; justify-items: center; text-align: center; gap: 8px; padding: 28px 18px; background: var(--surface); border-radius: 22px; box-shadow: var(--shadow); margin-top: 20px; }
@@ -404,3 +405,4 @@ details.panel summary { cursor: pointer; list-style: none; }
 .speed button { min-width: 44px; min-height: 32px; padding: 0 8px; border-radius: 99px; font-size: 13px; font-weight: 600; color: var(--sub); background: var(--surface); box-shadow: inset 0 0 0 1.5px var(--line); text-align: center; }
 .speed button.on { background: var(--pri); color: #fff; box-shadow: none; }
 .chat .speed { padding: 0 4px; }
+.feedback b[lang="zh-TW"] + span { font-size: 16px; }
