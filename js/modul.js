@@ -11,6 +11,11 @@
 const STAGES = [['intro', '情境導入', 'Tujuan', '🎯'], ['dialog', '情境對話', 'Dialog', '💬'], ['vocab', '詞彙', 'Kosakata', '🗂️'],
   ['tasks', '溝通任務', 'Tugas', '📝'], ['grammar', '語法聚焦', 'Grammar', '🧩'], ['reflect', '反思與進度', 'Refleksi', '🪞']];
 
+// Tanda nada zhuyin digambar sebagai SVG: glyph ˊˇˋ di tiap font punya ketinggian berbeda, sehingga
+// posisinya di kanan-atas 韻母 tidak bisa rata bila memakai font.
+const TONE_SVG = Object.fromEntries([['ˊ', 'M2 9 L8 1'], ['ˇ', 'M1.5 2 L5 9 L8.5 2'], ['ˋ', 'M2 1 L8 9']].map(([t, d]) =>
+  [t, `<svg class="zy-tone" viewBox="0 0 10 10" aria-label="${t}"><path d="${d}"/></svg>`]));
+
 /* ===== Renderer soal bersama (dipakai Modul & Ujian) ===== */
 const Soal = {
   reg: {}, plays: {},
@@ -189,7 +194,14 @@ const Modul = {
   hanzi(w, zy) {
     if (!this.showZy || !zy) return esc(w);
     const marks = zy.split(/\s+/);
-    return [...w].map((c, i) => `<span class="zy-unit"><span class="zy-hanzi">${c}</span><span class="zy-mark">${marks[i] || ''}</span></span>`).join('');
+    // Kaidah zhuyin Taiwan: kolom simbol di kanan hanzi; nada ˊˇˋ di kanan-atas simbol terakhir (韻母);
+    // nada netral ˙ di atas simbol pertama.
+    const col = s => {
+      const tone = (s.match(/[ˊˇˋ˙]/) || [''])[0], sym = [...s.replace(/[ˊˇˋ˙]/g, '')];
+      return `<span class="zy-col">${tone === '˙' ? '<i class="zy-qing">˙</i>' : ''}${sym.map((x, k) =>
+        `<i>${x}${k === sym.length - 1 && TONE_SVG[tone] ? TONE_SVG[tone] : ''}</i>`).join('')}</span>`;
+    };
+    return [...w].map((c, i) => `<span class="zy-unit"><span class="zy-hanzi">${c}</span>${marks[i] ? col(marks[i]) : ''}</span>`).join('');
   },
   r_vocab() {
     const all = this.allVocab(), known = App.getP(this.m.code).known || {};
