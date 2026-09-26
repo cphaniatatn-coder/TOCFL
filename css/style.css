@@ -13,7 +13,11 @@
   --v1: #F08A4B; --v2: #3BA776; --v3: #6C63D9;
   --r: 16px; --r-sm: 10px;
   --shadow: 0 1px 2px rgba(30, 30, 20, .06), 0 4px 14px rgba(30, 30, 20, .06);
-  --zh: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+  /* 標楷體: DFKai-SB (Windows), BiauKai (macOS); perangkat lain memakai LXGW WenKai TC (Google Fonts) */
+  /* Latin & angka tetap font biasa; hanzi/zhuyin jatuh ke font Kai. system-ui/-apple-system sengaja di
+     belakang: font sistem Apple membawa PingFang untuk hanzi sehingga 標楷體 tidak akan terpakai. */
+  --kai: 'DFKai-SB', '標楷體', 'BiauKai', 'LXGW WenKai TC', 'Kaiti TC', serif;
+  --zh: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, var(--kai);
   --dock-h: 72px;
 }
 @media (prefers-color-scheme: dark) {
@@ -29,7 +33,7 @@
 
 html { -webkit-text-size-adjust: 100%; }
 body {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, var(--zh);
+  font-family: var(--zh), system-ui, -apple-system, sans-serif;
   background: var(--bg); color: var(--text); line-height: 1.55; min-height: 100vh;
   -webkit-tap-highlight-color: transparent;
 }
@@ -220,7 +224,7 @@ details.panel summary { cursor: pointer; list-style: none; }
 .vcell small { font-size: 12px; color: var(--sub); }
 .known { position: absolute; top: 4px; right: 7px; color: var(--ok); font-style: normal; font-weight: 700; font-size: 13px; }
 .zy-unit { position: relative; display: inline-block; padding-right: .42em; }
-.zy-mark { position: absolute; top: .1em; right: 0; writing-mode: vertical-rl; text-orientation: upright; font-size: .24em; line-height: 1; color: var(--sub); letter-spacing: -1px; }
+.zy-mark { position: absolute; top: .1em; right: 0; writing-mode: vertical-rl; text-orientation: upright; font-family: var(--kai); font-size: .24em; line-height: 1; color: var(--sub); letter-spacing: -1px; }
 
 /* 情境對話: chat */
 .chat { background: var(--surface2); border-radius: 20px; padding: 12px 10px 14px; margin-bottom: 16px; }
