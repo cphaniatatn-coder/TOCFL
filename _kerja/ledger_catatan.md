@@ -41,3 +41,16 @@
   - Interpretasi poin grammar yang labelnya ambigu — **DIKONFIRMASI Carli 2026-09-24**: 沒(有)2 #118 = pertanyaan "…了沒有？";
     就2 #174 = penegasan 就是/就在; 叫1/叫2 #115/116 = memanggil / menyuruh; 可以3 #168 = 還可以 'lumayan';
     從2 #85 = 'lewat (jalur)'; 又2 #91 = 又不是… (bantahan); 呢2 #117 = penegasan di akhir pernyataan.
+- **2026-09-26 — Edit dialog oleh Carli (lewat edit-konten.xlsx) di A01–A08, A11, A12, A14, A15, B01 — SAH, diikuti.**
+  Pinyin & terjemahan disesuaikan. Kata baru di dialog dipindah ke modul yang pertama memakainya (masuk 補充;
+  zero redundancy tetap, cakupan tetap 100%): 會 A14→A02, 的 A03→A02 (是的), 和1 A17→A02, 還1 A14→A03 &
+  有 A04→A03 (還有), 想 A11→A06 & 要 A15→A06 (想要), 做 A10→A06, 去 A11→A08, 寫 A13→A12, 給 A18→A14 (給你看).
+  - **Kata Level 2 dimajukan ke A0** (keputusan Carli): 日語 B15→A02, 音樂 B02→A06 — tercatat di
+    `_kerja/kata_dimajukan.json`, kartu kosakata bertanda "kata TBCL Level 2 · dimajukan"; dihitung untuk cakupan Level 2.
+  - **喔** (好喔, A11) — di luar daftar TBCL, diajarkan sebagai 補充 A11 (`kata_tambahan.json`).
+  - **A05 歲了** — 了 diterima sebagai frasa leksikal (keputusan Carli); pola V了2 (#53) tetap di B09
+    (`cek_diterima.txt`).
+  - **TANDAI >18: A02 (21 kata = 10 核心 + 11 補充) dan A06 (22 kata = 10 核心 + 12 補充)** — melebihi patokan
+    ±18 karena menampung kata yang dimajukan dialog.
+  - Kata yang tidak lagi muncul di dialog tapi tetap diajarkan (masih ada di soal/kartu): 謝謝 (A01), 都 (A06),
+    讀 (A12), 游 (B01, kini hanya dalam 游泳).

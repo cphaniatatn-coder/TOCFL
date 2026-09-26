@@ -3,6 +3,8 @@ S=sys.argv[1]; lv=int(sys.argv[2])
 tb=json.load(open(S+'/tbcl.json',encoding='utf-8'))
 lvw={o['w']:o for o in tb if o['lv']==lv}
 tambahan={k for k,v in json.load(open(S+'/kata_tambahan.json',encoding='utf-8')).items() if not k.startswith('_') and v['lv']==lv}
+# kata level lebih tinggi yang dimajukan ke modul level lebih rendah (lihat _keterangan di file)
+maju={k:v for k,v in json.load(open(S+'/kata_dimajukan.json',encoding='utf-8')).items() if not k.startswith('_')}
 alias={}
 for w in lvw:
     alias[w]=w
@@ -27,10 +29,15 @@ for line in open(f'{S}/plan_L{lv}.txt',encoding='utf-8'):
                 continue
             if w in tambahan:
                 continue
+            if w in maju and w not in alias:
+                if maju[w]!=mid: errs.append(f'{mid}: "{w}" dimajukan ke {maju[w]}, bukan {mid}')
+                continue
             if w not in alias:
                 o=allw.get(w); errs.append(f'{mid}: "{w}" bukan kata Level {lv}'+(f" (ada di Level {o['lv']})" if o else ' (tidak ada di daftar TBCL)'))
             elif not yx: seen[alias[w]].append(f'{mid}/{layer}')
     mods.append((mid,len(core),len(sup),ng))
+for w,m in maju.items():
+    if w in alias: seen[alias[w]].append(f'{m}/補充 (dimajukan)')
 for w,l in seen.items():
     if len(l)>1: errs.append(f'GANDA {w}: {l}')
 miss=[w for w in lvw if w not in seen]

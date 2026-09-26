@@ -99,7 +99,8 @@ def main():
     for path in sys.argv[1:]:
         vol = json.load(open(path, encoding='utf-8'))
         for m in vol['modules']:
-            ok = kosakata_sampai(m['code'], mods)
+            # bentuk yang sudah ditinjau & diterima untuk modul ini (mis. A05 歲了) dikenali sebagai satu satuan
+            ok = kosakata_sampai(m['code'], mods) | {w for c, w in diterima if c == m['code']}
             probs = {}
             for s in teks(m):
                 for ch in cek(s, ok):

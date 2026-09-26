@@ -36,7 +36,7 @@ def entry(lv, token, override):
     if w in tambahan:
         t = tambahan[w]
         e = {'w': w, 'py': t['py'], 'pos': t['pos'], 'meaning': t['meaning'], 'zy': t['zy'],
-             'extra': True}
+             'extra': t.get('asal', 'dari kosakata.xlsx')}
         e.update(override.get(w, {}))
         return e
     cocok = lambda o: o['w'] == w or w in o['w'].split('/')
@@ -53,6 +53,8 @@ def entry(lv, token, override):
         e['variants'] = '/'.join(re.sub(r'\d+$', '', p) for p in parts)
     if sense:
         e['note'] = f"義項 ini = {sense.replace('-', ' ')}."
+    elif o['lv'] > lv:  # kata level lebih tinggi yang dimajukan (_kerja/kata_dimajukan.json)
+        e['maju'] = o['lv']
     e.update(override.get(show, {}))
     z = bp.get(show)
     if z and len(z.split()) == len(show):
