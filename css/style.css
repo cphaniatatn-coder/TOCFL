@@ -16,7 +16,8 @@
   /* 標楷體: DFKai-SB (Windows), BiauKai (macOS); perangkat lain memakai LXGW WenKai TC (Google Fonts) */
   /* Latin & angka tetap font biasa; hanzi/zhuyin jatuh ke font Kai. system-ui/-apple-system sengaja di
      belakang: font sistem Apple membawa PingFang untuk hanzi sehingga 標楷體 tidak akan terpakai. */
-  --kai: 'DFKai-SB', '標楷體', 'BiauKai', 'LXGW WenKai TC', 'Kaiti TC', serif;
+  /* KaiLocal/KaiWeb ada di css/kai.css (hanzi diperbesar 110% lewat size-adjust) */
+  --kai: 'KaiLocal', 'KaiWeb', 'DFKai-SB', 'BiauKai', serif;
   --zh: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, var(--kai);
   --dock-h: 72px;
 }
@@ -110,14 +111,14 @@ textarea:focus, button:focus-visible { outline: 3px solid var(--pri-pale); outli
 
 /* ===== beranda ===== */
 .hero { display: flex; align-items: center; gap: 16px; padding: 18px; border-radius: 20px; background: linear-gradient(135deg, var(--pri), #5B8DEF); color: #fff; }
-.hero h1 { font-family: var(--zh); font-size: 22px; letter-spacing: 1px; }
+.hero h1 { font-family: var(--zh); font-size: clamp(20px, 6vw, 25px); text-wrap: balance; }
 .hero p { font-size: 14px; opacity: .92; margin-top: 4px; }
 .hero .ring { --c: #fff; background: radial-gradient(closest-side, #3f78e3 78%, transparent 80% 100%), conic-gradient(#fff calc(var(--p) * 1%), rgba(255,255,255,.25) 0); color: #fff; }
 .hero .ring small { color: rgba(255,255,255,.8); }
 .continue { margin-top: 14px; }
 .continue-txt { display: flex; flex-direction: column; min-width: 0; }
 .continue-txt small { color: var(--pri); font-weight: 600; font-size: 12.5px; }
-.continue-txt b { font-size: 18px; }
+.continue-txt b { font-size: 20px; }
 .continue-txt span { font-size: 13px; color: var(--sub); }
 .vol-list { display: grid; gap: 12px; }
 .vol-card { --c: var(--pri); }
@@ -136,12 +137,12 @@ textarea:focus, button:focus-visible { outline: 3px solid var(--pri-pale); outli
 .tabs button { flex: 1; min-height: 40px; border-radius: 10px; font-weight: 600; font-size: 14px; color: var(--sub); text-align: center; }
 .tabs button.on { background: var(--surface); color: var(--text); box-shadow: var(--shadow); }
 .cat-group { margin-bottom: 18px; }
-.cat-head { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 14px; color: var(--sub); margin: 0 2px 8px; }
+.cat-head { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 15px; color: var(--sub); margin: 0 2px 8px; }
 .cat-ic { width: 22px; height: 22px; }
 .mod-row { display: flex; align-items: center; gap: 12px; width: 100%; padding: 12px; margin-bottom: 8px; background: var(--surface); border-radius: 14px; box-shadow: var(--shadow); }
 .mod-code { font-size: 12px; font-weight: 700; color: var(--sub); background: var(--surface2); padding: 4px 7px; border-radius: 8px; flex-shrink: 0; }
 .mod-main { flex: 1; min-width: 0; display: grid; }
-.mod-main b { font-size: 17px; font-weight: 600; }
+.mod-main b { font-size: 19px; font-weight: 600; }
 .mod-main small { font-size: 12.5px; color: var(--sub); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .mod-state { min-width: 34px; text-align: right; font-weight: 700; font-size: 13px; color: var(--pri); }
 .st-done .mod-code { background: var(--ok-bg); color: var(--ok); }
@@ -163,19 +164,20 @@ textarea:focus, button:focus-visible { outline: 3px solid var(--pri-pale); outli
 .mod-title { position: relative; padding: 0 2px; }
 .mod-title small { display: block; font-size: 12.5px; color: var(--sub); font-family: var(--zh); }
 .mod-head.compact { grid-template-columns: 64px 1fr; align-items: center; }
-.mod-head.compact h1 { font-size: 21px; }
+.mod-head.compact h1 { font-size: 24px; }
 .mod-head.compact .mod-sub { display: none; }
-.mod-title h1 { font-size: 28px; line-height: 1.25; display: inline; }
+.mod-title h1 { font-size: 32px; line-height: 1.25; display: inline; }
 .mod-title .say-btn { margin-left: 4px; vertical-align: 4px; }
 .mod-sub { font-size: 14px; color: var(--sub); margin-top: 2px; }
-.steps { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; margin: 16px 0 8px; }
-.step { display: grid; justify-items: center; gap: 2px; padding: 6px 0 4px; border-radius: 10px; font-size: 10.5px; color: var(--muted); position: relative; }
+.steps { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2px; margin: 16px 0 8px; }
+.step { display: grid; justify-items: center; gap: 2px; padding: 6px 0 4px; border-radius: 10px; font-size: min(10.5px, 2.75vw); color: var(--muted); position: relative; }
 .step::after { content: ''; position: absolute; left: 12%; right: 12%; bottom: 0; height: 3px; border-radius: 3px; background: var(--line); }
 .step.seen { color: var(--sub); } .step.seen::after { background: color-mix(in srgb, var(--pri) 45%, var(--line)); }
 .step.cur { color: var(--pri); font-weight: 700; background: var(--pri-pale); } .step.cur::after { background: var(--pri); }
 .step-ic { width: 22px; height: 22px; }
+.step span { white-space: nowrap; letter-spacing: -.5px; }
 .step:not(.seen):not(.cur) .step-ic { filter: grayscale(1); opacity: .55; }
-.stage-title { font-size: 19px; margin: 14px 2px 12px; }
+.stage-title { font-size: 21px; margin: 14px 2px 12px; }
 .dock {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; height: var(--dock-h);
   display: flex; justify-content: space-between; align-items: center; gap: 10px;
@@ -229,7 +231,7 @@ details.panel summary { cursor: pointer; list-style: none; }
 /* 情境對話: chat */
 .chat { background: var(--surface2); border-radius: 20px; padding: 12px 10px 14px; margin-bottom: 16px; }
 .chat-head { display: flex; align-items: center; gap: 8px; padding: 0 4px 10px; }
-.chat-head span { font-weight: 700; }
+.chat-head span { font-weight: 700; font-size: 17px; }
 .chat-head small { color: var(--sub); font-size: 12.5px; flex: 1; }
 .msg { display: flex; align-items: flex-end; gap: 8px; margin: 10px 0; }
 .msg.me { flex-direction: row-reverse; }
@@ -309,7 +311,7 @@ details.panel summary { cursor: pointer; list-style: none; }
 /* 語法: balok */
 .gcard { background: var(--surface); border-radius: 20px; padding: 16px; margin-bottom: 14px; box-shadow: var(--shadow); }
 .gcard-head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
-.gcard-head h3 { font-size: 22px; }
+.gcard-head h3 { font-size: 25px; }
 .gid { font-size: 11.5px; font-weight: 700; color: var(--muted); }
 .blocks { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0; }
 .block { display: grid; justify-items: center; padding: 8px 12px 6px; border-radius: 10px; box-shadow: inset 0 -3px 0 rgba(0,0,0,.12); }
@@ -357,7 +359,7 @@ details.panel summary { cursor: pointer; list-style: none; }
 .wrow small { font-size: 13.5px; }
 .exam-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 10px; font-weight: 700; font-size: 14px; color: var(--warn); }
 .part-intro { display: grid; justify-items: center; text-align: center; gap: 8px; padding: 28px 18px; background: var(--surface); border-radius: 22px; box-shadow: var(--shadow); margin-top: 20px; }
-.part-intro h2 { font-size: 28px; }
+.part-intro h2 { font-size: 31px; }
 .part-intro small { color: var(--sub); }
 .partlist { list-style: none; display: grid; gap: 4px; font-size: 14px; }
 .partlist li { display: flex; gap: 8px; } .partlist b { margin-left: auto; }
