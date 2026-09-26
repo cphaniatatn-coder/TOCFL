@@ -112,6 +112,8 @@ def baris_ke_soal(v, lama=None):
             raise ValueError(f'jawaban "{HURUF[i]}" tidak ada di pilihan (hanya {len(t["options"])} pilihan)')
     t['why'] = why
     # pertahankan kolom lain yang tidak ada di Excel (bila ada) & urutan kolom asli (supaya riwayat perubahan rapi)
+    if lama and t.get('picture') and (lama.get('picture') or {}).get('img'):
+        t['picture']['img'] = lama['picture']['img']   # ilustrasi SVG (img/soal/) — tidak diedit lewat Excel
     if lama:
         for k, x in lama.items():
             if k not in t and k not in ('audio', 'lines', 'question', 'picture', 'text', 'answer', 'answers'):

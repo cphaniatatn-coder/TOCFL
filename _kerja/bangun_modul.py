@@ -109,6 +109,8 @@ def cek_soal(code, t):
         salah.append('indeks jawaban di luar opsi')
     if t['type'] in ('listen_pick', 'read_sent') and not all(isinstance(o, dict) and o.get('icon') for o in opts):
         salah.append('opsi harus gambar {icon, label}')
+    if (t.get('picture') or {}).get('img') and not os.path.exists(f"{ROOT}/img/soal/{t['picture']['img']}.svg"):
+        salah.append(f"gambar img/soal/{t['picture']['img']}.svg tidak ada (jalankan py _kerja/gambar_soal.py)")
     if t['type'] == 'listen_pic' and (len(opts) != 3 or not all(isinstance(o, str) for o in opts)):
         salah.append('listen_pic: harus 3 jawaban lisan (teks), bukan gambar')
     if t['type'] == 'read_gap' and len(re.findall(r'（\s*）', t.get('text', ''))) != 1:

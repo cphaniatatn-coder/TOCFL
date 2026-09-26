@@ -29,6 +29,13 @@ const Soal = {
     const done = () => btn && btn.classList.remove('playing');
     t.type === 'listen_pic' ? Speech.seq(this.picTexts(t), done) : t.lines ? Speech.lines(t.lines, done) : Speech.say(t.audio, done);
   },
+  // Gambar soal: ilustrasi bergaya TOCFL (img/soal/<img>.svg) bila ada, selain itu ikon.
+  // Untuk ilustrasi, keterangan Indonesia baru tampil setelah dijawab (di ujian asli gambar tanpa keterangan).
+  picture(p, bw, showCap) {
+    if (p.img) return `<figure class="q-picture q-ill"><img src="img/soal/${esc(p.img)}.svg" alt="${esc(p.label)}" draggable="false">`
+      + `${showCap ? `<figcaption>${esc(p.label)}</figcaption>` : ''}</figure>`;
+    return `<figure class="q-picture">${Pic.group(p.icon, 'pic-xl', bw)}<figcaption>${esc(p.label)}</figcaption></figure>`;
+  },
   // 聽力 Part 1 (format resmi): yang diperdengarkan = pertanyaan + tiga jawaban berlabel (sama dengan buat_audio.py)
   picTexts(t) { return [t.question, ...t.options.map((o, i) => `${'ABC'[i]}，${o}`)]; },
   answered(t, a) { return t.type === 'cloze' ? !!(a && a.checked) : a != null; },
@@ -60,7 +67,7 @@ const Soal = {
     const L = 'ABCDEF';
     let h = `<div class="q-instr">${esc(t.instr)}</div>`;
     const lp = t.type === 'listen_pic';
-    if (lp) h += `<figure class="q-picture">${Pic.group(t.picture.icon, 'pic-xl', bw)}<figcaption>${esc(t.picture.label)}</figcaption></figure>`;
+    if (lp) h += this.picture(t.picture, bw, show);
     if (this.isListen(t)) {
       h += `<button class="play-big" id="play-${key}" onclick="Soal.play('${key}')" aria-label="Putar audio">
               ${Pic.html('🔊', 'play-ic')}<span>Dengarkan</span><small>${this.plays[key] ? `diputar ${this.plays[key]}×` : 'ketuk untuk memutar'}</small></button>`;
@@ -74,7 +81,7 @@ const Soal = {
       if (t.question && !lp) h += `<div class="q-ask" lang="zh-TW">問：${esc(t.question)}</div>`;
     }
     // 閱讀 Part 2 (gambar → kalimat) & Part 3 (gambar + kalimat rumpang)
-    if (t.picture && !lp) h += `<figure class="q-picture">${Pic.group(t.picture.icon, 'pic-xl', bw)}<figcaption>${esc(t.picture.label)}</figcaption></figure>`;
+    if (t.picture && !lp) h += this.picture(t.picture, bw, true);
     if (t.type === 'read_gap') {
       const fill = a != null ? `<b class="gap-fill">${esc(t.options[a])}</b>` : '<span class="gap">＿＿＿</span>';
       h += `<div class="q-text" lang="zh-TW">${esc(t.text).replace(/（\s*）/, fill)}</div>`;

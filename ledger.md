@@ -233,4 +233,9 @@
   - 聽力 Part 1 diubah ke format resmi (題本 說明): 1 gambar + pertanyaan + 3 jawaban lisan (A)(B)(C), pilihan tidak
     tercetak (tipe `listen_pic`). **Pilot Volume 1 SELESAI: 121 soal** (71 latihan + 50 bank). Vol.2 (227) & Vol.3 (332)
     masih format lama `listen_pick` — menunggu persetujuan pilot.
+- **2026-09-26 — Ilustrasi soal bergaya TOCFL digambar dengan kode (SVG).** 聽力 Part 1 Volume 1: 121 ilustrasi
+  hitam-putih (`img/soal/<modul>-<n>.svg`), dibuat `py _kerja/gambar_soal.py` dari komponen `_kerja/svg_lib.py`, lalu
+  `py _kerja/gambar_soal.py pasang` mengisi `picture.img`. Tiap gambar diperiksa terhadap kunci & pengecoh
+  (`_kerja/gambar/periksa.html`). Keterangan Indonesia di bawah gambar baru tampil setelah dijawab. Soal warna (A19)
+  tetap berwarna. Keputusan Carli: gaya emoji hitam-putih ditolak; jalur AI (OpenAI/Gemini) tidak dipakai.
 
