@@ -75,6 +75,9 @@ def kumpulkan():
             baris(t['lines'])
         if t.get('audio'):
             tambah('N', narator(t['audio']), t['audio'])
+        if t.get('type') == 'listen_pic':   # 聽力 Part 1: pertanyaan, lalu "A，…" "B，…" "C，…" (sama dengan Soal.picTexts di app)
+            for x in [t['question']] + [f'{"ABC"[i]}，{o}' for i, o in enumerate(t['options'])]:
+                tambah('N', narator(x), x)
 
     for v in (1, 2, 3):
         for m in json.load(open(f'{R}/data/modul_vol{v}.json', encoding='utf-8'))['modules']:

@@ -73,7 +73,12 @@ const Speech = {
   // Pra-muat daftar [teks, profil] di latar belakang
   preload(list) { list.forEach(([t, p]) => t && this.el(t, p)); },
   preloadLines(lines) { this.preload((lines || []).map(l => [l.zh, this.profil(l.sp)])); },
-  preloadTask(t) { if (!t) return; if (t.audio) this.preload([[t.audio, 'N']]); this.preloadLines(t.lines); },
+  preloadTask(t) {
+    if (!t) return;
+    if (t.audio) this.preload([[t.audio, 'N']]);
+    if (t.type === 'listen_pic') this.preload(Soal.picTexts(t).map(x => [x, 'N']));
+    this.preloadLines(t.lines);
+  },
   stop() {
     this.token++;
     if (this.cur) { this.cur.pause(); this.cur = null; }
@@ -108,6 +113,18 @@ const Speech = {
   },
   word(text) { this.stop(); this.play(text, 'W', this.token); },
   say(text, onend) { this.stop(); this.play(text, 'N', this.token).then(() => onend && onend()); },
+  // 聽力 Part 1: pertanyaan lalu pilihan A/B/C, dengan jeda seperti rekaman ujian
+  async seq(texts, onend) {
+    this.stop();
+    const t = this.token;
+    this.preload(texts.map(x => [x, 'N']));
+    for (const [i, x] of texts.entries()) {
+      if (t !== this.token) return;
+      await this.play(x, 'N', t);
+      await new Promise(r => setTimeout(r, i === 0 ? 900 : 600));
+    }
+    if (t === this.token && onend) onend();
+  },
   // Dialog: baris berurutan, masing-masing dengan suara pembicaranya
   async lines(lines, onend) {
     this.stop();

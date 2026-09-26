@@ -1,7 +1,7 @@
 """Rakit bank soal Tes Bab: _kerja/bank/*.json → data/bank_soal.json
 
 Tiap bab = 10 butir bergaya TOCFL Band A (lihat analisis-ujian-tocfl.md):
-  聽力 P1 ×2  gambar (3 opsi)            listen_pick
+  聽力 P1 ×2  1 gambar + tanya + 3 jawaban lisan  listen_pic (format resmi; listen_pick = format lama)
   聽力 P2 ×1  tanya-jawab 2 baris → gambar  listen_dialog (opsi gambar)
   聽力 P3 ×1  dialog 4 baris + 問 → gambar   listen_dialog (opsi gambar)
   聽力 P4 ×1  dialog 4 baris + 問 → A–D teks listen_dialog (4 opsi teks)

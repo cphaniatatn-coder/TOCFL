@@ -409,26 +409,21 @@
      "why": "誰 menanyakan ORANG: jawab dengan hubungan/nama. B menjawab kepemilikan benda, C menjawab asal negara."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "這是我媽媽。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "👩",
+      "label": "foto keluarga: ibu"
+     },
+     "question": "這是誰？",
      "options": [
-      {
-       "icon": "👨",
-       "label": "ayah"
-      },
-      {
-       "icon": "👩",
-       "label": "ibu"
-      },
-      {
-       "icon": "👦",
-       "label": "adik laki-laki"
-      }
+      "這是我爸爸。",
+      "這是我媽媽。",
+      "這是我弟弟。"
      ],
      "answer": 1,
-     "why": "媽媽 = ibu. Pengecoh dari kategori yang sama (anggota keluarga)."
+     "why": "媽媽 = ibu. Pengecoh dari kategori yang sama (anggota keluarga): 爸爸, 弟弟."
     },
     {
      "type": "listen_dialog",
@@ -657,26 +652,21 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我有兩個孩子。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "👩👶👶",
+      "label": "seorang ibu dengan dua anak"
+     },
+     "question": "她有幾個孩子？",
      "options": [
-      {
-       "icon": "👶",
-       "label": "1 anak"
-      },
-      {
-       "icon": "👶👶",
-       "label": "2 anak"
-      },
-      {
-       "icon": "👶👶👶",
-       "label": "3 anak"
-      }
+      "她有一個孩子。",
+      "她有兩個孩子。",
+      "她有三個孩子。"
      ],
      "answer": 1,
-     "why": "兩個 = dua (buah/orang). Sebelum kata bantu bilangan dipakai 兩, bukan 二."
+     "why": "Dua anak → 兩個孩子. Sebelum kata bantu bilangan dipakai 兩, bukan 二."
     },
     {
      "type": "listen_reply",
@@ -935,23 +925,18 @@
      "why": "幾歲 → angka + 歲. B menjawab bulan lahir; C memakai 年 (tahun kalender) — kesalahan khas penutur bahasa Indonesia."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih kalender yang cocok.",
-     "audio": "我的生日是五月三號。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "📅🎂",
+      "label": "kalender: ulang tahun tanggal 3 Mei"
+     },
+     "question": "你的生日是幾月幾號？",
      "options": [
-      {
-       "icon": "📅",
-       "label": "3 Mei"
-      },
-      {
-       "icon": "📅",
-       "label": "5 Maret"
-      },
-      {
-       "icon": "📅",
-       "label": "13 Mei"
-      }
+      "五月三號。",
+      "三月五號。",
+      "五月十三號。"
      ],
      "answer": 0,
      "why": "Urutan Mandarin: bulan dulu (五月 = Mei), lalu tanggal (三號 = 3). B membalik urutan; C salah dengar angka."
@@ -1137,23 +1122,18 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "他喜歡唱歌。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "👨🎤",
+      "label": "laki-laki bernyanyi"
+     },
+     "question": "他喜歡做什麼？",
      "options": [
-      {
-       "icon": "🎤",
-       "label": "bernyanyi"
-      },
-      {
-       "icon": "🎬",
-       "label": "menonton film"
-      },
-      {
-       "icon": "⚽",
-       "label": "main bola"
-      }
+      "他喜歡唱歌。",
+      "他喜歡看電影。",
+      "他喜歡玩球。"
      ],
      "answer": 0,
      "why": "唱歌 = bernyanyi. Semua pilihan adalah hobi — pengecoh kategori mirip."
@@ -1646,23 +1626,18 @@
      "why": "我住五樓. 三樓 adalah lantai orang tuanya — detail yang tertukar."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "他們在公園。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🧑‍🤝‍🧑🌳",
+      "label": "mereka di taman"
+     },
+     "question": "他們在哪裡？",
      "options": [
-      {
-       "icon": "🏠",
-       "label": "rumah"
-      },
-      {
-       "icon": "🌳",
-       "label": "taman"
-      },
-      {
-       "icon": "🏢",
-       "label": "gedung bertingkat"
-      }
+      "他們在房子裡面。",
+      "他們在公園。",
+      "他們在門口。"
      ],
      "answer": 1,
      "why": "公園 = taman. Semua pilihan adalah tempat — pengecoh kategori mirip."
@@ -1869,23 +1844,18 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "電視在桌子上。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "📺⬆",
+      "label": "TV di atas meja"
+     },
+     "question": "電視在哪裡？",
      "options": [
-      {
-       "icon": "📺⬆",
-       "label": "TV di atas meja"
-      },
-      {
-       "icon": "📺⬇",
-       "label": "TV di bawah meja"
-      },
-      {
-       "icon": "📺🚪",
-       "label": "TV di samping pintu"
-      }
+      "在桌子上。",
+      "在桌子下。",
+      "在門旁邊。"
      ],
      "answer": 0,
      "why": "桌子上 = di atas meja. 上/下 sering dipasangkan sebagai pengecoh."

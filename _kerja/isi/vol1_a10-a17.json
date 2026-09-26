@@ -87,26 +87,21 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih jam yang cocok.",
-     "audio": "現在七點半。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🕢",
+      "label": "jam 7.30"
+     },
+     "question": "現在幾點？",
      "options": [
-      {
-       "icon": "🕢",
-       "label": "7.30"
-      },
-      {
-       "icon": "🕖",
-       "label": "7.00"
-      },
-      {
-       "icon": "🕡",
-       "label": "6.30"
-      }
+      "現在七點半。",
+      "現在七點。",
+      "現在六點半。"
      ],
      "answer": 0,
-     "why": "七點半 = 7.30. 六點半 (6.30) adalah jebakan: 半 menempel pada jam yang disebut, bukan jam berikutnya seperti 'setengah tujuh' dalam bahasa Indonesia."
+     "why": "七點半 = 7.30. 六點半 (6.30) adalah jebakan: 半 menempel pada jam yang disebut, bukan jam berikutnya seperti \"setengah tujuh\" dalam bahasa Indonesia."
     },
     {
      "type": "listen_reply",
@@ -296,26 +291,21 @@
      "why": "星期幾 menanyakan HARI; 幾號 menanyakan TANGGAL (B). C tidak menjawab."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih kalender yang cocok.",
-     "audio": "明天是星期天。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "📅",
+      "label": "kalender: besok hari Minggu"
+     },
+     "question": "明天星期幾？",
      "options": [
-      {
-       "icon": "📅",
-       "label": "Minggu"
-      },
-      {
-       "icon": "📅",
-       "label": "Senin"
-      },
-      {
-       "icon": "📅",
-       "label": "Sabtu"
-      }
+      "明天是星期天。",
+      "明天是星期一。",
+      "明天是星期六。"
      ],
      "answer": 0,
-     "why": "星期天 (= 星期日) = Minggu. 星期一 = Senin, 星期六 = Sabtu."
+     "why": "星期天 (= 星期日) = Minggu. 星期一 = Senin; 星期六 = Sabtu."
     },
     {
      "type": "listen_dialog",
@@ -563,26 +553,21 @@
      "why": "下課 = selesai kelas → 十二點. 九點 adalah jam 上課."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "她是老師。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "👩‍🏫",
+      "label": "guru di depan kelas"
+     },
+     "question": "她是誰？",
      "options": [
-      {
-       "icon": "👩‍🏫",
-       "label": "guru"
-      },
-      {
-       "icon": "👩‍🎓",
-       "label": "mahasiswa"
-      },
-      {
-       "icon": "👩‍⚕️",
-       "label": "dokter"
-      }
+      "她是老師。",
+      "她是學生。",
+      "她是我媽媽。"
      ],
      "answer": 0,
-     "why": "老師 = guru. Pengecoh dari kategori pekerjaan/peran yang mirip."
+     "why": "老師 = guru. 學生 = murid; 媽媽 = ibu."
     },
     {
      "type": "read_mc",
@@ -747,23 +732,18 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我有兩枝筆。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🖊️🖊️",
+      "label": "dua pulpen"
+     },
+     "question": "你有幾枝筆？",
      "options": [
-      {
-       "icon": "🖊️",
-       "label": "1 pulpen"
-      },
-      {
-       "icon": "🖊️🖊️",
-       "label": "2 pulpen"
-      },
-      {
-       "icon": "📄📄",
-       "label": "2 lembar kertas"
-      }
+      "我有一枝筆。",
+      "我有兩枝筆。",
+      "我有兩張紙。"
      ],
      "answer": 1,
      "why": "兩枝筆 = dua pulpen. C jumlahnya sama tapi benda & kata bantu bilangannya lain (張 untuk kertas)."
@@ -1147,26 +1127,21 @@
      "why": "要喝什麼 → sebut minumannya. B memberi komentar; C tidak menyebut apa yang dipesan dan salah kata bantu bilangan."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我要一杯牛奶。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🥛",
+      "label": "segelas susu"
+     },
+     "question": "你要喝什麼？",
      "options": [
-      {
-       "icon": "☕",
-       "label": "kopi"
-      },
-      {
-       "icon": "🥛",
-       "label": "susu"
-      },
-      {
-       "icon": "🍵",
-       "label": "teh"
-      }
+      "我要一杯咖啡。",
+      "我要一杯牛奶。",
+      "我要一杯茶。"
      ],
      "answer": 1,
-     "why": "牛奶 = susu. Pengecoh: jenis minuman lain."
+     "why": "牛奶 = susu. Pengecoh: jenis minuman lain (咖啡, 茶)."
     },
     {
      "type": "listen_dialog",
@@ -1337,26 +1312,21 @@
      "why": "餓不餓 → 很餓／不餓. B tentang minum; C memakai 是 + kata sifat (salah)."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我早餐吃蛋。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🌅🥚",
+      "label": "sarapan: telur"
+     },
+     "question": "你早餐吃什麼？",
      "options": [
-      {
-       "icon": "🥚",
-       "label": "telur"
-      },
-      {
-       "icon": "🐟",
-       "label": "ikan"
-      },
-      {
-       "icon": "🍎",
-       "label": "buah"
-      }
+      "我吃蛋。",
+      "我吃魚。",
+      "我吃水果。"
      ],
      "answer": 0,
-     "why": "蛋 = telur. Pengecoh dari kategori makanan lain."
+     "why": "蛋 = telur. Pengecoh dari kategori makanan lain (魚, 水果)."
     },
     {
      "type": "listen_dialog",
@@ -1541,23 +1511,18 @@
      "why": "位 = kata bantu bilangan sopan untuk ORANG (jumlah tamu). 碗 untuk mangkuk; C menjawab pesanan."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我要一碗麵。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🍜",
+      "label": "semangkuk mi"
+     },
+     "question": "你要吃什麼？",
      "options": [
-      {
-       "icon": "🍜",
-       "label": "semangkuk mi"
-      },
-      {
-       "icon": "🥟",
-       "label": "bakpao"
-      },
-      {
-       "icon": "🍞",
-       "label": "roti"
-      }
+      "我要一碗麵。",
+      "我要一個包子。",
+      "我要一個麵包。"
      ],
      "answer": 0,
      "why": "一碗麵 = semangkuk mi. 麵 vs 麵包 (roti) — bunyinya mirip, jebakan klasik."

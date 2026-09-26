@@ -77,6 +77,7 @@ def load_isi():
 
 BENTUK = {  # tipe soal → kolom wajib selain PART
     'listen_pick': {'audio', 'options', 'answer'}, 'listen_reply': {'audio', 'options', 'answer'},
+    'listen_pic': {'picture', 'question', 'options', 'answer'},   # 聽力 Part 1 resmi: 1 gambar, tanya + 3 jawaban lisan
     'listen_dialog': {'lines', 'question', 'options', 'answer'},
     'read_sent': {'text', 'options', 'answer'}, 'read_pick': {'picture', 'options', 'answer'},
     'read_gap': {'picture', 'text', 'options', 'answer'}, 'read_mc': {'text', 'question', 'options', 'answer'},
@@ -108,6 +109,8 @@ def cek_soal(code, t):
         salah.append('indeks jawaban di luar opsi')
     if t['type'] in ('listen_pick', 'read_sent') and not all(isinstance(o, dict) and o.get('icon') for o in opts):
         salah.append('opsi harus gambar {icon, label}')
+    if t['type'] == 'listen_pic' and (len(opts) != 3 or not all(isinstance(o, str) for o in opts)):
+        salah.append('listen_pic: harus 3 jawaban lisan (teks), bukan gambar')
     if t['type'] == 'read_gap' and len(re.findall(r'（\s*）', t.get('text', ''))) != 1:
         salah.append('read_gap: harus tepat satu （　）')
     if len({json.dumps(o, ensure_ascii=False) for o in opts}) != len(opts):

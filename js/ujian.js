@@ -10,7 +10,7 @@ const Ujian = {
   // Bobot tiap bagian (mengikuti jumlah soal ujian resmi Band A: 聽力 25/15/5/5, 閱讀 15/15/10/5/5)
   // [bagian, bobot, nama, petunjuk Indonesia, petunjuk Mandarin] — petunjuk dwibahasa seperti naskah resmi
   PARTS: [
-    ['聽力 Part 1', 25, 'Deskripsi gambar', 'Dengarkan kalimat, pilih gambar yang cocok.', '請聽一個句子，選出相符的圖片。'],
+    ['聽力 Part 1', 25, 'Deskripsi gambar', 'Lihat gambar, dengarkan pertanyaan dan tiga jawaban (A–C), lalu pilih yang cocok dengan gambar.', '每題有一張圖片，你會先聽到一個問題，接著再聽到(A)(B)(C)三個選項，請根據圖片選出正確的答案。'],
     ['聽力 Part 2', 15, 'Tanya-jawab', 'Dengarkan tanya-jawab singkat, pilih gambar atau tanggapan yang tepat.', '請聽一段簡短的問答，選出正確的答案。'],
     ['聽力 Part 3', 5, 'Dialog', 'Dengarkan dialog beberapa putaran dan pertanyaannya.', '請聽一段對話和問題，選出正確的答案。'],
     ['聽力 Part 4', 5, 'Makna tersirat', 'Dengarkan dialog, tangkap maksud yang tidak diucapkan langsung. Pilih A–D.', '請聽一段對話和問題，從四個選項中選出正確的答案。'],

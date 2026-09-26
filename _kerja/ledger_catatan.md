@@ -64,3 +64,9 @@
   (dicocokkan ke bacaan tiap hanzi; `bangun_modul.py` menolak pinyin yang tidak cocok dengan hanzinya).
   Salah ketik pinyin di data TBCL yang ketahuan & diperbaiki di `tbcl.json`: 小朋友 xiǎ→xiǎo péng yǒu,
   橘子 jú→jú zi, 老太太 & 哇 (huruf alfa ɑ → a). Dialog C44: 包包 bāo → bāo bāo.
+- **2026-09-26 — Gambar soal & 聽力 Part 1 format resmi.**
+  - Soal/Tes Bab/ujian memakai gambar hitam-putih (OpenMoji black, `img/bw/`, CC BY-SA 4.0); tahap belajar tetap berwarna;
+    soal tentang warna otomatis tetap berwarna (`Soal.bw`).
+  - 聽力 Part 1 diubah ke format resmi (題本 說明): 1 gambar + pertanyaan + 3 jawaban lisan (A)(B)(C), pilihan tidak
+    tercetak (tipe `listen_pic`). **Pilot Volume 1 SELESAI: 121 soal** (71 latihan + 50 bank). Vol.2 (227) & Vol.3 (332)
+    masih format lama `listen_pick` — menunggu persetujuan pilot.

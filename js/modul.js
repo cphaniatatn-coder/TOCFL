@@ -27,8 +27,10 @@ const Soal = {
     const btn = document.getElementById('play-' + key);
     if (btn) { btn.classList.add('playing'); btn.querySelector('small').textContent = `diputar ${this.plays[key]}×`; }
     const done = () => btn && btn.classList.remove('playing');
-    t.lines ? Speech.lines(t.lines, done) : Speech.say(t.audio, done);
+    t.type === 'listen_pic' ? Speech.seq(this.picTexts(t), done) : t.lines ? Speech.lines(t.lines, done) : Speech.say(t.audio, done);
   },
+  // 聽力 Part 1 (format resmi): yang diperdengarkan = pertanyaan + tiga jawaban berlabel (sama dengan buat_audio.py)
+  picTexts(t) { return [t.question, ...t.options.map((o, i) => `${'ABC'[i]}，${o}`)]; },
   answered(t, a) { return t.type === 'cloze' ? !!(a && a.checked) : a != null; },
   score(t, a) {
     if (t.type === 'cloze') return [t.answers.filter((x, k) => a && a.vals && a.vals[k] === x).length, t.answers.length];
@@ -57,19 +59,22 @@ const Soal = {
     const show = mode === 'review' || (mode === 'practice' && this.answered(t, a));
     const L = 'ABCDEF';
     let h = `<div class="q-instr">${esc(t.instr)}</div>`;
+    const lp = t.type === 'listen_pic';
+    if (lp) h += `<figure class="q-picture">${Pic.group(t.picture.icon, 'pic-xl', bw)}<figcaption>${esc(t.picture.label)}</figcaption></figure>`;
     if (this.isListen(t)) {
       h += `<button class="play-big" id="play-${key}" onclick="Soal.play('${key}')" aria-label="Putar audio">
               ${Pic.html('🔊', 'play-ic')}<span>Dengarkan</span><small>${this.plays[key] ? `diputar ${this.plays[key]}×` : 'ketuk untuk memutar'}</small></button>`;
       if (t.lines) h += Speech.speedUI();          // audio panjang (dialog) → pilihan kecepatan
       if (show) {
-        const tr = t.lines ? t.lines.map(l => `<div class="tr-line">${Pic.avatar(l.sp)}<span lang="zh-TW">${esc(l.zh)}</span></div>`).join('')
+        const tr = lp ? `<div class="tr-line"><span lang="zh-TW">問：${esc(t.question)}</span></div>`   // jawaban A–C sudah tampil di tombol
+                 : t.lines ? t.lines.map(l => `<div class="tr-line">${Pic.avatar(l.sp)}<span lang="zh-TW">${esc(l.zh)}</span></div>`).join('')
                            : `<div class="tr-line"><span lang="zh-TW">${esc(t.audio)}</span></div>`;
         h += `<details class="transcript" open><summary>Transkrip</summary>${tr}</details>`;
       }
-      if (t.question) h += `<div class="q-ask" lang="zh-TW">問：${esc(t.question)}</div>`;
+      if (t.question && !lp) h += `<div class="q-ask" lang="zh-TW">問：${esc(t.question)}</div>`;
     }
     // 閱讀 Part 2 (gambar → kalimat) & Part 3 (gambar + kalimat rumpang)
-    if (t.picture) h += `<figure class="q-picture">${Pic.group(t.picture.icon, 'pic-xl', bw)}<figcaption>${esc(t.picture.label)}</figcaption></figure>`;
+    if (t.picture && !lp) h += `<figure class="q-picture">${Pic.group(t.picture.icon, 'pic-xl', bw)}<figcaption>${esc(t.picture.label)}</figcaption></figure>`;
     if (t.type === 'read_gap') {
       const fill = a != null ? `<b class="gap-fill">${esc(t.options[a])}</b>` : '<span class="gap">＿＿＿</span>';
       h += `<div class="q-text" lang="zh-TW">${esc(t.text).replace(/（\s*）/, fill)}</div>`;
@@ -97,9 +102,11 @@ const Soal = {
       }
     } else {
       const pic = t.options.every(o => typeof o === 'object');
-      h += `<div class="opts ${pic ? 'opts-pic' : ''}">${t.options.map((o, oi) => {
+      // 聽力 Part 1: jawaban hanya diperdengarkan — sebelum dijawab yang tampil hanya huruf A/B/C (seperti lembar jawaban)
+      const abc = lp && !show;
+      h += `<div class="opts ${pic ? 'opts-pic' : ''}${abc ? ' opts-abc' : ''}">${t.options.map((o, oi) => {
         const cls = show ? (oi === t.answer ? 'right' : oi === a ? 'wrong' : 'dim') : (oi === a ? 'sel' : '');
-        const lab = typeof o === 'string' ? `<span lang="zh-TW">${esc(o)}</span>` : `${Pic.group(o.icon, 'pic-opt', bw)}<small>${esc(o.label)}</small>`;
+        const lab = abc ? '' : typeof o === 'string' ? `<span lang="zh-TW">${esc(o)}</span>` : `${Pic.group(o.icon, 'pic-opt', bw)}<small>${esc(o.label)}</small>`;
         return `<button class="opt ${cls}" ${show ? 'disabled' : `onclick="${ns}.pick('${key}', ${oi})"`}><b class="opt-l">${L[oi]}</b>${lab}</button>`;
       }).join('')}</div>`;
     }
