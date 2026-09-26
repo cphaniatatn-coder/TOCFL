@@ -217,9 +217,4 @@
     ±18 karena menampung kata yang dimajukan dialog.
   - Kata yang tidak lagi muncul di dialog tapi tetap diajarkan (masih ada di soal/kartu): 謝謝 (A01), 都 (A06),
     讀 (A12), 游 (B01, kini hanya dalam 游泳).
-- **2026-09-26 — Urutan tahap A0 (Vol.1) diubah (keputusan Carli):** 情境導入 → 詞彙 → 情境對話 → **語法小提示 → 練習**
-  → 反思與進度. Grammar kini SEBELUM latihan khusus A0. **Penyimpangan sadar dari prinsip-thesis.md** ("grammar tidak boleh
-  sebelum tugas") — WAJIB dijelaskan di bab metodologi thesis. Alasan: (1) prinsip-thesis.md sendiri membatasi TBLL penuh
-  untuk A1 & A2, sedangkan A0 vocabulary-first dan tahap 4-nya 練習, bukan 溝通任務; (2) worked-example effect (Sweller CLT):
-  pemula total lebih terbantu penjelasan eksplisit sebelum berlatih. Vol.2 & 3 tetap TBLL (tugas → grammar).
 
