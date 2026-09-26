@@ -7,7 +7,7 @@
      #/ujian            sesi ujian simulasi yang sedang berjalan */
 
 const VOLUMES = [
-  { num: 1, level: 'A0', tbcl: 'TBCL 第1級', vocab: 396, grammar: 15, approach: 'Vocabulary-first', color: 'v1' },
+  { num: 1, level: 'A0', tbcl: 'TBCL 第1級', vocab: 396, grammar: 15, approach: 'TBLL 6 tahap', color: 'v1' },
   { num: 2, level: 'A1', tbcl: 'TBCL 第2級', vocab: 402, grammar: 92, approach: 'TBLL 6 tahap', color: 'v2' },
   { num: 3, level: 'A2', tbcl: 'TBCL 第3級', vocab: 456, grammar: 134, approach: 'TBLL 6 tahap', color: 'v3' },
 ];

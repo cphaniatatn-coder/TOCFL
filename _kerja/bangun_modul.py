@@ -14,7 +14,7 @@ K = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(K)
 CAT = {1:'個人資料',2:'日常起居',3:'職業',4:'休閒、娛樂',5:'交通、旅遊',6:'社交、人際',7:'身體、醫療',8:'教育、學習',9:'購物、商店',10:'餐飲、烹飪',11:'公共服務',12:'安全',13:'自然環境',14:'社會',15:'文化',16:'情緒、態度',17:'科技'}
 HEAD = {
-    1: ('Volume 1 · A0', 'TBCL 第1級 — 25 adegan, vocabulary-first', 'A0'),
+    1: ('Volume 1 · A0', 'TBCL 第1級 — 25 adegan, TBLL 6 tahap', 'TBLL'),
     2: ('Volume 2 · A1', 'TBCL 第2級 — 46 adegan, TBLL 6 tahap', 'TBLL'),
     3: ('Volume 3 · A2', 'TBCL 第3級 — 67 adegan, TBLL 6 tahap', 'TBLL'),
 }

@@ -54,3 +54,9 @@
     ±18 karena menampung kata yang dimajukan dialog.
   - Kata yang tidak lagi muncul di dialog tapi tetap diajarkan (masih ada di soal/kartu): 謝謝 (A01), 都 (A06),
     讀 (A12), 游 (B01, kini hanya dalam 游泳).
+- **2026-09-26 — Volume 1 (A0) memakai alur TBLL 6 tahap yang SAMA dengan Vol.2 & 3 (keputusan Carli):**
+  情境導入 → 情境對話 → 詞彙 → 溝通任務 → 語法聚焦 → 反思與進度. Alur A0 lama (vocabulary-first: 詞彙 sebelum 對話,
+  tahap 練習/語法小提示) dihapus. **Penyimpangan sadar dari prinsip-thesis.md** ("A0: vocabulary-first … TBLL penuh
+  hanya di A1 & A2", disetujui pembimbing) — WAJIB dijelaskan di bab metodologi thesis. Isi modul A0 tidak berubah
+  (dialog A0 tetap sederhana; kata baru disorot & bisa disentuh untuk melihat arti, jadi dialog tetap terbaca
+  sebelum tahap kosakata).

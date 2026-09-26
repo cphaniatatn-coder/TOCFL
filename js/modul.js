@@ -5,14 +5,11 @@
    - Dual-coding  : avatar pembicara + suara; gambar SVG pada soal
    - Modality/Redundancy: soal 聽力 = audio + gambar, transkrip baru muncul SETELAH menjawab
    - Coherence    : tidak ada hiasan yang tidak menunjang makna
-   Urutan tahap: A0 (vocabulary-first) vs TBLL (Willis) — grammar selalu SESUDAH tugas. */
+   Urutan tahap: TBLL (Willis) untuk SEMUA volume, termasuk A0 (keputusan Carli 2026-09-26) —
+   dialog sebelum kosakata, grammar selalu SESUDAH tugas. */
 
-const STAGES = {
-  A0: [['intro', '情境導入', 'Tujuan', '🎯'], ['vocab', '詞彙', 'Kosakata', '🗂️'], ['dialog', '情境對話', 'Dialog', '💬'],
-       ['tasks', '練習', 'Latihan', '📝'], ['grammar', '語法小提示', 'Grammar', '🧩'], ['reflect', '反思與進度', 'Refleksi', '🪞']],
-  TBLL: [['intro', '情境導入', 'Tujuan', '🎯'], ['dialog', '情境對話', 'Dialog', '💬'], ['vocab', '詞彙', 'Kosakata', '🗂️'],
-         ['tasks', '溝通任務', 'Tugas', '📝'], ['grammar', '語法聚焦', 'Grammar', '🧩'], ['reflect', '反思與進度', 'Refleksi', '🪞']],
-};
+const STAGES = [['intro', '情境導入', 'Tujuan', '🎯'], ['dialog', '情境對話', 'Dialog', '💬'], ['vocab', '詞彙', 'Kosakata', '🗂️'],
+  ['tasks', '溝通任務', 'Tugas', '📝'], ['grammar', '語法聚焦', 'Grammar', '🧩'], ['reflect', '反思與進度', 'Refleksi', '🪞']];
 
 /* ===== Renderer soal bersama (dipakai Modul & Ujian) ===== */
 const Soal = {
@@ -110,7 +107,7 @@ const Modul = {
   showPy: false, showZy: true, hl: true,
   revealed: {}, vi: 0, vflip: false, ti: 0, answers: {}, vlist: false,
 
-  stages() { return STAGES[App.volData[this.vol].approach === 'A0' ? 'A0' : 'TBLL']; },
+  stages() { return STAGES; },
 
   open(code, stage) {
     const f = App.findModule(code);
