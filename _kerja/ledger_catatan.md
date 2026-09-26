@@ -75,3 +75,6 @@
   `py _kerja/gambar_soal.py pasang` mengisi `picture.img`. Tiap gambar diperiksa terhadap kunci & pengecoh
   (`_kerja/gambar/periksa.html`). Keterangan Indonesia di bawah gambar baru tampil setelah dijawab. Soal warna (A19)
   tetap berwarna. Keputusan Carli: gaya emoji hitam-putih ditolak; jalur AI (OpenAI/Gemini) tidak dipakai.
+- **2026-09-26 — Koreksi bendera A02-3 (temuan Carli):** bendera Taiwan semula digambar dengan bintang (SALAH, sensitif).
+  Diganti 中華民國國旗 yang benar: 白日 = matahari putih 12 sinar + lingkar + cakram di kanton (versi hitam-putih).
+  Pemeriksaan ulang 121 gambar: tidak ada bendera/peta/lambang negara atau agama lain.

@@ -588,11 +588,22 @@ def kartu_nama(x, y, nama, w=170, h=96):
             + garis((x - w / 2 + 12, y + 80), (x + w / 2 - 40, y + 80), k='t'))
 
 
-def bendera_taiwan(x, y, w=90, h=60):
+def bendera_taiwan(x, y, w=120, h=80):
+    """中華民國國旗 (hitam-putih): latar merah → abu, kanton biru → hitam, 白日 = matahari putih 12 sinar,
+    dikelilingi lingkar biru (hitam) dan cakram putih. BUKAN bintang."""
     o = kotak(x, y, w, h, 'a') + kotak(x, y, w / 2, h / 2, 'h')
     cx, cy = x + w / 4, y + h / 4
-    o += bintang(cx, cy, 9).replace('class="h"', 'class="n"')
-    return o + bulat(cx, cy, 4.5, 'n') + garis((x, y), (x, y + h + 70), lebar=4)
+    ch = h / 2                               # tinggi kanton
+    ujung, dasar = ch * .40, ch * .235        # jari-jari ujung sinar & pangkal sinar
+    for i in range(12):
+        a = math.radians(i * 30 - 90)
+        o += bentuk((cx + math.cos(a) * ujung, cy + math.sin(a) * ujung),
+                    (cx + math.cos(a - math.radians(15)) * dasar, cy + math.sin(a - math.radians(15)) * dasar),
+                    (cx + math.cos(a + math.radians(15)) * dasar, cy + math.sin(a + math.radians(15)) * dasar), k='n')
+    o += f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(dasar * 1.02)}" fill="#fff"/>'
+    o += f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(dasar * .92)}" fill="#111"/>'
+    o += f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(dasar * .78)}" fill="#fff"/>'
+    return o + garis((x, y), (x, LANTAI), lebar=4)   # tiang sampai lantai
 
 
 def pil(x, y, s=1.0):

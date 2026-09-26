@@ -89,7 +89,7 @@ A['A01-5'] = (lantai() + orang(95, tinggi=160, jenis='wanita', baju='a', tangan=
 # A02 — asal & bahasa
 A['A02-1'] = lantai() + orang(90, tinggi=160, jenis='pria', wajah='kaget') + gelembung(205, 70, 140, 70, teks(205, 82, '你好！', 34), (-1, 1))
 A['A02-2'] = lantai() + orang(90, tinggi=155, jenis='wanita', wajah='kaget', baju='a') + gelembung(205, 70, 140, 70, teks(205, 82, 'Hello!', 30, angka=True), (-1, 1))
-A['A02-3'] = lantai() + orang(110, tinggi=160, jenis='pria', tangan={'ka': [(16, -8), (22, -40)]}) + bendera_taiwan(148, 30)
+A['A02-3'] = lantai() + orang(110, tinggi=160, jenis='pria', tangan={'ka': [(16, -8), (22, -40)]}) + bendera_taiwan(146, 24, 126, 84)
 
 # A03 — keluarga
 A['A03-1'] = (kotak(40, 186, 220, 10, 'h') + garis((40, 196), (40, 210)) + garis((260, 196), (260, 210))
