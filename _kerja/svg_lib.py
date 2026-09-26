@@ -21,6 +21,9 @@ def bungkus(isi, w=W, h=H):
             '.t{fill:none;stroke:#111;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}'
             '.w{fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round}'
             '.m{fill:#d8342c;stroke:#111;stroke-width:3;stroke-linejoin:round}'
+            '.hijau{fill:#3a9d4a;stroke:#111;stroke-width:3;stroke-linejoin:round}'
+            '.biru{fill:#2f6fd6;stroke:#111;stroke-width:3;stroke-linejoin:round}'
+            '.kuning{fill:#f2c230;stroke:#111;stroke-width:3;stroke-linejoin:round}'
             '.n{fill:#fff;stroke:none}'
             f'text{{font-family:{FONT};fill:#111}}.d{{font-family:{FONT_ANGKA};font-weight:700}}</style>'
             f'<rect width="{w}" height="{h}" fill="#fff"/>{isi}</svg>')
