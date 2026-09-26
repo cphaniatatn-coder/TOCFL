@@ -9,6 +9,7 @@ Pemakaian:  py _kerja/bangun_modul.py
 """
 import json, os, re, subprocess, sys
 import openpyxl
+from pinyin import pisah  # butuh: pip install pypinyin
 
 K = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(K)
@@ -128,7 +129,7 @@ def load_soal():
 def main():
     isi = load_isi()
     soal = load_soal()
-    masalah = []
+    masalah, salah_py = [], []
     total = {}
     for lv in (1, 2, 3):
         mods = []
@@ -150,6 +151,12 @@ def main():
                 masalah += cek_soal(code, t)
             m['vocab'] = {'core': [entry(lv, t, ov) for t in f[5].split()],
                           'supplement': [entry(lv, t, ov) for t in (f[6].split() if len(f) > 6 else [])]}
+            # pinyin dipisah per suku kata (wǎnān → wǎn ān) & dicek jumlah/bacaannya terhadap hanzi
+            for obj, zh, key in ([(v, v['w'], 'py') for L in m['vocab'].values() for v in L] + [(m, m['title'], 'title_py')] +
+                                 [(l, l['zh'], 'py') for d in m['dialogs'] for l in d['lines']]):
+                obj[key], salah = pisah(obj[key], zh)
+                if salah:
+                    salah_py.append(f'{code}: {zh} | {obj[key]} — {salah}')
             mods.append(m)
         t, s, a = HEAD[lv]
         json.dump({'volume': lv, 'title': t, 'subtitle': s, 'approach': a, 'modules': mods},
@@ -159,7 +166,9 @@ def main():
     masalah += [f'{c}: soal tambahan untuk modul yang tidak ada' for c in soal]
     for s in masalah:
         print('   ✗ format soal —', s)
-    if masalah:
+    for s in salah_py:
+        print('   ✗ pinyin —', s)
+    if masalah or salah_py:
         sys.exit(1)
     r = subprocess.run([sys.executable, f'{K}/cek_dialog.py'] + [f'{ROOT}/data/modul_vol{lv}.json' for lv in (1, 2, 3)])
     sys.exit(r.returncode)

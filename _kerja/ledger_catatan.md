@@ -60,3 +60,7 @@
   hanya di A1 & A2", disetujui pembimbing) — WAJIB dijelaskan di bab metodologi thesis. Isi modul A0 tidak berubah
   (dialog A0 tetap sederhana; kata baru disorot & bisa disentuh untuk melihat arti, jadi dialog tetap terbaca
   sebelum tahap kosakata).
+- **2026-09-26 — Pinyin dipisah per suku kata** (wǎnān → wǎn ān) di kosakata, dialog & judul, lewat `_kerja/pinyin.py`
+  (dicocokkan ke bacaan tiap hanzi; `bangun_modul.py` menolak pinyin yang tidak cocok dengan hanzinya).
+  Salah ketik pinyin di data TBCL yang ketahuan & diperbaiki di `tbcl.json`: 小朋友 xiǎ→xiǎo péng yǒu,
+  橘子 jú→jú zi, 老太太 & 哇 (huruf alfa ɑ → a). Dialog C44: 包包 bāo → bāo bāo.
