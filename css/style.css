@@ -5,14 +5,14 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #F5F3EE; --surface: #FFFFFF; --surface2: #F0EDE6; --line: #E3DED3;
-  --text: #22262B; --sub: #626A73; --muted: #9AA1A9;
-  --pri: #2F6FDE; --pri-d: #1F55B5; --pri-pale: #E4EDFD;
+  --bg: #F7F5F0; --surface: #FFFFFF; --surface2: #F2EFE9; --line: #E8E3DA;
+  --text: #3A4047; --sub: #666E78; --muted: #A2A9B1;
+  --pri: #3B73DC; --pri-d: #2F5CB3; --pri-pale: #EAF1FD;
   --ok: #1E9E62; --ok-bg: #DDF5E8; --no: #D6455B; --no-bg: #FDE4E8; --warn: #E0902B; --warn-bg: #FFF1DC;
   --hl: #FFE58A; --hl-sup: #D8E8FF;
   --v1: #F08A4B; --v2: #3BA776; --v3: #6C63D9;
   --r: 16px; --r-sm: 10px;
-  --shadow: 0 1px 2px rgba(30, 30, 20, .06), 0 4px 14px rgba(30, 30, 20, .06);
+  --shadow: 0 1px 2px rgba(30, 30, 20, .04), 0 4px 16px rgba(30, 30, 20, .05);
   /* 標楷體: DFKai-SB (Windows), BiauKai (macOS); perangkat lain memakai LXGW WenKai TC (Google Fonts) */
   /* Latin & angka tetap font biasa; hanzi/zhuyin jatuh ke font Kai. system-ui/-apple-system sengaja di
      belakang: font sistem Apple membawa PingFang untuk hanzi sehingga 標楷體 tidak akan terpakai. */
@@ -32,7 +32,7 @@
   }
 }
 
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; font-synthesis-weight: none; } /* hanzi Kai tidak ditebalkan buatan */
 body {
   font-family: var(--zh), system-ui, -apple-system, sans-serif;
   background: var(--bg); color: var(--text); line-height: 1.55; min-height: 100vh;
@@ -110,10 +110,10 @@ textarea:focus, button:focus-visible { outline: 3px solid var(--pri-pale); outli
 .bar i { display: block; height: 100%; background: var(--c, var(--pri)); border-radius: inherit; transition: width .4s; }
 
 /* ===== beranda ===== */
-.hero { display: flex; align-items: center; gap: 16px; padding: 18px; border-radius: 20px; background: linear-gradient(135deg, var(--pri), #5B8DEF); color: #fff; }
+.hero { display: flex; align-items: center; gap: 16px; padding: 18px; border-radius: 20px; background: linear-gradient(135deg, #5A8BE8, #8CAEF2); color: #fff; }
 .hero h1 { font-family: var(--zh); font-size: clamp(20px, 6vw, 25px); text-wrap: balance; }
 .hero p { font-size: 14px; opacity: .92; margin-top: 4px; }
-.hero .ring { --c: #fff; background: radial-gradient(closest-side, #3f78e3 78%, transparent 80% 100%), conic-gradient(#fff calc(var(--p) * 1%), rgba(255,255,255,.25) 0); color: #fff; }
+.hero .ring { --c: #fff; background: radial-gradient(closest-side, #739DEC 78%, transparent 80% 100%), conic-gradient(#fff calc(var(--p) * 1%), rgba(255,255,255,.25) 0); color: #fff; }
 .hero .ring small { color: rgba(255,255,255,.8); }
 .continue { margin-top: 14px; }
 .continue-txt { display: flex; flex-direction: column; min-width: 0; }
@@ -198,7 +198,7 @@ details.panel summary { cursor: pointer; list-style: none; }
 .toolbar { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
 .toolbar .sub-title { margin: 0; }
 .toggle { min-height: 34px; padding: 0 12px; border-radius: 99px; font-size: 13.5px; font-weight: 600; background: var(--surface); box-shadow: inset 0 0 0 1.5px var(--line); color: var(--sub); }
-.toggle.on { background: var(--text); color: var(--bg); box-shadow: none; }
+.toggle.on { background: var(--pri-pale); color: var(--pri-d); box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--pri) 35%, transparent); }
 
 /* 詞彙: kartu */
 .vcard { background: var(--surface); border-radius: 22px; padding: 16px 16px 18px; box-shadow: var(--shadow); text-align: center; border-top: 5px solid var(--hl); }
@@ -249,7 +249,7 @@ details.panel summary { cursor: pointer; list-style: none; }
 .kw { font: inherit; background: var(--hl); border-radius: 5px; padding: 0 2px; box-shadow: inset 0 -2px 0 rgba(0,0,0,.08); }
 .kw.sup { background: var(--hl-sup); }
 .bubble { position: relative; }
-.kw-pop { position: absolute; z-index: 4; width: max-content; max-width: 240px; padding: 8px 10px; box-shadow: var(--shadow); font-size: 14px; background: var(--text); color: var(--bg); border-radius: 10px; animation: pop .15s ease; line-height: 1.4; }
+.kw-pop { position: absolute; z-index: 4; width: max-content; max-width: 240px; padding: 8px 10px; box-shadow: 0 6px 24px rgba(30, 30, 20, .14), inset 0 0 0 1px var(--line); font-size: 14px; background: var(--surface); color: var(--text); border-radius: 10px; animation: pop .15s ease; line-height: 1.4; }
 .kw-pop b { font-size: 18px; } .kw-pop span { font-size: 15.5px; } .kw-pop p { margin-top: 2px; }
 .chat-more { display: flex; gap: 8px; justify-content: center; margin-top: 12px; }
 
@@ -371,7 +371,7 @@ details.panel summary { cursor: pointer; list-style: none; }
 .pb { display: grid; grid-template-columns: 88px 1fr 44px; align-items: center; gap: 10px; font-size: 13.5px; }
 .pb b { text-align: right; }
 
-#toast { position: fixed; left: 50%; bottom: calc(var(--dock-h) + 16px); z-index: 50; transform: translate(-50%, 20px); opacity: 0; pointer-events: none; background: var(--text); color: var(--bg); padding: 10px 16px; border-radius: 12px; font-size: 14px; max-width: 90vw; transition: .25s; }
+#toast { position: fixed; left: 50%; bottom: calc(var(--dock-h) + 16px); z-index: 50; transform: translate(-50%, 20px); opacity: 0; pointer-events: none; background: var(--surface); color: var(--text); box-shadow: 0 6px 24px rgba(30, 30, 20, .16), inset 0 0 0 1px var(--line); padding: 10px 16px; border-radius: 12px; font-size: 14px; max-width: 90vw; transition: .25s; }
 #toast.show { opacity: 1; transform: translate(-50%, 0); }
 
 @keyframes rise { from { opacity: 0; transform: translateY(8px); } }
