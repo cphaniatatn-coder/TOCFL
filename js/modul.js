@@ -109,7 +109,7 @@ const Soal = {
 
 const Modul = {
   vol: null, m: null, stage: 0,
-  showPy: false, showZy: true, hl: true,
+  showPy: false, showZy: true, showVpy: true, vpeek: -1, hl: true,
   revealed: {}, vi: 0, vflip: false, ti: 0, answers: {}, vlist: false,
 
   stages() { return STAGES; },
@@ -207,6 +207,7 @@ const Modul = {
     const all = this.allVocab(), known = App.getP(this.m.code).known || {};
     const toolbar = `<div class="toolbar">
         <button class="toggle ${this.showZy ? 'on' : ''}" onclick="Modul.keepScroll(()=>Modul.showZy=!Modul.showZy)">注音</button>
+        <button class="toggle ${this.showVpy ? 'on' : ''}" onclick="Modul.keepScroll(()=>{Modul.showVpy=!Modul.showVpy;Modul.vpeek=-1})">拼音</button>
         <button class="toggle ${this.vlist ? 'on' : ''}" onclick="Modul.keepScroll(()=>Modul.vlist=!Modul.vlist)">Daftar</button>
         <span class="spacer"></span>
         <button class="btn small" onclick="Latihan.start({vol:${this.vol}, codes:['${this.m.code}'], mode:'dengar', from:location.hash})">${Pic.html('🎧', 'ic-sm')} Latihan kata</button>
@@ -214,7 +215,7 @@ const Modul = {
     if (this.vlist) {
       return toolbar + `<div class="vgrid">${all.map((v, i) => `
         <button class="vcell ${v.layer}" onclick="Modul.keepScroll(()=>{Modul.vlist=false;Modul.vi=${i};Modul.vflip=true})">
-          <b lang="zh-TW">${esc(v.w)}</b><small>${esc(v.py)}</small>${known[v.w] ? '<i class="known">✓</i>' : ''}</button>`).join('')}</div>`;
+          <b lang="zh-TW">${esc(v.w)}</b>${this.showVpy ? `<small>${esc(v.py)}</small>` : ''}${known[v.w] ? '<i class="known">✓</i>' : ''}</button>`).join('')}</div>`;
     }
     const i = Math.min(this.vi, all.length - 1), v = all[i];
     return toolbar + `
@@ -222,7 +223,8 @@ const Modul = {
         <div class="vcard-top"><span class="layer-chip">${v.layer === 'core' ? '核心 · dipakai aktif' : '補充 · cukup dikenali'}</span>
           <span class="vcount">${i + 1}/${all.length}</span></div>
         <button class="vword" lang="zh-TW" onclick="Speech.word('${esc(v.w)}')" aria-label="Dengarkan">${this.hanzi(v.w, v.zy)}</button>
-        <div class="vpy">${esc(v.py)} <button class="say-btn" onclick="Speech.word('${esc(v.w)}')" aria-label="Dengarkan">${Pic.html('🔊', 'ic-sm')}</button></div>
+        <div class="vpy">${this.showVpy || this.vpeek === i ? esc(v.py)
+          : `<button class="py-peek" onclick="Modul.keepScroll(()=>Modul.vpeek=${i})" aria-label="Tampilkan pinyin">拼音 ?</button>`} <button class="say-btn" onclick="Speech.word('${esc(v.w)}')" aria-label="Dengarkan">${Pic.html('🔊', 'ic-sm')}</button></div>
         ${v.variants ? `<div class="vvar">Satu entri dengan: <span lang="zh-TW">${v.variants.split('/').filter(x => x !== v.w).map(esc).join(' · ')}</span></div>` : ''}
         ${v.extra ? `<div class="vvar extra">di luar daftar resmi TBCL · ${esc(v.extra === true ? 'dari kosakata.xlsx' : v.extra)}</div>` : ''}
         ${v.maju ? `<div class="vvar extra">kata TBCL Level ${v.maju} · dimajukan ke modul ini</div>` : ''}
