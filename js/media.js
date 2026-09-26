@@ -45,6 +45,19 @@ if (window.speechSynthesis) {
 
 const Speech = {
   cache: new Map(), cur: null, token: 0, MAX: 80,
+  // Kecepatan putar untuk audio panjang (dialog); disimpan per pengguna. Nada tetap (preservesPitch).
+  RATES: [0.6, 0.8, 1, 1.2],
+  rate: (() => { try { return +localStorage.getItem('tocfl_speed') || 1; } catch { return 1; } })(),
+  setRate(r) {
+    this.rate = r;
+    try { localStorage.setItem('tocfl_speed', r); } catch { /* mode privat */ }
+    if (this.cur) this.cur.playbackRate = r;
+    document.querySelectorAll('.speed button').forEach(b => b.classList.toggle('on', +b.dataset.r === r));
+  },
+  speedUI() {
+    return `<div class="speed" role="group" aria-label="Kecepatan audio"><span>Kecepatan</span>${this.RATES.map(r =>
+      `<button data-r="${r}" class="${r === this.rate ? 'on' : ''}" onclick="event.stopPropagation();Speech.setRate(${r})">${String(r).replace('.', ',')}×</button>`).join('')}</div>`;
+  },
   profil(sp) { return SPEAKERS[sp] || 'F1'; },
   url(text, prof) { return `audio/tts/${cyrb53(`${prof}|${String(text).trim()}`).toString(36)}.mp3`; },
   // Ambil (atau buat) elemen audio; preload=auto → browser mulai mengunduh sekarang
@@ -75,6 +88,7 @@ const Speech = {
       a.onended = selesai;
       a.onerror = () => { a.onended = a.onerror = null; this.cache.delete(a._u); this.tts(text, prof).then(done); };
       try { a.currentTime = 0; } catch { /* belum ada metadata */ }
+      a.playbackRate = this.rate; a.preservesPitch = true;
       const p = a.play();
       if (p) p.catch(e => { if (e.name !== 'AbortError') { a.onended = a.onerror = null; this.tts(text, prof).then(done); } });
     });
@@ -84,7 +98,7 @@ const Speech = {
       if (!window.speechSynthesis) { App.toast('Audio belum tersedia untuk kalimat ini.'); return done(); }
       const male = /^M|^K/.test(prof);
       const u = new SpeechSynthesisUtterance(text);
-      u.lang = 'zh-TW'; u.rate = 0.9;
+      u.lang = 'zh-TW'; u.rate = 0.9 * this.rate;
       const v = male ? (_voiceM || _voiceF) : _voiceF;
       if (v) u.voice = v;
       u.pitch = male && !_voiceM ? 0.7 : prof === 'K' ? 1.3 : 1;

@@ -54,6 +54,7 @@ const Soal = {
     if (this.isListen(t)) {
       h += `<button class="play-big" id="play-${key}" onclick="Soal.play('${key}')" aria-label="Putar audio">
               ${Pic.html('🔊', 'play-ic')}<span>Dengarkan</span><small>${this.plays[key] ? `diputar ${this.plays[key]}×` : 'ketuk untuk memutar'}</small></button>`;
+      if (t.lines) h += Speech.speedUI();          // audio panjang (dialog) → pilihan kecepatan
       if (show) {
         const tr = t.lines ? t.lines.map(l => `<div class="tr-line">${Pic.avatar(l.sp)}<span lang="zh-TW">${esc(l.zh)}</span></div>`).join('')
                            : `<div class="tr-line"><span lang="zh-TW">${esc(t.audio)}</span></div>`;
@@ -270,6 +271,7 @@ const Modul = {
         return `<div class="chat">
           <div class="chat-head"><span lang="zh-TW">${esc(d.place)}</span><small>${esc(d.title_id)}</small>
             <button class="btn small" onclick="Modul.playAll(${di})">${Pic.html('▶️', 'ic-sm')} Putar</button></div>
+          ${Speech.speedUI()}
           ${lines.slice(0, n).map((l, li) => {
             const right = speakers.indexOf(l.sp) % 2 === 1;
             return `<div class="msg ${right ? 'me' : ''} ${li === n - 1 ? 'new' : ''}">

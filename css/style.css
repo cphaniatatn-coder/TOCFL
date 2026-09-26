@@ -393,3 +393,8 @@ details.panel summary { cursor: pointer; list-style: none; }
 .vvar { font-size: 13px; color: var(--sub); margin-top: 4px; }
 .vvar span { font-size: 16px; color: var(--text); }
 .vvar.extra { display: inline-block; margin-top: 8px; padding: 2px 8px; border-radius: 99px; background: var(--warn-bg); color: var(--warn); font-weight: 600; }
+.speed { display: flex; align-items: center; gap: 4px; margin: 0 0 10px; flex-wrap: wrap; }
+.speed span { font-size: 12.5px; color: var(--sub); font-weight: 600; margin-right: 4px; }
+.speed button { min-width: 44px; min-height: 32px; padding: 0 8px; border-radius: 99px; font-size: 13px; font-weight: 600; color: var(--sub); background: var(--surface); box-shadow: inset 0 0 0 1.5px var(--line); text-align: center; }
+.speed button.on { background: var(--pri); color: #fff; box-shadow: none; }
+.chat .speed { padding: 0 4px; }
