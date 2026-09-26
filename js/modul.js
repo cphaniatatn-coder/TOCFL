@@ -5,11 +5,13 @@
    - Dual-coding  : avatar pembicara + suara; gambar SVG pada soal
    - Modality/Redundancy: soal 聽力 = audio + gambar, transkrip baru muncul SETELAH menjawab
    - Coherence    : tidak ada hiasan yang tidak menunjang makna
-   Urutan tahap: A0 (vocabulary-first) vs TBLL (Willis) — grammar selalu SESUDAH tugas. */
+   Urutan tahap: TBLL (Willis, Vol.2–3) — grammar SESUDAH tugas.
+   A0 (vocabulary-first, Vol.1) — grammar SEBELUM latihan: pemula total lebih terbantu penjelasan
+   eksplisit lebih dulu (worked-example effect, Sweller CLT); keputusan Carli 2026-09-26. */
 
 const STAGES = {
   A0: [['intro', '情境導入', 'Tujuan', '🎯'], ['vocab', '詞彙', 'Kosakata', '🗂️'], ['dialog', '情境對話', 'Dialog', '💬'],
-       ['tasks', '練習', 'Latihan', '📝'], ['grammar', '語法小提示', 'Grammar', '🧩'], ['reflect', '反思與進度', 'Refleksi', '🪞']],
+       ['grammar', '語法小提示', 'Grammar', '🧩'], ['tasks', '練習', 'Latihan', '📝'], ['reflect', '反思與進度', 'Refleksi', '🪞']],
   TBLL: [['intro', '情境導入', 'Tujuan', '🎯'], ['dialog', '情境對話', 'Dialog', '💬'], ['vocab', '詞彙', 'Kosakata', '🗂️'],
          ['tasks', '溝通任務', 'Tugas', '📝'], ['grammar', '語法聚焦', 'Grammar', '🧩'], ['reflect', '反思與進度', 'Refleksi', '🪞']],
 };
@@ -343,7 +345,9 @@ const Modul = {
   taskSummary() {
     if (!this.allDone()) { this.ti = this.m.tasks.findIndex((t, i) => !Soal.answered(t, this.answers['t' + i])); return this.r_tasks(); }
     const s = this.score(), p = App.getP(this.m.code);
-    const msg = s >= 80 ? 'Kamu sudah menguasai tugas di adegan ini. Lanjutkan ke grammar untuk merapikan polanya.'
+    const a0 = this.stages() === STAGES.A0;
+    const msg = s >= 80 ? (a0 ? 'Kamu sudah menguasai latihan di adegan ini. Lanjutkan ke refleksi & Tes Bab.'
+                              : 'Kamu sudah menguasai tugas di adegan ini. Lanjutkan ke grammar untuk merapikan polanya.')
       : s >= 60 ? 'Hampir! Baca lagi penjelasan di soal yang belum tepat — pola kesalahannya biasanya sama.'
       : 'Belum — dan itu wajar di percobaan awal. Ulangi dialog, lalu coba lagi. Skor terbaikmu tetap tersimpan.';
     return `<div class="result ${s >= 80 ? 'hi' : s >= 60 ? 'mid' : 'lo'}">
@@ -365,7 +369,9 @@ const Modul = {
         <p>Adegan ini sengaja hanya menambah kosakata. Pola yang kamu pakai ulang:</p>
         <ul class="examples">${(this.m.recycle || []).map((r, i) => `<li><span lang="zh-TW">${esc(r.zh)}</span>
           <button class="say-btn" onclick="Speech.say(Modul.m.recycle[${i}].zh)">${Pic.html('🔊', 'ic-xs')}</button><small>${esc(r.id)}</small></li>`).join('')}</ul></div>`;
-    return `<p class="hint">Pola ini sudah kamu pakai di dialog & tugas. Sekarang kita bongkar susunan baloknya.</p>
+    return `<p class="hint">${this.stages() === STAGES.A0
+        ? 'Pola ini sudah kamu dengar di dialog. Kita bongkar susunan baloknya dulu, lalu kamu pakai di latihan.'
+        : 'Pola ini sudah kamu pakai di dialog & tugas. Sekarang kita bongkar susunan baloknya.'}</p>
       ${this.m.grammar.map((g, gi) => `
       <article class="gcard">
         <div class="gcard-head"><span class="gid">TBCL #${g.tbcl_id}</span><h3 lang="zh-TW">${esc(g.point)}</h3></div>
