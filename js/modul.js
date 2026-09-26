@@ -35,6 +35,9 @@ const Soal = {
     return [a === t.answer ? 1 : 0, 1];
   },
   isListen(t) { return t.type.startsWith('listen'); },
+  // Gambar soal hitam-putih seperti TOCFL — kecuali soal tentang warna (tanpa warna soalnya tak terjawab)
+  WARNA: /warna|merah|biru|hijau|kuning|putih|hitam|abu-abu|cokelat|ungu|oranye|jingga|pink|紅|藍|綠|黃|顏色|白色|黑色|咖啡色|灰色|[🟥🟧🟨🟩🟦🟪🟫⬛⬜]/u,
+  bw(t) { return !this.WARNA.test(JSON.stringify([t.picture, t.options, t.text, t.audio, t.question, t.lines])); },
   // Cloze: ketuk titik kosong → pilih kata; pilihan yang sama berpindah, titik aktif maju otomatis
   clozeSel(a, k) { a = a || { vals: [] }; a.sel = k; return a; },
   clozeFill(t, a, oi) {
@@ -50,6 +53,7 @@ const Soal = {
   // mode: 'practice' (umpan balik langsung) | 'exam' (tanpa umpan balik sampai selesai) | 'review'
   body(t, key, a, ns, mode) {
     this.reg[key] = t;
+    const bw = this.bw(t);
     const show = mode === 'review' || (mode === 'practice' && this.answered(t, a));
     const L = 'ABCDEF';
     let h = `<div class="q-instr">${esc(t.instr)}</div>`;
@@ -65,7 +69,7 @@ const Soal = {
       if (t.question) h += `<div class="q-ask" lang="zh-TW">問：${esc(t.question)}</div>`;
     }
     // 閱讀 Part 2 (gambar → kalimat) & Part 3 (gambar + kalimat rumpang)
-    if (t.picture) h += `<figure class="q-picture">${Pic.group(t.picture.icon, 'pic-xl')}<figcaption>${esc(t.picture.label)}</figcaption></figure>`;
+    if (t.picture) h += `<figure class="q-picture">${Pic.group(t.picture.icon, 'pic-xl', bw)}<figcaption>${esc(t.picture.label)}</figcaption></figure>`;
     if (t.type === 'read_gap') {
       const fill = a != null ? `<b class="gap-fill">${esc(t.options[a])}</b>` : '<span class="gap">＿＿＿</span>';
       h += `<div class="q-text" lang="zh-TW">${esc(t.text).replace(/（\s*）/, fill)}</div>`;
@@ -95,7 +99,7 @@ const Soal = {
       const pic = t.options.every(o => typeof o === 'object');
       h += `<div class="opts ${pic ? 'opts-pic' : ''}">${t.options.map((o, oi) => {
         const cls = show ? (oi === t.answer ? 'right' : oi === a ? 'wrong' : 'dim') : (oi === a ? 'sel' : '');
-        const lab = typeof o === 'string' ? `<span lang="zh-TW">${esc(o)}</span>` : `${Pic.group(o.icon, 'pic-opt')}<small>${esc(o.label)}</small>`;
+        const lab = typeof o === 'string' ? `<span lang="zh-TW">${esc(o)}</span>` : `${Pic.group(o.icon, 'pic-opt', bw)}<small>${esc(o.label)}</small>`;
         return `<button class="opt ${cls}" ${show ? 'disabled' : `onclick="${ns}.pick('${key}', ${oi})"`}><b class="opt-l">${L[oi]}</b>${lab}</button>`;
       }).join('')}</div>`;
     }

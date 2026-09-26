@@ -144,18 +144,23 @@ const Pic = {
     if (!c.includes('‍')) c = c.replace(/️/g, '');
     return [...c].map(x => x.codePointAt(0).toString(16)).join('-');
   },
-  // Ubah string emoji (bisa gabungan, mis. "📚⬆") menjadi deretan <img> SVG
-  html(s, cls = '') {
-    return this.clusters(s || '').map(c => this.isEmoji(c)
-      ? `<img class="tw ${cls}${this.isSwatch(c) ? ' tw-sw' : ''}" src="img/twemoji/${this.code(c)}.svg" alt="" draggable="false" onerror="this.replaceWith(document.createTextNode('${c}'))">`
-      : `<span class="tw-txt">${esc(c)}</span>`).join('');
+  // Ubah string emoji (bisa gabungan, mis. "📚⬆") menjadi deretan <img> SVG.
+  // bw = versi hitam-putih (OpenMoji, img/bw/) untuk gambar soal ala TOCFL; kotak warna tetap berwarna.
+  html(s, cls = '', bw = false) {
+    return this.clusters(s || '').map(c => {
+      if (!this.isEmoji(c)) return `<span class="tw-txt">${esc(c)}</span>`;
+      const k = this.code(c), hp = bw && !this.isSwatch(c);
+      const fallback = hp ? `this.onerror=()=>this.replaceWith(document.createTextNode('${c}'));this.classList.remove('bw');this.src='img/twemoji/${k}.svg'`
+                          : `this.replaceWith(document.createTextNode('${c}'))`;
+      return `<img class="tw ${cls}${this.isSwatch(c) ? ' tw-sw' : ''}${hp ? ' bw' : ''}" src="img/${hp ? 'bw' : 'twemoji'}/${k}.svg" alt="" draggable="false" onerror="${fallback}">`;
+    }).join('');
   },
   // Kotak warna (🟥⬜⬛…) dipakai sebagai penanda warna benda di sebelahnya → digambar kecil
   isSwatch(c) { const cp = c.codePointAt(0); return (cp >= 0x1f7e5 && cp <= 0x1f7eb) || cp === 0x2b1b || cp === 0x2b1c; },
   // Gambar soal: beberapa ikon disusun sebaris, makin banyak makin kecil
-  group(s, cls) {
+  group(s, cls, bw = false) {
     const n = this.clusters(s || '').filter(c => this.isEmoji(c) && !this.isSwatch(c)).length;
-    return `<span class="pic-row n${Math.min(n, 4)}">${this.html(s, cls)}</span>`;
+    return `<span class="pic-row n${Math.min(n, 4)}">${this.html(s, cls, bw)}</span>`;
   },
 
   /* Avatar pembicara — memberi 'wajah' pada suara (dual-coding), konsisten di seluruh modul */

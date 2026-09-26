@@ -1,6 +1,10 @@
 """Unduh SVG Twemoji (CC-BY 4.0, https://github.com/jdecked/twemoji) untuk semua emoji
 yang dipakai di data/modul_vol*.json + ikon UI (UI_EMOJI). Disimpan di img/twemoji/<kode>.svg.
-Aturan nama file sama dengan js/pic.js: FE0F dibuang bila tidak ada ZWJ (200D)."""
+Aturan nama file sama dengan js/pic.js: FE0F dibuang bila tidak ada ZWJ (200D).
+
+Juga unduh versi HITAM-PUTIH (OpenMoji "black", CC BY-SA 4.0, https://openmoji.org) untuk emoji di
+gambar soal (latihan + bank soal) → img/bw/<kode>.svg (nama file sama dengan Twemoji). Dipakai di
+soal/ujian supaya tampilannya mirip gambar hitam-putih TOCFL; tahap belajar tetap berwarna."""
 import json, os, re, sys, urllib.request
 K = os.path.dirname(os.path.abspath(__file__)); R = os.path.dirname(K)
 OUT = f'{R}/img/twemoji'
@@ -50,3 +54,30 @@ for c in emoji:
     except Exception:
         gagal.append(c)
 print(len(emoji), 'emoji;', len(os.listdir(OUT)), 'file SVG; gagal:', ' '.join(gagal) or 'tidak ada')
+
+# --- versi hitam-putih untuk gambar soal ---
+BW = f'{R}/img/bw'
+BW_BASE = 'https://cdn.jsdelivr.net/npm/openmoji@15.1.0/black/svg/'
+os.makedirs(BW, exist_ok=True)
+soal = set()
+for fn in ['modul_vol1.json', 'modul_vol2.json', 'modul_vol3.json', 'bank_soal.json']:
+    if os.path.exists(f'{R}/data/{fn}'):
+        d = json.load(open(f'{R}/data/{fn}', encoding='utf-8'))
+        teks = json.dumps([m['tasks'] for m in d['modules']] if 'modules' in d else d, ensure_ascii=False)
+        for icon in re.findall(r'"icon": "([^"]*)"', teks):
+            soal.update(c for c in clusters(icon) if is_emoji(c))
+gagal_bw = []
+for c in sorted(soal):
+    f = f'{BW}/{kode(c)}.svg'
+    if os.path.exists(f): continue
+    # nama file OpenMoji: heksadesimal huruf besar; coba dengan & tanpa FE0F
+    calon = ['-'.join(f'{ord(x):X}' for x in v) for v in dict.fromkeys([c, c.replace('️', '')])]
+    for k in calon:
+        try:
+            urllib.request.urlretrieve(BW_BASE + k + '.svg', f); break
+        except Exception:
+            pass
+    else:
+        gagal_bw.append(c)
+print(len(soal), 'emoji soal;', len(os.listdir(BW)), 'file hitam-putih; tidak ada versi hitam-putih (tetap berwarna):',
+      ' '.join(gagal_bw) or 'tidak ada')

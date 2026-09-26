@@ -153,7 +153,7 @@ const App = {
           </button>`;
         }).join('')}
       </div>
-      <p class="credit">Ilustrasi: Twemoji © Twitter/X &amp; kontributor, lisensi CC-BY 4.0.</p>`);
+      <p class="credit">Ilustrasi: Twemoji © Twitter/X &amp; kontributor, lisensi CC-BY 4.0. Gambar soal hitam-putih: OpenMoji (openmoji.org), lisensi CC BY-SA 4.0.</p>`);
   },
 
   /* ===== VOLUME: tab Modul / Kosakata / Ujian ===== */
