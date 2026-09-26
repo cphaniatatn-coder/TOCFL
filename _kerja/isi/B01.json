@@ -103,26 +103,22 @@
  ],
  "tasks": [
   {
-   "type": "listen_pick",
+   "type": "listen_pic",
    "part": "聽力 Part 1 · Deskripsi gambar",
-   "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-   "audio": "王先生會打籃球。",
+   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+   "picture": {
+    "icon": "🏀",
+    "label": "Pak Wang bermain basket",
+    "img": "B01-1"
+   },
+   "question": "王先生會打什麼球？",
    "options": [
-    {
-     "icon": "⚽",
-     "label": "sepak bola"
-    },
-    {
-     "icon": "🏀",
-     "label": "basket"
-    },
-    {
-     "icon": "🎾",
-     "label": "tenis"
-    }
+    "他會踢足球。",
+    "他會打籃球。",
+    "他會打網球。"
    ],
    "answer": 1,
-   "why": "打籃球 = main basket. Pengecoh dari kategori yang mirip (sama-sama olahraga bola)."
+   "why": "籃球 = bola basket. 足球 = sepak bola; 網球 = tenis — pengecoh dari kategori olahraga yang sama."
   },
   {
    "type": "listen_reply",

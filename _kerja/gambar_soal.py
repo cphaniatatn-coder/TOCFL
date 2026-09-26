@@ -12,6 +12,7 @@ import importlib, json, os, sys
 K = os.path.dirname(os.path.abspath(__file__)); R = os.path.dirname(K)
 sys.path.insert(0, K)
 from svg_lib import bungkus
+from simpan_json import simpan
 
 OUT = f'{R}/img/soal'
 HURUF = {1: 'A', 2: 'B', 3: 'C'}
@@ -29,7 +30,8 @@ def sumber(v):
     """File sumber volume v (isi, soal tambahan, bank) → {path: data}."""
     h = HURUF[v]
     files = [f'{K}/isi/{fn}' for fn in sorted(os.listdir(f'{K}/isi')) if fn.startswith((h, f'vol{v}_'))]
-    files += [p for p in (f'{K}/soal/vol{v}.json', f'{K}/bank/vol{v}.json') if os.path.exists(p)]
+    for folder in ('soal', 'bank'):   # Vol.2/3 dipecah: vol2a.json, vol2b.json, …
+        files += [f'{K}/{folder}/{fn}' for fn in sorted(os.listdir(f'{K}/{folder}')) if fn.startswith(f'vol{v}') and fn.endswith('.json')]
     return {p: json.load(open(p, encoding='utf-8')) for p in files}
 
 
@@ -45,9 +47,9 @@ def urutan_soal(v, data=None):
             else:
                 isi[os.path.basename(p)[:-5]] = d['tasks']
         elif '/soal/' in p:
-            tamb = d
+            tamb.update(d)
         else:
-            bank = d
+            bank.update(d)
     out = []
     for c in sorted(isi):
         n = 0
@@ -91,7 +93,7 @@ def pasang():
                 t['picture']['img'] = i; n += 1
         if n:
             for p, d in data.items():
-                json.dump(d, open(p, 'w', encoding='utf-8'), ensure_ascii=False, indent=1); open(p, 'a', encoding='utf-8').write('\n')
+                simpan(p, d)   # hanya file yang berubah, format asli dipertahankan
         print(f'Vol.{v}: picture.img baru dipasang pada {n} soal')
 
 

@@ -113,70 +113,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "王先生會打籃球。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🏀",
+      "label": "Pak Wang bermain basket",
+      "img": "B01-1"
+     },
+     "question": "王先生會打什麼球？",
      "options": [
-      {
-       "icon": "⚽",
-       "label": "sepak bola"
-      },
-      {
-       "icon": "🏀",
-       "label": "basket"
-      },
-      {
-       "icon": "🎾",
-       "label": "tenis"
-      }
+      "他會踢足球。",
+      "他會打籃球。",
+      "他會打網球。"
      ],
      "answer": 1,
-     "why": "打籃球 = main basket. Pengecoh dari kategori yang mirip (sama-sama olahraga bola)."
+     "why": "籃球 = bola basket. 足球 = sepak bola; 網球 = tenis — pengecoh dari kategori olahraga yang sama."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "他每天早上慢跑。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🏃🌅",
+      "label": "jogging pagi hari",
+      "img": "B01-2"
+     },
+     "question": "他每天早上做什麼？",
      "options": [
-      {
-       "icon": "🏊",
-       "label": "berenang"
-      },
-      {
-       "icon": "🏀",
-       "label": "main basket"
-      },
-      {
-       "icon": "🏃",
-       "label": "jogging"
-      }
+      "他去游泳。",
+      "他打籃球。",
+      "他慢跑。"
      ],
      "answer": 2,
      "why": "慢跑 = jogging. 游泳 = berenang; 打籃球 = main basket."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我們去踢足球吧！",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "⚽",
+      "label": "bermain sepak bola di lapangan",
+      "img": "B01-3"
+     },
+     "question": "我們去做什麼？",
      "options": [
-      {
-       "icon": "⚾",
-       "label": "bisbol"
-      },
-      {
-       "icon": "🎾",
-       "label": "tenis"
-      },
-      {
-       "icon": "⚽",
-       "label": "sepak bola"
-      }
+      "去打棒球吧！",
+      "去打網球吧！",
+      "去踢足球吧！"
      ],
      "answer": 2,
-     "why": "踢足球 = main sepak bola (pakai kaki → 踢). Bisbol & tenis memakai 打."
+     "why": "踢足球 = main sepak bola (kata kerjanya 踢, bukan 打). 棒球 = bisbol; 網球 = tenis."
     },
     {
      "type": "listen_reply",
@@ -615,70 +603,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "週末我想去野餐。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🧺",
+      "label": "piknik: tikar dan keranjang makanan",
+      "img": "B02-1"
+     },
+     "question": "週末你想做什麼？",
      "options": [
-      {
-       "icon": "🧺",
-       "label": "piknik"
-      },
-      {
-       "icon": "🎬",
-       "label": "nonton film"
-      },
-      {
-       "icon": "📚",
-       "label": "membaca"
-      }
+      "我想去野餐。",
+      "我想去看電影。",
+      "我想看書。"
      ],
      "answer": 0,
-     "why": "野餐 = piknik. Pengecoh: kegiatan akhir pekan lainnya."
+     "why": "野餐 = piknik. 看電影 = menonton film; 看書 = membaca."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "週末我們去公園野餐。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🧺🌳",
+      "label": "keluarga piknik di taman",
+      "img": "B02-2"
+     },
+     "question": "週末你們去公園做什麼？",
      "options": [
-      {
-       "icon": "🧺",
-       "label": "piknik di taman"
-      },
-      {
-       "icon": "🏊",
-       "label": "berenang"
-      },
-      {
-       "icon": "🎬",
-       "label": "menonton film"
-      }
+      "我們去游泳。",
+      "我們去野餐。",
+      "我們去看電影。"
      ],
-     "answer": 0,
-     "why": "野餐 = piknik."
+     "answer": 1,
+     "why": "Tikar dan makanan di taman → 野餐 (piknik)."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我喜歡聽音樂。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🎧",
+      "label": "mendengarkan musik dengan headphone",
+      "img": "B02-3"
+     },
+     "question": "你喜歡做什麼？",
      "options": [
-      {
-       "icon": "🎧",
-       "label": "mendengarkan musik"
-      },
-      {
-       "icon": "📷",
-       "label": "memotret"
-      },
-      {
-       "icon": "📖",
-       "label": "membaca cerita"
-      }
+      "我喜歡照相。",
+      "我喜歡看故事書。",
+      "我喜歡聽音樂。"
      ],
-     "answer": 0,
-     "why": "音樂 = musik. 照相 = memotret."
+     "answer": 2,
+     "why": "聽音樂 = mendengarkan musik. 照相 = memotret; 看故事書 = membaca buku cerita."
     },
     {
      "type": "listen_reply",
@@ -1049,70 +1025,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "他們是第三名。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🥉",
+      "label": "podium: tim di tempat ketiga (ditunjuk panah)",
+      "img": "B03-1"
+     },
+     "question": "他們是第幾名？",
      "options": [
-      {
-       "icon": "🥇",
-       "label": "juara 1"
-      },
-      {
-       "icon": "🥈",
-       "label": "juara 2"
-      },
-      {
-       "icon": "🥉",
-       "label": "juara 3"
-      }
+      "第一名。",
+      "第二名。",
+      "第三名。"
      ],
      "answer": 2,
-     "why": "第三名 = peringkat ketiga."
+     "why": "第三名 = juara ketiga. 第 + angka = urutan ke-."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "他是第一名。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🥇",
+      "label": "podium: dia di tempat pertama",
+      "img": "B03-2"
+     },
+     "question": "他是第幾名？",
      "options": [
-      {
-       "icon": "🥈",
-       "label": "juara kedua"
-      },
-      {
-       "icon": "🥉",
-       "label": "juara ketiga"
-      },
-      {
-       "icon": "🥇",
-       "label": "juara pertama"
-      }
+      "第三名。",
+      "第一名。",
+      "第二名。"
      ],
-     "answer": 2,
-     "why": "第一名 = juara pertama."
+     "answer": 1,
+     "why": "第一名 = juara pertama — anak tangga paling tinggi."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "加油！加油！",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "📣",
+      "label": "penonton bersorak menyemangati",
+      "img": "B03-3"
+     },
+     "question": "他們說什麼？",
      "options": [
-      {
-       "icon": "🙇",
-       "label": "minta maaf"
-      },
-      {
-       "icon": "👋",
-       "label": "berpisah"
-      },
-      {
-       "icon": "📣",
-       "label": "menyemangati"
-      }
+      "對不起！",
+      "再見！",
+      "加油！"
      ],
      "answer": 2,
-     "why": "加油 = semangat! (sorakan)."
+     "why": "加油 = ayo, semangat! 對不起 = maaf; 再見 = sampai jumpa."
     },
     {
      "type": "listen_reply",
@@ -1516,70 +1480,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "他正在上網。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "💻",
+      "label": "dia sedang berinternet",
+      "img": "B04-1"
+     },
+     "question": "他在做什麼？",
      "options": [
-      {
-       "icon": "💻",
-       "label": "internetan"
-      },
-      {
-       "icon": "📺",
-       "label": "nonton TV"
-      },
-      {
-       "icon": "🏃",
-       "label": "lari"
-      }
+      "他正在上網。",
+      "他正在看電視。",
+      "他正在跑步。"
      ],
      "answer": 0,
-     "why": "上網 = memakai internet. 正在 = sedang."
+     "why": "上網 = berinternet. 正在 + V = sedang melakukan."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "她正在上網。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "💻",
+      "label": "dia (perempuan) sedang berinternet",
+      "img": "B04-2"
+     },
+     "question": "她在做什麼呢？",
      "options": [
-      {
-       "icon": "📞",
-       "label": "menelepon"
-      },
-      {
-       "icon": "😴",
-       "label": "tidur"
-      },
-      {
-       "icon": "💻",
-       "label": "berselancar di internet"
-      }
+      "她在打電話。",
+      "她在睡覺。",
+      "她在上網。"
      ],
      "answer": 2,
-     "why": "上網 = online / berselancar."
+     "why": "上網 = berinternet. 打電話 = menelepon; 睡覺 = tidur."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我們在聊天。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "💬",
+      "label": "dua orang sedang mengobrol",
+      "img": "B04-3"
+     },
+     "question": "你們在做什麼？",
      "options": [
-      {
-       "icon": "💬",
-       "label": "mengobrol"
-      },
-      {
-       "icon": "📺",
-       "label": "menonton TV"
-      },
-      {
-       "icon": "🍜",
-       "label": "makan"
-      }
+      "我們在看電視。",
+      "我們在聊天。",
+      "我們在吃飯。"
      ],
-     "answer": 0,
-     "why": "在 + V = sedang. 聊天 = mengobrol."
+     "answer": 1,
+     "why": "聊天 = mengobrol. Pengecoh: kegiatan lain."
     },
     {
      "type": "listen_reply",
@@ -1996,48 +1948,40 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "請喝茶。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🍵",
+      "label": "tuan rumah menyuguhkan secangkir teh",
+      "img": "B05-1"
+     },
+     "question": "他說什麼？",
      "options": [
-      {
-       "icon": "🍺",
-       "label": "bir"
-      },
-      {
-       "icon": "☕",
-       "label": "kopi"
-      },
-      {
-       "icon": "🍵",
-       "label": "menawarkan teh"
-      }
+      "請喝咖啡。",
+      "請喝酒。",
+      "請喝茶。"
      ],
      "answer": 2,
-     "why": "請 + V = silakan …"
+     "why": "請喝茶 = silakan minum teh. 咖啡 = kopi; 酒 = minuman beralkohol."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "祝你生日快樂！",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🎂",
+      "label": "pesta ulang tahun",
+      "img": "B05-2"
+     },
+     "question": "他們說什麼？",
      "options": [
-      {
-       "icon": "🎂",
-       "label": "ulang tahun"
-      },
-      {
-       "icon": "🎓",
-       "label": "wisuda"
-      },
-      {
-       "icon": "🍜",
-       "label": "makan malam"
-      }
+      "祝你生日快樂！",
+      "歡迎歡迎！",
+      "不客氣！"
      ],
      "answer": 0,
-     "why": "祝 = mendoakan; 生日快樂 = selamat ulang tahun."
+     "why": "祝你生日快樂 = selamat ulang tahun. 歡迎 = selamat datang; 不客氣 = sama-sama."
     },
     {
      "type": "listen_reply",
@@ -2427,70 +2371,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "那個年輕人是老師的兒子。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🧑",
+      "label": "tiga orang: nenek, pemuda (ditunjuk panah), anak kecil",
+      "img": "B06-1"
+     },
+     "question": "他是什麼人？",
      "options": [
-      {
-       "icon": "🧑",
-       "label": "pemuda"
-      },
-      {
-       "icon": "👴",
-       "label": "orang tua"
-      },
-      {
-       "icon": "👧",
-       "label": "anak perempuan"
-      }
+      "他是年輕人。",
+      "他是老人。",
+      "他是小朋友。"
      ],
      "answer": 0,
-     "why": "年輕人 = orang muda. 老人 = orang tua — pasangan lawan kata sebagai pengecoh."
+     "why": "年輕人 = anak muda. 老人 = orang tua; 小朋友 = anak kecil."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "很高興認識你！",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🤝",
+      "label": "dua orang berjabat tangan saat berkenalan",
+      "img": "B06-2"
+     },
+     "question": "他們說什麼？",
      "options": [
-      {
-       "icon": "🤝",
-       "label": "berkenalan"
-      },
-      {
-       "icon": "🙇",
-       "label": "minta maaf"
-      },
-      {
-       "icon": "👋",
-       "label": "berpisah"
-      }
-     ],
-     "answer": 0,
-     "why": "認識 = berkenalan/mengenal."
-    },
-    {
-     "type": "listen_pick",
-     "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "公園裡有很多小朋友。",
-     "options": [
-      {
-       "icon": "🧑‍🎓",
-       "label": "mahasiswa"
-      },
-      {
-       "icon": "🧒🧒🧒",
-       "label": "banyak anak kecil"
-      },
-      {
-       "icon": "👴👵",
-       "label": "orang tua"
-      }
+      "對不起！",
+      "很高興認識你！",
+      "再見！"
      ],
      "answer": 1,
-     "why": "小朋友 = anak kecil."
+     "why": "很高興認識你 = senang berkenalan denganmu. Diucapkan saat pertama bertemu."
+    },
+    {
+     "type": "listen_pic",
+     "part": "聽力 Part 1 · Deskripsi gambar",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🧒🧒🧒",
+      "label": "banyak anak kecil bermain di taman",
+      "img": "B06-3"
+     },
+     "question": "公園裡有什麼人？",
+     "options": [
+      "有很多大人。",
+      "有很多小朋友。",
+      "有很多老人。"
+     ],
+     "answer": 1,
+     "why": "小朋友 = anak-anak. 大人 = orang dewasa; 老人 = orang tua."
     },
     {
      "type": "listen_reply",
@@ -2898,70 +2830,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "桌子上的書是我的。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "📚⬆",
+      "label": "buku di atas meja ditunjuk; ada buku lain di bawah meja",
+      "img": "B07-1"
+     },
+     "question": "你的書是哪一本？",
      "options": [
-      {
-       "icon": "📚⬆",
-       "label": "buku di atas meja"
-      },
-      {
-       "icon": "📚⬇",
-       "label": "buku di bawah meja"
-      },
-      {
-       "icon": "📚🪑",
-       "label": "buku di kursi"
-      }
+      "桌子上的。",
+      "桌子下的。",
+      "椅子上的。"
      ],
      "answer": 0,
-     "why": "桌子上的書 = buku yang ada di atas meja."
+     "why": "桌子上的 = yang di atas meja (的 menggantikan 書). Orang di gambar menunjuk buku di atas meja."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我要搬家。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "📦",
+      "label": "kardus-kardus pindahan",
+      "img": "B07-2"
+     },
+     "question": "你要做什麼？",
      "options": [
-      {
-       "icon": "📦",
-       "label": "pindah rumah"
-      },
-      {
-       "icon": "🧹",
-       "label": "bersih-bersih"
-      },
-      {
-       "icon": "🛌",
-       "label": "tidur"
-      }
-     ],
-     "answer": 0,
-     "why": "搬家 = pindah rumah."
-    },
-    {
-     "type": "listen_pick",
-     "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我住在學校的宿舍。",
-     "options": [
-      {
-       "icon": "🏠",
-       "label": "rumah keluarga"
-      },
-      {
-       "icon": "🏢",
-       "label": "gedung apartemen"
-      },
-      {
-       "icon": "🏫",
-       "label": "asrama kampus"
-      }
+      "我要睡覺。",
+      "我要去上課。",
+      "我要搬家。"
      ],
      "answer": 2,
-     "why": "宿舍 = asrama."
+     "why": "搬家 = pindah rumah. Kardus bertumpuk = pindahan."
+    },
+    {
+     "type": "listen_pic",
+     "part": "聽力 Part 1 · Deskripsi gambar",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🏫",
+      "label": "asrama kampus",
+      "img": "B07-3"
+     },
+     "question": "你住在哪裡？",
+     "options": [
+      "我住在家裡。",
+      "我住在大樓。",
+      "我住在學校的宿舍。"
+     ],
+     "answer": 2,
+     "why": "宿舍 = asrama. Gedung di dalam kampus dengan banyak kamar."
     },
     {
      "type": "listen_reply",
@@ -3347,70 +3267,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "窗戶開著。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🪟",
+      "label": "jendela terbuka",
+      "img": "B08-1"
+     },
+     "question": "窗戶怎麼樣？",
      "options": [
-      {
-       "icon": "🪟",
-       "label": "jendela terbuka"
-      },
-      {
-       "icon": "🚪",
-       "label": "pintu terbuka"
-      },
-      {
-       "icon": "💡",
-       "label": "lampu menyala"
-      }
+      "窗戶開著。",
+      "門開著。",
+      "燈開著。"
      ],
      "answer": 0,
-     "why": "窗戶 = jendela; 開著 = dalam keadaan terbuka. Pengecoh: benda lain yang juga bisa 開著."
+     "why": "V + 著 = keadaan yang berlangsung: 開著 = dalam keadaan terbuka."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "燈開著。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "💡",
+      "label": "lampu menyala",
+      "img": "B08-2"
+     },
+     "question": "燈開著嗎？",
      "options": [
-      {
-       "icon": "💡",
-       "label": "lampu menyala"
-      },
-      {
-       "icon": "🌑",
-       "label": "gelap"
-      },
-      {
-       "icon": "🪟",
-       "label": "jendela terbuka"
-      }
+      "燈沒開。",
+      "燈開著。",
+      "窗戶開著。"
      ],
-     "answer": 0,
-     "why": "V著 = keadaan bertahan: lampu (masih) menyala."
+     "answer": 1,
+     "why": "燈開著 = lampu menyala. 沒開 = tidak menyala."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "洗手間在樓下。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🚻",
+      "label": "rumah dua lantai: toilet di lantai bawah",
+      "img": "B08-3"
+     },
+     "question": "洗手間在哪裡？",
      "options": [
-      {
-       "icon": "🛗",
-       "label": "lift"
-      },
-      {
-       "icon": "🪜",
-       "label": "tangga"
-      },
-      {
-       "icon": "🚻",
-       "label": "toilet di lantai bawah"
-      }
+      "在樓上。",
+      "在樓下。",
+      "在電梯旁邊。"
      ],
-     "answer": 2,
-     "why": "洗手間 = toilet; 樓下 = lantai bawah."
+     "answer": 1,
+     "why": "樓下 = lantai bawah. 樓上 = lantai atas."
     },
     {
      "type": "listen_reply",
@@ -3823,70 +3731,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "冷氣壞了。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "❄️❌",
+      "label": "AC rusak, keluar asap",
+      "img": "B09-1"
+     },
+     "question": "冷氣開著嗎？",
      "options": [
-      {
-       "icon": "❄️❌",
-       "label": "AC rusak"
-      },
-      {
-       "icon": "💡",
-       "label": "lampu menyala"
-      },
-      {
-       "icon": "📺❌",
-       "label": "TV rusak"
-      }
+      "冷氣壞了。",
+      "冷氣開著。",
+      "電視壞了。"
      ],
      "answer": 0,
-     "why": "冷氣 = AC; 壞了 = (sekarang) rusak. C mirip keadaannya tapi bendanya lain."
+     "why": "壞了 = rusak. Gambar AC berasap → 冷氣壞了. C salah benda."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "他在洗衣服。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🧺",
+      "label": "dia mencuci baju",
+      "img": "B09-2"
+     },
+     "question": "他在做什麼？",
      "options": [
-      {
-       "icon": "🍽️",
-       "label": "mencuci piring"
-      },
-      {
-       "icon": "🧹",
-       "label": "menyapu"
-      },
-      {
-       "icon": "🧺",
-       "label": "mencuci baju"
-      }
+      "他在洗碗。",
+      "他在關窗戶。",
+      "他在洗衣服。"
      ],
      "answer": 2,
-     "why": "洗衣服 = mencuci baju."
+     "why": "洗衣服 = mencuci baju. 洗碗 = mencuci piring."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "請關燈。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "💡",
+      "label": "dia menunjuk lampu yang menyala",
+      "img": "B09-3"
+     },
+     "question": "她要我做什麼？",
      "options": [
-      {
-       "icon": "🪟",
-       "label": "membuka jendela"
-      },
-      {
-       "icon": "🚪",
-       "label": "menutup pintu"
-      },
-      {
-       "icon": "💡",
-       "label": "mematikan lampu"
-      }
+      "請開窗戶。",
+      "請關門。",
+      "請關燈。"
      ],
      "answer": 2,
-     "why": "關燈 = mematikan lampu (關 juga = menutup)."
+     "why": "關燈 = mematikan lampu. 開窗戶 = membuka jendela; 關門 = menutup pintu."
     },
     {
      "type": "listen_reply",
@@ -4285,70 +4181,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "他每天洗澡洗二十分鐘。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🚿⏱️",
+      "label": "mandi, jam menandai 20 menit",
+      "img": "B10-1"
+     },
+     "question": "他每天洗澡洗多久？",
      "options": [
-      {
-       "icon": "⏱️",
-       "label": "10 menit"
-      },
-      {
-       "icon": "⏱️",
-       "label": "20 menit"
-      },
-      {
-       "icon": "⏱️",
-       "label": "2 jam"
-      }
+      "洗十分鐘。",
+      "洗二十分鐘。",
+      "洗兩個小時。"
      ],
      "answer": 1,
-     "why": "二十分鐘 = 20 menit. 兩個小時 (2 jam) bunyinya mirip untuk telinga pemula."
+     "why": "V + O + V + lama waktu: 洗澡洗二十分鐘 = mandi selama 20 menit."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我每天洗澡洗十五分鐘。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🚿⏱️",
+      "label": "mandi, jam menandai 15 menit",
+      "img": "B10-2"
+     },
+     "question": "你每天洗澡洗多久？",
      "options": [
-      {
-       "icon": "🏃",
-       "label": "lari 15 menit"
-      },
-      {
-       "icon": "🛁",
-       "label": "mandi 50 menit"
-      },
-      {
-       "icon": "🚿",
-       "label": "mandi 15 menit"
-      }
-     ],
-     "answer": 2,
-     "why": "V + O + V + lama: 洗澡洗十五分鐘. Bedakan 十五 (15) dan 五十 (50)."
-    },
-    {
-     "type": "listen_pick",
-     "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "週日我總是在家休息。",
-     "options": [
-      {
-       "icon": "🛋️",
-       "label": "istirahat di rumah"
-      },
-      {
-       "icon": "🏃",
-       "label": "berolahraga"
-      },
-      {
-       "icon": "🏫",
-       "label": "ke sekolah"
-      }
+      "洗十五分鐘。",
+      "洗五十分鐘。",
+      "跑十五分鐘。"
      ],
      "answer": 0,
-     "why": "總是 = selalu; 休息 = istirahat."
+     "why": "十五分鐘 = 15 menit. B salah angka (50); C salah kegiatan (跑 = lari)."
+    },
+    {
+     "type": "listen_pic",
+     "part": "聽力 Part 1 · Deskripsi gambar",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🛋️",
+      "label": "hari Minggu, beristirahat di sofa rumah",
+      "img": "B10-3"
+     },
+     "question": "週日你總是做什麼？",
+     "options": [
+      "去運動。",
+      "去學校。",
+      "在家休息。"
+     ],
+     "answer": 2,
+     "why": "在家休息 = istirahat di rumah. 總是 = selalu."
     },
     {
      "type": "listen_reply",
@@ -4747,70 +4631,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih jadwal yang cocok.",
-     "audio": "我從早上九點上班到下午五點。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🕘🕔",
+      "label": "jam kerja: dari jam 9 sampai jam 5",
+      "img": "B11-1"
+     },
+     "question": "你從幾點上班到幾點？",
      "options": [
-      {
-       "icon": "🕘",
-       "label": "09.00–17.00"
-      },
-      {
-       "icon": "🕗",
-       "label": "08.00–17.00"
-      },
-      {
-       "icon": "🕘",
-       "label": "09.00–15.00"
-      }
+      "從九點到五點。",
+      "從八點到五點。",
+      "從九點到三點。"
      ],
      "answer": 0,
-     "why": "九點到下午五點 = 09.00–17.00. Ingat 下午五點 = 17.00."
+     "why": "從……到…… = dari … sampai …: 從九點到五點."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我在公司上班。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🏢",
+      "label": "bekerja di kantor",
+      "img": "B11-2"
+     },
+     "question": "你在哪裡上班？",
      "options": [
-      {
-       "icon": "🏪",
-       "label": "di toko"
-      },
-      {
-       "icon": "🏫",
-       "label": "di sekolah"
-      },
-      {
-       "icon": "🏢",
-       "label": "bekerja di kantor"
-      }
+      "在店裡。",
+      "在學校。",
+      "在公司。"
      ],
      "answer": 2,
-     "why": "公司 = perusahaan; 上班 = masuk kerja."
+     "why": "公司 = kantor/perusahaan. 店 = toko; 學校 = sekolah."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我們五點下班。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🕔🏠",
+      "label": "jam 5, pulang dari kantor",
+      "img": "B11-3"
+     },
+     "question": "你們幾點下班？",
      "options": [
-      {
-       "icon": "🕘🏢",
-       "label": "masuk kerja jam 9"
-      },
-      {
-       "icon": "🕔🍜",
-       "label": "makan jam 5"
-      },
-      {
-       "icon": "🕔🏠",
-       "label": "pulang kerja jam 5"
-      }
+      "九點上班。",
+      "五點吃飯。",
+      "五點下班。"
      ],
      "answer": 2,
-     "why": "下班 = pulang kerja."
+     "why": "下班 = pulang kerja. A = masuk kerja; B = makan."
     },
     {
      "type": "listen_reply",
@@ -5232,70 +5104,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "奶奶家有兩隻貓。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🐈🐈",
+      "label": "dua kucing",
+      "img": "B12-1"
+     },
+     "question": "奶奶家有幾隻貓？",
      "options": [
-      {
-       "icon": "🐈🐈",
-       "label": "dua kucing"
-      },
-      {
-       "icon": "🐕🐕",
-       "label": "dua anjing"
-      },
-      {
-       "icon": "🐎",
-       "label": "seekor kuda"
-      }
+      "兩隻。",
+      "一隻。",
+      "三隻。"
      ],
      "answer": 0,
-     "why": "兩隻貓 = dua ekor kucing. 隻 = kata bantu bilangan untuk hewan."
+     "why": "兩隻 = dua ekor (隻 = kata bantu bilangan untuk hewan)."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我家有一隻狗。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🐕",
+      "label": "seekor anjing",
+      "img": "B12-2"
+     },
+     "question": "你家有什麼？",
      "options": [
-      {
-       "icon": "🐈",
-       "label": "kucing"
-      },
-      {
-       "icon": "🐕",
-       "label": "anjing"
-      },
-      {
-       "icon": "🐎",
-       "label": "kuda"
-      }
+      "一隻貓。",
+      "一隻狗。",
+      "一隻馬。"
      ],
      "answer": 1,
-     "why": "狗 = anjing; kata bantunya 隻."
+     "why": "狗 = anjing. 貓 = kucing; 馬 = kuda."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我小時候住在爺爺家。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "👴🏠",
+      "label": "foto lama: anak kecil dan kakek di depan rumah kakek",
+      "img": "B12-3"
+     },
+     "question": "你小時候住在哪裡？",
      "options": [
-      {
-       "icon": "👵",
-       "label": "nenek"
-      },
-      {
-       "icon": "👴🏠",
-       "label": "tinggal di rumah kakek"
-      },
-      {
-       "icon": "🏫",
-       "label": "di sekolah"
-      }
+      "住在爺爺家。",
+      "住在學校。",
+      "住在大樓裡。"
      ],
-     "answer": 1,
-     "why": "小時候 = waktu kecil; 爺爺 = kakek."
+     "answer": 0,
+     "why": "小時候 = waktu kecil; 爺爺家 = rumah kakek."
     },
     {
      "type": "listen_reply",
