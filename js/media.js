@@ -147,7 +147,9 @@ const Pic = {
     for (const ch of s) {
       const cp = ch.codePointAt(0);
       const isMod = this.MOD.has(cp) || (cp >= 0x1f3fb && cp <= 0x1f3ff);
-      if (cur && (isMod || join)) cur += ch; else { if (cur) out.push(cur); cur = ch; }
+      // bendera = sepasang huruf regional indicator (🇹 + 🇼 → 🇹🇼)
+      const ri = x => x >= 0x1f1e6 && x <= 0x1f1ff, flag = ri(cp) && [...cur].length === 1 && ri(cur.codePointAt(0));
+      if (cur && (isMod || join || flag)) cur += ch; else { if (cur) out.push(cur); cur = ch; }
       join = cp === 0x200d;
     }
     if (cur) out.push(cur);

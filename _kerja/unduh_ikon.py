@@ -18,7 +18,8 @@ def clusters(s):
     out, cur, join = [], '', False
     for ch in s:
         cp = ord(ch)
-        if cur and (cp in MOD or join):
+        ri = lambda x: 0x1f1e6 <= x <= 0x1f1ff   # bendera = sepasang regional indicator
+        if cur and (cp in MOD or join or (ri(cp) and len(cur) == 1 and ri(ord(cur)))):
             cur += ch
         else:
             if cur: out.append(cur)

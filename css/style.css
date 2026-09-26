@@ -283,6 +283,7 @@ details.panel summary { cursor: pointer; list-style: none; }
 .tr-line .avatar { width: 28px; height: 28px; padding: 3px; }
 .opts { display: grid; gap: 8px; margin-top: 12px; }
 .opts-pic { grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); }
+.opts-abc { grid-template-columns: repeat(3, 1fr); } .opts-abc .opt { justify-content: center; min-height: 64px; } .opts-abc .opt-l { width: 40px; height: 40px; font-size: 19px; }
 .opt { display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 10px 12px; border-radius: 14px; background: var(--surface); box-shadow: inset 0 0 0 1.5px var(--line); font-size: 17px; transition: background .15s; }
 .opts-pic .opt { flex-direction: column; justify-content: center; gap: 4px; padding: 12px 6px; text-align: center; position: relative; }
 .opts-pic .opt small { font-size: 12.5px; color: var(--sub); }
