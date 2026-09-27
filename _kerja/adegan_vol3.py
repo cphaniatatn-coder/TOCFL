@@ -225,3 +225,189 @@ A['C12-2'] = foto_bayi()
 A['C12-3'] = sawah(160) + rumah(170, 160, 110, 70) + orang(70, kaki=200, tinggi=90, jenis='gadis', baju='a')
 A['C12-4'] = foto_bayi() + ranjang(150, 214, 170).replace('class="h"', 'class="a"')[:0]
 A['C12-5'] = lantai() + tabel_tinggi(150)
+
+
+# ================= komponen C13–C24 =================
+def cucu_banyak(nenek_x=60, jenis_cucu='laki', n=4, rambut='uban', jenis='nenek'):
+    o = lantai() + orang(nenek_x, tinggi=150, jenis=jenis, baju='a', rambut=rambut, rok=None if jenis == 'nenek' else False)
+    for i in range(n):
+        o += orang(nenek_x + 60 + i * (180 / max(n, 1)), tinggi=88 + (i % 2) * 8, jenis=jenis_cucu, baju='h' if i % 2 else 'p')
+    return o
+
+
+def pengantin(x_pr=110, x_lk=195):
+    s_ = sendi(x_pr, LANTAI, 155, 'wanita')
+    o = jalur(f'M{f(x_pr - s_["r"] * 1.2)} {f(s_["cy"] - s_["r"] * .6)} Q{f(x_pr)} {f(s_["cy"] - s_["r"] * 1.6)} {f(x_pr + s_["r"] * 1.2)} {f(s_["cy"] - s_["r"] * .6)} L{f(x_pr + s_["r"] * 2)} {f(s_["cy"] + 60)} L{f(x_pr - s_["r"] * 2)} {f(s_["cy"] + 60)} Z', 'p')
+    o += orang(x_pr, tinggi=155, jenis='wanita', baju='p', wajah='puas', tangan={'ka': [(10, 20), (4, 36)]})
+    o += bentuk((x_pr - 34, 116), (x_pr + 34, 116), (x_pr + 46, 200), (x_pr - 46, 200), k='p')
+    o += orang(x_lk, tinggi=165, jenis='pria', baju='h', wajah='puas', tangan={'ki': [(10, 20), (4, 36)]})
+    return o + bunga(x_pr + 16, 106, .6) + garis((x_lk, 70), (x_lk, 84), k='w')
+
+
+def kacamata_hitam(x, cy, r):
+    return kotak(x - r * .8, cy - r * .22, r * .7, r * .34, 'h', 3) + kotak(x + r * .1, cy - r * .22, r * .7, r * .34, 'h', 3) + garis((x - r * .1, cy - r * .1), (x + r * .1, cy - r * .1))
+
+
+def mesin_kopi(x, bawah):
+    return (kotak(x - 34, bawah - 70, 68, 70, 'a', 5) + kotak(x - 24, bawah - 60, 48, 20, 'h', 3) + garis((x - 10, bawah - 40), (x - 10, bawah - 30), lebar=5)
+            + garis((x + 10, bawah - 40), (x + 10, bawah - 30), lebar=5) + cangkir(x, bawah - 4, .35, False))
+
+
+def nampan(x, y, w=60):
+    return elips(x, y, w / 2, 6, 'a') + cangkir(x - 12, y - 4, .3, False) + cangkir(x + 14, y - 4, .3, False)
+
+
+def layar_berita(x, bawah, w=170):
+    t = w * .62
+    return (kotak(x - w / 2, bawah - t - 10, w, t, 'p', 4) + kotak(x - w / 2 + 8, bawah - t - 2, w - 16, t - 16, 'a', 2)
+            + kotak(x - w / 2 + 8, bawah - 30, w - 16, 12, 'h') + orang(x, kaki=bawah - 18, tinggi=90, jenis='wanita', baju='h') + kotak(x - 40, bawah - 46, 80, 18, 'h', 2) + kotak(x - 5, bawah - 10, 10, 10, 'p'))
+
+
+def stik_game(x, y, s=1.0):
+    return (jalur(f'M{f(x - 40 * s)} {f(y - 14 * s)} Q{f(x)} {f(y - 24 * s)} {f(x + 40 * s)} {f(y - 14 * s)} Q{f(x + 56 * s)} {f(y + 24 * s)} {f(x + 36 * s)} {f(y + 22 * s)} '
+                  f'Q{f(x)} {f(y + 8 * s)} {f(x - 36 * s)} {f(y + 22 * s)} Q{f(x - 56 * s)} {f(y + 24 * s)} {f(x - 40 * s)} {f(y - 14 * s)} Z', 'h')
+            + kotak(x - 30 * s, y - 4 * s, 16 * s, 5 * s, 'n') + kotak(x - 24.5 * s, y - 9.5 * s, 5 * s, 16 * s, 'n') + bulat(x + 22 * s, y - 6 * s, 3.5 * s, 'n') + bulat(x + 30 * s, y + 1 * s, 3.5 * s, 'n'))
+
+
+def papan_keluar(x, y, isi='', arah=0, w=150, h=60):
+    """Papan hijau-hitam 'pintu keluar': orang berlari + pintu; isi = nomor; arah -1 kiri, 1 kanan."""
+    o = kotak(x - w / 2, y, w, h, 'h', 6) + kotak(x - w / 2 + 10, y + 10, 26, 40, 'n', 2)
+    o += orang(x - w / 2 + 50, kaki=y + 50, tinggi=40, jenis='pria', baju='p', wajah=None, kaki_pose={'ki': (-10, 0), 'ka': (10, -6)}).replace('class="h"', 'class="n"').replace('class="g"', 'class="w"')
+    if isi:
+        o += teks(x + 34, y + 44, isi, 36, angka=True, warna='#fff')
+    if arah:
+        o += garis((x + 10, y + 30), (x + 60, y + 30), k='w') + bentuk((x + 60, y + 22), (x + 70, y + 30), (x + 60, y + 38), k='n') if arah > 0 else garis((x + 10, y + 30), (x + 60, y + 30), k='w') + bentuk((x + 10, y + 22), (x, y + 30), (x + 10, y + 38), k='n')
+    return o
+
+
+def gerbong_mrt(penuh=True):
+    o = kotak(16, 16, 268, 188, 'p', 10) + kotak(30, 30, 240, 50, 'a', 6) + garis((16, 170), (284, 170), k='t') + garis((30, 20), (270, 20), lebar=3)
+    o += kotak(24, 140, 252, 18, 'a', 4)
+    if penuh:
+        for i in range(6):
+            o += orang(45 + i * 42, tinggi=150, jenis='pria' if i % 2 else 'wanita', baju='h' if i % 3 == 0 else 'a', wajah='senyum', tangan={'ka': [(6, -30), (0, -60)]})
+    return o
+
+
+def skuter(x, lantai_y=LANTAI, s=1.0):
+    return (bulat(x - 44 * s, lantai_y - 18 * s, 18 * s, 'h') + bulat(x + 44 * s, lantai_y - 18 * s, 18 * s, 'h') + bulat(x - 44 * s, lantai_y - 18 * s, 6 * s, 'n') + bulat(x + 44 * s, lantai_y - 18 * s, 6 * s, 'n')
+            + jalur(f'M{f(x - 58 * s)} {f(lantai_y - 30 * s)} L{f(x - 10 * s)} {f(lantai_y - 30 * s)} L{f(x + 20 * s)} {f(lantai_y - 60 * s)} L{f(x + 40 * s)} {f(lantai_y - 60 * s)} L{f(x + 52 * s)} {f(lantai_y - 34 * s)} L{f(x + 30 * s)} {f(lantai_y - 30 * s)} Q{f(x - 20 * s)} {f(lantai_y - 20 * s)} {f(x - 58 * s)} {f(lantai_y - 30 * s)} Z', 'a')
+            + kotak(x - 50 * s, lantai_y - 46 * s, 44 * s, 14 * s, 'h', 6) + garis((x + 34 * s, lantai_y - 60 * s), (x + 30 * s, lantai_y - 92 * s), lebar=4) + garis((x + 20 * s, lantai_y - 92 * s), (x + 44 * s, lantai_y - 92 * s), lebar=5))
+
+
+def rambu(x, isi, coret=True, lantai_y=LANTAI, r=48):
+    o = garis((x, lantai_y), (x, lantai_y - 100), lebar=5) + bulat(x, lantai_y - 100 - r, r, 'p') + isi
+    if coret:
+        o += f'<circle cx="{f(x)}" cy="{f(lantai_y - 100 - r)}" r="{f(r)}" fill="none" stroke="#111" stroke-width="7"/>' + garis((x - r * .7, lantai_y - 100 - r * 1.7), (x + r * .7, lantai_y - 100 - r * .3), lebar=7)
+    return o
+
+
+def huruf_p(x, y, uk=56):
+    return teks(x, y + uk * .36, 'P', uk, angka=True)
+
+
+def kapal(x, y, s=1.0):
+    return (jalur(f'M{f(x - 90 * s)} {f(y)} L{f(x + 90 * s)} {f(y)} L{f(x + 70 * s)} {f(y + 36 * s)} L{f(x - 76 * s)} {f(y + 36 * s)} Z', 'h')
+            + kotak(x - 56 * s, y - 34 * s, 100 * s, 34 * s, 'p', 4) + kotak(x - 30 * s, y - 60 * s, 56 * s, 26 * s, 'p', 4)
+            + ''.join(bulat(x - 40 * s + i * 20 * s, y - 18 * s, 5 * s, 'h') for i in range(5)) + kotak(x + 6 * s, y - 84 * s, 16 * s, 26 * s, 'a'))
+
+
+def laut(y=160):
+    return bentuk((16, y), (284, y), (284, 204), (16, 204), k='a') + jalur(f'M24 {y + 14} q10 -8 20 0 t20 0 t20 0 M150 {y + 26} q10 -8 20 0 t20 0 t20 0 M200 {y + 10} q10 -8 20 0 t20 0', 'w')
+
+
+def kabin_penuh():
+    o = kotak(16, 16, 268, 188, 'p', 30) + kotak(40, 26, 220, 20, 'a', 8)
+    for j in range(2):
+        for i in range(4):
+            x = 55 + i * 62 + (32 if i >= 2 else 0) - 16
+            y = 70 + j * 62
+            o += kotak(x - 20, y, 40, 50, 'a', 6) + bulat(x, y + 4, 11) + jalur(f'M{f(x - 11)} {f(y + 2)} q2 -12 11 -12 q9 0 11 12', 'h')
+    return o
+
+
+def topan():
+    o = lantai() + awan(150, 40, 1.2, 'h') + jalur('M150 50 m-40 0 a40 16 0 1 1 80 0 a30 12 0 1 1 -60 0 a18 8 0 1 1 36 0', 'w')
+    o += hujan(150, 70, 260, 60, 13) + angin(20, 120, .8)
+    return o + kotak(245, 150, 8, 50, 'h') + jalur('M249 150 Q262 110 286 104 Q270 128 260 150 Z', 'p') + kotak(30, 150, 8, 50, 'h') + jalur('M34 150 Q48 112 70 106 Q56 130 44 150 Z', 'p')
+
+
+def kolam_panas(x=150, y=150):
+    o = elips(x, y, 120, 30, 'a') + ''.join(elips(x + dx, y + dy, rx, ry, 'p') for dx, dy, rx, ry in ((-110, -10, 20, 14), (100, -14, 24, 16), (-60, 26, 18, 10), (90, 22, 20, 12)))
+    return o + uap_(x - 40, y - 26, 1.4) + uap_(x + 40, y - 26, 1.4)
+
+
+# ================= C13–C24 =================
+A['C13-1'] = cucu_banyak(55, 'laki', 4)
+A['C13-2'] = cucu_banyak(55, 'laki', 4)
+A['C13-3'] = lantai() + orang(90, tinggi=125, jenis='laki', baju='a') + panah(90, 50, 90, 70, 4) + teks(90, 44, '我', 18) + orang(165, tinggi=150, jenis='pria', baju='h') + orang(235, tinggi=140, jenis='pria', baju='p')
+A['C13-4'] = lantai() + orang(90, tinggi=150, jenis='nenek', rambut='pendek', rok=False, baju='a', kacamata=True) + meja(210, 150, 120) + kue_ultah(210, 150, '80', .7)
+A['C13-5'] = cucu_banyak(55, 'gadis', 4)
+
+A['C14-1'] = lantai() + kereta(170, 196, 230) + orang(40, tinggi=150, jenis='pria', baju='h', wajah='nyanyi', tangan={'ka': [(12, 24), (-4, -4)]}) + jalur('M60 50 l14 -6 M60 58 l16 0', 'g') + jam_kecil(250, 40, 9, 59, 22)
+A['C14-2'] = lantai() + pengantin()
+_cyh, _rh = sendi(150, LANTAI, 170, 'pria')['cy'], sendi(150, LANTAI, 170, 'pria')['r']
+A['C14-3'] = lantai() + orang(150, tinggi=170, jenis='pria', baju='h', wajah='senyum', tangan={'ka': [(20, 20), (4, 40)]}) + kacamata_hitam(150, _cyh, _rh) + bintang(100, 40, 8) + bintang(210, 50, 6)
+A['C14-4'] = lantai() + pengantin(90, 170) + bulat(250, 70, 16, 't') + bulat(265, 70, 16, 't') + bintang(257, 50, 6)
+A['C14-5'] = lantai() + papan_tulis(95, 30, 150, 80) + orang(230, tinggi=170, jenis='pria', baju='a', kacamata=True, tangan={'ki': [(10, -10), (34, -40)]})
+
+A['C15-1'] = lantai() + kotak(120, 120, 164, 80, 'a') + mesin_kopi(250, 120) + orang(170, kaki=200, tinggi=150, jenis='pria', baju='h') + kotak(120, 120, 164, 80, 'a') + mesin_kopi(250, 120) + cangkir(140, 118, .35, True)
+A['C15-2'] = lantai() + kotak(120, 120, 164, 80, 'a') + mesin_kopi(250, 120) + orang(170, kaki=200, tinggi=145, jenis='wanita', baju='h') + kotak(120, 120, 164, 80, 'a') + mesin_kopi(250, 120) + cangkir(140, 118, .35, True)
+A['C15-3'] = lantai() + orang(100, tinggi=165, jenis='pria', baju='h', tangan={'ka': [(20, 16), (44, 20)]}, kacamata=True) + tas_kerja(70, 196, .7) + orang(200, tinggi=160, jenis='pria', baju='a', tangan={'ki': [(20, 16), (44, 20)]})
+A['C15-4'] = lantai() + meja(90, 150, 120) + orang(200, tinggi=165, jenis='pria', baju='h', tangan={'ka': [(16, -10), (30, -20)]}) + nampan(236, 64, 60)
+A['C15-5'] = lantai() + papan_tulis(80, 30, 120, 70) + orang(170, tinggi=160, jenis='wanita', baju='a', rambut='uban', tangan={'ki': [(10, -10), (30, -30)]}) + murid_belakang(230, 200, 120) + murid_belakang(275, 200, 125, 'gadis')
+
+A['C16-1'] = kotak(16, 16, 268, 188, 'p') + kotak(90, 26, 120, 60, 'p') + grafik([2, 4, 3, 6], 100, 80, 100, 48) + meja(150, 150, 220) + orang(50, tinggi=130, jenis='wanita', duduk=160, baju='a') + orang(250, tinggi=135, jenis='pria', duduk=160, baju='h') + orang(150, kaki=200, tinggi=80, jenis='pria', baju='a')
+A['C16-2'] = kotak(16, 16, 268, 188, 'p') + jendela(230, 30, 60, 46) + bulan_bintang(226, 52, .4) + meja_kantor(150) + orang_duduk_kerja(60, 'pria', 'a') + lampu(150, 60, True, 30)
+A['C16-3'] = kotak(16, 16, 268, 188, 'p') + jam_dinding(240, 60, 34, 3, 0) + meja(130, 150, 200) + orang(60, tinggi=130, jenis='wanita', duduk=160, baju='a') + orang(200, tinggi=135, jenis='pria', duduk=160, baju='h')
+A['C16-4'] = kotak(16, 16, 268, 188, 'p') + jam_dinding(240, 60, 34, 9, 0) + meja(130, 150, 200) + orang(60, tinggi=130, jenis='pria', duduk=160, baju='h') + orang(200, tinggi=135, jenis='wanita', duduk=160, baju='a')
+A['C16-5'] = dua_panel(orang_ponsel(75, 'pria', 150, baju='a') + gelembung(110, 30, 60, 34, silang(110, 30, 10, 4), (-1, 1)), sofa(225, 200, 110) + orang(225, tinggi=140, jenis='wanita', duduk=160, baju='a', wajah='puas')) + lantai()
+
+A['C17-1'] = lantai() + gunung(170, 200, 260, 170, False) + orang(120, kaki=130, tinggi=80, jenis='pria', baju='h') + tas_punggung(106, 70, .5) + orang(170, kaki=95, tinggi=76, jenis='wanita', baju='a') + tas_punggung(157, 38, .5)
+A['C17-2'] = lantai() + gunung(170, 200, 260, 170, False) + orang(140, kaki=120, tinggi=90, jenis='pria', baju='a') + tas_punggung(124, 52, .6) + garis((160, 70), (170, 120), lebar=3)
+A['C17-3'] = lantai() + bulan_bintang(250, 36, .5) + pohon(40, s=.8) + jalan_kaki(130, 'wanita', 150, 'a') + jalan_kaki(190, 'pria', 160, 'h')
+A['C17-4'] = lantai() + orang(110, tinggi=160, jenis='pria', baju='a', wajah='puas') + headphone(110, sendi(110, 200, 160, 'pria')['cy'], sendi(110, 200, 160, 'pria')['r']) + not_musik(180, 70) + not_musik(220, 110) + jalur('M200 40 q-10 -12 -20 0 q-10 12 20 30 q30 -18 20 -30 q-10 -12 -20 0', 'h')
+A['C17-5'] = lantai() + pohon(40, s=.9) + pohon(265, s=.8) + bangku(150) + jalan_kaki(120, 'wanita', 150, 'a') + jalan_kaki(180, 'pria', 160, 'h')
+
+A['C18-1'] = (lantai() + kursi_depan(150, 150) + orang(150, tinggi=150, jenis='wanita', duduk=150, baju='a', tangan={'ki': [(20, 24), (34, 30)], 'ka': [(20, 24), (34, 30)]})
+              + kotak(112, 118, 76, 60, 'p', 2) + kotak(116, 122, 68, 12, 'h') + bulat(150, 150, 9, 'a') + bentuk((136, 174), (164, 174), (158, 160), (142, 160), k='a'))   # sampul majalah bergambar
+A['C18-2'] = (kotak(16, 16, 268, 80, 'a') + ''.join(potret(x, 150, 22, 'pria' if i % 2 else 'wanita', 'tawa', 'h' if i % 2 else 'a') for i, x in enumerate((50, 110, 170, 230))) + teks(150, 60, 'ha ha ha', 20, angka=True))
+A['C18-3'] = lantai() + layar_berita(190, 150, 170) + meja(190, 150, 120) + orang(60, tinggi=150, jenis='pria', duduk=160, baju='a', kacamata=True)
+A['C18-4'] = lantai() + tv(200, 150, 120) + meja(200, 150, 110) + orang(80, tinggi=120, jenis='laki', duduk=160, baju='a', wajah='tawa', tangan={'ki': [(14, 20), (30, 16)], 'ka': [(14, 20), (30, 16)]}) + stik_game(96, 126, .4)
+A['C18-5'] = lantai() + matahari(260, 36, 12) + layar_berita(190, 150, 150) + meja(190, 150, 110) + orang(60, tinggi=150, jenis='wanita', duduk=160, baju='a', tangan={'ka': [(14, 20), (-2, -2)]}) + cangkir(80, 94, .4, True)
+
+A['C19-1'] = lantai() + orang(150, tinggi=165, jenis='wanita', baju='a', wajah='nyanyi', tangan={'ki': [(24, -20), (36, -56)], 'ka': [(12, 30), (-8, -8)]}, kaki_pose={'ki': (-8, 0), 'ka': (30, -24)}) + mikrofon(182, 58, .9) + not_musik(230, 60)
+A['C19-2'] = lantai() + meja(160, 140, 200) + kertas(170, 128, 70, 22) + orang(90, tinggi=140, jenis='gadis', duduk=150, baju='a', tangan={'ka': [(22, 10), (60, 14)]}) + headphone(90, sendi(90, 150, 140, 'gadis', 150)['cy'], sendi(90, 150, 140, 'gadis', 150)['r']) + not_musik(240, 60)
+A['C19-3'] = A.get('C19-3', '') + lantai() + bulan_bintang(250, 30, .5) + garis((20, 60), (280, 60), k='t') + ''.join(lampion(40 + i * 44, 72, .7) for i in range(6)) + kotak(20, 130, 110, 70, 'a') + kotak(170, 130, 110, 70, 'a') + jalan_kaki(150, 'wanita', 115, 'a')
+A['C19-4'] = lantai() + orang(150, tinggi=165, jenis='pria', baju='h', wajah='nyanyi', tangan={'ki': [(24, -20), (36, -56)], 'ka': [(12, 30), (-8, -8)]}, kaki_pose={'ki': (-8, 0), 'ka': (30, -24)}) + mikrofon(182, 58, .9) + not_musik(230, 60)
+A['C19-5'] = tiket(110, 60, 120, 60) + tiket(190, 110, 120, 60)
+
+A['C20-1'] = kotak(16, 16, 268, 188, 'a') + papan_keluar(150, 40, '2') + lantai() + orang(100, tinggi=100, jenis='pria', baju='h', kaki_pose={'ki': (-14, 0), 'ka': (14, 0)})
+A['C20-2'] = kotak(16, 16, 268, 188, 'a') + kotak(16, 150, 268, 54, 'p') + garis((16, 150), (284, 150), lebar=5) + kereta(150, 146, 250) + orang(250, kaki=200, tinggi=60, jenis='pria', baju='h')
+A['C20-3'] = kotak(16, 16, 268, 188, 'a') + papan_keluar(150, 60, '', 1)
+A['C20-4'] = kotak(16, 16, 268, 188, 'a') + papan_keluar(150, 60, '', -1)
+A['C20-5'] = gerbong_mrt(True)
+
+A['C21-1'] = lantai() + rambu(150, skuter(150, 70, .45), True, 200, 50)
+A['C21-2'] = lantai() + skuter(150, 200, 1.1) + orang(130, kaki=150, tinggi=120, jenis='wanita', baju='a', wajah='takut', tangan={'ki': [(20, -20), (40, -30)], 'ka': [(20, -20), (40, -30)]}) + jalur('M80 90 q-10 10 0 20 M220 90 q10 10 0 20', 'g')
+A['C21-3'] = lantai() + kotak(20, 30, 60, 60, 'h', 6) + huruf_p(50, 56, 50).replace('<text', '<text style="fill:#fff"') + mobil(110, 200, 100) + mobil(220, 200, 100, k='a') + garis((165, 200), (165, 170), k='t')
+A['C21-4'] = lantai() + rambu(150, huruf_p(150, 52, 56), True, 200, 50)
+A['C21-5'] = lantai() + mobil(90, 200, 110) + skuter(220, 200, .8) + mobil(170, 170, 80, k='a') + skuter(60, 160, .5) + jalur('M120 40 l20 20 M160 30 l-10 24 M200 44 l-20 14', 'g') + teks(150, 26, '!!', 20, angka=True)
+
+A['C22-1'] = lantai() + orang(80, tinggi=160, jenis='pria', baju='a') + koper(140, 196, 1.0) + koper(190, 196, 1.2) + koper(245, 196, .9) + koper(190, 128, .7)
+A['C22-2'] = kalender_senin(150, 40, 2, 3) + pesawat(150, 150, .45) + panah(150, 118, 150, 132, 3)
+A['C22-3'] = lantai() + orang(110, tinggi=160, jenis='wanita', baju='a', wajah='sakit', tangan={'ka': [(20, 30), (46, 44)]}) + koper(190, 196, 1.3) + keringat(84, 44) + jalur('M230 120 l12 -8 M232 136 l14 0', 'g')
+A['C22-4'] = kalender_bulan(90, 40, 5, '', 110, 110) + teks(90, 175, '這個月', 18) + kalender_bulan(215, 40, 6, '', 110, 110) + pesawat(215, 110, .28)
+A['C22-5'] = lantai() + orang(150, tinggi=160, jenis='pria', baju='a', wajah='sakit', tangan={'ki': [(20, 30), (30, 50)], 'ka': [(20, 30), (30, 50)]}) + kardus(150, 196, 90, 50) + keringat(124, 44) + keringat(180, 40)
+
+A['C23-1'] = laut(160) + kapal(150, 130, 1.0) + awan(60, 40, .4) + awan(240, 50, .35)
+A['C23-2'] = laut(170) + kapal(190, 140, .8) + tiket(70, 40, 100, 50) + pesawat(62, 64, .18) + silang(70, 64, 26, 6)
+A['C23-3'] = lantai() + gedung(120, tingkat=5, lebar=150) + kotak(200, 60, 80, 50, 'p', 4) + kotak(212, 80, 56, 14, 'h') + kotak(212, 70, 10, 24, 'h') + silang(240, 85, 26, 6)
+A['C23-4'] = kabin_penuh()
+A['C23-5'] = laut(160) + jalur('M200 160 Q240 110 280 160 Z', 'a') + pohon(240, 150, .4) + kapal(110, 140, .7)
+
+A['C24-1'] = topan()
+A['C24-2'] = lantai() + awan(150, 60, 1.6, 'h') + jalur('M150 70 m-60 0 a60 24 0 1 1 120 0 a44 18 0 1 1 -88 0 a26 10 0 1 1 52 0', 'w') + rumah(150, 200, 110, 60)
+A['C24-3'] = kolam_panas() + orang(110, kaki=190, tinggi=110, jenis='wanita', baju='p', wajah='puas') + orang(190, kaki=190, tinggi=115, jenis='pria', baju='p', wajah='puas') + kolam_panas().replace('class="a"', 'class="a"')[:0]
+A['C24-4'] = dua_panel(topan().replace(lantai(), ''), rumah(225, 200, 110, 70) + orang(210, kaki=196, tinggi=50, jenis='laki', baju='a') + orang(240, kaki=196, tinggi=60, jenis='wanita', baju='h')) + lantai()
+A['C24-5'] = kolam_panas(150, 150) + pohon(40, 180, .5) + pohon(265, 180, .5)
