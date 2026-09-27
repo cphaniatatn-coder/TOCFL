@@ -1,48 +1,40 @@
 {
  "B36": [
   {
-   "type": "listen_pick",
+   "type": "listen_pic",
    "part": "聽力 Part 1 · Deskripsi gambar",
-   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
-   "audio": "我去銀行。",
+   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+   "picture": {
+    "icon": "🏦",
+    "label": "gedung bank dengan tanda uang",
+    "img": "B36-4"
+   },
+   "question": "你去哪裡？",
    "options": [
-    {
-     "icon": "🏥",
-     "label": "rumah sakit"
-    },
-    {
-     "icon": "🏤",
-     "label": "kantor pos"
-    },
-    {
-     "icon": "🏦",
-     "label": "bank"
-    }
+    "郵局。",
+    "書店。",
+    "銀行。"
    ],
    "answer": 2,
    "why": "銀行 = bank."
   },
   {
-   "type": "listen_pick",
+   "type": "listen_pic",
    "part": "聽力 Part 1 · Deskripsi gambar",
-   "instr": "Dengarkan kalimatnya, lalu pilih gambar yang cocok.",
-   "audio": "我要寄信。",
+   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+   "picture": {
+    "icon": "✉️📮",
+    "label": "dia memasukkan surat ke kotak pos",
+    "img": "B36-5"
+   },
+   "question": "你要做什麼？",
    "options": [
-    {
-     "icon": "✉️📮",
-     "label": "mengirim surat"
-    },
-    {
-     "icon": "💵",
-     "label": "mengambil uang"
-    },
-    {
-     "icon": "📦",
-     "label": "menerima paket"
-    }
+    "我要寄信。",
+    "我要借錢。",
+    "我要買書。"
    ],
    "answer": 0,
-   "why": "寄 = mengirim."
+   "why": "寄信 = mengirim surat."
   },
   {
    "type": "listen_dialog",

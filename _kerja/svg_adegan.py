@@ -450,3 +450,209 @@ def minimarket(x, lantai_y=LANTAI, w=190, h=130):
     return (kotak(x - w / 2, lantai_y - h, w, h, 'p') + kotak(x - w / 2, lantai_y - h, w, 28, 'h') + teks(x, lantai_y - h + 22, '24', 22, angka=True, warna='#fff')
             + kotak(x - w / 2 + 12, lantai_y - h + 40, 70, 50, 'p') + kotak(x + 10, lantai_y - 90, 70, 90, 'a')
             + garis((x + 45, lantai_y - 90), (x + 45, lantai_y)) + botol(x - w / 2 + 34, lantai_y - h + 88, .4) + botol(x - w / 2 + 60, lantai_y - h + 88, .4))
+
+
+# ================= komponen tambahan (Volume 2, B25–B36) =================
+def kompor(x, atas, w=120):
+    return kotak(x - w / 2, atas, w, 26, 'a', 4) + bulat(x - w / 4, atas + 13, 5, 'h') + bulat(x + w / 4, atas + 13, 5, 'h') + kotak(x - w / 2 + 6, atas + 26, w - 12, LANTAI - atas - 26, 'p')
+
+
+def api(x, y, s=1.0):
+    return ''.join(jalur(f'M{f(x + dx * s)} {f(y)} q{f(-7 * s)} {f(-12 * s)} {f(2 * s)} {f(-22 * s)} q{f(2 * s)} {f(10 * s)} {f(7 * s)} {f(8 * s)} q{f(4 * s)} {f(8 * s)} {f(-9 * s)} {f(14 * s)} Z', 'h') for dx in (-16, 0, 16))
+
+
+def wajan(x, y, s=1.0, isi=True):
+    o = jalur(f'M{f(x - 50 * s)} {f(y)} Q{f(x)} {f(y + 40 * s)} {f(x + 50 * s)} {f(y)} Z', 'h') + garis((x + 48 * s, y + 2 * s), (x + 90 * s, y - 10 * s), lebar=6 * s)
+    if isi:
+        o += daun(x - 18 * s, y + 2 * s, 1.1 * s) + daun(x + 4 * s, y - 2 * s, 1.0 * s) + daun(x + 22 * s, y + 3 * s, .9 * s)
+    return o
+
+
+def panggangan(x, y, w=160):
+    o = kotak(x - w / 2, y, w, 14, 'h', 3) + bentuk((x - w / 2 + 8, y + 14), (x + w / 2 - 8, y + 14), (x + w / 2 - 22, y + 50), (x - w / 2 + 22, y + 50), k='a')
+    o += garis((x - w / 2 + 30, y + 50), (x - w / 2 + 16, LANTAI), lebar=4) + garis((x + w / 2 - 30, y + 50), (x + w / 2 - 16, LANTAI), lebar=4)
+    return o + ''.join(garis((x - w / 2 + 14 + i * (w - 28) / 6, y), (x - w / 2 + 14 + i * (w - 28) / 6, y + 14), k='w') for i in range(7))
+
+
+def panci_goreng(x, y, w=130):
+    o = bentuk((x - w / 2, y), (x + w / 2, y), (x + w / 2 - 10, y + 56), (x - w / 2 + 10, y + 56), k='h') + garis((x - w / 2 - 20, y + 8), (x - w / 2, y + 8), lebar=6)
+    o += elips(x, y, w / 2, 8, 'a') + ''.join(bulat(x - 40 + i * 20, y - 4 - (i % 2) * 5, 3.5, 'p') for i in range(5))
+    return o
+
+
+def paha_ayam(x, y, s=1.0):
+    return (elips(x, y, 20 * s, 15 * s, 'a') + garis((x + 16 * s, y + 8 * s), (x + 34 * s, y + 22 * s), lebar=6 * s) + bulat(x + 36 * s, y + 24 * s, 5 * s, 'p'))
+
+
+def sendok(x, y, pj=110, sudut=-30):
+    return (f'<g transform="rotate({sudut} {f(x)} {f(y)})">' + elips(x - pj / 2 + 18, y, 18, 12, 'p') + kotak(x - pj / 2 + 34, y - 4, pj - 34, 8, 'h', 4) + '</g>')
+
+
+def garpu(x, y, pj=110, sudut=-30):
+    return (f'<g transform="rotate({sudut} {f(x)} {f(y)})">' + kotak(x - pj / 2 + 30, y - 4, pj - 30, 8, 'h', 4)
+            + jalur(f'M{f(x - pj / 2 + 32)} {f(y - 12)} L{f(x - pj / 2 + 32)} {f(y + 12)} ' + ''.join(f'M{f(x - pj / 2 + 32)} {f(y - 12 + i * 8)} L{f(x - pj / 2)} {f(y - 12 + i * 8)} ' for i in range(4)), 'g', 3.5) + '</g>')
+
+
+def pisau(x, y, pj=120, sudut=-30):
+    return (f'<g transform="rotate({sudut} {f(x)} {f(y)})">' + kotak(x + 6, y - 6, pj / 2 - 6, 12, 'h', 4)
+            + jalur(f'M{f(x + 6)} {f(y - 8)} L{f(x - pj / 2 + 10)} {f(y - 8)} Q{f(x - pj / 2)} {f(y - 4)} {f(x - pj / 2)} {f(y + 6)} L{f(x + 6)} {f(y + 6)} Z', 'p') + '</g>')
+
+
+def gelas_isi(x, bawah, s=1.0, k='a', sedotan=False):
+    o = bentuk((x - 22 * s, bawah - 64 * s), (x + 22 * s, bawah - 64 * s), (x + 17 * s, bawah), (x - 17 * s, bawah), k='p')
+    o += bentuk((x - 20.5 * s, bawah - 50 * s), (x + 20.5 * s, bawah - 50 * s), (x + 17 * s, bawah), (x - 17 * s, bawah), k=k)
+    if sedotan:
+        o += garis((x + 4 * s, bawah - 40 * s), (x + 14 * s, bawah - 84 * s), (x + 26 * s, bawah - 90 * s), lebar=4)
+    return o
+
+
+def kaleng_soda(x, bawah, s=1.0):
+    return kaleng(x, bawah, s) + ''.join(bulat(x - 26 * s + i * 7 * s, bawah - 60 * s - (i % 2) * 8 * s, 2.4 * s, 'p') for i in range(3))
+
+
+def semangka(x, y, s=1.0):
+    o = jalur(f'M{f(x - 60 * s)} {f(y)} A{f(60 * s)} {f(60 * s)} 0 0 0 {f(x + 60 * s)} {f(y)} Z', 'h')
+    o += jalur(f'M{f(x - 52 * s)} {f(y)} A{f(52 * s)} {f(52 * s)} 0 0 0 {f(x + 52 * s)} {f(y)} Z', 'a')
+    return o + ''.join(elips(x + dx * s, y + dy * s, 2.8 * s, 4.2 * s, 'h') for dx, dy in ((-24, 14), (0, 22), (24, 14), (-12, 32), (12, 32)))
+
+
+def kantong_teh(x, y):
+    return garis((x, y), (x + 14, y - 30), k='t') + kotak(x + 8, y - 44, 16, 16, 'p', 2)
+
+
+def pisang(x, y, s=1.0):
+    return (jalur(f'M{f(x - 60 * s)} {f(y - 30 * s)} Q{f(x - 40 * s)} {f(y + 30 * s)} {f(x + 50 * s)} {f(y + 4 * s)} Q{f(x + 60 * s)} {f(y - 2 * s)} {f(x + 54 * s)} {f(y - 8 * s)} '
+                  f'Q{f(x - 20 * s)} {f(y + 8 * s)} {f(x - 48 * s)} {f(y - 36 * s)} Z', 'a')
+            + garis((x - 60 * s, y - 30 * s), (x - 66 * s, y - 40 * s), lebar=6 * s) + jalur(f'M{f(x - 44 * s)} {f(y - 14 * s)} Q{f(x - 10 * s)} {f(y + 14 * s)} {f(x + 40 * s)} {f(y + 2 * s)}', 't'))
+
+
+def pangsit(x, y, s=1.0):
+    return (jalur(f'M{f(x - 26 * s)} {f(y)} Q{f(x)} {f(y - 34 * s)} {f(x + 26 * s)} {f(y)} Z', 'p')
+            + jalur(f'M{f(x - 18 * s)} {f(y - 10 * s)} q{f(6 * s)} {f(-6 * s)} {f(8 * s)} 0 q{f(6 * s)} {f(-6 * s)} {f(8 * s)} 0 q{f(6 * s)} {f(-6 * s)} {f(8 * s)} 0 q{f(6 * s)} {f(-6 * s)} {f(8 * s)} 0', 't'))
+
+
+def hamburger(x, y, s=1.0):
+    return (jalur(f'M{f(x - 60 * s)} {f(y - 20 * s)} Q{f(x - 60 * s)} {f(y - 70 * s)} {f(x)} {f(y - 70 * s)} Q{f(x + 60 * s)} {f(y - 70 * s)} {f(x + 60 * s)} {f(y - 20 * s)} Z', 'a')
+            + ''.join(elips(x + dx * s, y - 50 * s, 3 * s, 2 * s, 'p') for dx in (-30, -10, 10, 30, -20, 20))
+            + jalur(f'M{f(x - 64 * s)} {f(y - 18 * s)} q{f(8 * s)} {f(10 * s)} {f(16 * s)} 0 t{f(16 * s)} 0 t{f(16 * s)} 0 t{f(16 * s)} 0 t{f(16 * s)} 0 t{f(16 * s)} 0 t{f(16 * s)} 0 t{f(16 * s)} 0', 'g', 4)
+            + kotak(x - 58 * s, y - 14 * s, 116 * s, 14 * s, 'h', 5) + kotak(x - 60 * s, y, 120 * s, 16 * s, 'a', 7))
+
+
+def lampion(x, y, s=1.0):
+    return (garis((x, y - 22 * s), (x, y - 16 * s)) + elips(x, y, 16 * s, 17 * s, 'h') + kotak(x - 9 * s, y - 20 * s, 18 * s, 5 * s, 'a') + kotak(x - 9 * s, y + 15 * s, 18 * s, 5 * s, 'a')
+            + garis((x, y + 20 * s), (x, y + 30 * s), k='t'))
+
+
+def jempol(x, y, s=1.0):
+    return (kotak(x - 12 * s, y - 4 * s, 24 * s, 26 * s, 'p', 5) + jalur(f'M{f(x - 10 * s)} {f(y - 4 * s)} L{f(x - 8 * s)} {f(y - 26 * s)} Q{f(x - 2 * s)} {f(y - 32 * s)} {f(x + 2 * s)} {f(y - 24 * s)} L{f(x + 2 * s)} {f(y - 4 * s)}', 'p'))
+
+
+def buku_menu(x, y, s=1.0):
+    return kotak(x - 26 * s, y - 34 * s, 52 * s, 68 * s, 'h', 4) + kotak(x - 18 * s, y - 24 * s, 36 * s, 20 * s, 'p', 2) + ''.join(garis((x - 16 * s, y + 4 * s + i * 8 * s), (x + 16 * s, y + 4 * s + i * 8 * s), k='w') for i in range(3))
+
+
+def teko_kecil(x, bawah, s=1.0):
+    return teko(x, bawah, s)
+
+
+def kedai_teh(x, lantai_y=LANTAI, w=190, h=100):
+    o = jalur(f'M{f(x - w / 2 - 20)} {f(lantai_y - h)} Q{f(x - w / 2)} {f(lantai_y - h - 10)} {f(x - w / 4)} {f(lantai_y - h - 36)} L{f(x + w / 4)} {f(lantai_y - h - 36)} '
+              f'Q{f(x + w / 2)} {f(lantai_y - h - 10)} {f(x + w / 2 + 20)} {f(lantai_y - h)} Z', 'h')
+    o += kotak(x - w / 2, lantai_y - h, w, h, 'p') + kotak(x - 26, lantai_y - 70, 52, 70, 'a') + bulat(x, lantai_y - h + 24, 16, 'p')
+    o += teko(x, lantai_y - h + 34, .3) + lampion(x - w / 2 + 20, lantai_y - h + 26, .7) + lampion(x + w / 2 - 20, lantai_y - h + 26, .7)
+    return o
+
+
+def jalan_panjang(x1, y1, x2, y2):
+    return (jalur(f'M{f(x1)} {f(y1)} C{f(x1 + 60)} {f(y1 - 60)} {f(x2 - 60)} {f(y2 + 60)} {f(x2)} {f(y2)}', 'g', 18)
+            + jalur(f'M{f(x1)} {f(y1)} C{f(x1 + 60)} {f(y1 - 60)} {f(x2 - 60)} {f(y2 + 60)} {f(x2)} {f(y2)}', 'w') + '')
+
+
+def peta(x, y, w=110, h=80):
+    return (bentuk((x - w / 2, y), (x - w / 6, y + 8), (x + w / 6, y), (x + w / 2, y + 8), (x + w / 2, y + h + 8), (x + w / 6, y + h), (x - w / 6, y + h + 8), (x - w / 2, y + h), k='p')
+            + jalur(f'M{f(x - w / 2 + 10)} {f(y + h - 20)} q{f(w / 4)} {f(-40)} {f(w / 2)} {f(-20)} t{f(w / 3)} {f(-30)}', 't') + silang(x + w / 3, y + 24, 7, 3))
+
+
+def koper(x, bawah, s=1.0):
+    return (kotak(x - 22 * s, bawah - 56 * s, 44 * s, 56 * s, 'a', 6) + jalur(f'M{f(x - 10 * s)} {f(bawah - 56 * s)} l0 {f(-10 * s)} l{f(20 * s)} 0 l0 {f(10 * s)}', 'g')
+            + garis((x - 22 * s, bawah - 30 * s), (x + 22 * s, bawah - 30 * s), k='t') + bulat(x - 14 * s, bawah + 3, 3.5, 'h') + bulat(x + 14 * s, bawah + 3, 3.5, 'h'))
+
+
+def perempatan(arah, x=150, y=110):
+    """Persimpangan tampak atas; arah 'kanan' | 'kiri' | 'lurus'. Panah dari bawah ke arah itu."""
+    o = kotak(x - 30, 10, 60, 200, 'a') + kotak(20, y - 30, 260, 60, 'a')
+    o += ''.join(garis((x, 14 + i * 24), (x, 26 + i * 24), k='w') for i in range(8) if not (y - 36 < 14 + i * 24 < y + 30))
+    o += ''.join(garis((24 + i * 24, y), (36 + i * 24, y), k='w') for i in range(11) if not (x - 36 < 24 + i * 24 < x + 30))
+    if arah == 'kanan':
+        o += garis((x, 200), (x, y + 6), lebar=8) + panah(x, y + 6, 262, y + 6, 8)
+    elif arah == 'kiri':
+        o += garis((x, 200), (x, y + 6), lebar=8) + panah(x, y + 6, 38, y + 6, 8)
+    else:
+        o += panah(x, 200, x, 24, 8)
+    return o
+
+
+def sepeda(x, lantai_y=LANTAI, s=1.0):
+    r = 24 * s
+    o = bulat(x - 44 * s, lantai_y - r, r, 't') + bulat(x + 44 * s, lantai_y - r, r, 't')
+    o += bulat(x - 44 * s, lantai_y - r, r, 'g') + bulat(x + 44 * s, lantai_y - r, r, 'g')
+    o += garis((x - 44 * s, lantai_y - r), (x - 6 * s, lantai_y - r), (x + 18 * s, lantai_y - r - 40 * s), (x - 18 * s, lantai_y - r - 40 * s), (x - 44 * s, lantai_y - r), lebar=4)
+    o += garis((x - 6 * s, lantai_y - r), (x - 22 * s, lantai_y - r - 48 * s), lebar=4) + garis((x + 44 * s, lantai_y - r), (x + 22 * s, lantai_y - r - 56 * s), lebar=4)
+    return o + kotak(x - 32 * s, lantai_y - r - 52 * s, 22 * s, 6 * s, 'h', 3) + garis((x + 14 * s, lantai_y - r - 58 * s), (x + 32 * s, lantai_y - r - 60 * s), lebar=5)
+
+
+def pengendara_sepeda(x, jenis='laki', baju='a', tinggi=120):
+    s_ = sendi(x - 10, LANTAI - 34, tinggi, jenis)
+    return (sepeda(x, LANTAI, 1.0) + orang(x - 16, kaki=LANTAI - 30, tinggi=tinggi, jenis=jenis, baju=baju, duduk=LANTAI - 74,
+                                         tangan={'ka': [(16, 10), (34, 14)], 'ki': [(-6, 12), (20, 16)]}))
+
+
+def menara_bandara(x, lantai_y=LANTAI):
+    return (kotak(x - 12, lantai_y - 120, 24, 120, 'p') + bentuk((x - 30, lantai_y - 150), (x + 30, lantai_y - 150), (x + 22, lantai_y - 124), (x - 22, lantai_y - 124), k='h')
+            + kotak(x - 20, lantai_y - 146, 40, 14, 'a') + garis((x, lantai_y - 150), (x, lantai_y - 166), lebar=3))
+
+
+def pesawat_depan(x, y, s=1.0):
+    return (elips(x, y, 26 * s, 22 * s, 'p') + bentuk((x - 26 * s, y + 2 * s), (x - 120 * s, y + 18 * s), (x - 120 * s, y + 26 * s), (x - 20 * s, y + 14 * s), k='a')
+            + bentuk((x + 26 * s, y + 2 * s), (x + 120 * s, y + 18 * s), (x + 120 * s, y + 26 * s), (x + 20 * s, y + 14 * s), k='a')
+            + bentuk((x - 6 * s, y - 20 * s), (x + 6 * s, y - 20 * s), (x + 2 * s, y - 56 * s), (x - 2 * s, y - 56 * s), k='h')
+            + elips(x, y - 4 * s, 12 * s, 6 * s, 'h') + bulat(x - 60 * s, y + 26 * s, 7 * s, 'h') + bulat(x + 60 * s, y + 26 * s, 7 * s, 'h'))
+
+
+def kalender_tahun(x, y, tahun, tanda=False, w=74, h=74):
+    o = kotak(x - w / 2, y, w, h, 'p', 4) + kotak(x - w / 2, y, w, 22, 'h', 4) + teks(x, y + 17, str(tahun), 16, angka=True, warna='#fff')
+    o += ''.join(garis((x - w / 2 + 8, y + 32 + i * 10), (x + w / 2 - 8, y + 32 + i * 10), k='t') for i in range(4))
+    if tanda:
+        o += bulat(x, y + h / 2 + 10, 30, 'g')
+    return o
+
+
+def kotak_pos(x, lantai_y=LANTAI):
+    return (garis((x, lantai_y), (x, lantai_y - 60), lebar=8) + jalur(f'M{f(x - 34)} {f(lantai_y - 60)} L{f(x - 34)} {f(lantai_y - 130)} Q{f(x)} {f(lantai_y - 160)} {f(x + 34)} {f(lantai_y - 130)} L{f(x + 34)} {f(lantai_y - 60)} Z', 'a')
+            + kotak(x - 22, lantai_y - 124, 44, 8, 'h', 3))
+
+
+def amplop(x, y, w=70, h=46, sudut=0):
+    return (f'<g transform="rotate({sudut} {f(x)} {f(y)})">' + kotak(x - w / 2, y - h / 2, w, h, 'p') + garis((x - w / 2, y - h / 2), (x, y + 4), (x + w / 2, y - h / 2), k='t')
+            + kotak(x + w / 2 - 16, y - h / 2 + 5, 11, 13, 'a') + '</g>')
+
+
+def lembar_prangko(x, y, n=3, m=2, uk=40):
+    o = ''
+    for i in range(n):
+        for j in range(m):
+            cx, cy = x - (n - 1) * uk / 2 + i * uk * 1.1, y + j * uk * 1.25
+            o += kotak(cx - uk / 2, cy - uk * .6, uk, uk * 1.2, 'p') + kotak(cx - uk / 2 + 5, cy - uk * .6 + 5, uk - 10, uk * 1.2 - 10, 'a') + bunga(cx, cy - 2, .5)
+    return o
+
+
+def gedung_bank(x, lantai_y=LANTAI, w=200, h=110):
+    o = bentuk((x - w / 2 - 10, lantai_y - h), (x, lantai_y - h - 40), (x + w / 2 + 10, lantai_y - h), k='p') + teks(x, lantai_y - h - 8, '$', 28, angka=True)
+    o += kotak(x - w / 2, lantai_y - h, w, 12, 'h')
+    for i in range(5):
+        o += kotak(x - w / 2 + 12 + i * (w - 24) / 4.6, lantai_y - h + 12, 14, h - 26, 'p')
+    return o + kotak(x - w / 2 - 10, lantai_y - 14, w + 20, 14, 'h')
+
+
+def loket(x, lantai_y=LANTAI, w=150):
+    return kotak(x - w / 2, lantai_y - 80, w, 80, 'a') + kotak(x - w / 2, lantai_y - 88, w, 8, 'h') + garis((x - w / 2 + 10, lantai_y - 88), (x - w / 2 + 10, lantai_y - 150), k='t') + garis((x + w / 2 - 10, lantai_y - 88), (x + w / 2 - 10, lantai_y - 150), k='t')

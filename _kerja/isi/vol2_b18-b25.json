@@ -382,9 +382,9 @@
   ]}
  ],
  "tasks": [
-  {"type": "listen_pick", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-   "audio": "他在炒菜。", "options": [{"icon": "🍳", "label": "menumis"}, {"icon": "🍗", "label": "menggoreng (deep fry)"}, {"icon": "🔥", "label": "memanggang"}], "answer": 0,
-   "why": "炒 = menumis. 炸 (goreng celup) dan 烤 (panggang) adalah cara masak lain."},
+  {"type": "listen_pic", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+   "picture": {"icon": "🍳", "label": "dia menumis sayur di wajan", "img": "B25-1"}, "question": "他在做什麼？", "options": ["他在炒菜。", "他在炸雞。", "他在烤肉。"], "answer": 0,
+   "why": "炒 = menumis (wajan + spatula). 炸 = menggoreng dengan banyak minyak; 烤 = memanggang."},
   {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
    "audio": "你吃飽了嗎？", "options": ["吃飽了，謝謝。", "我吃飯。", "我很餓了嗎。"], "answer": 0,
    "why": "吃飽了嗎 → 吃飽了／還沒…. B tidak menjawab; C strukturnya salah."},
