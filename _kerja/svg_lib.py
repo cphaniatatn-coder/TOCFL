@@ -167,6 +167,24 @@ def muka(x, y, r, w):
                 + elips(x, mulut_y + r * .05, r * .18, r * .2, k='h'))
     if w == 'kaget':
         return mata + elips(x, mulut_y + r * .05, r * .13, r * .16, k='t')
+    if w == 'nangis':   # mata terpejam turun, air mata, mulut terbuka sedih
+        return (jalur(f'M{f(x - ex - r * .18)} {f(ey - r * .04)} q{f(r * .18)} {f(r * .14)} {f(r * .36)} 0 M{f(x + ex - r * .18)} {f(ey - r * .04)} q{f(r * .18)} {f(r * .14)} {f(r * .36)} 0', 't')
+                + jalur(f'M{f(x - ex)} {f(ey + r * .12)} q{f(-r * .12)} {f(r * .3)} 0 {f(r * .36)} q{f(r * .12)} {f(-r * .06)} 0 {f(-r * .36)} Z '
+                        f'M{f(x + ex)} {f(ey + r * .12)} q{f(-r * .12)} {f(r * .3)} 0 {f(r * .36)} q{f(r * .12)} {f(-r * .06)} 0 {f(-r * .36)} Z', 'p')
+                + jalur(f'M{f(x - r * .26)} {f(mulut_y + r * .18)} Q{f(x)} {f(mulut_y - r * .2)} {f(x + r * .26)} {f(mulut_y + r * .18)} Z', 'h'))
+    if w == 'marah':    # alis turun ke tengah, mulut cemberut
+        return (mata + garis((x - ex - r * .22, ey - r * .34), (x - ex + r * .18, ey - r * .16), lebar=r * .12)
+                + garis((x + ex + r * .22, ey - r * .34), (x + ex - r * .18, ey - r * .16), lebar=r * .12)
+                + jalur(f'M{f(x - r * .3)} {f(mulut_y + r * .14)} Q{f(x)} {f(mulut_y - r * .12)} {f(x + r * .3)} {f(mulut_y + r * .14)}', 't'))
+    if w == 'tawa':     # mata melengkung, mulut terbuka lebar
+        return (jalur(f'M{f(x - ex - r * .15)} {f(ey)} q{f(r * .15)} {f(-r * .18)} {f(r * .3)} 0 M{f(x + ex - r * .15)} {f(ey)} q{f(r * .15)} {f(-r * .18)} {f(r * .3)} 0', 't')
+                + jalur(f'M{f(x - r * .36)} {f(mulut_y - r * .08)} L{f(x + r * .36)} {f(mulut_y - r * .08)} Q{f(x + r * .3)} {f(mulut_y + r * .42)} {f(x)} {f(mulut_y + r * .42)} Q{f(x - r * .3)} {f(mulut_y + r * .42)} {f(x - r * .36)} {f(mulut_y - r * .08)} Z', 'h'))
+    if w in ('gugup', 'takut'):   # alis naik miring, mulut bergelombang / terbuka kecil
+        alis = (garis((x - ex - r * .2, ey - r * .2), (x - ex + r * .16, ey - r * .34), lebar=r * .1)
+                + garis((x + ex + r * .2, ey - r * .2), (x + ex - r * .16, ey - r * .34), lebar=r * .1))
+        mulut = (jalur(f'M{f(x - r * .3)} {f(mulut_y)} l{f(r * .15)} {f(-r * .08)} l{f(r * .15)} {f(r * .08)} l{f(r * .15)} {f(-r * .08)} l{f(r * .15)} {f(r * .08)}', 't')
+                 if w == 'gugup' else elips(x, mulut_y + r * .05, r * .12, r * .15, k='h'))
+        return mata + alis + mulut
     return mata
 
 
