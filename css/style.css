@@ -42,11 +42,11 @@ body {
 button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; text-align: inherit; }
 button:disabled { cursor: default; }
 a { color: var(--pri); }
-textarea {
+textarea, input.field {
   width: 100%; font: inherit; color: var(--text); background: var(--surface); resize: vertical;
   border: 1.5px solid var(--line); border-radius: var(--r-sm); padding: 10px 12px;
 }
-textarea:focus, button:focus-visible { outline: 3px solid var(--pri-pale); outline-offset: 1px; border-color: var(--pri); }
+textarea:focus, input.field:focus, button:focus-visible { outline: 3px solid var(--pri-pale); outline-offset: 1px; border-color: var(--pri); }
 
 /* ===== gambar ===== */
 .tw { width: 1.2em; height: 1.2em; vertical-align: -0.22em; display: inline-block; }
@@ -417,3 +417,7 @@ details.panel summary { cursor: pointer; list-style: none; }
 .speed button.on { background: var(--pri); color: #fff; box-shadow: none; }
 .chat .speed { padding: 0 4px; }
 .feedback b[lang="zh-TW"] + span { font-size: 16px; }
+
+/* kirim hasil */
+input.field { min-height: 48px; }
+.kirim-list { margin: 0 0 8px 18px; font-size: 14.5px; display: grid; gap: 4px; }

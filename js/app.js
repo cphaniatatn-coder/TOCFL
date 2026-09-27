@@ -4,7 +4,8 @@
      #/v/1              peta modul volume 1   (#/v/1/kata = latihan kosakata, #/v/1/ujian = ujian simulasi)
      #/m/A01/0          modul A01, tahap ke-0
      #/latihan          sesi latihan kosakata yang sedang berjalan
-     #/ujian            sesi ujian simulasi yang sedang berjalan */
+     #/ujian            sesi ujian simulasi yang sedang berjalan
+     #/kirim            kirim hasil ke Google Sheet guru (js/kirim.js) */
 
 const VOLUMES = [
   { num: 1, level: 'A0', tbcl: 'TBCL 第1級', vocab: 396, grammar: 15, approach: 'TBLL 6 tahap', color: 'v1' },
@@ -67,6 +68,7 @@ const App = {
     if (p[0] === 'm' && this.findModule(p[1])) return Modul.open(p[1], +(p[2] || 0));
     if (p[0] === 'latihan' && Latihan.session) return Latihan.render();
     if (p[0] === 'ujian' && Ujian.session) return Ujian.render();
+    if (p[0] === 'kirim') return Kirim.render();
     return this.renderHome();
   },
 
@@ -153,6 +155,12 @@ const App = {
           </button>`;
         }).join('')}
       </div>
+      ${Kirim.aktif() ? `
+      <button class="card continue" onclick="App.go('#/kirim')">
+        ${Pic.html('📤', 'mode-ic')}
+        <div class="continue-txt"><small>Untuk guru</small><b>Kirim hasil belajar</b><span>Nilai & refleksimu dikirim ke gurumu</span></div>
+        <span class="chev">›</span>
+      </button>` : ''}
       <p class="credit">Ilustrasi: Twemoji © Twitter/X &amp; kontributor, lisensi CC-BY 4.0. Gambar soal hitam-putih: OpenMoji (openmoji.org), lisensi CC BY-SA 4.0.</p>`);
   },
 
