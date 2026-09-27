@@ -24574,70 +24574,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "書架上的書太多了，放不下了。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "📚",
+      "label": "rak buku penuh sesak, satu buku tidak muat",
+      "img": "C61-1"
+     },
+     "question": "書架上還放得下嗎？",
      "options": [
-      {
-       "icon": "📚📚📚",
-       "label": "rak penuh"
-      },
-      {
-       "icon": "📚",
-       "label": "rak kosong"
-      },
-      {
-       "icon": "📖",
-       "label": "satu buku"
-      }
+      "放得下。",
+      "我不看書。",
+      "放不下了。"
+     ],
+     "answer": 2,
+     "why": "V不下 = tidak muat."
+    },
+    {
+     "type": "listen_pic",
+     "part": "聽力 Part 1 · Deskripsi gambar",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "📖😩",
+      "label": "dia menutup buku dengan wajah bosan/lelah",
+      "img": "C61-2"
+     },
+     "question": "這本書你看得下去嗎？",
+     "options": [
+      "看不下去了。",
+      "我看完了。",
+      "我很喜歡看。"
      ],
      "answer": 0,
-     "why": "放不下 = tidak muat lagi."
+     "why": "V不下去 = tidak sanggup meneruskan."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "這本書我看不下去了。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "📦❌",
+      "label": "barang lebih besar dari kotak, tidak muat",
+      "img": "C61-3"
+     },
+     "question": "箱子放得下嗎？",
      "options": [
-      {
-       "icon": "📖✅",
-       "label": "selesai membaca"
-      },
-      {
-       "icon": "📖😩",
-       "label": "tidak sanggup meneruskan membaca"
-      },
-      {
-       "icon": "📖😍",
-       "label": "suka sekali membaca"
-      }
+      "我沒有箱子。",
+      "放不下。",
+      "放得下。"
      ],
      "answer": 1,
-     "why": "V不下去 = tidak bisa melanjutkan."
-    },
-    {
-     "type": "listen_pick",
-     "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "箱子太小，放不下。",
-     "options": [
-      {
-       "icon": "🧳",
-       "label": "koper kosong"
-      },
-      {
-       "icon": "📦❌",
-       "label": "tidak muat"
-      },
-      {
-       "icon": "📦✅",
-       "label": "muat"
-      }
-     ],
-     "answer": 1,
-     "why": "V不下 = tidak muat."
+     "why": "Barang lebih besar dari kotak → 放不下."
     },
     {
      "type": "listen_reply",
@@ -24947,70 +24935,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "他買不起那個手錶。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "⌚💸",
+      "label": "jam tangan di etalase dengan harga sangat mahal, dia menggeleng",
+      "img": "C62-1"
+     },
+     "question": "他買得起那個手錶嗎？",
      "options": [
-      {
-       "icon": "⌚💸",
-       "label": "jam terlalu mahal"
-      },
-      {
-       "icon": "⌚✅",
-       "label": "membeli jam"
-      },
-      {
-       "icon": "🎁",
-       "label": "hadiah"
-      }
+      "他不要手錶。",
+      "買不起，太貴了。",
+      "買得起。"
+     ],
+     "answer": 1,
+     "why": "V不起 = tidak mampu (secara uang)."
+    },
+    {
+     "type": "listen_pic",
+     "part": "聽力 Part 1 · Deskripsi gambar",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🛍️😫",
+      "label": "dia membawa banyak kantong belanja dan kewalahan",
+      "img": "C62-2"
+     },
+     "question": "東西這麼多，你拿得動嗎？",
+     "options": [
+      "拿得動。",
+      "我去買東西。",
+      "拿不動！"
+     ],
+     "answer": 2,
+     "why": "V不動 = tidak kuat (menggerakkan)."
+    },
+    {
+     "type": "listen_pic",
+     "part": "聽力 Part 1 · Deskripsi gambar",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "💎❌",
+      "label": "cincin berlian dengan harga mahal, dompet kosong",
+      "img": "C62-3"
+     },
+     "question": "你買得起這個嗎？",
+     "options": [
+      "買不起。",
+      "買得起。",
+      "這是禮物。"
      ],
      "answer": 0,
-     "why": "買不起 = tidak mampu membeli (karena mahal)."
-    },
-    {
-     "type": "listen_pick",
-     "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "東西太多，我拿不動！",
-     "options": [
-      {
-       "icon": "🧳😊",
-       "label": "ringan"
-      },
-      {
-       "icon": "🛍️",
-       "label": "berbelanja"
-      },
-      {
-       "icon": "🧳😫",
-       "label": "tidak kuat membawa"
-      }
-     ],
-     "answer": 2,
-     "why": "V不動 = tidak kuat."
-    },
-    {
-     "type": "listen_pick",
-     "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "這麼貴，我買不起。",
-     "options": [
-      {
-       "icon": "💎✅",
-       "label": "mampu membeli"
-      },
-      {
-       "icon": "🎁",
-       "label": "hadiah"
-      },
-      {
-       "icon": "💎❌",
-       "label": "tidak mampu membeli"
-      }
-     ],
-     "answer": 2,
-     "why": "V不起 = tidak mampu (biaya)."
+     "why": "V不起 = tidak mampu membeli."
     },
     {
      "type": "listen_reply",
@@ -25301,69 +25277,57 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "天下起雨來了。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🌧️",
+      "label": "hujan mulai turun, orang membuka payung",
+      "img": "C63-1"
+     },
+     "question": "天氣怎麼了？",
      "options": [
-      {
-       "icon": "🌧️",
-       "label": "mulai hujan"
-      },
-      {
-       "icon": "☀️",
-       "label": "cerah"
-      },
-      {
-       "icon": "❄️",
-       "label": "salju"
-      }
+      "下起雨來了。",
+      "出太陽了。",
+      "下雪了。"
      ],
      "answer": 0,
-     "why": "下起雨來 = mulai turun hujan."
+     "why": "V起來 = mulai …."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "啊，我想起來了！",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "💡",
+      "label": "dia menepuk kepala, bola lampu menyala",
+      "img": "C63-2"
+     },
+     "question": "你想起來了嗎？",
      "options": [
-      {
-       "icon": "💡",
-       "label": "teringat"
-      },
-      {
-       "icon": "😴",
-       "label": "tidur"
-      },
-      {
-       "icon": "❓",
-       "label": "lupa"
-      }
+      "我不知道。",
+      "啊，我想起來了！",
+      "我想睡覺。"
      ],
-     "answer": 0,
-     "why": "V起來 = teringat kembali."
+     "answer": 1,
+     "why": "想起來 = teringat."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "大家都笑起來了。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "😂",
+      "label": "sekelompok orang mulai tertawa bersama",
+      "img": "C63-3"
+     },
+     "question": "大家怎麼了？",
      "options": [
-      {
-       "icon": "😂😂",
-       "label": "semua mulai tertawa"
-      },
-      {
-       "icon": "😭",
-       "label": "menangis"
-      },
-      {
-       "icon": "🤐",
-       "label": "diam"
-      }
+      "大家都睡覺了。",
+      "大家都不說話。",
+      "大家都笑起來了。"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "V起來 = mulai …."
     },
     {
@@ -25687,70 +25651,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "他穿上了外套。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🧥",
+      "label": "dia memakai jaket",
+      "img": "C64-1"
+     },
+     "question": "他穿上了什麼？",
      "options": [
-      {
-       "icon": "🧥",
-       "label": "memakai jaket"
-      },
-      {
-       "icon": "👕",
-       "label": "memakai kaus"
-      },
-      {
-       "icon": "🧣",
-       "label": "memakai syal"
-      }
+      "裙子。",
+      "帽子。",
+      "外套。"
+     ],
+     "answer": 2,
+     "why": "V上 = memakai/menutup (hasil melekat)."
+    },
+    {
+     "type": "listen_pic",
+     "part": "聽力 Part 1 · Deskripsi gambar",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🚪",
+      "label": "dia menunjuk pintu yang terbuka sambil berbicara",
+      "img": "C64-2"
+     },
+     "question": "他說什麼？",
+     "options": [
+      "請關上門。",
+      "請開窗。",
+      "請開燈。"
      ],
      "answer": 0,
-     "why": "穿上外套 = memakai jaket."
+     "why": "關上 = menutup rapat."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "請關上門。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🧥🚪",
+      "label": "dia memakai jaket lalu keluar pintu",
+      "img": "C64-3"
+     },
+     "question": "他穿上外套以後做什麼？",
      "options": [
-      {
-       "icon": "🪟",
-       "label": "membuka jendela"
-      },
-      {
-       "icon": "🚪",
-       "label": "menutup pintu"
-      },
-      {
-       "icon": "💡",
-       "label": "menyalakan lampu"
-      }
+      "洗澡了。",
+      "出門了。",
+      "睡覺了。"
      ],
      "answer": 1,
-     "why": "V上 = melekat/tertutup."
-    },
-    {
-     "type": "listen_pick",
-     "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "他穿上外套出門了。",
-     "options": [
-      {
-       "icon": "🛌",
-       "label": "tidur"
-      },
-      {
-       "icon": "🧥🚪",
-       "label": "memakai jaket lalu keluar"
-      },
-      {
-       "icon": "🧥",
-       "label": "melepas jaket"
-      }
-     ],
-     "answer": 1,
-     "why": "穿上 = mengenakan."
+     "why": "出門 = keluar rumah."
     },
     {
      "type": "listen_reply",
@@ -26035,70 +25987,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "盤子裝滿了。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🍽️",
+      "label": "piring penuh lauk",
+      "img": "C65-1"
+     },
+     "question": "盤子裡怎麼樣？",
      "options": [
-      {
-       "icon": "🍽️🍗🍚🥗",
-       "label": "piring penuh"
-      },
-      {
-       "icon": "🍽️",
-       "label": "piring kosong"
-      },
-      {
-       "icon": "🥣",
-       "label": "mangkuk"
-      }
+      "只有一點水。",
+      "裝滿了菜。",
+      "什麼都沒有。"
      ],
-     "answer": 0,
-     "why": "裝滿 = terisi penuh."
+     "answer": 1,
+     "why": "V滿 = penuh."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "今天吃個夠！",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "😋",
+      "label": "meja penuh makanan, orang-orang gembira siap makan",
+      "img": "C65-2"
+     },
+     "question": "他說什麼？",
      "options": [
-      {
-       "icon": "🍽️😋",
-       "label": "makan sepuasnya"
-      },
-      {
-       "icon": "🚫",
-       "label": "tidak makan"
-      },
-      {
-       "icon": "🥗",
-       "label": "makan sedikit"
-      }
+      "我不想吃。",
+      "我只吃一點。",
+      "今天吃個夠！"
      ],
-     "answer": 0,
-     "why": "V個夠 = sepuasnya."
+     "answer": 2,
+     "why": "V個夠 = … sepuasnya."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "位子都坐滿了。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🪑",
+      "label": "deretan kursi semua diduduki orang",
+      "img": "C65-3"
+     },
+     "question": "位子怎麼樣？",
      "options": [
-      {
-       "icon": "🪑🧑🧑",
-       "label": "kursi penuh"
-      },
-      {
-       "icon": "🪑",
-       "label": "kursi kosong"
-      },
-      {
-       "icon": "🚪",
-       "label": "pintu"
-      }
+      "都坐滿了。",
+      "都沒有人。",
+      "很舒服。"
      ],
      "answer": 0,
-     "why": "V滿 = sampai penuh."
+     "why": "坐滿 = penuh diduduki."
     },
     {
      "type": "listen_reply",
@@ -26405,70 +26345,58 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "考試要帶學生證。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🪪",
+      "label": "kartu pelajar berfoto",
+      "img": "C66-1"
+     },
+     "question": "考試要帶什麼？",
      "options": [
-      {
-       "icon": "🪪",
-       "label": "kartu mahasiswa"
-      },
-      {
-       "icon": "📱",
-       "label": "HP"
-      },
-      {
-       "icon": "📚",
-       "label": "buku"
-      }
+      "學生證。",
+      "手機。",
+      "書。"
      ],
      "answer": 0,
-     "why": "學生證 = kartu mahasiswa."
+     "why": "學生證 = kartu pelajar."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "考試要帶學生證。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🪪📝",
+      "label": "murid menunjukkan kartu pelajar di meja ujian",
+      "img": "C66-2"
+     },
+     "question": "考試的時候，要帶什麼？",
      "options": [
-      {
-       "icon": "💳",
-       "label": "kartu kredit"
-      },
-      {
-       "icon": "🪪",
-       "label": "kartu pelajar"
-      },
-      {
-       "icon": "🎫",
-       "label": "tiket"
-      }
+      "票。",
+      "學生證。",
+      "信用卡。"
      ],
      "answer": 1,
      "why": "學生證 = kartu pelajar."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我在圖書館查資料。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "💻📚",
+      "label": "di perpustakaan dia mencari data di komputer",
+      "img": "C66-3"
+     },
+     "question": "你在圖書館做什麼？",
      "options": [
-      {
-       "icon": "🎮",
-       "label": "bermain game"
-      },
-      {
-       "icon": "😴",
-       "label": "tidur"
-      },
-      {
-       "icon": "💻",
-       "label": "mencari data"
-      }
+      "玩遊戲。",
+      "睡覺。",
+      "查資料。"
      ],
      "answer": 2,
-     "why": "資料 = data/berkas."
+     "why": "查資料 = mencari data."
     },
     {
      "type": "listen_reply",
@@ -26800,67 +26728,55 @@
    ],
    "tasks": [
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "這是你要的便當。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🍱",
+      "label": "kurir menyerahkan bento",
+      "img": "C67-1"
+     },
+     "question": "這是什麼？",
      "options": [
-      {
-       "icon": "🍱",
-       "label": "bento"
-      },
-      {
-       "icon": "🍕",
-       "label": "piza"
-      },
-      {
-       "icon": "🍔",
-       "label": "hamburger"
-      }
-     ],
-     "answer": 0,
-     "why": "便當 = bento."
-    },
-    {
-     "type": "listen_pick",
-     "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "一個小時以內送得到。",
-     "options": [
-      {
-       "icon": "🛵⏳",
-       "label": "lebih dari 2 jam"
-      },
-      {
-       "icon": "🏪",
-       "label": "ambil sendiri"
-      },
-      {
-       "icon": "🛵⏱️",
-       "label": "diantar dalam 1 jam"
-      }
+      "麵包。",
+      "水果。",
+      "你要的便當。"
      ],
      "answer": 2,
-     "why": "以內 = dalam (batas)."
+     "why": "VP + 的 + N: 你要的便當 = bento yang kamu mau."
     },
     {
-     "type": "listen_pick",
+     "type": "listen_pic",
      "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Dengarkan, lalu pilih gambar yang cocok.",
-     "audio": "我整天都在家。",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🛵⏱️",
+      "label": "pengantar bermotor dan jam dengan sektor 1 jam",
+      "img": "C67-2"
+     },
+     "question": "送得到嗎？",
      "options": [
-      {
-       "icon": "✈️",
-       "label": "bepergian"
-      },
-      {
-       "icon": "🏠",
-       "label": "seharian di rumah"
-      },
-      {
-       "icon": "🏫",
-       "label": "di sekolah"
-      }
+      "一個小時以內送得到。",
+      "要兩個小時以上。",
+      "要自己去拿。"
+     ],
+     "answer": 0,
+     "why": "以內 = dalam (batas) …."
+    },
+    {
+     "type": "listen_pic",
+     "part": "聽力 Part 1 · Deskripsi gambar",
+     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+     "picture": {
+      "icon": "🏠",
+      "label": "dia di rumah seharian (matahari → bulan)",
+      "img": "C67-3"
+     },
+     "question": "你今天去哪裡了？",
+     "options": [
+      "我去旅行了。",
+      "我整天都在家。",
+      "我去學校了。"
      ],
      "answer": 1,
      "why": "整天 = seharian."

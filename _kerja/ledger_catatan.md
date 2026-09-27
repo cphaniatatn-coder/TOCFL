@@ -78,3 +78,8 @@
 - **2026-09-26 — Koreksi bendera A02-3 (temuan Carli):** bendera Taiwan semula digambar dengan bintang (SALAH, sensitif).
   Diganti 中華民國國旗 yang benar: 白日 = matahari putih 12 sinar + lingkar + cakram di kanton (versi hitam-putih).
   Pemeriksaan ulang 121 gambar: tidak ada bendera/peta/lambang negara atau agama lain.
+- **2026-09-27 — 聽力 Part 1 Volume 2 & 3 selesai (format resmi + SVG).** Semua soal `listen_pick` lama di Vol.2 (227)
+  & Vol.3 (332) diubah ke `listen_pic` (gambar + pertanyaan + 3 jawaban lisan), tiap kalimat dicek kosakata & pola
+  grammar per bab, lalu diberi ilustrasi SVG (adegan di `_kerja/adegan_vol2.py`, `_kerja/adegan_vol3.py`; komponen
+  bersama `_kerja/svg_adegan.py`). Total Part 1 bergambar: Vol.1 121 + Vol.2 227 + Vol.3 332 = 680. Lembar periksa per
+  volume: `_kerja/gambar/periksa_vol{1,2,3}.html`. Smoke test 138 modul + Tes Bab: OK, tanpa error JS.
