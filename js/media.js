@@ -121,7 +121,7 @@ const Speech = {
     for (const [i, x] of texts.entries()) {
       if (t !== this.token) return;
       await this.play(x, 'N', t);
-      await new Promise(r => setTimeout(r, i === 0 ? 900 : 600));
+      await new Promise(r => setTimeout(r, i === 0 ? 650 : 350));   // + 250 ms hening awal di tiap rekaman
     }
     if (t === this.token && onend) onend();
   },
@@ -133,7 +133,7 @@ const Speech = {
     for (const l of lines) {
       if (t !== this.token) return;
       await this.play(l.zh, this.profil(l.sp), t);
-      await new Promise(r => setTimeout(r, 120));   // jeda singkat antarbaris (hening klip sudah dipotong)
+      // tanpa jeda tambahan: hening akhir (150 ms) + hening awal klip berikutnya (250 ms) sudah jadi jeda giliran bicara
     }
     if (t === this.token && onend) onend();
   },

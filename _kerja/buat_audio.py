@@ -4,7 +4,8 @@
   Peta pembicara → profil ada di js/media.js (blok SPEAKERS) — satu sumber untuk app & skrip ini.
 - Nama file = hash cyrb53 dari "PROFIL|teks" (base36), dihitung sama persis di js/media.js,
   jadi app tidak perlu memuat daftar audio apa pun sebelum bisa memutar.
-- Setiap rekaman dipotong heningnya (awal & akhir) supaya langsung berbunyi saat diklik.
+- Hening tiap rekaman diratakan: awal 250 ms (bantalan agar suku kata pertama tidak termakan saat perangkat audio
+  baru aktif), akhir 150 ms; mp3 64 kbps.
 - Teks yang DIUCAPKAN bisa berbeda dari teks yang ditampilkan (_kerja/ucapan.json): homofon untuk kata
   polifon yang dibaca salah oleh TTS, 和 → bacaan Taiwan hàn dalam kalimat, dan kata tanpa homofon
   (得 děi) diucapkan dalam kalimat pembawa lalu dipotong pada batas katanya.
@@ -33,7 +34,9 @@ PROFIL = {
     # suara laki-laki +30Hz dulu terdengar seperti robot. Di B46 lawan bicaranya HsiaoYu, jadi pakai HsiaoChen.
     'K':  dict(voice='zh-TW-HsiaoChenNeural', pitch='+15Hz', rate='+5%'),
 }
-RATE = '-5%'   # sedikit lebih pelan dari normal, untuk pelajar Band A
+RATE = '-5%'
+AWAL_MS, BITRATE = 250, '64k'          # hening awal (bantalan) & kualitas mp3
+OLAH = f'awal{AWAL_MS}-{BITRATE}'      # ikut tanda rekaman → ubah angka di atas = semua rekaman dibuat ulang   # sedikit lebih pelan dari normal, untuk pelajar Band A
 js = open(f'{R}/js/media.js', encoding='utf-8').read()
 UCAPAN = json.load(open(f'{K}/ucapan.json', encoding='utf-8'))
 VERSI = f'{K}/audio_versi.json'
@@ -77,7 +80,7 @@ def profil(prof, ambil):
 def tanda(prof, kunci_prof, text):
     ucap, ambil = ucapan(kunci_prof, text)
     p = profil(prof, ambil)
-    return f"{p['voice']}|{p.get('rate', RATE)}|{p.get('pitch', '+0Hz')}|{ucap}|{ambil or ''}"
+    return f"{p['voice']}|{p.get('rate', RATE)}|{p.get('pitch', '+0Hz')}|{ucap}|{ambil or ''}|{OLAH}"
 
 
 def narator(text):
@@ -132,15 +135,17 @@ def kumpulkan():
 
 
 def potong(src, dst, iris=None):
-    """Buang hening di awal (sisakan 30 ms) & akhir (sisakan 150 ms), simpan mp3 mono 24 kHz.
+    """Ratakan hening: awal tepat AWAL_MS (bantalan — speaker/Bluetooth/HP butuh ±100–300 ms untuk "bangun";
+    tanpa bantalan suku kata pertama ikut termakan), akhir 150 ms. Simpan mp3 mono 24 kHz.
     iris=(mulai, akhir) detik: ambil satu kata saja dari kalimat pembawa (dengan fade pendek)."""
-    f = ('silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.03,areverse,'
-         'silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.15,areverse')
+    f = ('silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.02,areverse,'
+         'silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.15,areverse,'
+         f'adelay={AWAL_MS}:all=1,asetpts=N/SR/TB')
     if iris:
         a, b = iris
         f = f'atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.01,afade=t=out:st={b - a - 0.04:.3f}:d=0.04,' + f
     subprocess.run([FFMPEG, '-v', 'error', '-y', '-i', src, '-af', f, '-ac', '1', '-ar', '24000',
-                    '-c:a', 'libmp3lame', '-b:a', '48k', dst + '.part.mp3'], check=True)
+                    '-c:a', 'libmp3lame', '-b:a', BITRATE, dst + '.part.mp3'], check=True)
     os.replace(dst + '.part.mp3', dst)
 
 
