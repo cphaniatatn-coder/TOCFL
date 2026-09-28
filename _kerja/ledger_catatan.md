@@ -96,3 +96,10 @@
   děi); A14 得2 de: 你說得對！ (ungkapan leksikal; pola V得 tetap diajarkan di B15); B12 長2 zhǎng: 你長得像你爺爺！
   (長得像 leksikal); C37 數 shǔ: 這裡有幾個蘋果？你數數看。 (VV看 dari C34); C37 差1 chā: 對！十和四差多少？—差六！.
   Arti 數 → menghitung, 差1 → selisih; kurang. Audio: 差 (chā) & 數數看 diucapkan lewat `ucapan.json` → `teks`.
+- **2026-09-29 — Kewajaran dialog (tinjauan 1.227 baris, patokan `analisis-modul.md`: satu adegan utuh, tokoh tetap,
+  kosakata/grammar yang sudah diajarkan).** ±80 baris di 45 modul diperbaiki lewat `_kerja/dialog_natural.py` (daftar
+  lengkap + alasan ada di skrip itu): logika bertentangan (C29 臉色, C63 等到下課, C42 美美 bertanya soal tip → peran
+  ditukar), kalimat pamer kosakata yang tak nyambung (B02, B11, B24, B26, C15, C18, C61…), bentuk tak wajar (你生病！,
+  你感冒。, 你很早！, 多大年紀 untuk 21 tahun, 從明年起…畢業, 咖啡店的工人), adegan tak konsisten (B27 mengajak ke
+  夜市 padahal sudah di sana; A25 telepon siang & malam dipisah jadi dua dialog). Dialog hasil edit Carli (A01–A08,
+  A11, A12, A14, A15, B01) TIDAK diubah. Soal: 你很早！→你好早！ (A10), 從明年起，你就要畢業了→你明年就要畢業了吧？ (C33).
