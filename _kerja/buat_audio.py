@@ -63,6 +63,7 @@ def ucapan(kunci_prof, text):
         if text in UCAPAN['potong']:
             return tuple(UCAPAN['potong'][text])
         return text, None
+    text = UCAPAN.get('teks', {}).get(text, text)   # penggantian untuk satu kalimat persis
     for pola, ganti in UCAPAN['kalimat']:
         text = re.sub(pola, ganti, text)
     return text, None

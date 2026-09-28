@@ -92,3 +92,7 @@
   B32 還2 huán: + 美美，這是你的書，還你。 (sebelumnya tak dipakai); C25 空2 kōng: + 好！我的肚子已經空了，走吧！;
   背: C30 = 背1 bèi (punggung) + 背2 bēi (補充, 媽媽背著孩子); C34 = 背1@menghafal (背漢字、背詞) — tanpa ubah dialog.
   Audio: TTS membaca 有空 sebagai kōng → aturan ucapan 有/沒空 → 控 (`_kerja/ucapan.json`).
+- **2026-09-28 — 義項 數/差/長/得 kini dipakai di modulnya.** A14 得1 děi: 今天我得寫很多字！ (urutan ini agar TTS membaca
+  děi); A14 得2 de: 你說得對！ (ungkapan leksikal; pola V得 tetap diajarkan di B15); B12 長2 zhǎng: 你長得像你爺爺！
+  (長得像 leksikal); C37 數 shǔ: 這裡有幾個蘋果？你數數看。 (VV看 dari C34); C37 差1 chā: 對！十和四差多少？—差六！.
+  Arti 數 → menghitung, 差1 → selisih; kurang. Audio: 差 (chā) & 數數看 diucapkan lewat `ucapan.json` → `teks`.

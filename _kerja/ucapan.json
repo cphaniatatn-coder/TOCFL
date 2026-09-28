@@ -1,5 +1,5 @@
 {
-"_keterangan": "Aturan ucapan audio (dipakai bangun_modul.py & buat_audio.py). TTS zh-TW membaca beberapa karakter polifon dengan bacaan yang salah; hasil uji: rekaman kata aslinya IDENTIK dengan rekaman homofon bacaan lain (mis. 和 = 河 hé, 教 = 叫 jiào). 'kata': kartu kosakata 字|pinyin → teks yang diucapkan (homofon berbacaan tunggal). 'potong': kartu yang tak punya homofon → diucapkan dalam kalimat pembawa lalu dipotong pada batas katanya. 'kalimat': penggantian dalam kalimat (regex → pengganti) agar bacaan cocok dengan pinyin Taiwan yang ditampilkan app. Setelah mengubah file ini: py _kerja/bangun_modul.py lalu py _kerja/buat_audio.py (rekaman yang terdampak dibuat ulang otomatis).",
+"_keterangan": "Aturan ucapan audio (dipakai bangun_modul.py & buat_audio.py). TTS zh-TW membaca beberapa karakter polifon dengan bacaan yang salah; hasil uji: rekaman kata aslinya IDENTIK dengan rekaman homofon bacaan lain (mis. 和 = 河 hé, 教 = 叫 jiào). 'kata': kartu kosakata 字|pinyin → teks yang diucapkan (homofon berbacaan tunggal). 'potong': kartu yang tak punya homofon → diucapkan dalam kalimat pembawa lalu dipotong pada batas katanya. 'kalimat': penggantian dalam kalimat (regex → pengganti) agar bacaan cocok dengan pinyin Taiwan yang ditampilkan app. Setelah mengubah file ini: py _kerja/bangun_modul.py lalu py _kerja/buat_audio.py (rekaman yang terdampak dibuat ulang otomatis). 'teks': penggantian untuk SATU kalimat persis (bila polifon hanya salah di konteks itu), lalu aturan 'kalimat' tetap diterapkan.",
 "kata": {
 "和|hàn": "汗",
 "教|jiāo": "交",
@@ -16,10 +16,24 @@
 "空|kòng": "控"
 },
 "potong": {
-"得|děi": ["我得，我得走了。", "得"]
+"得|děi": [
+"我得，我得走了。",
+"得"
+]
 },
 "kalimat": [
-["(?<![暖溫總])和(?![平好氣])", "汗"],
-["(?<=[有沒])空(?![氣調間中位])", "控"]
+[
+"(?<![暖溫總])和(?![平好氣])",
+"汗"
+],
+[
+"(?<=[有沒])空(?![氣調間中位])",
+"控"
 ]
+],
+"teks": {
+"對！十和四差多少？": "對！十和四插多少？",
+"差六！": "插六！",
+"這裡有幾個蘋果？你數數看。": "這裡有幾個蘋果？你暑暑看。"
+}
 }
