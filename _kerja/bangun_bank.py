@@ -91,7 +91,8 @@ def main():
         for t in ts:
             masalah += cek_soal(code, t)
         masalah += cek_bentuk(code, ts)
-        ok = cd.kosakata_sampai(code, mods)
+        # bentuk yang sudah ditinjau & diterima (cek_diterima.txt, mis. A08 開了) dikenali sebagai satu satuan
+        ok = cd.kosakata_sampai(code, mods) | {w for c, w in diterima if c == code}
         for s in cd.teks(ts):
             for ch in cd.cek(s, ok):
                 masalah.append(f'{code}: 「{ch}」 belum diajarkan — di: {s[:40]}')
