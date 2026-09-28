@@ -22,6 +22,10 @@ const Ujian = {
   ],
   SEC_PER_ITEM: 72,
   PLAY_LIMIT: 2,
+  // Ujian penuh = persis naskah resmi Band A: 聽力 25/15/5/5 & 閱讀 15/15/10/5/5 (Part 4 = 5 titik kosong),
+  // dua tes terpisah masing-masing 60 menit; setelah masuk 閱讀 tidak bisa kembali ke 聽力.
+  FULL: [25, 15, 5, 5, 15, 15, 10, 5, 5],
+  FULL_SEC: 3600,
 
   partOf(t) { return this.PARTS.findIndex(p => t.part.startsWith(p[0])); },
   // Sumber soal ujian volume: bank soal Tes Bab bila bab itu sudah punya; bila belum, soal latihan modul
@@ -36,6 +40,7 @@ const Ujian = {
   menu(vol) {
     const bank = this.bank(vol), h = this.history(vol), s = this.session;
     const avail = this.PARTS.map((p, i) => bank.filter(x => this.partOf(x.t) === i).length);
+    const fullOk = this.FULL.every((c, i) => (i === 7 ? bank.filter(x => this.partOf(x.t) === 7).reduce((a, x) => a + x.t.answers.length, 0) : avail[i]) >= c);
     const running = s && s.vol === vol && s.phase !== 'result';
     return `
       <div class="panel exam">
@@ -50,6 +55,9 @@ const Ujian = {
         <button class="card mode-card" onclick="Ujian.start(${vol}, ${n})">
           ${Pic.html(n === 20 ? '⏱️' : '🏁', 'mode-ic')}
           <div><b>${l} · ${n} soal</b><span>± ${Math.round(n * this.SEC_PER_ITEM / 60)} menit · ${n / 2} 聽力 + ${n / 2} 閱讀</span></div><span class="chev">›</span></button>`).join('')}
+        ${fullOk ? `<button class="card mode-card" onclick="Ujian.start(${vol}, 'full')">
+          ${Pic.html('🎓', 'mode-ic')}
+          <div><b>Ujian penuh · format resmi</b><span><span lang="zh-TW">聽力</span> 50 soal · 60 menit, lalu <span lang="zh-TW">閱讀</span> 50 soal · 60 menit — jumlah soal tiap bagian persis naskah TOCFL Band A</span></div><span class="chev">›</span></button>` : ''}
       </div>
       <details class="panel"><summary class="panel-k">Bank soal per bagian</summary>
         <ul class="partlist">${this.PARTS.map((p, i) => `<li><span lang="zh-TW">${p[0]}</span> ${p[2]}<b>${avail[i]}</b></li>`).join('')}</ul></details>
@@ -77,13 +85,48 @@ const Ujian = {
     }
     return byPart.flatMap((list, i) => list.slice(0, pick[i]));
   },
+  /* Paket ujian penuh: jumlah tiap bagian persis FULL; Part 4 diisi paragraf sampai 5 titik kosong */
+  composeFull(vol) {
+    const bank = shuffle(this.bank(vol));
+    return this.PARTS.flatMap((_, i) => {
+      const list = bank.filter(x => this.partOf(x.t) === i);
+      if (i !== 7) return list.slice(0, this.FULL[i]);
+      const out = [];
+      let b = 0;
+      for (const x of list.sort((p, q) => q.t.answers.length - p.t.answers.length))
+        if (b + x.t.answers.length <= this.FULL[7]) { out.push(x); b += x.t.answers.length; }
+      return out;
+    });
+  },
   start(vol, n) {
     clearInterval(this.timer);
-    const items = this.compose(vol, n);
+    const full = n === 'full', items = full ? this.composeFull(vol) : this.compose(vol, n);
     Soal.plays = {}; Soal.limit = this.PLAY_LIMIT;
-    this.session = { kind: 'vol', vol, items, i: 0, answers: {}, intro: {}, phase: 'q', dur: items.length * this.SEC_PER_ITEM, end: null, grid: false,
-                     title: `Ujian · Vol.${vol}`, back: `#/v/${vol}/ujian` };
+    this.session = { kind: 'vol', vol, items, i: 0, answers: {}, intro: {}, phase: 'q', dur: full ? this.FULL_SEC : items.length * this.SEC_PER_ITEM, end: null, grid: false,
+                     title: `${full ? 'Ujian penuh' : 'Ujian'} · Vol.${vol}`, back: `#/v/${vol}/ujian` };
+    if (full) Object.assign(this.session, { full: true, sec: 0, r0: items.findIndex(x => this.partOf(x.t) >= 4), usedPrev: 0 });
     App.go('#/ujian');
+  },
+  // Ujian penuh: nomor & daftar soal per tes (聽力 1–50, 閱讀 1–50), seperti dua naskah terpisah
+  range() {
+    const s = this.session, n = s.items.length;
+    if (!s.full) return [0, n];
+    return s.sec ? [s.r0, n] : [0, s.r0];
+  },
+  w(t) { return this.session.full && t.type === 'cloze' ? t.answers.length : 1; },
+  // Nomor soal (1-based) seperti di naskah; paragraf Part 4 memakai rentang nomor, mis. 41–45
+  num(i) {
+    const s = this.session, a = this.range()[0];
+    const k = 1 + s.items.slice(a, i).reduce((x, y) => x + this.w(y.t), 0), w = this.w(s.items[i].t);
+    return w > 1 ? `${k}–${k + w - 1}` : `${k}`;
+  },
+  total() { const s = this.session, [a, b] = this.range(); return s.items.slice(a, b).reduce((x, y) => x + this.w(y.t), 0); },
+  elapsed() { const s = this.session; return s.end ? Math.min(s.dur, Math.round((Date.now() - (s.end - s.dur * 1000)) / 1000)) : 0; },
+  toReading() {
+    const s = this.session;
+    s.usedPrev = this.elapsed(); s.sec = 1; s.end = null; s.dur = this.FULL_SEC;
+    clearInterval(this.timer);
+    Speech.stop(); s.i = s.r0; s.grid = false; this.render(); window.scrollTo(0, 0);
   },
   startTes(code) {
     clearInterval(this.timer);
@@ -103,27 +146,29 @@ const Ujian = {
     if (!s.intro[pi]) return this.partIntro(pi);
     if (!s.end) s.end = Date.now() + s.dur * 1000;
     this.tick();
-    const key = 'u' + s.i, n = s.items.length;
+    const key = 'u' + s.i, [a, b] = this.range(), n = b - a;
     App.bar(s.title, s.back, `<span class="bar-pill timer" id="ujian-timer"></span>`);
     this.tick();
     App.main(`
       <div class="lprog"><i style="width:${this.nAnswered() / n * 100}%"></i></div>
       <div class="exam-top"><span lang="zh-TW">${esc(this.PARTS[pi][0])} · ${this.PARTS[pi][2]}</span>
-        <button class="btn small ghost" onclick="Ujian.toggleGrid()">Soal ${s.i + 1}/${n} ▾</button></div>
+        <button class="btn small ghost" onclick="Ujian.toggleGrid()">Soal ${this.num(s.i)}/${this.total()} ▾</button></div>
       ${s.grid ? this.grid() : ''}
       <div class="q-card">${Soal.body(it.t, key, s.answers[key], 'Ujian', 'exam')}</div>
       <div class="dock">
-        <button class="btn ghost" ${s.i === 0 ? 'disabled' : ''} onclick="Ujian.goto(${s.i - 1})">‹ Sebelumnya</button>
-        ${s.i + 1 < n ? `<button class="btn primary" onclick="Ujian.goto(${s.i + 1})">Berikutnya ›</button>`
-                      : `<button class="btn primary" onclick="Ujian.submit()">Kumpulkan</button>`}
+        <button class="btn ghost" ${s.i === a ? 'disabled' : ''} onclick="Ujian.goto(${s.i - 1})">‹ Sebelumnya</button>
+        ${s.i + 1 < b ? `<button class="btn primary" onclick="Ujian.goto(${s.i + 1})">Berikutnya ›</button>`
+          : s.full && !s.sec ? `<button class="btn primary" onclick="Ujian.submitListening()">Selesai 聽力 ›</button>`
+          : `<button class="btn primary" onclick="Ujian.submit()">Kumpulkan</button>`}
       </div>`);
     Speech.preloadTask(it.t); Speech.preloadTask(s.items[s.i + 1]?.t);
   },
   partIntro(pi) {
     const s = this.session, p = this.PARTS[pi];
     Speech.preloadTask(s.items[s.i].t);
-    const cnt = s.items.filter(x => this.partOf(x.t) === pi).length;
-    const first = s.items.findIndex(x => this.partOf(x.t) === pi) + 1;
+    const fi = s.items.findIndex(x => this.partOf(x.t) === pi);
+    const first = +this.num(fi).split('–')[0];
+    const cnt = s.items.filter(x => this.partOf(x.t) === pi).reduce((a, x) => a + this.w(x.t), 0);
     App.bar(s.title, s.back, s.end ? `<span class="bar-pill timer" id="ujian-timer"></span>` : '');
     this.tick();
     App.main(`
@@ -134,7 +179,7 @@ const Ujian = {
         <p class="zh-instr" lang="zh-TW">說明：${p[4]}</p>
         <p>${p[3]}</p>
         <small>Soal ${first}–${first + cnt - 1} · ${cnt} soal${pi < 4 ? ` · audio maks. ${this.PLAY_LIMIT}×` : ''}</small>
-        ${!s.end ? `<p class="hint">Waktu (${Math.round(s.dur / 60)} menit) mulai berjalan saat kamu menekan Mulai.</p>` : ''}
+        ${!s.end ? `<p class="hint">Waktu (${Math.round(s.dur / 60)} menit${s.full ? ` untuk seluruh ${pi < 4 ? '聽力' : '閱讀'}` : ''}) mulai berjalan saat kamu menekan Mulai.</p>` : ''}
         <button class="btn primary block" onclick="Ujian.session.intro[${pi}]=true;Ujian.render()">${s.end ? 'Lanjut' : 'Mulai'}</button>
       </div>`);
   },
@@ -146,15 +191,20 @@ const Ujian = {
       const left = Math.max(0, Math.round((s.end - Date.now()) / 1000));
       const el = document.getElementById('ujian-timer');
       if (el) { el.textContent = `⏱ ${Math.floor(left / 60)}:${String(left % 60).padStart(2, '0')}`; el.classList.toggle('low', left < 120); }
-      if (left === 0) { clearInterval(this.timer); App.toast('Waktu habis — jawaban dikumpulkan.'); this.finish(); }
+      if (left === 0) {
+        clearInterval(this.timer);
+        if (s.full && !s.sec) { App.toast('Waktu 聽力 habis — lanjut ke 閱讀.'); return this.toReading(); }
+        App.toast('Waktu habis — jawaban dikumpulkan.'); this.finish();
+      }
     };
     upd(); this.timer = setInterval(upd, 1000);
   },
-  nAnswered() { const s = this.session; return s.items.filter((x, i) => this.done(x.t, s.answers['u' + i])).length; },
+  nAnswered() { const s = this.session, [a, b] = this.range(); return s.items.slice(a, b).filter((x, k) => this.done(x.t, s.answers['u' + (a + k)])).length; },
   done(t, a) { return t.type === 'cloze' ? !!(a && t.answers.every((_, k) => a.vals[k] != null)) : a != null; },
   grid() {
     const s = this.session;
-    return `<div class="qgrid">${s.items.map((x, i) => `<button class="${i === s.i ? 'cur' : ''} ${this.done(x.t, s.answers['u' + i]) ? 'ok' : ''}" onclick="Ujian.goto(${i})">${i + 1}</button>`).join('')}</div>`;
+    const [a, b] = this.range();
+    return `<div class="qgrid">${s.items.slice(a, b).map((x, k) => { const i = a + k; return `<button class="${i === s.i ? 'cur' : ''} ${this.done(x.t, s.answers['u' + i]) ? 'ok' : ''}" onclick="Ujian.goto(${i})">${this.num(i)}</button>`; }).join('')}</div>`;
   },
   toggleGrid() { this.session.grid = !this.session.grid; this.render(); },
   goto(i) { Speech.stop(); this.session.i = i; this.session.grid = false; this.render(); window.scrollTo(0, 0); },
@@ -162,8 +212,13 @@ const Ujian = {
   clozeSel(key, k) { this.session.answers[key] = Soal.clozeSel(this.session.answers[key], k); this.keep(); },
   clozeFill(key, oi) { this.session.answers[key] = Soal.clozeFill(Soal.reg[key], this.session.answers[key], oi); this.keep(); },
   keep() { const y = window.scrollY; this.render(); window.scrollTo(0, y); },
+  submitListening() {
+    const [a, b] = this.range(), left = b - a - this.nAnswered();
+    if (!confirm(`${left ? `Masih ada ${left} soal 聽力 belum dijawab. ` : ''}Lanjut ke 閱讀? Setelah itu kamu tidak bisa kembali ke 聽力.`)) return;
+    this.toReading();
+  },
   submit() {
-    const left = this.session.items.length - this.nAnswered();
+    const [a, b] = this.range(), left = b - a - this.nAnswered();
     if (left && !confirm(`Masih ada ${left} soal belum dijawab. Kumpulkan sekarang?`)) return;
     this.finish();
   },
@@ -177,7 +232,7 @@ const Ujian = {
     const sum = arr => arr.reduce((a, [g, n]) => [a[0] + g, a[1] + n], [0, 0]);
     const pc = ([g, n]) => n ? Math.round(g / n * 100) : 0;
     s.per = per; s.pct = pc(sum(per)); s.l = pc(sum(per.slice(0, 4))); s.r = pc(sum(per.slice(4)));
-    s.used = Math.min(s.dur, Math.round((Date.now() - (s.end - s.dur * 1000)) / 1000));
+    s.used = (s.usedPrev || 0) + this.elapsed();
     s.phase = 'result'; s.filter = 'salah';
     if (s.kind === 'tes') {
       const t = App.getP(s.code).tes || {};
@@ -216,7 +271,7 @@ const Ujian = {
       ${list.map(({ x, i }) => `<div class="q-card review">
           <div class="q-part"><b>${i + 1}.</b> <span lang="zh-TW">${esc(x.t.part)}</span> · <a href="#/m/${x.code}/0">${x.code}</a></div>
           ${Soal.body(x.t, 'r' + i, s.answers['u' + i], 'Ujian', 'review')}</div>`).join('') || '<p class="hint">Tidak ada soal yang salah. 太棒了！</p>'}
-      <div class="row2"><button class="btn primary" onclick="${s.kind === 'tes' ? `Ujian.startTes('${s.code}')">Ulangi tes` : `Ujian.start(${s.vol}, ${s.items.length})">Ujian baru`}</button>
+      <div class="row2"><button class="btn primary" onclick="${s.kind === 'tes' ? `Ujian.startTes('${s.code}')">Ulangi tes` : `Ujian.start(${s.vol}, ${s.full ? "'full'" : s.items.length})">Ujian baru`}</button>
         <button class="btn ghost" onclick="App.go('${s.back}')">Selesai</button></div>`);
   },
 };
