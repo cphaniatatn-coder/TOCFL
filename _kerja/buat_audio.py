@@ -5,7 +5,11 @@
 - Nama file = hash cyrb53 dari "PROFIL|teks" (base36), dihitung sama persis di js/media.js,
   jadi app tidak perlu memuat daftar audio apa pun sebelum bisa memutar.
 - Setiap rekaman dipotong heningnya (awal & akhir) supaya langsung berbunyi saat diklik.
-- Hanya membuat file yang BELUM ada → aman dijalankan ulang setelah mengedit dialog/soal.
+- Teks yang DIUCAPKAN bisa berbeda dari teks yang ditampilkan (_kerja/ucapan.json): homofon untuk kata
+  polifon yang dibaca salah oleh TTS, 和 → bacaan Taiwan hàn dalam kalimat, dan kata tanpa homofon
+  (得 děi) diucapkan dalam kalimat pembawa lalu dipotong pada batas katanya.
+- Hanya membuat file yang belum ada ATAU yang aturannya berubah (suara/kecepatan/nada/teks ucapan) —
+  tanda tiap rekaman disimpan di _kerja/audio_versi.json → aman dijalankan ulang setelah mengedit.
 
 Pemakaian:  py _kerja/buat_audio.py     (butuh internet + `pip install edge-tts imageio-ffmpeg`)
 """
@@ -25,10 +29,14 @@ PROFIL = {
     'F2': dict(voice='zh-TW-HsiaoYuNeural'),
     'M1': dict(voice='zh-TW-YunJheNeural'),
     'M2': dict(voice='zh-TW-YunJheNeural', pitch='-8Hz'),
-    'K':  dict(voice='zh-TW-YunJheNeural', pitch='+30Hz', rate='+5%'),
+    # Anak: suara perempuan dengan nada sedikit naik terdengar wajar (seperti rekaman buku ajar);
+    # suara laki-laki +30Hz dulu terdengar seperti robot. Di B46 lawan bicaranya HsiaoYu, jadi pakai HsiaoChen.
+    'K':  dict(voice='zh-TW-HsiaoChenNeural', pitch='+15Hz', rate='+5%'),
 }
 RATE = '-5%'   # sedikit lebih pelan dari normal, untuk pelajar Band A
 js = open(f'{R}/js/media.js', encoding='utf-8').read()
+UCAPAN = json.load(open(f'{K}/ucapan.json', encoding='utf-8'))
+VERSI = f'{K}/audio_versi.json'
 PEMBICARA = json.loads(re.search(r'/\* SPEAKERS \*/\s*const SPEAKERS = (\{.*?\});', js, re.S).group(1))
 
 # --- cyrb53: harus identik dengan js/media.js ---
@@ -49,6 +57,28 @@ def nama(kunci):
     return o or '0'
 
 
+def ucapan(kunci_prof, text):
+    """Teks yang benar-benar dikirim ke TTS (+ kata yang dipotong bila memakai kalimat pembawa)."""
+    if kunci_prof == 'W':
+        if text in UCAPAN['potong']:
+            return tuple(UCAPAN['potong'][text])
+        return text, None
+    for pola, ganti in UCAPAN['kalimat']:
+        text = re.sub(pola, ganti, text)
+    return text, None
+
+
+def profil(prof, ambil):
+    # kata yang dipotong dari kalimat pembawa diucapkan lebih pelan supaya tidak terdengar terpotong/terburu-buru
+    return dict(PROFIL[prof], rate='-25%') if ambil else PROFIL[prof]
+
+
+def tanda(prof, kunci_prof, text):
+    ucap, ambil = ucapan(kunci_prof, text)
+    p = profil(prof, ambil)
+    return f"{p['voice']}|{p.get('rate', RATE)}|{p.get('pitch', '+0Hz')}|{ucap}|{ambil or ''}"
+
+
 def narator(text):
     """Kalimat tanpa pembicara (soal 聽力 Part 1/2, judul, contoh): selang-seling suara perempuan/laki-laki, tetap per teks."""
     return 'F1' if int(hashlib.md5(text.encode()).hexdigest(), 16) % 2 == 0 else 'M1'
@@ -61,7 +91,7 @@ def kumpulkan():
     def tambah(kunci_prof, prof, text):
         text = (text or '').strip()
         if text:
-            job[f'{kunci_prof}|{text}'] = (prof, text)
+            job[f'{kunci_prof}|{text}'] = (prof, kunci_prof, text)
 
     def baris(lines):
         for l in lines:
@@ -92,7 +122,7 @@ def kumpulkan():
             for r in m.get('recycle', []):
                 tambah('N', narator(r['zh']), r['zh'])
             for e in m['vocab']['core'] + m['vocab']['supplement']:
-                tambah('W', 'F1', e['w'])          # kosakata: satu suara yang konsisten
+                tambah('W', 'F1', e.get('say') or e['w'])   # kosakata: satu suara yang konsisten; say = teks ucapan polifon
     if os.path.exists(f'{R}/data/bank_soal.json'):
         for ts in json.load(open(f'{R}/data/bank_soal.json', encoding='utf-8')).values():
             for t in ts:
@@ -100,24 +130,46 @@ def kumpulkan():
     return job, tak_dikenal
 
 
-def potong(src, dst):
-    """Buang hening di awal (sisakan 30 ms) & akhir (sisakan 150 ms), simpan mp3 mono 24 kHz."""
+def potong(src, dst, iris=None):
+    """Buang hening di awal (sisakan 30 ms) & akhir (sisakan 150 ms), simpan mp3 mono 24 kHz.
+    iris=(mulai, akhir) detik: ambil satu kata saja dari kalimat pembawa (dengan fade pendek)."""
     f = ('silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.03,areverse,'
          'silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.15,areverse')
+    if iris:
+        a, b = iris
+        f = f'atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.01,afade=t=out:st={b - a - 0.04:.3f}:d=0.04,' + f
     subprocess.run([FFMPEG, '-v', 'error', '-y', '-i', src, '-af', f, '-ac', '1', '-ar', '24000',
                     '-c:a', 'libmp3lame', '-b:a', '48k', dst + '.part.mp3'], check=True)
     os.replace(dst + '.part.mp3', dst)
 
 
-async def satu(sem, pool, prof, text, path, gagal):
-    p = PROFIL[prof]
+async def rekam(p, ucap, ambil, tmp):
+    """Simpan rekaman ke tmp; bila `ambil` diisi, kembalikan (mulai, akhir) kata itu di kalimat pembawa."""
+    c = edge_tts.Communicate(ucap, p['voice'], rate=p.get('rate', RATE), pitch=p.get('pitch', '+0Hz'),
+                             boundary='WordBoundary')
+    batas = []
+    with open(tmp, 'wb') as f:
+        async for m in c.stream():
+            if m['type'] == 'audio':
+                f.write(m['data'])
+            elif m['type'] == 'WordBoundary':
+                batas.append((m['text'], m['offset'] / 1e7, (m['offset'] + m['duration']) / 1e7))
+    if not ambil:
+        return None
+    i = next(i for i, b in enumerate(batas) if b[0] == ambil)
+    akhir = batas[i + 1][1] if i + 1 < len(batas) else batas[i][2] + 0.1
+    return max(0, batas[i][1] - 0.02), akhir
+
+
+async def satu(sem, pool, prof, kunci_prof, text, path, gagal):
+    ucap, ambil = ucapan(kunci_prof, text)
+    p = profil(prof, ambil)
     async with sem:
         for coba in range(4):
             try:
                 tmp = os.path.join(tempfile.gettempdir(), os.path.basename(path) + '.raw.mp3')
-                await edge_tts.Communicate(text, p['voice'], rate=p.get('rate', RATE),
-                                           pitch=p.get('pitch', '+0Hz')).save(tmp)
-                await asyncio.get_running_loop().run_in_executor(pool, potong, tmp, path)
+                iris = await rekam(p, ucap, ambil, tmp)
+                await asyncio.get_running_loop().run_in_executor(pool, potong, tmp, path, iris)
                 os.remove(tmp)
                 return
             except Exception:  # jaringan/limit: coba lagi pelan-pelan
@@ -132,13 +184,23 @@ async def main():
     target = {nama(k): v for k, v in job.items()}
     if len(target) != len(job):
         sys.exit('Tabrakan hash nama file — ganti seed cyrb53 di media.js & skrip ini.')
-    todo = [(prof, text, f'{OUT}/{n}.mp3') for n, (prof, text) in target.items() if not os.path.exists(f'{OUT}/{n}.mp3')]
-    print(f'{len(job)} teks; belum ada rekaman: {len(todo)}')
+    versi = json.load(open(VERSI, encoding='utf-8')) if os.path.exists(VERSI) else {}
+    baru = {n: tanda(*v) for n, v in target.items()}
+    for n in target:   # rekaman lama tanpa catatan dianggap sudah sesuai aturan sekarang
+        if n not in versi and os.path.exists(f'{OUT}/{n}.mp3'):
+            versi[n] = baru[n]
+    todo = [(*v, f'{OUT}/{n}.mp3') for n, v in target.items()
+            if not os.path.exists(f'{OUT}/{n}.mp3') or versi.get(n) != baru[n]]
+    print(f'{len(job)} teks; perlu direkam (baru/aturan berubah): {len(todo)}')
     sem, gagal = asyncio.Semaphore(8), []
     with ThreadPoolExecutor(6) as pool:
         for k in range(0, len(todo), 200):
             await asyncio.gather(*(satu(sem, pool, *x, gagal) for x in todo[k:k + 200]))
             print(f'  … {min(k + 200, len(todo))}/{len(todo)}', flush=True)
+    gagal_set = set(gagal)   # yang gagal tetap memakai tanda lama → dicoba lagi pada run berikutnya
+    versi = {n: (versi.get(n, '') if v[2] in gagal_set else baru[n])
+             for n, v in target.items() if os.path.exists(f'{OUT}/{n}.mp3')}
+    json.dump(dict(sorted(versi.items())), open(VERSI, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
     sisa = [f for f in os.listdir(OUT) if f.endswith('.mp3') and f[:-4] not in target]
     for f in sisa:                                     # rekaman untuk teks yang sudah tidak ada
         os.remove(f'{OUT}/{f}')

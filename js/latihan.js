@@ -93,7 +93,7 @@ const Latihan = {
     if (s.mode === 'kartu') {
       h = `<div class="vcard flash ${v.layer}">
           <div class="vcard-top"><span class="layer-chip">${v.code}</span></div>
-          <button class="vword" lang="zh-TW" onclick="Speech.word('${esc(v.w)}')">${esc(v.w)}</button>
+          <button class="vword" lang="zh-TW" onclick="Speech.word('${esc(v.say || v.w)}')">${esc(v.w)}</button>
           ${s.flip ? `<div class="vpy">${esc(v.py)}</div><div class="vmean"><span class="pos">${esc(v.pos)}</span> ${esc(v.meaning)}</div>`
                    : `<p class="hint">Ucapkan kata ini dan ingat artinya dulu.</p>`}
         </div>
@@ -103,7 +103,7 @@ const Latihan = {
                  : `<button class="btn primary block" onclick="Latihan.flip()">Balik kartu</button>`}`;
     } else {
       const prompt = s.mode === 'dengar'
-        ? `<button class="play-big" id="play-lw" onclick="Speech.word('${esc(v.w)}')">${Pic.html('🔊', 'play-ic')}<span>Dengarkan</span><small>ketuk untuk memutar lagi</small></button>`
+        ? `<button class="play-big" id="play-lw" onclick="Speech.word('${esc(v.say || v.w)}')">${Pic.html('🔊', 'play-ic')}<span>Dengarkan</span><small>ketuk untuk memutar lagi</small></button>`
         : s.mode === 'hanzi' ? `<div class="vword static" lang="zh-TW">${esc(v.w)}</div>`
         : `<div class="lmean">${esc(v.meaning)}<small>${esc(v.pos)}</small></div>`;
       const lab = x => s.mode === 'arti' ? `<span lang="zh-TW" class="big-zh">${esc(x.w)}</span>` : `<span>${esc(x.meaning)}</span>`;
@@ -114,14 +114,14 @@ const Latihan = {
         }).join('')}</div>
         ${r != null ? `<div class="feedback ${r.ok ? 'ok' : 'no'}">${Pic.html(r.ok ? '✅' : '🔁', 'fb-ic')}
             <div><b lang="zh-TW">${esc(v.w)}</b> <span>${esc(v.py)}</span>
-              <button class="say-btn" onclick="Speech.word('${esc(v.w)}')">${Pic.html('🔊', 'ic-xs')}</button>
+              <button class="say-btn" onclick="Speech.word('${esc(v.say || v.w)}')">${Pic.html('🔊', 'ic-xs')}</button>
               <p>${esc(v.meaning)} · <small>${v.code}</small></p></div></div>` : ''}
       </div>
       ${r != null ? `<button class="btn primary block" onclick="Latihan.next()">${s.i + 1 < n ? 'Berikutnya ›' : 'Lihat hasil ›'}</button>` : ''}`;
     }
     App.main(prog + h);
-    Speech.preload([[v.w, 'W'], ...(s.items[s.i + 1] ? [[s.items[s.i + 1].v.w, 'W']] : [])]);
-    if (s.mode === 'dengar' && r == null && !Soal.plays['lw' + s.i]) { Soal.plays['lw' + s.i] = 1; setTimeout(() => Speech.word(v.w), 250); }
+    Speech.preload([[v.say || v.w, 'W'], ...(s.items[s.i + 1] ? [[s.items[s.i + 1].v.say || s.items[s.i + 1].v.w, 'W']] : [])]);
+    if (s.mode === 'dengar' && r == null && !Soal.plays['lw' + s.i]) { Soal.plays['lw' + s.i] = 1; setTimeout(() => Speech.word(v.say || v.w), 250); }
   },
   record(v, ok) {
     const st = this.stats(), x = st[v.id] || { r: 0, w: 0 };
@@ -132,10 +132,10 @@ const Latihan = {
     const s = this.session, it = s.items[s.i], ok = it.opts[oi] === it.v;
     s.res[s.i] = { pick: oi, ok };
     this.record(it.v, ok);
-    if (s.mode !== 'dengar') Speech.word(it.v.w);
+    if (s.mode !== 'dengar') Speech.word(it.v.say || it.v.w);
     this.render();
   },
-  flip() { this.session.flip = true; Speech.word(this.session.items[this.session.i].v.w); this.render(); },
+  flip() { const v = this.session.items[this.session.i].v; this.session.flip = true; Speech.word(v.say || v.w); this.render(); },
   mark(ok) { const s = this.session; s.res[s.i] = { ok }; this.record(s.items[s.i].v, ok); this.next(); },
   next() { const s = this.session; s.i++; s.flip = false; this.render(); window.scrollTo(0, 0); },
 
@@ -149,7 +149,7 @@ const Latihan = {
         <p>${pct === 100 ? 'Sempurna! Semua kata terpanggil dari ingatan.' : pct >= 60 ? 'Bagus. Kata yang salah sudah dicatat dan akan muncul lagi lebih sering.' : 'Tidak apa-apa — justru usaha mengingat inilah yang memperkuat ingatan. Ulangi kata yang salah sekarang.'}</p>
       </div>
       ${wrong.length ? `<h3 class="sub-title">Perlu diulang</h3>
-        <div class="wlist">${wrong.map(({ v }) => `<button class="wrow" onclick="Speech.word('${esc(v.w)}')">
+        <div class="wlist">${wrong.map(({ v }) => `<button class="wrow" onclick="Speech.word('${esc(v.say || v.w)}')">
           <b lang="zh-TW">${esc(v.w)}</b><span>${esc(v.py)}</span><small>${esc(v.meaning)}</small>${Pic.html('🔊', 'ic-xs')}</button>`).join('')}</div>` : ''}
       <div class="row2">
         ${wrong.length ? `<button class="btn primary" onclick="Latihan.again(true)">Ulangi yang salah</button>` : ''}

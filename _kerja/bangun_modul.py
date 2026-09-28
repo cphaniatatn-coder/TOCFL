@@ -7,7 +7,7 @@ Setelah merakit, langsung menjalankan cek_dialog.py.
 
 Pemakaian:  py _kerja/bangun_modul.py
 """
-import json, os, re, subprocess, sys
+import json, os, re, subprocess, sys, unicodedata
 import openpyxl
 from pinyin import pisah  # butuh: pip install pypinyin
 
@@ -22,6 +22,7 @@ HEAD = {
 
 tb = json.load(open(f'{K}/tbcl.json', encoding='utf-8'))
 arti = json.load(open(f'{K}/arti.json', encoding='utf-8'))
+ucapan = json.load(open(f'{K}/ucapan.json', encoding='utf-8'))   # teks yang diucapkan audio kartu (polifon)
 # Kata dari kosakata.xlsx yang tidak ada di daftar resmi TBCL (lihat _keterangan di file)
 tambahan = {k: v for k, v in json.load(open(f'{K}/kata_tambahan.json', encoding='utf-8')).items() if not k.startswith('_')}
 bp = {}
@@ -39,7 +40,7 @@ def entry(lv, token, override):
         e = {'w': w, 'py': t['py'], 'pos': t['pos'], 'meaning': t['meaning'], 'zy': t['zy'],
              'extra': t.get('asal', 'dari kosakata.xlsx')}
         e.update(override.get(w, {}))
-        return e
+        return dengan_ucapan(e)
     cocok = lambda o: o['w'] == w or w in o['w'].split('/')
     o = next((o for o in tb if o['lv'] == lv and cocok(o)), None) or next(o for o in tb if cocok(o))
     parts = o['w'].split('/')
@@ -57,9 +58,19 @@ def entry(lv, token, override):
     elif o['lv'] > lv:  # kata level lebih tinggi yang dimajukan (_kerja/kata_dimajukan.json)
         e['maju'] = o['lv']
     e.update(override.get(show, {}))
-    z = bp.get(show)
+    z = a.get('zy') or bp.get(show)   # entri bernomor (行1/行2…) punya zhuyin sendiri per 義項
     if z and len(z.split()) == len(show):
         e['zy'] = z
+    return dengan_ucapan(e)
+
+
+def dengan_ucapan(e):
+    """Tambahkan 'say' (teks audio kartu) bila TTS salah membaca kata polifon ini — lihat _kerja/ucapan.json."""
+    k = f"{e['w']}|{unicodedata.normalize('NFC', re.sub(r'\s+', '', e['py']))}"
+    if k in ucapan['kata']:
+        e['say'] = ucapan['kata'][k]
+    elif k in ucapan['potong']:
+        e['say'] = k
     return e
 
 

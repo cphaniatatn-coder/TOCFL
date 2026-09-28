@@ -1,0 +1,24 @@
+{
+"_keterangan": "Aturan ucapan audio (dipakai bangun_modul.py & buat_audio.py). TTS zh-TW membaca beberapa karakter polifon dengan bacaan yang salah; hasil uji: rekaman kata aslinya IDENTIK dengan rekaman homofon bacaan lain (mis. 和 = 河 hé, 教 = 叫 jiào). 'kata': kartu kosakata 字|pinyin → teks yang diucapkan (homofon berbacaan tunggal). 'potong': kartu yang tak punya homofon → diucapkan dalam kalimat pembawa lalu dipotong pada batas katanya. 'kalimat': penggantian dalam kalimat (regex → pengganti) agar bacaan cocok dengan pinyin Taiwan yang ditampilkan app. Setelah mengubah file ini: py _kerja/bangun_modul.py lalu py _kerja/buat_audio.py (rekaman yang terdampak dibuat ulang otomatis).",
+"kata": {
+"和|hàn": "汗",
+"教|jiāo": "交",
+"長|zhǎng": "掌",
+"行|háng": "航",
+"還|huán": "環",
+"背|bēi": "杯",
+"數|shǔ": "暑",
+"炸|zhá": "閘",
+"假|jià": "嫁",
+"差|chā": "插",
+"喂|wéi": "維",
+"地|dì": "第",
+"空|kòng": "控"
+},
+"potong": {
+"得|děi": ["我得，我得走了。", "得"]
+},
+"kalimat": [
+["(?<![暖溫總])和(?![平好氣])", "汗"]
+]
+}

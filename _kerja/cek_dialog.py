@@ -52,7 +52,7 @@ def teks(obj):
         yield obj
     elif isinstance(obj, dict):
         for k, v in obj.items():
-            if k in ('id', 'meaning', 'arti', 'explain', 'note', 'py', 'pinyin', 'why', 'goal', 'scene', 'pos', 'label', 'instr', 'sp', 'part', 'point', 'pattern', 'categories', 'place', 'title_id', 'title_py', 'can_do', 'exam_link', 'subtitle', 'approach', 'code'):
+            if k in ('id', 'meaning', 'arti', 'explain', 'note', 'py', 'pinyin', 'why', 'goal', 'scene', 'pos', 'label', 'instr', 'sp', 'part', 'point', 'pattern', 'categories', 'place', 'title_id', 'title_py', 'can_do', 'exam_link', 'subtitle', 'approach', 'code', 'say'):
                 continue  # teks Indonesia / pinyin
             yield from teks(v)
     elif isinstance(obj, list):

@@ -181,8 +181,8 @@ const Modul = {
   preloadStage() {
     const m = this.m, k = this.key(), all = this.allVocab();
     const list = [[m.title, 'N']];
-    if (k === 'dialog') { m.dialogs.forEach(d => Speech.preloadLines(d.lines)); all.forEach(v => list.push([v.w, 'W'])); }
-    if (k === 'vocab') { const i = Math.min(this.vi, all.length - 1); all.slice(i, i + 3).forEach(v => list.push([v.w, 'W'])); }
+    if (k === 'dialog') { m.dialogs.forEach(d => Speech.preloadLines(d.lines)); all.forEach(v => list.push([v.say || v.w, 'W'])); }
+    if (k === 'vocab') { const i = Math.min(this.vi, all.length - 1); all.slice(i, i + 3).forEach(v => list.push([v.say || v.w, 'W'])); }
     if (k === 'tasks') { Speech.preloadTask(m.tasks[this.ti]); Speech.preloadTask(m.tasks[this.ti + 1]); }
     if (k === 'grammar') { m.grammar.forEach(g => g.examples.forEach(e => list.push([e.zh, 'N']))); (m.recycle || []).forEach(r => list.push([r.zh, 'N'])); }
     Speech.preload(list);
@@ -240,9 +240,9 @@ const Modul = {
       <div class="vcard ${v.layer}">
         <div class="vcard-top"><span class="layer-chip">${v.layer === 'core' ? '核心 · dipakai aktif' : '補充 · cukup dikenali'}</span>
           <span class="vcount">${i + 1}/${all.length}</span></div>
-        <button class="vword" lang="zh-TW" onclick="Speech.word('${esc(v.w)}')" aria-label="Dengarkan">${this.hanzi(v.w, v.zy)}</button>
+        <button class="vword" lang="zh-TW" onclick="Speech.word('${esc(v.say || v.w)}')" aria-label="Dengarkan">${this.hanzi(v.w, v.zy)}</button>
         <div class="vpy">${this.showVpy || this.vpeek === i ? esc(v.py)
-          : `<button class="py-peek" onclick="Modul.keepScroll(()=>Modul.vpeek=${i})" aria-label="Tampilkan pinyin">拼音 ?</button>`} <button class="say-btn" onclick="Speech.word('${esc(v.w)}')" aria-label="Dengarkan">${Pic.html('🔊', 'ic-sm')}</button></div>
+          : `<button class="py-peek" onclick="Modul.keepScroll(()=>Modul.vpeek=${i})" aria-label="Tampilkan pinyin">拼音 ?</button>`} <button class="say-btn" onclick="Speech.word('${esc(v.say || v.w)}')" aria-label="Dengarkan">${Pic.html('🔊', 'ic-sm')}</button></div>
         ${v.variants ? `<div class="vvar">Satu entri dengan: <span lang="zh-TW">${v.variants.split('/').filter(x => x !== v.w).map(esc).join(' · ')}</span></div>` : ''}
         ${v.extra ? `<div class="vvar extra">di luar daftar resmi TBCL · ${esc(v.extra === true ? 'dari kosakata.xlsx' : v.extra)}</div>` : ''}
         ${v.maju ? `<div class="vvar extra">kata TBCL Level ${v.maju} · dimajukan ke modul ini</div>` : ''}
@@ -285,7 +285,7 @@ const Modul = {
     box.appendChild(pop);
     const left = Math.max(0, Math.min(r.left - br.left, br.width - pop.offsetWidth));
     pop.style.left = left + 'px'; pop.style.top = (r.bottom - br.top + 4) + 'px';
-    Speech.word(v.w);
+    Speech.word(v.say || v.w);
     setTimeout(() => document.addEventListener('click', () => pop.remove(), { once: true }), 0);
   },
   r_dialog() {
