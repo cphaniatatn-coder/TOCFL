@@ -88,3 +88,7 @@
   sebagai 補充 (門開了，請進); **男生/女生 dimajukan dari Level 2 (B13) ke A07** (`kata_dimajukan.json`);
   **外面** (di luar daftar TBCL) diajarkan sebagai 補充 A08 lewat `kata_tambahan.json` (sinonim 外頭). 開了 di A08
   diterima sebagai frasa leksikal (`cek_diterima.txt`, `bank_grammar_diterima.txt`; pola V了 tetap di B09).
+- **2026-09-28 — 義項 空/背/還 disesuaikan dengan pemakaiannya.** B32 空1 kòng: dialog 我的背包是空的 → 我們還有空，要買一點東西嗎？;
+  B32 還2 huán: + 美美，這是你的書，還你。 (sebelumnya tak dipakai); C25 空2 kōng: + 好！我的肚子已經空了，走吧！;
+  背: C30 = 背1 bèi (punggung) + 背2 bēi (補充, 媽媽背著孩子); C34 = 背1@menghafal (背漢字、背詞) — tanpa ubah dialog.
+  Audio: TTS membaca 有空 sebagai kōng → aturan ucapan 有/沒空 → 控 (`_kerja/ucapan.json`).
