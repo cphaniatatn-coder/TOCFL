@@ -83,3 +83,8 @@
   grammar per bab, lalu diberi ilustrasi SVG (adegan di `_kerja/adegan_vol2.py`, `_kerja/adegan_vol3.py`; komponen
   bersama `_kerja/svg_adegan.py`). Total Part 1 bergambar: Vol.1 121 + Vol.2 227 + Vol.3 332 = 680. Lembar periksa per
   volume: `_kerja/gambar/periksa_vol{1,2,3}.html`. Smoke test 138 modul + Tes Bab: OK, tanpa error JS.
+- **2026-09-28 — Edit bank soal Vol.1 dari Carli (lewat Excel).** Pertanyaan 聽力 memakai 這位先生／這位小姐 (A05–A13),
+  A01 張先生，早安！, A01 閱讀 P1 陳先生，再見！ → **位 dipindah dari A17 (核心) ke A03 (補充)**, modul pertama tempat
+  這 sudah diajarkan (A17 tetap memakai 位 di dialog, sudah dikenal). Penyesuaian agar kosakata tetap sah: A02 tetap
+  先生／小姐／她 (這 baru di A03); 男生／女生 → 男的／女的 atau 這位先生／小姐 (男生 baru di B13); 外面 → 外頭 (A08);
+  門開了，請進 → 門開，你進 (了/請 belum di A08); salah ketik A13 這位小姐的做什麼 → 這位小姐做什麼.
