@@ -9,7 +9,7 @@ const Ujian = {
   session: null, timer: null,
   // Bobot tiap bagian (mengikuti jumlah soal ujian resmi Band A: 聽力 25/15/5/5, 閱讀 15/15/10/5/5)
   // [bagian, bobot, nama, petunjuk Indonesia, petunjuk Mandarin] — petunjuk dwibahasa seperti naskah resmi
-  PARTS: [
+  PARTS: LANG === 'id' ? [
     ['聽力 Part 1', 25, 'Deskripsi gambar', 'Lihat gambar, dengarkan pertanyaan dan tiga jawaban (A–C), lalu pilih yang cocok dengan gambar.', '每題有一張圖片，你會先聽到一個問題，接著再聽到(A)(B)(C)三個選項，請根據圖片選出正確的答案。'],
     ['聽力 Part 2', 15, 'Tanya-jawab', 'Dengarkan tanya-jawab singkat, pilih gambar atau tanggapan yang tepat.', '請聽一段簡短的問答，選出正確的答案。'],
     ['聽力 Part 3', 5, 'Dialog', 'Dengarkan dialog beberapa putaran dan pertanyaannya.', '請聽一段對話和問題，選出正確的答案。'],
@@ -19,6 +19,16 @@ const Ujian = {
     ['閱讀 Part 3', 10, 'Isian bergambar', 'Lihat gambar, pilih kata yang tepat untuk titik kosong.', '請看圖片，選出最適合填入空格的詞。'],
     ['閱讀 Part 4', 5, 'Melengkapi paragraf', 'Isi titik kosong dalam paragraf. Satu pilihan hanya dipakai sekali; ada pilihan yang tidak terpakai.', '請根據短文的上下文，選出最適合的答案。一個選項只能用一次。'],
     ['閱讀 Part 5', 5, 'Pemahaman bacaan', 'Baca teks pendek, pilih jawaban A–D.', '請閱讀短文，回答問題。'],
+  ] : [
+    ['聽力 Part 1', 25, 'Picture description', 'Look at the picture, listen to the question and three answers (A–C), then choose the one that matches the picture.', '每題有一張圖片，你會先聽到一個問題，接著再聽到(A)(B)(C)三個選項，請根據圖片選出正確的答案。'],
+    ['聽力 Part 2', 15, 'Question & answer', 'Listen to a short exchange and choose the right picture or response.', '請聽一段簡短的問答，選出正確的答案。'],
+    ['聽力 Part 3', 5, 'Dialogue', 'Listen to a dialogue of several turns and the question.', '請聽一段對話和問題，選出正確的答案。'],
+    ['聽力 Part 4', 5, 'Implied meaning', 'Listen to the dialogue and catch what is meant but not said directly. Choose A–D.', '請聽一段對話和問題，從四個選項中選出正確的答案。'],
+    ['閱讀 Part 1', 15, 'Sentence → picture', 'Read one sentence and choose the matching picture.', '請看一個句子，從三張圖片中選出相符的圖片。'],
+    ['閱讀 Part 2', 15, 'Picture → sentence', 'Look at the picture and choose the matching sentence.', '請看圖片，選出與圖片相符的句子。'],
+    ['閱讀 Part 3', 10, 'Gap fill with picture', 'Look at the picture and choose the right word for the blank.', '請看圖片，選出最適合填入空格的詞。'],
+    ['閱讀 Part 4', 5, 'Paragraph completion', 'Fill in the blanks in the paragraph. Each option can be used only once; some options are not used.', '請根據短文的上下文，選出最適合的答案。一個選項只能用一次。'],
+    ['閱讀 Part 5', 5, 'Reading comprehension', 'Read a short text and choose answer A–D.', '請閱讀短文，回答問題。'],
   ],
   SEC_PER_ITEM: 72,
   PLAY_LIMIT: 2,
@@ -44,27 +54,29 @@ const Ujian = {
     const running = s && s.vol === vol && s.phase !== 'result';
     return `
       <div class="panel exam">
-        <div class="panel-k">${Pic.html('📝', 'ic-sm')} Seperti ujian sungguhan</div>
-        <p>Soal diambil acak dari ${bank.length} soal di ${App.volData[vol].modules.length} modul volume ini${this.nBank(vol) ? ` (${this.nBank(vol)} bab memakai bank soal Tes Bab)` : ''}, disusun menurut urutan bagian TOCFL: <b lang="zh-TW">聽力</b> dulu, lalu <b lang="zh-TW">閱讀</b>.
-        Ada batas waktu, audio maksimal diputar ${this.PLAY_LIMIT}×, dan jawaban baru dinilai setelah kamu mengumpulkan.</p>
+        <div class="panel-k">${Pic.html('📝', 'ic-sm')} ${T('Just like the real exam', 'Seperti ujian sungguhan')}</div>
+        <p>${LANG === 'id' ? `Soal diambil acak dari ${bank.length} soal di ${App.volData[vol].modules.length} modul volume ini${this.nBank(vol) ? ` (${this.nBank(vol)} bab memakai bank soal Tes Bab)` : ''}, disusun menurut urutan bagian TOCFL: <b lang="zh-TW">聽力</b> dulu, lalu <b lang="zh-TW">閱讀</b>.
+        Ada batas waktu, audio maksimal diputar ${this.PLAY_LIMIT}×, dan jawaban baru dinilai setelah kamu mengumpulkan.`
+        : `Questions are drawn at random from ${bank.length} questions in the ${App.volData[vol].modules.length} modules of this volume${this.nBank(vol) ? ` (${this.nBank(vol)} units use the unit-test question bank)` : ''}, ordered by TOCFL section: <b lang="zh-TW">聽力</b> first, then <b lang="zh-TW">閱讀</b>.
+        There is a time limit, audio can be played at most ${this.PLAY_LIMIT}×, and answers are only scored after you submit.`}</p>
       </div>
       ${running ? `<button class="card continue" onclick="App.go('#/ujian')">${Pic.html('⏱️', 'mode-ic')}
-          <div class="continue-txt"><small>Ujian sedang berjalan</small><b>Lanjutkan · soal ${s.i + 1}/${s.items.length}</b></div><span class="chev">›</span></button>` : ''}
+          <div class="continue-txt"><small>${T('Exam in progress', 'Ujian sedang berjalan')}</small><b>${T('Continue · question', 'Lanjutkan · soal')} ${s.i + 1}/${s.items.length}</b></div><span class="chev">›</span></button>` : ''}
       <div class="mode-list">
-        ${[[20, 'Ujian singkat'], [40, 'Ujian lengkap']].map(([n, l]) => `
+        ${[[20, T('Short exam', 'Ujian singkat')], [40, T('Long exam', 'Ujian lengkap')]].map(([n, l]) => `
         <button class="card mode-card" onclick="Ujian.start(${vol}, ${n})">
           ${Pic.html(n === 20 ? '⏱️' : '🏁', 'mode-ic')}
-          <div><b>${l} · ${n} soal</b><span>± ${Math.round(n * this.SEC_PER_ITEM / 60)} menit · ${n / 2} 聽力 + ${n / 2} 閱讀</span></div><span class="chev">›</span></button>`).join('')}
+          <div><b>${l} · ${n} ${T('questions', 'soal')}</b><span>± ${Math.round(n * this.SEC_PER_ITEM / 60)} ${T('min', 'menit')} · ${n / 2} 聽力 + ${n / 2} 閱讀</span></div><span class="chev">›</span></button>`).join('')}
         ${fullOk ? `<button class="card mode-card" onclick="Ujian.start(${vol}, 'full')">
           ${Pic.html('🎓', 'mode-ic')}
-          <div><b>Ujian penuh · format resmi</b><span><span lang="zh-TW">聽力</span> 50 soal · 60 menit, lalu <span lang="zh-TW">閱讀</span> 50 soal · 60 menit — jumlah soal tiap bagian persis naskah TOCFL Band A</span></div><span class="chev">›</span></button>` : ''}
+          <div><b>${T('Full exam · official format', 'Ujian penuh · format resmi')}</b><span>${T('<span lang="zh-TW">聽力</span> 50 questions · 60 min, then <span lang="zh-TW">閱讀</span> 50 questions · 60 min — the same number of questions per part as the TOCFL Band A paper', '<span lang="zh-TW">聽力</span> 50 soal · 60 menit, lalu <span lang="zh-TW">閱讀</span> 50 soal · 60 menit — jumlah soal tiap bagian persis naskah TOCFL Band A')}</span></div><span class="chev">›</span></button>` : ''}
       </div>
-      <details class="panel"><summary class="panel-k">Bank soal per bagian</summary>
+      <details class="panel"><summary class="panel-k">${T('Question bank by part', 'Bank soal per bagian')}</summary>
         <ul class="partlist">${this.PARTS.map((p, i) => `<li><span lang="zh-TW">${p[0]}</span> ${p[2]}<b>${avail[i]}</b></li>`).join('')}</ul></details>
-      ${h.length ? `<h3 class="sub-title">Riwayat</h3>
+      ${h.length ? `<h3 class="sub-title">${T('History', 'Riwayat')}</h3>
         <div class="hist">${h.slice(-8).reverse().map(x => `<div class="hrow">
-          <span>${new Date(x.d).toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })}</span>
-          <span>${x.n} soal</span><span>聽 ${x.l}%</span><span>閱 ${x.r}%</span><b>${x.pct}%</b></div>`).join('')}</div>` : ''}`;
+          <span>${new Date(x.d).toLocaleDateString(Lang.LOCALE, { day: 'numeric', month: 'short' })}</span>
+          <span>${x.n} ${T('q.', 'soal')}</span><span>聽 ${x.l}%</span><span>閱 ${x.r}%</span><b>${x.pct}%</b></div>`).join('')}</div>` : ''}`;
   },
 
   /* Susun paket: bagi n/2 聽力 & n/2 閱讀 menurut bobot; kekurangan di satu bagian dialihkan ke bagian lain */
@@ -103,7 +115,7 @@ const Ujian = {
     const full = n === 'full', items = full ? this.composeFull(vol) : this.compose(vol, n);
     Soal.plays = {}; Soal.limit = this.PLAY_LIMIT;
     this.session = { kind: 'vol', vol, items, i: 0, answers: {}, intro: {}, phase: 'q', dur: full ? this.FULL_SEC : items.length * this.SEC_PER_ITEM, end: null, grid: false,
-                     title: `${full ? 'Ujian penuh' : 'Ujian'} · Vol.${vol}`, back: `#/v/${vol}/ujian` };
+                     title: `${full ? T('Full exam', 'Ujian penuh') : T('Exam', 'Ujian')} · Vol.${vol}`, back: `#/v/${vol}/ujian` };
     if (full) Object.assign(this.session, { full: true, sec: 0, r0: items.findIndex(x => this.partOf(x.t) >= 4), usedPrev: 0 });
     App.go('#/ujian');
   },
@@ -131,10 +143,10 @@ const Ujian = {
   startTes(code) {
     clearInterval(this.timer);
     const f = App.findModule(code), items = (App.bank[code] || []).map(t => ({ t, code }));
-    if (!items.length) return App.toast('Bab ini belum punya Tes Bab.');
+    if (!items.length) return App.toast(T('This unit has no unit test yet.', 'Bab ini belum punya Tes Bab.'));
     Soal.plays = {}; Soal.limit = this.PLAY_LIMIT;
     this.session = { kind: 'tes', code, vol: f.vol, items, i: 0, answers: {}, intro: {}, phase: 'q', dur: items.length * this.SEC_PER_ITEM, end: null, grid: false,
-                     title: `Tes Bab · ${code}`, back: `#/m/${code}/5` };
+                     title: `${T('Unit test', 'Tes Bab')} · ${code}`, back: `#/m/${code}/5` };
     App.go('#/ujian');
   },
 
@@ -152,14 +164,14 @@ const Ujian = {
     App.main(`
       <div class="lprog"><i style="width:${this.nAnswered() / n * 100}%"></i></div>
       <div class="exam-top"><span lang="zh-TW">${esc(this.PARTS[pi][0])} · ${this.PARTS[pi][2]}</span>
-        <button class="btn small ghost" onclick="Ujian.toggleGrid()">Soal ${this.num(s.i)}/${this.total()} ▾</button></div>
+        <button class="btn small ghost" onclick="Ujian.toggleGrid()">${T('Q', 'Soal')} ${this.num(s.i)}/${this.total()} ▾</button></div>
       ${s.grid ? this.grid() : ''}
       <div class="q-card">${Soal.body(it.t, key, s.answers[key], 'Ujian', 'exam')}</div>
       <div class="dock">
-        <button class="btn ghost" ${s.i === a ? 'disabled' : ''} onclick="Ujian.goto(${s.i - 1})">‹ Sebelumnya</button>
-        ${s.i + 1 < b ? `<button class="btn primary" onclick="Ujian.goto(${s.i + 1})">Berikutnya ›</button>`
-          : s.full && !s.sec ? `<button class="btn primary" onclick="Ujian.submitListening()">Selesai 聽力 ›</button>`
-          : `<button class="btn primary" onclick="Ujian.submit()">Kumpulkan</button>`}
+        <button class="btn ghost" ${s.i === a ? 'disabled' : ''} onclick="Ujian.goto(${s.i - 1})">‹ ${T('Previous', 'Sebelumnya')}</button>
+        ${s.i + 1 < b ? `<button class="btn primary" onclick="Ujian.goto(${s.i + 1})">${T('Next', 'Berikutnya')} ›</button>`
+          : s.full && !s.sec ? `<button class="btn primary" onclick="Ujian.submitListening()">${T('Finish 聽力', 'Selesai 聽力')} ›</button>`
+          : `<button class="btn primary" onclick="Ujian.submit()">${T('Submit', 'Kumpulkan')}</button>`}
       </div>`);
     Speech.preloadTask(it.t); Speech.preloadTask(s.items[s.i + 1]?.t);
   },
@@ -178,9 +190,9 @@ const Ujian = {
         <b>${p[2]}</b>
         <p class="zh-instr" lang="zh-TW">說明：${p[4]}</p>
         <p>${p[3]}</p>
-        <small>Soal ${first}–${first + cnt - 1} · ${cnt} soal${pi < 4 ? ` · audio maks. ${this.PLAY_LIMIT}×` : ''}</small>
-        ${!s.end ? `<p class="hint">Waktu (${Math.round(s.dur / 60)} menit${s.full ? ` untuk seluruh ${pi < 4 ? '聽力' : '閱讀'}` : ''}) mulai berjalan saat kamu menekan Mulai.</p>` : ''}
-        <button class="btn primary block" onclick="Ujian.session.intro[${pi}]=true;Ujian.render()">${s.end ? 'Lanjut' : 'Mulai'}</button>
+        <small>${T('Questions', 'Soal')} ${first}–${first + cnt - 1} · ${cnt} ${T('questions', 'soal')}${pi < 4 ? ` · ${T('audio max.', 'audio maks.')} ${this.PLAY_LIMIT}×` : ''}</small>
+        ${!s.end ? `<p class="hint">${T(`The timer (${Math.round(s.dur / 60)} min${s.full ? ` for all of ${pi < 4 ? '聽力' : '閱讀'}` : ''}) starts when you press Start.`, `Waktu (${Math.round(s.dur / 60)} menit${s.full ? ` untuk seluruh ${pi < 4 ? '聽力' : '閱讀'}` : ''}) mulai berjalan saat kamu menekan Mulai.`)}</p>` : ''}
+        <button class="btn primary block" onclick="Ujian.session.intro[${pi}]=true;Ujian.render()">${s.end ? T('Continue', 'Lanjut') : T('Start', 'Mulai')}</button>
       </div>`);
   },
   tick() {
@@ -193,8 +205,8 @@ const Ujian = {
       if (el) { el.textContent = `⏱ ${Math.floor(left / 60)}:${String(left % 60).padStart(2, '0')}`; el.classList.toggle('low', left < 120); }
       if (left === 0) {
         clearInterval(this.timer);
-        if (s.full && !s.sec) { App.toast('Waktu 聽力 habis — lanjut ke 閱讀.'); return this.toReading(); }
-        App.toast('Waktu habis — jawaban dikumpulkan.'); this.finish();
+        if (s.full && !s.sec) { App.toast(T('聽力 time is up — moving on to 閱讀.', 'Waktu 聽力 habis — lanjut ke 閱讀.')); return this.toReading(); }
+        App.toast(T('Time is up — your answers have been submitted.', 'Waktu habis — jawaban dikumpulkan.')); this.finish();
       }
     };
     upd(); this.timer = setInterval(upd, 1000);
@@ -214,12 +226,13 @@ const Ujian = {
   keep() { const y = window.scrollY; this.render(); window.scrollTo(0, y); },
   submitListening() {
     const [a, b] = this.range(), left = b - a - this.nAnswered();
-    if (!confirm(`${left ? `Masih ada ${left} soal 聽力 belum dijawab. ` : ''}Lanjut ke 閱讀? Setelah itu kamu tidak bisa kembali ke 聽力.`)) return;
+    if (!confirm(LANG === 'id' ? `${left ? `Masih ada ${left} soal 聽力 belum dijawab. ` : ''}Lanjut ke 閱讀? Setelah itu kamu tidak bisa kembali ke 聽力.`
+      : `${left ? `${left} 聽力 question(s) still unanswered. ` : ''}Go on to 閱讀? You will not be able to return to 聽力.`)) return;
     this.toReading();
   },
   submit() {
     const [a, b] = this.range(), left = b - a - this.nAnswered();
-    if (left && !confirm(`Masih ada ${left} soal belum dijawab. Kumpulkan sekarang?`)) return;
+    if (left && !confirm(T(`${left} question(s) still unanswered. Submit now?`, `Masih ada ${left} soal belum dijawab. Kumpulkan sekarang?`))) return;
     this.finish();
   },
 
@@ -247,31 +260,31 @@ const Ujian = {
   result() {
     const s = this.session;
     Soal.limit = null;
-    App.bar(`Hasil · ${s.title}`, s.back);
+    App.bar(`${T('Results', 'Hasil')} · ${s.title}`, s.back);
     const wrongCodes = [...new Set(s.items.filter((x, i) => { const [g, n] = Soal.score(x.t, s.answers['u' + i]); return g < n; }).map(x => x.code))];
     const list = s.items.map((x, i) => ({ x, i, ok: (([g, n]) => g === n)(Soal.score(x.t, s.answers['u' + i])) }))
       .filter(r => s.filter === 'semua' || !r.ok);
     App.main(`
       <div class="result ${s.pct >= 80 ? 'hi' : s.pct >= 60 ? 'mid' : 'lo'}">
         ${App.ring(s.pct, s.pct + '%', 'ring-lg')}
-        <p>Waktu terpakai ${Math.floor(s.used / 60)} menit ${s.used % 60} detik.</p>
+        <p>${T(`Time used: ${Math.floor(s.used / 60)} min ${s.used % 60} s.`, `Waktu terpakai ${Math.floor(s.used / 60)} menit ${s.used % 60} detik.`)}</p>
         <div class="stats3 two">
           <div>${App.ring(s.l, s.l + '%')}<small lang="zh-TW">聽力</small></div>
           <div>${App.ring(s.r, s.r + '%')}<small lang="zh-TW">閱讀</small></div>
         </div>
       </div>
-      <h3 class="sub-title">Per bagian</h3>
+      <h3 class="sub-title">${T('By part', 'Per bagian')}</h3>
       <div class="partbars">${this.PARTS.map((p, i) => s.per[i][1] ? `<div class="pb">
           <span lang="zh-TW">${p[0]}</span><div class="bar"><i style="width:${s.per[i][0] / s.per[i][1] * 100}%"></i></div><b>${s.per[i][0]}/${s.per[i][1]}</b></div>` : '').join('')}</div>
-      <p class="hint">Di 閱讀 Part 4, setiap titik kosong dihitung satu poin, sama seperti di ujian resmi.</p>
-      ${s.kind === 'vol' && wrongCodes.length ? `<div class="panel"><div class="panel-k">Modul yang perlu diulang</div>
+      <p class="hint">${T('In 閱讀 Part 4, each blank counts as one point, just like in the official exam.', 'Di 閱讀 Part 4, setiap titik kosong dihitung satu poin, sama seperti di ujian resmi.')}</p>
+      ${s.kind === 'vol' && wrongCodes.length ? `<div class="panel"><div class="panel-k">${T('Modules to review', 'Modul yang perlu diulang')}</div>
         <div class="chips">${wrongCodes.map(c => `<button class="chip" onclick="App.go('#/m/${c}/0')">${c} <span lang="zh-TW">${esc(App.findModule(c).m.title)}</span></button>`).join('')}</div></div>` : ''}
-      <div class="toolbar"><h3 class="sub-title">Tinjau soal</h3><span class="spacer"></span>
-        <div class="seg">${[['salah', 'Yang salah'], ['semua', 'Semua']].map(([k, l]) => `<button class="${s.filter === k ? 'on' : ''}" onclick="Ujian.session.filter='${k}';Ujian.keep()">${l}</button>`).join('')}</div></div>
+      <div class="toolbar"><h3 class="sub-title">${T('Review questions', 'Tinjau soal')}</h3><span class="spacer"></span>
+        <div class="seg">${[['salah', T('Wrong only', 'Yang salah')], ['semua', T('All', 'Semua')]].map(([k, l]) => `<button class="${s.filter === k ? 'on' : ''}" onclick="Ujian.session.filter='${k}';Ujian.keep()">${l}</button>`).join('')}</div></div>
       ${list.map(({ x, i }) => `<div class="q-card review">
           <div class="q-part"><b>${i + 1}.</b> <span lang="zh-TW">${esc(x.t.part)}</span> · <a href="#/m/${x.code}/0">${x.code}</a></div>
-          ${Soal.body(x.t, 'r' + i, s.answers['u' + i], 'Ujian', 'review')}</div>`).join('') || '<p class="hint">Tidak ada soal yang salah. 太棒了！</p>'}
-      <div class="row2"><button class="btn primary" onclick="${s.kind === 'tes' ? `Ujian.startTes('${s.code}')">Ulangi tes` : `Ujian.start(${s.vol}, ${s.full ? "'full'" : s.items.length})">Ujian baru`}</button>
-        <button class="btn ghost" onclick="App.go('${s.back}')">Selesai</button></div>`);
+          ${Soal.body(x.t, 'r' + i, s.answers['u' + i], 'Ujian', 'review')}</div>`).join('') || `<p class="hint">${T('No wrong answers.', 'Tidak ada soal yang salah.')} 太棒了！</p>`}
+      <div class="row2"><button class="btn primary" onclick="${s.kind === 'tes' ? `Ujian.startTes('${s.code}')">${T('Retake test', 'Ulangi tes')}` : `Ujian.start(${s.vol}, ${s.full ? "'full'" : s.items.length})">${T('New exam', 'Ujian baru')}`}</button>
+        <button class="btn ghost" onclick="App.go('${s.back}')">${T('Done', 'Selesai')}</button></div>`);
   },
 };

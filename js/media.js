@@ -55,8 +55,8 @@ const Speech = {
     document.querySelectorAll('.speed button').forEach(b => b.classList.toggle('on', +b.dataset.r === r));
   },
   speedUI() {
-    return `<div class="speed" role="group" aria-label="Kecepatan audio"><span>Kecepatan</span>${this.RATES.map(r =>
-      `<button data-r="${r}" class="${r === this.rate ? 'on' : ''}" onclick="event.stopPropagation();Speech.setRate(${r})">${String(r).replace('.', ',')}×</button>`).join('')}</div>`;
+    return `<div class="speed" role="group" aria-label="${T('Audio speed', 'Kecepatan audio')}"><span>${T('Speed', 'Kecepatan')}</span>${this.RATES.map(r =>
+      `<button data-r="${r}" class="${r === this.rate ? 'on' : ''}" onclick="event.stopPropagation();Speech.setRate(${r})">${LANG === 'id' ? String(r).replace('.', ',') : r}×</button>`).join('')}</div>`;
   },
   profil(sp) { return SPEAKERS[sp] || 'F1'; },
   url(text, prof) { return `audio/tts/${cyrb53(`${prof}|${String(text).trim()}`).toString(36)}.mp3`; },
@@ -100,7 +100,7 @@ const Speech = {
   },
   tts(text, prof) {
     return new Promise(done => {
-      if (!window.speechSynthesis) { App.toast('Audio belum tersedia untuk kalimat ini.'); return done(); }
+      if (!window.speechSynthesis) { App.toast(T('Audio is not available for this sentence yet.', 'Audio belum tersedia untuk kalimat ini.')); return done(); }
       const male = /^M|^K/.test(prof);
       const u = new SpeechSynthesisUtterance(text);
       u.lang = 'zh-TW'; u.rate = 0.9 * this.rate;

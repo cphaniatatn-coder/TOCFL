@@ -399,6 +399,7 @@ def impor():
     ok &= jalan([f'{K}/bangun_bank.py'], 'Rakit bank soal + periksa format')
     jalan([f'{K}/buat_rencana_json.py'], 'Peta modul')
     jalan([f'{K}/buat_ledger.py'], 'Ledger')
+    jalan([f'{K}/terjemah.py'], 'Versi English (data/en/) — teks baru yang belum diterjemahkan tetap Indonesia')
     if ok:
         jalan([f'{K}/buat_audio.py'], 'Audio (kalimat baru direkam; butuh internet)')
         print('\n✓ Selesai. Buka app untuk melihat hasilnya, lalu commit & push.')

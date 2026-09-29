@@ -7,10 +7,10 @@ const VSTATS_KEY = 'tocfl_vocab_stats';
 const Latihan = {
   session: null,
   MODES: {
-    kartu:  { ic: '🗂️', name: 'Kartu kilat', desc: 'Lihat kata, ingat artinya, lalu balik kartunya. Jujur pada dirimu sendiri.' },
-    dengar: { ic: '🎧', name: 'Dengar → Arti', desc: 'Hanya suara, tanpa tulisan — melatih telinga seperti 聽力.' },
-    hanzi:  { ic: '📖', name: 'Hanzi → Arti', desc: 'Kenali kata tertulis tanpa pinyin — seperti 閱讀.' },
-    arti:   { ic: '🔁', name: 'Arti → Hanzi', desc: 'Dari bahasa Indonesia, pilih hanzi yang tepat.' },
+    kartu:  { ic: '🗂️', name: T('Flashcards', 'Kartu kilat'), desc: T('See the word, recall its meaning, then flip the card. Be honest with yourself.', 'Lihat kata, ingat artinya, lalu balik kartunya. Jujur pada dirimu sendiri.') },
+    dengar: { ic: '🎧', name: T('Listen → Meaning', 'Dengar → Arti'), desc: T('Sound only, no text — trains your ear like 聽力.', 'Hanya suara, tanpa tulisan — melatih telinga seperti 聽力.') },
+    hanzi:  { ic: '📖', name: T('Hanzi → Meaning', 'Hanzi → Arti'), desc: T('Recognise the written word without pinyin — like 閱讀.', 'Kenali kata tertulis tanpa pinyin — seperti 閱讀.') },
+    arti:   { ic: '🔁', name: T('Meaning → Hanzi', 'Arti → Hanzi'), desc: T('From English, choose the right hanzi.', 'Dari bahasa Indonesia, pilih hanzi yang tepat.') },
   },
 
   stats() { return Store.get(VSTATS_KEY, {}); },
@@ -32,22 +32,22 @@ const Latihan = {
     const st = this.stats(), all = this.words(vol), opened = this.opened(vol);
     const seen = all.filter(v => st[v.id]).length, weak = all.filter(v => this.weak(st[v.id])).length;
     const scope = this._scope || (opened.length ? 'buka' : 'semua');
-    const scopes = [['buka', `Sudah dibuka · ${opened.length}`, opened.length], ['semua', `Semua · ${App.plan[vol].length}`, 1],
-                    ['sulit', `Kata sulit · ${weak}`, weak]];
+    const scopes = [['buka', `${T('Opened', 'Sudah dibuka')} · ${opened.length}`, opened.length], ['semua', `${T('All', 'Semua')} · ${App.plan[vol].length}`, 1],
+                    ['sulit', `${T('Hard words', 'Kata sulit')} · ${weak}`, weak]];
     return `
       <div class="stats3">
-        <div>${App.ring(Math.round(seen / all.length * 100), `${seen}`)}<small>kata pernah dilatih</small></div>
-        <div>${App.ring(all.length ? Math.round((seen - weak) / all.length * 100) : 0, `${seen - weak}`, 'ring-ok')}<small>lebih sering benar</small></div>
-        <div>${App.ring(all.length ? Math.round(weak / all.length * 100) : 0, `${weak}`, 'ring-warn')}<small>kata sulit</small></div>
+        <div>${App.ring(Math.round(seen / all.length * 100), `${seen}`)}<small>${T('words practised', 'kata pernah dilatih')}</small></div>
+        <div>${App.ring(all.length ? Math.round((seen - weak) / all.length * 100) : 0, `${seen - weak}`, 'ring-ok')}<small>${T('mostly right', 'lebih sering benar')}</small></div>
+        <div>${App.ring(all.length ? Math.round(weak / all.length * 100) : 0, `${weak}`, 'ring-warn')}<small>${T('hard words', 'kata sulit')}</small></div>
       </div>
-      <div class="field-k">Ambil kata dari modul…</div>
+      <div class="field-k">${T('Take words from modules…', 'Ambil kata dari modul…')}</div>
       <div class="seg wrap">${scopes.map(([k, l, ok]) => `<button class="${k === scope ? 'on' : ''}" ${ok ? '' : 'disabled'} onclick="Latihan._scope='${k}';App.route()">${l}</button>`).join('')}</div>
-      <div class="field-k">Pilih cara latihan · 10 kata per sesi</div>
+      <div class="field-k">${T('Choose a practice mode · 10 words per session', 'Pilih cara latihan · 10 kata per sesi')}</div>
       <div class="mode-list">${Object.entries(this.MODES).map(([k, m]) => `
         <button class="card mode-card" onclick="Latihan.startScope(${vol}, '${k}')">
           ${Pic.html(m.ic, 'mode-ic')}<div><b>${m.name}</b><span>${m.desc}</span></div><span class="chev">›</span></button>`).join('')}
       </div>
-      <p class="hint">Kata yang salah akan lebih sering muncul lagi sampai kamu lebih sering benar daripada salah.</p>`;
+      <p class="hint">${T('Words you miss will come back more often until you get them right more often than wrong.', 'Kata yang salah akan lebih sering muncul lagi sampai kamu lebih sering benar daripada salah.')}</p>`;
   },
   startScope(vol, mode) {
     const scope = this._scope || (this.opened(vol).length ? 'buka' : 'semua');
@@ -60,7 +60,7 @@ const Latihan = {
     const st = this.stats();
     let pool = list || this.words(vol, codes);
     if (weakOnly) pool = pool.filter(v => this.weak(st[v.id]));
-    if (!pool.length) return App.toast('Belum ada kata untuk dilatih.');
+    if (!pool.length) return App.toast(T('No words to practise yet.', 'Belum ada kata untuk dilatih.'));
     const prio = v => { const s = st[v.id]; return !s ? 1 : this.weak(s) ? 0 : 2 + (s.r - s.w) * 0.1; };
     pool = shuffle(pool).sort((a, b) => prio(a) - prio(b)).slice(0, 10);
     const distract = this.words(vol);
@@ -95,15 +95,15 @@ const Latihan = {
           <div class="vcard-top"><span class="layer-chip">${v.code}</span></div>
           <button class="vword" lang="zh-TW" onclick="Speech.word('${esc(v.say || v.w)}')">${esc(v.w)}</button>
           ${s.flip ? `<div class="vpy">${esc(v.py)}</div><div class="vmean"><span class="pos">${esc(v.pos)}</span> ${esc(v.meaning)}</div>`
-                   : `<p class="hint">Ucapkan kata ini dan ingat artinya dulu.</p>`}
+                   : `<p class="hint">${T('Say this word and recall its meaning first.', 'Ucapkan kata ini dan ingat artinya dulu.')}</p>`}
         </div>
         ${s.flip ? `<div class="row2">
-            <button class="btn warn" onclick="Latihan.mark(false)">${Pic.html('🔁', 'ic-sm')} Belum ingat</button>
-            <button class="btn ok" onclick="Latihan.mark(true)">${Pic.html('✅', 'ic-sm')} Ingat</button></div>`
-                 : `<button class="btn primary block" onclick="Latihan.flip()">Balik kartu</button>`}`;
+            <button class="btn warn" onclick="Latihan.mark(false)">${Pic.html('🔁', 'ic-sm')} ${T('Not yet', 'Belum ingat')}</button>
+            <button class="btn ok" onclick="Latihan.mark(true)">${Pic.html('✅', 'ic-sm')} ${T('Got it', 'Ingat')}</button></div>`
+                 : `<button class="btn primary block" onclick="Latihan.flip()">${T('Flip card', 'Balik kartu')}</button>`}`;
     } else {
       const prompt = s.mode === 'dengar'
-        ? `<button class="play-big" id="play-lw" onclick="Speech.word('${esc(v.say || v.w)}')">${Pic.html('🔊', 'play-ic')}<span>Dengarkan</span><small>ketuk untuk memutar lagi</small></button>`
+        ? `<button class="play-big" id="play-lw" onclick="Speech.word('${esc(v.say || v.w)}')">${Pic.html('🔊', 'play-ic')}<span>${T('Listen', 'Dengarkan')}</span><small>${T('tap to play again', 'ketuk untuk memutar lagi')}</small></button>`
         : s.mode === 'hanzi' ? `<div class="vword static" lang="zh-TW">${esc(v.w)}</div>`
         : `<div class="lmean">${esc(v.meaning)}<small>${esc(v.pos)}</small></div>`;
       const lab = x => s.mode === 'arti' ? `<span lang="zh-TW" class="big-zh">${esc(x.w)}</span>` : `<span>${esc(x.meaning)}</span>`;
@@ -117,7 +117,7 @@ const Latihan = {
               <button class="say-btn" onclick="Speech.word('${esc(v.say || v.w)}')">${Pic.html('🔊', 'ic-xs')}</button>
               <p>${esc(v.meaning)} · <small>${v.code}</small></p></div></div>` : ''}
       </div>
-      ${r != null ? `<button class="btn primary block" onclick="Latihan.next()">${s.i + 1 < n ? 'Berikutnya ›' : 'Lihat hasil ›'}</button>` : ''}`;
+      ${r != null ? `<button class="btn primary block" onclick="Latihan.next()">${s.i + 1 < n ? T('Next ›', 'Berikutnya ›') : T('See results ›', 'Lihat hasil ›')}</button>` : ''}`;
     }
     App.main(prog + h);
     Speech.preload([[v.say || v.w, 'W'], ...(s.items[s.i + 1] ? [[s.items[s.i + 1].v.say || s.items[s.i + 1].v.w, 'W']] : [])]);
@@ -146,16 +146,16 @@ const Latihan = {
     App.main(`
       <div class="result ${pct >= 80 ? 'hi' : pct >= 60 ? 'mid' : 'lo'}">
         ${App.ring(pct, `${ok}/${n}`, 'ring-lg')}
-        <p>${pct === 100 ? 'Sempurna! Semua kata terpanggil dari ingatan.' : pct >= 60 ? 'Bagus. Kata yang salah sudah dicatat dan akan muncul lagi lebih sering.' : 'Tidak apa-apa — justru usaha mengingat inilah yang memperkuat ingatan. Ulangi kata yang salah sekarang.'}</p>
+        <p>${pct === 100 ? T('Perfect! You recalled every word from memory.', 'Sempurna! Semua kata terpanggil dari ingatan.') : pct >= 60 ? T('Good. The words you missed have been noted and will come back more often.', 'Bagus. Kata yang salah sudah dicatat dan akan muncul lagi lebih sering.') : T('That is fine — the effort of recalling is exactly what strengthens memory. Go over the missed words now.', 'Tidak apa-apa — justru usaha mengingat inilah yang memperkuat ingatan. Ulangi kata yang salah sekarang.')}</p>
       </div>
-      ${wrong.length ? `<h3 class="sub-title">Perlu diulang</h3>
+      ${wrong.length ? `<h3 class="sub-title">${T('To review', 'Perlu diulang')}</h3>
         <div class="wlist">${wrong.map(({ v }) => `<button class="wrow" onclick="Speech.word('${esc(v.say || v.w)}')">
           <b lang="zh-TW">${esc(v.w)}</b><span>${esc(v.py)}</span><small>${esc(v.meaning)}</small>${Pic.html('🔊', 'ic-xs')}</button>`).join('')}</div>` : ''}
       <div class="row2">
-        ${wrong.length ? `<button class="btn primary" onclick="Latihan.again(true)">Ulangi yang salah</button>` : ''}
-        <button class="btn ghost" onclick="Latihan.again(false)">Sesi baru</button>
+        ${wrong.length ? `<button class="btn primary" onclick="Latihan.again(true)">${T('Retry the missed ones', 'Ulangi yang salah')}</button>` : ''}
+        <button class="btn ghost" onclick="Latihan.again(false)">${T('New session', 'Sesi baru')}</button>
       </div>
-      <button class="btn ghost block" onclick="App.go('${s.from}')">Selesai</button>`);
+      <button class="btn ghost block" onclick="App.go('${s.from}')">${T('Done', 'Selesai')}</button>`);
   },
   again(wrongOnly) {
     const s = this.session;
