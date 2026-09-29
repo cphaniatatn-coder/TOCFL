@@ -23373,12 +23373,12 @@
    },
    "question": "你陪媽媽去做什麼？",
    "options": [
+    "去買衣服。",
     "去買菜。",
-    "去上學。",
-    "去看電影。"
+    "去看醫生。"
    ],
-   "answer": 0,
-   "why": "陪 + person + V = to go with … to ….",
+   "answer": 1,
+   "why": "Buying vegetables at a market → 買菜. A and C do not match.",
    "id": "C26-01"
   },
   {
@@ -23392,12 +23392,12 @@
    },
    "question": "他的話讓你怎麼樣？",
    "options": [
-    "讓我很難過。",
+    "讓我很高興。",
     "讓我很生氣。",
-    "讓我很高興。"
+    "讓我很難過。"
    ],
-   "answer": 2,
-   "why": "讓 + person + Vs = to make … feel ….",
+   "answer": 0,
+   "why": "Praised and smiling → 很高興. B and C are the opposite feelings.",
    "id": "C26-02"
   },
   {
@@ -23406,31 +23406,31 @@
    "instr": "Listen to the short exchange, then choose the matching picture.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "誰照顧你的小狗？"
+     "sp": "女",
+     "zh": "誰陪你去醫院？"
     },
     {
-     "sp": "女",
-     "zh": "我鄰居。"
+     "sp": "男",
+     "zh": "我哥哥，我姊姊今天要上班。"
     }
    ],
-   "question": "誰照顧小狗？",
+   "question": "誰陪這位先生去醫院？",
    "options": [
     {
      "icon": "👩",
-     "label": "mother"
+     "label": "older sister"
     },
     {
-     "icon": "🧑‍⚕️",
-     "label": "a vet"
+     "icon": "👨",
+     "label": "older brother"
     },
     {
-     "icon": "🏠🧑",
-     "label": "neighbour"
+     "icon": "👵",
+     "label": "grandma"
     }
    ],
-   "answer": 2,
-   "why": "我鄰居.",
+   "answer": 1,
+   "why": "我哥哥. A: his sister is working today. C is not mentioned.",
    "id": "C26-03"
   },
   {
@@ -23439,39 +23439,39 @@
    "instr": "Listen to the dialogue, then choose the picture that answers the question.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "你奶奶身體好嗎？"
-    },
-    {
      "sp": "男",
-     "zh": "不太好，她在醫院。"
+     "zh": "你為什麼每天都給你媽媽打電話？"
     },
     {
      "sp": "女",
-     "zh": "誰陪她？"
+     "zh": "她一個人住，我很關心她。"
     },
     {
      "sp": "男",
-     "zh": "我媽媽。"
+     "zh": "你怎麼不跟她一起住？"
+    },
+    {
+     "sp": "女",
+     "zh": "我的公司在台北，她住在高雄。"
     }
    ],
-   "question": "誰陪奶奶？",
+   "question": "這位小姐的媽媽住在哪裡？",
    "options": [
     {
-     "icon": "👩",
-     "label": "the man's mother"
+     "icon": "🏙️",
+     "label": "Taipei"
     },
     {
-     "icon": "🧑‍⚕️",
-     "label": "doctor"
+     "icon": "⚓",
+     "label": "Kaohsiung"
     },
     {
-     "icon": "👨",
-     "label": "the man"
+     "icon": "🏞️",
+     "label": "Taichung"
     }
    ],
-   "answer": 0,
-   "why": "我媽媽.",
+   "answer": 1,
+   "why": "她住在高雄. A is where the woman works. C is not mentioned.",
    "id": "C26-04"
   },
   {
@@ -23480,54 +23480,54 @@
    "instr": "Listen to the dialogue, then choose the most suitable answer.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你跟你室友關係好嗎？"
-    },
-    {
      "sp": "女",
-     "zh": "很好，我生病的時候，她照顧我。"
+     "zh": "你看起來很累。"
     },
     {
      "sp": "男",
-     "zh": "真好！"
+     "zh": "這個星期我每天晚上都在醫院照顧我爸爸。"
     },
     {
      "sp": "女",
-     "zh": "對，她是我最好的朋友。"
+     "zh": "你應該讓你弟弟也去照顧他。"
+    },
+    {
+     "sp": "男",
+     "zh": "我弟弟在國外，回不來。"
     }
    ],
-   "question": "這位小姐覺得室友怎麼樣？",
+   "question": "這位小姐的意思是什麼？",
    "options": [
-    "很關心她",
-    "很吵",
-    "不太好",
-    "常常生病"
+    "這位先生應該去國外",
+    "弟弟也應該照顧爸爸",
+    "這位先生的爸爸很好",
+    "她想去照顧他爸爸"
    ],
-   "answer": 0,
-   "why": "Looking after someone when they're ill → caring.",
+   "answer": 1,
+   "why": "讓你弟弟也去照顧他 → his brother should help too. A misreads 國外. C: his father is ill. D is not mentioned.",
    "id": "C26-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "媽媽讓我去睡覺。",
+   "text": "奶奶生病了，爸爸在她身邊照顧她。",
    "options": [
     {
-     "icon": "👩📚",
-     "label": "telling someone to study"
+     "icon": "👵🚶",
+     "label": "grandma walking"
     },
     {
-     "icon": "👩🛌",
-     "label": "mum telling a child to go to sleep"
+     "icon": "👨💼",
+     "label": "dad working"
     },
     {
-     "icon": "👩🍽️",
-     "label": "telling someone to eat"
+     "icon": "👵🛏️👨",
+     "label": "dad looking after grandma in bed"
     }
    ],
-   "answer": 1,
-   "why": "讓 = to tell (someone to do).",
+   "answer": 2,
+   "why": "生病 + 在身邊照顧 → dad beside grandma, who is ill. A and B do not match.",
    "id": "C26-06"
   },
   {
@@ -23535,16 +23535,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "👵🧑",
-    "label": "a grandchild keeping grandmother company"
+    "icon": "👩‍⚕️🛏️",
+    "label": "a nurse looking after a patient"
    },
    "options": [
-    "孫子在學校上課。",
-    "奶奶陪孫子上學。",
-    "孫子陪奶奶聊天。"
+    "護士在照顧病人。",
+    "病人在照顧護士。",
+    "護士在吃飯。"
    ],
-   "answer": 2,
-   "why": "陪 = to accompany, to keep company.",
+   "answer": 0,
+   "why": "A nurse looking after a patient. B reverses the roles; C is another activity.",
    "id": "C26-07"
   },
   {
@@ -23552,17 +23552,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "❤️",
-    "label": "to care about"
+    "icon": "🧑‍🤝‍🧑",
+    "label": "a good relationship"
    },
-   "text": "老師很（　）學生。",
+   "text": "我跟我姊姊的（　）很好，我們什麼都說。",
    "options": [
-    "關心",
+    "關係",
     "身邊",
-    "關係"
+    "關心"
    ],
    "answer": 0,
-   "why": "關心 = to care about.",
+   "why": "A 跟 B 的關係很好 = get on well. 身邊很好 and 的關心很好 are not natural here.",
    "id": "C26-08"
   },
   {
@@ -23571,19 +23571,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "上個月奶奶生病住院了，爸媽工作很忙，所以媽媽讓我去醫院（1）。每天下課以後，我都去醫院（2），幫她拿水、陪她聊天。奶奶說，有我在她（3），她就不怕了。醫生說奶奶（4），多休息就會好。我覺得對家人最重要的是（5）。",
    "options": [
-    "陪奶奶",
-    "照顧她",
     "身邊",
-    "身體沒什麼問題了",
+    "工作很忙",
+    "陪奶奶",
     "多關心他們",
-    "工作很忙"
+    "身體沒什麼問題了",
+    "照顧她"
    ],
    "answers": [
-    0,
-    1,
     2,
-    3,
-    4
+    5,
+    0,
+    4,
+    3
    ],
    "why": "去醫院陪奶奶; 照顧她 (fetching water, keeping her company); 在她身邊; the doctor: 身體沒什麼問題了; 多關心他們. 「工作很忙」 doesn't fit any blank.",
    "id": "C26-09"
@@ -23617,12 +23617,12 @@
    },
    "question": "他戴著什麼？",
    "options": [
-    "耳機。",
-    "眼鏡。",
-    "帽子。"
+    "戴著手錶。",
+    "戴著耳機。",
+    "戴著眼鏡。"
    ],
-   "answer": 0,
-   "why": "耳機 = headphones.",
+   "answer": 1,
+   "why": "Headphones on his head → 耳機. A and C are other things.",
    "id": "C27-01"
   },
   {
@@ -23636,12 +23636,12 @@
    },
    "question": "這是什麼消息？",
    "options": [
-    "好消息。",
     "壞消息。",
-    "沒有消息。"
+    "沒有消息。",
+    "好消息。"
    ],
-   "answer": 0,
-   "why": "好消息 = good news.",
+   "answer": 2,
+   "why": "She jumps for joy → 好消息. A and B do not match.",
    "id": "C27-02"
   },
   {
@@ -23651,30 +23651,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你在開玩笑嗎？"
+     "zh": "你怎麼知道的？"
     },
     {
      "sp": "男",
-     "zh": "不是，是真的！"
+     "zh": "小林傳簡訊告訴我的，不是老師說的。"
     }
    ],
-   "question": "這位先生是什麼意思？",
+   "question": "這位先生怎麼知道這個消息？",
    "options": [
     {
-     "icon": "😐✅",
-     "label": "really"
+     "icon": "🧑‍🏫",
+     "label": "from the teacher"
     },
     {
-     "icon": "😠",
-     "label": "angry"
+     "icon": "📱✉️",
+     "label": "a message from 小林"
     },
     {
-     "icon": "😂",
-     "label": "to joke"
+     "icon": "📰",
+     "label": "from the news"
     }
    ],
-   "answer": 0,
-   "why": "是真的.",
+   "answer": 1,
+   "why": "小林傳簡訊告訴我. A is ruled out (不是老師說的). C is not mentioned.",
    "id": "C27-03"
   },
   {
@@ -23684,38 +23684,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "我們一起合作寫報告吧。"
+     "zh": "你跟老師談了嗎？"
     },
     {
      "sp": "女",
-     "zh": "好，我寫第一部分。"
+     "zh": "談了，她說我們的報告很好。"
     },
     {
      "sp": "男",
-     "zh": "我寫第二部分。"
+     "zh": "真的嗎？太好了！"
     },
     {
      "sp": "女",
-     "zh": "星期五我們再談。"
+     "zh": "她還說我們很有禮貌呢。"
     }
    ],
-   "question": "他們在做什麼？",
+   "question": "老師覺得他們怎麼樣？",
    "options": [
     {
-     "icon": "🎮",
-     "label": "to play"
+     "icon": "😡",
+     "label": "angry"
     },
     {
-     "icon": "🍽️",
-     "label": "to eat"
+     "icon": "🙇👍",
+     "label": "polite, and the report is good"
     },
     {
-     "icon": "🧑‍🤝‍🧑📝",
-     "label": "writing a report together"
+     "icon": "📄❌",
+     "label": "the report is bad"
     }
    ],
-   "answer": 2,
-   "why": "合作寫報告.",
+   "answer": 1,
+   "why": "報告很好 + 很有禮貌. A and C are the opposite.",
    "id": "C27-04"
   },
   {
@@ -23725,53 +23725,53 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "我給你傳了三個簡訊呢！"
+     "zh": "我傳了三個簡訊給你，你都沒回。"
     },
     {
      "sp": "男",
-     "zh": "對不起，我戴著耳機，沒聽見。"
+     "zh": "對不起，我在圖書館，手機放在包裡，沒看到。"
     },
     {
      "sp": "女",
-     "zh": "下次注意一點。"
+     "zh": "我還以為你生氣了呢！"
     },
     {
      "sp": "男",
-     "zh": "好。"
+     "zh": "沒有沒有，我怎麼會生氣？"
     }
    ],
-   "question": "這位小姐為什麼不高興？",
+   "question": "這位小姐以為怎麼了？",
    "options": [
-    "這位先生開玩笑",
-    "這位先生忘了耳機",
-    "這位先生沒看她的簡訊",
-    "這位先生很沒禮貌"
+    "這位先生在圖書館",
+    "這位先生沒有手機",
+    "這位先生生氣了",
+    "這位先生在開玩笑"
    ],
    "answer": 2,
-   "why": "呢2 marks a complaint: 3 unanswered texts.",
+   "why": "我還以為你生氣了 → she thought he was angry. A is what really happened, not what she thought. B and D are not mentioned.",
    "id": "C27-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "他給我留下一個簡訊。",
+   "text": "告訴你一個好消息：我找到工作了！",
    "options": [
     {
-     "icon": "✉️",
-     "label": "letter"
+     "icon": "😢",
+     "label": "sad"
     },
     {
-     "icon": "📱💬",
-     "label": "leaving a text message"
+     "icon": "😄📱",
+     "label": "good news"
     },
     {
-     "icon": "📞",
-     "label": "telephone"
+     "icon": "😴",
+     "label": "to sleep"
     }
    ],
    "answer": 1,
-   "why": "留下 = to leave (behind).",
+   "why": "好消息 → happy. A and C do not match.",
    "id": "C27-06"
   },
   {
@@ -23779,16 +23779,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🙇",
-    "label": "bowing politely"
+    "icon": "🤝",
+    "label": "teamwork"
    },
    "options": [
-    "他很有禮貌。",
-    "他在開玩笑。",
-    "他很沒禮貌。"
+    "他們都很生氣。",
+    "他們不認識。",
+    "他們合作得很好。"
    ],
-   "answer": 0,
-   "why": "禮貌 = manners.",
+   "answer": 2,
+   "why": "Shaking hands / working together → 合作得很好. A and B do not match.",
    "id": "C27-07"
   },
   {
@@ -23796,17 +23796,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🎧",
-    "label": "earphones"
+    "icon": "😂",
+    "label": "to joke"
    },
-   "text": "在圖書館聽音樂，要戴（　）。",
+   "text": "別生氣，我是跟你開（　）的。",
    "options": [
-    "簡訊",
-    "耳機",
-    "消息"
+    "玩笑",
+    "消息",
+    "禮貌"
    ],
-   "answer": 1,
-   "why": "耳機.",
+   "answer": 0,
+   "why": "開玩笑 = joke. 開消息 and 開禮貌 don't exist.",
    "id": "C27-08"
   },
   {
@@ -23815,19 +23815,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "昨天晚上我（1）給小林，問他明天要不要一起去看電影，可是他一直沒回。今天我在學校看到他，他戴著（2）在聽音樂。我問他為什麼不回我，他說：「對不起，我手機壞了，沒看到你的（3）。」我以為他在（4），後來才知道是真的。他說：「電影的事，我們下課以後再（5）吧。」",
    "options": [
-    "傳簡訊",
-    "耳機",
     "消息",
-    "開玩笑",
+    "耳機",
     "談",
-    "很有禮貌"
+    "開玩笑",
+    "很有禮貌",
+    "傳簡訊"
    ],
    "answers": [
-    0,
+    5,
     1,
-    2,
+    0,
     3,
-    4
+    2
    ],
    "why": "傳簡訊; 戴著耳機; 沒看到你的消息; I thought she was 開玩笑; 再談 = talk about it again. 「很有禮貌」 doesn't fit any blank.",
    "id": "C27-09"
@@ -23861,12 +23861,12 @@
    },
    "question": "你哪裡不舒服？",
    "options": [
-    "我腳痛。",
-    "我頭痛。",
-    "我肚子痛。"
+    "我肚子痛。",
+    "我手痛。",
+    "我頭痛。"
    ],
-   "answer": 1,
-   "why": "頭痛 = headache.",
+   "answer": 2,
+   "why": "Holding his head → 頭痛. A and B are other body parts.",
    "id": "C28-01"
   },
   {
@@ -23880,12 +23880,12 @@
    },
    "question": "他怎麼了？",
    "options": [
-    "他在哭。",
+    "他在洗澡。",
     "他流了很多汗。",
-    "他在洗澡。"
+    "他發燒了。"
    ],
    "answer": 1,
-   "why": "流汗 = to sweat.",
+   "why": "Running in the hot sun → 流汗. A and C do not match.",
    "id": "C28-02"
   },
   {
@@ -23895,30 +23895,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你感冒了嗎？"
+     "zh": "你的藥呢？"
     },
     {
      "sp": "男",
-     "zh": "對，一直流鼻水。"
+     "zh": "被我的狗吃掉了。"
     }
    ],
-   "question": "這位先生怎麼樣？",
+   "question": "藥怎麼了？",
    "options": [
     {
-     "icon": "🤒",
-     "label": "to have a fever"
+     "icon": "👦",
+     "label": "eaten by his brother"
     },
     {
-     "icon": "🤧",
-     "label": "a cold, a runny nose"
+     "icon": "🗑️",
+     "label": "thrown away"
     },
     {
-     "icon": "😷",
-     "label": "to cough"
+     "icon": "🐕",
+     "label": "eaten by the dog"
     }
    ],
-   "answer": 1,
-   "why": "流鼻水.",
+   "answer": 2,
+   "why": "被我的狗吃掉了. A and B are not mentioned.",
    "id": "C28-03"
   },
   {
@@ -23928,38 +23928,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你發燒嗎？"
+     "zh": "醫生，我一直咳嗽，也流鼻水。"
     },
     {
      "sp": "女",
-     "zh": "三十八度。"
+     "zh": "發燒嗎？"
     },
     {
      "sp": "男",
-     "zh": "很嚴重，去看醫生吧。"
+     "zh": "不發燒，可是晚上咳得不能睡覺。"
     },
     {
      "sp": "女",
-     "zh": "好。"
+     "zh": "我給你一點藥，多喝水。"
     }
    ],
-   "question": "這位小姐怎麼了？",
+   "question": "這位先生哪裡不舒服？",
    "options": [
     {
      "icon": "🤒",
-     "label": "a fever of 38°"
+     "label": "to have a fever"
     },
     {
-     "icon": "🤧",
-     "label": "a runny nose"
+     "icon": "🤧😷",
+     "label": "cough and runny nose"
     },
     {
-     "icon": "😊",
-     "label": "healthy"
+     "icon": "🦵",
+     "label": "sore feet"
     }
    ],
-   "answer": 0,
-   "why": "發燒三十八度.",
+   "answer": 1,
+   "why": "咳嗽 + 流鼻水. A is ruled out (不發燒). C is not mentioned.",
    "id": "C28-04"
   },
   {
@@ -23969,53 +23969,53 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "我的蛋糕呢？"
+     "zh": "你的感冒好了嗎？"
     },
     {
      "sp": "男",
-     "zh": "被你弟弟吃掉了。"
+     "zh": "好多了，只是還有一點咳。"
     },
     {
      "sp": "女",
-     "zh": "真的嗎？"
+     "zh": "那明天可以去爬山嗎？"
     },
     {
      "sp": "男",
-     "zh": "他說他餓死了。"
+     "zh": "醫生說最好再休息兩天。"
     }
    ],
-   "question": "蛋糕怎麼了？",
+   "question": "這位先生明天可能怎麼做？",
    "options": [
-    "這位先生吃了",
-    "還在冰箱",
-    "掉在地上",
-    "被弟弟吃了"
+    "去爬山",
+    "在家休息",
+    "去看醫生",
+    "去上班"
    ],
-   "answer": 3,
-   "why": "被…吃掉了.",
+   "answer": 1,
+   "why": "最好再休息兩天 → rest. A is the invitation he politely turns down. C and D are not mentioned.",
    "id": "C28-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "他咳嗽咳得很嚴重。",
+   "text": "弟弟被這個感冒弄得很累，一直在床上。",
    "options": [
     {
-     "icon": "🤧",
-     "label": "a mild cold"
+     "icon": "👦⚽",
+     "label": "playing ball"
     },
     {
-     "icon": "😊",
-     "label": "healthy"
+     "icon": "👦📚",
+     "label": "to learn, to study"
     },
     {
-     "icon": "😷",
-     "label": "a bad cough"
+     "icon": "👦🛌🤒",
+     "label": "ill in bed"
     }
    ],
    "answer": 2,
-   "why": "嚴重 = serious.",
+   "why": "被感冒弄得很累 + 在床上. A and B do not match.",
    "id": "C28-06"
   },
   {
@@ -24023,16 +24023,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🤒🌡️",
-    "label": "to have a fever"
+    "icon": "🤧",
+    "label": "a runny nose"
    },
    "options": [
-    "他咳嗽了。",
-    "他流汗了。",
-    "他發燒了。"
+    "他在流汗。",
+    "他在流鼻水。",
+    "他在笑。"
    ],
-   "answer": 2,
-   "why": "發燒 = to have a fever.",
+   "answer": 1,
+   "why": "Sneezing / runny nose → 流鼻水. A and C do not match.",
    "id": "C28-07"
   },
   {
@@ -24040,17 +24040,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🍽️",
-    "label": "eating until it's all gone"
+    "icon": "🤒❗",
+    "label": "seriously ill"
    },
-   "text": "他把飯都吃（　）了。",
+   "text": "他的病很（　），醫生讓他在醫院住幾天。",
    "options": [
-    "流",
-    "咳",
-    "掉"
+    "嚴重",
+    "發燒",
+    "咳嗽"
    ],
-   "answer": 2,
-   "why": "V掉 = until it's gone.",
+   "answer": 0,
+   "why": "病很嚴重 = the illness is serious. 病很發燒 and 病很咳嗽 are ungrammatical.",
    "id": "C28-08"
   },
   {
@@ -24059,19 +24059,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "這幾天天氣一下冷一下熱，我感冒了。一開始只是（1），後來又開始（2），晚上咳得沒辦法睡覺。昨天晚上我（3），三十九度，衣服上都是（4）。我本來想吃上次沒吃完的感冒藥，可是發現藥（5）了！室友說我病得很嚴重，今天早上就陪我去看醫生了。",
    "options": [
-    "流鼻水",
-    "咳嗽",
-    "發燒了",
-    "汗",
     "被弟弟吃掉",
-    "吃得很多"
+    "咳嗽",
+    "流鼻水",
+    "汗",
+    "吃得很多",
+    "發燒了"
    ],
    "answers": [
-    0,
-    1,
     2,
+    1,
+    5,
     3,
-    4
+    0
    ],
    "why": "First: 流鼻水; then 咳嗽; 發燒三十九度; 衣服上都是汗; the medicine 被弟弟吃掉了. 「吃得很多」 doesn't fit any blank.",
    "id": "C28-09"
@@ -24105,12 +24105,12 @@
    },
    "question": "藥局在哪裡？",
    "options": [
-    "在醫院旁邊。",
-    "在銀行旁邊。",
-    "在學校旁邊。"
+    "在學校旁邊。",
+    "在醫院裡面。",
+    "在醫院旁邊。"
    ],
-   "answer": 0,
-   "why": "旁邊 = next to.",
+   "answer": 2,
+   "why": "The pharmacy is right next to the hospital → 醫院旁邊. A is another place; B is inside, not next to it.",
    "id": "C29-01"
   },
   {
@@ -24124,12 +24124,12 @@
    },
    "question": "我怎麼了？",
    "options": [
-    "你臉色不太好。",
-    "你很高興。",
-    "你很生氣。"
+    "你的精神很好。",
+    "你的臉色不太好。",
+    "你今天很漂亮。"
    ],
-   "answer": 0,
-   "why": "臉色不好 = looking pale/unwell.",
+   "answer": 1,
+   "why": "A pale, tired face → 臉色不太好. A and C are the opposite.",
    "id": "C29-02"
   },
   {
@@ -24139,30 +24139,30 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "我應該吃幾天藥？"
+     "zh": "藥房幾點關門？"
     },
     {
      "sp": "女",
-     "zh": "三天。"
+     "zh": "應該是九點，可是今天星期天，可能八點就關了。"
     }
    ],
-   "question": "這位先生應該吃幾天藥？",
+   "question": "今天藥房可能幾點關？",
    "options": [
     {
-     "icon": "💊",
-     "label": "5 days"
+     "icon": "🕘",
+     "label": "9 o'clock"
     },
     {
-     "icon": "💊",
-     "label": "7 days"
+     "icon": "🕗",
+     "label": "8 o'clock"
     },
     {
-     "icon": "💊",
-     "label": "3 days"
+     "icon": "🕙",
+     "label": "10 o'clock"
     }
    ],
-   "answer": 2,
-   "why": "三天.",
+   "answer": 1,
+   "why": "今天星期天，可能八點就關了. A is the usual time. C is not mentioned.",
    "id": "C29-03"
   },
   {
@@ -24172,38 +24172,38 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你今天精神怎麼樣？"
+     "zh": "醫生說這個藥要吃多久？"
     },
     {
      "sp": "男",
-     "zh": "很好，昨天休息了十個小時。"
+     "zh": "一個星期。"
     },
     {
      "sp": "女",
-     "zh": "太好了。"
+     "zh": "一天幾次？"
     },
     {
      "sp": "男",
-     "zh": "謝謝。"
+     "zh": "兩次，早上一次，晚上一次。"
     }
    ],
-   "question": "這位先生昨天休息了多久？",
+   "question": "這個藥一天吃幾次？",
    "options": [
     {
-     "icon": "🛌",
-     "label": "10 hours"
+     "icon": "💊",
+     "label": "once"
     },
     {
-     "icon": "🛌",
-     "label": "6 hours"
+     "icon": "💊💊",
+     "label": "twice"
     },
     {
-     "icon": "🛌",
-     "label": "12 hours"
+     "icon": "💊💊💊",
+     "label": "three times"
     }
    ],
-   "answer": 0,
-   "why": "十個小時.",
+   "answer": 1,
+   "why": "兩次. A and C are the wrong number.",
    "id": "C29-04"
   },
   {
@@ -24213,53 +24213,53 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "小明今天沒來上課。"
+     "zh": "你今天精神很好啊！"
     },
     {
      "sp": "女",
-     "zh": "他應該生病了吧。"
+     "zh": "對，昨天九點就上床了。"
     },
     {
      "sp": "男",
-     "zh": "我打電話問他。"
+     "zh": "你的感冒好了嗎？"
     },
     {
      "sp": "女",
-     "zh": "好。"
+     "zh": "好了，醫生說都正常了。"
     }
    ],
-   "question": "這位小姐是什麼意思？",
+   "question": "哪一個是對的？",
    "options": [
-    "她要去看小明",
-    "小明應該來上課",
-    "小明很健康",
-    "她想小明可能生病了"
+    "這位小姐昨天沒睡覺",
+    "這位小姐今天很累",
+    "這位小姐還要看醫生",
+    "這位小姐的感冒好了"
    ],
    "answer": 3,
-   "why": "應該2 = a guess.",
+   "why": "好了 + 都正常了. A is the opposite (九點就上床了). B is the opposite (精神很好). C is not mentioned.",
    "id": "C29-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "這個藥應該飯前吃。",
+   "text": "這個藥應該飯後吃，一天吃兩次。",
    "options": [
     {
-     "icon": "💊🍽️",
-     "label": "medicine before meals"
+     "icon": "💊➡️🍽️",
+     "label": "medicine first, then food"
+    },
+    {
+     "icon": "🍽️➡️💊",
+     "label": "food first, then medicine"
     },
     {
      "icon": "🛌💊",
-     "label": "before bed"
-    },
-    {
-     "icon": "🍽️💊",
-     "label": "after meals"
+     "label": "medicine before bed"
     }
    ],
-   "answer": 0,
-   "why": "飯前 = before meals.",
+   "answer": 1,
+   "why": "飯後吃 → eat first, then take the medicine. A is the wrong order; C is not mentioned.",
    "id": "C29-06"
   },
   {
@@ -24267,16 +24267,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "💊🏪",
-    "label": "pharmacy"
+    "icon": "😷",
+    "label": "a pale face"
    },
    "options": [
-    "我去書店買書。",
-    "我去超市買菜。",
-    "我去藥房買藥。"
+    "他的精神很好。",
+    "他很高興。",
+    "他的臉色不太好。"
    ],
    "answer": 2,
-   "why": "藥房 = pharmacy.",
+   "why": "A pale face → 臉色不太好. A and B are the opposite.",
    "id": "C29-07"
   },
   {
@@ -24284,17 +24284,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "😃",
-    "label": "full of energy"
+    "icon": "🌡️✅",
+    "label": "a normal temperature"
    },
-   "text": "今天他很有（　）。",
+   "text": "三十六度五是（　）的。",
    "options": [
     "正常",
-    "臉色",
-    "精神"
+    "精神",
+    "臉色"
    ],
-   "answer": 2,
-   "why": "有精神 = full of energy.",
+   "answer": 0,
+   "why": "36.5° → 正常 (normal). 精神 and 臉色 are not used for a temperature.",
    "id": "C29-08"
   },
   {
@@ -24303,19 +24303,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "這幾天我頭很痛，同學說我（1）不太好，叫我去看醫生。我覺得只是太累了，就到學校旁邊的（2）買藥。藥局的小姐問我晚上幾點睡覺，我說最近每天都（3），她說這樣不（4），要我早點睡覺，也給了我一些藥。她說這個藥應該（5），一天三次。",
    "options": [
-    "臉色",
     "藥局",
-    "半夜兩點才上床",
     "正常",
     "飯後吃",
-    "精神很好"
+    "半夜兩點才上床",
+    "精神很好",
+    "臉色"
    ],
    "answers": [
+    5,
     0,
-    1,
-    2,
     3,
-    4
+    1,
+    2
    ],
    "why": "臉色不太好; 到藥局買藥; 半夜兩點才上床; 這樣不正常; 藥應該飯後吃. 「精神很好」 contradicts the paragraph.",
    "id": "C29-09"
@@ -24593,12 +24593,12 @@
    },
    "question": "你知道答案嗎？",
    "options": [
-    "我不知道。",
+    "不知道，太難了。",
     "我知道答案！",
-    "我想睡覺。"
+    "題目在哪裡？"
    ],
    "answer": 1,
-   "why": "答案 = answer.",
+   "why": "Putting a hand up with an idea (a light bulb) → 知道. A is the opposite; C does not match.",
    "id": "C31-01"
   },
   {
@@ -24612,12 +24612,12 @@
    },
    "question": "這次考試有幾題？",
    "options": [
-    "兩題。",
+    "十題。",
     "十二題。",
     "二十題。"
    ],
    "answer": 2,
-   "why": "題 = question. The last number is 20.",
+   "why": "Questions numbered 1–20 → 二十題. A and B are the wrong number.",
    "id": "C31-02"
   },
   {
@@ -24627,30 +24627,30 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你不是說八點上課嗎？"
+     "zh": "你幾點到的？"
     },
     {
      "sp": "女",
-     "zh": "是九點，你聽錯了。"
+     "zh": "八點十分。我才下車就跑，結果還是遲到了。"
     }
    ],
-   "question": "幾點上課？",
+   "question": "這位小姐遲到了嗎？",
    "options": [
     {
-     "icon": "🕘",
-     "label": "9 o'clock"
+     "icon": "⏰✅",
+     "label": "on time"
     },
     {
-     "icon": "🕗",
-     "label": "8 o'clock"
+     "icon": "⏰❌",
+     "label": "to be late"
     },
     {
-     "icon": "🕙",
-     "label": "10 o'clock"
+     "icon": "🏠",
+     "label": "not coming"
     }
    ],
-   "answer": 0,
-   "why": "Corrected: 九點.",
+   "answer": 1,
+   "why": "結果還是遲到了. A is the opposite; C: she did come.",
    "id": "C31-03"
   },
   {
@@ -24660,38 +24660,38 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "這個題目你會嗎？"
+     "zh": "第三題的答案是什麼？"
     },
     {
      "sp": "男",
-     "zh": "不會，太難了。"
+     "zh": "我也不知道，我們問老師吧。"
     },
     {
      "sp": "女",
-     "zh": "我們問老師吧。"
+     "zh": "老師不是去開會了嗎？"
     },
     {
      "sp": "男",
-     "zh": "好，立刻去。"
+     "zh": "那我們先做第四題。"
     }
    ],
-   "question": "他們要去做什麼？",
+   "question": "他們現在要做什麼？",
    "options": [
-    {
-     "icon": "🏠",
-     "label": "going home"
-    },
-    {
-     "icon": "📖",
-     "label": "to read; to study"
-    },
     {
      "icon": "🧑‍🏫",
      "label": "asking the teacher"
+    },
+    {
+     "icon": "📝",
+     "label": "doing question 4"
+    },
+    {
+     "icon": "🏠",
+     "label": "going home"
     }
    ],
-   "answer": 2,
-   "why": "問老師.",
+   "answer": 1,
+   "why": "那我們先做第四題. A is dropped because the teacher is in a meeting. C is not mentioned.",
    "id": "C31-04"
   },
   {
@@ -24701,53 +24701,53 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "我才出門，就下雨了。"
+     "zh": "你不是說你會游泳嗎？"
     },
     {
      "sp": "女",
-     "zh": "你帶傘了嗎？"
+     "zh": "我會啊，可是我才下水，就覺得太冷了。"
     },
     {
      "sp": "男",
-     "zh": "沒有，結果衣服都溼了。"
+     "zh": "那我們去溫泉吧。"
     },
     {
      "sp": "女",
-     "zh": "快去洗澡吧。"
+     "zh": "好啊！"
     }
    ],
-   "question": "這位先生的衣服為什麼溼了？",
+   "question": "這位小姐為什麼不游泳了？",
    "options": [
-    "他跑步流汗",
-    "他去游泳",
-    "下雨，他沒帶傘",
-    "他洗衣服"
+    "她不會游泳",
+    "她想去溫泉",
+    "水太冷了",
+    "她頭痛"
    ],
    "answer": 2,
-   "why": "才…就 + 結果.",
+   "why": "才下水，就覺得太冷了 → that is the reason. A is the opposite (我會啊). B is the man's later suggestion. D is not mentioned.",
    "id": "C31-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "他立刻回答老師的問題。",
+   "text": "我才坐下，老師就叫我回答問題。",
    "options": [
     {
-     "icon": "😴",
+     "icon": "🚶",
+     "label": "to walk"
+    },
+    {
+     "icon": "🪑🙋",
+     "label": "just sat down and asked to answer"
+    },
+    {
+     "icon": "🛌",
      "label": "to sleep"
-    },
-    {
-     "icon": "🤔",
-     "label": "thinking for a long time"
-    },
-    {
-     "icon": "🙋",
-     "label": "answering straight away"
     }
    ],
-   "answer": 2,
-   "why": "立刻 = immediately.",
+   "answer": 1,
+   "why": "才坐下 + 就叫我回答. A and C do not match.",
    "id": "C31-06"
   },
   {
@@ -24755,16 +24755,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "📝",
-    "label": "exam results announced"
+    "icon": "📄✏️",
+    "label": "an exam paper"
    },
    "options": [
-    "考試還沒開始。",
-    "考試的結果出來了。",
-    "我沒有考試。"
+    "今天沒有考試。",
+    "他在看電影。",
+    "這次考試有很多題目。"
    ],
-   "answer": 1,
-   "why": "結果 = result.",
+   "answer": 2,
+   "why": "An exam paper → 考試有很多題目. A and B do not match.",
    "id": "C31-07"
   },
   {
@@ -24772,17 +24772,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🙋",
-    "label": "to answer"
+    "icon": "⚡🙋",
+    "label": "answering straight away"
    },
-   "text": "請（　）這個問題。",
+   "text": "老師問完，他（　）就回答了。",
    "options": [
+    "立刻",
     "結果",
-    "遲到",
-    "回答"
+    "答案"
    ],
-   "answer": 2,
-   "why": "回答 = to answer.",
+   "answer": 0,
+   "why": "立刻 = at once. 結果 = as a result (at the start of a clause); 答案 is a noun.",
    "id": "C31-08"
   },
   {
@@ -24791,19 +24791,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "今天有考試，我以為九點才開始，所以八點半才出門。（1），到了教室，考試已經開始十分鐘了。我（2）坐下來寫。第一（3）很容易，我很快就寫完了。可是後頭的題目很難，我不知道（4）。最後有兩題我都沒有（5）。",
    "options": [
-    "結果",
-    "立刻",
+    "題目很簡單",
     "題",
+    "結果",
     "答案是什麼",
-    "回答",
-    "題目很簡單"
+    "立刻",
+    "回答"
    ],
    "answers": [
-    0,
-    1,
     2,
+    4,
+    1,
     3,
-    4
+    5
    ],
    "why": "結果 = as a result, late; 立刻坐下來; 第一題; 不知道答案是什麼; 兩題沒有回答. 「題目很簡單」 contradicts 題目很難.",
    "id": "C31-09"
@@ -24837,12 +24837,12 @@
    },
    "question": "寒假你做什麼？",
    "options": [
-    "去上課。",
-    "去海邊游泳。",
-    "回印尼。"
+    "去海邊。",
+    "回印尼。",
+    "在學校念書。"
    ],
-   "answer": 2,
-   "why": "寒假 = winter holiday. A plane heading home → going home.",
+   "answer": 1,
+   "why": "Winter, flying home → 回印尼. A and C do not match.",
    "id": "C32-01"
   },
   {
@@ -24857,11 +24857,11 @@
    "question": "這個學期你怎麼樣？",
    "options": [
     "很無聊。",
-    "在放假。",
-    "很忙。"
+    "很忙。",
+    "在放假。"
    ],
-   "answer": 2,
-   "why": "學期 = semester. A pile of books → 很忙.",
+   "answer": 1,
+   "why": "Overwhelmed by piles of books → 很忙. A and C do not match.",
    "id": "C32-02"
   },
   {
@@ -24871,30 +24871,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "暑假你做什麼？"
+     "zh": "你們學校什麼時候放暑假？"
     },
     {
      "sp": "男",
-     "zh": "我去打工。"
+     "zh": "七月一號，比去年早一個星期。"
     }
    ],
-   "question": "這位先生暑假做什麼？",
+   "question": "他們學校什麼時候放暑假？",
    "options": [
     {
-     "icon": "💼",
-     "label": "to work part-time"
+     "icon": "📅",
+     "label": "8 July"
     },
     {
-     "icon": "📚",
-     "label": "to learn, to study"
+     "icon": "📅",
+     "label": "1 July"
     },
     {
-     "icon": "🏖️",
-     "label": "to the beach"
+     "icon": "📅",
+     "label": "1 June"
     }
    ],
-   "answer": 0,
-   "why": "打工.",
+   "answer": 1,
+   "why": "七月一號. A was last year's date (a week later). C is not mentioned.",
    "id": "C32-03"
   },
   {
@@ -24904,38 +24904,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "什麼時候放春假？"
+     "zh": "放假的時候你做什麼？"
     },
     {
      "sp": "女",
-     "zh": "四月。"
+     "zh": "有時候看電影，有時候去爬山。"
     },
     {
      "sp": "男",
-     "zh": "放幾天？"
+     "zh": "那這個週末呢？"
     },
     {
      "sp": "女",
-     "zh": "五天。"
+     "zh": "這個週末我要去爬山。"
     }
    ],
-   "question": "春假放幾天？",
+   "question": "這位小姐這個週末要做什麼？",
    "options": [
     {
-     "icon": "📅",
-     "label": "5 days"
+     "icon": "🎬",
+     "label": "watching a film"
     },
     {
-     "icon": "📅",
-     "label": "4 days"
+     "icon": "⛰️",
+     "label": "mountain climbing"
     },
     {
-     "icon": "📅",
-     "label": "10 days"
+     "icon": "📚",
+     "label": "to learn, to study"
     }
    ],
-   "answer": 0,
-   "why": "五天. 4 = April.",
+   "answer": 1,
+   "why": "這個週末我要去爬山. A is only something she sometimes does. C is not mentioned.",
    "id": "C32-04"
   },
   {
@@ -24945,53 +24945,53 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你週末都做什麼？"
+     "zh": "你暑假要去哪裡？"
     },
     {
      "sp": "男",
-     "zh": "有時候在家看書，有時候跟朋友出去。"
+     "zh": "我也想回家，也想去日本玩。"
     },
     {
      "sp": "女",
-     "zh": "也運動嗎？"
+     "zh": "那你怎麼決定？"
     },
     {
      "sp": "男",
-     "zh": "也運動，也做飯。"
+     "zh": "錢夠的話，兩個地方都去。"
     }
    ],
-   "question": "哪個「不對」？",
+   "question": "這位先生的意思是什麼？",
    "options": [
-    "這位先生有時候看書",
-    "這位先生週末都在家",
-    "這位先生有時候跟朋友出去",
-    "這位先生週末也運動"
+    "他只回家",
+    "他只去日本",
+    "他想兩個地方都去",
+    "他暑假要打工"
    ],
-   "answer": 1,
-   "why": "Choose the WRONG one: sometimes she goes out → not always at home.",
+   "answer": 2,
+   "why": "兩個地方都去 (if he has enough money). A and B are only one place. D is not mentioned.",
    "id": "C32-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "我也喜歡唱歌，也喜歡跳舞。",
+   "text": "暑假他有時候去游泳，有時候在家看書。",
    "options": [
     {
-     "icon": "🎤",
-     "label": "only singing"
+     "icon": "⛷️",
+     "label": "skiing"
     },
     {
-     "icon": "🎤💃",
-     "label": "likes singing and dancing"
+     "icon": "🏊📖",
+     "label": "swimming and reading"
     },
     {
-     "icon": "💃",
-     "label": "only dancing"
+     "icon": "🏫",
+     "label": "at school"
     }
    ],
    "answer": 1,
-   "why": "也…也….",
+   "why": "有時候游泳，有時候看書. A and C are not mentioned.",
    "id": "C32-06"
   },
   {
@@ -24999,16 +24999,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🏖️☀️",
-    "label": "summer holiday"
+    "icon": "❄️✈️🏠",
+    "label": "flying home in winter"
    },
    "options": [
-    "今天上課。",
-    "寒假很冷。",
-    "暑假我們去海邊。"
+    "寒假他回家了。",
+    "暑假他去海邊了。",
+    "他在上課。"
    ],
-   "answer": 2,
-   "why": "暑假 = summer holiday.",
+   "answer": 0,
+   "why": "Snow + a flight home → 寒假回家. B is summer; C is not a holiday.",
    "id": "C32-07"
   },
   {
@@ -25016,17 +25016,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "📅",
-    "label": "a semester calendar"
+    "icon": "🌸📅",
+    "label": "spring break"
    },
-   "text": "這個（　）快結束了。",
+   "text": "（　）只有幾天，我們不去太遠的地方。",
    "options": [
-    "有時候",
+    "春假",
     "學期",
-    "也"
+    "教室"
    ],
-   "answer": 1,
-   "why": "學期 = semester.",
+   "answer": 0,
+   "why": "春假只有幾天 = the spring break is only a few days. 學期 lasts months; 教室 is not a time.",
    "id": "C32-08"
   },
   {
@@ -25035,19 +25035,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "這個（1）快結束了，下個月就要放（2）了。我的朋友們（3）回家，有的去打工。我呢？以前放寒假的時候，我（4）回印尼看家人，有時候跟朋友去旅行。今年因為（5），我決定留在台灣學中文。",
    "options": [
-    "學期",
+    "暑假很短",
+    "有時候",
     "寒假",
     "有的",
-    "有時候",
-    "回家的票太貴了",
-    "暑假很短"
+    "學期",
+    "回家的票太貴了"
    ],
    "answers": [
-    0,
-    1,
+    4,
     2,
     3,
-    4
+    1,
+    5
    ],
    "why": "學期快結束; 放寒假; 有的…有的; 有時候…有時候; the reason for not going home: 回家的票太貴了. 「暑假很短」 doesn't fit any blank.",
    "id": "C32-09"
@@ -25086,7 +25086,7 @@
     "後年。"
    ],
    "answer": 1,
-   "why": "明年 = next year.",
+   "why": "A mortarboard on next year's calendar → 明年. A and C are the wrong year.",
    "id": "C33-01"
   },
   {
@@ -25100,12 +25100,12 @@
    },
    "question": "他得到第幾名？",
    "options": [
-    "第一名。",
     "第二名。",
-    "第三名。"
+    "第三名。",
+    "第一名。"
    ],
-   "answer": 0,
-   "why": "得到 = to get, to obtain.",
+   "answer": 2,
+   "why": "The first-place podium → 第一名. A and B are other places.",
    "id": "C33-02"
   },
   {
@@ -25115,30 +25115,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你的教授是誰？"
+     "zh": "你說要每天看書，做到了嗎？"
     },
     {
      "sp": "男",
-     "zh": "陳教授，他研究教育。"
+     "zh": "做到了，從上個月起，一天也沒休息。"
     }
    ],
-   "question": "陳教授研究什麼？",
+   "question": "這位先生做到了嗎？",
    "options": [
     {
-     "icon": "🧑‍🏫📚",
-     "label": "education"
+     "icon": "📚❌",
+     "label": "didn't manage it"
     },
     {
-     "icon": "🧑‍⚕️",
-     "label": "medicine (field of study)"
+     "icon": "📚✅",
+     "label": "managed to read every day"
     },
     {
-     "icon": "👮",
-     "label": "the police"
+     "icon": "🛌",
+     "label": "to rest"
     }
    ],
-   "answer": 0,
-   "why": "研究教育.",
+   "answer": 1,
+   "why": "做到了 + 一天也沒休息. A and C are the opposite.",
    "id": "C33-03"
   },
   {
@@ -25148,38 +25148,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你的中文程度怎麼樣？"
+     "zh": "你的研究題目是什麼？"
     },
     {
      "sp": "女",
-     "zh": "不太好。"
+     "zh": "就是「臺灣的小學教育」。"
     },
     {
      "sp": "男",
-     "zh": "從明天起，我們一起練習吧。"
+     "zh": "誰教你？"
     },
     {
      "sp": "女",
-     "zh": "好！"
+     "zh": "王教授。"
     }
    ],
-   "question": "他們從什麼時候開始練習？",
+   "question": "這位小姐研究什麼？",
    "options": [
     {
-     "icon": "📅",
-     "label": "tomorrow"
+     "icon": "🏥",
+     "label": "medicine (field of study)"
     },
     {
-     "icon": "📅",
-     "label": "next week"
+     "icon": "💼",
+     "label": "business"
     },
     {
-     "icon": "📅",
-     "label": "today"
+     "icon": "🏫🧒",
+     "label": "primary school education"
     }
    ],
-   "answer": 0,
-   "why": "從明天起.",
+   "answer": 2,
+   "why": "臺灣的小學教育. A and B are not mentioned.",
    "id": "C33-04"
   },
   {
@@ -25189,53 +25189,53 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "聽說你的研究成功了！"
+     "zh": "你的中文程度怎麼這麼高？"
     },
     {
      "sp": "男",
-     "zh": "對，我做了三年才做到。"
+     "zh": "我從十歲起就開始學了。"
     },
     {
      "sp": "女",
-     "zh": "真不容易！"
+     "zh": "那你學了多少年？"
     },
     {
      "sp": "男",
-     "zh": "謝謝。"
+     "zh": "十五年了。"
     }
    ],
-   "question": "這位先生研究做了多久？",
+   "question": "這位先生現在幾歲？",
    "options": [
-    "三年",
-    "三天",
-    "三個月",
-    "一年"
+    "十歲",
+    "十五歲",
+    "二十五歲",
+    "三十歲"
    ],
-   "answer": 0,
-   "why": "三年.",
+   "answer": 2,
+   "why": "Started at 10 + 15 years = 25. A is when he started; B is how long he has studied; D does not fit.",
    "id": "C33-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "這就是我的學校。",
+   "text": "她練習了三年，得到了第一名。",
    "options": [
     {
-     "icon": "🏠",
-     "label": "home, house"
+     "icon": "😢",
+     "label": "sad"
     },
     {
-     "icon": "🏢",
-     "label": "office"
+     "icon": "🥇😄",
+     "label": "first place"
     },
     {
-     "icon": "🏫👉",
-     "label": "this is my school"
+     "icon": "📚",
+     "label": "to learn, to study"
     }
    ],
-   "answer": 2,
-   "why": "就 = precisely, that's.",
+   "answer": 1,
+   "why": "得到了第一名 → first place. A and C do not match.",
    "id": "C33-06"
   },
   {
@@ -25243,16 +25243,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🎓",
-    "label": "graduation"
+    "icon": "👨‍🏫🎓",
+    "label": "professor"
    },
    "options": [
-    "她生病了。",
-    "她大學畢業了。",
-    "她上小學了。"
+    "他是大學的教授。",
+    "他是國小學生。",
+    "他是醫生。"
    ],
-   "answer": 1,
-   "why": "畢業.",
+   "answer": 0,
+   "why": "A professor in academic dress → 教授. B and C do not match.",
    "id": "C33-07"
   },
   {
@@ -25260,17 +25260,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🏆",
-    "label": "to succeed"
+    "icon": "👉📍",
+    "label": "right there"
    },
-   "text": "他努力了很久，最後（　）了。",
+   "text": "你要的書（　）在桌子上，你看！",
    "options": [
-    "成功",
-    "研究",
-    "教育"
+    "就",
+    "從",
+    "起"
    ],
    "answer": 0,
-   "why": "成功 = to succeed.",
+   "why": "就 + 在 = right at (emphasis). 從 and 起 mean 'starting from', not a place.",
    "id": "C33-08"
   },
   {
@@ -25279,19 +25279,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "從明年（1），我就不是學生了，因為我六月就要（2）了。我的（3）問我以後要做什麼，我說我想（4），因為我對小孩子的教育很有興趣。教授說，想當一個好老師不容易，可是如果很努力，一定可以（5）。",
    "options": [
-    "起",
-    "畢業",
     "教授",
-    "當小學老師",
+    "畢業",
+    "研究很成功",
     "做到",
-    "研究很成功"
+    "當小學老師",
+    "起"
    ],
    "answers": [
-    0,
+    5,
     1,
-    2,
-    3,
-    4
+    0,
+    4,
+    3
    ],
    "why": "從明年起; 六月畢業; 我的教授問; wants to 當小學老師 (interested in children's education); 一定可以做到. 「研究很成功」 doesn't fit any blank.",
    "id": "C33-09"
@@ -25326,11 +25326,11 @@
    "question": "你要做什麼？",
    "options": [
     "我寫寫看。",
-    "我查查看。",
-    "我念念看。"
+    "我念念看。",
+    "我查查看。"
    ],
-   "answer": 1,
-   "why": "查 = to look up (in a dictionary).",
+   "answer": 2,
+   "why": "Opening a dictionary → 查查看. A and B do not match.",
    "id": "C34-01"
   },
   {
@@ -25344,12 +25344,12 @@
    },
    "question": "老師說什麼？",
    "options": [
-    "請寫下來。",
-    "請聽一聽。",
-    "請再念一遍。"
+    "請念十遍。",
+    "請再念一遍。",
+    "請別念了。"
    ],
-   "answer": 2,
-   "why": "再……一遍 = … once more.",
+   "answer": 1,
+   "why": "One finger = once more → 再念一遍. A and C do not match.",
    "id": "C34-02"
   },
   {
@@ -25358,31 +25358,31 @@
    "instr": "Listen to the short exchange, then choose the matching picture.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你會寫漢字嗎？"
+     "sp": "女",
+     "zh": "這個詞你會寫嗎？"
     },
     {
-     "sp": "女",
-     "zh": "會一點，我學過書法。"
+     "sp": "男",
+     "zh": "會念，可是不會寫，我查一下。"
     }
    ],
-   "question": "這位小姐學過什麼？",
+   "question": "這位先生要做什麼？",
    "options": [
     {
-     "icon": "🎨",
-     "label": "painting"
+     "icon": "✍️",
+     "label": "to write"
     },
     {
-     "icon": "💻",
-     "label": "typing"
+     "icon": "📖🔍",
+     "label": "looking something up in a dictionary"
     },
     {
-     "icon": "🖌️",
-     "label": "calligraphy"
+     "icon": "🗣️",
+     "label": "reading aloud"
     }
    ],
-   "answer": 2,
-   "why": "書法.",
+   "answer": 1,
+   "why": "我查一下. A: he can't write it. C: he can already read it.",
    "id": "C34-03"
   },
   {
@@ -25391,39 +25391,39 @@
    "instr": "Listen to the dialogue, then choose the picture that answers the question.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "這個詞怎麼念？"
-    },
-    {
      "sp": "男",
-     "zh": "你看看拼音。"
+     "zh": "你學書法多久了？"
     },
     {
      "sp": "女",
-     "zh": "拼音在哪裡？"
+     "zh": "三個月。每個星期上一次課。"
     },
     {
      "sp": "男",
-     "zh": "在字典裡。"
+     "zh": "難不難？"
+    },
+    {
+     "sp": "女",
+     "zh": "不難，你也可以試試看。"
     }
    ],
-   "question": "這位先生叫這位小姐看什麼？",
+   "question": "這位小姐學書法多久了？",
    "options": [
     {
-     "icon": "📖",
-     "label": "a storybook"
+     "icon": "📅",
+     "label": "3 weeks"
     },
     {
-     "icon": "🔤",
-     "label": "pinyin"
+     "icon": "📅",
+     "label": "1 year"
     },
     {
-     "icon": "📱",
-     "label": "mobile phone"
+     "icon": "📅",
+     "label": "3 months"
     }
    ],
-   "answer": 1,
-   "why": "看看拼音.",
+   "answer": 2,
+   "why": "三個月. A is confused with 每個星期; B is not mentioned.",
    "id": "C34-04"
   },
   {
@@ -25432,54 +25432,54 @@
    "instr": "Listen to the dialogue, then choose the most suitable answer.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你怎麼記得這麼多漢字？"
-    },
-    {
      "sp": "女",
-     "zh": "我每天背十個字，每個寫十遍。"
+     "zh": "你可以教我拼音嗎？"
     },
     {
      "sp": "男",
-     "zh": "真辛苦！"
+     "zh": "可以，可是你為什麼要學拼音？"
     },
     {
      "sp": "女",
-     "zh": "習慣了就不辛苦。"
+     "zh": "我想用手機打中文。"
+    },
+    {
+     "sp": "男",
+     "zh": "好，那我們從今天起，每天練習半個小時。"
     }
    ],
-   "question": "這位小姐每天背幾個字？",
+   "question": "這位小姐為什麼要學拼音？",
    "options": [
-    "二十個",
-    "五個",
-    "一百個",
-    "十個"
+    "她要考試",
+    "老師讓她學",
+    "她想用手機打中文",
+    "她想寫書法"
    ],
-   "answer": 3,
-   "why": "十個字; 100 is the number of times written (a calculation distractor).",
+   "answer": 2,
+   "why": "我想用手機打中文 → that is the reason. A, B and D are not mentioned.",
    "id": "C34-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "他在練習書法。",
+   "text": "他背了三十個詞，現在想休息休息。",
    "options": [
     {
-     "icon": "💻",
-     "label": "typing"
+     "icon": "🏃",
+     "label": "running"
     },
     {
-     "icon": "📓",
-     "label": "taking notes"
+     "icon": "📚😮‍💨",
+     "label": "tired of memorising, wants a break"
     },
     {
-     "icon": "🖌️",
-     "label": "practising calligraphy"
+     "icon": "🍽️",
+     "label": "to eat"
     }
    ],
-   "answer": 2,
-   "why": "書法.",
+   "answer": 1,
+   "why": "背詞 + 休息休息. A and C do not match.",
    "id": "C34-06"
   },
   {
@@ -25487,16 +25487,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🀄",
-    "label": "Chinese characters"
+    "icon": "🖌️",
+    "label": "a calligraphy brush"
    },
    "options": [
-    "這是英文。",
-    "這是漢字。",
-    "這是拼音。"
+    "他在寫書法。",
+    "他在查字典。",
+    "他在打電腦。"
    ],
-   "answer": 1,
-   "why": "漢字 = Chinese characters.",
+   "answer": 0,
+   "why": "A brush → 寫書法. B and C do not match.",
    "id": "C34-07"
   },
   {
@@ -25504,17 +25504,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🧠",
-    "label": "memorising"
+    "icon": "🔤",
+    "label": "pinyin"
    },
-   "text": "這個詞我（　）了三遍。",
+   "text": "我不會寫這個字，可以用（　）寫嗎？",
    "options": [
-    "背",
-    "漢字",
-    "書法"
+    "拼音",
+    "書法",
+    "遍"
    ],
    "answer": 0,
-   "why": "背 = to memorise.",
+   "why": "Can't write the character → use 拼音. 書法 still needs the character; 遍 is a measure word.",
    "id": "C34-08"
   },
   {
@@ -25523,19 +25523,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "剛開始學中文的時候，我覺得（1）很難，每個字都不一樣。老師教我們，新的字要多（2），每個字寫十（3）。看到不認識的詞，就用手機（4）一下它的意思和（5）。現在我已經認識五百多個字了。",
    "options": [
+    "書法寫得很好",
+    "查",
+    "遍",
     "漢字",
     "寫寫、看看",
-    "遍",
-    "查",
-    "拼音",
-    "書法寫得很好"
+    "拼音"
    ],
    "answers": [
-    0,
-    1,
-    2,
     3,
-    4
+    4,
+    2,
+    1,
+    5
    ],
    "why": "漢字很難; 多寫寫、看看; 寫十遍; 用手機查; 意思和拼音. 「書法寫得很好」 doesn't fit any blank.",
    "id": "C34-09"

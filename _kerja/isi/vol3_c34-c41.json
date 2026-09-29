@@ -21,24 +21,12 @@
   ]}
  ],
  "tasks": [
-  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-   "audio": "這個菜你吃過嗎？", "options": ["沒吃過，我吃吃看。", "我吃看。", "吃過看。"], "answer": 0,
-   "why": "VV看 = mencoba (吃吃看). B dan C kehilangan pengulangan kata kerja."},
-  {"type": "listen_pic", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
-   "picture": {"icon": "🖌️", "label": "dia menulis kaligrafi dengan kuas", "img": "C34-1"}, "question": "他在做什麼？", "options": ["他在寫書法。", "他在用電腦。", "他在畫畫。"], "answer": 0,
-   "why": "書法 = kaligrafi (kuas & tinta)."},
-  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
-   "lines": [{"sp": "男", "zh": "這個詞我不會念。"}, {"sp": "女", "zh": "你查查看字典吧。"}],
-   "question": "這位小姐要這位先生做什麼？", "options": ["查字典", "背詞", "寫十遍"], "answer": 0,
-   "why": "查查看字典 = coba cari di kamus."},
-  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca saran guru ini, lalu pilih jawaban yang benar.",
-   "text": "老師說：新詞要寫五遍，每天背十個詞，不會的字要查字典。", "question": "新詞要寫幾遍？",
-   "options": ["五遍", "十遍", "一遍"], "answer": 0,
-   "why": "寫五遍. 十 adalah jumlah kata yang dihafal per hari."},
-  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-   "text": "漢字要多（1）寫。這個字你寫寫（2）。我每天（3）二十個詞。", "options": ["寫", "看", "背", "查"], "answers": [0, 1, 2],
-   "why": "(1) 寫寫 (pengulangan). (2) 寫寫看 = coba tulis. (3) 背 = menghafal. 查 tidak cocok."}
- ],
+   {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.", "audio": "這個字怎麼念？", "options": ["這個字很漂亮。", "我也不知道，我們查查看吧。", "我寫了十遍。"], "answer": 1, "why": "Ditanya cara membaca → 查查看 (coba cari). A dan C tidak menjawab."},
+   {"type": "listen_pic", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.", "picture": {"icon": "🖌️", "label": "dia menulis kaligrafi dengan kuas", "img": "C34-1"}, "question": "他在做什麼？", "options": ["他在畫畫。", "他在看書。", "他在寫書法。"], "answer": 2, "why": "Menulis dengan kuas → 寫書法. A dan B kegiatan lain."},
+   {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.", "lines": [{"sp": "女", "zh": "你怎麼背漢字？"}, {"sp": "男", "zh": "每個字寫十遍，然後再用拼音念一遍。"}, {"sp": "女", "zh": "有用嗎？"}, {"sp": "男", "zh": "有，你試試看！"}], "question": "這位先生每個字寫幾遍？", "options": ["一遍", "十遍", "二十遍"], "answer": 1, "why": "每個字寫十遍. A = membaca dengan pinyin sekali. C tidak disebut."},
+   {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca saran guru ini, lalu pilih jawaban yang benar.", "text": "很多外國學生覺得漢字很難。我的方法是：不會的字先查字典，看看它是什麼意思，然後寫五遍，再念三遍。每天睡覺以前，我再看看今天學的詞。這樣我每個星期可以背一百個詞。朋友說我的方法很好，也想試試看。", "question": "睡覺以前這個人做什麼？", "options": ["寫五遍", "查字典", "再看看今天學的詞", "念三遍"], "answer": 2, "why": "每天睡覺以前，我再看看今天學的詞. A, B, D dilakukan sebelumnya, saat belajar."},
+   {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih frasa yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.", "text": "我學中文兩年了，會說，可是（1）寫得不好。老師說：「你要多寫寫、看看，每個字寫十（2）。」我不會的字，就（3）字典。老師也讓我試試看寫（4），我覺得很有意思。寫累了，我們就（5）吧。", "options": ["書法", "漢字", "休息休息", "查", "很好看", "遍"], "answers": [1, 5, 3, 0, 2], "why": "(1) menulis hanzi belum bagus. (2) sepuluh kali. (3) mencari di kamus. (4) mencoba kaligrafi. (5) ABAB: istirahat sebentar. 「很好看」 tidak cocok di titik mana pun."}
+  ],
  "grammar": [
   {"tbcl_id": 148, "point": "Reduplikasi ABAB — melakukan sebentar", "pattern": "AB + AB (休息休息、練習練習)", "blocks": [["休息", "AB"], ["休息", "AB"]],
    "explain": "Kata kerja dua suku kata diulang utuh (ABAB) untuk membuat tindakan terdengar singkat & santai: 休息休息 (istirahat sebentar), 練習練習. Bukan AABB (休休息息 ✗).",

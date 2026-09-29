@@ -245,12 +245,12 @@
    },
    "question": "你陪媽媽去做什麼？",
    "options": [
+    "去買衣服。",
     "去買菜。",
-    "去上學。",
-    "去看電影。"
+    "去看醫生。"
    ],
-   "answer": 0,
-   "why": "陪 + orang + V = menemani … melakukan …."
+   "answer": 1,
+   "why": "Di pasar membeli sayur → 買菜. A dan C tidak cocok."
   },
   {
    "type": "listen_pic",
@@ -263,12 +263,12 @@
    },
    "question": "他的話讓你怎麼樣？",
    "options": [
-    "讓我很難過。",
+    "讓我很高興。",
     "讓我很生氣。",
-    "讓我很高興。"
+    "讓我很難過。"
    ],
-   "answer": 2,
-   "why": "讓 + orang + Vs = membuat … merasa …."
+   "answer": 0,
+   "why": "Dipuji dan tersenyum → 很高興. B dan C perasaan berlawanan."
   },
   {
    "type": "listen_dialog",
@@ -276,31 +276,31 @@
    "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "誰照顧你的小狗？"
+     "sp": "女",
+     "zh": "誰陪你去醫院？"
     },
     {
-     "sp": "女",
-     "zh": "我鄰居。"
+     "sp": "男",
+     "zh": "我哥哥，我姊姊今天要上班。"
     }
    ],
-   "question": "誰照顧小狗？",
+   "question": "誰陪這位先生去醫院？",
    "options": [
     {
      "icon": "👩",
-     "label": "ibu"
+     "label": "kakak perempuan"
     },
     {
-     "icon": "🧑‍⚕️",
-     "label": "dokter hewan"
+     "icon": "👨",
+     "label": "kakak laki-laki"
     },
     {
-     "icon": "🏠🧑",
-     "label": "tetangga"
+     "icon": "👵",
+     "label": "nenek"
     }
    ],
-   "answer": 2,
-   "why": "我鄰居."
+   "answer": 1,
+   "why": "我哥哥. A: kakak perempuan bekerja hari ini. C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -308,39 +308,39 @@
    "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "你奶奶身體好嗎？"
-    },
-    {
      "sp": "男",
-     "zh": "不太好，她在醫院。"
+     "zh": "你為什麼每天都給你媽媽打電話？"
     },
     {
      "sp": "女",
-     "zh": "誰陪她？"
+     "zh": "她一個人住，我很關心她。"
     },
     {
      "sp": "男",
-     "zh": "我媽媽。"
+     "zh": "你怎麼不跟她一起住？"
+    },
+    {
+     "sp": "女",
+     "zh": "我的公司在台北，她住在高雄。"
     }
    ],
-   "question": "誰陪奶奶？",
+   "question": "這位小姐的媽媽住在哪裡？",
    "options": [
     {
-     "icon": "👩",
-     "label": "ibu si laki-laki"
+     "icon": "🏙️",
+     "label": "Taipei"
     },
     {
-     "icon": "🧑‍⚕️",
-     "label": "dokter"
+     "icon": "⚓",
+     "label": "Kaohsiung"
     },
     {
-     "icon": "👨",
-     "label": "si laki-laki"
+     "icon": "🏞️",
+     "label": "Taichung"
     }
    ],
-   "answer": 0,
-   "why": "我媽媽."
+   "answer": 1,
+   "why": "她住在高雄. A = tempat kantor si perempuan. C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -348,86 +348,86 @@
    "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你跟你室友關係好嗎？"
-    },
-    {
      "sp": "女",
-     "zh": "很好，我生病的時候，她照顧我。"
+     "zh": "你看起來很累。"
     },
     {
      "sp": "男",
-     "zh": "真好！"
+     "zh": "這個星期我每天晚上都在醫院照顧我爸爸。"
     },
     {
      "sp": "女",
-     "zh": "對，她是我最好的朋友。"
+     "zh": "你應該讓你弟弟也去照顧他。"
+    },
+    {
+     "sp": "男",
+     "zh": "我弟弟在國外，回不來。"
     }
    ],
-   "question": "這位小姐覺得室友怎麼樣？",
+   "question": "這位小姐的意思是什麼？",
    "options": [
-    "很關心她",
-    "很吵",
-    "不太好",
-    "常常生病"
+    "這位先生應該去國外",
+    "弟弟也應該照顧爸爸",
+    "這位先生的爸爸很好",
+    "她想去照顧他爸爸"
    ],
-   "answer": 0,
-   "why": "Merawat saat sakit → peduli."
+   "answer": 1,
+   "why": "讓你弟弟也去照顧他 → adiknya juga harus ikut merawat. A salah paham 國外. C: ayahnya sakit. D tidak disebut."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "媽媽讓我去睡覺。",
+   "text": "奶奶生病了，爸爸在她身邊照顧她。",
    "options": [
     {
-     "icon": "👩📚",
-     "label": "menyuruh belajar"
+     "icon": "👵🚶",
+     "label": "nenek berjalan"
     },
     {
-     "icon": "👩🛌",
-     "label": "ibu menyuruh tidur"
+     "icon": "👨💼",
+     "label": "ayah bekerja"
     },
     {
-     "icon": "👩🍽️",
-     "label": "menyuruh makan"
+     "icon": "👵🛏️👨",
+     "label": "ayah merawat nenek di ranjang"
     }
    ],
-   "answer": 1,
-   "why": "讓 = menyuruh."
+   "answer": 2,
+   "why": "生病 + 在身邊照顧 → ayah di samping nenek yang sakit. A dan B tidak cocok."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "👵🧑",
-    "label": "cucu menemani nenek"
+    "icon": "👩‍⚕️🛏️",
+    "label": "perawat merawat pasien"
    },
    "options": [
-    "孫子在學校上課。",
-    "奶奶陪孫子上學。",
-    "孫子陪奶奶聊天。"
+    "護士在照顧病人。",
+    "病人在照顧護士。",
+    "護士在吃飯。"
    ],
-   "answer": 2,
-   "why": "陪 = menemani."
+   "answer": 0,
+   "why": "Perawat merawat pasien. B membalik peran; C kegiatan lain."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "❤️",
-    "label": "peduli"
+    "icon": "🧑‍🤝‍🧑",
+    "label": "hubungan baik"
    },
-   "text": "老師很（　）學生。",
+   "text": "我跟我姊姊的（　）很好，我們什麼都說。",
    "options": [
-    "關心",
+    "關係",
     "身邊",
-    "關係"
+    "關心"
    ],
    "answer": 0,
-   "why": "關心 = peduli."
+   "why": "A 跟 B 的關係很好 = hubungan baik. 身邊很好 dan 的關心很好 tidak lazim di sini."
   },
   {
    "type": "cloze",
@@ -435,19 +435,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "上個月奶奶生病住院了，爸媽工作很忙，所以媽媽讓我去醫院（1）。每天下課以後，我都去醫院（2），幫她拿水、陪她聊天。奶奶說，有我在她（3），她就不怕了。醫生說奶奶（4），多休息就會好。我覺得對家人最重要的是（5）。",
    "options": [
-    "陪奶奶",
-    "照顧她",
     "身邊",
-    "身體沒什麼問題了",
+    "工作很忙",
+    "陪奶奶",
     "多關心他們",
-    "工作很忙"
+    "身體沒什麼問題了",
+    "照顧她"
    ],
    "answers": [
-    0,
-    1,
     2,
-    3,
-    4
+    5,
+    0,
+    4,
+    3
    ],
    "why": "去醫院陪奶奶; 照顧她 (mengambil air, menemani); 在她身邊; dokter: 身體沒什麼問題了; 多關心他們. 「工作很忙」 tidak cocok di titik mana pun."
   },
@@ -479,12 +479,12 @@
    },
    "question": "他戴著什麼？",
    "options": [
-    "耳機。",
-    "眼鏡。",
-    "帽子。"
+    "戴著手錶。",
+    "戴著耳機。",
+    "戴著眼鏡。"
    ],
-   "answer": 0,
-   "why": "耳機 = headphone."
+   "answer": 1,
+   "why": "Headphone di kepala → 耳機. A dan C benda lain."
   },
   {
    "type": "listen_pic",
@@ -497,12 +497,12 @@
    },
    "question": "這是什麼消息？",
    "options": [
-    "好消息。",
     "壞消息。",
-    "沒有消息。"
+    "沒有消息。",
+    "好消息。"
    ],
-   "answer": 0,
-   "why": "好消息 = kabar baik."
+   "answer": 2,
+   "why": "Dia melompat gembira → 好消息. A dan B tidak cocok."
   },
   {
    "type": "listen_dialog",
@@ -511,30 +511,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你在開玩笑嗎？"
+     "zh": "你怎麼知道的？"
     },
     {
      "sp": "男",
-     "zh": "不是，是真的！"
+     "zh": "小林傳簡訊告訴我的，不是老師說的。"
     }
    ],
-   "question": "這位先生是什麼意思？",
+   "question": "這位先生怎麼知道這個消息？",
    "options": [
     {
-     "icon": "😐✅",
-     "label": "sungguhan"
+     "icon": "🧑‍🏫",
+     "label": "dari guru"
     },
     {
-     "icon": "😠",
-     "label": "marah"
+     "icon": "📱✉️",
+     "label": "pesan dari 小林"
     },
     {
-     "icon": "😂",
-     "label": "bercanda"
+     "icon": "📰",
+     "label": "dari berita"
     }
    ],
-   "answer": 0,
-   "why": "是真的."
+   "answer": 1,
+   "why": "小林傳簡訊告訴我. A dibantah (不是老師說的). C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -543,38 +543,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "我們一起合作寫報告吧。"
+     "zh": "你跟老師談了嗎？"
     },
     {
      "sp": "女",
-     "zh": "好，我寫第一部分。"
+     "zh": "談了，她說我們的報告很好。"
     },
     {
      "sp": "男",
-     "zh": "我寫第二部分。"
+     "zh": "真的嗎？太好了！"
     },
     {
      "sp": "女",
-     "zh": "星期五我們再談。"
+     "zh": "她還說我們很有禮貌呢。"
     }
    ],
-   "question": "他們在做什麼？",
+   "question": "老師覺得他們怎麼樣？",
    "options": [
     {
-     "icon": "🎮",
-     "label": "bermain"
+     "icon": "😡",
+     "label": "marah"
     },
     {
-     "icon": "🍽️",
-     "label": "makan"
+     "icon": "🙇👍",
+     "label": "sopan dan laporannya bagus"
     },
     {
-     "icon": "🧑‍🤝‍🧑📝",
-     "label": "bekerja sama menulis laporan"
+     "icon": "📄❌",
+     "label": "laporannya buruk"
     }
    ],
-   "answer": 2,
-   "why": "合作寫報告."
+   "answer": 1,
+   "why": "報告很好 + 很有禮貌. A dan C kebalikannya."
   },
   {
    "type": "listen_dialog",
@@ -583,85 +583,85 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "我給你傳了三個簡訊呢！"
+     "zh": "我傳了三個簡訊給你，你都沒回。"
     },
     {
      "sp": "男",
-     "zh": "對不起，我戴著耳機，沒聽見。"
+     "zh": "對不起，我在圖書館，手機放在包裡，沒看到。"
     },
     {
      "sp": "女",
-     "zh": "下次注意一點。"
+     "zh": "我還以為你生氣了呢！"
     },
     {
      "sp": "男",
-     "zh": "好。"
+     "zh": "沒有沒有，我怎麼會生氣？"
     }
    ],
-   "question": "這位小姐為什麼不高興？",
+   "question": "這位小姐以為怎麼了？",
    "options": [
-    "這位先生開玩笑",
-    "這位先生忘了耳機",
-    "這位先生沒看她的簡訊",
-    "這位先生很沒禮貌"
+    "這位先生在圖書館",
+    "這位先生沒有手機",
+    "這位先生生氣了",
+    "這位先生在開玩笑"
    ],
    "answer": 2,
-   "why": "呢2 menandai keluhan: 3 SMS tak dibalas."
+   "why": "我還以為你生氣了 → dia mengira si laki-laki marah. A = kenyataannya, bukan dugaannya. B dan D tidak disebut."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他給我留下一個簡訊。",
+   "text": "告訴你一個好消息：我找到工作了！",
    "options": [
     {
-     "icon": "✉️",
-     "label": "surat"
+     "icon": "😢",
+     "label": "sedih"
     },
     {
-     "icon": "📱💬",
-     "label": "meninggalkan pesan SMS"
+     "icon": "😄📱",
+     "label": "kabar gembira"
     },
     {
-     "icon": "📞",
-     "label": "telepon"
+     "icon": "😴",
+     "label": "tidur"
     }
    ],
    "answer": 1,
-   "why": "留下 = meninggalkan."
+   "why": "好消息 → gembira. A dan C tidak cocok."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🙇",
-    "label": "membungkuk sopan"
+    "icon": "🤝",
+    "label": "kerja sama"
    },
    "options": [
-    "他很有禮貌。",
-    "他在開玩笑。",
-    "他很沒禮貌。"
+    "他們都很生氣。",
+    "他們不認識。",
+    "他們合作得很好。"
    ],
-   "answer": 0,
-   "why": "禮貌 = sopan santun."
+   "answer": 2,
+   "why": "Berjabat tangan/bekerja sama → 合作得很好. A dan B tidak cocok."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🎧",
-    "label": "earphone"
+    "icon": "😂",
+    "label": "bercanda"
    },
-   "text": "在圖書館聽音樂，要戴（　）。",
+   "text": "別生氣，我是跟你開（　）的。",
    "options": [
-    "簡訊",
-    "耳機",
-    "消息"
+    "玩笑",
+    "消息",
+    "禮貌"
    ],
-   "answer": 1,
-   "why": "耳機."
+   "answer": 0,
+   "why": "開玩笑 = bercanda. 開消息 dan 開禮貌 tidak ada."
   },
   {
    "type": "cloze",
@@ -669,19 +669,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "昨天晚上我（1）給小林，問他明天要不要一起去看電影，可是他一直沒回。今天我在學校看到他，他戴著（2）在聽音樂。我問他為什麼不回我，他說：「對不起，我手機壞了，沒看到你的（3）。」我以為他在（4），後來才知道是真的。他說：「電影的事，我們下課以後再（5）吧。」",
    "options": [
-    "傳簡訊",
-    "耳機",
     "消息",
-    "開玩笑",
+    "耳機",
     "談",
-    "很有禮貌"
+    "開玩笑",
+    "很有禮貌",
+    "傳簡訊"
    ],
    "answers": [
-    0,
+    5,
     1,
-    2,
+    0,
     3,
-    4
+    2
    ],
    "why": "傳簡訊; 戴著耳機; 沒看到你的消息; kukira ia 開玩笑; 再談 = membicarakan lagi. 「很有禮貌」 tidak cocok di titik mana pun."
   },
@@ -713,12 +713,12 @@
    },
    "question": "你哪裡不舒服？",
    "options": [
-    "我腳痛。",
-    "我頭痛。",
-    "我肚子痛。"
+    "我肚子痛。",
+    "我手痛。",
+    "我頭痛。"
    ],
-   "answer": 1,
-   "why": "頭痛 = sakit kepala."
+   "answer": 2,
+   "why": "Memegang kepala → 頭痛. A dan B bagian lain."
   },
   {
    "type": "listen_pic",
@@ -731,12 +731,12 @@
    },
    "question": "他怎麼了？",
    "options": [
-    "他在哭。",
+    "他在洗澡。",
     "他流了很多汗。",
-    "他在洗澡。"
+    "他發燒了。"
    ],
    "answer": 1,
-   "why": "流汗 = berkeringat."
+   "why": "Berlari di bawah terik → 流汗. A dan C tidak cocok."
   },
   {
    "type": "listen_dialog",
@@ -745,30 +745,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你感冒了嗎？"
+     "zh": "你的藥呢？"
     },
     {
      "sp": "男",
-     "zh": "對，一直流鼻水。"
+     "zh": "被我的狗吃掉了。"
     }
    ],
-   "question": "這位先生怎麼樣？",
+   "question": "藥怎麼了？",
    "options": [
     {
-     "icon": "🤒",
-     "label": "demam"
+     "icon": "👦",
+     "label": "dimakan adik"
     },
     {
-     "icon": "🤧",
-     "label": "pilek, ingusan"
+     "icon": "🗑️",
+     "label": "dibuang"
     },
     {
-     "icon": "😷",
-     "label": "batuk"
+     "icon": "🐕",
+     "label": "dimakan anjing"
     }
    ],
-   "answer": 1,
-   "why": "流鼻水."
+   "answer": 2,
+   "why": "被我的狗吃掉了. A dan B tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -777,38 +777,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你發燒嗎？"
+     "zh": "醫生，我一直咳嗽，也流鼻水。"
     },
     {
      "sp": "女",
-     "zh": "三十八度。"
+     "zh": "發燒嗎？"
     },
     {
      "sp": "男",
-     "zh": "很嚴重，去看醫生吧。"
+     "zh": "不發燒，可是晚上咳得不能睡覺。"
     },
     {
      "sp": "女",
-     "zh": "好。"
+     "zh": "我給你一點藥，多喝水。"
     }
    ],
-   "question": "這位小姐怎麼了？",
+   "question": "這位先生哪裡不舒服？",
    "options": [
     {
      "icon": "🤒",
-     "label": "demam 38°"
+     "label": "demam"
     },
     {
-     "icon": "🤧",
-     "label": "pilek"
+     "icon": "🤧😷",
+     "label": "batuk dan pilek"
     },
     {
-     "icon": "😊",
-     "label": "sehat"
+     "icon": "🦵",
+     "label": "kaki sakit"
     }
    ],
-   "answer": 0,
-   "why": "發燒三十八度."
+   "answer": 1,
+   "why": "咳嗽 + 流鼻水. A dibantah (不發燒). C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -817,85 +817,85 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "我的蛋糕呢？"
+     "zh": "你的感冒好了嗎？"
     },
     {
      "sp": "男",
-     "zh": "被你弟弟吃掉了。"
+     "zh": "好多了，只是還有一點咳。"
     },
     {
      "sp": "女",
-     "zh": "真的嗎？"
+     "zh": "那明天可以去爬山嗎？"
     },
     {
      "sp": "男",
-     "zh": "他說他餓死了。"
+     "zh": "醫生說最好再休息兩天。"
     }
    ],
-   "question": "蛋糕怎麼了？",
+   "question": "這位先生明天可能怎麼做？",
    "options": [
-    "這位先生吃了",
-    "還在冰箱",
-    "掉在地上",
-    "被弟弟吃了"
+    "去爬山",
+    "在家休息",
+    "去看醫生",
+    "去上班"
    ],
-   "answer": 3,
-   "why": "被…吃掉了."
+   "answer": 1,
+   "why": "最好再休息兩天 → istirahat. A = ajakan yang ditolak halus. C dan D tidak disebut."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他咳嗽咳得很嚴重。",
+   "text": "弟弟被這個感冒弄得很累，一直在床上。",
    "options": [
     {
-     "icon": "🤧",
-     "label": "pilek ringan"
+     "icon": "👦⚽",
+     "label": "main bola"
     },
     {
-     "icon": "😊",
-     "label": "sehat"
+     "icon": "👦📚",
+     "label": "belajar"
     },
     {
-     "icon": "😷",
-     "label": "batuk parah"
+     "icon": "👦🛌🤒",
+     "label": "sakit di tempat tidur"
     }
    ],
    "answer": 2,
-   "why": "嚴重 = parah."
+   "why": "被感冒弄得很累 + 在床上. A dan B tidak cocok."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🤒🌡️",
-    "label": "demam"
+    "icon": "🤧",
+    "label": "pilek"
    },
    "options": [
-    "他咳嗽了。",
-    "他流汗了。",
-    "他發燒了。"
+    "他在流汗。",
+    "他在流鼻水。",
+    "他在笑。"
    ],
-   "answer": 2,
-   "why": "發燒 = demam."
+   "answer": 1,
+   "why": "Bersin/pilek → 流鼻水. A dan C tidak cocok."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🍽️",
-    "label": "makan sampai habis"
+    "icon": "🤒❗",
+    "label": "sakit parah"
    },
-   "text": "他把飯都吃（　）了。",
+   "text": "他的病很（　），醫生讓他在醫院住幾天。",
    "options": [
-    "流",
-    "咳",
-    "掉"
+    "嚴重",
+    "發燒",
+    "咳嗽"
    ],
-   "answer": 2,
-   "why": "V掉 = sampai habis."
+   "answer": 0,
+   "why": "病很嚴重 = sakitnya parah. 病很發燒 dan 病很咳嗽 tidak gramatikal."
   },
   {
    "type": "cloze",
@@ -903,19 +903,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "這幾天天氣一下冷一下熱，我感冒了。一開始只是（1），後來又開始（2），晚上咳得沒辦法睡覺。昨天晚上我（3），三十九度，衣服上都是（4）。我本來想吃上次沒吃完的感冒藥，可是發現藥（5）了！室友說我病得很嚴重，今天早上就陪我去看醫生了。",
    "options": [
-    "流鼻水",
-    "咳嗽",
-    "發燒了",
-    "汗",
     "被弟弟吃掉",
-    "吃得很多"
+    "咳嗽",
+    "流鼻水",
+    "汗",
+    "吃得很多",
+    "發燒了"
    ],
    "answers": [
-    0,
-    1,
     2,
+    1,
+    5,
     3,
-    4
+    0
    ],
    "why": "awal: 流鼻水; lalu 咳嗽; 發燒三十九度; 衣服上都是汗; obat 被弟弟吃掉了. 「吃得很多」 tidak cocok di titik mana pun."
   },
@@ -947,12 +947,12 @@
    },
    "question": "藥局在哪裡？",
    "options": [
-    "在醫院旁邊。",
-    "在銀行旁邊。",
-    "在學校旁邊。"
+    "在學校旁邊。",
+    "在醫院裡面。",
+    "在醫院旁邊。"
    ],
-   "answer": 0,
-   "why": "旁邊 = di samping."
+   "answer": 2,
+   "why": "Apotek persis di samping rumah sakit → 醫院旁邊. A tempat lain; B di dalam, bukan di samping."
   },
   {
    "type": "listen_pic",
@@ -965,12 +965,12 @@
    },
    "question": "我怎麼了？",
    "options": [
-    "你臉色不太好。",
-    "你很高興。",
-    "你很生氣。"
+    "你的精神很好。",
+    "你的臉色不太好。",
+    "你今天很漂亮。"
    ],
-   "answer": 0,
-   "why": "臉色不好 = wajah pucat/tidak sehat."
+   "answer": 1,
+   "why": "Wajah pucat dan lesu → 臉色不太好. A dan C kebalikannya."
   },
   {
    "type": "listen_dialog",
@@ -979,30 +979,30 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "我應該吃幾天藥？"
+     "zh": "藥房幾點關門？"
     },
     {
      "sp": "女",
-     "zh": "三天。"
+     "zh": "應該是九點，可是今天星期天，可能八點就關了。"
     }
    ],
-   "question": "這位先生應該吃幾天藥？",
+   "question": "今天藥房可能幾點關？",
    "options": [
     {
-     "icon": "💊",
-     "label": "5 hari"
+     "icon": "🕘",
+     "label": "jam 9"
     },
     {
-     "icon": "💊",
-     "label": "7 hari"
+     "icon": "🕗",
+     "label": "jam 8"
     },
     {
-     "icon": "💊",
-     "label": "3 hari"
+     "icon": "🕙",
+     "label": "jam 10"
     }
    ],
-   "answer": 2,
-   "why": "三天."
+   "answer": 1,
+   "why": "今天星期天，可能八點就關了. A = jam biasa. C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1011,38 +1011,38 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你今天精神怎麼樣？"
+     "zh": "醫生說這個藥要吃多久？"
     },
     {
      "sp": "男",
-     "zh": "很好，昨天休息了十個小時。"
+     "zh": "一個星期。"
     },
     {
      "sp": "女",
-     "zh": "太好了。"
+     "zh": "一天幾次？"
     },
     {
      "sp": "男",
-     "zh": "謝謝。"
+     "zh": "兩次，早上一次，晚上一次。"
     }
    ],
-   "question": "這位先生昨天休息了多久？",
+   "question": "這個藥一天吃幾次？",
    "options": [
     {
-     "icon": "🛌",
-     "label": "10 jam"
+     "icon": "💊",
+     "label": "sekali"
     },
     {
-     "icon": "🛌",
-     "label": "6 jam"
+     "icon": "💊💊",
+     "label": "dua kali"
     },
     {
-     "icon": "🛌",
-     "label": "12 jam"
+     "icon": "💊💊💊",
+     "label": "tiga kali"
     }
    ],
-   "answer": 0,
-   "why": "十個小時."
+   "answer": 1,
+   "why": "兩次. A dan C jumlahnya salah."
   },
   {
    "type": "listen_dialog",
@@ -1051,85 +1051,85 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "小明今天沒來上課。"
+     "zh": "你今天精神很好啊！"
     },
     {
      "sp": "女",
-     "zh": "他應該生病了吧。"
+     "zh": "對，昨天九點就上床了。"
     },
     {
      "sp": "男",
-     "zh": "我打電話問他。"
+     "zh": "你的感冒好了嗎？"
     },
     {
      "sp": "女",
-     "zh": "好。"
+     "zh": "好了，醫生說都正常了。"
     }
    ],
-   "question": "這位小姐是什麼意思？",
+   "question": "哪一個是對的？",
    "options": [
-    "她要去看小明",
-    "小明應該來上課",
-    "小明很健康",
-    "她想小明可能生病了"
+    "這位小姐昨天沒睡覺",
+    "這位小姐今天很累",
+    "這位小姐還要看醫生",
+    "這位小姐的感冒好了"
    ],
    "answer": 3,
-   "why": "應該2 = dugaan."
+   "why": "好了 + 都正常了. A kebalikan (九點就上床了). B kebalikan (精神很好). C tidak disebut."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "這個藥應該飯前吃。",
+   "text": "這個藥應該飯後吃，一天吃兩次。",
    "options": [
     {
-     "icon": "💊🍽️",
-     "label": "obat sebelum makan"
+     "icon": "💊➡️🍽️",
+     "label": "obat dulu lalu makan"
+    },
+    {
+     "icon": "🍽️➡️💊",
+     "label": "makan dulu lalu obat"
     },
     {
      "icon": "🛌💊",
-     "label": "sebelum tidur"
-    },
-    {
-     "icon": "🍽️💊",
-     "label": "setelah makan"
+     "label": "obat sebelum tidur"
     }
    ],
-   "answer": 0,
-   "why": "飯前 = sebelum makan."
+   "answer": 1,
+   "why": "飯後吃 → makan dulu, baru obat. A urutannya terbalik; C tidak disebut."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "💊🏪",
-    "label": "apotek"
+    "icon": "😷",
+    "label": "wajah pucat"
    },
    "options": [
-    "我去書店買書。",
-    "我去超市買菜。",
-    "我去藥房買藥。"
+    "他的精神很好。",
+    "他很高興。",
+    "他的臉色不太好。"
    ],
    "answer": 2,
-   "why": "藥房 = apotek."
+   "why": "Wajah pucat → 臉色不太好. A dan B kebalikannya."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "😃",
-    "label": "bersemangat"
+    "icon": "🌡️✅",
+    "label": "suhu normal"
    },
-   "text": "今天他很有（　）。",
+   "text": "三十六度五是（　）的。",
    "options": [
     "正常",
-    "臉色",
-    "精神"
+    "精神",
+    "臉色"
    ],
-   "answer": 2,
-   "why": "有精神 = bersemangat."
+   "answer": 0,
+   "why": "Suhu 36,5° → 正常 (normal). 精神 dan 臉色 tidak dipakai untuk angka suhu."
   },
   {
    "type": "cloze",
@@ -1137,19 +1137,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "這幾天我頭很痛，同學說我（1）不太好，叫我去看醫生。我覺得只是太累了，就到學校旁邊的（2）買藥。藥局的小姐問我晚上幾點睡覺，我說最近每天都（3），她說這樣不（4），要我早點睡覺，也給了我一些藥。她說這個藥應該（5），一天三次。",
    "options": [
-    "臉色",
     "藥局",
-    "半夜兩點才上床",
     "正常",
     "飯後吃",
-    "精神很好"
+    "半夜兩點才上床",
+    "精神很好",
+    "臉色"
    ],
    "answers": [
+    5,
     0,
-    1,
-    2,
     3,
-    4
+    1,
+    2
    ],
    "why": "臉色不太好; 到藥局買藥; 半夜兩點才上床; 這樣不正常; 藥應該飯後吃. 「精神很好」 bertentangan dengan isi paragraf."
   },
@@ -1415,12 +1415,12 @@
    },
    "question": "你知道答案嗎？",
    "options": [
-    "我不知道。",
+    "不知道，太難了。",
     "我知道答案！",
-    "我想睡覺。"
+    "題目在哪裡？"
    ],
    "answer": 1,
-   "why": "答案 = jawaban."
+   "why": "Mengangkat tangan dengan ide (lampu) → 知道. A kebalikannya; C tidak cocok."
   },
   {
    "type": "listen_pic",
@@ -1433,12 +1433,12 @@
    },
    "question": "這次考試有幾題？",
    "options": [
-    "兩題。",
+    "十題。",
     "十二題。",
     "二十題。"
    ],
    "answer": 2,
-   "why": "題 = soal. Nomor terakhir 20."
+   "why": "Soal bernomor 1–20 → 二十題. A dan B jumlahnya salah."
   },
   {
    "type": "listen_dialog",
@@ -1447,30 +1447,30 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你不是說八點上課嗎？"
+     "zh": "你幾點到的？"
     },
     {
      "sp": "女",
-     "zh": "是九點，你聽錯了。"
+     "zh": "八點十分。我才下車就跑，結果還是遲到了。"
     }
    ],
-   "question": "幾點上課？",
+   "question": "這位小姐遲到了嗎？",
    "options": [
     {
-     "icon": "🕘",
-     "label": "jam 9"
+     "icon": "⏰✅",
+     "label": "tepat waktu"
     },
     {
-     "icon": "🕗",
-     "label": "jam 8"
+     "icon": "⏰❌",
+     "label": "terlambat"
     },
     {
-     "icon": "🕙",
-     "label": "jam 10"
+     "icon": "🏠",
+     "label": "tidak datang"
     }
    ],
-   "answer": 0,
-   "why": "Dikoreksi: 九點."
+   "answer": 1,
+   "why": "結果還是遲到了. A kebalikannya; C: dia datang."
   },
   {
    "type": "listen_dialog",
@@ -1479,38 +1479,38 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "這個題目你會嗎？"
+     "zh": "第三題的答案是什麼？"
     },
     {
      "sp": "男",
-     "zh": "不會，太難了。"
+     "zh": "我也不知道，我們問老師吧。"
     },
     {
      "sp": "女",
-     "zh": "我們問老師吧。"
+     "zh": "老師不是去開會了嗎？"
     },
     {
      "sp": "男",
-     "zh": "好，立刻去。"
+     "zh": "那我們先做第四題。"
     }
    ],
-   "question": "他們要去做什麼？",
+   "question": "他們現在要做什麼？",
    "options": [
+    {
+     "icon": "🧑‍🏫",
+     "label": "bertanya kepada guru"
+    },
+    {
+     "icon": "📝",
+     "label": "mengerjakan soal nomor 4"
+    },
     {
      "icon": "🏠",
      "label": "pulang"
-    },
-    {
-     "icon": "📖",
-     "label": "membaca"
-    },
-    {
-     "icon": "🧑‍🏫",
-     "label": "bertanya ke guru"
     }
    ],
-   "answer": 2,
-   "why": "問老師."
+   "answer": 1,
+   "why": "那我們先做第四題. A batal karena guru sedang rapat. C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1519,85 +1519,85 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "我才出門，就下雨了。"
+     "zh": "你不是說你會游泳嗎？"
     },
     {
      "sp": "女",
-     "zh": "你帶傘了嗎？"
+     "zh": "我會啊，可是我才下水，就覺得太冷了。"
     },
     {
      "sp": "男",
-     "zh": "沒有，結果衣服都溼了。"
+     "zh": "那我們去溫泉吧。"
     },
     {
      "sp": "女",
-     "zh": "快去洗澡吧。"
+     "zh": "好啊！"
     }
    ],
-   "question": "這位先生的衣服為什麼溼了？",
+   "question": "這位小姐為什麼不游泳了？",
    "options": [
-    "他跑步流汗",
-    "他去游泳",
-    "下雨，他沒帶傘",
-    "他洗衣服"
+    "她不會游泳",
+    "她想去溫泉",
+    "水太冷了",
+    "她頭痛"
    ],
    "answer": 2,
-   "why": "才…就 + 結果."
+   "why": "才下水，就覺得太冷了 → alasannya. A kebalikan (我會啊). B = usul si laki-laki sesudahnya. D tidak disebut."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他立刻回答老師的問題。",
+   "text": "我才坐下，老師就叫我回答問題。",
    "options": [
     {
-     "icon": "😴",
+     "icon": "🚶",
+     "label": "berjalan"
+    },
+    {
+     "icon": "🪑🙋",
+     "label": "baru duduk, disuruh menjawab"
+    },
+    {
+     "icon": "🛌",
      "label": "tidur"
-    },
-    {
-     "icon": "🤔",
-     "label": "berpikir lama"
-    },
-    {
-     "icon": "🙋",
-     "label": "langsung menjawab"
     }
    ],
-   "answer": 2,
-   "why": "立刻 = segera."
+   "answer": 1,
+   "why": "才坐下 + 就叫我回答. A dan C tidak cocok."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "📝",
-    "label": "hasil ujian diumumkan"
+    "icon": "📄✏️",
+    "label": "lembar soal ujian"
    },
    "options": [
-    "考試還沒開始。",
-    "考試的結果出來了。",
-    "我沒有考試。"
+    "今天沒有考試。",
+    "他在看電影。",
+    "這次考試有很多題目。"
    ],
-   "answer": 1,
-   "why": "結果 = hasil."
+   "answer": 2,
+   "why": "Lembar soal → 考試有很多題目. A dan B tidak cocok."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🙋",
-    "label": "menjawab"
+    "icon": "⚡🙋",
+    "label": "langsung menjawab"
    },
-   "text": "請（　）這個問題。",
+   "text": "老師問完，他（　）就回答了。",
    "options": [
+    "立刻",
     "結果",
-    "遲到",
-    "回答"
+    "答案"
    ],
-   "answer": 2,
-   "why": "回答 = menjawab."
+   "answer": 0,
+   "why": "立刻 = segera. 結果 = hasilnya (di awal kalimat); 答案 kata benda."
   },
   {
    "type": "cloze",
@@ -1605,19 +1605,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "今天有考試，我以為九點才開始，所以八點半才出門。（1），到了教室，考試已經開始十分鐘了。我（2）坐下來寫。第一（3）很容易，我很快就寫完了。可是後頭的題目很難，我不知道（4）。最後有兩題我都沒有（5）。",
    "options": [
-    "結果",
-    "立刻",
+    "題目很簡單",
     "題",
+    "結果",
     "答案是什麼",
-    "回答",
-    "題目很簡單"
+    "立刻",
+    "回答"
    ],
    "answers": [
-    0,
-    1,
     2,
+    4,
+    1,
     3,
-    4
+    5
    ],
    "why": "結果 = akibatnya terlambat; 立刻坐下來; 第一題; 不知道答案是什麼; 兩題沒有回答. 「題目很簡單」 bertentangan dengan 題目很難."
   },
@@ -1649,12 +1649,12 @@
    },
    "question": "寒假你做什麼？",
    "options": [
-    "去上課。",
-    "去海邊游泳。",
-    "回印尼。"
+    "去海邊。",
+    "回印尼。",
+    "在學校念書。"
    ],
-   "answer": 2,
-   "why": "寒假 = libur musim dingin. Pesawat menuju rumah → pulang."
+   "answer": 1,
+   "why": "Musim dingin, pulang naik pesawat → 回印尼. A dan C tidak cocok."
   },
   {
    "type": "listen_pic",
@@ -1668,11 +1668,11 @@
    "question": "這個學期你怎麼樣？",
    "options": [
     "很無聊。",
-    "在放假。",
-    "很忙。"
+    "很忙。",
+    "在放假。"
    ],
-   "answer": 2,
-   "why": "學期 = semester. Buku menumpuk → 很忙."
+   "answer": 1,
+   "why": "Kewalahan dengan tumpukan buku → 很忙. A dan C tidak cocok."
   },
   {
    "type": "listen_dialog",
@@ -1681,30 +1681,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "暑假你做什麼？"
+     "zh": "你們學校什麼時候放暑假？"
     },
     {
      "sp": "男",
-     "zh": "我去打工。"
+     "zh": "七月一號，比去年早一個星期。"
     }
    ],
-   "question": "這位先生暑假做什麼？",
+   "question": "他們學校什麼時候放暑假？",
    "options": [
     {
-     "icon": "💼",
-     "label": "kerja paruh waktu"
+     "icon": "📅",
+     "label": "8 Juli"
     },
     {
-     "icon": "📚",
-     "label": "belajar"
+     "icon": "📅",
+     "label": "1 Juli"
     },
     {
-     "icon": "🏖️",
-     "label": "ke pantai"
+     "icon": "📅",
+     "label": "1 Juni"
     }
    ],
-   "answer": 0,
-   "why": "打工."
+   "answer": 1,
+   "why": "七月一號. A = tanggal tahun lalu (seminggu lebih lambat). C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1713,38 +1713,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "什麼時候放春假？"
+     "zh": "放假的時候你做什麼？"
     },
     {
      "sp": "女",
-     "zh": "四月。"
+     "zh": "有時候看電影，有時候去爬山。"
     },
     {
      "sp": "男",
-     "zh": "放幾天？"
+     "zh": "那這個週末呢？"
     },
     {
      "sp": "女",
-     "zh": "五天。"
+     "zh": "這個週末我要去爬山。"
     }
    ],
-   "question": "春假放幾天？",
+   "question": "這位小姐這個週末要做什麼？",
    "options": [
     {
-     "icon": "📅",
-     "label": "5 hari"
+     "icon": "🎬",
+     "label": "menonton film"
     },
     {
-     "icon": "📅",
-     "label": "4 hari"
+     "icon": "⛰️",
+     "label": "mendaki"
     },
     {
-     "icon": "📅",
-     "label": "10 hari"
+     "icon": "📚",
+     "label": "belajar"
     }
    ],
-   "answer": 0,
-   "why": "五天. 4 = bulan April."
+   "answer": 1,
+   "why": "這個週末我要去爬山. A hanya kebiasaan kadang-kadang. C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1753,85 +1753,85 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你週末都做什麼？"
+     "zh": "你暑假要去哪裡？"
     },
     {
      "sp": "男",
-     "zh": "有時候在家看書，有時候跟朋友出去。"
+     "zh": "我也想回家，也想去日本玩。"
     },
     {
      "sp": "女",
-     "zh": "也運動嗎？"
+     "zh": "那你怎麼決定？"
     },
     {
      "sp": "男",
-     "zh": "也運動，也做飯。"
+     "zh": "錢夠的話，兩個地方都去。"
     }
    ],
-   "question": "哪個「不對」？",
+   "question": "這位先生的意思是什麼？",
    "options": [
-    "這位先生有時候看書",
-    "這位先生週末都在家",
-    "這位先生有時候跟朋友出去",
-    "這位先生週末也運動"
+    "他只回家",
+    "他只去日本",
+    "他想兩個地方都去",
+    "他暑假要打工"
    ],
-   "answer": 1,
-   "why": "Pilih yang SALAH: kadang keluar → bukan selalu di rumah."
+   "answer": 2,
+   "why": "兩個地方都去 (kalau uang cukup). A dan B hanya satu tempat. D tidak disebut."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "我也喜歡唱歌，也喜歡跳舞。",
+   "text": "暑假他有時候去游泳，有時候在家看書。",
    "options": [
     {
-     "icon": "🎤",
-     "label": "hanya menyanyi"
+     "icon": "⛷️",
+     "label": "main ski"
     },
     {
-     "icon": "🎤💃",
-     "label": "suka menyanyi dan menari"
+     "icon": "🏊📖",
+     "label": "berenang dan membaca"
     },
     {
-     "icon": "💃",
-     "label": "hanya menari"
+     "icon": "🏫",
+     "label": "di sekolah"
     }
    ],
    "answer": 1,
-   "why": "也…也…."
+   "why": "有時候游泳，有時候看書. A dan C tidak disebut."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🏖️☀️",
-    "label": "liburan musim panas"
+    "icon": "❄️✈️🏠",
+    "label": "musim dingin pulang kampung"
    },
    "options": [
-    "今天上課。",
-    "寒假很冷。",
-    "暑假我們去海邊。"
+    "寒假他回家了。",
+    "暑假他去海邊了。",
+    "他在上課。"
    ],
-   "answer": 2,
-   "why": "暑假 = libur musim panas."
+   "answer": 0,
+   "why": "Salju + pesawat pulang → 寒假回家. B musim panas; C tidak libur."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "📅",
-    "label": "kalender semester"
+    "icon": "🌸📅",
+    "label": "libur musim semi"
    },
-   "text": "這個（　）快結束了。",
+   "text": "（　）只有幾天，我們不去太遠的地方。",
    "options": [
-    "有時候",
+    "春假",
     "學期",
-    "也"
+    "教室"
    ],
-   "answer": 1,
-   "why": "學期 = semester."
+   "answer": 0,
+   "why": "春假只有幾天 = libur musim semi hanya beberapa hari. 學期 berbulan-bulan; 教室 bukan waktu."
   },
   {
    "type": "cloze",
@@ -1839,19 +1839,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "這個（1）快結束了，下個月就要放（2）了。我的朋友們（3）回家，有的去打工。我呢？以前放寒假的時候，我（4）回印尼看家人，有時候跟朋友去旅行。今年因為（5），我決定留在台灣學中文。",
    "options": [
-    "學期",
+    "暑假很短",
+    "有時候",
     "寒假",
     "有的",
-    "有時候",
-    "回家的票太貴了",
-    "暑假很短"
+    "學期",
+    "回家的票太貴了"
    ],
    "answers": [
-    0,
-    1,
+    4,
     2,
     3,
-    4
+    1,
+    5
    ],
    "why": "學期快結束; 放寒假; 有的…有的; 有時候…有時候; alasan tidak pulang: 回家的票太貴了. 「暑假很短」 tidak cocok di titik mana pun."
   },
@@ -1888,7 +1888,7 @@
     "後年。"
    ],
    "answer": 1,
-   "why": "明年 = tahun depan."
+   "why": "Topi wisuda di kalender tahun depan → 明年. A dan C salah tahun."
   },
   {
    "type": "listen_pic",
@@ -1901,12 +1901,12 @@
    },
    "question": "他得到第幾名？",
    "options": [
-    "第一名。",
     "第二名。",
-    "第三名。"
+    "第三名。",
+    "第一名。"
    ],
-   "answer": 0,
-   "why": "得到 = mendapatkan."
+   "answer": 2,
+   "why": "Podium juara 1 → 第一名. A dan B peringkat lain."
   },
   {
    "type": "listen_dialog",
@@ -1915,30 +1915,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你的教授是誰？"
+     "zh": "你說要每天看書，做到了嗎？"
     },
     {
      "sp": "男",
-     "zh": "陳教授，他研究教育。"
+     "zh": "做到了，從上個月起，一天也沒休息。"
     }
    ],
-   "question": "陳教授研究什麼？",
+   "question": "這位先生做到了嗎？",
    "options": [
     {
-     "icon": "🧑‍🏫📚",
-     "label": "pendidikan"
+     "icon": "📚❌",
+     "label": "tidak berhasil"
     },
     {
-     "icon": "🧑‍⚕️",
-     "label": "kedokteran"
+     "icon": "📚✅",
+     "label": "berhasil membaca tiap hari"
     },
     {
-     "icon": "👮",
-     "label": "kepolisian"
+     "icon": "🛌",
+     "label": "istirahat"
     }
    ],
-   "answer": 0,
-   "why": "研究教育."
+   "answer": 1,
+   "why": "做到了 + 一天也沒休息. A dan C kebalikannya."
   },
   {
    "type": "listen_dialog",
@@ -1947,38 +1947,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你的中文程度怎麼樣？"
+     "zh": "你的研究題目是什麼？"
     },
     {
      "sp": "女",
-     "zh": "不太好。"
+     "zh": "就是「臺灣的小學教育」。"
     },
     {
      "sp": "男",
-     "zh": "從明天起，我們一起練習吧。"
+     "zh": "誰教你？"
     },
     {
      "sp": "女",
-     "zh": "好！"
+     "zh": "王教授。"
     }
    ],
-   "question": "他們從什麼時候開始練習？",
+   "question": "這位小姐研究什麼？",
    "options": [
     {
-     "icon": "📅",
-     "label": "besok"
+     "icon": "🏥",
+     "label": "kedokteran"
     },
     {
-     "icon": "📅",
-     "label": "minggu depan"
+     "icon": "💼",
+     "label": "bisnis"
     },
     {
-     "icon": "📅",
-     "label": "hari ini"
+     "icon": "🏫🧒",
+     "label": "pendidikan sekolah dasar"
     }
    ],
-   "answer": 0,
-   "why": "從明天起."
+   "answer": 2,
+   "why": "臺灣的小學教育. A dan B tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1987,85 +1987,85 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "聽說你的研究成功了！"
+     "zh": "你的中文程度怎麼這麼高？"
     },
     {
      "sp": "男",
-     "zh": "對，我做了三年才做到。"
+     "zh": "我從十歲起就開始學了。"
     },
     {
      "sp": "女",
-     "zh": "真不容易！"
+     "zh": "那你學了多少年？"
     },
     {
      "sp": "男",
-     "zh": "謝謝。"
+     "zh": "十五年了。"
     }
    ],
-   "question": "這位先生研究做了多久？",
+   "question": "這位先生現在幾歲？",
    "options": [
-    "三年",
-    "三天",
-    "三個月",
-    "一年"
+    "十歲",
+    "十五歲",
+    "二十五歲",
+    "三十歲"
    ],
-   "answer": 0,
-   "why": "三年."
+   "answer": 2,
+   "why": "Mulai umur 10 + 15 tahun = 25. A = umur mulai belajar; B = lamanya belajar; D tidak cocok."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "這就是我的學校。",
+   "text": "她練習了三年，得到了第一名。",
    "options": [
     {
-     "icon": "🏠",
-     "label": "rumah"
+     "icon": "😢",
+     "label": "sedih"
     },
     {
-     "icon": "🏢",
-     "label": "kantor"
+     "icon": "🥇😄",
+     "label": "juara satu"
     },
     {
-     "icon": "🏫👉",
-     "label": "inilah sekolahku"
+     "icon": "📚",
+     "label": "belajar"
     }
    ],
-   "answer": 2,
-   "why": "就 = memang/itulah."
+   "answer": 1,
+   "why": "得到了第一名 → juara satu. A dan C tidak cocok."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🎓",
-    "label": "wisuda"
+    "icon": "👨‍🏫🎓",
+    "label": "profesor"
    },
    "options": [
-    "她生病了。",
-    "她大學畢業了。",
-    "她上小學了。"
+    "他是大學的教授。",
+    "他是國小學生。",
+    "他是醫生。"
    ],
-   "answer": 1,
-   "why": "畢業."
+   "answer": 0,
+   "why": "Profesor bergelar → 教授. B dan C tidak cocok."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🏆",
-    "label": "berhasil"
+    "icon": "👉📍",
+    "label": "tepat di sana"
    },
-   "text": "他努力了很久，最後（　）了。",
+   "text": "你要的書（　）在桌子上，你看！",
    "options": [
-    "成功",
-    "研究",
-    "教育"
+    "就",
+    "從",
+    "起"
    ],
    "answer": 0,
-   "why": "成功 = berhasil."
+   "why": "就 + 在 = tepat di (penegasan). 從 dan 起 dipakai untuk 'mulai', bukan tempat."
   },
   {
    "type": "cloze",
@@ -2073,19 +2073,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "從明年（1），我就不是學生了，因為我六月就要（2）了。我的（3）問我以後要做什麼，我說我想（4），因為我對小孩子的教育很有興趣。教授說，想當一個好老師不容易，可是如果很努力，一定可以（5）。",
    "options": [
-    "起",
-    "畢業",
     "教授",
-    "當小學老師",
+    "畢業",
+    "研究很成功",
     "做到",
-    "研究很成功"
+    "當小學老師",
+    "起"
    ],
    "answers": [
-    0,
+    5,
     1,
-    2,
-    3,
-    4
+    0,
+    4,
+    3
    ],
    "why": "從明年起; 六月畢業; 我的教授問; ingin 當小學老師 (minat pendidikan anak); 一定可以做到. 「研究很成功」 tidak cocok di titik mana pun."
   },
@@ -2118,11 +2118,11 @@
    "question": "你要做什麼？",
    "options": [
     "我寫寫看。",
-    "我查查看。",
-    "我念念看。"
+    "我念念看。",
+    "我查查看。"
    ],
-   "answer": 1,
-   "why": "查 = mencari (di kamus)."
+   "answer": 2,
+   "why": "Membuka kamus → 查查看. A dan B tidak cocok."
   },
   {
    "type": "listen_pic",
@@ -2135,12 +2135,12 @@
    },
    "question": "老師說什麼？",
    "options": [
-    "請寫下來。",
-    "請聽一聽。",
-    "請再念一遍。"
+    "請念十遍。",
+    "請再念一遍。",
+    "請別念了。"
    ],
-   "answer": 2,
-   "why": "再……一遍 = … sekali lagi."
+   "answer": 1,
+   "why": "Satu jari = sekali lagi → 再念一遍. A dan C tidak cocok."
   },
   {
    "type": "listen_dialog",
@@ -2148,31 +2148,31 @@
    "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你會寫漢字嗎？"
+     "sp": "女",
+     "zh": "這個詞你會寫嗎？"
     },
     {
-     "sp": "女",
-     "zh": "會一點，我學過書法。"
+     "sp": "男",
+     "zh": "會念，可是不會寫，我查一下。"
     }
    ],
-   "question": "這位小姐學過什麼？",
+   "question": "這位先生要做什麼？",
    "options": [
     {
-     "icon": "🎨",
-     "label": "melukis"
+     "icon": "✍️",
+     "label": "menulis"
     },
     {
-     "icon": "💻",
-     "label": "mengetik"
+     "icon": "📖🔍",
+     "label": "mencari di kamus"
     },
     {
-     "icon": "🖌️",
-     "label": "kaligrafi"
+     "icon": "🗣️",
+     "label": "membaca keras"
     }
    ],
-   "answer": 2,
-   "why": "書法."
+   "answer": 1,
+   "why": "我查一下. A: dia tidak bisa menulisnya. C: dia sudah bisa membacanya."
   },
   {
    "type": "listen_dialog",
@@ -2180,39 +2180,39 @@
    "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "這個詞怎麼念？"
-    },
-    {
      "sp": "男",
-     "zh": "你看看拼音。"
+     "zh": "你學書法多久了？"
     },
     {
      "sp": "女",
-     "zh": "拼音在哪裡？"
+     "zh": "三個月。每個星期上一次課。"
     },
     {
      "sp": "男",
-     "zh": "在字典裡。"
+     "zh": "難不難？"
+    },
+    {
+     "sp": "女",
+     "zh": "不難，你也可以試試看。"
     }
    ],
-   "question": "這位先生叫這位小姐看什麼？",
+   "question": "這位小姐學書法多久了？",
    "options": [
     {
-     "icon": "📖",
-     "label": "buku cerita"
+     "icon": "📅",
+     "label": "3 minggu"
     },
     {
-     "icon": "🔤",
-     "label": "pinyin"
+     "icon": "📅",
+     "label": "1 tahun"
     },
     {
-     "icon": "📱",
-     "label": "ponsel"
+     "icon": "📅",
+     "label": "3 bulan"
     }
    ],
-   "answer": 1,
-   "why": "看看拼音."
+   "answer": 2,
+   "why": "三個月. A tertukar dengan 每個星期; B tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -2220,86 +2220,86 @@
    "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你怎麼記得這麼多漢字？"
-    },
-    {
      "sp": "女",
-     "zh": "我每天背十個字，每個寫十遍。"
+     "zh": "你可以教我拼音嗎？"
     },
     {
      "sp": "男",
-     "zh": "真辛苦！"
+     "zh": "可以，可是你為什麼要學拼音？"
     },
     {
      "sp": "女",
-     "zh": "習慣了就不辛苦。"
+     "zh": "我想用手機打中文。"
+    },
+    {
+     "sp": "男",
+     "zh": "好，那我們從今天起，每天練習半個小時。"
     }
    ],
-   "question": "這位小姐每天背幾個字？",
+   "question": "這位小姐為什麼要學拼音？",
    "options": [
-    "二十個",
-    "五個",
-    "一百個",
-    "十個"
+    "她要考試",
+    "老師讓她學",
+    "她想用手機打中文",
+    "她想寫書法"
    ],
-   "answer": 3,
-   "why": "十個字; 100 adalah jumlah tulisan (pengecoh hitung)."
+   "answer": 2,
+   "why": "我想用手機打中文 → alasannya. A, B, D tidak disebut."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他在練習書法。",
+   "text": "他背了三十個詞，現在想休息休息。",
    "options": [
     {
-     "icon": "💻",
-     "label": "mengetik"
+     "icon": "🏃",
+     "label": "berlari"
     },
     {
-     "icon": "📓",
-     "label": "mencatat"
+     "icon": "📚😮‍💨",
+     "label": "lelah menghafal, ingin istirahat"
     },
     {
-     "icon": "🖌️",
-     "label": "berlatih kaligrafi"
+     "icon": "🍽️",
+     "label": "makan"
     }
    ],
-   "answer": 2,
-   "why": "書法."
+   "answer": 1,
+   "why": "背詞 + 休息休息. A dan C tidak cocok."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🀄",
-    "label": "aksara Han"
+    "icon": "🖌️",
+    "label": "kuas kaligrafi"
    },
    "options": [
-    "這是英文。",
-    "這是漢字。",
-    "這是拼音。"
+    "他在寫書法。",
+    "他在查字典。",
+    "他在打電腦。"
    ],
-   "answer": 1,
-   "why": "漢字 = aksara Han."
+   "answer": 0,
+   "why": "Kuas → 寫書法. B dan C tidak cocok."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🧠",
-    "label": "menghafal"
+    "icon": "🔤",
+    "label": "pinyin"
    },
-   "text": "這個詞我（　）了三遍。",
+   "text": "我不會寫這個字，可以用（　）寫嗎？",
    "options": [
-    "背",
-    "漢字",
-    "書法"
+    "拼音",
+    "書法",
+    "遍"
    ],
    "answer": 0,
-   "why": "背 = menghafal."
+   "why": "Tidak bisa menulis hanzi → pakai 拼音. 書法 tetap butuh hanzi; 遍 kata penggolong."
   },
   {
    "type": "cloze",
@@ -2307,19 +2307,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "剛開始學中文的時候，我覺得（1）很難，每個字都不一樣。老師教我們，新的字要多（2），每個字寫十（3）。看到不認識的詞，就用手機（4）一下它的意思和（5）。現在我已經認識五百多個字了。",
    "options": [
+    "書法寫得很好",
+    "查",
+    "遍",
     "漢字",
     "寫寫、看看",
-    "遍",
-    "查",
-    "拼音",
-    "書法寫得很好"
+    "拼音"
    ],
    "answers": [
-    0,
-    1,
-    2,
     3,
-    4
+    4,
+    2,
+    1,
+    5
    ],
    "why": "漢字很難; 多寫寫、看看; 寫十遍; 用手機查; 意思和拼音. 「書法寫得很好」 tidak cocok di titik mana pun."
   },
