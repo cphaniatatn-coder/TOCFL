@@ -18247,14 +18247,14 @@
     "label": "a child giving a key to mum",
     "img": "C05-4"
    },
-   "question": "你把鑰匙給誰了？",
+   "question": "他把鑰匙給誰了？",
    "options": [
-    "給媽媽了。",
-    "給爸爸了。",
-    "給老師了。"
+    "他把鑰匙給媽媽了。",
+    "媽媽把鑰匙給他了。",
+    "他把鑰匙放在信箱裡了。"
    ],
    "answer": 0,
-   "why": "把 + N1 + 給 + N2 = to give N1 to N2.",
+   "why": "The child gives, the mother receives → 他把鑰匙給媽媽了. B reverses the direction; C: there is no mailbox.",
    "id": "C05-01"
   },
   {
@@ -18266,14 +18266,14 @@
     "label": "a locked door",
     "img": "C05-5"
    },
-   "question": "門開著嗎？",
+   "question": "現在可以進去嗎？",
    "options": [
-    "開著。",
-    "窗戶開著。",
-    "門鎖了。"
+    "可以，門開著。",
+    "不行，門鎖了。",
+    "不行，裡面有人。"
    ],
-   "answer": 2,
-   "why": "鎖了 = locked.",
+   "answer": 1,
+   "why": "The door is locked → 不行，門鎖了. A is the opposite; C gives a reason not shown in the picture.",
    "id": "C05-02"
   },
   {
@@ -18283,22 +18283,22 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "鑰匙在哪裡？"
+     "zh": "你的鑰匙呢？不是在口袋裡嗎？"
     },
     {
      "sp": "男",
-     "zh": "在我的口袋裡。"
+     "zh": "不在口袋裡，我放在書包裡了。"
     }
    ],
    "question": "鑰匙在哪裡？",
    "options": [
     {
-     "icon": "🎒🔑",
-     "label": "in the bag"
-    },
-    {
      "icon": "👖🔑",
      "label": "in the pocket"
+    },
+    {
+     "icon": "🎒🔑",
+     "label": "in the bag"
     },
     {
      "icon": "🚪🔑",
@@ -18306,7 +18306,7 @@
     }
    ],
    "answer": 1,
-   "why": "口袋 = pocket.",
+   "why": "不在口袋裡 → 放在書包裡. A is the woman's guess, which he rejects; C is not mentioned.",
    "id": "C05-03"
   },
   {
@@ -18316,38 +18316,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "我明天去台中，你幫我看一下信箱，好嗎？"
+     "zh": "我下個星期要去台中，你可以幫我拿信嗎？"
     },
     {
      "sp": "女",
-     "zh": "好，把鑰匙給我吧。"
+     "zh": "好啊。你的狗呢？要我幫你看嗎？"
     },
     {
      "sp": "男",
-     "zh": "給你。"
+     "zh": "狗我帶去台中。"
     },
     {
      "sp": "女",
-     "zh": "你什麼時候回來？"
+     "zh": "好，那你把信箱的鑰匙給我吧。"
     }
    ],
    "question": "這位小姐要幫這位先生做什麼？",
    "options": [
     {
      "icon": "📬",
-     "label": "checking the letterbox"
+     "label": "collecting letters from the mailbox"
     },
     {
      "icon": "🐕",
-     "label": "feeding the dog"
+     "label": "looking after a dog"
     },
     {
-     "icon": "🪴",
-     "label": "watering the plants"
+     "icon": "🚆",
+     "label": "going to Taichung"
     }
    ],
    "answer": 0,
-   "why": "看一下信箱.",
+   "why": "幫我拿信 → collecting the letters. B is declined (狗我帶去台中). C: the man is the one going to Taichung.",
    "id": "C05-04"
   },
   {
@@ -18357,53 +18357,53 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "我的零用錢用完了。"
+     "zh": "這個月的零用錢我又花完了。"
     },
     {
      "sp": "男",
-     "zh": "你這個月買了什麼？"
+     "zh": "才十號啊！你都買了什麼？"
     },
     {
      "sp": "女",
-     "zh": "買了很多衣服。"
+     "zh": "也沒買什麼，就是常常跟朋友出去吃飯。"
     },
     {
      "sp": "男",
-     "zh": "你應該少買一點。"
+     "zh": "我看，你下個月還是自己做飯吧。"
     }
    ],
    "question": "這位先生是什麼意思？",
    "options": [
-    "這位小姐的零用錢很多",
-    "這位先生沒有錢",
-    "這位小姐應該多買衣服",
-    "這位小姐買太多東西"
+    "這位小姐應該少出去吃飯",
+    "這位小姐應該多買東西",
+    "這位先生想跟她一起吃飯",
+    "這位小姐的零用錢太少了"
    ],
-   "answer": 3,
-   "why": "應該少買 → too much shopping.",
+   "answer": 0,
+   "why": "還是自己做飯吧 = you'd better cook for yourself → don't eat out so often, so the money lasts. B is the opposite. C is not mentioned. D: the problem is how she spends, not how much she gets.",
    "id": "C05-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "他把錢放進口袋。",
+   "text": "媽媽把這個月的零用錢交給姊姊了。",
    "options": [
     {
-     "icon": "💵👖",
-     "label": "money into a pocket"
+     "icon": "👧💵👩",
+     "label": "older sister giving money to mum"
     },
     {
-     "icon": "💵👛",
-     "label": "money into a wallet"
+     "icon": "👩💵👧",
+     "label": "mum giving money to the older sister"
     },
     {
-     "icon": "💵🏦",
-     "label": "money into the bank"
+     "icon": "👩🔑👧",
+     "label": "mum giving a key to the older sister"
     }
    ],
-   "answer": 0,
-   "why": "口袋.",
+   "answer": 1,
+   "why": "把 N1 交給 N2: 媽媽 gives 零用錢 to 姊姊. A reverses the direction; in C the object is a key.",
    "id": "C05-06"
   },
   {
@@ -18411,16 +18411,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "📬✉️",
-    "label": "a full letterbox"
+    "icon": "👖🔑💵",
+    "label": "a trouser pocket with a key and money in it"
    },
    "options": [
-    "信箱裡沒有信。",
-    "信箱裡有很多信。",
-    "信箱壞了。"
+    "他的口袋裡只有鑰匙，沒有錢。",
+    "他的口袋裡有鑰匙，也有錢。",
+    "他的口袋裡只有錢，沒有鑰匙。"
    ],
    "answer": 1,
-   "why": "信箱 = letterbox.",
+   "why": "The pocket has a key AND money → 有鑰匙，也有錢. A and C each leave one thing out.",
    "id": "C05-07"
   },
   {
@@ -18428,17 +18428,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🔑",
-    "label": "a house key"
+    "icon": "🔑👩",
+    "label": "giving a key to mum"
    },
-   "text": "我忘了帶（　），不能開門。",
+   "text": "我出去以前，把鑰匙交（　）媽媽了。",
    "options": [
-    "口袋",
-    "鑰匙",
-    "信箱"
+    "在",
+    "給",
+    "到"
    ],
    "answer": 1,
-   "why": "鑰匙 = key.",
+   "why": "Pattern 把 N1 V給 N2: 交給 = hand over to. 在 and 到 mark places, not the person receiving.",
    "id": "C05-08"
   },
   {
@@ -18449,16 +18449,16 @@
    "options": [
     "家裡的鑰匙",
     "打開信箱",
-    "把門鎖好",
     "廚房的櫃子裡",
+    "零用錢都花光了",
     "交給他",
-    "零用錢都花光了"
+    "把門鎖好"
    ],
    "answers": [
     0,
     1,
+    5,
     2,
-    3,
     4
    ],
    "why": "給鑰匙 so he can get in; 打開信箱 to check the post; 把門鎖好 before going out; the cat food is 在櫃子裡; 一千塊交給他. 「零用錢都花光了」 doesn't fit any blank.",
@@ -24347,14 +24347,14 @@
     "label": "a person with very long legs",
     "img": "C30-4"
    },
-   "question": "他的腿怎麼樣？",
+   "question": "他的身高怎麼樣？",
    "options": [
-    "很長。",
-    "很短。",
-    "很痛。"
+    "他很矮，腿很短。",
+    "他很胖，不太高。",
+    "他很高，腿也很長。"
    ],
-   "answer": 0,
-   "why": "腿很長 = long legs.",
+   "answer": 2,
+   "why": "He is tall with long legs → 很高，腿也很長. A is the opposite; C: he is not fat.",
    "id": "C30-01"
   },
   {
@@ -24366,14 +24366,14 @@
     "label": "a photographer: \"don't move!\"; the person stands stiffly",
     "img": "C30-5"
    },
-   "question": "他說什麼？",
+   "question": "這位先生可能說什麼？",
    "options": [
+    "別動！",
     "快跑！",
-    "跳舞吧！",
-    "別動！"
+    "低頭！"
    ],
-   "answer": 2,
-   "why": "別動 = don't move.",
+   "answer": 0,
+   "why": "When taking a photo you ask people to keep still → 別動. B is the opposite. C: looking down would hide the face.",
    "id": "C30-02"
   },
   {
@@ -24383,11 +24383,11 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你的身高多少？"
+     "zh": "你的身高是一百八十嗎？"
     },
     {
      "sp": "男",
-     "zh": "一百八十。"
+     "zh": "沒有那麼高，一百七十五。"
     }
    ],
    "question": "這位先生的身高多少？",
@@ -24398,15 +24398,15 @@
     },
     {
      "icon": "📏",
-     "label": "180 cm"
+     "label": "175 cm"
     },
     {
      "icon": "📏",
-     "label": "160 cm"
+     "label": "180 cm"
     }
    ],
    "answer": 1,
-   "why": "一百八十.",
+   "why": "沒有那麼高 rejects 180 → 一百七十五. C is the woman's guess; A is not mentioned.",
    "id": "C30-03"
   },
   {
@@ -24416,38 +24416,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你為什麼一直低頭？"
+     "zh": "你的眼睛怎麼那麼紅？"
     },
     {
      "sp": "女",
-     "zh": "我在看手機。"
+     "zh": "昨天晚上看書看到兩點。"
     },
     {
      "sp": "男",
-     "zh": "別看了，對眼睛不好。"
+     "zh": "又在看手機上的小說吧？"
     },
     {
      "sp": "女",
-     "zh": "好吧。"
+     "zh": "不是，是一本很長的書。"
     }
    ],
-   "question": "這位小姐在做什麼？",
+   "question": "這位小姐昨天晚上做什麼？",
    "options": [
-    {
-     "icon": "📖",
-     "label": "reading a book"
-    },
     {
      "icon": "📱",
      "label": "looking at a phone"
     },
     {
-     "icon": "😴",
-     "label": "to sleep"
+     "icon": "📖",
+     "label": "reading a book"
+    },
+    {
+     "icon": "📺",
+     "label": "watching TV"
     }
    ],
    "answer": 1,
-   "why": "在看手機.",
+   "why": "看書看到兩點, and she rejects 手機上的小說 (不是) → reading a book. A is the man's guess, which she rejects; C is not mentioned.",
    "id": "C30-04"
   },
   {
@@ -24457,53 +24457,53 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "我想變瘦。"
+     "zh": "醫生說我要每天運動，背才不會痛。"
     },
     {
      "sp": "男",
-     "zh": "你要多運動才會瘦。"
+     "zh": "那你去游泳吧，學校旁邊就有游泳池。"
     },
     {
      "sp": "女",
-     "zh": "可是我很忙。"
+     "zh": "我才不去呢！我不喜歡水。"
     },
     {
      "sp": "男",
-     "zh": "每天走路三十分鐘就可以。"
+     "zh": "那跟我一起去爬山，怎麼樣？"
     }
    ],
-   "question": "這位先生覺得這位小姐應該怎麼做？",
+   "question": "哪一個是對的？",
    "options": [
-    "多睡覺",
-    "不吃飯",
-    "不工作",
-    "每天走路運動"
+    "她很喜歡游泳",
+    "她的背有時候會痛",
+    "學校離游泳池很遠",
+    "她已經開始去爬山了"
    ],
-   "answer": 3,
-   "why": "要…才… + the advice to walk.",
+   "answer": 1,
+   "why": "要每天運動，背才不會痛 → implies her back sometimes hurts. A is the opposite (我才不去呢). C is the opposite (就在學校旁邊). D: she has only just been invited.",
    "id": "C30-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "這隻貓的毛是白的。",
+   "text": "弟弟背著書包，在門口等媽媽。",
    "options": [
     {
-     "icon": "🐕⬜",
-     "label": "a white dog"
+     "icon": "👦🎒🏫",
+     "label": "a boy with a backpack at school"
     },
     {
-     "icon": "🐈⬛",
-     "label": "a black cat"
+     "icon": "👦📦🚪",
+     "label": "a boy carrying a box at the door"
     },
     {
-     "icon": "🐈⬜",
-     "label": "a white-furred cat"
+     "icon": "👦🎒🚪",
+     "label": "a boy with a backpack at the door"
     }
    ],
    "answer": 2,
-   "why": "毛 = fur.",
+   "why": "背著書包 (carrying a backpack) + 在門口 (at the door). A is the wrong place; B is the wrong object.",
    "id": "C30-06"
   },
   {
@@ -24516,11 +24516,11 @@
    },
    "options": [
     "這條魚在游泳。",
-    "這條魚很大。",
-    "這條魚死了。"
+    "這條魚死了。",
+    "這條魚在吃東西。"
    ],
-   "answer": 2,
-   "why": "死 = dead.",
+   "answer": 1,
+   "why": "A skull sign → the fish is dead (死了). A and C describe a living fish.",
    "id": "C30-07"
   },
   {
@@ -24529,16 +24529,16 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "🙇📱",
-    "label": "to lower one's head"
+    "label": "looking down at a phone"
    },
-   "text": "他（　）看手機。",
+   "text": "看手機的時候別一直（　），對背不好。",
    "options": [
-    "身高",
-    "眼",
+    "運動",
+    "走路",
     "低頭"
    ],
    "answer": 2,
-   "why": "低頭 = to lower one's head.",
+   "why": "When using a phone, what is bad for your back is keeping your head down (低頭). 運動 and 走路 are good for the body — they contradict 對背不好.",
    "id": "C30-08"
   },
   {
@@ -24547,19 +24547,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "我每天坐在電腦前面八個小時，下班以後還一直（1）看手機。最近我的（2）很痛，（3）也常常覺得很累。醫生說，我應該多（4），不要一直坐著。現在我每天早上跑步半個小時，週末去游泳。一個月以後，我覺得身體好多了，（5）。",
    "options": [
-    "低頭",
+    "熱死了",
     "背",
-    "眼睛",
     "動一動",
-    "精神也好多了",
-    "熱死了"
+    "低頭",
+    "眼睛",
+    "精神也好多了"
    ],
    "answers": [
-    0,
-    1,
-    2,
     3,
-    4
+    1,
+    4,
+    2,
+    5
    ],
    "why": "低頭看手機; 背很痛; 眼睛很累; 多動一動; the result: 精神也好多了. 「熱死了」 doesn't fit any blank.",
    "id": "C30-09"
@@ -31667,14 +31667,14 @@
     "label": "her ice cream fell; she's disappointed",
     "img": "C60-3"
    },
-   "question": "他說什麼？",
+   "question": "他可能說什麼？",
    "options": [
+    "太好吃了！",
     "真可惜！",
-    "我很生氣。",
-    "太好了！"
+    "還好我吃完了。"
    ],
-   "answer": 0,
-   "why": "真可惜 = what a shame!",
+   "answer": 1,
+   "why": "The ice cream fell before he could eat it → 真可惜. A does not fit (he has not eaten it). C is the opposite: he did not finish it.",
    "id": "C60-01"
   },
   {
@@ -31688,12 +31688,12 @@
    },
    "question": "你喜歡吃魚嗎？",
    "options": [
-    "其實我不喜歡吃魚。",
-    "我很喜歡吃魚。",
-    "我喜歡吃肉。"
+    "我很喜歡，再給我一點。",
+    "魚在冰箱裡。",
+    "其實我不太喜歡吃魚。"
    ],
-   "answer": 0,
-   "why": "其實 = actually.",
+   "answer": 2,
+   "why": "She is refusing the fish → 其實我不太喜歡. A is the opposite. C does not answer the question.",
    "id": "C60-02"
   },
   {
@@ -31703,30 +31703,30 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "下雨了！"
+     "zh": "外面下雨了，你帶傘了嗎？"
     },
     {
      "sp": "女",
-     "zh": "還好我帶了傘。"
+     "zh": "本來想帶，可是忘了。"
     }
    ],
-   "question": "這位小姐怎麼樣？",
+   "question": "這位小姐現在可能怎麼樣？",
    "options": [
     {
      "icon": "☂️😅",
-     "label": "luckily she brought an umbrella"
+     "label": "using an umbrella"
     },
     {
      "icon": "🌧️😭",
-     "label": "caught in the rain"
+     "label": "caught in the rain without an umbrella"
     },
     {
      "icon": "☀️",
-     "label": "sunny"
+     "label": "sunny weather"
     }
    ],
-   "answer": 0,
-   "why": "還好 = luckily.",
+   "answer": 1,
+   "why": "本來想帶，可是忘了 → she has no umbrella, so she gets wet. A is the plan that failed. C: it is raining outside.",
    "id": "C60-03"
   },
   {
@@ -31736,11 +31736,11 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "住宿舍有什麼好處？"
+     "zh": "你覺得住宿舍有什麼好處？"
     },
     {
      "sp": "男",
-     "zh": "很便宜，也很方便。"
+     "zh": "很便宜，離教室也很近。"
     },
     {
      "sp": "女",
@@ -31748,7 +31748,7 @@
     },
     {
      "sp": "男",
-     "zh": "有點吵。"
+     "zh": "其實也還好，只是晚上有時候有點吵。"
     }
    ],
    "question": "住宿舍有什麼壞處？",
@@ -31767,7 +31767,7 @@
     }
    ],
    "answer": 1,
-   "why": "壞處 = 有點吵.",
+   "why": "只是晚上有點吵 → noisy. A and C are the opposites of its advantages (便宜、近).",
    "id": "C60-04"
   },
   {
@@ -31781,49 +31781,49 @@
     },
     {
      "sp": "女",
-     "zh": "對，可是飛機票太貴了。"
+     "zh": "對啊，可是公司要我下個星期去高雄開會。"
     },
     {
      "sp": "男",
-     "zh": "真可惜。"
+     "zh": "真可惜，飛機票已經買了吧？"
     },
     {
      "sp": "女",
-     "zh": "還好，明年再去。"
+     "zh": "還好還沒買。"
     }
    ],
-   "question": "這位小姐為什麼沒去日本？",
+   "question": "哪一個是對的？",
    "options": [
-    "飛機票太貴",
-    "她不想去",
-    "她要工作",
-    "她生病"
+    "她已經買了飛機票",
+    "她不想去日本",
+    "她要去日本開會",
+    "她下個星期不去日本了"
    ],
-   "answer": 0,
-   "why": "The reason: 太貴.",
+   "answer": 3,
+   "why": "The trip to Japan is off because of a meeting in 高雄. A is the opposite (還沒買). B: she wants to go but cannot. C: the meeting is in 高雄.",
    "id": "C60-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "玩手機會影響睡覺。",
+   "text": "晚上睡覺以前一直玩手機，會影響睡覺。",
    "options": [
     {
-     "icon": "📱😊",
-     "label": "a phone is useful"
+     "icon": "🛌😴",
+     "label": "sleeping soundly"
+    },
+    {
+     "icon": "📚🛌",
+     "label": "reading a book in bed"
     },
     {
      "icon": "📱🛌",
-     "label": "a phone disturbs sleep"
-    },
-    {
-     "icon": "🛌",
-     "label": "sleeping soundly"
+     "label": "using a phone in bed and unable to sleep"
     }
    ],
-   "answer": 1,
-   "why": "影響 = to affect.",
+   "answer": 2,
+   "why": "玩手機 + 影響睡覺 → can't sleep because of the phone. A is the opposite; in B it is a book, not a phone.",
    "id": "C60-06"
   },
   {
@@ -31835,12 +31835,12 @@
     "label": "natural scenery"
    },
    "options": [
-    "這裡很吵。",
-    "這裡有很多車。",
-    "這裡的自然風景很美。"
+    "這裡的車很多，很吵。",
+    "這裡的自然風景很美。",
+    "這裡有很多高樓。"
    ],
-   "answer": 2,
-   "why": "自然 = nature.",
+   "answer": 1,
+   "why": "Mountains, a river, trees → 自然風景. A and C describe a city.",
    "id": "C60-07"
   },
   {
@@ -31849,16 +31849,16 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "🤝",
-    "label": "to understand"
+    "label": "comforting a friend"
    },
-   "text": "我很（　）你的心情。",
+   "text": "你別難過，我很（　）你的心情。",
    "options": [
     "影響",
     "了解",
     "可惜"
    ],
    "answer": 1,
-   "why": "了解 = to understand.",
+   "why": "了解你的心情 = I understand how you feel. 影響你的心情 = affects (it does not comfort). 可惜 cannot take an object like this.",
    "id": "C60-08"
   },
   {
@@ -31867,19 +31867,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "住宿舍有好處，也有（1）。好處是離教室很近，而且很便宜；壞處是室友太吵的時候，會（2）我念書。上個學期我的室友每天晚上都打電話到很晚，我都沒辦法睡覺。（3）這個學期換了新室友，她晚上很早就休息。我們慢慢（4）了對方，現在是好朋友了。我覺得住宿舍可以認識很多人，搬出去的話（5）。",
    "options": [
-    "壞處",
-    "影響",
-    "還好",
-    "了解",
     "就太可惜了",
-    "自然很便宜"
+    "了解",
+    "壞處",
+    "自然很便宜",
+    "還好",
+    "影響"
    ],
    "answers": [
-    0,
-    1,
     2,
-    3,
-    4
+    5,
+    4,
+    1,
+    0
    ],
    "why": "好處/壞處; 影響我念書; 還好 = luckily; 了解了對方; 搬出去就太可惜了. 「自然很便宜」 doesn't fit any blank.",
    "id": "C60-09"

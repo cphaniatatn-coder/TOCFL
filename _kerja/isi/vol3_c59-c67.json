@@ -68,25 +68,12 @@
   ]}
  ],
  "tasks": [
-  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-   "audio": "住宿舍好不好？", "options": ["其實有好處，也有壞處。", "宿舍好不好。", "我住。"], "answer": 0,
-   "why": "其實 memberi jawaban yang lebih seimbang dari dugaan."},
-  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
-   "lines": [{"sp": "男", "zh": "我以為妳是日本人。"}, {"sp": "女", "zh": "其實我是韓國人。"}],
-   "question": "這位小姐是哪國人？", "options": ["韓國人", "日本人", "臺灣人"], "answer": 0,
-   "why": "其實 mengoreksi anggapan (以為) → 韓國人."},
-  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
-   "lines": [{"sp": "男", "zh": "妳本來想學什麼？"}, {"sp": "女", "zh": "我本來想學法律，後來學了中文。"}],
-   "question": "這位小姐現在學什麼？", "options": ["中文", "法律", "歷史"], "answer": 0,
-   "why": "本來 = rencana awal (法律); 後來 = yang terjadi (中文)."},
-  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
-   "text": "住宿舍的好處是便宜，也可以認識很多朋友。壞處是很吵，會影響念書。", "question": "住宿舍的壞處是什麼？",
-   "options": ["太吵", "太貴", "朋友太少"], "answer": 0,
-   "why": "壞處是很吵. B dan C membalik keuntungannya."},
-  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-   "text": "（1）住宿舍有好處，也有壞處。我（2）住在宿舍，後來搬家了。太吵會（3）念書。", "options": ["其實", "本來", "影響", "可惜"], "answers": [0, 1, 2],
-   "why": "(1) 其實 = sebenarnya. (2) 本來 = tadinya. (3) 影響 = mengganggu/memengaruhi. 可惜 tidak cocok."}
- ],
+   {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.", "audio": "你本來不是住在宿舍嗎？怎麼搬走了？", "options": ["宿舍的房間很大。", "宿舍太吵了，影響我念書。", "我明年想住宿舍。"], "answer": 1, "why": "Ditanya ALASAN pindah → 太吵，影響我念書. A kelebihan asrama, bukan alasan pindah. C bertentangan: dia sudah pindah dari asrama."},
+   {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.", "lines": [{"sp": "男", "zh": "你不是很喜歡那家公司嗎？怎麼不做了？"}, {"sp": "女", "zh": "其實我本來就不太喜歡，只是那裡的錢比較多。"}, {"sp": "男", "zh": "那現在呢？"}, {"sp": "女", "zh": "現在每天都要工作到晚上十點，錢再多也沒有用。"}], "question": "這位小姐為什麼不做了？", "options": ["工作的時間太長", "她不喜歡公司裡的人", "公司的錢太少", "她要去念書"], "answer": 0, "why": "每天工作到晚上十點 → jam kerjanya terlalu panjang. B tidak disebut. C kebalikan (錢比較多). D tidak disebut."},
+   {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.", "lines": [{"sp": "男", "zh": "你本來想學什麼？"}, {"sp": "女", "zh": "我本來想學法律，我爸爸也希望我學法律。"}, {"sp": "男", "zh": "那你後來怎麼學了中文？"}, {"sp": "女", "zh": "我來臺灣旅行了一次，就喜歡上這裡了。"}], "question": "這位小姐為什麼學中文？", "options": ["她爸爸要她學中文", "她去臺灣旅行以後很喜歡臺灣", "她覺得法律太難"], "answer": 1, "why": "旅行了一次，就喜歡上這裡了 → alasannya. A terbalik: ayahnya ingin dia belajar 法律. C tidak disebut."},
+   {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.", "text": "大學一年級的時候，我住在學校宿舍。宿舍很便宜，離教室也很近，我還認識了很多朋友。可是四個人住一個房間，有人要念書，有人要打電話，常常很吵。二年級我就搬出去，一個人租了一個小房間。現在不吵了，可是房租貴了很多，有時候也覺得一個人有點無聊。", "question": "這個人覺得搬出宿舍以後怎麼樣？", "options": ["有好處，也有壞處", "只有好處，沒有壞處", "比住宿舍便宜", "朋友比以前多"], "answer": 0, "why": "Sesudah pindah: 不吵了 (untung) tetapi 房租貴、有點無聊 (rugi). B mengabaikan kerugiannya. C kebalikan (房租貴了很多). D: teman banyak justru saat di asrama."},
+   {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih frasa yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.", "text": "我本來以為住在宿舍（1），因為房租便宜，走路五分鐘就到教室。住了一個學期以後，我才發現（2）。我的室友每天晚上都在房間裡大聲講電話，（3）。我跟他說了好幾次，可是他（4）。最後我決定搬出去。其實住宿舍也有好處，只是（5）。", "options": ["事情沒有那麼簡單", "只有好處", "不適合我", "可惜我沒有搬家", "還是一樣", "影響我念書"], "answers": [1, 0, 5, 4, 2], "why": "(1) anggapan awal (本來以為) = 只有好處. (2) 才發現 → kenyataannya tidak sesederhana itu. (3) akibat teman sekamar berisik. (4) sudah ditegur tapi 還是一樣. (5) 其實…只是 不適合我. 「可惜我沒有搬家」 bertentangan: dia sudah pindah."}
+  ],
  "grammar": [
   {"tbcl_id": 200, "point": "其實 — sebenarnya", "pattern": "(anggapan)，其實 + kenyataan", "blocks": [["其實", "其實"], ["住宿舍有好處，也有壞處", "kenyataan"]],
    "explain": "其實 memperkenalkan kenyataan yang berbeda atau lebih lengkap daripada anggapan orang: 我以為…，其實….",

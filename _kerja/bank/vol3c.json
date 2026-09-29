@@ -1179,14 +1179,14 @@
     "label": "orang berkaki sangat panjang",
     "img": "C30-4"
    },
-   "question": "他的腿怎麼樣？",
+   "question": "他的身高怎麼樣？",
    "options": [
-    "很長。",
-    "很短。",
-    "很痛。"
+    "他很矮，腿很短。",
+    "他很胖，不太高。",
+    "他很高，腿也很長。"
    ],
-   "answer": 0,
-   "why": "腿很長 = kakinya panjang."
+   "answer": 2,
+   "why": "Orangnya tinggi dengan kaki panjang → 很高，腿也很長. A kebalikannya; C: badannya tidak gemuk."
   },
   {
    "type": "listen_pic",
@@ -1197,14 +1197,14 @@
     "label": "fotografer: \"jangan bergerak!\", orangnya diam kaku",
     "img": "C30-5"
    },
-   "question": "他說什麼？",
+   "question": "這位先生可能說什麼？",
    "options": [
+    "別動！",
     "快跑！",
-    "跳舞吧！",
-    "別動！"
+    "低頭！"
    ],
-   "answer": 2,
-   "why": "別動 = jangan bergerak."
+   "answer": 0,
+   "why": "Saat memotret, orang diminta diam → 別動. B kebalikannya. C: menunduk membuat wajah tidak terlihat."
   },
   {
    "type": "listen_dialog",
@@ -1213,11 +1213,11 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你的身高多少？"
+     "zh": "你的身高是一百八十嗎？"
     },
     {
      "sp": "男",
-     "zh": "一百八十。"
+     "zh": "沒有那麼高，一百七十五。"
     }
    ],
    "question": "這位先生的身高多少？",
@@ -1228,15 +1228,15 @@
     },
     {
      "icon": "📏",
-     "label": "180 cm"
+     "label": "175 cm"
     },
     {
      "icon": "📏",
-     "label": "160 cm"
+     "label": "180 cm"
     }
    ],
    "answer": 1,
-   "why": "一百八十."
+   "why": "沒有那麼高 membantah 180 → 一百七十五. C = tebakan si perempuan; A tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1245,38 +1245,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你為什麼一直低頭？"
+     "zh": "你的眼睛怎麼那麼紅？"
     },
     {
      "sp": "女",
-     "zh": "我在看手機。"
+     "zh": "昨天晚上看書看到兩點。"
     },
     {
      "sp": "男",
-     "zh": "別看了，對眼睛不好。"
+     "zh": "又在看手機上的小說吧？"
     },
     {
      "sp": "女",
-     "zh": "好吧。"
+     "zh": "不是，是一本很長的書。"
     }
    ],
-   "question": "這位小姐在做什麼？",
+   "question": "這位小姐昨天晚上做什麼？",
    "options": [
-    {
-     "icon": "📖",
-     "label": "membaca buku"
-    },
     {
      "icon": "📱",
      "label": "melihat ponsel"
     },
     {
-     "icon": "😴",
-     "label": "tidur"
+     "icon": "📖",
+     "label": "membaca buku"
+    },
+    {
+     "icon": "📺",
+     "label": "menonton TV"
     }
    ],
    "answer": 1,
-   "why": "在看手機."
+   "why": "看書看到兩點, dan dia membantah 手機上的小說 (不是) → membaca buku. A = tebakan si laki-laki yang dibantah; C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1285,52 +1285,52 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "我想變瘦。"
+     "zh": "醫生說我要每天運動，背才不會痛。"
     },
     {
      "sp": "男",
-     "zh": "你要多運動才會瘦。"
+     "zh": "那你去游泳吧，學校旁邊就有游泳池。"
     },
     {
      "sp": "女",
-     "zh": "可是我很忙。"
+     "zh": "我才不去呢！我不喜歡水。"
     },
     {
      "sp": "男",
-     "zh": "每天走路三十分鐘就可以。"
+     "zh": "那跟我一起去爬山，怎麼樣？"
     }
    ],
-   "question": "這位先生覺得這位小姐應該怎麼做？",
+   "question": "哪一個是對的？",
    "options": [
-    "多睡覺",
-    "不吃飯",
-    "不工作",
-    "每天走路運動"
+    "她很喜歡游泳",
+    "她的背有時候會痛",
+    "學校離游泳池很遠",
+    "她已經開始去爬山了"
    ],
-   "answer": 3,
-   "why": "要…才… + saran jalan kaki."
+   "answer": 1,
+   "why": "要每天運動，背才不會痛 → tersirat punggungnya kadang sakit. A kebalikan (我才不去呢). C kebalikan (就在學校旁邊). D baru diajak, belum dilakukan."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "這隻貓的毛是白的。",
+   "text": "弟弟背著書包，在門口等媽媽。",
    "options": [
     {
-     "icon": "🐕⬜",
-     "label": "anjing putih"
+     "icon": "👦🎒🏫",
+     "label": "anak menggendong tas di sekolah"
     },
     {
-     "icon": "🐈⬛",
-     "label": "kucing hitam"
+     "icon": "👦📦🚪",
+     "label": "anak membawa kardus di pintu"
     },
     {
-     "icon": "🐈⬜",
-     "label": "kucing berbulu putih"
+     "icon": "👦🎒🚪",
+     "label": "anak menggendong tas di depan pintu"
     }
    ],
    "answer": 2,
-   "why": "毛 = bulu."
+   "why": "背著書包 (menggendong tas) + 在門口 (di depan pintu). A tempatnya salah; B bendanya salah."
   },
   {
    "type": "read_pick",
@@ -1342,11 +1342,11 @@
    },
    "options": [
     "這條魚在游泳。",
-    "這條魚很大。",
-    "這條魚死了。"
+    "這條魚死了。",
+    "這條魚在吃東西。"
    ],
-   "answer": 2,
-   "why": "死 = mati."
+   "answer": 1,
+   "why": "Tanda tengkorak → ikannya mati (死了). A dan C = ikan yang masih hidup."
   },
   {
    "type": "read_gap",
@@ -1354,16 +1354,16 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "🙇📱",
-    "label": "menunduk"
+    "label": "menunduk melihat ponsel"
    },
-   "text": "他（　）看手機。",
+   "text": "看手機的時候別一直（　），對背不好。",
    "options": [
-    "身高",
-    "眼",
+    "運動",
+    "走路",
     "低頭"
    ],
    "answer": 2,
-   "why": "低頭 = menunduk."
+   "why": "Saat melihat ponsel, yang buruk untuk punggung adalah terus 低頭. 運動 dan 走路 justru baik untuk tubuh — bertentangan dengan 對背不好."
   },
   {
    "type": "cloze",
@@ -1371,19 +1371,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "我每天坐在電腦前面八個小時，下班以後還一直（1）看手機。最近我的（2）很痛，（3）也常常覺得很累。醫生說，我應該多（4），不要一直坐著。現在我每天早上跑步半個小時，週末去游泳。一個月以後，我覺得身體好多了，（5）。",
    "options": [
-    "低頭",
+    "熱死了",
     "背",
-    "眼睛",
     "動一動",
-    "精神也好多了",
-    "熱死了"
+    "低頭",
+    "眼睛",
+    "精神也好多了"
    ],
    "answers": [
-    0,
-    1,
-    2,
     3,
-    4
+    1,
+    4,
+    2,
+    5
    ],
    "why": "低頭看手機; 背很痛; 眼睛很累; 多動一動; hasil: 精神也好多了. 「熱死了」 tidak cocok di titik mana pun."
   },

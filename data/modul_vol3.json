@@ -1961,14 +1961,14 @@
       "label": "pintu dengan gembok terkunci",
       "img": "C05-1"
      },
-     "question": "門怎麼樣？",
+     "question": "這個門怎麼樣？",
      "options": [
-      "門鎖了。",
-      "門開著。",
-      "門壞了。"
+      "門鎖著，進不去。",
+      "門開著，可以進去。",
+      "門壞了，關不上。"
      ],
      "answer": 0,
-     "why": "鎖 = mengunci/terkunci."
+     "why": "Gembok terpasang → 門鎖著 (terkunci), jadi 進不去. B kebalikannya; C: pintunya tidak rusak."
     },
     {
      "type": "listen_pic",
@@ -1981,12 +1981,12 @@
      },
      "question": "鑰匙在哪裡？",
      "options": [
-      "在我的口袋裡。",
-      "在皮包裡。",
-      "在門上。"
+      "在褲子的口袋裡。",
+      "在衣服的口袋裡。",
+      "在桌子上的書包裡。"
      ],
      "answer": 0,
-     "why": "口袋 = saku."
+     "why": "Kunci ada di saku CELANA (褲子). B: saku baju — mirip tapi salah tempat. C: tidak ada tas di gambar."
     },
     {
      "type": "listen_pic",
@@ -1997,40 +1997,40 @@
       "label": "dia mengunci pintu dengan kunci",
       "img": "C05-3"
      },
-     "question": "他要做什麼？",
+     "question": "他在做什麼？",
      "options": [
-      "把窗戶關上。",
-      "開門。",
-      "把門鎖上。"
+      "他在用鑰匙鎖門。",
+      "他在用鑰匙開信箱。",
+      "他在找口袋裡的鑰匙。"
      ],
-     "answer": 2,
-     "why": "把門鎖上 = mengunci pintu."
+     "answer": 0,
+     "why": "Kunci dipakai di pintu → 鎖門. B: tidak ada kotak surat. C: kuncinya sudah di tangan, tidak sedang dicari."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · Tanya-jawab satu putaran",
      "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-     "audio": "你把鑰匙給我了嗎？",
+     "audio": "你剛才出去，把門鎖好了嗎？",
      "options": [
-      "給了，在你的口袋裡。",
-      "鑰匙很小。",
-      "我有鑰匙。"
+      "鎖好了，鑰匙在我這裡。",
+      "門口的信箱是新的。",
+      "我明天才出去。"
      ],
      "answer": 0,
-     "why": "把鑰匙給我了嗎 → 給了 + di mana."
+     "why": "Ditanya sudah mengunci pintu atau belum → 鎖好了. B hanya mengulang kata 門 tanpa menjawab. C bertentangan dengan 剛才 (barusan sudah keluar)."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · Tanya-jawab satu putaran",
      "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-     "audio": "你的零用錢一個月多少？",
+     "audio": "你的零用錢是誰給你的？",
      "options": [
-      "零用錢很多。",
-      "三千塊。",
-      "我給零用錢。"
+      "我爸爸每個月給我。",
+      "我每個月給我妹妹。",
+      "我把零用錢放在口袋裡。"
      ],
-     "answer": 1,
-     "why": "零用錢 = uang jajan."
+     "answer": 0,
+     "why": "Ditanya SIAPA yang memberi → 爸爸給我. B membalik arah (dia yang memberi adiknya). C menjawab di mana uangnya disimpan."
     },
     {
      "type": "listen_dialog",
@@ -2039,21 +2039,29 @@
      "lines": [
       {
        "sp": "女",
-       "zh": "你把錢都用完了嗎？"
+       "zh": "你這個月的零用錢還有多少？"
       },
       {
        "sp": "男",
-       "zh": "用完了，媽媽會把零用錢寄給我。"
+       "zh": "本來有五百塊，買書用了三百塊。"
+      },
+      {
+       "sp": "女",
+       "zh": "那你口袋裡還有兩百塊吧？"
+      },
+      {
+       "sp": "男",
+       "zh": "沒有，我剛才又給了弟弟一百塊。"
       }
      ],
-     "question": "誰會寄錢給這位先生？",
+     "question": "這位先生現在還有多少錢？",
      "options": [
-      "他媽媽",
-      "他爸爸",
-      "這位小姐"
+      "一百塊",
+      "兩百塊",
+      "三百塊"
      ],
      "answer": 0,
-     "why": "媽媽會把零用錢寄給我."
+     "why": "500 − 300 (buku) − 100 (untuk adik) = 100. B = tebakan si perempuan yang dibantah (沒有). C = uang yang dipakai membeli buku."
     },
     {
      "type": "listen_dialog",
@@ -2062,118 +2070,122 @@
      "lines": [
       {
        "sp": "男",
-       "zh": "你把鑰匙給我了嗎？"
+       "zh": "你看到我的鑰匙了嗎？我找了很久了。"
       },
       {
        "sp": "女",
-       "zh": "給你了啊，我放在你的口袋裡。"
+       "zh": "你剛才不是把鑰匙放在口袋裡了嗎？"
       },
       {
        "sp": "男",
-       "zh": "口袋裡沒有。"
+       "zh": "口袋裡沒有啊……啊，在這裡！在我的書包裡。"
       },
       {
        "sp": "女",
-       "zh": "我剛才打開信箱，可能放在信箱裡了。"
+       "zh": "你怎麼每次都要找這麼久？"
       }
      ],
-     "question": "鑰匙可能在哪裡？",
+     "question": "這位小姐的意思是什麼？",
      "options": [
-      "這位先生的口袋裡",
-      "信箱裡",
-      "這位小姐的手上",
-      "門上"
+      "這位先生常常找不到東西",
+      "這位先生的口袋破了",
+      "這位先生把鑰匙給了她",
+      "這位先生每次都把鑰匙放在書包裡"
      ],
-     "answer": 1,
-     "why": "可能放在信箱裡了. A: sudah dicek, tidak ada. C & D tidak disebut."
+     "answer": 0,
+     "why": "你怎麼每次都要找這麼久 = kenapa setiap kali lama sekali mencarinya → dia sering kesulitan menemukan barangnya. B tidak disebut. C terbalik: kunci tidak diberikan kepadanya. D terlalu harfiah: keluhan 每次 merujuk kebiasaan mencari lama, bukan tempat menaruh kunci."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Kalimat → gambar",
      "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-     "text": "媽媽把零用錢給我。",
+     "text": "哥哥把信箱的鑰匙交給妹妹了。",
      "options": [
       {
-       "icon": "👦💵👩",
-       "label": "anak memberi uang ke ibu"
+       "icon": "👧🔑👦",
+       "label": "adik perempuan memberi kunci ke kakak laki-laki"
       },
       {
-       "icon": "👩🔑",
-       "label": "ibu memberi kunci"
+       "icon": "👦✉️👧",
+       "label": "kakak laki-laki memberi surat ke adik perempuan"
       },
       {
-       "icon": "👩💵👦",
-       "label": "ibu memberi uang jajan ke anak"
+       "icon": "👦🔑👧",
+       "label": "kakak laki-laki memberi kunci ke adik perempuan"
       }
      ],
      "answer": 2,
-     "why": "把 N1 給 N2 = memberikan N1 kepada N2."
+     "why": "把 N1 交給 N2: 哥哥 memberi 鑰匙 kepada 妹妹. A membalik arah; B bendanya surat, bukan kunci."
     },
     {
      "type": "read_pick",
      "part": "閱讀 Part 2 · Gambar → kalimat",
      "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
      "picture": {
-      "icon": "📬",
-      "label": "kotak surat"
+      "icon": "🚪🔒🔑",
+      "label": "pintu terkunci, kuncinya masih tergantung di pintu"
      },
      "options": [
-      "信箱裡有信。",
-      "口袋裡有錢。",
-      "院子裡有狗。"
+      "門開著，鑰匙在門上。",
+      "門鎖著，鑰匙還在門上。",
+      "門鎖著，鑰匙不見了。"
      ],
-     "answer": 0,
-     "why": "信箱 = kotak surat."
+     "answer": 1,
+     "why": "Pintu terkunci DAN kuncinya masih menempel → 門鎖著，鑰匙還在門上. A: pintu tidak terbuka. C: kuncinya terlihat, tidak hilang."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Isian bergambar",
      "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
      "picture": {
-      "icon": "🔑",
-      "label": "kunci"
+      "icon": "🚪🔒",
+      "label": "pintu yang dikunci"
      },
-     "text": "我的（　）不見了，不能開門。",
+     "text": "出去以前，別忘了（　）門鎖好。",
      "options": [
-      "信箱",
-      "零用錢",
-      "鑰匙"
+      "把",
+      "給",
+      "被"
      ],
-     "answer": 2,
-     "why": "鑰匙 = anak kunci."
+     "answer": 0,
+     "why": "Pola 把 + O + V + hasil: 把門鎖好 = mengunci pintu dengan baik. 給 = memberi/untuk; 被 = di-(pasif) — keduanya tidak cocok dengan 鎖好."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Melengkapi paragraf",
-     "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-     "text": "我把鑰匙（1）給你。你（2）門鎖了嗎？我把錢都用（3）了。",
+     "instr": "Pilih frasa yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+     "text": "我這個月的零用錢只有三千塊，可是現在才十號，我就（1）。媽媽說，買東西以前要想一想，這個東西是不是一定要買。所以我（2）：每天只帶一百塊出去，別的錢都放在書桌的櫃子裡，然後（3），把鑰匙交給姊姊。昨天我很想買一件新衣服，可是口袋裡的錢（4），所以我就（5）。",
      "options": [
-      "交",
-      "把",
-      "完",
-      "鎖"
+      "不夠",
+      "回家了",
+      "想了一個辦法",
+      "把櫃子鎖上",
+      "把錢都放在口袋裡",
+      "把錢花了一大半"
      ],
      "answers": [
+      5,
+      2,
+      3,
       0,
-      1,
-      2
+      1
      ],
-     "why": "(1) 交給 = menyerahkan. (2) 把 + O + V了. (3) 用完 = habis dipakai. 鎖 sudah ada di kalimat kedua."
+     "why": "(1) baru tanggal 10 tapi uang sudah terpakai separuh lebih. (2) 想了一個辦法 lalu dijelaskan caranya. (3) lemari dikunci, kuncinya dititipkan ke kakak. (4) uang di saku 不夠. (5) 就回家了. 「把錢都放在口袋裡」 bertentangan dengan isi (uang disimpan di lemari)."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Pemahaman bacaan",
      "instr": "Baca pesan ini, lalu pilih jawaban yang benar.",
-     "text": "志明：我去台中三天。我把鑰匙放在你的信箱裡。請你把我的信拿給美美。——大文",
-     "question": "大文把鑰匙放在哪裡？",
+     "text": "志明：我明天早上去台中，星期五晚上才回來。我已經把家裡的鑰匙放在你的信箱裡了。這幾天請你每天去我家一次，打開我的信箱，把信拿出來放在我的書桌上。廚房的垃圾我已經拿出去了。謝謝你！——大文",
+     "question": "大文為什麼把鑰匙放在志明的信箱裡？",
      "options": [
-      "志明的信箱裡",
-      "口袋裡",
-      "美美那裡",
-      "門口"
+      "他要志明幫他拿信",
+      "他怕鑰匙不見了",
+      "志明要去台中",
+      "他要志明幫他拿垃圾"
      ],
      "answer": 0,
-     "why": "放在你的信箱裡 (你 = 志明). Surat untuk Meimei, bukan kuncinya."
+     "why": "Kunci dititipkan supaya 志明 bisa masuk dan 把信拿出來放在書桌上. B tidak disebut di pesan. C terbalik: yang ke Taichung adalah 大文. D: sampahnya 已經拿出去了."
     }
    ],
    "grammar": [
@@ -13132,14 +13144,14 @@
       "label": "dia memegangi pahanya kesakitan",
       "img": "C30-1"
      },
-     "question": "他哪裡痛？",
+     "question": "他怎麼了？",
      "options": [
-      "腿很痛。",
-      "眼睛很痛。",
-      "手很痛。"
+      "他的背很痛。",
+      "他的腿很痛。",
+      "他的眼睛很痛。"
      ],
-     "answer": 0,
-     "why": "腿 = tungkai/paha."
+     "answer": 1,
+     "why": "Tangannya memegang paha → 腿很痛. A (punggung) dan C (mata) = bagian tubuh lain."
     },
     {
      "type": "listen_pic",
@@ -13150,14 +13162,14 @@
       "label": "dia terus menunduk melihat ponsel; ibu menegur",
       "img": "C30-2"
      },
-     "question": "媽媽說什麼？",
+     "question": "媽媽可能說什麼？",
      "options": [
-      "別一直低頭看手機。",
-      "快跑！",
-      "快寫作業。"
+      "你的手機真好看！",
+      "別一直低頭看手機了！",
+      "你的手機在哪裡？"
      ],
-     "answer": 0,
-     "why": "低頭 = menunduk."
+     "answer": 1,
+     "why": "Ibu marah, anak menunduk ke ponsel → menegur: 別一直低頭看手機了. A memuji (tidak cocok dengan wajah marah). C: ponselnya jelas di tangan anak."
     },
     {
      "type": "listen_pic",
@@ -13168,40 +13180,40 @@
       "label": "kakinya diperban, dia kesakitan",
       "img": "C30-3"
      },
-     "question": "你哪裡痛？",
+     "question": "她怎麼了？",
      "options": [
-      "眼睛。",
-      "手。",
-      "腿。"
+      "她的背很痛，不能動。",
+      "她的眼睛不舒服。",
+      "她的腿很痛，不能走路。"
      ],
      "answer": 2,
-     "why": "腿 = kaki (tungkai)."
+     "why": "Perban ada di kaki → kakinya sakit (腿很痛). A dan C = bagian tubuh lain."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · Tanya-jawab satu putaran",
      "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-     "audio": "我怎麼才能長高？",
+     "audio": "醫生說我要怎麼做，腿才會好？",
      "options": [
-      "你要多運動，才會長高。",
-      "我很高。",
-      "你才高。"
+      "你要多休息，別一直走路。",
+      "我的腿比你的長。",
+      "醫生說你昨天來過了。"
      ],
      "answer": 0,
-     "why": "要…才… = harus …, baru …. Jawab dengan syaratnya."
+     "why": "Pertanyaan 要怎麼做…才會好 meminta SARAN → 多休息. B hanya mengulang kata 腿. C mengulang kata 醫生 tanpa memberi saran."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · Tanya-jawab satu putaran",
      "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-     "audio": "你的身高多少？",
+     "audio": "你弟弟現在的身高多少？",
      "options": [
-      "身高很動。",
-      "我的身高高。",
-      "跟我哥哥差不多。"
+      "他身體很好，常常運動。",
+      "快一百七十了，比我還高。",
+      "他今年十五歲。"
      ],
-     "answer": 2,
-     "why": "身高 = tinggi badan."
+     "answer": 1,
+     "why": "身高多少 → jawab tinggi badan (hampir 170). A menjawab soal kesehatan; C menjawab umur — keduanya topik dekat tapi pertanyaannya lain."
     },
     {
      "type": "listen_dialog",
@@ -13210,29 +13222,29 @@
      "lines": [
       {
        "sp": "女",
-       "zh": "你每天都坐著，要多動一動。"
+       "zh": "你每天坐著，要多動一動。"
       },
       {
        "sp": "男",
-       "zh": "我知道，我的腿和背都很痛。"
+       "zh": "我知道。我本來想每天早上去跑步。"
       },
       {
        "sp": "女",
-       "zh": "多運動，身體才會好。"
+       "zh": "那你為什麼沒去？"
       },
       {
        "sp": "男",
-       "zh": "好，我明天開始每天跑步。"
+       "zh": "早上我都很累，現在晚上去公園走路。"
       }
      ],
-     "question": "這位先生哪裡痛？",
+     "question": "這位先生現在怎麼運動？",
      "options": [
-      "腿和背",
-      "眼睛",
-      "頭"
+      "每天早上跑步",
+      "晚上去公園走路",
+      "每天坐著看手機"
      ],
-     "answer": 0,
-     "why": "我的腿和背都很痛. B & C tidak disebut."
+     "answer": 1,
+     "why": "現在晚上去公園走路. A hanya rencana awal (本來想) yang gagal. C kebiasaan buruk, bukan olahraga."
     },
     {
      "type": "listen_dialog",
@@ -13241,109 +13253,122 @@
      "lines": [
       {
        "sp": "女",
-       "zh": "你要不要吃這個？很好吃。"
+       "zh": "你又在低頭看手機了？"
       },
       {
        "sp": "男",
-       "zh": "我才不要，它的味道很奇怪。"
+       "zh": "我才沒有呢！我在看今天的天氣。"
+      },
+      {
+       "sp": "女",
+       "zh": "你已經看了一個小時了，天氣有那麼多可以看嗎？"
+      },
+      {
+       "sp": "男",
+       "zh": "好啦，好啦，我不看了。"
       }
      ],
-     "question": "這位先生的意思是什麼？",
+     "question": "這位小姐的意思是什麼？",
      "options": [
-      "他不想吃",
-      "他很想吃",
-      "他吃過了"
+      "她不相信這位先生在看天氣",
+      "她想知道今天的天氣",
+      "這位先生的眼睛不好",
+      "這位先生應該多看天氣"
      ],
      "answer": 0,
-     "why": "我才不要 = aku sama sekali tidak mau (penolakan tegas, 才3)."
+     "why": "天氣有那麼多可以看嗎 = pertanyaan retoris: cuaca tidak mungkin dilihat satu jam → dia tidak percaya. B: dia tidak bertanya cuaca. C tidak disebut. D kebalikannya (dia menyuruh berhenti)."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Kalimat → gambar",
      "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-     "text": "媽媽背著孩子。",
+     "text": "奶奶每天早上都在公園裡動一動身體。",
      "options": [
       {
-       "icon": "👩🍳",
-       "label": "ibu memasak"
+       "icon": "👵🌳🪑",
+       "label": "nenek duduk di bangku taman"
       },
       {
-       "icon": "👩🛒",
-       "label": "ibu berbelanja"
+       "icon": "👵🏠🤸",
+       "label": "nenek senam di rumah"
       },
       {
-       "icon": "👩🧒",
-       "label": "ibu menggendong anak"
+       "icon": "👵🌳🤸",
+       "label": "nenek senam di taman"
       }
      ],
      "answer": 2,
-     "why": "背 = menggendong di punggung."
+     "why": "Dua syarat: 在公園裡 (taman) + 動一動 (bergerak). A di taman tapi hanya duduk; B bergerak tapi di rumah."
     },
     {
      "type": "read_pick",
      "part": "閱讀 Part 2 · Gambar → kalimat",
      "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
      "picture": {
-      "icon": "🐕",
-      "label": "anjing berbulu panjang"
+      "icon": "🙇📱",
+      "label": "dia menunduk melihat ponsel"
      },
      "options": [
-      "這隻狗的腿很短。",
-      "這隻狗的毛很長。",
-      "這隻狗死了。"
+      "他在跟朋友打電話。",
+      "他在電腦前面工作。",
+      "他一直低頭看手機。"
      ],
-     "answer": 1,
-     "why": "毛 = bulu."
+     "answer": 2,
+     "why": "Kepala menunduk ke ponsel → 低頭看手機. A: ponsel tidak ditempelkan ke telinga. B: tidak ada komputer."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Isian bergambar",
      "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
      "picture": {
-      "icon": "🏃💪",
-      "label": "olahraga membuat sehat"
+      "icon": "🏃😫",
+      "label": "lelah sekali setelah berlari"
      },
-     "text": "要多運動，身體（　）會好。",
+     "text": "跑了一個小時，我的腿累（　）了！",
      "options": [
-      "都",
-      "才",
-      "還"
+      "完",
+      "死",
+      "到"
      ],
      "answer": 1,
-     "why": "(要)…才… = harus …, baru …."
+     "why": "累死了 = capek sekali (死了 menegaskan tingkat). 累完了 dan 累到了 tidak lazim dalam arti ini."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Melengkapi paragraf",
-     "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-     "text": "你要多運動，身體（1）會好。別一直（2）看手機，對（3）不好。",
+     "instr": "Pilih frasa yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+     "text": "我每天在公司坐八個小時，回家以後還（1）。上個月我的背和腿都開始痛，就去看了醫生。醫生說：「你（2），身體才會好。」他還說，別一直低頭，因為這樣（3）。所以現在我每天下班以後先去公園走四十分鐘，（4）。一個月以後，背真的不痛了，（5）。",
      "options": [
-      "才",
-      "低頭",
-      "眼睛",
-      "毛"
+      "再回家吃晚飯",
+      "一直低頭看手機",
+      "要每天動一動",
+      "對眼睛和背都不好",
+      "對身體特別好的",
+      "精神也好多了"
      ],
      "answers": [
-      0,
       1,
-      2
+      2,
+      3,
+      0,
+      5
      ],
-     "why": "(1) 要…才…. (2) 低頭 = menunduk. (3) 對眼睛不好. 毛 tidak cocok."
+     "why": "(1) kebiasaan buruk di rumah. (2) pola 要…才: 要每天動一動，身體才會好. (3) alasan jangan menunduk. (4) 先…再: jalan dulu, baru pulang makan. (5) hasil baik tambahan. 「對身體特別好的」 berakhiran 的 sehingga tidak bisa menutup kalimat mana pun."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Pemahaman bacaan",
      "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
-     "text": "醫生說：一直低頭看手機，對眼睛和背都不好。每天要多動一動，身體才會好。",
-     "question": "醫生說什麼對身體好？",
+     "text": "很多人覺得，小孩子長得高不高，只跟爸爸媽媽的身高有關係。可是，吃得好、常常運動、晚上早點睡覺，也很重要。我弟弟小時候很瘦，也不高，可是他每天打籃球，晚上十點以前一定睡覺。現在他十八歲了，比爸爸還高一點。",
+     "question": "這個人想說什麼？",
      "options": [
-      "多動一動",
-      "一直看手機",
-      "低頭",
-      "多吃藥"
+      "身高不是只跟爸媽有關係",
+      "小孩子應該多喝牛奶",
+      "弟弟的爸爸很高",
+      "打籃球的人都很高"
      ],
      "answer": 0,
-     "why": "多動一動，身體才會好. B dan C justru disebut tidak baik."
+     "why": "Gagasan utama: 可是…也很重要 → tinggi badan tidak hanya soal orang tua. B tidak disebut. C: teks hanya bilang adik lebih tinggi dari ayah, bukan ayahnya tinggi. D terlalu umum — hanya contoh satu orang."
     }
    ],
    "grammar": [
@@ -26094,12 +26119,12 @@
      },
      "question": "住宿舍怎麼樣？",
      "options": [
-      "只有好處。",
-      "只有壞處。",
+      "只有好處，沒有壞處。",
+      "只有壞處，沒有好處。",
       "有好處，也有壞處。"
      ],
      "answer": 2,
-     "why": "好處 = keuntungan; 壞處 = kerugian."
+     "why": "Ada tanda plus DAN minus → 有好處，也有壞處. A dan B masing-masing hanya satu sisi."
     },
     {
      "type": "listen_pic",
@@ -26110,27 +26135,27 @@
       "label": "piknik batal karena hujan, dia sedih",
       "img": "C60-2"
      },
-     "question": "今天天氣怎麼樣？",
+     "question": "她為什麼不高興？",
      "options": [
-      "天氣很好。",
-      "好可惜，下雨了。",
-      "下雪了。"
+      "天氣太熱了，不想出去。",
+      "她的東西不見了。",
+      "下雨了，不能出去玩。"
      ],
-     "answer": 1,
-     "why": "可惜 = sayang sekali."
+     "answer": 2,
+     "why": "Hujan → rencana keluar batal. A: cuacanya hujan, bukan panas. B tidak terlihat di gambar."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · Tanya-jawab satu putaran",
      "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-     "audio": "住宿舍好不好？",
+     "audio": "你本來不是住在宿舍嗎？怎麼搬走了？",
      "options": [
-      "其實有好處，也有壞處。",
-      "宿舍好不好。",
-      "我住。"
+      "宿舍的房間很大。",
+      "宿舍太吵了，影響我念書。",
+      "我明年想住宿舍。"
      ],
-     "answer": 0,
-     "why": "其實 memberi jawaban yang lebih seimbang dari dugaan."
+     "answer": 1,
+     "why": "Ditanya ALASAN pindah → 太吵，影響我念書. A kelebihan asrama, bukan alasan pindah. C bertentangan: dia sudah pindah dari asrama."
     },
     {
      "type": "listen_reply",
@@ -26138,12 +26163,12 @@
      "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
      "audio": "你了解臺灣的文化嗎？",
      "options": [
+      "我很了解你的心情。",
       "了解一點，還在學習。",
-      "文化很了解。",
-      "我了解你嗎。"
+      "臺灣的東西很便宜。"
      ],
-     "answer": 0,
-     "why": "了解 = memahami."
+     "answer": 1,
+     "why": "Ditanya seberapa paham budaya Taiwan → 了解一點. A memakai 了解 dalam konteks lain (perasaan). C topik Taiwan tapi tidak menjawab."
     },
     {
      "type": "listen_dialog",
@@ -26152,21 +26177,29 @@
      "lines": [
       {
        "sp": "男",
-       "zh": "妳本來想學什麼？"
+       "zh": "你本來想學什麼？"
       },
       {
        "sp": "女",
-       "zh": "我本來想學法律，後來學了中文。"
+       "zh": "我本來想學法律，我爸爸也希望我學法律。"
+      },
+      {
+       "sp": "男",
+       "zh": "那你後來怎麼學了中文？"
+      },
+      {
+       "sp": "女",
+       "zh": "我來臺灣旅行了一次，就喜歡上這裡了。"
       }
      ],
-     "question": "這位小姐現在學什麼？",
+     "question": "這位小姐為什麼學中文？",
      "options": [
-      "中文",
-      "法律",
-      "歷史"
+      "她爸爸要她學中文",
+      "她去臺灣旅行以後很喜歡臺灣",
+      "她覺得法律太難"
      ],
-     "answer": 0,
-     "why": "本來 = rencana awal (法律); 後來 = yang terjadi (中文)."
+     "answer": 1,
+     "why": "旅行了一次，就喜歡上這裡了 → alasannya. A terbalik: ayahnya ingin dia belajar 法律. C tidak disebut."
     },
     {
      "type": "listen_dialog",
@@ -26175,21 +26208,30 @@
      "lines": [
       {
        "sp": "男",
-       "zh": "我以為妳是日本人。"
+       "zh": "你不是很喜歡那家公司嗎？怎麼不做了？"
       },
       {
        "sp": "女",
-       "zh": "其實我是韓國人。"
+       "zh": "其實我本來就不太喜歡，只是那裡的錢比較多。"
+      },
+      {
+       "sp": "男",
+       "zh": "那現在呢？"
+      },
+      {
+       "sp": "女",
+       "zh": "現在每天都要工作到晚上十點，錢再多也沒有用。"
       }
      ],
-     "question": "這位小姐是哪國人？",
+     "question": "這位小姐為什麼不做了？",
      "options": [
-      "韓國人",
-      "日本人",
-      "臺灣人"
+      "工作的時間太長",
+      "她不喜歡公司裡的人",
+      "公司的錢太少",
+      "她要去念書"
      ],
      "answer": 0,
-     "why": "其實 mengoreksi anggapan (以為) → 韓國人."
+     "why": "每天工作到晚上十點 → jam kerjanya terlalu panjang. B tidak disebut. C kebalikan (錢比較多). D tidak disebut."
     },
     {
      "type": "listen_dialog",
@@ -26221,29 +26263,29 @@
       "宿舍沒有壞處"
      ],
      "answer": 0,
-     "why": "還好…很早就休息 → tidak mengganggu. B & C tidak berdasar. D: pria menyebut ada 壞處."
+     "why": "還好…很早就休息 → teman sekamarnya tidak mengganggu. B & C tidak berdasar. D: si laki-laki justru menyebut ada 壞處."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Kalimat → gambar",
      "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-     "text": "其實他不是老師，是學生。",
+     "text": "我以為他是老師，其實他是來上課的學生。",
      "options": [
       {
        "icon": "🧑‍🏫",
        "label": "guru"
       },
       {
-       "icon": "👨‍⚕️",
-       "label": "dokter"
+       "icon": "👨‍💼",
+       "label": "pegawai kantor"
       },
       {
        "icon": "🧑‍🎓",
-       "label": "sebenarnya murid"
+       "label": "murid"
       }
      ],
      "answer": 2,
-     "why": "其實 = sebenarnya."
+     "why": "以為 = anggapan yang salah; 其實 = kenyataan → dia murid. A adalah anggapan yang keliru; B tidak disebut."
     },
     {
      "type": "read_pick",
@@ -26251,15 +26293,15 @@
      "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
      "picture": {
       "icon": "📱😵",
-      "label": "terlalu banyak main ponsel"
+      "label": "terlalu banyak main ponsel sampai pusing"
      },
      "options": [
-      "玩手機會影響學習。",
-      "我沒有手機。",
-      "手機很便宜。"
+      "這支手機很便宜。",
+      "一直玩手機會影響身體。",
+      "他在用手機學中文。"
      ],
-     "answer": 0,
-     "why": "影響 = mempengaruhi."
+     "answer": 1,
+     "why": "Wajah pusing karena ponsel → 影響身體. A (harga) dan C (belajar) tidak terlihat di gambar."
     },
     {
      "type": "read_gap",
@@ -26269,46 +26311,51 @@
       "icon": "☂️😅",
       "label": "untung bawa payung"
      },
-     "text": "下大雨，（　）我帶了傘。",
+     "text": "下午下了很大的雨，（　）我帶了傘。",
      "options": [
-      "還好",
+      "可惜",
       "其實",
-      "可惜"
+      "還好"
      ],
-     "answer": 0,
-     "why": "還好 = untungnya."
+     "answer": 2,
+     "why": "還好 = untungnya (hal baik di tengah situasi buruk). 可惜 = sayang (untuk hal buruk). 其實 = sebenarnya (mengoreksi anggapan) — tidak ada anggapan yang dikoreksi."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Melengkapi paragraf",
-     "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-     "text": "（1）住宿舍有好處，也有壞處。我（2）住在宿舍，後來搬家了。太吵會（3）念書。",
+     "instr": "Pilih frasa yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+     "text": "我本來以為住在宿舍（1），因為房租便宜，走路五分鐘就到教室。住了一個學期以後，我才發現（2）。我的室友每天晚上都在房間裡大聲講電話，（3）。我跟他說了好幾次，可是他（4）。最後我決定搬出去。其實住宿舍也有好處，只是（5）。",
      "options": [
-      "其實",
-      "本來",
-      "影響",
-      "可惜"
+      "事情沒有那麼簡單",
+      "只有好處",
+      "不適合我",
+      "可惜我沒有搬家",
+      "還是一樣",
+      "影響我念書"
      ],
      "answers": [
-      0,
       1,
+      0,
+      5,
+      4,
       2
      ],
-     "why": "(1) 其實 = sebenarnya. (2) 本來 = tadinya. (3) 影響 = mengganggu/memengaruhi. 可惜 tidak cocok."
+     "why": "(1) anggapan awal (本來以為) = 只有好處. (2) 才發現 → kenyataannya tidak sesederhana itu. (3) akibat teman sekamar berisik. (4) sudah ditegur tapi 還是一樣. (5) 其實…只是 不適合我. 「可惜我沒有搬家」 bertentangan: dia sudah pindah."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Pemahaman bacaan",
      "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
-     "text": "住宿舍的好處是便宜，也可以認識很多朋友。壞處是很吵，會影響念書。",
-     "question": "住宿舍的壞處是什麼？",
+     "text": "大學一年級的時候，我住在學校宿舍。宿舍很便宜，離教室也很近，我還認識了很多朋友。可是四個人住一個房間，有人要念書，有人要打電話，常常很吵。二年級我就搬出去，一個人租了一個小房間。現在不吵了，可是房租貴了很多，有時候也覺得一個人有點無聊。",
+     "question": "這個人覺得搬出宿舍以後怎麼樣？",
      "options": [
-      "太吵",
-      "太貴",
-      "朋友太少"
+      "有好處，也有壞處",
+      "只有好處，沒有壞處",
+      "比住宿舍便宜",
+      "朋友比以前多"
      ],
      "answer": 0,
-     "why": "壞處是很吵. B dan C membalik keuntungannya."
+     "why": "Sesudah pindah: 不吵了 (untung) tetapi 房租貴、有點無聊 (rugi). B mengabaikan kerugiannya. C kebalikan (房租貴了很多). D: teman banyak justru saat di asrama."
     }
    ],
    "grammar": [

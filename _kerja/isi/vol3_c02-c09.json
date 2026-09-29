@@ -173,24 +173,12 @@
   ]}
  ],
  "tasks": [
-  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你把鑰匙給我了嗎？", "options": ["給了，在你的口袋裡。", "鑰匙很小。", "我有鑰匙。"], "answer": 0,
-   "why": "把鑰匙給我了嗎 → 給了 + di mana."},
-  {"type": "listen_pic", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
-   "picture": {"icon": "🔒", "label": "pintu dengan gembok terkunci", "img": "C05-1"}, "question": "門怎麼樣？", "options": ["門鎖了。", "門開著。", "門壞了。"], "answer": 0,
-   "why": "鎖 = mengunci/terkunci."},
-  {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
-   "lines": [{"sp": "女", "zh": "你把錢都用完了嗎？"}, {"sp": "男", "zh": "用完了，媽媽會把零用錢寄給我。"}],
-   "question": "誰會寄錢給這位先生？", "options": ["他媽媽", "他爸爸", "這位小姐"], "answer": 0,
-   "why": "媽媽會把零用錢寄給我."},
-  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca pesan ini, lalu pilih jawaban yang benar.",
-   "text": "志明：我去台中三天。我把鑰匙放在你的信箱裡。請你把我的信拿給美美。——大文", "question": "大文把鑰匙放在哪裡？",
-   "options": ["志明的信箱裡", "口袋裡", "美美那裡", "門口"], "answer": 0,
-   "why": "放在你的信箱裡 (你 = 志明). Surat untuk Meimei, bukan kuncinya."},
-  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-   "text": "我把鑰匙（1）給你。你（2）門鎖了嗎？我把錢都用（3）了。", "options": ["交", "把", "完", "鎖"], "answers": [0, 1, 2],
-   "why": "(1) 交給 = menyerahkan. (2) 把 + O + V了. (3) 用完 = habis dipakai. 鎖 sudah ada di kalimat kedua."}
- ],
+   {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.", "audio": "你剛才出去，把門鎖好了嗎？", "options": ["鎖好了，鑰匙在我這裡。", "門口的信箱是新的。", "我明天才出去。"], "answer": 0, "why": "Ditanya sudah mengunci pintu atau belum → 鎖好了. B hanya mengulang kata 門 tanpa menjawab. C bertentangan dengan 剛才 (barusan sudah keluar)."},
+   {"type": "listen_pic", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.", "picture": {"icon": "🔒", "label": "pintu dengan gembok terkunci", "img": "C05-1"}, "question": "這個門怎麼樣？", "options": ["門鎖著，進不去。", "門開著，可以進去。", "門壞了，關不上。"], "answer": 0, "why": "Gembok terpasang → 門鎖著 (terkunci), jadi 進不去. B kebalikannya; C: pintunya tidak rusak."},
+   {"type": "listen_dialog", "part": "聽力 Part 3 · Dialog beberapa putaran", "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.", "lines": [{"sp": "女", "zh": "你這個月的零用錢還有多少？"}, {"sp": "男", "zh": "本來有五百塊，買書用了三百塊。"}, {"sp": "女", "zh": "那你口袋裡還有兩百塊吧？"}, {"sp": "男", "zh": "沒有，我剛才又給了弟弟一百塊。"}], "question": "這位先生現在還有多少錢？", "options": ["一百塊", "兩百塊", "三百塊"], "answer": 0, "why": "500 − 300 (buku) − 100 (untuk adik) = 100. B = tebakan si perempuan yang dibantah (沒有). C = uang yang dipakai membeli buku."},
+   {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca pesan ini, lalu pilih jawaban yang benar.", "text": "志明：我明天早上去台中，星期五晚上才回來。我已經把家裡的鑰匙放在你的信箱裡了。這幾天請你每天去我家一次，打開我的信箱，把信拿出來放在我的書桌上。廚房的垃圾我已經拿出去了。謝謝你！——大文", "question": "大文為什麼把鑰匙放在志明的信箱裡？", "options": ["他要志明幫他拿信", "他怕鑰匙不見了", "志明要去台中", "他要志明幫他拿垃圾"], "answer": 0, "why": "Kunci dititipkan supaya 志明 bisa masuk dan 把信拿出來放在書桌上. B tidak disebut di pesan. C terbalik: yang ke Taichung adalah 大文. D: sampahnya 已經拿出去了."},
+   {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih frasa yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.", "text": "我這個月的零用錢只有三千塊，可是現在才十號，我就（1）。媽媽說，買東西以前要想一想，這個東西是不是一定要買。所以我（2）：每天只帶一百塊出去，別的錢都放在書桌的櫃子裡，然後（3），把鑰匙交給姊姊。昨天我很想買一件新衣服，可是口袋裡的錢（4），所以我就（5）。", "options": ["不夠", "回家了", "想了一個辦法", "把櫃子鎖上", "把錢都放在口袋裡", "把錢花了一大半"], "answers": [5, 2, 3, 0, 1], "why": "(1) baru tanggal 10 tapi uang sudah terpakai separuh lebih. (2) 想了一個辦法 lalu dijelaskan caranya. (3) lemari dikunci, kuncinya dititipkan ke kakak. (4) uang di saku 不夠. (5) 就回家了. 「把錢都放在口袋裡」 bertentangan dengan isi (uang disimpan di lemari)."}
+  ],
  "grammar": [
   {"tbcl_id": 196, "point": "把 O V + hasil — …-kan sampai …", "pattern": "S + 把 + O + V + hasil (乾淨/完/錯…)", "blocks": [["你", "S"], ["把", "把"], ["房間", "O"], ["弄", "V"], ["乾淨", "hasil"]],
    "explain": "把 sering dipasangkan dengan hasil tindakan: 把房間弄乾淨 (membersihkan kamar sampai bersih), 把錢用完 (menghabiskan uang). Hasilnya menunjukkan perubahan pada objek.",

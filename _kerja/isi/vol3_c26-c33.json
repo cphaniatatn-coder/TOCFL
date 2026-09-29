@@ -222,24 +222,12 @@
   ]}
  ],
  "tasks": [
-  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-   "audio": "我怎麼才能長高？", "options": ["你要多運動，才會長高。", "我很高。", "你才高。"], "answer": 0,
-   "why": "要…才… = harus …, baru …. Jawab dengan syaratnya."},
-  {"type": "listen_pic", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
-   "picture": {"icon": "🦵", "label": "dia memegangi pahanya kesakitan", "img": "C30-1"}, "question": "他哪裡痛？", "options": ["腿很痛。", "眼睛很痛。", "手很痛。"], "answer": 0,
-   "why": "腿 = tungkai/paha."},
-  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
-   "lines": [{"sp": "女", "zh": "你要不要吃這個？很好吃。"}, {"sp": "男", "zh": "我才不要，它的味道很奇怪。"}],
-   "question": "這位先生的意思是什麼？", "options": ["他不想吃", "他很想吃", "他吃過了"], "answer": 0,
-   "why": "我才不要 = aku sama sekali tidak mau (penolakan tegas, 才3)."},
-  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
-   "text": "醫生說：一直低頭看手機，對眼睛和背都不好。每天要多動一動，身體才會好。", "question": "醫生說什麼對身體好？",
-   "options": ["多動一動", "一直看手機", "低頭", "多吃藥"], "answer": 0,
-   "why": "多動一動，身體才會好. B dan C justru disebut tidak baik."},
-  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-   "text": "你要多運動，身體（1）會好。別一直（2）看手機，對（3）不好。", "options": ["才", "低頭", "眼睛", "毛"], "answers": [0, 1, 2],
-   "why": "(1) 要…才…. (2) 低頭 = menunduk. (3) 對眼睛不好. 毛 tidak cocok."}
- ],
+   {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.", "audio": "醫生說我要怎麼做，腿才會好？", "options": ["你要多休息，別一直走路。", "我的腿比你的長。", "醫生說你昨天來過了。"], "answer": 0, "why": "Pertanyaan 要怎麼做…才會好 meminta SARAN → 多休息. B hanya mengulang kata 腿. C mengulang kata 醫生 tanpa memberi saran."},
+   {"type": "listen_pic", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.", "picture": {"icon": "🦵", "label": "dia memegangi pahanya kesakitan", "img": "C30-1"}, "question": "他怎麼了？", "options": ["他的背很痛。", "他的腿很痛。", "他的眼睛很痛。"], "answer": 1, "why": "Tangannya memegang paha → 腿很痛. A (punggung) dan C (mata) = bagian tubuh lain."},
+   {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.", "lines": [{"sp": "女", "zh": "你又在低頭看手機了？"}, {"sp": "男", "zh": "我才沒有呢！我在看今天的天氣。"}, {"sp": "女", "zh": "你已經看了一個小時了，天氣有那麼多可以看嗎？"}, {"sp": "男", "zh": "好啦，好啦，我不看了。"}], "question": "這位小姐的意思是什麼？", "options": ["她不相信這位先生在看天氣", "她想知道今天的天氣", "這位先生的眼睛不好", "這位先生應該多看天氣"], "answer": 0, "why": "天氣有那麼多可以看嗎 = pertanyaan retoris: cuaca tidak mungkin dilihat satu jam → dia tidak percaya. B: dia tidak bertanya cuaca. C tidak disebut. D kebalikannya (dia menyuruh berhenti)."},
+   {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca teksnya, lalu pilih jawaban yang benar.", "text": "很多人覺得，小孩子長得高不高，只跟爸爸媽媽的身高有關係。可是，吃得好、常常運動、晚上早點睡覺，也很重要。我弟弟小時候很瘦，也不高，可是他每天打籃球，晚上十點以前一定睡覺。現在他十八歲了，比爸爸還高一點。", "question": "這個人想說什麼？", "options": ["身高不是只跟爸媽有關係", "小孩子應該多喝牛奶", "弟弟的爸爸很高", "打籃球的人都很高"], "answer": 0, "why": "Gagasan utama: 可是…也很重要 → tinggi badan tidak hanya soal orang tua. B tidak disebut. C: teks hanya bilang adik lebih tinggi dari ayah, bukan ayahnya tinggi. D terlalu umum — hanya contoh satu orang."},
+   {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih frasa yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.", "text": "我每天在公司坐八個小時，回家以後還（1）。上個月我的背和腿都開始痛，就去看了醫生。醫生說：「你（2），身體才會好。」他還說，別一直低頭，因為這樣（3）。所以現在我每天下班以後先去公園走四十分鐘，（4）。一個月以後，背真的不痛了，（5）。", "options": ["再回家吃晚飯", "一直低頭看手機", "要每天動一動", "對眼睛和背都不好", "對身體特別好的", "精神也好多了"], "answers": [1, 2, 3, 0, 5], "why": "(1) kebiasaan buruk di rumah. (2) pola 要…才: 要每天動一動，身體才會好. (3) alasan jangan menunduk. (4) 先…再: jalan dulu, baru pulang makan. (5) hasil baik tambahan. 「對身體特別好的」 berakhiran 的 sehingga tidak bisa menutup kalimat mana pun."}
+  ],
  "grammar": [
   {"tbcl_id": 172, "point": "(要)…才… — (harus) …, baru …", "pattern": "(要) + syarat，(S) + 才 + hasil", "blocks": [["多運動", "syarat"], ["身體", "S"], ["才", "才"], ["會好", "hasil"]],
    "explain": "才 menandai bahwa hasil HANYA terjadi bila syarat dipenuhi: 多運動，身體才會好 (baru sehat kalau banyak olahraga). Bandingkan 就: syarat cukup, hasil mudah terjadi.",

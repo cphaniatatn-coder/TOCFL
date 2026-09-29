@@ -1881,14 +1881,14 @@
     "label": "es krimnya jatuh, dia kecewa",
     "img": "C60-3"
    },
-   "question": "他說什麼？",
+   "question": "他可能說什麼？",
    "options": [
+    "太好吃了！",
     "真可惜！",
-    "我很生氣。",
-    "太好了！"
+    "還好我吃完了。"
    ],
-   "answer": 0,
-   "why": "真可惜 = sayang sekali!"
+   "answer": 1,
+   "why": "Es krim jatuh sebelum dimakan → 真可惜. A tidak cocok (belum dimakan). C kebalikan: dia belum menghabiskannya."
   },
   {
    "type": "listen_pic",
@@ -1901,12 +1901,12 @@
    },
    "question": "你喜歡吃魚嗎？",
    "options": [
-    "其實我不喜歡吃魚。",
-    "我很喜歡吃魚。",
-    "我喜歡吃肉。"
+    "我很喜歡，再給我一點。",
+    "魚在冰箱裡。",
+    "其實我不太喜歡吃魚。"
    ],
-   "answer": 0,
-   "why": "其實 = sebenarnya."
+   "answer": 2,
+   "why": "Dia menolak piring ikan → 其實我不太喜歡. A kebalikannya. C tidak menjawab pertanyaan."
   },
   {
    "type": "listen_dialog",
@@ -1915,30 +1915,30 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "下雨了！"
+     "zh": "外面下雨了，你帶傘了嗎？"
     },
     {
      "sp": "女",
-     "zh": "還好我帶了傘。"
+     "zh": "本來想帶，可是忘了。"
     }
    ],
-   "question": "這位小姐怎麼樣？",
+   "question": "這位小姐現在可能怎麼樣？",
    "options": [
     {
      "icon": "☂️😅",
-     "label": "untung membawa payung"
+     "label": "memakai payung"
     },
     {
      "icon": "🌧️😭",
-     "label": "kehujanan"
+     "label": "kehujanan tanpa payung"
     },
     {
      "icon": "☀️",
-     "label": "cerah"
+     "label": "cuaca cerah"
     }
    ],
-   "answer": 0,
-   "why": "還好 = untungnya."
+   "answer": 1,
+   "why": "本來想帶，可是忘了 → tidak bawa payung, jadi kehujanan. A = rencana awal yang gagal. C: di luar sedang hujan."
   },
   {
    "type": "listen_dialog",
@@ -1947,11 +1947,11 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "住宿舍有什麼好處？"
+     "zh": "你覺得住宿舍有什麼好處？"
     },
     {
      "sp": "男",
-     "zh": "很便宜，也很方便。"
+     "zh": "很便宜，離教室也很近。"
     },
     {
      "sp": "女",
@@ -1959,7 +1959,7 @@
     },
     {
      "sp": "男",
-     "zh": "有點吵。"
+     "zh": "其實也還好，只是晚上有時候有點吵。"
     }
    ],
    "question": "住宿舍有什麼壞處？",
@@ -1978,7 +1978,7 @@
     }
    ],
    "answer": 1,
-   "why": "壞處 = 有點吵."
+   "why": "只是晚上有點吵 → berisik. A dan C kebalikan dari kelebihannya (便宜、近)."
   },
   {
    "type": "listen_dialog",
@@ -1991,48 +1991,48 @@
     },
     {
      "sp": "女",
-     "zh": "對，可是飛機票太貴了。"
+     "zh": "對啊，可是公司要我下個星期去高雄開會。"
     },
     {
      "sp": "男",
-     "zh": "真可惜。"
+     "zh": "真可惜，飛機票已經買了吧？"
     },
     {
      "sp": "女",
-     "zh": "還好，明年再去。"
+     "zh": "還好還沒買。"
     }
    ],
-   "question": "這位小姐為什麼沒去日本？",
+   "question": "哪一個是對的？",
    "options": [
-    "飛機票太貴",
-    "她不想去",
-    "她要工作",
-    "她生病"
+    "她已經買了飛機票",
+    "她不想去日本",
+    "她要去日本開會",
+    "她下個星期不去日本了"
    ],
-   "answer": 0,
-   "why": "Alasan: 太貴."
+   "answer": 3,
+   "why": "Rencana ke Jepang batal karena harus rapat di 高雄. A kebalikan (還沒買). B: dia ingin, tapi tidak bisa. C: rapatnya di 高雄."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "玩手機會影響睡覺。",
+   "text": "晚上睡覺以前一直玩手機，會影響睡覺。",
    "options": [
     {
-     "icon": "📱😊",
-     "label": "ponsel bermanfaat"
+     "icon": "🛌😴",
+     "label": "tidur nyenyak"
+    },
+    {
+     "icon": "📚🛌",
+     "label": "membaca buku di tempat tidur"
     },
     {
      "icon": "📱🛌",
-     "label": "ponsel mengganggu tidur"
-    },
-    {
-     "icon": "🛌",
-     "label": "tidur nyenyak"
+     "label": "main ponsel di tempat tidur, susah tidur"
     }
    ],
-   "answer": 1,
-   "why": "影響 = mempengaruhi."
+   "answer": 2,
+   "why": "玩手機 + 影響睡覺 → susah tidur karena ponsel. A kebalikan; B bendanya buku, bukan ponsel."
   },
   {
    "type": "read_pick",
@@ -2043,12 +2043,12 @@
     "label": "pemandangan alam"
    },
    "options": [
-    "這裡很吵。",
-    "這裡有很多車。",
-    "這裡的自然風景很美。"
+    "這裡的車很多，很吵。",
+    "這裡的自然風景很美。",
+    "這裡有很多高樓。"
    ],
-   "answer": 2,
-   "why": "自然 = alam."
+   "answer": 1,
+   "why": "Gunung, sungai, pepohonan → 自然風景. A dan C = pemandangan kota."
   },
   {
    "type": "read_gap",
@@ -2056,16 +2056,16 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "🤝",
-    "label": "memahami"
+    "label": "menghibur teman"
    },
-   "text": "我很（　）你的心情。",
+   "text": "你別難過，我很（　）你的心情。",
    "options": [
     "影響",
     "了解",
     "可惜"
    ],
    "answer": 1,
-   "why": "了解 = memahami."
+   "why": "了解你的心情 = memahami perasaanmu. 影響你的心情 = memengaruhi (tidak menghibur). 可惜 tidak bisa diikuti objek seperti ini."
   },
   {
    "type": "cloze",
@@ -2073,19 +2073,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "住宿舍有好處，也有（1）。好處是離教室很近，而且很便宜；壞處是室友太吵的時候，會（2）我念書。上個學期我的室友每天晚上都打電話到很晚，我都沒辦法睡覺。（3）這個學期換了新室友，她晚上很早就休息。我們慢慢（4）了對方，現在是好朋友了。我覺得住宿舍可以認識很多人，搬出去的話（5）。",
    "options": [
-    "壞處",
-    "影響",
-    "還好",
-    "了解",
     "就太可惜了",
-    "自然很便宜"
+    "了解",
+    "壞處",
+    "自然很便宜",
+    "還好",
+    "影響"
    ],
    "answers": [
-    0,
-    1,
     2,
-    3,
-    4
+    5,
+    4,
+    1,
+    0
    ],
    "why": "好處/壞處; 影響我念書; 還好 = untunglah; 了解了對方; 搬出去就太可惜了. 「自然很便宜」 tidak cocok di titik mana pun."
   },

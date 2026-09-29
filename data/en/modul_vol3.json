@@ -1961,14 +1961,14 @@
       "label": "a door with a padlock, locked",
       "img": "C05-1"
      },
-     "question": "門怎麼樣？",
+     "question": "這個門怎麼樣？",
      "options": [
-      "門鎖了。",
-      "門開著。",
-      "門壞了。"
+      "門鎖著，進不去。",
+      "門開著，可以進去。",
+      "門壞了，關不上。"
      ],
      "answer": 0,
-     "why": "鎖 = to lock/locked."
+     "why": "A padlock is on the door → 門鎖著 (locked), so 進不去. B is the opposite; C: the door is not broken."
     },
     {
      "type": "listen_pic",
@@ -1981,12 +1981,12 @@
      },
      "question": "鑰匙在哪裡？",
      "options": [
-      "在我的口袋裡。",
-      "在皮包裡。",
-      "在門上。"
+      "在褲子的口袋裡。",
+      "在衣服的口袋裡。",
+      "在桌子上的書包裡。"
      ],
      "answer": 0,
-     "why": "口袋 = pocket."
+     "why": "The key is in the TROUSER pocket (褲子). B: a shirt pocket — similar but the wrong place. C: there is no bag in the picture."
     },
     {
      "type": "listen_pic",
@@ -1997,40 +1997,40 @@
       "label": "he locks the door with a key",
       "img": "C05-3"
      },
-     "question": "他要做什麼？",
+     "question": "他在做什麼？",
      "options": [
-      "把窗戶關上。",
-      "開門。",
-      "把門鎖上。"
+      "他在用鑰匙鎖門。",
+      "他在用鑰匙開信箱。",
+      "他在找口袋裡的鑰匙。"
      ],
-     "answer": 2,
-     "why": "把門鎖上 = to lock the door."
+     "answer": 0,
+     "why": "The key is being used on the door → 鎖門. B: there is no mailbox. C: the key is already in his hand, he is not looking for it."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "你把鑰匙給我了嗎？",
+     "audio": "你剛才出去，把門鎖好了嗎？",
      "options": [
-      "給了，在你的口袋裡。",
-      "鑰匙很小。",
-      "我有鑰匙。"
+      "鎖好了，鑰匙在我這裡。",
+      "門口的信箱是新的。",
+      "我明天才出去。"
      ],
      "answer": 0,
-     "why": "把鑰匙給我了嗎 → 給了 + where."
+     "why": "The question is whether the door was locked → 鎖好了. B only repeats the word 門 without answering. C contradicts 剛才 (they have just gone out)."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "你的零用錢一個月多少？",
+     "audio": "你的零用錢是誰給你的？",
      "options": [
-      "零用錢很多。",
-      "三千塊。",
-      "我給零用錢。"
+      "我爸爸每個月給我。",
+      "我每個月給我妹妹。",
+      "我把零用錢放在口袋裡。"
      ],
-     "answer": 1,
-     "why": "零用錢 = pocket money."
+     "answer": 0,
+     "why": "The question is WHO gives the money → 爸爸給我. B reverses the direction (he gives money to his sister). C says where the money is kept."
     },
     {
      "type": "listen_dialog",
@@ -2039,21 +2039,29 @@
      "lines": [
       {
        "sp": "女",
-       "zh": "你把錢都用完了嗎？"
+       "zh": "你這個月的零用錢還有多少？"
       },
       {
        "sp": "男",
-       "zh": "用完了，媽媽會把零用錢寄給我。"
+       "zh": "本來有五百塊，買書用了三百塊。"
+      },
+      {
+       "sp": "女",
+       "zh": "那你口袋裡還有兩百塊吧？"
+      },
+      {
+       "sp": "男",
+       "zh": "沒有，我剛才又給了弟弟一百塊。"
       }
      ],
-     "question": "誰會寄錢給這位先生？",
+     "question": "這位先生現在還有多少錢？",
      "options": [
-      "他媽媽",
-      "他爸爸",
-      "這位小姐"
+      "一百塊",
+      "兩百塊",
+      "三百塊"
      ],
      "answer": 0,
-     "why": "媽媽會把零用錢寄給我."
+     "why": "500 − 300 (books) − 100 (for his brother) = 100. B = the woman's guess, which he rejects (沒有). C = the money spent on books."
     },
     {
      "type": "listen_dialog",
@@ -2062,118 +2070,122 @@
      "lines": [
       {
        "sp": "男",
-       "zh": "你把鑰匙給我了嗎？"
+       "zh": "你看到我的鑰匙了嗎？我找了很久了。"
       },
       {
        "sp": "女",
-       "zh": "給你了啊，我放在你的口袋裡。"
+       "zh": "你剛才不是把鑰匙放在口袋裡了嗎？"
       },
       {
        "sp": "男",
-       "zh": "口袋裡沒有。"
+       "zh": "口袋裡沒有啊……啊，在這裡！在我的書包裡。"
       },
       {
        "sp": "女",
-       "zh": "我剛才打開信箱，可能放在信箱裡了。"
+       "zh": "你怎麼每次都要找這麼久？"
       }
      ],
-     "question": "鑰匙可能在哪裡？",
+     "question": "這位小姐的意思是什麼？",
      "options": [
-      "這位先生的口袋裡",
-      "信箱裡",
-      "這位小姐的手上",
-      "門上"
+      "這位先生常常找不到東西",
+      "這位先生的口袋破了",
+      "這位先生把鑰匙給了她",
+      "這位先生每次都把鑰匙放在書包裡"
      ],
-     "answer": 1,
-     "why": "可能放在信箱裡了. A: already checked, it isn't there. C & D are not mentioned."
+     "answer": 0,
+     "why": "你怎麼每次都要找這麼久 = why does it take you so long to find things every time → he often has trouble finding his things. B is not mentioned. C is reversed: the key was not given to her. D is too literal: 每次 refers to the habit of searching for a long time, not to where he keeps the key."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "媽媽把零用錢給我。",
+     "text": "哥哥把信箱的鑰匙交給妹妹了。",
      "options": [
       {
-       "icon": "👦💵👩",
-       "label": "a child giving money to mum"
+       "icon": "👧🔑👦",
+       "label": "younger sister giving a key to her older brother"
       },
       {
-       "icon": "👩🔑",
-       "label": "mum giving a key"
+       "icon": "👦✉️👧",
+       "label": "older brother giving a letter to his younger sister"
       },
       {
-       "icon": "👩💵👦",
-       "label": "mum giving pocket money to a child"
+       "icon": "👦🔑👧",
+       "label": "older brother giving a key to his younger sister"
       }
      ],
      "answer": 2,
-     "why": "把 N1 給 N2 = to give N1 to N2."
+     "why": "把 N1 交給 N2: 哥哥 gives 鑰匙 to 妹妹. A reverses the direction; in B the object is a letter, not a key."
     },
     {
      "type": "read_pick",
      "part": "閱讀 Part 2 · Picture → sentence",
      "instr": "Look at the picture, then choose the matching sentence.",
      "picture": {
-      "icon": "📬",
-      "label": "letterbox"
+      "icon": "🚪🔒🔑",
+      "label": "a locked door with the key still in the lock"
      },
      "options": [
-      "信箱裡有信。",
-      "口袋裡有錢。",
-      "院子裡有狗。"
+      "門開著，鑰匙在門上。",
+      "門鎖著，鑰匙還在門上。",
+      "門鎖著，鑰匙不見了。"
      ],
-     "answer": 0,
-     "why": "信箱 = letterbox."
+     "answer": 1,
+     "why": "The door is locked AND the key is still in it → 門鎖著，鑰匙還在門上. A: the door is not open. C: the key is visible, not lost."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "🔑",
-      "label": "key"
+      "icon": "🚪🔒",
+      "label": "a locked door"
      },
-     "text": "我的（　）不見了，不能開門。",
+     "text": "出去以前，別忘了（　）門鎖好。",
      "options": [
-      "信箱",
-      "零用錢",
-      "鑰匙"
+      "把",
+      "給",
+      "被"
      ],
-     "answer": 2,
-     "why": "鑰匙 = key."
+     "answer": 0,
+     "why": "Pattern 把 + O + V + result: 把門鎖好 = lock the door properly. 給 = give/for; 被 = passive marker — neither fits 鎖好."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "我把鑰匙（1）給你。你（2）門鎖了嗎？我把錢都用（3）了。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "我這個月的零用錢只有三千塊，可是現在才十號，我就（1）。媽媽說，買東西以前要想一想，這個東西是不是一定要買。所以我（2）：每天只帶一百塊出去，別的錢都放在書桌的櫃子裡，然後（3），把鑰匙交給姊姊。昨天我很想買一件新衣服，可是口袋裡的錢（4），所以我就（5）。",
      "options": [
-      "交",
-      "把",
-      "完",
-      "鎖"
+      "不夠",
+      "回家了",
+      "想了一個辦法",
+      "把櫃子鎖上",
+      "把錢都放在口袋裡",
+      "把錢花了一大半"
      ],
      "answers": [
+      5,
+      2,
+      3,
       0,
-      1,
-      2
+      1
      ],
-     "why": "(1) 交給 = to hand over. (2) 把 + O + V了. (3) 用完 = used up. 鎖 is already in the second sentence."
+     "why": "(1) it is only the 10th, but more than half of the money is gone. (2) 想了一個辦法, then the plan is described. (3) the cabinet is locked and the key is left with her sister. (4) the money in her pocket is 不夠. (5) 就回家了. 「把錢都放在口袋裡」 contradicts the text (the money is kept in the cabinet)."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read this message, then choose the correct answer.",
-     "text": "志明：我去台中三天。我把鑰匙放在你的信箱裡。請你把我的信拿給美美。——大文",
-     "question": "大文把鑰匙放在哪裡？",
+     "text": "志明：我明天早上去台中，星期五晚上才回來。我已經把家裡的鑰匙放在你的信箱裡了。這幾天請你每天去我家一次，打開我的信箱，把信拿出來放在我的書桌上。廚房的垃圾我已經拿出去了。謝謝你！——大文",
+     "question": "大文為什麼把鑰匙放在志明的信箱裡？",
      "options": [
-      "志明的信箱裡",
-      "口袋裡",
-      "美美那裡",
-      "門口"
+      "他要志明幫他拿信",
+      "他怕鑰匙不見了",
+      "志明要去台中",
+      "他要志明幫他拿垃圾"
      ],
      "answer": 0,
-     "why": "放在你的信箱裡 (你 = 志明). The letter is for Meimei, not the key."
+     "why": "The key is left so that 志明 can get in and 把信拿出來放在書桌上. B is not mentioned in the note. C is reversed: 大文 is the one going to Taichung. D: the rubbish 已經拿出去了."
     }
    ],
    "grammar": [
@@ -13132,14 +13144,14 @@
       "label": "he is holding his thigh in pain",
       "img": "C30-1"
      },
-     "question": "他哪裡痛？",
+     "question": "他怎麼了？",
      "options": [
-      "腿很痛。",
-      "眼睛很痛。",
-      "手很痛。"
+      "他的背很痛。",
+      "他的腿很痛。",
+      "他的眼睛很痛。"
      ],
-     "answer": 0,
-     "why": "腿 = leg/thigh."
+     "answer": 1,
+     "why": "His hands are on his thighs → 腿很痛. A (back) and C (eyes) are other body parts."
     },
     {
      "type": "listen_pic",
@@ -13150,14 +13162,14 @@
       "label": "he keeps looking down at his phone; mum tells him off",
       "img": "C30-2"
      },
-     "question": "媽媽說什麼？",
+     "question": "媽媽可能說什麼？",
      "options": [
-      "別一直低頭看手機。",
-      "快跑！",
-      "快寫作業。"
+      "你的手機真好看！",
+      "別一直低頭看手機了！",
+      "你的手機在哪裡？"
      ],
-     "answer": 0,
-     "why": "低頭 = to lower one's head."
+     "answer": 1,
+     "why": "Mum is angry and the boy is looking down at his phone → she scolds him: 別一直低頭看手機了. A is praise (does not match the angry face). C: the phone is clearly in the boy's hands."
     },
     {
      "type": "listen_pic",
@@ -13168,40 +13180,40 @@
       "label": "her leg is bandaged; she is in pain",
       "img": "C30-3"
      },
-     "question": "你哪裡痛？",
+     "question": "她怎麼了？",
      "options": [
-      "眼睛。",
-      "手。",
-      "腿。"
+      "她的背很痛，不能動。",
+      "她的眼睛不舒服。",
+      "她的腿很痛，不能走路。"
      ],
      "answer": 2,
-     "why": "腿 = leg."
+     "why": "The bandage is on her leg → her leg hurts (腿很痛). A and C are other body parts."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "我怎麼才能長高？",
+     "audio": "醫生說我要怎麼做，腿才會好？",
      "options": [
-      "你要多運動，才會長高。",
-      "我很高。",
-      "你才高。"
+      "你要多休息，別一直走路。",
+      "我的腿比你的長。",
+      "醫生說你昨天來過了。"
      ],
      "answer": 0,
-     "why": "要…才… = must …, only then …. Answer with the condition."
+     "why": "要怎麼做…才會好 asks for ADVICE → 多休息. B only repeats the word 腿. C repeats 醫生 without giving advice."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "你的身高多少？",
+     "audio": "你弟弟現在的身高多少？",
      "options": [
-      "身高很動。",
-      "我的身高高。",
-      "跟我哥哥差不多。"
+      "他身體很好，常常運動。",
+      "快一百七十了，比我還高。",
+      "他今年十五歲。"
      ],
-     "answer": 2,
-     "why": "身高 = height."
+     "answer": 1,
+     "why": "身高多少 → answer with a height (almost 170). A talks about health and C about age — related topics, but not what was asked."
     },
     {
      "type": "listen_dialog",
@@ -13210,29 +13222,29 @@
      "lines": [
       {
        "sp": "女",
-       "zh": "你每天都坐著，要多動一動。"
+       "zh": "你每天坐著，要多動一動。"
       },
       {
        "sp": "男",
-       "zh": "我知道，我的腿和背都很痛。"
+       "zh": "我知道。我本來想每天早上去跑步。"
       },
       {
        "sp": "女",
-       "zh": "多運動，身體才會好。"
+       "zh": "那你為什麼沒去？"
       },
       {
        "sp": "男",
-       "zh": "好，我明天開始每天跑步。"
+       "zh": "早上我都很累，現在晚上去公園走路。"
       }
      ],
-     "question": "這位先生哪裡痛？",
+     "question": "這位先生現在怎麼運動？",
      "options": [
-      "腿和背",
-      "眼睛",
-      "頭"
+      "每天早上跑步",
+      "晚上去公園走路",
+      "每天坐著看手機"
      ],
-     "answer": 0,
-     "why": "我的腿和背都很痛. B & C are not mentioned."
+     "answer": 1,
+     "why": "現在晚上去公園走路. A was only the original plan (本來想), which failed. C is a bad habit, not exercise."
     },
     {
      "type": "listen_dialog",
@@ -13241,109 +13253,122 @@
      "lines": [
       {
        "sp": "女",
-       "zh": "你要不要吃這個？很好吃。"
+       "zh": "你又在低頭看手機了？"
       },
       {
        "sp": "男",
-       "zh": "我才不要，它的味道很奇怪。"
+       "zh": "我才沒有呢！我在看今天的天氣。"
+      },
+      {
+       "sp": "女",
+       "zh": "你已經看了一個小時了，天氣有那麼多可以看嗎？"
+      },
+      {
+       "sp": "男",
+       "zh": "好啦，好啦，我不看了。"
       }
      ],
-     "question": "這位先生的意思是什麼？",
+     "question": "這位小姐的意思是什麼？",
      "options": [
-      "他不想吃",
-      "他很想吃",
-      "他吃過了"
+      "她不相信這位先生在看天氣",
+      "她想知道今天的天氣",
+      "這位先生的眼睛不好",
+      "這位先生應該多看天氣"
      ],
      "answer": 0,
-     "why": "我才不要 = I certainly don't want to (a firm refusal, 才3)."
+     "why": "天氣有那麼多可以看嗎 is a rhetorical question: no one checks the weather for an hour → she does not believe him. B: she is not asking about the weather. C is not mentioned. D is the opposite (she tells him to stop)."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "媽媽背著孩子。",
+     "text": "奶奶每天早上都在公園裡動一動身體。",
      "options": [
       {
-       "icon": "👩🍳",
-       "label": "mum cooking"
+       "icon": "👵🌳🪑",
+       "label": "grandma sitting on a park bench"
       },
       {
-       "icon": "👩🛒",
-       "label": "mum shopping"
+       "icon": "👵🏠🤸",
+       "label": "grandma exercising at home"
       },
       {
-       "icon": "👩🧒",
-       "label": "mum carrying a child"
+       "icon": "👵🌳🤸",
+       "label": "grandma exercising in the park"
       }
      ],
      "answer": 2,
-     "why": "背 = to carry on one's back."
+     "why": "Two conditions: 在公園裡 (in the park) + 動一動 (moving). A is in the park but only sitting; B is moving but at home."
     },
     {
      "type": "read_pick",
      "part": "閱讀 Part 2 · Picture → sentence",
      "instr": "Look at the picture, then choose the matching sentence.",
      "picture": {
-      "icon": "🐕",
-      "label": "a long-haired dog"
+      "icon": "🙇📱",
+      "label": "he is looking down at his phone"
      },
      "options": [
-      "這隻狗的腿很短。",
-      "這隻狗的毛很長。",
-      "這隻狗死了。"
+      "他在跟朋友打電話。",
+      "他在電腦前面工作。",
+      "他一直低頭看手機。"
      ],
-     "answer": 1,
-     "why": "毛 = fur."
+     "answer": 2,
+     "why": "Head bent over the phone → 低頭看手機. A: the phone is not held to his ear. B: there is no computer."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "🏃💪",
-      "label": "exercise makes you healthy"
+      "icon": "🏃😫",
+      "label": "exhausted after running"
      },
-     "text": "要多運動，身體（　）會好。",
+     "text": "跑了一個小時，我的腿累（　）了！",
      "options": [
-      "都",
-      "才",
-      "還"
+      "完",
+      "死",
+      "到"
      ],
      "answer": 1,
-     "why": "(要)…才… = must …, only then …."
+     "why": "累死了 = dead tired (死了 intensifies). 累完了 and 累到了 are not used with this meaning."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "你要多運動，身體（1）會好。別一直（2）看手機，對（3）不好。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "我每天在公司坐八個小時，回家以後還（1）。上個月我的背和腿都開始痛，就去看了醫生。醫生說：「你（2），身體才會好。」他還說，別一直低頭，因為這樣（3）。所以現在我每天下班以後先去公園走四十分鐘，（4）。一個月以後，背真的不痛了，（5）。",
      "options": [
-      "才",
-      "低頭",
-      "眼睛",
-      "毛"
+      "再回家吃晚飯",
+      "一直低頭看手機",
+      "要每天動一動",
+      "對眼睛和背都不好",
+      "對身體特別好的",
+      "精神也好多了"
      ],
      "answers": [
-      0,
       1,
-      2
+      2,
+      3,
+      0,
+      5
      ],
-     "why": "(1) 要…才…. (2) 低頭 = to look down. (3) 對眼睛不好. 毛 doesn't fit."
+     "why": "(1) a bad habit at home. (2) pattern 要…才: 要每天動一動，身體才會好. (3) the reason not to look down. (4) 先…再: walk first, then go home for dinner. (5) an extra good result. 「對身體特別好的」 ends in 的, so it cannot finish any sentence."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the correct answer.",
-     "text": "醫生說：一直低頭看手機，對眼睛和背都不好。每天要多動一動，身體才會好。",
-     "question": "醫生說什麼對身體好？",
+     "text": "很多人覺得，小孩子長得高不高，只跟爸爸媽媽的身高有關係。可是，吃得好、常常運動、晚上早點睡覺，也很重要。我弟弟小時候很瘦，也不高，可是他每天打籃球，晚上十點以前一定睡覺。現在他十八歲了，比爸爸還高一點。",
+     "question": "這個人想說什麼？",
      "options": [
-      "多動一動",
-      "一直看手機",
-      "低頭",
-      "多吃藥"
+      "身高不是只跟爸媽有關係",
+      "小孩子應該多喝牛奶",
+      "弟弟的爸爸很高",
+      "打籃球的人都很高"
      ],
      "answer": 0,
-     "why": "多動一動，身體才會好. B and C are actually said to be bad."
+     "why": "Main idea: 可是…也很重要 → height is not only about the parents. B is not mentioned. C: the text only says the brother is taller than the father, not that the father is tall. D over-generalises from one person."
     }
    ],
    "grammar": [
@@ -26094,12 +26119,12 @@
      },
      "question": "住宿舍怎麼樣？",
      "options": [
-      "只有好處。",
-      "只有壞處。",
+      "只有好處，沒有壞處。",
+      "只有壞處，沒有好處。",
       "有好處，也有壞處。"
      ],
      "answer": 2,
-     "why": "好處 = advantage; 壞處 = disadvantage."
+     "why": "There is both a plus AND a minus sign → 有好處，也有壞處. A and B each give only one side."
     },
     {
      "type": "listen_pic",
@@ -26110,27 +26135,27 @@
       "label": "the picnic is cancelled because of rain; she is sad",
       "img": "C60-2"
      },
-     "question": "今天天氣怎麼樣？",
+     "question": "她為什麼不高興？",
      "options": [
-      "天氣很好。",
-      "好可惜，下雨了。",
-      "下雪了。"
+      "天氣太熱了，不想出去。",
+      "她的東西不見了。",
+      "下雨了，不能出去玩。"
      ],
-     "answer": 1,
-     "why": "可惜 = what a pity."
+     "answer": 2,
+     "why": "Rain → the outing is cancelled. A: it is raining, not hot. B is not shown in the picture."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "住宿舍好不好？",
+     "audio": "你本來不是住在宿舍嗎？怎麼搬走了？",
      "options": [
-      "其實有好處，也有壞處。",
-      "宿舍好不好。",
-      "我住。"
+      "宿舍的房間很大。",
+      "宿舍太吵了，影響我念書。",
+      "我明年想住宿舍。"
      ],
-     "answer": 0,
-     "why": "其實 gives a more balanced answer than expected."
+     "answer": 1,
+     "why": "The question asks for the REASON for moving → 太吵，影響我念書. A is an advantage of the dorm, not a reason to leave. C contradicts: he has already moved out."
     },
     {
      "type": "listen_reply",
@@ -26138,12 +26163,12 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "你了解臺灣的文化嗎？",
      "options": [
+      "我很了解你的心情。",
       "了解一點，還在學習。",
-      "文化很了解。",
-      "我了解你嗎。"
+      "臺灣的東西很便宜。"
      ],
-     "answer": 0,
-     "why": "了解 = to understand."
+     "answer": 1,
+     "why": "The question is how well he understands Taiwanese culture → 了解一點. A uses 了解 in another sense (feelings). C is about Taiwan but does not answer."
     },
     {
      "type": "listen_dialog",
@@ -26152,21 +26177,29 @@
      "lines": [
       {
        "sp": "男",
-       "zh": "妳本來想學什麼？"
+       "zh": "你本來想學什麼？"
       },
       {
        "sp": "女",
-       "zh": "我本來想學法律，後來學了中文。"
+       "zh": "我本來想學法律，我爸爸也希望我學法律。"
+      },
+      {
+       "sp": "男",
+       "zh": "那你後來怎麼學了中文？"
+      },
+      {
+       "sp": "女",
+       "zh": "我來臺灣旅行了一次，就喜歡上這裡了。"
       }
      ],
-     "question": "這位小姐現在學什麼？",
+     "question": "這位小姐為什麼學中文？",
      "options": [
-      "中文",
-      "法律",
-      "歷史"
+      "她爸爸要她學中文",
+      "她去臺灣旅行以後很喜歡臺灣",
+      "她覺得法律太難"
      ],
-     "answer": 0,
-     "why": "本來 = the original plan (法律); 後來 = what actually happened (中文)."
+     "answer": 1,
+     "why": "旅行了一次，就喜歡上這裡了 → that is the reason. A is reversed: her father wanted her to study 法律. C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -26175,21 +26208,30 @@
      "lines": [
       {
        "sp": "男",
-       "zh": "我以為妳是日本人。"
+       "zh": "你不是很喜歡那家公司嗎？怎麼不做了？"
       },
       {
        "sp": "女",
-       "zh": "其實我是韓國人。"
+       "zh": "其實我本來就不太喜歡，只是那裡的錢比較多。"
+      },
+      {
+       "sp": "男",
+       "zh": "那現在呢？"
+      },
+      {
+       "sp": "女",
+       "zh": "現在每天都要工作到晚上十點，錢再多也沒有用。"
       }
      ],
-     "question": "這位小姐是哪國人？",
+     "question": "這位小姐為什麼不做了？",
      "options": [
-      "韓國人",
-      "日本人",
-      "臺灣人"
+      "工作的時間太長",
+      "她不喜歡公司裡的人",
+      "公司的錢太少",
+      "她要去念書"
      ],
      "answer": 0,
-     "why": "其實 corrects an assumption (以為) → 韓國人."
+     "why": "每天工作到晚上十點 → the working hours are too long. B is not mentioned. C is the opposite (錢比較多). D is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -26221,29 +26263,29 @@
       "宿舍沒有壞處"
      ],
      "answer": 0,
-     "why": "還好…很早就休息 → it doesn't disturb him. B & C are unsupported. D: the man mentions there are 壞處."
+     "why": "還好…很早就休息 → her roommate does not disturb her. B and C have no basis in the dialogue. D: the man actually mentions a 壞處."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "其實他不是老師，是學生。",
+     "text": "我以為他是老師，其實他是來上課的學生。",
      "options": [
       {
        "icon": "🧑‍🏫",
        "label": "teacher"
       },
       {
-       "icon": "👨‍⚕️",
-       "label": "doctor"
+       "icon": "👨‍💼",
+       "label": "an office worker"
       },
       {
        "icon": "🧑‍🎓",
-       "label": "actually a student"
+       "label": "a student"
       }
      ],
      "answer": 2,
-     "why": "其實 = actually."
+     "why": "以為 = a wrong assumption; 其實 = the truth → he is a student. A is the wrong assumption; B is not mentioned."
     },
     {
      "type": "read_pick",
@@ -26251,15 +26293,15 @@
      "instr": "Look at the picture, then choose the matching sentence.",
      "picture": {
       "icon": "📱😵",
-      "label": "too much time on the phone"
+      "label": "dizzy from too much time on the phone"
      },
      "options": [
-      "玩手機會影響學習。",
-      "我沒有手機。",
-      "手機很便宜。"
+      "這支手機很便宜。",
+      "一直玩手機會影響身體。",
+      "他在用手機學中文。"
      ],
-     "answer": 0,
-     "why": "影響 = to affect."
+     "answer": 1,
+     "why": "A dizzy face because of the phone → 影響身體. A (price) and C (studying) are not shown in the picture."
     },
     {
      "type": "read_gap",
@@ -26269,46 +26311,51 @@
       "icon": "☂️😅",
       "label": "luckily she brought an umbrella"
      },
-     "text": "下大雨，（　）我帶了傘。",
+     "text": "下午下了很大的雨，（　）我帶了傘。",
      "options": [
-      "還好",
+      "可惜",
       "其實",
-      "可惜"
+      "還好"
      ],
-     "answer": 0,
-     "why": "還好 = luckily."
+     "answer": 2,
+     "why": "還好 = luckily (something good in a bad situation). 可惜 = what a pity (for something bad). 其實 = actually (corrects an assumption) — there is no assumption to correct here."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "（1）住宿舍有好處，也有壞處。我（2）住在宿舍，後來搬家了。太吵會（3）念書。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "我本來以為住在宿舍（1），因為房租便宜，走路五分鐘就到教室。住了一個學期以後，我才發現（2）。我的室友每天晚上都在房間裡大聲講電話，（3）。我跟他說了好幾次，可是他（4）。最後我決定搬出去。其實住宿舍也有好處，只是（5）。",
      "options": [
-      "其實",
-      "本來",
-      "影響",
-      "可惜"
+      "事情沒有那麼簡單",
+      "只有好處",
+      "不適合我",
+      "可惜我沒有搬家",
+      "還是一樣",
+      "影響我念書"
      ],
      "answers": [
-      0,
       1,
+      0,
+      5,
+      4,
       2
      ],
-     "why": "(1) 其實 = actually. (2) 本來 = originally. (3) 影響 = to affect/disturb. 可惜 doesn't fit."
+     "why": "(1) the first assumption (本來以為) = 只有好處. (2) 才發現 → it was not that simple. (3) the result of a noisy roommate. (4) he was told several times but it was 還是一樣. (5) 其實…只是 不適合我. 「可惜我沒有搬家」 contradicts the text: he did move out."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the correct answer.",
-     "text": "住宿舍的好處是便宜，也可以認識很多朋友。壞處是很吵，會影響念書。",
-     "question": "住宿舍的壞處是什麼？",
+     "text": "大學一年級的時候，我住在學校宿舍。宿舍很便宜，離教室也很近，我還認識了很多朋友。可是四個人住一個房間，有人要念書，有人要打電話，常常很吵。二年級我就搬出去，一個人租了一個小房間。現在不吵了，可是房租貴了很多，有時候也覺得一個人有點無聊。",
+     "question": "這個人覺得搬出宿舍以後怎麼樣？",
      "options": [
-      "太吵",
-      "太貴",
-      "朋友太少"
+      "有好處，也有壞處",
+      "只有好處，沒有壞處",
+      "比住宿舍便宜",
+      "朋友比以前多"
      ],
      "answer": 0,
-     "why": "壞處是很吵. B and C reverse the advantages."
+     "why": "After moving: 不吵了 (a plus) but 房租貴、有點無聊 (minuses). B ignores the downsides. C is the opposite (房租貴了很多). D: he had many friends when he lived in the dorm."
     }
    ],
    "grammar": [

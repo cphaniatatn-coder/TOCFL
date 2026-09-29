@@ -695,14 +695,14 @@
     "label": "dia terus menunduk melihat ponsel; ibu menegur",
     "img": "C30-2"
    },
-   "question": "媽媽說什麼？",
+   "question": "媽媽可能說什麼？",
    "options": [
-    "別一直低頭看手機。",
-    "快跑！",
-    "快寫作業。"
+    "你的手機真好看！",
+    "別一直低頭看手機了！",
+    "你的手機在哪裡？"
    ],
-   "answer": 0,
-   "why": "低頭 = menunduk."
+   "answer": 1,
+   "why": "Ibu marah, anak menunduk ke ponsel → menegur: 別一直低頭看手機了. A memuji (tidak cocok dengan wajah marah). C: ponselnya jelas di tangan anak."
   },
   {
    "type": "listen_pic",
@@ -713,82 +713,82 @@
     "label": "kakinya diperban, dia kesakitan",
     "img": "C30-3"
    },
-   "question": "你哪裡痛？",
+   "question": "她怎麼了？",
    "options": [
-    "眼睛。",
-    "手。",
-    "腿。"
+    "她的背很痛，不能動。",
+    "她的眼睛不舒服。",
+    "她的腿很痛，不能走路。"
    ],
    "answer": 2,
-   "why": "腿 = kaki (tungkai)."
+   "why": "Perban ada di kaki → kakinya sakit (腿很痛). A dan C = bagian tubuh lain."
   },
   {
    "type": "listen_reply",
    "part": "聽力 Part 2 · Tanya-jawab satu putaran",
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你的身高多少？",
+   "audio": "你弟弟現在的身高多少？",
    "options": [
-    "身高很動。",
-    "我的身高高。",
-    "跟我哥哥差不多。"
+    "他身體很好，常常運動。",
+    "快一百七十了，比我還高。",
+    "他今年十五歲。"
    ],
-   "answer": 2,
-   "why": "身高 = tinggi badan."
+   "answer": 1,
+   "why": "身高多少 → jawab tinggi badan (hampir 170). A menjawab soal kesehatan; C menjawab umur — keduanya topik dekat tapi pertanyaannya lain."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "媽媽背著孩子。",
+   "text": "奶奶每天早上都在公園裡動一動身體。",
    "options": [
     {
-     "icon": "👩🍳",
-     "label": "ibu memasak"
+     "icon": "👵🌳🪑",
+     "label": "nenek duduk di bangku taman"
     },
     {
-     "icon": "👩🛒",
-     "label": "ibu berbelanja"
+     "icon": "👵🏠🤸",
+     "label": "nenek senam di rumah"
     },
     {
-     "icon": "👩🧒",
-     "label": "ibu menggendong anak"
+     "icon": "👵🌳🤸",
+     "label": "nenek senam di taman"
     }
    ],
    "answer": 2,
-   "why": "背 = menggendong di punggung."
+   "why": "Dua syarat: 在公園裡 (taman) + 動一動 (bergerak). A di taman tapi hanya duduk; B bergerak tapi di rumah."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🐕",
-    "label": "anjing berbulu panjang"
+    "icon": "🙇📱",
+    "label": "dia menunduk melihat ponsel"
    },
    "options": [
-    "這隻狗的腿很短。",
-    "這隻狗的毛很長。",
-    "這隻狗死了。"
+    "他在跟朋友打電話。",
+    "他在電腦前面工作。",
+    "他一直低頭看手機。"
    ],
-   "answer": 1,
-   "why": "毛 = bulu."
+   "answer": 2,
+   "why": "Kepala menunduk ke ponsel → 低頭看手機. A: ponsel tidak ditempelkan ke telinga. B: tidak ada komputer."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🏃💪",
-    "label": "olahraga membuat sehat"
+    "icon": "🏃😫",
+    "label": "lelah sekali setelah berlari"
    },
-   "text": "要多運動，身體（　）會好。",
+   "text": "跑了一個小時，我的腿累（　）了！",
    "options": [
-    "都",
-    "才",
-    "還"
+    "完",
+    "死",
+    "到"
    ],
    "answer": 1,
-   "why": "(要)…才… = harus …, baru …."
+   "why": "累死了 = capek sekali (死了 menegaskan tingkat). 累完了 dan 累到了 tidak lazim dalam arti ini."
   },
   {
    "type": "listen_dialog",
@@ -797,29 +797,29 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你每天都坐著，要多動一動。"
+     "zh": "你每天坐著，要多動一動。"
     },
     {
      "sp": "男",
-     "zh": "我知道，我的腿和背都很痛。"
+     "zh": "我知道。我本來想每天早上去跑步。"
     },
     {
      "sp": "女",
-     "zh": "多運動，身體才會好。"
+     "zh": "那你為什麼沒去？"
     },
     {
      "sp": "男",
-     "zh": "好，我明天開始每天跑步。"
+     "zh": "早上我都很累，現在晚上去公園走路。"
     }
    ],
-   "question": "這位先生哪裡痛？",
+   "question": "這位先生現在怎麼運動？",
    "options": [
-    "腿和背",
-    "眼睛",
-    "頭"
+    "每天早上跑步",
+    "晚上去公園走路",
+    "每天坐著看手機"
    ],
-   "answer": 0,
-   "why": "我的腿和背都很痛. B & C tidak disebut."
+   "answer": 1,
+   "why": "現在晚上去公園走路. A hanya rencana awal (本來想) yang gagal. C kebiasaan buruk, bukan olahraga."
   }
  ],
  "C31": [

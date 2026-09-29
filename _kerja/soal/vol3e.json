@@ -1110,12 +1110,12 @@
    },
    "question": "住宿舍怎麼樣？",
    "options": [
-    "只有好處。",
-    "只有壞處。",
+    "只有好處，沒有壞處。",
+    "只有壞處，沒有好處。",
     "有好處，也有壞處。"
    ],
    "answer": 2,
-   "why": "好處 = keuntungan; 壞處 = kerugian."
+   "why": "Ada tanda plus DAN minus → 有好處，也有壞處. A dan B masing-masing hanya satu sisi."
   },
   {
    "type": "listen_pic",
@@ -1126,14 +1126,14 @@
     "label": "piknik batal karena hujan, dia sedih",
     "img": "C60-2"
    },
-   "question": "今天天氣怎麼樣？",
+   "question": "她為什麼不高興？",
    "options": [
-    "天氣很好。",
-    "好可惜，下雨了。",
-    "下雪了。"
+    "天氣太熱了，不想出去。",
+    "她的東西不見了。",
+    "下雨了，不能出去玩。"
    ],
-   "answer": 1,
-   "why": "可惜 = sayang sekali."
+   "answer": 2,
+   "why": "Hujan → rencana keluar batal. A: cuacanya hujan, bukan panas. B tidak terlihat di gambar."
   },
   {
    "type": "listen_reply",
@@ -1141,34 +1141,34 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "你了解臺灣的文化嗎？",
    "options": [
+    "我很了解你的心情。",
     "了解一點，還在學習。",
-    "文化很了解。",
-    "我了解你嗎。"
+    "臺灣的東西很便宜。"
    ],
-   "answer": 0,
-   "why": "了解 = memahami."
+   "answer": 1,
+   "why": "Ditanya seberapa paham budaya Taiwan → 了解一點. A memakai 了解 dalam konteks lain (perasaan). C topik Taiwan tapi tidak menjawab."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "其實他不是老師，是學生。",
+   "text": "我以為他是老師，其實他是來上課的學生。",
    "options": [
     {
      "icon": "🧑‍🏫",
      "label": "guru"
     },
     {
-     "icon": "👨‍⚕️",
-     "label": "dokter"
+     "icon": "👨‍💼",
+     "label": "pegawai kantor"
     },
     {
      "icon": "🧑‍🎓",
-     "label": "sebenarnya murid"
+     "label": "murid"
     }
    ],
    "answer": 2,
-   "why": "其實 = sebenarnya."
+   "why": "以為 = anggapan yang salah; 其實 = kenyataan → dia murid. A adalah anggapan yang keliru; B tidak disebut."
   },
   {
    "type": "read_pick",
@@ -1176,15 +1176,15 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "📱😵",
-    "label": "terlalu banyak main ponsel"
+    "label": "terlalu banyak main ponsel sampai pusing"
    },
    "options": [
-    "玩手機會影響學習。",
-    "我沒有手機。",
-    "手機很便宜。"
+    "這支手機很便宜。",
+    "一直玩手機會影響身體。",
+    "他在用手機學中文。"
    ],
-   "answer": 0,
-   "why": "影響 = mempengaruhi."
+   "answer": 1,
+   "why": "Wajah pusing karena ponsel → 影響身體. A (harga) dan C (belajar) tidak terlihat di gambar."
   },
   {
    "type": "read_gap",
@@ -1194,14 +1194,14 @@
     "icon": "☂️😅",
     "label": "untung bawa payung"
    },
-   "text": "下大雨，（　）我帶了傘。",
+   "text": "下午下了很大的雨，（　）我帶了傘。",
    "options": [
-    "還好",
+    "可惜",
     "其實",
-    "可惜"
+    "還好"
    ],
-   "answer": 0,
-   "why": "還好 = untungnya."
+   "answer": 2,
+   "why": "還好 = untungnya (hal baik di tengah situasi buruk). 可惜 = sayang (untuk hal buruk). 其實 = sebenarnya (mengoreksi anggapan) — tidak ada anggapan yang dikoreksi."
   },
   {
    "type": "listen_dialog",
@@ -1233,7 +1233,7 @@
     "宿舍沒有壞處"
    ],
    "answer": 0,
-   "why": "還好…很早就休息 → tidak mengganggu. B & C tidak berdasar. D: pria menyebut ada 壞處."
+   "why": "還好…很早就休息 → teman sekamarnya tidak mengganggu. B & C tidak berdasar. D: si laki-laki justru menyebut ada 壞處."
   }
  ],
  "C61": [

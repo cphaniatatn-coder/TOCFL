@@ -945,14 +945,14 @@
     "label": "anak memberikan kunci kepada ibu",
     "img": "C05-4"
    },
-   "question": "你把鑰匙給誰了？",
+   "question": "他把鑰匙給誰了？",
    "options": [
-    "給媽媽了。",
-    "給爸爸了。",
-    "給老師了。"
+    "他把鑰匙給媽媽了。",
+    "媽媽把鑰匙給他了。",
+    "他把鑰匙放在信箱裡了。"
    ],
    "answer": 0,
-   "why": "把 + N1 + 給 + N2 = memberikan N1 kepada N2."
+   "why": "Anak yang memberi, ibu yang menerima → 他把鑰匙給媽媽了. B membalik arah; C: tidak ada kotak surat."
   },
   {
    "type": "listen_pic",
@@ -963,14 +963,14 @@
     "label": "pintu terkunci",
     "img": "C05-5"
    },
-   "question": "門開著嗎？",
+   "question": "現在可以進去嗎？",
    "options": [
-    "開著。",
-    "窗戶開著。",
-    "門鎖了。"
+    "可以，門開著。",
+    "不行，門鎖了。",
+    "不行，裡面有人。"
    ],
-   "answer": 2,
-   "why": "鎖了 = terkunci."
+   "answer": 1,
+   "why": "Pintu terkunci → 不行，門鎖了. A kebalikannya; C alasannya tidak terlihat di gambar."
   },
   {
    "type": "listen_dialog",
@@ -979,22 +979,22 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "鑰匙在哪裡？"
+     "zh": "你的鑰匙呢？不是在口袋裡嗎？"
     },
     {
      "sp": "男",
-     "zh": "在我的口袋裡。"
+     "zh": "不在口袋裡，我放在書包裡了。"
     }
    ],
    "question": "鑰匙在哪裡？",
    "options": [
     {
-     "icon": "🎒🔑",
-     "label": "di tas"
-    },
-    {
      "icon": "👖🔑",
      "label": "di kantong"
+    },
+    {
+     "icon": "🎒🔑",
+     "label": "di tas"
     },
     {
      "icon": "🚪🔑",
@@ -1002,7 +1002,7 @@
     }
    ],
    "answer": 1,
-   "why": "口袋 = kantong."
+   "why": "不在口袋裡 → 放在書包裡. A = tebakan si perempuan yang dibantah; C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1011,38 +1011,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "我明天去台中，你幫我看一下信箱，好嗎？"
+     "zh": "我下個星期要去台中，你可以幫我拿信嗎？"
     },
     {
      "sp": "女",
-     "zh": "好，把鑰匙給我吧。"
+     "zh": "好啊。你的狗呢？要我幫你看嗎？"
     },
     {
      "sp": "男",
-     "zh": "給你。"
+     "zh": "狗我帶去台中。"
     },
     {
      "sp": "女",
-     "zh": "你什麼時候回來？"
+     "zh": "好，那你把信箱的鑰匙給我吧。"
     }
    ],
    "question": "這位小姐要幫這位先生做什麼？",
    "options": [
     {
      "icon": "📬",
-     "label": "memeriksa kotak surat"
+     "label": "mengambil surat dari kotak surat"
     },
     {
      "icon": "🐕",
-     "label": "memberi makan anjing"
+     "label": "menjaga anjing"
     },
     {
-     "icon": "🪴",
-     "label": "menyiram tanaman"
+     "icon": "🚆",
+     "label": "pergi ke Taichung"
     }
    ],
    "answer": 0,
-   "why": "看一下信箱."
+   "why": "幫我拿信 → mengambil surat. B ditolak (狗我帶去台中). C: yang ke Taichung si laki-laki."
   },
   {
    "type": "listen_dialog",
@@ -1051,85 +1051,85 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "我的零用錢用完了。"
+     "zh": "這個月的零用錢我又花完了。"
     },
     {
      "sp": "男",
-     "zh": "你這個月買了什麼？"
+     "zh": "才十號啊！你都買了什麼？"
     },
     {
      "sp": "女",
-     "zh": "買了很多衣服。"
+     "zh": "也沒買什麼，就是常常跟朋友出去吃飯。"
     },
     {
      "sp": "男",
-     "zh": "你應該少買一點。"
+     "zh": "我看，你下個月還是自己做飯吧。"
     }
    ],
    "question": "這位先生是什麼意思？",
    "options": [
-    "這位小姐的零用錢很多",
-    "這位先生沒有錢",
-    "這位小姐應該多買衣服",
-    "這位小姐買太多東西"
+    "這位小姐應該少出去吃飯",
+    "這位小姐應該多買東西",
+    "這位先生想跟她一起吃飯",
+    "這位小姐的零用錢太少了"
    ],
-   "answer": 3,
-   "why": "應該少買 → terlalu banyak belanja."
+   "answer": 0,
+   "why": "還是自己做飯吧 = sebaiknya masak sendiri → jangan sering makan di luar supaya uang cukup. B kebalikannya. C tidak disebut. D: masalahnya cara belanja, bukan jumlah uang saku."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他把錢放進口袋。",
+   "text": "媽媽把這個月的零用錢交給姊姊了。",
    "options": [
     {
-     "icon": "💵👖",
-     "label": "uang ke kantong"
+     "icon": "👧💵👩",
+     "label": "kakak perempuan memberi uang ke ibu"
     },
     {
-     "icon": "💵👛",
-     "label": "uang ke dompet"
+     "icon": "👩💵👧",
+     "label": "ibu memberi uang ke kakak perempuan"
     },
     {
-     "icon": "💵🏦",
-     "label": "uang ke bank"
+     "icon": "👩🔑👧",
+     "label": "ibu memberi kunci ke kakak perempuan"
     }
    ],
-   "answer": 0,
-   "why": "口袋."
+   "answer": 1,
+   "why": "把 N1 交給 N2: 媽媽 memberi 零用錢 kepada 姊姊. A membalik arah; C bendanya kunci."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "📬✉️",
-    "label": "kotak surat penuh"
+    "icon": "👖🔑💵",
+    "label": "saku celana berisi kunci dan uang"
    },
    "options": [
-    "信箱裡沒有信。",
-    "信箱裡有很多信。",
-    "信箱壞了。"
+    "他的口袋裡只有鑰匙，沒有錢。",
+    "他的口袋裡有鑰匙，也有錢。",
+    "他的口袋裡只有錢，沒有鑰匙。"
    ],
    "answer": 1,
-   "why": "信箱 = kotak surat."
+   "why": "Di saku ada kunci DAN uang → 有鑰匙，也有錢. A dan C masing-masing menghilangkan satu benda."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🔑",
-    "label": "kunci rumah"
+    "icon": "🔑👩",
+    "label": "memberikan kunci kepada ibu"
    },
-   "text": "我忘了帶（　），不能開門。",
+   "text": "我出去以前，把鑰匙交（　）媽媽了。",
    "options": [
-    "口袋",
-    "鑰匙",
-    "信箱"
+    "在",
+    "給",
+    "到"
    ],
    "answer": 1,
-   "why": "鑰匙 = kunci."
+   "why": "Pola 把 N1 V給 N2: 交給 = menyerahkan kepada. 在 dan 到 untuk tempat, bukan orang penerima."
   },
   {
    "type": "cloze",
@@ -1139,16 +1139,16 @@
    "options": [
     "家裡的鑰匙",
     "打開信箱",
-    "把門鎖好",
     "廚房的櫃子裡",
+    "零用錢都花光了",
     "交給他",
-    "零用錢都花光了"
+    "把門鎖好"
    ],
    "answers": [
     0,
     1,
+    5,
     2,
-    3,
     4
    ],
    "why": "給鑰匙 agar bisa masuk; 打開信箱 cek surat; 把門鎖好 sebelum keluar; makanan kucing di 櫃子裡; 一千塊交給他. 「零用錢都花光了」 tidak cocok di titik mana pun."

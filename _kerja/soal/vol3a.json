@@ -563,12 +563,12 @@
    },
    "question": "鑰匙在哪裡？",
    "options": [
-    "在我的口袋裡。",
-    "在皮包裡。",
-    "在門上。"
+    "在褲子的口袋裡。",
+    "在衣服的口袋裡。",
+    "在桌子上的書包裡。"
    ],
    "answer": 0,
-   "why": "口袋 = saku."
+   "why": "Kunci ada di saku CELANA (褲子). B: saku baju — mirip tapi salah tempat. C: tidak ada tas di gambar."
   },
   {
    "type": "listen_pic",
@@ -579,82 +579,82 @@
     "label": "dia mengunci pintu dengan kunci",
     "img": "C05-3"
    },
-   "question": "他要做什麼？",
+   "question": "他在做什麼？",
    "options": [
-    "把窗戶關上。",
-    "開門。",
-    "把門鎖上。"
+    "他在用鑰匙鎖門。",
+    "他在用鑰匙開信箱。",
+    "他在找口袋裡的鑰匙。"
    ],
-   "answer": 2,
-   "why": "把門鎖上 = mengunci pintu."
+   "answer": 0,
+   "why": "Kunci dipakai di pintu → 鎖門. B: tidak ada kotak surat. C: kuncinya sudah di tangan, tidak sedang dicari."
   },
   {
    "type": "listen_reply",
    "part": "聽力 Part 2 · Tanya-jawab satu putaran",
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你的零用錢一個月多少？",
+   "audio": "你的零用錢是誰給你的？",
    "options": [
-    "零用錢很多。",
-    "三千塊。",
-    "我給零用錢。"
+    "我爸爸每個月給我。",
+    "我每個月給我妹妹。",
+    "我把零用錢放在口袋裡。"
    ],
-   "answer": 1,
-   "why": "零用錢 = uang jajan."
+   "answer": 0,
+   "why": "Ditanya SIAPA yang memberi → 爸爸給我. B membalik arah (dia yang memberi adiknya). C menjawab di mana uangnya disimpan."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "媽媽把零用錢給我。",
+   "text": "哥哥把信箱的鑰匙交給妹妹了。",
    "options": [
     {
-     "icon": "👦💵👩",
-     "label": "anak memberi uang ke ibu"
+     "icon": "👧🔑👦",
+     "label": "adik perempuan memberi kunci ke kakak laki-laki"
     },
     {
-     "icon": "👩🔑",
-     "label": "ibu memberi kunci"
+     "icon": "👦✉️👧",
+     "label": "kakak laki-laki memberi surat ke adik perempuan"
     },
     {
-     "icon": "👩💵👦",
-     "label": "ibu memberi uang jajan ke anak"
+     "icon": "👦🔑👧",
+     "label": "kakak laki-laki memberi kunci ke adik perempuan"
     }
    ],
    "answer": 2,
-   "why": "把 N1 給 N2 = memberikan N1 kepada N2."
+   "why": "把 N1 交給 N2: 哥哥 memberi 鑰匙 kepada 妹妹. A membalik arah; B bendanya surat, bukan kunci."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "📬",
-    "label": "kotak surat"
+    "icon": "🚪🔒🔑",
+    "label": "pintu terkunci, kuncinya masih tergantung di pintu"
    },
    "options": [
-    "信箱裡有信。",
-    "口袋裡有錢。",
-    "院子裡有狗。"
+    "門開著，鑰匙在門上。",
+    "門鎖著，鑰匙還在門上。",
+    "門鎖著，鑰匙不見了。"
    ],
-   "answer": 0,
-   "why": "信箱 = kotak surat."
+   "answer": 1,
+   "why": "Pintu terkunci DAN kuncinya masih menempel → 門鎖著，鑰匙還在門上. A: pintu tidak terbuka. C: kuncinya terlihat, tidak hilang."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🔑",
-    "label": "kunci"
+    "icon": "🚪🔒",
+    "label": "pintu yang dikunci"
    },
-   "text": "我的（　）不見了，不能開門。",
+   "text": "出去以前，別忘了（　）門鎖好。",
    "options": [
-    "信箱",
-    "零用錢",
-    "鑰匙"
+    "把",
+    "給",
+    "被"
    ],
-   "answer": 2,
-   "why": "鑰匙 = anak kunci."
+   "answer": 0,
+   "why": "Pola 把 + O + V + hasil: 把門鎖好 = mengunci pintu dengan baik. 給 = memberi/untuk; 被 = di-(pasif) — keduanya tidak cocok dengan 鎖好."
   },
   {
    "type": "listen_dialog",
@@ -663,30 +663,30 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你把鑰匙給我了嗎？"
+     "zh": "你看到我的鑰匙了嗎？我找了很久了。"
     },
     {
      "sp": "女",
-     "zh": "給你了啊，我放在你的口袋裡。"
+     "zh": "你剛才不是把鑰匙放在口袋裡了嗎？"
     },
     {
      "sp": "男",
-     "zh": "口袋裡沒有。"
+     "zh": "口袋裡沒有啊……啊，在這裡！在我的書包裡。"
     },
     {
      "sp": "女",
-     "zh": "我剛才打開信箱，可能放在信箱裡了。"
+     "zh": "你怎麼每次都要找這麼久？"
     }
    ],
-   "question": "鑰匙可能在哪裡？",
+   "question": "這位小姐的意思是什麼？",
    "options": [
-    "這位先生的口袋裡",
-    "信箱裡",
-    "這位小姐的手上",
-    "門上"
+    "這位先生常常找不到東西",
+    "這位先生的口袋破了",
+    "這位先生把鑰匙給了她",
+    "這位先生每次都把鑰匙放在書包裡"
    ],
-   "answer": 1,
-   "why": "可能放在信箱裡了. A: sudah dicek, tidak ada. C & D tidak disebut."
+   "answer": 0,
+   "why": "你怎麼每次都要找這麼久 = kenapa setiap kali lama sekali mencarinya → dia sering kesulitan menemukan barangnya. B tidak disebut. C terbalik: kunci tidak diberikan kepadanya. D terlalu harfiah: keluhan 每次 merujuk kebiasaan mencari lama, bukan tempat menaruh kunci."
   }
  ],
  "C06": [
