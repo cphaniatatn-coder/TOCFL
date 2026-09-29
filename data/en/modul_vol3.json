@@ -4302,12 +4302,12 @@
      },
      "question": "他的錢怎麼樣？",
      "options": [
-      "越來越少。",
       "越來越多。",
-      "一樣多。"
+      "一直都一樣。",
+      "越來越少了。"
      ],
-     "answer": 0,
-     "why": "越來越 + Vs = more and more …."
+     "answer": 2,
+     "why": "The money graph keeps falling → 越來越少. A is the opposite; B does not match the graph."
     },
     {
      "type": "listen_pic",
@@ -4320,12 +4320,12 @@
      },
      "question": "天氣怎麼樣？",
      "options": [
-      "下雨了。",
       "越來越熱了。",
-      "越來越冷了。"
+      "越來越冷了。",
+      "一直很涼快。"
      ],
-     "answer": 2,
-     "why": "The temperature keeps falling → 越來越冷."
+     "answer": 1,
+     "why": "The thermometer keeps dropping → 越來越冷. A is the opposite; C shows no change."
     },
     {
      "type": "listen_pic",
@@ -4336,40 +4336,40 @@
       "label": "she writes her diary in the evening",
       "img": "C10-3"
      },
-     "question": "你每天做什麼？",
+     "question": "他晚上經常做什麼？",
      "options": [
-      "看報紙。",
-      "看書。",
-      "寫日記。"
+      "寫日記。",
+      "看電視。",
+      "打電話。"
      ],
-     "answer": 2,
-     "why": "日記 = diary."
+     "answer": 0,
+     "why": "Writing a diary at night → 寫日記. B and C are other activities."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "天氣怎麼樣？",
+     "audio": "你一個月的生活費要多少？",
      "options": [
-      "越來越冷了。",
-      "天氣越。",
-      "越冷越來。"
+      "我經常去夜市。",
+      "一般要一萬兩千塊。",
+      "生活費越來越貴了。"
      ],
-     "answer": 0,
-     "why": "越來越 + adjective = more and more …. B and C have broken structures."
+     "answer": 1,
+     "why": "The question asks for an amount → 一般要一萬兩千塊. A does not answer. C comments on costs but gives no amount."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "你一個月的生活費多少？",
+     "audio": "月底了，你還有錢嗎？",
      "options": [
-      "我花生活。",
-      "生活費很越。",
-      "差不多一萬塊。"
+      "我一般月底去買東西。",
+      "只有一百塊了。",
+      "我的日記在桌子上。"
      ],
-     "answer": 2,
-     "why": "生活費 = living costs."
+     "answer": 1,
+     "why": "The question is whether there is money left → 只有一百塊了. A does not answer; C is unrelated."
     },
     {
      "type": "listen_dialog",
@@ -4377,22 +4377,30 @@
      "instr": "Listen to the dialogue, then answer the question.",
      "lines": [
       {
+       "sp": "女",
+       "zh": "你這個月的錢又花光了嗎？"
+      },
+      {
        "sp": "男",
-       "zh": "妳一個月花多少錢？"
+       "zh": "對，我越買越多，每天都去夜市。"
       },
       {
        "sp": "女",
-       "zh": "一般花八千塊，加上房租，一萬五千塊。"
+       "zh": "加上房租，你一個月花多少？"
+      },
+      {
+       "sp": "男",
+       "zh": "一萬五，比我的生活費還多三千塊。"
       }
      ],
-     "question": "這位小姐一個月一共花多少錢？",
+     "question": "這位先生的生活費是多少？",
      "options": [
-      "八千塊",
       "一萬五千塊",
-      "七千塊"
+      "一萬兩千塊",
+      "三千塊"
      ],
      "answer": 1,
-     "why": "加上房租 → a total of 一萬五千. 八千 is without rent; 七千 = the rent (work out the difference)."
+     "why": "Spending of 15,000 is 3,000 more than his allowance → 12,000. A is what he spends; C is the difference."
     },
     {
      "type": "listen_dialog",
@@ -4400,69 +4408,69 @@
      "instr": "Listen to the dialogue, then choose the correct answer.",
      "lines": [
       {
-       "sp": "女",
-       "zh": "你的生活費夠用嗎？"
-      },
-      {
        "sp": "男",
-       "zh": "越來越不夠了，東西越來越貴。"
+       "zh": "你怎麼每天都吃饅頭？"
       },
       {
        "sp": "女",
-       "zh": "你可以寫日記，看錢都花在哪裡。"
+       "zh": "月底了，生活費快花完了。"
       },
       {
        "sp": "男",
-       "zh": "好，我明天就開始寫。"
+       "zh": "你一般一個月花多少？"
+      },
+      {
+       "sp": "女",
+       "zh": "一萬，可是這個月加上看醫生的錢，多花了兩千。"
       }
      ],
-     "question": "這位先生明天要做什麼？",
+     "question": "這位小姐為什麼每天吃饅頭？",
      "options": [
-      "找工作",
-      "寫花錢的日記",
-      "跟這位小姐借錢",
-      "少吃一點飯"
+      "她很喜歡吃饅頭",
+      "她這個月的錢不夠了",
+      "她生病了不能吃別的",
+      "饅頭越來越貴"
      ],
      "answer": 1,
-     "why": "Accepts the suggestion to keep a 日記 of spending. A, C, D are not mentioned."
+     "why": "End of the month + money almost gone (there was a doctor's bill) → saving money. A is not mentioned. C: the doctor only added to her costs; she was not told what to eat. D is not mentioned."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "他越吃越胖。",
+     "text": "妹妹越吃越胖，所以她現在不吃蛋糕了。",
      "options": [
       {
-       "icon": "🍔",
-       "label": "the more he eats, the fatter he gets"
+       "icon": "👧🍰",
+       "label": "sister eating cake"
       },
       {
-       "icon": "😴",
-       "label": "to sleep"
+       "icon": "👧🙅🍰",
+       "label": "sister refusing cake"
       },
       {
-       "icon": "🏃",
-       "label": "the more she exercises, the thinner she gets"
+       "icon": "👧🏃",
+       "label": "sister exercising"
       }
      ],
-     "answer": 0,
-     "why": "越 A 越 B = the more A, the more B."
+     "answer": 1,
+     "why": "越吃越胖 → now she no longer eats cake (refuses it). A is the opposite; C is not mentioned."
     },
     {
      "type": "read_pick",
      "part": "閱讀 Part 2 · Picture → sentence",
      "instr": "Look at the picture, then choose the matching sentence.",
      "picture": {
-      "icon": "💸",
-      "label": "money all spent"
+      "icon": "💸👛",
+      "label": "an empty wallet, the money is gone"
      },
      "options": [
-      "我有很多錢。",
-      "我沒花錢。",
-      "我花了很多錢。"
+      "他的錢越來越多。",
+      "他的錢都花光了。",
+      "他的錢包裡有很多錢。"
      ],
-     "answer": 2,
-     "why": "花 = to spend."
+     "answer": 1,
+     "why": "An empty wallet → 花光了. A and C are the opposite."
     },
     {
      "type": "read_gap",
@@ -4472,47 +4480,51 @@
       "icon": "📈",
       "label": "the amount keeps growing"
      },
-     "text": "學中文的人越來（　）多。",
+     "text": "來學中文的人（　）多了。",
      "options": [
+      "越來越",
       "越",
-      "更",
-      "很"
+      "經常"
      ],
      "answer": 0,
-     "why": "A fixed pattern: 越來越."
+     "why": "越來越 + Vs + 了 = more and more. 越 must come in a pair (越A越B); 經常多了 is not natural."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "東西越（1）越貴了。我（2）買越多。我一個月（3）一萬塊。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "上大學以後，我一個人住在台北。臺灣的東西（1），我的生活費常常不夠。媽媽說：「你應該（2），看一下錢都花在哪裡。」我寫了一個月才發現，我（3），每天都買咖啡。（4），一個月要花三千塊！現在我一般只喝水，（5），月底也還有錢。",
      "options": [
-      "來",
-      "越",
-      "花",
-      "經常"
+      "寫日記",
+      "錢越來越多",
+      "越來越便宜",
+      "越喝越多",
+      "加上吃點心的錢",
+      "越來越貴"
      ],
      "answers": [
+      5,
       0,
-      1,
-      2
+      3,
+      4,
+      1
      ],
-     "why": "(1) 越來越. (2) 越 A 越 B. (3) 花 = to spend (money). 經常 doesn't fit."
+     "why": "(1) prices keep rising → not enough money. (2) keep a diary of spending. (3) drinking more and more. (4) with snacks, 3,000 a month. (5) result: more and more money. 「越來越便宜」 contradicts the money running short."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read this diary, then choose the correct answer.",
-     "text": "我的日記：這個月的生活費越來越多。我經常去夜市，越吃越胖！月底我只有五百塊了。",
-     "question": "他月底有多少錢？",
+     "text": "小林每個月的生活費是一萬塊，加上他在咖啡店工作的錢，一共一萬三。他經常在日記裡寫他每天花了多少錢。上個月他發現，他花最多錢的地方不是吃飯，是買衣服，也越買越多。這個月他決定每個星期只去一次百貨公司，月底還有兩千塊。",
+     "question": "小林這個月為什麼還有錢？",
      "options": [
-      "五百塊",
-      "五千塊",
-      "一萬塊",
-      "沒有錢"
+      "他的生活費變多了",
+      "他少買了衣服",
+      "他不吃飯了",
+      "他去咖啡店工作了"
      ],
-     "answer": 0,
-     "why": "月底我只有五百塊."
+     "answer": 1,
+     "why": "He realised clothes were his biggest expense → shopped less → money left over. A is not mentioned. C is not mentioned (he did not stop eating). D: his café job existed before, so it is not the new reason."
     }
    ],
    "grammar": [
@@ -4750,12 +4762,12 @@
      },
      "question": "今天天氣怎麼樣？",
      "options": [
-      "陰天。",
-      "晴天。",
-      "下雨。"
+      "今天是晴天。",
+      "今天是陰天。",
+      "今天下大雨。"
      ],
-     "answer": 0,
-     "why": "陰天 = cloudy. 晴天 = sunny."
+     "answer": 1,
+     "why": "Cloudy but not raining yet → 陰天. A is the opposite; C: it has not started raining."
     },
     {
      "type": "listen_pic",
@@ -4766,14 +4778,14 @@
       "label": "mum hands over an umbrella at the door",
       "img": "C11-2"
      },
-     "question": "出門要帶什麼？",
+     "question": "媽媽說什麼？",
      "options": [
-      "外套。",
-      "眼鏡。",
-      "傘。"
+      "別再玩手機了！",
+      "出門別忘了帶傘！",
+      "今天是晴天！"
      ],
-     "answer": 2,
-     "why": "傘 = umbrella."
+     "answer": 1,
+     "why": "Mum hands over an umbrella at the door → 出門別忘了帶傘. A does not match the picture; C: you don't need an umbrella when it's sunny."
     },
     {
      "type": "listen_pic",
@@ -4786,38 +4798,38 @@
      },
      "question": "今天天氣怎麼樣？",
      "options": [
-      "陰天。",
-      "晴天。",
-      "下雨。"
+      "陰天，可能會下雨。",
+      "下雨，很涼。",
+      "晴天，天氣很好。"
      ],
-     "answer": 1,
-     "why": "晴天 = sunny."
+     "answer": 2,
+     "why": "A clear sky → 晴天. A and B are bad weather."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "外頭下雨了嗎？",
+     "audio": "外面下雨了嗎？",
      "options": [
-      "下雨了，別忘了帶傘。",
-      "雨傘很好。",
-      "我沒有雨。"
+      "下了，出門別忘了帶傘。",
+      "我的傘是新的。",
+      "明天是晴天。"
      ],
      "answer": 0,
-     "why": "下雨了 + advice to take an umbrella."
+     "why": "The question is whether it is raining → 下了. B and C do not describe the weather now."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "外頭下雨嗎？",
+     "audio": "你的鞋子怎麼溼了？",
      "options": [
-      "外頭很雨衣。",
-      "下得很大，你帶雨衣吧。",
-      "雨在下外頭。"
+      "我沒帶傘，走路回來的。",
+      "這雙鞋子很貴。",
+      "明天會是晴天。"
      ],
-     "answer": 1,
-     "why": "Answer with the situation + advice."
+     "answer": 0,
+     "why": "The question asks WHY the shoes are wet → no umbrella. B and C give no reason."
     },
     {
      "type": "listen_dialog",
@@ -4825,22 +4837,30 @@
      "instr": "Listen to the dialogue, then answer the question.",
      "lines": [
       {
+       "sp": "男",
+       "zh": "今天是陰天，要帶傘嗎？"
+      },
+      {
        "sp": "女",
-       "zh": "你別再玩手機了！"
+       "zh": "早上是晴天，下午可能會下雨。"
       },
       {
        "sp": "男",
-       "zh": "好，我不玩了。"
+       "zh": "那我帶雨衣吧，雨傘太大了。"
+      },
+      {
+       "sp": "女",
+       "zh": "好，別再忘了，上次你的衣服都溼了。"
       }
      ],
-     "question": "這位小姐要這位先生做什麼？",
+     "question": "這位先生要帶什麼？",
      "options": [
-      "別玩手機",
-      "多玩手機",
-      "買手機"
+      "雨傘",
+      "雨衣",
+      "什麼都不帶"
      ],
-     "answer": 0,
-     "why": "別再…了 = don't … any more / stop."
+     "answer": 1,
+     "why": "雨傘太大了 → he takes the 雨衣. A is only asked about; C contradicts 那我帶雨衣吧."
     },
     {
      "type": "listen_dialog",
@@ -4848,53 +4868,53 @@
      "instr": "Listen to the dialogue, then choose the correct answer.",
      "lines": [
       {
-       "sp": "男",
-       "zh": "出門別忘了帶傘！"
-      },
-      {
        "sp": "女",
-       "zh": "今天是晴天，不會下雨吧？"
+       "zh": "你帶傘了嗎？外面好像要下雨了。"
       },
       {
        "sp": "男",
-       "zh": "電視上說下午會下雨，天氣也會變涼。"
+       "zh": "沒關係，我開車。"
       },
       {
        "sp": "女",
-       "zh": "好吧，我帶雨傘，也多帶一件衣服。"
+       "zh": "可是你要走到公司，要走十分鐘啊！"
+      },
+      {
+       "sp": "男",
+       "zh": "那好吧，我帶你的傘。"
       }
      ],
-     "question": "這位小姐出門會帶什麼？",
+     "question": "這位先生要帶什麼？",
      "options": [
-      "只帶雨傘",
-      "雨傘和衣服",
-      "什麼都不帶",
-      "雨衣"
+      "他自己的傘",
+      "這位小姐的傘",
+      "雨衣",
+      "什麼都不帶"
      ],
      "answer": 1,
-     "why": "我帶雨傘，也多帶一件衣服. A: incomplete. C: the opposite. D is not mentioned."
+     "why": "我帶你的傘 → the woman's umbrella. A: he doesn't mention his own. C is not mentioned. D was his first attitude, which changes."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "我的衣服都溼了。",
+     "text": "外面下著雨，她穿著雨衣去上學。",
      "options": [
       {
-       "icon": "👕✨",
-       "label": "dry clothes"
+       "icon": "👧☂️",
+       "label": "using an umbrella"
       },
       {
-       "icon": "👕🔥",
-       "label": "burnt clothes"
+       "icon": "👧🧥🌧️",
+       "label": "wearing a raincoat in the rain"
       },
       {
-       "icon": "💧👕",
-       "label": "wet clothes"
+       "icon": "👧☀️",
+       "label": "sunny weather"
       }
      ],
-     "answer": 2,
-     "why": "溼 = wet."
+     "answer": 1,
+     "why": "下著雨 + 穿著雨衣 → a raincoat in the rain. A is an umbrella, not a raincoat. C shows no rain."
     },
     {
      "type": "read_pick",
@@ -4907,10 +4927,10 @@
      "options": [
       "今天是陰天。",
       "今天是晴天。",
-      "今天下雪。"
+      "今天下雪了。"
      ],
      "answer": 0,
-     "why": "陰天 = cloudy."
+     "why": "Thick clouds → 陰天. B and C do not match."
     },
     {
      "type": "read_gap",
@@ -4920,46 +4940,51 @@
       "icon": "🧥🌧️",
       "label": "raincoat"
      },
-     "text": "下雨了，請穿（　）。",
+     "text": "今天會下雨，你出門要穿（　）。",
      "options": [
-      "晴天",
+      "雨衣",
       "雨傘",
-      "雨衣"
+      "晴天"
      ],
-     "answer": 2,
-     "why": "A raincoat is worn (穿); an umbrella is taken (帶)."
+     "answer": 0,
+     "why": "The verb 穿 → 雨衣 (worn on the body). 雨傘 goes with 帶/拿; 晴天 is not an object."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "今天是（1），出門別（2）了帶傘。你的衣服都（3）了。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "上個週末我跟朋友去山上玩。出門以前是晴天，所以我（1）。到了山上，天氣就變了，是（2），下午開始下大雨。我們的衣服和鞋子都（3）。山上又（4），我覺得很冷。朋友說：「（5），我們坐車回去吧。」",
      "options": [
+      "別再走路了",
       "陰天",
-      "忘",
-      "溼",
-      "晴天"
+      "沒有帶傘",
+      "很涼",
+      "請大家帶雨衣",
+      "溼了"
      ],
      "answers": [
-      0,
+      2,
       1,
-      2
+      5,
+      3,
+      0
      ],
-     "why": "(1) needs an umbrella → 陰天. (2) 別忘了. (3) 溼了 = wet. 晴天 contradicts needing an umbrella."
+     "why": "(1) sunny → no umbrella. (2) it turns cloudy. (3) soaked by the rain. (4) cold on the mountain. (5) stop walking, take a ride. 「請大家帶雨衣」 is the teacher's instruction and fits no blank."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read this notice, then choose the correct answer.",
-     "text": "注意：明天去山上。請大家帶雨衣。山上很涼，請多穿一點衣服。",
-     "question": "明天要帶什麼？",
+     "text": "各位同學：明天我們要去陽明山。山上的天氣常常變，早上是晴天，下午可能就下雨了。請大家帶雨衣，也請多帶一件衣服，因為山上比市區涼。早上八點在學校門口見，請大家早點到。中午我們在山上吃飯，請自己帶水。",
+     "question": "老師為什麼請大家多帶一件衣服？",
      "options": [
-      "雨衣",
-      "毛巾",
-      "手機"
+      "下午會下雨",
+      "衣服會溼",
+      "山上比較涼",
+      "山上很熱"
      ],
-     "answer": 0,
-     "why": "請大家帶雨衣."
+     "answer": 2,
+     "why": "因為山上比市區涼 → that is the reason. A and B are reasons for the raincoat/umbrella, not the extra clothes. D is the opposite."
     }
    ],
    "grammar": [
@@ -5211,12 +5236,12 @@
      },
      "question": "他在哪裡長大？",
      "options": [
-      "在鄉下。",
-      "在城市。",
-      "在學校。"
+      "在市區長大。",
+      "在鄉下長大。",
+      "在大樓裡長大。"
      ],
-     "answer": 0,
-     "why": "長大 = to grow up."
+     "answer": 1,
+     "why": "A child growing up near rice fields → 鄉下. A and C are city settings."
     },
     {
      "type": "listen_pic",
@@ -5229,12 +5254,12 @@
      },
      "question": "這張照片是什麼時候的？",
      "options": [
-      "我出生的時候。",
-      "我上中學的時候。",
-      "我上大學的時候。"
+      "我上國小的時候。",
+      "我剛出生的時候。",
+      "我上中學的時候。"
      ],
-     "answer": 0,
-     "why": "……的時候 = when …. 出生 = to be born."
+     "answer": 1,
+     "why": "A photo of a newborn → 剛出生的時候. A and C are when she was older."
     },
     {
      "type": "listen_pic",
@@ -5247,25 +5272,25 @@
      },
      "question": "你小的時候住在哪裡？",
      "options": [
-      "住在城市。",
-      "住在鄉下。",
-      "住在宿舍。"
+      "住在市區的大樓裡。",
+      "住在學校宿舍。",
+      "住在鄉下。"
      ],
-     "answer": 1,
-     "why": "小的時候 = as a child."
+     "answer": 2,
+     "why": "A house in the country → 鄉下. A and B are places in town."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "你是在哪裡出生的？",
+     "audio": "你是在哪裡長大的？",
      "options": [
-      "我是在雅加達出生的。",
-      "我出生了。",
-      "我在台北。"
+      "我今年二十歲。",
+      "我在台中長大的。",
+      "我是大學生。"
      ],
-     "answer": 0,
-     "why": "是在哪裡…的 → 是在 + place + …的. C answers with where she is now."
+     "answer": 1,
+     "why": "The question asks where he grew up → 在台中長大的. A gives his age; C his status."
     },
     {
      "type": "listen_reply",
@@ -5273,12 +5298,12 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "你的母語是什麼？",
      "options": [
-      "母語是在印尼。",
-      "是印尼話。",
-      "我母語很好。"
+      "我在台北上中學。",
+      "我的母語是印尼話。",
+      "我會說一點中文。"
      ],
      "answer": 1,
-     "why": "母語 = mother tongue → name the language."
+     "why": "母語 = mother tongue → 印尼話. A is unrelated. C names a language she is learning, not her mother tongue."
     },
     {
      "type": "listen_dialog",
@@ -5286,22 +5311,30 @@
      "instr": "Listen to the dialogue, then answer the question.",
      "lines": [
       {
+       "sp": "女",
+       "zh": "你是在台北出生的嗎？"
+      },
+      {
        "sp": "男",
-       "zh": "妳是什麼時候來臺灣的？"
+       "zh": "不是，我是在高雄出生的。"
       },
       {
        "sp": "女",
-       "zh": "我上中學的時候來的，然後一直住在台北。"
+       "zh": "那你在高雄長大嗎？"
+      },
+      {
+       "sp": "男",
+       "zh": "我三歲的時候就搬到台北了，然後一直住在這裡。"
       }
      ],
-     "question": "這位小姐什麼時候來臺灣？",
+     "question": "這位先生在哪裡長大？",
      "options": [
-      "上國小的時候",
-      "上中學的時候",
-      "上大學的時候"
+      "高雄",
+      "台北",
+      "台中"
      ],
      "answer": 1,
-     "why": "上中學的時候來的."
+     "why": "Moved to Taipei at three and has lived there since → grew up in 台北. A is where he was born. C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -5309,53 +5342,53 @@
      "instr": "Listen to the dialogue, then choose the correct answer.",
      "lines": [
       {
-       "sp": "女",
-       "zh": "你是在哪裡出生的？"
-      },
-      {
        "sp": "男",
-       "zh": "我是在雅加達出生的，在台北長大。"
+       "zh": "你的中文說得真好，你是華人嗎？"
       },
       {
        "sp": "女",
-       "zh": "所以你的中文那麼好！"
+       "zh": "對，我爸爸媽媽都是華人，可是我是在美國長大的。"
       },
       {
        "sp": "男",
-       "zh": "對，我小時候就在台北上國小。"
+       "zh": "那你怎麼說得這麼好？"
+      },
+      {
+       "sp": "女",
+       "zh": "我小的時候，爸媽在家只跟我說中文。"
       }
      ],
-     "question": "這位先生在哪裡長大？",
+     "question": "這位小姐的中文為什麼說得很好？",
      "options": [
-      "雅加達",
-      "台北",
-      "大陸",
-      "泗水"
+      "她在臺灣長大",
+      "她在家說中文",
+      "她在大學學中文",
+      "她的母語是英文"
      ],
      "answer": 1,
-     "why": "在台北長大. A = the place of birth. C & D are not mentioned."
+     "why": "爸媽在家只跟我說中文 → that is the reason. A is wrong: she grew up in America. C and D are not mentioned."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "他是大學生。",
+     "text": "這是爺爺小時候的照片，當時他才五歲。",
      "options": [
       {
-       "icon": "🧑‍🎓",
-       "label": "a university student"
+       "icon": "👴",
+       "label": "grandpa now"
       },
       {
-       "icon": "👨‍💼",
-       "label": "an employee"
+       "icon": "🧒📷",
+       "label": "grandpa as a child"
       },
       {
-       "icon": "🎒",
-       "label": "a primary school pupil"
+       "icon": "👶",
+       "label": "a baby"
       }
      ],
-     "answer": 0,
-     "why": "大學生 = university student."
+     "answer": 1,
+     "why": "小時候 + 當時才五歲 → a photo of a small child. A is grandpa today; C is too young (a baby, not five)."
     },
     {
      "type": "read_pick",
@@ -5366,62 +5399,66 @@
       "label": "an elderly grandfather"
      },
      "options": [
-      "爺爺很年輕。",
-      "爺爺的年紀很大。",
-      "爺爺是大學生。"
+      "他年紀很大了。",
+      "他還是國小學生。",
+      "他是大學生。"
      ],
-     "answer": 1,
-     "why": "年紀 = age."
+     "answer": 0,
+     "why": "An old man → 年紀很大了. B and C are young people."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "👶",
+      "icon": "👶🏥",
       "label": "a newborn baby"
      },
-     "text": "我是在台北（　）的。",
+     "text": "我是在醫院（　）的。",
      "options": [
-      "當時",
       "出生",
-      "住址"
+      "長大",
+      "年紀"
      ],
-     "answer": 1,
-     "why": "(是) … 出生的 = was born in …."
+     "answer": 0,
+     "why": "A baby in hospital → 在醫院出生. 在醫院長大 makes no sense; 年紀 is a noun."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "我（1）國小的時候來臺灣。（2）我在台北上中學。那（3）我很想家。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "我是在泗水出生的，我的（1）是印尼話。我十歲的時候，爸爸到台北工作，我們就（2）。（3）我一句中文也不會說，上國小的時候，同學說什麼我都聽不懂。然後我每天放學以後都去學中文，（4），我的中文越來越好。現在我是（5），在台北念書。",
      "options": [
-      "上",
-      "然後",
-      "時",
-      "年紀"
+      "大學生",
+      "搬到了臺灣",
+      "當時",
+      "上了中學以後",
+      "在大陸出生",
+      "母語"
      ],
      "answers": [
-      0,
+      5,
       1,
-      2
+      2,
+      3,
+      0
      ],
-     "why": "(1) 上國小 = to go to primary school. (2) sequence → 然後. (3) 那時 = at that time. 年紀 doesn't fit."
+     "why": "(1) mother tongue. (2) moved to Taiwan. (3) 當時 = at that time. (4) after starting middle school it improved. (5) now a university student. 「在大陸出生」 contradicts the text: she was born in Surabaya."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the correct answer.",
-     "text": "安妮是在印尼出生的。她的母語是印尼話。她八歲的時候，家人帶她來臺灣。然後她在台北上中學、上大學。",
-     "question": "安妮幾歲來臺灣？",
+     "text": "陳先生是在印尼出生的華人。他的母語是印尼話，可是他爸爸媽媽在家都說中文。他上中學的時候，全家搬到臺灣，然後他在台北上大學。當時他的中文不太好，上課很辛苦。現在他已經在臺灣住了二十年了，他說：「台北就是我的第二個家。」",
+     "question": "陳先生覺得台北怎麼樣？",
      "options": [
-      "八歲",
-      "十八歲",
-      "二十一歲",
-      "一歲"
+      "像他的家一樣",
+      "上課很辛苦",
+      "他想回印尼",
+      "中文很難"
      ],
      "answer": 0,
-     "why": "八歲的時候…來臺灣."
+     "why": "台北就是我的第二個家 → like his own home. B describes the PAST (當時). C is not mentioned. D is not his opinion of Taipei."
     }
    ],
    "grammar": [
@@ -5697,12 +5734,12 @@
      },
      "question": "奶奶有幾個孫子？",
      "options": [
-      "好幾個。",
+      "沒有。",
       "一個。",
-      "沒有孫子。"
+      "好幾個。"
      ],
-     "answer": 0,
-     "why": "好幾個 = quite a few. 孫子 = grandson."
+     "answer": 2,
+     "why": "Grandma surrounded by many grandsons → 好幾個. A and B are the wrong number."
     },
     {
      "type": "listen_pic",
@@ -5715,12 +5752,12 @@
      },
      "question": "你外婆有幾個孫子？",
      "options": [
-      "一個。",
-      "好幾個。",
-      "她沒有孫子。"
+      "兩個。",
+      "四個，好幾個呢！",
+      "一個也沒有。"
      ],
      "answer": 1,
-     "why": "外婆 = grandmother on the mother's side. Four grandchildren → 好幾個."
+     "why": "Grandma with four grandchildren → 四個. A and C are the wrong number."
     },
     {
      "type": "listen_pic",
@@ -5733,38 +5770,38 @@
      },
      "question": "你有幾個兄弟？",
      "options": [
-      "一個。",
-      "兩個。",
+      "我有兩個兄弟。",
+      "我有兩個姊妹。",
       "我沒有兄弟。"
      ],
-     "answer": 1,
-     "why": "兄弟 = brothers."
+     "answer": 0,
+     "why": "'Me' with two brothers → 兩個兄弟. B is the wrong gender; C is the opposite."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "你有兄弟嗎？",
+     "audio": "你外婆有幾個孫子？",
      "options": [
-      "有，我有一個哥哥。",
-      "我是兄弟。",
-      "兄弟很好。"
+      "我外婆今年八十歲。",
+      "好幾個，其中我最小。",
+      "我沒有外公。"
      ],
-     "answer": 0,
-     "why": "兄弟 = brothers → say how many/who."
+     "answer": 1,
+     "why": "The question asks how many grandchildren → 好幾個. A gives an age; C is unrelated."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "你姑姑住在哪裡？",
+     "audio": "你的伯母是誰？",
      "options": [
-      "姑姑是我爸爸。",
-      "她住在高雄。",
-      "我住姑姑。"
+      "我伯母住在台中。",
+      "她是我媽媽的姊姊。",
+      "她是我伯父的太太。"
      ],
-     "answer": 1,
-     "why": "Asked where they live → 住在 + place."
+     "answer": 2,
+     "why": "伯母 = the wife of 伯父. A gives where she lives. B is the wrong relationship (mum's older sister = 阿姨)."
     },
     {
      "type": "listen_dialog",
@@ -5773,21 +5810,29 @@
      "lines": [
       {
        "sp": "男",
-       "zh": "你們班有好多外國學生吧？"
+       "zh": "你爸爸有幾個兄弟姊妹？"
       },
       {
        "sp": "女",
-       "zh": "對，有十個，其中三個是日本人。"
+       "zh": "三個。一個哥哥，兩個妹妹。"
+      },
+      {
+       "sp": "男",
+       "zh": "那你有幾個姑姑？"
+      },
+      {
+       "sp": "女",
+       "zh": "兩個，我也有一個伯父。"
       }
      ],
-     "question": "班上有幾個日本學生？",
+     "question": "這位小姐的伯父是誰？",
      "options": [
-      "十個",
-      "三個",
-      "七個"
+      "她爸爸的哥哥",
+      "她爸爸的妹妹",
+      "她媽媽的哥哥"
      ],
-     "answer": 1,
-     "why": "其中三個是日本人 = three of them. 十 = the total."
+     "answer": 0,
+     "why": "伯父 = father's older brother; her father has one older brother. B = 姑姑. C = mum's brother (not 伯父)."
     },
     {
      "type": "listen_dialog",
@@ -5795,119 +5840,123 @@
      "instr": "Listen to the dialogue, then choose the correct answer.",
      "lines": [
       {
-       "sp": "男",
-       "zh": "你外婆有幾個孫子？"
-      },
-      {
        "sp": "女",
-       "zh": "好幾個。我們家就有四個孩子，其中三個是男生。"
+       "zh": "這張照片裡的人都是你的家人嗎？"
       },
       {
        "sp": "男",
-       "zh": "那你有幾個兄弟？"
+       "zh": "對，這是我外公外婆，旁邊是他們的孫子。"
       },
       {
        "sp": "女",
-       "zh": "你自己算吧！我是女生。"
+       "zh": "好多人啊！哪一個是你？"
+      },
+      {
+       "sp": "男",
+       "zh": "最左邊的，其中我年紀最大。"
       }
      ],
-     "question": "這位小姐有幾個兄弟？",
+     "question": "哪一個是對的？",
      "options": [
-      "一個",
-      "兩個",
-      "三個",
-      "四個"
+      "照片裡只有三個人",
+      "這位先生是外公外婆的孩子",
+      "這位先生是外公外婆年紀最大的孫子",
+      "這位小姐也在照片裡"
      ],
      "answer": 2,
-     "why": "4 children, 3 boys, she is a girl → 3 brothers. D = the total number of children."
+     "why": "他們的孫子…其中我年紀最大 → the eldest grandchild. A contradicts 好多人. B: he is a grandchild, not a child. D is not mentioned."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "外公和外婆住在鄉下。",
+     "text": "外婆坐在中間，旁邊站著好幾個孫子。",
      "options": [
       {
-       "icon": "👴👵🏡",
-       "label": "grandparents in the countryside"
+       "icon": "👴🧒",
+       "label": "grandpa with one grandchild"
       },
       {
-       "icon": "👨👩🏡",
-       "label": "parents in the countryside"
+       "icon": "👵🧒🧒🧒",
+       "label": "grandma surrounded by grandchildren"
       },
       {
-       "icon": "👴👵🏙️",
-       "label": "grandparents in the city"
+       "icon": "👵",
+       "label": "grandma on her own"
       }
      ],
-     "answer": 0,
-     "why": "外公/外婆 = grandfather/grandmother on the mother's side."
+     "answer": 1,
+     "why": "外婆 + 好幾個孫子 → grandma with many grandchildren. A has the wrong person and number; C has no grandchildren."
     },
     {
      "type": "read_pick",
      "part": "閱讀 Part 2 · Picture → sentence",
      "instr": "Look at the picture, then choose the matching sentence.",
      "picture": {
-      "icon": "👵👧",
-      "label": "a grandmother and her granddaughter"
+      "icon": "👨‍👩‍👧‍👦👨‍👩‍👦",
+      "label": "an extended family"
      },
      "options": [
-      "她是奶奶的姑姑。",
-      "她是奶奶的孫女。",
-      "她是奶奶的孫子。"
+      "我家只有三個人。",
+      "過年的時候，我家有好多人。",
+      "我沒有兄弟姊妹。"
      ],
      "answer": 1,
-     "why": "孫女 = granddaughter."
+     "why": "A big family → 好多人. A and C are small families."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "🧑‍🎓🧑‍🎓🧑‍🎓",
-      "label": "three international students"
+      "icon": "👨👨",
+      "label": "father and his older brother"
      },
-     "text": "我們班有三個外國學生，（　）一個是印尼人。",
+     "text": "爸爸的哥哥，我叫他（　）。",
      "options": [
-      "好幾",
-      "兄弟",
-      "其中"
+      "伯父",
+      "姑姑",
+      "外公"
      ],
-     "answer": 2,
-     "why": "其中 = among them."
+     "answer": 0,
+     "why": "Father's older brother = 伯父. 姑姑 = father's sister; 外公 = mother's father."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "我外婆有好（1）個孫子，（2）我最小。我爸爸的哥哥是我的（3）。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "我爸爸有三個兄弟，他是（1）。我的伯父住在美國，（2）他們一家人才回臺灣一次。我的姑姑很喜歡孩子，每次來我家都（3）。媽媽說，姑姑（4），叫她姑媽也可以。我覺得我家（5），過年的時候大家都很高興。",
      "options": [
-      "幾",
-      "其中",
-      "伯父",
-      "姑姑"
+      "帶好多東西給我",
+      "就是爸爸的妹妹",
+      "其中最小的",
+      "好幾年",
+      "有好幾個孫女",
+      "人很多"
      ],
      "answers": [
+      2,
+      3,
       0,
       1,
-      2
+      5
      ],
-     "why": "(1) 好幾個. (2) 其中 = among them. (3) dad's older brother → 伯父. 姑姑 is dad's sister."
+     "why": "(1) dad is the youngest of them. (2) only comes back once every few years. (3) always brings lots of things. (4) 姑姑 = dad's younger sister (same as 姑媽). (5) a big family, everyone happy at New Year. 「有好幾個孫女」 fits no blank."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the correct answer.",
-     "text": "我外公外婆有五個孫子、三個孫女。其中年紀最大的是我哥哥。",
-     "question": "外公外婆一共有幾個孫子和孫女？",
+     "text": "過年的時候，我們全家都去外婆家。外公外婆有三個孩子，其中我媽媽最小。外公外婆一共有七個孫子和孫女，其中只有我是女生。大家都很喜歡我，外婆每年都給我最多的紅包。",
+     "question": "哪一個是對的？",
      "options": [
-      "五個",
-      "三個",
-      "八個",
-      "兩個"
+      "外婆只有一個孫女",
+      "她媽媽是外公外婆的大女兒",
+      "外公外婆有七個孩子",
+      "她有好幾個姊妹"
      ],
-     "answer": 2,
-     "why": "5 + 3 = 8. The question requires adding up."
+     "answer": 0,
+     "why": "其中只有我是女生 → the only granddaughter. B is the opposite (媽媽最小). C: seven is the number of grandchildren; there are three children. D contradicts it: she is the only girl."
     }
    ],
    "grammar": [
@@ -6165,11 +6214,11 @@
      "question": "火車怎麼樣？",
      "options": [
       "火車快要開了。",
-      "火車還沒來。",
-      "火車壞了。"
+      "火車已經開走了。",
+      "火車還沒來。"
      ],
      "answer": 0,
-     "why": "快要……了 = about to …."
+     "why": "Doors closing, whistle blowing → 快要開了. B: the train is still at the platform. C: the train is already here."
     },
     {
      "type": "listen_pic",
@@ -6182,12 +6231,12 @@
      },
      "question": "你姊姊快要做什麼？",
      "options": [
-      "快要結婚了。",
-      "快要上大學了。",
-      "快要過生日了。"
+      "快要去旅行了。",
+      "快要回家了。",
+      "快要結婚了。"
      ],
-     "answer": 0,
-     "why": "結婚 = to get married."
+     "answer": 2,
+     "why": "A wedding dress → 快要結婚了. A and B do not match the picture."
     },
     {
      "type": "listen_pic",
@@ -6200,12 +6249,12 @@
      },
      "question": "他怎麼樣？",
      "options": [
-      "很生氣。",
-      "很難過。",
-      "很帥。"
+      "他很胖。",
+      "他很帥。",
+      "他很老。"
      ],
-     "answer": 2,
-     "why": "帥 = handsome."
+     "answer": 1,
+     "why": "A man striking a cool pose → 很帥. A and C are not shown."
     },
     {
      "type": "listen_reply",
@@ -6213,25 +6262,25 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "你姊姊什麼時候結婚？",
      "options": [
-      "十二月就要結婚了。",
-      "她結婚了嗎。",
-      "姊姊很帥。"
+      "她先生很帥。",
+      "下個月就要結婚了。",
+      "她們是同班同學。"
      ],
-     "answer": 0,
-     "why": "什麼時候 → a time + 就要…了."
+     "answer": 1,
+     "why": "The question asks WHEN → 下個月就要結婚了. A and C give other details about the wedding, not the time."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "你父母住在哪裡？",
+     "audio": "你家有幾口人？",
      "options": [
-      "他們住在雅加達。",
-      "我是父母。",
-      "父母很好。"
+      "我家有五口人。",
+      "我家在台北。",
+      "我父母都很好。"
      ],
      "answer": 0,
-     "why": "父母 = parents."
+     "why": "幾口人 = how many people in the family → 五口人. B says where they live; C gives news about the parents."
     },
     {
      "type": "listen_dialog",
@@ -6239,22 +6288,30 @@
      "instr": "Listen to the dialogue, then answer the question.",
      "lines": [
       {
+       "sp": "女",
+       "zh": "我們快要上課了，你怎麼還在這裡？"
+      },
+      {
        "sp": "男",
-       "zh": "快要下雨了，我們回家吧。"
+       "zh": "今天不是星期六嗎？"
       },
       {
        "sp": "女",
-       "zh": "好，走吧。"
+       "zh": "今天星期五！明天才是星期六。"
+      },
+      {
+       "sp": "男",
+       "zh": "啊，我看錯日子了！"
       }
      ],
-     "question": "天氣怎麼樣？",
+     "question": "今天星期幾？",
      "options": [
-      "快要下雨了",
-      "下雨了",
-      "是晴天"
+      "星期六",
+      "星期五",
+      "星期天"
      ],
-     "answer": 0,
-     "why": "快要下雨了 = it ISN'T raining yet, but soon will be. B assumes it's already raining."
+     "answer": 1,
+     "why": "今天星期五. A is the day the man mistakenly thought it was. C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -6262,119 +6319,123 @@
      "instr": "Listen to the dialogue, then choose the correct answer.",
      "lines": [
       {
-       "sp": "女",
-       "zh": "我姊姊快要結婚了！"
-      },
-      {
        "sp": "男",
-       "zh": "真的嗎？她男朋友是誰？"
+       "zh": "你的同班同學小美下個月就要結婚了。"
       },
       {
        "sp": "女",
-       "zh": "叫做王大文，是她的大學同班同學。"
+       "zh": "真的嗎？她才二十二歲啊！"
       },
       {
        "sp": "男",
-       "zh": "我認識他！他很帥。"
+       "zh": "對，她先生是她的大學同學。"
+      },
+      {
+       "sp": "女",
+       "zh": "那我要趕快去買東西送她了。"
       }
      ],
-     "question": "王大文是誰？",
+     "question": "這位小姐接著要做什麼？",
      "options": [
-      "這位先生的哥哥",
-      "姊姊的男朋友",
-      "這位小姐的同學",
-      "這位小姐的男朋友"
+      "跟小美結婚",
+      "去上大學",
+      "去買東西送小美",
+      "問小美幾歲"
      ],
-     "answer": 1,
-     "why": "The sister's boyfriend is her 同班同學. C & D: mixed-up people. A is not mentioned."
+     "answer": 2,
+     "why": "趕快去買東西送她 → buying a present for 小美. A is a misunderstanding. B and D are not mentioned."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "火車就要開了。",
+     "text": "老太太笑著說：「我的孫女就要結婚了！」",
      "options": [
       {
-       "icon": "✈️",
-       "label": "plane"
+       "icon": "👵😢",
+       "label": "grandma looking sad"
       },
       {
-       "icon": "🛑",
-       "label": "a train that has stopped"
+       "icon": "👴😊",
+       "label": "grandpa looking happy"
       },
       {
-       "icon": "🚆⏳",
-       "label": "a train about to leave"
+       "icon": "👵😊👰",
+       "label": "grandma happy that her granddaughter is getting married"
       }
      ],
      "answer": 2,
-     "why": "就要…了 = about to …."
+     "why": "老太太 + 笑著 + 孫女結婚 → a happy grandma. A has the wrong expression; B the wrong person (grandpa)."
     },
     {
      "type": "read_pick",
      "part": "閱讀 Part 2 · Picture → sentence",
      "instr": "Look at the picture, then choose the matching sentence.",
      "picture": {
-      "icon": "👵",
-      "label": "an old lady"
+      "icon": "🚆⏰",
+      "label": "a train about to leave"
      },
      "options": [
-      "那位老太太是我的外婆。",
-      "那位小姐是我的同學。",
-      "那位先生是我的父親。"
+      "火車已經到了。",
+      "火車快要開了。",
+      "火車壞了。"
      ],
-     "answer": 0,
-     "why": "老太太 = old lady."
+     "answer": 1,
+     "why": "A clock + a train ready to leave → 快要開了. A and C do not match."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "🧑‍🤝‍🧑🏫",
-      "label": "a classmate"
+      "icon": "👨‍👩‍👧‍👦",
+      "label": "a family of five"
      },
-     "text": "他是我的（　）同學。",
+     "text": "我家有五（　）人。",
      "options": [
-      "帥",
-      "同班",
-      "父母"
+      "口",
+      "張",
+      "件"
      ],
-     "answer": 1,
-     "why": "同班同學 = classmate."
+     "answer": 0,
+     "why": "The measure word for family members is 口 (五口人). 張 and 件 are for objects."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "我姊姊（1）要結婚了。三天以後，我們（2）要回印尼（3）。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "我姊姊（1）了，她的先生是她大學的（2）。他很（3），也對姊姊很好。我們家一共有五（4），加上他就是六個人了。下個星期我們（5），大家都很忙。",
      "options": [
-      "快",
-      "就",
-      "了",
-      "結婚"
+      "帥",
+      "叫做老太太",
+      "快要結婚",
+      "同班同學",
+      "口人",
+      "就要回印尼了"
      ],
      "answers": [
+      2,
+      3,
       0,
-      1,
-      2
+      4,
+      5
      ],
-     "why": "(1) 快要…了. (2) with a time expression (三天以後) use 就要. (3) 了 closes the pattern. 結婚 is already there."
+     "why": "(1) 快要結婚了. (2) university classmates. (3) handsome. (4) 五口人 = five family members. (5) 就要…了 with a time: going home next week. 「叫做老太太」 fits no blank."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the correct answer.",
-     "text": "我姊姊和她的大學同班同學快要結婚了。他叫做小林，很帥。我父母都很高興。",
-     "question": "姊姊要跟誰結婚？",
+     "text": "小林和美美是大學的同班同學，今年十二月就要結婚了。小林的父母住在高雄，美美的父母住在台北，所以他們要回兩個地方跟家人吃飯。美美說，她母親已經開始準備了，每天都很忙；她父親很少說話，可是晚上常常一個人看她小時候的照片。",
+     "question": "美美的父親為什麼常常看她小時候的照片？",
      "options": [
-      "小林",
-      "她的老師",
-      "大文",
-      "她的鄰居"
+      "女兒快要結婚了，他有點難過",
+      "他在找結婚要用的照片",
+      "他想念高雄的家",
+      "他在找結婚的地方"
      ],
      "answer": 0,
-     "why": "跟大學同班同學…他叫做小林."
+     "why": "Quietly looking at childhood photos of the daughter who is about to marry → sad to 'let her go'. B and D are not mentioned. C: the house in 高雄 belongs to 小林's family, not his."
     }
    ],
    "grammar": [
@@ -6632,11 +6693,11 @@
      "question": "他在哪裡打工？",
      "options": [
       "在咖啡店。",
-      "在學校。",
-      "在醫院。"
+      "在餐廳。",
+      "在書店。"
      ],
      "answer": 0,
-     "why": "打工 = to work part-time."
+     "why": "Behind a café counter → 咖啡店. B and C are other places."
     },
     {
      "type": "listen_pic",
@@ -6649,12 +6710,12 @@
      },
      "question": "你在哪裡打工？",
      "options": [
+      "在超市。",
       "在學校。",
-      "在咖啡店。",
-      "在醫院。"
+      "在咖啡店。"
      ],
-     "answer": 1,
-     "why": "咖啡店 = coffee shop."
+     "answer": 2,
+     "why": "She is making coffee in a café → 咖啡店. A and B are other places."
     },
     {
      "type": "listen_pic",
@@ -6667,12 +6728,12 @@
      },
      "question": "你爸爸做什麼工作？",
      "options": [
-      "他是商人。",
       "他是工人。",
+      "他是商人。",
       "他是老師。"
      ],
-     "answer": 0,
-     "why": "商人 = businessman/trader. 工人 = labourer."
+     "answer": 1,
+     "why": "A suit, a briefcase, a handshake → 商人. A and C are other jobs."
     },
     {
      "type": "listen_reply",
@@ -6680,25 +6741,25 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "你為什麼去打工？",
      "options": [
+      "我在咖啡店打工。",
       "為了多一點零用錢。",
-      "我打工了。",
-      "我去咖啡店。"
+      "我每天打工四個小時。"
      ],
-     "answer": 0,
-     "why": "為什麼 → a reason/purpose (為了…). C answers with a place."
+     "answer": 1,
+     "why": "The question asks for the REASON → 為了多一點零用錢. A gives the place; C the hours."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "你為什麼要打工？",
+     "audio": "你可以替我去超市買東西嗎？",
      "options": [
-      "我打工商人。",
-      "打工很為了。",
-      "為了多一點零用錢。"
+      "我昨天去了超市。",
+      "好，沒問題。",
+      "超市的東西很便宜。"
      ],
-     "answer": 2,
-     "why": "為了 = for the sake of, in order to."
+     "answer": 1,
+     "why": "A request to go in his place → 好，沒問題. A and C only repeat the word 超市 without answering."
     },
     {
      "type": "listen_dialog",
@@ -6706,22 +6767,30 @@
      "instr": "Listen to the dialogue, then answer the question.",
      "lines": [
       {
+       "sp": "女",
+       "zh": "你週末都在做什麼？"
+      },
+      {
        "sp": "男",
-       "zh": "今天妳為什麼沒上課？"
+       "zh": "我在超市打工，為了買一台新電腦。"
       },
       {
        "sp": "女",
-       "zh": "我替我媽媽去醫院看奶奶。"
+       "zh": "你爸媽不給你錢嗎？"
+      },
+      {
+       "sp": "男",
+       "zh": "給啊，可是我想自己買。"
       }
      ],
-     "question": "這位小姐今天做什麼？",
+     "question": "這位先生為什麼打工？",
      "options": [
-      "替媽媽去看奶奶",
-      "去上課",
-      "去打工"
+      "他爸媽不給他錢",
+      "他想自己買電腦",
+      "他喜歡超市"
      ],
-     "answer": 0,
-     "why": "替我媽媽去醫院看奶奶 — going instead of her mother."
+     "answer": 1,
+     "why": "為了買一台新電腦 + 我想自己買. A is the opposite (給啊). C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -6729,53 +6798,53 @@
      "instr": "Listen to the dialogue, then choose the correct answer.",
      "lines": [
       {
-       "sp": "男",
-       "zh": "你為什麼去打工？"
-      },
-      {
        "sp": "女",
-       "zh": "為了多一點零用錢。"
+       "zh": "你今天怎麼在咖啡店？你不是在書店打工嗎？"
       },
       {
        "sp": "男",
-       "zh": "你父母不給你嗎？"
+       "zh": "對，今天我替朋友來上班。"
       },
       {
        "sp": "女",
-       "zh": "給，可是我不想一直跟他們拿。"
+       "zh": "你朋友怎麼了？"
+      },
+      {
+       "sp": "男",
+       "zh": "他感冒了。"
       }
      ],
-     "question": "這位小姐是什麼意思？",
+     "question": "這位先生今天為什麼在咖啡店？",
      "options": [
-      "父母不給她錢",
-      "她不想一直拿父母的錢",
-      "她不喜歡打工",
-      "她打工的錢很多"
+      "他不在書店打工了",
+      "他替生病的朋友工作",
+      "他來喝咖啡",
+      "他感冒了"
      ],
      "answer": 1,
-     "why": "給，可是我不想一直跟他們拿. A: the opposite (給). C & D are not mentioned."
+     "why": "替朋友來上班 + 朋友感冒了. A: he still works at the bookshop. C is not mentioned. D: his friend has the cold."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "她在大學教書。",
+     "text": "為了買新手機，弟弟每天去超市打工。",
      "options": [
       {
-       "icon": "🧑‍🎓",
-       "label": "to learn, to study"
+       "icon": "👦📱",
+       "label": "using a phone"
       },
       {
-       "icon": "🧑‍🏫🏛️",
-       "label": "teaching at a university"
+       "icon": "👦🛒🛍️",
+       "label": "shopping at a supermarket"
       },
       {
-       "icon": "👩‍⚕️",
-       "label": "doctor"
+       "icon": "👦🛒💼",
+       "label": "working at a supermarket"
       }
      ],
-     "answer": 1,
-     "why": "教書 = to teach."
+     "answer": 2,
+     "why": "去超市打工 = working at a supermarket. A is his goal (a phone), not the activity; B is shopping, not working."
     },
     {
      "type": "read_pick",
@@ -6787,61 +6856,65 @@
      },
      "options": [
       "他是工人。",
-      "他是老師。",
-      "他是商人。"
+      "他是商人。",
+      "他在教書。"
      ],
      "answer": 0,
-     "why": "工人 = labourer, worker."
+     "why": "A hard hat → 工人. B and C are other jobs."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "🎯",
-      "label": "goal"
+      "icon": "🧑‍🏫",
+      "label": "a teacher teaching"
      },
-     "text": "你學中文的（　）是什麼？",
+     "text": "我媽媽在國小（　），她的學生都很喜歡她。",
      "options": [
+      "教書",
       "打工",
-      "目的",
-      "商人"
+      "工人"
      ],
-     "answer": 1,
-     "why": "目的 = purpose, aim."
+     "answer": 0,
+     "why": "There are 學生 → 教書 (teaches). 打工 does not go with her pupils; 工人 is a noun."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "（1）多一點零用錢，我去（2）。今天我（3）朋友去上班。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "我爸爸是（1），常常去大陸工作。我媽媽在中學（2）。我上大學以後，（3），在一家餐廳打工。打工很累，可是我學到了很多。上個週末我生病了，我的同學（4）去餐廳工作。我打工的（5）不只是錢，也是為了多認識一些人。",
      "options": [
-      "為了",
-      "打工",
-      "替",
+      "教書",
+      "商人",
+      "替我",
+      "當工人",
+      "為了多一點零用錢",
       "目的"
      ],
      "answers": [
-      0,
       1,
-      2
+      0,
+      4,
+      2,
+      5
      ],
-     "why": "(1) purpose → 為了. (2) 打工. (3) 替 = instead of. 目的 is a noun."
+     "why": "(1) a businessman who often works in mainland China. (2) teaches at a middle school. (3) the reason for the part-time job. (4) a classmate covers for him. (5) 目的 = purpose. 「當工人」 does not fit any blank grammatically."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the correct answer.",
-     "text": "為了練習中文，安妮在書店打工。她打工的目的不是錢，是認識臺灣朋友。",
-     "question": "安妮打工的目的是什麼？",
+     "text": "很多大學生都在打工。有的人是為了生活費，有的人是為了多學一點東西。我的朋友小王在一家公司打工，他說打工的目的不是錢，是想知道自己以後想不想做那樣的工作。我在書店打工，因為我很喜歡看書，也可以替老闆介紹好書給客人。",
+     "question": "小王為什麼去公司打工？",
      "options": [
-      "認識臺灣朋友",
-      "錢",
-      "買書",
-      "當老師"
+      "他需要生活費",
+      "他想知道自己以後想做什麼工作",
+      "他很喜歡看書",
+      "老闆是他爸爸"
      ],
-     "answer": 0,
-     "why": "目的不是錢，是認識臺灣朋友. B is negated; C and D are not mentioned."
+     "answer": 1,
+     "why": "目的不是錢，是想知道…想不想做那樣的工作 → that is the reason. A: he says it is not about money. C is the writer's reason, not 小王's. D is not mentioned."
     }
    ],
    "grammar": [
@@ -7048,12 +7121,12 @@
      },
      "question": "他們在做什麼？",
      "options": [
-      "開會。",
-      "吃飯。",
-      "運動。"
+      "他們在上課。",
+      "他們在開會。",
+      "他們在吃飯。"
      ],
-     "answer": 0,
-     "why": "開會 = to have a meeting."
+     "answer": 1,
+     "why": "An office meeting room with a chart → 開會. A and C are other activities."
     },
     {
      "type": "listen_pic",
@@ -7066,12 +7139,12 @@
      },
      "question": "你今天晚上要做什麼？",
      "options": [
+      "我要去看電影。",
       "我必須加班。",
-      "我要回家。",
-      "我不用上班。"
+      "我要回家吃飯。"
      ],
-     "answer": 0,
-     "why": "必須 = must; 加班 = to work overtime."
+     "answer": 1,
+     "why": "Still working in the office at night → 必須加班. A and C do not match the picture."
     },
     {
      "type": "listen_pic",
@@ -7084,38 +7157,38 @@
      },
      "question": "你們幾點開會？",
      "options": [
-      "三點。",
-      "四點。",
-      "兩點。"
+      "兩點。",
+      "三點半。",
+      "三點。"
      ],
-     "answer": 0,
-     "why": "The clock shows 3 o'clock."
+     "answer": 2,
+     "why": "The clock shows 3 → 三點. A is the wrong time; B adds half an hour."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "你今天必須加班嗎？",
+     "audio": "今天晚上你要加班嗎？",
      "options": [
-      "不用，今天可以早點下班。",
-      "我加班了嗎。",
-      "我必須。"
+      "加班很累。",
+      "不用，工作都做完了。",
+      "我在公司上班。"
      ],
-     "answer": 0,
-     "why": "The negative of 必須 is 不用／不必 (not 不必須)."
+     "answer": 1,
+     "why": "The question is whether he must work late → 不用. A is a general comment; C does not answer."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "明天我要來公司嗎？",
+     "audio": "我明天必須去公司嗎？",
      "options": [
-      "必須很公司。",
-      "不用，你在家休息吧。",
-      "我要來公司明天。"
+      "不必，你在家休息吧。",
+      "公司在台北。",
+      "我明天要開會。"
      ],
-     "answer": 1,
-     "why": "不用 = no need."
+     "answer": 0,
+     "why": "The question is whether it is necessary → 不必. B gives a location; C talks about himself."
     },
     {
      "type": "listen_dialog",
@@ -7124,29 +7197,29 @@
      "lines": [
       {
        "sp": "女",
-       "zh": "今天晚上一起吃飯吧？"
+       "zh": "明天的會幾點開始？"
       },
       {
        "sp": "男",
-       "zh": "對不起，我必須加班，明天要開會。"
+       "zh": "九點。不對，王先生說十點。"
       },
       {
        "sp": "女",
-       "zh": "那明天呢？"
+       "zh": "我要帶報告嗎？"
       },
       {
        "sp": "男",
-       "zh": "明天可以，明天不必加班。"
+       "zh": "不用，王先生已經有了。"
       }
      ],
-     "question": "他們什麼時候一起吃飯？",
+     "question": "明天的會幾點開始？",
      "options": [
-      "今天晚上",
-      "明天",
-      "不一起吃"
+      "九點",
+      "十點",
+      "十一點"
      ],
      "answer": 1,
-     "why": "明天可以. A: he has to work overtime. C: the opposite."
+     "why": "不對，王先生說十點 → 10 o'clock. A is corrected by the speaker himself; C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -7155,109 +7228,122 @@
      "lines": [
       {
        "sp": "男",
-       "zh": "明天我必須來公司嗎？"
+       "zh": "王先生說明天的會不開了。"
       },
       {
        "sp": "女",
-       "zh": "不必，明天公司不上班。"
+       "zh": "真的嗎？那我今天不必寫報告了？"
+      },
+      {
+       "sp": "男",
+       "zh": "報告還是要寫，下星期一必須交。"
+      },
+      {
+       "sp": "女",
+       "zh": "好吧，那我週末再寫。"
       }
      ],
-     "question": "這位先生明天要去公司嗎？",
+     "question": "這位小姐的意思是什麼？",
      "options": [
-      "不用去",
-      "必須去",
-      "要加班"
+      "她今天不寫報告了",
+      "她今天要加班寫報告",
+      "她不想寫報告",
+      "報告已經寫完了"
      ],
      "answer": 0,
-     "why": "不必 + the office is closed = no need to come."
+     "why": "週末再寫 → she will not write the report today. B is the opposite. C: she will still write it. D: it has not been written."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "他在寫報告。",
+     "text": "晚上十點了，他還在公司寫報告。",
      "options": [
       {
-       "icon": "📝",
-       "label": "writing a report"
+       "icon": "☀️🏢",
+       "label": "at the office in the daytime"
       },
       {
-       "icon": "☕",
-       "label": "drinking coffee"
+       "icon": "🌙🏢✍️",
+       "label": "at the office at night writing a report"
       },
       {
-       "icon": "📞",
-       "label": "making a phone call"
+       "icon": "🌙🏠📺",
+       "label": "at home at night watching TV"
       }
      ],
-     "answer": 0,
-     "why": "報告 = report."
+     "answer": 1,
+     "why": "晚上十點 + 在公司寫報告. A is the wrong time; C the wrong place."
     },
     {
      "type": "read_pick",
      "part": "閱讀 Part 2 · Picture → sentence",
      "instr": "Look at the picture, then choose the matching sentence.",
      "picture": {
-      "icon": "📋",
-      "label": "office rules"
+      "icon": "📄✍️",
+      "label": "writing a report"
      },
      "options": [
-      "公司不要求。",
-      "公司九點下班。",
-      "公司要求我們九點上班。"
+      "他在寫報告。",
+      "他在開會。",
+      "他在打電話。"
      ],
-     "answer": 2,
-     "why": "要求 = to demand, to require."
+     "answer": 0,
+     "why": "Writing on paper → 寫報告. B and C are other activities."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "🚫",
-      "label": "no need to come in"
+      "icon": "🏠😌",
+      "label": "relaxing at home, no need to go to work"
      },
-     "text": "明天是星期天，你（　）來上班。",
+     "text": "明天是星期天，你（　）來公司。",
      "options": [
+      "不用",
       "必須",
-      "不必",
       "要求"
      ],
-     "answer": 1,
-     "why": "不必 = no need."
+     "answer": 0,
+     "why": "Sunday + relaxing at home → 不用 (no need). 必須 is the opposite; 要求 = demand (it needs a person as object)."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "今天我（1）加班，因為明天要（2）。你今天（3）等我吃飯。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "我在一家公司上班。最近公司很忙，我每天都（1），晚上十點才回家。上個星期，老闆（2）大家星期五以前必須寫完報告。我的報告寫了三天才寫完。星期五早上（3）的時候，老闆說我的報告寫得很好，他說：「這個週末你（4）。」我很高興，因為我（5）好好休息一下。",
      "options": [
       "必須",
+      "很想打工",
+      "加班",
+      "不用來公司了",
       "開會",
-      "不用",
       "要求"
      ],
      "answers": [
-      0,
-      1,
-      2
+      2,
+      5,
+      4,
+      3,
+      0
      ],
-     "why": "(1) obligation → 必須. (2) 開會. (3) no need → 不用. 要求 doesn't fit."
+     "why": "(1) working late every day. (2) the boss requires it. (3) during the meeting. (4) no need to come in at the weekend. (5) 必須好好休息 = really needs a good rest. 「很想打工」 fits no blank."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read these office rules, then choose the correct answer.",
-     "text": "公司的要求：一、每天九點上班。二、星期五必須寫報告。三、星期六不必來公司。",
-     "question": "星期六要去公司嗎？",
+     "text": "大文：明天早上九點要開會，我不能去，請你替我開會。開會的報告我已經寫好了，放在你的桌子上。開會以前你不必再看一次，可是老闆要求大家十點以前必須交報告，請你開完會就交給他。謝謝！——小林",
+     "question": "大文明天要做什麼？",
      "options": [
-      "不用",
-      "要",
-      "要加班",
-      "要開會"
+      "寫開會的報告",
+      "早上十點開會",
+      "替小林開會，然後交報告",
+      "在家休息"
      ],
-     "answer": 0,
-     "why": "星期六不必來公司."
+     "answer": 2,
+     "why": "請你替我開會 + 開完會就交給他. A: 小林 has already written the report. B: the meeting is at 9; 10 is the deadline for the report. D is not mentioned."
     }
    ],
    "grammar": [
@@ -7485,12 +7571,12 @@
      },
      "question": "他們在做什麼？",
      "options": [
-      "爬山。",
-      "游泳。",
-      "散步。"
+      "他們在散步。",
+      "他們在爬山。",
+      "他們在拍照。"
      ],
-     "answer": 0,
-     "why": "爬山 = to hike, to climb a mountain."
+     "answer": 1,
+     "why": "Climbing a mountain trail → 爬山. A is a stroll on flat ground; C is not shown."
     },
     {
      "type": "listen_pic",
@@ -7503,12 +7589,12 @@
      },
      "question": "你週末常常做什麼？",
      "options": [
-      "去公園散步。",
-      "去游泳。",
-      "去爬山。"
+      "我常常在家看書。",
+      "我常常去游泳。",
+      "我常常去爬山。"
      ],
      "answer": 2,
-     "why": "爬山 = to hike, to climb a mountain."
+     "why": "Climbing with a backpack → 爬山. A and B are other activities."
     },
     {
      "type": "listen_pic",
@@ -7521,12 +7607,12 @@
      },
      "question": "晚飯以後，你們做什麼？",
      "options": [
-      "跑步。",
-      "散步。",
-      "騎腳踏車。"
+      "我們去散步。",
+      "我們去爬山。",
+      "我們在家看電視。"
      ],
-     "answer": 1,
-     "why": "散步 = to take a walk."
+     "answer": 0,
+     "why": "An after-dinner stroll → 散步. B is too strenuous; C is at home."
     },
     {
      "type": "listen_reply",
@@ -7534,25 +7620,25 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "你對什麼有興趣？",
      "options": [
+      "我週末很忙。",
       "我對拍照很有興趣。",
-      "我有興趣。",
-      "興趣很好。"
+      "我不太喜歡他。"
      ],
-     "answer": 0,
-     "why": "對什麼有興趣 → 對 + thing + 有興趣."
+     "answer": 1,
+     "why": "對什麼有興趣 → 對拍照有興趣. A does not answer; C uses 對/喜歡 about a person, not an interest."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "你對什麼有興趣？",
+     "audio": "這裡的人對你好嗎？",
      "options": [
-      "我有興趣對。",
-      "我對拍照很有興趣。",
-      "興趣很拍照。"
+      "這裡的風景很美。",
+      "很好，他們都很客氣。",
+      "我對這裡有興趣。"
      ],
      "answer": 1,
-     "why": "對 … 有興趣 = to be interested in …."
+     "why": "對你好嗎 = are they good to you? → 很好. A is about the scenery; C uses 對 in the sense of interest."
     },
     {
      "type": "listen_dialog",
@@ -7560,22 +7646,30 @@
      "instr": "Listen to the dialogue, then answer the question.",
      "lines": [
       {
+       "sp": "女",
+       "zh": "你週末想去爬山嗎？"
+      },
+      {
        "sp": "男",
-       "zh": "妳對打籃球有興趣嗎？"
+       "zh": "我對爬山沒什麼興趣，太累了。"
       },
       {
        "sp": "女",
-       "zh": "沒有，我對散步比較有興趣。"
+       "zh": "那我們去公園散步，我可以拍照。"
+      },
+      {
+       "sp": "男",
+       "zh": "好，這個我有興趣。"
       }
      ],
-     "question": "這位小姐對什麼有興趣？",
+     "question": "他們週末要做什麼？",
      "options": [
-      "打籃球",
-      "散步",
-      "爬山"
+      "爬山",
+      "去公園散步",
+      "在家休息"
      ],
      "answer": 1,
-     "why": "沒有 (not interested in basketball) → 對散步比較有興趣."
+     "why": "The second suggestion (公園散步) is accepted. A is the first suggestion, which he turns down. C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -7584,118 +7678,122 @@
      "lines": [
       {
        "sp": "男",
-       "zh": "你對什麼有興趣？"
+       "zh": "我們到了嗎？我太累了，爬不上去了。"
       },
       {
        "sp": "女",
-       "zh": "我喜歡爬山，也喜歡拍照。"
+       "zh": "再走幾步就到了。"
       },
       {
        "sp": "男",
-       "zh": "那這個週末一起去爬山吧！"
+       "zh": "你半個小時以前也這麼說。"
       },
       {
        "sp": "女",
-       "zh": "好，我去拍山上的花。"
+       "zh": "這次是真的，你看，前面就是了。"
       }
      ],
-     "question": "週末他們要做什麼？",
+     "question": "這位先生的意思是什麼？",
      "options": [
-      "散步",
-      "爬山",
-      "在家拍照",
-      "去買花"
+      "他還想再爬",
+      "他不相信快到了",
+      "他們已經到了",
+      "他想拍照"
      ],
      "answer": 1,
-     "why": "一起去爬山 — agreed (好). C: the photos are taken on the mountain. A & D are not mentioned."
+     "why": "你半個小時以前也這麼說 → he no longer believes her. A is the opposite (爬不上去了). C: they are only about to arrive. D is not mentioned."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "小貓爬上樹了。",
+     "text": "妹妹對拍照很有興趣，出去玩的時候經常拍很多相片。",
      "options": [
       {
-       "icon": "🐈🛋️",
-       "label": "a cat on the sofa"
+       "icon": "👧🎨",
+       "label": "painting"
       },
       {
-       "icon": "🐈🌳",
-       "label": "a cat climbing a tree"
+       "icon": "👧📷",
+       "label": "to take photos"
       },
       {
-       "icon": "🐕🌳",
-       "label": "a dog in a tree"
+       "icon": "👧🎤",
+       "label": "singing"
       }
      ],
      "answer": 1,
-     "why": "爬 = to climb."
+     "why": "對拍照有興趣 → taking photos. A and C are other hobbies."
     },
     {
      "type": "read_pick",
      "part": "閱讀 Part 2 · Picture → sentence",
      "instr": "Look at the picture, then choose the matching sentence.",
      "picture": {
-      "icon": "📷",
-      "label": "a camera"
+      "icon": "🚶🌳",
+      "label": "a stroll in the park"
      },
      "options": [
-      "他喜歡拍照。",
-      "他喜歡散步。",
-      "他喜歡爬山。"
+      "他們在爬山。",
+      "他們在跑步。",
+      "他們在公園散步。"
      ],
-     "answer": 0,
-     "why": "拍照 = to take photos."
+     "answer": 2,
+     "why": "A stroll in the park → 散步. A is on a mountain; B is too fast."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "🎨",
-      "label": "interested in paintings"
+      "icon": "🤝😊",
+      "label": "friendly people"
      },
-     "text": "我（　）畫畫很有興趣。",
+     "text": "這家店的老闆（　）客人很好。",
      "options": [
-      "給",
       "對",
-      "跟"
+      "給",
+      "在"
      ],
-     "answer": 1,
-     "why": "A fixed pattern: 對 … 有興趣."
+     "answer": 0,
+     "why": "對 + person + 很好 = good to someone. 給 and 在 are not used in this pattern."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "我（1）爬山很有（2）。再走幾（3）就到山上了。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "我對（1）很有興趣。上個週末，我跟朋友去陽明山。我們（2）了三個小時才到山上。我很累，朋友說：「（3）就到了，加油！」山上的風景很美，我拍了很多相片。山上的人（4），還給我們水喝。下山以後，我們在附近（5），然後才回家。",
      "options": [
-      "對",
-      "興趣",
-      "步",
-      "拍"
+      "爬",
+      "爬山",
+      "再走幾步",
+      "散步了一下",
+      "對拍照沒有興趣",
+      "對我們很好"
      ],
      "answers": [
-      0,
       1,
-      2
+      0,
+      2,
+      5,
+      3
      ],
-     "why": "(1)+(2) 對…有興趣. (3) 幾步 = a few steps. 拍 doesn't fit."
+     "why": "(1) his interest is mountain climbing. (2) climbed for three hours. (3) just a few more steps. (4) the people on the mountain are friendly. (5) a short stroll. 「對拍照沒有興趣」 contradicts the text: he took lots of photos."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the correct answer.",
-     "text": "美美對拍照很有興趣。週末她常常去陽明山爬山、拍照。山上的人都對她很好。",
-     "question": "美美週末常常做什麼？",
+     "text": "我爸爸以前對運動沒有興趣，每天下班就坐在家裡看電視。去年醫生說他太胖了，要多走路。他就開始每天晚飯以後去公園散步。散步的時候他認識了幾個朋友，他們週末常常一起去爬山。現在我爸爸瘦多了，也對爬山越來越有興趣。",
+     "question": "爸爸為什麼開始散步？",
      "options": [
-      "爬山、拍照",
-      "打籃球",
-      "看電影",
-      "打工"
+      "他對爬山有興趣",
+      "醫生要他多走路",
+      "朋友請他去",
+      "他不想看電視了"
      ],
-     "answer": 0,
-     "why": "去陽明山爬山、拍照."
+     "answer": 1,
+     "why": "醫生說…要多走路 → that is the reason. A: his interest in climbing came later. C: he met his friends while walking. D is not mentioned."
     }
    ],
    "grammar": [

@@ -1252,12 +1252,12 @@
    },
    "question": "天氣怎麼樣？",
    "options": [
-    "下雨了。",
     "越來越熱了。",
-    "越來越冷了。"
+    "越來越冷了。",
+    "一直很涼快。"
    ],
-   "answer": 2,
-   "why": "Suhu turun terus → 越來越冷."
+   "answer": 1,
+   "why": "Termometer makin rendah → 越來越冷. A kebalikannya; C tidak ada perubahan."
   },
   {
    "type": "listen_pic",
@@ -1268,65 +1268,65 @@
     "label": "malam hari dia menulis buku harian",
     "img": "C10-3"
    },
-   "question": "你每天做什麼？",
+   "question": "他晚上經常做什麼？",
    "options": [
-    "看報紙。",
-    "看書。",
-    "寫日記。"
+    "寫日記。",
+    "看電視。",
+    "打電話。"
    ],
-   "answer": 2,
-   "why": "日記 = buku harian."
+   "answer": 0,
+   "why": "Malam hari menulis buku harian → 寫日記. B dan C kegiatan lain."
   },
   {
    "type": "listen_reply",
    "part": "聽力 Part 2 · Tanya-jawab satu putaran",
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你一個月的生活費多少？",
+   "audio": "月底了，你還有錢嗎？",
    "options": [
-    "我花生活。",
-    "生活費很越。",
-    "差不多一萬塊。"
+    "我一般月底去買東西。",
+    "只有一百塊了。",
+    "我的日記在桌子上。"
    ],
-   "answer": 2,
-   "why": "生活費 = biaya hidup."
+   "answer": 1,
+   "why": "Ditanya masih ada uang atau tidak → 只有一百塊了. A tidak menjawab; C tidak berhubungan."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他越吃越胖。",
+   "text": "妹妹越吃越胖，所以她現在不吃蛋糕了。",
    "options": [
     {
-     "icon": "🍔",
-     "label": "makin makan makin gemuk"
+     "icon": "👧🍰",
+     "label": "adik makan kue"
     },
     {
-     "icon": "😴",
-     "label": "tidur"
+     "icon": "👧🙅🍰",
+     "label": "adik menolak kue"
     },
     {
-     "icon": "🏃",
-     "label": "makin olahraga makin kurus"
+     "icon": "👧🏃",
+     "label": "adik berolahraga"
     }
    ],
-   "answer": 0,
-   "why": "越 A 越 B = makin A makin B."
+   "answer": 1,
+   "why": "越吃越胖 → sekarang tidak makan kue lagi (menolak kue). A kebalikannya; C tidak disebut."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "💸",
-    "label": "uang habis dibelanjakan"
+    "icon": "💸👛",
+    "label": "dompet kosong, uangnya habis"
    },
    "options": [
-    "我有很多錢。",
-    "我沒花錢。",
-    "我花了很多錢。"
+    "他的錢越來越多。",
+    "他的錢都花光了。",
+    "他的錢包裡有很多錢。"
    ],
-   "answer": 2,
-   "why": "花 = membelanjakan."
+   "answer": 1,
+   "why": "Dompet kosong → 花光了. A dan C kebalikannya."
   },
   {
    "type": "read_gap",
@@ -1336,14 +1336,14 @@
     "icon": "📈",
     "label": "jumlahnya makin banyak"
    },
-   "text": "學中文的人越來（　）多。",
+   "text": "來學中文的人（　）多了。",
    "options": [
+    "越來越",
     "越",
-    "更",
-    "很"
+    "經常"
    ],
    "answer": 0,
-   "why": "Pola tetap: 越來越."
+   "why": "越來越 + Vs + 了 = makin lama makin. 越 harus berpasangan (越A越B); 經常多了 tidak lazim."
   },
   {
    "type": "listen_dialog",
@@ -1351,31 +1351,31 @@
    "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "你的生活費夠用嗎？"
-    },
-    {
      "sp": "男",
-     "zh": "越來越不夠了，東西越來越貴。"
+     "zh": "你怎麼每天都吃饅頭？"
     },
     {
      "sp": "女",
-     "zh": "你可以寫日記，看錢都花在哪裡。"
+     "zh": "月底了，生活費快花完了。"
     },
     {
      "sp": "男",
-     "zh": "好，我明天就開始寫。"
+     "zh": "你一般一個月花多少？"
+    },
+    {
+     "sp": "女",
+     "zh": "一萬，可是這個月加上看醫生的錢，多花了兩千。"
     }
    ],
-   "question": "這位先生明天要做什麼？",
+   "question": "這位小姐為什麼每天吃饅頭？",
    "options": [
-    "找工作",
-    "寫花錢的日記",
-    "跟這位小姐借錢",
-    "少吃一點飯"
+    "她很喜歡吃饅頭",
+    "她這個月的錢不夠了",
+    "她生病了不能吃別的",
+    "饅頭越來越貴"
    ],
    "answer": 1,
-   "why": "Menerima saran menulis 日記 pengeluaran. A, C, D tidak disebut."
+   "why": "Akhir bulan + uang hampir habis (ada biaya dokter) → berhemat. A tidak disebut. C: dokter hanya menambah pengeluaran, bukan larangan makan. D tidak disebut."
   }
  ],
  "C11": [
@@ -1388,14 +1388,14 @@
     "label": "ibu memberikan payung di depan pintu",
     "img": "C11-2"
    },
-   "question": "出門要帶什麼？",
+   "question": "媽媽說什麼？",
    "options": [
-    "外套。",
-    "眼鏡。",
-    "傘。"
+    "別再玩手機了！",
+    "出門別忘了帶傘！",
+    "今天是晴天！"
    ],
-   "answer": 2,
-   "why": "傘 = payung."
+   "answer": 1,
+   "why": "Ibu menyerahkan payung di pintu → 出門別忘了帶傘. A tidak cocok dengan gambar; C: kalau cerah tidak perlu payung."
   },
   {
    "type": "listen_pic",
@@ -1408,47 +1408,47 @@
    },
    "question": "今天天氣怎麼樣？",
    "options": [
-    "陰天。",
-    "晴天。",
-    "下雨。"
+    "陰天，可能會下雨。",
+    "下雨，很涼。",
+    "晴天，天氣很好。"
    ],
-   "answer": 1,
-   "why": "晴天 = cerah."
+   "answer": 2,
+   "why": "Langit cerah → 晴天. A dan B cuaca buruk."
   },
   {
    "type": "listen_reply",
    "part": "聽力 Part 2 · Tanya-jawab satu putaran",
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "外頭下雨嗎？",
+   "audio": "你的鞋子怎麼溼了？",
    "options": [
-    "外頭很雨衣。",
-    "下得很大，你帶雨衣吧。",
-    "雨在下外頭。"
+    "我沒帶傘，走路回來的。",
+    "這雙鞋子很貴。",
+    "明天會是晴天。"
    ],
-   "answer": 1,
-   "why": "Jawab keadaan + saran."
+   "answer": 0,
+   "why": "Ditanya SEBAB sepatu basah → tidak bawa payung. B dan C tidak menjelaskan sebabnya."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "我的衣服都溼了。",
+   "text": "外面下著雨，她穿著雨衣去上學。",
    "options": [
     {
-     "icon": "👕✨",
-     "label": "baju kering"
+     "icon": "👧☂️",
+     "label": "memakai payung"
     },
     {
-     "icon": "👕🔥",
-     "label": "baju terbakar"
+     "icon": "👧🧥🌧️",
+     "label": "memakai jas hujan saat hujan"
     },
     {
-     "icon": "💧👕",
-     "label": "baju basah"
+     "icon": "👧☀️",
+     "label": "cuaca cerah"
     }
    ],
-   "answer": 2,
-   "why": "溼 = basah."
+   "answer": 1,
+   "why": "下著雨 + 穿著雨衣 → jas hujan saat hujan. A: payung, bukan jas hujan. C tidak hujan."
   },
   {
    "type": "read_pick",
@@ -1461,10 +1461,10 @@
    "options": [
     "今天是陰天。",
     "今天是晴天。",
-    "今天下雪。"
+    "今天下雪了。"
    ],
    "answer": 0,
-   "why": "陰天 = mendung."
+   "why": "Awan tebal → 陰天. B dan C tidak cocok."
   },
   {
    "type": "read_gap",
@@ -1474,14 +1474,14 @@
     "icon": "🧥🌧️",
     "label": "jas hujan"
    },
-   "text": "下雨了，請穿（　）。",
+   "text": "今天會下雨，你出門要穿（　）。",
    "options": [
-    "晴天",
+    "雨衣",
     "雨傘",
-    "雨衣"
+    "晴天"
    ],
-   "answer": 2,
-   "why": "Jas hujan dipakai (穿); payung dibawa (帶)."
+   "answer": 0,
+   "why": "Kata kerja 穿 → 雨衣 (dipakai di badan). 雨傘 dipakai dengan 帶/拿; 晴天 bukan benda."
   },
   {
    "type": "listen_dialog",
@@ -1489,31 +1489,31 @@
    "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "出門別忘了帶傘！"
-    },
-    {
      "sp": "女",
-     "zh": "今天是晴天，不會下雨吧？"
+     "zh": "你帶傘了嗎？外面好像要下雨了。"
     },
     {
      "sp": "男",
-     "zh": "電視上說下午會下雨，天氣也會變涼。"
+     "zh": "沒關係，我開車。"
     },
     {
      "sp": "女",
-     "zh": "好吧，我帶雨傘，也多帶一件衣服。"
+     "zh": "可是你要走到公司，要走十分鐘啊！"
+    },
+    {
+     "sp": "男",
+     "zh": "那好吧，我帶你的傘。"
     }
    ],
-   "question": "這位小姐出門會帶什麼？",
+   "question": "這位先生要帶什麼？",
    "options": [
-    "只帶雨傘",
-    "雨傘和衣服",
-    "什麼都不帶",
-    "雨衣"
+    "他自己的傘",
+    "這位小姐的傘",
+    "雨衣",
+    "什麼都不帶"
    ],
    "answer": 1,
-   "why": "我帶雨傘，也多帶一件衣服. A: kurang. C: kebalikan. D tidak disebut."
+   "why": "我帶你的傘 → payung si perempuan. A: dia tidak menyebut payungnya sendiri. C tidak disebut. D = sikap awal yang berubah."
   }
  ],
  "C12": [
@@ -1528,12 +1528,12 @@
    },
    "question": "這張照片是什麼時候的？",
    "options": [
-    "我出生的時候。",
-    "我上中學的時候。",
-    "我上大學的時候。"
+    "我上國小的時候。",
+    "我剛出生的時候。",
+    "我上中學的時候。"
    ],
-   "answer": 0,
-   "why": "……的時候 = ketika …. 出生 = lahir."
+   "answer": 1,
+   "why": "Foto bayi baru lahir → 剛出生的時候. A dan C sudah besar."
   },
   {
    "type": "listen_pic",
@@ -1546,12 +1546,12 @@
    },
    "question": "你小的時候住在哪裡？",
    "options": [
-    "住在城市。",
-    "住在鄉下。",
-    "住在宿舍。"
+    "住在市區的大樓裡。",
+    "住在學校宿舍。",
+    "住在鄉下。"
    ],
-   "answer": 1,
-   "why": "小的時候 = waktu kecil."
+   "answer": 2,
+   "why": "Rumah di desa → 鄉下. A dan B tempat di kota."
   },
   {
    "type": "listen_reply",
@@ -1559,34 +1559,34 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "你的母語是什麼？",
    "options": [
-    "母語是在印尼。",
-    "是印尼話。",
-    "我母語很好。"
+    "我在台北上中學。",
+    "我的母語是印尼話。",
+    "我會說一點中文。"
    ],
    "answer": 1,
-   "why": "母語 = bahasa ibu → sebut bahasanya."
+   "why": "母語 = bahasa ibu → 印尼話. A tidak berhubungan. C menyebut bahasa yang dipelajari, bukan bahasa ibu."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他是大學生。",
+   "text": "這是爺爺小時候的照片，當時他才五歲。",
    "options": [
     {
-     "icon": "🧑‍🎓",
-     "label": "mahasiswa"
+     "icon": "👴",
+     "label": "kakek sekarang"
     },
     {
-     "icon": "👨‍💼",
-     "label": "pegawai"
+     "icon": "🧒📷",
+     "label": "foto kakek waktu kecil"
     },
     {
-     "icon": "🎒",
-     "label": "murid SD"
+     "icon": "👶",
+     "label": "bayi"
     }
    ],
-   "answer": 0,
-   "why": "大學生 = mahasiswa."
+   "answer": 1,
+   "why": "小時候 + 當時才五歲 → foto anak kecil. A = kakek sekarang; C terlalu kecil (bayi, bukan lima tahun)."
   },
   {
    "type": "read_pick",
@@ -1597,29 +1597,29 @@
     "label": "kakek yang sudah lanjut usia"
    },
    "options": [
-    "爺爺很年輕。",
-    "爺爺的年紀很大。",
-    "爺爺是大學生。"
+    "他年紀很大了。",
+    "他還是國小學生。",
+    "他是大學生。"
    ],
-   "answer": 1,
-   "why": "年紀 = usia."
+   "answer": 0,
+   "why": "Kakek tua → 年紀很大了. B dan C orang muda."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "👶",
-    "label": "bayi yang baru lahir"
+    "icon": "👶🏥",
+    "label": "bayi baru lahir"
    },
-   "text": "我是在台北（　）的。",
+   "text": "我是在醫院（　）的。",
    "options": [
-    "當時",
     "出生",
-    "住址"
+    "長大",
+    "年紀"
    ],
-   "answer": 1,
-   "why": "(是) … 出生的 = lahir di …."
+   "answer": 0,
+   "why": "Bayi di rumah sakit → 在醫院出生. 在醫院長大 tidak masuk akal; 年紀 kata benda."
   },
   {
    "type": "listen_dialog",
@@ -1627,31 +1627,31 @@
    "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "你是在哪裡出生的？"
-    },
-    {
      "sp": "男",
-     "zh": "我是在雅加達出生的，在台北長大。"
+     "zh": "你的中文說得真好，你是華人嗎？"
     },
     {
      "sp": "女",
-     "zh": "所以你的中文那麼好！"
+     "zh": "對，我爸爸媽媽都是華人，可是我是在美國長大的。"
     },
     {
      "sp": "男",
-     "zh": "對，我小時候就在台北上國小。"
+     "zh": "那你怎麼說得這麼好？"
+    },
+    {
+     "sp": "女",
+     "zh": "我小的時候，爸媽在家只跟我說中文。"
     }
    ],
-   "question": "這位先生在哪裡長大？",
+   "question": "這位小姐的中文為什麼說得很好？",
    "options": [
-    "雅加達",
-    "台北",
-    "大陸",
-    "泗水"
+    "她在臺灣長大",
+    "她在家說中文",
+    "她在大學學中文",
+    "她的母語是英文"
    ],
    "answer": 1,
-   "why": "在台北長大. A = tempat lahir. C & D tidak disebut."
+   "why": "爸媽在家只跟我說中文 → alasannya. A salah: dia besar di Amerika. C dan D tidak disebut."
   }
  ]
 }
