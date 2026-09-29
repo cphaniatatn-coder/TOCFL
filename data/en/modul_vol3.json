@@ -19296,12 +19296,12 @@
      },
      "question": "老闆娘拿著什麼？",
      "options": [
-      "一個籃子。",
-      "一個皮包。",
-      "一個盒子。"
+      "一個箱子。",
+      "一個袋子。",
+      "一個籃子。"
      ],
-     "answer": 0,
-     "why": "籃子 = basket."
+     "answer": 2,
+     "why": "The shopkeeper is holding a basket → 籃子. A and B are other containers."
     },
     {
      "type": "listen_pic",
@@ -19314,12 +19314,12 @@
      },
      "question": "籃子裡有什麼？",
      "options": [
-      "盒子。",
+      "很多衣服。",
       "很多水果。",
-      "很多麵包。"
+      "沒有東西。"
      ],
      "answer": 1,
-     "why": "A basket of apples & bananas → 水果."
+     "why": "A basket full of fruit → 很多水果. A and C do not match."
     },
     {
      "type": "listen_pic",
@@ -19332,38 +19332,38 @@
      },
      "question": "這家店的生意怎麼樣？",
      "options": [
-      "很好。",
-      "不好，沒有人。",
-      "關門了。"
+      "不太好，沒有客人。",
+      "今天不開。",
+      "很好，客人很多。"
      ],
-     "answer": 0,
-     "why": "生意很好 = business is good."
+     "answer": 2,
+     "why": "A shop full of customers → 生意很好. A and B are the opposite."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "她怎麼做生意？",
+     "audio": "這家店的生意怎麼樣？",
      "options": [
-      "她高高興興地做生意。",
-      "她做生意高興。",
-      "她是老闆娘地。"
+      "老闆娘很高。",
+      "很好，每天都有很多客人。",
+      "我在這裡買水果。"
      ],
-     "answer": 0,
-     "why": "怎麼 (how) → adverbial + 地 + V."
+     "answer": 1,
+     "why": "The question asks how business is → 很好. A is about the owner; C does not answer."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "這隻狗的主人是誰？",
+     "audio": "你是這家店的主人嗎？",
      "options": [
-      "我是狗。",
-      "是我的鄰居。",
-      "主人很狗。"
+      "對，這是我的店。",
+      "這家店很有名。",
+      "我在這裡買東西。"
      ],
-     "answer": 1,
-     "why": "主人 = owner, host."
+     "answer": 0,
+     "why": "主人 = owner → 這是我的店. B and C do not answer."
     },
     {
      "type": "listen_dialog",
@@ -19371,22 +19371,30 @@
      "instr": "Listen to the dialogue, then answer the question.",
      "lines": [
       {
+       "sp": "女",
+       "zh": "老闆娘，這種蘋果怎麼賣？"
+      },
+      {
        "sp": "男",
-       "zh": "妳走慢一點！"
+       "zh": "一籃子一百五十塊。"
       },
       {
        "sp": "女",
-       "zh": "好，我慢慢地走。"
+       "zh": "可以買半籃子嗎？"
+      },
+      {
+       "sp": "男",
+       "zh": "可以，八十塊。"
       }
      ],
-     "question": "這位小姐要怎麼走？",
+     "question": "半籃子蘋果多少錢？",
      "options": [
-      "慢慢地走",
-      "快快地走",
-      "不走"
+      "一百五十塊",
+      "八十塊",
+      "七十五塊"
      ],
-     "answer": 0,
-     "why": "慢慢地走 = to walk slowly."
+     "answer": 1,
+     "why": "Half a basket = 80 (the seller's price). A is a full basket. C is dividing it yourself — not the price given."
     },
     {
      "type": "listen_dialog",
@@ -19395,117 +19403,122 @@
      "lines": [
       {
        "sp": "男",
-       "zh": "老闆娘，今天生意好嗎？"
+       "zh": "老闆娘，您的店怎麼天天都有這麼多人？"
       },
       {
        "sp": "女",
-       "zh": "很好！菜都快賣完了。"
+       "zh": "我的水果都是今天早上才到的。"
       },
       {
        "sp": "男",
-       "zh": "那我要最後這一籃子。"
+       "zh": "所以大家都喜歡來。"
       },
       {
        "sp": "女",
-       "zh": "好，給你便宜一點。"
+       "zh": "對，我也會高高興興地跟客人說話。"
       }
      ],
-     "question": "老闆娘今天的生意怎麼樣？",
+     "question": "這家店為什麼生意很好？",
      "options": [
-      "不太好",
-      "很好，菜快賣完了",
-      "沒有客人",
-      "菜太貴，沒人買"
+      "水果很便宜",
+      "水果好，老闆娘也很客氣",
+      "店很大",
+      "老闆娘送東西"
      ],
      "answer": 1,
-     "why": "很好！菜都快賣完了. A, C, D: the opposite."
+     "why": "The fruit arrived this morning + she serves cheerfully. A, C and D are not mentioned."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "小朋友慢慢地走路。",
+     "text": "老闆娘高高興興地賣水果。",
      "options": [
       {
-       "icon": "🐢",
-       "label": "walking slowly"
+       "icon": "👩😢🍎",
+       "label": "sadly selling fruit"
       },
       {
-       "icon": "🛌",
-       "label": "to sleep"
+       "icon": "👩😄🍎",
+       "label": "happily selling fruit"
       },
       {
-       "icon": "🏃",
-       "label": "running"
+       "icon": "👩🛒",
+       "label": "shopping"
       }
      ],
-     "answer": 0,
-     "why": "AA地 + V = in a … way"
+     "answer": 1,
+     "why": "高高興興地賣 → happy. A is the opposite; C is a customer, not a seller."
     },
     {
      "type": "read_pick",
      "part": "閱讀 Part 2 · Picture → sentence",
      "instr": "Look at the picture, then choose the matching sentence.",
      "picture": {
-      "icon": "👩‍💼🏪",
-      "label": "the shop owner (female)"
+      "icon": "🧺🍎",
+      "label": "a basket of apples"
      },
      "options": [
-      "她是醫生。",
-      "她是學生。",
-      "她是這家店的老闆娘。"
+      "籃子裡沒有東西。",
+      "他在買籃子。",
+      "籃子裡有很多蘋果。"
      ],
      "answer": 2,
-     "why": "老闆娘 = female boss/owner."
+     "why": "A basket of apples → 很多蘋果. A is the opposite; B is not shown."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "😊",
-      "label": "going home happily"
+      "icon": "🐢🚶",
+      "label": "walking slowly"
      },
-     "text": "他高高興興（　）回家了。",
+     "text": "爺爺慢慢（　）走進公園。",
      "options": [
+      "地",
       "的",
-      "得",
-      "地"
+      "得"
      ],
-     "answer": 2,
-     "why": "An adverbial of manner before a verb → 地."
+     "answer": 0,
+     "why": "Manner + 地 + V: 慢慢地走. 的 goes with nouns; 得 comes after the verb."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "老闆娘高高興興（1）做生意。你要好（2）地休息。她是這個店的（3）。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "我家樓下有一家小店，（1）是一位老太太。她已經在這裡（2）二十年了。她每天都（3）跟客人說話，大家都很喜歡她。我常常去她的店買水果，她常常送我一（4）水果。她常常說：「你（5）看，不用快。」",
      "options": [
-      "地",
-      "好",
+      "高高興興地",
+      "慢慢地",
+      "做生意",
+      "好好的",
       "主人",
       "籃子"
      ],
      "answers": [
+      4,
+      2,
       0,
-      1,
-      2
+      5,
+      1
      ],
-     "why": "(1) adverbial of manner + 地 + V. (2) 好好地 (reduplication). (3) 主人 = owner. 籃子 doesn't fit."
+     "why": "(1) the shop owner. (2) in business for 20 years. (3) AABB地 + V: talks cheerfully. (4) a basketful. (5) 慢慢地看 = take your time looking. 「好好的」 uses 的, but a manner adverb before a verb needs 地."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the correct answer.",
-     "text": "王太太是這家店的主人。她做生意做了二十年，每天都高高興興地跟客人說話。",
-     "question": "王太太做生意做了多久？",
+     "text": "我家附近的市場有一家水果店，主人是一位老闆娘。她已經做了三十年的生意了。她說，做生意最重要的不是賣得多，是讓客人高高興興地回家。所以要是水果不好，她一定不賣。有一次我買的蘋果不甜，她就再給了我一籃子。",
+     "question": "老闆娘覺得做生意什麼最重要？",
      "options": [
-      "兩年",
-      "十二年",
-      "二十年"
+      "賣很多水果",
+      "水果要便宜",
+      "讓客人高興",
+      "每天都開店"
      ],
      "answer": 2,
-     "why": "做了二十年."
+     "why": "最重要的不是賣得多，是讓客人高高興興地回家. A is directly denied. B and D are not mentioned."
     }
    ],
    "grammar": [
@@ -19724,12 +19737,12 @@
      },
      "question": "她要什麼顏色的？",
      "options": [
-      "深藍色的。",
       "淺藍色的。",
-      "白色的。"
+      "深藍色的。",
+      "紅色的。"
      ],
-     "answer": 0,
-     "why": "深 = dark (colour); 淺 = light."
+     "answer": 1,
+     "why": "A navy blue top → 深藍色. A is light (the opposite); C is the wrong colour."
     },
     {
      "type": "listen_pic",
@@ -19742,12 +19755,12 @@
      },
      "question": "你要做什麼？",
      "options": [
+      "我想買兩件。",
       "我想換一件。",
-      "我想買一件。",
-      "我想洗衣服。"
+      "我想洗一洗。"
      ],
-     "answer": 0,
-     "why": "換 = to exchange."
+     "answer": 1,
+     "why": "Returning clothes to exchange → 換一件. A and C do not match."
     },
     {
      "type": "listen_pic",
@@ -19760,38 +19773,38 @@
      },
      "question": "這裡的水怎麼樣？",
      "options": [
-      "很淺。",
       "很深。",
-      "很冷。"
+      "很淺。",
+      "很髒。"
      ],
-     "answer": 1,
-     "why": "深 = deep."
+     "answer": 0,
+     "why": "Only the head is visible → 很深. B is the opposite; C is not shown."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "你在臺灣住慣了嗎？",
+     "audio": "這件衣服太小了，可以換一換嗎？",
      "options": [
-      "住慣了，可是還吃不慣太甜的菜。",
-      "我住在臺灣。",
-      "住了慣。"
+      "這件衣服很流行。",
+      "可以，你要換大一點的嗎？",
+      "我喜歡深色的。"
      ],
-     "answer": 0,
-     "why": "住慣了嗎 → 住慣了／還沒住慣. B answers 'where'."
+     "answer": 1,
+     "why": "A request to exchange → 可以. A and C do not respond to the request."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "你住得慣嗎？",
+     "audio": "你住得慣臺灣嗎？",
      "options": [
-      "我住慣了嗎。",
-      "住得慣，這裡很方便。",
-      "慣很住。"
+      "我住在台北。",
+      "臺灣很熱。",
+      "住慣了，大家都很好。"
      ],
-     "answer": 1,
-     "why": "V得慣 = can get used to."
+     "answer": 2,
+     "why": "住得慣嗎 = are you used to it? → 住慣了. A and B do not answer."
     },
     {
      "type": "listen_dialog",
@@ -19799,26 +19812,30 @@
      "instr": "Listen to the dialogue, then answer the question.",
      "lines": [
       {
+       "sp": "女",
+       "zh": "你在臺灣住了多久了？"
+      },
+      {
        "sp": "男",
-       "zh": "這雙鞋子可以換嗎？"
+       "zh": "三年了，住慣了。"
       },
       {
        "sp": "女",
-       "zh": "可以，你要換大一點的還是小一點的？"
+       "zh": "臺灣菜你吃得慣嗎？"
       },
       {
        "sp": "男",
-       "zh": "大一點的。"
+       "zh": "大部分都吃得慣，就是太甜的吃不慣。"
       }
      ],
-     "question": "這位先生要換什麼？",
+     "question": "這位先生吃不慣什麼？",
      "options": [
-      "大一點的",
-      "小一點的",
-      "別的顏色"
+      "臺灣菜",
+      "太甜的東西",
+      "太鹹的東西"
      ],
-     "answer": 0,
-     "why": "大一點的 — the answer is in the last line."
+     "answer": 1,
+     "why": "太甜的吃不慣. A: most of it is fine. C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -19826,118 +19843,123 @@
      "instr": "Listen to the dialogue, then choose the correct answer.",
      "lines": [
       {
-       "sp": "女",
-       "zh": "這件太小了，可以換一換嗎？"
-      },
-      {
        "sp": "男",
-       "zh": "可以，你要大一號的嗎？"
+       "zh": "這件毛衣的顏色太淺了，可以換深一點的嗎？"
       },
       {
        "sp": "女",
-       "zh": "對，顏色要淺一點的。"
+       "zh": "可以，深藍色的怎麼樣？現在很流行。"
       },
       {
        "sp": "男",
-       "zh": "淺藍的只有小號，深藍的有大號。"
+       "zh": "好，那我試一試。"
+      },
+      {
+       "sp": "女",
+       "zh": "你到那邊試吧。"
       }
      ],
-     "question": "這位小姐最可能換哪一件？",
+     "question": "這位先生為什麼要換毛衣？",
      "options": [
-      "淺藍的小號",
-      "深藍的大號",
-      "不換了",
-      "淺藍的大號"
+      "太大了",
+      "不流行",
+      "顏色太淺",
+      "太貴了"
      ],
-     "answer": 1,
-     "why": "She needs a large size; the only large one is 深藍. A: still small. D: there isn't one."
+     "answer": 2,
+     "why": "顏色太淺了 → that is the reason. A, B and D are not mentioned."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "桌子是圓的。",
+     "text": "他看了看時鐘，已經十點鐘了。",
      "options": [
       {
-       "icon": "🟫",
-       "label": "a square table"
+       "icon": "👀🕒",
+       "label": "looking at the clock, 3 o'clock"
       },
       {
-       "icon": "🔺",
-       "label": "a triangular table"
+       "icon": "👀🕙",
+       "label": "looking at the clock, 10 o'clock"
       },
       {
-       "icon": "⭕",
-       "label": "a round table"
+       "icon": "😴🕙",
+       "label": "asleep at 10"
       }
      ],
-     "answer": 2,
-     "why": "圓 = round."
+     "answer": 1,
+     "why": "看了看時鐘 + 十點鐘. A is the wrong time; C: he is not asleep."
     },
     {
      "type": "read_pick",
      "part": "閱讀 Part 2 · Picture → sentence",
      "instr": "Look at the picture, then choose the matching sentence.",
      "picture": {
-      "icon": "📱✨",
-      "label": "the latest phone model"
+      "icon": "⭕",
+      "label": "whole number"
      },
      "options": [
-      "這種手機很舊。",
-      "這種手機壞了。",
-      "這種手機現在很流行。"
+      "這個東西是方的。",
+      "這個東西很長。",
+      "這個東西是圓的。"
      ],
      "answer": 2,
-     "why": "流行 = popular, fashionable."
+     "why": "A round shape → 圓. A and B are other shapes."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "🟦",
-      "label": "light blue"
+      "icon": "🍰😖",
+      "label": "not used to sweet food"
      },
-     "text": "我喜歡（　）藍色，不喜歡深藍色。",
+     "text": "我吃不（　）太甜的東西。",
      "options": [
+      "慣",
       "換",
-      "圓",
-      "淺"
+      "深"
      ],
-     "answer": 2,
-     "why": "淺 = light/shallow (the opposite of 深)."
+     "answer": 0,
+     "why": "吃不慣 = not used to eating. 吃不換 and 吃不深 make no sense."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "這件太小了，我想換（1）換。我要（2）一點的顏色。我在臺灣住（3）了。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "上個星期我買了一件毛衣，回家以後發現太小了，所以今天去店裡（1）。店員說：「你要什麼顏色的？」我說：「這件太（2）了，我要（3）一點的。」店員說：「這件深藍色的很（4）。」我（5），覺得不錯，就買了。",
      "options": [
-      "一",
+      "看了看",
+      "流行",
+      "淺",
+      "吃不慣",
       "深",
-      "慣",
-      "圓"
+      "換一換"
      ],
      "answers": [
-      0,
+      5,
+      2,
+      4,
       1,
-      2
+      0
      ],
-     "why": "(1) 換一換. (2) 深一點 = darker. (3) 住慣了 = got used to living. 圓 doesn't fit."
+     "why": "(1) exchange it. (2) too light. (3) darker. (4) in fashion. (5) V了V: had a quick look. 「吃不慣」 fits no blank."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read these shop rules, then choose the correct answer.",
-     "text": "買了東西，一個星期可以換。衣服穿過就不能換了。",
-     "question": "哪一個對？",
+     "text": "我剛來臺灣的時候，吃不慣這裡的菜，也住不慣小小的房間。可是住了半年以後，我慢慢住慣了。現在我最喜歡臺灣的小吃，回印尼的時候，我還會想吃臺灣的東西。",
+     "question": "這個人現在覺得臺灣的生活怎麼樣？",
      "options": [
-      "穿過的衣服不能換",
-      "一個月可以換",
-      "都不能換"
+      "還吃不慣",
+      "已經住慣了",
+      "房間太小",
+      "很想回印尼"
      ],
-     "answer": 0,
-     "why": "穿過就不能換了. B has the wrong time; C is too absolute."
+     "answer": 1,
+     "why": "現在…住慣了 + loves Taiwanese snacks. A and C were how it was AT FIRST. D is the opposite (even in Indonesia he misses Taiwanese food)."
     }
    ],
    "grammar": [
@@ -20147,12 +20169,12 @@
      },
      "question": "他在吃什麼？",
      "options": [
-      "便當。",
-      "麵。",
-      "漢堡。"
+      "麵包。",
+      "豆腐。",
+      "便當。"
      ],
-     "answer": 0,
-     "why": "便當 = boxed meal, bento."
+     "answer": 2,
+     "why": "A lunch box → 便當. A and B are other food."
     },
     {
      "type": "listen_pic",
@@ -20165,12 +20187,12 @@
      },
      "question": "你中午吃什麼？",
      "options": [
-      "麵。",
+      "麵包。",
       "便當。",
-      "漢堡。"
+      "牛肉麵。"
      ],
      "answer": 1,
-     "why": "便當 = bento."
+     "why": "A lunch box for lunch → 便當. A and C are other food."
     },
     {
      "type": "listen_pic",
@@ -20183,38 +20205,38 @@
      },
      "question": "請少放一點什麼？",
      "options": [
-      "油。",
       "糖。",
+      "油。",
       "鹽。"
      ],
      "answer": 2,
-     "why": "鹽 = salt."
+     "why": "The customer points at the salt → 鹽. A and B are other seasonings."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "你想吃什麼？",
+     "audio": "你的便當好吃嗎？",
      "options": [
-      "我什麼都想吃！",
-      "我什麼吃。",
-      "什麼都。"
+      "我中午吃便當。",
+      "什麼都好吃，就是太鹹了。",
+      "便當在桌子上。"
      ],
-     "answer": 0,
-     "why": "什麼都 = anything/everything."
+     "answer": 1,
+     "why": "The question is whether it tastes good → 什麼都好吃，就是…. A and C say nothing about the taste."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "你想吃什麼？",
+     "audio": "這個便當裡有什麼？",
      "options": [
-      "什麼都好，就是不要太辣。",
-      "我什麼都。",
-      "想吃很什麼。"
+      "有米飯、豆腐和青菜。",
+      "便當很便宜。",
+      "我不吃便當。"
      ],
      "answer": 0,
-     "why": "什麼都…，就是… = anything …, it's just that …."
+     "why": "The question asks what is in it → 米飯、豆腐和青菜. B and C do not answer."
     },
     {
      "type": "listen_dialog",
@@ -20222,30 +20244,30 @@
      "instr": "Listen to the dialogue, then answer the question.",
      "lines": [
       {
-       "sp": "男",
-       "zh": "這個便當怎麼樣？"
-      },
-      {
        "sp": "女",
-       "zh": "什麼都好吃，就是太鹹了。"
+       "zh": "你想吃什麼？"
       },
       {
        "sp": "男",
-       "zh": "可能醬油放太多了。"
+       "zh": "什麼都可以，就是不要太辣的。"
       },
       {
        "sp": "女",
-       "zh": "對，下次叫老闆少放一點鹽。"
+       "zh": "那我們吃豆腐吧。"
+      },
+      {
+       "sp": "男",
+       "zh": "好。"
       }
      ],
-     "question": "這位小姐覺得便當怎麼樣？",
+     "question": "這位先生不想吃什麼？",
      "options": [
-      "太鹹",
-      "太甜",
-      "不好吃"
+      "豆腐",
+      "太辣的",
+      "米飯"
      ],
-     "answer": 0,
-     "why": "就是太鹹了. C: the opposite (什麼都好吃). B is not mentioned."
+     "answer": 1,
+     "why": "就是不要太辣的. A is agreed to (好). C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -20253,109 +20275,123 @@
      "instr": "Listen to the dialogue, then choose the correct answer.",
      "lines": [
       {
+       "sp": "女",
+       "zh": "這家餐廳的菜怎麼樣？"
+      },
+      {
        "sp": "男",
-       "zh": "這家餐廳怎麼樣？"
+       "zh": "什麼都好，就是油太多了。"
       },
       {
        "sp": "女",
-       "zh": "什麼都好，就是太貴了。"
+       "zh": "那你要不要跟老闆說少放一點油？"
+      },
+      {
+       "sp": "男",
+       "zh": "說了，可是還是一樣。"
       }
      ],
-     "question": "這位小姐覺得餐廳哪裡不好？",
+     "question": "這位先生覺得這家餐廳怎麼樣？",
      "options": [
-      "太貴",
-      "不好吃",
-      "太遠"
+      "菜很難吃",
+      "老闆不好",
+      "菜都很好，只是太油",
+      "太鹹了"
      ],
-     "answer": 0,
-     "why": "什麼都好，就是太貴 — the drawback is named after 就是."
+     "answer": 2,
+     "why": "什麼都好，就是油太多了. A is the opposite. B is not mentioned. D is not the problem (oil, not salt)."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "這家店的豆腐很有名。",
+     "text": "這個豆腐放了太多醬，黑黑的。",
      "options": [
       {
-       "icon": "🥢",
-       "label": "to know"
+       "icon": "🍲⬜",
+       "label": "plain white tofu"
       },
       {
-       "icon": "🐟",
-       "label": "fish"
+       "icon": "🍲⬛",
+       "label": "dark tofu with lots of sauce"
       },
       {
-       "icon": "🥩",
-       "label": "meat"
+       "icon": "🍚",
+       "label": "white rice"
       }
      ],
-     "answer": 0,
-     "why": "豆腐 = tofu."
+     "answer": 1,
+     "why": "太多醬 + 黑黑的 → dark from the sauce. A is the opposite; C is not tofu."
     },
     {
      "type": "read_pick",
      "part": "閱讀 Part 2 · Picture → sentence",
      "instr": "Look at the picture, then choose the matching sentence.",
      "picture": {
-      "icon": "🍚",
-      "label": "a bowl of white rice"
+      "icon": "🍱",
+      "label": "a lunch box"
      },
      "options": [
-      "我要一碗白飯。",
-      "我要一碗湯。",
-      "我要一碗麵。"
+      "這是一碗湯。",
+      "這是一籃子水果。",
+      "這是一個便當。"
      ],
-     "answer": 0,
-     "why": "Rice = 飯."
+     "answer": 2,
+     "why": "A lunch box → 便當. A and B do not match."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "🍳",
-      "label": "cooking oil"
+      "icon": "🧂",
+      "label": "salt"
      },
-     "text": "炒菜要放一點（　）。",
+     "text": "這個湯沒有味道，要放一點（　）。",
      "options": [
+      "鹽",
       "米",
-      "油",
       "便當"
      ],
-     "answer": 1,
-     "why": "油 = oil."
+     "answer": 0,
+     "why": "A bland soup → add 鹽. 米 and 便當 are not added to soup for flavour."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "這個便當（1）都好吃，（2）是太鹹了。可能（3）放得太多了。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "我每天中午都在學校吃（1）。今天的雞肉便當（2）都好吃，（3）太鹹了。我想可能是（4）放得太多了。晚上我去朋友家吃飯，他媽媽做的（5），誰都喜歡吃。",
      "options": [
-      "什麼",
-      "就",
       "鹽",
-      "米"
+      "就是",
+      "油很少",
+      "豆腐",
+      "什麼",
+      "便當"
      ],
      "answers": [
-      0,
+      5,
+      4,
       1,
-      2
+      0,
+      3
      ],
-     "why": "(1)+(2) 什麼都…就是…. (3) salty → 鹽 (salt). 米 doesn't fit."
+     "why": "(1) a lunch box. (2)(3) 什麼都…，就是… (4) too much salt. (5) his mother's tofu. 「油很少」 fits no blank."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the correct answer.",
-     "text": "這個便當有米飯、豆腐和青菜。豆腐很香，就是醬太多，有點鹹。",
-     "question": "便當哪裡不好？",
+     "text": "我媽媽做菜很少放鹽和油，她說這樣對身體比較好。一開始我覺得她做的菜什麼都好，就是沒有味道。後來我去外面吃便當，才發現外面的菜又鹹又油，吃完了一直想喝水。現在我覺得，還是媽媽做的菜最好吃。",
+     "question": "這個人現在覺得媽媽做的菜怎麼樣？",
      "options": [
-      "有點鹹",
-      "太甜",
-      "沒有米飯"
+      "沒有味道",
+      "最好吃",
+      "太鹹了",
+      "太油了"
      ],
-     "answer": 0,
-     "why": "就是醬太多，有點鹹."
+     "answer": 1,
+     "why": "現在…媽媽做的菜最好吃. A was the FIRST opinion. C and D describe food eaten out."
     }
    ],
    "grammar": [
@@ -20569,12 +20605,12 @@
      },
      "question": "你要幾顆芒果？",
      "options": [
-      "三顆。",
-      "一顆。",
-      "五顆。"
+      "兩顆。",
+      "十三顆。",
+      "三顆。"
      ],
-     "answer": 0,
-     "why": "顆 = the measure word for round fruit."
+     "answer": 2,
+     "why": "Three mangoes → 三顆. A and B are the wrong number."
     },
     {
      "type": "listen_pic",
@@ -20587,12 +20623,12 @@
      },
      "question": "你最喜歡吃什麼水果？",
      "options": [
-      "鳳梨。",
+      "木瓜。",
       "芒果。",
-      "草莓。"
+      "鳳梨。"
      ],
      "answer": 1,
-     "why": "芒果 = mango."
+     "why": "A mango → 芒果. A and C are other fruit."
     },
     {
      "type": "listen_pic",
@@ -20605,38 +20641,38 @@
      },
      "question": "這裡的什麼很新鮮？",
      "options": [
-      "葡萄。",
-      "橘子。",
-      "番茄。"
+      "草莓。",
+      "番茄。",
+      "葡萄。"
      ],
-     "answer": 0,
-     "why": "葡萄 = grapes."
+     "answer": 2,
+     "why": "A bunch of fresh grapes → 葡萄. A and B are other fruit."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "你喜歡什麼水果？",
+     "audio": "你喜歡吃什麼水果？",
      "options": [
+      "芒果很貴。",
       "我都喜歡，尤其是芒果。",
-      "水果很甜。",
-      "尤其水果。"
+      "我在市場買水果。"
      ],
-     "answer": 0,
-     "why": "尤其是 highlights the favourite."
+     "answer": 1,
+     "why": "The question asks what she likes → 尤其是芒果. A and C do not answer."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "你喜歡臺灣的水果嗎？",
+     "audio": "還有草莓嗎？",
      "options": [
-      "喜歡，尤其是鳳梨。",
-      "我是芒果。",
-      "水果很尤其。"
+      "差不多賣完了，只有一點。",
+      "草莓很甜。",
+      "我不喜歡草莓。"
      ],
      "answer": 0,
-     "why": "尤其(是) = especially."
+     "why": "The question is whether there are any left → 差不多賣完了. B and C do not answer."
     },
     {
      "type": "listen_dialog",
@@ -20644,22 +20680,30 @@
      "instr": "Listen to the dialogue, then answer the question.",
      "lines": [
       {
+       "sp": "女",
+       "zh": "老闆，還有草莓嗎？"
+      },
+      {
        "sp": "男",
-       "zh": "這兩件衣服一樣嗎？"
+       "zh": "草莓差不多賣完了，葡萄和橘子還有很多。"
       },
       {
        "sp": "女",
-       "zh": "差不多一樣，只是顏色不同。"
+       "zh": "那我買葡萄吧。"
+      },
+      {
+       "sp": "男",
+       "zh": "好，今天的葡萄特別新鮮。"
       }
      ],
-     "question": "兩件衣服哪裡不同？",
+     "question": "這位小姐要買什麼？",
      "options": [
-      "顏色",
-      "大小",
-      "樣子"
+      "草莓",
+      "葡萄",
+      "橘子"
      ],
-     "answer": 0,
-     "why": "差不多一樣 (almost the same), 只是顏色不同."
+     "answer": 1,
+     "why": "那我買葡萄吧. A is almost sold out. C is available but not chosen."
     },
     {
      "type": "listen_dialog",
@@ -20667,53 +20711,53 @@
      "instr": "Listen to the dialogue, then choose the correct answer.",
      "lines": [
       {
-       "sp": "女",
-       "zh": "台灣的水果，尤其是芒果，都很甜。"
-      },
-      {
        "sp": "男",
-       "zh": "我最喜歡鳳梨和草莓。"
+       "zh": "這個木瓜多少錢？"
       },
       {
        "sp": "女",
-       "zh": "草莓是冬天的，現在是夏天，買不到。"
+       "zh": "一顆八十塊，兩顆一百五。"
       },
       {
        "sp": "男",
-       "zh": "那我們買芒果吧。"
+       "zh": "那我買兩顆。"
+      },
+      {
+       "sp": "女",
+       "zh": "好，今天的木瓜差不多都很甜。"
       }
      ],
-     "question": "他們最可能買什麼？",
+     "question": "這位先生要付多少錢？",
      "options": [
-      "草莓",
-      "鳳梨",
-      "芒果",
-      "番茄"
+      "八十塊",
+      "一百五十塊",
+      "一百六十塊",
+      "兩百塊"
      ],
-     "answer": 2,
-     "why": "那我們買芒果吧. A: 買不到. B: liked but not chosen. D is not mentioned."
+     "answer": 1,
+     "why": "Two cost 150 (the deal price). A is one. C is 2 × 80, ignoring the deal. D is wrong."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "桌子上有三顆橘子。",
+     "text": "桌子上有兩顆鳳梨和三顆芒果。",
      "options": [
       {
-       "icon": "🍊",
-       "label": "one orange"
+       "icon": "🍍🍍🍍🥭🥭",
+       "label": "3 pineapples, 2 mangoes"
       },
       {
-       "icon": "🍅🍅🍅",
-       "label": "three tomatoes"
+       "icon": "🍍🍍🥭🥭🥭",
+       "label": "2 pineapples, 3 mangoes"
       },
       {
-       "icon": "🍊🍊🍊",
-       "label": "three oranges"
+       "icon": "🥭🥭🥭",
+       "label": "only mangoes"
       }
      ],
-     "answer": 2,
-     "why": "顆 = the measure word for small round things."
+     "answer": 1,
+     "why": "兩顆鳳梨 + 三顆芒果. A has the numbers swapped; C has no pineapples."
     },
     {
      "type": "read_pick",
@@ -20724,61 +20768,66 @@
       "label": "strawberries"
      },
      "options": [
-      "這裡的番茄很甜。",
-      "這裡的草莓很甜。",
-      "這裡的木瓜很甜。"
+      "這是番茄。",
+      "這是葡萄。",
+      "這是草莓。"
      ],
-     "answer": 1,
-     "why": "草莓 = strawberry."
+     "answer": 2,
+     "why": "Strawberries → 草莓. A and B are other fruit (番茄 is also red — a colour trap)."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "🍍",
-      "label": "pineapple"
+      "icon": "🥭🌟",
+      "label": "a special mango"
      },
-     "text": "我買了一顆（　）。",
+     "text": "臺灣的水果都很好吃，（　）是芒果。",
      "options": [
-      "葡萄",
-      "鳳梨",
+      "尤其",
+      "差不多",
       "新鮮"
      ],
-     "answer": 1,
-     "why": "鳳梨 = pineapple."
+     "answer": 0,
+     "why": "尤其是 = especially. 差不多是芒果 = 'almost a mango' (makes no sense); 新鮮 is not followed by 是."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "臺灣的水果，（1）是芒果，很甜。我買了兩（2）芒果。這裡的水果都很（3）。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "臺灣的水果很多，（1）是夏天，有芒果、鳳梨、木瓜。我最喜歡吃（2），又甜又便宜。昨天我去市場買了三（3）芒果，老闆說：「今天的芒果很（4）。」一顆四十九塊，三顆（5）一百五十塊。",
      "options": [
+      "芒果",
       "尤其",
-      "顆",
       "新鮮",
-      "差不多"
+      "差不多",
+      "草莓賣完了",
+      "顆"
      ],
      "answers": [
-      0,
       1,
-      2
+      0,
+      5,
+      2,
+      3
      ],
-     "why": "(1) 尤其是 = especially. (2) 兩顆. (3) 新鮮 = fresh. 差不多 doesn't fit."
+     "why": "(1) 尤其是 = especially. (2) mangoes. (3) the measure word 顆. (4) fresh. (5) 3 × 49 = 147 ≈ 150 → 差不多. 「草莓賣完了」 fits no blank."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the correct answer.",
-     "text": "臺灣一年都有水果。夏天有芒果和西瓜，冬天有草莓和橘子。尤其是芒果，很多外國人都喜歡。",
-     "question": "冬天有什麼水果？",
+     "text": "臺灣一年到頭都有水果。春天有草莓，夏天有芒果和鳳梨，秋天有葡萄和木瓜，冬天有橘子和番茄。外國朋友來臺灣，差不多都說臺灣的水果很好吃，尤其是夏天的芒果，又甜又便宜。",
+     "question": "外國朋友特別喜歡臺灣的什麼水果？",
      "options": [
-      "芒果",
-      "草莓和橘子",
-      "西瓜"
+      "冬天的橘子",
+      "春天的草莓",
+      "夏天的芒果",
+      "秋天的木瓜"
      ],
-     "answer": 1,
-     "why": "冬天有草莓和橘子. Mangoes are highlighted (尤其), but they're a summer fruit."
+     "answer": 2,
+     "why": "尤其是夏天的芒果. A, B and D are only mentioned as seasonal fruit."
     }
    ],
    "grammar": [
@@ -21023,12 +21072,12 @@
      },
      "question": "什麼做好了？",
      "options": [
-      "牛排。",
-      "麵。",
-      "湯。"
+      "洋蔥。",
+      "豆子。",
+      "牛排。"
      ],
-     "answer": 0,
-     "why": "V好 = done properly: 做好了."
+     "answer": 2,
+     "why": "A steaming steak on a plate → 牛排. A and B are other ingredients."
     },
     {
      "type": "listen_pic",
@@ -21041,12 +21090,12 @@
      },
      "question": "牛排做好了嗎？",
      "options": [
-      "還在做。",
-      "做好了。",
+      "還沒，還要十分鐘。",
+      "做好了，可以吃了。",
       "我不吃牛排。"
      ],
      "answer": 1,
-     "why": "做好了 = it's ready."
+     "why": "The steak has been served → 做好了. A is the opposite; C does not answer."
     },
     {
      "type": "listen_pic",
@@ -21059,38 +21108,38 @@
      },
      "question": "你怎麼了？",
      "options": [
-      "我很想睡覺。",
       "我吃飽了。",
+      "我累壞了。",
       "我餓壞了！"
      ],
      "answer": 2,
-     "why": "Vs壞了 = so …: 餓壞了."
+     "why": "Holding his stomach by an empty plate → 餓壞了. A is the opposite; B is a different feeling."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "晚飯做好了嗎？",
+     "audio": "晚飯做好了沒有？",
      "options": [
+      "我不會做飯。",
       "做好了，快來吃吧！",
-      "晚飯好。",
-      "我做晚飯。"
+      "晚飯是牛排。"
      ],
-     "answer": 0,
-     "why": "做好了嗎 → 做好了／還沒."
+     "answer": 1,
+     "why": "The question is whether it's ready → 做好了. A does not answer; C gives the menu, not whether it's ready."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "這個菜的做法難不難？",
+     "audio": "你要喝果汁還是茶？",
      "options": [
-      "做法很洋蔥。",
-      "我做法了。",
-      "不難，先炒洋蔥，再放肉。"
+      "我泡了茶，喝茶就好。",
+      "果汁很貴。",
+      "我不餓。"
      ],
-     "answer": 2,
-     "why": "做法 = method, how to make it."
+     "answer": 0,
+     "why": "A choice question → choose tea. B and C do not choose."
     },
     {
      "type": "listen_dialog",
@@ -21098,22 +21147,30 @@
      "instr": "Listen to the dialogue, then answer the question.",
      "lines": [
       {
+       "sp": "女",
+       "zh": "牛排你要幾分熟？"
+      },
+      {
        "sp": "男",
-       "zh": "妳累不累？"
+       "zh": "五分熟就好。"
       },
       {
        "sp": "女",
-       "zh": "我走了三個小時，累壞了！"
+       "zh": "我要七分熟。"
+      },
+      {
+       "sp": "男",
+       "zh": "那你的要多做一下。"
       }
      ],
-     "question": "這位小姐怎麼樣？",
+     "question": "這位先生要幾分熟的牛排？",
      "options": [
-      "很累",
-      "不累",
-      "很餓"
+      "七分",
+      "五分",
+      "三分"
      ],
-     "answer": 0,
-     "why": "累壞了 = exhausted."
+     "answer": 1,
+     "why": "五分熟就好. A is the woman's choice. C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -21121,53 +21178,53 @@
      "instr": "Listen to the dialogue, then choose the correct answer.",
      "lines": [
       {
-       "sp": "男",
-       "zh": "牛排做好了嗎？我餓壞了！"
-      },
-      {
        "sp": "女",
-       "zh": "還沒熟，再等五分鐘。"
+       "zh": "你怎麼沒吃晚飯？"
       },
       {
        "sp": "男",
-       "zh": "那我先喝果汁。"
+       "zh": "我忙壞了，一直在寫報告。"
       },
       {
        "sp": "女",
-       "zh": "好，洋蔥湯也正好做好了。"
+       "zh": "那你現在一定餓壞了吧？"
+      },
+      {
+       "sp": "男",
+       "zh": "對，冰箱裡有什麼可以吃的？"
       }
      ],
-     "question": "這位小姐是什麼意思？",
+     "question": "這位先生現在怎麼樣？",
      "options": [
-      "牛排已經好了",
-      "這位先生要再等一下",
-      "她不做牛排了",
-      "這位先生不能喝果汁"
+      "很飽",
+      "很餓",
+      "很累，想睡覺",
+      "在寫報告"
      ],
      "answer": 1,
-     "why": "還沒熟，再等五分鐘. A: the opposite. C & D are unsupported."
+     "why": "餓壞了吧 + 對 → very hungry. A is the opposite. C is not mentioned. D is what he was doing before."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "請給我一杯橘子汁。",
+     "text": "他泡了一杯茶，正好朋友來了。",
      "options": [
       {
-       "icon": "🍊🥤",
-       "label": "orange juice"
+       "icon": "☕",
+       "label": "just tea"
       },
       {
-       "icon": "🍎🥤",
-       "label": "apple juice"
+       "icon": "☕🚪👋",
+       "label": "making tea as a friend arrives"
       },
       {
-       "icon": "🍉🥤",
-       "label": "watermelon juice"
+       "icon": "🍺",
+       "label": "beer"
       }
      ],
-     "answer": 0,
-     "why": "汁 = juice."
+     "answer": 1,
+     "why": "泡茶 + 正好朋友來了. A has no friend; C is a different drink."
     },
     {
      "type": "read_pick",
@@ -21175,64 +21232,69 @@
      "instr": "Look at the picture, then choose the matching sentence.",
      "picture": {
       "icon": "🧅",
-      "label": "onion"
+      "label": "an onion"
      },
      "options": [
-      "這是豆腐。",
-      "這是洋蔥。",
-      "這是番茄。"
+      "這是豆子。",
+      "這是牛排。",
+      "這是洋蔥。"
      ],
-     "answer": 1,
-     "why": "洋蔥 = onion."
+     "answer": 2,
+     "why": "An onion → 洋蔥. A and B are other ingredients."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "🍵",
-      "label": "making tea"
+      "icon": "🥩✅",
+      "label": "a cooked steak"
      },
-     "text": "用熱水（　）茶。",
+     "text": "牛排已經（　）了，可以吃了。",
      "options": [
       "熟",
-      "豆",
-      "泡"
+      "泡",
+      "汁"
      ],
-     "answer": 2,
-     "why": "泡茶 = to make (brew) tea."
+     "answer": 0,
+     "why": "熟了 = cooked. 泡了 and 汁了 do not fit a steak."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "牛排做（1）了！我餓（2）了。你的茶（3）好了嗎？",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "昨天我第一次做牛排。朋友告訴我（1）：先放洋蔥，再放牛排。二十分鐘以後，牛排（2）了，我（3）了，很快就吃完了。我還喝了一杯蘋果（4）。朋友說：「你的牛排（5）七分熟，做得真好！」",
      "options": [
-      "好",
-      "壞",
-      "泡",
-      "熟"
+      "泡茶",
+      "餓壞",
+      "做好",
+      "正好",
+      "做法",
+      "汁"
      ],
      "answers": [
-      0,
+      4,
+      2,
       1,
-      2
+      5,
+      3
      ],
-     "why": "(1) 做好了. (2) 餓壞了. (3) 泡好 = brewed. 熟 is not used for tea."
+     "why": "(1) how to cook it. (2) V好: ready/done. (3) Vs壞了: starving. (4) apple juice. (5) exactly medium-well. 「泡茶」 fits no blank."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read this recipe, then choose the correct answer.",
-     "text": "做法：一、先把洋蔥炒熟。二、再放牛排。三、放一點汁，牛排就做好了。",
-     "question": "先做什麼？",
+     "text": "我第一次做牛排的時候，不知道做法，放了太多油，牛排外面黑黑的，裡面還沒熟。朋友教我：先放一點洋蔥，再放牛排，每邊三分鐘就好。第二次我做好了，朋友吃了說：「正好七分熟，太好吃了！」",
+     "question": "第一次做的牛排怎麼了？",
      "options": [
-      "炒洋蔥",
-      "放牛排",
-      "放汁"
+      "太鹹了",
+      "洋蔥太多",
+      "外面黑了，裡面沒熟",
+      "正好七分熟"
      ],
-     "answer": 0,
-     "why": "一、先把洋蔥炒熟."
+     "answer": 2,
+     "why": "外面黑黑的，裡面還沒熟. A and B are not mentioned. D was the SECOND attempt."
     }
    ],
    "grammar": [
@@ -21461,12 +21523,12 @@
      },
      "question": "我們的位子在哪裡？",
      "options": [
-      "在窗戶旁邊。",
-      "在門旁邊。",
-      "在樓梯旁邊。"
+      "在門口。",
+      "在廚房旁邊。",
+      "在窗戶旁邊。"
      ],
-     "answer": 0,
-     "why": "位子 = seat."
+     "answer": 2,
+     "why": "The table pointed to is by the window → 窗戶旁邊. A and B are other places."
     },
     {
      "type": "listen_pic",
@@ -21479,12 +21541,12 @@
      },
      "question": "你要什麼？",
      "options": [
-      "一份牛排。",
-      "一份海鮮。",
-      "一份沙拉。"
+      "一碗湯。",
+      "一份沙拉。",
+      "一杯果汁。"
      ],
-     "answer": 2,
-     "why": "沙拉 = salad."
+     "answer": 1,
+     "why": "A bowl of salad → 沙拉. A and C are other food/drink."
     },
     {
      "type": "listen_pic",
@@ -21497,38 +21559,69 @@
      },
      "question": "你是不是訂位了？",
      "options": [
-      "對，我訂位了。",
-      "我訂了飯店。",
-      "我買了票。"
+      "沒有，我們沒訂位。",
+      "我不知道。",
+      "對，我訂位了。"
      ],
-     "answer": 0,
-     "why": "訂位 = to reserve a table."
+     "answer": 2,
+     "why": "A phone call + a 'reserved' table → 訂位了. A and B do not match."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "你是不是訂位了？",
+     "audio": "請問，你們訂位了嗎？",
      "options": [
-      "是，我訂了七點的位子。",
-      "我是位子。",
-      "訂位是不是。"
+      "我們要兩個套餐。",
+      "訂了，七點，姓王。",
+      "這裡的食物很好吃。"
      ],
-     "answer": 0,
-     "why": "是不是 + VP confirms a guess → 是／不是."
+     "answer": 1,
+     "why": "The question is whether they have a booking → 訂了. A and C do not answer."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "對不起，現在沒有位子了。",
+     "audio": "你是不是不喜歡吃沙拉？",
      "options": [
-      "我訂位子了嗎。",
-      "那我們等一下吧。",
-      "位子很好。"
+      "對，我比較喜歡吃肉。",
+      "沙拉很便宜。",
+      "我們訂位了。"
+     ],
+     "answer": 0,
+     "why": "是不是 = checking → 對 + a reason. B and C do not answer."
+    },
+    {
+     "type": "listen_dialog",
+     "part": "聽力 Part 3 · Multi-turn dialogue",
+     "instr": "Listen to the dialogue, then answer the question.",
+     "lines": [
+      {
+       "sp": "男",
+       "zh": "你是不是不吃海鮮？"
+      },
+      {
+       "sp": "女",
+       "zh": "對，我吃了會不舒服。"
+      },
+      {
+       "sp": "男",
+       "zh": "那我們要牛肉套餐吧。"
+      },
+      {
+       "sp": "女",
+       "zh": "好，再要一個沙拉。"
+      }
+     ],
+     "question": "這位小姐為什麼不吃海鮮？",
+     "options": [
+      "海鮮太貴",
+      "吃了會不舒服",
+      "她已經吃過了"
      ],
      "answer": 1,
-     "why": "那 = in that case → another suggestion."
+     "why": "我吃了會不舒服. A and C are not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -21537,138 +21630,121 @@
      "lines": [
       {
        "sp": "女",
-       "zh": "我不吃海鮮。"
+       "zh": "請問幾位？"
       },
       {
        "sp": "男",
-       "zh": "那我們吃牛肉套餐吧。"
-      }
-     ],
-     "question": "他們要吃什麼？",
-     "options": [
-      "牛肉套餐",
-      "海鮮",
-      "沙拉"
-     ],
-     "answer": 0,
-     "why": "那 = in that case → 牛肉套餐."
-    },
-    {
-     "type": "listen_dialog",
-     "part": "聽力 Part 3 · Multi-turn dialogue",
-     "instr": "Listen to the dialogue, then answer the question.",
-     "lines": [
-      {
-       "sp": "女",
-       "zh": "你是不是訂位了？"
-      },
-      {
-       "sp": "男",
-       "zh": "對，訂了晚上七點，兩個人。"
+       "zh": "四位，我們訂位了，姓陳。"
       },
       {
        "sp": "女",
-       "zh": "要點套餐嗎？"
+       "zh": "對不起，陳先生，你們的位子要再等十分鐘。"
       },
       {
        "sp": "男",
-       "zh": "要，我們要兩份海鮮套餐。"
+       "zh": "好，那我們在外面等。"
       }
      ],
-     "question": "他們訂了幾個人的位子？",
+     "question": "他們要怎麼做？",
      "options": [
-      "兩個人",
-      "三個人",
-      "七個人"
+      "現在就坐下",
+      "在外面等十分鐘",
+      "去別家"
      ],
-     "answer": 0,
-     "why": "兩個人. C = the time (七點). B is not mentioned."
+     "answer": 1,
+     "why": "那我們在外面等 (10 minutes). A: the table isn't ready. C is not mentioned."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "我不吃海鮮。",
+     "text": "桌子上有一個套餐：沙拉、湯和一杯果汁。",
      "options": [
       {
-       "icon": "🚫🥩",
-       "label": "doesn't eat meat"
+       "icon": "🥗",
+       "label": "just a salad"
       },
       {
-       "icon": "🚫🦐",
-       "label": "doesn't eat seafood"
+       "icon": "🥗🍲🥤",
+       "label": "salad, soup, juice"
       },
       {
-       "icon": "🚫🥗",
-       "label": "doesn't eat vegetables"
+       "icon": "🍔🍟",
+       "label": "a burger and fries"
       }
      ],
      "answer": 1,
-     "why": "海鮮 = seafood."
+     "why": "套餐 = 沙拉 + 湯 + 果汁. A is incomplete; C is different food."
     },
     {
      "type": "read_pick",
      "part": "閱讀 Part 2 · Picture → sentence",
      "instr": "Look at the picture, then choose the matching sentence.",
      "picture": {
-      "icon": "🍱📋",
-      "label": "a set menu"
+      "icon": "🦐🦀",
+      "label": "seafood"
      },
      "options": [
-      "我要一個套餐。",
-      "我要一個位子。",
-      "我要一張門票。"
+      "這是沙拉。",
+      "這是牛排。",
+      "這是海鮮。"
      ],
-     "answer": 0,
-     "why": "套餐 = set meal."
+     "answer": 2,
+     "why": "Prawns and crab → 海鮮. A and B do not match."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "🍽️",
-      "label": "food"
+      "icon": "📞🍽️",
+      "label": "booking a table"
      },
-     "text": "這裡的（　）很好吃。",
+     "text": "這家餐廳人很多，要先打電話（　）。",
      "options": [
-      "食物",
+      "訂位",
       "位子",
-      "訂位"
+      "套餐"
      ],
      "answer": 0,
-     "why": "食物 = food."
+     "why": "打電話訂位 = phone to book a table. 位子 and 套餐 are nouns."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "你是（1）訂位了？（2）我們七點去吧。這裡的（3）很好吃。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "上個星期六我跟朋友去一家很有名的餐廳吃飯。我們（1）了，所以不用等。店員帶我們到我們的（2）。這家店的（3）很有名，有（4）、湯和果汁。我朋友不吃海鮮，店員說：「（5）你吃牛肉的吧。」",
      "options": [
-      "不是",
+      "是不是",
+      "套餐",
       "那",
-      "食物",
-      "位子"
+      "位子",
+      "沙拉",
+      "訂位"
      ],
      "answers": [
-      0,
+      5,
+      3,
       1,
+      4,
       2
      ],
-     "why": "(1) 是不是 + VP. (2) 那 = in that case. (3) 食物 = food. 位子 doesn't fit."
+     "why": "(1) booked. (2) seats. (3) the set meal. (4) salad. (5) 那 = in that case. 「是不是」 fits no blank."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read this set menu, then choose the correct answer.",
-     "text": "A套餐：沙拉、牛排、果汁，三百五十塊。B套餐：沙拉、海鮮、果汁，四百塊。",
-     "question": "不吃海鮮的人應該吃哪個套餐？",
+     "text": "這家餐廳很有名，週末一定要先訂位，要是沒訂位，常常要等一個小時。它的套餐有沙拉、湯、一個海鮮或牛肉的菜和一杯果汁，一個人五百塊。不吃海鮮的人，也可以要牛肉的。",
+     "question": "週末去這家餐廳，為什麼最好先訂位？",
      "options": [
-      "A套餐",
-      "B套餐"
+      "訂位比較便宜",
+      "週末不開",
+      "沒訂位要等很久",
+      "只有訂位才能吃套餐"
      ],
-     "answer": 0,
-     "why": "B contains 海鮮 → choose A."
+     "answer": 2,
+     "why": "要是沒訂位，常常要等一個小時. A, B and D are not mentioned."
     }
    ],
    "grammar": [
@@ -21876,12 +21952,12 @@
      },
      "question": "她在喝什麼？",
      "options": [
-      "豆漿。",
-      "咖啡。",
-      "果汁。"
+      "牛奶。",
+      "烏龍茶。",
+      "豆漿。"
      ],
-     "answer": 0,
-     "why": "豆漿 = soy milk."
+     "answer": 2,
+     "why": "A glass + soybeans → 豆漿. A looks similar but is not soy; B is another drink."
     },
     {
      "type": "listen_pic",
@@ -21894,12 +21970,12 @@
      },
      "question": "你想吃速食嗎？",
      "options": [
-      "很想吃。",
+      "好啊，我很想吃。",
       "我一點也不想吃速食。",
-      "我想吃便當。"
+      "我吃過了。"
      ],
      "answer": 1,
-     "why": "一點也不 + V = not … at all."
+     "why": "Refusing a burger and fries → 一點也不想吃. A is the opposite; C is a reason not shown."
     },
     {
      "type": "listen_pic",
@@ -21912,38 +21988,38 @@
      },
      "question": "早上你喝什麼？",
      "options": [
-      "豆漿。",
-      "烏龍茶。",
-      "咖啡。"
+      "咖啡。",
+      "果汁。",
+      "豆漿。"
      ],
-     "answer": 0,
-     "why": "豆漿 = soy milk."
+     "answer": 2,
+     "why": "A glass of soy milk → 豆漿. A and B are other drinks."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "你想吃速食嗎？",
+     "audio": "你常吃泡麵嗎？",
      "options": [
-      "一點也不想。",
-      "我想一點。",
-      "速食一點。"
+      "泡麵很便宜。",
+      "我從來不吃泡麵。",
+      "我喜歡喝豆漿。"
      ],
-     "answer": 0,
-     "why": "一點也不 = not at all."
+     "answer": 1,
+     "why": "The question is how often → 從來不吃. A and C do not answer."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "你吃過臭豆腐嗎？",
+     "audio": "你喝過烏龍茶嗎？",
      "options": [
-      "我從來豆腐。",
-      "吃過，我覺得很香。",
-      "豆腐很吃過。"
+      "從來沒喝過，好喝嗎？",
+      "烏龍茶很香。",
+      "我喜歡喝飲料。"
      ],
-     "answer": 1,
-     "why": "V過 = have ever."
+     "answer": 0,
+     "why": "喝過嗎 → 從來沒喝過. B and C do not answer."
     },
     {
      "type": "listen_dialog",
@@ -21951,30 +22027,30 @@
      "instr": "Listen to the dialogue, then answer the question.",
      "lines": [
       {
-       "sp": "男",
-       "zh": "我們吃速食吧？"
-      },
-      {
        "sp": "女",
-       "zh": "我一點也不想吃速食。"
+       "zh": "要不要喝飲料？"
       },
       {
        "sp": "男",
-       "zh": "那泡麵呢？"
+       "zh": "不用，我從來不喝有糖的飲料。"
       },
       {
        "sp": "女",
-       "zh": "我從來不吃泡麵，我們去吃便當吧。"
+       "zh": "那烏龍茶呢？沒有糖。"
+      },
+      {
+       "sp": "男",
+       "zh": "好，那我喝烏龍茶。"
       }
      ],
-     "question": "這位小姐想吃什麼？",
+     "question": "這位先生要喝什麼？",
      "options": [
-      "速食",
-      "泡麵",
-      "便當"
+      "有糖的飲料",
+      "烏龍茶",
+      "豆漿"
      ],
-     "answer": 2,
-     "why": "我們去吃便當吧. A & B: rejected."
+     "answer": 1,
+     "why": "那我喝烏龍茶. A is refused (從來不喝). C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -21983,108 +22059,122 @@
      "lines": [
       {
        "sp": "男",
-       "zh": "妳喝過烏龍茶嗎？"
+       "zh": "你吃吃看這個巧克力，很好吃！"
       },
       {
        "sp": "女",
-       "zh": "我從來沒喝過，我只喝咖啡。"
+       "zh": "謝謝，可是我一點也不喜歡吃甜的。"
+      },
+      {
+       "sp": "男",
+       "zh": "那餅乾呢？不太甜。"
+      },
+      {
+       "sp": "女",
+       "zh": "好，那我吃一塊。"
       }
      ],
-     "question": "這位小姐喝過烏龍茶嗎？",
+     "question": "這位小姐要吃什麼？",
      "options": [
-      "沒喝過",
-      "喝過",
-      "常常喝"
+      "巧克力",
+      "糖果",
+      "餅乾",
+      "什麼都不吃"
      ],
-     "answer": 0,
-     "why": "從來沒喝過 = have never ever drunk."
+     "answer": 2,
+     "why": "那我吃一塊 (餅乾). A is refused (一點也不喜歡吃甜的). B is not mentioned. D is the opposite."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "他從來不喝飲料。",
+     "text": "妹妹從來不吃糖果，也不吃巧克力。",
      "options": [
       {
-       "icon": "🥤",
-       "label": "drinks it often"
+       "icon": "👧🍬",
+       "label": "eating sweets"
       },
       {
-       "icon": "☕",
-       "label": "drinking coffee"
+       "icon": "👧🙅🍬🍫",
+       "label": "refusing sweets and chocolate"
       },
       {
-       "icon": "🚫🥤",
-       "label": "never drinks bottled drinks"
+       "icon": "👧🍫",
+       "label": "eating chocolate"
       }
      ],
-     "answer": 2,
-     "why": "從來不 = never."
+     "answer": 1,
+     "why": "從來不吃 → refuses both. A and C are the opposite."
     },
     {
      "type": "read_pick",
      "part": "閱讀 Part 2 · Picture → sentence",
      "instr": "Look at the picture, then choose the matching sentence.",
      "picture": {
-      "icon": "🍫",
-      "label": "chocolate"
+      "icon": "🍜⏱️",
+      "label": "instant noodles"
      },
      "options": [
-      "這是餅乾。",
-      "這是糖果。",
-      "這是巧克力。"
+      "這是一杯豆漿。",
+      "這是一塊餅乾。",
+      "這是一碗泡麵。"
      ],
      "answer": 2,
-     "why": "巧克力 = chocolate."
+     "why": "Instant noodles → 泡麵. A and B do not match."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "👃🍞",
-      "label": "smelling the aroma of bread"
+      "icon": "👃🍵",
+      "label": "smelling the tea"
      },
-     "text": "我（　）到麵包的香味。",
+     "text": "這杯烏龍茶的（　）很好，你聞聞看。",
      "options": [
-      "聽",
-      "聞",
-      "看"
+      "香味",
+      "飲料",
+      "糖果"
      ],
-     "answer": 1,
-     "why": "聞 = to smell."
+     "answer": 0,
+     "why": "聞聞看 → what you smell is the 香味. 飲料 and 糖果 do not fit 茶的."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "我一點（1）不想吃泡麵。我（2）不吃速食。你（3）聞看，這個茶很香！",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "我朋友很注意自己的身體。她（1）不吃速食，也不喝有糖的（2）。她早上喝一杯（3），晚上喝一杯烏龍茶。有一次我給她一塊巧克力，她說：「我（4）都不想吃，太甜了。」她說烏龍茶的（5）很好，我也想試試看。",
      "options": [
-      "也",
+      "豆漿",
+      "泡麵",
       "從來",
-      "聞",
-      "香味"
+      "香味",
+      "飲料",
+      "一點"
      ],
      "answers": [
+      2,
+      4,
       0,
-      1,
-      2
+      5,
+      3
      ],
-     "why": "(1) 一點也不. (2) 從來不 = never. (3) 聞聞看 = have a sniff. 香味 is a noun."
+     "why": "(1) never. (2) sugary drinks. (3) soy milk. (4) 一點都不 = not at all. (5) its fragrance. 「泡麵」 fits no blank."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the correct answer.",
-     "text": "安妮從來不吃速食，也一點都不喜歡糖很多的飲料。她早上喝豆漿，下午喝烏龍茶。",
-     "question": "安妮下午喝什麼？",
+     "text": "我從小就很少吃速食，因為媽媽說速食的油太多。上大學以後，我一個人住，常常沒時間做飯，有時候就吃泡麵。可是吃了一個月，我覺得身體一點也不舒服。從那時候起，我每天早上喝豆漿，中午吃便當，晚上自己做飯，現在我從來不吃泡麵了。",
+     "question": "這個人為什麼不吃泡麵了？",
      "options": [
-      "豆漿",
-      "烏龍茶",
-      "咖啡"
+      "媽媽不讓他吃",
+      "吃了以後身體不舒服",
+      "泡麵太貴",
+      "他沒有時間"
      ],
      "answer": 1,
-     "why": "下午喝烏龍茶. 豆漿 is drunk in the morning."
+     "why": "吃了一個月，身體一點也不舒服 → so she stopped. A: her mother was talking about fast food, long ago. C is not mentioned. D is actually why she used to eat instant noodles."
     }
    ],
    "grammar": [
@@ -22352,12 +22442,12 @@
      },
      "question": "他在做什麼？",
      "options": [
-      "他在辦居留證。",
+      "他在買票。",
       "他在寄信。",
-      "他在買票。"
+      "他在辦居留證。"
      ],
-     "answer": 0,
-     "why": "辦 = to apply for/process; 居留證 = residence permit card."
+     "answer": 2,
+     "why": "An immigration counter + an ID card → 辦居留證. A and B are other activities."
     },
     {
      "type": "listen_pic",
@@ -22375,7 +22465,7 @@
       "票。"
      ],
      "answer": 1,
-     "why": "A card with a photo → 居留證 (not a credit card with a magnetic strip)."
+     "why": "An ID card with a photo → 居留證. A and C do not match."
     },
     {
      "type": "listen_pic",
@@ -22388,38 +22478,38 @@
      },
      "question": "他提著什麼？",
      "options": [
-      "皮包。",
-      "背包。",
+      "一個小包。",
+      "一籃子水果。",
       "很重的箱子。"
      ],
      "answer": 2,
-     "why": "提 = to carry (by hand)."
+     "why": "Carrying a heavy suitcase → 很重的箱子. A and B do not match."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the question, then choose the most suitable answer.",
-     "audio": "在哪裡可以辦居留證？",
+     "audio": "辦居留證要帶什麼？",
      "options": [
-      "只有在這裡才能辦。",
-      "我有居留證。",
-      "辦居留證很好。"
+      "居留證很重要。",
+      "只要帶兩張照片就可以。",
+      "我在這裡辦。"
      ],
-     "answer": 0,
-     "why": "在哪裡 → a place. 只有…才… = only at …."
+     "answer": 1,
+     "why": "The question asks what to bring → 只要帶兩張照片. A and C do not answer."
     },
     {
      "type": "listen_reply",
      "part": "聽力 Part 2 · One-turn question & answer",
      "instr": "Listen to the sentence, then choose the most suitable response.",
-     "audio": "這裡的服務怎麼樣？",
+     "audio": "只有週末才能去嗎？",
      "options": [
-      "服務很辦。",
-      "我服務你。",
-      "很好，店員都很客氣。"
+      "不是，平常也可以。",
+      "週末人很多。",
+      "我週末要上班。"
      ],
-     "answer": 2,
-     "why": "服務 = service."
+     "answer": 0,
+     "why": "只有…才 = only …? → 不是，平常也可以. B and C do not answer."
     },
     {
      "type": "listen_dialog",
@@ -22428,29 +22518,29 @@
      "lines": [
       {
        "sp": "女",
-       "zh": "在哪裡可以辦居留證？"
+       "zh": "我想辦居留證，要多少錢？"
       },
       {
        "sp": "男",
-       "zh": "只有在那個大樓的三樓才能辦。"
+       "zh": "一千塊，只要帶兩張照片就可以。"
       },
       {
        "sp": "女",
-       "zh": "要帶什麼？"
+       "zh": "可以刷卡嗎？"
       },
       {
        "sp": "男",
-       "zh": "只要帶兩張照片就可以。"
+       "zh": "可以，這裡都可以刷卡。"
       }
      ],
-     "question": "辦居留證要帶什麼？",
+     "question": "辦居留證要多少錢？",
      "options": [
-      "兩張照片",
-      "三張照片",
-      "信用卡"
+      "兩千塊",
+      "一千塊",
+      "不用錢"
      ],
-     "answer": 0,
-     "why": "只要帶兩張照片. B: 三 = the floor. C is not mentioned."
+     "answer": 1,
+     "why": "一千塊. A and C are not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -22459,108 +22549,122 @@
      "lines": [
       {
        "sp": "男",
-       "zh": "我可以參加嗎？"
+       "zh": "請問，在學校可以辦居留證嗎？"
       },
       {
        "sp": "女",
-       "zh": "只要你有空，就可以來。"
+       "zh": "不行，只有在這裡才能辦。"
+      },
+      {
+       "sp": "男",
+       "zh": "要多久？"
+      },
+      {
+       "sp": "女",
+       "zh": "只要一個星期。"
       }
      ],
-     "question": "這位先生可以參加嗎？",
+     "question": "哪一個是對的？",
      "options": [
-      "有空就可以",
-      "只有星期天可以",
-      "不可以"
+      "在學校也可以辦",
+      "居留證只能在這裡辦",
+      "要一個月",
+      "要很多張照片"
      ],
-     "answer": 0,
-     "why": "只要…就… = as long as …, then it's possible. The condition is easy."
+     "answer": 1,
+     "why": "只有在這裡才能辦. A is the opposite. C: only a week. D is not mentioned."
     },
     {
      "type": "read_sent",
      "part": "閱讀 Part 1 · Sentence → picture",
      "instr": "Read the sentence, then choose the matching picture.",
-     "text": "只要有錢，就可以買。",
+     "text": "只有下雨的時候，他才坐公車。",
      "options": [
       {
-       "icon": "🚫🛍️",
-       "label": "can't buy it"
+       "icon": "☀️🚌",
+       "label": "sunny, taking the bus"
       },
       {
-       "icon": "💵🛍️",
-       "label": "as long as you have money, you can buy it"
+       "icon": "🌧️🚌",
+       "label": "rainy, taking the bus"
       },
       {
-       "icon": "🎁",
-       "label": "free of charge"
+       "icon": "🌧️🚶",
+       "label": "rainy, walking"
       }
      ],
      "answer": 1,
-     "why": "只要…就… = as long as …, then …."
+     "why": "只有下雨…才坐公車 → rain = bus. A: he doesn't take the bus when it's sunny. C is the opposite."
     },
     {
      "type": "read_pick",
      "part": "閱讀 Part 2 · Picture → sentence",
      "instr": "Look at the picture, then choose the matching sentence.",
      "picture": {
-      "icon": "🏢🧍",
-      "label": "a counter clerk"
+      "icon": "🧑‍💼😊",
+      "label": "friendly service"
      },
      "options": [
-      "您好，這裡不能辦。",
-      "再見。",
-      "您好，請問要辦什麼？"
+      "這裡沒有人。",
+      "這裡不能辦。",
+      "這裡的服務很好。"
      ],
      "answer": 2,
-     "why": "辦 = to process, to handle."
+     "why": "Smiling staff serving → 服務很好. A and B do not match."
     },
     {
      "type": "read_gap",
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "🏧",
-      "label": "withdrawing money"
+      "icon": "🧳✋",
+      "label": "carrying a suitcase"
      },
-     "text": "我去銀行（　）錢。",
+     "text": "他（　）著兩個很重的箱子。",
      "options": [
       "提",
-      "服務",
-      "辦"
+      "辦",
+      "服務"
      ],
      "answer": 0,
-     "why": "提錢 = to withdraw money."
+     "why": "提著箱子 = carrying a suitcase. 辦 and 服務 are not used for carrying things."
     },
     {
      "type": "cloze",
      "part": "閱讀 Part 4 · Paragraph completion",
-     "instr": "Choose the right word for each blank. ONE option is not used.",
-     "text": "（1）帶兩張照片，就可以辦。只有在這裡（2）能辦。這裡有很好的（3）。",
+     "instr": "Choose the right phrase for each blank. ONE option is not used.",
+     "text": "我是外國學生，要在臺灣住一年，所以要去（1）居留證。那裡的小姐說：「（2）帶兩張照片，就可以辦。」我問：「在學校可以辦嗎？」她說：「不行，只有在這裡（3）能辦。」那裡的（4）很好，有什麼問題，都可以（5）出來。",
      "options": [
-      "只要",
       "才",
-      "服務",
-      "提"
+      "只要",
+      "就",
+      "提",
+      "辦",
+      "服務"
      ],
      "answers": [
-      0,
+      4,
       1,
-      2
+      0,
+      5,
+      3
      ],
-     "why": "(1) 只要…就…. (2) 只有…才…. (3) 服務 = service. 提 doesn't fit."
+     "why": "(1) apply for. (2) 只要…就… (3) 只有…才… (4) service. (5) 提出來 = raise (a question). 「就」 is wrong in (3): 只有 must pair with 才."
     },
     {
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read this information, then choose the correct answer.",
-     "text": "辦居留證：只要帶兩張照片，就可以辦。一個星期就好了。只有你自己才能來辦。",
-     "question": "誰可以去辦？",
+     "text": "外國學生來臺灣念書，要是住半年以上，就一定要辦居留證。只有在一個地方才能辦，學校不能辦。辦的時候，只要帶兩張照片，一個星期就好了。那裡有英文服務，有問題都可以提出來。",
+     "question": "一個要在臺灣住三個月的學生，要辦居留證嗎？",
      "options": [
-      "只有自己",
-      "朋友",
-      "家人"
+      "要，一定要辦",
+      "不用，半年以上才要辦",
+      "只要帶照片就好",
+      "只有在學校才能辦"
      ],
-     "answer": 0,
-     "why": "只有你自己才能來辦 — only the person concerned."
+     "answer": 1,
+     "why": "Three months is under half a year → not needed. A ignores the 半年以上 condition. C is a requirement, not an answer. D is the opposite (學校不能辦)."
     }
    ],
    "grammar": [

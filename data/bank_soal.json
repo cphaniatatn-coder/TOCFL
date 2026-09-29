@@ -27521,12 +27521,12 @@
    },
    "question": "老闆娘怎麼賣水果？",
    "options": [
-    "高高興興地賣水果。",
     "生氣地賣水果。",
-    "她不賣水果。"
+    "高高興興地賣水果。",
+    "她沒在賣水果。"
    ],
-   "answer": 0,
-   "why": "AABB + 地 + V = melakukan … dengan …: 高高興興地.",
+   "answer": 1,
+   "why": "Tersenyum lebar → 高高興興地. A kebalikannya; C tidak cocok.",
    "id": "C43-01"
   },
   {
@@ -27540,12 +27540,12 @@
    },
    "question": "他怎麼走？",
    "options": [
-    "慢慢地走。",
-    "很快地跑。",
-    "他在睡覺。"
+    "快快地跑。",
+    "跳著走。",
+    "慢慢地走。"
    ],
-   "answer": 0,
-   "why": "慢慢地 = pelan-pelan.",
+   "answer": 2,
+   "why": "Kakek bertongkat → 慢慢地走. A dan B terlalu cepat.",
    "id": "C43-02"
   },
   {
@@ -27555,30 +27555,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你爸爸做什麼工作？"
+     "zh": "這一籃子多少錢？"
     },
     {
      "sp": "男",
-     "zh": "他做生意。"
+     "zh": "兩百塊，兩籃子三百五。"
     }
    ],
-   "question": "這位先生的爸爸做什麼？",
+   "question": "一籃子多少錢？",
    "options": [
     {
-     "icon": "🧑‍🏫",
-     "label": "guru"
+     "icon": "🧺",
+     "label": "350"
     },
     {
-     "icon": "💼🤝",
-     "label": "berbisnis"
+     "icon": "🧺",
+     "label": "200"
     },
     {
-     "icon": "🧑‍⚕️",
-     "label": "dokter"
+     "icon": "🧺",
+     "label": "150"
     }
    ],
    "answer": 1,
-   "why": "做生意.",
+   "why": "一籃子兩百塊. A = harga dua keranjang. C tidak disebut.",
    "id": "C43-03"
   },
   {
@@ -27588,38 +27588,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "這隻狗的主人是誰？"
+     "zh": "你認識這家店的主人嗎？"
     },
     {
      "sp": "女",
-     "zh": "我不知道。"
+     "zh": "認識，是我媽媽的朋友。"
     },
     {
      "sp": "男",
-     "zh": "它在門口等了很久。"
+     "zh": "她的店開了多久？"
     },
     {
      "sp": "女",
-     "zh": "我們問問老闆娘吧。"
+     "zh": "十年左右了。"
     }
    ],
-   "question": "他們要問誰？",
+   "question": "這家店的主人是誰？",
    "options": [
     {
-     "icon": "👮",
-     "label": "polisi"
+     "icon": "👵",
+     "label": "neneknya"
     },
     {
-     "icon": "🧑",
-     "label": "tetangga"
+     "icon": "👨",
+     "label": "ayahnya"
     },
     {
-     "icon": "👩‍💼",
-     "label": "pemilik toko (perempuan)"
+     "icon": "👩",
+     "label": "teman ibunya"
     }
    ],
    "answer": 2,
-   "why": "問問老闆娘.",
+   "why": "是我媽媽的朋友. A dan B tidak disebut.",
    "id": "C43-04"
   },
   {
@@ -27629,53 +27629,53 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你的店生意怎麼樣？"
+     "zh": "這個籃子好漂亮，你在哪裡買的？"
     },
     {
      "sp": "男",
-     "zh": "最近不太好。"
+     "zh": "市場裡一家老店，主人是一位老先生。"
     },
     {
      "sp": "女",
-     "zh": "為什麼？"
+     "zh": "貴不貴？"
     },
     {
      "sp": "男",
-     "zh": "附近開了一家新的店。"
+     "zh": "不貴，他還高高興興地跟我說了很多籃子的故事。"
     }
    ],
-   "question": "這位先生的生意為什麼不好？",
+   "question": "哪一個是對的？",
    "options": [
-    "附近有新的店",
-    "他常常不在",
-    "東西太貴",
-    "他的店很舊"
+    "籃子很貴",
+    "主人是一位老太太",
+    "這位先生不喜歡這個籃子",
+    "籃子是在市場買的"
    ],
-   "answer": 0,
-   "why": "Alasan langsung.",
+   "answer": 3,
+   "why": "市場裡一家老店. A kebalikan (不貴). B: pemiliknya kakek (老先生). C tidak disebut.",
    "id": "C43-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "她把水果放在籃子裡。",
+   "text": "他慢慢地把東西放進籃子裡。",
    "options": [
     {
-     "icon": "📦",
-     "label": "di kotak"
+     "icon": "🧺🏃",
+     "label": "berlari membawa keranjang"
     },
     {
-     "icon": "🛍️",
-     "label": "di kantong"
+     "icon": "🧺🚮",
+     "label": "membuang keranjang"
     },
     {
-     "icon": "🧺🍎",
-     "label": "buah di keranjang"
+     "icon": "🧺🙌",
+     "label": "memasukkan barang ke keranjang"
     }
    ],
    "answer": 2,
-   "why": "籃子 = keranjang.",
+   "why": "把東西放進籃子裡. A dan B kegiatan lain.",
    "id": "C43-06"
   },
   {
@@ -27683,16 +27683,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "👧😊🎒",
-    "label": "anak berangkat sekolah dengan gembira"
+    "icon": "🏪👥👥",
+    "label": "toko ramai"
    },
    "options": [
-    "小孩高高興興地去上學。",
-    "小孩在睡覺。",
-    "小孩難過地哭。"
+    "這家店沒有人。",
+    "這家店的生意很好。",
+    "這家店不做生意了。"
    ],
-   "answer": 0,
-   "why": "AA地.",
+   "answer": 1,
+   "why": "Toko ramai → 生意很好. A dan C kebalikannya.",
    "id": "C43-07"
   },
   {
@@ -27700,17 +27700,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🐢",
-    "label": "pelan-pelan"
+    "icon": "🏪👩",
+    "label": "pemilik toko"
    },
-   "text": "請你慢慢（　）說。",
+   "text": "這家店的（　）是一位老太太。",
    "options": [
-    "地",
-    "得",
-    "的"
+    "主人",
+    "生意",
+    "籃子"
    ],
    "answer": 0,
-   "why": "Keterangan cara → 地.",
+   "why": "店的主人 = pemilik toko. 生意 dan 籃子 bukan orang.",
    "id": "C43-08"
   },
   {
@@ -27719,19 +27719,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "我家附近的市場裡有一家賣菜的小店，店的（1）是一位老闆娘。她每天早上五點就開始（2），客人很多，生意很好。她對每個客人都（3）地說話，還常常多送一點菜。客人們都拿著（4），在她的店前面等。她說：「做生意最重要的是（5）。」",
    "options": [
-    "主人",
-    "做生意",
     "高高興興",
+    "做生意",
     "籃子",
-    "讓客人高興",
-    "賣很貴的菜"
+    "主人",
+    "賣很貴的菜",
+    "讓客人高興"
    ],
    "answers": [
-    0,
-    1,
-    2,
     3,
-    4
+    1,
+    0,
+    2,
+    5
    ],
    "why": "店的主人; 五點開始做生意; 高高興興地說話; 拿著籃子; 最重要的是讓客人高興. 「賣很貴的菜」 tidak cocok di titik mana pun.",
    "id": "C43-09"
@@ -27765,12 +27765,12 @@
    },
    "question": "你想做什麼？",
    "options": [
+    "再買一件。",
     "換一件。",
-    "洗一洗。",
-    "付錢。"
+    "不要了。"
    ],
-   "answer": 0,
-   "why": "V一V = … sebentar/coba; 換一件 = tukar satu.",
+   "answer": 1,
+   "why": "Baju kekecilan, ingin ditukar → 換一件. A dan C tidak cocok.",
    "id": "C44-01"
   },
   {
@@ -27784,12 +27784,12 @@
    },
    "question": "這裡的水怎麼樣？",
    "options": [
-    "很冷。",
     "很深。",
+    "很熱。",
     "很淺。"
    ],
    "answer": 2,
-   "why": "淺 = dangkal.",
+   "why": "Air hanya sampai mata kaki → 很淺. A kebalikannya; B tidak terlihat.",
    "id": "C44-02"
   },
   {
@@ -27798,31 +27798,31 @@
    "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你住得慣嗎？"
+     "sp": "女",
+     "zh": "你要深色的還是淺色的？"
     },
     {
-     "sp": "女",
-     "zh": "住慣了，這裡很好。"
+     "sp": "男",
+     "zh": "深色的，淺色的很快就髒了。"
     }
    ],
-   "question": "這位小姐住得怎麼樣？",
+   "question": "這位先生要什麼顏色的？",
    "options": [
     {
-     "icon": "✈️",
-     "label": "mau pindah"
+     "icon": "🩵",
+     "label": "warna muda"
     },
     {
-     "icon": "🏠😊",
-     "label": "sudah terbiasa"
+     "icon": "🟦",
+     "label": "warna tua"
     },
     {
-     "icon": "🏠😟",
-     "label": "belum terbiasa"
+     "icon": "🟥",
+     "label": "merah"
     }
    ],
    "answer": 1,
-   "why": "V慣 = terbiasa.",
+   "why": "深色的. A ditolak (cepat kotor). C tidak disebut.",
    "id": "C44-03"
   },
   {
@@ -27831,39 +27831,39 @@
    "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "現在流行什麼顏色？"
-    },
-    {
      "sp": "男",
-     "zh": "今年流行深藍色。"
+     "zh": "現在幾點鐘？"
     },
     {
      "sp": "女",
-     "zh": "淺藍色呢？"
+     "zh": "我看一看……四點半了。"
     },
     {
      "sp": "男",
-     "zh": "去年流行。"
+     "zh": "我們五點鐘要上課。"
+    },
+    {
+     "sp": "女",
+     "zh": "那我們還有半個小時。"
     }
    ],
-   "question": "今年流行什麼顏色？",
+   "question": "現在幾點？",
    "options": [
     {
-     "icon": "🟦",
-     "label": "biru tua"
+     "icon": "🕔",
+     "label": "05.00"
     },
     {
-     "icon": "🔵",
-     "label": "biru muda"
+     "icon": "🕓",
+     "label": "04.00"
     },
     {
-     "icon": "⬛",
-     "label": "hitam"
+     "icon": "🕟",
+     "label": "04.30"
     }
    ],
-   "answer": 0,
-   "why": "深藍色 = biru tua.",
+   "answer": 2,
+   "why": "四點半了. A = jam kelas. B tidak disebut.",
    "id": "C44-04"
   },
   {
@@ -27872,54 +27872,54 @@
    "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "這個菜你吃慣了嗎？"
-    },
-    {
      "sp": "女",
-     "zh": "剛開始不習慣，現在很喜歡。"
+     "zh": "你剛來的時候吃得慣臺灣菜嗎？"
     },
     {
      "sp": "男",
-     "zh": "你試一試這個。"
+     "zh": "不太慣，覺得太甜了。"
     },
     {
      "sp": "女",
-     "zh": "好。"
+     "zh": "那現在呢？"
+    },
+    {
+     "sp": "男",
+     "zh": "現在沒有臺灣菜，我就吃不下飯了！"
     }
    ],
-   "question": "這位小姐現在覺得那個菜怎麼樣？",
+   "question": "這位先生現在覺得臺灣菜怎麼樣？",
    "options": [
-    "沒吃過",
-    "吃不慣",
+    "太甜了",
     "很喜歡",
-    "很難吃"
+    "吃不慣",
+    "不好吃"
    ],
-   "answer": 2,
-   "why": "現在很喜歡.",
+   "answer": 1,
+   "why": "沒有臺灣菜就吃不下飯 → sekarang sangat suka. A dan C perasaan AWAL. D kebalikannya.",
    "id": "C44-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他看了看手錶。",
+   "text": "這件上衣的顏色太淺了，我要換一件深一點的。",
    "options": [
     {
-     "icon": "📖",
-     "label": "buku"
+     "icon": "👕⬛➡️👕⬜",
+     "label": "ganti ke warna lebih muda"
     },
     {
-     "icon": "⌚👀",
-     "label": "melirik jam tangan"
+     "icon": "👕📏",
+     "label": "ganti ukuran"
     },
     {
-     "icon": "📱",
-     "label": "ponsel"
+     "icon": "👕⬜➡️👕⬛",
+     "label": "ganti ke warna lebih tua"
     }
    ],
-   "answer": 1,
-   "why": "V了V = sebentar.",
+   "answer": 2,
+   "why": "太淺了 → 換深一點的. A arahnya terbalik; B bukan soal ukuran.",
    "id": "C44-06"
   },
   {
@@ -27927,16 +27927,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🕐",
-    "label": "jam satu tepat"
+    "icon": "👗✨",
+    "label": "baju yang sedang tren"
    },
    "options": [
-    "現在一點鐘。",
-    "現在十點鐘。",
-    "現在兩點半。"
+    "這件衣服太舊了。",
+    "這件衣服現在很流行。",
+    "這件衣服破了。"
    ],
-   "answer": 0,
-   "why": "一點鐘 = jam satu.",
+   "answer": 1,
+   "why": "Sedang tren → 流行. A dan C tidak cocok.",
    "id": "C44-07"
   },
   {
@@ -27944,17 +27944,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "⭕",
-    "label": "bulat"
+    "icon": "🔄👕",
+    "label": "menukar baju"
    },
-   "text": "這張桌子是（　）的。",
+   "text": "這件太大了，可以（　）一件小的嗎？",
    "options": [
-    "深",
-    "淺",
+    "換",
+    "慣",
     "圓"
    ],
-   "answer": 2,
-   "why": "圓 = bulat.",
+   "answer": 0,
+   "why": "換一件小的 = tukar dengan yang kecil. 慣 dan 圓 tidak dipakai di sini.",
    "id": "C44-08"
   },
   {
@@ -27963,18 +27963,18 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "上個星期我在網路上買了一件外套。現在很（1）這種長外套，所以我很快就買了。可是拿到以後，我發現外套太小了，顏色也比照片（2），不是我要的淺藍色。我打電話給店家，問能不能（3）。店家說可以，請我把外套寄回去，他們會寄一件（4）的給我。以後我不想（5）了，我要先去店裡試穿。",
    "options": [
-    "流行",
+    "圓圓的",
     "深",
-    "換一換",
     "大一點、淺一點",
+    "流行",
     "在網路上買衣服",
-    "圓圓的"
+    "換一換"
    ],
    "answers": [
-    0,
-    1,
-    2,
     3,
+    1,
+    5,
+    2,
     4
    ],
    "why": "很流行; warna 比照片深 (bukan biru muda); 換一換; kirim yang 大一點、淺一點; tidak mau 在網路上買衣服 lagi. 「圓圓的」 tidak cocok di titik mana pun.",
@@ -28009,12 +28009,12 @@
    },
    "question": "這個便當怎麼樣？",
    "options": [
+    "太鹹了。",
     "很好吃。",
-    "很難吃。",
-    "太鹹了。"
+    "不好吃。"
    ],
-   "answer": 0,
-   "why": "Jempol → 很好吃.",
+   "answer": 1,
+   "why": "Mengacungkan jempol → 很好吃. A dan C kebalikannya.",
    "id": "C45-01"
   },
   {
@@ -28028,12 +28028,12 @@
    },
    "question": "他不吃什麼？",
    "options": [
-    "魚。",
-    "肉。",
+    "米飯。",
+    "青菜。",
     "豆腐。"
    ],
    "answer": 2,
-   "why": "什麼都吃，就是不吃豆腐 = makan apa saja kecuali tahu.",
+   "why": "Menyingkirkan tahu → 不吃豆腐. A dan B dimakan.",
    "id": "C45-02"
   },
   {
@@ -28042,31 +28042,31 @@
    "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "這個菜要放鹽嗎？"
+     "sp": "男",
+     "zh": "你要雞肉便當還是豆腐便當？"
     },
     {
-     "sp": "男",
-     "zh": "不用，已經放了醬。"
+     "sp": "女",
+     "zh": "豆腐的，我今天不想吃肉。"
     }
    ],
-   "question": "這個菜怎麼樣？",
+   "question": "這位小姐要什麼便當？",
    "options": [
     {
-     "icon": "🥫",
-     "label": "sudah diberi saus"
+     "icon": "🍗🍱",
+     "label": "bento ayam"
     },
     {
-     "icon": "🍬",
-     "label": "perlu gula"
+     "icon": "🍱",
+     "label": "bento tahu"
     },
     {
-     "icon": "🧂",
-     "label": "perlu garam"
+     "icon": "🍜",
+     "label": "mi"
     }
    ],
-   "answer": 0,
-   "why": "已經放了醬.",
+   "answer": 1,
+   "why": "豆腐的. A ditolak (不想吃肉). C tidak disebut.",
    "id": "C45-03"
   },
   {
@@ -28075,39 +28075,39 @@
    "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你想吃什麼？"
-    },
-    {
      "sp": "女",
-     "zh": "什麼都可以。"
+     "zh": "家裡的米吃完了嗎？"
     },
     {
      "sp": "男",
-     "zh": "吃便當好不好？"
+     "zh": "吃完了，還有醬和油。"
     },
     {
      "sp": "女",
-     "zh": "好，我要豆腐便當。"
+     "zh": "那我去買米，你去買鹽。"
+    },
+    {
+     "sp": "男",
+     "zh": "鹽還有很多，不用買。"
     }
    ],
-   "question": "這位小姐要吃什麼？",
+   "question": "這位小姐要去買什麼？",
    "options": [
     {
-     "icon": "🍱",
-     "label": "bento tahu"
+     "icon": "🧂",
+     "label": "garam"
     },
     {
-     "icon": "🍜",
-     "label": "mi"
+     "icon": "🫙",
+     "label": "kecap"
     },
     {
-     "icon": "🍱🥩",
-     "label": "bento daging"
+     "icon": "🍚",
+     "label": "beras"
     }
    ],
-   "answer": 0,
-   "why": "豆腐便當.",
+   "answer": 2,
+   "why": "我去買米. A tidak perlu (還有很多). B masih ada.",
    "id": "C45-04"
   },
   {
@@ -28116,54 +28116,54 @@
    "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "這家的菜怎麼樣？"
-    },
-    {
      "sp": "男",
-     "zh": "什麼都好吃，就是油太多。"
+     "zh": "誰都說這家店的豆腐最好吃。"
     },
     {
      "sp": "女",
-     "zh": "我們點少油的吧。"
+     "zh": "真的嗎？我們去吃吧。"
     },
     {
      "sp": "男",
-     "zh": "好。"
+     "zh": "可是每天都有很多人在排隊。"
+    },
+    {
+     "sp": "女",
+     "zh": "不管多久，我都要吃吃看。"
     }
    ],
-   "question": "這位先生覺得這家的菜有什麼問題？",
+   "question": "這位小姐的意思是什麼？",
    "options": [
-    "不好吃",
-    "油太多",
-    "太貴",
-    "太鹹"
+    "她不想排隊",
+    "她一定要去吃",
+    "豆腐不好吃",
+    "她吃過了"
    ],
    "answer": 1,
-   "why": "就是油太多.",
+   "why": "不管多久，我都要吃吃看 → tetap mau mencoba. A kebalikannya. C kebalikan (誰都說最好吃). D tidak disebut.",
    "id": "C45-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "哪樣菜他都喜歡。",
+   "text": "這個菜什麼都好，就是油太多了。",
    "options": [
     {
-     "icon": "🍲🥗🍜",
-     "label": "suka semua masakan"
+     "icon": "🍲",
+     "label": "masakan biasa"
     },
     {
-     "icon": "🍲❌",
-     "label": "tidak suka"
+     "icon": "🍲🧂🧂",
+     "label": "masakan asin"
     },
     {
-     "icon": "🍜",
-     "label": "hanya mi"
+     "icon": "🍲💧💧",
+     "label": "masakan berminyak"
     }
    ],
-   "answer": 0,
-   "why": "QW + 都 = semua.",
+   "answer": 2,
+   "why": "油太多 → berminyak. A tidak bermasalah; B masalahnya garam.",
    "id": "C45-06"
   },
   {
@@ -28171,16 +28171,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🌾",
-    "label": "beras"
+    "icon": "🍚",
+    "label": "nasi"
    },
    "options": [
-    "這是米。",
-    "這是鹽。",
-    "這是油。"
+    "這是米飯。",
+    "這是豆腐。",
+    "這是麵包。"
    ],
    "answer": 0,
-   "why": "米 = beras.",
+   "why": "Nasi → 米飯. B dan C makanan lain.",
    "id": "C45-07"
   },
   {
@@ -28188,17 +28188,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🧂",
-    "label": "garam"
+    "icon": "👥❤️",
+    "label": "semua suka"
    },
-   "text": "湯不夠鹹，要放一點（　）。",
+   "text": "我媽媽做的菜，（　）都喜歡吃。",
    "options": [
-    "鹽",
-    "油",
-    "米"
+    "誰",
+    "什麼",
+    "哪裡"
    ],
    "answer": 0,
-   "why": "鹽 = garam.",
+   "why": "誰都喜歡 = siapa pun suka. 什麼都喜歡吃 berubah arti; 哪裡 untuk tempat.",
    "id": "C45-08"
   },
   {
@@ -28208,18 +28208,18 @@
    "text": "中午我常常在學校附近買（1）。那家店的便當有很多種，每樣菜都很好吃，我最喜歡的是（2）。可是那家店做菜用很多（3），菜常常太油了，也太（4）。昨天我跟老闆說：「你們的菜什麼都好吃，（5）。」老闆說以後會少放一點鹽。",
    "options": [
     "便當",
-    "醬油豆腐",
-    "油",
-    "鹹",
+    "米很貴",
     "就是太鹹了",
-    "米很貴"
+    "醬油豆腐",
+    "鹹",
+    "油"
    ],
    "answers": [
     0,
-    1,
-    2,
     3,
-    4
+    5,
+    4,
+    2
    ],
    "why": "買便當; paling suka 醬油豆腐; 用很多油 → 太油; 太鹹; 什麼都好吃，就是太鹹了. 「米很貴」 tidak cocok di titik mana pun.",
    "id": "C45-09"
@@ -28253,12 +28253,12 @@
    },
    "question": "你要什麼？",
    "options": [
+    "三顆番茄。",
     "三顆橘子。",
-    "一顆橘子。",
-    "三顆番茄。"
+    "兩顆橘子。"
    ],
-   "answer": 0,
-   "why": "橘子 = jeruk.",
+   "answer": 1,
+   "why": "Tiga jeruk → 三顆橘子. A buah lain; C jumlahnya salah.",
    "id": "C46-01"
   },
   {
@@ -28273,11 +28273,11 @@
    "question": "夏天的什麼很甜？",
    "options": [
     "草莓。",
-    "芒果。",
-    "鳳梨。"
+    "橘子。",
+    "芒果。"
    ],
-   "answer": 1,
-   "why": "芒果 = mangga.",
+   "answer": 2,
+   "why": "Musim panas + mangga → 芒果. A dan B buah musim lain.",
    "id": "C46-02"
   },
   {
@@ -28286,31 +28286,31 @@
    "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你喜歡什麼水果？"
+     "sp": "女",
+     "zh": "你要鳳梨還是木瓜？"
     },
     {
-     "sp": "女",
-     "zh": "我都喜歡，尤其是草莓。"
+     "sp": "男",
+     "zh": "鳳梨我昨天買了，今天要木瓜。"
     }
    ],
-   "question": "這位小姐最喜歡什麼？",
+   "question": "這位先生今天要什麼？",
    "options": [
     {
-     "icon": "🍓",
-     "label": "stroberi"
+     "icon": "🍍",
+     "label": "nanas"
     },
     {
-     "icon": "🍌",
-     "label": "pisang"
+     "icon": "🍈",
+     "label": "pepaya"
     },
     {
      "icon": "🍇",
      "label": "anggur"
     }
    ],
-   "answer": 0,
-   "why": "尤其 = terutama.",
+   "answer": 1,
+   "why": "今天要木瓜. A dibeli kemarin. C tidak disebut.",
    "id": "C46-03"
   },
   {
@@ -28319,39 +28319,39 @@
    "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "老闆，木瓜一顆多少錢？"
-    },
-    {
      "sp": "男",
-     "zh": "五十塊。"
+     "zh": "這家店的水果怎麼樣？"
     },
     {
      "sp": "女",
-     "zh": "新鮮嗎？"
+     "zh": "都很新鮮，尤其是葡萄。"
     },
     {
      "sp": "男",
-     "zh": "很新鮮，今天早上才到。"
+     "zh": "貴嗎？"
+    },
+    {
+     "sp": "女",
+     "zh": "一百塊左右。"
     }
    ],
-   "question": "一顆木瓜多少錢？",
+   "question": "這家店什麼水果特別好？",
    "options": [
     {
-     "icon": "💵",
-     "label": "NT$15"
+     "icon": "🍓",
+     "label": "stroberi"
     },
     {
-     "icon": "💵",
-     "label": "NT$500"
+     "icon": "🍊",
+     "label": "jeruk"
     },
     {
-     "icon": "💵",
-     "label": "NT$50"
+     "icon": "🍇",
+     "label": "anggur"
     }
    ],
    "answer": 2,
-   "why": "五十塊.",
+   "why": "尤其是葡萄. A dan B tidak disebut.",
    "id": "C46-04"
   },
   {
@@ -28360,54 +28360,54 @@
    "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "臺灣的水果都很甜。"
-    },
-    {
      "sp": "女",
-     "zh": "差不多都很甜，尤其是鳳梨。"
+     "zh": "你怎麼買了這麼多番茄？"
     },
     {
      "sp": "男",
-     "zh": "番茄也是水果嗎？"
+     "zh": "今天打折，一顆才十塊。"
     },
     {
      "sp": "女",
-     "zh": "在臺灣，番茄常常當水果吃。"
+     "zh": "你吃得完嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "吃不完就做番茄湯。"
     }
    ],
-   "question": "這位小姐覺得什麼最甜？",
+   "question": "這位先生為什麼買很多番茄？",
    "options": [
-    "木瓜",
-    "芒果",
-    "番茄",
-    "鳳梨"
+    "要做番茄湯",
+    "很便宜",
+    "他最喜歡番茄",
+    "媽媽讓他買"
    ],
-   "answer": 3,
-   "why": "尤其是鳳梨.",
+   "answer": 1,
+   "why": "打折，一顆才十塊 → alasannya. A = rencana bila tidak habis, bukan alasan membeli. C dan D tidak disebut.",
    "id": "C46-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "盤子裡有葡萄和草莓。",
+   "text": "籃子裡差不多都是橘子，只有一顆芒果。",
    "options": [
     {
-     "icon": "🍇",
-     "label": "hanya anggur"
+     "icon": "🧺🥭🥭🥭🍊",
+     "label": "hampir semua mangga"
     },
     {
-     "icon": "🍊🍓",
-     "label": "jeruk & stroberi"
+     "icon": "🧺🍊",
+     "label": "satu jeruk"
     },
     {
-     "icon": "🍇🍓",
-     "label": "anggur & stroberi"
+     "icon": "🧺🍊🍊🍊🥭",
+     "label": "hampir semua jeruk, satu mangga"
     }
    ],
    "answer": 2,
-   "why": "葡萄 + 草莓.",
+   "why": "差不多都是橘子 + 一顆芒果. A terbalik; B kurang.",
    "id": "C46-06"
   },
   {
@@ -28415,16 +28415,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🍅",
-    "label": "tomat"
+    "icon": "🍍",
+    "label": "nanas"
    },
    "options": [
-    "這是番茄。",
-    "這是橘子。",
-    "這是蘋果。"
+    "這是木瓜。",
+    "這是鳳梨。",
+    "這是橘子。"
    ],
-   "answer": 0,
-   "why": "番茄 = tomat.",
+   "answer": 1,
+   "why": "Nanas → 鳳梨. A dan C buah lain.",
    "id": "C46-07"
   },
   {
@@ -28432,17 +28432,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "✨🍎",
-    "label": "buah segar"
+    "icon": "🥭✨",
+    "label": "segar"
    },
-   "text": "這家店的水果很（　）。",
+   "text": "這顆芒果今天早上才到，很（　）。",
    "options": [
+    "新鮮",
     "尤其",
-    "顆",
-    "新鮮"
+    "差不多"
    ],
-   "answer": 2,
-   "why": "新鮮 = segar.",
+   "answer": 0,
+   "why": "才到 → 新鮮 (segar). 尤其 dan 差不多 tidak bisa menjadi predikat.",
    "id": "C46-08"
   },
   {
@@ -28451,19 +28451,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "台灣一年到頭都有好吃的水果，（1）是夏天的芒果，又大又甜。冬天的時候，（2）最便宜，很多人一買就是好幾盒。我最喜歡去市場買水果，因為那裡的水果都很（3）。有一次，老闆送我一（4）很大的鳳梨，我吃了三天才吃完。我覺得來台灣，一定要（5）。",
    "options": [
-    "尤其",
-    "草莓",
-    "新鮮",
-    "顆",
     "多吃水果",
-    "番茄是菜還是水果"
+    "草莓",
+    "顆",
+    "番茄是菜還是水果",
+    "尤其",
+    "新鮮"
    ],
    "answers": [
-    0,
+    4,
     1,
+    5,
     2,
-    3,
-    4
+    0
    ],
    "why": "尤其是芒果; musim dingin 草莓 paling murah; 水果很新鮮; 一顆鳳梨; 一定要多吃水果. 「番茄是菜還是水果」 tidak cocok di titik mana pun.",
    "id": "C46-09"
@@ -28497,12 +28497,12 @@
    },
    "question": "牛排熟了嗎？",
    "options": [
-    "熟了。",
     "還沒熟。",
-    "我不吃。"
+    "熟了。",
+    "太熟了，黑黑的。"
    ],
-   "answer": 0,
-   "why": "熟 = matang.",
+   "answer": 1,
+   "why": "Bagian dalam sudah matang → 熟了. A kebalikannya; C tidak gosong.",
    "id": "C47-01"
   },
   {
@@ -28516,12 +28516,12 @@
    },
    "question": "你怎麼了？",
    "options": [
-    "我累壞了！",
-    "我很高興。",
-    "我很餓。"
+    "我餓壞了！",
+    "我高興壞了！",
+    "我累壞了！"
    ],
-   "answer": 0,
-   "why": "累壞了 = capek sekali.",
+   "answer": 2,
+   "why": "Terkapar kelelahan → 累壞了. A dan B perasaan lain.",
    "id": "C47-02"
   },
   {
@@ -28530,15 +28530,15 @@
    "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "你喝什麼？"
+     "sp": "男",
+     "zh": "你要喝什麼汁？"
     },
     {
-     "sp": "男",
-     "zh": "一杯橘子汁。"
+     "sp": "女",
+     "zh": "蘋果汁沒有了，那我喝橘子汁吧。"
     }
    ],
-   "question": "這位先生喝什麼？",
+   "question": "這位小姐要喝什麼？",
    "options": [
     {
      "icon": "🍎🥤",
@@ -28550,11 +28550,11 @@
     },
     {
      "icon": "☕",
-     "label": "kopi"
+     "label": "teh"
     }
    ],
    "answer": 1,
-   "why": "橘子汁.",
+   "why": "那我喝橘子汁吧. A habis. C tidak disebut.",
    "id": "C47-03"
   },
   {
@@ -28563,39 +28563,39 @@
    "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "這個菜的做法很簡單。"
-    },
-    {
      "sp": "女",
-     "zh": "怎麼做？"
+     "zh": "豆子要泡多久？"
     },
     {
      "sp": "男",
-     "zh": "先炒洋蔥，再放牛肉。"
+     "zh": "泡一個晚上，明天早上再做。"
     },
     {
      "sp": "女",
-     "zh": "我試試看。"
+     "zh": "那今天晚上吃什麼？"
+    },
+    {
+     "sp": "男",
+     "zh": "吃牛排吧，做法很簡單。"
     }
    ],
-   "question": "先做什麼？",
+   "question": "今天晚上他們吃什麼？",
    "options": [
     {
-     "icon": "🍚",
-     "label": "memasak nasi"
+     "icon": "🫘",
+     "label": "kacang"
     },
     {
      "icon": "🥩",
-     "label": "memasukkan daging"
+     "label": "steak"
     },
     {
-     "icon": "🧅🔥",
-     "label": "menumis bawang bombay"
+     "icon": "🍜",
+     "label": "mi"
     }
    ],
-   "answer": 2,
-   "why": "先炒洋蔥.",
+   "answer": 1,
+   "why": "吃牛排吧. A baru besok pagi (harus direndam). C tidak disebut.",
    "id": "C47-04"
   },
   {
@@ -28604,54 +28604,54 @@
    "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "茶泡好了嗎？"
-    },
-    {
      "sp": "男",
-     "zh": "泡好了，正好可以喝。"
+     "zh": "我做好了洋蔥牛排，你來吃吧！"
     },
     {
      "sp": "女",
-     "zh": "太好了，我渴壞了。"
+     "zh": "謝謝，可是我不吃牛肉。"
     },
     {
      "sp": "男",
-     "zh": "來，給你。"
+     "zh": "那我幫你做豆子湯吧。"
+    },
+    {
+     "sp": "女",
+     "zh": "好，我等你。"
     }
    ],
-   "question": "這位小姐現在怎麼樣？",
+   "question": "這位先生要幫這位小姐做什麼？",
    "options": [
-    "很渴",
-    "很累",
-    "很冷",
-    "很餓"
+    "洋蔥牛排",
+    "果汁",
+    "豆子湯",
+    "牛排"
    ],
-   "answer": 0,
-   "why": "渴壞了.",
+   "answer": 2,
+   "why": "那我幫你做豆子湯吧. A dan D ditolak (不吃牛肉). B tidak disebut.",
    "id": "C47-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "我把豆子泡在水裡。",
+   "text": "牛排做好了，我們一起吃吧。",
    "options": [
     {
-     "icon": "🥛",
-     "label": "susu"
+     "icon": "🥩🔥",
+     "label": "steak masih dimasak"
     },
     {
-     "icon": "🫘🔥",
-     "label": "menggoreng kacang"
+     "icon": "🥩🍽️",
+     "label": "steak siap disajikan"
     },
     {
-     "icon": "🫘💧",
-     "label": "merendam kacang"
+     "icon": "🥩🧊",
+     "label": "steak mentah di kulkas"
     }
    ],
-   "answer": 2,
-   "why": "泡 = merendam.",
+   "answer": 1,
+   "why": "做好了 → siap disajikan. A dan C belum jadi.",
    "id": "C47-06"
   },
   {
@@ -28659,16 +28659,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🥩",
-    "label": "steak"
+    "icon": "🫘",
+    "label": "kacang"
    },
    "options": [
-    "這是牛排。",
+    "這是豆子。",
     "這是洋蔥。",
-    "這是豆腐。"
+    "這是牛排。"
    ],
    "answer": 0,
-   "why": "牛排 = steak.",
+   "why": "Kacang → 豆子. B dan C bahan lain.",
    "id": "C47-07"
   },
   {
@@ -28676,17 +28676,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "✅🍳",
-    "label": "masakan sudah jadi"
+    "icon": "😫",
+    "label": "lelah sekali"
    },
-   "text": "晚飯做（　）了，來吃吧！",
+   "text": "今天工作了十二個小時，我累（　）了。",
    "options": [
+    "壞",
     "好",
-    "泡",
-    "汁"
+    "熟"
    ],
    "answer": 0,
-   "why": "V好 = selesai.",
+   "why": "Vs壞了: 累壞了 = capek sekali. 累好了 dan 累熟了 tidak ada.",
    "id": "C47-08"
   },
   {
@@ -28695,19 +28695,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "今天晚上我和室友一起做晚飯。我們在網路上找到牛排的（1）。室友先準備（2），我來做牛排。我們怕牛排不（3），多做了兩分鐘。我們也把紅豆（4）在水裡，準備明天做紅豆湯。七點牛排做好了，我們都（5），很快就吃完了。",
    "options": [
-    "做法",
-    "洋蔥",
-    "熟",
-    "泡",
     "餓壞了",
-    "喝果汁"
+    "泡",
+    "喝果汁",
+    "熟",
+    "做法",
+    "洋蔥"
    ],
    "answers": [
-    0,
-    1,
-    2,
+    4,
+    5,
     3,
-    4
+    1,
+    0
    ],
    "why": "找到做法; 切洋蔥; 怕牛排不熟; 紅豆泡在水裡; 餓壞了 → cepat habis. 「喝果汁」 tidak cocok di titik mana pun.",
    "id": "C47-09"
@@ -28741,12 +28741,12 @@
    },
    "question": "你打電話做什麼？",
    "options": [
-    "買票。",
+    "找朋友。",
     "訂位。",
-    "訂飯店。"
+    "問老師。"
    ],
    "answer": 1,
-   "why": "訂位 = reservasi meja.",
+   "why": "Menelepon restoran untuk memesan meja → 訂位. A dan C tidak cocok.",
    "id": "C48-01"
   },
   {
@@ -28760,12 +28760,12 @@
    },
    "question": "你要什麼？",
    "options": [
-    "一個套餐。",
-    "一份海鮮。",
-    "一份沙拉。"
+    "一份沙拉。",
+    "一碗麵。",
+    "一個套餐。"
    ],
-   "answer": 0,
-   "why": "套餐 = paket makan.",
+   "answer": 2,
+   "why": "Nampan berisi nasi, sup, lauk, minuman → 套餐. A dan B hanya satu jenis.",
    "id": "C48-02"
   },
   {
@@ -28774,31 +28774,31 @@
    "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "還有位子嗎？"
+     "sp": "女",
+     "zh": "你是不是訂了七點？"
     },
     {
-     "sp": "女",
-     "zh": "有，這邊請。"
+     "sp": "男",
+     "zh": "不是，是七點半。"
     }
    ],
-   "question": "還有位子嗎？",
+   "question": "他們訂了幾點？",
    "options": [
     {
-     "icon": "🪑✅",
-     "label": "masih ada tempat"
+     "icon": "🕖",
+     "label": "19.00"
     },
     {
-     "icon": "🪑❌",
-     "label": "penuh"
+     "icon": "🕢",
+     "label": "19.30"
     },
     {
-     "icon": "🚪",
-     "label": "tutup"
+     "icon": "🕗",
+     "label": "20.00"
     }
    ],
-   "answer": 0,
-   "why": "有.",
+   "answer": 1,
+   "why": "不是，是七點半. A = tebakan yang dibantah. C tidak disebut.",
    "id": "C48-03"
   },
   {
@@ -28807,39 +28807,39 @@
    "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "你們有什麼套餐？"
-    },
-    {
      "sp": "男",
-     "zh": "A套餐有沙拉和牛排，B套餐有沙拉和海鮮。"
+     "zh": "這裡的海鮮套餐怎麼樣？"
     },
     {
      "sp": "女",
-     "zh": "我不吃海鮮。"
+     "zh": "很好吃，可是有點貴。"
     },
     {
      "sp": "男",
-     "zh": "那您點A套餐吧。"
+     "zh": "那我們要兩個牛肉套餐，一個沙拉。"
+    },
+    {
+     "sp": "女",
+     "zh": "好，我去跟店員說。"
     }
    ],
-   "question": "這位小姐會點什麼？",
+   "question": "他們要什麼？",
    "options": [
     {
-     "icon": "🥗🥩",
-     "label": "A: salad & steak"
+     "icon": "🦐🦐",
+     "label": "dua paket seafood"
     },
     {
-     "icon": "🥗🍤",
-     "label": "B: salad & seafood"
+     "icon": "🥗🥗",
+     "label": "dua salad"
     },
     {
-     "icon": "🍜",
-     "label": "mi"
+     "icon": "🥩🥩🥗",
+     "label": "dua paket daging dan salad"
     }
    ],
-   "answer": 0,
-   "why": "不吃海鮮 → A.",
+   "answer": 2,
+   "why": "兩個牛肉套餐 + 一個沙拉. A ditolak (有點貴). B jumlah salad salah.",
    "id": "C48-04"
   },
   {
@@ -28848,54 +28848,54 @@
    "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你是不是訂位了？"
-    },
-    {
      "sp": "女",
-     "zh": "對，七點，兩位。"
+     "zh": "你是不是第一次來這家餐廳？"
     },
     {
      "sp": "男",
-     "zh": "現在才六點半。"
+     "zh": "對，你怎麼知道？"
     },
     {
      "sp": "女",
-     "zh": "那我們先去逛一逛吧。"
+     "zh": "你一直在看別人吃什麼。"
+    },
+    {
+     "sp": "男",
+     "zh": "因為每一樣看起來都很好吃！"
     }
    ],
-   "question": "他們現在可能做什麼？",
+   "question": "這位小姐為什麼覺得他第一次來？",
    "options": [
-    "先去逛逛再來",
-    "回家",
-    "馬上吃飯",
-    "不吃了"
+    "他不知道怎麼訂位",
+    "他一直看別人吃什麼",
+    "他說他沒來過",
+    "他不吃海鮮"
    ],
-   "answer": 0,
-   "why": "那 = kalau begitu → jalan-jalan dulu.",
+   "answer": 1,
+   "why": "你一直在看別人吃什麼 → alasannya. A dan D tidak disebut. C: dia hanya membenarkan setelah ditanya.",
    "id": "C48-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "這裡的食物很新鮮。",
+   "text": "我們訂的位子在窗戶旁邊。",
    "options": [
     {
-     "icon": "🍽️🤢",
-     "label": "makanan basi"
+     "icon": "🚪🪑",
+     "label": "dekat pintu"
     },
     {
-     "icon": "🍽️✨",
-     "label": "makanan segar"
+     "icon": "🍳🪑",
+     "label": "dekat dapur"
     },
     {
-     "icon": "🌶️",
-     "label": "pedas"
+     "icon": "🪟🪑",
+     "label": "dekat jendela"
     }
    ],
-   "answer": 1,
-   "why": "食物 = makanan.",
+   "answer": 2,
+   "why": "窗戶旁邊 → dekat jendela. A dan B tempat lain.",
    "id": "C48-06"
   },
   {
@@ -28907,12 +28907,12 @@
     "label": "salad"
    },
    "options": [
-    "我要一份牛排。",
-    "我要一碗湯。",
-    "我要一份沙拉。"
+    "這是海鮮。",
+    "這是沙拉。",
+    "這是套餐。"
    ],
-   "answer": 2,
-   "why": "沙拉 = salad.",
+   "answer": 1,
+   "why": "Salad → 沙拉. A dan C tidak cocok.",
    "id": "C48-07"
   },
   {
@@ -28920,17 +28920,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🦀",
-    "label": "makanan laut"
+    "icon": "🍽️👌",
+    "label": "makanan enak"
    },
-   "text": "這家餐廳的（　）很有名，魚很新鮮。",
+   "text": "這家餐廳的（　）都很好吃。",
    "options": [
+    "食物",
     "位子",
-    "訂位",
-    "海鮮"
+    "訂位"
    ],
-   "answer": 2,
-   "why": "海鮮 = makanan laut.",
+   "answer": 0,
+   "why": "食物很好吃 = makanannya enak. 位子 dan 訂位 tidak bisa 'enak'.",
    "id": "C48-08"
   },
   {
@@ -28939,18 +28939,18 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "這個星期六是我媽媽的生日，我想請她去一家有名的海鮮餐廳吃飯。朋友說那家餐廳週末人很多，一定要先（1），才會有（2）。我打電話去，餐廳的小姐問我要不要（3），我說要兩個人的。她說套餐包括（4）、湯和甜點。她還問我（5），因為有的客人不吃海鮮。",
    "options": [
-    "訂位",
-    "位子",
     "點套餐",
     "沙拉",
+    "食物很貴",
+    "訂位",
     "是不是每個人都吃海鮮",
-    "食物很貴"
+    "位子"
    ],
    "answers": [
+    3,
+    5,
     0,
     1,
-    2,
-    3,
     4
    ],
    "why": "先訂位，才會有位子; 點套餐 dua orang; 套餐包括沙拉; 是不是每個人都吃海鮮. 「食物很貴」 tidak cocok di titik mana pun.",
@@ -28985,12 +28985,12 @@
    },
    "question": "晚上你吃什麼？",
    "options": [
-    "速食。",
+    "便當。",
     "泡麵。",
-    "便當。"
+    "速食。"
    ],
    "answer": 1,
-   "why": "泡麵 = mi instan.",
+   "why": "Mi instan dalam cup → 泡麵. A dan C makanan lain.",
    "id": "C49-01"
   },
   {
@@ -29004,12 +29004,12 @@
    },
    "question": "你喝可樂嗎？",
    "options": [
-    "我常常喝。",
-    "我從來不喝可樂。",
-    "我喝咖啡。"
+    "我每天都喝。",
+    "可樂很便宜。",
+    "我從來不喝可樂。"
    ],
-   "answer": 1,
-   "why": "從來不 = tidak pernah sama sekali.",
+   "answer": 2,
+   "why": "Kaleng cola dicoret → 從來不喝. A kebalikannya; B tidak menjawab.",
    "id": "C49-02"
   },
   {
@@ -29019,30 +29019,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你聞到了嗎？"
+     "zh": "你要吃餅乾還是糖果？"
     },
     {
      "sp": "男",
-     "zh": "聞到了，好香！"
+     "zh": "都不要，我一點也不餓。"
     }
    ],
-   "question": "這位先生聞到什麼？",
+   "question": "這位先生要吃什麼？",
    "options": [
     {
-     "icon": "👃😋",
-     "label": "aroma harum"
+     "icon": "🍪",
+     "label": "biskuit"
     },
     {
-     "icon": "👃🤢",
-     "label": "bau busuk"
+     "icon": "🍬",
+     "label": "permen"
     },
     {
-     "icon": "👂",
-     "label": "suara"
+     "icon": "🙅",
+     "label": "tidak keduanya"
     }
    ],
-   "answer": 0,
-   "why": "好香.",
+   "answer": 2,
+   "why": "都不要. A dan B ditolak.",
    "id": "C49-03"
   },
   {
@@ -29052,38 +29052,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你要喝什麼飲料？"
+     "zh": "你聞，這是什麼香味？"
     },
     {
      "sp": "女",
-     "zh": "烏龍茶。"
+     "zh": "是樓下的店在做麵包。"
     },
     {
      "sp": "男",
-     "zh": "要冰的嗎？"
+     "zh": "好香啊！我們去買吧。"
     },
     {
      "sp": "女",
-     "zh": "不要，熱的。"
+     "zh": "好，我也餓了。"
     }
    ],
-   "question": "這位小姐要喝什麼？",
+   "question": "香味是什麼？",
    "options": [
     {
-     "icon": "🧊🍵",
-     "label": "teh oolong dingin"
+     "icon": "☕",
+     "label": "kopi"
     },
     {
-     "icon": "🥤",
-     "label": "cola"
+     "icon": "🍞",
+     "label": "roti"
     },
     {
-     "icon": "🍵",
-     "label": "teh oolong panas"
+     "icon": "🍫",
+     "label": "cokelat"
     }
    ],
-   "answer": 2,
-   "why": "烏龍茶 + 熱的.",
+   "answer": 1,
+   "why": "樓下的店在做麵包. A dan C tidak disebut.",
    "id": "C49-04"
   },
   {
@@ -29093,53 +29093,53 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你喜歡吃速食嗎？"
+     "zh": "你怎麼又吃速食？"
     },
     {
      "sp": "男",
-     "zh": "一點也不喜歡。"
+     "zh": "我今天忙壞了，沒時間做飯。"
     },
     {
      "sp": "女",
-     "zh": "為什麼？"
+     "zh": "你已經一個星期都吃速食了。"
     },
     {
      "sp": "男",
-     "zh": "吃了對身體不好。"
+     "zh": "我知道，明天開始我一定自己做飯。"
     }
    ],
-   "question": "這位先生為什麼不吃速食？",
+   "question": "這位小姐的意思是什麼？",
    "options": [
-    "不好吃",
-    "對身體不好",
-    "太貴",
-    "沒時間"
+    "她也想吃速食",
+    "速食很便宜",
+    "他這個星期吃了太多速食",
+    "他應該多工作"
    ],
-   "answer": 1,
-   "why": "Alasan: kesehatan.",
+   "answer": 2,
+   "why": "又 + 已經一個星期都吃速食了 → terlalu sering. A, B, D tidak disebut.",
    "id": "C49-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "桌子上有餅乾和糖果。",
+   "text": "早上我喝豆漿，吃一塊餅。",
    "options": [
     {
-     "icon": "🍎",
-     "label": "buah"
+     "icon": "☕🍩",
+     "label": "kopi dan donat"
     },
     {
-     "icon": "🍫",
-     "label": "cokelat"
+     "icon": "🥛🫓",
+     "label": "susu kedelai dan roti pipih"
     },
     {
-     "icon": "🍪🍬",
-     "label": "biskuit & permen"
+     "icon": "🥤🍔",
+     "label": "soda dan burger"
     }
    ],
-   "answer": 2,
-   "why": "餅乾 + 糖果.",
+   "answer": 1,
+   "why": "豆漿 + 餅. A dan C makanan lain.",
    "id": "C49-06"
   },
   {
@@ -29147,16 +29147,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🍪",
-    "label": "biskuit"
+    "icon": "🍫",
+    "label": "cokelat"
    },
    "options": [
-    "這是巧克力。",
+    "這是餅乾。",
     "這是糖果。",
-    "這是餅乾。"
+    "這是巧克力。"
    ],
    "answer": 2,
-   "why": "餅乾 = biskuit.",
+   "why": "Cokelat → 巧克力. A dan B makanan manis lain.",
    "id": "C49-07"
   },
   {
@@ -29164,17 +29164,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "👃☕",
-    "label": "mencium aroma kopi"
+    "icon": "🙅🍔",
+    "label": "sama sekali tidak mau"
    },
-   "text": "我（　）到咖啡的香味。",
+   "text": "我一點（　）不想吃速食。",
    "options": [
-    "聞",
-    "喝",
-    "看"
+    "也",
+    "從來",
+    "才"
    ],
    "answer": 0,
-   "why": "聞 = mencium.",
+   "why": "一點也不 = sama sekali tidak. 從來 tidak didahului 一點; 才 tidak cocok.",
    "id": "C49-08"
   },
   {
@@ -29183,19 +29183,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "我以前很喜歡吃（1），常常一個星期吃三次漢堡。晚上念書的時候，還會吃（2）和餅乾。後來我胖了很多，醫生說我應該少吃這樣的東西。現在我（3）甜的飲料，早上喝一杯（4）。每次經過速食店，雖然還是會（5），可是我一點也不想進去了。",
    "options": [
+    "巧克力很便宜",
     "速食",
+    "豆漿",
     "泡麵",
     "很少喝",
-    "豆漿",
-    "聞到香味",
-    "巧克力很便宜"
+    "聞到香味"
    ],
    "answers": [
-    0,
     1,
-    2,
     3,
-    4
+    4,
+    2,
+    5
    ],
    "why": "速食 (漢堡); malam: 泡麵和餅乾; 很少喝甜的飲料; pagi 豆漿; lewat restoran: 聞到香味 tapi tak ingin masuk. 「巧克力很便宜」 tidak cocok di titik mana pun.",
    "id": "C49-09"
@@ -29229,12 +29229,12 @@
    },
    "question": "這裡的服務怎麼樣？",
    "options": [
-    "很不好。",
+    "不太好。",
     "很好。",
-    "關門了。"
+    "沒有服務。"
    ],
    "answer": 1,
-   "why": "服務 = pelayanan.",
+   "why": "Petugas melayani dengan senyum → 很好. A dan C kebalikannya.",
    "id": "C50-01"
   },
   {
@@ -29248,12 +29248,12 @@
    },
    "question": "要多少錢？",
    "options": [
-    "一千塊。",
-    "只要一百塊就可以。",
-    "不用錢。"
+    "要一千塊。",
+    "不用錢。",
+    "只要一百塊就可以。"
    ],
-   "answer": 1,
-   "why": "只要……就…… = asal/cukup … sudah ….",
+   "answer": 2,
+   "why": "Label harga 100 dengan centang → 只要一百塊. A dan B salah.",
    "id": "C50-02"
   },
   {
@@ -29263,30 +29263,30 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "辦居留證要多久？"
+     "zh": "在哪裡可以辦？"
     },
     {
      "sp": "女",
-     "zh": "一個星期。"
+     "zh": "只有在台北才能辦，台中不行。"
     }
    ],
-   "question": "辦居留證要多久？",
+   "question": "在哪裡可以辦？",
    "options": [
     {
-     "icon": "📅",
-     "label": "1 minggu"
+     "icon": "🏞️",
+     "label": "Taichung"
     },
     {
-     "icon": "📅",
-     "label": "1 bulan"
+     "icon": "🏙️",
+     "label": "Taipei"
     },
     {
-     "icon": "📅",
-     "label": "1 hari"
+     "icon": "⚓",
+     "label": "Kaohsiung"
     }
    ],
-   "answer": 0,
-   "why": "一個星期.",
+   "answer": 1,
+   "why": "只有在台北才能辦. A disangkal (台中不行). C tidak disebut.",
    "id": "C50-03"
   },
   {
@@ -29296,38 +29296,38 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "請問，在哪裡辦居留證？"
+     "zh": "你的箱子好重，我幫你提吧。"
     },
     {
      "sp": "男",
-     "zh": "在三樓。"
+     "zh": "謝謝，裡面都是書。"
     },
     {
      "sp": "女",
-     "zh": "要帶什麼？"
+     "zh": "你要去哪裡？"
     },
     {
      "sp": "男",
-     "zh": "只要帶兩張相片。"
+     "zh": "去寄回印尼。"
     }
    ],
-   "question": "辦居留證要帶什麼？",
+   "question": "箱子裡有什麼？",
    "options": [
     {
-     "icon": "📖",
+     "icon": "👕",
+     "label": "baju"
+    },
+    {
+     "icon": "🍎",
+     "label": "buah"
+    },
+    {
+     "icon": "📚",
      "label": "buku"
-    },
-    {
-     "icon": "🖼️🖼️",
-     "label": "dua pas foto"
-    },
-    {
-     "icon": "💵",
-     "label": "uang"
     }
    ],
-   "answer": 1,
-   "why": "兩張相片.",
+   "answer": 2,
+   "why": "裡面都是書. A dan B tidak disebut.",
    "id": "C50-04"
   },
   {
@@ -29337,53 +29337,53 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "我可以替我朋友辦嗎？"
+     "zh": "聽說只要每天練習，中文就會越來越好。"
     },
     {
      "sp": "女",
-     "zh": "不行，只有你朋友自己才能辦。"
+     "zh": "對，可是只有每天說，才能說得好。"
     },
     {
      "sp": "男",
-     "zh": "好，我叫他來。"
+     "zh": "所以你每天都跟臺灣朋友說中文？"
     },
     {
      "sp": "女",
-     "zh": "謝謝。"
+     "zh": "對啊！"
     }
    ],
-   "question": "這位小姐是什麼意思？",
+   "question": "這位小姐覺得怎麼樣才能說得好？",
    "options": [
-    "朋友要自己來辦",
-    "這位先生也要辦",
-    "這位先生可以替朋友辦",
-    "不用辦"
+    "只看書",
+    "每天說中文",
+    "多寫漢字",
+    "去臺灣旅行"
    ],
-   "answer": 0,
-   "why": "只有…才… = hanya … yang bisa.",
+   "answer": 1,
+   "why": "只有每天說，才能說得好. A, C, D tidak disebut.",
    "id": "C50-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他提著兩個大袋子。",
+   "text": "只要天氣好，他就去公園跑步。",
    "options": [
     {
-     "icon": "🎒",
-     "label": "ransel"
+     "icon": "🌧️🏃",
+     "label": "hujan, berlari"
     },
     {
-     "icon": "🧳",
-     "label": "koper"
+     "icon": "☀️🛌",
+     "label": "cerah, tidur"
     },
     {
-     "icon": "🛍️🛍️",
-     "label": "menjinjing dua kantong"
+     "icon": "☀️🏃",
+     "label": "cerah, berlari"
     }
    ],
    "answer": 2,
-   "why": "提 = menjinjing.",
+   "why": "只要天氣好就去跑步. A cuacanya salah; B kegiatannya salah.",
    "id": "C50-06"
   },
   {
@@ -29391,16 +29391,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🏧💵",
-    "label": "mengambil uang di ATM"
+    "icon": "🪪",
+    "label": "kartu identitas"
    },
    "options": [
-    "我去借錢。",
-    "我去付錢。",
-    "我去提錢。"
+    "這是我的票。",
+    "這是我的居留證。",
+    "這是我的照片。"
    ],
-   "answer": 2,
-   "why": "提錢 = mengambil uang.",
+   "answer": 1,
+   "why": "Kartu identitas berfoto → 居留證. A tidak cocok; C hanya bagian dari kartunya.",
    "id": "C50-07"
   },
   {
@@ -29408,17 +29408,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "✅",
-    "label": "asalkan"
+    "icon": "❗",
+    "label": "satu-satunya syarat"
    },
-   "text": "（　）你想學，我就教你。",
+   "text": "只有在這裡，（　）能辦居留證。",
    "options": [
-    "只要",
-    "服務",
-    "只有"
+    "才",
+    "就",
+    "都"
    ],
    "answer": 0,
-   "why": "只要…就….",
+   "why": "只有…才… wajib berpasangan. 就 berpasangan dengan 只要; 都 tidak cocok.",
    "id": "C50-08"
   },
   {
@@ -29427,19 +29427,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "外國人在台灣住三個月以上，就得去辦（1）。只有在一個地方（2）辦，別的地方都不行。上個星期我去辦，那裡的（3）小姐很客氣，告訴我哪裡寫錯了。她說：「（4）東西都帶了，兩個星期就可以拿到。」我（5）能不能早一點拿到，她說不行。",
    "options": [
-    "居留證",
-    "才能",
+    "問她",
+    "只有",
     "服務",
     "只要",
-    "問她",
-    "只有"
+    "居留證",
+    "才能"
    ],
    "answers": [
-    0,
-    1,
+    4,
+    5,
     2,
     3,
-    4
+    0
    ],
    "why": "辦居留證; 只有…才能; 服務小姐; 只要…就; 問她能不能. 「只有」 sudah dipakai di kalimat itu dan tidak cocok di titik lain.",
    "id": "C50-09"

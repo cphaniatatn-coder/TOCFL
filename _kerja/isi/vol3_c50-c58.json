@@ -20,24 +20,12 @@
   ]}
  ],
  "tasks": [
-  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-   "audio": "在哪裡可以辦居留證？", "options": ["只有在這裡才能辦。", "我有居留證。", "辦居留證很好。"], "answer": 0,
-   "why": "在哪裡 → tempat. 只有…才… = hanya di …."},
-  {"type": "listen_pic", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
-   "picture": {"icon": "🪪🏢", "label": "di loket kantor imigrasi, dia memegang kartu identitas", "img": "C50-1"}, "question": "他在做什麼？", "options": ["他在辦居留證。", "他在寄信。", "他在買票。"], "answer": 0,
-   "why": "辦 = mengurus; 居留證 = kartu izin tinggal."},
-  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
-   "lines": [{"sp": "男", "zh": "我可以參加嗎？"}, {"sp": "女", "zh": "只要你有空，就可以來。"}],
-   "question": "這位先生可以參加嗎？", "options": ["有空就可以", "只有星期天可以", "不可以"], "answer": 0,
-   "why": "只要…就… = asal …, sudah bisa. Syaratnya ringan."},
-  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca informasi ini, lalu pilih jawaban yang benar.",
-   "text": "辦居留證：只要帶兩張照片，就可以辦。一個星期就好了。只有你自己才能來辦。", "question": "誰可以去辦？",
-   "options": ["只有自己", "朋友", "家人"], "answer": 0,
-   "why": "只有你自己才能來辦 — hanya yang bersangkutan."},
-  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-   "text": "（1）帶兩張照片，就可以辦。只有在這裡（2）能辦。這裡有很好的（3）。", "options": ["只要", "才", "服務", "提"], "answers": [0, 1, 2],
-   "why": "(1) 只要…就…. (2) 只有…才…. (3) 服務 = layanan. 提 tidak cocok."}
- ],
+   {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.", "audio": "辦居留證要帶什麼？", "options": ["居留證很重要。", "只要帶兩張照片就可以。", "我在這裡辦。"], "answer": 1, "why": "Ditanya bawa apa → 只要帶兩張照片. A dan C tidak menjawab."},
+   {"type": "listen_pic", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.", "picture": {"icon": "🪪🏢", "label": "di loket kantor imigrasi, dia memegang kartu identitas", "img": "C50-1"}, "question": "他在做什麼？", "options": ["他在買票。", "他在寄信。", "他在辦居留證。"], "answer": 2, "why": "Loket imigrasi + kartu identitas → 辦居留證. A dan B kegiatan lain."},
+   {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.", "lines": [{"sp": "男", "zh": "請問，在學校可以辦居留證嗎？"}, {"sp": "女", "zh": "不行，只有在這裡才能辦。"}, {"sp": "男", "zh": "要多久？"}, {"sp": "女", "zh": "只要一個星期。"}], "question": "哪一個是對的？", "options": ["在學校也可以辦", "居留證只能在這裡辦", "要一個月", "要很多張照片"], "answer": 1, "why": "只有在這裡才能辦. A kebalikannya. C: hanya seminggu. D tidak disebut."},
+   {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca informasi ini, lalu pilih jawaban yang benar.", "text": "外國學生來臺灣念書，要是住半年以上，就一定要辦居留證。只有在一個地方才能辦，學校不能辦。辦的時候，只要帶兩張照片，一個星期就好了。那裡有英文服務，有問題都可以提出來。", "question": "一個要在臺灣住三個月的學生，要辦居留證嗎？", "options": ["要，一定要辦", "不用，半年以上才要辦", "只要帶照片就好", "只有在學校才能辦"], "answer": 1, "why": "Tiga bulan kurang dari setengah tahun → tidak perlu. A mengabaikan syarat 半年以上. C syarat pengurusan, bukan jawaban. D kebalikan (學校不能辦)."},
+   {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih frasa yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.", "text": "我是外國學生，要在臺灣住一年，所以要去（1）居留證。那裡的小姐說：「（2）帶兩張照片，就可以辦。」我問：「在學校可以辦嗎？」她說：「不行，只有在這裡（3）能辦。」那裡的（4）很好，有什麼問題，都可以（5）出來。", "options": ["才", "只要", "就", "提", "辦", "服務"], "answers": [4, 1, 0, 5, 3], "why": "(1) mengurus. (2) 只要…就… (3) 只有…才… (4) pelayanan. (5) 提出來 = mengajukan. 「就」 salah di titik (3): 只有 harus berpasangan dengan 才."}
+  ],
  "grammar": [
   {"tbcl_id": 177, "point": "只要…就… — asal …, sudah …", "pattern": "只要 + syarat，(S) + 就 + hasil", "blocks": [["只要", "只要"], ["帶兩張照片", "syarat"], ["就", "就"], ["可以辦", "hasil"]],
    "explain": "只要 = asal/cukup: syaratnya CUKUP, hasil pasti tercapai. Pasangannya 就.",
