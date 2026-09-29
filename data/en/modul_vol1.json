@@ -713,7 +713,7 @@
        "zh": "說。"
       }
      ],
-     "question": "她是哪國人？",
+     "question": "這位小姐是哪國人？",
      "options": [
       "臺灣人",
       "日本人",
@@ -1823,7 +1823,7 @@
        "zh": "沒有，我有兩個姊姊，一個弟弟。"
       }
      ],
-     "question": "她有幾個姊姊？",
+     "question": "這位小姐有幾個姊姊？",
      "options": [
       "一個",
       "兩個",
@@ -2189,7 +2189,7 @@
    ],
    "title_py": "Shēng rì kuài lè! Nǐ jīn nián jǐ suì?",
    "title_id": "Happy birthday! How old are you this year?",
-   "scene": "A small birthday party for Dawen in class. Friends wish him happy birthday and ask about age, date of birth and the family's zodiac animals.",
+   "scene": "A small birthday party for Dawen in class. Friends wish him happy birthday and ask about age and family members' birthdays.",
    "can_do": [
     "Wish someone happy birthday and ask their age (你今年幾歲？)",
     "Say a date of birth in the order month → day",
@@ -2318,18 +2318,18 @@
      "part": "聽力 Part 1 · Picture description",
      "instr": "Look at the picture. Listen to the question and answers A–C, then choose the answer that matches the picture.",
      "picture": {
-      "icon": "🐄",
-      "label": "zodiac: year of the ox",
+      "icon": "🎂",
+      "label": "Dad's birthday cake with number-40 candles",
       "img": "A05-3"
      },
-     "question": "你是什麼年的？",
+     "question": "你爸爸今年多大？",
      "options": [
-      "我是豬年的。",
-      "我是牛年的。",
-      "我是雞年的。"
+      "他今年十四歲。",
+      "他今年四十歲。",
+      "他今年四十四歲。"
      ],
      "answer": 1,
-     "why": "牛 = ox/cow. 豬 = pig; 雞 = chicken/rooster."
+     "why": "The candles on the cake show 40 → 四十歲. 十四 = 14 (digits reversed); 四十四 = 44."
     },
     {
      "type": "listen_reply",
@@ -2371,7 +2371,7 @@
        "zh": "她今年八歲，明年九歲。"
       }
      ],
-     "question": "她妹妹今年幾歲？",
+     "question": "這位小姐的妹妹今年幾歲？",
      "options": [
       "八歲",
       "九歲",
@@ -2455,17 +2455,17 @@
      "part": "閱讀 Part 3 · Gap fill with picture",
      "instr": "Look at the picture, then choose the right word for the blank.",
      "picture": {
-      "icon": "🐔",
-      "label": "year of the rooster"
+      "icon": "🎂📅",
+      "label": "birthday cake & calendar showing 9 November"
      },
-     "text": "我妹妹是（　）年的。",
+     "text": "我的生日是十一月九（　）。",
      "options": [
-      "牛",
-      "豬",
-      "雞"
+      "號",
+      "年",
+      "歲"
      ],
-     "answer": 2,
-     "why": "Picture of a rooster → 雞年."
+     "answer": 0,
+     "why": "Dates use 號 (十一月九號). 年 = year; 歲 = age."
     },
     {
      "type": "cloze",
@@ -2489,8 +2489,8 @@
      "type": "read_mc",
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the correct answer.",
-     "text": "我家有三個人。我爸爸是雞年的，我媽媽是牛年的，我是豬年的。",
-     "question": "誰是牛年的？",
+     "text": "我家有三個人。爸爸今年五十歲，媽媽今年四十八歲。我今年二十歲，我的生日是五月三號。",
+     "question": "誰今年四十八歲？",
      "options": [
       "他爸爸",
       "他媽媽",
@@ -2498,7 +2498,7 @@
       "他哥哥"
      ],
      "answer": 1,
-     "why": "媽媽是牛年的. Dad = rooster, the writer = pig. 他哥哥 does not exist (the family has only 3 people)."
+     "why": "媽媽今年四十八歲. The father is 50 and the writer is 20. 他哥哥 is not in the text (the family has only 3 people)."
     }
    ],
    "grammar": [
@@ -2654,27 +2654,6 @@
       "pos": "Vs",
       "meaning": "old",
       "zy": "ㄌㄠˇ"
-     },
-     {
-      "w": "雞",
-      "py": "jī",
-      "pos": "N",
-      "meaning": "chicken",
-      "zy": "ㄐㄧ"
-     },
-     {
-      "w": "牛",
-      "py": "niú",
-      "pos": "N",
-      "meaning": "cow, ox",
-      "zy": "ㄋㄧㄡˊ"
-     },
-     {
-      "w": "豬",
-      "py": "zhū",
-      "pos": "N",
-      "meaning": "pig",
-      "zy": "ㄓㄨ"
      }
     ]
    }
@@ -2866,7 +2845,7 @@
        "zh": "不喜歡。"
       }
      ],
-     "question": "她喜歡什麼？",
+     "question": "這位小姐喜歡什麼？",
      "options": [
       "運動",
       "畫畫",
@@ -3384,7 +3363,7 @@
        "zh": "不像，我像我媽媽。我媽媽很漂亮！"
       }
      ],
-     "question": "她像誰？",
+     "question": "這位小姐像誰？",
      "options": [
       "她爸爸",
       "她媽媽",
@@ -3890,7 +3869,7 @@
        "zh": "我住五樓，我爸爸媽媽住三樓。"
       }
      ],
-     "question": "她住幾樓？",
+     "question": "這位小姐住幾樓？",
      "options": [
       "三樓",
       "五樓",
@@ -4896,7 +4875,7 @@
        "zh": "十一點。我哥哥十二點睡覺。"
       }
      ],
-     "question": "她幾點睡覺？",
+     "question": "這位小姐幾點睡覺？",
      "options": [
       "十點",
       "十一點",
@@ -6350,7 +6329,7 @@
        "zh": "我沒有筆。"
       }
      ],
-     "question": "她沒有什麼？",
+     "question": "這位小姐沒有什麼？",
      "options": [
       "紙",
       "筆",
@@ -7245,7 +7224,7 @@
        "zh": "我不喝咖啡，我要一杯茶。"
       }
      ],
-     "question": "她要喝什麼？",
+     "question": "這位小姐要喝什麼？",
      "options": [
       "咖啡",
       "茶",
@@ -7685,7 +7664,7 @@
        "zh": "不喝，我很飽。"
       }
      ],
-     "question": "她想吃什麼？",
+     "question": "這位小姐想吃什麼？",
      "options": [
       "肉",
       "魚",
@@ -7930,6 +7909,27 @@
       "pos": "N",
       "meaning": "soup",
       "zy": "ㄊㄤ"
+     },
+     {
+      "w": "雞",
+      "py": "jī",
+      "pos": "N",
+      "meaning": "chicken; chicken meat",
+      "zy": "ㄐㄧ"
+     },
+     {
+      "w": "牛",
+      "py": "niú",
+      "pos": "N",
+      "meaning": "cow; beef (牛肉)",
+      "zy": "ㄋㄧㄡˊ"
+     },
+     {
+      "w": "豬",
+      "py": "zhū",
+      "pos": "N",
+      "meaning": "pig; pork (豬肉)",
+      "zy": "ㄓㄨ"
      }
     ]
    }
@@ -8124,7 +8124,7 @@
        "zh": "我要一碗麵和兩個包子。"
       }
      ],
-     "question": "她要幾個包子？",
+     "question": "這位小姐要幾個包子？",
      "options": [
       "一個",
       "兩個",
@@ -8557,7 +8557,7 @@
        "zh": "我買三枝。"
       }
      ],
-     "question": "他一共要給多少錢？",
+     "question": "這位先生一共要給多少錢？",
      "options": [
       "二十塊",
       "六十塊",
@@ -9462,7 +9462,7 @@
        "zh": "不坐公車，我走路，我家在學校附近。"
       }
      ],
-     "question": "她怎麼去學校？",
+     "question": "這位小姐怎麼去學校？",
      "options": [
       "坐公車",
       "走路",
@@ -10327,7 +10327,7 @@
        "zh": "眼睛不痛，我的耳朵很痛。"
       }
      ],
-     "question": "她哪裡痛？",
+     "question": "這位小姐哪裡痛？",
      "options": [
       "眼睛",
       "耳朵",
@@ -10798,7 +10798,7 @@
        "zh": "你應該休息，別上課。"
       }
      ],
-     "question": "醫生覺得他應該做什麼？",
+     "question": "醫生覺得這位先生應該做什麼？",
      "options": [
       "上課",
       "休息",

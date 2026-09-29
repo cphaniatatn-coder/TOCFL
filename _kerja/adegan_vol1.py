@@ -35,12 +35,12 @@ A['A04-4'] = lantai() + orang(70, tinggi=150, jenis='wanita', baju='a') + orang(
 A['A04-5'] = (lantai() + orang(120, tinggi=160, jenis='wanita', baju='a', tangan={'ka': [(20, 30), (40, 56)]})
               + orang(190, tinggi=92, jenis='gadis', baju='h', tangan={'ki': [(8, -2), (18, -10)]}))
 
-# A05 — tanggal, umur, shio
+# A05 — tanggal, umur
 A['A05-1'] = kalender_bulan(150, 40, 5, 3, 150, 150) + kue_ultah(235, 196, s=.4)
 A['A05-2'] = kue_ultah(150, 192, '18', 1.1)
-A['A05-3'] = lantai() + hewan_sapi(130, 150, 1.1)
+A['A05-3'] = lantai() + orang(95, tinggi=165, jenis='pria', baju='h', wajah='senyum') + meja(210, 150, 120) + kue_ultah(210, 150, '40', .7)
 A['A05-4'] = lantai() + orang(90, tinggi=100, jenis='gadis', baju='a', wajah='senyum') + meja(200, 150, 120) + kue_ultah(200, 150, '5', .6)
-A['A05-5'] = lantai() + hewan_babi(120, 150, 1.1)
+A['A05-5'] = kalender_bulan(150, 40, 10, 10, 150, 150)
 
 # A06 — hobi
 A['A06-1'] = lantai() + orang(100, tinggi=160, jenis='pria', wajah='nyanyi', tangan={'ka': [(12, 30), (-8, -8)]}) + mikrofon(132, 62) + not_musik(190, 60) + not_musik(230, 100)
