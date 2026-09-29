@@ -12,11 +12,11 @@
    "question": "週末有什麼？",
    "options": [
     "有考試。",
-    "要上班。",
+    "有颱風。",
     "有派對。"
    ],
    "answer": 2,
-   "why": "派對 = pesta."
+   "why": "Balon, musik, orang menari → 派對. A dan B tidak cocok."
   },
   {
    "type": "listen_pic",
@@ -29,80 +29,80 @@
    },
    "question": "今天誰付錢？",
    "options": [
+    "朋友請我。",
     "我請客！",
-    "你付錢吧。",
-    "我送你禮物。"
+    "我們一人付一半。"
    ],
-   "answer": 0,
-   "why": "請客 = mentraktir."
+   "answer": 1,
+   "why": "Dia membayar tagihan untuk teman-temannya → 我請客. A kebalikannya; C tidak cocok."
   },
   {
    "type": "listen_reply",
    "part": "聽力 Part 2 · Tanya-jawab satu putaran",
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "我們一起去看電影，好不好？",
+   "audio": "你週末有空嗎？",
    "options": [
-    "好啊，幾點？",
-    "好不好電影。",
-    "我看好不好。"
+    "空了。",
+    "有，你有什麼事？",
+    "週末是星期六。"
    ],
-   "answer": 0,
-   "why": "…，好不好？ = mau tidak? → setuju/menolak."
+   "answer": 1,
+   "why": "有空嗎 = ada waktu luang? → 有. A salah arti 空 (kosong). C tidak menjawab."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "我送她一個禮物。",
+   "text": "他約了女朋友星期六晚上去看電影。",
    "options": [
     {
-     "icon": "💐",
-     "label": "memberi bunga"
+     "icon": "👨📺",
+     "label": "menonton TV sendirian"
     },
     {
-     "icon": "🎁",
-     "label": "memberi hadiah"
+     "icon": "👫🍽️",
+     "label": "makan bersama"
     },
     {
-     "icon": "💌",
-     "label": "memberi surat"
+     "icon": "👫🎬",
+     "label": "kencan menonton film"
     }
    ],
-   "answer": 1,
-   "why": "禮物 = hadiah."
+   "answer": 2,
+   "why": "約了女朋友 + 看電影. A sendirian; B kegiatannya makan."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "💑",
-    "label": "dua orang berkencan"
+    "icon": "🎁",
+    "label": "kado"
    },
    "options": [
-    "他們去開會。",
-    "他們去上課。",
-    "他們去約會。"
+    "這是一個蛋糕。",
+    "這是一個禮物。",
+    "這是一個派對。"
    ],
-   "answer": 2,
-   "why": "約會 = kencan."
+   "answer": 1,
+   "why": "Kotak berpita → 禮物. A dan C bukan kado."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🌧️🏠",
-    "label": "hujan, sebaiknya di rumah"
+    "icon": "☂️🤔",
+    "label": "saran bawa payung"
    },
-   "text": "下雨了，我們（　）在家吧。",
+   "text": "明天會下雨，你（　）帶傘。",
    "options": [
-    "還是",
-    "或者",
-    "約"
+    "最好",
+    "好不好",
+    "請客"
    ],
    "answer": 0,
-   "why": "還是…吧 = sebaiknya … saja."
+   "why": "最好 + V = sebaiknya. 好不好 diletakkan di akhir kalimat; 請客 tidak cocok."
   },
   {
    "type": "listen_dialog",
@@ -110,30 +110,30 @@
    "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "週末有派對，你要不要來？"
-    },
-    {
      "sp": "女",
-     "zh": "好啊！要帶禮物嗎？"
+     "zh": "我們去吃飯或者喝咖啡？"
     },
     {
      "sp": "男",
-     "zh": "不用，你人來就好。"
+     "zh": "我不餓，還是喝咖啡吧。"
     },
     {
      "sp": "女",
-     "zh": "那我帶一點吃的。"
+     "zh": "好，我請客！"
+    },
+    {
+     "sp": "男",
+     "zh": "不行，上次是你請的，今天我請。"
     }
    ],
-   "question": "這位小姐週末要做什麼？",
+   "question": "今天誰請客？",
    "options": [
-    "參加派對",
-    "買禮物",
-    "請客吃飯"
+    "這位小姐",
+    "這位先生",
+    "他們都不請"
    ],
-   "answer": 0,
-   "why": "Menerima undangan pesta. B: tidak perlu hadiah. C tidak disebut."
+   "answer": 1,
+   "why": "上次是你請的，今天我請 → si laki-laki. A = tawaran yang ditolak. C tidak cocok."
   }
  ],
  "C26": [

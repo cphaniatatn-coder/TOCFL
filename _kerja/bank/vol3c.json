@@ -11,12 +11,12 @@
    },
    "question": "明天有什麼？",
    "options": [
-    "要上班。",
     "有考試。",
-    "有派對。"
+    "有派對。",
+    "沒有事。"
    ],
-   "answer": 2,
-   "why": "Balon di hari besok → 有派對."
+   "answer": 1,
+   "why": "Balon di kalender besok → 派對. A dan C tidak cocok."
   },
   {
    "type": "listen_pic",
@@ -29,12 +29,12 @@
    },
    "question": "我們約在哪裡見面？",
    "options": [
-    "在餐廳。",
-    "在車站。",
-    "在學校。"
+    "在學校。",
+    "在電影院。",
+    "在車站。"
    ],
-   "answer": 1,
-   "why": "約 = membuat janji. 約在車站 = janjian di stasiun."
+   "answer": 2,
+   "why": "Bertemu di depan stasiun → 車站. A dan B tempat lain."
   },
   {
    "type": "listen_dialog",
@@ -42,31 +42,31 @@
    "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "你送她什麼禮物？"
+     "sp": "男",
+     "zh": "我們帶花還是蛋糕去？"
     },
     {
-     "sp": "男",
-     "zh": "一本書。"
+     "sp": "女",
+     "zh": "還是帶蛋糕吧，花太貴了。"
     }
    ],
-   "question": "這位先生送什麼禮物？",
+   "question": "他們要帶什麼去？",
    "options": [
-    {
-     "icon": "📖🎁",
-     "label": "buku"
-    },
-    {
-     "icon": "🧸",
-     "label": "boneka"
-    },
     {
      "icon": "💐",
      "label": "bunga"
+    },
+    {
+     "icon": "🎂",
+     "label": "kue"
+    },
+    {
+     "icon": "🍷",
+     "label": "anggur"
     }
    ],
-   "answer": 0,
-   "why": "一本書."
+   "answer": 1,
+   "why": "還是帶蛋糕吧. A ditolak (太貴). C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -74,39 +74,39 @@
    "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "週末你有空嗎？"
-    },
-    {
      "sp": "女",
-     "zh": "有，怎麼了？"
+     "zh": "你星期五晚上有空嗎？"
     },
     {
      "sp": "男",
-     "zh": "我們去吃飯，好不好？"
+     "zh": "對不起，我已經有約會了。"
     },
     {
      "sp": "女",
-     "zh": "好啊，我請客。"
+     "zh": "那星期六呢？"
+    },
+    {
+     "sp": "男",
+     "zh": "星期六可以。"
     }
    ],
-   "question": "誰請客？",
+   "question": "他們什麼時候可以見面？",
    "options": [
     {
-     "icon": "👩💳",
-     "label": "si perempuan"
+     "icon": "📅",
+     "label": "Jumat malam"
     },
     {
-     "icon": "🧑‍🤝‍🧑",
-     "label": "bayar sendiri-sendiri"
+     "icon": "📅",
+     "label": "Sabtu"
     },
     {
-     "icon": "👨💳",
-     "label": "si laki-laki"
+     "icon": "📅",
+     "label": "Minggu"
     }
    ],
-   "answer": 0,
-   "why": "我請客 (perempuan)."
+   "answer": 1,
+   "why": "星期六可以. A: sudah ada janji. C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -114,86 +114,86 @@
    "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "派對幾點開始？"
-    },
-    {
      "sp": "男",
-     "zh": "七點。你最好早一點來。"
+     "zh": "今天我請客，你想吃什麼？"
     },
     {
      "sp": "女",
-     "zh": "為什麼？"
+     "zh": "你上個月才請過我，還是我請吧。"
     },
     {
      "sp": "男",
-     "zh": "因為我們要一起準備吃的東西。"
+     "zh": "那好，下次我再請你。"
+    },
+    {
+     "sp": "女",
+     "zh": "好，那我們去吃牛肉麵吧。"
     }
    ],
-   "question": "這位先生希望這位小姐做什麼？",
+   "question": "今天誰請客？",
    "options": [
-    "七點以後來",
-    "不要來",
-    "帶禮物",
-    "早一點來幫忙"
+    "這位先生",
+    "這位小姐",
+    "他們一起付錢",
+    "沒有人請客"
    ],
-   "answer": 3,
-   "why": "最好早一點來 + alasan membantu menyiapkan."
+   "answer": 1,
+   "why": "還是我請吧 + 那好 → si perempuan. A = tawaran awal yang dialihkan. C dan D tidak cocok."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "我們喝茶或者喝咖啡都可以。",
+   "text": "我們約好在捷運站出口見面。",
    "options": [
     {
-     "icon": "🍵",
-     "label": "hanya teh"
+     "icon": "🏫👫",
+     "label": "bertemu di sekolah"
     },
     {
-     "icon": "🍺",
-     "label": "bir"
+     "icon": "🚇🚪👫",
+     "label": "bertemu di pintu keluar MRT"
     },
     {
-     "icon": "🍵☕",
-     "label": "teh atau kopi"
+     "icon": "🍽️👫",
+     "label": "bertemu di restoran"
     }
    ],
-   "answer": 2,
-   "why": "或者 = atau."
+   "answer": 1,
+   "why": "捷運站出口 → pintu keluar MRT. A dan C tempat lain."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🎁",
-    "label": "hadiah"
+    "icon": "🎈🎉",
+    "label": "pesta"
    },
    "options": [
-    "這是我的鑰匙。",
-    "這是我的作業。",
-    "這是送你的禮物。"
+    "今天要考試。",
+    "今天下大雨。",
+    "今天有派對。"
    ],
    "answer": 2,
-   "why": "禮物 = hadiah."
+   "why": "Balon dan konfeti → 派對. A dan B tidak cocok."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "☂️",
-    "label": "sebaiknya bawa payung"
+    "icon": "🍽️💳",
+    "label": "mentraktir"
    },
-   "text": "外頭下雨，你（　）帶傘。",
+   "text": "今天是我的生日，我（　）！",
    "options": [
-    "最好",
-    "或者",
-    "約"
+    "請客",
+    "約會",
+    "空"
    ],
    "answer": 0,
-   "why": "最好 = sebaiknya."
+   "why": "我請客 = aku yang traktir. 我約會 tidak lengkap; 我空 tidak bermakna."
   },
   {
    "type": "cloze",
@@ -201,19 +201,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "這個星期六是小美的生日，她要在家裡開一個（1）。她（2）我和幾個同學一起去。我不知道要送她什麼（3），就問她的好朋友。她說小美喜歡看書，（4）送她一本小說。可是那天晚上我已經跟男朋友有（5）了，所以我只能早一點去，八點以前就得走。",
    "options": [
-    "派對",
-    "約了",
     "禮物",
-    "最好",
     "約會",
-    "請客吃飯"
+    "請客吃飯",
+    "約了",
+    "派對",
+    "最好"
    ],
    "answers": [
-    0,
-    1,
-    2,
+    4,
     3,
-    4
+    0,
+    5,
+    1
    ],
    "why": "開派對; 約了我 = mengajak; 送什麼禮物; 最好送一本小說; 跟男朋友有約會. 「請客吃飯」 tidak cocok di titik mana pun."
   },

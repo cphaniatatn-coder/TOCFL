@@ -1181,12 +1181,12 @@
    },
    "question": "這個遊戲怎麼樣？",
    "options": [
-    "很無聊。",
-    "有趣極了！",
-    "不太好玩。"
+    "無聊得很。",
+    "不太好玩。",
+    "有趣極了！"
    ],
-   "answer": 1,
-   "why": "有趣極了 = seru sekali."
+   "answer": 2,
+   "why": "Anak bermain dengan gembira → 有趣極了. A dan B kebalikannya."
   },
   {
    "type": "listen_pic",
@@ -1199,12 +1199,12 @@
    },
    "question": "你每天早上做什麼？",
    "options": [
-    "玩遊戲。",
-    "看電影。",
-    "看新聞。"
+    "我去電影院。",
+    "我喝咖啡，看新聞。",
+    "我看雜誌。"
    ],
-   "answer": 2,
-   "why": "看新聞 = menonton berita."
+   "answer": 1,
+   "why": "Pagi hari: kopi + berita TV → 喝咖啡，看新聞. A tidak cocok; C bendanya lain."
   },
   {
    "type": "listen_dialog",
@@ -1213,30 +1213,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "這部電影好看嗎？"
+     "zh": "這本雜誌有意思嗎？"
     },
     {
      "sp": "男",
-     "zh": "不太好看，很無聊。"
+     "zh": "不太有意思，我看了一點就不想看了。"
     }
    ],
-   "question": "這位先生覺得電影怎麼樣？",
+   "question": "這位先生覺得雜誌怎麼樣？",
    "options": [
     {
-     "icon": "🎬😴",
+     "icon": "😆",
+     "label": "sangat seru"
+    },
+    {
+     "icon": "🥱",
      "label": "membosankan"
     },
     {
-     "icon": "🎬😄",
-     "label": "seru"
-    },
-    {
-     "icon": "🎬😢",
-     "label": "sedih"
+     "icon": "😡",
+     "label": "marah"
     }
    ],
-   "answer": 0,
-   "why": "無聊."
+   "answer": 1,
+   "why": "不太有意思 → membosankan. A kebalikannya; C bukan penilaian terhadap majalah."
   },
   {
    "type": "listen_dialog",
@@ -1245,38 +1245,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "我們去電影院吧。"
+     "zh": "今天晚上去看電影好嗎？"
     },
     {
      "sp": "女",
-     "zh": "今天有什麼電影？"
+     "zh": "電影院人太多了，我們在家看吧。"
     },
     {
      "sp": "男",
-     "zh": "有一部很有趣的。"
+     "zh": "好，那我去買一點吃的。"
     },
     {
      "sp": "女",
-     "zh": "好，走吧。"
+     "zh": "別買太多，我不太餓。"
     }
    ],
-   "question": "他們要去哪裡？",
+   "question": "他們今天晚上在哪裡看電影？",
    "options": [
     {
-     "icon": "🎬",
-     "label": "bioskop"
+     "icon": "🎦",
+     "label": "di bioskop"
     },
     {
-     "icon": "🏪",
-     "label": "toko"
+     "icon": "🏠📺",
+     "label": "di rumah"
     },
     {
-     "icon": "📚",
-     "label": "perpustakaan"
+     "icon": "🏫",
+     "label": "di sekolah"
     }
    ],
-   "answer": 0,
-   "why": "電影院."
+   "answer": 1,
+   "why": "我們在家看吧 disetujui. A = usul awal yang ditolak (人太多). C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1285,85 +1285,85 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你在看什麼雜誌？"
+     "zh": "你看新聞了嗎？明天熱得不得了。"
     },
     {
      "sp": "男",
-     "zh": "一本電腦雜誌。"
+     "zh": "那我們別去爬山了。"
     },
     {
      "sp": "女",
-     "zh": "有意思嗎？"
+     "zh": "可是我們已經跟朋友說好了。"
     },
     {
      "sp": "男",
-     "zh": "不太有意思，可是很有用。"
+     "zh": "那早一點去，中午以前下山。"
     }
    ],
-   "question": "這位先生覺得那本雜誌怎麼樣？",
+   "question": "他們明天可能怎麼做？",
    "options": [
-    "很貴",
-    "有用，可是不太有意思",
-    "很無聊，沒有用",
-    "很有意思"
+    "不去爬山了",
+    "中午去爬山",
+    "早一點去爬山",
+    "在家看新聞"
    ],
-   "answer": 1,
-   "why": "不太有意思 + 很有用."
+   "answer": 2,
+   "why": "Kesepakatan akhir: 早一點去，中午以前下山. A = usul awal yang dibatalkan. B kebalikan (sebelum siang sudah turun). D tidak disebut."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他在看雜誌。",
+   "text": "這本雜誌裡的照片漂亮極了。",
    "options": [
     {
-     "icon": "📖",
-     "label": "membaca majalah"
+     "icon": "📖🖼️✨",
+     "label": "majalah dengan foto indah"
+    },
+    {
+     "icon": "📰",
+     "label": "koran"
     },
     {
      "icon": "🎮",
-     "label": "bermain game"
-    },
-    {
-     "icon": "📺",
-     "label": "menonton TV"
+     "label": "game"
     }
    ],
    "answer": 0,
-   "why": "雜誌 = majalah."
+   "why": "雜誌 + 照片漂亮極了. B dan C benda lain."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🎬🍿",
-    "label": "bioskop"
+    "icon": "🥱📺",
+    "label": "bosan menonton TV"
    },
    "options": [
-    "這家電影院很大。",
-    "這家餐廳很大。",
-    "這家書店很大。"
+    "他覺得電視有趣極了。",
+    "他覺得很無聊。",
+    "他在看電影，很高興。"
    ],
-   "answer": 0,
-   "why": "電影院 = bioskop."
+   "answer": 1,
+   "why": "Menguap di depan TV → 無聊. A dan C kebalikannya."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "😆",
-    "label": "sangat seru"
+    "icon": "🤷",
+    "label": "tidak terlalu"
    },
-   "text": "這個故事有趣（　）了！",
+   "text": "我（　）喜歡看新聞，我比較喜歡看雜誌。",
    "options": [
-    "無聊",
     "不太",
-    "極"
+    "極",
+    "得很"
    ],
-   "answer": 2,
-   "why": "Vs極了."
+   "answer": 0,
+   "why": "不太 + V = tidak terlalu. 極 dan 得很 diletakkan SESUDAH kata sifat (有趣極了、好得很)."
   },
   {
    "type": "cloze",
@@ -1371,19 +1371,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "上個週末下雨，我不想出門，就在家裡（1）。我先看了一部電影，可是（2），我看了半個小時就不想看了。然後我看了一本（3），裡面介紹很多好玩的地方。晚上我弟弟教我玩一個新的（4），我們玩了三個小時，有趣（5）！",
    "options": [
-    "找事做",
-    "那部電影很無聊",
-    "旅行雜誌",
-    "手機遊戲",
     "極了",
-    "去電影院"
+    "那部電影很無聊",
+    "去電影院",
+    "手機遊戲",
+    "旅行雜誌",
+    "找事做"
    ],
    "answers": [
-    0,
+    5,
     1,
-    2,
+    4,
     3,
-    4
+    0
    ],
    "why": "在家裡找事做; film 很無聊 → berhenti; 旅行雜誌 memperkenalkan tempat wisata; 手機遊戲; 有趣極了. 「去電影院」 bertentangan dengan 不想出門."
   },
@@ -1415,12 +1415,12 @@
    },
    "question": "他在做什麼？",
    "options": [
-    "他只唱歌。",
-    "他只跳舞。",
-    "他一邊唱歌，一邊跳舞。"
+    "他在看別人跳舞。",
+    "他一邊唱歌，一邊跳舞。",
+    "他一邊走路，一邊打電話。"
    ],
-   "answer": 2,
-   "why": "Mikrofon + gerak tari → 一邊唱歌，一邊跳舞."
+   "answer": 1,
+   "why": "Menyanyi sambil menari → 一邊唱歌，一邊跳舞. A dan C tidak cocok."
   },
   {
    "type": "listen_pic",
@@ -1431,14 +1431,14 @@
     "label": "dua lembar tiket",
     "img": "C19-5"
    },
-   "question": "你想訂什麼？",
+   "question": "你訂了什麼？",
    "options": [
-    "兩張票。",
-    "一張票。",
-    "一個房間。"
+    "我訂了一張票。",
+    "我訂了兩張票。",
+    "我訂了兩個房間。"
    ],
-   "answer": 0,
-   "why": "訂 = memesan. 兩張票 = dua tiket."
+   "answer": 1,
+   "why": "Dua lembar tiket → 兩張票. A salah jumlah; C salah benda."
   },
   {
    "type": "listen_dialog",
@@ -1446,31 +1446,31 @@
    "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你們去參觀什麼？"
+     "sp": "女",
+     "zh": "我們一邊逛一邊吃，好不好？"
     },
     {
-     "sp": "女",
-     "zh": "去參觀一個畫家的家。"
+     "sp": "男",
+     "zh": "好啊，我先去買一杯茶。"
     }
    ],
-   "question": "他們去參觀哪裡？",
+   "question": "這位先生先要做什麼？",
    "options": [
     {
-     "icon": "🏭",
-     "label": "pabrik"
+     "icon": "🏮🚶",
+     "label": "jalan-jalan"
     },
     {
-     "icon": "🏫",
-     "label": "sekolah"
+     "icon": "🍵",
+     "label": "membeli teh"
     },
     {
-     "icon": "🖼️🏠",
-     "label": "rumah pelukis"
+     "icon": "🍢",
+     "label": "makan sate"
     }
    ],
-   "answer": 2,
-   "why": "畫家的家."
+   "answer": 1,
+   "why": "我先去買一杯茶. A dan C dilakukan sesudahnya."
   },
   {
    "type": "listen_dialog",
@@ -1478,39 +1478,39 @@
    "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "明天是假日，我們去哪裡？"
-    },
-    {
      "sp": "男",
-     "zh": "先去參觀故宮，再去逛夜市。"
+     "zh": "這個假日你要做什麼？"
     },
     {
      "sp": "女",
-     "zh": "晚上呢？"
+     "zh": "我要去看一個有名畫家的畫。"
     },
     {
      "sp": "男",
-     "zh": "晚上去看跳舞。"
+     "zh": "在哪裡？"
+    },
+    {
+     "sp": "女",
+     "zh": "在故宮。"
     }
    ],
-   "question": "他們先去哪裡？",
+   "question": "這位小姐假日要做什麼？",
    "options": [
     {
      "icon": "💃",
-     "label": "pertunjukan tari"
-    },
-    {
-     "icon": "🏯",
-     "label": "Museum Istana (故宮)"
+     "label": "menari"
     },
     {
      "icon": "🏮",
-     "label": "pasar malam"
+     "label": "ke pasar malam"
+    },
+    {
+     "icon": "🖼️",
+     "label": "melihat lukisan"
     }
    ],
-   "answer": 1,
-   "why": "先…再…."
+   "answer": 2,
+   "why": "看…畫家的畫 → melihat lukisan. A dan B tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1518,86 +1518,86 @@
    "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "飯店訂了嗎？"
-    },
-    {
      "sp": "女",
-     "zh": "還沒，到處都沒有房間。"
+     "zh": "你怎麼一邊吃飯一邊看手機？"
     },
     {
      "sp": "男",
-     "zh": "怎麼辦？"
+     "zh": "我在看明天的天氣。"
     },
     {
      "sp": "女",
-     "zh": "我們先回家，下個週末再去。"
+     "zh": "先吃飯，吃完再看。"
+    },
+    {
+     "sp": "男",
+     "zh": "好啦好啦。"
     }
    ],
-   "question": "他們最後打算怎麼做？",
+   "question": "這位小姐的意思是什麼？",
    "options": [
-    "不去旅行",
-    "住朋友家",
-    "下個週末再去",
-    "今天去"
+    "明天天氣不好",
+    "她想看手機",
+    "這位先生吃得太慢",
+    "吃飯的時候別看手機"
    ],
-   "answer": 2,
-   "why": "Keputusan akhir."
+   "answer": 3,
+   "why": "先吃飯，吃完再看 → jangan makan sambil melihat ponsel. A tidak disebut. B dan C tidak berdasar."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他們一邊吃飯一邊聊天。",
+   "text": "小明一邊寫作業，一邊聽音樂。",
    "options": [
     {
-     "icon": "🍜",
-     "label": "hanya makan"
+     "icon": "🧒📝",
+     "label": "hanya menulis PR"
     },
     {
-     "icon": "📺",
-     "label": "menonton TV"
+     "icon": "🧒🎧🛌",
+     "label": "mendengar musik sambil tiduran"
     },
     {
-     "icon": "🍜💬",
-     "label": "makan sambil mengobrol"
+     "icon": "🧒📝🎧",
+     "label": "menulis PR sambil mendengar musik"
     }
    ],
    "answer": 2,
-   "why": "一邊…一邊…."
+   "why": "一邊寫作業，一邊聽音樂 → dua kegiatan bersamaan. A kurang musik; B tidak menulis."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "💃",
-    "label": "penari"
+    "icon": "🏛️🎫",
+    "label": "tiket museum"
    },
    "options": [
-    "她在唱歌。",
-    "她在跳舞。",
-    "她在畫畫。"
+    "我們先訂票，再去參觀。",
+    "我們去逛夜市。",
+    "我們在家休息。"
    ],
-   "answer": 1,
-   "why": "跳舞 = menari."
+   "answer": 0,
+   "why": "Tiket + museum → pesan tiket lalu berkunjung. B dan C tidak cocok."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🎟️",
-    "label": "memesan tiket"
+    "icon": "💃🎤",
+    "label": "menyanyi sambil menari"
    },
-   "text": "我想（　）明天的火車票。",
+   "text": "她（　）唱歌一邊跳舞。",
    "options": [
-    "逛",
-    "參觀",
-    "訂"
+    "一邊",
+    "先",
+    "同時"
    ],
-   "answer": 2,
-   "why": "訂 = memesan."
+   "answer": 0,
+   "why": "Pola 一邊…一邊… harus berpasangan. 先 butuh 再; 同時 tidak dipasangkan dengan 一邊."
   },
   {
    "type": "cloze",
@@ -1605,19 +1605,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "這個（1），我和朋友去台中玩。我們早上先去（2），看了他很多有名的畫。中午我們吃了台中有名的小吃，下午（3）去看跳舞。晚上我們去逛夜市，一邊吃東西，（4），非常高興。因為我們早就（5），所以晚上不用怕沒地方住。",
    "options": [
-    "假日",
-    "參觀一個畫家的家",
     "再",
-    "一邊聊天",
     "訂好了旅館",
-    "到處都是畫家"
+    "假日",
+    "到處都是畫家",
+    "參觀一個畫家的家",
+    "一邊聊天"
    ],
    "answers": [
-    0,
-    1,
     2,
-    3,
-    4
+    4,
+    0,
+    5,
+    1
    ],
    "why": "這個假日; 先參觀一個畫家的家 … 再去看跳舞 (先…再); 一邊…一邊; 早就訂好了旅館 → tak perlu khawatir tempat tidur. 「到處都是畫家」 tidak cocok di titik mana pun."
   },
@@ -1649,12 +1649,12 @@
    },
    "question": "出口在哪裡？",
    "options": [
-    "出口在左邊。",
     "出口在右邊。",
-    "出口在前面。"
+    "出口在左邊。",
+    "入口在左邊。"
    ],
-   "answer": 0,
-   "why": "Panah ke kiri."
+   "answer": 1,
+   "why": "Papan menunjuk ke kiri → 出口在左邊. A arah sebaliknya; C salah: itu pintu keluar, bukan masuk."
   },
   {
    "type": "listen_pic",
@@ -1667,12 +1667,12 @@
    },
    "question": "捷運上有座位嗎？",
    "options": [
-    "有很多座位。",
-    "沒有座位。",
-    "我坐公車。"
+    "有，很多座位。",
+    "沒有，大家都站著。",
+    "有一個座位。"
    ],
    "answer": 1,
-   "why": "座位 = kursi/tempat duduk. Semua kursi terisi."
+   "why": "Gerbong penuh, semua berdiri → 沒有. A dan C kebalikannya."
   },
   {
    "type": "listen_dialog",
@@ -1680,31 +1680,31 @@
    "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "搭捷運可以直接到台北車站嗎？"
+     "sp": "男",
+     "zh": "我們從幾號出口出去？"
     },
     {
-     "sp": "男",
-     "zh": "可以，直接到。"
+     "sp": "女",
+     "zh": "四號出口比較近，不要從一號出去。"
     }
    ],
-   "question": "怎麼去台北車站？",
+   "question": "他們從幾號出口出去？",
    "options": [
     {
-     "icon": "🔄",
-     "label": "harus ganti kereta"
+     "icon": "1️⃣",
+     "label": "nomor 1"
     },
     {
-     "icon": "🚇",
-     "label": "langsung sampai"
+     "icon": "4️⃣",
+     "label": "nomor 4"
     },
     {
-     "icon": "🚶",
-     "label": "jalan kaki"
+     "icon": "2️⃣",
+     "label": "nomor 2"
     }
    ],
    "answer": 1,
-   "why": "直接到 = langsung."
+   "why": "四號出口比較近. A ditolak (不要從一號). C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1712,39 +1712,39 @@
    "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "捷運多久一班？"
-    },
-    {
      "sp": "女",
-     "zh": "五分鐘一班。"
+     "zh": "請問，去台北車站要搭捷運還是公車？"
     },
     {
      "sp": "男",
-     "zh": "我們在哪個月台等？"
+     "zh": "搭捷運比較快，三站就到了。"
     },
     {
      "sp": "女",
-     "zh": "第二月台。"
+     "zh": "捷運站在哪裡？"
+    },
+    {
+     "sp": "男",
+     "zh": "在前面的銀行旁邊。"
     }
    ],
-   "question": "他們在哪裡等？",
+   "question": "捷運站在哪裡？",
    "options": [
     {
-     "icon": "🚉",
-     "label": "peron 5"
+     "icon": "🏦",
+     "label": "di sebelah bank"
     },
     {
-     "icon": "🚉",
-     "label": "peron 2"
+     "icon": "🏫",
+     "label": "di sebelah sekolah"
     },
     {
-     "icon": "🚉",
-     "label": "peron 1"
+     "icon": "🏥",
+     "label": "di sebelah rumah sakit"
     }
    ],
-   "answer": 1,
-   "why": "第二月台. 5 adalah menit."
+   "answer": 0,
+   "why": "在前面的銀行旁邊. B dan C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1753,85 +1753,85 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你怎麼去機場？"
+     "zh": "你怎麼這麼晚才到？"
     },
     {
      "sp": "男",
-     "zh": "我搭捷運去。"
+     "zh": "捷運站人太多，我等了三班車才上去。"
     },
     {
      "sp": "女",
-     "zh": "不搭計程車嗎？"
+     "zh": "那你明天早點出門吧。"
     },
     {
      "sp": "男",
-     "zh": "捷運比較便宜，也比較快。"
+     "zh": "好，明天我七點就出門。"
     }
    ],
-   "question": "這位先生為什麼搭捷運？",
+   "question": "這位先生為什麼晚到？",
    "options": [
-    "又便宜又快",
-    "計程車很慢",
-    "有座位",
-    "很方便"
+    "他搭錯車了",
+    "捷運壞了",
+    "人太多，他上不了車",
+    "他七點才出門"
    ],
-   "answer": 0,
-   "why": "比較便宜 + 比較快."
+   "answer": 2,
+   "why": "等了三班車才上去 → terlalu ramai, tidak bisa naik. A dan B tidak disebut. D = rencana untuk besok."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "入口在右邊。",
+   "text": "我們從入口進去，在月台上等車。",
    "options": [
     {
-     "icon": "🚪⬅️",
-     "label": "di kiri"
+     "icon": "🚌🚏",
+     "label": "menunggu di halte bus"
     },
     {
-     "icon": "🚪➡️",
-     "label": "pintu masuk di kanan"
+     "icon": "🚇🚉",
+     "label": "menunggu di peron MRT"
     },
     {
-     "icon": "🚪⬆️",
-     "label": "di depan"
+     "icon": "🚕",
+     "label": "naik taksi"
     }
    ],
    "answer": 1,
-   "why": "入口 = pintu masuk."
+   "why": "入口 + 月台 → peron MRT. A dan C bukan MRT."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🚉🧍",
-    "label": "orang menunggu di peron"
+    "icon": "🚆⏱️",
+    "label": "kereta tiap 5 menit"
    },
    "options": [
-    "大家在車上睡覺。",
-    "大家在公園散步。",
-    "大家在月台等車。"
+    "捷運一個小時一班。",
+    "今天沒有捷運。",
+    "捷運的班次很多，五分鐘一班。"
    ],
    "answer": 2,
-   "why": "月台 = peron."
+   "why": "Jam 5 menit → 五分鐘一班. A dan B tidak cocok."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🚇",
-    "label": "kereta bawah tanah"
+    "icon": "🏬➡️",
+    "label": "langsung ke mal"
    },
-   "text": "日本的（　）很方便。",
+   "text": "從這個出口出去，可以（　）到百貨公司。",
    "options": [
-    "地鐵",
-    "班次",
-    "入口"
+    "直接",
+    "搭",
+    "班次"
    ],
    "answer": 0,
-   "why": "地鐵 = kereta bawah tanah."
+   "why": "直接到 = langsung sampai. 搭 butuh nama kendaraan; 班次 kata benda."
   },
   {
    "type": "cloze",
@@ -1839,19 +1839,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "我每天（1）去公司。從我家走到捷運站，五分鐘就到了，那個站很大，有四個（2）。早上人很多，月台上常常都是人，車上也（3）。可是捷運的（4），三分鐘就有一班。到了公司那一站，我從三號出口出去，（5）就是我的公司。",
    "options": [
-    "搭捷運",
-    "入口",
     "沒有座位",
     "班次很多",
-    "過馬路",
-    "地鐵很便宜"
+    "搭捷運",
+    "地鐵很便宜",
+    "入口",
+    "過馬路"
    ],
    "answers": [
+    2,
+    4,
     0,
     1,
-    2,
-    3,
-    4
+    5
    ],
    "why": "搭捷運; stasiun besar punya 四個入口; penuh → 沒有座位; 班次很多 → tiap 3 menit; keluar pintu 3, 過馬路 sampai kantor. 「地鐵很便宜」 tidak cocok di titik mana pun."
   },
@@ -1883,12 +1883,12 @@
    },
    "question": "這裡能停車嗎？",
    "options": [
+    "可以，停多久都可以。",
     "這裡不能停車。",
-    "這裡可以停車。",
-    "這裡不能騎腳踏車。"
+    "這裡是停車場。"
    ],
-   "answer": 0,
-   "why": "Huruf P dicoret → 不能停車."
+   "answer": 1,
+   "why": "Tanda dilarang parkir → 不能停車. A dan C kebalikannya."
   },
   {
    "type": "listen_pic",
@@ -1901,12 +1901,12 @@
    },
    "question": "台北的交通怎麼樣？",
    "options": [
-    "很亂。",
-    "沒有車。",
-    "路上沒有人。"
+    "很方便，車很少。",
+    "沒有機車。",
+    "很亂。"
    ],
-   "answer": 0,
-   "why": "交通很亂 = lalu lintas semrawut."
+   "answer": 2,
+   "why": "Mobil dan motor bersilangan → 很亂. A dan B kebalikannya."
   },
   {
    "type": "listen_dialog",
@@ -1914,31 +1914,31 @@
    "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
    "lines": [
     {
-     "sp": "男",
+     "sp": "女",
      "zh": "你的機車停在哪裡？"
     },
     {
-     "sp": "女",
-     "zh": "停在學校的停車場。"
+     "sp": "男",
+     "zh": "停在學校的停車場，不在門口。"
     }
    ],
-   "question": "這位小姐的機車停在哪裡？",
+   "question": "機車停在哪裡？",
    "options": [
     {
-     "icon": "🅿️🏫",
-     "label": "parkiran sekolah"
+     "icon": "🚪",
+     "label": "di depan pintu"
+    },
+    {
+     "icon": "🏫🅿️",
+     "label": "tempat parkir sekolah"
     },
     {
      "icon": "🛣️",
-     "label": "jalan raya"
-    },
-    {
-     "icon": "🏠",
-     "label": "depan rumah"
+     "label": "di jalan raya"
     }
    ],
-   "answer": 0,
-   "why": "停車場."
+   "answer": 1,
+   "why": "學校的停車場. A dibantah (不在門口); C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1946,39 +1946,39 @@
    "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "這麼多作業，你寫得完嗎？"
-    },
-    {
      "sp": "男",
-     "zh": "寫不完。"
+     "zh": "這條公路最快可以開多少？"
     },
     {
      "sp": "女",
-     "zh": "我幫你吧。"
+     "zh": "一百。"
     },
     {
      "sp": "男",
-     "zh": "太好了，謝謝！"
+     "zh": "那我開一百二可以嗎？"
+    },
+    {
+     "sp": "女",
+     "zh": "不行，太快了！"
     }
    ],
-   "question": "這位先生的作業怎麼樣？",
+   "question": "這條公路可以開多快？",
    "options": [
     {
-     "icon": "📚✅",
-     "label": "sudah selesai"
+     "icon": "🚗",
+     "label": "100 km/jam"
     },
     {
-     "icon": "📚😫",
-     "label": "tidak bisa selesai"
+     "icon": "🚗",
+     "label": "120 km/jam"
     },
     {
-     "icon": "📄",
-     "label": "sedikit"
+     "icon": "🚗",
+     "label": "80 km/jam"
     }
    ],
-   "answer": 1,
-   "why": "V不完 = tidak bisa selesai."
+   "answer": 0,
+   "why": "最快…一百. B ditolak (太快了). C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1986,53 +1986,53 @@
    "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你會騎摩托車嗎？"
-    },
-    {
      "sp": "女",
-     "zh": "會，可是我騎不快。"
+     "zh": "你的中文說得真標準！"
     },
     {
      "sp": "男",
-     "zh": "沒關係，慢一點比較好。"
+     "zh": "哪裡，我還要多練習。"
     },
     {
      "sp": "女",
-     "zh": "對，我也這麼想。"
+     "zh": "你是在臺灣長大的嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "不是，我在印尼學了十年。"
     }
    ],
-   "question": "這位小姐騎摩托車怎麼樣？",
+   "question": "這位先生的中文為什麼很好？",
    "options": [
-    "不會騎",
-    "騎得很快",
-    "騎不了",
-    "騎得很慢"
+    "他在臺灣長大",
+    "他的母語是中文",
+    "他學了很多年",
+    "他每天練習"
    ],
-   "answer": 3,
-   "why": "V不快 = tidak bisa cepat."
+   "answer": 2,
+   "why": "我在印尼學了十年. A dibantah (不是). B tidak disebut. D: 還要多練習 adalah kerendahan hati, bukan alasannya."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他騎自行車去公園。",
+   "text": "公路上的機車很多，速度也很快。",
    "options": [
     {
-     "icon": "🚗",
-     "label": "naik mobil"
+     "icon": "🛣️",
+     "label": "jalan kosong"
     },
     {
-     "icon": "🛵",
-     "label": "naik motor"
+     "icon": "🅿️🏍️",
+     "label": "motor diparkir"
     },
     {
-     "icon": "🚲🌳",
-     "label": "bersepeda ke taman"
+     "icon": "🛣️🏍️🏍️💨",
+     "label": "banyak motor melaju cepat"
     }
    ],
    "answer": 2,
-   "why": "自行車 = sepeda."
+   "why": "機車很多 + 速度很快. A kebalikannya; B motornya diam."
   },
   {
    "type": "read_pick",
@@ -2043,29 +2043,29 @@
     "label": "tempat parkir"
    },
    "options": [
-    "這是捷運站。",
-    "這是公路。",
-    "這是停車場。"
+    "這裡是停車場。",
+    "這裡是公路。",
+    "這裡是捷運站。"
    ],
-   "answer": 2,
-   "why": "停車場."
+   "answer": 0,
+   "why": "Tanda P dan mobil diparkir → 停車場. B dan C tempat lain."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🏎️",
-    "label": "sangat cepat"
+    "icon": "👂✅",
+    "label": "mendengar dengan jelas"
    },
-   "text": "這輛車的（　）很快。",
+   "text": "老師說得很慢，我都聽得（　）。",
    "options": [
-    "標準",
-    "交通",
+    "懂",
+    "停",
     "速度"
    ],
-   "answer": 2,
-   "why": "速度 = kecepatan."
+   "answer": 0,
+   "why": "聽得懂 = bisa mengerti. 聽得停 tidak bermakna; 速度 kata benda."
   },
   {
    "type": "cloze",
@@ -2073,19 +2073,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "在台灣，很多人騎（1）上班、上學，因為很方便。可是台北的（2），早上和晚上車都很多。我剛來的時候也想騎機車，可是我（3），所以我買了一輛（4）。騎自行車可以運動，也不用怕找不到（5）。",
    "options": [
-    "機車",
     "交通很亂",
     "騎不了機車",
-    "自行車",
+    "機車",
     "停車場",
-    "速度很標準"
+    "速度很標準",
+    "自行車"
    ],
    "answers": [
+    2,
     0,
     1,
-    2,
-    3,
-    4
+    5,
+    3
    ],
    "why": "騎機車; 交通很亂 (pagi & malam ramai); 騎不了機車 = tidak bisa naik motor; 買了一輛自行車; 找不到停車場. 「速度很標準」 tidak cocok di titik mana pun."
   },
@@ -2117,12 +2117,12 @@
    },
    "question": "你什麼時候出國？",
    "options": [
+    "這個月。",
     "下個月。",
-    "明天。",
-    "下星期。"
+    "明天。"
    ],
-   "answer": 0,
-   "why": "下個月 = bulan depan."
+   "answer": 1,
+   "why": "Pesawat di kalender bulan depan → 下個月. A dan C salah waktu."
   },
   {
    "type": "listen_pic",
@@ -2135,12 +2135,12 @@
    },
    "question": "這個箱子怎麼樣？",
    "options": [
-    "很重。",
     "很輕。",
-    "很小。"
+    "是空的。",
+    "很重。"
    ],
-   "answer": 0,
-   "why": "箱子很重 = kotaknya berat."
+   "answer": 2,
+   "why": "Berkeringat mengangkat kardus → 很重. A dan B kebalikannya."
   },
   {
    "type": "listen_dialog",
@@ -2149,19 +2149,15 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "行李都準備了嗎？"
+     "zh": "你帶了幾個箱子？"
     },
     {
      "sp": "男",
-     "zh": "準備了，兩個箱子。"
+     "zh": "才一個，東西不多。"
     }
    ],
-   "question": "這位先生有幾個箱子？",
+   "question": "這位先生帶了幾個箱子？",
    "options": [
-    {
-     "icon": "🎒",
-     "label": "ransel"
-    },
     {
      "icon": "🧳🧳",
      "label": "dua koper"
@@ -2169,10 +2165,14 @@
     {
      "icon": "🧳",
      "label": "satu koper"
+    },
+    {
+     "icon": "🧳🧳🧳",
+     "label": "tiga koper"
     }
    ],
    "answer": 1,
-   "why": "兩個箱子."
+   "why": "才一個 = hanya satu. A dan C jumlahnya salah."
   },
   {
    "type": "listen_dialog",
@@ -2181,38 +2181,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你什麼時候回國？"
+     "zh": "到了嗎？現在印尼幾點？"
     },
     {
      "sp": "女",
-     "zh": "我明天才走。"
+     "zh": "到了。這裡是晚上九點。"
     },
     {
      "sp": "男",
-     "zh": "我以為你今天走。"
+     "zh": "臺灣是十點，時差才一個小時。"
     },
     {
      "sp": "女",
-     "zh": "不，是明天。"
+     "zh": "對，所以我不累。"
     }
    ],
-   "question": "這位小姐什麼時候走？",
+   "question": "印尼現在幾點？",
    "options": [
     {
-     "icon": "📅",
-     "label": "besok"
+     "icon": "🕙",
+     "label": "jam 10"
     },
     {
-     "icon": "📅",
-     "label": "hari ini"
+     "icon": "🕘",
+     "label": "jam 9"
     },
     {
-     "icon": "📅",
-     "label": "lusa"
+     "icon": "🕚",
+     "label": "jam 11"
     }
    ],
-   "answer": 0,
-   "why": "明天才走."
+   "answer": 1,
+   "why": "這裡 (Indonesia) 是晚上九點. A = jam di Taiwan. C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -2221,85 +2221,85 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "臺灣跟印尼的時差是多少？"
+     "zh": "你在印尼要留多久？"
     },
     {
      "sp": "男",
-     "zh": "一個小時。"
+     "zh": "兩個星期，我姊姊要結婚。"
     },
     {
      "sp": "女",
-     "zh": "台北現在八點，雅加達幾點？"
+     "zh": "你的課怎麼辦？"
     },
     {
      "sp": "男",
-     "zh": "七點。"
+     "zh": "我已經跟老師說了，回來以後再上。"
     }
    ],
-   "question": "哪個是對的？",
+   "question": "這位先生為什麼出國？",
    "options": [
-    "時差兩個小時",
-    "兩個地方沒有時差",
-    "雅加達比台北晚一個小時",
-    "雅加達比台北早一個小時"
+    "他要去念書",
+    "他姊姊要結婚",
+    "他要去旅行",
+    "老師要他去"
    ],
-   "answer": 2,
-   "why": "Taipei 8, Jakarta 7 → Jakarta tertinggal 1 jam."
+   "answer": 1,
+   "why": "我姊姊要結婚 → alasannya. A: kelasnya justru ditinggal. C dan D tidak disebut."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他只有一個箱子。",
+   "text": "我昨天才拿到簽證，明天就要出國了。",
    "options": [
     {
-     "icon": "🧳",
-     "label": "satu koper"
+     "icon": "✈️",
+     "label": "terbang hari ini"
     },
     {
-     "icon": "🧳🧳",
-     "label": "dua koper"
+     "icon": "🛂❌",
+     "label": "tidak dapat visa"
     },
     {
-     "icon": "🎒",
-     "label": "ransel"
+     "icon": "🛂➡️✈️",
+     "label": "visa kemarin, terbang besok"
     }
    ],
-   "answer": 0,
-   "why": "只有 = hanya."
+   "answer": 2,
+   "why": "昨天才拿到簽證 + 明天出國. A salah hari; B kebalikannya."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🧳✈️",
-    "label": "bagasi di bandara"
+    "icon": "🧳🧳🧳🧳",
+    "label": "banyak koper"
    },
    "options": [
-    "我的行李在家。",
-    "我沒有行李。",
-    "我的行李很多。"
+    "他的行李很多。",
+    "他才帶了一個箱子。",
+    "他沒有行李。"
    ],
-   "answer": 2,
-   "why": "行李 = bagasi."
+   "answer": 0,
+   "why": "Banyak koper → 行李很多. B dan C kebalikannya."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "📝",
-    "label": "meninggalkan catatan"
+    "icon": "👀",
+    "label": "baru sedikit"
    },
-   "text": "他不在，我給他（　）了一張紙。",
+   "text": "這家店很小，（　）有三張桌子。",
    "options": [
-    "出國",
-    "留",
-    "時差"
+    "才",
+    "都",
+    "也"
    ],
-   "answer": 1,
-   "why": "留 = meninggalkan."
+   "answer": 0,
+   "why": "才 + jumlah = hanya (sedikit). 都 dan 也 tidak memberi arti 'hanya'."
   },
   {
    "type": "cloze",
@@ -2307,19 +2307,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "下個星期我要（1），去美國念書。我的（2）上個月就拿到了。這幾天我一直在準備（3），衣服、書和一些台灣的小東西，放了兩個大（4）。美國和台灣有十二個小時的（5），我怕到了那裡晚上會不想睡覺。",
    "options": [
-    "出國",
-    "簽證",
-    "要帶的行李",
     "箱子",
     "時差",
-    "留在家裡"
+    "出國",
+    "簽證",
+    "留在家裡",
+    "要帶的行李"
    ],
    "answers": [
-    0,
-    1,
     2,
     3,
-    4
+    5,
+    0,
+    1
    ],
    "why": "出國; 辦簽證 lalu 拿到; 準備行李; 放滿兩個大箱子; 十二個小時的時差 → sulit tidur. 「留在家裡」 bertentangan dengan rencana pergi."
   },
@@ -2351,12 +2351,12 @@
    },
    "question": "飛機上還有座位嗎？",
    "options": [
+    "還有很多。",
     "客滿了。",
-    "還有很多座位。",
-    "我坐船。"
+    "還有一個。"
    ],
-   "answer": 0,
-   "why": "Semua kursi terisi → 客滿了."
+   "answer": 1,
+   "why": "Semua kursi terisi → 客滿了. A dan C kebalikannya."
   },
   {
    "type": "listen_pic",
@@ -2369,12 +2369,12 @@
    },
    "question": "你們怎麼去綠島？",
    "options": [
-    "坐火車。",
-    "坐飛機。",
-    "坐船。"
+    "坐火車去。",
+    "開車去。",
+    "坐船去。"
    ],
    "answer": 2,
-   "why": "Kapal menuju pulau → 坐船."
+   "why": "Kapal menuju pulau → 坐船. A dan C tidak bisa ke pulau."
   },
   {
    "type": "listen_dialog",
@@ -2383,30 +2383,30 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "火車票賣完了。"
+     "zh": "這家餐廳客滿了。"
     },
     {
      "sp": "女",
-     "zh": "我們只好坐巴士。"
+     "zh": "那我們只好去旁邊那家吃了。"
     }
    ],
-   "question": "他們怎麼去？",
+   "question": "他們要去哪裡吃飯？",
    "options": [
     {
-     "icon": "✈️",
-     "label": "naik pesawat"
+     "icon": "🍽️❌",
+     "label": "restoran yang penuh"
     },
     {
-     "icon": "🚌",
-     "label": "naik bus"
+     "icon": "🍽️➡️",
+     "label": "restoran sebelah"
     },
     {
-     "icon": "🚆",
-     "label": "naik kereta"
+     "icon": "🏠",
+     "label": "makan di rumah"
     }
    ],
    "answer": 1,
-   "why": "只好 = terpaksa."
+   "why": "只好去旁邊那家. A penuh; C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -2415,38 +2415,38 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你怎麼利用週末？"
+     "zh": "你週末要做什麼？"
     },
     {
      "sp": "男",
-     "zh": "我在家學中文。"
+     "zh": "我想利用週末去學游泳。"
     },
     {
      "sp": "女",
-     "zh": "你不出去玩嗎？"
+     "zh": "天氣這麼冷，你還要去？"
     },
     {
      "sp": "男",
-     "zh": "不管多累，我都要學。"
+     "zh": "不管多冷，我都要去。"
     }
    ],
-   "question": "這位先生週末做什麼？",
+   "question": "這位先生週末要做什麼？",
    "options": [
     {
-     "icon": "📚",
-     "label": "belajar bahasa Mandarin"
-    },
-    {
      "icon": "🛌",
-     "label": "tidur"
+     "label": "istirahat"
     },
     {
-     "icon": "🎮",
-     "label": "bermain"
+     "icon": "🏊",
+     "label": "belajar berenang"
+    },
+    {
+     "icon": "⛰️",
+     "label": "mendaki"
     }
    ],
-   "answer": 0,
-   "why": "在家學中文."
+   "answer": 1,
+   "why": "利用週末去學游泳. A dan C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -2455,85 +2455,85 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "餐廳客滿了。"
+     "zh": "聽說明天的船客滿了。"
     },
     {
      "sp": "女",
-     "zh": "怎麼辦？我很餓。"
+     "zh": "那我們只好後天再去綠島了。"
     },
     {
      "sp": "男",
-     "zh": "我們只好去別的餐廳。"
+     "zh": "後天我要上班啊。"
     },
     {
      "sp": "女",
-     "zh": "好吧。"
+     "zh": "那你請一天假吧，不管怎麼樣，我都想跟你一起去。"
     }
    ],
-   "question": "他們為什麼去別的餐廳？",
+   "question": "這位小姐希望這位先生怎麼做？",
    "options": [
-    "因為這位小姐不餓",
-    "因為第一家不好吃",
-    "因為第一家客滿了",
-    "因為太貴了"
+    "明天去上班",
+    "自己一個人去",
+    "請假跟她去綠島",
+    "坐飛機去"
    ],
    "answer": 2,
-   "why": "Penuh → terpaksa pindah."
+   "why": "請一天假 + 我都想跟你一起去. A tidak disebut. B kebalikannya. D tidak disebut."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "不管天氣怎麼樣，他都去跑步。",
+   "text": "今天的船客滿了，一張票也沒有。",
    "options": [
     {
-     "icon": "🌧️🏠",
-     "label": "hujan di rumah"
+     "icon": "🚢🎫",
+     "label": "masih ada tiket"
     },
     {
-     "icon": "☀️🏃",
-     "label": "lari hanya saat cerah"
+     "icon": "🚢❌🎫",
+     "label": "tiket kapal habis"
     },
     {
-     "icon": "☀️🌧️🏃",
-     "label": "lari apa pun cuacanya"
+     "icon": "✈️❌",
+     "label": "pesawat penuh"
     }
    ],
-   "answer": 2,
-   "why": "不管…都…."
+   "answer": 1,
+   "why": "船客滿了 + 一張票也沒有. A kebalikannya; C kendaraannya pesawat."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🈵🏨",
-    "label": "penginapan penuh"
+    "icon": "🚢🏝️",
+    "label": "kapal menuju pulau"
    },
    "options": [
-    "旅館客滿了。",
-    "旅館很便宜。",
-    "旅館很新。"
+    "他們坐船去綠島。",
+    "他們坐飛機去綠島。",
+    "他們在游泳。"
    ],
    "answer": 0,
-   "why": "客滿."
+   "why": "Kapal ke pulau → 坐船. B dan C tidak cocok."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🚢",
-    "label": "kapal"
+    "icon": "💪",
+    "label": "tetap mau"
    },
-   "text": "飛機票沒有了，我們只好坐（　）。",
+   "text": "（　）多累，他每天都去運動。",
    "options": [
-    "客滿",
-    "船",
+    "不管",
+    "只好",
     "利用"
    ],
-   "answer": 1,
-   "why": "坐船."
+   "answer": 0,
+   "why": "不管…都 = bagaimanapun … tetap. 只好 dan 利用 tidak berpasangan dengan 多累…都."
   },
   {
    "type": "cloze",
@@ -2541,19 +2541,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "今年夏天我和朋友想去綠島玩。我們本來想坐飛機，可是飛機（1），我們（2）坐船。朋友說坐船很不舒服，可是我說（3），我都要去。在船上，我們（4）這個時間聊天、看海。到了綠島，我們都覺得（5），比坐飛機更有意思。",
    "options": [
-    "客滿了",
-    "只好",
+    "船票都賣完了",
     "不管多累",
     "利用",
-    "坐船也不錯",
-    "船票都賣完了"
+    "客滿了",
+    "只好",
+    "坐船也不錯"
    ],
    "answers": [
-    0,
+    3,
+    4,
     1,
     2,
-    3,
-    4
+    5
    ],
    "why": "飛機客滿了 → 只好坐船; 不管多累都要去; 利用時間聊天; 坐船也不錯. 「船票都賣完了」 bertentangan: mereka justru naik kapal."
   },
@@ -2585,12 +2585,12 @@
    },
    "question": "颱風來了，我們要做什麼？",
    "options": [
-    "別出門。",
-    "去海邊玩。",
-    "去爬山。"
+    "去溫泉。",
+    "別出門，在家裡。",
+    "去海邊看颱風。"
    ],
-   "answer": 0,
-   "why": "別出門 = jangan keluar rumah."
+   "answer": 1,
+   "why": "Topan di luar, keluarga di dalam → 別出門. A dan C berbahaya."
   },
   {
    "type": "listen_pic",
@@ -2603,12 +2603,12 @@
    },
    "question": "北投有很多什麼？",
    "options": [
+    "颱風。",
     "溫泉。",
-    "海。",
-    "游泳池。"
+    "雪。"
    ],
-   "answer": 0,
-   "why": "溫泉 = pemandian air panas."
+   "answer": 1,
+   "why": "Kolam beruap dengan batu → 溫泉. A dan C tidak cocok."
   },
   {
    "type": "listen_dialog",
@@ -2617,30 +2617,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "活動的地點在哪裡？"
+     "zh": "明天會下雨嗎？"
     },
     {
      "sp": "男",
-     "zh": "在學生中心。"
+     "zh": "新聞說颱風的中心在南方，台北大概不會下雨。"
     }
    ],
-   "question": "活動在哪裡？",
+   "question": "台北明天大概會怎麼樣？",
    "options": [
     {
-     "icon": "🏫",
-     "label": "pusat kegiatan mahasiswa"
+     "icon": "🌧️",
+     "label": "hujan"
     },
     {
-     "icon": "🏟️",
-     "label": "stadion"
+     "icon": "⛅",
+     "label": "tidak hujan"
     },
     {
-     "icon": "🌳",
-     "label": "taman"
+     "icon": "🌀",
+     "label": "topan"
     }
    ],
-   "answer": 0,
-   "why": "中心 = pusat."
+   "answer": 1,
+   "why": "台北大概不會下雨. A kebalikannya; C: pusat topan di selatan."
   },
   {
    "type": "listen_dialog",
@@ -2649,38 +2649,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "要是明天有颱風，我們就不去了。"
+     "zh": "溫泉的地點在哪裡？"
     },
     {
      "sp": "女",
-     "zh": "什麼時候去？"
+     "zh": "從這裡走路去，大概二十分鐘。"
     },
     {
      "sp": "男",
-     "zh": "下個星期吧。"
+     "zh": "要是走路太遠的話，我們可以坐公車嗎？"
     },
     {
      "sp": "女",
-     "zh": "好。"
+     "zh": "可以，公車十分鐘就到。"
     }
    ],
-   "question": "要是有颱風，他們怎麼做？",
+   "question": "坐公車去溫泉要多久？",
    "options": [
     {
-     "icon": "🏠",
-     "label": "tidak jadi pergi"
+     "icon": "⏱️",
+     "label": "20 menit"
     },
     {
-     "icon": "♨️",
-     "label": "tetap pergi"
+     "icon": "⏱️",
+     "label": "10 menit"
     },
     {
-     "icon": "✈️",
-     "label": "naik pesawat"
+     "icon": "⏱️",
+     "label": "30 menit"
     }
    ],
-   "answer": 0,
-   "why": "要是…就不去."
+   "answer": 1,
+   "why": "公車十分鐘就到. A = jalan kaki. C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -2689,85 +2689,85 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "從這裡到溫泉大概多久？"
+     "zh": "這個週末去溫泉吧！"
     },
     {
      "sp": "男",
-     "zh": "開車一個小時。"
+     "zh": "現在三十五度，太熱了。"
     },
     {
      "sp": "女",
-     "zh": "走哪個方向？"
+     "zh": "那什麼時候去？"
     },
     {
      "sp": "男",
-     "zh": "往北走。"
+     "zh": "等冬天吧，冬天去溫泉最舒服。"
     }
    ],
-   "question": "溫泉在哪個方向？",
+   "question": "這位先生覺得什麼時候去溫泉比較好？",
    "options": [
-    "西邊",
-    "東邊",
-    "北邊",
-    "南邊"
+    "這個週末",
+    "夏天",
+    "冬天",
+    "春季"
    ],
    "answer": 2,
-   "why": "往北."
+   "why": "冬天去溫泉最舒服. A dan B ditolak (太熱). D tidak disebut."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "溫泉的水大概四十度。",
+   "text": "颱風來了的話，學校就不上課了。",
    "options": [
     {
-     "icon": "☀️",
-     "label": "cuaca panas"
+     "icon": "☀️🏫",
+     "label": "cerah, sekolah"
     },
     {
-     "icon": "♨️🌡️",
-     "label": "air panas sekitar 40°"
+     "icon": "🌀🏫👥",
+     "label": "topan, tetap sekolah"
     },
     {
-     "icon": "❄️",
-     "label": "dingin"
+     "icon": "🌀🏫❌",
+     "label": "topan, sekolah libur"
     }
    ],
-   "answer": 1,
-   "why": "大概 = kira-kira; 度 = derajat."
+   "answer": 2,
+   "why": "颱風 + 不上課 → sekolah libur. A tidak ada topan; B tetap sekolah."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🧭⬆️",
-    "label": "papan penunjuk arah"
+    "icon": "🌸🌡️",
+    "label": "musim semi, sejuk"
    },
    "options": [
-    "在這裡吃飯。",
-    "在這裡休息。",
-    "往這個方向走。"
+    "冬天很冷。",
+    "春季的天氣很舒服。",
+    "夏天熱得不得了。"
    ],
-   "answer": 2,
-   "why": "方向 = arah."
+   "answer": 1,
+   "why": "Bunga musim semi, suhu sedang → 春季很舒服. A dan C musim lain."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "📍",
-    "label": "lokasi"
+    "icon": "🌀⬆️",
+    "label": "topan bergerak ke utara"
    },
-   "text": "明天見面的（　）在哪裡？",
+   "text": "颱風的（　）是往北走。",
    "options": [
-    "春季",
     "方向",
-    "地點"
+    "地點",
+    "度"
    ],
-   "answer": 2,
-   "why": "地點 = lokasi."
+   "answer": 0,
+   "why": "往北 → 方向 (arah). 地點 = lokasi (tidak 'berjalan'); 度 untuk suhu."
   },
   {
    "type": "cloze",
@@ -2775,19 +2775,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "我們本來想這個週末去北投的（1）。可是新聞說，有一個颱風（2）會在星期六到台灣。要是颱風真的來了，（3）。老師說，颱風天別出門，因為風雨很大。我們決定下個星期再去，（4）跟時間都不變。希望到時候天氣好，只有二十（5），去溫泉最舒服。",
    "options": [
-    "溫泉",
-    "大概",
-    "我們就不去了",
     "地點",
-    "度",
-    "往這個方向走"
+    "往這個方向走",
+    "大概",
+    "溫泉",
+    "我們就不去了",
+    "度"
    ],
    "answers": [
-    0,
-    1,
-    2,
     3,
-    4
+    2,
+    4,
+    0,
+    5
    ],
    "why": "泡溫泉; 颱風大概星期六到; 要是…就不去了; 地點跟時間都不變; 二十度左右. 「往這個方向走」 tidak cocok di titik mana pun."
   },
