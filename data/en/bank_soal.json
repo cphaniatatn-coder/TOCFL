@@ -25569,12 +25569,12 @@
    },
    "question": "老師叫你做什麼？",
    "options": [
-    "回答問題。",
-    "看書。",
-    "寫字。"
+    "去黑板寫字。",
+    "出去。",
+    "回答問題。"
    ],
-   "answer": 0,
-   "why": "叫 + person + V = to tell … to ….",
+   "answer": 2,
+   "why": "The teacher points at a student standing up → 回答問題. A and B do not match.",
    "id": "C35-01"
   },
   {
@@ -25588,12 +25588,12 @@
    },
    "question": "老師說什麼？",
    "options": [
-    "請看電腦。",
     "請看書。",
-    "請看黑板。"
+    "請看黑板。",
+    "請出去。"
    ],
-   "answer": 2,
-   "why": "請看黑板 = please look at the blackboard.",
+   "answer": 1,
+   "why": "The teacher points at the board and students turn → 請看黑板. A and C do not match.",
    "id": "C35-02"
   },
   {
@@ -25602,31 +25602,31 @@
    "instr": "Listen to the short exchange, then choose the matching picture.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "今天的作業是什麼？"
+     "sp": "男",
+     "zh": "老師叫你做什麼？"
     },
     {
-     "sp": "男",
-     "zh": "寫作文。"
+     "sp": "女",
+     "zh": "叫我去辦公室拿作文本。"
     }
    ],
-   "question": "今天的作業是什麼？",
+   "question": "這位小姐要去做什麼？",
    "options": [
-    {
-     "icon": "➕",
-     "label": "maths"
-    },
     {
      "icon": "📝",
      "label": "writing a composition"
     },
     {
-     "icon": "📖",
-     "label": "to read; to study"
+     "icon": "🏢📒",
+     "label": "fetching essay books from the office"
+    },
+    {
+     "icon": "⬛",
+     "label": "writing on the board"
     }
    ],
    "answer": 1,
-   "why": "作文 = composition.",
+   "why": "去辦公室拿作文本. A and C are not mentioned.",
    "id": "C35-03"
   },
   {
@@ -25635,39 +25635,39 @@
    "instr": "Listen to the dialogue, then choose the picture that answers the question.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "老師，我不懂這個文法。"
-    },
-    {
      "sp": "女",
-     "zh": "我給你一個例子。"
+     "zh": "這個文法我不太懂。"
     },
     {
      "sp": "男",
-     "zh": "好。"
+     "zh": "你看黑板上的例子：「老師叫我寫作文。」"
     },
     {
      "sp": "女",
-     "zh": "例如：「我叫他來。」"
+     "zh": "那「叫」是什麼意思？"
+    },
+    {
+     "sp": "男",
+     "zh": "就是讓別人做一件事。"
     }
    ],
-   "question": "老師給這位先生什麼？",
+   "question": "這位小姐在看什麼？",
    "options": [
-    {
-     "icon": "💡",
-     "label": "example"
-    },
     {
      "icon": "📖",
      "label": "book"
     },
     {
-     "icon": "📝",
-     "label": "homework"
+     "icon": "📱",
+     "label": "mobile phone"
+    },
+    {
+     "icon": "⬛📝",
+     "label": "examples on the blackboard"
     }
    ],
-   "answer": 0,
-   "why": "例子 = example.",
+   "answer": 2,
+   "why": "你看黑板上的例子. A and C are not mentioned.",
    "id": "C35-04"
   },
   {
@@ -25676,54 +25676,54 @@
    "instr": "Listen to the dialogue, then choose the most suitable answer.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "你的作文寫完了嗎？"
-    },
-    {
      "sp": "男",
-     "zh": "寫完了，可是老師叫我改。"
+     "zh": "媽，你叫我？"
     },
     {
      "sp": "女",
-     "zh": "改什麼？"
+     "zh": "對，你的作文老師打電話來了。"
     },
     {
      "sp": "男",
-     "zh": "文法有很多錯。"
+     "zh": "他說什麼？"
+    },
+    {
+     "sp": "女",
+     "zh": "他說你寫得很好，要給大家看。"
     }
    ],
-   "question": "這位先生的作文有什麼問題？",
+   "question": "老師覺得這位先生的作文怎麼樣？",
    "options": [
-    "字不好看",
-    "沒寫完",
-    "文法有錯",
-    "太短"
+    "文法不對",
+    "還沒寫完",
+    "太長了",
+    "寫得很好"
    ],
-   "answer": 2,
-   "why": "文法有很多錯.",
+   "answer": 3,
+   "why": "你寫得很好，要給大家看. A, B and C are not mentioned.",
    "id": "C35-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "同學們在討論問題。",
+   "text": "老師在黑板上寫了三個例子。",
    "options": [
     {
-     "icon": "😴",
-     "label": "to sleep"
+     "icon": "⬛",
+     "label": "an empty board"
     },
     {
-     "icon": "🎮",
-     "label": "to play"
+     "icon": "⬛1️⃣2️⃣3️⃣",
+     "label": "three examples on the board"
     },
     {
-     "icon": "🧑‍🤝‍🧑💬",
-     "label": "to discuss"
+     "icon": "📖",
+     "label": "book"
     }
    ],
-   "answer": 2,
-   "why": "討論 = to discuss.",
+   "answer": 1,
+   "why": "黑板 + 三個例子. A is empty; C is not a board.",
    "id": "C35-06"
   },
   {
@@ -25731,16 +25731,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "✏️📝",
-    "label": "a teacher correcting a composition"
+    "icon": "👩‍🏫📢👦",
+    "label": "the teacher calling a student"
    },
    "options": [
-    "老師在唱歌。",
-    "老師在改作文。",
-    "老師在打球。"
+    "老師在叫一個學生。",
+    "學生在叫老師。",
+    "老師在寫作文。"
    ],
-   "answer": 1,
-   "why": "改 = to correct.",
+   "answer": 0,
+   "why": "The teacher calls a student → 老師叫學生. B reverses the roles; C does not match.",
    "id": "C35-07"
   },
   {
@@ -25748,17 +25748,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "💡",
-    "label": "example"
+    "icon": "✏️",
+    "label": "marking"
    },
-   "text": "老師給我們一個（　）。",
+   "text": "你的作文寫完了，我來（　）一下。",
    "options": [
-    "例子",
-    "文法",
+    "改",
+    "例如",
     "黑板"
    ],
    "answer": 0,
-   "why": "例子 = example.",
+   "why": "改一下 = correct it quickly. 例如 and 黑板 are not verbs.",
    "id": "C35-08"
   },
   {
@@ -25767,19 +25767,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "今天上課，老師在（1）上寫了一個題目，叫我們幾個人一起（2）。題目是「怎麼學好中文」。我們說，學中文要多說多聽，（3）跟台灣朋友聊天、看台灣的電視。老師說很好，還給了我們幾個（4）。下課以前，老師要我們回家寫（5），題目一樣。",
    "options": [
+    "改文法",
+    "例子",
     "黑板",
     "討論",
     "例如",
-    "例子",
-    "作文",
-    "改文法"
+    "作文"
    ],
    "answers": [
-    0,
-    1,
     2,
     3,
-    4
+    4,
+    1,
+    5
    ],
    "why": "黑板上寫題目; 分組討論; 例如 + an example activity; 給幾個例子; 回家寫作文. 「改文法」 doesn't fit any blank.",
    "id": "C35-09"
@@ -25813,12 +25813,12 @@
    },
    "question": "他在大學念什麼？",
    "options": [
-    "歷史。",
     "法律。",
-    "電腦。"
+    "歷史。",
+    "華語。"
    ],
-   "answer": 0,
-   "why": "歷史 = history.",
+   "answer": 1,
+   "why": "Ancient scrolls + history books → 歷史. A and C do not match.",
    "id": "C36-01"
   },
   {
@@ -25832,12 +25832,12 @@
    },
    "question": "這家飯店怎麼樣？",
    "options": [
+    "很舊。",
     "很便宜。",
-    "很高級。",
-    "很小。"
+    "很高級。"
    ],
-   "answer": 1,
-   "why": "高級 = luxury, high-class.",
+   "answer": 2,
+   "why": "Crystal chandeliers, five stars → 高級. A and B are the opposite.",
    "id": "C36-02"
   },
   {
@@ -25847,30 +25847,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你在學什麼語言？"
+     "zh": "你會說台語嗎？"
     },
     {
      "sp": "男",
-     "zh": "華語和台語。"
+     "zh": "會，除了台語以外，我還會說日語。"
     }
    ],
-   "question": "這位先生在學什麼？",
+   "question": "這位先生會說什麼話？",
    "options": [
     {
-     "icon": "🔤",
-     "label": "English"
+     "icon": "🗣️",
+     "label": "only Taiwanese"
     },
     {
-     "icon": "🗣️",
-     "label": "Mandarin & Taiwanese"
+     "icon": "🗣️🗾",
+     "label": "Taiwanese and Japanese"
     },
     {
      "icon": "🗾",
-     "label": "Japanese (language)"
+     "label": "only Japanese"
     }
    ],
    "answer": 1,
-   "why": "華語 + 台語.",
+   "why": "除了台語以外，還會說日語 → both. A and C are only one.",
    "id": "C36-03"
   },
   {
@@ -25880,38 +25880,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "除了中文，你還學什麼？"
+     "zh": "這個週末大家都要去爬山嗎？"
     },
     {
      "sp": "女",
-     "zh": "還學法律。"
+     "zh": "除了安安以外，大家都去。"
     },
     {
      "sp": "男",
-     "zh": "難嗎？"
+     "zh": "安安為什麼不去？"
     },
     {
      "sp": "女",
-     "zh": "很難，要知道很多知識。"
+     "zh": "她要去一個很正式的會。"
     }
    ],
-   "question": "這位小姐還學什麼？",
+   "question": "安安週末要做什麼？",
    "options": [
     {
-     "icon": "📜",
-     "label": "history"
+     "icon": "⛰️",
+     "label": "mountain climbing"
     },
     {
-     "icon": "🎨",
-     "label": "art"
+     "icon": "👔🏢",
+     "label": "attending a formal event"
     },
     {
-     "icon": "⚖️",
-     "label": "law"
+     "icon": "🏠",
+     "label": "at home"
     }
    ],
-   "answer": 2,
-   "why": "還學法律.",
+   "answer": 1,
+   "why": "去一個很正式的會. A: everyone EXCEPT 安安. C is not mentioned.",
    "id": "C36-04"
   },
   {
@@ -25921,53 +25921,53 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "明天的會很正式嗎？"
+     "zh": "你怎麼知道那麼多方面的知識？"
     },
     {
      "sp": "男",
-     "zh": "很正式，你要穿好一點。"
+     "zh": "我除了上課以外，每天也看很多書。"
     },
     {
      "sp": "女",
-     "zh": "除了我以外，誰還去？"
+     "zh": "你都看什麼書？"
     },
     {
      "sp": "男",
-     "zh": "我們班的同學都去。"
+     "zh": "歷史、法律、現代文化，什麼都看。"
     }
    ],
-   "question": "這位小姐明天應該怎麼做？",
+   "question": "這位先生為什麼知道很多知識？",
    "options": [
-    "穿運動的衣服",
-    "一個人去",
-    "穿正式一點的衣服",
-    "不去開會"
+    "他是老師",
+    "他每天看很多書",
+    "他只上歷史課",
+    "他常常看電視"
    ],
-   "answer": 2,
-   "why": "很正式 → dress smartly.",
+   "answer": 1,
+   "why": "除了上課以外，每天也看很多書. A and D are not mentioned. C contradicts it (什麼都看).",
    "id": "C36-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "除了小明以外，大家都來了。",
+   "text": "除了弟弟以外，我們全家都穿紅衣服。",
    "options": [
     {
-     "icon": "🧑‍🤝‍🧑",
-     "label": "everyone came except 小明"
+     "icon": "👨👩👧👦🟥",
+     "label": "everyone in red"
     },
     {
-     "icon": "🧑‍🤝‍🧑✅",
-     "label": "everyone came"
+     "icon": "👦🟥",
+     "label": "only the brother in red"
     },
     {
-     "icon": "🧒",
-     "label": "only 小明 came"
+     "icon": "👨👩👧🟥👦⬜",
+     "label": "everyone in red except the brother"
     }
    ],
-   "answer": 0,
-   "why": "除了…以外，…都 = except.",
+   "answer": 2,
+   "why": "除了弟弟以外，都穿紅衣服 → the brother is not in red. A ignores 除了; B is reversed.",
    "id": "C36-06"
   },
   {
@@ -25975,16 +25975,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🏙️",
-    "label": "a modern city"
+    "icon": "⚖️📚",
+    "label": "law books"
    },
    "options": [
-    "這是一個很舊的城市。",
-    "這是一個現代的城市。",
-    "這是一個鄉下。"
+    "他在念歷史。",
+    "他在念法律。",
+    "他在上華語課。"
    ],
    "answer": 1,
-   "why": "現代 = modern.",
+   "why": "The scales of justice → 法律. A and C do not match.",
    "id": "C36-07"
   },
   {
@@ -25992,17 +25992,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "📚🧠",
-    "label": "wide knowledge"
+    "icon": "👔",
+    "label": "a formal occasion"
    },
-   "text": "他看了很多書，有很多（　）。",
+   "text": "這是一個（　）的會，你要穿好一點。",
    "options": [
-    "方面",
-    "除了",
-    "知識"
+    "正式",
+    "知識",
+    "方面"
    ],
-   "answer": 2,
-   "why": "知識 = knowledge.",
+   "answer": 0,
+   "why": "正式的會 = a formal event. 知識的會 and 方面的會 are not natural.",
    "id": "C36-08"
   },
   {
@@ -26011,19 +26011,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "我在台灣的大學念書，（1）中文以外，我還學台灣的（2）。我覺得知道一個地方的歷史，才能真的懂那裡的人。這個學期我也開始學（3），因為我的鄰居都說台語。我的中文已經到（4）了，老師說我下學期就能上（5）的課，跟台灣學生一起上課。",
    "options": [
-    "除了",
-    "歷史",
-    "台語",
-    "高級",
     "正式",
-    "法律方面的知識"
+    "除了",
+    "台語",
+    "法律方面的知識",
+    "高級",
+    "歷史"
    ],
    "answers": [
-    0,
     1,
+    5,
     2,
-    3,
-    4
+    4,
+    0
    ],
    "why": "除了…以外，還; 學台灣的歷史; the neighbours speak 台語; 到高級; 上正式的課. 「法律方面的知識」 doesn't fit any blank.",
    "id": "C36-09"
@@ -26057,12 +26057,12 @@
    },
    "question": "這是什麼？",
    "options": [
+    "十乘十是一百。",
     "十加十是二十。",
-    "十減十是零。",
-    "十乘十是一百。"
+    "十減十是零。"
    ],
-   "answer": 0,
-   "why": "加 = plus.",
+   "answer": 1,
+   "why": "10 + 10 = 20. A and C are other operations.",
    "id": "C37-01"
   },
   {
@@ -26076,12 +26076,12 @@
    },
    "question": "他考了幾分？",
    "options": [
-    "九十八點五分。",
-    "九十八分。",
-    "八十五點九分。"
+    "九十五點八分。",
+    "八十九點五分。",
+    "九十八點五分。"
    ],
-   "answer": 0,
-   "why": "98.5 = 九十八點五.",
+   "answer": 2,
+   "why": "98.5 → 九十八點五. A and B have the digits swapped.",
    "id": "C37-02"
   },
   {
@@ -26090,31 +26090,31 @@
    "instr": "Listen to the short exchange, then choose the matching picture.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "四乘五是多少？"
+     "sp": "男",
+     "zh": "你家到學校要多久？"
     },
     {
-     "sp": "男",
-     "zh": "二十。"
+     "sp": "女",
+     "zh": "以前要三十分鐘，現在搭捷運，差不多少了一半。"
     }
    ],
-   "question": "四乘五是多少？",
+   "question": "現在要多久？",
    "options": [
     {
-     "icon": "➕",
-     "label": "9"
+     "icon": "⏱️",
+     "label": "30 minutes"
     },
     {
-     "icon": "✖️",
-     "label": "20"
+     "icon": "⏱️",
+     "label": "15 minutes"
     },
     {
-     "icon": "➖",
-     "label": "1"
+     "icon": "⏱️",
+     "label": "60 minutes"
     }
    ],
    "answer": 1,
-   "why": "4 × 5 = 20.",
+   "why": "30 minutes cut by half → 15 minutes. A is the old time. C is not mentioned.",
    "id": "C37-03"
   },
   {
@@ -26123,39 +26123,39 @@
    "instr": "Listen to the dialogue, then choose the picture that answers the question.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "這個題目很困難。"
-    },
-    {
      "sp": "女",
-     "zh": "我們一起算吧。"
+     "zh": "我們班有幾個學生？"
     },
     {
      "sp": "男",
-     "zh": "八減三，再乘二。"
+     "zh": "我數數看……一、二、三……二十五個。"
     },
     {
      "sp": "女",
-     "zh": "是十。"
+     "zh": "老師說有二十六個。"
+    },
+    {
+     "sp": "男",
+     "zh": "對，今天有一個人沒來。"
     }
    ],
-   "question": "答案是多少？",
+   "question": "今天來了幾個學生？",
    "options": [
     {
-     "icon": "5️⃣",
-     "label": "5"
+     "icon": "👥",
+     "label": "26"
     },
     {
-     "icon": "🔟",
-     "label": "10"
+     "icon": "👥",
+     "label": "24"
     },
     {
-     "icon": "🔢",
-     "label": "16"
+     "icon": "👥",
+     "label": "25"
     }
    ],
-   "answer": 1,
-   "why": "(8 − 3) × 2 = 10.",
+   "answer": 2,
+   "why": "He counts 25; one of the 26 is absent. A is the whole class. B is a wrong count.",
    "id": "C37-04"
   },
   {
@@ -26165,53 +26165,53 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你考得怎麼樣？"
+     "zh": "這個數學題目好困難啊！"
     },
     {
      "sp": "男",
-     "zh": "差一分就一百分了。"
+     "zh": "我看看……你先乘再減就好了。"
     },
     {
      "sp": "女",
-     "zh": "真棒！"
+     "zh": "先乘再減？"
     },
     {
      "sp": "男",
-     "zh": "我很認真準備。"
+     "zh": "對，三乘四是十二，十二減二是十。"
     }
    ],
-   "question": "這位先生考了幾分？",
+   "question": "答案是多少？",
    "options": [
-    "九十分",
-    "一分",
-    "九十九分",
-    "一百分"
+    "十二",
+    "十",
+    "十四",
+    "二"
    ],
-   "answer": 2,
-   "why": "差一分 = one point short → 99 (an inference).",
+   "answer": 1,
+   "why": "3 × 4 = 12, 12 − 2 = 10. A is only the first step. C and D are wrong.",
    "id": "C37-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "他念書很認真。",
+   "text": "他很認真，每天都做兩個小時的數學。",
    "options": [
     {
-     "icon": "🎮",
+     "icon": "🧒🎮",
      "label": "playing games"
     },
     {
-     "icon": "📚🧐",
-     "label": "studying seriously"
+     "icon": "🧒🛌",
+     "label": "to sleep"
     },
     {
-     "icon": "😴",
-     "label": "to sleep"
+     "icon": "🧒📐⏰",
+     "label": "two hours of maths"
     }
    ],
-   "answer": 1,
-   "why": "認真 = serious, conscientious.",
+   "answer": 2,
+   "why": "認真 + 兩個小時的數學. A and B are the opposite.",
    "id": "C37-06"
   },
   {
@@ -26219,16 +26219,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "➖",
-    "label": "subtraction"
+    "icon": "📄",
+    "label": "a score of 98.5"
    },
    "options": [
-    "十加二是十二。",
-    "十乘二是二十。",
-    "十減二是八。"
+    "他考了八十九點五分。",
+    "他考了九十八點五分。",
+    "他考了九十五分。"
    ],
-   "answer": 2,
-   "why": "減 = minus.",
+   "answer": 1,
+   "why": "98.5 → 九十八點五. A has the digits swapped; C is wrong.",
    "id": "C37-07"
   },
   {
@@ -26236,17 +26236,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "➖",
-    "label": "subtraction"
+    "icon": "➗",
+    "label": "division"
    },
-   "text": "一百（　）三十是七十。",
+   "text": "二十（　）四是五。",
    "options": [
-    "減",
+    "除",
     "乘",
-    "加"
+    "減"
    ],
    "answer": 0,
-   "why": "100 − 30 = 70.",
+   "why": "20 ÷ 4 = 5 → 除. 乘 = 80; 減 = 16.",
    "id": "C37-08"
   },
   {
@@ -26255,19 +26255,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "我的弟弟今年七歲，剛上小學。他的（1）不太好，常常算錯。昨天的作業是「十（2）三是多少」，他寫了十三。我告訴他：「減是拿走，不是加上。」他聽了以後，很（3）地再算一次，這次對了。我覺得他不是覺得數學（4），只是做作業的時候（5）。",
    "options": [
-    "數學",
-    "減",
-    "認真",
-    "困難",
+    "乘三除二",
     "不夠認真",
-    "乘三除二"
+    "數學",
+    "困難",
+    "減",
+    "認真"
    ],
    "answers": [
-    0,
-    1,
     2,
+    4,
+    5,
     3,
-    4
+    1
    ],
    "why": "數學不太好; 十減三; 很認真地再算; 不是覺得數學困難; 只是不夠認真. 「乘三除二」 doesn't fit any blank.",
    "id": "C37-09"
@@ -26301,12 +26301,12 @@
    },
    "question": "多少學生是外國人？",
    "options": [
+    "三分之二。",
     "三分之一。",
-    "二分之一。",
-    "四分之三。"
+    "一半。"
    ],
-   "answer": 0,
-   "why": "B 分之 A = A/B: 三分之一 = 1/3.",
+   "answer": 1,
+   "why": "A third of the students wear hats → 三分之一. A is reversed; C is wrong.",
    "id": "C38-01"
   },
   {
@@ -26320,12 +26320,12 @@
    },
    "question": "多少人喜歡？",
    "options": [
-    "百分之九十。",
     "百分之十九。",
-    "百分之九。"
+    "百分之九。",
+    "百分之九十。"
    ],
-   "answer": 0,
-   "why": "百分之九十 = 90%.",
+   "answer": 2,
+   "why": "A 90% chart → 百分之九十. A and B are misread.",
    "id": "C38-02"
   },
   {
@@ -26334,31 +26334,31 @@
    "instr": "Listen to the short exchange, then choose the matching picture.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你們班當中誰最高？"
+     "sp": "女",
+     "zh": "你們公司有多少外國人？"
     },
     {
-     "sp": "女",
-     "zh": "小明最高。"
+     "sp": "男",
+     "zh": "一百個人當中，有二十個是外國人。"
     }
    ],
-   "question": "誰最高？",
+   "question": "外國人有多少？",
    "options": [
     {
-     "icon": "🧍",
-     "label": "the shortest"
+     "icon": "📊",
+     "label": "80%"
     },
     {
-     "icon": "🧍",
-     "label": "小明 is the tallest"
+     "icon": "📊",
+     "label": "20%"
     },
     {
-     "icon": "🧑‍🏫",
-     "label": "teacher"
+     "icon": "📊",
+     "label": "2%"
     }
    ],
    "answer": 1,
-   "why": "當中 = among.",
+   "why": "20 out of 100 = 20%. A is the rest; C is wrong.",
    "id": "C38-03"
   },
   {
@@ -26367,39 +26367,39 @@
    "instr": "Listen to the dialogue, then choose the picture that answers the question.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "這次旅行多少錢？"
-    },
-    {
      "sp": "男",
-     "zh": "一萬塊。"
+     "zh": "一個蛋糕，我們四個人吃。"
     },
     {
      "sp": "女",
-     "zh": "包括吃飯嗎？"
+     "zh": "那一個人吃四分之一。"
     },
     {
      "sp": "男",
-     "zh": "包括，也包括旅館。"
+     "zh": "可是小明說他不吃。"
+    },
+    {
+     "sp": "女",
+     "zh": "那我們三個人，一個人吃三分之一。"
     }
    ],
-   "question": "一萬塊包括什麼？",
+   "question": "一個人吃多少？",
    "options": [
     {
-     "icon": "✈️",
-     "label": "a plane ticket"
+     "icon": "🍰",
+     "label": "1/4"
     },
     {
-     "icon": "🍽️",
-     "label": "only eating"
+     "icon": "🍰",
+     "label": "1/3"
     },
     {
-     "icon": "🍽️🏨",
-     "label": "food and accommodation"
+     "icon": "🍰",
+     "label": "1/2"
     }
    ],
-   "answer": 2,
-   "why": "包括 = to include.",
+   "answer": 1,
+   "why": "Only three people are left → 三分之一. A was the first calculation for four people. C is not mentioned.",
    "id": "C38-04"
   },
   {
@@ -26408,54 +26408,54 @@
    "instr": "Listen to the dialogue, then choose the most suitable answer.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你們班有多少人喜歡運動？"
-    },
-    {
      "sp": "女",
-     "zh": "許多人，差不多百分之八十。"
+     "zh": "我們班今天有許多人沒來。"
     },
     {
      "sp": "男",
-     "zh": "你們班有多少人？"
+     "zh": "多少人？"
     },
     {
      "sp": "女",
-     "zh": "二十個。"
+     "zh": "三十個人當中，有十個人沒來，差不多三分之一。"
+    },
+    {
+     "sp": "男",
+     "zh": "是不是因為感冒？"
     }
    ],
-   "question": "這位小姐的班大概有幾個人喜歡運動？",
+   "question": "今天來了多少人？",
    "options": [
-    "八十個",
-    "八個",
+    "十個",
     "二十個",
-    "十六個"
+    "三十個",
+    "三個"
    ],
-   "answer": 3,
-   "why": "80% × 20 = 16.",
+   "answer": 1,
+   "why": "30 − 10 = 20 came. A is those absent; C is the total; D is wrong.",
    "id": "C38-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "我吃了二分之一的蛋糕。",
+   "text": "許多人在電影院門口等著買票。",
    "options": [
     {
-     "icon": "🍰",
-     "label": "a whole cake"
+     "icon": "🎦",
+     "label": "an empty cinema"
     },
     {
-     "icon": "🍰",
-     "label": "half a cake"
+     "icon": "🎦👥👥👥",
+     "label": "lots of people queuing at a cinema"
     },
     {
-     "icon": "🍰",
-     "label": "a quarter of a cake"
+     "icon": "🎦👤",
+     "label": "one person"
     }
    ],
    "answer": 1,
-   "why": "二分之一 = 1/2.",
+   "why": "許多人 + 等著買票. A and C are the wrong number.",
    "id": "C38-06"
   },
   {
@@ -26463,16 +26463,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "📊",
-    "label": "a survey graph"
+    "icon": "🥧",
+    "label": "three quarters"
    },
    "options": [
-    "沒有人喜歡喝茶。",
-    "大家都不喝茶。",
-    "百分之六十的人喜歡喝茶。"
+    "三分之四。",
+    "四分之一。",
+    "四分之三。"
    ],
    "answer": 2,
-   "why": "A percentage.",
+   "why": "3/4 is read 四分之三 (denominator first). A is the wrong way round; B is wrong.",
    "id": "C38-07"
   },
   {
@@ -26480,17 +26480,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🙏",
-    "label": "thanks for everything"
+    "icon": "📊",
+    "label": "most"
    },
-   "text": "謝謝你幫我做的（　）。",
+   "text": "我們班（　）學生都有手機。",
    "options": [
-    "包括",
     "許多",
-    "一切"
+    "分之",
+    "包括"
    ],
-   "answer": 2,
-   "why": "一切 = everything.",
+   "answer": 0,
+   "why": "許多學生 = many students. 分之 needs numbers; 包括學生都有 is incomplete.",
    "id": "C38-08"
   },
   {
@@ -26499,18 +26499,18 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "老師問我們班三十個同學每天做不做運動。結果（1）的同學每天都運動，也就是十個人。（2）有五個人每天跑步。可是也有（3）同學一個星期都不運動，他們說功課太多，沒有時間。老師說，運動不只是為了身體，（4）念書的時候精神也會比較好。她希望下個學期，（5），每個人都能每天運動半個小時。",
    "options": [
-    "三分之一",
-    "這十個人當中",
     "許多",
+    "一切都很好",
     "運動以後",
+    "這十個人當中",
     "包括她自己",
-    "一切都很好"
+    "三分之一"
    ],
    "answers": [
-    0,
-    1,
-    2,
+    5,
     3,
+    0,
+    2,
     4
    ],
    "why": "10 out of 30 = 三分之一; 這十個人當中 五個人跑步; 許多同學不運動; 運動以後精神比較好; 包括她自己. 「一切都很好」 doesn't fit any blank.",
@@ -26545,12 +26545,12 @@
    },
    "question": "你哥哥的年紀是你的幾倍？",
    "options": [
+    "三倍。",
     "兩倍。",
-    "一樣。",
-    "三倍。"
+    "一半。"
    ],
-   "answer": 0,
-   "why": "倍 = times: 20 = 10 × 2.",
+   "answer": 1,
+   "why": "Brother 20, me 10 → 兩倍. A is wrong; C is reversed.",
    "id": "C39-01"
   },
   {
@@ -26564,12 +26564,12 @@
    },
    "question": "幾歲以上可以開車？",
    "options": [
-    "十八歲以上。",
-    "十二歲以上。",
-    "八歲以上。"
+    "十八歲以下。",
+    "八十歲以上。",
+    "十八歲以上。"
    ],
-   "answer": 0,
-   "why": "以上 = and above.",
+   "answer": 2,
+   "why": "The 18+ sign → 十八歲以上. A is the opposite; B has the wrong number.",
    "id": "C39-02"
   },
   {
@@ -26579,30 +26579,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "從這裡到車站要多久？"
+     "zh": "從這裡走到車站要多久？"
     },
     {
      "sp": "男",
-     "zh": "二十分鐘左右。"
+     "zh": "二十分鐘左右，坐公車五分鐘就到了。"
     }
    ],
-   "question": "到車站要多久？",
+   "question": "走路要多久？",
    "options": [
     {
-     "icon": "⏳",
+     "icon": "⏱️",
+     "label": "5 minutes"
+    },
+    {
+     "icon": "⏱️",
      "label": "about 20 minutes"
     },
     {
-     "icon": "⏳",
-     "label": "2 minutes"
-    },
-    {
-     "icon": "⏳",
+     "icon": "⏱️",
      "label": "2 hours"
     }
    ],
-   "answer": 0,
-   "why": "左右 = about.",
+   "answer": 1,
+   "why": "走…二十分鐘左右. A is by bus. C is not mentioned.",
    "id": "C39-03"
   },
   {
@@ -26612,38 +26612,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "這件衣服多少錢？"
+     "zh": "這家餐廳一個人要多少錢？"
     },
     {
      "sp": "女",
-     "zh": "一千塊。"
+     "zh": "五百塊以上。"
     },
     {
      "sp": "男",
-     "zh": "那件呢？"
+     "zh": "太貴了，我們去那家吧，一個人兩百塊左右。"
     },
     {
      "sp": "女",
-     "zh": "那件是這件的兩倍。"
+     "zh": "好，那家也很好吃。"
     }
    ],
-   "question": "那件衣服多少錢？",
+   "question": "他們要去一個人多少錢的餐廳？",
    "options": [
     {
      "icon": "💵",
-     "label": "NT$2,000"
+     "label": "500 or more"
     },
     {
      "icon": "💵",
-     "label": "NT$1,000"
+     "label": "1.000"
     },
     {
      "icon": "💵",
-     "label": "NT$500"
+     "label": "±200"
     }
    ],
-   "answer": 0,
-   "why": "1.000 × 2.",
+   "answer": 2,
+   "why": "那家…兩百塊左右 is agreed. A is the restaurant they reject (太貴). B is not mentioned.",
    "id": "C39-04"
   },
   {
@@ -26653,53 +26653,53 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "這個工作要多少人？"
+     "zh": "你們公司有多少人？"
     },
     {
      "sp": "男",
-     "zh": "十個人以上。"
+     "zh": "以前一百個人左右，現在是以前的兩倍。"
     },
     {
      "sp": "女",
-     "zh": "我們只有八個。"
+     "zh": "那現在有兩百個人了。"
     },
     {
      "sp": "男",
-     "zh": "我們還要找人。"
+     "zh": "對，所以辦公室不夠用了。"
     }
    ],
-   "question": "他們還要找幾個人？",
+   "question": "這位先生的公司為什麼辦公室不夠用？",
    "options": [
-    "八個",
-    "兩個以上",
-    "十個",
-    "不用找"
+    "公司搬家了",
+    "人比以前多了一倍",
+    "辦公室太舊",
+    "公司只有一百個人"
    ],
    "answer": 1,
-   "why": "At least 10 − 8 = 2 or more.",
+   "why": "現在是以前的兩倍 → twice as many staff. A and C are not mentioned. D is the old number.",
    "id": "C39-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "六歲以下的小孩不用買票。",
+   "text": "六十五歲以上的老人坐公車不用錢。",
    "options": [
     {
-     "icon": "🧒🎟️",
-     "label": "children must buy a ticket"
+     "icon": "🧒🚌",
+     "label": "a child on a bus"
     },
     {
-     "icon": "🧒🆓",
-     "label": "children under 6 are free"
+     "icon": "👴🚕",
+     "label": "an elderly person in a taxi"
     },
     {
-     "icon": "👴🆓",
-     "label": "the elderly are free"
+     "icon": "👴🚌🆓",
+     "label": "elderly people ride the bus free"
     }
    ],
-   "answer": 1,
-   "why": "以下 = and under.",
+   "answer": 2,
+   "why": "65 and over + 公車不用錢. A is the wrong person; B the wrong vehicle.",
    "id": "C39-06"
   },
   {
@@ -26707,16 +26707,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🌡️",
-    "label": "a temperature of about 30°"
+    "icon": "👥",
+    "label": "about 30 people"
    },
    "options": [
-    "今天下雪。",
-    "今天十度以下。",
-    "今天三十度左右。"
+    "教室裡有三十個人左右。",
+    "教室裡只有三個人。",
+    "教室裡一個人也沒有。"
    ],
-   "answer": 2,
-   "why": "左右.",
+   "answer": 0,
+   "why": "About 30 people → 三十個人左右. B and C are the wrong number.",
    "id": "C39-07"
   },
   {
@@ -26724,17 +26724,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "✖️",
-    "label": "twice as much"
+    "icon": "🧒",
+    "label": "12 and under"
    },
-   "text": "台北的房租是這裡的兩（　）。",
+   "text": "十二歲（　）的小孩坐車可以便宜一點。",
    "options": [
-    "倍",
-    "左右",
-    "以上"
+    "以下",
+    "以上",
+    "倍"
    ],
    "answer": 0,
-   "why": "兩倍.",
+   "why": "小孩 → 12 and under: 以下. 以上 is for older people; 倍 = times.",
    "id": "C39-08"
   },
   {
@@ -26743,19 +26743,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "我從雅加達來台北念書。我發現台北的房租是雅加達的兩（1），我住的小房間一個月要八千塊（2），不多也不少。吃飯也比較貴，一碗麵要八十塊（3），很少有更便宜的。可是（4），一次二十幾塊。我算了一下，我一個月的生活費（5）。",
    "options": [
-    "倍",
-    "左右",
     "以上",
     "坐捷運不貴",
     "差不多一萬五",
-    "以下"
+    "左右",
+    "以下",
+    "倍"
    ],
    "answers": [
+    5,
+    3,
     0,
     1,
-    2,
-    3,
-    4
+    2
    ],
    "why": "兩倍; 八千塊左右 (不多也不少); 八十塊以上 (rarely cheaper); 坐捷運不貴 (twenty-something); a total of 差不多一萬五. 「以下」 contradicts the context of every blank.",
    "id": "C39-09"
@@ -26789,12 +26789,12 @@
    },
    "question": "夜市怎麼樣？",
    "options": [
-    "很熱鬧。",
     "沒有人。",
-    "已經關門了。"
+    "很熱鬧。",
+    "打折了。"
    ],
-   "answer": 0,
-   "why": "熱鬧 = lively, busy.",
+   "answer": 1,
+   "why": "A night market full of people → 熱鬧. A is the opposite; C is not shown.",
    "id": "C40-01"
   },
   {
@@ -26808,12 +26808,12 @@
    },
    "question": "這雙鞋子怎麼樣？",
    "options": [
-    "小了一點。",
-    "不大也不小。",
-    "大了一點。"
+    "大了一點。",
+    "很舒服。",
+    "小了一點。"
    ],
-   "answer": 0,
-   "why": "Vs了一點 = a bit too ….",
+   "answer": 2,
+   "why": "The shoes are a bit tight → 小了一點. A is the opposite; B does not match.",
    "id": "C40-02"
   },
   {
@@ -26823,30 +26823,30 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你週末做什麼？"
+     "zh": "那家店今天打幾折？"
     },
     {
      "sp": "女",
-     "zh": "跟朋友去逛街。"
+     "zh": "上個星期打九折，今天打七折。"
     }
    ],
-   "question": "這位小姐週末做什麼？",
+   "question": "那家店今天打幾折？",
    "options": [
     {
-     "icon": "🛍️",
-     "label": "to go shopping"
+     "icon": "🏷️",
+     "label": "10% off (九折)"
     },
     {
-     "icon": "🏊",
-     "label": "to swim"
+     "icon": "🏷️",
+     "label": "30% off (七折)"
     },
     {
-     "icon": "📚",
-     "label": "to learn, to study"
+     "icon": "🏷️",
+     "label": "50% off"
     }
    ],
-   "answer": 0,
-   "why": "逛街.",
+   "answer": 1,
+   "why": "今天打七折. A was last week. C is not mentioned.",
    "id": "C40-03"
   },
   {
@@ -26856,38 +26856,38 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "這家店為什麼有這麼多人排隊？"
+     "zh": "我們去逛街吧！"
     },
     {
      "sp": "男",
-     "zh": "今天打五折。"
+     "zh": "好啊，去哪裡？"
     },
     {
      "sp": "女",
-     "zh": "真的嗎？我們也去吧！"
+     "zh": "百貨公司今天打折，可是人一定很多。"
     },
     {
      "sp": "男",
-     "zh": "好。"
+     "zh": "那我們去夜市吧，比較熱鬧，也比較便宜。"
     }
    ],
-   "question": "這家店今天怎麼樣？",
+   "question": "他們要去哪裡？",
    "options": [
     {
-     "icon": "🏷️",
-     "label": "50% off"
+     "icon": "🏬",
+     "label": "department store"
     },
     {
-     "icon": "🔒",
-     "label": "closed"
+     "icon": "🏮",
+     "label": "night market"
     },
     {
-     "icon": "🏷️",
-     "label": "full price"
+     "icon": "🏠",
+     "label": "at home"
     }
    ],
-   "answer": 0,
-   "why": "打五折 = pay 50%.",
+   "answer": 1,
+   "why": "那我們去夜市吧. A is mentioned but too crowded. C is not mentioned.",
    "id": "C40-04"
   },
   {
@@ -26897,53 +26897,53 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "這件衣服一千塊，打八折。"
+     "zh": "你怎麼買了三件一樣的衣服？"
     },
     {
      "sp": "女",
-     "zh": "打八折是多少錢？"
+     "zh": "今天打五折，一件才三百塊。"
     },
     {
      "sp": "男",
-     "zh": "八百塊。"
+     "zh": "可是三件都一樣啊！"
     },
     {
      "sp": "女",
-     "zh": "還是貴了一點。"
+     "zh": "一件給我，一件給我姊姊，一件給我媽媽。"
     }
    ],
-   "question": "這位小姐覺得打折以後怎麼樣？",
+   "question": "這位小姐為什麼買三件？",
    "options": [
-    "八折太少",
-    "很便宜",
-    "不打折",
-    "還是有點貴"
+    "她很喜歡這件衣服",
+    "三件打五折",
+    "要送給家人",
+    "她要穿很多次"
    ],
-   "answer": 3,
-   "why": "還是貴了一點.",
+   "answer": 2,
+   "why": "一件給我，一件給姊姊，一件給媽媽 → for her family. B is the situation, not the reason for three. A and D are not mentioned.",
    "id": "C40-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "孩子們一個比一個高。",
+   "text": "店門口有很多人在排隊。",
    "options": [
     {
-     "icon": "🧒",
-     "label": "one child"
+     "icon": "🏪",
+     "label": "an empty shop"
     },
     {
-     "icon": "🧍🧍🧍",
-     "label": "the same height"
+     "icon": "🏪👥👥👥",
+     "label": "a queue outside a shop"
     },
     {
-     "icon": "🧒🧑🧑‍🦱",
-     "label": "the bigger, the taller"
+     "icon": "🏪🔒",
+     "label": "a closed shop"
     }
    ],
-   "answer": 2,
-   "why": "一 M 比一 M.",
+   "answer": 1,
+   "why": "很多人在排隊. A and C have no queue.",
    "id": "C40-06"
   },
   {
@@ -26951,16 +26951,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🧍🧍🧍🧍",
-    "label": "a long queue"
+    "icon": "👗⬆️",
+    "label": "clothes too big"
    },
    "options": [
-    "沒有人。",
-    "很多人在排隊。",
-    "大家在跳舞。"
+    "這件衣服小了一點。",
+    "這件衣服打折了。",
+    "這件衣服大了一點。"
    ],
-   "answer": 1,
-   "why": "排隊 = to queue.",
+   "answer": 2,
+   "why": "Clothes too big → 大了一點. A is the opposite; B is not shown.",
    "id": "C40-07"
   },
   {
@@ -26968,17 +26968,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🏷️",
-    "label": "discount"
+    "icon": "🛍️🚶",
+    "label": "to go shopping"
    },
-   "text": "週末百貨公司（　），很多人去買東西。",
+   "text": "週末我喜歡跟朋友去（　）。",
    "options": [
-    "打折",
+    "逛街",
     "排隊",
-    "熱鬧"
+    "打折"
    ],
    "answer": 0,
-   "why": "打折 = discount.",
+   "why": "去逛街 = go shopping. 去排隊 and 去打折 are not normal weekend activities.",
    "id": "C40-08"
   },
   {
@@ -26987,19 +26987,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "這個週末百貨公司打（1），所以我和姊姊一早就去（2）。百貨公司裡人很多，（3）得不得了。有一家店的衣服打五折，門口有很多人在（4）。我們等了半個小時才進去。衣服一件（5）便宜，我們買了好幾件。",
    "options": [
-    "八折",
-    "逛街",
-    "熱鬧",
-    "排隊",
     "比一件",
-    "貴得不得了"
+    "逛街",
+    "貴得不得了",
+    "八折",
+    "熱鬧",
+    "排隊"
    ],
    "answers": [
-    0,
-    1,
-    2,
     3,
-    4
+    1,
+    4,
+    5,
+    0
    ],
    "why": "打八折; 去逛街; 熱鬧得不得了; 門口排隊; 一件比一件便宜. 「貴得不得了」 contradicts the sale.",
    "id": "C40-09"
@@ -27033,12 +27033,12 @@
    },
    "question": "冬天你戴什麼？",
    "options": [
+    "耳機。",
     "手套。",
-    "帽子。",
-    "眼鏡。"
+    "襪子。"
    ],
-   "answer": 0,
-   "why": "戴手套 = to wear gloves.",
+   "answer": 1,
+   "why": "Snow + gloves → 手套. A does not match; C are worn on the feet (穿).",
    "id": "C41-01"
   },
   {
@@ -27052,12 +27052,12 @@
    },
    "question": "在家你穿什麼？",
    "options": [
-    "拖鞋。",
     "皮鞋。",
-    "襪子。"
+    "球鞋。",
+    "拖鞋。"
    ],
-   "answer": 0,
-   "why": "拖鞋 = slippers.",
+   "answer": 2,
+   "why": "Slippers at home → 拖鞋. A and B are outdoor shoes.",
    "id": "C41-02"
   },
   {
@@ -27067,30 +27067,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "這件上衣合適嗎？"
+     "zh": "你要買毛衣還是上衣？"
     },
     {
      "sp": "男",
-     "zh": "有點小，不太合適。"
+     "zh": "冬天到了，我要買毛衣，上衣下次再買。"
     }
    ],
-   "question": "上衣怎麼樣？",
+   "question": "這位先生要買什麼？",
    "options": [
     {
-     "icon": "👕⬆️",
-     "label": "too big"
+     "icon": "👕",
+     "label": "a top"
     },
     {
-     "icon": "👕⬇️",
-     "label": "a bit small"
+     "icon": "🧶",
+     "label": "a sweater"
     },
     {
-     "icon": "👕✅",
-     "label": "just right"
+     "icon": "🧤",
+     "label": "gloves"
     }
    ],
    "answer": 1,
-   "why": "有點小.",
+   "why": "我要買毛衣. A is put off (下次再買). C is not mentioned.",
    "id": "C41-03"
   },
   {
@@ -27100,38 +27100,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你要買什麼？"
+     "zh": "這套睡衣多少錢？"
     },
     {
      "sp": "女",
-     "zh": "一雙皮鞋和兩雙襪子。"
+     "zh": "一千兩百塊。"
     },
     {
      "sp": "男",
-     "zh": "什麼顏色的皮鞋？"
+     "zh": "有沒有便宜一點的？"
     },
     {
      "sp": "女",
-     "zh": "黑色的。"
+     "zh": "有，那套八百，也很舒服。"
     }
    ],
-   "question": "這位小姐要買什麼？",
+   "question": "便宜的睡衣多少錢？",
    "options": [
     {
-     "icon": "👞🧦🧦",
-     "label": "leather shoes & two pairs of socks"
+     "icon": "💵",
+     "label": "1.200"
     },
     {
-     "icon": "👟🧦",
-     "label": "trainers"
+     "icon": "💵",
+     "label": "800"
     },
     {
-     "icon": "🩴",
-     "label": "slippers"
+     "icon": "💵",
+     "label": "2.000"
     }
    ],
-   "answer": 0,
-   "why": "皮鞋 + 襪子.",
+   "answer": 1,
+   "why": "那套八百. A is the more expensive one. C is not mentioned.",
    "id": "C41-04"
   },
   {
@@ -27141,53 +27141,53 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "這件金色的毛衣怎麼樣？"
+     "zh": "你看，這雙襪子黑黑的，跟你的皮鞋很合適。"
     },
     {
      "sp": "男",
-     "zh": "看起來很漂亮，可是不太適合你。"
+     "zh": "可是我的皮鞋是金色的啊。"
     },
     {
      "sp": "女",
-     "zh": "為什麼？"
+     "zh": "真的嗎？那我們買白色的吧。"
     },
     {
      "sp": "男",
-     "zh": "你穿白色的比較好看。"
+     "zh": "好，白色的比較適合。"
     }
    ],
-   "question": "這位先生覺得這位小姐應該買什麼顏色？",
+   "question": "他們要買什麼顏色的襪子？",
    "options": [
-    "白色",
-    "紅色",
     "黑色",
-    "金色"
+    "白色",
+    "金色",
+    "紅色"
    ],
-   "answer": 0,
-   "why": "穿白色的比較好看.",
+   "answer": 1,
+   "why": "那我們買白色的吧 + 好. A was the first idea, dropped. C is the colour of his shoes. D is not mentioned.",
    "id": "C41-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "她穿著一件長長的裙子。",
+   "text": "他的手套黑黑的，襪子也黑黑的。",
    "options": [
     {
-     "icon": "👗",
-     "label": "a short skirt"
+     "icon": "🧤⬜🧦⬛",
+     "label": "white gloves, black socks"
     },
     {
-     "icon": "👖",
-     "label": "trousers"
+     "icon": "🧤⬛🧦⬜",
+     "label": "black gloves, white socks"
     },
     {
-     "icon": "👗",
-     "label": "a very long skirt"
+     "icon": "🧤⬛🧦⬛",
+     "label": "black gloves and black socks"
     }
    ],
    "answer": 2,
-   "why": "AA的 + N.",
+   "why": "手套黑黑的 + 襪子也黑黑的 → both black. A and B each have one white item.",
    "id": "C41-06"
   },
   {
@@ -27195,16 +27195,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🛌👕",
-    "label": "pyjamas"
+    "icon": "👞",
+    "label": "leather shoes"
    },
    "options": [
-    "這是我的外套。",
-    "這是我的睡衣。",
-    "這是我的毛衣。"
+    "這是一雙拖鞋。",
+    "這是一雙皮鞋。",
+    "這是一雙手套。"
    ],
    "answer": 1,
-   "why": "睡衣 = pyjamas.",
+   "why": "Leather shoes → 皮鞋. A and C are other things.",
    "id": "C41-07"
   },
   {
@@ -27212,17 +27212,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🧤",
-    "label": "gloves"
+    "icon": "🟨✨",
+    "label": "gold (colour)"
    },
-   "text": "外頭很冷，戴（　）吧。",
+   "text": "這件（　）的上衣太貴了。",
    "options": [
-    "手套",
-    "上衣",
-    "拖鞋"
+    "金色",
+    "合適",
+    "適合"
    ],
    "answer": 0,
-   "why": "戴手套.",
+   "why": "金色的上衣 = a gold top. 合適的/適合的 need other context and do not match the picture.",
    "id": "C41-08"
   },
   {
@@ -27231,19 +27231,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "天氣變冷了，我去買冬天的衣服。我先買了一件紅色的（1），小姐說這個顏色很（2）我。然後我又買了一雙（3），因為我的手常常很冷。我還想買一雙上班穿的（4），可是試了三雙都不（5），最後沒買。",
    "options": [
-    "毛衣",
-    "適合",
-    "手套",
-    "皮鞋",
     "合適",
-    "金色的拖鞋"
+    "皮鞋",
+    "適合",
+    "金色的拖鞋",
+    "毛衣",
+    "手套"
    ],
    "answers": [
-    0,
-    1,
+    4,
     2,
-    3,
-    4
+    5,
+    1,
+    0
    ],
    "why": "一件毛衣; 很適合我 (適合 + object); cold hands → 手套; 上班穿的皮鞋; 都不合適 (合適 without an object). 「金色的拖鞋」 doesn't fit any blank.",
    "id": "C41-09"
@@ -27277,12 +27277,12 @@
    },
    "question": "你有零錢嗎？",
    "options": [
-    "沒有零錢。",
-    "我有信用卡。",
-    "我有很多零錢。"
+    "有很多零錢。",
+    "沒有零錢，只有一千塊的。",
+    "我刷卡了。"
    ],
-   "answer": 0,
-   "why": "零錢 = small change.",
+   "answer": 1,
+   "why": "An empty coin purse, only a big note → 沒有零錢. A is the opposite; C does not answer.",
    "id": "C42-01"
   },
   {
@@ -27296,12 +27296,12 @@
    },
    "question": "店員怎麼樣？",
    "options": [
-    "很客氣。",
     "很生氣。",
-    "不在。"
+    "很累。",
+    "很客氣。"
    ],
-   "answer": 0,
-   "why": "客氣 = polite, courteous.",
+   "answer": 2,
+   "why": "Bowing politely with a smile → 很客氣. A and B do not match.",
    "id": "C42-02"
   },
   {
@@ -27311,30 +27311,30 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你吃飯了沒有？"
+     "zh": "你付錢了沒有？"
     },
     {
      "sp": "女",
-     "zh": "還沒。"
+     "zh": "還沒，我在等店員找錢。"
     }
    ],
-   "question": "這位小姐吃飯了嗎？",
+   "question": "這位小姐在做什麼？",
    "options": [
     {
-     "icon": "😋",
-     "label": "full (after eating)"
+     "icon": "💳✅",
+     "label": "already paid"
     },
     {
-     "icon": "🍽️❌",
-     "label": "hasn't eaten"
+     "icon": "⏳🪙",
+     "label": "waiting for change"
     },
     {
-     "icon": "🍽️✅",
-     "label": "has eaten"
+     "icon": "🚶",
+     "label": "to go"
     }
    ],
    "answer": 1,
-   "why": "還沒 = not yet.",
+   "why": "還沒 + 在等店員找錢. A is the opposite; C is not mentioned.",
    "id": "C42-03"
   },
   {
@@ -27344,38 +27344,38 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "一共五百塊。"
+     "zh": "請問可以刷卡嗎？"
     },
     {
      "sp": "男",
-     "zh": "我刷卡。"
+     "zh": "可以，可是五百塊以上才能刷。"
     },
     {
      "sp": "女",
-     "zh": "對不起，一千塊以下不能刷卡。"
+     "zh": "我買了三百塊，那我付零錢。"
     },
     {
      "sp": "男",
-     "zh": "好，我給你錢。"
+     "zh": "好，謝謝。"
     }
    ],
-   "question": "這位先生最後怎麼付錢？",
+   "question": "這位小姐怎麼付錢？",
    "options": [
-    {
-     "icon": "📱",
-     "label": "mobile phone"
-    },
     {
      "icon": "💳",
      "label": "card"
     },
     {
-     "icon": "💵",
-     "label": "cash"
+     "icon": "🪙",
+     "label": "small change"
+    },
+    {
+     "icon": "📱",
+     "label": "mobile phone"
     }
    ],
-   "answer": 2,
-   "why": "The card is refused → cash.",
+   "answer": 1,
+   "why": "300 is under the 500 limit → 付零錢. A is not possible; C is not mentioned.",
    "id": "C42-04"
   },
   {
@@ -27385,53 +27385,53 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "在美國吃飯要給小費。"
+     "zh": "我們要給店員小費嗎？"
     },
     {
      "sp": "女",
-     "zh": "臺灣呢？"
+     "zh": "你沒來過臺灣嗎？這裡不用給。"
     },
     {
      "sp": "男",
-     "zh": "臺灣不用。"
+     "zh": "可是他對我們很好啊。"
     },
     {
      "sp": "女",
-     "zh": "你不是說要給嗎？"
+     "zh": "那你跟他說謝謝就好了。"
     }
    ],
-   "question": "在臺灣吃飯要給小費嗎？",
+   "question": "這位小姐的意思是什麼？",
    "options": [
-    "不用",
-    "要",
-    "百分之十",
-    "看餐廳"
+    "應該給小費",
+    "店員不好",
+    "不用給小費，說謝謝就好",
+    "她要給小費"
    ],
-   "answer": 0,
-   "why": "臺灣不用. 不是…嗎 = surprise.",
+   "answer": 2,
+   "why": "不用給 + 說謝謝就好. A and D are the opposite. B is the opposite (他對我們很好).",
    "id": "C42-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "一共九十九塊，我剛好有。",
+   "text": "店員拿著信用卡，刷了一下。",
    "options": [
     {
-     "icon": "💵❌",
-     "label": "short (of money)"
+     "icon": "🧑‍💼🪙",
+     "label": "a shop assistant counting coins"
     },
     {
-     "icon": "💵✅",
-     "label": "the exact amount"
+     "icon": "🧑‍💼💳",
+     "label": "a shop assistant swiping a card"
     },
     {
-     "icon": "💳",
-     "label": "card"
+     "icon": "🧑‍💼📦",
+     "label": "a shop assistant wrapping something"
     }
    ],
    "answer": 1,
-   "why": "剛好 = exactly.",
+   "why": "拿著信用卡 + 刷 → swiping a card. A and C do not match.",
    "id": "C42-06"
   },
   {
@@ -27439,16 +27439,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "💳",
-    "label": "to pay by card"
+    "icon": "🪙🪙🪙",
+    "label": "small change"
    },
    "options": [
-    "我用零錢付錢。",
-    "我不付錢。",
-    "我刷卡付錢。"
+    "他沒有零錢。",
+    "他在刷卡。",
+    "他有很多零錢。"
    ],
    "answer": 2,
-   "why": "刷卡.",
+   "why": "Lots of coins → 很多零錢. A is the opposite; B does not match.",
    "id": "C42-07"
   },
   {
@@ -27456,17 +27456,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🪙",
-    "label": "small change"
+    "icon": "🍽️🪙❌",
+    "label": "no need to tip"
    },
-   "text": "請問，你有（　）嗎？我要打電話。",
+   "text": "在臺灣吃飯，不用給（　）。",
    "options": [
+    "小費",
     "零錢",
-    "店員",
-    "小費"
+    "刷卡"
    ],
    "answer": 0,
-   "why": "零錢.",
+   "why": "不用給小費 = no need to tip. 零錢 is still needed to pay; 給刷卡 is ungrammatical.",
    "id": "C42-08"
   },
   {
@@ -27475,19 +27475,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "昨天我去一家小咖啡店買咖啡，一杯六十五塊。我只帶了一張一千塊，店員說：「對不起，我們（1），你有小一點的錢嗎？」我說沒有，問他可以（2）嗎，他說這家店不能刷卡。那時候我朋友（3），她給了店員六十五塊，（4）。回家以後我決定，以後出門一定要帶一點（5）。",
    "options": [
-    "沒有那麼多零錢",
-    "刷卡",
-    "剛好在旁邊",
-    "店員不用找錢",
     "零錢",
-    "給小費"
+    "剛好在旁邊",
+    "沒有那麼多零錢",
+    "店員不用找錢",
+    "給小費",
+    "刷卡"
    ],
    "answers": [
-    0,
-    1,
     2,
+    5,
+    1,
     3,
-    4
+    0
    ],
    "why": "沒有那麼多零錢 for change from 1000; 可以刷卡嗎; her friend 剛好在旁邊; pays the exact amount → 不用找錢; carry 零錢. 「給小費」 doesn't fit any blank.",
    "id": "C42-09"

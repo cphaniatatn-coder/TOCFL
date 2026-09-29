@@ -20,24 +20,12 @@
   ]}
  ],
  "tasks": [
-  {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你付錢了沒有？", "options": ["付了，我刷卡了。", "我沒有錢。", "付了沒有。"], "answer": 0,
-   "why": "…了沒有？ = sudah … belum? → 付了／還沒."},
-  {"type": "listen_pic", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
-   "picture": {"icon": "💳", "label": "dia menggesek kartu di mesin kasir", "img": "C42-1"}, "question": "他在做什麼？", "options": ["在刷卡。", "在找零錢。", "在數錢。"], "answer": 0,
-   "why": "刷卡 = menggesek kartu."},
-  {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
-   "lines": [{"sp": "男", "zh": "妳不喜歡這個蛋糕嗎？"}, {"sp": "女", "zh": "不是，我吃飽了。"}],
-   "question": "這位小姐為什麼不吃蛋糕？", "options": ["她吃飽了", "她不喜歡", "蛋糕太甜"], "answer": 0,
-   "why": "不是 (bukan tidak suka) → 我吃飽了. B adalah dugaan si pria yang dibantah."},
-  {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca tulisan di kasir ini, lalu pilih jawaban yang benar.",
-   "text": "注意：一百塊以下不能刷卡。請給店員零錢。在臺灣吃飯不用給小費。", "question": "買八十塊的東西，可以刷卡嗎？",
-   "options": ["可以", "不可以"], "answer": 1,
-   "why": "80 < 100 → 一百塊以下不能刷卡."},
-  {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-   "text": "你沒有（1）嗎？我（2）有一百塊。我可以（3）嗎？", "options": ["零錢", "剛好", "刷卡", "小費"], "answers": [0, 1, 2],
-   "why": "(1) 零錢 = uang kecil. (2) 剛好 = kebetulan pas. (3) 刷卡. 小費 tidak cocok."}
- ],
+   {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.", "audio": "你付錢了沒有？", "options": ["錢在桌子上。", "付了，我刷卡了。", "多少錢？"], "answer": 1, "why": "了沒有 = sudah atau belum → 付了. A dan C tidak menjawab."},
+   {"type": "listen_pic", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.", "picture": {"icon": "💳", "label": "dia menggesek kartu di mesin kasir", "img": "C42-1"}, "question": "他在做什麼？", "options": ["在找零錢。", "在給小費。", "在刷卡。"], "answer": 2, "why": "Menggesek kartu di mesin kasir → 刷卡. A dan B tidak cocok."},
+   {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.", "lines": [{"sp": "男", "zh": "一共九十五塊，我可以刷卡嗎？"}, {"sp": "女", "zh": "對不起，一百塊以下不能刷卡。"}, {"sp": "男", "zh": "那我給你一百塊。"}, {"sp": "女", "zh": "好，找你五塊。"}], "question": "這位先生怎麼付錢？", "options": ["刷卡", "給一百塊", "給九十五塊零錢", "不買了"], "answer": 1, "why": "那我給你一百塊 + 找你五塊. A ditolak (di bawah 100). C tidak disebut. D kebalikannya."},
+   {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca tulisan di kasir ini, lalu pilih jawaban yang benar.", "text": "在臺灣，大部分的餐廳不用給小費。我第一次來臺灣的時候，吃完飯就給了店員五十塊，她很不好意思地說：「不用，不用。」我才知道這裡跟美國不一樣。還有，很多小店不能刷卡，所以我現在出門一定會帶一些零錢。", "question": "這個人為什麼現在出門會帶零錢？", "options": ["要給小費", "店員要他帶", "很多小店不能刷卡", "他沒有信用卡"], "answer": 2, "why": "很多小店不能刷卡，所以…帶零錢. A kebalikan (不用給小費). B dan D tidak disebut."},
+   {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih frasa yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.", "text": "昨天我去一家小店買東西，一共六十塊。我問店員：「可以（1）嗎？」店員說：「一百塊以下不能刷卡，你（2）零錢嗎？」我打開錢包一看，（3）有六十塊。吃晚飯的時候，我問朋友：「臺灣要給（4）嗎？」朋友說：「不用給，你不知道（5）？」", "options": ["嗎", "店員", "剛好", "沒有", "刷卡", "小費"], "answers": [4, 3, 2, 5, 0], "why": "(1) bayar dengan kartu. (2) 沒有…嗎 = tidak punya …? (3) pas 60. (4) tip. (5) 不知道嗎 = masa tidak tahu? 「店員」 tidak cocok di titik mana pun."}
+  ],
  "grammar": [
   {"tbcl_id": 118, "point": "…了沒有？ — sudah … belum?", "pattern": "S + V + (O) + 了 + 沒有？", "blocks": [["你", "S"], ["付錢", "V O"], ["了", "了"], ["沒有", "沒有"]],
    "explain": "沒有 di akhir kalimat setelah 了 membentuk pertanyaan 'sudah atau belum': 你付錢了沒有？ Jawaban: V了／還沒(有).",

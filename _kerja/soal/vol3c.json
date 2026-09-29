@@ -1386,12 +1386,12 @@
    },
    "question": "老師在做什麼？",
    "options": [
-    "在看書。",
+    "在看作文。",
     "在黑板上寫字。",
-    "在用電腦。"
+    "在打電話。"
    ],
    "answer": 1,
-   "why": "黑板 = papan tulis."
+   "why": "Menulis karakter di papan → 在黑板上寫字. A dan C tidak cocok."
   },
   {
    "type": "listen_pic",
@@ -1404,12 +1404,12 @@
    },
    "question": "你們在做什麼？",
    "options": [
-    "在吃飯。",
-    "在睡覺。",
-    "在討論題目。"
+    "我們在考試。",
+    "我們在看電影。",
+    "我們在討論題目。"
    ],
    "answer": 2,
-   "why": "討論 = berdiskusi."
+   "why": "Murid-murid berkelompok berbicara → 討論. A dan B tidak cocok."
   },
   {
    "type": "listen_reply",
@@ -1417,67 +1417,67 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "你可以給我一個例子嗎？",
    "options": [
-    "我給例子嗎。",
-    "可以，例如「我叫大文」。",
-    "例子很可以。"
+    "可以，例如「我叫他來」。",
+    "例子很難。",
+    "我不叫你。"
    ],
-   "answer": 1,
-   "why": "例如 = misalnya."
+   "answer": 0,
+   "why": "Diminta contoh → 例如…. B komentar; C salah paham 叫."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "老師叫我們寫作文。",
+   "text": "老師叫學生看黑板。",
    "options": [
     {
-     "icon": "🎤",
-     "label": "menyuruh menyanyi"
+     "icon": "🧑‍🏫📝",
+     "label": "guru mengoreksi"
     },
     {
-     "icon": "🏃",
-     "label": "menyuruh berlari"
+     "icon": "🧑‍🏫👉⬛",
+     "label": "guru menunjuk papan tulis"
     },
     {
-     "icon": "📝",
-     "label": "guru menyuruh menulis karangan"
+     "icon": "🧑‍🏫☕",
+     "label": "guru minum kopi"
     }
    ],
-   "answer": 2,
-   "why": "叫 = menyuruh; 作文 = karangan."
+   "answer": 1,
+   "why": "叫學生看黑板 → menunjuk papan. A dan C tidak cocok."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "✏️",
-    "label": "guru mengoreksi tulisan"
+    "icon": "📝✏️",
+    "label": "mengoreksi karangan"
    },
    "options": [
+    "學生在寫黑板。",
     "老師在唱歌。",
-    "老師寫黑板。",
-    "老師改我的作文。"
+    "老師在改作文。"
    ],
    "answer": 2,
-   "why": "改 = mengoreksi/mengubah."
+   "why": "Mengoreksi dengan pena → 改作文. A dan B tidak cocok."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "📚",
-    "label": "buku tata bahasa"
+    "icon": "👥💬",
+    "label": "diskusi kelompok"
    },
-   "text": "這本書是教（　）的。",
+   "text": "老師叫我們四個人一起（　）這個問題。",
    "options": [
+    "討論",
     "文法",
-    "黑板",
-    "例如"
+    "例子"
    ],
    "answer": 0,
-   "why": "文法 = tata bahasa."
+   "why": "一起討論這個問題 = mendiskusikan bersama. 文法 dan 例子 kata benda."
   },
   {
    "type": "listen_dialog",
@@ -1485,31 +1485,31 @@
    "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "老師叫我們討論這個題目。"
-    },
-    {
      "sp": "女",
-     "zh": "要寫在黑板上嗎？"
+     "zh": "你的作文寫完了嗎？"
     },
     {
      "sp": "男",
-     "zh": "不用，下課以前交作文。"
+     "zh": "寫完了，可是老師叫我再改一次。"
     },
     {
      "sp": "女",
-     "zh": "那我們快開始吧！"
+     "zh": "為什麼？"
+    },
+    {
+     "sp": "男",
+     "zh": "老師說文法用得不對，例子也不夠。"
     }
    ],
-   "question": "下課以前要做什麼？",
+   "question": "這位先生為什麼要再改作文？",
    "options": [
-    "在黑板上寫",
-    "交作文",
-    "改文法",
-    "討論別的題目"
+    "他還沒寫完",
+    "文法用錯了，例子也太少",
+    "題目不對",
+    "老師叫他寫別的題目"
    ],
    "answer": 1,
-   "why": "下課以前交作文. A: 不用. C & D tidak disebut."
+   "why": "文法用得不對，例子也不夠. A kebalikan (寫完了). C dan D tidak disebut."
   }
  ],
  "C36": [
@@ -1524,12 +1524,12 @@
    },
    "question": "你哥哥學什麼？",
    "options": [
-    "歷史。",
-    "法律。",
-    "電腦。"
+    "他學法律。",
+    "他學歷史。",
+    "他學教育。"
    ],
-   "answer": 1,
-   "why": "法律 = hukum."
+   "answer": 0,
+   "why": "Membaca buku hukum → 法律. B dan C bidang lain."
   },
   {
    "type": "listen_pic",
@@ -1542,80 +1542,80 @@
    },
    "question": "你會說什麼話？",
    "options": [
-    "我只會說中文。",
-    "我會說英文。",
-    "除了中文以外，我還會說台語。"
+    "除了中文以外，我什麼都不會說。",
+    "除了中文以外，我還會說台語。",
+    "我只會說台語。"
    ],
-   "answer": 2,
-   "why": "除了……以外，還…… = selain … juga …. \"Lí hó\" = salam dalam 台語."
+   "answer": 1,
+   "why": "Dia mengucapkan 你好 dan 'Lí hó' → Mandarin + Taiwan. A memakai 除了…都 (hanya Mandarin); C hanya Taiwan."
   },
   {
    "type": "listen_reply",
    "part": "聽力 Part 2 · Tanya-jawab satu putaran",
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你對哪方面的知識有興趣？",
+   "audio": "除了你以外，大家都去了嗎？",
    "options": [
-    "我對歷史很有興趣。",
-    "知識很方面。",
-    "我有興趣知識。"
+    "我們去了台中。",
+    "大家都很高興。",
+    "對，只有我沒去。"
    ],
-   "answer": 0,
-   "why": "方面 = bidang."
+   "answer": 2,
+   "why": "除了你以外，大家都… → 只有我沒去. A dan B tidak menjawab."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "這是一家很高級的餐廳。",
+   "text": "這家飯店很高級，房間也很大。",
    "options": [
     {
-     "icon": "🍔",
-     "label": "makanan cepat saji"
+     "icon": "🏚️",
+     "label": "rumah tua"
     },
     {
-     "icon": "🍽️💎",
-     "label": "restoran mewah"
+     "icon": "🏨✨",
+     "label": "hotel mewah"
     },
     {
-     "icon": "🏮",
-     "label": "warung pasar malam"
+     "icon": "⛺",
+     "label": "tenda"
     }
    ],
    "answer": 1,
-   "why": "高級 = kelas atas/mewah."
+   "why": "飯店很高級 → hotel mewah. A dan C tidak cocok."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🏯📜",
-    "label": "sejarah kuno"
+    "icon": "📜🏯",
+    "label": "buku sejarah kuno"
    },
    "options": [
-    "我喜歡學歷史。",
-    "我喜歡學法律。",
-    "我喜歡學現代音樂。"
+    "他在念法律。",
+    "他在學台語。",
+    "他在念歷史。"
    ],
-   "answer": 0,
-   "why": "歷史 = sejarah."
+   "answer": 2,
+   "why": "Gulungan kuno → 歷史. A dan B tidak cocok."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🎩",
-    "label": "acara resmi"
+    "icon": "🧑‍🎓👥",
+    "label": "semua pergi kecuali satu"
    },
-   "text": "這是（　）的會，你要穿好一點。",
+   "text": "除了小明以外，大家（　）去了。",
    "options": [
-    "除了",
-    "知識",
-    "正式"
+    "都",
+    "還",
+    "也"
    ],
-   "answer": 2,
-   "why": "正式 = resmi."
+   "answer": 0,
+   "why": "除了…以外，大家都… = kecuali …, semua …. 還/也 berarti 'selain … juga', tidak cocok dengan 大家."
   },
   {
    "type": "listen_dialog",
@@ -1624,29 +1624,29 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "除了中文以外，你還學什麼？"
+     "zh": "你看新聞嗎？"
     },
     {
      "sp": "男",
-     "zh": "我還學歷史和法律。"
+     "zh": "看，除了新聞以外，我也看雜誌。"
     },
     {
      "sp": "女",
-     "zh": "學這麼多，累不累？"
+     "zh": "什麼雜誌？"
     },
     {
      "sp": "男",
-     "zh": "有一點累，可是我對歷史很有興趣。"
+     "zh": "現代文化的雜誌。"
     }
    ],
-   "question": "這位先生除了中文還學什麼？",
+   "question": "這位先生除了新聞，還看什麼？",
    "options": [
-    "歷史和法律",
-    "台語",
-    "華語"
+    "小說",
+    "雜誌",
+    "電影"
    ],
-   "answer": 0,
-   "why": "我還學歷史和法律. B & C tidak disebut."
+   "answer": 1,
+   "why": "除了新聞以外，我也看雜誌. A dan C tidak disebut."
   }
  ]
 }
