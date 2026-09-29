@@ -3287,12 +3287,12 @@
    },
    "question": "你收到了什麼？",
    "options": [
+    "一個禮物。",
     "一封信。",
-    "一本書。",
-    "一個禮物。"
+    "一本書。"
    ],
-   "answer": 0,
-   "why": "封 = kata bantu untuk surat."
+   "answer": 1,
+   "why": "Amplop dari kotak surat → 一封信. A dan C benda lain."
   },
   {
    "type": "listen_pic",
@@ -3305,12 +3305,12 @@
    },
    "question": "這是誰寫的？",
    "options": [
-    "我知道，是他寫的。",
-    "我看不出來。",
-    "我在看書。"
+    "是我寫的。",
+    "是老師寫的。",
+    "我看不出來。"
    ],
-   "answer": 1,
-   "why": "V不出來 = tidak bisa mengenali …."
+   "answer": 2,
+   "why": "Tulisan berantakan, dia bingung → 看不出來. A dan B tidak cocok dengan wajah bingung."
   },
   {
    "type": "listen_dialog",
@@ -3319,30 +3319,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你收到我的郵件了嗎？"
+     "zh": "你去銀行做什麼？"
     },
     {
      "sp": "男",
-     "zh": "收到了，謝謝。"
+     "zh": "不是存錢，是去換一點日本錢。"
     }
    ],
-   "question": "這位先生收到郵件了嗎？",
+   "question": "這位先生去銀行做什麼？",
    "options": [
     {
-     "icon": "📞",
-     "label": "ditelepon"
+     "icon": "🏦🐷",
+     "label": "menabung"
     },
     {
-     "icon": "📧❌",
-     "label": "belum"
+     "icon": "🏦💱",
+     "label": "menukar uang"
     },
     {
-     "icon": "📧✅",
-     "label": "sudah menerima"
+     "icon": "🏦📝",
+     "label": "membuka rekening"
     }
    ],
-   "answer": 2,
-   "why": "收到了."
+   "answer": 1,
+   "why": "不是存錢，是去換. A dibantah; C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -3351,38 +3351,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你給誰寫信？"
+     "zh": "你收到我的郵件了嗎？"
     },
     {
      "sp": "女",
-     "zh": "我的外婆。"
+     "zh": "收到了，可是信封破了一點。"
     },
     {
      "sp": "男",
-     "zh": "你寫了幾封？"
+     "zh": "裡面的照片呢？"
     },
     {
      "sp": "女",
-     "zh": "兩封，一封給外婆，一封給外公。"
+     "zh": "照片沒問題。"
     }
    ],
-   "question": "這位小姐寫了幾封信？",
+   "question": "什麼破了？",
    "options": [
     {
+     "icon": "🖼️",
+     "label": "foto"
+    },
+    {
      "icon": "✉️",
-     "label": "satu surat"
+     "label": "amplop"
     },
     {
-     "icon": "✉️✉️✉️",
-     "label": "tiga surat"
-    },
-    {
-     "icon": "✉️✉️",
-     "label": "dua surat"
+     "icon": "📄",
+     "label": "surat"
     }
    ],
-   "answer": 2,
-   "why": "兩封."
+   "answer": 1,
+   "why": "信封破了一點. A tidak apa-apa. C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -3391,85 +3391,85 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你看得出來這是誰嗎？"
+     "zh": "你看得出來這張照片裡哪一個是我嗎？"
     },
     {
      "sp": "男",
-     "zh": "看不出來，是誰？"
+     "zh": "看得出來，最右邊那個。"
     },
     {
      "sp": "女",
-     "zh": "是我小時候！"
+     "zh": "你怎麼知道？那時候我才五歲。"
     },
     {
      "sp": "男",
-     "zh": "真的看不出來！"
+     "zh": "因為你笑的樣子一點也沒變。"
     }
    ],
-   "question": "相片裡的人是誰？",
+   "question": "這位先生怎麼看出來的？",
    "options": [
-    "這位小姐小時候",
-    "這位小姐的媽媽",
-    "這位先生小時候",
-    "這位小姐的妹妹"
+    "她站在最右邊",
+    "她笑的樣子沒變",
+    "她五歲",
+    "照片上有名字"
    ],
-   "answer": 0,
-   "why": "是我小時候."
+   "answer": 1,
+   "why": "你笑的樣子一點也沒變 → cara mengenalinya. A = hasilnya, bukan cara. C bukan petunjuk. D tidak disebut."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他把錢存在銀行。",
+   "text": "他每個月都在銀行存兩千塊。",
    "options": [
     {
-     "icon": "🛍️",
+     "icon": "🏦💵⬅️",
+     "label": "mengambil uang dari bank"
+    },
+    {
+     "icon": "🛒💵",
      "label": "berbelanja"
     },
     {
-     "icon": "🍽️",
-     "label": "makan"
-    },
-    {
-     "icon": "💵🏦",
-     "label": "menabung di bank"
+     "icon": "🏦💵➡️",
+     "label": "menyetor uang ke bank"
     }
    ],
    "answer": 2,
-   "why": "存 = menabung."
+   "why": "在銀行存錢 → menyetor. A kebalikannya; C tidak cocok."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "✉️",
-    "label": "amplop beralamat"
+    "icon": "✉️✍️",
+    "label": "membalas surat"
    },
    "options": [
-    "信封裡沒有信。",
-    "這是一張郵票。",
-    "信封上寫著地址。"
+    "他在打電話。",
+    "他在寫回信。",
+    "他在看電視。"
    ],
-   "answer": 2,
-   "why": "信封 = amplop."
+   "answer": 1,
+   "why": "Menulis surat → 寫回信. A dan C tidak cocok."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "📨",
-    "label": "membalas surat"
+    "icon": "✉️",
+    "label": "amplop"
    },
-   "text": "收到信以後，我馬上（　）。",
+   "text": "請把信放在（　）裡，再寄出去。",
    "options": [
     "信封",
     "郵件",
     "回信"
    ],
-   "answer": 2,
-   "why": "回信 = membalas surat."
+   "answer": 0,
+   "why": "Surat dimasukkan ke 信封 (amplop). 郵件 dan 回信 adalah suratnya sendiri."
   },
   {
    "type": "cloze",
@@ -3477,19 +3477,19 @@
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
    "text": "我奶奶住在鄉下，不會用電腦，所以我常常寫信給她。上個月我寫了一（1）長長的信，放進（2）裡，寄到奶奶家。一個星期以後，我（3）到了奶奶的（4）。奶奶說，她把我寫的信都（5）在一個小箱子裡，想我的時候就拿出來看。",
    "options": [
-    "封",
+    "存",
     "信封",
+    "電子郵件",
     "收",
     "回信",
-    "存",
-    "電子郵件"
+    "封"
    ],
    "answers": [
-    0,
+    5,
     1,
-    2,
     3,
-    4
+    4,
+    0
    ],
    "why": "一封信; 放進信封; 收到; 奶奶的回信; 存在箱子裡. 「電子郵件」 bertentangan: nenek tidak bisa pakai komputer."
   },

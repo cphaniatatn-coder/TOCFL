@@ -1938,12 +1938,12 @@
    },
    "question": "你收到什麼？",
    "options": [
+    "一本書。",
     "你的信。",
-    "錢。",
-    "書。"
+    "一張照片。"
    ],
-   "answer": 0,
-   "why": "收到 = menerima."
+   "answer": 1,
+   "why": "Menerima surat dari kotak surat → 你的信. A dan C benda lain."
   },
   {
    "type": "listen_pic",
@@ -1956,80 +1956,80 @@
    },
    "question": "你每個月做什麼？",
    "options": [
-    "買東西。",
-    "存一千塊。",
-    "吃飯。"
+    "花一千塊。",
+    "寄一千塊。",
+    "存一千塊。"
    ],
-   "answer": 1,
-   "why": "存 = menabung."
+   "answer": 2,
+   "why": "Celengan + kalender bulanan → 存錢. A kebalikannya; B tidak cocok."
   },
   {
    "type": "listen_reply",
    "part": "聽力 Part 2 · Tanya-jawab satu putaran",
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你看得出來這是誰寫的嗎？",
+   "audio": "你聽得出來是誰在唱歌嗎？",
    "options": [
-    "我看出來寫。",
-    "誰很出來。",
-    "看得出來，是安妮寫的。"
+    "聽得出來，是我姊姊。",
+    "我喜歡唱歌。",
+    "歌很好聽。"
    ],
-   "answer": 2,
-   "why": "V得出來 = bisa mengenali."
+   "answer": 0,
+   "why": "聽得出來嗎 = bisa mengenali? → 聽得出來 + siapa. B dan C tidak menjawab."
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "桌子上有兩封信。",
+   "text": "她打開信封，拿出一封信。",
    "options": [
     {
-     "icon": "✉️✉️",
-     "label": "dua pucuk surat"
+     "icon": "✉️📮",
+     "label": "memasukkan surat ke kotak pos"
     },
     {
-     "icon": "✉️",
-     "label": "satu surat"
+     "icon": "✉️📄👩",
+     "label": "membuka amplop, mengambil surat"
     },
     {
-     "icon": "📦📦",
-     "label": "dua paket"
+     "icon": "📦",
+     "label": "membuka paket"
     }
    ],
-   "answer": 0,
-   "why": "封 = kata bantu surat."
+   "answer": 1,
+   "why": "打開信封 + 拿出一封信. A kebalikannya; C bukan surat."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "✉️",
-    "label": "amplop"
+    "icon": "🐷🪙",
+    "label": "celengan"
    },
    "options": [
-    "這張郵票很貴。",
-    "這個箱子很重。",
-    "這個信封很漂亮。"
+    "他在花錢。",
+    "他在找錢。",
+    "他在存錢。"
    ],
    "answer": 2,
-   "why": "信封 = amplop."
+   "why": "Celengan → 存錢. A kebalikannya; B tidak cocok."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "📨",
-    "label": "membalas surat"
+    "icon": "✉️✉️",
+    "label": "dua surat"
    },
-   "text": "我明天（　）給你。",
+   "text": "我今天收到了兩（　）信。",
    "options": [
-    "郵件",
-    "回信",
-    "信封"
+    "封",
+    "個",
+    "張"
    ],
-   "answer": 1,
-   "why": "回信 = membalas surat."
+   "answer": 0,
+   "why": "Kata penggolong surat = 封. 個 dan 張 tidak dipakai untuk 信."
   },
   {
    "type": "listen_dialog",
@@ -2037,30 +2037,30 @@
    "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "我收到你的郵件了。"
-    },
-    {
      "sp": "女",
-     "zh": "你回信了嗎？"
+     "zh": "你寄的信我收到了。"
     },
     {
      "sp": "男",
-     "zh": "還沒，我今天晚上回。"
+     "zh": "那你什麼時候回信？"
     },
     {
      "sp": "女",
-     "zh": "好，我等你的回信。"
+     "zh": "我這個週末有空，那時候就回。"
+    },
+    {
+     "sp": "男",
+     "zh": "好，我等你的信。"
     }
    ],
-   "question": "這位先生什麼時候回信？",
+   "question": "這位小姐什麼時候回信？",
    "options": [
-    "今天晚上",
-    "明天",
-    "已經回了"
+    "今天",
+    "這個週末",
+    "下個月"
    ],
-   "answer": 0,
-   "why": "我今天晚上回. C: kebalikan (還沒). B tidak disebut."
+   "answer": 1,
+   "why": "這個週末…就回. A dan C tidak disebut."
   }
  ]
 }
