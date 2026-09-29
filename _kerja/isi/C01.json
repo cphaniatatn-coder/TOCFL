@@ -112,14 +112,14 @@
    "type": "listen_reply",
    "part": "聽力 Part 2 · Tanya-jawab satu putaran",
    "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你吃過飯了嗎？",
+   "audio": "你吃過晚飯了嗎？",
    "options": [
-    "吃過了，我剛才在餐廳吃的。",
-    "我沒吃過這個菜。",
-    "我喜歡吃飯。"
+    "晚飯在餐桌上。",
+    "吃過了，剛才吃的。",
+    "我不喜歡吃晚飯。"
    ],
-   "answer": 0,
-   "why": "吃過飯了嗎 = 'sudah makan?' (V過2). B menjawab seolah-olah pertanyaannya 'pernah mencoba?' (V過1) — jebakan grammar. C satu tema tapi tidak menjawab."
+   "answer": 1,
+   "why": "Ditanya sudah makan atau belum → 吃過了. A hanya menyebut letak makanan; C tidak menjawab pertanyaan."
   },
   {
    "type": "listen_dialog",
@@ -127,30 +127,30 @@
    "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
    "lines": [
     {
-     "sp": "男",
+     "sp": "女",
      "zh": "你功課寫完了嗎？"
     },
     {
+     "sp": "男",
+     "zh": "英文寫完了，中文的還要寫一個小時。"
+    },
+    {
      "sp": "女",
-     "zh": "寫完了，現在要準備考試。"
+     "zh": "那電影呢？我們九點看，好不好？"
     },
     {
      "sp": "男",
-     "zh": "那九點一起看電影，怎麼樣？"
-    },
-    {
-     "sp": "女",
-     "zh": "好，準備完就去。"
+     "zh": "好，寫完功課，我們接著看電影。"
     }
    ],
-   "question": "這位小姐現在要做什麼？",
+   "question": "這位先生現在要先做什麼？",
    "options": [
-    "寫功課",
-    "準備考試",
-    "看電影"
+    "看電影",
+    "寫中文功課",
+    "寫英文功課"
    ],
    "answer": 1,
-   "why": "PR sudah selesai (寫完了); sekarang 要準備考試; film baru nanti jam sembilan setelah 準備完."
+   "why": "PR bahasa Inggris sudah selesai (寫完了); PR bahasa Mandarin masih satu jam lagi, film baru sesudahnya (接著). A = kegiatan berikutnya; C sudah selesai."
   },
   {
    "type": "listen_dialog",
@@ -159,59 +159,67 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你要不要跟我一起吃晚餐？"
+     "zh": "餐桌上的蛋糕呢？"
     },
     {
      "sp": "女",
-     "zh": "謝謝，我剛才吃過了。"
+     "zh": "我剛才看到小明在廚房裡吃。"
+    },
+    {
+     "sp": "男",
+     "zh": "那是我買給媽媽的生日蛋糕啊！"
+    },
+    {
+     "sp": "女",
+     "zh": "我看，已經吃光了吧。"
     }
    ],
    "question": "這位小姐的意思是什麼？",
    "options": [
-    "她現在不跟這位先生吃晚餐。",
-    "她沒吃過晚餐。",
-    "她想請這位先生吃飯。",
-    "她要去廚房做飯。"
+    "小明買了蛋糕",
+    "蛋糕在餐桌上",
+    "蛋糕可能沒有了",
+    "媽媽吃了蛋糕"
    ],
-   "answer": 0,
-   "why": "剛才吃過了 = menolak ajakan secara halus karena sudah makan. B = salah membaca V過2 sebagai V過1 (pembalikan). C = salah menafsirkan basa-basi. D tidak ada dasarnya di dialog."
+   "answer": 2,
+   "why": "已經吃光了吧 = mungkin sudah habis dimakan. A terbalik: kue dibeli si laki-laki. B: kue sudah tidak di meja. D: yang makan 小明."
   },
   {
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
-   "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-   "text": "今天晚上，我和室友在宿舍的（1）做飯。我們做了三個菜，（2）就在（3）上吃。菜很好吃，二十分鐘就吃（4）了。吃完以後，室友洗碗，我（5）去寫功課。",
+   "instr": "Pilih frasa yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
+   "text": "昨天我七點才下課，回到宿舍，覺得很餓。我到廚房一看，餐桌上（1），只有一碗炒飯。室友說：「那是我做的，你吃吧！」我很快就（2），真好吃。吃完飯，我洗了碗，然後（3）。十點功課寫完了，室友問我要不要一起看電影，我們就（4）。電影很長，十二點才（5），所以今天早上我很累。",
    "options": [
-    "廚房",
-    "做完",
-    "餐桌",
-    "光",
-    "接著",
-    "看過"
+    "結束",
+    "吃光了",
+    "接著看了一部電影",
+    "開始寫功課",
+    "已經吃過了",
+    "沒有什麼菜"
    ],
    "answers": [
-    0,
+    5,
     1,
-    2,
     3,
-    4
+    2,
+    0
    ],
-   "why": "(1) tempat memasak → 廚房. (2) selesai memasak lalu langsung makan → 做完. (3) 在餐桌上吃. (4) 吃光了 = habis. (5) urutan kegiatan → 接著. 看過 tidak cocok di titik mana pun."
+   "why": "(1) meja hampir kosong, hanya ada nasi goreng. (2) cepat dihabiskan (吃光了). (3) sesudah makan & cuci piring → mulai mengerjakan PR. (4) lanjut menonton film. (5) film baru selesai jam 12. 「已經吃過了」 bertentangan: dia datang dalam keadaan lapar."
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca pengumuman ini, lalu pilih jawaban yang benar.",
-   "text": "注意：宿舍的廚房每天早上六點開，晚上十點關。晚上十點以後，廚房已關門，不能做飯。用完廚房，碗和筷子要自己洗乾淨。",
-   "question": "哪一個是對的？",
+   "text": "我的室友安安每天都很忙。今天她早上八點就去學校了，晚上九點才回來。她說中午只吃了一個麵包，晚飯也沒吃。我剛才做了一些湯，還在廚房裡，就請她吃。她很快就吃光了，接著又去寫功課。她說功課明天早上要交，今天一定要寫完。",
+   "question": "這個人覺得安安今天怎麼樣？",
    "options": [
-    "晚上十一點可以在廚房做飯。",
-    "用完廚房，要自己洗碗。",
-    "廚房早上十點開。",
-    "廚房晚上不關門。"
+    "很忙，也很餓",
+    "很忙，可是不餓",
+    "很早就回家了",
+    "不想寫功課"
    ],
-   "answer": 1,
-   "why": "Teks: 碗和筷子要自己洗乾淨. A dan D membalik makna (已關門，不能做飯). C mencampur angka (十點 itu jam tutup, bukan buka)."
+   "answer": 0,
+   "why": "Seharian sibuk, hanya makan roti, lalu cepat menghabiskan sup → sibuk dan lapar. B bertentangan dengan 很快就吃光了. C: dia baru pulang jam 9 malam. D: PR-nya 一定要寫完."
   }
  ],
  "grammar": [

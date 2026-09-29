@@ -17271,14 +17271,14 @@
     "label": "he is cooking in the kitchen",
     "img": "C01-3"
    },
-   "question": "他在哪裡做飯？",
+   "question": "他在做什麼？",
    "options": [
-    "在廚房。",
-    "在房間。",
-    "在客廳。"
+    "他在廚房做飯。",
+    "他在餐桌上吃飯。",
+    "他在廚房洗碗。"
    ],
    "answer": 0,
-   "why": "廚房 = kitchen.",
+   "why": "He is cooking in the kitchen → 做飯. B: he is not eating. C: the same place (kitchen) but a different activity.",
    "id": "C01-01"
   },
   {
@@ -17293,11 +17293,11 @@
    "question": "蛋糕呢？",
    "options": [
     "還有很多。",
-    "在冰箱裡。",
-    "都吃光了。"
+    "都吃光了。",
+    "在冰箱裡。"
    ],
-   "answer": 2,
-   "why": "V光 = completely used up: 吃光了.",
+   "answer": 1,
+   "why": "The cake plate is empty with only crumbs → 吃光了. A is the opposite; C does not match the picture.",
    "id": "C01-02"
   },
   {
@@ -17307,30 +17307,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你看完這本書了嗎？"
+     "zh": "你吃過早飯了嗎？"
     },
     {
      "sp": "男",
-     "zh": "看完了。"
+     "zh": "沒時間吃，只喝了一杯咖啡。"
     }
    ],
-   "question": "這位先生的書看得怎麼樣？",
+   "question": "這位先生早上吃了什麼？",
    "options": [
     {
-     "icon": "📖✅",
-     "label": "finished reading"
+     "icon": "☕",
+     "label": "a cup of coffee"
     },
     {
-     "icon": "📖⏳",
-     "label": "only halfway"
+     "icon": "🍞☕",
+     "label": "bread and coffee"
     },
     {
-     "icon": "📖❌",
-     "label": "not reading"
+     "icon": "🍳",
+     "label": "egg"
     }
    ],
    "answer": 0,
-   "why": "看完了 = finished reading.",
+   "why": "沒時間吃，只喝了一杯咖啡 → just coffee. B adds bread he did not eat; C is not mentioned.",
    "id": "C01-03"
   },
   {
@@ -17340,38 +17340,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你吃過晚飯了嗎？"
+     "zh": "你看過這部電影嗎？"
     },
     {
      "sp": "女",
-     "zh": "吃過了，你呢？"
+     "zh": "看過，去年在印尼看過一次。"
     },
     {
      "sp": "男",
-     "zh": "我剛才吃了一點。"
+     "zh": "那今天我們看別的吧。"
     },
     {
      "sp": "女",
-     "zh": "好，我們去看電影吧。"
+     "zh": "沒關係，我很想再看一次。"
     }
    ],
-   "question": "他們接著要做什麼？",
+   "question": "這位小姐想做什麼？",
    "options": [
     {
-     "icon": "🍽️",
-     "label": "dinner"
+     "icon": "🎬🔁",
+     "label": "watching the same film again"
     },
     {
-     "icon": "🛌",
-     "label": "to sleep"
+     "icon": "🎞️",
+     "label": "watching a different film"
     },
     {
-     "icon": "🎬",
-     "label": "watching a film"
+     "icon": "🏠",
+     "label": "going home"
     }
    ],
-   "answer": 2,
-   "why": "They've both eaten → 去看電影.",
+   "answer": 0,
+   "why": "我很想再看一次 → watch the same film again. B is the man's suggestion, which she turns down (沒關係…). C is not mentioned.",
    "id": "C01-04"
   },
   {
@@ -17381,53 +17381,53 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "作業寫完了嗎？"
+     "zh": "你怎麼還在廚房？電影已經開始了。"
     },
     {
      "sp": "男",
-     "zh": "寫完了，接著要洗澡。"
+     "zh": "碗太多了，我還要洗十分鐘。"
     },
     {
      "sp": "女",
-     "zh": "洗澡以後呢？"
+     "zh": "別洗了，看完電影我來洗。"
     },
     {
      "sp": "男",
-     "zh": "洗澡以後就睡覺。"
+     "zh": "好，那我們一起去看吧。"
     }
    ],
-   "question": "這位先生最後要做什麼？",
+   "question": "這位先生接著要做什麼？",
    "options": [
-    "吃飯",
-    "洗澡",
-    "寫作業",
-    "睡覺"
+    "洗完碗再去看",
+    "跟這位小姐去看電影",
+    "自己一個人看電影",
+    "去廚房做飯"
    ],
-   "answer": 3,
-   "why": "Order: homework → shower → bed.",
+   "answer": 1,
+   "why": "別洗了 + 我們一起去看吧 → watch together now. A is the original plan, now dropped. C: they watch together. D is not mentioned.",
    "id": "C01-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "餐桌上有很多菜。",
+   "text": "吃完晚飯，妹妹在廚房洗碗。",
    "options": [
     {
-     "icon": "🛏️",
-     "label": "a bed"
+     "icon": "👧🍳",
+     "label": "a girl cooking"
     },
     {
-     "icon": "🍽️🍲",
-     "label": "a dining table full of food"
+     "icon": "👧🍽️",
+     "label": "a girl eating"
     },
     {
-     "icon": "🍽️",
-     "label": "an empty table"
+     "icon": "👧🍽️🧽",
+     "label": "a girl washing the dishes"
     }
    ],
-   "answer": 1,
-   "why": "餐桌 = dining table.",
+   "answer": 2,
+   "why": "吃完晚飯 → dinner is over; 洗碗 = washing the dishes. A and B are other activities.",
    "id": "C01-06"
   },
   {
@@ -17435,16 +17435,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🍽️✨",
-    "label": "an empty plate"
+    "icon": "🍽️🪑🪑🪑🪑",
+    "label": "a dining table with four chairs"
    },
    "options": [
-    "菜都吃光了。",
-    "菜還很多。",
-    "菜很辣。"
+    "餐桌旁邊有兩張椅子。",
+    "餐桌旁邊有四張椅子。",
+    "餐桌上有四個碗。"
    ],
-   "answer": 0,
-   "why": "吃光 = eaten up.",
+   "answer": 1,
+   "why": "There are four chairs → 四張椅子. A is the wrong number; C is the wrong object (bowls).",
    "id": "C01-07"
   },
   {
@@ -17452,17 +17452,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "✅",
-    "label": "have already"
+    "icon": "🍚✅",
+    "label": "the rice is all gone"
    },
-   "text": "這部電影我（　）看過了。",
+   "text": "炒飯太好吃了，我們都吃（　）了。",
    "options": [
-    "已",
     "光",
-    "完"
+    "過",
+    "剛"
    ],
    "answer": 0,
-   "why": "已 = already (written style).",
+   "why": "吃光了 = eaten up. 吃過了 = have eaten (not necessarily all of it); 剛 = just now, which cannot go here.",
    "id": "C01-08"
   },
   {
@@ -17472,18 +17472,18 @@
    "text": "今天晚上我跟室友在宿舍做晚飯。下課以後，我們（1），就一起到廚房做菜。我們做了四個菜，都放在（2）。菜很好吃，大家很快就（3）。吃完飯，（4），我去洗碗。九點，我們的晚飯才（5），大家都很高興。",
    "options": [
     "去超市買菜",
+    "室友接著去洗澡",
+    "已經睡覺了",
     "餐桌上",
     "都吃光了",
-    "室友接著去洗澡",
-    "結束",
-    "已經睡覺了"
+    "結束"
    ],
    "answers": [
     0,
-    1,
-    2,
     3,
-    4
+    4,
+    1,
+    5
    ],
    "why": "去超市買菜 → only then can they cook; 放在餐桌上; 吃光了 = all gone; 接著 = next (the friend showers, I do the dishes); 才結束 = didn't finish until. 「已經睡覺了」 doesn't fit any blank: they're still eating & washing up.",
    "id": "C01-09"
@@ -17517,12 +17517,12 @@
    },
    "question": "他可以坐在書桌上嗎？",
    "options": [
-    "可以。",
+    "可以，書桌很大。",
     "請別坐在書桌上。",
-    "請坐在沙發上。"
+    "書桌在沙發旁邊。"
    ],
    "answer": 1,
-   "why": "別 + V = don't …. A cross over the desk.",
+   "why": "The sign says do not sit on the desk → 請別坐. A is the opposite; C does not answer.",
    "id": "C02-01"
   },
   {
@@ -17536,12 +17536,12 @@
    },
    "question": "衣服怎麼樣？",
    "options": [
-    "很乾淨。",
-    "很髒。",
-    "很新。"
+    "很新，很漂亮。",
+    "太大了。",
+    "很髒，要洗一下。"
    ],
-   "answer": 1,
-   "why": "髒 = dirty (stains).",
+   "answer": 2,
+   "why": "The shirt is covered in stains → 很髒. A is the opposite; B is about size, which is not shown.",
    "id": "C02-02"
   },
   {
@@ -17551,30 +17551,30 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你可以等我一下嗎？"
+     "zh": "你的包呢？放在沙發上嗎？"
     },
     {
      "sp": "女",
-     "zh": "好，你快一點。"
+     "zh": "不是，我放在書桌上了。"
     }
    ],
-   "question": "這位小姐要做什麼？",
+   "question": "包在哪裡？",
    "options": [
     {
-     "icon": "🏃",
-     "label": "going first"
+     "icon": "🛋️👜",
+     "label": "on the sofa"
     },
     {
-     "icon": "⏳",
-     "label": "waiting a moment"
+     "icon": "🗄️👜",
+     "label": "in the cupboard"
     },
     {
-     "icon": "👋",
-     "label": "saying goodbye"
+     "icon": "🪑👜",
+     "label": "on the desk"
     }
    ],
-   "answer": 1,
-   "why": "V一下 = for a moment.",
+   "answer": 2,
+   "why": "不是 rejects the sofa → 書桌上. A is the guess that is rejected; B is not mentioned.",
    "id": "C02-03"
   },
   {
@@ -17583,39 +17583,39 @@
    "instr": "Listen to the dialogue, then choose the picture that answers the question.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "你的書在哪裡？"
-    },
-    {
      "sp": "男",
-     "zh": "在書架上。"
+     "zh": "我們的沙發太舊了，去買一個新的吧。"
     },
     {
      "sp": "女",
-     "zh": "書架上沒有啊！"
+     "zh": "沙發還可以用，可是櫃子壞了。"
     },
     {
      "sp": "男",
-     "zh": "你看一下櫃子裡。"
+     "zh": "好，那我們先買櫃子。"
+    },
+    {
+     "sp": "女",
+     "zh": "對，別買太貴的。"
     }
    ],
-   "question": "這位小姐應該去哪裡找？",
+   "question": "他們要買什麼？",
    "options": [
     {
+     "icon": "🛋️",
+     "label": "sofa"
+    },
+    {
      "icon": "🗄️",
-     "label": "in the cupboard"
+     "label": "cupboard, cabinet"
     },
     {
-     "icon": "🖥️",
-     "label": "on the desk"
-    },
-    {
-     "icon": "📚",
-     "label": "on the bookshelf"
+     "icon": "🪑",
+     "label": "chair"
     }
    ],
-   "answer": 0,
-   "why": "The shelf is empty → 櫃子裡.",
+   "answer": 1,
+   "why": "先買櫃子 → a cabinet. A is the first suggestion, turned down (還可以用). C is not mentioned.",
    "id": "C02-04"
   },
   {
@@ -17624,54 +17624,54 @@
    "instr": "Listen to the dialogue, then choose the most suitable answer.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你的房間又亂又髒！"
-    },
-    {
      "sp": "女",
-     "zh": "對不起，我今天很忙。"
+     "zh": "你看一下，這件衣服怎麼這麼髒？"
     },
     {
      "sp": "男",
-     "zh": "別說了，趕快去洗衣服！"
+     "zh": "我昨天去公園踢足球了。"
     },
     {
      "sp": "女",
-     "zh": "好，我馬上去。"
+     "zh": "你趕快洗一下吧，明天還要穿。"
+    },
+    {
+     "sp": "男",
+     "zh": "明天我穿別的吧。"
     }
    ],
-   "question": "這位先生是什麼意思？",
+   "question": "這位先生的意思是什麼？",
    "options": [
-    "這位先生要幫這位小姐",
-    "這位小姐很忙",
-    "這位小姐應該馬上洗衣服",
-    "房間很乾淨"
+    "他明天還要踢足球",
+    "他沒有別的衣服",
+    "他已經洗好了",
+    "他今天不想洗衣服"
    ],
-   "answer": 2,
-   "why": "趕快 = quickly.",
+   "answer": 3,
+   "why": "明天我穿別的吧 = I'll wear something else tomorrow → he does not want to wash it now. A is not mentioned. B is the opposite (he has other clothes). C: the shirt is still dirty.",
    "id": "C02-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "沙發上有一隻貓。",
+   "text": "書桌上又亂又髒，都是書和紙。",
    "options": [
     {
-     "icon": "🪑🐕",
-     "label": "a dog on a chair"
+     "icon": "🗄️✨",
+     "label": "a tidy, clean desk"
     },
     {
-     "icon": "🛏️🐈",
-     "label": "a cat on the bed"
+     "icon": "📚📄🗑️",
+     "label": "a messy desk covered in books and paper"
     },
     {
-     "icon": "🛋️🐈",
-     "label": "a cat on the sofa"
+     "icon": "🛋️",
+     "label": "a clean sofa"
     }
    ],
-   "answer": 2,
-   "why": "沙發 = sofa.",
+   "answer": 1,
+   "why": "又亂又髒 + 書和紙 → a messy desk. A is the opposite; C is a different object.",
    "id": "C02-06"
   },
   {
@@ -17679,16 +17679,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "👔",
-    "label": "clothes on a hanger"
+    "icon": "🛋️🆕",
+    "label": "a new sofa"
    },
    "options": [
-    "這是衣架。",
-    "這是沙發。",
-    "這是書架。"
+    "我們買了一個新沙發。",
+    "這個沙發很舊了。",
+    "沙發壞了。"
    ],
    "answer": 0,
-   "why": "衣架 = clothes hanger.",
+   "why": "A NEW label → a new sofa. B and C are the opposite.",
    "id": "C02-07"
   },
   {
@@ -17696,17 +17696,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🛋️",
-    "label": "household furniture"
+    "icon": "🚫🛋️",
+    "label": "no sitting on the sofa"
    },
-   "text": "我的新家沒有（　），我要去買。",
+   "text": "這是新沙發，你（　）坐！",
    "options": [
-    "趕快",
-    "家具",
-    "髒"
+    "要",
+    "別",
+    "趕快"
    ],
    "answer": 1,
-   "why": "家具 = furniture.",
+   "why": "A no-sitting sign → 別 (don't). 要 and 趕快 would tell you to sit.",
    "id": "C02-08"
   },
   {
@@ -17715,19 +17715,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "我的室友小文什麼都好，就是房間又亂又髒。他的書不放在（1），都放在地上；衣服也不掛在（2），都放在沙發上。上個星期我的朋友要來，我請他趕快（3）。他說：「好，明天吧。」可是（4），他的房間還是一樣亂。最後，（5），我們兩個人一起做了一個下午。",
    "options": [
+    "我只能幫他",
     "書架上",
     "衣架上",
     "放好自己的東西",
-    "到了第二天",
-    "我只能幫他",
-    "他的書桌很乾淨"
+    "他的書桌很乾淨",
+    "到了第二天"
    ],
    "answers": [
-    0,
     1,
     2,
     3,
-    4
+    5,
+    0
    ],
    "why": "書放在書架上; 衣服掛在衣架上; 請他趕快打掃; 到了第二天 still messy; 我只好幫他 → the two of them tidy up. 「他的書桌很乾淨」 contradicts 又亂又髒.",
    "id": "C02-09"
@@ -17761,12 +17761,12 @@
    },
    "question": "洗衣機怎麼了？",
    "options": [
-    "電視壞了。",
     "洗衣機壞了。",
-    "洗衣機很好。"
+    "洗衣機很新。",
+    "洗衣機裡有很多衣服。"
    ],
-   "answer": 1,
-   "why": "洗衣機 = washing machine; 壞了 = broken.",
+   "answer": 0,
+   "why": "The machine is smoking → 壞了. B is the opposite; C is not shown.",
    "id": "C03-01"
   },
   {
@@ -17780,12 +17780,12 @@
    },
    "question": "衣服乾了嗎？",
    "options": [
-    "衣服乾了。",
-    "衣服破了。",
-    "衣服很髒。"
+    "還在洗衣機裡。",
+    "衣服很髒。",
+    "都乾了，可以拿進來了。"
    ],
-   "answer": 0,
-   "why": "乾 = dry.",
+   "answer": 2,
+   "why": "The clothes are hanging in the sun and are dry → 都乾了. A is the wrong place; B: the clothes are clean.",
    "id": "C03-02"
   },
   {
@@ -17795,30 +17795,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你把碗洗了嗎？"
+     "zh": "垃圾你拿出去了嗎？"
     },
     {
      "sp": "男",
-     "zh": "洗了。"
+     "zh": "我等一下拿，現在要洗碗。"
     }
    ],
-   "question": "碗怎麼樣？",
+   "question": "這位先生現在要做什麼？",
    "options": [
     {
-     "icon": "🍽️🟤",
-     "label": "still dirty"
+     "icon": "🗑️",
+     "label": "taking out the rubbish"
     },
     {
-     "icon": "🍽️💔",
-     "label": "broken (smashed)"
+     "icon": "🍽️🧽",
+     "label": "washing the dishes"
     },
     {
-     "icon": "🍽️✅",
-     "label": "already washed"
+     "icon": "👕",
+     "label": "washing clothes"
     }
    ],
-   "answer": 2,
-   "why": "把碗洗了 = already washed.",
+   "answer": 1,
+   "why": "現在要洗碗 → washing the dishes. A comes later (等一下). C is not mentioned.",
    "id": "C03-03"
   },
   {
@@ -17827,39 +17827,39 @@
    "instr": "Listen to the dialogue, then choose the picture that answers the question.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "我的書破了。"
-    },
-    {
      "sp": "女",
-     "zh": "誰弄破的？"
+     "zh": "這個袋子破了，不能裝垃圾了。"
     },
     {
      "sp": "男",
-     "zh": "我弟弟。"
+     "zh": "用那個大一點的吧。"
     },
     {
      "sp": "女",
-     "zh": "我幫你買一本新的吧。"
+     "zh": "大的在哪裡？"
+    },
+    {
+     "sp": "男",
+     "zh": "在洗衣機旁邊。"
     }
    ],
-   "question": "誰弄破了書？",
+   "question": "大袋子在哪裡？",
    "options": [
     {
-     "icon": "👦",
-     "label": "younger brother"
+     "icon": "🗑️",
+     "label": "in the rubbish bin"
     },
     {
-     "icon": "🐕",
-     "label": "dog"
+     "icon": "🧺🌀",
+     "label": "next to the washing machine"
     },
     {
-     "icon": "👩",
-     "label": "the woman"
+     "icon": "🚪",
+     "label": "at the door"
     }
    ],
-   "answer": 0,
-   "why": "我弟弟.",
+   "answer": 1,
+   "why": "在洗衣機旁邊. A and C are not mentioned.",
    "id": "C03-04"
   },
   {
@@ -17868,54 +17868,54 @@
    "instr": "Listen to the dialogue, then choose the most suitable answer.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "請你把垃圾拿出去。"
-    },
-    {
      "sp": "男",
-     "zh": "等一下，我在看電視。"
+     "zh": "媽，我的球鞋呢？"
     },
     {
      "sp": "女",
-     "zh": "你每次都說等一下！"
+     "zh": "太髒了，我把它洗了。"
     },
     {
      "sp": "男",
-     "zh": "好好好，我現在去。"
+     "zh": "可是我下午要去打球啊！"
+    },
+    {
+     "sp": "女",
+     "zh": "那你今天穿別的鞋吧，它現在還不乾。"
     }
    ],
-   "question": "這位小姐是什麼意思？",
+   "question": "這位先生下午可能怎麼樣？",
    "options": [
-    "這位先生很快就做",
-    "這位先生每次都不馬上做",
-    "這位小姐想看電視",
-    "垃圾已經拿出去了"
+    "不去打球了",
+    "穿別的鞋去打球",
+    "穿髒的球鞋去打球",
+    "在家洗鞋子"
    ],
    "answer": 1,
-   "why": "An implied complaint: 每次都說等一下.",
+   "why": "The trainers are still wet → mum tells him 穿別的鞋. A is not mentioned. C: the shoes have been washed and are still wet. D: mum has already washed them.",
    "id": "C03-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "她把水果裝進袋子裡。",
+   "text": "我的書包破了，書都掉出來了。",
    "options": [
     {
-     "icon": "🍎🗑️",
-     "label": "throwing fruit away"
+     "icon": "🎒📚⬇️",
+     "label": "a torn bag with books falling out"
     },
     {
-     "icon": "🍎🍽️",
-     "label": "putting fruit on a plate"
+     "icon": "🎒✨",
+     "label": "a new bag"
     },
     {
-     "icon": "🍎🛍️",
-     "label": "putting fruit into a bag"
+     "icon": "🎒📚",
+     "label": "a bag full of books"
     }
    ],
-   "answer": 2,
-   "why": "裝進 = to put into.",
+   "answer": 0,
+   "why": "破了 + 書都掉出來了 → a torn bag, books falling out. B is the opposite; in C the books are still inside.",
    "id": "C03-06"
   },
   {
@@ -17923,16 +17923,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🗑️",
-    "label": "a full rubbish bin"
+    "icon": "🗑️🛍️",
+    "label": "a full rubbish bag"
    },
    "options": [
-    "垃圾很乾淨。",
-    "垃圾不多。",
-    "垃圾很多。"
+    "垃圾袋裡沒有東西。",
+    "垃圾袋裡都是垃圾。",
+    "垃圾袋破了。"
    ],
-   "answer": 2,
-   "why": "垃圾 = rubbish.",
+   "answer": 1,
+   "why": "The bag is full → 都是垃圾. A is the opposite; C is not shown.",
    "id": "C03-07"
   },
   {
@@ -17940,17 +17940,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "👖🕳️",
-    "label": "torn trousers"
+    "icon": "👕👖🌀",
+    "label": "washing clothes in a machine"
    },
-   "text": "我的褲子（　）了。",
+   "text": "衣服太多了，我們用（　）洗吧。",
    "options": [
-    "乾",
-    "破",
-    "裝"
+    "袋子",
+    "洗衣機",
+    "垃圾"
    ],
    "answer": 1,
-   "why": "破 = torn.",
+   "why": "Lots of clothes → wash them in the 洗衣機. 袋子 and 垃圾 are not for washing.",
    "id": "C03-08"
   },
   {
@@ -17959,19 +17959,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "我跟兩個朋友一起住，家裡的事我們三個人一起做。小王每天晚上（1），拿到外頭去。小李把大家的衣服（2），洗好以後，再掛在外頭，（3）就乾了。我每天把碗洗了。昨天我洗碗，（4），小李說：「沒關係，你把破碗（5），拿到外頭就好。」",
    "options": [
-    "把垃圾裝好",
     "放進洗衣機",
+    "把垃圾裝好",
     "兩三個小時",
+    "把房間弄亂了",
     "不小心把一個碗弄破了",
-    "裝在袋子裡",
-    "把房間弄亂了"
+    "裝在袋子裡"
    ],
    "answers": [
-    0,
     1,
+    0,
     2,
-    3,
-    4
+    4,
+    5
    ],
    "why": "把垃圾裝好 then take it out; 放進洗衣機; 兩三個小時就乾了; 把碗弄破了 → there's a 破碗; 裝在袋子裡丟掉 so nobody cuts their hands. 「把房間弄亂了」 doesn't fit anywhere.",
    "id": "C03-09"
@@ -18005,12 +18005,12 @@
    },
    "question": "你家有幾層？",
    "options": [
-    "兩層。",
-    "一層。",
-    "十層。"
+    "有兩層。",
+    "有三個臥室。",
+    "在二樓。"
    ],
    "answer": 0,
-   "why": "層 = floor, storey.",
+   "why": "A two-storey house → 兩層. B gives the number of bedrooms; C gives a location.",
    "id": "C04-01"
   },
   {
@@ -18022,14 +18022,14 @@
     "label": "they carry a table into the yard",
     "img": "C04-5"
    },
-   "question": "把桌子放在哪裡？",
+   "question": "他們把桌子搬到哪裡去？",
    "options": [
-    "放在客廳。",
-    "放在院子裡。",
-    "放在臥室。"
+    "搬到樓上去。",
+    "搬到院子裡去。",
+    "搬到臥室去。"
    ],
    "answer": 1,
-   "why": "院子裡 = in the yard.",
+   "why": "The table is carried into the yard → 院子裡. A and C are places inside the house.",
    "id": "C04-02"
   },
   {
@@ -18039,30 +18039,30 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "你的臥室在哪裡？"
+     "zh": "我的鞋子呢？"
     },
     {
      "sp": "女",
-     "zh": "在二樓。"
+     "zh": "在床底下，不在門口。"
     }
    ],
-   "question": "這位小姐的臥室在哪裡？",
+   "question": "鞋子在哪裡？",
    "options": [
     {
-     "icon": "🛏️⬆️",
-     "label": "2nd floor"
+     "icon": "🚪👟",
+     "label": "at the door"
     },
     {
-     "icon": "🛏️⬇️",
-     "label": "1st floor"
+     "icon": "🛏️👟",
+     "label": "under the bed"
     },
     {
-     "icon": "🛏️",
-     "label": "3rd floor"
+     "icon": "🛋️👟",
+     "label": "on the sofa"
     }
    ],
-   "answer": 0,
-   "why": "在二樓.",
+   "answer": 1,
+   "why": "在床底下. A is mentioned but rejected (不在門口). C is not mentioned.",
    "id": "C04-03"
   },
   {
@@ -18072,30 +18072,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "這個沙發要放在哪裡？"
+     "zh": "這座房子真大！有幾個臥室？"
     },
     {
      "sp": "男",
-     "zh": "放在客廳吧。"
+     "zh": "四個，都在樓上。"
     },
     {
      "sp": "女",
-     "zh": "這張床呢？"
+     "zh": "樓下呢？"
     },
     {
      "sp": "男",
-     "zh": "搬到臥房去。"
+     "zh": "樓下是客廳和廚房。"
     }
    ],
-   "question": "床要放在哪裡？",
+   "question": "樓下有什麼？",
    "options": [
-    {
-     "icon": "🛋️",
-     "label": "living room"
-    },
     {
      "icon": "🛏️",
      "label": "bedroom"
+    },
+    {
+     "icon": "🛋️🍳",
+     "label": "the living room and kitchen"
     },
     {
      "icon": "🌳",
@@ -18103,7 +18103,7 @@
     }
    ],
    "answer": 1,
-   "why": "搬到臥房去.",
+   "why": "樓下是客廳和廚房. A: the bedrooms are upstairs. C is not mentioned.",
    "id": "C04-04"
   },
   {
@@ -18113,53 +18113,53 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "這座房子有幾層？"
+     "zh": "媽，我可以把小狗帶到臥室去嗎？"
     },
     {
      "sp": "女",
-     "zh": "三層，每層有兩個房間。"
+     "zh": "狗很髒，別帶到樓上去。"
     },
     {
      "sp": "男",
-     "zh": "院子大嗎？"
+     "zh": "我昨天才洗過。"
     },
     {
      "sp": "女",
-     "zh": "很大，可以踢球。"
+     "zh": "那也不行，讓狗在院子裡玩吧。"
     }
    ],
-   "question": "這座房子有幾個房間？",
+   "question": "媽媽的意思是什麼？",
    "options": [
-    "兩個",
-    "五個",
-    "三個",
-    "六個"
+    "狗應該洗澡了",
+    "她要把狗送給別人",
+    "狗不可以在臥室裡",
+    "狗可以在樓上玩"
    ],
-   "answer": 3,
-   "why": "3 floors × 2 rooms = 6 (work it out).",
+   "answer": 2,
+   "why": "別帶到樓上去 + 那也不行 → the dog still may not go in the bedroom. A: the dog was just washed. B is not mentioned. D is the opposite.",
    "id": "C04-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "床底下有一雙鞋子。",
+   "text": "爸爸把新沙發放在客廳裡了。",
    "options": [
     {
-     "icon": "🛏️👟",
-     "label": "shoes under the bed"
+     "icon": "🛋️📺",
+     "label": "a sofa in the living room"
     },
     {
-     "icon": "🛏️",
-     "label": "just the bed"
+     "icon": "🛋️🛏️",
+     "label": "a sofa in the bedroom"
     },
     {
-     "icon": "🪑👟",
-     "label": "shoes under the chair"
+     "icon": "🛋️🌳",
+     "label": "a sofa in the yard"
     }
    ],
    "answer": 0,
-   "why": "底下 = underneath.",
+   "why": "放在客廳裡 → the living room. B and C are other places.",
    "id": "C04-06"
   },
   {
@@ -18171,12 +18171,12 @@
     "label": "a house with a yard"
    },
    "options": [
-    "這座房子有院子。",
     "這座房子沒有院子。",
-    "這座房子在大樓裡。"
+    "這座房子有院子。",
+    "這是一座很高的大樓。"
    ],
-   "answer": 0,
-   "why": "院子 = yard.",
+   "answer": 1,
+   "why": "A house with a yard → 有院子. A is the opposite; C is a tall building, not a house.",
    "id": "C04-07"
   },
   {
@@ -18184,17 +18184,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "📦",
-    "label": "moving a box upstairs"
+    "icon": "🚪👟",
+    "label": "shoes moved to the door"
    },
-   "text": "請把這個東西搬到樓上（　）。",
+   "text": "你的鞋子別放在床底下，把它們放（　）門口去。",
    "options": [
-    "去",
+    "到",
     "在",
-    "層"
+    "給"
    ],
    "answer": 0,
-   "why": "把 O 搬到 + place + 去.",
+   "why": "Pattern 把 O V到 + place + 去: 放到門口去. 放在門口去 is wrong because 在 does not combine with 去; 給 is for people.",
    "id": "C04-08"
   },
   {
@@ -18203,19 +18203,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "我們上個月搬到一（1）房子。一樓是客廳和廚房，（2），每個人都有自己的房間。房子前面還有（3），天氣好，我們就在那裡喝茶。搬家那天，我們把沙發放在客廳，把書桌（4）。最後大家都累了，我的小狗也累了，就在（5）睡覺。",
    "options": [
-    "座兩層樓的",
     "二樓有三個臥室",
-    "一個小院子",
-    "放在臥房的窗戶旁邊",
     "床底下",
-    "廳裡沒有家具"
+    "放在臥房的窗戶旁邊",
+    "座兩層樓的",
+    "廳裡沒有家具",
+    "一個小院子"
    ],
    "answers": [
-    0,
-    1,
-    2,
     3,
-    4
+    0,
+    5,
+    2,
+    1
    ],
    "why": "一座兩層樓的房子; 二樓有三個臥室 → everyone has a room; 前面有一個小院子; 書桌放在窗戶旁邊; 小狗在床底下. 「廳裡沒有家具」 contradicts it: the sofa is put in the living room.",
    "id": "C04-09"
@@ -18491,14 +18491,14 @@
     "label": "a bathroom: two towels on the rail",
     "img": "C06-4"
    },
-   "question": "浴室裡放著幾條毛巾？",
+   "question": "浴室裡掛著什麼？",
    "options": [
-    "兩條。",
-    "沒有毛巾。",
-    "一條。"
+    "掛著一條毛巾。",
+    "掛著兩條毛巾。",
+    "放著兩支牙刷。"
    ],
-   "answer": 0,
-   "why": "兩條毛巾 = two towels.",
+   "answer": 1,
+   "why": "Two towels are hanging → 掛著兩條毛巾. A is the wrong number; C is the wrong object.",
    "id": "C06-01"
   },
   {
@@ -18510,14 +18510,14 @@
     "label": "a bottle of shampoo",
     "img": "C06-5"
    },
-   "question": "你要買什麼？",
+   "question": "這是什麼？",
    "options": [
-    "洗髮精。",
-    "衛生紙。",
-    "牙刷。"
+    "這是一瓶洗髮精。",
+    "這是一塊肥皂。",
+    "這是一條牙膏。"
    ],
    "answer": 0,
-   "why": "洗髮精 = shampoo.",
+   "why": "A shampoo bottle → 一瓶洗髮精. B and C have a different shape and measure word (塊, 條).",
    "id": "C06-02"
   },
   {
@@ -18526,31 +18526,31 @@
    "instr": "Listen to the short exchange, then choose the matching picture.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "廁所裡有衛生紙嗎？"
+     "sp": "女",
+     "zh": "浴室裡有毛巾嗎？"
     },
     {
-     "sp": "女",
-     "zh": "沒有了，我去買。"
+     "sp": "男",
+     "zh": "有，門後邊掛著兩條。"
     }
    ],
-   "question": "廁所裡怎麼樣？",
+   "question": "毛巾在哪裡？",
    "options": [
     {
-     "icon": "🧻✅",
-     "label": "there's tissue"
+     "icon": "🛁",
+     "label": "in the bathtub"
     },
     {
-     "icon": "🧻❌",
-     "label": "the tissue has run out"
+     "icon": "🚪🧺",
+     "label": "behind the door"
     },
     {
-     "icon": "🧼",
-     "label": "there's soap"
+     "icon": "🪑",
+     "label": "on the chair"
     }
    ],
    "answer": 1,
-   "why": "沒有了.",
+   "why": "門後邊掛著 → behind the door. A and C are not mentioned.",
    "id": "C06-03"
   },
   {
@@ -18559,39 +18559,39 @@
    "instr": "Listen to the dialogue, then choose the picture that answers the question.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "你要買什麼？"
-    },
-    {
      "sp": "男",
-     "zh": "牙刷和牙膏。"
+     "zh": "我要去洗澡，沐浴乳在哪裡？"
     },
     {
      "sp": "女",
-     "zh": "不買肥皂嗎？"
+     "zh": "沐浴乳用完了，你先用肥皂吧。"
     },
     {
      "sp": "男",
-     "zh": "家裡還有。"
+     "zh": "肥皂在哪裡？"
+    },
+    {
+     "sp": "女",
+     "zh": "在牙刷旁邊。"
     }
    ],
-   "question": "這位先生要買什麼？",
+   "question": "這位先生洗澡要用什麼？",
    "options": [
     {
-     "icon": "🪥",
-     "label": "a toothbrush & toothpaste"
+     "icon": "🧴",
+     "label": "body wash"
     },
     {
      "icon": "🧼",
-     "label": "soap"
+     "label": "a bar of soap"
     },
     {
-     "icon": "🧴",
+     "icon": "🧴💇",
      "label": "shampoo"
     }
    ],
-   "answer": 0,
-   "why": "There's still soap.",
+   "answer": 1,
+   "why": "沐浴乳用完了 → use 肥皂. A is what he wants, but it has run out; C is not mentioned.",
    "id": "C06-04"
   },
   {
@@ -18600,54 +18600,54 @@
    "instr": "Listen to the dialogue, then choose the most suitable answer.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "你看，他在做什麼？"
-    },
-    {
      "sp": "男",
-     "zh": "他站著看書。"
+     "zh": "門口站著一個人，你認識嗎？"
     },
     {
      "sp": "女",
-     "zh": "為什麼不坐著？"
+     "zh": "那是我們的房東，他常常笑著跟人說話。"
     },
     {
      "sp": "男",
-     "zh": "他說站著比較不累。"
+     "zh": "他來做什麼？"
+    },
+    {
+     "sp": "女",
+     "zh": "可能是來看浴室的，上個星期廁所壞了。"
     }
    ],
-   "question": "那個人怎麼看書？",
+   "question": "房東可能來做什麼？",
    "options": [
-    "不看書",
-    "坐著看",
-    "站著看",
-    "走著看"
+    "來要房租",
+    "來找這位先生",
+    "來看壞了的廁所",
+    "來買日用品"
    ],
    "answer": 2,
-   "why": "V1著 V2: 站著看書.",
+   "why": "可能是來看浴室的 + 廁所壞了 → checking the broken toilet. A, B and D are not mentioned.",
    "id": "C06-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "門口站著一個人。",
+   "text": "門口站著一個小朋友，他笑著跟我們說你好。",
    "options": [
     {
-     "icon": "🚪",
-     "label": "an empty doorway"
+     "icon": "🚪🧒😢",
+     "label": "a child crying at the door"
     },
     {
-     "icon": "🛋️",
-     "label": "sitting on the sofa"
+     "icon": "🪑🧒😊",
+     "label": "a smiling child sitting on a chair"
     },
     {
-     "icon": "🚪🧍",
-     "label": "someone standing at the door"
+     "icon": "🚪🧒😊",
+     "label": "a smiling child standing at the door"
     }
    ],
    "answer": 2,
-   "why": "PW + V著 + N.",
+   "why": "門口站著 (standing at the door) + 笑著 (smiling). A has the wrong expression; B the wrong position.",
    "id": "C06-06"
   },
   {
@@ -18655,16 +18655,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🛁",
-    "label": "bathroom"
+    "icon": "🧻🧻🧻",
+    "label": "three packs of toilet paper"
    },
    "options": [
-    "這是浴室。",
-    "這是書房。",
-    "這是廚房。"
+    "廁所裡放著三包衛生紙。",
+    "廁所裡沒有衛生紙。",
+    "廁所裡放著一條毛巾。"
    ],
    "answer": 0,
-   "why": "浴室 = bathroom.",
+   "why": "There are three packs → 三包衛生紙. B is the opposite; C is the wrong object.",
    "id": "C06-07"
   },
   {
@@ -18672,17 +18672,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🧴",
-    "label": "shower gel"
+    "icon": "😊🗣️",
+    "label": "talking with a smile"
    },
-   "text": "洗澡要用（　）。",
+   "text": "老師（　）說：「你們今天考得很好！」",
    "options": [
-    "衛生紙",
-    "牙膏",
-    "沐浴乳"
+    "笑著",
+    "放著",
+    "掛著"
    ],
-   "answer": 2,
-   "why": "沐浴乳 = shower gel.",
+   "answer": 0,
+   "why": "V1著 + V2: 笑著說 = say with a smile. 放著 and 掛著 are for objects, not ways of speaking.",
    "id": "C06-08"
   },
   {
@@ -18691,19 +18691,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "上個週末我去朋友家住。她家的（1）很乾淨，裡頭掛（2），洗手台上放著牙刷和牙膏。可是我（3），只能用她的洗髮精和沐浴乳。第二天早上，我發現（4），就趕快去超市買了一些（5）送給她。",
    "options": [
-    "浴室",
-    "著兩條毛巾",
-    "忘了帶自己的",
     "家裡的衛生紙用完了",
     "日用品",
-    "肥皂放在冰箱裡"
+    "著兩條毛巾",
+    "浴室",
+    "肥皂放在冰箱裡",
+    "忘了帶自己的"
    ],
    "answers": [
-    0,
-    1,
-    2,
     3,
-    4
+    2,
+    5,
+    0,
+    1
    ],
    "why": "浴室很乾淨; 掛著兩條毛巾; 忘了帶自己的 → uses her shampoo; 衛生紙用完了 → buys 日用品 as a present. 「肥皂放在冰箱裡」 makes no sense anywhere.",
    "id": "C06-09"
@@ -18735,14 +18735,14 @@
     "label": "9 a.m., and he's still in bed",
     "img": "C07-4"
    },
-   "question": "你起床了嗎？",
+   "question": "他起床了嗎？",
    "options": [
-    "我在吃早餐。",
-    "我出門了。",
-    "我還沒起床。"
+    "起床了，他在吃早餐。",
+    "還沒，他還在床上。",
+    "他已經出門了。"
    ],
-   "answer": 2,
-   "why": "還沒起床 = hasn't got up yet.",
+   "answer": 1,
+   "why": "At 9 a.m. he is still in bed → 還沒. A and C are the opposite.",
    "id": "C07-01"
   },
   {
@@ -18754,14 +18754,14 @@
     "label": "calendar: three days crossed out; he smells",
     "img": "C07-5"
    },
-   "question": "你幾天沒洗澡了？",
+   "question": "他怎麼了？",
    "options": [
-    "三天。",
-    "一天。",
-    "我每天洗澡。"
+    "他三天沒洗澡了。",
+    "他三天沒吃飯了。",
+    "他每天都洗澡。"
    ],
    "answer": 0,
-   "why": "Time + 沒 + V + 了 = haven't … for ….",
+   "why": "Three days crossed off + a bad smell → 三天沒洗澡了. B is the wrong activity; C is the opposite.",
    "id": "C07-02"
   },
   {
@@ -18771,30 +18771,30 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你幾點出門？"
+     "zh": "你幾點上床？"
     },
     {
      "sp": "男",
-     "zh": "七點半。"
+     "zh": "平常十一點，可是昨天半夜兩點才上床。"
     }
    ],
-   "question": "這位先生幾點出門？",
+   "question": "這位先生昨天幾點睡覺？",
    "options": [
     {
-     "icon": "🕖",
-     "label": "7 o'clock"
+     "icon": "🕙",
+     "label": "10 o'clock"
     },
     {
-     "icon": "🕗",
-     "label": "8 o'clock"
+     "icon": "🕚",
+     "label": "11 o'clock"
     },
     {
-     "icon": "🕢",
-     "label": "7:30"
+     "icon": "🕑",
+     "label": "2 o'clock"
     }
    ],
    "answer": 2,
-   "why": "出門 = to go out.",
+   "why": "Yesterday 半夜兩點才上床. B is his usual bedtime (平常), not yesterday. A is not mentioned.",
    "id": "C07-03"
   },
   {
@@ -18804,38 +18804,38 @@
    "lines": [
     {
      "sp": "男",
-     "zh": "我的鬧鐘壞了。"
+     "zh": "你的枕頭怎麼在地上？"
     },
     {
      "sp": "女",
-     "zh": "你今天幾點起床？"
+     "zh": "我昨天晚上做了一個很不好的夢。"
     },
     {
      "sp": "男",
-     "zh": "九點，我沒去上課。"
+     "zh": "夢見什麼？"
     },
     {
      "sp": "女",
-     "zh": "你應該買一個新的鬧鐘。"
+     "zh": "夢見我考試沒有寫完。"
     }
    ],
-   "question": "這位先生今天幾點起床？",
+   "question": "這位小姐夢見什麼？",
    "options": [
     {
-     "icon": "🕛",
-     "label": "12 o'clock"
+     "icon": "📝❌",
+     "label": "not finishing an exam"
     },
     {
-     "icon": "🕖",
-     "label": "7 o'clock"
+     "icon": "📝💯",
+     "label": "getting full marks"
     },
     {
-     "icon": "🕘",
-     "label": "9 o'clock"
+     "icon": "🏫🚪",
+     "label": "the school is closed"
     }
    ],
-   "answer": 2,
-   "why": "九點.",
+   "answer": 0,
+   "why": "夢見我考試沒有寫完. B and C are not mentioned (and the dream was a bad one).",
    "id": "C07-04"
   },
   {
@@ -18845,53 +18845,53 @@
    "lines": [
     {
      "sp": "女",
-     "zh": "你昨天幾點上床？"
+     "zh": "明天早上七點的飛機，你別忘了。"
     },
     {
      "sp": "男",
-     "zh": "半夜兩點。"
+     "zh": "我知道，我今天會早點上床，五點就起床。"
     },
     {
      "sp": "女",
-     "zh": "太晚了！你應該早點睡覺。"
+     "zh": "你上次也這麼說，可是九點才起床。"
     },
     {
      "sp": "男",
-     "zh": "我知道，可是我功課很多。"
+     "zh": "這次一定不會了。"
     }
    ],
-   "question": "這位小姐是什麼意思？",
+   "question": "這位小姐的意思是什麼？",
    "options": [
-    "這位先生應該早點睡覺",
-    "這位先生應該晚點起床",
-    "這位先生應該多做功課",
-    "這位小姐很晚睡覺"
+    "她明天要坐飛機",
+    "她覺得這位先生明天可能又很晚才起床",
+    "她覺得五點太早",
+    "這位先生上次很早就起床了"
    ],
-   "answer": 0,
-   "why": "應該早點睡.",
+   "answer": 1,
+   "why": "你上次也這麼說，可是九點才起床 → she doubts he can get up early. A: it is not clear who is flying. C is not mentioned. D is the opposite (上次九點才起床).",
    "id": "C07-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "床上有兩個枕頭。",
+   "text": "半夜十二點了，弟弟還沒上床，還在玩電腦。",
    "options": [
     {
-     "icon": "🛏️",
-     "label": "two pillows"
+     "icon": "🌙🛌👦",
+     "label": "already asleep"
     },
     {
-     "icon": "🛏️",
-     "label": "one pillow"
+     "icon": "🌙💻👦",
+     "label": "on the computer at midnight"
     },
     {
-     "icon": "🛏️",
-     "label": "no pillow"
+     "icon": "☀️💻👦",
+     "label": "on the computer in the daytime"
     }
    ],
-   "answer": 0,
-   "why": "枕頭 = pillow.",
+   "answer": 1,
+   "why": "半夜 + 還在玩電腦 → night-time, on the computer. A is the opposite; C is the wrong time.",
    "id": "C07-06"
   },
   {
@@ -18899,16 +18899,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "💭😴",
-    "label": "dreaming"
+    "icon": "💭📝",
+    "label": "dreaming about an exam"
    },
    "options": [
-    "我昨天沒睡覺。",
-    "我昨天做了一個夢。",
-    "我昨天出門了。"
+    "他在教室考試。",
+    "他在寫信。",
+    "他夢見了考試。"
    ],
-   "answer": 1,
-   "why": "做夢 = to dream.",
+   "answer": 2,
+   "why": "The dream bubble shows an exam → 夢見了考試. A: the exam is only in the dream. B is not shown.",
    "id": "C07-07"
   },
   {
@@ -18919,14 +18919,14 @@
     "icon": "🌙",
     "label": "midnight, the middle of the night"
    },
-   "text": "他（　）才回家。",
+   "text": "現在已經（　）一點了，你怎麼還不睡覺？",
    "options": [
-    "出門",
-    "早點",
-    "半夜"
+    "半夜",
+    "早上",
+    "中午"
    ],
-   "answer": 2,
-   "why": "半夜 = midnight.",
+   "answer": 0,
+   "why": "A moon + 還不睡覺 → 半夜一點. 早上 and 中午 are not bedtimes.",
    "id": "C07-08"
   },
   {
@@ -18936,18 +18936,18 @@
    "text": "這個星期我要考試，每天晚上都念書念到（1），已經三天沒好好睡覺了。昨天我兩點才（2），一上床就做了一個（3）：我在考試，可是一個字都不會寫！今天早上，（4），我八點半才出門。到了學校，考試已經開始了。老師說：「以後（5）吧！」",
    "options": [
     "半夜",
-    "上床",
-    "很奇怪的夢",
-    "鬧鐘壞了",
     "早點睡覺",
-    "時鐘很便宜"
+    "時鐘很便宜",
+    "很奇怪的夢",
+    "上床",
+    "鬧鐘壞了"
    ],
    "answers": [
     0,
-    1,
-    2,
+    4,
     3,
-    4
+    5,
+    1
    ],
    "why": "讀到半夜; 兩點才上床; 做了一個夢; 鬧鐘壞了 → late; 以後早點睡覺. 「時鐘很便宜」 doesn't fit any blank.",
    "id": "C07-09"
@@ -18979,14 +18979,14 @@
     "label": "loud music from the neighbours' house; she's disturbed",
     "img": "C08-4"
    },
-   "question": "你的鄰居怎麼樣？",
+   "question": "他怎麼了？",
    "options": [
-    "很吵。",
-    "不在家。",
-    "很好。"
+    "鄰居家的音樂太吵了。",
+    "他在聽音樂，很高興。",
+    "他的鄰居在睡覺。"
    ],
    "answer": 0,
-   "why": "鄰居 = neighbour; 很吵 = noisy.",
+   "why": "Loud music from the neighbour's house bothers him → 太吵了. B is the opposite (he is not happy). C does not match.",
    "id": "C08-01"
   },
   {
@@ -19000,12 +19000,12 @@
    },
    "question": "你怎麼了？",
    "options": [
-    "我很高興。",
-    "我累死了！",
-    "我很餓。"
+    "我高興死了！",
+    "我累死了。",
+    "我熱死了。"
    ],
    "answer": 1,
-   "why": "Vs + 死了 = so … (exaggerating): 累死了.",
+   "why": "He is slumped, exhausted → 累死了. A is the opposite feeling; C is not shown.",
    "id": "C08-02"
   },
   {
@@ -19014,31 +19014,31 @@
    "instr": "Listen to the short exchange, then choose the matching picture.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "晚上你睡覺怎麼樣？"
+     "sp": "女",
+     "zh": "你家附近吵不吵？"
     },
     {
-     "sp": "女",
-     "zh": "不好，蚊子很多。"
+     "sp": "男",
+     "zh": "白天不吵，晚上鄰居的狗叫個不停。"
     }
    ],
-   "question": "這位小姐為什麼不能好好睡覺？",
+   "question": "什麼時候吵？",
    "options": [
     {
-     "icon": "🥵",
-     "label": "hot"
+     "icon": "☀️",
+     "label": "noon"
     },
     {
-     "icon": "🦟",
-     "label": "lots of mosquitoes"
+     "icon": "🌙🐕",
+     "label": "at night, a dog barking"
     },
     {
-     "icon": "📢",
-     "label": "noisy"
+     "icon": "🌅",
+     "label": "morning"
     }
    ],
    "answer": 1,
-   "why": "蚊子很多.",
+   "why": "白天不吵，晚上…叫個不停 → at night. A is ruled out; C is not mentioned.",
    "id": "C08-03"
   },
   {
@@ -19047,39 +19047,39 @@
    "instr": "Listen to the dialogue, then choose the picture that answers the question.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "外頭為什麼這麼吵？"
-    },
-    {
      "sp": "男",
-     "zh": "鄰居在唱歌。"
+     "zh": "你怎麼搬家了？"
     },
     {
      "sp": "女",
-     "zh": "他唱了多久？"
+     "zh": "以前的鄰居天天在家唱歌，吵死了。"
     },
     {
      "sp": "男",
-     "zh": "唱了兩個小時，唱個不停。"
+     "zh": "現在的地方呢？"
+    },
+    {
+     "sp": "女",
+     "zh": "現在好多了，只是蚊子有點多。"
     }
    ],
-   "question": "鄰居在做什麼？",
+   "question": "這位小姐為什麼搬家？",
    "options": [
     {
-     "icon": "🎉",
-     "label": "a party"
+     "icon": "🎤🏠",
+     "label": "neighbours singing"
     },
     {
-     "icon": "🎤",
-     "label": "singing"
+     "icon": "🦟",
+     "label": "mosquito"
     },
     {
-     "icon": "🐕",
-     "label": "a dog barking"
+     "icon": "💰",
+     "label": "high rent"
     }
    ],
-   "answer": 1,
-   "why": "鄰居在唱歌.",
+   "answer": 0,
+   "why": "The reason for moving: the old neighbours sang every day. B is a problem at the NEW place, not the reason for moving. C is not mentioned.",
    "id": "C08-04"
   },
   {
@@ -19088,54 +19088,54 @@
    "instr": "Listen to the dialogue, then choose the most suitable answer.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "最近的日子怎麼樣？"
-    },
-    {
      "sp": "女",
-     "zh": "不錯，可是工作忙死了。"
+     "zh": "你的鄰居人怎麼樣？"
     },
     {
      "sp": "男",
-     "zh": "要多休息啊！"
+     "zh": "人很好，常常送我水果。"
     },
     {
      "sp": "女",
-     "zh": "謝謝，週末我會好好休息。"
+     "zh": "那你怎麼每天都說累死了？"
+    },
+    {
+     "sp": "男",
+     "zh": "他們的孩子每天早上五點就開始跑來跑去。"
     }
    ],
-   "question": "這位小姐最近怎麼樣？",
+   "question": "這位先生的意思是什麼？",
    "options": [
-    "不想工作",
-    "每天休息",
-    "工作很忙",
-    "不工作"
+    "鄰居送的水果太多",
+    "他不喜歡鄰居",
+    "他每天五點起床跑步",
+    "鄰居的孩子很早就很吵"
    ],
-   "answer": 2,
-   "why": "忙死了.",
+   "answer": 3,
+   "why": "The neighbours' children run around from 5 a.m. → noisy from early morning. A is not a complaint. B is the opposite (人很好). C misreads it: the children are the ones running.",
    "id": "C08-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "小孩哭個不停。",
+   "text": "樓上的鄰居每天晚上都在唱歌，唱個不停。",
    "options": [
     {
-     "icon": "😭",
-     "label": "crying non-stop"
+     "icon": "☀️🎤",
+     "label": "singing in the daytime"
     },
     {
-     "icon": "😆",
-     "label": "to laugh, to smile"
+     "icon": "🌙🎤",
+     "label": "singing at night"
     },
     {
-     "icon": "😴",
-     "label": "to sleep"
+     "icon": "🌙😴",
+     "label": "sleeping at night"
     }
    ],
-   "answer": 0,
-   "why": "V個不停 = non-stop.",
+   "answer": 1,
+   "why": "每天晚上 + 唱個不停 → singing at night. A is the wrong time; C the wrong activity.",
    "id": "C08-06"
   },
   {
@@ -19143,16 +19143,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🦟",
-    "label": "mosquito"
+    "icon": "🦟🦟🦟",
+    "label": "lots of mosquitoes"
    },
    "options": [
-    "房間裡有鳥。",
-    "房間裡有蚊子。",
-    "房間裡有狗。"
+    "房間裡只有一隻蚊子。",
+    "房間裡的蚊子多死了。",
+    "房間裡沒有蚊子。"
    ],
    "answer": 1,
-   "why": "蚊子 = mosquito.",
+   "why": "Lots of mosquitoes → 多死了. A and C are the wrong number.",
    "id": "C08-07"
   },
   {
@@ -19160,17 +19160,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🥵",
-    "label": "boiling hot"
+    "icon": "🗓️☀️",
+    "label": "summer days"
    },
-   "text": "今天熱（　）！",
+   "text": "夏天的（　）很熱，我每天都開冷氣。",
    "options": [
-    "不停",
-    "死了",
-    "日子"
+    "日子",
+    "鄰居",
+    "蚊子"
    ],
-   "answer": 1,
-   "why": "Vs死了.",
+   "answer": 0,
+   "why": "夏天的日子 = the days in summer. 鄰居很熱 and 蚊子很熱 make no sense.",
    "id": "C08-08"
   },
   {
@@ -19179,18 +19179,18 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "我搬到新家已經一個月了。這裡什麼都好，就是樓上的（1）很吵。他們每天晚上都（2），吵死了。晚上房間裡還有很多（3），我一個晚上都（4）。過了幾天，我去樓上找他們，他們說：「對不起，孩子在練習唱歌，以後（5）。」現在我可以好好睡覺了。",
    "options": [
+    "日子過得很快",
+    "蚊子",
     "鄰居",
     "唱個不停",
-    "蚊子",
-    "沒有好好睡覺",
     "我們會小聲一點",
-    "日子過得很快"
+    "沒有好好睡覺"
    ],
    "answers": [
-    0,
-    1,
     2,
     3,
+    1,
+    5,
     4
    ],
    "why": "鄰居很吵; 唱個不停; 很多蚊子; 沒有好好睡覺; the neighbour promises 小聲一點. 「日子過得很快」 doesn't fit any blank.",
@@ -19223,14 +19223,14 @@
     "label": "the city centre: tall buildings",
     "img": "C09-4"
    },
-   "question": "你住在哪裡？",
+   "question": "這是哪裡？",
    "options": [
-    "住在山上。",
-    "住在鄉下。",
-    "住在市區。"
+    "這是鄉下。",
+    "這是市區。",
+    "這是山上。"
    ],
-   "answer": 2,
-   "why": "市區 = city centre, urban area.",
+   "answer": 1,
+   "why": "Tall buildings → 市區. A and C do not match.",
    "id": "C09-01"
   },
   {
@@ -19242,14 +19242,14 @@
     "label": "22° and windy here, 34° there",
     "img": "C09-5"
    },
-   "question": "這裡跟那裡，哪裡比較涼快？",
+   "question": "這裡跟那裡比，怎麼樣？",
    "options": [
-    "一樣。",
-    "這裡涼快得多。",
-    "這裡熱得多。"
+    "這裡比那裡涼快得多。",
+    "這裡比那裡熱得多。",
+    "這裡跟那裡一樣熱。"
    ],
-   "answer": 1,
-   "why": "22° vs 34° → 這裡涼快得多.",
+   "answer": 0,
+   "why": "Here it is 22° and breezy, there it is 34° → 這裡涼快得多. B is reversed; C: the temperatures are different.",
    "id": "C09-02"
   },
   {
@@ -19258,31 +19258,31 @@
    "instr": "Listen to the short exchange, then choose the matching picture.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "鄉下的生活怎麼樣？"
+     "sp": "男",
+     "zh": "你家在市區嗎？"
     },
     {
-     "sp": "男",
-     "zh": "很好，環境很好。"
+     "sp": "女",
+     "zh": "不在市區，在鄉下，開車要一個小時。"
     }
    ],
-   "question": "這位先生覺得鄉下怎麼樣？",
+   "question": "這位小姐住在哪裡？",
    "options": [
     {
      "icon": "🏙️",
-     "label": "lively, bustling"
+     "label": "city"
     },
     {
-     "icon": "🏭",
-     "label": "lots of factories"
+     "icon": "🌾🏡",
+     "label": "a village"
     },
     {
-     "icon": "🏡🌳",
-     "label": "a green environment"
+     "icon": "🏫",
+     "label": "a school dormitory"
     }
    ],
-   "answer": 2,
-   "why": "環境很好.",
+   "answer": 1,
+   "why": "不在市區，在鄉下. A is the guess that is rejected; C is not mentioned.",
    "id": "C09-03"
   },
   {
@@ -19291,39 +19291,39 @@
    "instr": "Listen to the dialogue, then choose the picture that answers the question.",
    "lines": [
     {
-     "sp": "男",
-     "zh": "你喜歡城市還是鄉下？"
-    },
-    {
      "sp": "女",
-     "zh": "城市。"
+     "zh": "你覺得台北怎麼樣？"
     },
     {
      "sp": "男",
-     "zh": "為什麼？"
+     "zh": "很方便，可是夏天太熱了。"
     },
     {
      "sp": "女",
-     "zh": "城市比鄉下方便得多。"
+     "zh": "比你的國家熱嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "我的國家沒有台北這麼熱。"
     }
    ],
-   "question": "這位小姐為什麼喜歡城市？",
+   "question": "哪裡比較熱？",
    "options": [
     {
-     "icon": "🚇🏪",
-     "label": "more convenient"
+     "icon": "🏙️",
+     "label": "Taipei"
     },
     {
-     "icon": "💵",
-     "label": "cheaper"
+     "icon": "🏠",
+     "label": "his home country"
     },
     {
-     "icon": "🌳",
-     "label": "a good environment"
+     "icon": "⛰️",
+     "label": "mountain"
     }
    ],
    "answer": 0,
-   "why": "方便得多.",
+   "why": "我的國家沒有台北這麼熱 → Taipei is hotter. B is reversed; C is not mentioned.",
    "id": "C09-04"
   },
   {
@@ -19332,54 +19332,54 @@
    "instr": "Listen to the dialogue, then choose the most suitable answer.",
    "lines": [
     {
-     "sp": "女",
-     "zh": "台北的房屋很貴吧？"
-    },
-    {
      "sp": "男",
-     "zh": "很貴，鄉下沒有那麼貴。"
+     "zh": "聽說你要搬到鄉下？"
     },
     {
      "sp": "女",
-     "zh": "你為什麼不住在鄉下？"
+     "zh": "對，那裡的房子便宜得多，環境也好。"
     },
     {
      "sp": "男",
-     "zh": "因為我的工作在市區。"
+     "zh": "可是你每天要上班，不會很累嗎？"
+    },
+    {
+     "sp": "女",
+     "zh": "公司讓我在家工作，一個星期只去兩次。"
     }
    ],
-   "question": "這位先生為什麼住在市區？",
+   "question": "這位小姐為什麼可以住在鄉下？",
    "options": [
-    "因為市區便宜",
-    "因為房屋很貴",
-    "因為工作在市區",
-    "因為他喜歡鄉下"
+    "鄉下離公司很近",
+    "她不工作了",
+    "她一個星期只去公司兩次",
+    "公司在鄉下"
    ],
    "answer": 2,
-   "why": "The reason after 因為.",
+   "why": "She can work from home and only goes to the office twice a week. A and D are not mentioned. B: she is still working.",
    "id": "C09-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "鄉下的房屋沒有城市那麼高。",
+   "text": "市區的房屋比鄉下貴得多。",
    "options": [
     {
-     "icon": "🏢",
-     "label": "tall buildings"
+     "icon": "🌾🏡💰💰",
+     "label": "country houses are expensive"
     },
     {
-     "icon": "🏠🏢",
-     "label": "the same height"
+     "icon": "🏙️💰💰",
+     "label": "city houses are much more expensive"
     },
     {
-     "icon": "🏡",
-     "label": "the village houses are lower"
+     "icon": "🏙️🏡",
+     "label": "the prices are the same"
     }
    ],
-   "answer": 2,
-   "why": "A 沒有 B 那麼 Vs.",
+   "answer": 1,
+   "why": "市區…貴得多 → city houses cost more. A is reversed; C shows no difference.",
    "id": "C09-06"
   },
   {
@@ -19387,16 +19387,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🌳🌸",
-    "label": "a green environment"
+    "icon": "🌾🏡🌳",
+    "label": "a green village"
    },
    "options": [
-    "這裡的環境很好。",
-    "這裡有很多垃圾。",
-    "這裡很吵。"
+    "這裡有很多高樓。",
+    "這裡是鄉下，環境很好。",
+    "這裡的車很多。"
    ],
-   "answer": 0,
-   "why": "環境 = environment.",
+   "answer": 1,
+   "why": "Rice fields, a house, trees → 鄉下. A and C are features of a city.",
    "id": "C09-07"
   },
   {
@@ -19404,17 +19404,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🔀",
-    "label": "different"
+    "icon": "🏡🌳",
+    "label": "life in the country"
    },
-   "text": "城市跟鄉下的生活很（　）。",
+   "text": "我也想過（　）的生活，每天都能看到山。",
    "options": [
-    "這樣",
-    "涼快",
+    "那樣",
+    "那麼",
     "不同"
    ],
-   "answer": 2,
-   "why": "不同 = different.",
+   "answer": 0,
+   "why": "那樣的生活 = that kind of life. 那麼 needs an adjective after it; 不同的生活 means 'a different life' and does not refer back to it.",
    "id": "C09-08"
   },
   {
@@ -19423,19 +19423,19 @@
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
    "text": "我的老家在鄉下，現在我在台北工作。台北是大城市，（1），買東西、看病都很方便。可是城市裡的（2），房子很貴，人也很多。鄉下的生活（3），可是空氣好，夏天也比城市（4）。每次回老家，我都覺得很舒服。我希望以後能過（5）的生活。",
    "options": [
-    "公車和火車都很多",
-    "環境沒有鄉下好",
     "沒有城市那麼方便",
-    "涼快得多",
     "像鄉下那樣",
-    "市區的人很少"
+    "涼快得多",
+    "環境沒有鄉下好",
+    "市區的人很少",
+    "公車和火車都很多"
    ],
    "answers": [
-    0,
-    1,
-    2,
+    5,
     3,
-    4
+    0,
+    2,
+    1
    ],
    "why": "交通方便; 環境沒有鄉下好; 鄉下沒有城市那麼方便 (but the air is good); 涼快得多; 像鄉下那樣的生活. 「市區的人很少」 contradicts 人也很多.",
    "id": "C09-09"
