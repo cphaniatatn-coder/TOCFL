@@ -1,0 +1,880 @@
+{
+ "A": [
+  {
+   "no": 1,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "keluarga (A04)",
+   "picture": {
+    "label": "keluarga: ayah, ibu, satu anak laki-laki, satu anak perempuan (4 orang)",
+    "icon": "👨👩👦👧"
+   },
+   "question": "他們家有幾個人？",
+   "options": [
+    "三個人。",
+    "四個人。",
+    "五個人。"
+   ],
+   "answer": 1,
+   "why": "Di gambar ada 4 orang. Pengecoh 三/五 = selisih satu angka."
+  },
+  {
+   "no": 2,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "lokasi benda (A09)",
+   "picture": {
+    "label": "buku di atas meja; kursi di samping meja",
+    "icon": "📕🪑"
+   },
+   "question": "書在哪裡？",
+   "options": [
+    "在桌子上。",
+    "在桌子下。",
+    "在椅子上。"
+   ],
+   "answer": 0,
+   "why": "Buku di atas meja. B = salah posisi (上/下), C = benda yang ada di gambar tapi salah."
+  },
+  {
+   "no": 3,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "rutinitas & waktu (A10)",
+   "picture": {
+    "label": "laki-laki bangun dari tempat tidur; jam menunjukkan 7.30",
+    "icon": "🛏️⏰"
+   },
+   "question": "他幾點起床？",
+   "options": [
+    "七點。",
+    "七點半。",
+    "八點半。"
+   ],
+   "answer": 1,
+   "why": "Jam 7.30 = 七點半. A melewatkan 半, C salah jam."
+  },
+  {
+   "no": 4,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "cuaca (A24)",
+   "picture": {
+    "label": "hujan turun; orang di jalan basah",
+    "icon": "🌧️☔"
+   },
+   "question": "今天天氣怎麼樣？",
+   "options": [
+    "很熱，沒有雨。",
+    "今天下雨。",
+    "天氣很好。"
+   ],
+   "answer": 1,
+   "why": "Gambar hujan = 下雨. A & C bertentangan dengan gambar."
+  },
+  {
+   "no": 5,
+   "type": "listen_dialog",
+   "part": "聽力 Part 2",
+   "tema": "harga (A18)",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "這件衣服多少錢？"
+    },
+    {
+     "sp": "男",
+     "zh": "六百五十塊。"
+    }
+   ],
+   "question": "這件衣服多少錢？",
+   "options": [
+    {
+     "label": "label harga NT$650",
+     "icon": "🏷️"
+    },
+    {
+     "label": "label harga NT$560",
+     "icon": "🏷️"
+    },
+    {
+     "label": "label harga NT$605",
+     "icon": "🏷️"
+    }
+   ],
+   "answer": 0,
+   "why": "六百五十 = 650. 560 = angka tertukar; 605 = 六百零五."
+  },
+  {
+   "no": 6,
+   "type": "listen_dialog",
+   "part": "聽力 Part 2",
+   "tema": "asal negara (A02)",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "請問，你是哪國人？"
+    },
+    {
+     "sp": "女",
+     "zh": "我是日本人。"
+    }
+   ],
+   "question": "這位小姐是哪國人？",
+   "options": [
+    {
+     "label": "perempuan + bendera Jepang",
+     "icon": "👩🇯🇵"
+    },
+    {
+     "label": "perempuan + bendera Taiwan",
+     "icon": "👩🇹🇼"
+    },
+    {
+     "label": "perempuan + bendera Indonesia",
+     "icon": "👩🇮🇩"
+    }
+   ],
+   "answer": 0,
+   "why": "日本人 = orang Jepang."
+  },
+  {
+   "no": 7,
+   "type": "listen_dialog",
+   "part": "聽力 Part 2",
+   "tema": "lokasi benda (A09)",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "我的手機在哪裡？"
+    },
+    {
+     "sp": "男",
+     "zh": "在床上。"
+    }
+   ],
+   "question": "手機在哪裡？",
+   "options": [
+    {
+     "label": "ponsel di atas tempat tidur",
+     "icon": "📱🛏️"
+    },
+    {
+     "label": "ponsel di bawah tempat tidur",
+     "icon": "🛏️📱"
+    },
+    {
+     "label": "ponsel di atas meja",
+     "icon": "📱🪑"
+    }
+   ],
+   "answer": 0,
+   "why": "床上 = di atas tempat tidur. B = 上/下 tertukar, C = tempat lain."
+  },
+  {
+   "no": 8,
+   "type": "listen_dialog",
+   "part": "聽力 Part 3",
+   "tema": "rutinitas & waktu (A10)",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你每天幾點睡覺？"
+    },
+    {
+     "sp": "女",
+     "zh": "十一點。你呢？"
+    },
+    {
+     "sp": "男",
+     "zh": "我十二點睡覺，早上八點起床。"
+    },
+    {
+     "sp": "女",
+     "zh": "我早上六點起床。"
+    }
+   ],
+   "question": "這位小姐幾點起床？",
+   "options": [
+    {
+     "label": "jam 6.00",
+     "icon": "🕕"
+    },
+    {
+     "label": "jam 8.00",
+     "icon": "🕗"
+    },
+    {
+     "label": "jam 11.00",
+     "icon": "🕚"
+    }
+   ],
+   "answer": 0,
+   "why": "Perempuan bangun 六點. 8.00 = jam bangun laki-laki; 11.00 = jam tidur perempuan."
+  },
+  {
+   "no": 9,
+   "type": "listen_dialog",
+   "part": "聽力 Part 3",
+   "tema": "keluarga (A04)",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "這是你家人嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "對，這是我爸爸、媽媽和兩個妹妹。"
+    },
+    {
+     "sp": "女",
+     "zh": "你沒有哥哥嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "沒有，我只有妹妹。"
+    }
+   ],
+   "question": "這位先生家有幾個人？",
+   "options": [
+    {
+     "label": "keluarga 4 orang",
+     "icon": "👨👩👧👧"
+    },
+    {
+     "label": "keluarga 5 orang",
+     "icon": "👨👩👦👧👧"
+    },
+    {
+     "label": "keluarga 6 orang",
+     "icon": "👨👩👦👦👧👧"
+    }
+   ],
+   "answer": 1,
+   "why": "Ayah + ibu + 2 adik perempuan + dirinya = 5. 4 = lupa menghitung pembicara sendiri; 6 = menambah 哥哥 yang tidak ada."
+  },
+  {
+   "no": 10,
+   "type": "listen_dialog",
+   "part": "聽力 Part 4",
+   "tema": "belanja (A18)",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "這件衣服很漂亮，多少錢？"
+    },
+    {
+     "sp": "女",
+     "zh": "兩千塊。"
+    },
+    {
+     "sp": "男",
+     "zh": "很貴！我只有一千塊。"
+    },
+    {
+     "sp": "女",
+     "zh": "那件九百塊，也很漂亮。"
+    }
+   ],
+   "question": "這位先生可能買哪一件？",
+   "options": [
+    "兩千塊的。",
+    "九百塊的。",
+    "一千塊的。",
+    "兩件都買。"
+   ],
+   "answer": 1,
+   "why": "Uangnya hanya 1.000, jadi yang terjangkau baju 900. A terlalu mahal; C = jumlah uangnya, bukan harga baju; D tidak cukup uang."
+  },
+  {
+   "no": 11,
+   "type": "read_sent",
+   "part": "閱讀 Part 1",
+   "tema": "cuaca (A24)",
+   "text": "今天天氣很冷，風很大。",
+   "options": [
+    {
+     "label": "orang kedinginan, angin kencang",
+     "icon": "🥶🌬️"
+    },
+    {
+     "label": "matahari terik, orang kepanasan",
+     "icon": "☀️🥵"
+    },
+    {
+     "label": "hujan deras",
+     "icon": "🌧️"
+    }
+   ],
+   "answer": 0,
+   "why": "冷 + 風很大 = dingin dan berangin."
+  },
+  {
+   "no": 12,
+   "type": "read_sent",
+   "part": "閱讀 Part 1",
+   "tema": "keluarga (A04)",
+   "text": "我哥哥很高，我很矮。",
+   "options": [
+    {
+     "label": "kakak laki-laki tinggi, adik pendek",
+     "icon": "🧍‍♂️🧒"
+    },
+    {
+     "label": "dua laki-laki sama tinggi",
+     "icon": "🧍‍♂️🧍‍♂️"
+    },
+    {
+     "label": "kakak pendek, adik tinggi",
+     "icon": "🧒🧍‍♂️"
+    }
+   ],
+   "answer": 0,
+   "why": "哥哥高, 我矮. C = hubungan terbalik."
+  },
+  {
+   "no": 13,
+   "type": "read_pick",
+   "part": "閱讀 Part 2",
+   "tema": "rutinitas & waktu (A10)",
+   "picture": {
+    "label": "anak perempuan sarapan; jam 7.00 pagi, matahari terbit",
+    "icon": "👧🍳🕖"
+   },
+   "options": [
+    "她早上七點吃早餐。",
+    "她晚上七點吃晚餐。",
+    "她早上七點睡覺。"
+   ],
+   "answer": 0,
+   "why": "Pagi + makan = 早上吃早餐. B salah waktu, C salah kegiatan."
+  },
+  {
+   "no": 14,
+   "type": "read_pick",
+   "part": "閱讀 Part 2",
+   "tema": "lokasi benda (A09)",
+   "picture": {
+    "label": "televisi di samping tempat tidur",
+    "icon": "📺🛏️"
+   },
+   "options": [
+    "電視在床旁邊。",
+    "電視在床上。",
+    "電視在床下。"
+   ],
+   "answer": 0,
+   "why": "旁邊 = di samping."
+  },
+  {
+   "no": 15,
+   "type": "read_gap",
+   "part": "閱讀 Part 3",
+   "tema": "harga (A18)",
+   "picture": {
+    "label": "roti dengan label harga NT$50",
+    "icon": "🍞🏷️"
+   },
+   "text": "這個麵包很（　），只要五十塊。",
+   "options": [
+    "便宜",
+    "貴",
+    "多"
+   ],
+   "answer": 0,
+   "why": "只要五十塊 = hanya 50 → murah. 貴 kebalikannya; 多 tidak cocok dengan harga."
+  },
+  {
+   "no": 16,
+   "type": "read_gap",
+   "part": "閱讀 Part 3",
+   "tema": "asal negara & bahasa (A02)",
+   "picture": {
+    "label": "laki-laki menyapa 「你好！」 dengan balon kata",
+    "icon": "🙋‍♂️💬"
+   },
+   "text": "他是臺灣人，他說（　）。",
+   "options": [
+    "中文",
+    "臺灣",
+    "國家"
+   ],
+   "answer": 0,
+   "why": "說 + bahasa → 中文. 臺灣 = nama tempat, 國家 = negara (bukan bahasa)."
+  },
+  {
+   "no": 17,
+   "type": "cloze",
+   "part": "閱讀 Part 4",
+   "tema": "rutinitas (A10)",
+   "text": "我每天早上七點（1），八點去學校。中午我在學校吃（2）。晚上十一點（3）。",
+   "options": [
+    "起床",
+    "午餐",
+    "睡覺",
+    "早餐"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "why": "早上→起床, 中午→午餐, 晚上十一點→睡覺. 早餐 tidak cocok dengan 中午."
+  },
+  {
+   "no": 20,
+   "type": "read_mc",
+   "part": "閱讀 Part 5",
+   "tema": "gabungan: keluarga & rutinitas",
+   "text": "王先生是臺灣人。他家有五個人：爸爸、媽媽、太太、一個女兒和他。他每天早上八點去工作，晚上七點在家吃晚餐。",
+   "question": "王先生有幾個孩子？",
+   "options": [
+    "一個",
+    "兩個",
+    "三個",
+    "五個"
+   ],
+   "answer": 0,
+   "why": "Anaknya hanya 一個女兒. D = jumlah anggota keluarga, bukan jumlah anak."
+  }
+ ],
+ "B": [
+  {
+   "no": 1,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "keluarga (A04)",
+   "picture": {
+    "label": "keluarga: ayah, ibu, tiga anak (5 orang)",
+    "icon": "👨👩👦👧👦"
+   },
+   "question": "他們家有幾個人？",
+   "options": [
+    "四個人。",
+    "五個人。",
+    "六個人。"
+   ],
+   "answer": 1,
+   "why": "Di gambar ada 5 orang."
+  },
+  {
+   "no": 2,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "lokasi benda (A09)",
+   "picture": {
+    "label": "sepatu di bawah tempat tidur",
+    "icon": "🛏️👟"
+   },
+   "question": "鞋子在哪裡？",
+   "options": [
+    "在床上。",
+    "在桌子上。",
+    "在床下。"
+   ],
+   "answer": 2,
+   "why": "床下 = di bawah tempat tidur. A = 上/下 tertukar."
+  },
+  {
+   "no": 3,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "rutinitas & waktu (A10)",
+   "picture": {
+    "label": "perempuan tidur; jam menunjukkan 10.30 malam",
+    "icon": "😴🕥"
+   },
+   "question": "她幾點睡覺？",
+   "options": [
+    "十點。",
+    "十點半。",
+    "十一點半。"
+   ],
+   "answer": 1,
+   "why": "10.30 = 十點半."
+  },
+  {
+   "no": 4,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "cuaca (A24)",
+   "picture": {
+    "label": "matahari terik; orang berkeringat",
+    "icon": "☀️🥵"
+   },
+   "question": "今天天氣怎麼樣？",
+   "options": [
+    "今天很冷。",
+    "今天下雨。",
+    "今天很熱。"
+   ],
+   "answer": 2,
+   "why": "Terik dan berkeringat = 很熱."
+  },
+  {
+   "no": 5,
+   "type": "listen_dialog",
+   "part": "聽力 Part 2",
+   "tema": "harga (A18)",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "這杯咖啡多少錢？"
+    },
+    {
+     "sp": "女",
+     "zh": "八十五塊。"
+    }
+   ],
+   "question": "這杯咖啡多少錢？",
+   "options": [
+    {
+     "label": "secangkir kopi, NT$85",
+     "icon": "☕🏷️"
+    },
+    {
+     "label": "secangkir kopi, NT$58",
+     "icon": "☕🏷️"
+    },
+    {
+     "label": "secangkir kopi, NT$805",
+     "icon": "☕🏷️"
+    }
+   ],
+   "answer": 0,
+   "why": "八十五 = 85. 58 = angka tertukar; 805 = 八百零五."
+  },
+  {
+   "no": 6,
+   "type": "listen_dialog",
+   "part": "聽力 Part 2",
+   "tema": "asal negara (A02)",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "請問，他是哪國人？"
+    },
+    {
+     "sp": "男",
+     "zh": "他是臺灣人。"
+    }
+   ],
+   "question": "他是哪國人？",
+   "options": [
+    {
+     "label": "laki-laki + bendera Taiwan",
+     "icon": "👨🇹🇼"
+    },
+    {
+     "label": "laki-laki + bendera Jepang",
+     "icon": "👨🇯🇵"
+    },
+    {
+     "label": "laki-laki + bendera Indonesia",
+     "icon": "👨🇮🇩"
+    }
+   ],
+   "answer": 0,
+   "why": "臺灣人 = orang Taiwan."
+  },
+  {
+   "no": 7,
+   "type": "listen_dialog",
+   "part": "聽力 Part 2",
+   "tema": "lokasi benda (A09)",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你的書在哪裡？"
+    },
+    {
+     "sp": "女",
+     "zh": "在椅子上。"
+    }
+   ],
+   "question": "書在哪裡？",
+   "options": [
+    {
+     "label": "buku di atas kursi",
+     "icon": "📕🪑"
+    },
+    {
+     "label": "buku di bawah kursi",
+     "icon": "🪑📕"
+    },
+    {
+     "label": "buku di atas meja",
+     "icon": "📕🪑"
+    }
+   ],
+   "answer": 0,
+   "why": "椅子上 = di atas kursi."
+  },
+  {
+   "no": 8,
+   "type": "listen_dialog",
+   "part": "聽力 Part 3",
+   "tema": "rutinitas & waktu (A10)",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "你每天幾點吃早餐？"
+    },
+    {
+     "sp": "男",
+     "zh": "七點半。你呢？"
+    },
+    {
+     "sp": "女",
+     "zh": "我八點吃早餐，九點上課。"
+    },
+    {
+     "sp": "男",
+     "zh": "我也九點上課。"
+    }
+   ],
+   "question": "這位小姐幾點吃早餐？",
+   "options": [
+    {
+     "label": "jam 7.30",
+     "icon": "🕢"
+    },
+    {
+     "label": "jam 8.00",
+     "icon": "🕗"
+    },
+    {
+     "label": "jam 9.00",
+     "icon": "🕘"
+    }
+   ],
+   "answer": 1,
+   "why": "Perempuan sarapan 八點. 7.30 = jam sarapan laki-laki; 9.00 = jam masuk kelas."
+  },
+  {
+   "no": 9,
+   "type": "listen_dialog",
+   "part": "聽力 Part 3",
+   "tema": "keluarga (A04)",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你有哥哥嗎？"
+    },
+    {
+     "sp": "女",
+     "zh": "有，我有兩個哥哥。"
+    },
+    {
+     "sp": "男",
+     "zh": "你有妹妹嗎？"
+    },
+    {
+     "sp": "女",
+     "zh": "沒有。我爸爸媽媽只有一個女兒。"
+    }
+   ],
+   "question": "這位小姐家有幾個孩子？",
+   "options": [
+    {
+     "label": "dua anak",
+     "icon": "👦👧"
+    },
+    {
+     "label": "tiga anak",
+     "icon": "👦👦👧"
+    },
+    {
+     "label": "empat anak",
+     "icon": "👦👦👧👧"
+    }
+   ],
+   "answer": 1,
+   "why": "2 kakak laki-laki + dirinya (satu-satunya anak perempuan) = 3. A = lupa menghitung pembicara."
+  },
+  {
+   "no": 10,
+   "type": "listen_dialog",
+   "part": "聽力 Part 4",
+   "tema": "cuaca & rencana (A24)",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "明天我們一起去山上吧！"
+    },
+    {
+     "sp": "男",
+     "zh": "明天下雨，也很冷。"
+    },
+    {
+     "sp": "女",
+     "zh": "後天呢？"
+    },
+    {
+     "sp": "男",
+     "zh": "後天天氣很好。"
+    }
+   ],
+   "question": "他們可能什麼時候去山上？",
+   "options": [
+    "今天。",
+    "明天。",
+    "後天。",
+    "他們不去。"
+   ],
+   "answer": 2,
+   "why": "Besok hujan dan dingin; lusa cuaca bagus → 後天. D salah karena ada hari yang cocok."
+  },
+  {
+   "no": 11,
+   "type": "read_sent",
+   "part": "閱讀 Part 1",
+   "tema": "cuaca (A24)",
+   "text": "今天下雨，也很冷。",
+   "options": [
+    {
+     "label": "hujan, orang kedinginan",
+     "icon": "🌧️🥶"
+    },
+    {
+     "label": "matahari terik",
+     "icon": "☀️"
+    },
+    {
+     "label": "berangin tapi cerah",
+     "icon": "🌬️🌤️"
+    }
+   ],
+   "answer": 0,
+   "why": "下雨 + 冷."
+  },
+  {
+   "no": 12,
+   "type": "read_sent",
+   "part": "閱讀 Part 1",
+   "tema": "keluarga (A04)",
+   "text": "我家有三個孩子：兩個兒子和一個女兒。",
+   "options": [
+    {
+     "label": "2 anak laki-laki + 1 anak perempuan",
+     "icon": "👦👦👧"
+    },
+    {
+     "label": "1 anak laki-laki + 2 anak perempuan",
+     "icon": "👦👧👧"
+    },
+    {
+     "label": "3 anak laki-laki",
+     "icon": "👦👦👦"
+    }
+   ],
+   "answer": 0,
+   "why": "兩個兒子 + 一個女兒. B = 兒子/女兒 tertukar."
+  },
+  {
+   "no": 13,
+   "type": "read_pick",
+   "part": "閱讀 Part 2",
+   "tema": "rutinitas & waktu (A10)",
+   "picture": {
+    "label": "laki-laki makan siang; jam 12.00 siang",
+    "icon": "👨🍱🕛"
+   },
+   "options": [
+    "他中午十二點吃午餐。",
+    "他晚上十二點睡覺。",
+    "他早上十點吃早餐。"
+   ],
+   "answer": 0,
+   "why": "Siang + makan = 中午吃午餐."
+  },
+  {
+   "no": 14,
+   "type": "read_pick",
+   "part": "閱讀 Part 2",
+   "tema": "lokasi benda (A09)",
+   "picture": {
+    "label": "kursi di samping meja",
+    "icon": "🪑"
+   },
+   "options": [
+    "椅子在桌子旁邊。",
+    "椅子在桌子上。",
+    "椅子在床上。"
+   ],
+   "answer": 0,
+   "why": "旁邊 = di samping."
+  },
+  {
+   "no": 15,
+   "type": "read_gap",
+   "part": "閱讀 Part 3",
+   "tema": "harga (A18)",
+   "picture": {
+    "label": "baju dengan label harga NT$5.000",
+    "icon": "👕🏷️"
+   },
+   "text": "這件衣服五千塊，很（　）。",
+   "options": [
+    "貴",
+    "便宜",
+    "少"
+   ],
+   "answer": 0,
+   "why": "五千塊 untuk sebuah baju = mahal."
+  },
+  {
+   "no": 16,
+   "type": "read_gap",
+   "part": "閱讀 Part 3",
+   "tema": "asal negara & bahasa (A02)",
+   "picture": {
+    "label": "perempuan menyapa 「Hello!」 dengan balon kata",
+    "icon": "🙋‍♀️💬"
+   },
+   "text": "她是美國人，她說（　）。",
+   "options": [
+    "英文",
+    "中文",
+    "美國"
+   ],
+   "answer": 0,
+   "why": "Orang Amerika, menyapa Hello → 英文. 美國 = nama negara, bukan bahasa."
+  },
+  {
+   "no": 17,
+   "type": "cloze",
+   "part": "閱讀 Part 4",
+   "tema": "rutinitas (A10)",
+   "text": "我每天（1）七點起床。中午十二點吃（2）。下午五點（3）課，晚上在家看電視。",
+   "options": [
+    "早上",
+    "午餐",
+    "下",
+    "早餐"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "why": "早上七點起床; 中午→午餐; 下課. 早餐 tidak cocok dengan 中午."
+  },
+  {
+   "no": 20,
+   "type": "read_mc",
+   "part": "閱讀 Part 5",
+   "tema": "gabungan: asal & rutinitas",
+   "text": "李小姐是印尼人，她在臺灣學中文。她每天上午上課，下午在咖啡店工作。她覺得中文很難，可是她很喜歡。",
+   "question": "李小姐下午做什麼？",
+   "options": [
+    "上課",
+    "工作",
+    "睡覺",
+    "學英文"
+   ],
+   "answer": 1,
+   "why": "下午在咖啡店工作. A = kegiatan pagi (上午上課)."
+  }
+ ]
+}

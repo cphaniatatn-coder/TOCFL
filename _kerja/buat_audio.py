@@ -131,6 +131,12 @@ def kumpulkan():
         for ts in json.load(open(f'{R}/data/bank_soal.json', encoding='utf-8')).values():
             for t in ts:
                 soal(t)
+    mini = f'{K}/mini'   # tes awal/akhir modul mini (uji coba thesis), dirakit oleh buat_mini.py
+    for fn in sorted(os.listdir(mini)) if os.path.isdir(mini) else []:
+        if fn.startswith('tes_') and fn.endswith('.json'):
+            for paket in json.load(open(f'{mini}/{fn}', encoding='utf-8')).values():
+                for t in paket:
+                    soal(t)
     return job, tak_dikenal
 
 

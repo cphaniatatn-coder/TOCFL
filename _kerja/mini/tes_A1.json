@@ -1,0 +1,804 @@
+{
+ "A": [
+  {
+   "no": 1,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "sedang melakukan apa (B04)",
+   "picture": {
+    "label": "laki-laki sedang memasak di dapur",
+    "icon": "👨‍🍳"
+   },
+   "question": "他在做什麼？",
+   "options": [
+    "他正在做飯。",
+    "他正在洗澡。",
+    "他正在睡覺。"
+   ],
+   "answer": 0,
+   "why": "Memasak = 做飯. B & C kegiatan lain."
+  },
+  {
+   "no": 2,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "pakaian (B20)",
+   "picture": {
+    "label": "perempuan memakai jaket yang kebesaran",
+    "icon": "👩🧥"
+   },
+   "question": "這件外套怎麼樣？",
+   "options": [
+    "太小了。",
+    "太大了。",
+    "太短了。"
+   ],
+   "answer": 1,
+   "why": "Jaket kebesaran = 太大了. A kebalikannya."
+  },
+  {
+   "no": 3,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "perbandingan cuaca (B19)",
+   "picture": {
+    "label": "dua termometer: 臺北 15°C, 雅加達 32°C",
+    "icon": "🌡️"
+   },
+   "question": "哪裡比較冷？",
+   "options": [
+    "雅加達比臺北冷。",
+    "臺北比雅加達冷。",
+    "臺北跟雅加達一樣冷。"
+   ],
+   "answer": 1,
+   "why": "15°C < 32°C → 臺北比雅加達冷. A = urutan A/B terbalik."
+  },
+  {
+   "no": 4,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "perjalanan (B33)",
+   "picture": {
+    "label": "perempuan turun dari pesawat di bandara, membawa koper",
+    "icon": "👩✈️🧳"
+   },
+   "question": "她是怎麼來臺灣的？",
+   "options": [
+    "她是開車來的。",
+    "她是坐飛機來的。",
+    "她是坐火車來的。"
+   ],
+   "answer": 1,
+   "why": "Bandara + pesawat = 坐飛機."
+  },
+  {
+   "no": 5,
+   "type": "listen_dialog",
+   "part": "聽力 Part 2",
+   "tema": "arah (B30)",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "請問，圖書館怎麼走？"
+    },
+    {
+     "sp": "女",
+     "zh": "往前走，到第二個路口左轉。"
+    }
+   ],
+   "question": "去圖書館要怎麼走？",
+   "options": [
+    {
+     "label": "peta: lurus, belok KIRI di persimpangan KEDUA",
+     "icon": "🗺️⬆️⬅️"
+    },
+    {
+     "label": "peta: lurus, belok KANAN di persimpangan kedua",
+     "icon": "🗺️⬆️➡️"
+    },
+    {
+     "label": "peta: lurus, belok kiri di persimpangan PERTAMA",
+     "icon": "🗺️⬅️"
+    }
+   ],
+   "answer": 0,
+   "why": "第二個路口左轉. B = kiri/kanan tertukar, C = persimpangan salah."
+  },
+  {
+   "no": 6,
+   "type": "listen_dialog",
+   "part": "聽力 Part 2",
+   "tema": "sakit (B40)",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "你怎麼了？"
+    },
+    {
+     "sp": "男",
+     "zh": "我頭很痛，很不舒服。"
+    }
+   ],
+   "question": "這位先生怎麼了？",
+   "options": [
+    {
+     "label": "laki-laki memegang kepala, tampak kesakitan",
+     "icon": "🤕"
+    },
+    {
+     "label": "laki-laki memegang perut",
+     "icon": "🤢"
+    },
+    {
+     "label": "laki-laki memegang kaki",
+     "icon": "🦵"
+    }
+   ],
+   "answer": 0,
+   "why": "頭很痛 → memegang kepala."
+  },
+  {
+   "no": 7,
+   "type": "listen_dialog",
+   "part": "聽力 Part 2",
+   "tema": "sedang melakukan apa (B04)",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "喂，你在做什麼呢？"
+    },
+    {
+     "sp": "女",
+     "zh": "我在圖書館看書。"
+    }
+   ],
+   "question": "這位小姐在做什麼？",
+   "options": [
+    {
+     "label": "perempuan membaca buku di perpustakaan",
+     "icon": "👩📖🏛️"
+    },
+    {
+     "label": "perempuan menonton TV di rumah",
+     "icon": "👩📺🏠"
+    },
+    {
+     "label": "perempuan makan di restoran",
+     "icon": "👩🍜"
+    }
+   ],
+   "answer": 0,
+   "why": "在圖書館看書."
+  },
+  {
+   "no": 8,
+   "type": "listen_dialog",
+   "part": "聽力 Part 3",
+   "tema": "perbandingan cuaca (B19)",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "今天比昨天冷嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "不，今天比昨天熱。"
+    },
+    {
+     "sp": "女",
+     "zh": "明天呢？"
+    },
+    {
+     "sp": "男",
+     "zh": "明天跟今天一樣熱。"
+    }
+   ],
+   "question": "明天天氣怎麼樣？",
+   "options": [
+    {
+     "label": "matahari terik, panas",
+     "icon": "☀️🥵"
+    },
+    {
+     "label": "dingin, berangin",
+     "icon": "🥶🌬️"
+    },
+    {
+     "label": "hujan",
+     "icon": "🌧️"
+    }
+   ],
+   "answer": 0,
+   "why": "明天 = 今天 = lebih panas dari kemarin → panas. B = kata 冷 di kalimat pertama."
+  },
+  {
+   "no": 9,
+   "type": "listen_dialog",
+   "part": "聽力 Part 3",
+   "tema": "arah & jarak (B30)",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "請問，車站離這裡遠不遠？"
+    },
+    {
+     "sp": "女",
+     "zh": "不遠，走路十分鐘就到了。"
+    },
+    {
+     "sp": "男",
+     "zh": "怎麼走？"
+    },
+    {
+     "sp": "女",
+     "zh": "從這裡往前走，過了銀行就是。"
+    }
+   ],
+   "question": "車站在哪裡？",
+   "options": [
+    {
+     "label": "peta: stasiun tepat SETELAH bank",
+     "icon": "🏦➡️🚉"
+    },
+    {
+     "label": "peta: stasiun SEBELUM bank",
+     "icon": "🚉➡️🏦"
+    },
+    {
+     "label": "peta: stasiun jauh, perlu naik bus",
+     "icon": "🚌🚉"
+    }
+   ],
+   "answer": 0,
+   "why": "過了銀行就是 = setelah melewati bank. C bertentangan dengan 不遠."
+  },
+  {
+   "no": 10,
+   "type": "listen_dialog",
+   "part": "聽力 Part 4",
+   "tema": "izin sakit (B40)",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "老師，對不起，我明天不能來上課。"
+    },
+    {
+     "sp": "女",
+     "zh": "你怎麼了？"
+    },
+    {
+     "sp": "男",
+     "zh": "因為我感冒了，醫生說我要在家休息。"
+    },
+    {
+     "sp": "女",
+     "zh": "好，你多休息。"
+    }
+   ],
+   "question": "哪一個是對的？",
+   "options": [
+    "這位先生明天要去醫院工作。",
+    "這位先生生病了，明天在家休息。",
+    "老師明天不能上課。",
+    "這位先生不想上課。"
+   ],
+   "answer": 1,
+   "why": "感冒 + 在家休息. A salah tafsir 醫生; C = subjek tertukar; D = alasan tidak disebut."
+  },
+  {
+   "no": 11,
+   "type": "read_sent",
+   "part": "閱讀 Part 1",
+   "tema": "pakaian (B20)",
+   "text": "這雙鞋子有一點小，我要大一點的。",
+   "options": [
+    {
+     "label": "laki-laki mencoba sepatu yang kekecilan",
+     "icon": "👟😣"
+    },
+    {
+     "label": "laki-laki memakai sepatu kebesaran",
+     "icon": "👟"
+    },
+    {
+     "label": "laki-laki memilih kemeja",
+     "icon": "👔"
+    }
+   ],
+   "answer": 0,
+   "why": "有一點小 → sepatunya kekecilan."
+  },
+  {
+   "no": 12,
+   "type": "read_pick",
+   "part": "閱讀 Part 2",
+   "tema": "perjalanan (B33)",
+   "picture": {
+    "label": "keluarga turun dari kereta di stasiun",
+    "icon": "👨‍👩‍👧🚆"
+   },
+   "options": [
+    "他們是坐火車來的。",
+    "他們是坐飛機來的。",
+    "他們是騎腳踏車來的。"
+   ],
+   "answer": 0,
+   "why": "Kereta = 火車."
+  },
+  {
+   "no": 13,
+   "type": "read_gap",
+   "part": "閱讀 Part 3",
+   "tema": "perbandingan (B19)",
+   "picture": {
+    "label": "kue ulang tahun: kakak 15 tahun, adik 12 tahun",
+    "icon": "🧑🧒"
+   },
+   "text": "哥哥（　）弟弟大三歲。",
+   "options": [
+    "比",
+    "跟",
+    "很"
+   ],
+   "answer": 0,
+   "why": "A 比 B + Vs + selisih. 跟 butuh 一樣; 很 tidak bisa diikuti selisih."
+  },
+  {
+   "no": 14,
+   "type": "cloze",
+   "part": "閱讀 Part 4",
+   "tema": "perjalanan & sakit (B33, B40)",
+   "text": "上個月我第一次來臺灣，我是坐飛機（1）的。臺北（2）雅加達冷一點，（3）我第二天就感冒了。（4）我很想去上課，（5）醫生說我應該在家休息。",
+   "options": [
+    "來",
+    "比",
+    "所以",
+    "雖然",
+    "可是",
+    "跟"
+   ],
+   "answers": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "why": "是…來的; A比B; sebab→所以; 雖然…可是. 跟 tidak cocok (perlu 一樣)."
+  },
+  {
+   "no": 19,
+   "type": "read_mc",
+   "part": "閱讀 Part 5",
+   "tema": "arah & telepon (B30, B04)",
+   "text": "小明打電話給王先生：「喂，我在火車站前面，去你家怎麼走？」王先生說：「從火車站往右走，到第一個路口左轉，我家就在銀行旁邊。我現在正在做飯，你到了就打電話給我。」",
+   "question": "小明要怎麼去王先生家？",
+   "options": [
+    "往左走，到第一個路口右轉。",
+    "往右走，到第一個路口左轉。",
+    "往右走，到第二個路口左轉。",
+    "往前走，到銀行右轉。"
+   ],
+   "answer": 1,
+   "why": "往右走 → 第一個路口左轉. A = kiri/kanan tertukar; C = persimpangan salah; D = bank adalah patokan rumah, bukan tempat belok."
+  },
+  {
+   "no": 20,
+   "type": "read_mc",
+   "part": "閱讀 Part 5",
+   "tema": "cuaca & sakit (B19, B40)",
+   "text": "李小姐上個星期去日本旅行。日本比臺灣冷，可是她沒帶外套。回來以後她就生病了，頭很痛，身體也很不舒服。今天她沒去上班，在家休息。",
+   "question": "李小姐為什麼生病了？",
+   "options": [
+    "因為她工作太忙了。",
+    "因為日本很冷，她穿得不夠。",
+    "因為她吃了日本菜。",
+    "因為臺灣比日本冷。"
+   ],
+   "answer": 1,
+   "why": "Jepang lebih dingin + tidak membawa jaket (inferensi: pakaian kurang). D = perbandingan terbalik."
+  }
+ ],
+ "B": [
+  {
+   "no": 1,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "sedang melakukan apa (B04)",
+   "picture": {
+    "label": "perempuan sedang mencuci baju",
+    "icon": "👩🧺"
+   },
+   "question": "她在做什麼？",
+   "options": [
+    "她正在洗衣服。",
+    "她正在做飯。",
+    "她正在看書。"
+   ],
+   "answer": 0,
+   "why": "Mencuci baju = 洗衣服."
+  },
+  {
+   "no": 2,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "pakaian (B20)",
+   "picture": {
+    "label": "laki-laki memakai celana yang terlalu pendek",
+    "icon": "👨👖"
+   },
+   "question": "這條褲子怎麼樣？",
+   "options": [
+    "太長了。",
+    "太短了。",
+    "太大了。"
+   ],
+   "answer": 1,
+   "why": "Celana kependekan = 太短了. A kebalikannya."
+  },
+  {
+   "no": 3,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "perbandingan (B19)",
+   "picture": {
+    "label": "小明 175 cm berdiri di samping 小文 160 cm",
+    "icon": "🧍‍♂️🧍"
+   },
+   "question": "誰比較高？",
+   "options": [
+    "小文比小明高。",
+    "小明比小文高。",
+    "小明跟小文一樣高。"
+   ],
+   "answer": 1,
+   "why": "小明 lebih tinggi. A = urutan terbalik."
+  },
+  {
+   "no": 4,
+   "type": "listen_pic",
+   "part": "聽力 Part 1",
+   "tema": "perjalanan (B33)",
+   "picture": {
+    "label": "laki-laki turun dari kereta membawa koper",
+    "icon": "👨🚆🧳"
+   },
+   "question": "他是怎麼來的？",
+   "options": [
+    "他是坐飛機來的。",
+    "他是開車來的。",
+    "他是坐火車來的。"
+   ],
+   "answer": 2,
+   "why": "Kereta = 坐火車."
+  },
+  {
+   "no": 5,
+   "type": "listen_dialog",
+   "part": "聽力 Part 2",
+   "tema": "arah (B30)",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "請問，郵局怎麼走？"
+    },
+    {
+     "sp": "男",
+     "zh": "往前走，到第一個路口右轉。"
+    }
+   ],
+   "question": "去郵局要怎麼走？",
+   "options": [
+    {
+     "label": "peta: lurus, belok KANAN di persimpangan PERTAMA",
+     "icon": "🗺️⬆️➡️"
+    },
+    {
+     "label": "peta: lurus, belok KIRI di persimpangan pertama",
+     "icon": "🗺️⬆️⬅️"
+    },
+    {
+     "label": "peta: lurus, belok kanan di persimpangan KEDUA",
+     "icon": "🗺️➡️"
+    }
+   ],
+   "answer": 0,
+   "why": "第一個路口右轉."
+  },
+  {
+   "no": 6,
+   "type": "listen_dialog",
+   "part": "聽力 Part 2",
+   "tema": "sakit (B40)",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你怎麼了？"
+    },
+    {
+     "sp": "女",
+     "zh": "我肚子很痛。"
+    }
+   ],
+   "question": "這位小姐怎麼了？",
+   "options": [
+    {
+     "label": "perempuan memegang perut",
+     "icon": "🤢"
+    },
+    {
+     "label": "perempuan memegang kepala",
+     "icon": "🤕"
+    },
+    {
+     "label": "perempuan memegang kaki",
+     "icon": "🦵"
+    }
+   ],
+   "answer": 0,
+   "why": "肚子痛 = sakit perut."
+  },
+  {
+   "no": 7,
+   "type": "listen_dialog",
+   "part": "聽力 Part 2",
+   "tema": "sedang melakukan apa (B04)",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "喂，你在做什麼呢？"
+    },
+    {
+     "sp": "男",
+     "zh": "我正在公園跑步。"
+    }
+   ],
+   "question": "這位先生在做什麼？",
+   "options": [
+    {
+     "label": "laki-laki berlari di taman",
+     "icon": "👨🏃🌳"
+    },
+    {
+     "label": "laki-laki berenang",
+     "icon": "🏊"
+    },
+    {
+     "label": "laki-laki tidur di rumah",
+     "icon": "😴🏠"
+    }
+   ],
+   "answer": 0,
+   "why": "在公園跑步."
+  },
+  {
+   "no": 8,
+   "type": "listen_dialog",
+   "part": "聽力 Part 3",
+   "tema": "perbandingan cuaca (B19)",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "臺北今天天氣怎麼樣？"
+    },
+    {
+     "sp": "女",
+     "zh": "下雨，比昨天冷一點。"
+    },
+    {
+     "sp": "男",
+     "zh": "高雄呢？"
+    },
+    {
+     "sp": "女",
+     "zh": "高雄沒下雨，比臺北熱。"
+    }
+   ],
+   "question": "高雄今天天氣怎麼樣？",
+   "options": [
+    {
+     "label": "hujan, dingin",
+     "icon": "🌧️🥶"
+    },
+    {
+     "label": "cerah, panas",
+     "icon": "☀️🥵"
+    },
+    {
+     "label": "berangin, dingin",
+     "icon": "🌬️🥶"
+    }
+   ],
+   "answer": 1,
+   "why": "高雄沒下雨，比臺北熱. A = cuaca 臺北."
+  },
+  {
+   "no": 9,
+   "type": "listen_dialog",
+   "part": "聽力 Part 3",
+   "tema": "jarak (B30)",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "請問，書店離這裡遠嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "有一點遠，坐公車要二十分鐘。"
+    },
+    {
+     "sp": "女",
+     "zh": "走路呢？"
+    },
+    {
+     "sp": "男",
+     "zh": "走路要一個小時。"
+    }
+   ],
+   "question": "坐公車去書店要多久？",
+   "options": [
+    {
+     "label": "bus + jam: 20 menit",
+     "icon": "🚌⏱️"
+    },
+    {
+     "label": "bus + jam: 1 jam",
+     "icon": "🚌⏱️"
+    },
+    {
+     "label": "bus + jam: 10 menit",
+     "icon": "🚌⏱️"
+    }
+   ],
+   "answer": 0,
+   "why": "坐公車二十分鐘. 1 jam = jalan kaki."
+  },
+  {
+   "no": 10,
+   "type": "listen_dialog",
+   "part": "聽力 Part 4",
+   "tema": "izin sakit (B40)",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "王老師，對不起，我今天不能去上課。"
+    },
+    {
+     "sp": "男",
+     "zh": "你怎麼了？"
+    },
+    {
+     "sp": "女",
+     "zh": "因為我肚子很痛，所以要去醫院看病。"
+    },
+    {
+     "sp": "男",
+     "zh": "好，你多休息。"
+    }
+   ],
+   "question": "這位小姐今天要做什麼？",
+   "options": [
+    "去學校上課。",
+    "去醫院看病。",
+    "在家工作。",
+    "去看王老師。"
+   ],
+   "answer": 1,
+   "why": "所以要去醫院看病. A bertentangan dengan 不能去上課."
+  },
+  {
+   "no": 11,
+   "type": "read_sent",
+   "part": "閱讀 Part 1",
+   "tema": "pakaian (B20)",
+   "text": "這件衣服太大了，我要小一點的。",
+   "options": [
+    {
+     "label": "perempuan memakai kemeja kebesaran",
+     "icon": "👚"
+    },
+    {
+     "label": "perempuan memakai kemeja kekecilan",
+     "icon": "👚"
+    },
+    {
+     "label": "perempuan mencoba celana",
+     "icon": "👖"
+    }
+   ],
+   "answer": 0,
+   "why": "太大了 → kemeja kebesaran."
+  },
+  {
+   "no": 12,
+   "type": "read_pick",
+   "part": "閱讀 Part 2",
+   "tema": "perjalanan (B33)",
+   "picture": {
+    "label": "laki-laki tiba di sekolah naik sepeda",
+    "icon": "🚲🏫"
+   },
+   "options": [
+    "他是騎腳踏車來的。",
+    "他是走路來的。",
+    "他是坐公車來的。"
+   ],
+   "answer": 0,
+   "why": "Sepeda = 騎腳踏車."
+  },
+  {
+   "no": 13,
+   "type": "read_gap",
+   "part": "閱讀 Part 3",
+   "tema": "perbandingan (B19)",
+   "picture": {
+    "label": "dua tas sekolah, masing-masing NT$300",
+    "icon": "🎒🎒"
+   },
+   "text": "這個書包（　）那個書包一樣貴。",
+   "options": [
+    "跟",
+    "比",
+    "也"
+   ],
+   "answer": 0,
+   "why": "A 跟 B 一樣. 比 tidak dipakai dengan 一樣."
+  },
+  {
+   "no": 14,
+   "type": "cloze",
+   "part": "閱讀 Part 4",
+   "tema": "perjalanan & sakit (B33, B40)",
+   "text": "去年夏天我跟家人去花蓮旅行，我們是坐火車（1）的。花蓮（2）臺北熱一點，海邊（3）很漂亮。最後一天，（4）我感冒了，（5）我們早一點回家了。",
+   "options": [
+    "去",
+    "比",
+    "也",
+    "因為",
+    "所以",
+    "跟"
+   ],
+   "answers": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "why": "是…去的; A比B; 也; 因為…所以. 跟 tidak cocok (perlu 一樣)."
+  },
+  {
+   "no": 19,
+   "type": "read_mc",
+   "part": "閱讀 Part 5",
+   "tema": "telepon & aktivitas (B04)",
+   "text": "安安打電話給小文：「喂，你在做什麼呢？」小文說：「我正在家看電視。」安安說：「我在學校門口，外面下雨了，我不想走路回家。你可以開車來接我嗎？」",
+   "question": "安安為什麼要小文來接她？",
+   "options": [
+    "因為她生病了。",
+    "因為下雨了，她不想走路。",
+    "因為她不知道怎麼走。",
+    "因為小文在學校。"
+   ],
+   "answer": 1,
+   "why": "下雨 + 不想走路回家. D salah: 小文 di rumah."
+  },
+  {
+   "no": 20,
+   "type": "read_mc",
+   "part": "閱讀 Part 5",
+   "tema": "cuaca & sakit (B19, B40)",
+   "text": "王先生上個月從高雄到臺北工作。臺北比高雄冷，也常常下雨。王先生覺得臺北的冬天太冷了。上個星期他感冒了，在家休息了兩天。",
+   "question": "上個星期王先生為什麼在家休息？",
+   "options": [
+    "因為他要回高雄。",
+    "因為他感冒了。",
+    "因為臺北常常下雨。",
+    "因為他不想工作。"
+   ],
+   "answer": 1,
+   "why": "感冒了 → 在家休息. C = penyebab tidak langsung, bukan alasan izin."
+  }
+ ]
+}

@@ -11,7 +11,7 @@ OUT = f'{R}/img/twemoji'
 BASE = 'https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/'
 UI_EMOJI = ('🧑 👩 👧 👦 👨 👩‍🏫 👨‍💼 👩‍💼 🧔 👩‍🦱 🧑‍⚕️ 👩‍⚕️ 👩‍🦳 🧓 🧑‍🎓 🧑‍✈️ 👮 '
             '🪪 👋 🏠 🛋️ 💼 🏢 ⚽ 🎬 🚆 🗺️ 🤝 💬 🩺 💊 🏫 📚 🛍️ 💳 🍜 🥢 🏦 📮 🚨 ⚠️ ⛰️ 🌳 🌏 ♻️ 🧧 🏮 😊 💭 📱 💻 '
-            '🎯 🎧 📖 🧩 🪞 🏆 ⏱️ 📝 🔁 ✅ ❌ 🔥 🌟 🗂️ 🔊 🏁')
+            '🎯 🎧 📖 🧩 🪞 🏆 ⏱️ 📝 🔁 ✅ ❌ 🔥 🌟 🗂️ 🔊 🏁 ▶️')
 MOD = {0x200d, 0xfe0f, 0x20e3} | set(range(0x1f3fb, 0x1f400)) | set(range(0xe0020, 0xe0080))
 
 def clusters(s):
@@ -45,6 +45,15 @@ for fn in ['modul_vol1.json', 'modul_vol2.json', 'modul_vol3.json', 'bank_soal.j
     txt = open(f'{R}/data/{fn}', encoding='utf-8').read()
     for icon in re.findall(r'"icon": "([^"]*)"', txt):
         semua.update(clusters(icon))
+# modul mini (uji coba): ikon antarmuka studi.js + gambar soal tes awal/akhir
+MINI = f'{R}/_kerja/mini'
+if os.path.isdir(MINI):
+    semua.update(clusters(''.join(re.findall(r"Pic\.html\('([^']+)'", open(f'{MINI}/web/js/studi.js', encoding='utf-8').read()))))
+    semua.update(clusters("🇮🇩🇬🇧🇻🇳"))
+    for fn in sorted(os.listdir(MINI)):
+        if fn.startswith('tes_') and fn.endswith('.json'):
+            for icon in re.findall(r'"icon": "([^"]*)"', open(f'{MINI}/{fn}', encoding='utf-8').read()):
+                semua.update(clusters(icon))
 emoji = sorted(c for c in semua if is_emoji(c))
 gagal = []
 for c in emoji:
@@ -67,6 +76,11 @@ for fn in ['modul_vol1.json', 'modul_vol2.json', 'modul_vol3.json', 'bank_soal.j
         teks = json.dumps([m['tasks'] for m in d['modules']] if 'modules' in d else d, ensure_ascii=False)
         for icon in re.findall(r'"icon": "([^"]*)"', teks):
             soal.update(c for c in clusters(icon) if is_emoji(c))
+if os.path.isdir(MINI):
+    for fn in sorted(os.listdir(MINI)):
+        if fn.startswith('tes_') and fn.endswith('.json'):
+            for icon in re.findall(r'"icon": "([^"]*)"', open(f'{MINI}/{fn}', encoding='utf-8').read()):
+                soal.update(c for c in clusters(icon) if is_emoji(c))
 gagal_bw = []
 for c in sorted(soal):
     f = f'{BW}/{kode(c)}.svg'
