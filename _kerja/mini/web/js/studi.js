@@ -382,6 +382,7 @@ App.route = async function () {
 
 // Versi Vietnam: nama & petunjuk bagian ujian dan strategi refleksi ditulis di luar T() di app utama
 if (LANG === 'vi') {
+  STAGES[1][2] = 'Hội thoại'; STAGES[4][2] = 'Ngữ pháp';
   Ujian.PARTS = Ujian.PARTS.map(p => [p[0], p[1], Lang.vi(p[2]), Lang.vi(p[3]), p[4]]);
   const _rReflect = Modul.r_reflect;
   const STRAT = ['Replay the dialogue and listen', 'Practise the 核心 words with audio', 'Redo the tasks', 'Move on to the next module'];
