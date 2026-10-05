@@ -287,6 +287,12 @@ def main():
                      + json.dumps(vi_ui, ensure_ascii=False, indent=0) + ';\n').encode()
     for f in ('style.css', 'kai.css'):
         F[f'css/{f}'] = R / 'css' / f
+    # ?v=<hash isi> di index.html: GitHub Pages meng-cache JS/CSS 10 menit, jadi tanpa ini browser bisa memakai versi lama
+    import hashlib
+    isi = lambda v: v.read_bytes() if isinstance(v, Path) else v
+    F['index.html'] = re.sub(r'((?:src|href)="((?:js|css)/[^"?]+))"',
+                             lambda m: f'{m[1]}?v={hashlib.md5(isi(F[m[2]])).hexdigest()[:8]}"' if m[2] in F else m[0],
+                             F['index.html'].decode()).encode()
     for f in (R / 'img').rglob('*'):
         if f.is_file():
             F[f.relative_to(R).as_posix()] = f
