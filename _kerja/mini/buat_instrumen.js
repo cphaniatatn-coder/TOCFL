@@ -132,7 +132,7 @@ const BATAS = { A0: 'TBCL Level 1 (sampai A25)', A1: 'TBCL Level 1–2 (sampai B
 const children = [
   new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 60 }, children: run('Instrumen Pre-test & Post-test', { bold: true, size: 36 }) }),
   new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 60 }, children: run('Uji Coba Modul Mini TOCFL Band A (A0 · A1 · A2)', { size: 26 }) }),
-  new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 240 }, children: run('Draf 5 · 5 Oktober 2026 · untuk ditinjau bersama pembimbing', { italics: true, color: '666666', size: 20 }) }),
+  new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 240 }, children: run('Draf 6 · 5 Oktober 2026 · untuk ditinjau bersama pembimbing', { italics: true, color: '666666', size: 20 }) }),
 
   h1('1. Desain uji coba'),
   p('Tujuan: mengetahui (1) apakah modul menurunkan kecemasan peserta terhadap ujian TOCFL dan (2) apakah kemampuan peserta pada tema & grammar yang sering diujikan meningkat setelah memakai modul.'),
@@ -208,7 +208,7 @@ children.push(
   pb(),
   h1('Bagian III — Tes Kemampuan bergaya TOCFL'),
   p('Tiap level punya dua paket setara: Paket A untuk pre-test, Paket B untuk post-test. Butir bernomor sama di kedua paket setara (bagian ujian, tema, dan tingkat kesulitan sama; kalimat & jawaban berbeda). Semua butir baru — tidak sama dengan soal latihan atau Tes Bab di modul. 20 butir per paket, ± 30 menit.'),
-  p([run('Audio 聽力 (meniru TOCFL): ', { bold: true }), run('setiap soal hanya bisa diputar 1 kali, kecepatan normal (1×) tanpa pilihan kecepatan, dengan jeda antarkalimat. Part 1: 問 lalu pilihan A, B, C dibacakan. Part 2–4: dialog, lalu bunyi bel 🔔, lalu 問 dibacakan; teks 問 tidak tercetak di layar. Posisi bel per soal ditandai 🔔 di naskah audio.')]),
+  p([run('Audio 聽力 (meniru TOCFL): ', { bold: true }), run('tombol putar hanya bisa ditekan sekali, lalu seluruh naskah diputar otomatis 2 kali (jeda ±2,5 detik), kecepatan normal (1×) tanpa pilihan kecepatan, dengan jeda antarkalimat. Part 1: 問 lalu pilihan A, B, C dibacakan. Part 2–4: dialog, lalu bunyi bel 🔔, lalu 問 dibacakan; teks 問 tidak tercetak di layar. Posisi bel per soal ditandai 🔔 di naskah audio.')]),
   note('Semua teks Mandarin sudah dicek otomatis (py _kerja/mini/cek_tes.py): hanya memakai kosakata TBCL sampai level peserta, tanpa pola grammar di atas levelnya. Gambar di draf ini masih berupa deskripsi; versi akhir memakai ilustrasi hitam-putih bergaya TOCFL seperti di aplikasi.'),
 );
 for (const lv of ['A0', 'A1', 'A2']) {
