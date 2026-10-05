@@ -137,6 +137,8 @@ def kumpulkan():
             for paket in json.load(open(f'{mini}/{fn}', encoding='utf-8')).values():
                 for t in paket:
                     soal(t)
+                    if t.get('type') == 'listen_dialog' and t.get('question'):   # 問 dibacakan setelah bunyi bel (studi.js)
+                        tambah('N', narator(t['question']), t['question'])
     return job, tak_dikenal
 
 

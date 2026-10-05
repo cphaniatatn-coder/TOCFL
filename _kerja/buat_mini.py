@@ -238,7 +238,9 @@ def nama_audio():
         for t in ts: soal(t)
     for lv in LEVEL:
         for items in baca(M / f'tes_{lv}.json').values():
-            for t in items: soal(t)
+            for t in items:
+                soal(t)
+                if t['type'] == 'listen_dialog' and t.get('question'): tambah('N', t['question'])   # 問 dibacakan (gaya TOCFL)
     return {ba.nama(k) for k in job}
 
 
