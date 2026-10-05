@@ -9,6 +9,7 @@ kata_tambahan.json, plan_L*.txt). Excel hanya "jendela edit": file sumber yang t
 berubah tidak ditulis ulang sama sekali.
 """
 import json, os, re, subprocess, sys
+sys.stdout.reconfigure(encoding="utf-8")   # konsol Windows (cp950) tidak bisa mencetak ✓ ✗
 import openpyxl
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
