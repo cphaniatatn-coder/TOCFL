@@ -324,6 +324,8 @@ def main():
     # ?v=<hash isi> di index.html: GitHub Pages meng-cache JS/CSS 10 menit, jadi tanpa ini browser bisa memakai versi lama
     import hashlib
     isi = lambda v: v.read_bytes() if isinstance(v, Path) else v
+    data_v = hashlib.md5(b''.join(isi(F[k]) for k in sorted(F) if k.startswith('data/'))).hexdigest()[:8]
+    F['index.html'] = F['index.html'].replace(b"window.DATA_V = '';", f"window.DATA_V = '{data_v}';".encode())
     F['index.html'] = re.sub(r'((?:src|href)="((?:js|css)/[^"?]+))"',
                              lambda m: f'{m[1]}?v={hashlib.md5(isi(F[m[2]])).hexdigest()[:8]}"' if m[2] in F else m[0],
                              F['index.html'].decode()).encode()
