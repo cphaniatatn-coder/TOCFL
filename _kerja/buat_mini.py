@@ -109,7 +109,35 @@ def data_id():
             m['vocab']['pendukung'] = pend
         d['modules'] = [m for m in d['modules'] if m['code'] in SEMUA]
     rencana = {k: [m for m in ms if m['code'] in SEMUA] for k, ms in baca(R / 'data/rencana.json').items()}
-    return vols, {c: bank[c] for c in SEMUA if c in bank}, rencana
+    bank = {c: bank[c] for c in SEMUA if c in bank}
+    pasang_gambar_bab(vols, bank)
+    return vols, bank, rencana
+
+
+def pasang_gambar_bab(vols, bank):
+    """Ilustrasi SVG 溝通任務 & Tes Bab (_kerja/mini/gambar_bab.py) menggantikan ikon emoji.
+    Dipasang hanya bila keterangan gambar di data masih sama dengan saat digambar (gambar_bab_label.json);
+    bila soal diedit, ikon tetap dipakai dan dilaporkan supaya digambar ulang."""
+    p = M / 'gambar_bab_label.json'
+    if not p.exists():
+        return
+    label, basi = baca(p), []
+    def cocok(kunci, ket):
+        if kunci not in label: return False
+        if label[kunci] != ket: basi.append(kunci); return False
+        return (R / f'img/soal/{kunci}.svg').exists()
+    for d in vols.values():
+        for m in d['modules']:
+            for k, daftar in (('t', m['tasks']), ('b', bank.get(m['code'], []))):
+                for i, t in enumerate(daftar, 1):
+                    kunci = f'M{m["code"]}-{k}{i}'
+                    if t.get('picture') and not t['picture'].get('img') and cocok(kunci, t['picture']['label']):
+                        t['picture'] = dict(t['picture'], img=kunci)
+                    if any(isinstance(o, dict) for o in t.get('options', [])):
+                        t['options'] = [dict(o, img=kunci + 'abc'[j]) if isinstance(o, dict) and cocok(kunci + 'abc'[j], o['label']) else o
+                                        for j, o in enumerate(t['options'])]
+    if basi:
+        print(f'⚑ {len(basi)} gambar bab tidak dipasang karena keterangannya berubah (gambar ulang: py _kerja/mini/gambar_bab.py):', ', '.join(basi))
 
 
 def data_studi():
