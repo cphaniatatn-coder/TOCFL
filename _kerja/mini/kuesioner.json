@@ -4,22 +4,32 @@
     "en": "1 = Strongly disagree · 2 = Disagree · 3 = Neutral · 4 = Agree · 5 = Strongly agree",
     "vi": "1 = Hoàn toàn không đồng ý · 2 = Không đồng ý · 3 = Trung lập · 4 = Đồng ý · 5 = Hoàn toàn đồng ý"
   },
+  "_baru": "Peserta yang menjawab BELUM PERNAH ikut TOCFL melihat petunjuk_baru dan teks 'baru' (butir 3, 5, 6, 10); yang pernah melihat teks biasa.",
+  "petunjuk_baru": {
+    "id": "Anda belum pernah mengikuti TOCFL: jawablah berdasarkan pengalaman Anda mengerjakan tes bahasa Mandarin lain (ulangan, kuis, latihan), atau bagaimana perasaan Anda membayangkan ujian TOCFL.",
+    "en": "You have not taken the TOCFL before: answer based on your experience with other Chinese tests (class tests, quizzes, practice), or on how you feel when you imagine the TOCFL exam.",
+    "vi": "Bạn chưa từng thi TOCFL: hãy trả lời dựa trên kinh nghiệm làm các bài kiểm tra tiếng Trung khác (bài kiểm tra trên lớp, bài kiểm tra ngắn, bài luyện tập), hoặc cảm giác của bạn khi hình dung kỳ thi TOCFL."
+  },
   "cemas": [
     {"dim": {"id": "A. Kecemasan umum terhadap ujian", "en": "A. General exam anxiety", "vi": "A. Lo âu chung về kỳ thi"},
      "items": [
       {"id": "Saya merasa gugup ketika memikirkan ujian TOCFL.", "en": "I feel nervous when I think about the TOCFL exam.", "vi": "Tôi cảm thấy lo lắng khi nghĩ đến kỳ thi TOCFL.", "r": 0},
       {"id": "Saya khawatir akan gagal dalam ujian TOCFL.", "en": "I worry that I will fail the TOCFL exam.", "vi": "Tôi lo rằng mình sẽ thi trượt TOCFL.", "r": 0},
-      {"id": "Saat ujian, saya sering lupa hal yang sebenarnya sudah saya ketahui.", "en": "During the exam I often forget things I actually know.", "vi": "Trong lúc thi, tôi thường quên những điều thật ra mình đã biết.", "r": 0},
+      {"id": "Saat ujian, saya sering lupa hal yang sebenarnya sudah saya ketahui.", "en": "During the exam I often forget things I actually know.", "vi": "Trong lúc thi, tôi thường quên những điều thật ra mình đã biết.", "r": 0,
+       "baru": {"id": "Saat mengerjakan tes bahasa Mandarin, saya sering lupa hal yang sebenarnya sudah saya ketahui.", "en": "When I take a Chinese test, I often forget things I actually know.", "vi": "Khi làm bài kiểm tra tiếng Trung, tôi thường quên những điều thật ra mình đã biết."}},
       {"id": "Saya cemas karena tidak tahu bentuk soal yang akan keluar.", "en": "I feel anxious because I do not know what types of questions will appear.", "vi": "Tôi lo lắng vì không biết đề thi sẽ có những dạng câu hỏi nào.", "r": 0, "kendala": "Tidak tahu bentuk soal (16/22)"},
-      {"id": "Batas waktu ujian membuat saya panik.", "en": "The time limit of the exam makes me panic.", "vi": "Giới hạn thời gian của bài thi làm tôi hoảng sợ.", "r": 0}
+      {"id": "Batas waktu ujian membuat saya panik.", "en": "The time limit of the exam makes me panic.", "vi": "Giới hạn thời gian của bài thi làm tôi hoảng sợ.", "r": 0,
+       "baru": {"id": "Batas waktu saat mengerjakan tes membuat saya panik.", "en": "The time limit when I take a test makes me panic.", "vi": "Giới hạn thời gian khi làm bài kiểm tra làm tôi hoảng sợ."}}
      ]},
     {"dim": {"id": "B. Kecemasan pada bagian 聽力 (menyimak)", "en": "B. Listening anxiety (聽力)", "vi": "B. Lo âu ở phần nghe (聽力)"},
      "items": [
-      {"id": "Karena gugup, saya tidak menyimak pertanyaan dengan teliti.", "en": "Because I am nervous, I do not listen to the questions carefully.", "vi": "Vì lo lắng, tôi không nghe kỹ câu hỏi.", "r": 0, "kendala": "Gugup, tidak menyimak teliti (15/22)"},
+      {"id": "Karena gugup, saya tidak menyimak pertanyaan dengan teliti.", "en": "Because I am nervous, I do not listen to the questions carefully.", "vi": "Vì lo lắng, tôi không nghe kỹ câu hỏi.", "r": 0, "kendala": "Gugup, tidak menyimak teliti (15/22)",
+       "baru": {"id": "Saat menyimak soal tes, saya terlalu gugup sehingga tidak menyimak pertanyaan dengan teliti.", "en": "When I listen to test questions, I am too nervous to listen to them carefully.", "vi": "Khi nghe câu hỏi trong bài kiểm tra, tôi quá lo lắng nên không nghe kỹ câu hỏi."}},
       {"id": "Saya gugup jika audio terdengar terlalu cepat.", "en": "I get nervous when the audio plays too fast.", "vi": "Tôi lo lắng khi bài nghe phát quá nhanh.", "r": 0, "kendala": "Audio terlalu cepat (11/22)"},
       {"id": "Saya butuh waktu memikirkan arti kata, sehingga tertinggal bagian berikutnya.", "en": "I need time to think about the meaning of words, so I miss the next part.", "vi": "Tôi cần thời gian để nghĩ nghĩa của từ nên bị lỡ phần tiếp theo.", "r": 0, "kendala": "Butuh waktu memikirkan arti kata (12/22)"},
       {"id": "Saya panik jika ada kata yang tidak saya pahami saat menyimak.", "en": "I panic when there is a word I do not understand while listening.", "vi": "Tôi hoảng khi có từ mình không hiểu trong lúc nghe.", "r": 0, "kendala": "Tidak memahami isi soal (7/22)"},
-      {"id": "Saya yakin dapat memahami percakapan sehari-hari dalam soal 聽力.", "en": "I am confident I can understand everyday conversations in the listening section.", "vi": "Tôi tự tin có thể hiểu các đoạn hội thoại hằng ngày trong phần nghe.", "r": 1}
+      {"id": "Saya yakin dapat memahami percakapan sehari-hari dalam soal 聽力.", "en": "I am confident I can understand everyday conversations in the listening section.", "vi": "Tôi tự tin có thể hiểu các đoạn hội thoại hằng ngày trong phần nghe.", "r": 1,
+       "baru": {"id": "Saya yakin dapat memahami percakapan sehari-hari dalam soal menyimak (聽力).", "en": "I am confident I can understand everyday conversations in listening (聽力) questions.", "vi": "Tôi tự tin có thể hiểu các đoạn hội thoại hằng ngày trong câu hỏi nghe (聽力)."}}
      ]},
     {"dim": {"id": "C. Kecemasan pada bagian 閱讀 (membaca)", "en": "C. Reading anxiety (閱讀)", "vi": "C. Lo âu ở phần đọc (閱讀)"},
      "items": [

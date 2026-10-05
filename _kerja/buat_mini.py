@@ -132,8 +132,10 @@ def data_studi():
 
 def kuesioner(lang):
     Q = baca(M / 'kuesioner.json')
-    return {'likert': Q['likert'][lang],
-            'cemas': [{'dim': d['dim'][lang], 'items': [{'t': it[lang], 'r': it['r']} for it in d['items']]} for d in Q['cemas']],
+    # 'tb' = teks untuk peserta yang belum pernah ikut TOCFL (hanya butir yang punya versi 'baru')
+    return {'likert': Q['likert'][lang], 'petunjukBaru': Q['petunjuk_baru'][lang],
+            'cemas': [{'dim': d['dim'][lang], 'items': [{'t': it[lang], 'r': it['r'], **({'tb': it['baru'][lang]} if 'baru' in it else {})}
+                                                         for it in d['items']]} for d in Q['cemas']],
             'eval': [x[lang] for x in Q['eval']], 'terbuka': [x[lang] for x in Q['terbuka']],
             'level': {k: v[lang] for k, v in Q['level'].items()}}
 

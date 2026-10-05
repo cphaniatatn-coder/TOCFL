@@ -63,7 +63,12 @@ function likertTable(items, startNo, withR) {
   const w = withR ? [500, 5226, 600, 540, 540, 540, 540, 540] : [500, 5826, 540, 540, 540, 540, 540];
   const head = ['No', 'Pernyataan / Statement / Phát biểu'].concat(withR ? ['Kode'] : []).concat(['1', '2', '3', '4', '5']);
   const rows = [head];
-  items.forEach((it, i) => rows.push([String(startNo + i), tri(it)].concat(withR ? [it.r ? '(R)' : ''] : []).concat(['☐', '☐', '☐', '☐', '☐'])));
+  // butir dengan versi 'baru': teks biasa untuk yang pernah ikut TOCFL, teks kedua untuk yang belum pernah
+  const isi = it => !it.baru ? tri(it) : [
+    p([run('Pernah ikut TOCFL:', { size: 16, bold: true, color: '888888' })], { spacing: { after: 0 } }), ...tri(it),
+    p([run('Belum pernah ikut TOCFL:', { size: 16, bold: true, color: 'B45309' })], { spacing: { before: 80, after: 0 } }), ...tri(it.baru),
+  ];
+  items.forEach((it, i) => rows.push([String(startNo + i), isi(it)].concat(withR ? [it.r ? '(R)' : ''] : []).concat(['☐', '☐', '☐', '☐', '☐'])));
   return table(w, rows);
 }
 
@@ -121,7 +126,7 @@ const BATAS = { A0: 'TBCL Level 1 (sampai A25)', A1: 'TBCL Level 1–2 (sampai B
 const children = [
   new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 60 }, children: run('Instrumen Pre-test & Post-test', { bold: true, size: 36 }) }),
   new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 60 }, children: run('Uji Coba Modul Mini TOCFL Band A (A0 · A1 · A2)', { size: 26 }) }),
-  new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 240 }, children: run('Draf 2 · 3 Oktober 2026 · untuk ditinjau bersama pembimbing', { italics: true, color: '666666', size: 20 }) }),
+  new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 240 }, children: run('Draf 4 · 5 Oktober 2026 · untuk ditinjau bersama pembimbing', { italics: true, color: '666666', size: 20 }) }),
 
   h1('1. Desain uji coba'),
   p('Tujuan: mengetahui (1) apakah modul menurunkan kecemasan peserta terhadap ujian TOCFL dan (2) apakah kemampuan peserta pada tema & grammar yang sering diujikan meningkat setelah memakai modul.'),
@@ -152,6 +157,18 @@ const children = [
     return Object.entries(m).map(([k, v]) => [k, v.a.join(', ') || '—', v.b.join(', ') || '—']);
   })())),
 
+  h1('3. Dasar penyusunan & rujukan instrumen'),
+  p('Tidak ada bagian yang mengambil (mengadopsi) instrumen baku apa adanya. Semua butir disusun baru dengan mengacu pada rujukan di bawah dan pada hasil kuesioner awal. Konsekuensinya, validitas dan reliabilitas harus dibuktikan sendiri di penelitian ini (lihat Catatan untuk pembimbing).'),
+  table([1900, 3626, 3500], [
+    ['Komponen', 'Rujukan', 'Cara dipakai'],
+    ['Desain penelitian', 'Campbell & Stanley (1963): one-group pretest–posttest design', 'Satu kelompok diukur sebelum & sesudah memakai modul. Keterbatasan: tanpa kelompok kontrol, sehingga perubahan skor tidak bisa sepenuhnya dipastikan berasal dari modul.'],
+    ['Bagian I Data peserta', 'Kuesioner awal 「華語文能力測驗調查」 (25 responden)', 'Kategori jawaban disamakan agar hasil uji coba bisa dibandingkan dengan kuesioner awal.'],
+    ['Bagian II Skala kecemasan', 'FLCAS (Horwitz, Horwitz & Cope, 1986); FLRAS (Saito, Horwitz & Garza, 1999); kecemasan menyimak (Kim, 2000); skala Likert (Likert, 1932)', 'Dimensi diambil dari konsep ketiga skala: kecemasan umum/takut dinilai (A), kecemasan menyimak (B), kecemasan membaca (C), kepercayaan diri (D). Isi butir diturunkan dari kendala yang paling sering disebut di kuesioner awal. Kalimat butir BUKAN terjemahan atau kutipan skala asli.'],
+    ['Bagian III Tes kemampuan', 'Format TOCFL Band A (國家華語測驗推動工作委員會, SC-TOP); 臺灣華語文能力基準 TBCL (國家教育研究院)', 'Bagian 聽力 Part 1–4 dan 閱讀 Part 1–5 meniru bentuk soal TOCFL Band A. Kosakata & grammar dibatasi pada level TBCL peserta (dicek otomatis). Semua soal baru, bukan soal asli TOCFL.'],
+    ['Bagian IV Evaluasi modul', 'Harapan terhadap bahan ajar di kuesioner awal', 'Disusun sendiri; tiap butir dipetakan ke satu harapan responden (tabel di bagian 2).'],
+  ]),
+  note('Draf butir dan terjemahannya disusun dengan bantuan Claude (AI). Setiap rujukan di atas wajib dicocokkan dengan sumber aslinya sebelum dikutip di thesis.'),
+
   h1('Bagian I — Data peserta (pre-test saja)'),
   note('Kategori disamakan dengan kuesioner awal agar hasilnya bisa dibandingkan.'),
   bullet('Kode peserta (dibuat otomatis oleh aplikasi) dan nama/inisial'),
@@ -166,6 +183,9 @@ const children = [
 
   h1('Bagian II — Skala Kecemasan Ujian TOCFL (pre-test & post-test, identik)'),
   note('Butir disusun sendiri dengan mengacu pada dimensi kecemasan bahasa asing FLCAS (Horwitz, Horwitz & Cope, 1986), kecemasan membaca (FLRAS; Saito, Horwitz & Garza, 1999), dan kecemasan menyimak (Kim, 2000), lalu disesuaikan dengan kendala dari kuesioner awal. Kalimatnya bukan kutipan skala aslinya. Rujukan WAJIB diverifikasi sebelum dipakai di thesis.'),
+  p([run('Dua versi kalimat: ', { bold: true }), run('butir 3, 5, 6, dan 10 punya kalimat kedua untuk peserta yang menjawab "Tidak" pada pertanyaan "Pernah mengikuti TOCFL?" di Bagian I, karena kalimat aslinya mengandaikan pengalaman ujian. Aplikasi memilih versinya otomatis, dan versi yang sama dipakai di pre-test dan post-test. Isi yang diukur tetap sama, jadi nomor butir dan penskoran tidak berubah. Peserta yang belum pernah ikut juga melihat petunjuk tambahan berikut:')]),
+  ...tri(Q.petunjuk_baru, 20),
+  p(''),
   ...tri(Q.likert, 20),
 ];
 let no = 1;
@@ -211,6 +231,20 @@ children.push(
   bullet('Terjemahan: teks English & Tiếng Việt disiapkan Claude; perlu dicek penutur asli (idealnya back-translation) agar skor antarbahasa sebanding.'),
   bullet('Paket A/B: bila ingin menghindari perbedaan tingkat kesulitan antarpaket, separuh peserta dapat mengerjakan B → A (counterbalancing).'),
   bullet('Peserta memilih level sendiri. Hasil pre-test bisa dipakai untuk memeriksa apakah pilihan level masuk akal (mis. skor sangat tinggi/rendah).'),
+  bullet('Butir 3, 5, 6, 10 punya dua versi kalimat (pernah / belum pernah ikut TOCFL). Saat analisis, laporkan juga hasil per kelompok "pernah" dan "belum pernah" (kolom pernah_tocfl di Google Sheet), dan periksa apakah kedua versi berperilaku sama (mis. Cronbach α per kelompok).'),
+  bullet('Karena butir skala disusun sendiri (bukan FLCAS/FLRAS asli), perlu uji coba terbatas (pilot) dan Cronbach α sebelum data utama dikumpulkan.'),
+
+  h1('Daftar pustaka'),
+  note('Format APA 7. Tetap cocokkan tahun, volume, dan halaman dengan sumber asli; entri bertanda [cek] belum lengkap.'),
+  ...[
+    'Campbell, D. T., & Stanley, J. C. (1963). Experimental and quasi-experimental designs for research. Rand McNally.',
+    'Horwitz, E. K., Horwitz, M. B., & Cope, J. (1986). Foreign language classroom anxiety. The Modern Language Journal, 70(2), 125–132.',
+    'Kim, J.-H. (2000). Foreign language listening anxiety: A study of Korean students learning English [Doctoral dissertation, The University of Texas at Austin].',
+    'Likert, R. (1932). A technique for the measurement of attitudes. Archives of Psychology, 22(140), 1–55.',
+    'Saito, Y., Horwitz, E. K., & Garza, T. J. (1999). Foreign language reading anxiety. The Modern Language Journal, 83(2), 202–218.',
+    '國家華語測驗推動工作委員會 (SC-TOP). (t.t.). 華語文能力測驗 TOCFL 準備級・入門基礎級 (Band A) 測驗說明. [cek: judul halaman, tahun, URL]',
+    '國家教育研究院. (t.t.). 臺灣華語文能力基準 (Taiwan Benchmarks for the Chinese Language, TBCL). [cek: tahun terbit & URL]',
+  ].map(t => p(t, { indent: { left: 540, hanging: 540 }, spacing: { after: 100 } })),
 );
 
 const doc = new Document({
