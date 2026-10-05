@@ -77,13 +77,19 @@ function soal(t) {
   const nomor = t.type === 'cloze' ? `${t.no}–${t.no + t.answers.length - 1}` : String(t.no);
   out.push(p([run(`${nomor}. `, { bold: true }), run(t.part, { bold: true }), run(`  ·  ${t.tema}`, { color: '666666', size: 20 })], { spacing: { before: 160, after: 60 }, keepNext: true }));
   if (t.picture) out.push(p([run('[Gambar] ', { bold: true, color: '2E6DA4', size: 20 }), run(t.picture.label, { italics: true, size: 20 })], { keepNext: true }));
-  if (t.lines) {
-    out.push(p([run('Naskah audio:', { size: 20, color: '666666' })], { keepNext: true }));
-    t.lines.forEach(l => out.push(p([run(`${l.sp}：${l.zh}`)], { indent: { left: 360 }, spacing: { after: 20 }, keepNext: true })));
+  if (t.type.startsWith('listen')) {
+    // urutan bunyi sama dengan TocflAudio (web/js/studi.js); 🔔 = bunyi bel (t.bel, bawaan: sebelum 問 di Part 2–4)
+    const pic = t.type === 'listen_pic';
+    const klip = pic ? ['問：' + t.question, '（A）（B）（C）'] : [...t.lines.map(l => `${l.sp}：${l.zh}`), '問：' + t.question];
+    const pos = b => pic ? { 0: 0, 1: 1, 4: 2 }[b] : b, bel = t.bel || (pic ? [] : [t.lines.length]);
+    out.push(p([run(`Naskah audio (🔔 = bunyi bel${pic ? '; pilihan tidak tercetak untuk peserta' : '; 問 hanya dibacakan, tidak tercetak'}):`, { size: 20, color: '666666' })], { keepNext: true }));
+    [...klip, null].forEach((k, i) => {
+      if (bel.some(b => pos(b) === i)) out.push(p([run('🔔', { color: 'B45309' })], { indent: { left: 360 }, spacing: { after: 20 }, keepNext: true }));
+      if (k) out.push(p([run(k)], { indent: { left: 360 }, spacing: { after: 20 }, keepNext: true }));
+    });
   }
-  if (t.type === 'listen_pic') out.push(p([run('Naskah audio (pilihan tidak tercetak untuk peserta):', { size: 20, color: '666666' })], { keepNext: true }));
   if (t.text) out.push(p([run(t.text)], { indent: { left: 360 }, keepNext: true }));
-  if (t.question) out.push(p([run('問：' + t.question)], { indent: { left: 360 }, keepNext: true }));
+  if (t.question && !t.type.startsWith('listen')) out.push(p([run('問：' + t.question)], { indent: { left: 360 }, keepNext: true }));
   return out.concat(t.options.map((o, i) => typeof o === 'string'
     ? p([run(`(${ABC[i]}) `), run(o)], { indent: { left: 720 }, spacing: { after: 20 } })
     : p([run(`(${ABC[i]}) `), run('[gambar] ', { color: '2E6DA4', size: 20 }), run(o.label, { italics: true, size: 20 })], { indent: { left: 720 }, spacing: { after: 20 } })));
@@ -126,7 +132,7 @@ const BATAS = { A0: 'TBCL Level 1 (sampai A25)', A1: 'TBCL Level 1–2 (sampai B
 const children = [
   new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 60 }, children: run('Instrumen Pre-test & Post-test', { bold: true, size: 36 }) }),
   new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 60 }, children: run('Uji Coba Modul Mini TOCFL Band A (A0 · A1 · A2)', { size: 26 }) }),
-  new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 240 }, children: run('Draf 4 · 5 Oktober 2026 · untuk ditinjau bersama pembimbing', { italics: true, color: '666666', size: 20 }) }),
+  new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 240 }, children: run('Draf 5 · 5 Oktober 2026 · untuk ditinjau bersama pembimbing', { italics: true, color: '666666', size: 20 }) }),
 
   h1('1. Desain uji coba'),
   p('Tujuan: mengetahui (1) apakah modul menurunkan kecemasan peserta terhadap ujian TOCFL dan (2) apakah kemampuan peserta pada tema & grammar yang sering diujikan meningkat setelah memakai modul.'),
@@ -202,6 +208,7 @@ children.push(
   pb(),
   h1('Bagian III — Tes Kemampuan bergaya TOCFL'),
   p('Tiap level punya dua paket setara: Paket A untuk pre-test, Paket B untuk post-test. Butir bernomor sama di kedua paket setara (bagian ujian, tema, dan tingkat kesulitan sama; kalimat & jawaban berbeda). Semua butir baru — tidak sama dengan soal latihan atau Tes Bab di modul. 20 butir per paket, ± 30 menit.'),
+  p([run('Audio 聽力 (meniru TOCFL): ', { bold: true }), run('setiap soal hanya bisa diputar 1 kali, kecepatan normal (1×) tanpa pilihan kecepatan, dengan jeda antarkalimat. Part 1: 問 lalu pilihan A, B, C dibacakan. Part 2–4: dialog, lalu bunyi bel 🔔, lalu 問 dibacakan; teks 問 tidak tercetak di layar. Posisi bel per soal ditandai 🔔 di naskah audio.')]),
   note('Semua teks Mandarin sudah dicek otomatis (py _kerja/mini/cek_tes.py): hanya memakai kosakata TBCL sampai level peserta, tanpa pola grammar di atas levelnya. Gambar di draf ini masih berupa deskripsi; versi akhir memakai ilustrasi hitam-putih bergaya TOCFL seperti di aplikasi.'),
 );
 for (const lv of ['A0', 'A1', 'A2']) {
