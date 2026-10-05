@@ -174,7 +174,7 @@ const children = [
   bullet('Kode peserta (dibuat otomatis oleh aplikasi) dan nama/inisial'),
   bullet('Usia: 15–18 / 19–25 / 26–35 / > 35 tahun'),
   bullet('Kewarganegaraan: Indonesia / Vietnam / lainnya: ____'),
-  bullet('Kemampuan Mandarin saat ini (penilaian diri): A0 / A1 / A2 / B1 / B2 / C1'),
+  bullet('Kemampuan Mandarin saat ini (penilaian diri): A0 / A1 / A2'),
   bullet('Pernah mengikuti ujian kemampuan bahasa Mandarin (TOCFL)? Ya / Tidak — bila ya, level & tahun: ____'),
   bullet('Lama belajar bahasa Mandarin: < 6 bulan / 6–12 bulan / 1–2 tahun / > 2 tahun'),
   bullet('Rencana mengikuti TOCFL: ≤ 3 bulan lagi / 3–6 bulan / > 6 bulan / belum tahu'),
