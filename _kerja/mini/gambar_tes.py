@@ -69,6 +69,9 @@ A['TA2B-4'] = (lantai() + papan_tulis(85, 30, 120, 70) + garis((45, 85), (75, 60
 
 def main():
     from svg_lib import bungkus
+    sys.path.insert(0, f'{K}/mini')
+    from gambar_pilihan import P
+    A.update(P)
     os.makedirs(f'{R}/img/soal', exist_ok=True)
     for i, isi in A.items():
         open(f'{R}/img/soal/{i}.svg', 'w', encoding='utf-8').write(bungkus(isi))
@@ -83,10 +86,30 @@ def main():
                               f'<br><small>✗ {" / ".join(o for k, o in enumerate(t["options"]) if k != t["answer"])}<br>{t["picture"]["label"]}</small></figcaption></figure>')
                     if i not in A:
                         print('BELUM ADA GAMBAR', i)
+                    continue
+                # pilihan bergambar (gambar_pilihan.py): satu baris lebar = gambar soal (bila ada) + pilihan A/B/C
+                pil = [o for o in t['options'] if isinstance(o, dict)]
+                if not pil and not t.get('picture'):
+                    continue
+                naskah = ' '.join(l['zh'] for l in t.get('lines', [])) + (f' 問：{t["question"]}' if t.get('question') else '') + t.get('text', '')
+                isi = ''
+                if t.get('picture'):
+                    isi += f'<figure><img src="../../img/soal/{i}.svg"><figcaption>gambar soal · {t["picture"]["label"]}</figcaption></figure>'
+                    if i not in A: print('BELUM ADA GAMBAR', i)
+                for k, o in enumerate(pil):
+                    kk = f'{i}{"abc"[k]}'
+                    isi += (f'<figure class="{"ok" if k == t.get("answer") else ""}"><img src="../../img/soal/{kk}.svg">'
+                            f'<figcaption>{"ABC"[k]}{" ✔" if k == t.get("answer") else ""} · {o["label"]}</figcaption></figure>')
+                    if kk not in A: print('BELUM ADA GAMBAR', kk)
+                if not pil:   # 閱讀 Part 2/3: pilihan teks
+                    isi += f'<p>{" / ".join(("✔ " if k == t["answer"] else "") + o for k, o in enumerate(t["options"]))}</p>'
+                kartu += f'<section><h4>{i} · {t["part"]} — {naskah}</h4><div>{isi}</div></section>'
     os.makedirs(f'{K}/gambar', exist_ok=True)
     open(f'{K}/gambar/periksa_tes.html', 'w', encoding='utf-8').write(
         '<!doctype html><meta charset="utf-8"><style>body{font-family:sans-serif;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:10px}'
-        'figure{margin:0;border:1px solid #ccc;padding:4px}img{width:100%}figcaption{font-size:12px}</style>' + kartu)
+        'figure{margin:0;border:1px solid #ccc;padding:4px}img{width:100%}figcaption{font-size:12px}'
+        'section{grid-column:1/-1;border-top:2px solid #888}section h4{margin:6px 0;font-size:13px}section div{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}'
+        'figure.ok{border:3px solid #1e9e62}</style>' + kartu)
     print(f'{len(A)} gambar ditulis; lembar periksa: _kerja/gambar/periksa_tes.html')
 
 

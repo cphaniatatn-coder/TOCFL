@@ -125,6 +125,10 @@ def data_studi():
                 t['part'], t['instr'] = BAGIAN[(t['type'], t['part'][:9])]
                 if t.get('picture', {}).get('img') is None and os.path.exists(R / f'img/soal/T{lv}{paket}-{t["no"]}.svg'):
                     t.setdefault('picture', {})['img'] = f'T{lv}{paket}-{t["no"]}'
+                # pilihan bergambar → ilustrasi T<lv><paket>-<no><a|b|c>.svg (_kerja/mini/gambar_pilihan.py)
+                t['options'] = [dict(o, img=f'T{lv}{paket}-{t["no"]}{"abc"[k]}')
+                                if isinstance(o, dict) and os.path.exists(R / f'img/soal/T{lv}{paket}-{t["no"]}{"abc"[k]}.svg') else o
+                                for k, o in enumerate(t['options'])]
                 out.append(t)
             tes[lv][paket] = out
     return {'tes': tes}
