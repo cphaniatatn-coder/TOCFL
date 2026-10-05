@@ -132,7 +132,7 @@ const BATAS = { A0: 'TBCL Level 1 (sampai A25)', A1: 'TBCL Level 1–2 (sampai B
 const children = [
   new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 60 }, children: run('Instrumen Pre-test & Post-test', { bold: true, size: 36 }) }),
   new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 60 }, children: run('Uji Coba Modul Mini TOCFL Band A (A0 · A1 · A2)', { size: 26 }) }),
-  new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 240 }, children: run('Draf 6 · 5 Oktober 2026 · untuk ditinjau bersama pembimbing', { italics: true, color: '666666', size: 20 }) }),
+  new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 240 }, children: run('Draf 7 · 5 Oktober 2026 · untuk ditinjau bersama pembimbing', { italics: true, color: '666666', size: 20 }) }),
 
   h1('1. Desain uji coba'),
   p('Tujuan: mengetahui (1) apakah modul menurunkan kecemasan peserta terhadap ujian TOCFL dan (2) apakah kemampuan peserta pada tema & grammar yang sering diujikan meningkat setelah memakai modul.'),
