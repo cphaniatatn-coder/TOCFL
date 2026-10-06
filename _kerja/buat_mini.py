@@ -123,7 +123,8 @@ def pasang_catatan_grammar(vols):
     C = baca(M / 'catatan_grammar.json') if (M / 'catatan_grammar.json').exists() else {}
     L = baca(M / 'latihan_grammar.json')['soal'] if (M / 'latihan_grammar.json').exists() else {}
     blok = lambda b: ({'point': b['point']['id']} if 'point' in b else {}) | {
-        'rujukan': f'《看圖學中文語法・{b["buku"]}》 {b["unit"]}', 'note': [n['id'] for n in b['note']]}
+        'rujukan': '' if b['buku'] == 'modul' else f'《看圖學中文語法・{b["buku"]}》 {b["unit"]}',   # 'modul' = penjelasan modul sendiri
+        'note': [n['id'] for n in b['note']]}
     for d in vols.values():
         for m in d['modules']:
             c, l = C.get(m['code'], {}), L.get(m['code'], {})

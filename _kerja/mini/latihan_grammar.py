@@ -11,6 +11,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 M = os.path.dirname(os.path.abspath(__file__)); K = os.path.dirname(M)
 sys.path.insert(0, K)
 
+TAMBAHAN = {'A10': {'刻', '一刻', '三刻', '差', '零'}, 'A18': {'零'}}   # dikenalkan sebagai "kosakata tambahan" di catatan bab
 BENAR = {'id': 'Mana yang BENAR?', 'en': 'Which one is CORRECT?', 'vi': 'Câu nào ĐÚNG?'}
 def t(i, e, v): return {'id': i, 'en': e, 'vi': v}
 def s(q, o, why): return {'q': q, 'o': o, 'why': why}
@@ -40,6 +41,14 @@ L = {
         s(BENAR, ['電視在床前面。', '電視床前面在。', '在電視床前面。'], t('Urutan: benda + 在 + patokan + kata posisi.', 'Order: thing + 在 + reference + position word.', 'Trật tự: vật + 在 + vật mốc + từ chỉ vị trí.')),
         s(t('"Kursi ada di bawah meja" =', '"The chair is under the table" =', '"Cái ghế ở dưới bàn" ='), ['椅子在桌子下。', '桌子在椅子下。', '椅子下在桌子。'], t('Benda yang dicari (椅子) di depan, patokannya (桌子) sesudah 在.', 'The thing (椅子) comes first, the reference (桌子) after 在.', 'Vật cần nói (椅子) đứng trước, vật mốc (桌子) sau 在.'))]},
 'B04': {
+ 'bab': [
+         s(t('我們一起去吃飯（　）！ (mengajak)', '我們一起去吃飯（　）！ (suggesting)', '我們一起去吃飯（　）！ (rủ rê)'), ['吧', '嗎', '呢'], t('吧 untuk ajakan: "yuk".', '吧 for a suggestion: "let\'s".', '吧 dùng để rủ: "nhé".')),
+         s(t('你是美美（　）？ (sudah menduga, minta dipastikan)', '你是美美（　）？ (guessing, asking to confirm)', '你是美美（　）？ (đoán, muốn xác nhận)'), ['吧', '呢', '啦'], t('吧 di pertanyaan = "…, kan?" (sudah menduga jawabannya).', '吧 in a question = "…, right?" (you already guess the answer).', '吧 trong câu hỏi = "…, phải không?" (đã đoán được câu trả lời).')),
+         s(t('A：我們一起去看電影，好不好？ B：好（　）！ (setuju dengan senang hati)', 'A：我們一起去看電影，好不好？ B：好（　）！ (gladly agreeing)', 'A：我們一起去看電影，好不好？ B：好（　）！ (vui vẻ đồng ý)'), ['啊', '嗎', '呢'], t('好啊！ = setuju dengan ramah; 好吧 = "ya sudah, boleh deh".', '好啊！ = warm agreement; 好吧 = "well, OK then".', '好啊！ = đồng ý thân thiện; 好吧 = "thôi được".')),
+         s(t('最近很忙（　）！每天都有很多功課。 (seruan/keluhan)', '最近很忙（　）！每天都有很多功課。 (exclamation/complaint)', '最近很忙（　）！每天都有很多功課。 (cảm thán/than phiền)'), ['啊', '吧', '嗎'], t('啊 menambah perasaan pada pernyataan: "sibuk banget!"', '啊 adds feeling to a statement: "SO busy!"', '啊 thêm cảm xúc cho câu: "bận quá!"')),
+         s(t('我的手機沒電（　）！ (keadaan baru, nada mengeluh)', '我的手機沒電（　）！ (new situation, complaining)', '我的手機沒電（　）！ (tình huống mới, than phiền)'), ['啦', '吧', '嗎'], t('啦 = 了 + 啊: memberitahu keadaan baru dengan nada santai/mengeluh.', '啦 = 了 + 啊: announces a new situation casually/complaining.', '啦 = 了 + 啊: báo tình huống mới với giọng thoải mái/than phiền.')),
+         s(t('你在跟誰聊天（　）？ (bertanya dengan nada akrab)', '你在跟誰聊天（　）？ (asking in a friendly tone)', '你在跟誰聊天（　）？ (hỏi giọng thân mật)'), ['呀', '吧', '啦'], t('呀 (= 啊) membuat pertanyaan terdengar akrab; 吧 untuk dugaan, 啦 untuk keadaan baru.', '呀 (= 啊) makes a question sound friendly; 吧 is for guesses, 啦 for new situations.', '呀 (= 啊) làm câu hỏi thân mật; 吧 dùng để đoán, 啦 cho tình huống mới.')),
+         s(BENAR, ['你是大文吧？', '你是大文吧嗎？', '你吧是大文？'], t('吧 menggantikan 嗎 bila sudah menduga; keduanya tidak digabung, dan partikel selalu di akhir.', '吧 replaces 嗎 when you already guess; they are never combined, and particles always go at the end.', '吧 thay cho 嗎 khi đã đoán; không ghép hai từ, và trợ từ luôn ở cuối câu.'))],
  'g1': [s('他（　）看電視，不能聊天。', ['在', '有', '是'], t('在 + V = sedang melakukan.', '在 + V = be doing.', '在 + V = đang làm.')),
         s(BENAR, ['我在家看書。', '我看書在家。', '我家在看書。'], t('在 + tempat diletakkan SEBELUM kata kerja.', '在 + place comes BEFORE the verb.', '在 + nơi chốn đặt TRƯỚC động từ.')),
         s('你打電話的時候，我（　）上網。', ['正在', '最近', '一會'], t('正在 menekankan "tepat pada saat itu".', '正在 stresses "right at that moment".', '正在 nhấn mạnh "đúng vào lúc đó".')),
@@ -151,17 +160,35 @@ L = {
         s('他不只會唱歌，（　）會跳舞。', ['而且', '可是', '所以'], t('不只 … 而且 … ≈ 不但 … 而且 ….', '不只 … 而且 … ≈ 不但 … 而且 ….', '不只 … 而且 … ≈ 不但 … 而且 ….')),
         s('這家店很近，（　）很便宜。', ['而且', '可是', '因為'], t('Dua hal positif → 而且; 可是 untuk hal yang berlawanan.', 'Two positive points → 而且; 可是 is for contrast.', 'Hai ý tích cực → 而且; 可是 dùng cho ý trái ngược.'))]},
 'A10': {
- 'bab': [s('2:00 =', ['兩點', '二點', '兩點半'], t('Jam 2 = 兩點 (bukan 二點); 兩點半 = 2.30.', '2 o\'clock = 兩點 (not 二點); 兩點半 = 2:30.', '2 giờ = 兩點 (không nói 二點); 兩點半 = 2:30.')),
-         s(BENAR, ['我每天七點起床。', '我每天起床七點。', '每天我起床七點。'], t('Keterangan waktu diletakkan SEBELUM kata kerja.', 'Time expressions go BEFORE the verb.', 'Trạng ngữ thời gian đặt TRƯỚC động từ.')),
-         s('我每天運動三十（　）。', ['分鐘', '點', '半'], t('Lama waktu: 分鐘; titik waktu: 點.', 'Duration: 分鐘; point in time: 點.', 'Khoảng thời gian: 分鐘; thời điểm: 點.'))]},
+ 'bab': [s(t('Urutan yang BENAR untuk "pukul 7 pagi, 6 Oktober":', 'The CORRECT order for "7 a.m., 6 October":', 'Trật tự ĐÚNG của "7 giờ sáng, ngày 6 tháng 10":'), ['十月六號早上七點', '早上七點十月六號', '七點早上六號十月'], t('Dari besar ke kecil: bulan → tanggal → bagian hari → jam.', 'From big to small: month → date → part of day → hour.', 'Từ lớn đến nhỏ: tháng → ngày → buổi → giờ.')),
+         s(BENAR, ['我每天早上七點起床。', '我每天起床早上七點。', '我七點起床每天早上。'], t('Keterangan waktu (每天早上七點) diletakkan SEBELUM kata kerja.', 'The time expression (每天早上七點) goes BEFORE the verb.', 'Trạng ngữ thời gian (每天早上七點) đặt TRƯỚC động từ.')),
+         s(BENAR, ['晚上十點', '十點晚上', '十晚上點'], t('Bagian hari (晚上) sebelum jam (十點).', 'Part of the day (晚上) before the hour (十點).', 'Buổi (晚上) đứng trước giờ (十點).')),
+         s('2:00 =', ['兩點', '二點', '兩點半'], t('Jam 2 = 兩點 (bukan 二點); 兩點半 = 2.30.', '2 o\'clock = 兩點 (not 二點); 兩點半 = 2:30.', '2 giờ = 兩點 (không nói 二點); 兩點半 = 2:30.')),
+         s('6:30 =', ['六點半', '半六點', '六點三十半'], t('半 = setengah, diletakkan sesudah 點.', '半 = half, placed after 點.', '半 = rưỡi, đặt sau 點.')),
+         s('7:15 =', ['七點一刻', '七點半', '一刻七點'], t('一刻 = 15 menit, sesudah 點: 七點一刻.', '一刻 = 15 minutes, after 點: 七點一刻.', '一刻 = 15 phút, sau 點: 七點一刻.')),
+         s('7:55 =', ['差五分八點', '差五分七點', '八點五十五分'], t('差五分八點 = kurang 5 menit pukul 8 = 7.55; 八點五十五分 = 8.55.', '差五分八點 = five to eight = 7:55; 八點五十五分 = 8:55.', '差五分八點 = tám giờ kém năm = 7:55; 八點五十五分 = 8:55.')),
+         s('8:05 =', ['八點零五分', '八點五十分', '五點八分'], t('Menit di bawah 10 boleh memakai 零: 八點零五分.', 'Minutes under 10 may take 零: 八點零五分.', 'Phút dưới 10 có thể thêm 零: 八點零五分.')),
+         s('我每天運動三十（　）。', ['分鐘', '點', '半'], t('Lama waktu: 分鐘 (sesudah kata kerja); titik waktu: 點.', 'Duration: 分鐘 (after the verb); point in time: 點.', 'Khoảng thời gian: 分鐘 (sau động từ); thời điểm: 點.'))]},
 'A18': {
- 'bab': [s('這杯咖啡（　）錢？', ['多少', '什麼', '哪'], t('多少錢？ untuk menanyakan harga.', '多少錢？ asks the price.', '多少錢？ để hỏi giá.')),
-         s('五十塊 =', ['五十元', '五十點', '五百塊'], t('塊 (lisan) = 元 (tulisan).', '塊 (spoken) = 元 (written).', '塊 (khẩu ngữ) = 元 (văn viết).')),
-         s('咖啡，一杯（　）？', ['多少錢', '什麼錢', '哪錢'], t('Benda disebut dulu sebagai topik, lalu 一杯多少錢.', 'Name the item first as the topic, then 一杯多少錢.', 'Nêu món đồ trước làm chủ đề, rồi 一杯多少錢.'))]},
+ 'bab': [s('300 =', ['三百', '三十', '三千'], t('百 = ratus: 三百 = 300; 三十 = 30; 三千 = 3.000.', '百 = hundred: 三百 = 300; 三十 = 30; 三千 = 3,000.', '百 = trăm: 三百 = 300; 三十 = 30; 三千 = 3.000.')),
+         s('2,000 =', ['兩千', '兩百', '兩萬'], t('千 = ribu; angka 2 di depan 千 dibaca 兩.', '千 = thousand; 2 before 千 is 兩.', '千 = nghìn; số 2 trước 千 đọc là 兩.')),
+         s('10,000 =', ['一萬', '十千', '一千'], t('10.000 = 一萬 (bukan 十千): Mandarin menghitung per empat digit.', '10,000 = 一萬 (not 十千): Chinese counts in groups of four digits.', '10.000 = 一萬 (không phải 十千): tiếng Trung đếm theo nhóm bốn chữ số.')),
+         s('25,000 =', ['兩萬五千', '二十五千', '兩千五百'], t('2|5000 → 兩萬 + 五千.', '2|5000 → 兩萬 + 五千.', '2|5000 → 兩萬 + 五千.')),
+         s('1,200,000 =', ['一百二十萬', '一千二百萬', '十二萬'], t('120|0000 → 一百二十 + 萬.', '120|0000 → 一百二十 + 萬.', '120|0000 → 一百二十 + 萬.')),
+         s('105 =', ['一百零五', '一百五', '一百五十'], t('Nol di tengah dibaca 零; 一百五 = 150.', 'A middle zero is read 零; 一百五 = 150.', 'Số 0 ở giữa đọc là 零; 一百五 = 150.')),
+         s(t('Sekitar 1.300 ("seribu lebih") =', 'About 1,300 ("over a thousand") =', 'Khoảng 1.300 ("hơn một nghìn") ='), ['一千多塊', '一千塊', '多一千塊'], t('Angka + 多 + 塊 = lebih dari angka itu.', 'Number + 多 + 塊 = more than that number.', 'Số + 多 + 塊 = hơn số đó.')),
+         s('這個多少錢？ — 這個一百二十（　）。', ['塊', '個', '點'], t('Satuan uang dalam percakapan: 塊.', 'The spoken money unit: 塊.', 'Đơn vị tiền khi nói: 塊.')),
+         s(t('給你兩百塊。— 找你四十塊。 Harga barangnya:', '給你兩百塊。— 找你四十塊。 The price was:', '給你兩百塊。— 找你四十塊。 Giá món đồ là:'), ['一百六十塊', '兩百四十塊', '四十塊'], t('200 − 40 = 160 = 一百六十塊.', '200 − 40 = 160 = 一百六十塊.', '200 − 40 = 160 = 一百六十塊.'))]},
 'A24': {
- 'bab': [s('今天熱（　）熱？', ['不', '沒', '很'], t('Pertanyaan A-不-A: 熱不熱？', 'A-not-A question: 熱不熱？', 'Câu hỏi A-不-A: 熱不熱？')),
+ 'bab': [s(t('今天好（　）！ (panas sekali)', '今天好（　）！ (so hot)', '今天好（　）！ (nóng quá)'), ['熱', '冷', '下雨'], t('好 + kata sifat = sangat … (seruan): 好熱！', '好 + adjective = so … (exclamation): 好熱！', '好 + tính từ = … quá (cảm thán): 好熱！')),
+         s('明天天氣（　）？ — 很冷。', ['怎麼樣', '什麼', '哪'], t('天氣怎麼樣？ = cuacanya bagaimana?', '天氣怎麼樣？ = how is the weather?', '天氣怎麼樣？ = thời tiết thế nào?')),
+         s('今天熱（　）熱？', ['不', '沒', '很'], t('Pertanyaan A-不-A: 熱不熱？', 'A-not-A question: 熱不熱？', 'Câu hỏi A-不-A: 熱不熱？')),
+         s(BENAR, ['今天風很大。', '今天很風大。', '今天大風很。'], t('Angin kencang = 風很大.', 'Strong wind = 風很大.', 'Gió to = 風很大.')),
+         s(BENAR, ['明天不下雨。', '明天下不雨。', '明天雨不下。'], t('下雨 kata kerja; negasinya 不下雨.', '下雨 is a verb; its negative is 不下雨.', '下雨 là động từ; phủ định là 不下雨.')),
+         s('臺灣很熱，印尼（　）很熱。', ['也', '最', '不'], t('也 = juga (sama dengan yang disebut sebelumnya).', '也 = also (the same as what came before).', '也 = cũng (giống điều nói trước).')),
+         s('明天不下雨，（　）風很大。', ['可是', '也', '最'], t('可是 menghubungkan dua keadaan yang berlawanan.', '可是 links two contrasting conditions.', '可是 nối hai tình trạng trái ngược.')),
          s(BENAR, ['台北七月最熱。', '台北最七月熱。', '台北七月熱最。'], t('最 diletakkan tepat sebelum kata sifat.', '最 goes right before the adjective.', '最 đặt ngay trước tính từ.')),
-         s('今天不熱，可是有一點（　）。', ['冷', '很冷', '太冷'], t('有一點 + Vs (tanpa 很).', '有一點 + Vs (without 很).', '有一點 + Vs (không có 很).'))]},
+         s('今天不熱，可是有一點（　）。', ['冷', '很冷', '太冷'], t('有一點 + kata sifat (tanpa 很/太).', '有一點 + adjective (without 很/太).', '有一點 + tính từ (không có 很/太).'))]},
 }
 
 
@@ -170,7 +197,7 @@ def main():
     mods = cd.urutan()
     out, kamus, salah, n = {}, {}, 0, 0
     for kode, grup in L.items():
-        ok = cd.kosakata_sampai(kode, mods)
+        ok = cd.kosakata_sampai(kode, mods) | TAMBAHAN.get(kode, set())
         out[kode] = {}
         for g, soal in grup.items():
             daftar = []

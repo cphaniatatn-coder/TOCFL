@@ -218,6 +218,78 @@
    ]
   },
   "B04": {
+   "bab": [
+    {
+     "q": "我們一起去吃飯（　）！ (mengajak)",
+     "options": [
+      "吧",
+      "嗎",
+      "呢"
+     ],
+     "answer": 0,
+     "why": "吧 untuk ajakan: \"yuk\"."
+    },
+    {
+     "q": "你是美美（　）？ (sudah menduga, minta dipastikan)",
+     "options": [
+      "啦",
+      "吧",
+      "呢"
+     ],
+     "answer": 1,
+     "why": "吧 di pertanyaan = \"…, kan?\" (sudah menduga jawabannya)."
+    },
+    {
+     "q": "A：我們一起去看電影，好不好？ B：好（　）！ (setuju dengan senang hati)",
+     "options": [
+      "嗎",
+      "呢",
+      "啊"
+     ],
+     "answer": 2,
+     "why": "好啊！ = setuju dengan ramah; 好吧 = \"ya sudah, boleh deh\"."
+    },
+    {
+     "q": "最近很忙（　）！每天都有很多功課。 (seruan/keluhan)",
+     "options": [
+      "啊",
+      "吧",
+      "嗎"
+     ],
+     "answer": 0,
+     "why": "啊 menambah perasaan pada pernyataan: \"sibuk banget!\""
+    },
+    {
+     "q": "我的手機沒電（　）！ (keadaan baru, nada mengeluh)",
+     "options": [
+      "嗎",
+      "啦",
+      "吧"
+     ],
+     "answer": 1,
+     "why": "啦 = 了 + 啊: memberitahu keadaan baru dengan nada santai/mengeluh."
+    },
+    {
+     "q": "你在跟誰聊天（　）？ (bertanya dengan nada akrab)",
+     "options": [
+      "吧",
+      "啦",
+      "呀"
+     ],
+     "answer": 2,
+     "why": "呀 (= 啊) membuat pertanyaan terdengar akrab; 吧 untuk dugaan, 啦 untuk keadaan baru."
+    },
+    {
+     "q": "Mana yang BENAR?",
+     "options": [
+      "你是大文吧？",
+      "你是大文吧嗎？",
+      "你吧是大文？"
+     ],
+     "answer": 0,
+     "why": "吧 menggantikan 嗎 bila sudah menduga; keduanya tidak digabung, dan partikel selalu di akhir."
+    }
+   ],
    "g1": [
     {
      "q": "他（　）看電視，不能聊天。",
@@ -1284,6 +1356,36 @@
   "A10": {
    "bab": [
     {
+     "q": "Urutan yang BENAR untuk \"pukul 7 pagi, 6 Oktober\":",
+     "options": [
+      "十月六號早上七點",
+      "早上七點十月六號",
+      "七點早上六號十月"
+     ],
+     "answer": 0,
+     "why": "Dari besar ke kecil: bulan → tanggal → bagian hari → jam."
+    },
+    {
+     "q": "Mana yang BENAR?",
+     "options": [
+      "我七點起床每天早上。",
+      "我每天早上七點起床。",
+      "我每天起床早上七點。"
+     ],
+     "answer": 1,
+     "why": "Keterangan waktu (每天早上七點) diletakkan SEBELUM kata kerja."
+    },
+    {
+     "q": "Mana yang BENAR?",
+     "options": [
+      "十點晚上",
+      "十晚上點",
+      "晚上十點"
+     ],
+     "answer": 2,
+     "why": "Bagian hari (晚上) sebelum jam (十點)."
+    },
+    {
      "q": "2:00 =",
      "options": [
       "兩點",
@@ -1294,14 +1396,44 @@
      "why": "Jam 2 = 兩點 (bukan 二點); 兩點半 = 2.30."
     },
     {
-     "q": "Mana yang BENAR?",
+     "q": "6:30 =",
      "options": [
-      "每天我起床七點。",
-      "我每天七點起床。",
-      "我每天起床七點。"
+      "六點三十半",
+      "六點半",
+      "半六點"
      ],
      "answer": 1,
-     "why": "Keterangan waktu diletakkan SEBELUM kata kerja."
+     "why": "半 = setengah, diletakkan sesudah 點."
+    },
+    {
+     "q": "7:15 =",
+     "options": [
+      "七點半",
+      "一刻七點",
+      "七點一刻"
+     ],
+     "answer": 2,
+     "why": "一刻 = 15 menit, sesudah 點: 七點一刻."
+    },
+    {
+     "q": "7:55 =",
+     "options": [
+      "差五分八點",
+      "差五分七點",
+      "八點五十五分"
+     ],
+     "answer": 0,
+     "why": "差五分八點 = kurang 5 menit pukul 8 = 7.55; 八點五十五分 = 8.55."
+    },
+    {
+     "q": "8:05 =",
+     "options": [
+      "五點八分",
+      "八點零五分",
+      "八點五十分"
+     ],
+     "answer": 1,
+     "why": "Menit di bawah 10 boleh memakai 零: 八點零五分."
     },
     {
      "q": "我每天運動三十（　）。",
@@ -1311,55 +1443,175 @@
       "分鐘"
      ],
      "answer": 2,
-     "why": "Lama waktu: 分鐘; titik waktu: 點."
+     "why": "Lama waktu: 分鐘 (sesudah kata kerja); titik waktu: 點."
     }
    ]
   },
   "A18": {
    "bab": [
     {
-     "q": "這杯咖啡（　）錢？",
+     "q": "300 =",
      "options": [
-      "多少",
-      "什麼",
-      "哪"
+      "三百",
+      "三十",
+      "三千"
      ],
      "answer": 0,
-     "why": "多少錢？ untuk menanyakan harga."
+     "why": "百 = ratus: 三百 = 300; 三十 = 30; 三千 = 3.000."
     },
     {
-     "q": "五十塊 =",
+     "q": "2,000 =",
      "options": [
-      "五百塊",
-      "五十元",
-      "五十點"
+      "兩萬",
+      "兩千",
+      "兩百"
      ],
      "answer": 1,
-     "why": "塊 (lisan) = 元 (tulisan)."
+     "why": "千 = ribu; angka 2 di depan 千 dibaca 兩."
     },
     {
-     "q": "咖啡，一杯（　）？",
+     "q": "10,000 =",
      "options": [
-      "什麼錢",
-      "哪錢",
-      "多少錢"
+      "十千",
+      "一千",
+      "一萬"
      ],
      "answer": 2,
-     "why": "Benda disebut dulu sebagai topik, lalu 一杯多少錢."
+     "why": "10.000 = 一萬 (bukan 十千): Mandarin menghitung per empat digit."
+    },
+    {
+     "q": "25,000 =",
+     "options": [
+      "兩萬五千",
+      "二十五千",
+      "兩千五百"
+     ],
+     "answer": 0,
+     "why": "2|5000 → 兩萬 + 五千."
+    },
+    {
+     "q": "1,200,000 =",
+     "options": [
+      "十二萬",
+      "一百二十萬",
+      "一千二百萬"
+     ],
+     "answer": 1,
+     "why": "120|0000 → 一百二十 + 萬."
+    },
+    {
+     "q": "105 =",
+     "options": [
+      "一百五",
+      "一百五十",
+      "一百零五"
+     ],
+     "answer": 2,
+     "why": "Nol di tengah dibaca 零; 一百五 = 150."
+    },
+    {
+     "q": "Sekitar 1.300 (\"seribu lebih\") =",
+     "options": [
+      "一千多塊",
+      "一千塊",
+      "多一千塊"
+     ],
+     "answer": 0,
+     "why": "Angka + 多 + 塊 = lebih dari angka itu."
+    },
+    {
+     "q": "這個多少錢？ — 這個一百二十（　）。",
+     "options": [
+      "點",
+      "塊",
+      "個"
+     ],
+     "answer": 1,
+     "why": "Satuan uang dalam percakapan: 塊."
+    },
+    {
+     "q": "給你兩百塊。— 找你四十塊。 Harga barangnya:",
+     "options": [
+      "兩百四十塊",
+      "四十塊",
+      "一百六十塊"
+     ],
+     "answer": 2,
+     "why": "200 − 40 = 160 = 一百六十塊."
     }
    ]
   },
   "A24": {
    "bab": [
     {
-     "q": "今天熱（　）熱？",
+     "q": "今天好（　）！ (panas sekali)",
      "options": [
-      "不",
-      "沒",
-      "很"
+      "熱",
+      "冷",
+      "下雨"
      ],
      "answer": 0,
+     "why": "好 + kata sifat = sangat … (seruan): 好熱！"
+    },
+    {
+     "q": "明天天氣（　）？ — 很冷。",
+     "options": [
+      "哪",
+      "怎麼樣",
+      "什麼"
+     ],
+     "answer": 1,
+     "why": "天氣怎麼樣？ = cuacanya bagaimana?"
+    },
+    {
+     "q": "今天熱（　）熱？",
+     "options": [
+      "沒",
+      "很",
+      "不"
+     ],
+     "answer": 2,
      "why": "Pertanyaan A-不-A: 熱不熱？"
+    },
+    {
+     "q": "Mana yang BENAR?",
+     "options": [
+      "今天風很大。",
+      "今天很風大。",
+      "今天大風很。"
+     ],
+     "answer": 0,
+     "why": "Angin kencang = 風很大."
+    },
+    {
+     "q": "Mana yang BENAR?",
+     "options": [
+      "明天雨不下。",
+      "明天不下雨。",
+      "明天下不雨。"
+     ],
+     "answer": 1,
+     "why": "下雨 kata kerja; negasinya 不下雨."
+    },
+    {
+     "q": "臺灣很熱，印尼（　）很熱。",
+     "options": [
+      "最",
+      "不",
+      "也"
+     ],
+     "answer": 2,
+     "why": "也 = juga (sama dengan yang disebut sebelumnya)."
+    },
+    {
+     "q": "明天不下雨，（　）風很大。",
+     "options": [
+      "可是",
+      "也",
+      "最"
+     ],
+     "answer": 0,
+     "why": "可是 menghubungkan dua keadaan yang berlawanan."
     },
     {
      "q": "Mana yang BENAR?",
@@ -1379,7 +1631,7 @@
       "冷"
      ],
      "answer": 2,
-     "why": "有一點 + Vs (tanpa 很)."
+     "why": "有一點 + kata sifat (tanpa 很/太)."
     }
    ]
   }
@@ -1484,6 +1736,58 @@
   "Benda yang dicari (椅子) di depan, patokannya (桌子) sesudah 在.": {
    "en": "The thing (椅子) comes first, the reference (桌子) after 在.",
    "vi": "Vật cần nói (椅子) đứng trước, vật mốc (桌子) sau 在."
+  },
+  "我們一起去吃飯（　）！ (mengajak)": {
+   "en": "我們一起去吃飯（　）！ (suggesting)",
+   "vi": "我們一起去吃飯（　）！ (rủ rê)"
+  },
+  "吧 untuk ajakan: \"yuk\".": {
+   "en": "吧 for a suggestion: \"let's\".",
+   "vi": "吧 dùng để rủ: \"nhé\"."
+  },
+  "你是美美（　）？ (sudah menduga, minta dipastikan)": {
+   "en": "你是美美（　）？ (guessing, asking to confirm)",
+   "vi": "你是美美（　）？ (đoán, muốn xác nhận)"
+  },
+  "吧 di pertanyaan = \"…, kan?\" (sudah menduga jawabannya).": {
+   "en": "吧 in a question = \"…, right?\" (you already guess the answer).",
+   "vi": "吧 trong câu hỏi = \"…, phải không?\" (đã đoán được câu trả lời)."
+  },
+  "A：我們一起去看電影，好不好？ B：好（　）！ (setuju dengan senang hati)": {
+   "en": "A：我們一起去看電影，好不好？ B：好（　）！ (gladly agreeing)",
+   "vi": "A：我們一起去看電影，好不好？ B：好（　）！ (vui vẻ đồng ý)"
+  },
+  "好啊！ = setuju dengan ramah; 好吧 = \"ya sudah, boleh deh\".": {
+   "en": "好啊！ = warm agreement; 好吧 = \"well, OK then\".",
+   "vi": "好啊！ = đồng ý thân thiện; 好吧 = \"thôi được\"."
+  },
+  "最近很忙（　）！每天都有很多功課。 (seruan/keluhan)": {
+   "en": "最近很忙（　）！每天都有很多功課。 (exclamation/complaint)",
+   "vi": "最近很忙（　）！每天都有很多功課。 (cảm thán/than phiền)"
+  },
+  "啊 menambah perasaan pada pernyataan: \"sibuk banget!\"": {
+   "en": "啊 adds feeling to a statement: \"SO busy!\"",
+   "vi": "啊 thêm cảm xúc cho câu: \"bận quá!\""
+  },
+  "我的手機沒電（　）！ (keadaan baru, nada mengeluh)": {
+   "en": "我的手機沒電（　）！ (new situation, complaining)",
+   "vi": "我的手機沒電（　）！ (tình huống mới, than phiền)"
+  },
+  "啦 = 了 + 啊: memberitahu keadaan baru dengan nada santai/mengeluh.": {
+   "en": "啦 = 了 + 啊: announces a new situation casually/complaining.",
+   "vi": "啦 = 了 + 啊: báo tình huống mới với giọng thoải mái/than phiền."
+  },
+  "你在跟誰聊天（　）？ (bertanya dengan nada akrab)": {
+   "en": "你在跟誰聊天（　）？ (asking in a friendly tone)",
+   "vi": "你在跟誰聊天（　）？ (hỏi giọng thân mật)"
+  },
+  "呀 (= 啊) membuat pertanyaan terdengar akrab; 吧 untuk dugaan, 啦 untuk keadaan baru.": {
+   "en": "呀 (= 啊) makes a question sound friendly; 吧 is for guesses, 啦 for new situations.",
+   "vi": "呀 (= 啊) làm câu hỏi thân mật; 吧 dùng để đoán, 啦 cho tình huống mới."
+  },
+  "吧 menggantikan 嗎 bila sudah menduga; keduanya tidak digabung, dan partikel selalu di akhir.": {
+   "en": "吧 replaces 嗎 when you already guess; they are never combined, and particles always go at the end.",
+   "vi": "吧 thay cho 嗎 khi đã đoán; không ghép hai từ, và trợ từ luôn ở cuối câu."
   },
   "在 + V = sedang melakukan.": {
    "en": "在 + V = be doing.",
@@ -1949,41 +2253,129 @@
    "en": "Two positive points → 而且; 可是 is for contrast.",
    "vi": "Hai ý tích cực → 而且; 可是 dùng cho ý trái ngược."
   },
+  "Urutan yang BENAR untuk \"pukul 7 pagi, 6 Oktober\":": {
+   "en": "The CORRECT order for \"7 a.m., 6 October\":",
+   "vi": "Trật tự ĐÚNG của \"7 giờ sáng, ngày 6 tháng 10\":"
+  },
+  "Dari besar ke kecil: bulan → tanggal → bagian hari → jam.": {
+   "en": "From big to small: month → date → part of day → hour.",
+   "vi": "Từ lớn đến nhỏ: tháng → ngày → buổi → giờ."
+  },
+  "Keterangan waktu (每天早上七點) diletakkan SEBELUM kata kerja.": {
+   "en": "The time expression (每天早上七點) goes BEFORE the verb.",
+   "vi": "Trạng ngữ thời gian (每天早上七點) đặt TRƯỚC động từ."
+  },
+  "Bagian hari (晚上) sebelum jam (十點).": {
+   "en": "Part of the day (晚上) before the hour (十點).",
+   "vi": "Buổi (晚上) đứng trước giờ (十點)."
+  },
   "Jam 2 = 兩點 (bukan 二點); 兩點半 = 2.30.": {
    "en": "2 o'clock = 兩點 (not 二點); 兩點半 = 2:30.",
    "vi": "2 giờ = 兩點 (không nói 二點); 兩點半 = 2:30."
   },
-  "Keterangan waktu diletakkan SEBELUM kata kerja.": {
-   "en": "Time expressions go BEFORE the verb.",
-   "vi": "Trạng ngữ thời gian đặt TRƯỚC động từ."
+  "半 = setengah, diletakkan sesudah 點.": {
+   "en": "半 = half, placed after 點.",
+   "vi": "半 = rưỡi, đặt sau 點."
   },
-  "Lama waktu: 分鐘; titik waktu: 點.": {
-   "en": "Duration: 分鐘; point in time: 點.",
-   "vi": "Khoảng thời gian: 分鐘; thời điểm: 點."
+  "一刻 = 15 menit, sesudah 點: 七點一刻.": {
+   "en": "一刻 = 15 minutes, after 點: 七點一刻.",
+   "vi": "一刻 = 15 phút, sau 點: 七點一刻."
   },
-  "多少錢？ untuk menanyakan harga.": {
-   "en": "多少錢？ asks the price.",
-   "vi": "多少錢？ để hỏi giá."
+  "差五分八點 = kurang 5 menit pukul 8 = 7.55; 八點五十五分 = 8.55.": {
+   "en": "差五分八點 = five to eight = 7:55; 八點五十五分 = 8:55.",
+   "vi": "差五分八點 = tám giờ kém năm = 7:55; 八點五十五分 = 8:55."
   },
-  "塊 (lisan) = 元 (tulisan).": {
-   "en": "塊 (spoken) = 元 (written).",
-   "vi": "塊 (khẩu ngữ) = 元 (văn viết)."
+  "Menit di bawah 10 boleh memakai 零: 八點零五分.": {
+   "en": "Minutes under 10 may take 零: 八點零五分.",
+   "vi": "Phút dưới 10 có thể thêm 零: 八點零五分."
   },
-  "Benda disebut dulu sebagai topik, lalu 一杯多少錢.": {
-   "en": "Name the item first as the topic, then 一杯多少錢.",
-   "vi": "Nêu món đồ trước làm chủ đề, rồi 一杯多少錢."
+  "Lama waktu: 分鐘 (sesudah kata kerja); titik waktu: 點.": {
+   "en": "Duration: 分鐘 (after the verb); point in time: 點.",
+   "vi": "Khoảng thời gian: 分鐘 (sau động từ); thời điểm: 點."
+  },
+  "百 = ratus: 三百 = 300; 三十 = 30; 三千 = 3.000.": {
+   "en": "百 = hundred: 三百 = 300; 三十 = 30; 三千 = 3,000.",
+   "vi": "百 = trăm: 三百 = 300; 三十 = 30; 三千 = 3.000."
+  },
+  "千 = ribu; angka 2 di depan 千 dibaca 兩.": {
+   "en": "千 = thousand; 2 before 千 is 兩.",
+   "vi": "千 = nghìn; số 2 trước 千 đọc là 兩."
+  },
+  "10.000 = 一萬 (bukan 十千): Mandarin menghitung per empat digit.": {
+   "en": "10,000 = 一萬 (not 十千): Chinese counts in groups of four digits.",
+   "vi": "10.000 = 一萬 (không phải 十千): tiếng Trung đếm theo nhóm bốn chữ số."
+  },
+  "2|5000 → 兩萬 + 五千.": {
+   "en": "2|5000 → 兩萬 + 五千.",
+   "vi": "2|5000 → 兩萬 + 五千."
+  },
+  "120|0000 → 一百二十 + 萬.": {
+   "en": "120|0000 → 一百二十 + 萬.",
+   "vi": "120|0000 → 一百二十 + 萬."
+  },
+  "Nol di tengah dibaca 零; 一百五 = 150.": {
+   "en": "A middle zero is read 零; 一百五 = 150.",
+   "vi": "Số 0 ở giữa đọc là 零; 一百五 = 150."
+  },
+  "Sekitar 1.300 (\"seribu lebih\") =": {
+   "en": "About 1,300 (\"over a thousand\") =",
+   "vi": "Khoảng 1.300 (\"hơn một nghìn\") ="
+  },
+  "Angka + 多 + 塊 = lebih dari angka itu.": {
+   "en": "Number + 多 + 塊 = more than that number.",
+   "vi": "Số + 多 + 塊 = hơn số đó."
+  },
+  "Satuan uang dalam percakapan: 塊.": {
+   "en": "The spoken money unit: 塊.",
+   "vi": "Đơn vị tiền khi nói: 塊."
+  },
+  "給你兩百塊。— 找你四十塊。 Harga barangnya:": {
+   "en": "給你兩百塊。— 找你四十塊。 The price was:",
+   "vi": "給你兩百塊。— 找你四十塊。 Giá món đồ là:"
+  },
+  "200 − 40 = 160 = 一百六十塊.": {
+   "en": "200 − 40 = 160 = 一百六十塊.",
+   "vi": "200 − 40 = 160 = 一百六十塊."
+  },
+  "今天好（　）！ (panas sekali)": {
+   "en": "今天好（　）！ (so hot)",
+   "vi": "今天好（　）！ (nóng quá)"
+  },
+  "好 + kata sifat = sangat … (seruan): 好熱！": {
+   "en": "好 + adjective = so … (exclamation): 好熱！",
+   "vi": "好 + tính từ = … quá (cảm thán): 好熱！"
+  },
+  "天氣怎麼樣？ = cuacanya bagaimana?": {
+   "en": "天氣怎麼樣？ = how is the weather?",
+   "vi": "天氣怎麼樣？ = thời tiết thế nào?"
   },
   "Pertanyaan A-不-A: 熱不熱？": {
    "en": "A-not-A question: 熱不熱？",
    "vi": "Câu hỏi A-不-A: 熱不熱？"
   },
+  "Angin kencang = 風很大.": {
+   "en": "Strong wind = 風很大.",
+   "vi": "Gió to = 風很大."
+  },
+  "下雨 kata kerja; negasinya 不下雨.": {
+   "en": "下雨 is a verb; its negative is 不下雨.",
+   "vi": "下雨 là động từ; phủ định là 不下雨."
+  },
+  "也 = juga (sama dengan yang disebut sebelumnya).": {
+   "en": "也 = also (the same as what came before).",
+   "vi": "也 = cũng (giống điều nói trước)."
+  },
+  "可是 menghubungkan dua keadaan yang berlawanan.": {
+   "en": "可是 links two contrasting conditions.",
+   "vi": "可是 nối hai tình trạng trái ngược."
+  },
   "最 diletakkan tepat sebelum kata sifat.": {
    "en": "最 goes right before the adjective.",
    "vi": "最 đặt ngay trước tính từ."
   },
-  "有一點 + Vs (tanpa 很).": {
-   "en": "有一點 + Vs (without 很).",
-   "vi": "有一點 + Vs (không có 很)."
+  "有一點 + kata sifat (tanpa 很/太).": {
+   "en": "有一點 + adjective (without 很/太).",
+   "vi": "有一點 + tính từ (không có 很/太)."
   }
  }
 }
