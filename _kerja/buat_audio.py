@@ -128,9 +128,12 @@ def kumpulkan():
             for e in m['vocab']['core'] + m['vocab']['supplement']:
                 tambah('W', 'F1', e.get('say') or e['w'])   # kosakata: satu suara yang konsisten; say = teks ucapan polifon
     if os.path.exists(f'{R}/data/bank_soal.json'):
-        for ts in json.load(open(f'{R}/data/bank_soal.json', encoding='utf-8')).values():
+        from buat_mini import SEMUA   # 18 bab modul mini: Tes Bab-nya membacakan 問 setelah bel (studi.js)
+        for kode, ts in json.load(open(f'{R}/data/bank_soal.json', encoding='utf-8')).items():
             for t in ts:
                 soal(t)
+                if kode in SEMUA and t.get('type') == 'listen_dialog' and t.get('question'):
+                    tambah('N', narator(t['question']), t['question'])
     mini = f'{K}/mini'   # tes awal/akhir modul mini (uji coba thesis), dirakit oleh buat_mini.py
     for fn in sorted(os.listdir(mini)) if os.path.isdir(mini) else []:
         if fn.startswith('tes_') and fn.endswith('.json'):

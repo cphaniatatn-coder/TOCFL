@@ -266,8 +266,10 @@ def nama_audio():
             for r in m.get('recycle', []): tambah('N', r['zh'])
             for e in m['vocab']['core'] + m['vocab']['supplement'] + m['vocab']['pendukung']:
                 tambah('W', e.get('say') or e['w'])
-    for ts in bank.values():
-        for t in ts: soal(t)
+    for ts in bank.values():   # bank = Tes Bab 18 bab mini saja
+        for t in ts:
+            soal(t)
+            if t['type'] == 'listen_dialog' and t.get('question'): tambah('N', t['question'])   # 問 dibacakan (gaya TOCFL)
     for lv in LEVEL:
         for items in baca(M / f'tes_{lv}.json').values():
             for t in items:
