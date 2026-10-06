@@ -634,6 +634,108 @@
    ]
   },
   "B33": {
+   "bab": [
+    {
+     "q": "你是（　）來的？ — 我是坐公車來的。",
+     "options": [
+      "怎麼",
+      "哪裡",
+      "誰"
+     ],
+     "answer": 0,
+     "why": "Detail cara/kendaraan ditanyakan dengan 怎麼: 你是怎麼來的？"
+    },
+    {
+     "q": "你是跟（　）一起來的？ — 我是跟我姊姊一起來的。",
+     "options": [
+      "怎麼",
+      "誰",
+      "哪"
+     ],
+     "answer": 1,
+     "why": "Detail \"dengan siapa\" ditanyakan dengan 跟誰."
+    },
+    {
+     "q": "Mana yang BENAR? (rencana besok)",
+     "options": [
+      "我是明天去台中的。",
+      "我明天是去台中的了。",
+      "我明天去台中。"
+     ],
+     "answer": 2,
+     "why": "是…的 hanya untuk yang sudah terjadi; rencana memakai kalimat biasa."
+    },
+    {
+     "q": "A：你去台中了嗎？ B：去了。 A：你是怎麼去（　）？",
+     "options": [
+      "的",
+      "了",
+      "嗎"
+     ],
+     "answer": 0,
+     "why": "Kabar dulu dengan 了, lalu detail dengan 是…的."
+    },
+    {
+     "q": "我（　）從台中回來，現在有一點累。 (baru saja)",
+     "options": [
+      "當然",
+      "剛剛",
+      "本來"
+     ],
+     "answer": 1,
+     "why": "剛剛 + V = baru saja."
+    },
+    {
+     "q": "我（　）以為台中很遠，可是坐火車很快。 (tadinya)",
+     "options": [
+      "剛剛",
+      "已經",
+      "本來"
+     ],
+     "answer": 2,
+     "why": "本來 = tadinya, lalu berubah (sering + 可是)."
+    },
+    {
+     "q": "A：你是坐飛機來的嗎？ B：（　）是坐飛機來的！ (tentu saja)",
+     "options": [
+      "當然",
+      "好像",
+      "本來"
+     ],
+     "answer": 0,
+     "why": "當然 = tentu saja."
+    },
+    {
+     "q": "我只會說幾句中文，可是大家（　）都懂。 (sepertinya)",
+     "options": [
+      "已經",
+      "好像",
+      "當然"
+     ],
+     "answer": 1,
+     "why": "好像 = sepertinya (dugaan pembicara)."
+    },
+    {
+     "q": "我（　）他是日本人，可是他是韓國人。 (mengira, ternyata salah)",
+     "options": [
+      "當然",
+      "好像",
+      "以為"
+     ],
+     "answer": 2,
+     "why": "以為 = mengira, dan ternyata salah."
+    },
+    {
+     "q": "你（　）去過很多地方旅行了嗎？ (sudah)",
+     "options": [
+      "已經",
+      "剛剛",
+      "本來"
+     ],
+     "answer": 0,
+     "why": "已經 + V + 了 = sudah."
+    }
+   ],
    "g1": [
     {
      "q": "你是怎麼來（　）？",
@@ -1928,6 +2030,74 @@
   "回到 + tempat = sudah sampai kembali di ….": {
    "en": "回到 + place = get back to ….",
    "vi": "回到 + nơi chốn = về đến …."
+  },
+  "Detail cara/kendaraan ditanyakan dengan 怎麼: 你是怎麼來的？": {
+   "en": "The manner/vehicle is asked with 怎麼: 你是怎麼來的？",
+   "vi": "Hỏi cách thức/phương tiện bằng 怎麼: 你是怎麼來的？"
+  },
+  "Detail \"dengan siapa\" ditanyakan dengan 跟誰.": {
+   "en": "The detail \"with whom\" is asked with 跟誰.",
+   "vi": "Chi tiết \"với ai\" hỏi bằng 跟誰."
+  },
+  "Mana yang BENAR? (rencana besok)": {
+   "en": "Which one is CORRECT? (a plan for tomorrow)",
+   "vi": "Câu nào ĐÚNG? (kế hoạch ngày mai)"
+  },
+  "是…的 hanya untuk yang sudah terjadi; rencana memakai kalimat biasa.": {
+   "en": "是…的 is only for what has happened; plans use a plain sentence.",
+   "vi": "是…的 chỉ dùng cho việc đã xảy ra; kế hoạch dùng câu thường."
+  },
+  "Kabar dulu dengan 了, lalu detail dengan 是…的.": {
+   "en": "News first with 了, then details with 是…的.",
+   "vi": "Báo tin trước bằng 了, rồi hỏi chi tiết bằng 是…的."
+  },
+  "我（　）從台中回來，現在有一點累。 (baru saja)": {
+   "en": "我（　）從台中回來，現在有一點累。 (just now)",
+   "vi": "我（　）從台中回來，現在有一點累。 (vừa mới)"
+  },
+  "剛剛 + V = baru saja.": {
+   "en": "剛剛 + V = just now.",
+   "vi": "剛剛 + V = vừa mới."
+  },
+  "我（　）以為台中很遠，可是坐火車很快。 (tadinya)": {
+   "en": "我（　）以為台中很遠，可是坐火車很快。 (originally)",
+   "vi": "我（　）以為台中很遠，可是坐火車很快。 (lúc đầu)"
+  },
+  "本來 = tadinya, lalu berubah (sering + 可是).": {
+   "en": "本來 = originally, then it changed (often + 可是).",
+   "vi": "本來 = lúc đầu, rồi thay đổi (thường + 可是)."
+  },
+  "A：你是坐飛機來的嗎？ B：（　）是坐飛機來的！ (tentu saja)": {
+   "en": "A：你是坐飛機來的嗎？ B：（　）是坐飛機來的！ (of course)",
+   "vi": "A：你是坐飛機來的嗎？ B：（　）是坐飛機來的！ (tất nhiên)"
+  },
+  "當然 = tentu saja.": {
+   "en": "當然 = of course.",
+   "vi": "當然 = tất nhiên."
+  },
+  "我只會說幾句中文，可是大家（　）都懂。 (sepertinya)": {
+   "en": "我只會說幾句中文，可是大家（　）都懂。 (it seems)",
+   "vi": "我只會說幾句中文，可是大家（　）都懂。 (hình như)"
+  },
+  "好像 = sepertinya (dugaan pembicara).": {
+   "en": "好像 = it seems (the speaker's impression).",
+   "vi": "好像 = hình như (cảm nhận của người nói)."
+  },
+  "我（　）他是日本人，可是他是韓國人。 (mengira, ternyata salah)": {
+   "en": "我（　）他是日本人，可是他是韓國人。 (thought wrongly)",
+   "vi": "我（　）他是日本人，可是他是韓國人。 (tưởng sai)"
+  },
+  "以為 = mengira, dan ternyata salah.": {
+   "en": "以為 = thought (wrongly).",
+   "vi": "以為 = tưởng (nhưng sai)."
+  },
+  "你（　）去過很多地方旅行了嗎？ (sudah)": {
+   "en": "你（　）去過很多地方旅行了嗎？ (already)",
+   "vi": "你（　）去過很多地方旅行了嗎？ (đã)"
+  },
+  "已經 + V + 了 = sudah.": {
+   "en": "已經 + V + 了 = already.",
+   "vi": "已經 + V + 了 = đã."
   },
   "是…的 menanyakan cara/waktu kejadian yang sudah lewat.": {
    "en": "是…的 asks how/when a past event happened.",
