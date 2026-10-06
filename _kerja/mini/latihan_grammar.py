@@ -27,6 +27,10 @@ L = {
         s('她是（　）國人？', ['哪', '這', '嗎'], t('這 = ini, bukan kata tanya; yang menanyakan adalah 哪.', '這 = this, not a question word; 哪 is the one that asks.', '這 = này, không phải từ để hỏi; từ để hỏi là 哪.')),
         s(t('Jawaban yang cocok untuk 你是哪國人？', 'A suitable answer to 你是哪國人？', 'Câu trả lời phù hợp cho 你是哪國人？'), ['我是印尼人。', '我說英文。', '我會說中文。'], t('哪國人 menanyakan negara asal, jadi dijawab dengan nama negara + 人.', '哪國人 asks for the country, so answer with the country + 人.', '哪國人 hỏi nước nào, nên trả lời bằng tên nước + 人.'))]},
 'A04': {
+ 'bab': [s(t('"ayahku" (paling wajar dalam percakapan) =', '"my dad" (most natural in speech) =', '"bố tôi" (tự nhiên nhất khi nói) ='), ['我爸爸', '爸爸我', '我是爸爸'], t('Anggota keluarga + kata ganti: 的 biasanya dihilangkan: 我爸爸.', 'Family member + pronoun: 的 is usually dropped: 我爸爸.', 'Người trong gia đình + đại từ: thường lược 的: 我爸爸.')),
+         s(BENAR, ['我家有五個人。', '家我有五個人。', '我家的有五個人。'], t('我家 = rumah/keluarga-ku (的 dihilangkan).', '我家 = my home/family (的 dropped).', '我家 = nhà tôi (lược 的).')),
+         s(t('"nama-ku" =', '"my name" =', '"tên của tôi" ='), ['我的名字', '我名字的', '名字我的'], t('Untuk barang biasa 的 tidak dihilangkan: 我的名字.', 'For ordinary things 的 is not dropped: 我的名字.', 'Với đồ vật thông thường không lược 的: 我的名字.')),
+         s(t('"ibu Meimei" =', '"Meimei\'s mum" =', '"mẹ của Mỹ Mỹ" ='), ['美美的媽媽', '媽媽美美的', '美美媽媽的'], t('Pemiliknya nama → 的 tetap dipakai: 美美的媽媽.', 'The owner is a name → keep 的: 美美的媽媽.', 'Chủ sở hữu là tên → giữ 的: 美美的媽媽.'))],
  'g1': [s('我家有五（　）人。', ['個', '幾', '兩'], t('Orang memakai kata bantu bilangan 個; 幾 = berapa, 兩 = dua.', 'People take the measure word 個; 幾 = how many, 兩 = two.', 'Người dùng lượng từ 個; 幾 = mấy, 兩 = hai.')),
         s(t('我有（　）個哥哥。 (dua)', '我有（　）個哥哥。 (two)', '我有（　）個哥哥。 (hai)'), ['兩', '二', '十'], t('Di depan kata bantu bilangan, angka 2 dibaca 兩.', 'Before a measure word, 2 is 兩.', 'Trước lượng từ, số 2 đọc là 兩.')),
         s(BENAR, ['我沒有哥哥。', '我有哥哥沒有。', '沒有我哥哥有。'], t('沒有 + benda = tidak punya (bukan 不有).', '沒有 + noun = do not have (never 不有).', '沒有 + danh từ = không có (không nói 不有).')),
@@ -67,6 +71,11 @@ L = {
         s(BENAR, ['我跟他一樣高。', '我跟他一樣很高。', '我一樣跟他高。'], t('Sesudah 一樣 langsung kata sifat, tanpa 很.', 'After 一樣 comes the adjective directly, without 很.', 'Sau 一樣 là tính từ, không thêm 很.')),
         s('這件衣服（　）那件一樣貴。', ['跟', '比', '很'], t('A 跟 B 一樣 + Vs; 比 dipakai bila ada yang "lebih".', 'A 跟 B 一樣 + Vs; 比 is used when one is "more".', 'A 跟 B 一樣 + Vs; 比 dùng khi có cái "hơn".'))]},
 'B20': {
+ 'bab': [s('這件外套太大了，我要小一點（　）。', ['的', '了', '嗎'], t('Vs + 的 = "yang …"; kata bendanya (外套) dihilangkan.', 'Vs + 的 = "the … one"; the noun (外套) is dropped.', 'Vs + 的 = "cái …"; lược danh từ (外套).')),
+         s(BENAR, ['我要大的。', '我要大。', '我要的大。'], t('Yang dihilangkan hanya bendanya; 的 harus tetap ada.', 'Only the noun is dropped; 的 must stay.', 'Chỉ lược danh từ; 的 phải giữ lại.')),
+         s(t('這兩件外套，你要哪件？ — 我要（　）。 (yang hitam)', '這兩件外套，你要哪件？ — 我要（　）。 (the black one)', '這兩件外套，你要哪件？ — 我要（　）。 (cái màu đen)'), ['黑的', '黑', '很黑'], t('Warna + 的 = "yang (warna) itu".', 'Colour + 的 = "the (colour) one".', 'Màu + 的 = "cái màu đó".')),
+         s(t('這個手錶是（　）。 (punyaku)', '這個手錶是（　）。 (mine)', '這個手錶是（　）。 (của tôi)'), ['我的', '我', '的我'], t('Pemilik + 的 bisa berdiri sendiri: 我的 = punyaku.', 'Owner + 的 can stand alone: 我的 = mine.', 'Chủ sở hữu + 的 đứng một mình: 我的 = của tôi.')),
+         s(BENAR, ['這件是新的，那件是舊的。', '這件是新，那件是舊。', '這件新的是，那件舊的是。'], t('是 + Vs的 = "(ini) yang …"; tanpa 的, 是 + Vs tidak wajar.', '是 + Vs的 = "(this is) the … one"; without 的, 是 + Vs is unnatural.', '是 + Vs的 = "(đây là) cái …"; không có 的 thì 是 + Vs không tự nhiên.'))],
  'g1': [s('這件外套太大（　）！', ['了', '嗎', '呢'], t('Pola: 太 + Vs + 了.', 'Pattern: 太 + Vs + 了.', 'Mẫu: 太 + Vs + 了.')),
         s('這件太大了，我要（　）一點的。', ['小', '大', '太'], t('Sesudah mengeluh 太…了, minta yang lebih pas: Vs + 一點的.', 'After complaining with 太…了, ask for a better fit: Vs + 一點的.', 'Sau khi chê 太…了, xin cái vừa hơn: Vs + 一點的.')),
         s(BENAR, ['這個帽子太貴了。', '這個帽子太了貴。', '這個帽子貴太了。'], t('太 di depan kata sifat, 了 di akhir.', '太 before the adjective, 了 at the end.', '太 trước tính từ, 了 ở cuối.')),
