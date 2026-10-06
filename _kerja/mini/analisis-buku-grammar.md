@@ -36,3 +36,29 @@ yang mirip (在 vs 有, 才 vs 就, 把 vs 被 vs kalimat biasa, 有一點 vs �
   `js/modul.js` menampilkannya di tahap 語法聚焦 sebagai kotak "📘 Catatan dari buku grammar" + sumber & unit.
 - Hanya modul mini; app utama tidak punya data `catatan` sehingga tampilannya tidak berubah.
 - Untuk thesis: buku ini bisa dikutip sebagai rujukan penyusunan penjelasan grammar (lihat `_sumber` di file JSON).
+
+---
+
+# Buku kedua: 進階篇
+
+**Buku:** 劉崇仁、張莉萍（編著）《看圖學中文語法・進階篇》 *The Ultimate Illustrated Chinese Grammar Guide (Advanced Level)*,
+MTC NTNU 策劃. File: `TOCFL/看圖學中文語法進階篇.pdf` (scan, 116 halaman PDF; halaman buku *b* ≈ halaman PDF b/2 + 2).
+Sasaran TOCFL **Band B** (Level 3–4): 32 unit pola kalimat majemuk + 3 set latihan membaca Band B. Pola yang mirip
+fungsinya disandingkan dalam satu unit (mis. 只要…就 vs 只有…才, 要是 vs 既然, 一直 vs 一向 vs 往往).
+
+| Bab | Grammar modul | Unit 進階篇 | Dipakai sebagai catatan |
+|---|---|---|---|
+| B19 | 比 | 7 | A 比不上 / 不如 B |
+| B33 | (tingkat bab, kata 以為) | 15 | 以為 = mengira (keliru), 以為…，沒想到… |
+| B40 | 因為…所以, 但是, 才/就 | 3, 5, 28 | …，是因為…, 之所以…是因為, 由於…因此 (formal); 雖然 → wajib 可是/但是/不過; 再 vs 才 |
+| C04 | 把 | 32 | 把 O V了 + jumlah kali / + bagian dari O |
+| C24 | 要是…就, …的話 | 4, 12 | 要是 (lisan) vs 如果 (formal), 既然…就 (fakta), 只要…就 / 只有…才 |
+| C28 | (tingkat bab, 一直咳嗽) | 27 | 一直 vs 一向 |
+| C58 | 不但…而且, 沒想到 | 9, 15 | letak 不但 menurut subjek, topik + dua subjek, 既…又…; 以為…，沒想到… |
+| C16 | 必須 / 不用 | — | tidak dibahas di kedua buku |
+
+## Soal latihan grammar tambahan
+`_kerja/mini/latihan_grammar.py` → `latihan_grammar.json`: 4 soal per poin grammar (29 poin) + 3 soal per topik tingkat bab
+(A10, A18, A24, B40) = 128 soal, id/en/vi, setiap soal dengan penjelasan. Kalimat Mandarin diperiksa otomatis hanya memakai
+kata yang sudah diajarkan sampai bab itu (`cek_dialog.kosakata_sampai`). Ditampilkan di 語法聚焦 sebagai "✏️ Latihan
+tambahan" di bawah "Cek cepat"; jawaban disimpan di progres bab (`glat`).

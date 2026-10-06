@@ -116,32 +116,38 @@ def data_id():
 
 
 def pasang_catatan_grammar(vols):
-    """Catatan dari buku rujukan grammar (_kerja/mini/catatan_grammar.json) → grammar[i].catatan / modul.catatan.
+    """Tahap 語法聚焦 modul mini:
+    - catatan dari buku rujukan (_kerja/mini/catatan_grammar.json, 基礎篇 & 進階篇) → grammar[i].catatan / modul.catatan
+    - soal latihan tambahan (_kerja/mini/latihan_grammar.json, dibuat latihan_grammar.py) → grammar[i].latihan / modul.latihan
     Teks Indonesia dipasang di sini; English/Vietnam lewat catatan_kamus() di penerjemah."""
-    p = M / 'catatan_grammar.json'
-    if not p.exists():
-        return
-    C = baca(p)
+    C = baca(M / 'catatan_grammar.json') if (M / 'catatan_grammar.json').exists() else {}
+    L = baca(M / 'latihan_grammar.json')['soal'] if (M / 'latihan_grammar.json').exists() else {}
+    blok = lambda b: ({'point': b['point']['id']} if 'point' in b else {}) | {
+        'rujukan': f'《看圖學中文語法・{b["buku"]}》 {b["unit"]}', 'note': [n['id'] for n in b['note']]}
     for d in vols.values():
         for m in d['modules']:
-            c = C.get(m['code'], {})
+            c, l = C.get(m['code'], {}), L.get(m['code'], {})
             for i, g in enumerate(m['grammar'], 1):
-                if f'g{i}' in c:
-                    g['catatan'] = {'rujukan': c[f'g{i}']['unit'], 'note': [n['id'] for n in c[f'g{i}']['note']]}
-            if 'bab' in c:
-                m['catatan'] = [{'point': b['point']['id'], 'rujukan': b['unit'], 'note': [n['id'] for n in b['note']]} for b in c['bab']]
+                if f'g{i}' in c: g['catatan'] = [blok(b) for b in c[f'g{i}']]
+                if f'g{i}' in l: g['latihan'] = l[f'g{i}']
+            if 'bab' in c: m['catatan'] = [blok(b) for b in c['bab']]
+            if 'bab' in l: m['latihan'] = l['bab']
 
 
 def catatan_kamus():
-    """{teks Indonesia: {en, vi}} dari catatan_grammar.json, untuk penerjemah()."""
-    p = M / 'catatan_grammar.json'
+    """{teks Indonesia: {en, vi}} dari catatan_grammar.json & latihan_grammar.json, untuk penerjemah()."""
     out = {}
+    p = M / 'catatan_grammar.json'
     if p.exists():
         for kode, c in baca(p).items():
             if kode.startswith('_'): continue
-            for g in [v for k, v in c.items() if k != 'bab'] + c.get('bab', []):
-                for n in g['note'] + ([g['point']] if 'point' in g else []):
-                    out[n['id']] = {'en': n['en'], 'vi': n['vi']}
+            for daftar in c.values():
+                for b in daftar:
+                    for n in b['note'] + ([b['point']] if 'point' in b else []):
+                        out[n['id']] = {'en': n['en'], 'vi': n['vi']}
+    p = M / 'latihan_grammar.json'
+    if p.exists():
+        out.update(baca(p)['kamus'])
     return out
 
 
