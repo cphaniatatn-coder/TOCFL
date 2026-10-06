@@ -142,8 +142,8 @@ def kamar_banding(punyaku):
     return o
 
 def peta_kota(rumah_di):
-    """台北 di tengah + rumah di timur / utara / barat."""
-    o = bulat(150, 110, 34, 'a') + teks(150, 118, '台北', 22)
+    """臺北 di tengah + rumah di timur / utara / barat."""
+    o = bulat(150, 110, 34, 'a') + teks(150, 118, '臺北', 22)
     pos = {'timur': (250, 110), 'utara': (150, 30), 'barat': (50, 110)}[rumah_di]
     o += rumah(pos[0], pos[1] + 30, 60, 34) + panah(150 + (pos[0] - 150) * .3, 110 + (pos[1] - 110) * .35, 150 + (pos[0] - 150) * .62, 110 + (pos[1] - 110) * .62, 4)
     return o + teks(270, 210, '北↑', 16)
@@ -277,7 +277,7 @@ soal('MB04-b8', tunggu())
 opsi('MB19-t8', kamar_banding('kecil'), kamar_banding('besar'), kamar_banding('sama'))
 soal('MB19-t9', kompas())
 soal('MB19-t10', dunia())
-opsi('MB19-b3', termo_dua(36, 20, '台北', '高雄'), termo_dua(10, 30, '台北', '高雄'), termo_dua(22, 22, '台北', '高雄'))
+opsi('MB19-b3', termo_dua(36, 20, '臺北', '高雄'), termo_dua(10, 30, '臺北', '高雄'), termo_dua(22, 22, '臺北', '高雄'))
 opsi('MB19-b4', peta_kota('timur'), peta_kota('utara'), peta_kota('barat'))
 opsi('MB19-b6', lantai() + termo_dua(22, 22, '北', '南'), utara_selatan(False), utara_selatan(True))
 soal('MB19-b7', dunia())

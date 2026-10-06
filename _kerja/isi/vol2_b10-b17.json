@@ -122,8 +122,8 @@
   {"place": "看美美家的舊照片", "title_id": "Melihat foto lama keluarga Meimei", "lines": [
    {"sp": "王大文", "zh": "美美，你看過馬嗎？", "py": "Měi měi, nǐ kàn guò mǎ ma?", "id": "Meimei, kamu pernah lihat kuda?"},
    {"sp": "李美美", "zh": "看過！從前我叔叔家有馬。", "py": "Kàn guò! Cóng qián wǒ shū shu jiā yǒu mǎ.", "id": "Pernah! Dulu rumah pamanku punya kuda."},
-   {"sp": "王大文", "zh": "真的嗎？你小時候住過台中嗎？", "py": "Zhēn de ma? Nǐ xiǎo shí hòu zhù guò Tái zhōng ma?", "id": "Serius? Waktu kecil kamu pernah tinggal di Taichung?"},
-   {"sp": "李美美", "zh": "住過。我小時候住在台中。我的家庭很大，有伯伯、叔叔、阿姨……", "py": "Zhù guò. Wǒ xiǎo shí hòu zhù zài Tái zhōng. Wǒ de jiā tíng hěn dà, yǒu bó bo, shū shu, ā yí…", "id": "Pernah. Waktu kecil aku tinggal di Taichung. Keluargaku besar, ada paman, om, bibi…"}
+   {"sp": "王大文", "zh": "真的嗎？你小時候住過臺中嗎？", "py": "Zhēn de ma? Nǐ xiǎo shí hòu zhù guò Tái zhōng ma?", "id": "Serius? Waktu kecil kamu pernah tinggal di Taichung?"},
+   {"sp": "李美美", "zh": "住過。我小時候住在臺中。我的家庭很大，有伯伯、叔叔、阿姨……", "py": "Zhù guò. Wǒ xiǎo shí hòu zhù zài Tái zhōng. Wǒ de jiā tíng hěn dà, yǒu bó bo, shū shu, ā yí…", "id": "Pernah. Waktu kecil aku tinggal di Taichung. Keluargaku besar, ada paman, om, bibi…"}
   ]}
  ],
  "tasks": [
@@ -149,7 +149,7 @@
   {"tbcl_id": 59, "point": "以前 — dulu / sebelum", "pattern": "S + 以前 + VP ／ kegiatan + 以前", "blocks": [["我爺爺", "S"], ["以前", "以前"], ["是醫生", "VP"]],
    "explain": "以前 sendirian = dulu (我爺爺以前是醫生). Setelah kegiatan/waktu = sebelum (上課以前 = sebelum kelas). Lawannya: 以後 (B10). 後來 = kemudian (untuk cerita masa lalu).",
    "examples": [{"zh": "我奶奶以前在公司上班。", "id": "Nenekku dulu bekerja di kantor."}, {"zh": "上課以前，我喝咖啡。", "id": "Sebelum kelas, aku minum kopi."}],
-   "check": {"q": "'Dulu aku tinggal di Taichung' =", "options": ["我以前住在台中。", "以前住我在台中。", "我住以前在台中。"], "answer": 0}},
+   "check": {"q": "'Dulu aku tinggal di Taichung' =", "options": ["我以前住在臺中。", "以前住我在臺中。", "我住以前在臺中。"], "answer": 0}},
   {"tbcl_id": 30, "point": "V過1 — pernah", "pattern": "S + V + 過 + O ／ 沒 + V + 過", "blocks": [["你", "S"], ["去", "V"], ["過", "過"], ["臺南", "O"], ["嗎", "?"]],
    "explain": "過 setelah kata kerja = pernah mengalami. Negatif: 沒V過 (belum pernah), bukan 不V過. Bertanya: V過嗎？",
    "examples": [{"zh": "我去過爺爺奶奶家。", "id": "Aku pernah ke rumah kakek-nenek."}, {"zh": "我沒看過臺灣的棒球比賽。", "id": "Aku belum pernah nonton bisbol Taiwan."}],
@@ -165,7 +165,7 @@
  "dialogs": [
   {"place": "在學校辦公室", "title_id": "Di kantor kampus", "lines": [
    {"sp": "小姐", "zh": "請問你住在哪裡？", "py": "Qǐng wèn nǐ zhù zài nǎ lǐ?", "id": "Permisi, kamu tinggal di mana?"},
-   {"sp": "王大文", "zh": "我的地址是台北市中山路三十五號五樓。", "py": "Wǒ de dì zhǐ shì Tái běi shì Zhōng shān lù sān shí wǔ hào wǔ lóu.", "id": "Alamat saya Jalan Zhongshan No. 35 lantai 5, Kota Taipei."},
+   {"sp": "王大文", "zh": "我的地址是臺北市中山路三十五號五樓。", "py": "Wǒ de dì zhǐ shì Tái běi shì Zhōng shān lù sān shí wǔ hào wǔ lóu.", "id": "Alamat saya Jalan Zhongshan No. 35 lantai 5, Kota Taipei."},
    {"sp": "小姐", "zh": "你的電話號碼是多少？", "py": "Nǐ de diàn huà hào mǎ shì duō shǎo?", "id": "Nomor teleponmu berapa?"},
    {"sp": "王大文", "zh": "零九一二、三四五、六七八。", "py": "Líng jiǔ yī èr, sān sì wǔ, liù qī bā.", "id": "0912-345-678."},
    {"sp": "小姐", "zh": "好。你們的中文課有幾個學生？", "py": "Hǎo. Nǐ men de Zhōng wén kè yǒu jǐ ge xué shēng?", "id": "Oke. Kelas Mandarinmu ada berapa murid?"},
@@ -180,7 +180,7 @@
  ],
  "tasks": [
   {"type": "listen_reply", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你的電話號碼是多少？", "options": ["零九三八、五六七、二一零。", "我住在台北。", "我的電話很新。"], "answer": 0,
+   "audio": "你的電話號碼是多少？", "options": ["零九三八、五六七、二一零。", "我住在臺北。", "我的電話很新。"], "answer": 0,
    "why": "號碼是多少 → sebut angkanya. B menjawab alamat; C memberi komentar."},
   {"type": "listen_pic", "part": "聽力 Part 1 · Deskripsi gambar", "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
    "picture": {"icon": "🏫👥", "label": "papan sekolah: jumlah murid 215", "img": "B13-1"}, "question": "你們學校有多少學生？", "options": ["兩百多個。", "二十多個。", "兩千個。"], "answer": 0,
@@ -190,8 +190,8 @@
    "question": "男生有多少？", "options": ["八個", "十多個", "二十個"], "answer": 1,
    "why": "男生有十多個. 八個 adalah jumlah perempuan."},
   {"type": "read_mc", "part": "閱讀 Part 5 · Pemahaman bacaan", "instr": "Baca formulir ini, lalu pilih jawaban yang benar.",
-   "text": "姓名：林安妮　地址：台北市中山路二十號三樓　電話號碼：零九一二、三四五、六七八　今年：二十一歲", "question": "安妮住在哪裡？",
-   "options": ["台北市中山路二十號三樓", "台中市", "中山路三號", "二十一樓"], "answer": 0,
+   "text": "姓名：林安妮　地址：臺北市中山路二十號三樓　電話號碼：零九一二、三四五、六七八　今年：二十一歲", "question": "安妮住在哪裡？",
+   "options": ["臺北市中山路二十號三樓", "臺中市", "中山路三號", "二十一樓"], "answer": 0,
    "why": "地址 = alamat. C dan D mencampur angka (三樓, 二十一歲)."},
   {"type": "cloze", "part": "閱讀 Part 4 · Melengkapi paragraf", "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
    "text": "你家有（1）個人？我家有五個人。你們學校有（2）學生？我們學校有一千（3）個學生。", "options": ["幾", "多少", "多", "零"], "answers": [0, 1, 2],

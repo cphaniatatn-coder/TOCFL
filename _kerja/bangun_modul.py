@@ -41,7 +41,8 @@ def entry(lv, token, override):
              'extra': t.get('asal', 'dari kosakata.xlsx')}
         e.update(override.get(w, {}))
         return dengan_ucapan(e)
-    cocok = lambda o: o['w'] == w or w in o['w'].split('/')
+    # 臺 = bentuk standar yang dipakai modul; TBCL kadang menulis 台 (mis. 月台)
+    cocok = lambda o: o['w'] == w or w in o['w'].split('/') or w in o['w'].replace('台', '臺').split('/')
     o = next((o for o in tb if o['lv'] == lv and cocok(o)), None) or next(o for o in tb if cocok(o))
     parts = o['w'].split('/')
     idx = parts.index(w) if w in parts else 0
@@ -53,12 +54,14 @@ def entry(lv, token, override):
     # Tampilkan semua bentuk dalam satu entri resmi (mis. 這/這裡/這裏/這兒) supaya varian yang dipakai di dialog terlihat
     if '/' in o['w']:
         e['variants'] = '/'.join(re.sub(r'\d+$', '', p) for p in parts)
+    elif '台' in o['w'] and show != o['w']:   # 月臺 ← TBCL 月台: tunjukkan juga bentuk 台
+        e['variants'] = f"{show}/{o['w']}"
     if sense:
         e['note'] = f"義項 ini = {sense.replace('-', ' ')}."
     elif o['lv'] > lv:  # kata level lebih tinggi yang dimajukan (_kerja/kata_dimajukan.json)
         e['maju'] = o['lv']
     e.update(override.get(show, {}))
-    z = a.get('zy') or bp.get(show)   # entri bernomor (行1/行2…) punya zhuyin sendiri per 義項
+    z = a.get('zy') or bp.get(show) or bp.get(show.replace('臺', '台'))   # entri bernomor (行1/行2…) punya zhuyin sendiri per 義項
     if z and len(z.split()) == len(show):
         e['zy'] = z
     return dengan_ucapan(e)

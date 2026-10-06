@@ -186,7 +186,7 @@ A['B18-5'] = lantai() + pohon_gugur(150, 200, 1.2)
 
 # B19 — perbandingan
 A['B19-1'] = lantai() + orang(110, tinggi=175, jenis='pria', baju='h') + orang(200, tinggi=110, jenis='laki', baju='a') + garis((150, 25), (240, 25), k='t') + garis((150, 90), (240, 90), k='t')
-A['B19-2'] = (teks(80, 30, '台北', 26) + termometer(80, 44, 12) + salju(40, 90, 10) + teks(128, 150, '12°', 24, angka=True)
+A['B19-2'] = (teks(80, 30, '臺北', 26) + termometer(80, 44, 12) + salju(40, 90, 10) + teks(128, 150, '12°', 24, angka=True)
               + teks(220, 30, '高雄', 26) + termometer(220, 44, 28) + matahari(262, 76, 12) + teks(268, 150, '28°', 24, angka=True))
 A['B19-3'] = (lantai() + orang(90, tinggi=165, jenis='pria', baju='h', wajah='nyanyi', tangan={'ka': [(16, -10), (8, -30)]}) + jalur('M120 40 l40 -14 M122 52 l46 0 M120 64 l40 14', 'g', 4)
               + orang(230, tinggi=150, jenis='wanita', baju='a', wajah='sakit', tangan={'ki': [(16, -4), (0, -24)], 'ka': [(16, -4), (0, -24)]}))

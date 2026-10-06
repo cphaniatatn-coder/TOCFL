@@ -11,14 +11,15 @@ sys.stdout.reconfigure(encoding='utf-8')
 M = os.path.dirname(os.path.abspath(__file__)); K = os.path.dirname(M)
 sys.path.insert(0, K)
 
-TAMBAHAN = {'A10': {'刻', '一刻', '三刻', '差', '零'}, 'A18': {'零'}}   # dikenalkan sebagai "kosakata tambahan" di catatan bab
+TAMBAHAN = {'A02': {'台', '台灣'}, 'A10': {'刻', '一刻', '三刻', '差', '零'}, 'A18': {'零'}}   # dikenalkan sebagai "kosakata tambahan" di catatan bab
 BENAR = {'id': 'Mana yang BENAR?', 'en': 'Which one is CORRECT?', 'vi': 'Câu nào ĐÚNG?'}
 def t(i, e, v): return {'id': i, 'en': e, 'vi': v}
 def s(q, o, why): return {'q': q, 'o': o, 'why': why}
 
 L = {
 'A02': {
- 'bab': [s('他是美國人，他說（　）。', ['英文', '日語', '美國'], t('Bahasa Inggris = 英文; 美國 = Amerika (nama negara).', 'English = 英文; 美國 = America (the country).', 'Tiếng Anh = 英文; 美國 = nước Mỹ.')),
+ 'bab': [s(t('Di papan nama tertulis 台灣. Artinya sama dengan …', 'A sign says 台灣. It means the same as …', 'Biển hiệu ghi 台灣. Nghĩa giống với …'), ['臺灣', '日本', '美國'], t('台 = 臺 (bentuk sehari-hari dan bentuk resmi dari huruf yang sama).', '台 = 臺 (everyday and official forms of the same character).', '台 = 臺 (dạng thường ngày và dạng chính thức của cùng một chữ).')),
+         s('他是美國人，他說（　）。', ['英文', '日語', '美國'], t('Bahasa Inggris = 英文; 美國 = Amerika (nama negara).', 'English = 英文; 美國 = America (the country).', 'Tiếng Anh = 英文; 美國 = nước Mỹ.')),
          s('請問你是哪國人？ — 我是（　）。', ['印尼人', '印尼', '中文'], t('Negara + 人 = orang dari negara itu.', 'Country + 人 = a person from that country.', 'Tên nước + 人 = người nước đó.')),
          s(BENAR, ['你會說中文嗎？', '你說會中文嗎？', '你會中文說嗎？'], t('會 + 說 + bahasa.', '會 + 說 + language.', '會 + 說 + ngôn ngữ.')),
          s('她是日本人，她說（　）。', ['日語', '英文', '臺灣人'], t('Orang Jepang berbahasa Jepang: 日語.', 'A Japanese person speaks Japanese: 日語.', 'Người Nhật nói tiếng Nhật: 日語.')),
@@ -78,18 +79,18 @@ L = {
 'B19': {
  'bab': [s('火車站的聲音比公園（　）。', ['大', '很大', '太大'], t('Kalimat 比 tanpa 很/太.', 'No 很/太 in a 比 sentence.', 'Câu 比 không dùng 很/太.')),
          s(t('我（　）喜歡公園。 (lebih suka, tanpa menyebut pembanding)', '我（　）喜歡公園。 (prefer, without naming the other)', '我（　）喜歡公園。 (thích hơn, không nêu vật so sánh)'), ['比較', '更', '最'], t('比較 = cenderung lebih, sering tanpa B.', '比較 = rather/more, often without B.', '比較 = tương đối hơn, thường không có B.')),
-         s('台北很熱，可是雅加達（　）熱。', ['更', '很', '比'], t('更 = lebih lagi (keduanya panas).', '更 = even more (both are hot).', '更 = còn … hơn (cả hai đều nóng).')),
+         s('臺北很熱，可是雅加達（　）熱。', ['更', '很', '比'], t('更 = lebih lagi (keduanya panas).', '更 = even more (both are hot).', '更 = còn … hơn (cả hai đều nóng).')),
          s(t('我們學校在書店（　）。 (sebelah selatan)', '我們學校在書店（　）。 (to the south)', '我們學校在書店（　）。 (phía nam)'), ['南邊', '南', '邊南'], t('A 在 B + arah + 邊.', 'A 在 B + direction + 邊.', 'A 在 B + hướng + 邊.')),
          s(t('"sebelah timur" =', '"the east side" =', '"phía đông" ='), ['東邊', '西邊', '北邊'], t('東 = timur, 西 = barat, 北 = utara.', '東 = east, 西 = west, 北 = north.', '東 = đông, 西 = tây, 北 = bắc.')),
-         s('台北跟台中一樣熱嗎？ — 不一樣，台中比台北（　）。', ['熱', '很熱', '一樣'], t('"Tidak sama" lalu dilanjutkan dengan 比 + Vs.', '"Not the same", then 比 + Vs.', '"Không giống", rồi 比 + Vs.')),
-         s(t('臺灣（　）比台中冷。 (bagian utara)', '臺灣（　）比台中冷。 (the north)', '臺灣（　）比台中冷。 (miền bắc)'), ['北部', '世界', '聲音'], t('北部 = bagian utara suatu wilayah.', '北部 = the northern part of a region.', '北部 = miền bắc của một vùng.')),
-         s('你覺得台北比雅加達熱（　）？', ['嗎', '呢', '的'], t('Pertanyaan ya/tidak dengan 比 memakai 嗎.', 'A yes/no question with 比 takes 嗎.', 'Câu hỏi có/không với 比 dùng 嗎.'))],
- 'g1': [s(BENAR, ['台北比雅加達冷一點。', '台北比雅加達一點冷。', '台北比雅加達很冷。'], t('Selisih (一點) diletakkan SESUDAH kata sifat; 很 tidak dipakai dalam kalimat 比.', 'The difference (一點) goes AFTER the adjective; 很 is not used in 比 sentences.', 'Mức chênh lệch (一點) đặt SAU tính từ; không dùng 很 trong câu 比.')),
-        s(t('台北（　）雅加達熱。 (Taipei tidak sepanas Jakarta)', '台北（　）雅加達熱。 (Taipei is not as hot as Jakarta)', '台北（　）雅加達熱。 (Đài Bắc không nóng bằng Jakarta)'), ['沒有', '不有', '沒是'], t('Negasi perbandingan: A 沒有 B (那麼) + Vs.', 'Negative comparison: A 沒有 B (那麼) + Vs.', 'So sánh phủ định: A 沒有 B (那麼) + Vs.')),
-        s('雅加達比台北（　）熱。', ['更', '很', '太'], t('Di kalimat 比 dipakai 更 (lebih lagi), bukan 很/太.', 'In 比 sentences use 更 (even more), not 很/太.', 'Trong câu 比 dùng 更 (càng), không dùng 很/太.')),
+         s('臺北跟臺中一樣熱嗎？ — 不一樣，臺中比臺北（　）。', ['熱', '很熱', '一樣'], t('"Tidak sama" lalu dilanjutkan dengan 比 + Vs.', '"Not the same", then 比 + Vs.', '"Không giống", rồi 比 + Vs.')),
+         s(t('臺灣（　）比臺中冷。 (bagian utara)', '臺灣（　）比臺中冷。 (the north)', '臺灣（　）比臺中冷。 (miền bắc)'), ['北部', '世界', '聲音'], t('北部 = bagian utara suatu wilayah.', '北部 = the northern part of a region.', '北部 = miền bắc của một vùng.')),
+         s('你覺得臺北比雅加達熱（　）？', ['嗎', '呢', '的'], t('Pertanyaan ya/tidak dengan 比 memakai 嗎.', 'A yes/no question with 比 takes 嗎.', 'Câu hỏi có/không với 比 dùng 嗎.'))],
+ 'g1': [s(BENAR, ['臺北比雅加達冷一點。', '臺北比雅加達一點冷。', '臺北比雅加達很冷。'], t('Selisih (一點) diletakkan SESUDAH kata sifat; 很 tidak dipakai dalam kalimat 比.', 'The difference (一點) goes AFTER the adjective; 很 is not used in 比 sentences.', 'Mức chênh lệch (一點) đặt SAU tính từ; không dùng 很 trong câu 比.')),
+        s(t('臺北（　）雅加達熱。 (Taipei tidak sepanas Jakarta)', '臺北（　）雅加達熱。 (Taipei is not as hot as Jakarta)', '臺北（　）雅加達熱。 (Đài Bắc không nóng bằng Jakarta)'), ['沒有', '不有', '沒是'], t('Negasi perbandingan: A 沒有 B (那麼) + Vs.', 'Negative comparison: A 沒有 B (那麼) + Vs.', 'So sánh phủ định: A 沒有 B (那麼) + Vs.')),
+        s('雅加達比臺北（　）熱。', ['更', '很', '太'], t('Di kalimat 比 dipakai 更 (lebih lagi), bukan 很/太.', 'In 比 sentences use 更 (even more), not 很/太.', 'Trong câu 比 dùng 更 (càng), không dùng 很/太.')),
         s('這三個國家，印尼（　）熱。', ['最', '比', '跟'], t('最 = paling, untuk tiga hal atau lebih.', '最 = the most, for three or more things.', '最 = nhất, dùng cho ba thứ trở lên.'))],
  'g2': [s('我跟哥哥（　）高。', ['一樣', '很', '比'], t('A 跟 B 一樣 + Vs = A sama … dengan B.', 'A 跟 B 一樣 + Vs = A is as … as B.', 'A 跟 B 一樣 + Vs = A … bằng B.')),
-        s(BENAR, ['台北跟台中不一樣。', '台北不跟台中一樣。', '台北跟台中一樣不。'], t('Negasi diletakkan tepat sebelum 一樣.', 'The negation goes right before 一樣.', 'Từ phủ định đặt ngay trước 一樣.')),
+        s(BENAR, ['臺北跟臺中不一樣。', '臺北不跟臺中一樣。', '臺北跟臺中一樣不。'], t('Negasi diletakkan tepat sebelum 一樣.', 'The negation goes right before 一樣.', 'Từ phủ định đặt ngay trước 一樣.')),
         s(BENAR, ['我跟他一樣高。', '我跟他一樣很高。', '我一樣跟他高。'], t('Sesudah 一樣 langsung kata sifat, tanpa 很.', 'After 一樣 comes the adjective directly, without 很.', 'Sau 一樣 là tính từ, không thêm 很.')),
         s('這件衣服（　）那件一樣貴。', ['跟', '比', '很'], t('A 跟 B 一樣 + Vs; 比 dipakai bila ada yang "lebih".', 'A 跟 B 一樣 + Vs; 比 is used when one is "more".', 'A 跟 B 一樣 + Vs; 比 dùng khi có cái "hơn".'))]},
 'B20': {
@@ -121,17 +122,17 @@ L = {
         s('從這裡（　）前走，到路口右轉。', ['往', '從', '到'], t('往 + arah + V: 往前走.', '往 + direction + V: 往前走.', '往 + hướng + V: 往前走.')),
         s('到了第二個路口（　）左轉。', ['往', '從', '在'], t('…路口 + 往 + kiri/kanan + 轉. 到了 boleh diganti 在 di depan 路口.', '…路口 + 往 + left/right + 轉. 到了 can be replaced by 在 before 路口.', '…路口 + 往 + trái/phải + 轉. Có thể thay 到了 bằng 在 trước 路口.')),
         s(t('他到學校（　）了。 (pembicara tidak di sekolah)', '他到學校（　）了。 (the speaker is not at school)', '他到學校（　）了。 (người nói không ở trường)'), ['去', '來', '往'], t('去 = menjauhi pembicara; 來 = mendekati pembicara.', '去 = away from the speaker; 來 = towards the speaker.', '去 = rời xa người nói; 來 = về phía người nói.'))],
- 'g2': [s('我住（　）台北。', ['在', '到', '往'], t('V在 + tempat untuk tempat tinggal/posisi akhir.', 'V在 + place for where someone lives or ends up.', 'V在 + nơi chốn chỉ nơi ở/vị trí cuối.')),
+ 'g2': [s('我住（　）臺北。', ['在', '到', '往'], t('V在 + tempat untuk tempat tinggal/posisi akhir.', 'V在 + place for where someone lives or ends up.', 'V在 + nơi chốn chỉ nơi ở/vị trí cuối.')),
         s('他走（　）路口了。', ['到', '在', '往'], t('V到 + tempat = sampai di tempat itu dengan bergerak.', 'V到 + place = reach that place by moving.', 'V到 + nơi chốn = đi đến nơi đó.')),
         s('請坐（　）這裡。', ['在', '往', '從'], t('坐在 + tempat = duduk di ….', '坐在 + place = sit at ….', '坐在 + nơi chốn = ngồi ở ….')),
         s('我晚上十點回（　）家。', ['到', '往', '從'], t('回到 + tempat = sudah sampai kembali di ….', '回到 + place = get back to ….', '回到 + nơi chốn = về đến ….'))]},
 'B33': {
  'bab': [s('你是（　）來的？ — 我是坐公車來的。', ['怎麼', '哪裡', '誰'], t('Detail cara/kendaraan ditanyakan dengan 怎麼: 你是怎麼來的？', 'The manner/vehicle is asked with 怎麼: 你是怎麼來的？', 'Hỏi cách thức/phương tiện bằng 怎麼: 你是怎麼來的？')),
          s('你是跟（　）一起來的？ — 我是跟我姊姊一起來的。', ['誰', '哪', '怎麼'], t('Detail "dengan siapa" ditanyakan dengan 跟誰.', 'The detail "with whom" is asked with 跟誰.', 'Chi tiết "với ai" hỏi bằng 跟誰.')),
-         s(t(BENAR['id'] + ' (rencana besok)', BENAR['en'] + ' (a plan for tomorrow)', BENAR['vi'] + ' (kế hoạch ngày mai)'), ['我明天去台中。', '我是明天去台中的。', '我明天是去台中的了。'], t('是…的 hanya untuk yang sudah terjadi; rencana memakai kalimat biasa.', '是…的 is only for what has happened; plans use a plain sentence.', '是…的 chỉ dùng cho việc đã xảy ra; kế hoạch dùng câu thường.')),
-         s('A：你去台中了嗎？ B：去了。 A：你是怎麼去（　）？', ['的', '了', '嗎'], t('Kabar dulu dengan 了, lalu detail dengan 是…的.', 'News first with 了, then details with 是…的.', 'Báo tin trước bằng 了, rồi hỏi chi tiết bằng 是…的.')),
-         s(t('我（　）從台中回來，現在有一點累。 (baru saja)', '我（　）從台中回來，現在有一點累。 (just now)', '我（　）從台中回來，現在有一點累。 (vừa mới)'), ['剛剛', '本來', '當然'], t('剛剛 + V = baru saja.', '剛剛 + V = just now.', '剛剛 + V = vừa mới.')),
-         s(t('我（　）以為台中很遠，可是坐火車很快。 (tadinya)', '我（　）以為台中很遠，可是坐火車很快。 (originally)', '我（　）以為台中很遠，可是坐火車很快。 (lúc đầu)'), ['本來', '剛剛', '已經'], t('本來 = tadinya, lalu berubah (sering + 可是).', '本來 = originally, then it changed (often + 可是).', '本來 = lúc đầu, rồi thay đổi (thường + 可是).')),
+         s(t(BENAR['id'] + ' (rencana besok)', BENAR['en'] + ' (a plan for tomorrow)', BENAR['vi'] + ' (kế hoạch ngày mai)'), ['我明天去臺中。', '我是明天去臺中的。', '我明天是去臺中的了。'], t('是…的 hanya untuk yang sudah terjadi; rencana memakai kalimat biasa.', '是…的 is only for what has happened; plans use a plain sentence.', '是…的 chỉ dùng cho việc đã xảy ra; kế hoạch dùng câu thường.')),
+         s('A：你去臺中了嗎？ B：去了。 A：你是怎麼去（　）？', ['的', '了', '嗎'], t('Kabar dulu dengan 了, lalu detail dengan 是…的.', 'News first with 了, then details with 是…的.', 'Báo tin trước bằng 了, rồi hỏi chi tiết bằng 是…的.')),
+         s(t('我（　）從臺中回來，現在有一點累。 (baru saja)', '我（　）從臺中回來，現在有一點累。 (just now)', '我（　）從臺中回來，現在有一點累。 (vừa mới)'), ['剛剛', '本來', '當然'], t('剛剛 + V = baru saja.', '剛剛 + V = just now.', '剛剛 + V = vừa mới.')),
+         s(t('我（　）以為臺中很遠，可是坐火車很快。 (tadinya)', '我（　）以為臺中很遠，可是坐火車很快。 (originally)', '我（　）以為臺中很遠，可是坐火車很快。 (lúc đầu)'), ['本來', '剛剛', '已經'], t('本來 = tadinya, lalu berubah (sering + 可是).', '本來 = originally, then it changed (often + 可是).', '本來 = lúc đầu, rồi thay đổi (thường + 可是).')),
          s(t('A：你是坐飛機來的嗎？ B：（　）是坐飛機來的！ (tentu saja)', 'A：你是坐飛機來的嗎？ B：（　）是坐飛機來的！ (of course)', 'A：你是坐飛機來的嗎？ B：（　）是坐飛機來的！ (tất nhiên)'), ['當然', '好像', '本來'], t('當然 = tentu saja.', '當然 = of course.', '當然 = tất nhiên.')),
          s(t('我只會說幾句中文，可是大家（　）都懂。 (sepertinya)', '我只會說幾句中文，可是大家（　）都懂。 (it seems)', '我只會說幾句中文，可是大家（　）都懂。 (hình như)'), ['好像', '當然', '已經'], t('好像 = sepertinya (dugaan pembicara).', '好像 = it seems (the speaker\'s impression).', '好像 = hình như (cảm nhận của người nói).')),
          s(t('我（　）他是日本人，可是他是韓國人。 (mengira, ternyata salah)', '我（　）他是日本人，可是他是韓國人。 (thought wrongly)', '我（　）他是日本人，可是他是韓國人。 (tưởng sai)'), ['以為', '當然', '好像'], t('以為 = mengira, dan ternyata salah.', '以為 = thought (wrongly).', '以為 = tưởng (nhưng sai).')),
@@ -276,7 +277,7 @@ L = {
          s(BENAR, ['明天不下雨。', '明天下不雨。', '明天雨不下。'], t('下雨 kata kerja; negasinya 不下雨.', '下雨 is a verb; its negative is 不下雨.', '下雨 là động từ; phủ định là 不下雨.')),
          s('臺灣很熱，印尼（　）很熱。', ['也', '最', '不'], t('也 = juga (sama dengan yang disebut sebelumnya).', '也 = also (the same as what came before).', '也 = cũng (giống điều nói trước).')),
          s('明天不下雨，（　）風很大。', ['可是', '也', '最'], t('可是 menghubungkan dua keadaan yang berlawanan.', '可是 links two contrasting conditions.', '可是 nối hai tình trạng trái ngược.')),
-         s(BENAR, ['台北七月最熱。', '台北最七月熱。', '台北七月熱最。'], t('最 diletakkan tepat sebelum kata sifat.', '最 goes right before the adjective.', '最 đặt ngay trước tính từ.')),
+         s(BENAR, ['臺北七月最熱。', '臺北最七月熱。', '臺北七月熱最。'], t('最 diletakkan tepat sebelum kata sifat.', '最 goes right before the adjective.', '最 đặt ngay trước tính từ.')),
          s('今天不熱，可是有一點（　）。', ['冷', '很冷', '太冷'], t('有一點 + kata sifat (tanpa 很/太).', '有一點 + adjective (without 很/太).', '有一點 + tính từ (không có 很/太).'))]},
 }
 

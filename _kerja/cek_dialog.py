@@ -8,7 +8,7 @@ Pemakaian:  py _kerja/cek_dialog.py data/modul_vol1.json [data/modul_vol2.json .
 import json, os, re, sys
 
 K = os.path.dirname(os.path.abspath(__file__))
-NAMA = set('王大文 李美美 陳 林 張 王 李 小明 台北 臺北 雅加達 印尼 泗水 台中 高雄 大文 美美 安妮 志明 日本 美國 韓國 越南 泰國 臺南 台南 花蓮 陽明山 淡水 士林 信義 中山 忠孝 安安 小文 小林 故宮 綠島 北投'.split())
+NAMA = set('王大文 李美美 陳 林 張 王 李 小明 台北 臺北 雅加達 印尼 泗水 台中 臺中 高雄 大文 美美 安妮 志明 日本 美國 韓國 越南 泰國 臺南 台南 花蓮 陽明山 淡水 士林 信義 中山 忠孝 安安 小文 小林 故宮 綠島 北投'.split())
 # partikel grammar-only → modul pertama yang mengajarkan poinnya
 PARTIKEL = {'了': 'B09', '著': 'B08', '第': 'B03', '正在': 'B04', '看起來': 'B43', '聽起來': 'B43', '死了': 'C08', '為了': 'C15', '得不得了': 'C18', '極了': 'C18', '起': 'C33', '以外': 'C36', '分之': 'C38', '百分之': 'C38', '折': 'C40', '慣': 'C44', '睡著': 'C52', '睡不著': 'C52', '以內': 'C67'}
 

@@ -122,7 +122,7 @@ KATA_PY = {  # bacaan Taiwan / nada netral sesuai data yang sudah ada
 }
 load_phrases_dict({k: [[x] for x in v.replace('huìr', 'huì').split()] for k, v in KATA_PY.items() if 'huìr' not in v})
 NAMA = {'大文': 'Dà wén', '美美': 'Měi měi', '志明': 'Zhì míng', '安妮': 'Ān nī', '小明': 'Xiǎo míng', '臺灣': 'Tái wān',
-        '台灣': 'Tái wān', '台北': 'Tái běi', '台中': 'Tái zhōng', '印尼': 'Yìn ní', '雅加達': 'Yǎ jiā dá', '中文': 'Zhōng wén'}
+        '臺灣': 'Tái wān', '臺北': 'Tái běi', '臺中': 'Tái zhōng', '印尼': 'Yìn ní', '雅加達': 'Yǎ jiā dá', '中文': 'Zhōng wén'}
 PUNC = {'，': ', ', '。': '. ', '！': '! ', '？': '? ', '、': ', ', '：': ': ', '「': ' "', '」': '" ', '……': '…… '}
 NADA4 = re.compile('[àèìòùǜ]')
 
