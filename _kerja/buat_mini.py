@@ -111,7 +111,38 @@ def data_id():
     rencana = {k: [m for m in ms if m['code'] in SEMUA] for k, ms in baca(R / 'data/rencana.json').items()}
     bank = {c: bank[c] for c in SEMUA if c in bank}
     pasang_gambar_bab(vols, bank)
+    pasang_catatan_grammar(vols)
     return vols, bank, rencana
+
+
+def pasang_catatan_grammar(vols):
+    """Catatan dari buku rujukan grammar (_kerja/mini/catatan_grammar.json) → grammar[i].catatan / modul.catatan.
+    Teks Indonesia dipasang di sini; English/Vietnam lewat catatan_kamus() di penerjemah."""
+    p = M / 'catatan_grammar.json'
+    if not p.exists():
+        return
+    C = baca(p)
+    for d in vols.values():
+        for m in d['modules']:
+            c = C.get(m['code'], {})
+            for i, g in enumerate(m['grammar'], 1):
+                if f'g{i}' in c:
+                    g['catatan'] = {'rujukan': c[f'g{i}']['unit'], 'note': [n['id'] for n in c[f'g{i}']['note']]}
+            if 'bab' in c:
+                m['catatan'] = [{'point': b['point']['id'], 'rujukan': b['unit'], 'note': [n['id'] for n in b['note']]} for b in c['bab']]
+
+
+def catatan_kamus():
+    """{teks Indonesia: {en, vi}} dari catatan_grammar.json, untuk penerjemah()."""
+    p = M / 'catatan_grammar.json'
+    out = {}
+    if p.exists():
+        for kode, c in baca(p).items():
+            if kode.startswith('_'): continue
+            for g in [v for k, v in c.items() if k != 'bab'] + c.get('bab', []):
+                for n in g['note'] + ([g['point']] if 'point' in g else []):
+                    out[n['id']] = {'en': n['en'], 'vi': n['vi']}
+    return out
 
 
 def pasang_gambar_bab(vols, bank):
@@ -176,6 +207,7 @@ def kuesioner(lang):
 def penerjemah(lang, kurang):
     utama = baca(K / 'terjemahan_en.json') if lang == 'en' else {}
     mini = baca(M / 'kamus_mini.json') if (M / 'kamus_mini.json').exists() else {}
+    mini = {**mini, **catatan_kamus()}
     def tr(s):
         x = (mini.get(s) or {}).get(lang) or utama.get(s)
         if x is None:
