@@ -9,6 +9,8 @@
  *   Tes        — 1 baris per peserta × fase: skor, waktu, benar/salah per butir (q1–q20) & huruf jawaban (j1–j20)
  *   Modul      — 1 baris per peserta × bab
  *   Evaluasi   — 1 baris per peserta: e1–e10 (Likert) + 3 jawaban terbuka
+ * Putaran lanjutan: peserta yang sudah selesai boleh lanjut ke level di atasnya. Putaran 2, 3 dikirim dengan
+ *   uid "<kode>-P2", "<kode>-P3" → baris terpisah (putaran 1 tidak tertimpa). Analisis utama: uid TANPA "-P".
  * Skor kecemasan: butir (R) sudah dibalik di app; total 20–100, makin tinggi = makin cemas.
  */
 
