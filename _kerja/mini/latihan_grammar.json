@@ -90,43 +90,83 @@
   "A04": {
    "bab": [
     {
-     "q": "\"ayahku\" (paling wajar dalam percakapan) =",
+     "q": "22 個人 =",
      "options": [
-      "我爸爸",
-      "爸爸我",
-      "我是爸爸"
+      "二十二個人",
+      "兩十兩個人",
+      "二十兩個人"
      ],
      "answer": 0,
+     "why": "2 di posisi puluhan dan satuan selalu 二, walau sebelum kata bantu bilangan."
+    },
+    {
+     "q": "12 個孩子 =",
+     "options": [
+      "一兩個孩子",
+      "十二個孩子",
+      "十兩個孩子"
+     ],
+     "answer": 1,
+     "why": "12 = 十二; 兩 hanya untuk angka 2 yang berdiri sendiri."
+    },
+    {
+     "q": "Mana yang BENAR?",
+     "options": [
+      "我家有二個孩子。",
+      "我家有兩孩子。",
+      "我家有兩個孩子。"
+     ],
+     "answer": 2,
+     "why": "Jumlah + kata bantu: 兩個 (bukan 二個); kata bantu 個 tidak boleh hilang."
+    },
+    {
+     "q": "Menghitung: 一、（　）、三、四",
+     "options": [
+      "二",
+      "兩",
+      "十"
+     ],
+     "answer": 0,
+     "why": "Menghitung angka memakai 二."
+    },
+    {
+     "q": "\"ayahku\" (paling wajar dalam percakapan) =",
+     "options": [
+      "我是爸爸",
+      "我爸爸",
+      "爸爸我"
+     ],
+     "answer": 1,
      "why": "Anggota keluarga + kata ganti: 的 biasanya dihilangkan: 我爸爸."
     },
     {
      "q": "Mana yang BENAR?",
      "options": [
+      "家我有五個人。",
       "我家的有五個人。",
-      "我家有五個人。",
-      "家我有五個人。"
+      "我家有五個人。"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "我家 = rumah/keluarga-ku (的 dihilangkan)."
     },
     {
      "q": "\"nama-ku\" =",
      "options": [
+      "我的名字",
       "我名字的",
-      "名字我的",
-      "我的名字"
+      "名字我的"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Untuk barang biasa 的 tidak dihilangkan: 我的名字."
     },
     {
      "q": "\"ibu Meimei\" =",
      "options": [
+      "美美媽媽的",
       "美美的媽媽",
-      "媽媽美美的",
-      "美美媽媽的"
+      "媽媽美美的"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Pemiliknya nama → 的 tetap dipakai: 美美的媽媽."
     }
    ],
@@ -1552,6 +1592,36 @@
   "A10": {
    "bab": [
     {
+     "q": "\"Februari\" =",
+     "options": [
+      "二月",
+      "兩月",
+      "兩個月"
+     ],
+     "answer": 0,
+     "why": "Nama bulan memakai 二: 二月; 兩個月 = dua bulan (lama)."
+    },
+    {
+     "q": "\"dua hari\" =",
+     "options": [
+      "二號",
+      "兩天",
+      "二天"
+     ],
+     "answer": 1,
+     "why": "Lama waktu = 兩 + 天; 二號 = tanggal 2."
+    },
+    {
+     "q": "\"pukul 12\" =",
+     "options": [
+      "十兩點",
+      "兩點",
+      "十二點"
+     ],
+     "answer": 2,
+     "why": "12 = 十二 (2 di posisi satuan tetap 二); 兩點 = pukul 2."
+    },
+    {
      "q": "Urutan yang BENAR untuk \"pukul 7 pagi, 6 Oktober\":",
      "options": [
       "十月六號早上七點",
@@ -1646,93 +1716,103 @@
   "A18": {
    "bab": [
     {
-     "q": "300 =",
+     "q": "202 =",
      "options": [
-      "三百",
-      "三十",
-      "三千"
+      "兩百零二",
+      "兩百零兩",
+      "兩百二"
      ],
      "answer": 0,
+     "why": "Di depan 百 → 兩; angka 2 di belakang tetap 二. 兩百二 = 220."
+    },
+    {
+     "q": "300 =",
+     "options": [
+      "三千",
+      "三百",
+      "三十"
+     ],
+     "answer": 1,
      "why": "百 = ratus: 三百 = 300; 三十 = 30; 三千 = 3.000."
     },
     {
      "q": "2,000 =",
      "options": [
+      "兩百",
       "兩萬",
-      "兩千",
-      "兩百"
+      "兩千"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "千 = ribu; angka 2 di depan 千 dibaca 兩."
     },
     {
      "q": "10,000 =",
      "options": [
+      "一萬",
       "十千",
-      "一千",
-      "一萬"
+      "一千"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "10.000 = 一萬 (bukan 十千): Mandarin menghitung per empat digit."
     },
     {
      "q": "25,000 =",
      "options": [
+      "兩千五百",
       "兩萬五千",
-      "二十五千",
-      "兩千五百"
+      "二十五千"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "2|5000 → 兩萬 + 五千."
     },
     {
      "q": "1,200,000 =",
      "options": [
+      "一千二百萬",
       "十二萬",
-      "一百二十萬",
-      "一千二百萬"
+      "一百二十萬"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "120|0000 → 一百二十 + 萬."
     },
     {
      "q": "105 =",
      "options": [
+      "一百零五",
       "一百五",
-      "一百五十",
-      "一百零五"
+      "一百五十"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Nol di tengah dibaca 零; 一百五 = 150."
     },
     {
      "q": "一個八十塊，我買兩個。一共多少錢？",
      "options": [
+      "兩百塊",
       "一百六十塊",
-      "八十塊",
-      "兩百塊"
+      "八十塊"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "一共 = totalnya: 80 × 2 = 160 = 一百六十塊."
     },
     {
      "q": "這個多少錢？ — 這個一百二十（　）。",
      "options": [
+      "個",
       "點",
-      "塊",
-      "個"
+      "塊"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Satuan uang dalam percakapan: 塊."
     },
     {
      "q": "給你兩百塊。— 找你四十塊。 Harga barangnya:",
      "options": [
+      "一百六十塊",
       "兩百四十塊",
-      "四十塊",
-      "一百六十塊"
+      "四十塊"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "200 − 40 = 160 = 一百六十塊."
     }
    ]
@@ -1876,6 +1956,34 @@
   "哪國人 menanyakan negara asal, jadi dijawab dengan nama negara + 人.": {
    "en": "哪國人 asks for the country, so answer with the country + 人.",
    "vi": "哪國人 hỏi nước nào, nên trả lời bằng tên nước + 人."
+  },
+  "22 個人 =": {
+   "en": "22 個人 =",
+   "vi": "22 個人 ="
+  },
+  "2 di posisi puluhan dan satuan selalu 二, walau sebelum kata bantu bilangan.": {
+   "en": "A 2 in the tens and units place is always 二, even before a measure word.",
+   "vi": "Số 2 ở hàng chục và đơn vị luôn là 二, kể cả trước lượng từ."
+  },
+  "12 個孩子 =": {
+   "en": "12 個孩子 =",
+   "vi": "12 個孩子 ="
+  },
+  "12 = 十二; 兩 hanya untuk angka 2 yang berdiri sendiri.": {
+   "en": "12 = 十二; 兩 is only for a stand-alone 2.",
+   "vi": "12 = 十二; 兩 chỉ dùng cho số 2 đứng một mình."
+  },
+  "Jumlah + kata bantu: 兩個 (bukan 二個); kata bantu 個 tidak boleh hilang.": {
+   "en": "Quantity + measure word: 兩個 (not 二個); the measure word 個 cannot be left out.",
+   "vi": "Số lượng + lượng từ: 兩個 (không phải 二個); không được bỏ lượng từ 個."
+  },
+  "Menghitung: 一、（　）、三、四": {
+   "en": "Counting: 一、（　）、三、四",
+   "vi": "Đếm: 一、（　）、三、四"
+  },
+  "Menghitung angka memakai 二.": {
+   "en": "Counting uses 二.",
+   "vi": "Đếm số dùng 二."
   },
   "\"ayahku\" (paling wajar dalam percakapan) =": {
    "en": "\"my dad\" (most natural in speech) =",
@@ -2573,6 +2681,30 @@
    "en": "Two positive points → 而且; 可是 is for contrast.",
    "vi": "Hai ý tích cực → 而且; 可是 dùng cho ý trái ngược."
   },
+  "\"Februari\" =": {
+   "en": "\"February\" =",
+   "vi": "\"tháng Hai\" ="
+  },
+  "Nama bulan memakai 二: 二月; 兩個月 = dua bulan (lama).": {
+   "en": "Month names use 二: 二月; 兩個月 = two months (duration).",
+   "vi": "Tên tháng dùng 二: 二月; 兩個月 = hai tháng (khoảng thời gian)."
+  },
+  "\"dua hari\" =": {
+   "en": "\"two days\" =",
+   "vi": "\"hai ngày\" ="
+  },
+  "Lama waktu = 兩 + 天; 二號 = tanggal 2.": {
+   "en": "Duration = 兩 + 天; 二號 = the 2nd (date).",
+   "vi": "Khoảng thời gian = 兩 + 天; 二號 = ngày 2."
+  },
+  "\"pukul 12\" =": {
+   "en": "\"12 o'clock\" =",
+   "vi": "\"12 giờ\" ="
+  },
+  "12 = 十二 (2 di posisi satuan tetap 二); 兩點 = pukul 2.": {
+   "en": "12 = 十二 (a 2 in the units place stays 二); 兩點 = 2 o'clock.",
+   "vi": "12 = 十二 (số 2 hàng đơn vị vẫn là 二); 兩點 = 2 giờ."
+  },
   "Urutan yang BENAR untuk \"pukul 7 pagi, 6 Oktober\":": {
    "en": "The CORRECT order for \"7 a.m., 6 October\":",
    "vi": "Trật tự ĐÚNG của \"7 giờ sáng, ngày 6 tháng 10\":"
@@ -2612,6 +2744,10 @@
   "Lama waktu: 分鐘 (sesudah kata kerja); titik waktu: 點.": {
    "en": "Duration: 分鐘 (after the verb); point in time: 點.",
    "vi": "Khoảng thời gian: 分鐘 (sau động từ); thời điểm: 點."
+  },
+  "Di depan 百 → 兩; angka 2 di belakang tetap 二. 兩百二 = 220.": {
+   "en": "Before 百 → 兩; a final 2 stays 二. 兩百二 = 220.",
+   "vi": "Trước 百 → 兩; số 2 phía sau vẫn là 二. 兩百二 = 220."
   },
   "百 = ratus: 三百 = 300; 三十 = 30; 三千 = 3.000.": {
    "en": "百 = hundred: 三百 = 300; 三十 = 30; 三千 = 3,000.",
