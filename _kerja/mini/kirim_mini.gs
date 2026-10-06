@@ -4,7 +4,8 @@
  * (Jalankan sebagai: Saya, Akses: Siapa saja). Panduan: _kerja/mini/PANDUAN-kirim-mini.md
  *
  * Lima sheet dibuat otomatis (kirim ulang = baris lama diperbarui, tidak dobel):
- *   Peserta    — 1 baris per peserta: data diri, level, ringkasan pre/post
+ *   Peserta    — 1 baris per peserta: data diri (+ email), level, ringkasan pre/post, posisi terakhir di bab
+ *                (posisi_terakhir/aktif_terakhir diperbarui setiap peserta mencapai tahap baru → pantau yang berhenti)
  *   Kecemasan  — 1 baris per peserta × fase (pre/post): skor total, dimensi A–D, jawaban butir 1–20 (mentah)
  *   Tes        — 1 baris per peserta × fase: skor, waktu, benar/salah per butir (q1–q20) & huruf jawaban (j1–j20)
  *   Modul      — 1 baris per peserta × bab
@@ -19,9 +20,9 @@ var N_CEMAS = 20, N_TES = 20, N_EVAL = 10;
 function nomor(p, n) { var a = []; for (var i = 1; i <= n; i++) a.push(p + i); return a; }
 
 var KOLOM = {
-  Peserta: ['uid', 'kode_asal', 'putaran', 'nama', 'bahasa', 'level', 'level_awal', 'usia', 'negara', 'penilaian_diri', 'pernah_tocfl', 'lulus_tocfl',
+  Peserta: ['uid', 'kode_asal', 'putaran', 'nama', 'email', 'bahasa', 'level', 'level_awal', 'usia', 'negara', 'penilaian_diri', 'pernah_tocfl', 'lulus_tocfl',
             'lama_belajar', 'rencana_tocfl',
-            'mulai', 'selesai', 'cemas_pre', 'cemas_post', 'tes_pre', 'tes_post', 'bab_selesai', 'perangkat', 'terakhir_kirim', 'jumlah_kirim'],
+            'mulai', 'selesai', 'cemas_pre', 'cemas_post', 'tes_pre', 'tes_post', 'bab_selesai', 'posisi_terakhir', 'aktif_terakhir', 'perangkat', 'terakhir_kirim', 'jumlah_kirim'],
   Kecemasan: ['uid', 'nama', 'level', 'fase', 'waktu', 'total', 'A_umum', 'B_dengar', 'C_baca', 'D_kesiapan'].concat(nomor('b', N_CEMAS)).concat(['putaran']),
   Tes: ['uid', 'nama', 'level', 'fase', 'paket', 'skor', 'benar', 'dari', 'dengar', 'baca', 'detik', 'percobaan', 'selesai']
        .concat(nomor('q', N_TES)).concat(nomor('j', N_TES)).concat(['putaran']),
@@ -48,11 +49,11 @@ function doPost(e) {
 
     var sp = sheet(ss, 'Peserta'), lama = cari(sp, function (x) { return "'" + x[0] === uid; });
     var kali = lama.length ? (Number(sp.getRange(lama[0], KOLOM.Peserta.length).getValue()) || 0) + 1 : 1;
-    tulis(sp, lama, [[uid, asal, put, nama, teks(d.lang, 4), lv, teks(d.level_awal || d.level, 4), teks(p.usia, 20), teks(p.negara, 30),
+    tulis(sp, lama, [[uid, asal, put, nama, teks(d.email, 100), teks(d.lang, 4), lv, teks(d.level_awal || d.level, 4), teks(p.usia, 20), teks(p.negara, 30),
                       teks(p.mandarin, 4), teks(p.pernah, 10), teks(p.lulus, 40), teks(p.lama, 20), teks(p.rencana, 30), tgl(d.mulai), tgl(d.selesai),
                       pre.cemas_skor ? pre.cemas_skor.total : '', post.cemas_skor ? post.cemas_skor.total : '',
                       pre.tes ? pre.tes.skor : '', post.tes ? post.tes.skor : '',
-                      modul.filter(function (m) { return m.selesai; }).length, teks(d.perangkat, 20), new Date(), kali]]);
+                      modul.filter(function (m) { return m.selesai; }).length, teks(d.posisi, 30), tgl(d.aktif), teks(d.perangkat, 20), new Date(), kali]]);
 
     var cemas = [], tes = [];
     ['pre', 'post'].forEach(function (f) {
