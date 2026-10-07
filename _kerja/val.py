@@ -8,10 +8,10 @@ maju={k:v for k,v in json.load(open(S+'/kata_dimajukan.json',encoding='utf-8')).
 alias={}
 for w in lvw:
     alias[w]=w
-    for p in w.split('/'): alias.setdefault(p,w)
+    for p in w.split('/'): alias.setdefault(p,w); alias.setdefault(p.replace('台','臺'),w)   # modul memakai 臺 (TBCL kadang 台, mis. 月台)
 allw={}
 for o in tb:
-    for p in [o['w']]+o['w'].split('/'): allw.setdefault(p,o)
+    for p in [o['w']]+o['w'].split('/'): allw.setdefault(p,o); allw.setdefault(p.replace('台','臺'),o)
 seen=collections.defaultdict(list); errs=[]
 mods=[]
 for line in open(f'{S}/plan_L{lv}.txt',encoding='utf-8'):

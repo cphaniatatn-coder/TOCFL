@@ -218,7 +218,11 @@ L = {
         s(BENAR, ['我沒吃完。', '我不吃完了。', '我吃沒完。'], t('Hasil yang tidak tercapai: 沒 + V + hasil.', 'A result not reached: 沒 + V + result.', 'Kết quả chưa đạt: 沒 + V + kết quả.')),
         s(t('太多了，我吃（　）完。 (tidak sanggup menghabiskan)', '太多了，我吃（　）完。 (cannot finish)', '太多了，我吃（　）完。 (ăn không hết)'), ['不', '沒', '了'], t('V + 不 + hasil = tidak bisa mencapai hasil itu.', 'V + 不 + result = unable to reach that result.', 'V + 不 + kết quả = không thể đạt kết quả đó.'))]},
 'C40': {
- 'bab': [s('一千塊打八折，是（　）。', ['八百塊', '兩百塊', '八十塊'], t('打八折 = bayar 80%: 1.000 × 80% = 800.', '打八折 = pay 80%: 1,000 × 80% = 800.', '打八折 = trả 80%: 1.000 × 80% = 800.')),
+ 'bab': [s('百貨公司今天（　），很多東西都打折。', ['週年慶', '現金', '試穿'], t('週年慶 = obral ulang tahun toko; saat itu banyak barang diskon.', '週年慶 = a store\'s anniversary sale; many things are discounted.', '週年慶 = đợt giảm giá kỷ niệm; nhiều thứ được giảm giá.')),
+         s('這件外套特價五百塊，很（　）！', ['划算', '熱鬧', '排隊'], t('划算 = untung, sepadan dengan harganya.', '划算 = worth it, a good deal.', '划算 = đáng tiền, hời.')),
+         s(t('這件太大了，我想（　）小一點的。 (mencoba memakai)', '這件太大了，我想（　）小一點的。 (try on)', '這件太大了，我想（　）小一點的。 (mặc thử)'), ['試穿', '特價', '逛街'], t('試穿 = mencoba memakai baju/sepatu.', '試穿 = to try on clothes/shoes.', '試穿 = mặc thử quần áo/giày.')),
+         s(t('你帶了（　）嗎？ (uang tunai)', '你帶了（　）嗎？ (cash)', '你帶了（　）嗎？ (tiền mặt)'), ['現金', '週年慶', '划算'], t('現金 = uang tunai.', '現金 = cash.', '現金 = tiền mặt.')),
+         s('一千塊打八折，是（　）。', ['八百塊', '兩百塊', '八十塊'], t('打八折 = bayar 80%: 1.000 × 80% = 800.', '打八折 = pay 80%: 1,000 × 80% = 800.', '打八折 = trả 80%: 1.000 × 80% = 800.')),
          s('這件外套本來一千塊，現在打七折，是（　）。', ['七百塊', '三百塊', '一千塊'], t('打七折 = bayar 70%: 700.', '打七折 = pay 70%: 700.', '打七折 = trả 70%: 700.')),
          s('人好多，大家都在（　）。', ['排隊', '打折', '逛街'], t('排隊 = antre.', '排隊 = queue.', '排隊 = xếp hàng.')),
          s(t('打八折，（　）貴了一點。 (tetap saja)', '打八折，（　）貴了一點。 (still)', '打八折，（　）貴了一點。 (vẫn)'), ['還是', '也', '都'], t('還是 + Vs = tetap saja.', '還是 + Vs = still.', '還是 + Vs = vẫn.')),
