@@ -299,7 +299,10 @@ def nama_audio():
             tambah('N', m['title'])
             for dl in m['dialogs']:
                 for l in dl['lines']: tambah(ba.PEMBICARA.get(l['sp'], 'F1'), l['zh'])
-            for t in m['tasks']: soal(t)
+            for t in m['tasks']:
+                soal(t)
+                if t.get('type') == 'listen_pic':   # pilihan 溝通任務 diacak (studi.js) → semua huruf × pilihan
+                    for x in [f'{h}，{o}' for h in 'ABC'[:len(t['options'])] for o in t['options']]: tambah('N', x)
             for g in m['grammar']:
                 for e in g['examples']: tambah('N', e['zh'])
             for r in m.get('recycle', []): tambah('N', r['zh'])

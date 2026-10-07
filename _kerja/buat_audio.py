@@ -127,8 +127,15 @@ def kumpulkan():
                 tambah('N', narator(r['zh']), r['zh'])
             for e in m['vocab']['core'] + m['vocab']['supplement']:
                 tambah('W', 'F1', e.get('say') or e['w'])   # kosakata: satu suara yang konsisten; say = teks ucapan polifon
-    if os.path.exists(f'{R}/data/bank_soal.json'):
-        from buat_mini import SEMUA   # 18 bab modul mini: Tes Bab-nya membacakan 問 setelah bel (studi.js)
+    from buat_mini import SEMUA
+    for v in (1, 2, 3):   # modul mini mengacak pilihan 溝通任務 → 聽力 Part 1 butuh setiap huruf × setiap pilihan
+        for m in json.load(open(f'{R}/data/modul_vol{v}.json', encoding='utf-8'))['modules']:
+            if m['code'] in SEMUA:
+                for t in m['tasks']:
+                    if t.get('type') == 'listen_pic':
+                        for x in [f'{h}，{o}' for h in 'ABC'[:len(t['options'])] for o in t['options']]:
+                            tambah('N', narator(x), x)
+    if os.path.exists(f'{R}/data/bank_soal.json'):   # 18 bab modul mini: Tes Bab-nya membacakan 問 setelah bel (studi.js)
         for kode, ts in json.load(open(f'{R}/data/bank_soal.json', encoding='utf-8')).items():
             for t in ts:
                 soal(t)
