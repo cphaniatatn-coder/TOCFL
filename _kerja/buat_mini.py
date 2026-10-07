@@ -320,6 +320,38 @@ def nama_audio():
     return {ba.nama(k) for k in job}
 
 
+def font_kai(F):
+    """全字庫正楷體 (TW-Kai, 國家發展委員會, 政府資料開放授權條款 第1版) dipotong ke huruf yang dipakai modul mini.
+    HP tidak punya 標楷體, dan cadangan lama (LXGW WenKai TC) memakai bentuk komponen Jepang (mis. 青 di 請).
+    Sumber TTF di _kerja/mini/font_src/ (tidak di-git, ±30 MB); hasil disimpan di _kerja/mini/font_cache/ (di-git)
+    sehingga tanpa sumber pun buat_mini.py tetap menyertakan font terakhir."""
+    import hashlib
+    pola = re.compile(r'[\u02C7\u02C9-\u02CB\u02D9\u2E80-\u9FFF\uF900-\uFAFF\uFF00-\uFFEF\U00020000-\U0002FA1F]')
+    huruf = set()
+    for k, v in F.items():
+        if k.endswith(('.json', '.js', '.html')) and not isinstance(v, Path):
+            huruf |= set(pola.findall(v.decode('utf-8')))
+    teks = ''.join(sorted(huruf))
+    cache, kunci = M / 'font_cache' / 'twkai-mini.woff2', M / 'font_cache' / 'twkai-mini.txt'
+    sumber = sorted((M / 'font_src').glob('TW-Kai-*.ttf')) if (M / 'font_src').is_dir() else []
+    tanda = hashlib.md5((teks + '|' + ','.join(f.name for f in sumber)).encode()).hexdigest()
+    if sumber and not (cache.exists() and kunci.exists() and kunci.read_text(encoding='utf-8') == tanda):
+        from fontTools import subset
+        from fontTools.ttLib import TTFont
+        cache.parent.mkdir(exist_ok=True)
+        utama = [f for f in sumber if 'Ext' not in f.name and 'Plus' not in f.name][0]
+        opt = subset.Options(); opt.flavor = 'woff2'; opt.layout_features = ['*']; opt.name_IDs = ['*']; opt.notdef_outline = True
+        font = TTFont(utama); cmap = font.getBestCmap()
+        kurang = [c for c in teks if ord(c) not in cmap]
+        sub = subset.Subsetter(opt); sub.populate(text=teks); sub.subset(font)
+        font.flavor = 'woff2'; font.save(cache); kunci.write_text(tanda, encoding='utf-8')
+        print(f'  font TW-Kai: {len(teks)} huruf → {cache.stat().st_size // 1024} KB' + (f'; tidak ada di TW-Kai: {"".join(kurang)}' if kurang else ''))
+    elif not cache.exists():
+        print('  ⚠ font TW-Kai belum ada (taruh TW-Kai-98_1.ttf di _kerja/mini/font_src/) — HP memakai font cadangan')
+        return
+    F['fonts/twkai-mini.woff2'] = cache
+
+
 def main():
     hanya_cek = 'cek' in sys.argv[1:]
     vols, bank, rencana = data_id()
@@ -365,6 +397,7 @@ def main():
                      + json.dumps(vi_ui, ensure_ascii=False, indent=0) + ';\n').encode()
     for f in ('style.css', 'kai.css'):
         F[f'css/{f}'] = R / 'css' / f
+    font_kai(F)
     # ?v=<hash isi> di index.html: GitHub Pages meng-cache JS/CSS 10 menit, jadi tanpa ini browser bisa memakai versi lama
     import hashlib
     isi = lambda v: v.read_bytes() if isinstance(v, Path) else v
