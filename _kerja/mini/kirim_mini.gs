@@ -27,7 +27,7 @@ var KOLOM = {
   Tes: ['uid', 'nama', 'level', 'fase', 'paket', 'skor', 'benar', 'dari', 'dengar', 'baca', 'detik', 'percobaan', 'selesai']
        .concat(nomor('q', N_TES)).concat(nomor('j', N_TES)).concat(['putaran']),
   Modul: ['uid', 'nama', 'level', 'kode', 'tahap', 'selesai', 'selesai_waktu', 'tugas_best', 'tugas_kali', 'tes_best', 'tes_kali',
-          'kata_hafal', 'yakin', 'target', 'sulit', 'diperbarui', 'putaran'],
+          'kata_hafal', 'yakin', 'target', 'sulit', 'diperbarui', 'putaran', 'menit_belajar'],
   Evaluasi: ['uid', 'nama', 'level', 'waktu'].concat(nomor('e', N_EVAL)).concat(['terbuka1', 'terbuka2', 'terbuka3', 'putaran']),
 };
 
@@ -76,7 +76,8 @@ function doPost(e) {
     simpanBanyak(sheet(ss, 'Modul'), function (x) { return x[0] + '|' + x[3]; },
       modul.slice(0, 20).map(function (m) {
         return [uid, nama, lv, teks(m.kode, 6), m.tahap, m.selesai ? 'ya' : '', tgl(m.selesai_waktu), m.tugas_best, m.tugas_kali,
-                m.tes_best, m.tes_kali, m.kata_hafal, m.yakin, teks(m.target, 500), teks(m.sulit, 500), sekarang, put];
+                m.tes_best, m.tes_kali, m.kata_hafal, m.yakin, teks(m.target, 500), teks(m.sulit, 500), sekarang, put,
+                Math.round((Number(m.detik) || 0) / 60)];
       }));
 
     if (d.eval) {
