@@ -495,6 +495,20 @@ Modul.open = function (code, stage) {
    Audio 聽力 Part 1 ("A，…" "B，…") untuk semua kombinasi huruf × pilihan direkam oleh buat_audio.py. */
 const acakUrut = n => { const a = [...Array(n).keys()]; for (let i = n - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const bisaAcak = t => Array.isArray(t.options) && t.options.length > 1 && typeof t.answer === 'number' && t.type !== 'cloze';
+// "A" + kata benda bahasa Inggris (A house…, A …嗎 question) = kata sandang, bukan pilihan A
+const artikelA = (h, sesudah) => LANG === 'en' && h === 'A' && /^ (?!(?:is|are|and|has|does|do|misreads|judges|comments|=)(?!\w))/.test(sesudah);
+// Huruf pilihan di penjelasan ("B salah jumlah") ikut diganti ke urutan yang sedang tampil, jadi peserta tidak perlu
+// mencocokkan dengan urutan asli. Dikecualikan: rumus pola (A 比 B, A 跟 B) dan kata sandang "A" bahasa Inggris.
+const hurufBaru = (why, p) => {
+  if (!why || /[A-D] ?[比跟]/.test(why)) return why;
+  return why.replace(/(^|[^\p{L}\p{N}])([A-D])(?![\p{L}\p{N}])/gu, (s, pre, h, i) => {
+    if (artikelA(h, why.slice(i + s.length))) return s;
+    return pre + 'ABCD'[p.indexOf('ABCD'.indexOf(h))];
+  }).replace(/(?<![\p{L}\p{N}])[A-D](?:(?:,| dan| and| và| &) [A-D])+(?![\p{L}\p{N}])/gu, s => {   // "C dan A" → "A dan C"
+    const urut = s.match(/[A-D]/g).sort();
+    return s.replace(/[A-D]/g, () => urut.shift());
+  });
+};
 Modul._acak = {};
 const _modRender = Modul.render, _modRetry = Modul.retry;
 Modul.render = function () {
@@ -504,7 +518,7 @@ Modul.render = function () {
     this.m = Object.assign({}, asli, { _perm: perm, tasks: asli.tasks.map((t, i) => {
       const p = perm[i];
       if (!p || p.every((x, k) => x === k)) return t;
-      return Object.assign({}, t, { options: p.map(j => t.options[j]), answer: p.indexOf(t.answer), urutAsli: t.options });
+      return Object.assign({}, t, { options: p.map(j => t.options[j]), answer: p.indexOf(t.answer), why: hurufBaru(t.why, p) });
     }) });
   }
   return _modRender.call(this);
@@ -748,12 +762,34 @@ Soal.play = function (key) {
   TocflAudio.putar(t, () => { if (btn) btn.classList.remove('playing'); kecil(T('played 2×', 'sudah diputar 2×')); },
                    n => kecil(T(`playing ${n}/2`, `diputar ${n}/2`)));
 };
+// 溝通任務: penjelasan dipecah per pilihan — "A. 她會說中文。 ✓ / alasannya", "B. … / alasannya", dst.
+// Teks sebelum huruf pertama = alasan jawaban benar; tiap "B …" / "A dan C …" = alasan pilihan itu.
+const pisahWhy = why => {
+  if (!why || /[A-D] ?[比跟]/.test(why)) return null;
+  const potong = [];
+  for (const m of why.matchAll(/(?<![\p{L}\p{N}])[A-D](?:(?:,| dan| and| và| &) [A-D])*(?![\p{L}\p{N}])/gu)) {
+    const sebelum = why.slice(0, m.index), sesudah = why.slice(m.index + m[0].length);
+    if (!/(^|[.;,!?。；！？—])\s*$/.test(sebelum) || !/^(\s|:|=)/.test(sesudah)) continue;
+    if (artikelA(m[0], sesudah)) continue;
+    potong.push([m.index, m[0]]);
+  }
+  if (!potong.length) return null;
+  const per = {};
+  potong.forEach(([i, g], k) => {
+    let s = why.slice(i + g.length, k + 1 < potong.length ? potong[k + 1][0] : why.length).replace(/^\s*[:=]?\s*/, '').replace(/[\s,;；—]+$/, '');
+    s = s.charAt(0).toUpperCase() + s.slice(1);
+    g.match(/[A-D]/g).forEach(h => (per[h] = per[h] ? per[h] + ' ' + s : s));
+  });
+  return { umum: why.slice(0, potong[0][0]).replace(/[\s,;；—]+$/, ''), per };
+};
 Soal.body = function (t, key, a, ns, mode) {
   let h = _soalBody.call(this, t, key, a, ns, mode);
-  if (t.urutAsli && /(^|[^A-Za-z0-9])[A-D]([^A-Za-z0-9]|$)/.test(t.why || '')) {
-    const lbl = o => typeof o === 'string' ? o : (o.label || o.icon || '');
-    h = h.replace(/(<div class="feedback[^"]*">[\s\S]*?<p>[\s\S]*?<\/p>)/, `$1<p class="urut-asli">${T('The order of the choices was shuffled. Letters in the explanation refer to the original order:', 'Urutan pilihan diacak. Huruf di penjelasan mengikuti urutan asli:')} ${t.urutAsli.map((o, i) => `<b>${'ABCD'[i]}</b> <span lang="zh-TW">${esc(lbl(o))}</span>`).join(' · ')}</p>`);
-  }
+  const w = ns === 'Modul' && Array.isArray(t.options) && t.type !== 'cloze' && h.includes('<div class="feedback') && t.why && (pisahWhy(t.why) || { umum: t.why, per: {} });   // tanpa huruf → seluruh penjelasan di bawah jawaban benar
+  if (w) h = h.replace(`<p>${esc(t.why)}</p>`, () => `<ol class="why-list">${t.options.map((o, i) => {
+    const L = 'ABCD'[i], ok = i === t.answer, alasan = ok ? w.umum || w.per[L] : w.per[L];
+    const lbl = typeof o === 'string' ? `<span lang="zh-TW">${esc(o)}</span>` : esc(o.label || '');
+    return `<li class="${ok ? 'ok' : ''}"><div><b>${L}.</b> ${lbl}${ok ? ' ✓' : ''}</div>${alasan ? `<small>${esc(alasan)}</small>` : ''}</li>`;
+  }).join('')}</ol>`);
   return tocflAktif() && mode === 'exam' && this.isListen(t) ? h.replace(/<div class="q-ask" lang="zh-TW">問：[^<]*<\/div>/, '') : h;
 };
 Speech.speedUI = function () { return tocflAktif() ? '' : _speedUI.call(this); };

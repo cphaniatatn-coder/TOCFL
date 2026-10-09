@@ -21,7 +21,7 @@ Kata pendukung: kata di dialog/soal/contoh bab yang diajarkan di bab LAIN pada l
 coba → vocab.pendukung (bisa diketuk di dialog + daftar di tahap 詞彙). Kata level di bawahnya dianggap sudah
 dikuasai peserta yang memilih level itu.
 """
-import json, os, re, shutil, sys
+import fnmatch, json, os, re, shutil, sys
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
 K = Path(__file__).resolve().parent; R = K.parent; M = K / 'mini'
@@ -414,6 +414,9 @@ def main():
     for n in ada:
         F[f'audio/tts/{n}.mp3'] = R / f'audio/tts/{n}.mp3'
     F['.nojekyll'] = b''
+    # data hasil uji coba berisi email peserta: tidak di-commit, dan TIDAK BOLEH dihapus sinkronisasi di bawah
+    ABAIKAN = ['測試結果*', 'Rekap-*.xlsx', '~$*']
+    F['.gitignore'] = ('# Data hasil uji coba (berisi email peserta) — jangan di-commit\n' + '\n'.join(ABAIKAN) + '\n').encode()
     F['README.md'] = (
         '# TOCFL Band A — modul uji coba\n\nVersi mini (18 bab: 6 per level A0/A1/A2) dari app modul TOCFL Band A, untuk uji coba thesis:\n'
         'kuesioner kecemasan + tes awal → 6 bab → kuesioner + tes akhir + evaluasi modul. Bahasa: Indonesia · English · Tiếng Việt.\n\n'
@@ -432,7 +435,7 @@ def main():
         dst.parent.mkdir(parents=True, exist_ok=True); dst.write_bytes(isi); tulis_n += 1
     for f in sorted(OUT.rglob('*'), reverse=True):
         rel = f.relative_to(OUT).as_posix()
-        if rel == '.git' or rel.startswith('.git/'):
+        if rel == '.git' or rel.startswith('.git/') or any(fnmatch.fnmatch(f.name, p) for p in ABAIKAN):
             continue
         if f.is_file() and rel not in F:
             f.unlink(); hapus_n += 1
