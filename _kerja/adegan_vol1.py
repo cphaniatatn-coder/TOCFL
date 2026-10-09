@@ -69,9 +69,7 @@ A['A08-5'] = lantai() + rumah(95) + pohon(250) + matahari(250, 40, 14) + orang(1
 # A09 — letak benda
 A['A09-1'] = lantai() + meja(150, 128, 160) + tv(150, 128, 116)
 A['A09-2'] = lantai() + meja(110, 120, 140) + kursi(242)
-A['A09-3'] = (garis((16, 150), (284, 150), k='t') + kotak(70, 40, 160, 60, 'h', 6) + bentuk((78, 100), (222, 100), (262, 160), (38, 160), k='p')
-              + bentuk((60, 128), (240, 128), (262, 160), (38, 160), k='a') + elips(115, 110, 26, 8) + elips(185, 110, 26, 8)
-              + kotak(38, 160, 224, 12, 'h') + kotak(95, 178, 110, 30, 'h') + tv(150, 178, 100))
+A['A09-3'] = lantai() + ranjang(105, 200, 170) + meja(245, 158, 70) + tv(245, 158, 76)
 A['A09-4'] = lantai() + meja(150, 110, 200) + bola(125, 186, 13) + bola(170, 186, 13)
 A['A09-5'] = (lantai() + kursi(186, 176, arah=-1, s=.75) + orang(120, tinggi=160, jenis='pria', baju='a', tangan={'ka': [(22, 14), (46, 18)]}))
 
@@ -198,7 +196,7 @@ A['A24-2'] = (lantai() + orang(150, tinggi=160, jenis='pria', baju='h', wajah='s
 A['A24-3'] = lantai() + gunung(150, 200, 260, 150, salju=False) + bunga(70, 150) + bunga(110, 160) + bunga(190, 158) + bunga(230, 150) + bunga(150, 168)
 A['A24-4'] = lantai() + matahari(60, 50, 22, 'h') + orang(170, tinggi=160, jenis='pria', baju='p', wajah='lelah', tangan={'ka': [(14, -6), (10, -26)]}) + keringat(145, 44) + keringat(196, 52) + keringat(150, 90, .8)
 A['A24-5'] = (lantai() + gunung(120, 200, 220, 140) + angin(170, 60, .9)
-              + kotak(245, 150, 8, 50, 'h') + jalur('M249 150 Q262 110 286 104 Q270 128 260 150 Z', 'p'))
+              + f'<g transform="rotate(22 252 200)">{pohon(252, 200, .7)}</g>')
 
 # A25 — telepon & sopan santun
 A['A25-1'] = dua_panel(orang_ponsel(75, 'laki', 140, baju='h') + sinyal(108, 70),

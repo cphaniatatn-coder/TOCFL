@@ -199,7 +199,7 @@ A['B20-1'] = (lantai() + orang(150, tinggi=165, jenis='pria', baju='p', tangan={
               + bentuk((150 - _r * 2, _cy + _r * 1.3), (150 + _r * 2, _cy + _r * 1.3), (150 + _r * 2.8, 150), (150 - _r * 2.8, 150), k='a')
               + garis((150, _cy + _r * 1.3), (150, 150), k='t'))
 _cy2, _r2 = _kepala(150, 165, 'wanita')
-A['B20-2'] = lantai() + orang(150, tinggi=165, jenis='wanita', baju='a') + kacamata_di(150, _cy2, _r2)
+A['B20-2'] = orang(150, kaki=92 - 50 + 50 / .085, tinggi=50 / .085, jenis='wanita', baju='a') + kacamata_di(150, 92, 50)   # potret besar (potret() didefinisikan di bawah)
 A['B20-3'] = (lantai() + garis((30, 40), (270, 40), lebar=4) + orang(90, tinggi=160, jenis='wanita', baju='a', tangan={'ka': [(20, -20), (40, -50)]})
               + bentuk((150, 50), (190, 50), (200, 170), (140, 170), k='a') + garis((170, 42), (170, 50)) + garis((170, 50), (170, 170), k='t'))
 A['B20-4'] = (lantai() + orang(150, tinggi=150, jenis='wanita', baju='p', tangan={'ki': [(14, 40), (26, 76)], 'ka': [(14, 40), (26, 76)]})

@@ -8,6 +8,7 @@ Gaya sama dengan gambar_pilihan.py (garis hitam, isian hitam/putih/abu, kanvas 3
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))   # _kerja/ (svg_lib, svg_adegan)
 from gambar_pilihan import *          # komponen bersama (orang, jam, harga, cuaca, rute, …) + svg_adegan/svg_lib
+from adegan_vol2 import potret        # kepala + bahu besar: ekspresi & aksesori wajah terlihat jelas
 
 G, LABEL = {}, {}
 
@@ -46,23 +47,25 @@ def bola_di(tempat):
 
 def kursi_meja(posisi):
     """kursi di atas / belakang / depan meja (meja tampak samping, kursi menghadap kanan)."""
-    if posisi == 'atas': return lantai() + meja(150, 140, 200) + kursi(150, 140, 1, .9)
-    if posisi == 'belakang': return lantai() + kursi(150, 200, 1, 1.15) + meja(150, 130, 200)
-    return lantai() + meja(150, 110, 170) + kursi(150, 200, 1, 1.25)
+    def meja_panel(atas, lebar=190):   # meja dengan panel depan abu-abu (menutupi apa pun di belakangnya)
+        return kotak(150 - lebar / 2, atas, lebar, 12, 'h') + kotak(150 - lebar / 2 + 8, atas + 12, lebar - 16, 200 - atas - 12, 'a')
+    if posisi == 'atas': return lantai() + meja_panel(140) + kursi(150, 140, 1, .9)
+    if posisi == 'belakang': return lantai() + kursi(150, 200, 1, 1.1) + meja_panel(130)   # hanya sandaran yang menyembul
+    return lantai() + meja_panel(110, 150) + kursi(190, 200, 1, 1.3)                        # kursi utuh di depan, menutupi sebagian meja
 
 def uang(x, y, angka, w=96, h=48):
     return kotak(x - w / 2, y - h / 2, w, h, 'p', 4) + kotak(x - w / 2 + 5, y - h / 2 + 5, w - 10, h - 10, 't', 3) + teks(x, y + 9, angka, 24, angka=True)
 
-def koin(x, y, angka='10', r=22): return bulat(x, y, r, 'a') + bulat(x, y, r - 5, 't') + teks(x, y + 7, angka, 18, angka=True)
+def koin(x, y, angka='10', r=22): return bulat(x, y, r, 'a') + bulat(x, y, r - 5, 't') + teks(x, y + max(7, r * .32), angka, max(18, r * .9), angka=True)
 
 def tumpuk_uang(n=4):
     return ''.join(uang(150 + (i % 2) * 14, 160 - i * 22, '1000', 140, 56) for i in range(n))
 
 def tidur_jam(h, m, bangun=False):
-    o = lantai() + ranjang(120, 200, 200) + jam_dinding(248, 64, 36, h, m)
+    o = lantai() + ranjang(120, 200, 200) + jam_dinding(242, 66, 50, h, m)
     if bangun:   # duduk di ranjang, weker berbunyi
         return (o + orang(70, tinggi=120, jenis='pria', duduk=148, baju='a', wajah='lelah', tangan={'ki': [(14, -20), (6, -46)]})
-                + jalur('M226 30 l-8 -8 M270 30 l8 -8 M248 20 l0 -10', 'g'))
+                + jalur('M202 26 l-8 -8 M282 26 l8 -8 M242 12 l0 -8', 'g'))
     return (o + bulat(46, 132, 15) + muka(46, 132, 15, 'tidur') + jalur('M31 127 q2 -20 16 -20 q14 0 15 16', 'h')
             + kotak(62, 132, 150, 18, 'p', 6) + teks(82, 104, 'z z', 20, angka=True))
 
@@ -124,12 +127,13 @@ def rok(panjang):
             + bentuk((150 - 22, p - 2), (150 + 22, p - 2), (150 + 40, hem), (150 - 40, hem), k='a'))
 
 def aksesori(kacamata=False, jam_=False, topi=False):
-    s_ = sendi(150, tinggi=165, jenis='pria')
-    o = lantai() + orang(150, tinggi=165, jenis='pria', baju='p', kacamata=kacamata, tangan={'ka': [(14, 24), (26, 0)]})
-    if topi: o += topi_di(150, s_['cy'], s_['r'])
-    if jam_:
-        tx, ty = 150 + s_['lb'] / 2 + 22, s_['bahu'] + 10
-        o += kotak(tx - 9, ty - 7, 18, 14, 'p', 3) + bulat(tx, ty, 4, 't') + garis((tx + 26, ty - 10), (tx + 36, ty - 16), k='g')
+    cy, r = 96, 40
+    o = potret(130, cy, r, 'pria', 'senyum', 'p')
+    if kacamata: o += kacamata_di(130, cy, r)
+    if topi: o += topi_di(130, cy, r)
+    if jam_:   # lengan kanan diangkat, jam tangan besar di pergelangan
+        o += garis((172, 214), (208, 176), (222, 112), lebar=13) + bulat(224, 100, 13, 'p')      # lengan dari bahu, tangan terangkat
+        o += kotak(203, 124, 36, 28, 'h', 5) + bulat(221, 138, 10, 'p') + garis((221, 138), (221, 132), k='t') + garis((221, 138), (226, 138), k='t')
     return o
 
 def kamar_banding(punyaku):
@@ -339,10 +343,10 @@ opsi('MB40-b4', lantai() + ranjang(150, 200, 220) + bulat(62, 132, 15) + muka(62
      lantai() + orang(150, tinggi=165, jenis='wanita', baju='a', wajah='lelah') + keringat(186, 52))
 opsi('MB40-b6', lantai() + rumah(200, 200, 140, 100) + orang(70, tinggi=130, jenis='laki', baju='a', wajah='sakit') + termometer(110, 40, 38, h=50),
      lantai() + orang(110, tinggi=130, jenis='laki', baju='a', kaki_pose={'ki': (-14, 0), 'ka': (30, -20)}) + bola(170, 182, 14),
-     lantai() + sekolah(180, 200, 150, 100) + jalan_kaki(50, tinggi=120))
+     lantai() + sekolah(180, 200, 150, 100, papan='學校') + jalan_kaki(50, tinggi=120))
 soal('MB40-b7', lantai() + piring(80, 160, 56) + buah_apel(64, 148, .7) + buah_apel(96, 148, .7) + meja(80, 166, 110)
      + orang(220, tinggi=165, jenis='pria', baju='a', wajah='tawa', tangan={'ki': [(20, -10), (10, -40)], 'ka': [(20, -10), (10, -40)]}))
-soal('MB40-b8', lantai() + jam_dinding(80, 80, 56, 10, 0) + sekolah(220, 200, 130, 90) + jalan_kaki(160, tinggi=120))
+soal('MB40-b8', lantai() + jam_dinding(80, 80, 56, 10, 0) + sekolah(220, 200, 130, 90, papan='學校') + jalan_kaki(160, tinggi=120))
 
 
 # =================== A2 ===================
@@ -384,14 +388,20 @@ def kalender_hari(hari):
 def rapat(): return lantai() + papan_tulis(150, 20, 140, 70) + garis((100, 75), (130, 55), (160, 65), (190, 40), k='t', lebar=3) + meja(150, 150, 220) + orang(70, tinggi=110, jenis='pria', duduk=150, baju='a') + orang(150, tinggi=110, jenis='wanita', duduk=150, baju='p') + orang(230, tinggi=110, jenis='pria', duduk=150, baju='h')
 
 def topan(x=150, y=100, r=60):
-    return jalur(f'M{x} {y} m{-r} 0 a{r} {r} 0 1 1 {r} {r} a{r * .6} {r * .6} 0 1 1 {-r * .6} {-r * .6} a{r * .25} {r * .25} 0 1 1 {r * .25} {r * .25}', 'g', 6)
+    """Awan topan: awan hitam berpusaran putih, hujan miring di bawahnya (r ≈ setengah lebar awan)."""
+    s = r / 60
+    o = awan(x, y, s, 'h') + jalur(f'M{f(x - 40 * s)} {f(y - 8 * s)} a{f(40 * s)} {f(14 * s)} 0 1 1 {f(80 * s)} 0 a{f(30 * s)} {f(10 * s)} 0 1 1 {f(-60 * s)} 0 a{f(18 * s)} {f(6 * s)} 0 1 1 {f(36 * s)} 0', 'w', max(2.2, 4 * s))
+    for i in range(5):
+        xx = x - 44 * s + i * 22 * s
+        o += garis((xx, y + 28 * s), (xx - 10 * s, y + 52 * s), lebar=max(2, 3 * s))
+    return o
 
 def onsen():
     return (lantai() + gunung(150, 120, 280, 80, salju=False) + elips(150, 166, 128, 30, 'a') + ''.join(bulat(x, y, r, 'p') for x, y, r in ((30, 172, 14), (60, 192, 12), (250, 190, 13), (276, 168, 12)))
             + bulat(150, 152, 14) + muka(150, 152, 14, 'puas') + ''.join(jalur(f'M{x} 130 q-10 -14 0 -28 q10 -14 0 -28', 'g', 4) for x in (90, 210)))
 
 def sekolah_status(libur, ramai=False):
-    o = lantai() + sekolah(150, 200, 170, 110)
+    o = lantai() + sekolah(150, 200, 170, 110, papan='學校')
     if libur: return o + topan(240, 60, 26) + silang(150, 160, 30, 8)
     if ramai: return o + topan(240, 60, 26) + kelompok(['laki', 'gadis'], 60, 250, [90, 86]).replace(lantai(), '')
     return o + matahari(250, 40, 18, 'p')
@@ -413,8 +423,11 @@ def sakit_di(apa):
 
 def kaki_sepatu(ukuran):
     """Telapak kaki (abu) dibandingkan sepatu: kaki jauh lebih besar / sepatu jauh lebih besar / pas."""
-    s, kaki = {'kecil': (.75, 64), 'besar': (2.0, 40), 'pas': (1.25, 46)}[ukuran]
-    o = lantai() + sepatu(150, 196, s, 'p') + elips(150, 130, kaki, 16, 'a') + panah(150, 150, 150, 168, 4)
+    s = {'kecil': .8, 'besar': 2.0, 'pas': 1.25}[ukuran]
+    k = 1.25                                                     # ukuran kaki selalu sama
+    o = lantai() + sepatu(150, 196, s, 'p')
+    o += kotak(150 - 34 * k, 18, 24 * k, 104 - 26 * k + 8, 'a') + sepatu(150, 122, k, 'a')   # betis + telapak kaki
+    o += panah(150, 128, 150, 196 - 30 * s - 6, 4)
     if ukuran == 'pas': return o + centang(240, 80, 1.4)
     return o + teks(250, 100, '!', 50, angka=True)
 
@@ -492,8 +505,7 @@ opsi('MC58-b3', lantai() + ''.join(uang(150, 170 - i * 26, '1000', 150, 60) for 
 opsi('MC58-b4', lantai() + meja(170, 150, 160) + kertas(170, 110, 60, 40) + orang(80, tinggi=120, jenis='pria', duduk=150, baju='a', wajah='gugup'),
      lantai() + orang(110, tinggi=165, jenis='pria', baju='a', wajah='sedih', tangan={'ka': [(26, 0), (56, -6)]}) + dompet(200, 90, 1.2),
      lantai() + anjing(170, 196, 1.2) + termometer(260, 50, 39, h=70) + orang(60, tinggi=150, jenis='pria', baju='a', wajah='sedih'))
-opsi('MC58-b6', lantai() + orang(150, tinggi=165, jenis='wanita', baju='a', wajah='nangis'), lantai() + orang(150, tinggi=165, jenis='wanita', baju='a', wajah='tawa'),
-     lantai() + orang(150, tinggi=165, jenis='wanita', baju='a', wajah='marah'))
+opsi('MC58-b6', potret(150, 92, 50, 'wanita', 'nangis', 'a'), potret(150, 92, 50, 'wanita', 'tawa', 'a'), potret(150, 92, 50, 'wanita', 'marah', 'a'))
 soal('MC58-b7', lantai() + meja(200, 150, 140) + kue_ultah(200, 150, '', .8) + orang(70, tinggi=160, jenis='pria', baju='a', wajah='kaget')
      + ''.join(bulat(x, y, 3, 'h') for x, y in ((140, 30), (170, 50), (220, 26), (250, 60), (120, 70))))
 soal('MC58-b8', lantai() + sofa(150, 200, 180) + orang(150, tinggi=140, jenis='pria', duduk=152, baju='a', wajah='puas') + matahari(260, 30, 14, 'p'))
