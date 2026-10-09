@@ -133,12 +133,17 @@ def aksesori(kacamata=False, jam_=False, topi=False):
     return o
 
 def kamar_banding(punyaku):
-    """Dua kamar berdampingan berlabel 我 / 你; punyaku = 'besar' | 'kecil' | 'sama'."""
-    w = {'besar': (130, 80), 'kecil': (80, 130), 'sama': (105, 105)}[punyaku]
+    """Denah dua kamar dilihat dari atas (dinding tebal), berlabel 我 / 你; punyaku = 'besar' | 'kecil' | 'sama'.
+    Tempat tidur di kedua kamar SAMA besar, jadi beda ukuran kamarnya langsung terlihat."""
+    w = {'besar': (140, 76), 'kecil': (76, 140), 'sama': (110, 110)}[punyaku]
     o = ''
-    for i, (lab, lebar) in enumerate(zip(['我', '你'], w)):
-        x = 80 if i == 0 else 220
-        o += kotak(x - lebar / 2, 200 - lebar * .9, lebar, lebar * .9, 'p') + ranjang(x, 200, 60) + teks(x, 218, lab, 20)
+    for i, (lab, s) in enumerate(zip(['我', '你'], w)):
+        x = 78 if i == 0 else 222
+        x0, y0 = x - s / 2, 190 - s
+        o += kotak(x0, y0, s, s, 'h') + kotak(x0 + 7, y0 + 7, s - 14, s - 14, 'p')        # dinding tebal
+        bx, by = x0 + 14, y0 + 14                                                        # tempat tidur 36×52
+        o += kotak(bx, by, 36, 52, 'p', 4) + kotak(bx + 6, by + 5, 24, 11, 'p', 4) + kotak(bx, by + 22, 36, 30, 'a', 4)
+        o += teks(x, 214, lab, 22)
     return o
 
 def peta_kota(rumah_di):
