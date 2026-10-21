@@ -380,24 +380,41 @@
    "grammar": [
     {
      "tbcl_id": 3,
-     "point": "「的」省略 — 'yang …'",
-     "pattern": "Vs + 的 (benda tidak diulang)",
+     "point": "「的」省略 — kapan 的 ada, kapan hilang",
+     "pattern": "我(的)媽媽 ／ 我的衣服 ／ 白的(衣服)",
      "blocks": [
       [
-       "白",
-       "Vs"
+       "我",
+       "pemilik"
       ],
       [
-       "的",
-       "的"
-      ],
-      [
-       "(衣服)",
+       "(的)",
        "dihilangkan"
+      ],
+      [
+       "媽媽",
+       "keluarga"
       ]
      ],
-     "explain": "Kalau bendanya sudah jelas dari konteks, cukup ucapkan sifat + 的: 白的 = 'yang putih', 大的 = 'yang besar', 新的 = 'yang baru'. Jangan lupa 的 — 我要白 ✗.",
+     "explain": "Ada dua macam 省略 yang perlu dibedakan: (1) 的-nya yang hilang — 我媽媽 = 'ibuku'; (2) bendanya yang hilang, 的 tetap — 白的 = 'yang putih'. Kapan 的 boleh hilang dan kapan wajib ada, lihat catatan di bawah.",
+     "catatan": [
+      {
+       "point": "Kapan 的 ada, kapan 的 省略?",
+       "note": [
+        "的 DIHILANGKAN bila pemiliknya kata ganti (我、你、他、我們…) dan hubungannya dekat: (1) anggota keluarga — 我媽媽、你哥哥、他姊姊; (2) rumah/kelompok sendiri — 我家、我們學校.",
+        "我的媽媽 tidak salah, tetapi terdengar lebih kaku atau menekankan 'ibuKU, bukan ibu orang lain'.",
+        "的 WAJIB ADA untuk barang/benda biasa: 我的衣服、你的鞋子 (✗ 我衣服).",
+        "的 juga WAJIB bila pemiliknya nama atau kata benda: 美美的鞋子、媽媽的衣服.",
+        "Gabungan: 我媽媽的衣服 = baju ibuku — 的 pertama hilang (keluarga), 的 kedua wajib (barang).",
+        "省略 jenis kedua (dipakai di bab ini): BENDANYA yang hilang, 的 tetap — 白的(衣服) = 'yang putih', 大的 = 'yang besar', 新的 = 'yang baru'. Jangan buang dua-duanya: ✗ 我要白 → ✓ 我要白的."
+       ]
+      }
+     ],
      "examples": [
+      {
+       "zh": "這是我媽媽的衣服。",
+       "id": "Ini baju ibuku. (的 pertama hilang, 的 kedua wajib)"
+      },
       {
        "zh": "你喜歡紅的還是白的？",
        "id": "Kamu suka yang merah atau yang putih?"
@@ -408,11 +425,11 @@
       }
      ],
      "check": {
-      "q": "'Aku mau yang kecil' =",
+      "q": "'Baju ibuku' =",
       "options": [
-       "我要小的。",
-       "我要小。",
-       "我的要小。"
+       "我媽媽的衣服",
+       "我的媽媽衣服",
+       "我媽媽衣服"
       ],
       "answer": 0
      }

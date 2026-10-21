@@ -9139,24 +9139,41 @@
    "grammar": [
     {
      "tbcl_id": 3,
-     "point": "「的」省略 — 'the … one'",
-     "pattern": "Vs + 的 (the noun is not repeated)",
+     "point": "「的」省略 — when 的 is used and when it is dropped",
+     "pattern": "我(的)媽媽 ／ 我的衣服 ／ 白的(衣服)",
      "blocks": [
       [
-       "白",
-       "Vs"
+       "我",
+       "owner"
       ],
       [
-       "的",
-       "的"
-      ],
-      [
-       "(衣服)",
+       "(的)",
        "left out"
+      ],
+      [
+       "媽媽",
+       "family"
       ]
      ],
-     "explain": "When the noun is clear from context, just say the adjective + 的: 白的 = 'the white one', 大的 = 'the big one', 新的 = 'the new one'. Don't forget 的 — 我要白 ✗.",
+     "explain": "There are two kinds of 省略 to tell apart: (1) 的 itself is dropped — 我媽媽 = 'my mom'; (2) the noun is dropped and 的 stays — 白的 = 'the white one'. For when 的 may be dropped and when it must stay, see the notes below.",
+     "catatan": [
+      {
+       "point": "When is 的 used, when is it dropped (省略)?",
+       "note": [
+        "的 is DROPPED when the owner is a pronoun (我、你、他、我們…) and the relationship is close: (1) family members — 我媽媽、你哥哥、他姊姊; (2) your own home/group — 我家、我們學校.",
+        "我的媽媽 is not wrong, but it sounds stiffer or stresses 'MY mom, not someone else's'.",
+        "的 MUST stay for ordinary things: 我的衣服、你的鞋子 (✗ 我衣服).",
+        "的 also MUST stay when the owner is a name or a noun: 美美的鞋子、媽媽的衣服.",
+        "Combined: 我媽媽的衣服 = my mom's clothes — the first 的 is dropped (family), the second is required (a thing).",
+        "The second kind of 省略 (used in this unit): the NOUN is dropped, 的 stays — 白的(衣服) = 'the white one', 大的 = 'the big one', 新的 = 'the new one'. Don't drop both: ✗ 我要白 → ✓ 我要白的."
+       ]
+      }
+     ],
      "examples": [
+      {
+       "zh": "這是我媽媽的衣服。",
+       "id": "These are my mom's clothes. (first 的 dropped, second 的 required)"
+      },
       {
        "zh": "你喜歡紅的還是白的？",
        "id": "Do you like the red one or the white one?"
@@ -9167,11 +9184,11 @@
       }
      ],
      "check": {
-      "q": "'I want the small one' =",
+      "q": "'My mom's clothes' =",
       "options": [
-       "我要小的。",
-       "我要小。",
-       "我的要小。"
+       "我媽媽的衣服",
+       "我的媽媽衣服",
+       "我媽媽衣服"
       ],
       "answer": 0
      }
