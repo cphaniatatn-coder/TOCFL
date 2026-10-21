@@ -134,6 +134,25 @@ def cek_soal(code, t):
     return [f'{code}: {s}' for s in salah]
 
 
+# Catatan dari buku rujukan grammar (看圖學中文語法 基礎篇/進階篇) → grammar[i].catatan / modul.catatan
+CATATAN = {k: v for k, v in json.load(open(f'{K}/catatan_buku.json', encoding='utf-8')).items() if not k.startswith('_')}
+
+
+def pasang_catatan(m):
+    """Pasang blok catatan_buku.json ke modul m (teks Indonesia; English lewat terjemah.py). Mengembalikan daftar masalah."""
+    c = CATATAN.get(m['code'], {})
+    blok = lambda b: ({'point': b['point']['id']} if 'point' in b else {}) | {
+        'rujukan': f'《看圖學中文語法・{b["buku"]}》 {b["unit"]}', 'note': [n['id'] for n in b['note']]}
+    masalah = [f"{m['code']}: catatan {g} tidak punya poin grammar" for g in c
+               if g != 'bab' and not (g[1:].isdigit() and 1 <= int(g[1:]) <= len(m['grammar']))]
+    for i, g in enumerate(m['grammar'], 1):
+        if f'g{i}' in c:
+            g['catatan'] = [blok(b) for b in c[f'g{i}']]
+    if 'bab' in c:
+        m['catatan'] = [blok(b) for b in c['bab']]
+    return masalah
+
+
 def load_soal():
     """Soal tambahan di _kerja/soal/*.json: {"A01": [soal, ...], ...}"""
     out = {}
@@ -164,6 +183,7 @@ def main():
             m = {'code': code, 'title': c.pop('title', f[1]),
                  'categories': [f'{x}. {CAT[int(x)]}' for x in f[3].split(',')]}
             m.update(c)
+            masalah += pasang_catatan(m)
             # soal inti + soal tambahan, diurutkan seperti ujian: 聽力 P1→P4, lalu 閱讀 P1→P5
             m['tasks'] = sorted(m.get('tasks', []) + soal.pop(code, []), key=urut_part)
             for t in m['tasks']:

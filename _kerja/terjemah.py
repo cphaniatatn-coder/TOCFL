@@ -41,9 +41,18 @@ def jalan(o, key, fn):
 
 def main():
     kamus = json.loads(KAMUS.read_text(encoding='utf-8')) if KAMUS.exists() else {}
+    # catatan buku grammar membawa terjemahannya sendiri ({id, en}); tidak ikut disimpan ke terjemahan_en.json
+    buku = {}
+    for code, v in json.loads((K / 'catatan_buku.json').read_text(encoding='utf-8')).items():
+        if not code.startswith('_'):
+            for b in (b for bl in v.values() for b in bl):
+                for t in b['note'] + ([b['point']] if 'point' in b else []):
+                    buku[t['id']] = t['en']
     dipakai, kurang = set(), {}
 
     def tr(s):
+        if s in buku:
+            return buku[s]
         dipakai.add(s)
         if s in kamus:
             return kamus[s]
