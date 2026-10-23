@@ -18,7 +18,8 @@ from dialog_natural import cari_file
 
 dialog_natural.NAMA.update({'北投': 'Běi tóu', '陽明山': 'Yáng míng shān', '中山路': 'Zhōng shān lù', '小林': 'Xiǎo lín',
                             '美國': 'Měi guó', '綠島': 'Lǜ dǎo', '故宮': 'Gù gōng', '日本': 'Rì běn', '臺南': 'Tái nán', '臺語': 'Tái yǔ',
-                            '高雄': 'Gāo xióng', '陳老師': 'Chén lǎo shī'})
+                            '高雄': 'Gāo xióng', '陳老師': 'Chén lǎo shī', '淡水': 'Dàn shuǐ',
+                            '英語': 'Yīng yǔ', '德文': 'Dé wén', '法文': 'Fǎ wén', '張太太': 'Zhāng tài tai'})
 # bacaan yang ditebak salah oleh pypinyin: (potongan zh, pinyin salah, pinyin benar)
 PERBAIKI = [('毛很長', 'máo hěn zhǎng', 'máo hěn cháng'), ('認識', 'rèn shí', 'rèn shì'), ('乾了', 'qián le', 'gān le'),
             ('還你', 'hái nǐ', 'huán nǐ'), ('騎得了', 'qí de le', 'qí de liǎo'),
@@ -26,7 +27,8 @@ PERBAIKI = [('毛很長', 'máo hěn zhǎng', 'máo hěn cháng'), ('認識', 'r
             ('數數看', 'shù shù kàn', 'shǔ shǔ kàn'), ('哥哥', 'gē gē', 'gē ge'), ('興地', 'xìng dì', 'xìng de'),
             ('差不多', 'chà bu duō', 'chà bù duō'), ('姓李', 'xìng lǐ', 'xìng Lǐ'), ('餅乾', 'bǐng qián', 'bǐng gān'),
             ('照片', 'hào piān', 'hào piàn'), ('睡不著', 'shuì bú zhe', 'shuì bù zháo'), ('由地', 'yóu dì', 'yóu de'),
-            ('宿舍', 'sù shě', 'sù shè'), ('哇', 'Wa,', 'Wā,')]
+            ('宿舍', 'sù shě', 'sù shè'), ('哇', 'Wa,', 'Wā,'),
+            ('教我', 'jiào wǒ', 'jiāo wǒ'), ('一塊兒', 'kuài ér', 'kuàir'), ('差不多', 'Chà bu duō', 'Chà bù duō')]
 
 
 def buat_py(zh):
