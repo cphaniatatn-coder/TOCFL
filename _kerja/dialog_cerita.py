@@ -19,7 +19,8 @@ from dialog_natural import cari_file
 dialog_natural.NAMA.update({'北投': 'Běi tóu', '陽明山': 'Yáng míng shān', '中山路': 'Zhōng shān lù', '小林': 'Xiǎo lín',
                             '美國': 'Měi guó', '綠島': 'Lǜ dǎo', '故宮': 'Gù gōng', '日本': 'Rì běn', '臺南': 'Tái nán', '臺語': 'Tái yǔ',
                             '高雄': 'Gāo xióng', '陳老師': 'Chén lǎo shī', '淡水': 'Dàn shuǐ',
-                            '英語': 'Yīng yǔ', '德文': 'Dé wén', '法文': 'Fǎ wén', '張太太': 'Zhāng tài tai'})
+                            '英語': 'Yīng yǔ', '德文': 'Dé wén', '法文': 'Fǎ wén', '張太太': 'Zhāng tài tai',
+                            '小文': 'Xiǎo wén', '英文': 'Yīng wén'})
 # bacaan yang ditebak salah oleh pypinyin: (potongan zh, pinyin salah, pinyin benar)
 PERBAIKI = [('毛很長', 'máo hěn zhǎng', 'máo hěn cháng'), ('認識', 'rèn shí', 'rèn shì'), ('乾了', 'qián le', 'gān le'),
             ('還你', 'hái nǐ', 'huán nǐ'), ('騎得了', 'qí de le', 'qí de liǎo'),
@@ -151,6 +152,11 @@ BARU = {
 try:   # dialog lanjutan (setelah pilot disetujui) ada di file data terpisah
     from cerita_vol3 import BARU as _B3
     BARU.update(_B3)
+except ImportError:
+    pass
+try:   # Vol.1/A0 berbasis cerita, 13 bab (dialog hasil edit Carli tidak disentuh; keputusan 2026-10-26)
+    from cerita_vol1 import BARU as _B1
+    BARU.update(_B1)
 except ImportError:
     pass
 try:   # Vol.2/A1 berbasis cerita (keputusan Carli 2026-10-23)

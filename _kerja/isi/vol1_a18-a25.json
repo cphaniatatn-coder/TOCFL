@@ -4,7 +4,7 @@
    "code": "A18",
    "title_py": "Zhè ge duō shǎo qián?",
    "title_id": "Ini berapa harganya?",
-   "scene": "Dawen berbelanja alat tulis di toko dekat kampus: menanyakan harga, membandingkan murah/mahal, membayar, dan menerima kembalian.",
+   "scene": "Sebelum ujian Dawen membeli pena di toko dekat kampus: menanyakan harga, memilih yang murah, membayar, dan menerima kembalian. Di luar toko ia bercerita kepada Meimei.",
    "can_do": [
     "Menanyakan harga (這個多少錢？) dan menyebut harga dengan 塊/元",
     "Menghitung total (一共) dan menerima kembalian (找你…)",
@@ -19,91 +19,25 @@
     }
    },
    "dialogs": [
-    {
-     "place": "在店裡",
-     "title_id": "Di toko",
-     "lines": [
-      {
-       "sp": "王大文",
-       "zh": "先生，請問這個多少錢？",
-       "py": "Xiān shēng, qǐng wèn zhè ge duō shǎo qián?",
-       "id": "Pak, permisi, ini berapa?"
-      },
-      {
-       "sp": "老闆",
-       "zh": "這個一百二十塊。",
-       "py": "Zhè ge yì bǎi èr shí kuài.",
-       "id": "Ini seratus dua puluh dolar."
-      },
-      {
-       "sp": "王大文",
-       "zh": "好貴！那個呢？",
-       "py": "Hǎo guì! Nà ge ne?",
-       "id": "Mahal sekali! Kalau yang itu?"
-      },
-      {
-       "sp": "老闆",
-       "zh": "那個便宜，八十塊。",
-       "py": "Nà ge pián yí, bā shí kuài.",
-       "id": "Yang itu murah, delapan puluh."
-      },
-      {
-       "sp": "王大文",
-       "zh": "我買兩個。一共多少錢？",
-       "py": "Wǒ mǎi liǎng ge. Yí gòng duō shǎo qián?",
-       "id": "Saya beli dua. Semuanya berapa?"
-      },
-      {
-       "sp": "老闆",
-       "zh": "一共一百六十塊。",
-       "py": "Yí gòng yì bǎi liù shí kuài.",
-       "id": "Semuanya seratus enam puluh."
-      },
-      {
-       "sp": "王大文",
-       "zh": "給你兩百塊。",
-       "py": "Gěi nǐ liǎng bǎi kuài.",
-       "id": "Ini dua ratus."
-      },
-      {
-       "sp": "老闆",
-       "zh": "找你四十塊。謝謝！",
-       "py": "Zhǎo nǐ sì shí kuài. Xiè xie!",
-       "id": "Kembaliannya empat puluh. Terima kasih!"
-      }
-     ]
-    },
-    {
-     "place": "在店門口",
-     "title_id": "Di depan toko",
-     "lines": [
-      {
-       "sp": "李美美",
-       "zh": "大文，你買什麼東西？",
-       "py": "Dà wén, nǐ mǎi shén me dōng xi?",
-       "id": "Dawen, kamu beli apa?"
-      },
-      {
-       "sp": "王大文",
-       "zh": "我買筆和紙。這個店的東西很便宜。",
-       "py": "Wǒ mǎi bǐ hé zhǐ. Zhè ge diàn de dōng xi hěn pián yí.",
-       "id": "Aku beli pulpen dan kertas. Barang di toko ini murah."
-      },
-      {
-       "sp": "李美美",
-       "zh": "你的錢夠嗎？",
-       "py": "Nǐ de qián gòu ma?",
-       "id": "Uangmu cukup?"
-      },
-      {
-       "sp": "王大文",
-       "zh": "夠，我只買一點東西。",
-       "py": "Gòu, wǒ zhǐ mǎi yì diǎn dōng xi.",
-       "id": "Cukup, aku cuma beli sedikit."
-      }
-     ]
-    }
-   ],
+  {"place": "在店裡", "title_id": "Di dalam toko", "lines": [
+   {"sp": "王大文", "zh": "先生，請問這枝筆多少錢？", "py": "Xiān shēng, qǐng wèn zhè zhī bǐ duō shǎo qián?", "id": "Pak, permisi, pena ini berapa?"},
+   {"sp": "老闆", "zh": "這枝一百二十塊。", "py": "Zhè zhī yì bǎi èr shí kuài.", "id": "Yang ini seratus dua puluh."},
+   {"sp": "王大文", "zh": "好貴！那枝呢？", "py": "Hǎo guì! Nà zhī ne?", "id": "Mahal sekali! Kalau yang itu?"},
+   {"sp": "老闆", "zh": "那枝便宜，八十塊。", "py": "Nà zhī pián yi, bā shí kuài.", "id": "Yang itu murah, delapan puluh."},
+   {"sp": "王大文", "zh": "我買兩枝。一共多少錢？", "py": "Wǒ mǎi liǎng zhī. Yí gòng duō shǎo qián?", "id": "Saya beli dua. Totalnya berapa?"},
+   {"sp": "老闆", "zh": "一共一百六十塊。", "py": "Yí gòng yì bǎi liù shí kuài.", "id": "Totalnya seratus enam puluh."},
+   {"sp": "王大文", "zh": "給你兩百塊。", "py": "Gěi nǐ liǎng bǎi kuài.", "id": "Ini dua ratus."},
+   {"sp": "老闆", "zh": "找你四十塊。謝謝！", "py": "Zhǎo nǐ sì shí kuài. Xiè xie!", "id": "Kembaliannya empat puluh. Terima kasih!"}
+  ]},
+  {"place": "在店門口", "title_id": "Di depan toko", "lines": [
+   {"sp": "李美美", "zh": "大文，你買什麼東西？", "py": "Dà wén, nǐ mǎi shén me dōng xi?", "id": "Dawen, kamu beli apa?"},
+   {"sp": "王大文", "zh": "我買兩枝筆和紙。明天考試！", "py": "Wǒ mǎi liǎng zhī bǐ hàn zhǐ. Míng tiān kǎo shì!", "id": "Aku beli dua pena dan kertas. Besok ujian!"},
+   {"sp": "李美美", "zh": "這個店的東西貴嗎？", "py": "Zhè ge diàn de dōng xi guì ma?", "id": "Barang di toko ini mahal?"},
+   {"sp": "王大文", "zh": "一些東西很貴，筆很便宜。我只買便宜的！", "py": "Yì xiē dōng xi hěn guì, bǐ hěn pián yi. Wǒ zhǐ mǎi pián yi de!", "id": "Beberapa barang mahal, penanya murah. Aku cuma beli yang murah!"},
+   {"sp": "李美美", "zh": "你的錢夠嗎？", "py": "Nǐ de qián gòu ma?", "id": "Uangmu cukup?"},
+   {"sp": "王大文", "zh": "夠！", "py": "Gòu!", "id": "Cukup!"}
+  ]}
+ ],
    "tasks": [
     {
      "type": "listen_reply",
@@ -213,7 +147,7 @@
    "code": "A19",
    "title_py": "Wǒ xiǎng mǎi zhè jiàn yī fú.",
    "title_id": "Aku mau beli baju ini.",
-   "scene": "Dawen dan Meimei berbelanja baju dan sepatu: memilih warna, mencoba ukuran, dan membandingkan barang baru dan lama.",
+   "scene": "Dawen dan Meimei berbelanja: Dawen memilih baju yang ukurannya pas, lalu di toko sepatu ia ingin mengganti sepatunya yang sudah usang.",
    "can_do": [
     "Menyebut barang dengan warna/ukuran tanpa mengulang bendanya (紅的、大的)",
     "Menyatakan 'agak' dengan 有點 (有點小)",
@@ -221,73 +155,24 @@
    ],
    "exam_link": "Pakaian (warna, ukuran) adalah tema SERING di 聽力 Part 1 dan 閱讀 Part 1–2. Jawaban sering berbentuk '…的' tanpa benda (白的).",
    "dialogs": [
-    {
-     "place": "在衣服店",
-     "title_id": "Di toko baju",
-     "lines": [
-      {
-       "sp": "李美美",
-       "zh": "大文，你想買什麼？",
-       "py": "Dà wén, nǐ xiǎng mǎi shén me?",
-       "id": "Dawen, kamu mau beli apa?"
-      },
-      {
-       "sp": "王大文",
-       "zh": "我想買這件衣服。",
-       "py": "Wǒ xiǎng mǎi zhè jiàn yī fú.",
-       "id": "Aku mau beli baju ini."
-      },
-      {
-       "sp": "李美美",
-       "zh": "你喜歡紅的還是白的？",
-       "py": "Nǐ xǐ huān hóng de hái shì bái de?",
-       "id": "Kamu suka yang merah atau yang putih?"
-      },
-      {
-       "sp": "王大文",
-       "zh": "我喜歡白的。可是這件有點小。",
-       "py": "Wǒ xǐ huān bái de. Kě shì zhè jiàn yǒu diǎn xiǎo.",
-       "id": "Aku suka yang putih. Tapi yang ini agak kecil."
-      },
-      {
-       "sp": "李美美",
-       "zh": "你穿大的吧！大的不錯。",
-       "py": "Nǐ chuān dà de ba! Dà de bú cuò.",
-       "id": "Pakai yang besar saja! Yang besar bagus."
-      },
-      {
-       "sp": "王大文",
-       "zh": "好，我買大的。",
-       "py": "Hǎo, wǒ mǎi dà de.",
-       "id": "Oke, aku beli yang besar."
-      }
-     ]
-    },
-    {
-     "place": "在鞋子店",
-     "title_id": "Di toko sepatu",
-     "lines": [
-      {
-       "sp": "王大文",
-       "zh": "美美，你的鞋子很漂亮！是新的嗎？",
-       "py": "Měi měi, nǐ de xié zi hěn piào liang! Shì xīn de ma?",
-       "id": "Meimei, sepatumu bagus! Baru ya?"
-      },
-      {
-       "sp": "李美美",
-       "zh": "是新的。我的舊鞋子是黑的。",
-       "py": "Shì xīn de. Wǒ de jiù xié zi shì hēi de.",
-       "id": "Iya baru. Sepatu lamaku yang hitam."
-      },
-      {
-       "sp": "王大文",
-       "zh": "我也想買新鞋子，可是鞋子很貴。",
-       "py": "Wǒ yě xiǎng mǎi xīn xié zi, kě shì xié zi hěn guì.",
-       "id": "Aku juga mau beli sepatu baru, tapi sepatu mahal."
-      }
-     ]
-    }
-   ],
+  {"place": "在衣服店", "title_id": "Di toko baju", "lines": [
+   {"sp": "李美美", "zh": "大文，你想買什麼？", "py": "Dà wén, nǐ xiǎng mǎi shén me?", "id": "Dawen, kamu mau beli apa?"},
+   {"sp": "王大文", "zh": "我想買這件衣服。", "py": "Wǒ xiǎng mǎi zhè jiàn yī fú.", "id": "Aku mau beli baju ini."},
+   {"sp": "李美美", "zh": "你喜歡紅的還是白的？", "py": "Nǐ xǐ huān hóng de hái shì bái de?", "id": "Kamu suka yang merah atau yang putih?"},
+   {"sp": "王大文", "zh": "我喜歡白的。可是這件有點小。", "py": "Wǒ xǐ huān bái de. Kě shì zhè jiàn yǒu diǎn xiǎo.", "id": "Aku suka yang putih. Tapi yang ini agak kecil."},
+   {"sp": "李美美", "zh": "你穿大的吧！大的不錯。", "py": "Nǐ chuān dà de ba! Dà de bú cuò.", "id": "Coba pakai yang besar! Yang besar bagus."},
+   {"sp": "王大文", "zh": "好，我買大的。", "py": "Hǎo, wǒ mǎi dà de.", "id": "Oke, aku beli yang besar."}
+  ]},
+  {"place": "在鞋子店", "title_id": "Di toko sepatu", "lines": [
+   {"sp": "王大文", "zh": "美美，你的鞋子很漂亮！是新的嗎？", "py": "Měi měi, nǐ de xié zi hěn piào liàng! Shì xīn de ma?", "id": "Meimei, sepatumu cantik sekali! Baru, ya?"},
+   {"sp": "李美美", "zh": "是新的。我的舊鞋子是黑的。", "py": "Shì xīn de. Wǒ de jiù xié zi shì hēi de.", "id": "Iya, baru. Sepatu lamaku yang hitam."},
+   {"sp": "王大文", "zh": "我的鞋子很舊，我也想買新鞋子。", "py": "Wǒ de xié zi hěn jiù, wǒ yě xiǎng mǎi xīn xié zi.", "id": "Sepatuku sudah usang, aku juga mau beli sepatu baru."},
+   {"sp": "李美美", "zh": "你看，這個白的很好看。", "py": "Nǐ kàn, zhè ge bái de hěn hǎo kàn.", "id": "Lihat, yang putih ini bagus."},
+   {"sp": "王大文", "zh": "好看，可是很貴！", "py": "Hǎo kàn, kě shì hěn guì!", "id": "Bagus, tapi mahal!"},
+   {"sp": "李美美", "zh": "那個黑的比這個便宜。", "py": "Nà ge hēi de bǐ zhè ge pián yi.", "id": "Yang hitam itu lebih murah daripada ini."},
+   {"sp": "王大文", "zh": "好，我買黑的！", "py": "Hǎo, wǒ mǎi hēi de!", "id": "Oke, aku beli yang hitam!"}
+  ]}
+ ],
    "tasks": [
     {
      "type": "listen_reply",
@@ -427,7 +312,7 @@
    "code": "A20",
    "title_py": "Wǒ zuò gōng chē qù xué xiào.",
    "title_id": "Aku naik bus ke kampus.",
-   "scene": "Dawen dan Meimei membandingkan cara mereka pergi ke kampus dan ke kota lain: bus, kereta, jalan kaki, taksi, atau mobil.",
+   "scene": "Dawen dan Meimei bercerita cara mereka pergi ke kampus, lalu Meimei menjelaskan bagaimana ia pulang ke rumah orang tuanya di Taichung.",
    "can_do": [
     "Menyebut alat transportasi: 坐 + kendaraan + 去 + tempat",
     "Menanyakan cara pergi (你怎麼去學校？)",
@@ -435,73 +320,20 @@
    ],
    "exam_link": "Transportasi termasuk tema SERING di 聽力 Part 1–2 (pilih gambar kendaraan) dan 閱讀 Part 1–3. 坐 vs 開 (naik vs menyetir) sering diuji.",
    "dialogs": [
-    {
-     "place": "在學校",
-     "title_id": "Di kampus",
-     "lines": [
-      {
-       "sp": "李美美",
-       "zh": "大文，你每天怎麼去學校？",
-       "py": "Dà wén, nǐ měi tiān zěn me qù xué xiào?",
-       "id": "Dawen, setiap hari kamu ke kampus naik apa?"
-      },
-      {
-       "sp": "王大文",
-       "zh": "我坐公車去學校。你呢？",
-       "py": "Wǒ zuò gōng chē qù xué xiào. Nǐ ne?",
-       "id": "Aku naik bus. Kamu?"
-      },
-      {
-       "sp": "李美美",
-       "zh": "我走路去學校，我家在學校附近。",
-       "py": "Wǒ zǒu lù qù xué xiào, wǒ jiā zài xué xiào fù jìn.",
-       "id": "Aku jalan kaki, rumahku dekat kampus."
-      },
-      {
-       "sp": "王大文",
-       "zh": "走路很方便！公車站在我家門口。",
-       "py": "Zǒu lù hěn fāng biàn! Gōng chē zhàn zài wǒ jiā mén kǒu.",
-       "id": "Jalan kaki praktis! Halte bus ada di depan rumahku."
-      }
-     ]
-    },
-    {
-     "place": "說去臺中",
-     "title_id": "Membicarakan pergi ke Taichung",
-     "lines": [
-      {
-       "sp": "王大文",
-       "zh": "美美，你怎麼去臺中？",
-       "py": "Měi měi, nǐ zěn me qù Tái zhōng?",
-       "id": "Meimei, kamu ke Taichung naik apa?"
-      },
-      {
-       "sp": "李美美",
-       "zh": "我坐火車去。我爸爸有時候開車來臺北。",
-       "py": "Wǒ zuò huǒ chē qù. Wǒ bà ba yǒu shí hòu kāi chē lái Tái běi.",
-       "id": "Naik kereta. Ayahku kadang menyetir ke Taipei."
-      },
-      {
-       "sp": "王大文",
-       "zh": "你坐飛機去臺中嗎？",
-       "py": "Nǐ zuò fēi jī qù Tái zhōng ma?",
-       "id": "Kamu naik pesawat ke Taichung?"
-      },
-      {
-       "sp": "李美美",
-       "zh": "不坐飛機。因為火車很方便，所以我坐火車。",
-       "py": "Bú zuò fēi jī. Yīn wèi huǒ chē hěn fāng biàn, suǒ yǐ wǒ zuò huǒ chē.",
-       "id": "Tidak. Karena kereta praktis, jadi aku naik kereta."
-      },
-      {
-       "sp": "王大文",
-       "zh": "我不喜歡坐計程車，因為計程車很貴。",
-       "py": "Wǒ bù xǐ huān zuò jì chéng chē, yīn wèi jì chéng chē hěn guì.",
-       "id": "Aku tidak suka naik taksi, karena mahal."
-      }
-     ]
-    }
-   ],
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "李美美", "zh": "大文，你每天怎麼來學校？", "py": "Dà wén, nǐ měi tiān zěn me lái xué xiào?", "id": "Dawen, setiap hari kamu ke kampus naik apa?"},
+   {"sp": "王大文", "zh": "我坐公車來。公車站在我家門口。你呢？", "py": "Wǒ zuò gōng chē lái. Gōng chē zhàn zài wǒ jiā mén kǒu. Nǐ ne?", "id": "Aku naik bus. Halte busnya di depan rumahku. Kamu?"},
+   {"sp": "李美美", "zh": "我住在學校附近，我走路來學校。", "py": "Wǒ zhù zài xué xiào fù jìn, wǒ zǒu lù lái xué xiào.", "id": "Aku tinggal di dekat kampus, aku jalan kaki ke kampus."},
+   {"sp": "王大文", "zh": "走路很方便！", "py": "Zǒu lù hěn fāng biàn!", "id": "Jalan kaki praktis sekali!"}
+  ]},
+  {"place": "說去臺中", "title_id": "Membicarakan perjalanan ke Taichung", "lines": [
+   {"sp": "王大文", "zh": "美美，你爸爸媽媽在臺中，你怎麼去臺中？", "py": "Měi měi, nǐ bà ba mā ma zài Tái zhōng, nǐ zěn me qù Tái zhōng?", "id": "Meimei, orang tuamu di Taichung, kamu ke Taichung naik apa?"},
+   {"sp": "李美美", "zh": "我坐火車去。因為火車很快，所以我坐火車。", "py": "Wǒ zuò huǒ chē qù. Yīn wèi huǒ chē hěn kuài, suǒ yǐ wǒ zuò huǒ chē.", "id": "Aku naik kereta. Karena kereta cepat, jadi aku naik kereta."},
+   {"sp": "王大文", "zh": "你不坐飛機嗎？", "py": "Nǐ bú zuò fēi jī ma?", "id": "Kamu tidak naik pesawat?"},
+   {"sp": "李美美", "zh": "不坐。有時候我爸爸開車來臺北，我坐他的車子去臺中。", "py": "Bú zuò. Yǒu shí hòu wǒ bà ba kāi chē lái Tái běi, wǒ zuò tā de chē zi qù Tái zhōng.", "id": "Tidak. Kadang-kadang ayahku menyetir ke Taipei, aku ikut mobilnya ke Taichung."},
+   {"sp": "王大文", "zh": "我爸爸也有一輛車子。我不坐計程車，計程車很貴！", "py": "Wǒ bà ba yě yǒu yí liàng chē zi. Wǒ bú zuò jì chéng chē, jì chéng chē hěn guì!", "id": "Ayahku juga punya satu mobil. Aku tidak naik taksi, taksi mahal!"}
+  ]}
+ ],
    "tasks": [
     {
      "type": "listen_pic",
@@ -607,7 +439,7 @@
    "code": "A21",
    "title_py": "Qǐng wèn, huǒ chē zhàn zěn me zǒu?",
    "title_id": "Permisi, ke stasiun kereta lewat mana?",
-   "scene": "Dawen dan Meimei tersesat di kota dan bertanya arah ke stasiun kereta kepada orang di jalan.",
+   "scene": "Dawen dan Meimei mau naik kereta ke Taichung, tetapi tidak tahu jalan ke stasiun. Mereka bertanya kepada seorang bapak, lalu sempat salah jalan lagi sebelum akhirnya melihat stasiun.",
    "can_do": [
     "Menanyakan arah dengan sopan (請問，…怎麼走？)",
     "Memahami petunjuk kiri/kanan dan waktu tempuh (走五分鐘就到)",
@@ -615,67 +447,21 @@
    ],
    "exam_link": "Arah (kiri/kanan, dekat/jauh) adalah tema SERING di 聽力 Part 2 dan 閱讀 Part 2–3.",
    "dialogs": [
-    {
-     "place": "在路上",
-     "title_id": "Di jalan",
-     "lines": [
-      {
-       "sp": "王大文",
-       "zh": "先生，請問，火車站怎麼走？",
-       "py": "Xiān shēng, qǐng wèn, huǒ chē zhàn zěn me zǒu?",
-       "id": "Pak, permisi, ke stasiun kereta lewat mana?"
-      },
-      {
-       "sp": "先生",
-       "zh": "火車站？你從這裡出去，走右邊。",
-       "py": "Huǒ chē zhàn? Nǐ cóng zhè lǐ chū qù, zǒu yòu biān.",
-       "id": "Stasiun kereta? Dari sini keluar, lalu ambil kanan."
-      },
-      {
-       "sp": "王大文",
-       "zh": "右邊？",
-       "py": "Yòu biān?",
-       "id": "Kanan?"
-      },
-      {
-       "sp": "先生",
-       "zh": "對，走五分鐘就到。火車站在路的左邊。",
-       "py": "Duì, zǒu wǔ fēn zhōng jiù dào. Huǒ chē zhàn zài lù de zuǒ biān.",
-       "id": "Iya, jalan lima menit sudah sampai. Stasiunnya di sisi kiri jalan."
-      },
-      {
-       "sp": "王大文",
-       "zh": "謝謝您！",
-       "py": "Xiè xie nín!",
-       "id": "Terima kasih, Pak!"
-      }
-     ]
-    },
-    {
-     "place": "五分鐘以後",
-     "title_id": "Lima menit kemudian",
-     "lines": [
-      {
-       "sp": "李美美",
-       "zh": "大文，你看到火車站嗎？",
-       "py": "Dà wén, nǐ kàn dào huǒ chē zhàn ma?",
-       "id": "Dawen, kamu lihat stasiunnya?"
-      },
-      {
-       "sp": "王大文",
-       "zh": "我看見火車站！在那裡，左邊。",
-       "py": "Wǒ kàn jiàn huǒ chē zhàn! Zài nà lǐ, zuǒ biān.",
-       "id": "Aku lihat stasiunnya! Di sana, sebelah kiri."
-      },
-      {
-       "sp": "李美美",
-       "zh": "好，我們馬上去！",
-       "py": "Hǎo, wǒ men mǎ shàng qù!",
-       "id": "Oke, kita langsung ke sana!"
-      }
-     ]
-    }
-   ],
+  {"place": "在路上", "title_id": "Di jalan", "lines": [
+   {"sp": "王大文", "zh": "先生，請問，火車站怎麼走？", "py": "Xiān shēng, qǐng wèn, huǒ chē zhàn zěn me zǒu?", "id": "Pak, permisi, ke stasiun kereta lewat mana?"},
+   {"sp": "先生", "zh": "你們從這裡出去，走右邊的路。", "py": "Nǐ men cóng zhè lǐ chū qù, zǒu yòu biān de lù.", "id": "Dari sini kalian keluar, lewat jalan sebelah kanan."},
+   {"sp": "王大文", "zh": "右邊？", "py": "Yòu biān?", "id": "Sebelah kanan?"},
+   {"sp": "先生", "zh": "對，走五分鐘就到。火車站在路的左邊。", "py": "Duì, zǒu wǔ fēn zhōng jiù dào. Huǒ chē zhàn zài lù de zuǒ biān.", "id": "Iya, jalan lima menit langsung sampai. Stasiunnya di sebelah kiri jalan."},
+   {"sp": "王大文", "zh": "謝謝您！", "py": "Xiè xie nín!", "id": "Terima kasih, Pak!"}
+  ]},
+  {"place": "十分鐘以後", "title_id": "Sepuluh menit kemudian", "lines": [
+   {"sp": "李美美", "zh": "大文，你看到火車站嗎？", "py": "Dà wén, nǐ kàn dào huǒ chē zhàn ma?", "id": "Dawen, kamu lihat stasiunnya?"},
+   {"sp": "王大文", "zh": "火車站在哪裡？我們又走錯路！", "py": "Huǒ chē zhàn zài nǎ lǐ? Wǒ men yòu zǒu cuò lù!", "id": "Stasiunnya di mana? Kita salah jalan lagi!"},
+   {"sp": "李美美", "zh": "這是什麼地方？", "py": "Zhè shì shén me dì fāng?", "id": "Ini tempat apa?"},
+   {"sp": "王大文", "zh": "我不知道。……你看，我看見火車站！在那裡，左邊！", "py": "Wǒ bù zhī dào.…… Nǐ kàn, wǒ kàn jiàn huǒ chē zhàn! Zài nà lǐ, zuǒ biān!", "id": "Aku tidak tahu. …Lihat, aku lihat stasiunnya! Di sana, sebelah kiri!"},
+   {"sp": "李美美", "zh": "好，我們馬上去！", "py": "Hǎo, wǒ men mǎ shàng qù!", "id": "Oke, kita langsung ke sana!"}
+  ]}
+ ],
    "tasks": [
     {
      "type": "listen_reply",
@@ -789,7 +575,7 @@
    "code": "A22",
    "title_py": "Wǒ tóu hěn tòng.",
    "title_id": "Kepalaku sakit sekali.",
-   "scene": "Dawen merasa tidak enak badan di kelas. Meimei menanyakan kabarnya dan bagian tubuh mana yang sakit.",
+   "scene": "Dawen merasa tidak enak badan di kampus: kepala, mata, dan hidungnya tidak nyaman. Saat istirahat ia makin lemas, sampai tidak bisa mendengar Meimei dengan jelas.",
    "can_do": [
     "Menyebut bagian tubuh yang sakit (我頭很痛)",
     "Menyatakan tidak enak badan (我不舒服、我很累)",
@@ -797,73 +583,22 @@
    ],
    "exam_link": "Kesehatan ringan (flu, sakit kepala, ke dokter) termasuk tema SERING di 聽力 Part 4 dan 閱讀 Part 1 & 4.",
    "dialogs": [
-    {
-     "place": "在教室",
-     "title_id": "Di kelas",
-     "lines": [
-      {
-       "sp": "李美美",
-       "zh": "大文，你今天怎麼樣？",
-       "py": "Dà wén, nǐ jīn tiān zěn me yàng?",
-       "id": "Dawen, bagaimana keadaanmu hari ini?"
-      },
-      {
-       "sp": "王大文",
-       "zh": "我不舒服，我頭很痛。",
-       "py": "Wǒ bù shū fú, wǒ tóu hěn tòng.",
-       "id": "Aku tidak enak badan, kepalaku sakit."
-      },
-      {
-       "sp": "李美美",
-       "zh": "你是不是感冒？",
-       "py": "Nǐ shì bú shì gǎn mào?",
-       "id": "Kamu flu ya?"
-      },
-      {
-       "sp": "王大文",
-       "zh": "可能是。我很累，眼睛也很痛。",
-       "py": "Kě néng shì. Wǒ hěn lèi, yǎn jīng yě hěn tòng.",
-       "id": "Mungkin. Aku capek, mataku juga sakit."
-      }
-     ]
-    },
-    {
-     "place": "下課的時候",
-     "title_id": "Saat istirahat",
-     "lines": [
-      {
-       "sp": "王大文",
-       "zh": "美美，我身體很不舒服，我的手很痛，腳也很痛。",
-       "py": "Měi měi, wǒ shēn tǐ hěn bù shū fú, wǒ de shǒu hěn tòng, jiǎo yě hěn tòng.",
-       "id": "Meimei, badanku tidak enak sekali, tanganku sakit, kakiku juga."
-      },
-      {
-       "sp": "李美美",
-       "zh": "你是不是生病？你沒吃早餐嗎？",
-       "py": "Nǐ shì bú shì shēng bìng? Nǐ méi chī zǎo cān ma?",
-       "id": "Kamu sakit, ya? Kamu tidak sarapan?"
-      },
-      {
-       "sp": "王大文",
-       "zh": "我沒吃。我不餓。",
-       "py": "Wǒ méi chī. Wǒ bú è.",
-       "id": "Tidak. Aku tidak lapar."
-      },
-      {
-       "sp": "李美美",
-       "zh": "什麼？我沒聽見。",
-       "py": "Shén me? Wǒ méi tīng jiàn.",
-       "id": "Apa? Aku tidak dengar."
-      },
-      {
-       "sp": "王大文",
-       "zh": "我說：我不餓！",
-       "py": "Wǒ shuō: wǒ bú è!",
-       "id": "Aku bilang: aku tidak lapar!"
-      }
-     ]
-    }
-   ],
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "李美美", "zh": "大文，你今天怎麼樣？", "py": "Dà wén, nǐ jīn tiān zěn me yàng?", "id": "Dawen, hari ini kamu bagaimana?"},
+   {"sp": "王大文", "zh": "我不舒服，我頭很痛。", "py": "Wǒ bù shū fu, wǒ tóu hěn tòng.", "id": "Aku tidak enak badan, kepalaku sakit sekali."},
+   {"sp": "李美美", "zh": "你感冒嗎？", "py": "Nǐ gǎn mào ma?", "id": "Kamu masuk angin?"},
+   {"sp": "王大文", "zh": "可能是。我很累，眼睛也很痛。", "py": "Kě néng shì. Wǒ hěn lèi, yǎn jīng yě hěn tòng.", "id": "Mungkin. Aku capek sekali, mataku juga sakit."},
+   {"sp": "李美美", "zh": "鼻子呢？", "py": "Bí zi ne?", "id": "Hidungmu?"},
+   {"sp": "王大文", "zh": "鼻子也不舒服。", "py": "Bí zi yě bù shū fu.", "id": "Hidungku juga tidak enak."}
+  ]},
+  {"place": "下課的時候", "title_id": "Saat istirahat", "lines": [
+   {"sp": "李美美", "zh": "大文，你的身體怎麼樣？", "py": "Dà wén, nǐ de shēn tǐ zěn me yàng?", "id": "Dawen, badanmu bagaimana?"},
+   {"sp": "王大文", "zh": "很不好。我的手和腳都很累。", "py": "Hěn bù hǎo. Wǒ de shǒu hàn jiǎo dōu hěn lèi.", "id": "Tidak baik. Tangan dan kakiku lemas semua."},
+   {"sp": "李美美", "zh": "你生病！你應該去睡覺。", "py": "Nǐ shēng bìng! Nǐ yīng gāi qù shuì jiào.", "id": "Kamu sakit! Kamu harus tidur."},
+   {"sp": "王大文", "zh": "什麼？我沒聽見。我的耳朵也不舒服！", "py": "Shén me? Wǒ méi tīng jiàn. Wǒ de ěr duǒ yě bù shū fu!", "id": "Apa? Aku tidak dengar. Telingaku juga tidak enak!"},
+   {"sp": "李美美", "zh": "我說：你應該去睡覺！", "py": "Wǒ shuō: nǐ yīng gāi qù shuì jiào!", "id": "Kubilang: kamu harus tidur!"}
+  ]}
+ ],
    "tasks": [
     {
      "type": "listen_pic",
@@ -969,7 +704,7 @@
    "code": "A23",
    "title_py": "Nǐ yīng gāi qù kàn bìng.",
    "title_id": "Sebaiknya kamu ke dokter.",
-   "scene": "Meimei membujuk Dawen yang sakit untuk ke dokter; di klinik, dokter memeriksa dan memberi obat serta saran.",
+   "scene": "Dawen masih sakit tetapi bilang tidak apa-apa. Meimei membujuknya memberi tahu guru dan pergi ke dokter; dokter memberinya obat dan menyuruhnya istirahat.",
    "can_do": [
     "Memberi saran dengan 應該 (你應該休息)",
     "Menjelaskan keluhan kepada dokter",
@@ -977,73 +712,22 @@
    ],
    "exam_link": "Adegan dokter & saran istirahat adalah tema SERING di 聽力 Part 4: soal sering bertanya 'apa saran dokter?'.",
    "dialogs": [
-    {
-     "place": "在教室",
-     "title_id": "Di kelas",
-     "lines": [
-      {
-       "sp": "李美美",
-       "zh": "大文，你應該去看病！",
-       "py": "Dà wén, nǐ yīng gāi qù kàn bìng!",
-       "id": "Dawen, sebaiknya kamu ke dokter!"
-      },
-      {
-       "sp": "王大文",
-       "zh": "為什麼？我沒事。",
-       "py": "Wèi shén me? Wǒ méi shì.",
-       "id": "Kenapa? Aku tidak apa-apa."
-      },
-      {
-       "sp": "李美美",
-       "zh": "你不舒服，應該告訴老師。",
-       "py": "Nǐ bù shū fu, yīng gāi gào sù lǎo shī.",
-       "id": "Kamu tidak enak badan, sebaiknya bilang ke guru."
-      },
-      {
-       "sp": "王大文",
-       "zh": "好，我自己告訴老師。你等我，我們一起去看病。",
-       "py": "Hǎo, wǒ zì jǐ gào sù lǎo shī. Nǐ děng wǒ, wǒ men yì qǐ qù kàn bìng.",
-       "id": "Oke, aku bilang sendiri ke guru. Tunggu aku, kita ke dokter bareng."
-      }
-     ]
-    },
-    {
-     "place": "看醫生",
-     "title_id": "Di dokter",
-     "lines": [
-      {
-       "sp": "醫生",
-       "zh": "你好，你哪裡不舒服？",
-       "py": "Nǐ hǎo, nǐ nǎ lǐ bù shū fú?",
-       "id": "Halo, bagian mana yang tidak enak?"
-      },
-      {
-       "sp": "王大文",
-       "zh": "醫生，我頭痛，也很累。",
-       "py": "Yī shēng, wǒ tóu tòng, yě hěn lèi.",
-       "id": "Dok, kepala saya sakit, juga lemas."
-      },
-      {
-       "sp": "醫生",
-       "zh": "你是感冒。你應該多休息，多喝水。",
-       "py": "Nǐ shì gǎn mào. Nǐ yīng gāi duō xiū xí, duō hē shuǐ.",
-       "id": "Kamu kena flu. Sebaiknya banyak istirahat dan minum air."
-      },
-      {
-       "sp": "醫生",
-       "zh": "這是藥，早上、中午、晚上吃。",
-       "py": "Zhè shì yào, zǎo shang, zhōng wǔ, wǎn shang chī.",
-       "id": "Ini obatnya, diminum pagi, siang, dan malam."
-      },
-      {
-       "sp": "王大文",
-       "zh": "謝謝醫生！",
-       "py": "Xiè xie yī shēng!",
-       "id": "Terima kasih, Dok!"
-      }
-     ]
-    }
-   ],
+  {"place": "在學校", "title_id": "Di kampus", "lines": [
+   {"sp": "李美美", "zh": "大文，你應該去看病！", "py": "Dà wén, nǐ yīng gāi qù kàn bìng!", "id": "Dawen, kamu harus pergi berobat!"},
+   {"sp": "王大文", "zh": "為什麼？我沒事。", "py": "Wèi shén me? Wǒ méi shì.", "id": "Kenapa? Aku tidak apa-apa."},
+   {"sp": "李美美", "zh": "你頭痛，眼睛也痛。你生病，大家都很怕！", "py": "Nǐ tóu tòng, yǎn jīng yě tòng. Nǐ shēng bìng, dà jiā dōu hěn pà!", "id": "Kepalamu sakit, matamu juga sakit. Kamu sakit, semua orang khawatir!"},
+   {"sp": "王大文", "zh": "好，我自己告訴老師。你等我，我們一起去看病。", "py": "Hǎo, wǒ zì jǐ gào sù lǎo shī. Nǐ děng wǒ, wǒ men yì qǐ qù kàn bìng.", "id": "Baiklah, aku sendiri yang memberi tahu guru. Tunggu aku, kita pergi berobat bersama."}
+  ]},
+  {"place": "看醫生", "title_id": "Ke dokter", "lines": [
+   {"sp": "醫生", "zh": "你好，你哪裡不舒服？", "py": "Nǐ hǎo, nǐ nǎ lǐ bù shū fu?", "id": "Halo, bagian mana yang tidak enak?"},
+   {"sp": "王大文", "zh": "醫生，我頭痛，也很累。", "py": "Yī shēng, wǒ tóu tòng, yě hěn lèi.", "id": "Dokter, kepala saya sakit, juga capek sekali."},
+   {"sp": "醫生", "zh": "你是感冒。你應該多休息，多喝水。", "py": "Nǐ shì gǎn mào. Nǐ yīng gāi duō xiū xí, duō hē shuǐ.", "id": "Kamu masuk angin. Kamu harus banyak istirahat dan banyak minum air."},
+   {"sp": "醫生", "zh": "這是藥，早上、中午、晚上吃。", "py": "Zhè shì yào, zǎo shàng, zhōng wǔ, wǎn shàng chī.", "id": "Ini obatnya, diminum pagi, siang, dan malam."},
+   {"sp": "王大文", "zh": "謝謝醫生！", "py": "Xiè xie yī shēng!", "id": "Terima kasih, Dokter!"},
+   {"sp": "李美美", "zh": "大文，今天你應該休息，別看電影！", "py": "Dà wén, jīn tiān nǐ yīng gāi xiū xí, bié kàn diàn yǐng!", "id": "Dawen, hari ini kamu harus istirahat, jangan nonton film!"},
+   {"sp": "王大文", "zh": "好，我去睡覺！", "py": "Hǎo, wǒ qù shuì jiào!", "id": "Oke, aku tidur!"}
+  ]}
+ ],
    "tasks": [
     {
      "type": "listen_reply",
@@ -1150,7 +834,7 @@
    "code": "A24",
    "title_py": "Jīn tiān hǎo rè!",
    "title_id": "Hari ini panas sekali!",
-   "scene": "Dawen dan Meimei mengobrol tentang cuaca Taiwan dan Indonesia, lalu merencanakan jalan-jalan ke gunung.",
+   "scene": "Hari yang panas sekali. Meimei mengajak Dawen ke gunung yang udaranya segar; keesokan harinya di gunung angin bertiup kencang dan tiba-tiba hujan turun.",
    "can_do": [
     "Menyatakan cuaca: 熱、冷、下雨、風很大",
     "Menanyakan cuaca (天氣怎麼樣？)",
@@ -1158,73 +842,23 @@
    ],
    "exam_link": "Cuaca adalah tema SERING di 聽力 Part 1 (pilih gambar cuaca) dan 閱讀 Part 1.",
    "dialogs": [
-    {
-     "place": "在學校外面",
-     "title_id": "Di luar kampus",
-     "lines": [
-      {
-       "sp": "王大文",
-       "zh": "今天好熱！",
-       "py": "Jīn tiān hǎo rè!",
-       "id": "Hari ini panas sekali!"
-      },
-      {
-       "sp": "李美美",
-       "zh": "對，臺灣的天氣很熱。印尼熱不熱？",
-       "py": "Duì, Tái wān de tiān qì hěn rè. Yìn ní rè bú rè?",
-       "id": "Iya, cuaca Taiwan panas. Indonesia panas tidak?"
-      },
-      {
-       "sp": "王大文",
-       "zh": "印尼也很熱。臺灣一月很冷嗎？",
-       "py": "Yìn ní yě hěn rè. Tái wān yī yuè hěn lěng ma?",
-       "id": "Indonesia juga panas. Januari di Taiwan dingin?"
-      },
-      {
-       "sp": "李美美",
-       "zh": "一月很冷，也常常下雨。",
-       "py": "Yī yuè hěn lěng, yě cháng cháng xià yǔ.",
-       "id": "Januari dingin, juga sering hujan."
-      }
-     ]
-    },
-    {
-     "place": "說去山上",
-     "title_id": "Membicarakan ke gunung",
-     "lines": [
-      {
-       "sp": "李美美",
-       "zh": "大文，明天我們一起去山上吧！山上的空氣很好。",
-       "py": "Dà wén, míng tiān wǒ men yì qǐ qù shān shàng ba! Shān shàng de kōng qì hěn hǎo.",
-       "id": "Dawen, besok kita ke gunung yuk! Udara di gunung segar."
-      },
-      {
-       "sp": "王大文",
-       "zh": "明天下雨嗎？",
-       "py": "Míng tiān xià yǔ ma?",
-       "id": "Besok hujan?"
-      },
-      {
-       "sp": "李美美",
-       "zh": "明天不下雨，可是風很大。",
-       "py": "Míng tiān bú xià yǔ, kě shì fēng hěn dà.",
-       "id": "Besok tidak hujan, tapi anginnya kencang."
-      },
-      {
-       "sp": "王大文",
-       "zh": "那個山高不高？",
-       "py": "Nà ge shān gāo bù gāo?",
-       "id": "Gunungnya tinggi tidak?"
-      },
-      {
-       "sp": "李美美",
-       "zh": "不高，山上的花也很漂亮！",
-       "py": "Bù gāo, shān shàng de huā yě hěn piào liang!",
-       "id": "Tidak tinggi, bunga di gunung juga cantik!"
-      }
-     ]
-    }
-   ],
+  {"place": "在學校外面", "title_id": "Di luar kampus", "lines": [
+   {"sp": "王大文", "zh": "今天好熱！", "py": "Jīn tiān hǎo rè!", "id": "Hari ini panas sekali!"},
+   {"sp": "李美美", "zh": "對，臺灣的天氣很熱。印尼熱不熱？", "py": "Duì, Tái wān de tiān qì hěn rè. Yìn ní rè bú rè?", "id": "Iya, cuaca Taiwan panas sekali. Indonesia panas tidak?"},
+   {"sp": "王大文", "zh": "印尼也很熱。", "py": "Yìn ní yě hěn rè.", "id": "Indonesia juga panas sekali."},
+   {"sp": "李美美", "zh": "明天我們一起去山上吧！山上不熱，空氣也很好。", "py": "Míng tiān wǒ men yì qǐ qù shān shàng ba! Shān shàng bú rè, kōng qì yě hěn hǎo.", "id": "Besok kita ke gunung yuk! Di gunung tidak panas, udaranya juga segar."},
+   {"sp": "王大文", "zh": "好！明天下雨嗎？", "py": "Hǎo! Míng tiān xià yǔ ma?", "id": "Oke! Besok hujan?"},
+   {"sp": "李美美", "zh": "不下雨。", "py": "Bú xià yǔ.", "id": "Tidak hujan."}
+  ]},
+  {"place": "第二天，在山上", "title_id": "Keesokan harinya, di gunung", "lines": [
+   {"sp": "王大文", "zh": "山上好冷！風很大！", "py": "Shān shàng hǎo lěng! Fēng hěn dà!", "id": "Di gunung dingin sekali! Anginnya kencang sekali!"},
+   {"sp": "李美美", "zh": "對，山上很冷，山下很熱。", "py": "Duì, shān shàng hěn lěng, shān xià hěn rè.", "id": "Iya, di gunung dingin, di bawah panas."},
+   {"sp": "王大文", "zh": "你看，山上的花很漂亮！", "py": "Nǐ kàn, shān shàng de huā hěn piào liàng!", "id": "Lihat, bunga-bunga di gunung cantik sekali!"},
+   {"sp": "李美美", "zh": "這個山不高，很低，可是我最喜歡這個山。", "py": "Zhè ge shān bù gāo, hěn dī, kě shì wǒ zuì xǐ huān zhè ge shān.", "id": "Gunung ini tidak tinggi, rendah, tapi aku paling suka gunung ini."},
+   {"sp": "王大文", "zh": "……美美，下雨！你說不下雨！", "py": "…… Měi měi, xià yǔ! Nǐ shuō bú xià yǔ!", "id": "…Meimei, hujan! Katamu tidak hujan!"},
+   {"sp": "李美美", "zh": "我們快走路下山吧！", "py": "Wǒ men kuài zǒu lù xià shān ba!", "id": "Ayo cepat kita jalan turun gunung!"}
+  ]}
+ ],
    "tasks": [
     {
      "type": "listen_pic",
@@ -1338,7 +972,7 @@
    "code": "A25",
    "title_py": "Wǒ dǎ diàn huà gěi nǐ.",
    "title_id": "Aku telepon kamu ya.",
-   "scene": "Dawen menelepon Meimei yang sedang sibuk, lalu esoknya memperkenalkan teman barunya, Annie.",
+   "scene": "Dawen menelepon Meimei saat Meimei sedang di kelas, lalu menelepon lagi malam harinya. Keesokan harinya ia memperkenalkan temannya, Zhiming, kepada Meimei.",
    "can_do": [
     "Menelepon dan berjanji menelepon lagi (我打電話給你)",
     "Meminta maaf dan menanggapinya (對不起 — 沒關係)",
@@ -1346,91 +980,26 @@
    ],
    "exam_link": "Telepon & perkenalan sosial muncul di 聽力 Part 2–4. Ungkapan 對不起／沒關係／謝謝 adalah pasangan tanya-jawab klasik 聽力 Part 2.",
    "dialogs": [
-    {
-     "place": "打電話",
-     "title_id": "Menelepon",
-     "lines": [
-      {
-       "sp": "王大文",
-       "zh": "美美，你好！我是大文。",
-       "py": "Měi měi, nǐ hǎo! Wǒ shì Dà wén.",
-       "id": "Halo, Meimei! Ini Dawen."
-      },
-      {
-       "sp": "李美美",
-       "zh": "大文！對不起，我現在上課，不能說話。",
-       "py": "Dà wén! Duì bù qǐ, wǒ xiàn zài shàng kè, bù néng shuō huà.",
-       "id": "Dawen! Maaf, aku sedang kelas, tidak bisa bicara."
-      },
-      {
-       "sp": "王大文",
-       "zh": "沒關係。晚上我打電話給你。",
-       "py": "Méi guān xi. Wǎn shang wǒ dǎ diàn huà gěi nǐ.",
-       "id": "Tidak apa-apa. Nanti malam aku telepon kamu."
-      }
-     ]
-    },
-    {
-     "place": "晚上，打電話",
-     "title_id": "Malam, menelepon",
-     "lines": [
-      {
-       "sp": "李美美",
-       "zh": "大文，你打電話給我，什麼事？",
-       "py": "Dà wén, nǐ dǎ diàn huà gěi wǒ, shén me shì?",
-       "id": "Dawen, kamu meneleponku, ada apa?"
-      },
-      {
-       "sp": "王大文",
-       "zh": "明天我帶一個朋友去學校，我給你介紹。",
-       "py": "Míng tiān wǒ dài yí ge péng yǒu qù xué xiào, wǒ gěi nǐ jiè shào.",
-       "id": "Besok aku ajak teman ke kampus, aku kenalkan ke kamu."
-      },
-      {
-       "sp": "李美美",
-       "zh": "好！明天學校見！",
-       "py": "Hǎo! Míng tiān xué xiào jiàn!",
-       "id": "Oke! Sampai ketemu besok di kampus!"
-      }
-     ]
-    },
-    {
-     "place": "第二天，在學校",
-     "title_id": "Keesokan harinya, di kampus",
-     "lines": [
-      {
-       "sp": "王大文",
-       "zh": "美美，我給你介紹，這是我的朋友安妮。",
-       "py": "Měi měi, wǒ gěi nǐ jiè shào, zhè shì wǒ de péng yǒu Ān ní.",
-       "id": "Meimei, kenalkan, ini temanku Annie."
-      },
-      {
-       "sp": "安妮",
-       "zh": "你好！我叫安妮，我是印尼人。",
-       "py": "Nǐ hǎo! Wǒ jiào Ān ní, wǒ shì Yìn ní rén.",
-       "id": "Halo! Aku Annie, orang Indonesia."
-      },
-      {
-       "sp": "李美美",
-       "zh": "你好！你有手機嗎？我打電話給你。",
-       "py": "Nǐ hǎo! Nǐ yǒu shǒu jī ma? Wǒ dǎ diàn huà gěi nǐ.",
-       "id": "Halo! Kamu punya HP? Nanti kutelepon."
-      },
-      {
-       "sp": "安妮",
-       "zh": "有，謝謝！",
-       "py": "Yǒu, xiè xie!",
-       "id": "Ada, makasih!"
-      },
-      {
-       "sp": "李美美",
-       "zh": "今天我請你們喝咖啡！",
-       "py": "Jīn tiān wǒ qǐng nǐ men hē kā fēi!",
-       "id": "Hari ini aku traktir kalian kopi!"
-      }
-     ]
-    }
-   ],
+  {"place": "下午，打電話", "title_id": "Sore hari, menelepon", "lines": [
+   {"sp": "王大文", "zh": "美美，你好！我是大文。", "py": "Měi měi, nǐ hǎo! Wǒ shì Dà wén.", "id": "Meimei, halo! Ini Dawen."},
+   {"sp": "李美美", "zh": "大文！對不起，我現在上課，不能說話。", "py": "Dà wén! Duì bù qǐ, wǒ xiàn zài shàng kè, bù néng shuō huà.", "id": "Dawen! Maaf, aku sedang di kelas, tidak bisa bicara."},
+   {"sp": "王大文", "zh": "沒關係。晚上我打電話給你。", "py": "Méi guān xì. Wǎn shàng wǒ dǎ diàn huà gěi nǐ.", "id": "Tidak apa-apa. Nanti malam aku telepon kamu."}
+  ]},
+  {"place": "晚上，打電話", "title_id": "Malam hari, menelepon", "lines": [
+   {"sp": "李美美", "zh": "大文，你打電話給我，什麼事？", "py": "Dà wén, nǐ dǎ diàn huà gěi wǒ, shén me shì?", "id": "Dawen, kamu meneleponku, ada apa?"},
+   {"sp": "王大文", "zh": "明天我帶一個朋友去學校，我給你介紹。", "py": "Míng tiān wǒ dài yí ge péng yǒu qù xué xiào, wǒ gěi nǐ jiè shào.", "id": "Besok aku bawa seorang teman ke kampus, akan kuperkenalkan padamu."},
+   {"sp": "李美美", "zh": "好！明天學校見！", "py": "Hǎo! Míng tiān xué xiào jiàn!", "id": "Oke! Sampai ketemu besok di kampus!"}
+  ]},
+  {"place": "第二天，在學校", "title_id": "Keesokan harinya, di kampus", "lines": [
+   {"sp": "王大文", "zh": "美美，我給你介紹，這是我的朋友志明。", "py": "Měi měi, wǒ gěi nǐ jiè shào, zhè shì wǒ de péng yǒu Zhì míng.", "id": "Meimei, kuperkenalkan, ini temanku Zhiming."},
+   {"sp": "志明", "zh": "你好！我叫志明，我是臺灣人。", "py": "Nǐ hǎo! Wǒ jiào Zhì míng, wǒ shì Tái wān rén.", "id": "Halo! Namaku Zhiming, aku orang Taiwan."},
+   {"sp": "李美美", "zh": "你好！你也是學生嗎？", "py": "Nǐ hǎo! Nǐ yě shì xué shēng ma?", "id": "Halo! Kamu juga mahasiswa?"},
+   {"sp": "志明", "zh": "是，我學英文。", "py": "Shì, wǒ xué Yīng wén.", "id": "Iya, aku belajar bahasa Inggris."},
+   {"sp": "李美美", "zh": "你有手機嗎？我打電話給你。", "py": "Nǐ yǒu shǒu jī ma? Wǒ dǎ diàn huà gěi nǐ.", "id": "Kamu punya HP? Nanti aku telepon kamu."},
+   {"sp": "志明", "zh": "有。", "py": "Yǒu.", "id": "Punya."},
+   {"sp": "李美美", "zh": "今天我請你們喝咖啡！", "py": "Jīn tiān wǒ qǐng nǐ men hē kā fēi!", "id": "Hari ini aku traktir kalian minum kopi!"}
+  ]}
+ ],
    "tasks": [
     {
      "type": "listen_reply",
