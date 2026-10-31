@@ -61,7 +61,7 @@ BARU = {
     ]),
     'C30': ('Dawen duduk seharian menghafal untuk ujian sampai punggung dan kakinya sakit. Meimei mengajaknya jalan di '
             'taman, dan Dawen akhirnya mau berolahraga setiap hari.', [
-        ('在宿舍', 'Di asrama', [
+        ('在家', 'Di rumah', [
             ('李美美', '大文，你從早上到現在一直坐著，都沒動！', 'Dawen, dari pagi sampai sekarang kamu duduk terus, tidak bergerak sama sekali!'),
             ('王大文', '明天要考試，我還有很多東西要背。', 'Besok ujian, masih banyak yang harus kuhafal.'),
             ('李美美', '你一直低頭看電腦，眼睛不累嗎？', 'Kamu terus menunduk lihat komputer, matamu tidak capek?'),
@@ -91,7 +91,7 @@ BARU = {
             ('王大文', '住慣了。可是我還買不慣這裡的衣服，大小常常買錯。', 'Sudah. Tapi saya masih belum terbiasa membeli baju di sini, ukurannya sering salah beli.'),
             ('店員', '沒關係，買錯了可以來換。我們六點鐘關門。', 'Tidak apa-apa, kalau salah beli boleh datang menukar. Kami tutup jam enam.'),
         ]),
-        ('回到宿舍', 'Kembali ke asrama', [
+        ('回到家', 'Kembali ke rumah', [
             ('志明', '大文，你的新毛衣很好看！', 'Dawen, sweter barumu bagus!'),
             ('王大文', '昨天買的太小了，今天我去換了換，顏色也換了。', 'Yang kubeli kemarin terlalu kecil, hari ini aku tukar, warnanya juga kuganti.'),
             ('志明', '深藍色很適合你，現在很流行。', 'Biru tua cocok untukmu, sekarang sedang tren.'),
