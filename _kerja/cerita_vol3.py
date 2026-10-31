@@ -23,7 +23,7 @@ BARU = {
             ('志明', '沒看過。你呢？', 'Belum pernah. Kamu?'),
             ('安妮', '去年看過一次，可是我很想再看一次。', 'Tahun lalu pernah sekali, tapi aku ingin nonton lagi.'),
             ('志明', '電影幾點結束？', 'Filmnya selesai jam berapa?'),
-            ('安妮', '十一點。看完電影，你早點回家睡覺吧，明天還要考試！', 'Jam sebelas. Habis nonton, kamu cepat pulang dan tidur ya, besok masih ada ujian!'),
+            ('安妮', '十一點。看完電影，你早一點回家睡覺吧，明天還要考試！', 'Jam sebelas. Habis nonton, kamu cepat pulang dan tidur ya, besok masih ada ujian!'),
         ]),
     ]),
     'C02': ('Zhiming mengeluhkan kamar Dawen yang berantakan. Saat membereskannya, mereka sadar perabotnya sudah tua '
