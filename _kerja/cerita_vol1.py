@@ -214,23 +214,23 @@ BARU = {
             ('王大文', '好，我去睡覺！', 'Oke, aku tidur!'),
         ]),
     ]),
-    'A24': ('Hari yang panas sekali. Meimei mengajak Dawen ke gunung yang udaranya segar; keesokan harinya di gunung '
-            'angin bertiup kencang dan tiba-tiba hujan turun.', [
+    'A24': ('Hari yang panas sekali. Dawen mengajak ke gunung, tetapi Meimei menolak karena terlalu panas dan mengajak '
+            'pergi hari Sabtu; hari Sabtu di gunung angin bertiup kencang dan tiba-tiba hujan turun.', [
         ('在學校外面', 'Di luar kampus', [
-            ('王大文', '今天好熱！', 'Hari ini panas sekali!'),
-            ('李美美', '對，臺灣的天氣很熱。印尼熱不熱？', 'Iya, cuaca Taiwan panas sekali. Indonesia panas tidak?'),
-            ('王大文', '印尼也很熱。', 'Indonesia juga panas sekali.'),
-            ('李美美', '明天我們一起去山上吧！山上不熱，空氣也很好。', 'Besok kita ke gunung yuk! Di gunung tidak panas, udaranya juga segar.'),
-            ('王大文', '好！明天下雨嗎？', 'Oke! Besok hujan?'),
+            ('王大文', '今天好熱！我們去山上，好嗎？', 'Hari ini panas sekali! Kita ke gunung, yuk?'),
+            ('李美美', '今天？太熱了！走路很累。', 'Hari ini? Terlalu panas! Jalan kaki capek sekali.'),
+            ('王大文', '可是山上空氣很好，花也很漂亮。', 'Tapi di gunung udaranya segar, bunganya juga cantik.'),
+            ('李美美', '星期六天氣不熱，我們星期六去吧！現在我們去喝冰茶。', 'Hari Sabtu cuacanya tidak panas, kita pergi hari Sabtu saja! Sekarang kita minum teh dingin.'),
+            ('王大文', '好！星期六下雨嗎？', 'Oke! Hari Sabtu hujan?'),
             ('李美美', '不下雨。', 'Tidak hujan.'),
         ]),
-        ('第二天，在山上', 'Keesokan harinya, di gunung', [
+        ('星期六，在山上', 'Hari Sabtu, di gunung', [
             ('王大文', '山上好冷！風很大！', 'Di gunung dingin sekali! Anginnya kencang sekali!'),
-            ('李美美', '對，山上很冷，山下很熱。', 'Iya, di gunung dingin, di bawah panas.'),
-            ('王大文', '你看，山上的花很漂亮！', 'Lihat, bunga-bunga di gunung cantik sekali!'),
-            ('李美美', '這個山不高，很低，可是我最喜歡這個山。', 'Gunung ini tidak tinggi, rendah, tapi aku paling suka gunung ini.'),
-            ('王大文', '……美美，下雨！你說不下雨！', '…Meimei, hujan! Katamu tidak hujan!'),
-            ('李美美', '我們快走路下山吧！', 'Ayo cepat kita jalan turun gunung!'),
+            ('李美美', '你看，這裡的花很漂亮！', 'Lihat, bunga di sini cantik sekali!'),
+            ('王大文', '這裡的山都很低，走路不累。我最喜歡山上！', 'Gunung di sini rendah-rendah, jalan kaki tidak capek. Aku paling suka di gunung!'),
+            ('李美美', '……大文，下雨！', '…Dawen, hujan!'),
+            ('王大文', '你說不下雨！', 'Katamu tidak hujan!'),
+            ('李美美', '我們快下山吧！', 'Ayo cepat kita turun gunung!'),
         ]),
     ]),
     'A25': ('Dawen menelepon Meimei saat Meimei sedang di kelas, lalu menelepon lagi malam harinya. Keesokan harinya '
