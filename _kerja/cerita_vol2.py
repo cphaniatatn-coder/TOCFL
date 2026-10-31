@@ -652,13 +652,13 @@ BARU.update({
         ]),
         ('在機場', 'Di bandara', [
             ('王大文', '飛機幾點飛？', 'Pesawatnya terbang jam berapa?'),
-            ('李美美', '十點。現在八點，還早。我們有空，去喝咖啡吧。', 'Jam sepuluh. Sekarang jam delapan, masih pagi. Kita ada waktu, ayo minum kopi.'),
-            ('王大文', '好。咖啡店在對面，我們走過去吧。', 'Oke. Kedai kopinya di seberang, kita jalan ke sana.'),
+            ('李美美', '十點。現在八點，還早。', 'Jam sepuluh. Sekarang jam delapan, masih pagi.'),
             ('小姐', '先生，你的東西太重了，要加錢。', 'Pak, barang Anda terlalu berat, harus tambah biaya.'),
             ('王大文', '要加多少錢？', 'Tambah berapa?'),
             ('小姐', '五百塊。', 'Lima ratus.'),
             ('王大文', '美美，這幾本書你帶回去吧。', 'Meimei, buku-buku ini kamu bawa pulang saja ya.'),
-            ('李美美', '好！到了印尼，打電話給我！', 'Oke! Sampai di Indonesia, telepon aku ya!'),
+            ('李美美', '好！我們還有空，去喝咖啡吧。', 'Oke! Kita masih ada waktu, ayo minum kopi.'),
+            ('王大文', '好。咖啡店在對面，我們走過去吧。', 'Oke. Kedai kopinya di seberang, kita jalan ke sana.'),
         ]),
     ]),
     'B33': ('Dawen baru kembali dari Indonesia bersama kakak perempuannya yang ingin berlibur di Taiwan. Annie '
@@ -704,20 +704,20 @@ BARU.update({
     'B35': ('Dawen, Zhiming, dan Annie berlibur ke Hualien. Dawen melakukan check-in dan membayarkan kamar untuk '
             'kedua temannya; malam harinya Annie bercerita bahwa ibunya mengizinkannya ikut dengan satu syarat.', [
         ('在旅館', 'Di penginapan', [
-            ('王大文', '你好，我們有三個人，我跟我的兩個朋友。', 'Halo, kami bertiga, saya dan dua teman saya.'),
+            ('王大文', '你好，我們有三個人，要兩個房間。', 'Halo, kami bertiga, mau dua kamar.'),
             ('小姐', '好。你們住幾天？', 'Baik. Kalian menginap berapa hari?'),
             ('王大文', '兩天。我的朋友在外面，我可以替他們付錢嗎？', 'Dua hari. Teman saya di luar, boleh saya bayarkan untuk mereka?'),
             ('小姐', '行。', 'Boleh.'),
             ('王大文', '房間可以看到海嗎？', 'Dari kamar bisa melihat laut?'),
-            ('小姐', '行，你們的房間在五樓，可以看到海。', 'Bisa, kamar kalian di lantai lima, bisa melihat laut.'),
+            ('小姐', '可以，你們的房間在五樓，可以看到海。', 'Bisa, kamar kalian di lantai lima, bisa melihat laut.'),
         ]),
         ('晚上，在房間', 'Malam hari, di kamar', [
             ('志明', '大文，謝謝你替我付錢！', 'Dawen, terima kasih sudah membayarkan untukku!'),
             ('王大文', '沒關係，明天你請我吃早飯吧！', 'Tidak apa-apa, besok kamu traktir aku sarapan ya!'),
             ('安妮', '我媽媽讓我跟你們一起來，可是她要我每天打電話給她。', 'Ibuku mengizinkan aku pergi bersama kalian, tapi dia minta aku menelepon dia setiap hari.'),
             ('志明', '那你現在打吧！', 'Kalau begitu telepon sekarang saja!'),
-            ('安妮', '好。我和媽媽說話，你們先睡覺吧。', 'Oke. Aku bicara dengan ibuku, kalian tidur duluan saja.'),
-            ('王大文', '明天早上，我們和旅館的人一起去看海，行嗎？', 'Besok pagi kita lihat laut bersama orang penginapan, mau?'),
+            ('安妮', '好。我回我的房間打電話。', 'Oke. Aku kembali ke kamarku untuk menelepon.'),
+            ('王大文', '明天早上，我們早一點起床去看海，行嗎？', 'Besok pagi kita bangun lebih awal untuk melihat laut, bisa?'),
             ('志明', '行！', 'Mau!'),
         ]),
     ]),
@@ -745,7 +745,7 @@ BARU.update({
             'malamnya mereka kembali ke kios sate di pasar malam — dan dompetnya ada di sana.', [
         ('在公車站', 'Di halte bus', [
             ('王大文', '美美，我的錢包不見了！怎麼辦？', 'Meimei, dompetku hilang! Bagaimana ini?'),
-            ('李美美', '你先坐下來。你的錢包掉在哪裡？', 'Kamu duduk dulu. Dompetmu jatuh di mana?'),
+            ('李美美', '你先坐下來。你的錢包是什麼時候不見的？', 'Kamu duduk dulu. Kapan dompetmu hilang?'),
             ('王大文', '我不知道。可能掉在公車上，也可能被別人拿走了。', 'Aku tidak tahu. Mungkin jatuh di bus, mungkin juga diambil orang.'),
             ('李美美', '你最後一次用錢包，是什麼時候？', 'Terakhir kali kamu pakai dompet kapan?'),
             ('王大文', '昨天晚上，在夜市買烤肉。', 'Kemarin malam, waktu beli sate di pasar malam.'),
@@ -808,8 +808,8 @@ BARU.update({
         ('美美來看大文', 'Meimei menjenguk Dawen', [
             ('李美美', '大文，你好一點了嗎？', 'Dawen, sudah agak baikan?'),
             ('王大文', '好一點了，不過還很累。', 'Sudah agak baikan, tapi masih capek sekali.'),
-            ('李美美', '因為你常常很晚睡覺，所以身體不好。', 'Karena kamu sering tidur larut malam, makanya badanmu tidak sehat.'),
-            ('王大文', '對。雖然功課很多，但是以後我要早一點睡覺。', 'Iya. Meskipun PR-nya banyak, mulai sekarang aku mau tidur lebih awal.'),
+            ('李美美', '因為你在夜市吃了太多東西，所以肚子痛。', 'Karena kamu makan terlalu banyak di pasar malam, makanya perutmu sakit.'),
+            ('王大文', '對。雖然夜市的東西很好吃，但是以後我要少吃一點。', 'Iya. Meskipun makanan pasar malam enak, mulai sekarang aku mau makan lebih sedikit.'),
             ('李美美', '我給你帶了水果，多吃一點吧。', 'Aku bawakan buah, makan yang banyak ya.'),
         ]),
     ]),
@@ -887,7 +887,7 @@ BARU.update({
             ('陳老師', '大家認為學中文最重要的是什麼？', 'Menurut kalian, hal terpenting dalam belajar Mandarin apa?'),
             ('王大文', '我認為多說最重要。', 'Menurut saya, banyak bicara yang paling penting.'),
             ('陳老師', '這個想法很好。安妮呢？', 'Pendapat yang bagus. Kalau Annie?'),
-            ('安妮', '中文，我希望每天都能練習。', 'Bahasa Mandarin, saya berharap bisa berlatih setiap hari.'),
+            ('安妮', '我希望每天都能練習說中文。', 'Saya berharap setiap hari bisa berlatih berbicara bahasa Mandarin.'),
             ('李美美', '我願意每天跟大家練習！', 'Saya bersedia berlatih dengan semuanya setiap hari!'),
         ]),
         ('下課以後', 'Sesudah kelas', [
@@ -902,11 +902,11 @@ BARU.update({
         ('打電話到印尼', 'Menelepon ke Indonesia', [
             ('安妮的弟弟', '姊姊，我不知道要去哪裡念書。', 'Kak, aku tidak tahu mau kuliah di mana.'),
             ('安妮', '你打算念什麼？', 'Kamu berencana kuliah apa?'),
-            ('安妮的弟弟', '我打算學中文。我想去日本或是臺灣。', 'Aku berencana belajar Mandarin. Aku ingin ke Jepang atau Taiwan.'),
-            ('安妮', '臺灣很好！我在臺灣念書，很高興。', 'Taiwan bagus! Aku kuliah di Taiwan, senang sekali.'),
+            ('安妮的弟弟', '我打算學中文。我想去臺北或是臺中。', 'Aku berencana belajar Mandarin. Aku ingin ke Taipei atau Taichung.'),
+            ('安妮', '臺北很好！我在臺北念書，很高興。', 'Taipei bagus! Aku kuliah di Taipei, senang sekali.'),
             ('安妮的弟弟', '你在臺灣念書累不累？', 'Kuliah di Taiwan capek tidak?'),
             ('安妮', '不累！你來，我就帶你去夜市。', 'Tidak! Kalau kamu datang, aku langsung ajak kamu ke pasar malam.'),
-            ('安妮的弟弟', '好！我決定了，就去臺灣念書！', 'Oke! Aku sudah memutuskan, aku kuliah di Taiwan saja!'),
+            ('安妮的弟弟', '好！我決定了，就去臺北念書！', 'Oke! Aku sudah memutuskan, aku kuliah di Taipei saja!'),
         ]),
         ('第二天，在學校', 'Keesokan harinya, di kampus', [
             ('王大文', '安妮，你昨天沒來上課，怎麼了？', 'Annie, kemarin kamu tidak masuk kelas, kenapa?'),
