@@ -159,20 +159,20 @@ BARU = {
             ('王大文', '我爸爸也有一輛車子。我不坐計程車，計程車很貴！', 'Ayahku juga punya satu mobil. Aku tidak naik taksi, taksi mahal!'),
         ]),
     ]),
-    'A21': ('Dawen dan Meimei mau naik kereta ke Taichung, tetapi tidak tahu jalan ke stasiun. Mereka bertanya kepada '
-            'seorang bapak, lalu sempat salah jalan lagi sebelum akhirnya melihat stasiun.', [
-        ('在路上', 'Di jalan', [
+    'A21': ('Dawen dan Meimei mau naik kereta ke Taichung. Di taman mereka bertanya jalan ke stasiun kepada seorang '
+            'bapak, tetapi setelah keluar mereka salah ambil arah sebelum akhirnya melihat stasiun.', [
+        ('在公園', 'Di taman', [
             ('王大文', '先生，請問，火車站怎麼走？', 'Pak, permisi, ke stasiun kereta lewat mana?'),
-            ('先生', '你們從這裡出去，走右邊的路。', 'Dari sini kalian keluar, lewat jalan sebelah kanan.'),
-            ('王大文', '右邊？', 'Sebelah kanan?'),
-            ('先生', '對，走五分鐘就到。火車站在路的左邊。', 'Iya, jalan lima menit langsung sampai. Stasiunnya di sebelah kiri jalan.'),
+            ('先生', '你們從這個門出去，火車站就在路的右邊。', 'Kalian keluar dari pintu ini, stasiunnya ada di sebelah kanan jalan.'),
+            ('王大文', '右邊？不是左邊？', 'Sebelah kanan? Bukan kiri?'),
+            ('先生', '對，是右邊。走五分鐘就到。', 'Iya, kanan. Jalan lima menit langsung sampai.'),
             ('王大文', '謝謝您！', 'Terima kasih, Pak!'),
         ]),
-        ('十分鐘以後', 'Sepuluh menit kemudian', [
+        ('火車站在哪裡？', 'Stasiunnya di mana?', [
             ('李美美', '大文，你看到火車站嗎？', 'Dawen, kamu lihat stasiunnya?'),
-            ('王大文', '火車站在哪裡？我們又走錯路！', 'Stasiunnya di mana? Kita salah jalan lagi!'),
-            ('李美美', '這是什麼地方？', 'Ini tempat apa?'),
-            ('王大文', '我不知道。……你看，我看見火車站！在那裡，左邊！', 'Aku tidak tahu. …Lihat, aku lihat stasiunnya! Di sana, sebelah kiri!'),
+            ('王大文', '沒有。這是什麼地方？我們又走錯路？', 'Tidak. Ini tempat apa? Kita salah jalan lagi?'),
+            ('李美美', '大文，這是左邊！先生說右邊！', 'Dawen, ini sebelah kiri! Bapak tadi bilang kanan!'),
+            ('王大文', '對！……你看，我看見火車站！在那裡！', 'Iya! …Lihat, aku lihat stasiunnya! Di sana!'),
             ('李美美', '好，我們馬上去！', 'Oke, kita langsung ke sana!'),
         ]),
     ]),
