@@ -181,7 +181,7 @@ BARU = {
         ('在學校', 'Di kampus', [
             ('李美美', '大文，你今天怎麼樣？', 'Dawen, hari ini kamu bagaimana?'),
             ('王大文', '我不舒服，我頭很痛。', 'Aku tidak enak badan, kepalaku sakit sekali.'),
-            ('李美美', '你感冒嗎？', 'Kamu masuk angin?'),
+            ('李美美', '你感冒了嗎？', 'Kamu masuk angin?'),
             ('王大文', '可能是。我很累，眼睛也很痛。', 'Mungkin. Aku capek sekali, mataku juga sakit.'),
             ('李美美', '鼻子呢？', 'Hidungmu?'),
             ('王大文', '鼻子也不舒服。', 'Hidungku juga tidak enak.'),
@@ -189,7 +189,7 @@ BARU = {
         ('下課的時候', 'Saat istirahat', [
             ('李美美', '大文，你的身體怎麼樣？', 'Dawen, badanmu bagaimana?'),
             ('王大文', '很不好。我的手和腳都很累。', 'Tidak baik. Tangan dan kakiku lemas semua.'),
-            ('李美美', '你生病！你應該去睡覺。', 'Kamu sakit! Kamu harus tidur.'),
+            ('李美美', '你生病了！你應該去睡覺。', 'Kamu sakit! Kamu harus tidur.'),
             ('王大文', '什麼？我沒聽見。我的耳朵也不舒服！', 'Apa? Aku tidak dengar. Telingaku juga tidak enak!'),
             ('李美美', '我說：你應該去睡覺！', 'Kubilang: kamu harus tidur!'),
         ]),
