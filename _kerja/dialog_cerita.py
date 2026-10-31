@@ -56,7 +56,7 @@ BARU = {
             ('李美美', '太好了！明天幾度？', 'Bagus! Besok berapa derajat?'),
             ('王大文', '大概二十度，不冷也不熱。溫泉的地點離捷運站遠嗎？', 'Sekitar dua puluh derajat, tidak dingin juga tidak panas. Lokasi pemandiannya jauh dari stasiun MRT?'),
             ('李美美', '不遠，走路五分鐘。下雨的話，我們就坐計程車。', 'Tidak jauh, jalan kaki lima menit. Kalau hujan, kita naik taksi saja.'),
-            ('王大文', '好！聽說春季去溫泉最舒服，可是我等不了了！', 'Oke! Katanya ke pemandian air panas paling enak di musim semi, tapi aku sudah tidak sabar!'),
+            ('王大文', '好！聽說冬天去溫泉最舒服，春季也不錯，可是我等不了了！', 'Oke! Katanya ke pemandian air panas paling enak di musim dingin, musim semi juga lumayan, tapi aku sudah tidak sabar!'),
         ]),
     ]),
     'C30': ('Dawen duduk seharian menghafal untuk ujian sampai punggung dan kakinya sakit. Meimei mengajaknya jalan di '
