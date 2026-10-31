@@ -597,7 +597,7 @@ BARU = {
             ('王大文', '沒關係，我們一起做。三加五是多少？', 'Tidak apa-apa, kita kerjakan bersama. Tiga tambah lima berapa?'),
             ('小明', '是八！', 'Delapan!'),
             ('王大文', '很好。十減四呢？', 'Bagus. Sepuluh kurang empat?'),
-            ('小明', '六。三乘四是十二，十二除四是三。', 'Enam. Tiga kali empat dua belas, dua belas dibagi empat tiga.'),
+            ('小明', '六。三乘四是十二，四除十二是三。', 'Enam. Tiga kali empat dua belas, dua belas dibagi empat tiga.'),
             ('王大文', '對！十和四差多少？', 'Betul! Sepuluh dan empat selisihnya berapa?'),
             ('小明', '差六！', 'Selisih enam!'),
         ]),
@@ -662,7 +662,7 @@ BARU = {
     'C41': ('Ini musim dingin pertama Dawen di Taiwan. Meimei membantunya membeli pakaian hangat: sweter, sarung tangan, '
             'kaus kaki, sepatu, sandal, dan piyama.', [
         ('在衣服店', 'Di toko pakaian', [
-            ('王大文', '美美，冬天快到了，這是我在臺灣的第一個冬天。我要買什麼？', 'Meimei, musim dingin hampir tiba, ini musim dingin pertamaku di Taiwan. Aku perlu beli apa?'),
+            ('王大文', '美美，冬天快到了，我的冬天衣服都舊了。我要買什麼？', 'Meimei, musim dingin hampir tiba, baju musim dinginku sudah usang semua. Aku perlu beli apa?'),
             ('李美美', '你要買毛衣、手套和襪子。你看這件，紅紅的毛衣很漂亮。', 'Kamu perlu beli sweter, sarung tangan, dan kaus kaki. Lihat ini, sweter merah ini cantik sekali.'),
             ('王大文', '這件毛衣很適合你！我想要那件黑黑的。', 'Sweter ini cocok untukmu! Aku mau yang hitam itu.'),
             ('李美美', '好。那件金色的上衣呢？', 'Oke. Atasan emas yang itu?'),
@@ -688,9 +688,8 @@ BARU = {
             ('王大文', '美美，在臺灣吃飯要給小費嗎？', 'Meimei, di Taiwan kalau makan perlu kasih tip?'),
             ('李美美', '不用。你不知道嗎？', 'Tidak perlu. Kamu tidak tahu?'),
             ('王大文', '不知道，我以為要給。', 'Tidak, kukira harus kasih.'),
-            ('李美美', '你付錢了沒有？', 'Kamu sudah bayar belum?'),
-            ('王大文', '還沒有。這裡可以刷卡嗎？', 'Belum. Di sini bisa pakai kartu?'),
-            ('李美美', '可以，可是我已經付了，店員剛才刷了我的信用卡。今天我請你！', 'Bisa, tapi aku sudah bayar, tadi pelayan sudah menggesek kartuku. Hari ini aku traktir!'),
+            ('王大文', '你付錢了沒有？我們一起付吧。', 'Kamu sudah bayar belum? Kita bayar bersama saja.'),
+            ('李美美', '付了！店員剛才刷了我的信用卡。今天我請你！', 'Sudah! Tadi pelayan sudah menggesek kartuku. Hari ini aku traktir!'),
             ('王大文', '謝謝！那下次我請你。', 'Terima kasih! Lain kali aku yang traktir.'),
         ]),
     ]),
@@ -790,7 +789,7 @@ BARU = {
             ('李美美', '不要，這個星期我一點都沒吃甜的東西。', 'Tidak, minggu ini aku sama sekali tidak makan yang manis-manis.'),
             ('王大文', '那你喝什麼飲料？', 'Lalu kamu minum apa?'),
             ('李美美', '我只喝茶。你聞聞看，這杯烏龍茶的香味很好！', 'Aku cuma minum teh. Coba cium, aroma teh oolong ini enak sekali!'),
-            ('王大文', '香味真好！我從來沒喝過烏龍茶，我也買一杯。', 'Aromanya harum sekali! Aku belum pernah minum teh oolong, aku juga beli segelas.'),
+            ('王大文', '香味真好！我也買一杯。', 'Aromanya harum sekali! Aku juga beli segelas.'),
         ]),
     ]),
     'C50': ('Dawen mengurus izin tinggal (ARC) di kantor imigrasi. Fotonya kurang satu, jadi ia berfoto dulu, lalu '
