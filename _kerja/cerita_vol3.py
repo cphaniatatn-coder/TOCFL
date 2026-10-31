@@ -205,7 +205,7 @@ BARU = {
             ('王先生', '你去過大陸嗎？', 'Anda pernah ke Tiongkok daratan?'),
             ('安妮', '去過一次。當時我年紀很小，只有八歲。', 'Pernah sekali. Waktu itu saya masih kecil, baru delapan tahun.'),
             ('王先生', '好。請寫一下你的住址和電話。', 'Baik. Silakan tulis alamat dan nomor telepon Anda.'),
-            ('安妮', '好。我的住址是臺北市中山路二十號。', 'Baik. Alamat saya Jalan Zhongshan nomor dua puluh, Kota Taipei.'),
+            ('安妮', '好。我的住址是臺北市大學路一百號。', 'Baik. Alamat saya Jalan Daxue nomor seratus, Kota Taipei.'),
         ]),
     ]),
     'C13': ('Meimei menunjukkan foto keluarga besarnya saat Tahun Baru Imlek. Dawen bertanya siapa saja mereka: kakek-nenek '
@@ -906,8 +906,8 @@ BARU = {
             ('王大文', '真有意思！', 'Menarik sekali!'),
             ('李美美', '你們在印尼過春節嗎？', 'Di Indonesia kalian merayakan Imlek?'),
             ('王大文', '我家也過。東方的節日我們過，我們也有聖誕老人。', 'Keluargaku juga merayakan. Hari raya Timur kami rayakan, kami juga punya Sinterklas.'),
-            ('李美美', '今年除夕，你來我家吧！', 'Malam Tahun Baru tahun ini, datang ke rumahku saja!'),
-            ('王大文', '真的嗎？那我要帶什麼？', 'Serius? Lalu aku perlu bawa apa?'),
+            ('李美美', '今年除夕，你也來我家吧！', 'Malam Tahun Baru tahun ini, kamu datang ke rumahku lagi ya!'),
+            ('王大文', '好啊！那我要帶什麼？', 'Boleh! Lalu aku perlu bawa apa?'),
             ('李美美', '什麼都不用帶！你想吃什麼，我們就做什麼！', 'Tidak perlu bawa apa-apa! Kamu mau makan apa, itu yang kami masak!'),
         ]),
     ]),
@@ -990,11 +990,11 @@ BARU = {
             ('王大文', '其實你帶來的印尼點心，就是最好的禮物！', 'Sebenarnya kue Indonesia yang kamu bawa itulah hadiah terbaik!'),
         ]),
     ]),
-    'C65': ('Selesai ujian, Dawen dan Meimei makan di restoran prasmanan sepuasnya. Restoran penuh, piring Dawen '
-            'penuh, lalu mereka merencanakan liburan untuk bersenang-senang sepuasnya.', [
+    'C65': ('Akhir pekan, Dawen dan Meimei makan di restoran prasmanan sepuasnya. Restoran penuh, piring Dawen '
+            'penuh, lalu mereka merencanakan sisa akhir pekan untuk bersenang-senang sepuasnya.', [
         ('在餐廳', 'Di restoran', [
             ('李美美', '大文，這家餐廳是吃到飽的，今天我們吃個夠！', 'Dawen, restoran ini makan sepuasnya, hari ini kita makan sampai puas!'),
-            ('王大文', '好！考試考完了，我要吃個夠！', 'Oke! Ujian sudah selesai, aku mau makan sepuasnya!'),
+            ('王大文', '好！今天是週末，我要吃個夠！', 'Oke! Hari ini akhir pekan, aku mau makan sepuasnya!'),
             ('李美美', '你看，餐廳的人好多，位子都坐滿了。', 'Lihat, restorannya ramai sekali, kursinya penuh semua.'),
             ('王大文', '還好我們訂位了。', 'Untung kita sudah pesan tempat.'),
             ('李美美', '你的盤子已經裝滿了！', 'Piringmu sudah penuh!'),
@@ -1002,10 +1002,10 @@ BARU = {
         ]),
         ('吃完以後', 'Selesai makan', [
             ('王大文', '我吃不下了……', 'Aku sudah tidak muat lagi…'),
-            ('李美美', '放假了，你想做什麼？', 'Sudah libur, kamu mau ngapain?'),
+            ('李美美', '週末你還想做什麼？', 'Akhir pekan ini kamu mau ngapain lagi?'),
             ('王大文', '我要玩個夠！', 'Aku mau main sepuasnya!'),
             ('李美美', '我要看電影看個夠！', 'Aku mau nonton film sepuasnya!'),
-            ('王大文', '那放假的第一天，我們先去看電影吧！', 'Kalau begitu hari pertama libur, kita nonton film dulu!'),
+            ('王大文', '那明天我們先去看電影吧！', 'Kalau begitu besok kita nonton film dulu!'),
         ]),
     ]),
     'C66': ('Menjelang ujian akhir, Dawen menanyakan aturan ujian dan pemilihan mata kuliah kepada guru. Lalu ia '
@@ -1032,7 +1032,7 @@ BARU = {
             ('店員', '好。還要別的嗎？', 'Baik. Ada yang lain?'),
             ('王大文', '不要了。一個小時以內送得到嗎？', 'Tidak. Bisa diantar dalam satu jam?'),
             ('店員', '送得到，三十分鐘以內就到。', 'Bisa, dalam tiga puluh menit sudah sampai.'),
-            ('王大文', '我家在學校旁邊，中山路二十號。', 'Rumah saya di sebelah kampus, Jalan Zhongshan nomor dua puluh.'),
+            ('王大文', '我家在學校旁邊，中山路八號。', 'Rumah saya di sebelah kampus, Jalan Zhongshan nomor delapan.'),
         ]),
         ('在大文家門口', 'Di depan rumah Dawen', [
             ('店員', '先生，這是你要的便當。', 'Pak, ini bento pesanan Anda.'),
