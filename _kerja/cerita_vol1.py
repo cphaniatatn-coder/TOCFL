@@ -7,17 +7,15 @@ ditulis ulang — hanya 13 bab di bawah. Di A0 belum ada 了, 在+tempat+V, 過,
 """
 
 BARU = {
-    'A09': ('Lanjutan kunjungan Meimei ke rumah Dawen. Dawen menunjukkan kamarnya, lalu mereka mencari adik '
-            'perempuan Dawen, Xiaowen, yang sedang bersembunyi.', [
+    'A09': ('Lanjutan kunjungan Meimei ke rumah Dawen. Mereka mau menonton film di kamar Dawen, lalu '
+            'mencari adik perempuan Dawen, Xiaowen, yang sedang bersembunyi.', [
         ('在大文的房間', 'Di kamar Dawen', [
-            ('李美美', '大文，你的房間很大！', 'Dawen, kamarmu besar sekali!'),
-            ('王大文', '你看，這是床，這是桌子和椅子。', 'Lihat, ini tempat tidur, ini meja dan kursi.'),
-            ('李美美', '你的電視在哪裡？', 'Televisimu di mana?'),
-            ('王大文', '在桌子上。', 'Di atas meja.'),
-            ('李美美', '椅子呢？', 'Kursinya?'),
-            ('王大文', '椅子在桌子前面，床在桌子旁邊。', 'Kursi di depan meja, tempat tidur di samping meja.'),
-            ('李美美', '你妹妹小文在家嗎？', 'Adikmu Xiaowen ada di rumah?'),
-            ('王大文', '在家。小文！小文！……她在哪裡？', 'Ada. Xiaowen! Xiaowen! …Dia di mana?'),
+            ('李美美', '大文，你的房間很大！桌子上有電視！', 'Dawen, kamarmu besar sekali! Di atas meja ada televisi!'),
+            ('王大文', '我們看電影！你拿椅子。', 'Ayo kita nonton film! Kamu ambil kursi.'),
+            ('李美美', '好。椅子在哪裡？', 'Oke. Kursinya di mana?'),
+            ('王大文', '在床旁邊。椅子在電視前面，好嗎？', 'Di samping tempat tidur. Kursinya di depan televisi, ya?'),
+            ('李美美', '好！你妹妹也喜歡看電影嗎？', 'Oke! Adikmu juga suka nonton film?'),
+            ('王大文', '喜歡。小文！小文！……她在哪裡？', 'Suka. Xiaowen! Xiaowen! …Dia di mana?'),
         ]),
         ('小文在哪裡？', 'Xiaowen di mana?', [
             ('李美美', '她在床下嗎？', 'Dia di bawah tempat tidur?'),
