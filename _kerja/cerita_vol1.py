@@ -194,13 +194,15 @@ BARU = {
             ('李美美', '我說：你應該去睡覺！', 'Kubilang: kamu harus tidur!'),
         ]),
     ]),
-    'A23': ('Dawen masih sakit tetapi bilang tidak apa-apa. Meimei membujuknya memberi tahu guru dan pergi ke dokter; '
+    'A23': ('Dawen masih sakit tetapi bilang tidak apa-apa. Meimei memberi tahu guru lalu mengajaknya ke dokter; '
             'dokter memberinya obat dan menyuruhnya istirahat.', [
         ('在學校', 'Di kampus', [
-            ('李美美', '大文，你應該去看病！', 'Dawen, kamu harus pergi berobat!'),
-            ('王大文', '為什麼？我沒事。', 'Kenapa? Aku tidak apa-apa.'),
-            ('李美美', '你頭痛，眼睛也痛。你生病，大家都很怕！', 'Kepalamu sakit, matamu juga sakit. Kamu sakit, semua orang khawatir!'),
-            ('王大文', '好，我自己告訴老師。你等我，我們一起去看病。', 'Baiklah, aku sendiri yang memberi tahu guru. Tunggu aku, kita pergi berobat bersama.'),
+            ('李美美', '大文，你的頭還痛嗎？', 'Dawen, kepalamu masih sakit?'),
+            ('王大文', '還很痛……可是我沒事。', 'Masih sakit sekali… tapi aku tidak apa-apa.'),
+            ('李美美', '大家都說你應該去看病！', 'Semua orang bilang kamu harus pergi berobat!'),
+            ('王大文', '為什麼？我自己休息就好。', 'Kenapa? Aku istirahat sendiri saja sudah cukup.'),
+            ('李美美', '我去告訴老師。你等我，我們一起去！', 'Aku beri tahu guru dulu. Tunggu aku, kita pergi bersama!'),
+            ('王大文', '好吧……謝謝你。', 'Baiklah… terima kasih.'),
         ]),
         ('看醫生', 'Ke dokter', [
             ('醫生', '你好，你哪裡不舒服？', 'Halo, bagian mana yang tidak enak?'),
