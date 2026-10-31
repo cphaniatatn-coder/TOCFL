@@ -30,28 +30,28 @@ BARU = {
     'A10': ('Dawen datang terlambat dan mengantuk karena setiap hari tidur jam dua pagi. Meimei mengajaknya '
             'berolahraga pagi, dan keesokan paginya Dawen benar-benar datang ke taman.', [
         ('早上，在教室', 'Pagi hari, di kelas', [
-            ('李美美', '大文，你好晚！現在九點二十分。', 'Dawen, kamu telat sekali! Sekarang jam sembilan lewat dua puluh.'),
-            ('王大文', '我八點半起床。', 'Aku bangun jam setengah sembilan.'),
+            ('李美美', '大文，你好晚！現在九點二十分了。', 'Dawen, kamu telat sekali! Sekarang sudah jam sembilan lewat dua puluh.'),
+            ('王大文', '我八點半才起床。', 'Aku baru bangun jam setengah sembilan.'),
             ('李美美', '你每天晚上幾點睡覺？', 'Setiap malam kamu tidur jam berapa?'),
             ('王大文', '兩點。我晚上喜歡看電影。', 'Jam dua. Malam hari aku suka nonton film.'),
-            ('李美美', '兩點？太晚！我每天晚上十一點睡覺，早上六點半起床。', 'Jam dua? Terlalu malam! Setiap malam aku tidur jam sebelas, pagi bangun jam setengah tujuh.'),
+            ('李美美', '兩點？太晚了！我每天晚上十一點睡覺，早上六點半就起床了。', 'Jam dua? Terlalu malam! Setiap malam aku tidur jam sebelas, jam setengah tujuh pagi aku sudah bangun.'),
             ('王大文', '你好早！你早上做什麼？', 'Pagi sekali! Pagi-pagi kamu ngapain?'),
             ('李美美', '我早上運動。你也要早上運動！', 'Pagi hari aku olahraga. Kamu juga olahraga pagi!'),
             ('王大文', '好！', 'Oke!'),
         ]),
         ('早上六點半，在公園', 'Jam setengah tujuh pagi, di taman', [
             ('李美美', '大文！你好早！', 'Dawen! Pagi sekali kamu!'),
-            ('王大文', '我六點起床！', 'Aku bangun jam enam!'),
-            ('李美美', '好！現在我們運動！', 'Bagus! Sekarang kita olahraga!'),
+            ('王大文', '我六點就起床了！', 'Aku sudah bangun jam enam!'),
+            ('李美美', '很好！現在我們去運動吧！', 'Bagus sekali! Sekarang ayo kita olahraga!'),
             ('王大文', '……美美，現在幾點？我想睡覺！', '…Meimei, sekarang jam berapa? Aku ngantuk!'),
-            ('李美美', '現在六點四十分！你晚上要早睡覺！', 'Sekarang jam enam lewat empat puluh! Malam hari kamu harus tidur lebih awal!'),
+            ('李美美', '現在六點四十分！你晚上要早點睡覺！', 'Sekarang jam enam lewat empat puluh! Malam hari kamu harus tidur lebih awal!'),
         ]),
     ]),
     'A13': ('Dawen dan Meimei tidak mengerti sebuah kalimat di buku. Mereka menyiapkan pena dan kertas, lalu '
             'bertanya kepada Guru Chen cara menulis dan arti sebuah huruf.', [
         ('下課的時候', 'Saat istirahat', [
             ('王大文', '美美，這個句子是什麼意思？', 'Meimei, kalimat ini artinya apa?'),
-            ('李美美', '我看……我不懂。我不知道這個字。', 'Coba kulihat… aku tidak mengerti. Huruf ini aku tidak tahu.'),
+            ('李美美', '我看……我不懂。這個字我也不知道。', 'Coba kulihat… aku tidak mengerti. Huruf ini aku juga tidak tahu.'),
             ('王大文', '我們問老師吧。', 'Kita tanya guru saja.'),
             ('李美美', '好。你有筆和紙嗎？', 'Oke. Kamu punya pena dan kertas?'),
             ('王大文', '有，我有兩枝筆。你用這枝。', 'Ada, aku punya dua pena. Kamu pakai yang ini.'),
@@ -61,8 +61,8 @@ BARU = {
             ('陳老師', '這是「書」。你看，這是一本書。', 'Ini "書". Lihat, ini sebuah buku.'),
             ('王大文', '懂！這個字怎麼寫？', 'Mengerti! Huruf ini ditulis bagaimana?'),
             ('陳老師', '你們看這張紙，我寫。', 'Lihat kertas ini, saya tuliskan.'),
-            ('李美美', '謝謝老師！', 'Terima kasih, Bu!'),
-            ('陳老師', '不懂，你們再問我。', 'Kalau tidak mengerti, tanya saya lagi.'),
+            ('李美美', '懂了！謝謝老師。', 'Mengerti! Terima kasih, Bu.'),
+            ('陳老師', '有不懂的，你們再問我。', 'Kalau ada yang tidak dimengerti, tanya saya lagi.'),
         ]),
     ]),
     'A16': ('Jam dua belas siang Dawen lapar sekali karena tidak pernah sarapan. Mereka makan siang bersama, dan '
@@ -71,12 +71,12 @@ BARU = {
             ('王大文', '美美，我很餓！我們去吃午餐吧。', 'Meimei, aku lapar sekali! Ayo kita makan siang.'),
             ('李美美', '好！你不吃早餐嗎？', 'Oke! Kamu tidak sarapan?'),
             ('王大文', '我早上不餓，我不吃早餐。', 'Pagi hari aku tidak lapar, aku tidak sarapan.'),
-            ('李美美', '你應該吃早餐！我早餐吃蛋，喝牛奶。', 'Kamu harus sarapan! Aku sarapan telur dan minum susu.'),
+            ('李美美', '你應該要吃早餐！我早餐吃了蛋，喝牛奶。', 'Kamu harus sarapan! Tadi aku sarapan telur dan minum susu.'),
         ]),
         ('吃午餐', 'Makan siang', [
             ('李美美', '你想吃什麼？', 'Kamu mau makan apa?'),
             ('王大文', '我想吃雞肉和飯。你呢？', 'Aku mau makan daging ayam dan nasi. Kamu?'),
-            ('李美美', '我不吃肉，我吃魚和菜，也喝湯。', 'Aku tidak makan daging, aku makan ikan dan sayur, juga minum sup.'),
+            ('李美美', '我不吃肉，我吃菜，也喝湯。', 'Aku tidak makan daging, aku makan sayur, juga minum sup.'),
             ('王大文', '……我很飽！晚餐我不吃！', '…Aku kenyang sekali! Makan malam aku tidak makan!'),
             ('李美美', '不吃晚餐？晚上你一定很餓！', 'Tidak makan malam? Malam nanti kamu pasti lapar sekali!'),
         ]),
@@ -95,11 +95,9 @@ BARU = {
         ('吃麵的時候', 'Saat makan mi', [
             ('王大文', '美美，牛肉麵怎麼吃？', 'Meimei, mi daging sapi dimakan bagaimana?'),
             ('李美美', '你先吃麵，然後喝湯。', 'Makan minya dulu, lalu minum kuahnya.'),
-            ('王大文', '好吃！美美，包子是麵包嗎？', 'Enak! Meimei, bakpao itu roti?'),
-            ('李美美', '不是，包子是臺灣的小吃。你吃一個吧！', 'Bukan, bakpao itu jajanan Taiwan. Coba makan satu!'),
-            ('王大文', '好吃！我再吃一個！', 'Enak! Aku makan satu lagi!'),
-            ('李美美', '大文，別吃太快！慢一點！', 'Dawen, jangan makan terlalu cepat! Pelan-pelan!'),
-            ('王大文', '這個餐廳很好。明天我們跟陳老師一起吃吧！', 'Restoran ini bagus. Besok kita makan di sini bersama Guru Chen, yuk!'),
+            ('王大文', '哇，好吃！臺灣的牛肉麵很好吃，我也喜歡臺灣的麵包。', 'Wah, enak! Mi daging sapi Taiwan enak sekali, aku juga suka roti Taiwan.'),
+            ('李美美', '別吃太快！我吃飯很慢。', 'Jangan makan terlalu cepat! Aku makannya pelan.'),
+            ('王大文', '這個餐廳的菜很好吃。明天我們跟陳老師一起去吧！', 'Masakan restoran ini enak sekali. Besok kita pergi ke sini bersama Guru Chen, yuk!'),
         ]),
     ]),
     'A18': ('Sebelum ujian Dawen membeli pena di toko dekat kampus: menanyakan harga, memilih yang murah, membayar, '
@@ -179,7 +177,7 @@ BARU = {
     'A22': ('Dawen merasa tidak enak badan di kampus: kepala, mata, dan hidungnya tidak nyaman. Saat istirahat ia '
             'makin lemas, sampai tidak bisa mendengar Meimei dengan jelas.', [
         ('在學校', 'Di kampus', [
-            ('李美美', '大文，你今天怎麼樣？', 'Dawen, hari ini kamu bagaimana?'),
+            ('李美美', '大文，你今天怎麼了？', 'Dawen, hari ini kamu kenapa?'),
             ('王大文', '我不舒服，我頭很痛。', 'Aku tidak enak badan, kepalaku sakit sekali.'),
             ('李美美', '你感冒了嗎？', 'Kamu masuk angin?'),
             ('王大文', '可能是。我很累，眼睛也很痛。', 'Mungkin. Aku capek sekali, mataku juga sakit.'),
@@ -221,8 +219,8 @@ BARU = {
             ('李美美', '今天？太熱了！走路很累。', 'Hari ini? Terlalu panas! Jalan kaki capek sekali.'),
             ('王大文', '可是山上空氣很好，花也很漂亮。', 'Tapi di gunung udaranya segar, bunganya juga cantik.'),
             ('李美美', '星期六天氣不熱，我們星期六去吧！現在我們去喝冰茶。', 'Hari Sabtu cuacanya tidak panas, kita pergi hari Sabtu saja! Sekarang kita minum teh dingin.'),
-            ('王大文', '好！星期六下雨嗎？', 'Oke! Hari Sabtu hujan?'),
-            ('李美美', '不下雨。', 'Tidak hujan.'),
+            ('王大文', '好！星期六會下雨嗎？', 'Oke! Hari Sabtu akan hujan?'),
+            ('李美美', '不會下雨。', 'Tidak akan hujan.'),
         ]),
         ('星期六，在山上', 'Hari Sabtu, di gunung', [
             ('王大文', '山上好冷！風很大！', 'Di gunung dingin sekali! Anginnya kencang sekali!'),
