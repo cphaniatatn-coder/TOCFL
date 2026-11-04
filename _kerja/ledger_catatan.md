@@ -103,3 +103,49 @@
   你感冒。, 你很早！, 多大年紀 untuk 21 tahun, 從明年起…畢業, 咖啡店的工人), adegan tak konsisten (B27 mengajak ke
   夜市 padahal sudah di sana; A25 telepon siang & malam dipisah jadi dua dialog). Dialog hasil edit Carli (A01–A08,
   A11, A12, A14, A15, B01) TIDAK diubah. Soal: 你很早！→你好早！ (A10), 從明年起，你就要畢業了→你明年就要畢業了吧？ (C33).
+
+## Revisi Vol.1 berdasarkan laporan review Carli (2026-11-04, pilot)
+Sumber: 《TOCFL 模組 Vol.1–3 對話審查報告》 + koreksi level TBCL. Semua dialog A01–A25 kini di `_kerja/cerita_vol1.py`.
+- Tokoh tetap: keluarga Dawen di Indonesia (5 orang, 姊姊 = 王小文, tanpa adik); keluarga Meimei di 臺中 (4 orang,
+  adik 小明, tanpa kakak); Meimei = teman sekelas orang Taiwan; Dawen di A08/A09 tinggal di asrama.
+- Kosakata dipindah (masih Level 1): 打 A25 核心 → A06 補充; 長1/短 A07 核心 → A07 補充 (tidak muncul wajar di dialog).
+- Ditambah sebagai 補充 di luar TBCL (`kata_tambahan.json`): nama diri 印尼/美國/日本 (A02), 臺北/臺中 (A08);
+  ungkapan tetap 好吃 (A16), 好看 (A19) — pola 好+V tetap diajarkan di B26.
+- Usulan laporan yang TIDAK diikuti karena bertentangan dengan level TBCL: 照片 ke A03 (L2), 雙 ke A19 (L2),
+  也 ke A05 (diganti 我十九歲). 出去 (A21) dipertahankan sebagai ungkapan + 💡 (pola V+出+去 di B32) agar
+  kata inti 出 tetap muncul.
+- 了 di A0 dibuang kecuali ungkapan tetap 感冒了/生病了 (A22) dan 下雨了 (A24), masing-masing diberi 💡.
+  Entri lama di `cek_diterima.txt` untuk A05/A06/A10/A13/A16/A17/A22/A24 yang tak terpakai lagi dihapus.
+- Catatan 💡 kata fungsi (kata L1, pola L2/L3) di `_kerja/catatan_kata.json`: A13–A25.
+- Daftar "pola dari bab sebelumnya" (recycle) A14–A25 dibersihkan dari pola yang belum diajarkan.
+- Tokoh baru 美國學生 (A02) = suara M2.
+
+## Revisi Vol.2 berdasarkan laporan review Carli (2026-11-04)
+Perubahan per baris tercatat di `_kerja/revisi_vol2.py` (sudah dijalankan; cerita_vol2.py ditulis ulang urut kode).
+- Tokoh: atasan Dawen B11 = 黃先生 (suara M2; C16 menyusul di revisi Vol.3); kakak tingkat B16 = 高安安.
+- Alur: B18 salju di awal musim dingin + peringatan Meimei diucapkan di adegan 1; B22 janji 'beli sedikit' diucapkan
+  dulu; B29 Dawen yang memperkirakan jarak; B32 buku dititipkan (bukan bayar); B33 adegan 2 = seminggu kemudian;
+  B27 Situasi → rumah Dawen; judul B40 → 因為我生病了…; B46 dialog → 就去臺灣念書.
+- Pola L2/L3 yang dihindari sebelum babnya: 好不好 (C25), …，好嗎？/怎麼樣 (B28), V的 (B07), PW+V著+N (C06),
+  konstruksi 把 (C03), V一下 & V一V (C02/C44) di B08/B17/B20, 不太 (C18), VP的N (B42), 會 'akan' (B18).
+- Dipertahankan + 💡 (`catatan_kata.json`): 在+V di B02, 一下/快沒電啦 di B04, 你太客氣啦 di B05, 把 (kata bantu
+  bilangan) di B09, 支/枝 di B21, V了+jumlah di B22 (keputusan Carli: jelaskan di B22), 讓 di B35, 地 di B43 —
+  讓 dan 地 adalah kata TBCL Level 2, jadi tetap diperlihatkan di dialog walau polanya baru di C26/C43.
+- Kosakata: 濕 dihapus dari B20 (resmi TBCL Level 3, entri 溼/濕 di C11); 家 'kata bantu bilangan toko' pindah B28 → B17
+  (pemakaian pertama 這家書店). Ditambah di luar TBCL: 球場 (B03), 哪裡哪裡 (B15); nama diri 雅加達 (B06), 高雄 (B19), 淡水 (B33).
+
+## Revisi Vol.3 berdasarkan laporan review Carli (2026-11-04)
+Perubahan per baris tercatat di `_kerja/revisi_vol3.py` (sudah dijalankan). Ke-67 bab kini di `cerita_vol3.py`;
+pilot C24 C30 C44 C61 C63 C64 dipindah dari dialog_cerita.py (BARU di sana kini kosong).
+- Tokoh: C12 pewawancara = 張小姐 (suara F1); C16 atasan = 黃先生 (sama dengan B11); C33 陳教授 → 林教授 (juga di soal C33).
+- Konsistensi cerita: C07 Dawen dua malam tidak tidur di ranjang (pola judul kini logis); C09 desa = rumah nenek
+  (Dawen orang Jakarta); C13 foto Imlek masa kecil Meimei; C15 cita-cita tetap guru Mandarin; C18 Meimei 'akhir-akhir
+  ini jarang' menonton film; C22 tiket pesawat (orang Indonesia tidak perlu visa pulang — 簽證 dipakai di baris itu);
+  C25 pesta ulang tahun Annie (bukan di rumahnya); C27 laporan berikutnya; C30 'dulu kamu bilang sibuk'; C41 bukan
+  musim dingin pertama; C44 sweter terlalu GELAP (C41 beli yang hitam) → biru muda; C56 Imlek tahun lalu di rumah
+  Meimei, siapa datang duluan membantu memasak.
+- Judul diubah agar sesuai dialog: C12, C31, C33, C56, C60.
+- Kewajaran: 包 (tisu), 美麗 → 好美, 一切, 主人 (pemilik kucing), 換了, 住慣/吃慣, stereotip C55 diganti candaan 不自由.
+- Pola yang dihindari sebelum babnya: 還是…吧 (C21), 好好 (C08), V一V (C30).
+- Kosakata: 已 (C01) & 子 (C14) dipindah ke 補充 (bentuk tulis/morfem, tidak wajar di dialog). Di luar TBCL: 炒飯 (C01),
+  數學 (C37), 小偷 (C52), 小說 (C61), 吃到飽 (C65); nama diri 陽明山 (C17), 故宮 (C19), 綠島 (C23), 北投 (C24).

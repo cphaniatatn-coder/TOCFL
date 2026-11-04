@@ -48,6 +48,11 @@ def main():
             for b in (b for bl in v.values() for b in bl):
                 for t in b['note'] + ([b['point']] if 'point' in b else []):
                     buku[t['id']] = t['en']
+    for code, v in json.loads((K / 'catatan_kata.json').read_text(encoding='utf-8')).items():
+        if not code.startswith('_'):
+            for b in v:
+                for t in b['note'] + [b['point']]:
+                    buku[t['id']] = t['en']
     dipakai, kurang = set(), {}
 
     def tr(s):

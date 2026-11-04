@@ -21,7 +21,7 @@
    {"sp": "李美美", "zh": "跟可樂一樣甜！", "py": "Gēn kě lè yí yàng tián!", "id": "Semanis cola!"},
    {"sp": "王大文", "zh": "那我要紅茶。這裡有啤酒嗎？", "py": "Nà wǒ yào hóng chá. Zhè lǐ yǒu pí jiǔ ma?", "id": "Kalau begitu aku teh hitam. Di sini ada bir?"},
    {"sp": "店員", "zh": "對不起，我們不賣啤酒。我們也有果汁和汽水。", "py": "Duì bù qǐ, wǒ men bú mài pí jiǔ. Wǒ men yě yǒu guǒ zhī hàn qì shuǐ.", "id": "Maaf, kami tidak jual bir. Kami juga ada jus dan soda."},
-   {"sp": "李美美", "zh": "我要一杯西瓜的果汁。", "py": "Wǒ yào yì bēi xī guā de guǒ zhī.", "id": "Aku mau segelas jus semangka."}
+   {"sp": "李美美", "zh": "我要一杯西瓜果汁。", "py": "Wǒ yào yì bēi xī guā guǒ zhī.", "id": "Aku mau segelas jus semangka."}
   ]},
   {"place": "在水果店", "title_id": "Di toko buah", "lines": [
    {"sp": "王大文", "zh": "老闆，這裡的蘋果好吃嗎？", "py": "Lǎo bǎn, zhè lǐ de píng guǒ hǎo chī ma?", "id": "Pak, apel di sini enak?"},
@@ -201,7 +201,7 @@
    "code": "B27",
    "title_py": "Lǎo bǎn, wǒ yào liǎng ge mán tou.",
    "title_id": "Pak, saya mau dua mantou.",
-   "scene": "Malam hari di pasar malam: Dawen dan Meimei membeli pangsit dan mantou untuk dibawa ke asrama Meimei, lalu merencanakan sarapan besok pagi di pasar.",
+   "scene": "Malam hari di pasar malam: Dawen dan Meimei membeli pangsit dan mantou untuk dibawa pulang ke rumah Dawen, lalu merencanakan sarapan besok pagi di pasar.",
    "can_do": [
     "Menyatakan rencana dengan 要 (我要去夜市)",
     "Menyatakan arah tindakan dengan V來／V去 (帶去、買來)",
@@ -409,12 +409,6 @@
     "Memakai 家/間 sebagai kata bantu bilangan untuk restoran dan toko"
    ],
    "exam_link": "Usulan & tanggapan (怎麼樣／好嗎) adalah pola SERING di 聽力 Part 4; jawaban penolakan sering tersirat ('那麼貴！').",
-   "vocab_override": {
-    "家": {
-     "meaning": "kata bantu bilangan untuk toko/restoran/perusahaan",
-     "pos": "M"
-    }
-   },
    "dialogs": [
   {"place": "在學校", "title_id": "Di kampus", "lines": [
    {"sp": "李美美", "zh": "大文，週末我們去那家餐廳吃飯，怎麼樣？", "py": "Dà wén, zhōu mò wǒ men qù nà jiā cān tīng chī fàn, zěn me yàng?", "id": "Dawen, akhir pekan kita makan di restoran itu, bagaimana?"},
@@ -424,11 +418,11 @@
    {"sp": "李美美", "zh": "好！", "py": "Hǎo!", "id": "Oke!"}
   ]},
   {"place": "在餐廳", "title_id": "Di restoran", "lines": [
-   {"sp": "王大文", "zh": "這間餐廳這麼大！人也那麼多！", "py": "Zhè jiān cān tīng zhè me dà! Rén yě nà me duō!", "id": "Restoran ini besar sekali! Orangnya juga banyak sekali!"},
-   {"sp": "李美美", "zh": "我們先看菜單吧。你要吃飯或是吃麵？", "py": "Wǒ men xiān kàn cài dān ba. Nǐ yào chī fàn huò shì chī miàn?", "id": "Kita lihat menu dulu. Kamu mau makan nasi atau mi?"},
+   {"sp": "王大文", "zh": "這間餐廳這麼大！人也這麼多！", "py": "Zhè jiān cān tīng zhè me dà! Rén yě zhè me duō!", "id": "Restoran ini besar sekali! Orangnya juga banyak sekali!"},
+   {"sp": "李美美", "zh": "我們先看菜單吧。你要吃飯還是吃麵？", "py": "Wǒ men xiān kàn cài dān ba. Nǐ yào chī fàn hái shì chī miàn?", "id": "Kita lihat menu dulu. Kamu mau makan nasi atau mi?"},
    {"sp": "王大文", "zh": "我要牛肉麵。你要吃別的嗎？", "py": "Wǒ yào niú ròu miàn. Nǐ yào chī bié de ma?", "id": "Aku mi daging sapi. Kamu mau yang lain?"},
    {"sp": "李美美", "zh": "我要餃子。我好餓！今天我只吃了一餐。", "py": "Wǒ yào jiǎo zi. Wǒ hǎo è! Jīn tiān wǒ zhǐ chī le yì cān.", "id": "Aku pangsit. Aku lapar sekali! Hari ini aku baru makan sekali."},
-   {"sp": "王大文", "zh": "吃飯以後，我們去茶館喝茶，好嗎？", "py": "Chī fàn yǐ hòu, wǒ men qù chá guǎn hē chá, hǎo ma?", "id": "Habis makan, kita minum teh di kedai teh, ya?"},
+   {"sp": "王大文", "zh": "吃飯以後，我們去茶館或是咖啡店，好嗎？", "py": "Chī fàn yǐ hòu, wǒ men qù chá guǎn huò shì kā fēi diàn, hǎo ma?", "id": "Habis makan, kita ke kedai teh atau kedai kopi, ya?"},
    {"sp": "李美美", "zh": "好啊。可是那家飯店的茶館那麼貴，我們去別的吧。", "py": "Hǎo a. Kě shì nà jiā fàn diàn de chá guǎn nà me guì, wǒ men qù bié de ba.", "id": "Boleh. Tapi kedai teh di hotel itu mahal sekali, kita cari yang lain saja."}
   ]}
  ],
@@ -590,7 +584,7 @@
    "code": "B29",
    "title_py": "Chē zhàn lí zhè lǐ yuǎn bù yuǎn?",
    "title_id": "Stasiun jauh tidak dari sini?",
-   "scene": "Meimei tiba dengan kereta jam lima. Annie dan Dawen memperkirakan jarak ke stasiun dari peta, tetapi ternyata perjalanannya jauh lebih lama daripada yang Dawen katakan.",
+   "scene": "Meimei tiba dengan kereta jam lima. Dawen melihat peta dan bilang stasiunnya dekat, tetapi ternyata perjalanannya jauh lebih lama daripada yang ia katakan kepada Annie.",
    "can_do": [
     "Menanyakan dan menyatakan jarak: A 離 B 遠/近",
     "Menyatakan titik awal perjalanan: 從 + tempat + V",
@@ -606,17 +600,19 @@
    "dialogs": [
   {"place": "看地圖", "title_id": "Melihat peta", "lines": [
    {"sp": "安妮", "zh": "大文，美美幾點到車站？", "py": "Dà wén, Měi měi jǐ diǎn dào chē zhàn?", "id": "Dawen, Meimei sampai di stasiun jam berapa?"},
-   {"sp": "王大文", "zh": "五點。車站離這裡遠不遠？", "py": "Wǔ diǎn. Chē zhàn lí zhè lǐ yuǎn bù yuǎn?", "id": "Jam lima. Stasiunnya jauh dari sini?"},
-   {"sp": "安妮", "zh": "你看地圖，不遠，很近。", "py": "Nǐ kàn dì tú, bù yuǎn, hěn jìn.", "id": "Lihat peta, tidak jauh, dekat sekali."},
-   {"sp": "王大文", "zh": "從這裡走路要多久？", "py": "Cóng zhè lǐ zǒu lù yào duō jiǔ?", "id": "Dari sini jalan kaki berapa lama?"},
-   {"sp": "安妮", "zh": "十分鐘吧。", "py": "Shí fēn zhōng ba.", "id": "Sepuluh menit, mungkin."},
-   {"sp": "王大文", "zh": "那我們四點半離開，好嗎？", "py": "Nà wǒ men sì diǎn bàn lí kāi, hǎo ma?", "id": "Kalau begitu kita berangkat jam setengah lima, ya?"}
+   {"sp": "王大文", "zh": "五點。", "py": "Wǔ diǎn.", "id": "Jam lima."},
+   {"sp": "安妮", "zh": "車站離這裡遠不遠？", "py": "Chē zhàn lí zhè lǐ yuǎn bù yuǎn?", "id": "Stasiunnya jauh tidak dari sini?"},
+   {"sp": "王大文", "zh": "你看地圖，不遠，很近。", "py": "Nǐ kàn dì tú, bù yuǎn, hěn jìn.", "id": "Lihat peta, tidak jauh, dekat sekali."},
+   {"sp": "安妮", "zh": "從這裡走路要多久？", "py": "Cóng zhè lǐ zǒu lù yào duō jiǔ?", "id": "Dari sini jalan kaki berapa lama?"},
+   {"sp": "王大文", "zh": "十分鐘吧。", "py": "Shí fēn zhōng ba.", "id": "Sepuluh menit, mungkin."},
+   {"sp": "安妮", "zh": "那我們四點半離開，好嗎？", "py": "Nà wǒ men sì diǎn bàn lí kāi, hǎo ma?", "id": "Kalau begitu kita berangkat jam setengah lima, ya?"},
+   {"sp": "王大文", "zh": "好！", "py": "Hǎo!", "id": "Oke!"}
   ]},
   {"place": "在街上", "title_id": "Di jalan", "lines": [
    {"sp": "安妮", "zh": "我們走了二十分鐘，車站呢？", "py": "Wǒ men zǒu le èr shí fēn zhōng, chē zhàn ne?", "id": "Kita sudah jalan dua puluh menit, stasiunnya mana?"},
    {"sp": "王大文", "zh": "先生，請問車站離這裡遠嗎？", "py": "Xiān shēng, qǐng wèn chē zhàn lí zhè lǐ yuǎn ma?", "id": "Pak, permisi, stasiunnya jauh dari sini?"},
    {"sp": "先生", "zh": "不遠。你們從這條街走，過馬路就是車站。", "py": "Bù yuǎn. Nǐ men cóng zhè tiáo jiē zǒu, guò mǎ lù jiù shì chē zhàn.", "id": "Tidak jauh. Kalian lewat jalan ini, menyeberang jalan raya langsung stasiun."},
-   {"sp": "安妮", "zh": "地圖上很近，可是走路好遠啊！", "py": "Dì tú shàng hěn jìn, kě shì zǒu lù hǎo yuǎn a!", "id": "Di peta dekat, tapi jalan kakinya jauh sekali!"},
+   {"sp": "安妮", "zh": "大文，你說很近，可是走路好遠啊！", "py": "Dà wén, nǐ shuō hěn jìn, kě shì zǒu lù hǎo yuǎn a!", "id": "Dawen, katamu dekat, tapi jalan kakinya jauh sekali!"},
    {"sp": "王大文", "zh": "哪有很遠？只有二十分鐘！", "py": "Nǎ yǒu hěn yuǎn? Zhǐ yǒu èr shí fēn zhōng!", "id": "Mana ada jauh? Cuma dua puluh menit!"},
    {"sp": "安妮", "zh": "快走吧，美美在等我們！", "py": "Kuài zǒu ba, Měi měi zài děng wǒ men!", "id": "Ayo cepat, Meimei sedang menunggu kita!"}
   ]}
@@ -817,10 +813,10 @@
   ]},
   {"place": "晚上，打電話", "title_id": "Malam hari, menelepon", "lines": [
    {"sp": "李美美", "zh": "大文，你回到家了嗎？", "py": "Dà wén, nǐ huí dào jiā le ma?", "id": "Dawen, kamu sudah sampai di rumah?"},
-   {"sp": "王大文", "zh": "回到了！可是我回家的路走錯了。", "py": "Huí dào le! Kě shì wǒ huí jiā de lù zǒu cuò le.", "id": "Sudah! Tapi jalan pulangku salah."},
+   {"sp": "王大文", "zh": "回到家了！可是我走錯路了。", "py": "Huí dào jiā le! Kě shì wǒ zǒu cuò lù le.", "id": "Sudah sampai! Tapi aku salah jalan."},
    {"sp": "李美美", "zh": "你從圖書館往哪裡走？", "py": "Nǐ cóng tú shū guǎn wǎng nǎ lǐ zǒu?", "id": "Dari perpustakaan kamu jalan ke arah mana?"},
    {"sp": "王大文", "zh": "我往左走，走到夜市，在夜市吃了東西，然後回家。", "py": "Wǒ wǎng zuǒ zǒu, zǒu dào yè shì, zài yè shì chī le dōng xi, rán hòu huí jiā.", "id": "Aku jalan ke kiri, sampai di pasar malam, makan dulu di pasar malam, lalu pulang."},
-   {"sp": "李美美", "zh": "你走錯的路很好吃啊！", "py": "Nǐ zǒu cuò de lù hěn hǎo chī a!", "id": "Jalan salahmu enak juga ya!"}
+   {"sp": "李美美", "zh": "你走錯路，可是吃了很多好吃的！", "py": "Nǐ zǒu cuò lù, kě shì chī le hěn duō hǎo chī de!", "id": "Kamu salah jalan, tapi makan banyak yang enak!"}
   ]}
  ],
    "tasks": [
@@ -1212,7 +1208,7 @@
    "code": "B32",
    "title_py": "Kuài shàng chē! Wǒ men qù jī chǎng.",
    "title_id": "Cepat naik! Kita ke bandara.",
-   "scene": "Dawen pulang ke Indonesia untuk liburan. Meimei mengantarnya ke bandara naik taksi; di bandara koper Dawen kelebihan berat dan ia harus menambah biaya.",
+   "scene": "Dawen pulang ke Indonesia untuk liburan. Meimei mengantarnya ke bandara naik taksi; di bandara koper Dawen kelebihan berat, jadi ia menitipkan beberapa buku kepada Meimei.",
    "can_do": [
     "Menyatakan gerak berarah: 上車、回去拿、放進來、走過去",
     "Membicarakan penerbangan (飛機幾點飛？還早)",
@@ -1229,11 +1225,12 @@
   ]},
   {"place": "在機場", "title_id": "Di bandara", "lines": [
    {"sp": "王大文", "zh": "飛機幾點飛？", "py": "Fēi jī jǐ diǎn fēi?", "id": "Pesawatnya terbang jam berapa?"},
-   {"sp": "李美美", "zh": "十點。現在八點，還早。", "py": "Shí diǎn. Xiàn zài bā diǎn, hái zǎo.", "id": "Jam sepuluh. Sekarang jam delapan, masih pagi."},
+   {"sp": "李美美", "zh": "十點。現在七點，還早。", "py": "Shí diǎn. Xiàn zài qī diǎn, hái zǎo.", "id": "Jam sepuluh. Sekarang jam tujuh, masih lama."},
    {"sp": "小姐", "zh": "先生，你的東西太重了，要加錢。", "py": "Xiān shēng, nǐ de dōng xi tài zhòng le, yào jiā qián.", "id": "Pak, barang Anda terlalu berat, harus tambah biaya."},
    {"sp": "王大文", "zh": "要加多少錢？", "py": "Yào jiā duō shǎo qián?", "id": "Tambah berapa?"},
    {"sp": "小姐", "zh": "五百塊。", "py": "Wǔ bǎi kuài.", "id": "Lima ratus."},
-   {"sp": "王大文", "zh": "美美，這幾本書你帶回去吧。", "py": "Měi měi, zhè jǐ běn shū nǐ dài huí qù ba.", "id": "Meimei, buku-buku ini kamu bawa pulang saja ya."},
+   {"sp": "王大文", "zh": "五百塊？好貴！美美，這幾本書你帶回去吧。", "py": "Wǔ bǎi kuài? Hǎo guì! Měi měi, zhè jǐ běn shū nǐ dài huí qù ba.", "id": "Lima ratus? Mahal sekali! Meimei, buku-buku ini kamu bawa pulang saja ya."},
+   {"sp": "小姐", "zh": "好，現在不重了。", "py": "Hǎo, xiàn zài bú zhòng le.", "id": "Baik, sekarang tidak berat lagi."},
    {"sp": "李美美", "zh": "好！我們還有空，去喝咖啡吧。", "py": "Hǎo! Wǒ men hái yǒu kòng, qù hē kā fēi ba.", "id": "Oke! Kita masih ada waktu, ayo minum kopi."},
    {"sp": "王大文", "zh": "好。咖啡店在對面，我們走過去吧。", "py": "Hǎo. Kā fēi diàn zài duì miàn, wǒ men zǒu guò qù ba.", "id": "Oke. Kedai kopinya di seberang, kita jalan ke sana."}
   ]}
@@ -1420,7 +1417,7 @@
    {"sp": "安妮", "zh": "你們坐了幾個小時的飛機？", "py": "Nǐ men zuò le jǐ ge xiǎo shí de fēi jī?", "id": "Kalian naik pesawat berapa jam?"},
    {"sp": "王大文", "zh": "坐了五個小時。", "py": "Zuò le wǔ ge xiǎo shí.", "id": "Lima jam."}
   ]},
-  {"place": "下午", "title_id": "Sore hari", "lines": [
+  {"place": "一個星期以後", "title_id": "Seminggu kemudian", "lines": [
    {"sp": "李美美", "zh": "大文，你姊姊已經去了很多地方嗎？", "py": "Dà wén, nǐ jiě jie yǐ jīng qù le hěn duō dì fāng ma?", "id": "Dawen, kakakmu sudah pergi ke banyak tempat?"},
    {"sp": "王大文", "zh": "對，她剛剛從淡水回來。她本來以為臺灣很小，可是她說好玩的地方很多。", "py": "Duì, tā gāng gāng cóng Dàn shuǐ huí lái. Tā běn lái yǐ wéi Tái wān hěn xiǎo, kě shì tā shuō hǎo wán de dì fāng hěn duō.", "id": "Iya, dia baru saja kembali dari Tamsui. Awalnya dia kira Taiwan kecil, tapi katanya tempat seru banyak sekali."},
    {"sp": "李美美", "zh": "她會說中文嗎？", "py": "Tā huì shuō Zhōng wén ma?", "id": "Dia bisa bahasa Mandarin?"},

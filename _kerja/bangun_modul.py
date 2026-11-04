@@ -136,6 +136,8 @@ def cek_soal(code, t):
 
 # Catatan dari buku rujukan grammar (看圖學中文語法 基礎篇/進階篇) → grammar[i].catatan / modul.catatan
 CATATAN = {k: v for k, v in json.load(open(f'{K}/catatan_buku.json', encoding='utf-8')).items() if not k.startswith('_')}
+# Catatan 💡 kata fungsi A0 (kata L1, pola L2/L3; keputusan Carli 2026-11-04) → modul.catatan tanpa rujukan
+CATATAN_KATA = {k: v for k, v in json.load(open(f'{K}/catatan_kata.json', encoding='utf-8')).items() if not k.startswith('_')}
 
 
 def pasang_catatan(m):
@@ -150,6 +152,8 @@ def pasang_catatan(m):
             g['catatan'] = [blok(b) for b in c[f'g{i}']]
     if 'bab' in c:
         m['catatan'] = [blok(b) for b in c['bab']]
+    for b in CATATAN_KATA.get(m['code'], []):
+        m.setdefault('catatan', []).append({'point': b['point']['id'], 'note': [n['id'] for n in b['note']]})
     return masalah
 
 

@@ -395,8 +395,8 @@ const Modul = {
     // modul mini: catatan buku grammar & latihan tambahan tingkat bab (bab tanpa poin grammar, atau topik pendamping)
     const bab = (this.m.catatan || []).map(c => this.catatanHTML(c)).join('') + (this.m.latihan ? this.latihanHTML(this.m.latihan, 'b') : '');
     if (!this.m.grammar.length) return `
-      <div class="panel"><div class="panel-k">${T('No new pattern in this scene', 'Tidak ada pola baru di adegan ini')}</div>
-        <p>${T('This scene only adds vocabulary, on purpose. Patterns you reuse here:', 'Adegan ini sengaja hanya menambah kosakata. Pola yang kamu pakai ulang:')}</p>
+      <div class="panel"><div class="panel-k">${T('No new official grammar point in this scene', 'Tidak ada poin grammar resmi baru di adegan ini')}</div>
+        <p>${T('This scene focuses on vocabulary. Patterns from earlier scenes that you use again here:', 'Adegan ini berfokus pada kosakata. Pola dari bab sebelumnya yang kamu pakai lagi:')}</p>
         <ul class="examples">${(this.m.recycle || []).map((r, i) => `<li><span lang="zh-TW">${esc(r.zh)}</span>
           <button class="say-btn" onclick="Speech.say(Modul.m.recycle[${i}].zh)">${Pic.html('🔊', 'ic-xs')}</button><small>${esc(r.id)}</small></li>`).join('')}</ul></div>${bab}`;
     return `<p class="hint">${T('You have already used these patterns in the dialogue & tasks. Now let us take the blocks apart.', 'Pola ini sudah kamu pakai di dialog & tugas. Sekarang kita bongkar susunan baloknya.')}</p>
