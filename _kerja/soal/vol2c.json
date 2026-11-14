@@ -42,11 +42,11 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "這個菜是炒的還是炸的？",
    "options": [
-    "是炒菜。",
     "是炒的。",
+    "是炒菜。",
     "我炒的炸。"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Pilih salah satu: 炒的 (yang ditumis)."
   },
   {
@@ -60,15 +60,15 @@
      "label": "ayam goreng di piring"
     },
     {
-     "icon": "🍽️🥬",
-     "label": "sayur di piring"
-    },
-    {
      "icon": "🥣",
      "label": "mangkuk kosong"
+    },
+    {
+     "icon": "🍽️🥬",
+     "label": "sayur di piring"
     }
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "盤子 = piring; 青菜 = sayur hijau."
   },
   {
@@ -81,10 +81,10 @@
    },
    "options": [
     "這是烤魚。",
-    "這是炸雞。",
-    "這是炒青菜。"
+    "這是炒青菜。",
+    "這是炸雞。"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "炸 = menggoreng (banyak minyak)."
   },
   {
@@ -98,10 +98,10 @@
    "text": "這杯水裡有很多（　）。",
    "options": [
     "火腿",
-    "叉子",
-    "冰塊"
+    "冰塊",
+    "叉子"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "冰塊 = es batu."
   },
   {
@@ -129,12 +129,12 @@
    "question": "這位先生要拿什麼？",
    "options": [
     "刀子和盤子",
-    "盤子和叉子",
+    "湯匙",
     "只拿刀子",
-    "湯匙"
+    "盤子和叉子"
    ],
-   "answer": 1,
-   "why": "Piring tetap; pisau diganti 叉子 → 盤子和叉子. A: rencana awal yang dikoreksi. D tidak disebut."
+   "answer": 3,
+   "why": "Piring tetap; pisau diganti 叉子 → 盤子和叉子. A: rencana awal yang dikoreksi. B tidak disebut."
   }
  ],
  "B26": [
@@ -181,10 +181,10 @@
    "audio": "你妹妹多高？",
    "options": [
     "她多高。",
-    "她很妹妹。",
-    "跟我一樣高。"
+    "跟我一樣高。",
+    "她很妹妹。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "多 + Vs？ = seberapa …? → jawab dengan ukuran/perbandingan."
   },
   {
@@ -194,19 +194,19 @@
    "text": "他喝啤酒，她喝紅茶。",
    "options": [
     {
-     "icon": "👨🍺👩🍺",
-     "label": "keduanya bir"
+     "icon": "👨🍺👩🍵",
+     "label": "laki-laki bir, perempuan teh"
     },
     {
      "icon": "👨🍵👩🍺",
      "label": "laki-laki teh, perempuan bir"
     },
     {
-     "icon": "👨🍺👩🍵",
-     "label": "laki-laki bir, perempuan teh"
+     "icon": "👨🍺👩🍺",
+     "label": "keduanya bir"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "他 → 啤酒, 她 → 紅茶."
   },
   {
@@ -266,13 +266,13 @@
    ],
    "question": "這位小姐最可能喝什麼？",
    "options": [
-    "紅茶",
-    "汽水",
     "果汁",
+    "汽水",
+    "紅茶",
     "奶茶"
    ],
-   "answer": 2,
-   "why": "Tidak minum teh (A, D) maupun soda (B) → sisa tawaran 果汁."
+   "answer": 0,
+   "why": "Tidak minum teh (C, D) maupun soda (B) → sisa tawaran 果汁."
   }
  ],
  "B27": [
@@ -305,11 +305,11 @@
    },
    "question": "我們晚上去哪裡？",
    "options": [
-    "去夜市。",
+    "去超市。",
     "去餐廳。",
-    "去超市。"
+    "去夜市。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "夜市 = pasar malam."
   },
   {
@@ -332,19 +332,19 @@
    "text": "媽媽去市場買菜。",
    "options": [
     {
-     "icon": "👩🧺",
-     "label": "ibu belanja di pasar"
-    },
-    {
      "icon": "👩🍳",
      "label": "ibu memasak"
+    },
+    {
+     "icon": "👩🧺",
+     "label": "ibu belanja di pasar"
     },
     {
      "icon": "👩🏬",
      "label": "ibu di mal"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "市場 = pasar."
   },
   {
@@ -406,11 +406,11 @@
    "options": [
     "四十塊",
     "八十塊",
-    "一百二十塊",
-    "一百塊"
+    "一百塊",
+    "一百二十塊"
    ],
-   "answer": 2,
-   "why": "饅頭 40 + 餃子 80 = 120. A & B hanya satu jenis. D: salah hitung."
+   "answer": 3,
+   "why": "饅頭 40 + 餃子 80 = 120. A & B hanya satu jenis. C: salah hitung."
   }
  ],
  "B28": [
@@ -456,11 +456,11 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "我們去那家有名的餐廳，怎麼樣？",
    "options": [
-    "好啊，我也想去。",
+    "那家是餐廳。",
     "很有名的怎麼樣。",
-    "那家是餐廳。"
+    "好啊，我也想去。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "…，怎麼樣？ = bagaimana kalau …? → setuju/menolak."
   },
   {
@@ -494,11 +494,11 @@
     "label": "restoran terkenal, banyak pengunjung"
    },
    "options": [
-    "這家餐廳很有名。",
+    "這家餐廳很便宜。",
     "這家餐廳沒有人。",
-    "這家餐廳很便宜。"
+    "這家餐廳很有名。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "有名 = terkenal."
   },
   {
@@ -631,11 +631,11 @@
     "label": "rumah bersebelahan dengan sekolah"
    },
    "options": [
-    "我家離學校很近。",
     "我家離學校很遠。",
+    "我家離學校很近。",
     "我家在學校裡。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "近 = dekat."
   },
   {
@@ -649,10 +649,10 @@
    "text": "我早上七點（　）家。",
    "options": [
     "近",
-    "離開",
-    "離"
+    "離",
+    "離開"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "離開 = meninggalkan (kata kerja). 離 hanya untuk jarak."
   },
   {
@@ -680,12 +680,12 @@
    "question": "車站在哪裡？",
    "options": [
     "很遠的地方",
-    "馬路對面，很近",
+    "在這條街上",
     "要坐車去",
-    "在這條街上"
+    "馬路對面，很近"
    ],
-   "answer": 1,
-   "why": "過了馬路就是 + 走路五分鐘. A & C: kebalikan. D: harus menyeberang dulu."
+   "answer": 3,
+   "why": "過了馬路就是 + 走路五分鐘. A & C: kebalikan. B: harus menyeberang dulu."
   }
  ],
  "B30": [
@@ -749,16 +749,16 @@
      "label": "lurus"
     },
     {
-     "icon": "➡️",
-     "label": "belok kanan di perempatan"
-    },
-    {
      "icon": "⬅️",
      "label": "belok kiri"
+    },
+    {
+     "icon": "➡️",
+     "label": "belok kanan di perempatan"
     }
    ],
-   "answer": 1,
-   "why": "十字路口 = perempatan; 右 = kanan. A: jalan lurus = 往前走. C: belok kiri = 往左轉."
+   "answer": 2,
+   "why": "十字路口 = perempatan; 右 = kanan. A: jalan lurus = 往前走. B: belok kiri = 往左轉."
   },
   {
    "type": "read_pick",
@@ -818,12 +818,12 @@
    "question": "圖書館在哪裡？",
    "options": [
     "書店旁邊",
-    "書店對面",
+    "路口右邊的書店裡",
     "路口左邊",
-    "路口右邊的書店裡"
+    "書店對面"
    ],
-   "answer": 1,
-   "why": "在書店的對面. A: tebakan yang dikoreksi. C: arah salah (右轉). D tidak berdasar."
+   "answer": 3,
+   "why": "在書店的對面. A: tebakan yang dikoreksi. C: arah salah (右轉). B tidak berdasar."
   }
  ],
  "B31": [
@@ -870,10 +870,10 @@
    "audio": "從臺北到臺中，坐什麼比較快？",
    "options": [
     "從臺北很快。",
-    "坐火車比較快。",
-    "我是司機。"
+    "我是司機。",
+    "坐火車比較快。"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Ditanya kendaraan → 坐 + kendaraan."
   },
   {
@@ -1007,11 +1007,11 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "你的咖啡要加糖嗎？",
    "options": [
-    "要，加一點。",
+    "我要加咖啡。",
     "糖很加。",
-    "我要加咖啡。"
+    "要，加一點。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "加 = menambahkan."
   },
   {
@@ -1025,15 +1025,15 @@
      "label": "keluar dari kelas"
     },
     {
-     "icon": "🪑",
-     "label": "duduk di kelas"
-    },
-    {
      "icon": "🚶🏫",
      "label": "masuk ke kelas"
+    },
+    {
+     "icon": "🪑",
+     "label": "duduk di kelas"
     }
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "走進來 = berjalan masuk."
   },
   {
@@ -1094,12 +1094,12 @@
    "question": "飛機幾點飛？",
    "options": [
     "八點",
-    "十點",
+    "十二點",
     "兩點",
-    "十二點"
+    "十點"
    ],
-   "answer": 1,
-   "why": "十點. A = jam sekarang; C = selisih waktunya (兩個小時). D tidak disebut."
+   "answer": 3,
+   "why": "十點. A = jam sekarang; C = selisih waktunya (兩個小時). B tidak disebut."
   }
  ],
  "B33": [
@@ -1200,12 +1200,12 @@
    },
    "text": "我（　）他是日本人，他是韓國人。",
    "options": [
-    "以為",
     "已經",
+    "以為",
     "當然"
    ],
-   "answer": 0,
-   "why": "Kukira orang Jepang, ternyata Korea → 以為 (mengira, tapi salah). B: 已經 = sudah. C: 當然 = tentu saja."
+   "answer": 1,
+   "why": "Kukira orang Jepang, ternyata Korea → 以為 (mengira, tapi salah). A: 已經 = sudah. C: 當然 = tentu saja."
   },
   {
    "type": "listen_dialog",
@@ -1231,12 +1231,12 @@
    ],
    "question": "這位小姐今天怎麼來學校的？",
    "options": [
-    "坐公車",
+    "走路",
     "騎腳踏車",
-    "走路"
+    "坐公車"
    ],
-   "answer": 0,
-   "why": "我是坐公車來的 (karena hujan). B: dugaan (以為) si pria yang salah. C tidak disebut."
+   "answer": 2,
+   "why": "我是坐公車來的 (karena hujan). B: dugaan (以為) si pria yang salah. A tidak disebut."
   }
  ],
  "B34": [
@@ -1369,12 +1369,12 @@
    "question": "他們最可能在哪裡？",
    "options": [
     "山上",
-    "海的附近",
+    "車上",
     "河邊",
-    "車上"
+    "海的附近"
    ],
-   "answer": 1,
-   "why": "一下車就看到海 → dekat laut. D: mereka sudah 下車. A & C tidak disebut."
+   "answer": 3,
+   "why": "一下車就看到海 → dekat laut. B: mereka sudah 下車. A & C tidak disebut."
   }
  ],
  "B35": [
@@ -1458,11 +1458,11 @@
     "label": "dua teman bepergian"
    },
    "options": [
-    "我跟朋友一起去旅行。",
     "我不想去旅行。",
+    "我跟朋友一起去旅行。",
     "我一個人去旅行。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "跟…一起 = bersama …."
   },
   {
@@ -1507,11 +1507,11 @@
    "question": "誰去找住的地方？",
    "options": [
     "這位先生",
-    "這位先生的朋友",
-    "這位小姐"
+    "這位小姐",
+    "這位先生的朋友"
    ],
-   "answer": 1,
-   "why": "我讓朋友去找 (讓 = menyuruh). A: bukan ia sendiri. C tidak berdasar."
+   "answer": 2,
+   "why": "我讓朋友去找 (讓 = menyuruh). A: bukan ia sendiri. B tidak berdasar."
   }
  ]
 }

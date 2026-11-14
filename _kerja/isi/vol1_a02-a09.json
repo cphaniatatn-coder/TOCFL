@@ -29,94 +29,174 @@
  ],
    "tasks": [
     {
-     "type": "listen_reply",
+     "type": "listen_dialog",
      "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-     "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-     "audio": "你是哪國人？",
-     "options": [
-      "我是印尼人。",
-      "我叫安妮。",
-      "我說中文。"
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+     "lines": [
+      {
+       "sp": "女",
+       "zh": "請問，你是哪國人？"
+      },
+      {
+       "sp": "男",
+       "zh": "我是美國人。"
+      }
      ],
-     "answer": 0,
-     "why": "哪國人 menanyakan negara asal. B menjawab nama, C menjawab bahasa — satu tema perkenalan tapi bukan jawabannya."
+     "question": "這位先生是哪國人？",
+     "options": [
+      {
+       "icon": "👩🛂",
+       "label": "seorang nona dengan paspor USA",
+       "img": "A02-L4a"
+      },
+      {
+       "icon": "👨🛂",
+       "label": "seorang bapak dengan paspor JAPAN",
+       "img": "A02-L4b"
+      },
+      {
+       "icon": "👨🛂",
+       "label": "seorang bapak dengan paspor USA",
+       "img": "A02-L4c"
+      }
+     ],
+     "answer": 2,
+     "why": "Laki-laki menjawab 我是美國人 → bapak dengan paspor USA. A: paspornya benar, tetapi orangnya perempuan (yang bertanya). B: laki-laki, tetapi negaranya lain."
     },
     {
-     "type": "listen_reply",
+     "type": "listen_dialog",
      "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-     "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-     "audio": "他說英文嗎？",
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+     "lines": [
+      {
+       "sp": "男",
+       "zh": "這位小姐會說什麼話？"
+      },
+      {
+       "sp": "女",
+       "zh": "她會說日語。"
+      }
+     ],
+     "question": "這位小姐會說什麼話？",
      "options": [
-      "說，他說英文。",
-      "他是美國人。",
-      "我說中文。"
+      {
+       "icon": "👩💬",
+       "label": "seorang nona berkata \"こんにちは\" (bahasa Jepang)",
+       "img": "A02-L5a"
+      },
+      {
+       "icon": "👩💬",
+       "label": "seorang nona berkata \"Hello!\"",
+       "img": "A02-L5b"
+      },
+      {
+       "icon": "👨💬",
+       "label": "seorang bapak berkata \"こんにちは\"",
+       "img": "A02-L5c"
+      }
      ],
      "answer": 0,
-     "why": "Pertanyaan …嗎 dijawab dengan mengulang kata kerjanya: 說。 B tentang negara, C tentang diri sendiri (bukan 他)."
+     "why": "她會說日語 → nona yang berbahasa Jepang. B: perempuan, tetapi bahasa Inggris. C: bahasa Jepang, tetapi laki-laki."
     },
     {
      "type": "listen_dialog",
      "part": "聽力 Part 3 · Dialog beberapa putaran",
-     "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+     "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
      "lines": [
       {
-       "sp": "男",
-       "zh": "請問，妳是臺灣人嗎？"
-      },
-      {
        "sp": "女",
-       "zh": "我是日本人。"
+       "zh": "你好！請問，你是臺灣人嗎？"
       },
       {
        "sp": "男",
-       "zh": "妳說中文嗎？"
+       "zh": "我是印尼人。我會說印尼話和英文。"
       },
       {
        "sp": "女",
-       "zh": "說。"
+       "zh": "你會說中文嗎？"
+      },
+      {
+       "sp": "男",
+       "zh": "會，我會說中文。"
       }
      ],
-     "question": "這位小姐是哪國人？",
+     "question": "這位先生是哪國人？",
      "options": [
-      "臺灣人",
-      "日本人",
-      "印尼人"
+      {
+       "icon": "🛂",
+       "label": "paspor TAIWAN",
+       "img": "A02-L6a"
+      },
+      {
+       "icon": "🛂",
+       "label": "paspor INDONESIA",
+       "img": "A02-L6b"
+      },
+      {
+       "icon": "🛂",
+       "label": "paspor USA",
+       "img": "A02-L6c"
+      }
      ],
      "answer": 1,
-     "why": "Ia menjawab 我是日本人。 A: 臺灣人 hanya ada di pertanyaan si pria — jebakan kata yang terdengar lebih dulu. C: 印尼人 tidak disebut."
+     "why": "Laki-laki itu menjawab 我是印尼人。 A: 臺灣人 hanya ada di pertanyaan si perempuan. C: ia bisa berbahasa Inggris, tetapi itu tidak berarti ia orang Amerika."
     },
     {
-     "type": "read_mc",
-     "part": "閱讀 Part 5 · Pemahaman bacaan",
-     "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
-     "text": "我姓林，我叫林安妮。我是印尼人，我說印尼話、英文，我說中文。",
-     "question": "林安妮是哪國人？",
+     "type": "listen_dialog",
+     "part": "聽力 Part 4 · Dialog + makna tersirat",
+     "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+     "lines": [
+      {
+       "sp": "女",
+       "zh": "請問，你是臺灣人嗎？"
+      },
+      {
+       "sp": "男",
+       "zh": "我是韓國人。妳呢？"
+      },
+      {
+       "sp": "女",
+       "zh": "我是臺灣人。你會說中文嗎？"
+      },
+      {
+       "sp": "男",
+       "zh": "我會說韓國話和英文。"
+      }
+     ],
+     "question": "這位先生是外國人嗎？",
      "options": [
-      "臺灣人",
-      "印尼人",
-      "日本人",
-      "美國人"
+      "是，他是韓國人。",
+      "他是臺灣人。",
+      "是，他會說中文。",
+      "是，他會說日語。"
+     ],
+     "answer": 0,
+     "why": "Ia orang Korea yang berada di Taiwan, jadi ia orang asing (外國人); kata 外國人 tidak diucapkan di dialog. B: 臺灣人 adalah si perempuan. C: ditanya 會說中文嗎, ia hanya menyebut 韓國話和英文 — tidak mengatakan bisa bahasa Mandarin. D: 日語 tidak disebut."
+    },
+    {
+     "type": "read_sent",
+     "part": "閱讀 Part 1 · Kalimat → gambar",
+     "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+     "text": "他和她說中文。",
+     "options": [
+      {
+       "icon": "👨👩💬",
+       "label": "bapak berkata \"你好！\", nona berkata \"Hello!\"",
+       "img": "A02-L8b"
+      },
+      {
+       "icon": "👨👩💬",
+       "label": "bapak dan nona, keduanya berkata \"你好！\"",
+       "img": "A02-L8a"
+      },
+      {
+       "icon": "👨👨💬",
+       "label": "dua bapak, keduanya berkata \"你好！\"",
+       "img": "A02-L8c"
+      }
      ],
      "answer": 1,
-     "why": "Teks: 我是印尼人。 A: ia bisa bahasa Mandarin, tapi itu tidak menjadikannya orang Taiwan. C & D: tidak disebut."
-    },
-    {
-     "type": "cloze",
-     "part": "閱讀 Part 4 · Melengkapi paragraf",
-     "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-     "text": "請問，你是（1）國人？我是印尼人。你（2）？我是臺灣人。你說中文（3）？",
-     "options": [
-      "哪",
-      "呢",
-      "嗎",
-      "話"
-     ],
-     "answers": [
-      0,
-      1,
-      2
-     ],
-     "why": "(1) 哪國人 = negara mana. (2) 你呢 = 'kalau kamu?' (3) 嗎 mengubah kalimat jadi pertanyaan ya/tidak. 話 tidak cocok di titik mana pun."
+     "why": "他 (laki-laki) dan 她 (perempuan) sama-sama berbahasa Mandarin → B. A: si nona berbahasa Inggris. C: dua-duanya laki-laki, padahal tertulis 她."
     }
    ],
    "grammar": [
@@ -276,40 +356,9 @@
  ],
    "tasks": [
     {
-     "type": "listen_reply",
-     "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-     "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-     "audio": "這是誰？",
-     "options": [
-      "這是我哥哥。",
-      "這是我的。",
-      "他是印尼人。"
-     ],
-     "answer": 0,
-     "why": "誰 menanyakan ORANG: jawab dengan hubungan/nama. B menjawab kepemilikan benda, C menjawab asal negara."
-    },
-    {
-     "type": "listen_pic",
-     "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
-     "picture": {
-      "icon": "👩",
-      "label": "foto keluarga: ibu",
-      "img": "A03-1"
-     },
-     "question": "這是誰？",
-     "options": [
-      "這是我爸爸。",
-      "這是我媽媽。",
-      "這是我弟弟。"
-     ],
-     "answer": 1,
-     "why": "媽媽 = ibu. Pengecoh dari kategori yang sama (anggota keluarga): 爸爸, 弟弟."
-    },
-    {
      "type": "listen_dialog",
-     "part": "聽力 Part 3 · Dialog beberapa putaran",
-     "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+     "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
      "lines": [
       {
        "sp": "男",
@@ -318,57 +367,163 @@
       {
        "sp": "女",
        "zh": "那是我妹妹。"
+      }
+     ],
+     "question": "那是誰？",
+     "options": [
+      {
+       "icon": "👨‍👩‍👧‍👦",
+       "label": "foto keluarga, panah ke kakak perempuan",
+       "img": "A03-L4a"
+      },
+      {
+       "icon": "👨‍👩‍👧‍👦",
+       "label": "foto keluarga, panah ke adik laki-laki",
+       "img": "A03-L4b"
+      },
+      {
+       "icon": "👨‍👩‍👧‍👦",
+       "label": "foto keluarga, panah ke adik perempuan",
+       "img": "A03-L4c"
+      }
+     ],
+     "answer": 2,
+     "why": "Jawabannya 那是我妹妹 → adik perempuan. A: 姊姊 hanya ada di pertanyaan. B: adik, tetapi laki-laki (弟弟)."
+    },
+    {
+     "type": "listen_dialog",
+     "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+     "lines": [
+      {
+       "sp": "女",
+       "zh": "他們是誰？"
       },
       {
        "sp": "男",
-       "zh": "她叫什麼名字？"
+       "zh": "他們是我爸爸、媽媽。"
+      }
+     ],
+     "question": "他們是誰？",
+     "options": [
+      {
+       "icon": "🖼️",
+       "label": "foto ayah dan ibu",
+       "img": "A03-L5a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "foto kakak laki-laki dan kakak perempuan",
+       "img": "A03-L5b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "foto ayah dan adik laki-laki",
+       "img": "A03-L5c"
+      }
+     ],
+     "answer": 0,
+     "why": "他們是我爸爸、媽媽 → ayah dan ibu. B: kakak-kakak. C: ayahnya benar, tetapi yang satu adik laki-laki, bukan ibu."
+    },
+    {
+     "type": "listen_dialog",
+     "part": "聽力 Part 3 · Dialog beberapa putaran",
+     "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+     "lines": [
+      {
+       "sp": "女",
+       "zh": "這是你的家人嗎？"
+      },
+      {
+       "sp": "男",
+       "zh": "是，這是我媽媽。"
       },
       {
        "sp": "女",
-       "zh": "她叫李美美。"
+       "zh": "他是誰？是你爸爸嗎？"
+      },
+      {
+       "sp": "男",
+       "zh": "他是我哥哥。"
       }
      ],
-     "question": "李美美是誰？",
+     "question": "「他」是誰？",
      "options": [
-      "她的姊姊",
-      "她的妹妹",
-      "她的媽媽"
+      {
+       "icon": "👨‍👩‍👧‍👦",
+       "label": "foto keluarga, panah ke ayah",
+       "img": "A03-L6a"
+      },
+      {
+       "icon": "👨‍👩‍👧‍👦",
+       "label": "foto keluarga, panah ke kakak laki-laki",
+       "img": "A03-L6b"
+      },
+      {
+       "icon": "👨‍👩‍👧‍👦",
+       "label": "foto keluarga, panah ke adik laki-laki",
+       "img": "A03-L6c"
+      }
      ],
      "answer": 1,
-     "why": "Perempuan itu mengoreksi: 那是我妹妹. 姊姊 hanya ada di pertanyaan si pria."
+     "why": "Perempuan menebak 爸爸, tetapi laki-laki itu menjawab 他是我哥哥 → kakak laki-laki. A: 爸爸 hanya tebakan yang dibantah. C: adik laki-laki tidak disebut."
     },
     {
-     "type": "read_mc",
-     "part": "閱讀 Part 5 · Pemahaman bacaan",
-     "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
-     "text": "我叫王大文。這是我的家人：我爸爸、我媽媽、我哥哥，我姊姊。我們是印尼人。",
-     "question": "誰是大文的家人？",
+     "type": "listen_dialog",
+     "part": "聽力 Part 4 · Dialog + makna tersirat",
+     "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+     "lines": [
+      {
+       "sp": "女",
+       "zh": "你好！請問，你是誰？"
+      },
+      {
+       "sp": "男",
+       "zh": "我是小明。美美是我妹妹。"
+      },
+      {
+       "sp": "女",
+       "zh": "你們是臺灣人嗎？"
+      },
+      {
+       "sp": "男",
+       "zh": "是，我們是臺灣人。"
+      }
+     ],
+     "question": "這位先生是誰？",
      "options": [
-      "他的弟弟",
-      "他的姊姊",
-      "他的妹妹",
-      "李美美"
+      "美美的弟弟",
+      "美美的哥哥",
+      "美美的爸爸",
+      "陳小姐的哥哥"
      ],
      "answer": 1,
-     "why": "Yang disebut: ayah, ibu, 哥哥 dan 姊姊. 弟弟/妹妹 kategori mirip tapi tidak disebut; 李美美 temannya."
+     "why": "美美是我妹妹 → Meimei adiknya, jadi ia kakak laki-laki Meimei (美美的哥哥 tidak diucapkan langsung). A: kebalikannya. C: 爸爸 tidak disebut. D: tidak ada 陳小姐 di dialog."
     },
     {
-     "type": "cloze",
-     "part": "閱讀 Part 4 · Melengkapi paragraf",
-     "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-     "text": "這是（1）？這是我（2）家人。那是你媽媽（3）？",
+     "type": "read_sent",
+     "part": "閱讀 Part 1 · Kalimat → gambar",
+     "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+     "text": "那是我們的哥哥和姊姊。",
      "options": [
-      "誰",
-      "的",
-      "嗎",
-      "呢"
+      {
+       "icon": "🖼️",
+       "label": "foto kakak laki-laki dan kakak perempuan",
+       "img": "A03-L8a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "foto kakak laki-laki dan adik perempuan",
+       "img": "A03-L8b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "foto ayah dan ibu",
+       "img": "A03-L8c"
+      }
      ],
-     "answers": [
-      0,
-      1,
-      2
-     ],
-     "why": "(1) 誰 menanyakan orang. (2) 我的家人 = keluargaku. (3) pertanyaan ya/tidak → 嗎. 呢 tidak cocok (tidak ada topik sebelumnya)."
+     "answer": 0,
+     "why": "哥哥和姊姊 = kakak laki-laki dan kakak perempuan → A. B: yang perempuan adik (妹妹), bukan kakak. C: ayah dan ibu."
     }
    ],
    "grammar": [
@@ -480,91 +635,174 @@
  ],
    "tasks": [
     {
-     "type": "listen_pic",
-     "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
-     "picture": {
-      "icon": "👩👶👶",
-      "label": "seorang ibu dengan dua anak",
-      "img": "A04-1"
-     },
-     "question": "她有幾個孩子？",
+     "type": "listen_dialog",
+     "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+     "lines": [
+      {
+       "sp": "男",
+       "zh": "陳太太有幾個孩子？"
+      },
+      {
+       "sp": "女",
+       "zh": "她有三個女兒。"
+      }
+     ],
+     "question": "陳太太有幾個孩子？",
      "options": [
-      "她有一個孩子。",
-      "她有兩個孩子。",
-      "她有三個孩子。"
+      {
+       "icon": "🖼️",
+       "label": "seorang ibu dengan dua anak perempuan",
+       "img": "A04-L4a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "seorang ibu dengan tiga anak perempuan",
+       "img": "A04-L4b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "seorang ibu dengan tiga anak laki-laki",
+       "img": "A04-L4c"
+      }
      ],
      "answer": 1,
-     "why": "Di gambar ada dua anak → 兩個孩子 (sebelum kata bantu bilangan dipakai 兩, bukan 二). A: 一個 = satu. C: 三個 = tiga."
+     "why": "她有三個女兒 → tiga anak perempuan. A: jumlahnya dua. C: jumlahnya tiga, tetapi anak laki-laki (兒子)."
     },
     {
-     "type": "listen_reply",
+     "type": "listen_dialog",
      "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-     "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-     "audio": "你家有幾個人？",
-     "options": [
-      "我家有四個人。",
-      "我是四。",
-      "我家是印尼人。"
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+     "lines": [
+      {
+       "sp": "女",
+       "zh": "你有弟弟嗎？"
+      },
+      {
+       "sp": "男",
+       "zh": "有，我有兩個弟弟。"
+      }
      ],
-     "answer": 0,
-     "why": "幾個人 → jawab dengan angka + 個 + 人. B kehilangan 有/個; C menjawab kebangsaan."
+     "question": "這位先生有幾個弟弟？",
+     "options": [
+      {
+       "icon": "🖼️",
+       "label": "seorang pemuda dengan satu adik laki-laki",
+       "img": "A04-L5a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "seorang pemuda dengan dua adik perempuan",
+       "img": "A04-L5b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "seorang pemuda dengan dua adik laki-laki",
+       "img": "A04-L5c"
+      }
+     ],
+     "answer": 2,
+     "why": "我有兩個弟弟 → dua adik laki-laki. A: hanya satu. B: dua, tetapi perempuan (妹妹)."
     },
     {
      "type": "listen_dialog",
      "part": "聽力 Part 3 · Dialog beberapa putaran",
-     "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+     "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
      "lines": [
       {
        "sp": "男",
-       "zh": "你有哥哥嗎？"
+       "zh": "你家有幾個人？"
       },
       {
        "sp": "女",
-       "zh": "沒有，我有兩個姊姊，一個弟弟。"
+       "zh": "我家有六個人。"
+      },
+      {
+       "sp": "男",
+       "zh": "六個！你有幾個哥哥？"
+      },
+      {
+       "sp": "女",
+       "zh": "我沒有哥哥，我有三個姊姊。"
       }
      ],
      "question": "這位小姐有幾個姊姊？",
      "options": [
-      "一個",
-      "兩個",
-      "三個"
-     ],
-     "answer": 1,
-     "why": "我有兩個姊姊。 A: 一個 adalah jumlah 弟弟 (adik laki-laki). C: 三個 tidak disebut."
-    },
-    {
-     "type": "read_mc",
-     "part": "閱讀 Part 5 · Pemahaman bacaan",
-     "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
-     "text": "陳先生家有六個人：陳先生、陳太太，他們有四個孩子——三個兒子，一個女兒。",
-     "question": "陳先生有幾個女兒？",
-     "options": [
-      "一個",
-      "兩個",
-      "三個",
-      "四個"
+      {
+       "icon": "🖼️",
+       "label": "tiga kakak perempuan",
+       "img": "A04-L6a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "tiga kakak laki-laki",
+       "img": "A04-L6b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "enam orang (satu keluarga)",
+       "img": "A04-L6c"
+      }
      ],
      "answer": 0,
-     "why": "…三個兒子，一個女兒 → 一個女兒。 B: 兩個 tidak disebut. C: 三個 = jumlah anak laki-laki. D: 四個 = jumlah semua anak."
+     "why": "我沒有哥哥，我有三個姊姊 → tiga kakak perempuan. B: 哥哥 ditanyakan, tetapi jawabannya 沒有. C: 六 adalah jumlah seluruh keluarga."
     },
     {
-     "type": "cloze",
-     "part": "閱讀 Part 4 · Melengkapi paragraf",
-     "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-     "text": "我家有（1）個人。我有兩（2）哥哥，我（3）姊姊。",
+     "type": "listen_dialog",
+     "part": "聽力 Part 4 · Dialog + makna tersirat",
+     "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+     "lines": [
+      {
+       "sp": "女",
+       "zh": "陳先生，您有幾個孩子？"
+      },
+      {
+       "sp": "男",
+       "zh": "我有兩個兒子、一個女兒。"
+      },
+      {
+       "sp": "女",
+       "zh": "您太太是臺灣人嗎？"
+      },
+      {
+       "sp": "男",
+       "zh": "是，我們是臺灣人。"
+      }
+     ],
+     "question": "陳先生家有幾個人？",
      "options": [
-      "五",
-      "個",
-      "沒有",
-      "二"
+      "兩個人",
+      "三個人",
+      "五個人",
+      "四個人"
      ],
-     "answers": [
-      0,
-      1,
-      2
+     "answer": 2,
+     "why": "Tiga anak (兩個兒子、一個女兒) + Pak Chen + istrinya = 五個人; jumlah ini tidak diucapkan. A: 兩 = jumlah anak laki-laki. B: 三 = jumlah anak saja. D: lupa menghitung satu orang."
+    },
+    {
+     "type": "read_sent",
+     "part": "閱讀 Part 1 · Kalimat → gambar",
+     "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+     "text": "李太太有兩個兒子。",
+     "options": [
+      {
+       "icon": "🖼️",
+       "label": "seorang bapak dengan dua anak laki-laki",
+       "img": "A04-L8a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "seorang ibu dengan dua anak perempuan",
+       "img": "A04-L8b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "seorang ibu dengan dua anak laki-laki",
+       "img": "A04-L8c"
+      }
      ],
-     "why": "(1) angka. (2) 兩個 — kata bantu bilangan wajib. (3) 沒有 = tidak punya. 二 tidak dipakai di depan kata bantu bilangan (二個 ✗)."
+     "answer": 2,
+     "why": "太太 = perempuan (ibu), 兩個兒子 = dua anak laki-laki → C. A: orang tuanya laki-laki (先生). B: anaknya perempuan (女兒)."
     }
    ],
    "grammar": [
@@ -678,91 +916,174 @@
  ],
    "tasks": [
     {
-     "type": "listen_reply",
+     "type": "listen_dialog",
      "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-     "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-     "audio": "你今年幾歲？",
-     "options": [
-      "我今年十九歲。",
-      "我的生日是九月。",
-      "我十九年。"
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+     "lines": [
+      {
+       "sp": "女",
+       "zh": "你妹妹今年多大？"
+      },
+      {
+       "sp": "男",
+       "zh": "她今年六歲。"
+      }
      ],
-     "answer": 0,
-     "why": "幾歲 → angka + 歲. B menjawab bulan lahir; C memakai 年 (tahun kalender) — kesalahan khas penutur bahasa Indonesia."
+     "question": "這位先生的妹妹今年幾歲？",
+     "options": [
+      {
+       "icon": "🎂",
+       "label": "kue ulang tahun dengan angka 16",
+       "img": "A05-L4a"
+      },
+      {
+       "icon": "🎂",
+       "label": "kue ulang tahun dengan angka 6",
+       "img": "A05-L4b"
+      },
+      {
+       "icon": "🎂",
+       "label": "kue ulang tahun dengan angka 60",
+       "img": "A05-L4c"
+      }
+     ],
+     "answer": 1,
+     "why": "她今年六歲 → 6. A: 十六 = 16. C: 六十 = 60."
     },
     {
-     "type": "listen_pic",
-     "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
-     "picture": {
-      "icon": "📅🎂",
-      "label": "kalender: ulang tahun tanggal 3 Mei",
-      "img": "A05-1"
-     },
-     "question": "你的生日是幾月幾號？",
-     "options": [
-      "五月三號。",
-      "三月五號。",
-      "五月十三號。"
+     "type": "listen_dialog",
+     "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+     "lines": [
+      {
+       "sp": "男",
+       "zh": "你的生日是幾月幾號？"
+      },
+      {
+       "sp": "女",
+       "zh": "我的生日是四月十號。"
+      }
      ],
-     "answer": 0,
-     "why": "Urutan Mandarin: bulan dulu (五月 = Mei), lalu tanggal (三號 = 3). B membalik urutan; C salah dengar angka."
+     "question": "這位小姐的生日是幾月幾號？",
+     "options": [
+      {
+       "icon": "📅",
+       "label": "kalender: tanggal 4 bulan 10",
+       "img": "A05-L5a"
+      },
+      {
+       "icon": "📅",
+       "label": "kalender: tanggal 1 bulan 4",
+       "img": "A05-L5b"
+      },
+      {
+       "icon": "📅",
+       "label": "kalender: tanggal 10 bulan 4",
+       "img": "A05-L5c"
+      }
+     ],
+     "answer": 2,
+     "why": "四月十號 = tanggal 10 bulan 4. A: bulan dan tanggal tertukar. B: bulannya benar, tanggalnya salah."
     },
     {
      "type": "listen_dialog",
      "part": "聽力 Part 3 · Dialog beberapa putaran",
-     "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+     "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
      "lines": [
       {
        "sp": "男",
-       "zh": "你妹妹今年幾歲？"
+       "zh": "美美，你的生日是八月嗎？"
       },
       {
        "sp": "女",
-       "zh": "她今年八歲，明年九歲。"
+       "zh": "我姊姊的生日是八月。"
+      },
+      {
+       "sp": "男",
+       "zh": "你呢？"
+      },
+      {
+       "sp": "女",
+       "zh": "我的生日是三月二十號。"
       }
      ],
-     "question": "這位小姐的妹妹今年幾歲？",
+     "question": "美美的生日是幾月幾號？",
      "options": [
-      "八歲",
-      "九歲",
-      "十八歲"
+      {
+       "icon": "📅",
+       "label": "kalender: tanggal 20 bulan 3",
+       "img": "A05-L6a"
+      },
+      {
+       "icon": "📅",
+       "label": "kalender: tanggal 20 bulan 8",
+       "img": "A05-L6b"
+      },
+      {
+       "icon": "📅",
+       "label": "kalender: tanggal 10 bulan 3",
+       "img": "A05-L6c"
+      }
      ],
      "answer": 0,
-     "why": "今年八歲; 九歲 itu 明年 (tahun depan). Perhatikan kata waktu."
+     "why": "Meimei: 我的生日是三月二十號. B: 八月 adalah bulan ulang tahun kakaknya. C: tanggalnya 10, bukan 20."
     },
     {
-     "type": "read_mc",
-     "part": "閱讀 Part 5 · Pemahaman bacaan",
-     "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
-     "text": "我家有三個人。爸爸今年五十歲，媽媽今年四十八歲。我今年二十歲，我的生日是五月三號。",
-     "question": "誰今年四十八歲？",
+     "type": "listen_dialog",
+     "part": "聽力 Part 4 · Dialog + makna tersirat",
+     "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+     "lines": [
+      {
+       "sp": "男",
+       "zh": "美美，生日快樂！你今年幾歲？"
+      },
+      {
+       "sp": "女",
+       "zh": "謝謝！我今年二十歲。"
+      },
+      {
+       "sp": "男",
+       "zh": "你姊姊呢？她今年多大？"
+      },
+      {
+       "sp": "女",
+       "zh": "她明年二十三歲。"
+      }
+     ],
+     "question": "這位小姐的姊姊今年幾歲？",
      "options": [
-      "他爸爸",
-      "他媽媽",
-      "他",
-      "他哥哥"
+      "二十歲",
+      "二十二歲",
+      "二十三歲",
+      "二十一歲"
      ],
      "answer": 1,
-     "why": "媽媽今年四十八歲. Ayah 50 tahun, dia sendiri 20 tahun. 他哥哥 tidak ada (keluarganya hanya 3 orang)."
+     "why": "Kakaknya 明年二十三歲 (tahun depan 23) → tahun ini 22; angka ini tidak diucapkan. A: umur Meimei sendiri. C: umur kakaknya tahun DEPAN. D: salah hitung."
     },
     {
-     "type": "cloze",
-     "part": "閱讀 Part 4 · Melengkapi paragraf",
-     "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-     "text": "十月一號是我的（1），我今年二十（2）。美美說：「生日（3）！」",
+     "type": "read_sent",
+     "part": "閱讀 Part 1 · Kalimat → gambar",
+     "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+     "text": "我妹妹今年七歲。",
      "options": [
-      "生日",
-      "歲",
-      "快樂",
-      "年"
+      {
+       "icon": "👦🎂",
+       "label": "anak laki-laki dengan kue angka 7",
+       "img": "A05-L8a"
+      },
+      {
+       "icon": "👧🎂",
+       "label": "anak perempuan dengan kue angka 17",
+       "img": "A05-L8b"
+      },
+      {
+       "icon": "👧🎂",
+       "label": "anak perempuan dengan kue angka 7",
+       "img": "A05-L8c"
+      }
      ],
-     "answers": [
-      0,
-      1,
-      2
-     ],
-     "why": "(1) 生日 = ulang tahun. (2) umur memakai 歲. (3) 生日快樂. 年 tidak dipakai untuk umur."
+     "answer": 2,
+     "why": "妹妹 = adik perempuan, 七歲 = 7 tahun → C. A: anak laki-laki (弟弟). B: 17 tahun."
     }
    ],
    "grammar": [
@@ -836,99 +1157,174 @@
  ],
    "tasks": [
     {
-     "type": "listen_pic",
-     "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
-     "picture": {
-      "icon": "👨🎤",
-      "label": "laki-laki bernyanyi",
-      "img": "A06-1"
-     },
-     "question": "他喜歡做什麼？",
-     "options": [
-      "他喜歡唱歌。",
-      "他喜歡看電影。",
-      "他喜歡玩球。"
+     "type": "listen_dialog",
+     "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+     "lines": [
+      {
+       "sp": "女",
+       "zh": "你週末做什麼？"
+      },
+      {
+       "sp": "男",
+       "zh": "我週末都打球。"
+      }
      ],
-     "answer": 0,
-     "why": "唱歌 = bernyanyi. Semua pilihan adalah hobi — pengecoh kategori mirip."
+     "question": "這位先生週末做什麼？",
+     "options": [
+      {
+       "icon": "🖼️",
+       "label": "seorang bapak menyanyi",
+       "img": "A06-L4a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "seorang bapak bermain bola",
+       "img": "A06-L4b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "seorang nona bermain bola",
+       "img": "A06-L4c"
+      }
+     ],
+     "answer": 1,
+     "why": "我週末都打球 → bapak bermain bola. A: kegiatan lain. C: kegiatannya benar, tetapi orangnya perempuan (yang bertanya)."
     },
     {
-     "type": "listen_reply",
+     "type": "listen_dialog",
      "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-     "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-     "audio": "你喜歡看電影嗎？",
-     "options": [
-      "喜歡，我週末都看電影。",
-      "我不喜歡唱歌。",
-      "電影是什麼？"
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+     "lines": [
+      {
+       "sp": "男",
+       "zh": "你妹妹喜歡做什麼？"
+      },
+      {
+       "sp": "女",
+       "zh": "她喜歡跳舞。"
+      }
      ],
-     "answer": 0,
-     "why": "Jawab dengan 喜歡／不喜歡 tentang film. B tentang hal lain; C tidak menjawab."
+     "question": "這位小姐的妹妹喜歡做什麼？",
+     "options": [
+      {
+       "icon": "🖼️",
+       "label": "anak perempuan menggambar",
+       "img": "A06-L5a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "anak laki-laki menari",
+       "img": "A06-L5b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "anak perempuan menari",
+       "img": "A06-L5c"
+      }
+     ],
+     "answer": 2,
+     "why": "她喜歡跳舞 → anak perempuan (妹妹) menari. A: kegiatan lain. B: menari, tetapi anak laki-laki."
     },
     {
      "type": "listen_dialog",
      "part": "聽力 Part 3 · Dialog beberapa putaran",
-     "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+     "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
      "lines": [
       {
        "sp": "男",
-       "zh": "妳喜歡運動嗎？"
+       "zh": "週末你想看電影嗎？"
       },
       {
        "sp": "女",
-       "zh": "我不喜歡運動，我喜歡畫畫。"
+       "zh": "不想，我想打球。"
       },
       {
        "sp": "男",
-       "zh": "妳也喜歡唱歌嗎？"
+       "zh": "打球？我不喜歡運動。我們唱歌，好嗎？"
       },
       {
        "sp": "女",
-       "zh": "不喜歡。"
+       "zh": "好，我們唱歌。"
       }
      ],
-     "question": "這位小姐喜歡什麼？",
+     "question": "他們週末做什麼？",
      "options": [
-      "運動",
-      "畫畫",
-      "唱歌"
+      {
+       "icon": "🖼️",
+       "label": "dua orang menyanyi bersama",
+       "img": "A06-L6a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "dua orang menonton film",
+       "img": "A06-L6b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "dua orang bermain bola",
+       "img": "A06-L6c"
+      }
+     ],
+     "answer": 0,
+     "why": "Akhirnya mereka sepakat: 我們唱歌. B: 看電影 ditolak (不想). C: 打球 ditolak (我不喜歡運動)."
+    },
+    {
+     "type": "listen_dialog",
+     "part": "聽力 Part 4 · Dialog + makna tersirat",
+     "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+     "lines": [
+      {
+       "sp": "男",
+       "zh": "週末你想做什麼？"
+      },
+      {
+       "sp": "女",
+       "zh": "我想看電影。你喜歡看電影嗎？"
+      },
+      {
+       "sp": "男",
+       "zh": "我不喜歡看電影，我喜歡打球。"
+      },
+      {
+       "sp": "女",
+       "zh": "打球？我不愛運動。"
+      }
+     ],
+     "question": "這位小姐想打球嗎？",
+     "options": [
+      "想，她喜歡打球。",
+      "她不想打球，想看電影。",
+      "她想打球，也想看電影。",
+      "她想唱歌。"
      ],
      "answer": 1,
-     "why": "Dua hal lain dijawab dengan 不喜歡 — jangan hanya menangkap kata bendanya, perhatikan 不."
+     "why": "打球？我不愛運動 = penolakan halus: ia tidak mau bermain bola, tetap ingin menonton film. A: menganggap 打球？ sebagai persetujuan. C: kebalikan dari maksudnya. D: 唱歌 tidak disebut."
     },
     {
-     "type": "read_mc",
-     "part": "閱讀 Part 5 · Pemahaman bacaan",
-     "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
-     "text": "我叫安妮。我愛聽歌，也愛跳舞。我不喜歡看電影。週末我都跳舞。",
-     "question": "安妮不喜歡什麼？",
+     "type": "read_sent",
+     "part": "閱讀 Part 1 · Kalimat → gambar",
+     "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+     "text": "我弟弟喜歡畫畫，不喜歡唱歌。",
      "options": [
-      "聽歌",
-      "跳舞",
-      "看電影",
-      "唱歌"
+      {
+       "icon": "🖼️",
+       "label": "anak laki-laki menyanyi",
+       "img": "A06-L8a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "anak perempuan menggambar",
+       "img": "A06-L8b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "anak laki-laki menggambar",
+       "img": "A06-L8c"
+      }
      ],
      "answer": 2,
-     "why": "我不喜歡看電影. 唱歌 tidak disebut sama sekali — pengecoh 'terkait tapi tidak berdasar teks'."
-    },
-    {
-     "type": "cloze",
-     "part": "閱讀 Part 4 · Melengkapi paragraf",
-     "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-     "text": "我（1）運動。我不喜歡唱歌，（2）不喜歡跳舞。我喜歡（3）歌。",
-     "options": [
-      "喜歡",
-      "也",
-      "聽",
-      "電影"
-     ],
-     "answers": [
-      0,
-      1,
-      2
-     ],
-     "why": "(1) 喜歡運動. (2) 也 = juga (也不 = juga tidak). (3) 聽歌 = mendengar lagu. 電影 tidak cocok di titik mana pun."
+     "why": "弟弟 = adik laki-laki, 畫畫 = menggambar → C. A: 唱歌 justru yang tidak ia sukai. B: anak perempuan (妹妹)."
     }
    ],
    "grammar": [
@@ -1020,86 +1416,174 @@
  ],
    "tasks": [
     {
-     "type": "listen_reply",
+     "type": "listen_dialog",
      "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-     "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-     "audio": "你姊姊高不高？",
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+     "lines": [
+      {
+       "sp": "男",
+       "zh": "你哥哥胖不胖？"
+      },
+      {
+       "sp": "女",
+       "zh": "他不胖，他很瘦。"
+      }
+     ],
+     "question": "哪個是這位小姐的哥哥？",
      "options": [
-      "她很高。",
-      "她是高。",
-      "她高嗎？"
+      {
+       "icon": "🖼️",
+       "label": "seorang pemuda kurus",
+       "img": "A07-L4a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "seorang pemuda gemuk",
+       "img": "A07-L4b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "seorang perempuan kurus",
+       "img": "A07-L4c"
+      }
      ],
      "answer": 0,
-     "why": "Kata sifat memakai 很, tidak memakai 是 (她是高 ✗). C malah balik bertanya."
+     "why": "他不胖，他很瘦 → pemuda yang kurus. B: kebalikannya. C: kurus, tetapi perempuan (哥哥 = laki-laki)."
+    },
+    {
+     "type": "listen_dialog",
+     "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+     "lines": [
+      {
+       "sp": "女",
+       "zh": "你妹妹胖嗎？"
+      },
+      {
+       "sp": "男",
+       "zh": "她不胖也不瘦。"
+      }
+     ],
+     "question": "這位先生的妹妹是哪個？",
+     "options": [
+      {
+       "icon": "🖼️",
+       "label": "anak perempuan gemuk",
+       "img": "A07-L5a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "anak perempuan yang tidak gemuk dan tidak kurus",
+       "img": "A07-L5b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "anak perempuan sangat kurus",
+       "img": "A07-L5c"
+      }
+     ],
+     "answer": 1,
+     "why": "不胖也不瘦 = tidak gemuk, tidak kurus → B. A: gemuk. C: sangat kurus."
     },
     {
      "type": "listen_dialog",
      "part": "聽力 Part 3 · Dialog beberapa putaran",
-     "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+     "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
      "lines": [
       {
        "sp": "男",
-       "zh": "妳像妳爸爸嗎？"
+       "zh": "那是你哥哥嗎？很高！"
       },
       {
        "sp": "女",
-       "zh": "不像，我像我媽媽。我媽媽很漂亮！"
+       "zh": "是，那是我哥哥。"
+      },
+      {
+       "sp": "男",
+       "zh": "那個矮的呢？是你弟弟嗎？"
+      },
+      {
+       "sp": "女",
+       "zh": "不是，那是我妹妹。"
       }
      ],
-     "question": "這位小姐像誰？",
+     "question": "哪個是這位小姐的妹妹？",
      "options": [
-      "她爸爸",
-      "她媽媽",
-      "她姊姊"
+      {
+       "icon": "🖼️",
+       "label": "seorang pemuda tinggi",
+       "img": "A07-L6a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "anak laki-laki pendek",
+       "img": "A07-L6b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "anak perempuan pendek",
+       "img": "A07-L6c"
+      }
      ],
-     "answer": 1,
-     "why": "不像 (爸爸)，我像我媽媽. Kata pertama yang didengar (爸爸) adalah jebakan."
+     "answer": 2,
+     "why": "Yang pendek itu 我妹妹 → anak perempuan pendek. A: itu kakak laki-lakinya. B: 弟弟 hanya tebakan si laki-laki yang dibantah (不是)."
     },
     {
-     "type": "read_mc",
-     "part": "閱讀 Part 5 · Pemahaman bacaan",
-     "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
-     "text": "我哥哥很高，也很胖。我弟弟很矮，很瘦。我不高也不矮。",
-     "question": "誰很矮？",
-     "options": [
-      "他哥哥",
-      "他弟弟",
-      "他",
-      "他姊姊"
+     "type": "listen_dialog",
+     "part": "聽力 Part 4 · Dialog + makna tersirat",
+     "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+     "lines": [
+      {
+       "sp": "男",
+       "zh": "這是你爸爸嗎？你們真像！"
+      },
+      {
+       "sp": "女",
+       "zh": "很多人都說我像我爸爸。"
+      },
+      {
+       "sp": "男",
+       "zh": "你哥哥呢？他也像你爸爸嗎？"
+      },
+      {
+       "sp": "女",
+       "zh": "他不像我爸爸，也不像我媽媽。"
+      }
      ],
-     "answer": 1,
-     "why": "弟弟很矮. Penulis sendiri 不高也不矮; 姊姊 tidak disebut."
-    },
-    {
-     "type": "listen_reply",
-     "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-     "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-     "audio": "他是不是你哥哥？",
+     "question": "誰像這位小姐的爸爸？",
      "options": [
-      "是，他是我哥哥。",
-      "他是高。",
-      "不是嗎？"
+      "這位小姐",
+      "她的哥哥",
+      "她的媽媽",
+      "她和她哥哥"
      ],
      "answer": 0,
-     "why": "是不是 dijawab 是／不是. B salah struktur; C bukan jawaban."
+     "why": "Banyak orang bilang ia mirip ayahnya, sedangkan kakaknya 不像我爸爸 → yang mirip ayah hanya si nona. B: kakaknya justru tidak mirip. C: ibu tidak dibandingkan. D: kakaknya tidak termasuk."
     },
     {
-     "type": "cloze",
-     "part": "閱讀 Part 4 · Melengkapi paragraf",
-     "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-     "text": "我姊姊（1）漂亮，她（2）我媽媽。她很高，我（3）高。",
+     "type": "read_sent",
+     "part": "閱讀 Part 1 · Kalimat → gambar",
+     "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+     "text": "我哥哥很高，也很瘦。",
      "options": [
-      "很",
-      "像",
-      "不",
-      "是"
+      {
+       "icon": "🖼️",
+       "label": "laki-laki tinggi dan gemuk",
+       "img": "A07-L8a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "laki-laki tinggi dan kurus",
+       "img": "A07-L8b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "laki-laki pendek dan kurus",
+       "img": "A07-L8c"
+      }
      ],
-     "answers": [
-      0,
-      1,
-      2
-     ],
-     "why": "(1) 很 + kata sifat. (2) 像 = mirip. (3) 不高 = tidak tinggi. 是 tidak dipakai di depan kata sifat."
+     "answer": 1,
+     "why": "很高，也很瘦 = tinggi dan kurus → B. A: tinggi tetapi gemuk. C: kurus tetapi pendek."
     }
    ],
    "grammar": [
@@ -1179,91 +1663,174 @@
  ],
    "tasks": [
     {
-     "type": "listen_reply",
+     "type": "listen_dialog",
      "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-     "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-     "audio": "你家在哪裡？",
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+     "lines": [
+      {
+       "sp": "女",
+       "zh": "你的房間在幾樓？"
+      },
+      {
+       "sp": "男",
+       "zh": "在九樓。"
+      }
+     ],
+     "question": "這位先生的房間在幾樓？",
      "options": [
-      "我家在臺北。",
-      "我住八樓。",
-      "我在家。"
+      {
+       "icon": "🏢",
+       "label": "papan lantai: 7F",
+       "img": "A08-L4a"
+      },
+      {
+       "icon": "🏢",
+       "label": "papan lantai: 19F",
+       "img": "A08-L4b"
+      },
+      {
+       "icon": "🏢",
+       "label": "papan lantai: 9F",
+       "img": "A08-L4c"
+      }
+     ],
+     "answer": 2,
+     "why": "在九樓 → lantai 9. A: 七 (7). B: 十九 (19)."
+    },
+    {
+     "type": "listen_dialog",
+     "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+     "lines": [
+      {
+       "sp": "男",
+       "zh": "美美在哪裡？"
+      },
+      {
+       "sp": "女",
+       "zh": "她在門口。"
+      }
+     ],
+     "question": "美美在哪裡？",
+     "options": [
+      {
+       "icon": "🖼️",
+       "label": "anak perempuan berdiri di depan pintu",
+       "img": "A08-L5a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "anak perempuan di dalam kamar",
+       "img": "A08-L5b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "anak perempuan di taman",
+       "img": "A08-L5c"
+      }
      ],
      "answer": 0,
-     "why": "哪裡 → sebut tempatnya. B menjawab lantai (pertanyaan 幾樓); C menjawab 'aku sedang di rumah'."
+     "why": "她在門口 → di depan pintu. B dan C: tempat lain."
     },
     {
      "type": "listen_dialog",
      "part": "聽力 Part 3 · Dialog beberapa putaran",
-     "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+     "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
      "lines": [
       {
        "sp": "男",
-       "zh": "妳住幾樓？"
+       "zh": "美美，你在家嗎？"
       },
       {
        "sp": "女",
-       "zh": "我住五樓，我爸爸媽媽住三樓。"
+       "zh": "我不在家，我在外面。"
+      },
+      {
+       "sp": "男",
+       "zh": "你在公園嗎？"
+      },
+      {
+       "sp": "女",
+       "zh": "不是，我在你家門口！"
       }
      ],
-     "question": "這位小姐住幾樓？",
+     "question": "美美在哪裡？",
      "options": [
-      "三樓",
-      "五樓",
-      "八樓"
+      {
+       "icon": "🖼️",
+       "label": "di taman",
+       "img": "A08-L6a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "di depan pintu rumah si laki-laki",
+       "img": "A08-L6b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "di dalam rumahnya sendiri",
+       "img": "A08-L6c"
+      }
      ],
      "answer": 1,
-     "why": "我住五樓. 三樓 adalah lantai orang tuanya — detail yang tertukar."
+     "why": "Akhirnya: 我在你家門口 → di depan pintu rumah si laki-laki. A: 公園 hanya tebakan yang dibantah. C: 我不在家."
     },
     {
-     "type": "listen_pic",
-     "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
-     "picture": {
-      "icon": "🧑‍🤝‍🧑🌳",
-      "label": "mereka di taman",
-      "img": "A08-1"
-     },
-     "question": "他們在哪裡？",
-     "options": [
-      "他們在房子裡面。",
-      "他們在公園。",
-      "他們在門口。"
+     "type": "listen_dialog",
+     "part": "聽力 Part 4 · Dialog + makna tersirat",
+     "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+     "lines": [
+      {
+       "sp": "女",
+       "zh": "王先生，你住在哪裡？"
+      },
+      {
+       "sp": "男",
+       "zh": "我住在公園附近，十樓。"
+      },
+      {
+       "sp": "女",
+       "zh": "我也住那裡，我住六樓！"
+      },
+      {
+       "sp": "男",
+       "zh": "好，我們週末去公園玩！"
+      }
      ],
-     "answer": 1,
-     "why": "公園 = taman. Semua pilihan adalah tempat — pengecoh kategori mirip."
-    },
-    {
-     "type": "read_mc",
-     "part": "閱讀 Part 5 · Pemahaman bacaan",
-     "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
-     "text": "我叫安妮，我是印尼人。我住在臺北，我的房子在公園附近。我住七樓，我的房間很大。",
-     "question": "安妮住在哪裡？",
+     "question": "這位小姐住在哪裡？",
      "options": [
-      "臺北",
-      "臺中",
-      "印尼",
-      "公園"
+      "公園附近的六樓",
+      "公園附近的十樓",
+      "公園裡面",
+      "王先生的房間"
      ],
      "answer": 0,
-     "why": "我住在臺北. Rumahnya DEKAT taman, bukan di taman; Indonesia adalah asalnya."
+     "why": "我也住那裡 = ia juga tinggal di dekat taman (那裡 merujuk 公園附近), di lantai 6. B: lantai 10 adalah tempat Pak Wang. C: 公園 hanya tempat bermain. D: tidak disebut."
     },
     {
-     "type": "cloze",
-     "part": "閱讀 Part 4 · Melengkapi paragraf",
-     "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-     "text": "我家（1）臺中，我（2）在臺北。你住（3）樓？",
+     "type": "read_sent",
+     "part": "閱讀 Part 1 · Kalimat → gambar",
+     "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+     "text": "她在房間外面。",
      "options": [
-      "在",
-      "住",
-      "幾",
-      "哪"
+      {
+       "icon": "🖼️",
+       "label": "anak perempuan di luar pintu kamar",
+       "img": "A08-L8a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "anak perempuan di dalam kamar",
+       "img": "A08-L8b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "anak laki-laki di luar pintu kamar",
+       "img": "A08-L8c"
+      }
      ],
-     "answers": [
-      0,
-      1,
-      2
-     ],
-     "why": "(1) 在 = berada di. (2) 住在 = tinggal di. (3) 幾樓 = lantai berapa (angka). 哪 tidak dipakai untuk menanyakan angka."
+     "answer": 0,
+     "why": "她 = perempuan, 房間外面 = di luar kamar → A. B: di dalam (裡面). C: laki-laki (他)."
     }
    ],
    "grammar": [
@@ -1378,99 +1945,174 @@
  ],
    "tasks": [
     {
-     "type": "listen_pic",
-     "part": "聽力 Part 1 · Deskripsi gambar",
-     "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
-     "picture": {
-      "icon": "📺⬆",
-      "label": "TV di atas meja",
-      "img": "A09-1"
-     },
-     "question": "電視在哪裡？",
+     "type": "listen_dialog",
+     "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+     "lines": [
+      {
+       "sp": "女",
+       "zh": "你的球在哪裡？"
+      },
+      {
+       "sp": "男",
+       "zh": "在椅子下。"
+      }
+     ],
+     "question": "球在哪裡？",
      "options": [
-      "在桌子上。",
-      "在桌子下。",
-      "在門旁邊。"
+      {
+       "icon": "🖼️",
+       "label": "bola di bawah kursi",
+       "img": "A09-L4a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "bola di atas kursi",
+       "img": "A09-L4b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "bola di bawah meja",
+       "img": "A09-L4c"
+      }
      ],
      "answer": 0,
-     "why": "TV ada di atas meja → 桌子上. B: 桌子下 = di bawah meja. C: 門旁邊 = di samping pintu."
+     "why": "在椅子下 → di bawah kursi. B: 上 = di atas. C: di bawah, tetapi di bawah meja."
     },
     {
-     "type": "listen_reply",
+     "type": "listen_dialog",
      "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-     "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-     "audio": "椅子在哪裡？",
-     "options": [
-      "椅子在床旁邊。",
-      "椅子上有電視。",
-      "我有椅子。"
+     "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+     "lines": [
+      {
+       "sp": "男",
+       "zh": "小明在哪裡？"
+      },
+      {
+       "sp": "女",
+       "zh": "他在門後。"
+      }
      ],
-     "answer": 0,
-     "why": "X 在 哪裡 → X 在 + tempat. B menjawab 'di atas kursi ada apa' (pola 有); C tidak menyebut letak."
+     "question": "小明在哪裡？",
+     "options": [
+      {
+       "icon": "🖼️",
+       "label": "anak laki-laki di depan pintu",
+       "img": "A09-L5a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "anak laki-laki bersembunyi di balik pintu",
+       "img": "A09-L5b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "anak laki-laki di samping tempat tidur",
+       "img": "A09-L5c"
+      }
+     ],
+     "answer": 1,
+     "why": "他在門後 → di balik pintu. A: 前面 = di depan (kebalikannya). C: tempat lain."
     },
     {
      "type": "listen_dialog",
      "part": "聽力 Part 3 · Dialog beberapa putaran",
-     "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+     "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
+     "lines": [
+      {
+       "sp": "女",
+       "zh": "大文，電視在哪裡？"
+      },
+      {
+       "sp": "男",
+       "zh": "在桌子上嗎？"
+      },
+      {
+       "sp": "女",
+       "zh": "桌子上沒有。"
+      },
+      {
+       "sp": "男",
+       "zh": "你看，在床旁邊！"
+      }
+     ],
+     "question": "電視在哪裡？",
+     "options": [
+      {
+       "icon": "🖼️",
+       "label": "TV di atas meja",
+       "img": "A09-L6a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "TV di bawah meja",
+       "img": "A09-L6b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "TV di samping tempat tidur",
+       "img": "A09-L6c"
+      }
+     ],
+     "answer": 2,
+     "why": "Akhirnya: 在床旁邊. A: 桌子上 hanya tebakan, lalu dibantah (桌子上沒有). B: tidak disebut."
+    },
+    {
+     "type": "listen_dialog",
+     "part": "聽力 Part 4 · Dialog + makna tersirat",
+     "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
      "lines": [
       {
        "sp": "男",
-       "zh": "妳的房間裡有電視嗎？"
+       "zh": "美美，我的球呢？"
       },
       {
        "sp": "女",
-       "zh": "有，電視在床前面。"
+       "zh": "你的球不在桌子上嗎？"
       },
       {
        "sp": "男",
-       "zh": "桌子呢？"
+       "zh": "不在。椅子上、床上都沒有。"
       },
       {
        "sp": "女",
-       "zh": "桌子在門旁邊。"
+       "zh": "那你拿電視旁邊的那個。"
       }
      ],
-     "question": "桌子在哪裡？",
+     "question": "球在哪裡？",
      "options": [
-      "床前面",
-      "門旁邊",
-      "電視上"
-     ],
-     "answer": 1,
-     "why": "桌子在門旁邊。 A: 床前面 adalah letak TV. C: 電視上 tidak disebut."
-    },
-    {
-     "type": "read_mc",
-     "part": "閱讀 Part 5 · Pemahaman bacaan",
-     "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
-     "text": "我的房間不大。門旁邊是床，床前面有電視。桌子在床旁邊，椅子在桌子下。",
-     "question": "電視在哪裡？",
-     "options": [
-      "門旁邊",
-      "床前面",
-      "桌子下",
+      "桌子上",
+      "床下",
+      "電視旁邊",
       "椅子上"
      ],
-     "answer": 1,
-     "why": "床前面有電視。 A: 門旁邊 adalah letak tempat tidur. C: 桌子下 adalah letak kursi. D: 椅子上 tidak disebut."
+     "answer": 2,
+     "why": "那你拿電視旁邊的那個 = \"ambil saja yang di samping TV\" → bolanya di samping TV (tidak dikatakan langsung). A dan D: sudah dicari, tidak ada. B: tidak disebut."
     },
     {
-     "type": "cloze",
-     "part": "閱讀 Part 4 · Melengkapi paragraf",
-     "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-     "text": "我的房間（1）有一個電視。電視（2）桌子上，椅子在桌子（3）。",
+     "type": "read_sent",
+     "part": "閱讀 Part 1 · Kalimat → gambar",
+     "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+     "text": "椅子在床前面。",
      "options": [
-      "裡",
-      "在",
-      "前面",
-      "有"
+      {
+       "icon": "🖼️",
+       "label": "kursi di depan tempat tidur",
+       "img": "A09-L8a"
+      },
+      {
+       "icon": "🖼️",
+       "label": "kursi di atas tempat tidur",
+       "img": "A09-L8b"
+      },
+      {
+       "icon": "🖼️",
+       "label": "meja di depan tempat tidur",
+       "img": "A09-L8c"
+      }
      ],
-     "answers": [
-      0,
-      1,
-      2
-     ],
-     "why": "(1) 房間裡 = di dalam kamar. (2) benda + 在 + tempat. (3) kata posisi di belakang benda patokan. 有 salah di (2) karena subjeknya benda, bukan tempat."
+     "answer": 0,
+     "why": "椅子 = kursi, 床前面 = di depan tempat tidur → A. B: di atas (上). C: yang di depan tempat tidur meja, bukan kursi."
     }
    ],
    "grammar": [

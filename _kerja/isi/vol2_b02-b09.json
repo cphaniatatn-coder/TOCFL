@@ -54,12 +54,12 @@
      "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
      "audio": "週末你有空嗎？",
      "options": [
-      "有空，你想做什麼？",
       "我有很多朋友。",
+      "有空，你想做什麼？",
       "週末是星期六。"
      ],
-     "answer": 0,
-     "why": "有空 = ada waktu luang. B tidak menjawab soal waktu luang; C memberi informasi yang tidak ditanya."
+     "answer": 1,
+     "why": "有空 = ada waktu luang. A tidak menjawab soal waktu luang; C memberi informasi yang tidak ditanya."
     },
     {
      "type": "listen_dialog",
@@ -78,12 +78,12 @@
      "question": "這位小姐的意思是什麼？",
      "options": [
       "她不想參加。",
-      "她星期六不能參加。",
       "她要參加活動。",
+      "她星期六不能參加。",
       "她不工作。"
      ],
-     "answer": 1,
-     "why": "想參加 (ingin) tapi 要工作 (harus kerja) → tidak bisa ikut. A membalik keinginannya; C mengabaikan 可是; D membalik fakta."
+     "answer": 2,
+     "why": "想參加 (ingin) tapi 要工作 (harus kerja) → tidak bisa ikut. A membalik keinginannya; B mengabaikan 可是; D membalik fakta."
     },
     {
      "type": "read_mc",
@@ -93,11 +93,11 @@
      "question": "星期六晚上有什麼活動？",
      "options": [
       "野餐",
-      "聽音樂",
+      "照相",
       "故事活動",
-      "照相"
+      "聽音樂"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "星期六晚上聽音樂. 野餐 = Sabtu pagi; 故事 = Minggu sore; 照相 tidak disebut."
     },
     {
@@ -254,11 +254,11 @@
      },
      "question": "他們是第幾名？",
      "options": [
-      "第一名。",
+      "第三名。",
       "第二名。",
-      "第三名。"
+      "第一名。"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "第三名 = juara ketiga. 第 + angka = urutan ke-."
     },
     {
@@ -300,11 +300,11 @@
      "question": "兩個學生，門票一共多少錢？",
      "options": [
       "一百五十塊",
-      "三百塊",
       "四百五十塊",
+      "三百塊",
       "六百塊"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "2 × 150 = 300. 三百 juga harga satu tiket biasa — pengecoh angka yang 'kebetulan' sama; hitung dari harga pelajar."
     },
     {
@@ -470,12 +470,12 @@
      "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
      "audio": "喂，你在做什麼呢？",
      "options": [
-      "我在看書呢。",
       "我喜歡看書。",
+      "我在看書呢。",
       "我明天看書。"
      ],
-     "answer": 0,
-     "why": "在做什麼 menanyakan yang SEDANG dilakukan. B = kebiasaan/kesukaan; C = rencana besok."
+     "answer": 1,
+     "why": "在做什麼 menanyakan yang SEDANG dilakukan. A = kebiasaan/kesukaan; C = rencana besok."
     },
     {
      "type": "listen_dialog",
@@ -509,11 +509,11 @@
      "options": [
       "他爸爸",
       "他媽媽",
-      "他",
-      "他妹妹"
+      "他妹妹",
+      "他"
      ],
-     "answer": 2,
-     "why": "我在上網 — si penulis sendiri (他 di pertanyaan). A: ayah 看電視. B: ibu 打電話. D: adik perempuan 聊天."
+     "answer": 3,
+     "why": "我在上網 — si penulis sendiri (他 di pertanyaan). A: ayah 看電視. B: ibu 打電話. C: adik perempuan 聊天."
     },
     {
      "type": "cloze",
@@ -676,12 +676,12 @@
      "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
      "audio": "請坐，請喝茶。",
      "options": [
-      "謝謝，不好意思。",
       "不要喝茶。",
+      "謝謝，不好意思。",
       "請坐。"
      ],
-     "answer": 0,
-     "why": "Dipersilakan → berterima kasih dengan sopan. B tidak sopan; C mengulang tuan rumah."
+     "answer": 1,
+     "why": "Dipersilakan → berterima kasih dengan sopan. A tidak sopan; C mengulang tuan rumah."
     },
     {
      "type": "listen_dialog",
@@ -699,13 +699,13 @@
      ],
      "question": "這位先生的意思是什麼？",
      "options": [
-      "他不想再吃。",
+      "他要客氣。",
       "他很餓。",
       "他不喜歡菜。",
-      "他要客氣。"
+      "他不想再吃。"
      ],
-     "answer": 0,
-     "why": "很飽啦 = sudah kenyang → menolak tambahan dengan halus. B membalik; C tidak tersirat (ia bilang sudah makan banyak); D salah memahami 不要客氣."
+     "answer": 3,
+     "why": "很飽啦 = sudah kenyang → menolak tambahan dengan halus. B membalik; C tidak tersirat (ia bilang sudah makan banyak); A salah memahami 不要客氣."
     },
     {
      "type": "read_mc",
@@ -714,12 +714,12 @@
      "text": "客廳：請不要吃東西。飯廳：請不要看手機。",
      "question": "飯廳裡不可以做什麼？",
      "options": [
-      "吃東西",
       "看手機",
+      "吃東西",
       "喝茶",
       "說話"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "飯廳：請不要看手機. 吃東西 dilarang di ruang tamu, bukan ruang makan — pengecoh tertukar."
     },
     {
@@ -871,12 +871,12 @@
      "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
      "audio": "很高興認識你！",
      "options": [
-      "我也很高興認識你。",
       "我認識你。",
+      "我也很高興認識你。",
       "不客氣。"
      ],
-     "answer": 0,
-     "why": "Dibalas dengan 我也很高興認識你. B tidak sopan/janggal; C jawaban untuk terima kasih."
+     "answer": 1,
+     "why": "Dibalas dengan 我也很高興認識你. A tidak sopan/janggal; C jawaban untuk terima kasih."
     },
     {
      "type": "listen_pic",
@@ -916,11 +916,11 @@
      ],
      "question": "新同學是哪國人？",
      "options": [
-      "日本人",
+      "臺灣人",
       "美國人",
-      "臺灣人"
+      "日本人"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "她是日本人. 英文 adalah bahasa yang JUGA ia kuasai, bukan negaranya."
     },
     {
@@ -930,12 +930,12 @@
      "text": "今天學校有各國的學生：有印尼學生，也有日本學生。大人們和小朋友們都很高興。我認識一個年輕的日本朋友。",
      "question": "他認識一個什麼朋友？",
      "options": [
-      "年輕的日本人",
+      "老師",
       "老人",
       "印尼小朋友",
-      "老師"
+      "年輕的日本人"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "一個年輕的日本朋友. Pilihan lain disebut sebagai peserta pesta, bukan orang yang ia kenal."
     },
     {
@@ -1073,12 +1073,12 @@
      "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
      "audio": "這是誰的？",
      "options": [
-      "是我室友的。",
+      "我的室友很好。",
       "是我室友。",
-      "我的室友很好。"
+      "是我室友的。"
      ],
-     "answer": 0,
-     "why": "誰的 = milik siapa → jawab '… 的'. B menjawab 'siapa' (identitas), C memberi komentar."
+     "answer": 2,
+     "why": "誰的 = milik siapa → jawab '… 的'. B menjawab 'siapa' (identitas), A memberi komentar."
     },
     {
      "type": "listen_dialog",
@@ -1128,13 +1128,13 @@
      "text": "租房子：學校附近的大樓，三樓，有兩個房間。房租一個月九千塊。請打電話給房東王先生。",
      "question": "哪一個對？",
      "options": [
-      "房子在學校附近。",
+      "房子在九樓。",
       "房租一個月三千塊。",
       "房東姓李。",
-      "房子在九樓。"
+      "房子在學校附近。"
      ],
-     "answer": 0,
-     "why": "學校附近的大樓. B dan D mencampur angka dari iklan (三樓, 九千); C salah marga."
+     "answer": 3,
+     "why": "學校附近的大樓. B dan A mencampur angka dari iklan (三樓, 九千); C salah marga."
     },
     {
      "type": "cloze",
@@ -1323,10 +1323,10 @@
      "question": "洗手間在哪裡？",
      "options": [
       "樓上",
-      "樓梯對面",
-      "書房裡"
+      "書房裡",
+      "樓梯對面"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "不在樓上 → 樓下，樓梯對面."
     },
     {
@@ -1338,10 +1338,10 @@
      "options": [
       "客廳",
       "飯廳",
-      "書房",
-      "房間"
+      "房間",
+      "書房"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "在書房上網. Ruangan lain disebut sebagai isi rumah, bukan tempat ia internetan."
     },
     {
@@ -1545,11 +1545,11 @@
      "question": "誰洗衣服？",
      "options": [
       "他",
-      "他媽媽",
       "他爸爸",
+      "他媽媽",
       "他妹妹"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "媽媽洗衣服. Penulis mencuci piring; ayah memasang foto."
     },
     {

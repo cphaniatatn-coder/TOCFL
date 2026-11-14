@@ -154,11 +154,11 @@
      "question": "媽媽在哪裡？",
      "options": [
       "在客廳看電視。",
-      "在廚房做飯。",
-      "在餐廳吃飯。"
+      "在餐廳吃飯。",
+      "在廚房做飯。"
      ],
-     "answer": 1,
-     "why": "Mum is cooking in the kitchen → 在廚房做飯. A and C are a different place and activity."
+     "answer": 2,
+     "why": "Mum is cooking in the kitchen → 在廚房做飯. A and B are a different place and activity."
     },
     {
      "type": "listen_reply",
@@ -167,11 +167,11 @@
      "audio": "你吃過晚飯了嗎？",
      "options": [
       "晚飯在餐桌上。",
-      "吃過了，剛才吃的。",
-      "我不喜歡吃晚飯。"
+      "我不喜歡吃晚飯。",
+      "吃過了，剛才吃的。"
      ],
-     "answer": 1,
-     "why": "The question is whether he has eaten → 吃過了. A only says where the food is; C does not answer the question."
+     "answer": 2,
+     "why": "The question is whether he has eaten → 吃過了. A only says where the food is; B does not answer the question."
     },
     {
      "type": "listen_reply",
@@ -243,11 +243,11 @@
      "options": [
       "小明買了蛋糕",
       "蛋糕在餐桌上",
-      "蛋糕可能沒有了",
-      "媽媽吃了蛋糕"
+      "媽媽吃了蛋糕",
+      "蛋糕可能沒有了"
      ],
-     "answer": 2,
-     "why": "已經吃光了吧 = it has probably all been eaten. A is reversed: the man bought the cake. B: the cake is no longer on the table. D: 小明 ate it."
+     "answer": 3,
+     "why": "已經吃光了吧 = it has probably all been eaten. A is reversed: the man bought the cake. B: the cake is no longer on the table. C: 小明 ate it."
     },
     {
      "type": "listen_dialog",
@@ -807,12 +807,12 @@
      "question": "這位小姐的意思是什麼？",
      "options": [
       "這位先生的媽媽很忙",
-      "這位先生應該讓房間乾淨一點",
+      "房間不太亂",
       "這位先生明天要去看媽媽",
-      "房間不太亂"
+      "這位先生應該讓房間乾淨一點"
      ],
-     "answer": 1,
-     "why": "她看到會怎麼說？ = your mum will not be happy to see this → clean up quickly. A: the man is the busy one. C is reversed: his mum is coming. D is the opposite."
+     "answer": 3,
+     "why": "她看到會怎麼說？ = your mum will not be happy to see this → clean up quickly. A: the man is the busy one. C is reversed: his mum is coming. B is the opposite."
     },
     {
      "type": "read_sent",
@@ -845,12 +845,12 @@
       "label": "a full bookshelf, neatly arranged"
      },
      "options": [
-      "書架上的書很亂。",
       "書都在書架上，一點也不亂。",
+      "書架上的書很亂。",
       "書桌上都是書。"
      ],
-     "answer": 1,
-     "why": "The books are neatly on the shelf → 一點也不亂. A is the opposite; C: the books are on the shelf, not the desk."
+     "answer": 0,
+     "why": "The books are neatly on the shelf → 一點也不亂. B is the opposite; C: the books are on the shelf, not the desk."
     },
     {
      "type": "read_gap",
@@ -1221,12 +1221,12 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "洗衣機裡的衣服乾了嗎？",
      "options": [
-      "洗衣機是新的。",
       "還不太乾，再等一下吧。",
+      "洗衣機是新的。",
       "我明天洗衣服。"
      ],
-     "answer": 1,
-     "why": "The question is whether they are dry → 還不太乾. A talks about the machine; C does not answer."
+     "answer": 0,
+     "why": "The question is whether they are dry → 還不太乾. B talks about the machine; C does not answer."
     },
     {
      "type": "listen_dialog",
@@ -1283,13 +1283,13 @@
      ],
      "question": "這位先生是什麼意思？",
      "options": [
-      "這位小姐應該買新洗衣機",
-      "這件衣服很便宜",
       "衣服破了是因為用洗衣機洗",
+      "這件衣服很便宜",
+      "這位小姐應該買新洗衣機",
       "這位小姐的手破了"
      ],
-     "answer": 2,
-     "why": "要用手洗…已經破了 → it was damaged by the washing machine. A is not mentioned. B is the opposite (很貴). D misreads the word 手."
+     "answer": 0,
+     "why": "要用手洗…已經破了 → it was damaged by the washing machine. C is not mentioned. B is the opposite (很貴). D misreads the word 手."
     },
     {
      "type": "read_sent",
@@ -1376,12 +1376,12 @@
      "question": "室友為什麼覺得不好意思？",
      "options": [
       "他把碗洗破了",
-      "他沒把垃圾拿出去",
+      "他把袋子弄破了",
       "他沒有洗衣服",
-      "他把袋子弄破了"
+      "他沒把垃圾拿出去"
      ],
-     "answer": 1,
-     "why": "His job was taking out the rubbish, but he didn't → 不好意思. A and C are not mentioned. D: the bag tore by itself; he did not tear it."
+     "answer": 3,
+     "why": "His job was taking out the rubbish, but he didn't → 不好意思. A and C are not mentioned. B: the bag tore by itself; he did not tear it."
     }
    ],
    "grammar": [
@@ -1730,11 +1730,11 @@
      "question": "他們要把沙發放在哪裡？",
      "options": [
       "樓上的房間",
-      "客廳",
-      "臥室"
+      "臥室",
+      "客廳"
      ],
-     "answer": 1,
-     "why": "In the end 就放在客廳. A is her suggestion, dropped because it is too heavy. C is not mentioned."
+     "answer": 2,
+     "why": "In the end 就放在客廳. A is her suggestion, dropped because it is too heavy. B is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -1854,11 +1854,11 @@
      "options": [
       "廚房在樓上",
       "房子只有一層",
-      "臥室都在樓上",
-      "弟弟不喜歡院子"
+      "弟弟不喜歡院子",
+      "臥室都在樓上"
      ],
-     "answer": 2,
-     "why": "樓上有三個臥室 → all the bedrooms are upstairs. A: the kitchen is downstairs. B: the house has two floors. D is the opposite (弟弟很高興)."
+     "answer": 3,
+     "why": "樓上有三個臥室 → all the bedrooms are upstairs. A: the kitchen is downstairs. B: the house has two floors. C is the opposite (弟弟很高興)."
     }
    ],
    "grammar": [
@@ -2177,12 +2177,12 @@
      },
      "question": "他在做什麼？",
      "options": [
-      "他在用鑰匙鎖門。",
       "他在用鑰匙開信箱。",
+      "他在用鑰匙鎖門。",
       "他在找口袋裡的鑰匙。"
      ],
-     "answer": 0,
-     "why": "The key is being used on the door → 鎖門. B: there is no mailbox. C: the key is already in his hand, he is not looking for it."
+     "answer": 1,
+     "why": "The key is being used on the door → 鎖門. A: there is no mailbox. C: the key is already in his hand, he is not looking for it."
     },
     {
      "type": "listen_reply",
@@ -2203,12 +2203,12 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "你的零用錢是誰給你的？",
      "options": [
-      "我爸爸每個月給我。",
       "我每個月給我妹妹。",
+      "我爸爸每個月給我。",
       "我把零用錢放在口袋裡。"
      ],
-     "answer": 0,
-     "why": "The question is WHO gives the money → 爸爸給我. B reverses the direction (he gives money to his sister). C says where the money is kept."
+     "answer": 1,
+     "why": "The question is WHO gives the money → 爸爸給我. A reverses the direction (he gives money to his sister). C says where the money is kept."
     },
     {
      "type": "listen_dialog",
@@ -2234,12 +2234,12 @@
      ],
      "question": "這位先生現在還有多少錢？",
      "options": [
-      "一百塊",
+      "三百塊",
       "兩百塊",
-      "三百塊"
+      "一百塊"
      ],
-     "answer": 0,
-     "why": "500 − 300 (books) − 100 (for his brother) = 100. B = the woman's guess, which he rejects (沒有). C = the money spent on books."
+     "answer": 2,
+     "why": "500 − 300 (books) − 100 (for his brother) = 100. B = the woman's guess, which he rejects (沒有). A = the money spent on books."
     },
     {
      "type": "listen_dialog",
@@ -2265,13 +2265,13 @@
      ],
      "question": "這位小姐的意思是什麼？",
      "options": [
-      "這位先生常常找不到東西",
+      "這位先生每次都把鑰匙放在書包裡",
       "這位先生的口袋破了",
       "這位先生把鑰匙給了她",
-      "這位先生每次都把鑰匙放在書包裡"
+      "這位先生常常找不到東西"
      ],
-     "answer": 0,
-     "why": "你怎麼每次都要找這麼久 = why does it take you so long to find things every time → he often has trouble finding his things. B is not mentioned. C is reversed: the key was not given to her. D is too literal: 每次 refers to the habit of searching for a long time, not to where he keeps the key."
+     "answer": 3,
+     "why": "你怎麼每次都要找這麼久 = why does it take you so long to find things every time → he often has trouble finding his things. B is not mentioned. C is reversed: the key was not given to her. A is too literal: 每次 refers to the habit of searching for a long time, not to where he keeps the key."
     },
     {
      "type": "read_sent",
@@ -2321,11 +2321,11 @@
      },
      "text": "出去以前，別忘了（　）門鎖好。",
      "options": [
-      "把",
+      "被",
       "給",
-      "被"
+      "把"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Pattern 把 + O + V + result: 把門鎖好 = lock the door properly. 給 = give/for; 被 = passive marker — neither fits 鎖好."
     },
     {
@@ -2357,13 +2357,13 @@
      "text": "志明：我明天早上去臺中，星期五晚上才回來。我已經把家裡的鑰匙放在你的信箱裡了。這幾天請你每天去我家一次，打開我的信箱，把信拿出來放在我的書桌上。廚房的垃圾我已經拿出去了。謝謝你！——大文",
      "question": "大文為什麼把鑰匙放在志明的信箱裡？",
      "options": [
-      "他要志明幫他拿信",
+      "他要志明幫他拿垃圾",
       "他怕鑰匙不見了",
       "志明要去臺中",
-      "他要志明幫他拿垃圾"
+      "他要志明幫他拿信"
      ],
-     "answer": 0,
-     "why": "The key is left so that 志明 can get in and 把信拿出來放在書桌上. B is not mentioned in the note. C is reversed: 大文 is the one going to Taichung. D: the rubbish 已經拿出去了."
+     "answer": 3,
+     "why": "The key is left so that 志明 can get in and 把信拿出來放在書桌上. B is not mentioned in the note. C is reversed: 大文 is the one going to Taichung. A: the rubbish 已經拿出去了."
     }
    ],
    "grammar": [
@@ -2616,11 +2616,11 @@
      "question": "桌子上放著什麼？",
      "options": [
       "一支牙刷。",
-      "一條毛巾。",
-      "一塊肥皂。"
+      "一塊肥皂。",
+      "一條毛巾。"
      ],
-     "answer": 1,
-     "why": "There is a towel on the table → 放著一條毛巾. A and C are other bathroom items not in the picture."
+     "answer": 2,
+     "why": "There is a towel on the table → 放著一條毛巾. A and B are other bathroom items not in the picture."
     },
     {
      "type": "listen_pic",
@@ -2651,12 +2651,12 @@
      },
      "question": "他怎麼說話？",
      "options": [
-      "他哭著說話。",
+      "他笑著說話。",
       "他很生氣。",
-      "他笑著說話。"
+      "他哭著說話。"
      ],
-     "answer": 2,
-     "why": "He is talking with a smile → 笑著說話. A and B are the opposite expressions."
+     "answer": 0,
+     "why": "He is talking with a smile → 笑著說話. C and B are the opposite expressions."
     },
     {
      "type": "listen_reply",
@@ -2664,12 +2664,12 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "浴室裡還有牙膏嗎？",
      "options": [
-      "沒有了，我們去買吧。",
       "浴室在廁所旁邊。",
+      "沒有了，我們去買吧。",
       "牙膏很便宜。"
      ],
-     "answer": 0,
-     "why": "The question is whether there is toothpaste left → 沒有了. B says where the bathroom is; C only repeats the word 牙膏."
+     "answer": 1,
+     "why": "The question is whether there is toothpaste left → 沒有了. A says where the bathroom is; C only repeats the word 牙膏."
     },
     {
      "type": "listen_reply",
@@ -2709,11 +2709,11 @@
      "question": "這位小姐要買什麼？",
      "options": [
       "洗髮精和牙膏",
-      "洗髮精和衛生紙",
-      "衛生紙和牙膏"
+      "衛生紙和牙膏",
+      "洗髮精和衛生紙"
      ],
-     "answer": 1,
-     "why": "洗髮精 + 衛生紙. The toothpaste was bought yesterday, so A and C are wrong."
+     "answer": 2,
+     "why": "洗髮精 + 衛生紙. The toothpaste was bought yesterday, so A and B are wrong."
     },
     {
      "type": "listen_dialog",
@@ -2741,11 +2741,11 @@
      "options": [
       "超市的東西很便宜",
       "他要買毛巾",
-      "他的洗髮精用完了",
-      "這位小姐的洗髮精用完了"
+      "這位小姐的洗髮精用完了",
+      "他的洗髮精用完了"
      ],
-     "answer": 2,
-     "why": "The shampoo there is hers; his 上個星期就用完了. D is reversed. A and B are not mentioned."
+     "answer": 3,
+     "why": "The shampoo there is hers; his 上個星期就用完了. C is reversed. A and B are not mentioned."
     },
     {
      "type": "read_sent",
@@ -2778,12 +2778,12 @@
       "label": "washing hands with soap"
      },
      "options": [
-      "他用洗髮精洗頭。",
       "他用肥皂洗手。",
+      "他用洗髮精洗頭。",
       "他在洗衣服。"
      ],
-     "answer": 1,
-     "why": "Soap + hands → 用肥皂洗手. A and C are other bathroom activities."
+     "answer": 0,
+     "why": "Soap + hands → 用肥皂洗手. B and C are other bathroom activities."
     },
     {
      "type": "read_gap",
@@ -2795,11 +2795,11 @@
      },
      "text": "廁所裡沒有（　）了，你去買一包吧。",
      "options": [
-      "衛生紙",
+      "牙刷",
       "毛巾",
-      "牙刷"
+      "衛生紙"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "The toilet paper has run out; the measure word 一包 fits 衛生紙. 毛巾 takes 條 and 牙刷 takes 支."
     },
     {
@@ -2832,12 +2832,12 @@
      "question": "這個人第一天晚上為什麼去商店？",
      "options": [
       "買毛巾",
-      "買洗澡用的東西",
+      "買衛生紙",
       "買牙刷",
-      "買衛生紙"
+      "買洗澡用的東西"
      ],
-     "answer": 1,
-     "why": "No soap or body wash → bought 沐浴乳 (for showering). A and C are already in the bathroom. D is not mentioned."
+     "answer": 3,
+     "why": "No soap or body wash → bought 沐浴乳 (for showering). A and C are already in the bathroom. B is not mentioned."
     }
    ],
    "grammar": [
@@ -3118,11 +3118,11 @@
      "question": "鬧鐘上是幾點？",
      "options": [
       "十二點。",
-      "六點。",
-      "六點半。"
+      "六點半。",
+      "六點。"
      ],
-     "answer": 1,
-     "why": "The alarm clock's hands point exactly to 6 → 六點. A confuses it with the minute hand; C adds half an hour."
+     "answer": 2,
+     "why": "The alarm clock's hands point exactly to 6 → 六點. A confuses it with the minute hand; B adds half an hour."
     },
     {
      "type": "listen_pic",
@@ -3210,12 +3210,12 @@
      ],
      "question": "這位先生幾點起床？",
      "options": [
-      "八點",
       "八點半",
+      "八點",
       "八點四十"
      ],
-     "answer": 1,
-     "why": "八點半才起床. C is the time now; A is not mentioned."
+     "answer": 0,
+     "why": "八點半才起床. C is the time now; B is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -3630,12 +3630,12 @@
      },
      "question": "房間裡有什麼？",
      "options": [
-      "一隻蚊子。",
       "很多蚊子。",
+      "一隻蚊子。",
       "很多小鳥。"
      ],
-     "answer": 1,
-     "why": "Lots of mosquitoes → 很多蚊子. A is the wrong number; C is the wrong animal."
+     "answer": 0,
+     "why": "Lots of mosquitoes → 很多蚊子. B is the wrong number; C is the wrong animal."
     },
     {
      "type": "listen_pic",
@@ -3692,12 +3692,12 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "外面怎麼這麼吵？",
      "options": [
-      "外面很熱。",
       "鄰居在唱歌，唱個不停。",
+      "外面很熱。",
       "我在房間裡。"
      ],
-     "answer": 1,
-     "why": "The question asks why it is noisy → the neighbours keep singing. A is about the weather; C does not explain."
+     "answer": 0,
+     "why": "The question asks why it is noisy → the neighbours keep singing. B is about the weather; C does not explain."
     },
     {
      "type": "listen_dialog",
@@ -3755,12 +3755,12 @@
      "question": "這位先生昨天晚上為什麼沒睡覺？",
      "options": [
       "鄰居太吵",
-      "房間裡有蚊子",
+      "他在打電話",
       "窗戶壞了",
-      "他在打電話"
+      "房間裡有蚊子"
      ],
-     "answer": 1,
-     "why": "不停地打蚊子 → mosquitoes. A is the woman's guess, which he rejects (不是). C and D are not mentioned."
+     "answer": 3,
+     "why": "不停地打蚊子 → mosquitoes. A is the woman's guess, which he rejects (不是). C and B are not mentioned."
     },
     {
      "type": "read_sent",
@@ -3848,11 +3848,11 @@
      "options": [
       "他晚上十一點才下班",
       "他晚上要念書",
-      "鄰居的孩子晚上一直哭",
-      "他生病了"
+      "他生病了",
+      "鄰居的孩子晚上一直哭"
      ],
-     "answer": 2,
-     "why": "The neighbours' child cries every night → her sleep is disturbed. A: 11 p.m. is when the child starts crying. B is not mentioned. D: the child is the one who is ill."
+     "answer": 3,
+     "why": "The neighbours' child cries every night → her sleep is disturbed. A: 11 p.m. is when the child starts crying. B is not mentioned. C: the child is the one who is ill."
     }
    ],
    "grammar": [
@@ -4061,12 +4061,12 @@
      },
      "question": "哪裡的環境比較好？",
      "options": [
-      "城市的環境好得多。",
       "鄉下的環境好得多。",
+      "城市的環境好得多。",
       "兩個地方一樣。"
      ],
-     "answer": 1,
-     "why": "The countryside is ticked, clean and green → 鄉下好得多. A is the opposite; C does not match."
+     "answer": 0,
+     "why": "The countryside is ticked, clean and green → 鄉下好得多. B is the opposite; C does not match."
     },
     {
      "type": "listen_pic",
@@ -4080,11 +4080,11 @@
      "question": "你住在哪裡？",
      "options": [
       "我住在市區的大樓裡。",
-      "我住在鄉下。",
-      "我住在學校宿舍。"
+      "我住在學校宿舍。",
+      "我住在鄉下。"
      ],
-     "answer": 1,
-     "why": "A house among rice fields → 鄉下. A and C are places in town."
+     "answer": 2,
+     "why": "A house among rice fields → 鄉下. A and B are places in town."
     },
     {
      "type": "listen_pic",
@@ -4224,12 +4224,12 @@
       "label": "city centre"
      },
      "options": [
-      "這裡是鄉下，房子很少。",
       "這裡是市區，有很多高樓。",
+      "這裡是鄉下，房子很少。",
       "這裡很涼快，環境很好。"
      ],
-     "answer": 1,
-     "why": "Tall buildings → 市區. A is the opposite; C is not shown."
+     "answer": 0,
+     "why": "Tall buildings → 市區. B is the opposite; C is not shown."
     },
     {
      "type": "read_gap",
@@ -4277,13 +4277,13 @@
      "text": "很多年輕人覺得城市的生活比鄉下好得多，因為工作多，買東西也方便。可是我在臺北住了五年，覺得城市的房屋太貴，環境也沒有鄉下那麼好。去年我搬到花蓮的鄉下，現在去市區要開車一個小時，可是每天都能看到山和海，我覺得這樣的生活很好。",
      "question": "這個人覺得鄉下的生活怎麼樣？",
      "options": [
-      "不太方便，可是他很喜歡",
+      "工作比城市多",
       "比城市方便得多",
       "房子比城市貴",
-      "工作比城市多"
+      "不太方便，可是他很喜歡"
      ],
-     "answer": 0,
-     "why": "It takes an hour to get to town (less convenient), but 這樣的生活很好. B is the opposite. C: housing is expensive in the city. D: the jobs are in the city."
+     "answer": 3,
+     "why": "It takes an hour to get to town (less convenient), but 這樣的生活很好. B is the opposite. C: housing is expensive in the city. A: the jobs are in the city."
     }
    ],
    "grammar": [
@@ -4577,11 +4577,11 @@
      "question": "他的錢怎麼樣？",
      "options": [
       "越來越多。",
-      "一直都一樣。",
-      "越來越少了。"
+      "越來越少了。",
+      "一直都一樣。"
      ],
-     "answer": 2,
-     "why": "The money graph keeps falling → 越來越少. A is the opposite; B does not match the graph."
+     "answer": 1,
+     "why": "The money graph keeps falling → 越來越少. A is the opposite; C does not match the graph."
     },
     {
      "type": "listen_pic",
@@ -4612,12 +4612,12 @@
      },
      "question": "他晚上經常做什麼？",
      "options": [
-      "寫日記。",
+      "打電話。",
       "看電視。",
-      "打電話。"
+      "寫日記。"
      ],
-     "answer": 0,
-     "why": "Writing a diary at night → 寫日記. B and C are other activities."
+     "answer": 2,
+     "why": "Writing a diary at night → 寫日記. B and A are other activities."
     },
     {
      "type": "listen_reply",
@@ -4625,12 +4625,12 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "你一個月的生活費要多少？",
      "options": [
-      "我經常去夜市。",
       "一般要一萬兩千塊。",
+      "我經常去夜市。",
       "生活費越來越貴了。"
      ],
-     "answer": 1,
-     "why": "The question asks for an amount → 一般要一萬兩千塊. A does not answer. C comments on costs but gives no amount."
+     "answer": 0,
+     "why": "The question asks for an amount → 一般要一萬兩千塊. B does not answer. C comments on costs but gives no amount."
     },
     {
      "type": "listen_reply",
@@ -4669,12 +4669,12 @@
      ],
      "question": "這位先生的生活費是多少？",
      "options": [
-      "一萬五千塊",
       "一萬兩千塊",
+      "一萬五千塊",
       "三千塊"
      ],
-     "answer": 1,
-     "why": "Spending of 15,000 is 3,000 more than his allowance → 12,000. A is what he spends; C is the difference."
+     "answer": 0,
+     "why": "Spending of 15,000 is 3,000 more than his allowance → 12,000. B is what he spends; C is the difference."
     },
     {
      "type": "listen_dialog",
@@ -4719,16 +4719,16 @@
        "label": "sister eating cake"
       },
       {
-       "icon": "👧🙅🍰",
-       "label": "sister refusing cake"
-      },
-      {
        "icon": "👧🏃",
        "label": "sister exercising"
+      },
+      {
+       "icon": "👧🙅🍰",
+       "label": "sister refusing cake"
       }
      ],
-     "answer": 1,
-     "why": "越吃越胖 → now she no longer eats cake (refuses it). A is the opposite; C is not mentioned."
+     "answer": 2,
+     "why": "越吃越胖 → now she no longer eats cake (refuses it). A is the opposite; B is not mentioned."
     },
     {
      "type": "read_pick",
@@ -4740,11 +4740,11 @@
      },
      "options": [
       "他的錢越來越多。",
-      "他的錢都花光了。",
-      "他的錢包裡有很多錢。"
+      "他的錢包裡有很多錢。",
+      "他的錢都花光了。"
      ],
-     "answer": 1,
-     "why": "An empty wallet → 花光了. A and C are the opposite."
+     "answer": 2,
+     "why": "An empty wallet → 花光了. A and B are the opposite."
     },
     {
      "type": "read_gap",
@@ -4793,12 +4793,12 @@
      "question": "小林這個月為什麼還有錢？",
      "options": [
       "他的生活費變多了",
-      "他少買了衣服",
+      "他去咖啡店工作了",
       "他不吃飯了",
-      "他去咖啡店工作了"
+      "他少買了衣服"
      ],
-     "answer": 1,
-     "why": "He realised clothes were his biggest expense → shopped less → money left over. A is not mentioned. C is not mentioned (he did not stop eating). D: his café job existed before, so it is not the new reason."
+     "answer": 3,
+     "why": "He realised clothes were his biggest expense → shopped less → money left over. A is not mentioned. C is not mentioned (he did not stop eating). B: his café job existed before, so it is not the new reason."
     }
    ],
    "grammar": [
@@ -5114,12 +5114,12 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "你的鞋子怎麼溼了？",
      "options": [
-      "我沒帶傘，走路回來的。",
+      "明天會是晴天。",
       "這雙鞋子很貴。",
-      "明天會是晴天。"
+      "我沒帶傘，走路回來的。"
      ],
-     "answer": 0,
-     "why": "The question asks WHY the shoes are wet → no umbrella. B and C give no reason."
+     "answer": 2,
+     "why": "The question asks WHY the shoes are wet → no umbrella. B and A give no reason."
     },
     {
      "type": "listen_dialog",
@@ -5177,12 +5177,12 @@
      "question": "這位先生要帶什麼？",
      "options": [
       "他自己的傘",
-      "這位小姐的傘",
+      "什麼都不帶",
       "雨衣",
-      "什麼都不帶"
+      "這位小姐的傘"
      ],
-     "answer": 1,
-     "why": "我帶你的傘 → the woman's umbrella. A: he doesn't mention his own. C is not mentioned. D was his first attitude, which changes."
+     "answer": 3,
+     "why": "我帶你的傘 → the woman's umbrella. A: he doesn't mention his own. C is not mentioned. B was his first attitude, which changes."
     },
     {
      "type": "read_sent",
@@ -5509,11 +5509,11 @@
      "question": "他在哪裡長大？",
      "options": [
       "在市區長大。",
-      "在鄉下長大。",
-      "在大樓裡長大。"
+      "在大樓裡長大。",
+      "在鄉下長大。"
      ],
-     "answer": 1,
-     "why": "A child growing up near rice fields → 鄉下. A and C are city settings."
+     "answer": 2,
+     "why": "A child growing up near rice fields → 鄉下. A and B are city settings."
     },
     {
      "type": "listen_pic",
@@ -5557,12 +5557,12 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "你是在哪裡長大的？",
      "options": [
-      "我今年二十歲。",
       "我在臺中長大的。",
+      "我今年二十歲。",
       "我是大學生。"
      ],
-     "answer": 1,
-     "why": "The question asks where he grew up → 在臺中長大的. A gives his age; C his status."
+     "answer": 0,
+     "why": "The question asks where he grew up → 在臺中長大的. B gives his age; C his status."
     },
     {
      "type": "listen_reply",
@@ -5633,12 +5633,12 @@
      "question": "這位小姐的中文為什麼說得很好？",
      "options": [
       "她在臺灣長大",
-      "她在家說中文",
+      "她的母語是英文",
       "她在大學學中文",
-      "她的母語是英文"
+      "她在家說中文"
      ],
-     "answer": 1,
-     "why": "爸媽在家只跟我說中文 → that is the reason. A is wrong: she grew up in America. C and D are not mentioned."
+     "answer": 3,
+     "why": "爸媽在家只跟我說中文 → that is the reason. A is wrong: she grew up in America. C and B are not mentioned."
     },
     {
      "type": "read_sent",
@@ -5671,12 +5671,12 @@
       "label": "an elderly grandfather"
      },
      "options": [
-      "他年紀很大了。",
+      "他是大學生。",
       "他還是國小學生。",
-      "他是大學生。"
+      "他年紀很大了。"
      ],
-     "answer": 0,
-     "why": "An old man → 年紀很大了. B and C are young people."
+     "answer": 2,
+     "why": "An old man → 年紀很大了. B and A are young people."
     },
     {
      "type": "read_gap",
@@ -6079,11 +6079,11 @@
      "audio": "你外婆有幾個孫子？",
      "options": [
       "我外婆今年八十歲。",
-      "好幾個，其中我最小。",
-      "我沒有外公。"
+      "我沒有外公。",
+      "好幾個，其中我最小。"
      ],
-     "answer": 1,
-     "why": "The question asks how many grandchildren → 好幾個. A gives an age; C is unrelated."
+     "answer": 2,
+     "why": "The question asks how many grandchildren → 好幾個. A gives an age; B is unrelated."
     },
     {
      "type": "listen_reply",
@@ -6155,11 +6155,11 @@
      "options": [
       "照片裡只有三個人",
       "這位先生是外公外婆的孩子",
-      "這位先生是外公外婆年紀最大的孫子",
-      "這位小姐也在照片裡"
+      "這位小姐也在照片裡",
+      "這位先生是外公外婆年紀最大的孫子"
      ],
-     "answer": 2,
-     "why": "他們的孫子…其中我年紀最大 → the eldest grandchild. A contradicts 好多人. B: he is a grandchild, not a child. D is not mentioned."
+     "answer": 3,
+     "why": "他們的孫子…其中我年紀最大 → the eldest grandchild. A contradicts 好多人. B: he is a grandchild, not a child. C is not mentioned."
     },
     {
      "type": "read_sent",
@@ -6245,13 +6245,13 @@
      "text": "過年的時候，我們全家都去外婆家。外公外婆有三個孩子，其中我媽媽最小。外公外婆一共有七個孫子和孫女，其中只有我是女生。大家都很喜歡我，外婆每年都給我最多的紅包。",
      "question": "哪一個是對的？",
      "options": [
-      "外婆只有一個孫女",
+      "她有好幾個姊妹",
       "她媽媽是外公外婆的大女兒",
       "外公外婆有七個孩子",
-      "她有好幾個姊妹"
+      "外婆只有一個孫女"
      ],
-     "answer": 0,
-     "why": "其中只有我是女生 → the only granddaughter. B is the opposite (媽媽最小). C: seven is the number of grandchildren; there are three children. D contradicts it: she is the only girl."
+     "answer": 3,
+     "why": "其中只有我是女生 → the only granddaughter. B is the opposite (媽媽最小). C: seven is the number of grandchildren; there are three children. A contradicts it: she is the only girl."
     }
    ],
    "grammar": [
@@ -6565,11 +6565,11 @@
      "question": "他怎麼樣？",
      "options": [
       "他很胖。",
-      "他很帥。",
-      "他很老。"
+      "他很老。",
+      "他很帥。"
      ],
-     "answer": 1,
-     "why": "A man striking a cool pose → 很帥. A and C are not shown."
+     "answer": 2,
+     "why": "A man striking a cool pose → 很帥. A and B are not shown."
     },
     {
      "type": "listen_reply",
@@ -6654,11 +6654,11 @@
      "options": [
       "跟小美結婚",
       "去上大學",
-      "去買東西送小美",
-      "問小美幾歲"
+      "問小美幾歲",
+      "去買東西送小美"
      ],
-     "answer": 2,
-     "why": "趕快去買東西送她 → buying a present for 小美. A is a misunderstanding. B and D are not mentioned."
+     "answer": 3,
+     "why": "趕快去買東西送她 → buying a present for 小美. A is a misunderstanding. B and C are not mentioned."
     },
     {
      "type": "read_sent",
@@ -6744,13 +6744,13 @@
      "text": "小林和美美是大學的同班同學，今年十二月就要結婚了。小林的父母住在高雄，美美的父母住在臺北，所以他們要回兩個地方跟家人吃飯。美美說，她母親已經開始準備了，每天都很忙；她父親很少說話，可是晚上常常一個人看她小時候的照片。",
      "question": "美美的父親為什麼常常看她小時候的照片？",
      "options": [
-      "女兒快要結婚了，他有點難過",
       "他在找結婚要用的照片",
+      "女兒快要結婚了，他有點難過",
       "他想念高雄的家",
       "他在找結婚的地方"
      ],
-     "answer": 0,
-     "why": "Quietly looking at childhood photos of the daughter who is about to marry → sad to 'let her go'. B and D are not mentioned. C: the house in 高雄 belongs to 小林's family, not his."
+     "answer": 1,
+     "why": "Quietly looking at childhood photos of the daughter who is about to marry → sad to 'let her go'. A and D are not mentioned. C: the house in 高雄 belongs to 小林's family, not his."
     }
    ],
    "grammar": [
@@ -7035,12 +7035,12 @@
      },
      "question": "他在哪裡打工？",
      "options": [
-      "在咖啡店。",
+      "在書店。",
       "在餐廳。",
-      "在書店。"
+      "在咖啡店。"
      ],
-     "answer": 0,
-     "why": "Behind a café counter → 咖啡店. B and C are other places."
+     "answer": 2,
+     "why": "Behind a café counter → 咖啡店. B and A are other places."
     },
     {
      "type": "listen_pic",
@@ -7097,12 +7097,12 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "你可以替我去超市買東西嗎？",
      "options": [
-      "我昨天去了超市。",
       "好，沒問題。",
+      "我昨天去了超市。",
       "超市的東西很便宜。"
      ],
-     "answer": 1,
-     "why": "A request to go in his place → 好，沒問題. A and C only repeat the word 超市 without answering."
+     "answer": 0,
+     "why": "B request to go in his place → 好，沒問題. B and C only repeat the word 超市 without answering."
     },
     {
      "type": "listen_dialog",
@@ -7128,12 +7128,12 @@
      ],
      "question": "這位先生為什麼打工？",
      "options": [
-      "他爸媽不給他錢",
       "他想自己買電腦",
+      "他爸媽不給他錢",
       "他喜歡超市"
      ],
-     "answer": 1,
-     "why": "為了買一臺新電腦 + 我想自己買. A is the opposite (給啊). C is not mentioned."
+     "answer": 0,
+     "why": "為了買一臺新電腦 + 我想自己買. B is the opposite (給啊). C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -7252,12 +7252,12 @@
      "question": "小王為什麼去公司打工？",
      "options": [
       "他需要生活費",
-      "他想知道自己以後想做什麼工作",
+      "老闆是他爸爸",
       "他很喜歡看書",
-      "老闆是他爸爸"
+      "他想知道自己以後想做什麼工作"
      ],
-     "answer": 1,
-     "why": "目的不是錢，是想知道…想不想做那樣的工作 → that is the reason. A: he says it is not about money. C is the writer's reason, not 小王's. D is not mentioned."
+     "answer": 3,
+     "why": "目的不是錢，是想知道…想不想做那樣的工作 → that is the reason. A: he says it is not about money. C is the writer's reason, not 小王's. B is not mentioned."
     }
    ],
    "grammar": [
@@ -7509,12 +7509,12 @@
      },
      "question": "他們在做什麼？",
      "options": [
-      "他們在上課。",
       "他們在開會。",
+      "他們在上課。",
       "他們在吃飯。"
      ],
-     "answer": 1,
-     "why": "An office meeting room with a chart → 開會. A and C are other activities."
+     "answer": 0,
+     "why": "An office meeting room with a chart → 開會. B and C are other activities."
     },
     {
      "type": "listen_pic",
@@ -7528,11 +7528,11 @@
      "question": "你今天晚上要做什麼？",
      "options": [
       "我要去看電影。",
-      "我必須加班。",
-      "我要回家吃飯。"
+      "我要回家吃飯。",
+      "我必須加班。"
      ],
-     "answer": 1,
-     "why": "Still working in the office at night → 必須加班. A and C do not match the picture."
+     "answer": 2,
+     "why": "Still working in the office at night → 必須加班. A and B do not match the picture."
     },
     {
      "type": "listen_pic",
@@ -7603,11 +7603,11 @@
      "question": "明天的會幾點開始？",
      "options": [
       "九點",
-      "十點",
-      "十一點"
+      "十一點",
+      "十點"
      ],
-     "answer": 1,
-     "why": "不對，王先生說十點 → 10 o'clock. A is corrected by the speaker himself; C is not mentioned."
+     "answer": 2,
+     "why": "不對，王先生說十點 → 10 o'clock. A is corrected by the speaker himself; B is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -7672,12 +7672,12 @@
       "label": "writing a report"
      },
      "options": [
-      "他在寫報告。",
       "他在開會。",
+      "他在寫報告。",
       "他在打電話。"
      ],
-     "answer": 0,
-     "why": "Writing on paper → 寫報告. B and C are other activities."
+     "answer": 1,
+     "why": "Writing on paper → 寫報告. A and C are other activities."
     },
     {
      "type": "read_gap",
@@ -8073,11 +8073,11 @@
      "question": "他們週末要做什麼？",
      "options": [
       "爬山",
-      "去公園散步",
-      "在家休息"
+      "在家休息",
+      "去公園散步"
      ],
-     "answer": 1,
-     "why": "The second suggestion (公園散步) is accepted. A is the first suggestion, which he turns down. C is not mentioned."
+     "answer": 2,
+     "why": "The second suggestion (公園散步) is accepted. A is the first suggestion, which he turns down. B is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -8104,12 +8104,12 @@
      "question": "這位先生的意思是什麼？",
      "options": [
       "他還想再爬",
-      "他不相信快到了",
+      "他想拍照",
       "他們已經到了",
-      "他想拍照"
+      "他不相信快到了"
      ],
-     "answer": 1,
-     "why": "你半個小時以前也這麼說 → he no longer believes her. A is the opposite (爬不上去了). C: they are only about to arrive. D is not mentioned."
+     "answer": 3,
+     "why": "你半個小時以前也這麼說 → he no longer believes her. A is the opposite (爬不上去了). C: they are only about to arrive. B is not mentioned."
     },
     {
      "type": "read_sent",
@@ -8118,20 +8118,20 @@
      "text": "妹妹對拍照很有興趣，出去玩的時候經常拍很多相片。",
      "options": [
       {
-       "icon": "👧🎨",
-       "label": "painting"
-      },
-      {
        "icon": "👧📷",
        "label": "to take photos"
+      },
+      {
+       "icon": "👧🎨",
+       "label": "painting"
       },
       {
        "icon": "👧🎤",
        "label": "singing"
       }
      ],
-     "answer": 1,
-     "why": "對拍照有興趣 → taking photos. A and C are other hobbies."
+     "answer": 0,
+     "why": "對拍照有興趣 → taking photos. B and C are other hobbies."
     },
     {
      "type": "read_pick",
@@ -8497,11 +8497,11 @@
      "audio": "那部電影怎麼樣？",
      "options": [
       "我昨天在電影院看的。",
-      "無聊極了，我不想再看了。",
-      "我跟朋友一起去看的。"
+      "我跟朋友一起去看的。",
+      "無聊極了，我不想再看了。"
      ],
-     "answer": 1,
-     "why": "The question asks for an opinion → 無聊極了. A gives the place; C says who with."
+     "answer": 2,
+     "why": "The question asks for an opinion → 無聊極了. A gives the place; B says who with."
     },
     {
      "type": "listen_reply",
@@ -8540,12 +8540,12 @@
      ],
      "question": "這位小姐喜歡看什麼？",
      "options": [
-      "電影",
       "旅行雜誌",
+      "電影",
       "新聞"
      ],
-     "answer": 1,
-     "why": "比較喜歡看雜誌 → travel magazines. A: 不太看電影. C is not mentioned."
+     "answer": 0,
+     "why": "比較喜歡看雜誌 → travel magazines. B: 不太看電影. C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -8572,12 +8572,12 @@
      "question": "這位小姐的意思是什麼？",
      "options": [
       "她很喜歡這個遊戲",
-      "這位先生可以玩她的遊戲",
+      "大家都覺得遊戲很無聊",
       "她想買新的遊戲",
-      "大家都覺得遊戲很無聊"
+      "這位先生可以玩她的遊戲"
      ],
-     "answer": 1,
-     "why": "那你玩我的吧 → she offers her game first. A is the opposite (不太有意思). C is not mentioned. D is the opposite (大家都說有趣極了)."
+     "answer": 3,
+     "why": "那你玩我的吧 → she offers her game first. A is the opposite (不太有意思). C is not mentioned. B is the opposite (大家都說有趣極了)."
     },
     {
      "type": "read_sent",
@@ -8586,20 +8586,20 @@
      "text": "弟弟覺得這個遊戲好玩得不得了，玩了一個下午。",
      "options": [
       {
-       "icon": "👦🎮😴",
-       "label": "a child bored with a game"
-      },
-      {
        "icon": "👦🎮😆",
        "label": "a child absorbed in a game"
+      },
+      {
+       "icon": "👦🎮😴",
+       "label": "a child bored with a game"
       },
       {
        "icon": "👦📖",
        "label": "a child reading"
       }
      ],
-     "answer": 1,
-     "why": "好玩得不得了 → great fun. A is the opposite; C is a different activity."
+     "answer": 0,
+     "why": "好玩得不得了 → great fun. B is the opposite; C is a different activity."
     },
     {
      "type": "read_pick",
@@ -8627,11 +8627,11 @@
      },
      "text": "今天熱（　）了，我不想出去。",
      "options": [
-      "極",
+      "太",
       "很",
-      "太"
+      "極"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Vs極了 = extremely. 熱很了 and 熱太了 have the wrong word order (很熱, 太熱了)."
     },
     {
@@ -8665,11 +8665,11 @@
      "options": [
       "爺爺一直說話",
       "電視新聞有趣極了",
-      "大家都在看新聞，很無聊",
-      "大家一起看電視"
+      "大家一起看電視",
+      "大家都在看新聞，很無聊"
      ],
-     "answer": 2,
-     "why": "大家都不說話，無聊極了. A is the opposite (不說話). B is not mentioned. D: only grandpa watches TV."
+     "answer": 3,
+     "why": "大家都不說話，無聊極了. A is the opposite (不說話). B is not mentioned. C: only grandpa watches TV."
     }
    ],
    "grammar": [
@@ -9014,11 +9014,11 @@
      "question": "他們今天先做什麼？",
      "options": [
       "參觀故宮",
-      "吃午飯",
-      "逛夜市"
+      "逛夜市",
+      "吃午飯"
      ],
-     "answer": 1,
-     "why": "Her suggestion is accepted: 先吃飯. A was the original plan, now changed. C is not mentioned."
+     "answer": 2,
+     "why": "Her suggestion is accepted: 先吃飯. A was the original plan, now changed. B is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -9045,12 +9045,12 @@
      "question": "他們什麼時候去故宮？",
      "options": [
       "星期五",
-      "星期六早上",
+      "今天",
       "星期六下午",
-      "今天"
+      "星期六早上"
      ],
-     "answer": 1,
-     "why": "星期六早上一開門就去. A is ruled out (she works). C: midday is for lunch. D: today they only book tickets."
+     "answer": 3,
+     "why": "星期六早上一開門就去. A is ruled out (she works). C: midday is for lunch. B: today they only book tickets."
     },
     {
      "type": "read_sent",
@@ -9083,12 +9083,12 @@
       "label": "a night market packed with people"
      },
      "options": [
-      "夜市裡一個人也沒有。",
+      "夜市裡到處都是人。",
       "夜市還沒開。",
-      "夜市裡到處都是人。"
+      "夜市裡一個人也沒有。"
      ],
-     "answer": 2,
-     "why": "Packed with people → 到處都是人. A and B are the opposite."
+     "answer": 0,
+     "why": "Packed with people → 到處都是人. C and B are the opposite."
     },
     {
      "type": "read_gap",
@@ -9138,11 +9138,11 @@
      "options": [
       "太累了",
       "要去逛夜市",
-      "天氣不好",
-      "要參觀故宮"
+      "要參觀故宮",
+      "天氣不好"
      ],
-     "answer": 2,
-     "why": "可是下雨了 → bad weather. A is not mentioned. B and D were on the first day."
+     "answer": 3,
+     "why": "可是下雨了 → bad weather. A is not mentioned. B and C were on the first day."
     }
    ],
    "grammar": [
@@ -9447,11 +9447,11 @@
      "question": "你怎麼去上班？",
      "options": [
       "搭公車去。",
-      "搭捷運去。",
-      "開車去。"
+      "開車去。",
+      "搭捷運去。"
      ],
-     "answer": 1,
-     "why": "An underground MRT platform → 搭捷運. A and C are other transport."
+     "answer": 2,
+     "why": "An underground MRT platform → 搭捷運. A and B are other transport."
     },
     {
      "type": "listen_pic",
@@ -9553,12 +9553,12 @@
      "question": "他們為什麼不坐公車？",
      "options": [
       "公車站太遠",
-      "下班時間公車很慢",
+      "公車沒有座位",
       "捷運比較便宜",
-      "公車沒有座位"
+      "下班時間公車很慢"
      ],
-     "answer": 1,
-     "why": "下班時間 → 公車一定很慢. A is the opposite (公車站比較近). C and D are not mentioned."
+     "answer": 3,
+     "why": "下班時間 → 公車一定很慢. A is the opposite (公車站比較近). C and B are not mentioned."
     },
     {
      "type": "read_sent",
@@ -9645,12 +9645,12 @@
      "question": "這個人為什麼六點半就出門？",
      "options": [
       "捷運七點才開始",
-      "他想在捷運上有座位",
       "他七點要上班",
+      "他想在捷運上有座位",
       "六點半班次比較多"
      ],
-     "answer": 1,
-     "why": "這個時候搭捷運，一定有座位 → that is the reason. A and C are not mentioned. D: the problem is crowds from 7 to 9, not the number of trains."
+     "answer": 2,
+     "why": "這個時候搭捷運，一定有座位 → that is the reason. A and B are not mentioned. D: the problem is crowds from 7 to 9, not the number of trains."
     }
    ],
    "grammar": [
@@ -9956,12 +9956,12 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "這麼多菜，你一個人吃得了嗎？",
      "options": [
-      "菜很好吃。",
       "吃不了，我們一起吃吧。",
+      "菜很好吃。",
       "我不會做菜。"
      ],
-     "answer": 1,
-     "why": "吃得了嗎 = can you finish it all? → 吃不了. A comments on the taste; C does not fit."
+     "answer": 0,
+     "why": "吃得了嗎 = can you finish it all? → 吃不了. B comments on the taste; C does not fit."
     },
     {
      "type": "listen_reply",
@@ -10000,12 +10000,12 @@
      ],
      "question": "這位先生怎麼去上班？",
      "options": [
-      "騎機車",
       "騎自行車",
+      "騎機車",
       "搭捷運"
      ],
-     "answer": 1,
-     "why": "我騎自行車. A: he can ride one but won't in Taipei. C is not mentioned."
+     "answer": 0,
+     "why": "我騎自行車. B: he can ride one but won't in Taipei. C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -10033,11 +10033,11 @@
      "options": [
       "字太小",
       "她的眼睛不好",
-      "她坐得太遠",
-      "前面的人太高"
+      "前面的人太高",
+      "她坐得太遠"
      ],
-     "answer": 2,
-     "why": "我坐得太遠了 → that is the reason. A, B and D are not mentioned."
+     "answer": 3,
+     "why": "我坐得太遠了 → that is the reason. A, B and C are not mentioned."
     },
     {
      "type": "read_sent",
@@ -10071,11 +10071,11 @@
      },
      "options": [
       "他騎機車。",
-      "他騎自行車。",
-      "他開車。"
+      "他開車。",
+      "他騎自行車。"
      ],
-     "answer": 1,
-     "why": "A bicycle → 自行車. A and C are other vehicles."
+     "answer": 2,
+     "why": "A bicycle → 自行車. A and B are other vehicles."
     },
     {
      "type": "read_gap",
@@ -10511,11 +10511,11 @@
      "question": "這位小姐為什麼六點就出門？",
      "options": [
       "她的飛機六點",
-      "她的行李很多",
-      "她要去拿簽證"
+      "她要去拿簽證",
+      "她的行李很多"
      ],
-     "answer": 1,
-     "why": "行李太多了 → that is the reason. A: the flight is at 10. C is not mentioned."
+     "answer": 2,
+     "why": "行李太多了 → that is the reason. A: the flight is at 10. B is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -10633,13 +10633,13 @@
      "text": "很多人第一次出國，只準備了簽證和行李，可是忘了時差的問題。我去年去美國念書，那裡跟臺灣的時差是十二個小時。第一個星期，我晚上兩點還不想睡覺，白天上課一直想睡覺。一個星期以後才好一點。",
      "question": "這個人去美國第一個星期怎麼了？",
      "options": [
-      "他忘了帶簽證",
       "因為時差，白天很想睡覺",
+      "他忘了帶簽證",
       "他的行李太多了",
       "他每天晚上很早就睡覺"
      ],
-     "answer": 1,
-     "why": "A 12-hour time difference → sleepy in the daytime. A: what was forgotten is the time difference, not the visa. C is not mentioned. D is the opposite (still not sleepy at 2 a.m.)."
+     "answer": 0,
+     "why": "B 12-hour time difference → sleepy in the daytime. B: what was forgotten is the time difference, not the visa. C is not mentioned. D is the opposite (still not sleepy at 2 a.m.)."
     }
    ],
    "grammar": [
@@ -10902,12 +10902,12 @@
      },
      "question": "他們怎麼去？",
      "options": [
-      "坐飛機。",
       "坐船。",
+      "坐飛機。",
       "開車。"
      ],
-     "answer": 1,
-     "why": "They are on a boat at sea → 坐船. A and C are other transport."
+     "answer": 0,
+     "why": "They are on a boat at sea → 坐船. B and C are other transport."
     },
     {
      "type": "listen_pic",
@@ -10920,12 +10920,12 @@
      },
      "question": "你們怎麼去？",
      "options": [
-      "我們坐飛機去。",
       "我們只好坐船。",
+      "我們坐飛機去。",
       "我們不去了。"
      ],
-     "answer": 1,
-     "why": "Plane tickets crossed out, the family takes a boat → 只好坐船. A is not possible; C: they still go."
+     "answer": 0,
+     "why": "Plane tickets crossed out, the family takes a boat → 只好坐船. B is not possible; C: they still go."
     },
     {
      "type": "listen_pic",
@@ -10965,11 +10965,11 @@
      "audio": "外面下大雨，你還要去嗎？",
      "options": [
       "雨很大。",
-      "不管下不下雨，我都要去。",
-      "今天是晴天。"
+      "今天是晴天。",
+      "不管下不下雨，我都要去。"
      ],
-     "answer": 1,
-     "why": "The question is whether she will still go → 不管…都要去. A only repeats; C contradicts the rain."
+     "answer": 2,
+     "why": "The question is whether she will still go → 不管…都要去. A only repeats; B contradicts the rain."
     },
     {
      "type": "listen_dialog",
@@ -11028,11 +11028,11 @@
      "options": [
       "她不想去綠島了",
       "她要坐飛機去",
-      "如果船不開，她就下個週末去",
-      "明天天氣很好"
+      "明天天氣很好",
+      "如果船不開，她就下個週末去"
      ],
-     "answer": 2,
-     "why": "只好下個週末再去 → if the boat doesn't sail, it's postponed. A is the opposite (she still wants to go). B is not mentioned. D is the opposite (天氣不太好)."
+     "answer": 3,
+     "why": "只好下個週末再去 → if the boat doesn't sail, it's postponed. A is the opposite (she still wants to go). B is not mentioned. C is the opposite (天氣不太好)."
     },
     {
      "type": "read_sent",
@@ -11066,11 +11066,11 @@
      },
      "options": [
       "飯店還有很多房間。",
-      "飯店客滿了。",
-      "飯店很便宜。"
+      "飯店很便宜。",
+      "飯店客滿了。"
      ],
-     "answer": 1,
-     "why": "A 'full' sign → 客滿了. A is the opposite; C is not shown."
+     "answer": 2,
+     "why": "A 'full' sign → 客滿了. A is the opposite; B is not shown."
     },
     {
      "type": "read_gap",
@@ -11119,12 +11119,12 @@
      "question": "這個人為什麼沒有去日本？",
      "options": [
       "他不喜歡日本",
-      "飛機票太貴，飯店也客滿了",
+      "他要去花蓮工作",
       "他沒有時間",
-      "他要去花蓮工作"
+      "飛機票太貴，飯店也客滿了"
      ],
-     "answer": 1,
-     "why": "飛機票太貴 + 飯店客滿 → that is the reason. A is the opposite (他想去). C: he had two weeks. D: he went to Hualien on holiday."
+     "answer": 3,
+     "why": "飛機票太貴 + 飯店客滿 → that is the reason. A is the opposite (他想去). C: he had two weeks. B: he went to Hualien on holiday."
     }
    ],
    "grammar": [
@@ -11398,12 +11398,12 @@
      },
      "question": "天氣怎麼樣？",
      "options": [
-      "今天是陰天，沒有風。",
+      "颱風要來了。",
       "颱風已經走了。",
-      "颱風要來了。"
+      "今天是陰天，沒有風。"
      ],
-     "answer": 2,
-     "why": "A typhoon swirl is approaching → 要來了. A: there is typhoon wind. B: the typhoon has not passed yet."
+     "answer": 0,
+     "why": "C typhoon swirl is approaching → 要來了. C: there is typhoon wind. B: the typhoon has not passed yet."
     },
     {
      "type": "listen_pic",
@@ -11417,11 +11417,11 @@
      "question": "你們去哪裡？",
      "options": [
       "去游泳池。",
-      "去溫泉。",
-      "去海邊。"
+      "去海邊。",
+      "去溫泉。"
      ],
-     "answer": 1,
-     "why": "A steaming pool → 溫泉. A and C are other places."
+     "answer": 2,
+     "why": "A steaming pool → 溫泉. A and B are other places."
     },
     {
      "type": "listen_reply",
@@ -11442,12 +11442,12 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "溫泉的地點在哪裡？",
      "options": [
-      "在北投。",
       "溫泉很舒服。",
+      "在北投。",
       "我們週末去。"
      ],
-     "answer": 0,
-     "why": "地點 = location → 在北投. B is an opinion; C says when."
+     "answer": 1,
+     "why": "地點 = location → 在北投. A is an opinion; C says when."
     },
     {
      "type": "listen_dialog",
@@ -11597,12 +11597,12 @@
      "question": "媽媽為什麼今天去超市買很多東西？",
      "options": [
       "超市明天不開",
-      "颱風來的話，就不能出門了",
+      "她要去南部",
       "明天學校不上課",
-      "她要去南部"
+      "颱風來的話，就不能出門了"
      ],
-     "answer": 1,
-     "why": "颱風來的話，就不能出門了 → that is the reason. A is not mentioned. C is true but not why she shopped. D: the typhoon is in the south; she is not going there."
+     "answer": 3,
+     "why": "颱風來的話，就不能出門了 → that is the reason. A is not mentioned. C is true but not why she shopped. B: the typhoon is in the south; she is not going there."
     }
    ],
    "grammar": [
@@ -11877,11 +11877,11 @@
      "question": "他送她什麼？",
      "options": [
       "一本書。",
-      "一個禮物。",
-      "一本雜誌。"
+      "一本雜誌。",
+      "一個禮物。"
      ],
-     "answer": 1,
-     "why": "A box with a ribbon → 禮物. A and C are different shapes."
+     "answer": 2,
+     "why": "A box with a ribbon → 禮物. A and B are different shapes."
     },
     {
      "type": "listen_pic",
@@ -11912,12 +11912,12 @@
      },
      "question": "今天誰付錢？",
      "options": [
-      "朋友請我。",
       "我請客！",
+      "朋友請我。",
       "我們一人付一半。"
      ],
-     "answer": 1,
-     "why": "He pays the bill for his friends → 我請客. A is the opposite; C does not match."
+     "answer": 0,
+     "why": "He pays the bill for his friends → 我請客. B is the opposite; C does not match."
     },
     {
      "type": "listen_reply",
@@ -11970,11 +11970,11 @@
      "question": "今天誰請客？",
      "options": [
       "這位小姐",
-      "這位先生",
-      "他們都不請"
+      "他們都不請",
+      "這位先生"
      ],
-     "answer": 1,
-     "why": "上次是你請的，今天我請 → the man. A is the offer that is turned down. C does not fit."
+     "answer": 2,
+     "why": "上次是你請的，今天我請 → the man. A is the offer that is turned down. B does not fit."
     },
     {
      "type": "listen_dialog",
@@ -12001,12 +12001,12 @@
      "question": "他們要送安妮什麼？",
      "options": [
       "一本書",
-      "蛋糕",
+      "錢",
       "花",
-      "錢"
+      "蛋糕"
      ],
-     "answer": 1,
-     "why": "還是送吃的吧 → 買蛋糕. A is the first suggestion, turned down. C and D are not mentioned."
+     "answer": 3,
+     "why": "還是送吃的吧 → 買蛋糕. A is the first suggestion, turned down. C and B are not mentioned."
     },
     {
      "type": "read_sent",
@@ -12092,13 +12092,13 @@
      "text": "美美：這個星期六是我的生日，晚上七點在我家有一個小派對。你有空的話，最好早一點來，我們可以一起準備。不用帶禮物，你自己來就好了！要是你有別的約會，也沒關係，打電話告訴我。——安妮",
      "question": "安妮希望美美怎麼做？",
      "options": [
-      "一定要帶禮物",
-      "七點以後才來",
       "有空的話早一點來幫忙",
+      "七點以後才來",
+      "一定要帶禮物",
       "打電話說生日快樂"
      ],
-     "answer": 2,
-     "why": "最好早一點來，我們可以一起準備. A is the opposite (不用帶禮物). B is the opposite (早一點). D: only call if she can't come."
+     "answer": 0,
+     "why": "最好早一點來，我們可以一起準備. C is the opposite (不用帶禮物). B is the opposite (早一點). D: only call if she can't come."
     }
    ],
    "grammar": [
@@ -12382,11 +12382,11 @@
      "question": "你陪誰去醫院？",
      "options": [
       "陪媽媽。",
-      "陪奶奶。",
-      "陪弟弟。"
+      "陪弟弟。",
+      "陪奶奶。"
      ],
-     "answer": 1,
-     "why": "Walking grandma into the hospital → 陪奶奶. A and C are other people."
+     "answer": 2,
+     "why": "Walking grandma into the hospital → 陪奶奶. A and B are other people."
     },
     {
      "type": "listen_pic",
@@ -12400,11 +12400,11 @@
      "question": "護士在做什麼？",
      "options": [
       "她在看醫生。",
-      "她在打電話。",
-      "她在照顧病人。"
+      "她在照顧病人。",
+      "她在打電話。"
      ],
-     "answer": 2,
-     "why": "A nurse by a patient's bed → 照顧病人. A and B are other activities."
+     "answer": 1,
+     "why": "A nurse by a patient's bed → 照顧病人. A and C are other activities."
     },
     {
      "type": "listen_reply",
@@ -12413,11 +12413,11 @@
      "audio": "週末你要做什麼？",
      "options": [
       "奶奶住在臺中。",
-      "媽媽讓我去陪奶奶。",
-      "我很關心奶奶。"
+      "我很關心奶奶。",
+      "媽媽讓我去陪奶奶。"
      ],
-     "answer": 1,
-     "why": "The question asks about plans → 媽媽讓我去陪奶奶. A says where grandma lives; C is a feeling, not a plan."
+     "answer": 2,
+     "why": "The question asks about plans → 媽媽讓我去陪奶奶. A says where grandma lives; B is a feeling, not a plan."
     },
     {
      "type": "listen_reply",
@@ -12488,12 +12488,12 @@
      "question": "這位小姐明天會不會去上課？",
      "options": [
       "她一定會去",
-      "姊姊回來的話，她就去",
+      "她爸爸不讓她去",
       "她不去了",
-      "她爸爸不讓她去"
+      "姊姊回來的話，她就去"
      ],
-     "answer": 1,
-     "why": "要是姊姊回來，我就能去 → conditional. A and C are too definite. D: her father only asked her to look after her mother."
+     "answer": 3,
+     "why": "要是姊姊回來，我就能去 → conditional. A and C are too definite. B: her father only asked her to look after her mother."
     },
     {
      "type": "read_sent",
@@ -12502,20 +12502,20 @@
      "text": "媽媽不讓弟弟玩手機，讓他去寫作業。",
      "options": [
       {
-       "icon": "👦📱",
-       "label": "brother using a phone"
-      },
-      {
        "icon": "👦📝",
        "label": "brother doing homework"
+      },
+      {
+       "icon": "👦📱",
+       "label": "brother using a phone"
       },
       {
        "icon": "👦📺",
        "label": "brother watching TV"
       }
      ],
-     "answer": 1,
-     "why": "不讓…玩手機，讓他去寫作業 → doing homework. A is what he is not allowed to do; C is not mentioned."
+     "answer": 0,
+     "why": "不讓…玩手機，讓他去寫作業 → doing homework. B is what he is not allowed to do; C is not mentioned."
     },
     {
      "type": "read_pick",
@@ -12581,11 +12581,11 @@
      "options": [
       "爸爸讓他去",
       "鄉下很好玩",
-      "他覺得跟奶奶在一起很有意思",
-      "奶奶生病了"
+      "奶奶生病了",
+      "他覺得跟奶奶在一起很有意思"
      ],
-     "answer": 2,
-     "why": "發現她知道很多有意思的事 + 我自己就想去. A was the reason AT FIRST (now 不用爸爸說). B contradicts it (鄉下很無聊). D is not mentioned."
+     "answer": 3,
+     "why": "發現她知道很多有意思的事 + 我自己就想去. A was the reason AT FIRST (now 不用爸爸說). B contradicts it (鄉下很無聊). C is not mentioned."
     }
    ],
    "grammar": [
@@ -12815,12 +12815,12 @@
      },
      "question": "他在做什麼？",
      "options": [
-      "他在打電話。",
+      "他戴著耳機聽音樂。",
       "他在看電視。",
-      "他戴著耳機聽音樂。"
+      "他在打電話。"
      ],
-     "answer": 2,
-     "why": "Earphones + music → 戴著耳機聽音樂. A and B are other activities."
+     "answer": 0,
+     "why": "Earphones + music → 戴著耳機聽音樂. C and B are other activities."
     },
     {
      "type": "listen_pic",
@@ -12908,12 +12908,12 @@
      ],
      "question": "他們在做什麼？",
      "options": [
-      "在網路上買東西",
       "一起寫報告",
+      "在網路上買東西",
       "準備考試"
      ],
-     "answer": 1,
-     "why": "合作 + 談報告 → working on a report together. A and C are not mentioned."
+     "answer": 0,
+     "why": "合作 + 談報告 → working on a report together. B and C are not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -12940,12 +12940,12 @@
      "question": "這位先生一開始覺得怎麼樣？",
      "options": [
       "他很高興",
-      "他不相信",
+      "他早就知道了",
       "他很生氣",
-      "他早就知道了"
+      "他不相信"
      ],
-     "answer": 1,
-     "why": "你在開玩笑吧？ → at first he doesn't believe it. A: he is happy only once he's sure. C is not mentioned. D is the opposite."
+     "answer": 3,
+     "why": "你在開玩笑吧？ → at first he doesn't believe it. A: he is happy only once he's sure. C is not mentioned. B is the opposite."
     },
     {
      "type": "read_sent",
@@ -12954,20 +12954,20 @@
      "text": "他戴著耳機，所以沒聽見手機。",
      "options": [
       {
-       "icon": "📱👂",
-       "label": "answering a call"
+       "icon": "🎧📱",
+       "label": "wearing earphones while the phone rings"
       },
       {
        "icon": "🎧❌",
        "label": "no earphones"
       },
       {
-       "icon": "🎧📱",
-       "label": "wearing earphones while the phone rings"
+       "icon": "📱👂",
+       "label": "answering a call"
       }
      ],
-     "answer": 2,
-     "why": "戴著耳機 + 沒聽見手機. A is answering a call; B has no earphones."
+     "answer": 0,
+     "why": "戴著耳機 + 沒聽見手機. C is answering a call; B has no earphones."
     },
     {
      "type": "read_pick",
@@ -12979,11 +12979,11 @@
      },
      "options": [
       "他在寫信。",
-      "他在傳簡訊。",
-      "他在看報告。"
+      "他在看報告。",
+      "他在傳簡訊。"
      ],
-     "answer": 1,
-     "why": "A message on a phone → 傳簡訊. A is a paper letter; C does not match."
+     "answer": 2,
+     "why": "A message on a phone → 傳簡訊. A is a paper letter; B does not match."
     },
     {
      "type": "read_gap",
@@ -13354,12 +13354,12 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "你怎麼了？看起來不太舒服。",
      "options": [
-      "我在醫院工作。",
       "我發燒了，也一直咳嗽。",
+      "我在醫院工作。",
       "我吃過藥了。"
      ],
-     "answer": 1,
-     "why": "The question asks what's wrong → symptoms: 發燒 + 咳嗽. A is unrelated. C does not say what is wrong."
+     "answer": 0,
+     "why": "The question asks what's wrong → symptoms: 發燒 + 咳嗽. B is unrelated. C does not say what is wrong."
     },
     {
      "type": "listen_reply",
@@ -13444,20 +13444,20 @@
      "text": "他跑了一個小時，流了很多汗。",
      "options": [
       {
-       "icon": "🤧",
-       "label": "sneezing"
-      },
-      {
        "icon": "🏃💦",
        "label": "running and sweating"
+      },
+      {
+       "icon": "🤧",
+       "label": "sneezing"
       },
       {
        "icon": "🛌",
        "label": "to sleep"
       }
      ],
-     "answer": 1,
-     "why": "跑 + 流汗 → running and sweating. A and C do not match."
+     "answer": 0,
+     "why": "跑 + 流汗 → running and sweating. B and C do not match."
     },
     {
      "type": "read_pick",
@@ -13485,12 +13485,12 @@
      },
      "text": "我的蛋糕被弟弟吃（　）了！",
      "options": [
-      "掉",
       "得",
+      "掉",
       "好"
      ],
-     "answer": 0,
-     "why": "被 + V掉了 = eaten up by …. B & C: 吃得了 and 吃好了 do not fit this 被 sentence."
+     "answer": 1,
+     "why": "被 + V掉了 = eaten up by …. A & C: 吃得了 and 吃好了 do not fit this 被 sentence."
     },
     {
      "type": "cloze",
@@ -13522,12 +13522,12 @@
      "question": "為什麼媽媽又帶他去看醫生？",
      "options": [
       "他的病越來越嚴重",
-      "他的藥被弟弟吃掉了",
+      "醫生讓他再去",
       "弟弟也感冒了",
-      "醫生讓他再去"
+      "他的藥被弟弟吃掉了"
      ],
-     "answer": 1,
-     "why": "藥被弟弟吃掉了 → the medicine was gone. A is not mentioned. C is true, but not why he went back to the doctor. D is not mentioned."
+     "answer": 3,
+     "why": "藥被弟弟吃掉了 → the medicine was gone. A is not mentioned. C is true, but not why he went back to the doctor. B is not mentioned."
     }
    ],
    "grammar": [
@@ -13832,11 +13832,11 @@
      "question": "她在哪裡買藥？",
      "options": [
       "在醫院。",
-      "在藥局。",
-      "在超市。"
+      "在超市。",
+      "在藥局。"
      ],
-     "answer": 1,
-     "why": "A pharmacy → 藥局. A and C are other places."
+     "answer": 2,
+     "why": "A pharmacy → 藥局. A and B are other places."
     },
     {
      "type": "listen_pic",
@@ -13867,12 +13867,12 @@
      },
      "question": "你去哪裡買藥？",
      "options": [
-      "藥局。",
       "醫院。",
+      "藥局。",
       "書店。"
      ],
-     "answer": 0,
-     "why": "A pharmacy → 藥局. B and C are other places."
+     "answer": 1,
+     "why": "B pharmacy → 藥局. A and C are other places."
     },
     {
      "type": "listen_reply",
@@ -13893,12 +13893,12 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "明天會下雨嗎？",
      "options": [
-      "我沒有傘。",
       "應該不會，今天的天氣很好。",
+      "我沒有傘。",
       "下雨很冷。"
      ],
-     "answer": 1,
-     "why": "A guess → 應該不會. A and C do not answer."
+     "answer": 0,
+     "why": "B guess → 應該不會. B and C do not answer."
     },
     {
      "type": "listen_dialog",
@@ -13924,12 +13924,12 @@
      ],
      "question": "這位先生明天應該會做什麼？",
      "options": [
-      "在家休息",
       "去上課",
+      "在家休息",
       "去看醫生"
      ],
-     "answer": 1,
-     "why": "明天應該可以去上課 → go to class. A and C are not mentioned."
+     "answer": 0,
+     "why": "明天應該可以去上課 → go to class. B and C are not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -13956,12 +13956,12 @@
      "question": "這位小姐覺得怎麼樣？",
      "options": [
       "她應該去看醫生",
-      "她明天應該會好",
+      "她今天沒吃藥",
       "她的臉色很好",
-      "她今天沒吃藥"
+      "她明天應該會好"
      ],
-     "answer": 1,
-     "why": "明天應該就好了 (應該2 = a guess). A is the man's advice, which she rejects. C is the opposite. D is the opposite (我吃了藥)."
+     "answer": 3,
+     "why": "明天應該就好了 (應該2 = a guess). A is the man's advice, which she rejects. C is the opposite. B is the opposite (我吃了藥)."
     },
     {
      "type": "read_sent",
@@ -14049,11 +14049,11 @@
      "options": [
       "吃飯",
       "喝水",
-      "開車",
-      "看醫生"
+      "看醫生",
+      "開車"
      ],
-     "answer": 2,
-     "why": "最好別開車 (it can make you sleepy). A: you must eat first. B is not mentioned. D is advised if the fever continues."
+     "answer": 3,
+     "why": "最好別開車 (it can make you sleepy). A: you must eat first. B is not mentioned. C is advised if the fever continues."
     }
    ],
    "grammar": [
@@ -14292,12 +14292,12 @@
      },
      "question": "他怎麼了？",
      "options": [
-      "他的背很痛。",
       "他的腿很痛。",
+      "他的背很痛。",
       "他的眼睛很痛。"
      ],
-     "answer": 1,
-     "why": "His hands are on his thighs → 腿很痛. A (back) and C (eyes) are other body parts."
+     "answer": 0,
+     "why": "His hands are on his thighs → 腿很痛. B (back) and C (eyes) are other body parts."
     },
     {
      "type": "listen_pic",
@@ -14310,12 +14310,12 @@
      },
      "question": "媽媽可能說什麼？",
      "options": [
-      "你的手機真好看！",
       "別一直低頭看手機了！",
+      "你的手機真好看！",
       "你的手機在哪裡？"
      ],
-     "answer": 1,
-     "why": "Mum is angry and the boy is looking down at his phone → she scolds him: 別一直低頭看手機了. A is praise (does not match the angry face). C: the phone is clearly in the boy's hands."
+     "answer": 0,
+     "why": "Mum is angry and the boy is looking down at his phone → she scolds him: 別一直低頭看手機了. B is praise (does not match the angry face). C: the phone is clearly in the boy's hands."
     },
     {
      "type": "listen_pic",
@@ -14341,12 +14341,12 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "醫生說我要怎麼做，腿才會好？",
      "options": [
-      "你要多休息，別一直走路。",
+      "醫生說你昨天來過了。",
       "我的腿比你的長。",
-      "醫生說你昨天來過了。"
+      "你要多休息，別一直走路。"
      ],
-     "answer": 0,
-     "why": "要怎麼做…才會好 asks for ADVICE → 多休息. B only repeats the word 腿. C repeats 醫生 without giving advice."
+     "answer": 2,
+     "why": "要怎麼做…才會好 asks for ADVICE → 多休息. B only repeats the word 腿. A repeats 醫生 without giving advice."
     },
     {
      "type": "listen_reply",
@@ -14416,13 +14416,13 @@
      ],
      "question": "這位小姐的意思是什麼？",
      "options": [
-      "她不相信這位先生在看天氣",
+      "這位先生應該多看天氣",
       "她想知道今天的天氣",
       "這位先生的眼睛不好",
-      "這位先生應該多看天氣"
+      "她不相信這位先生在看天氣"
      ],
-     "answer": 0,
-     "why": "天氣有那麼多可以看嗎 is a rhetorical question: no one checks the weather for an hour → she does not believe him. B: she is not asking about the weather. C is not mentioned. D is the opposite (she tells him to stop)."
+     "answer": 3,
+     "why": "天氣有那麼多可以看嗎 is a rhetorical question: no one checks the weather for an hour → she does not believe him. B: she is not asking about the weather. C is not mentioned. A is the opposite (she tells him to stop)."
     },
     {
      "type": "read_sent",
@@ -14456,11 +14456,11 @@
      },
      "options": [
       "他在跟朋友打電話。",
-      "他在電腦前面工作。",
-      "他一直低頭看手機。"
+      "他一直低頭看手機。",
+      "他在電腦前面工作。"
      ],
-     "answer": 2,
-     "why": "Head bent over the phone → 低頭看手機. A: the phone is not held to his ear. B: there is no computer."
+     "answer": 1,
+     "why": "Head bent over the phone → 低頭看手機. A: the phone is not held to his ear. C: there is no computer."
     },
     {
      "type": "read_gap",
@@ -14791,12 +14791,12 @@
      },
      "question": "他上課怎麼了？",
      "options": [
-      "他生病了。",
       "他遲到了。",
+      "他生病了。",
       "他在睡覺。"
      ],
-     "answer": 1,
-     "why": "The teacher checks the clock as a student comes in → 遲到了. A and C are not shown."
+     "answer": 0,
+     "why": "The teacher checks the clock as a student comes in → 遲到了. B and C are not shown."
     },
     {
      "type": "listen_pic",
@@ -14836,11 +14836,11 @@
      "audio": "這一題的答案是什麼？",
      "options": [
       "這一題很難。",
-      "答案是B。",
-      "我已經寫完了。"
+      "我已經寫完了。",
+      "答案是B。"
      ],
-     "answer": 1,
-     "why": "The question asks for the answer → 答案是B. A and C do not give an answer."
+     "answer": 2,
+     "why": "The question asks for the answer → 答案是C. A and B do not give an answer."
     },
     {
      "type": "listen_dialog",
@@ -14898,12 +14898,12 @@
      "question": "這位先生為什麼沒去看電影？",
      "options": [
       "他不想看電影",
-      "下雨了，他沒有傘",
+      "他弟弟生病了",
       "電影院太遠",
-      "他弟弟生病了"
+      "下雨了，他沒有傘"
      ],
-     "answer": 1,
-     "why": "下大雨 + 傘被弟弟帶走了 → that is the reason. A is the opposite (he planned to go). C and D are not mentioned."
+     "answer": 3,
+     "why": "下大雨 + 傘被弟弟帶走了 → that is the reason. A is the opposite (he planned to go). C and B are not mentioned."
     },
     {
      "type": "read_sent",
@@ -14912,20 +14912,20 @@
      "text": "老師才問完問題，他就立刻回答了。",
      "options": [
       {
-       "icon": "🤔",
-       "label": "thinking for a long time"
+       "icon": "🙋‍♂️",
+       "label": "putting a hand up at once"
       },
       {
        "icon": "😴",
        "label": "to sleep"
       },
       {
-       "icon": "🙋‍♂️",
-       "label": "putting a hand up at once"
+       "icon": "🤔",
+       "label": "thinking for a long time"
       }
      ],
-     "answer": 2,
-     "why": "才…就…立刻 → answers straight away. A is the opposite; B does not match."
+     "answer": 0,
+     "why": "才…就…立刻 → answers straight away. C is the opposite; B does not match."
     },
     {
      "type": "read_pick",
@@ -14991,11 +14991,11 @@
      "options": [
       "他起床太晚",
       "題目太難",
-      "他沒聽清楚題目",
-      "同學一直笑"
+      "同學一直笑",
+      "他沒聽清楚題目"
      ],
-     "answer": 2,
-     "why": "還沒聽清楚題目，就要回答 → the direct cause. A is why he was late, not why he was wrong. B is not mentioned. D happened AFTER he got it wrong."
+     "answer": 3,
+     "why": "還沒聽清楚題目，就要回答 → the direct cause. A is why he was late, not why he was wrong. B is not mentioned. C happened AFTER he got it wrong."
     }
    ],
    "grammar": [
@@ -15321,11 +15321,11 @@
      "question": "這位小姐今年寒假要做什麼？",
      "options": [
       "回家",
-      "打工",
-      "去旅行"
+      "去旅行",
+      "打工"
      ],
-     "answer": 1,
-     "why": "今年我要打工. A is what she does in other years (有時候). C is not mentioned."
+     "answer": 2,
+     "why": "今年我要打工. A is what she does in other years (有時候). B is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -15390,12 +15390,12 @@
       "label": "summer holiday"
      },
      "options": [
-      "他們在上課。",
+      "他們在過暑假。",
       "他們在過寒假。",
-      "他們在過暑假。"
+      "他們在上課。"
      ],
-     "answer": 2,
-     "why": "Beach + sun → 暑假. A is not a holiday; B is winter."
+     "answer": 0,
+     "why": "Beach + sun → 暑假. C is not a holiday; B is winter."
     },
     {
      "type": "read_gap",
@@ -15444,12 +15444,12 @@
      "question": "哪一個假最長？",
      "options": [
       "寒假",
-      "暑假",
+      "週末",
       "春假",
-      "週末"
+      "暑假"
      ],
-     "answer": 1,
-     "why": "暑假 is over two months — the longest. A is about a month. C is only a few days. D is not discussed."
+     "answer": 3,
+     "why": "暑假 is over two months — the longest. A is about a month. C is only a few days. B is not discussed."
     }
    ],
    "grammar": [
@@ -15679,11 +15679,11 @@
      "question": "他畢業了嗎？",
      "options": [
       "還沒，他明年畢業。",
-      "他畢業了。",
-      "他在上課。"
+      "他在上課。",
+      "他畢業了。"
      ],
-     "answer": 1,
-     "why": "Gown + diploma → 畢業了. A and C are the opposite."
+     "answer": 2,
+     "why": "Gown + diploma → 畢業了. A and B are the opposite."
     },
     {
      "type": "listen_pic",
@@ -15728,11 +15728,11 @@
      "audio": "你什麼時候畢業？",
      "options": [
       "我在大學研究教育。",
-      "我明年六月就畢業了。",
-      "畢業以後我想工作。"
+      "畢業以後我想工作。",
+      "我明年六月就畢業了。"
      ],
-     "answer": 1,
-     "why": "The question asks WHEN → 明年六月. A and C give other information."
+     "answer": 2,
+     "why": "The question asks WHEN → 明年六月. A and B give other information."
     },
     {
      "type": "listen_reply",
@@ -15771,12 +15771,12 @@
      ],
      "question": "這位小姐從什麼時候開始去林教授那裡工作？",
      "options": [
-      "明天",
+      "下個月",
       "明年",
-      "下個月"
+      "明天"
      ],
-     "answer": 2,
-     "why": "從下個月起. A and B are not mentioned."
+     "answer": 0,
+     "why": "從下個月起. C and B are not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -15803,12 +15803,12 @@
      "question": "這位小姐下個星期要做什麼？",
      "options": [
       "畢業",
-      "跟教授想新的題目",
+      "不做研究了",
       "去別的學校",
-      "不做研究了"
+      "跟教授想新的題目"
      ],
-     "answer": 1,
-     "why": "從下個星期起…再想一個題目. A and C are not mentioned. D is the opposite."
+     "answer": 3,
+     "why": "從下個星期起…再想一個題目. A and C are not mentioned. B is the opposite."
     },
     {
      "type": "read_sent",
@@ -15858,11 +15858,11 @@
      },
      "text": "你每天都練習，一定會（　）！",
      "options": [
-      "成功",
       "研究",
+      "成功",
       "教育"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "一定會成功 = will definitely succeed. 研究 and 教育 need an object or other context."
     },
     {
@@ -15894,13 +15894,13 @@
      "text": "林教授研究教育三十年了。他說，一個學生能不能成功，不只看他的程度，也要看他是不是每天都很用功。他的學生小王，剛進大學的時候中文程度不高，可是他從第一天起，每天都看書三個小時。四年以後，小王得到了去美國念書的機會。",
      "question": "林教授覺得哪種學生會成功？",
      "options": [
-      "程度很高的學生",
       "每天都很用功的學生",
+      "程度很高的學生",
       "去美國念書的學生",
       "年紀比較大的學生"
      ],
-     "answer": 1,
-     "why": "不只看程度，也要看…每天都很用功 + the example of 小王. A: it's not only about starting level. C is a result, not a condition. D is not mentioned."
+     "answer": 0,
+     "why": "不只看程度，也要看…每天都很用功 + the example of 小王. B: it's not only about starting level. C is a result, not a condition. D is not mentioned."
     }
    ],
    "grammar": [
@@ -16191,12 +16191,12 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "這個字怎麼念？",
      "options": [
-      "這個字很漂亮。",
       "我也不知道，我們查查看吧。",
+      "這個字很漂亮。",
       "我寫了十遍。"
      ],
-     "answer": 1,
-     "why": "The question asks how to read it → 查查看 (let's look it up). A and C do not answer."
+     "answer": 0,
+     "why": "The question asks how to read it → 查查看 (let's look it up). B and C do not answer."
     },
     {
      "type": "listen_reply",
@@ -16267,12 +16267,12 @@
      "question": "這位小姐怎麼背詞？",
      "options": [
       "只看拼音",
-      "寫寫、念念，再用它說話",
+      "請老師幫她",
       "每個詞寫二十遍",
-      "請老師幫她"
+      "寫寫、念念，再用它說話"
      ],
-     "answer": 1,
-     "why": "寫寫、念念，再用它說一句話. A is not mentioned. C: 20 is the number of words a day, not the number of times written. D is not mentioned."
+     "answer": 3,
+     "why": "寫寫、念念，再用它說一句話. A is not mentioned. C: 20 is the number of words a day, not the number of times written. B is not mentioned."
     },
     {
      "type": "read_sent",
@@ -16360,11 +16360,11 @@
      "options": [
       "寫五遍",
       "查字典",
-      "再看看今天學的詞",
-      "念三遍"
+      "念三遍",
+      "再看看今天學的詞"
      ],
-     "answer": 2,
-     "why": "每天睡覺以前，我再看看今天學的詞. A, B and D are done earlier while studying."
+     "answer": 3,
+     "why": "每天睡覺以前，我再看看今天學的詞. A, B and C are done earlier while studying."
     }
    ],
    "grammar": [
@@ -16653,12 +16653,12 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "老師叫我們做什麼？",
      "options": [
-      "老師叫陳美美。",
       "老師叫我們討論這個題目。",
+      "老師叫陳美美。",
       "老師在黑板上。"
      ],
-     "answer": 1,
-     "why": "叫2 = tell someone to → 叫我們討論. A uses 叫 to mean 'call/named' and does not give the task. C does not answer."
+     "answer": 0,
+     "why": "叫2 = tell someone to → 叫我們討論. B uses 叫 to mean 'call/named' and does not give the task. C does not answer."
     },
     {
      "type": "listen_reply",
@@ -16698,11 +16698,11 @@
      "question": "他們今天要做什麼？",
      "options": [
       "寫作文",
-      "交作文",
-      "討論"
+      "討論",
+      "交作文"
      ],
-     "answer": 2,
-     "why": "今天先討論一下. A is the next task; B is not until next Monday."
+     "answer": 1,
+     "why": "今天先討論一下. A is the next task; C is not until next Monday."
     },
     {
      "type": "listen_dialog",
@@ -16729,12 +16729,12 @@
      "question": "這位先生為什麼要再改作文？",
      "options": [
       "他還沒寫完",
-      "文法用錯了，例子也太少",
+      "老師叫他寫別的題目",
       "題目不對",
-      "老師叫他寫別的題目"
+      "文法用錯了，例子也太少"
      ],
-     "answer": 1,
-     "why": "文法用得不對，例子也不夠. A is the opposite (寫完了). C and D are not mentioned."
+     "answer": 3,
+     "why": "文法用得不對，例子也不夠. A is the opposite (寫完了). C and B are not mentioned."
     },
     {
      "type": "read_sent",
@@ -16822,11 +16822,11 @@
      "options": [
       "老師說得太多",
       "作業太多",
-      "比只聽老師說有意思",
-      "文法太難"
+      "文法太難",
+      "比只聽老師說有意思"
      ],
-     "answer": 2,
-     "why": "比只聽老師說有意思多了. A is the opposite (很少自己一直說). B and D are not mentioned."
+     "answer": 3,
+     "why": "比只聽老師說有意思多了. A is the opposite (很少自己一直說). B and C are not mentioned."
     }
    ],
    "grammar": [
@@ -17078,12 +17078,12 @@
      },
      "question": "你哥哥學什麼？",
      "options": [
-      "他學法律。",
+      "他學教育。",
       "他學歷史。",
-      "他學教育。"
+      "他學法律。"
      ],
-     "answer": 0,
-     "why": "Reading a law book → 法律. B and C are other fields."
+     "answer": 2,
+     "why": "Reading a law book → 法律. B and A are other fields."
     },
     {
      "type": "listen_pic",
@@ -17096,12 +17096,12 @@
      },
      "question": "你會說什麼話？",
      "options": [
-      "除了中文以外，我什麼都不會說。",
       "除了中文以外，我還會說臺語。",
+      "除了中文以外，我什麼都不會說。",
       "我只會說臺語。"
      ],
-     "answer": 1,
-     "why": "He says 你好 and 'Lí hó' → Mandarin + Taiwanese. A uses 除了…都 (only Mandarin); C is only Taiwanese."
+     "answer": 0,
+     "why": "He says 你好 and 'Lí hó' → Mandarin + Taiwanese. B uses 除了…都 (only Mandarin); C is only Taiwanese."
     },
     {
      "type": "listen_reply",
@@ -17153,12 +17153,12 @@
      ],
      "question": "這位先生除了新聞，還看什麼？",
      "options": [
-      "小說",
       "雜誌",
+      "小說",
       "電影"
      ],
-     "answer": 1,
-     "why": "除了新聞以外，我也看雜誌. A and C are not mentioned."
+     "answer": 0,
+     "why": "除了新聞以外，我也看雜誌. B and C are not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -17277,12 +17277,12 @@
      "question": "這個人為什麼上歷史課？",
      "options": [
       "法律課太少",
-      "他對現代歷史有興趣",
+      "他想當歷史老師",
       "老師叫他上",
-      "他想當歷史老師"
+      "他對現代歷史有興趣"
      ],
-     "answer": 1,
-     "why": "因為我對現代歷史很有興趣. A, C and D are not mentioned."
+     "answer": 3,
+     "why": "因為我對現代歷史很有興趣. A, C and B are not mentioned."
     }
    ],
    "grammar": [
@@ -17629,11 +17629,11 @@
      "question": "這是什麼？",
      "options": [
       "十加四是十四。",
-      "十除二是五。",
-      "十減四是六。"
+      "十減四是六。",
+      "十除二是五。"
      ],
-     "answer": 2,
-     "why": "10 − 4 = 6 → 十減四是六. A and B are other operations."
+     "answer": 1,
+     "why": "10 − 4 = 6 → 十減四是六. A and C are other operations."
     },
     {
      "type": "listen_reply",
@@ -17686,11 +17686,11 @@
      "question": "老闆應該找她多少錢？",
      "options": [
       "六十塊",
-      "四十塊",
-      "二十塊"
+      "二十塊",
+      "四十塊"
      ],
-     "answer": 1,
-     "why": "100 − 60 = 40. A is the total price; C is the price of one apple."
+     "answer": 2,
+     "why": "100 − 60 = 40. A is the total price; B is the price of one apple."
     },
     {
      "type": "listen_dialog",
@@ -17717,12 +17717,12 @@
      "question": "這位小姐上次考了幾分？",
      "options": [
       "八十八點五",
-      "七十八點五",
+      "九十八點五",
       "十分",
-      "九十八點五"
+      "七十八點五"
      ],
-     "answer": 1,
-     "why": "上次是七十八點五. A is this time's score. C is the difference. D is not mentioned."
+     "answer": 3,
+     "why": "上次是七十八點五. A is this time's score. C is the difference. B is not mentioned."
     },
     {
      "type": "read_sent",
@@ -17732,19 +17732,19 @@
      "options": [
       {
        "icon": "⬛",
-       "label": "2 + 6 = 8"
+       "label": "2 × 6 = 12"
       },
       {
        "icon": "⬛",
-       "label": "2 × 6 = 12"
+       "label": "2 + 6 = 8"
       },
       {
        "icon": "⬛",
        "label": "6 ÷ 2 = 3"
       }
      ],
-     "answer": 1,
-     "why": "乘 = times: 2 × 6 = 12. A is addition; C division."
+     "answer": 0,
+     "why": "乘 = times: 2 × 6 = 12. B is addition; C division."
     },
     {
      "type": "read_pick",
@@ -17810,11 +17810,11 @@
      "options": [
       "他很認真",
       "他考了九十分",
-      "哥哥用家裡的東西教他",
-      "他有了新老師"
+      "他有了新老師",
+      "哥哥用家裡的東西教他"
      ],
-     "answer": 2,
-     "why": "叫他數家裡的東西 → a new way that made him like it. A: he was serious from the start. B is the result, not the cause. D is not mentioned."
+     "answer": 3,
+     "why": "叫他數家裡的東西 → a new way that made him like it. A: he was serious from the start. B is the result, not the cause. C is not mentioned."
     }
    ],
    "grammar": [
@@ -18084,12 +18084,12 @@
      },
      "question": "多少人喜歡喝茶？",
      "options": [
-      "百分之十五的人。",
       "百分之五十的人。",
+      "百分之十五的人。",
       "三分之一的人。"
      ],
-     "answer": 1,
-     "why": "Half the chart → 百分之五十. A and C are wrong."
+     "answer": 0,
+     "why": "Half the chart → 百分之五十. B and C are wrong."
     },
     {
      "type": "listen_pic",
@@ -18115,12 +18115,12 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "你們班有多少學生喜歡運動？",
      "options": [
-      "我很喜歡運動。",
       "三分之一，大概十個人。",
+      "我很喜歡運動。",
       "我們班有三十個學生。"
      ],
-     "answer": 1,
-     "why": "The question asks how many like it → 三分之一. A is about himself; C is the class total."
+     "answer": 0,
+     "why": "The question asks how many like it → 三分之一. B is about himself; C is the class total."
     },
     {
      "type": "listen_reply",
@@ -18192,11 +18192,11 @@
      "options": [
       "飛機票",
       "飯店",
-      "吃飯的錢",
-      "一切都包括"
+      "一切都包括",
+      "吃飯的錢"
      ],
-     "answer": 2,
-     "why": "不包括吃飯的錢. A and B are included. D contradicts it."
+     "answer": 3,
+     "why": "不包括吃飯的錢. A and B are included. C contradicts it."
     },
     {
      "type": "read_sent",
@@ -18205,20 +18205,20 @@
      "text": "班上三分之二的學生是女生。",
      "options": [
       {
-       "icon": "👦👦👧",
-       "label": "two-thirds boys"
+       "icon": "👧👧👦",
+       "label": "two-thirds girls"
       },
       {
        "icon": "👧👦",
        "label": "half and half"
       },
       {
-       "icon": "👧👧👦",
-       "label": "two-thirds girls"
+       "icon": "👦👦👧",
+       "label": "two-thirds boys"
       }
      ],
-     "answer": 2,
-     "why": "三分之二是女生 → two out of three are girls. A is reversed; B does not match."
+     "answer": 0,
+     "why": "三分之二是女生 → two out of three are girls. C is reversed; B does not match."
     },
     {
      "type": "read_pick",
@@ -18246,11 +18246,11 @@
      },
      "text": "一共十個人，（　）老師。",
      "options": [
-      "包括",
+      "一切",
       "許多",
-      "一切"
+      "包括"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "包括 = including. 許多老師 and 一切老師 do not fit 'ten in total'."
     },
     {
@@ -18283,12 +18283,12 @@
      "question": "睡覺時間只有五個小時的學生，許多是因為什麼？",
      "options": [
       "功課太多",
-      "晚上要打工",
+      "住得太遠",
       "喜歡玩手機",
-      "住得太遠"
+      "晚上要打工"
      ],
-     "answer": 1,
-     "why": "當中許多人說是因為晚上要打工. A, C and D are not mentioned."
+     "answer": 3,
+     "why": "當中許多人說是因為晚上要打工. A, C and B are not mentioned."
     }
    ],
    "grammar": [
@@ -18519,12 +18519,12 @@
      },
      "question": "你們班有幾個人？",
      "options": [
-      "十二個人左右。",
       "二十個人左右。",
+      "十二個人左右。",
       "兩百個人左右。"
      ],
-     "answer": 1,
-     "why": "The sign says '21人' → about 20. A has the digits swapped; C is far too many."
+     "answer": 0,
+     "why": "The sign says '21人' → about 20. B has the digits swapped; C is far too many."
     },
     {
      "type": "listen_pic",
@@ -18564,11 +18564,11 @@
      "audio": "臺北的咖啡比雅加達貴多少？",
      "options": [
       "我不喝咖啡。",
-      "差不多是三倍。",
-      "臺北的咖啡很好喝。"
+      "臺北的咖啡很好喝。",
+      "差不多是三倍。"
      ],
-     "answer": 1,
-     "why": "The question asks for the price difference → 三倍. A and C do not answer."
+     "answer": 2,
+     "why": "The question asks for the price difference → 三倍. A and B do not answer."
     },
     {
      "type": "listen_dialog",
@@ -18594,12 +18594,12 @@
      ],
      "question": "這位先生在印尼的房租是多少？",
      "options": [
-      "八千塊左右",
       "四千塊左右",
+      "八千塊左右",
       "一萬六千塊左右"
      ],
-     "answer": 1,
-     "why": "8,000 is twice the rent in Indonesia → 4,000. A is the rent in Taipei; C goes the wrong way (multiplying, not dividing)."
+     "answer": 0,
+     "why": "8,000 is twice the rent in Indonesia → 4,000. B is the rent in Taipei; C goes the wrong way (multiplying, not dividing)."
     },
     {
      "type": "listen_dialog",
@@ -18626,12 +18626,12 @@
      "question": "這位先生上次買的鞋子大概多少錢？",
      "options": [
       "三千塊",
-      "一千塊",
+      "三百塊",
       "九千塊",
-      "三百塊"
+      "一千塊"
      ],
-     "answer": 1,
-     "why": "3,000 is three times the old price → 1,000. A is the price now. C goes the wrong way (multiplying). D is a wrong sum."
+     "answer": 3,
+     "why": "3,000 is three times the old price → 1,000. A is the price now. C goes the wrong way (multiplying). B is a wrong sum."
     },
     {
      "type": "read_sent",
@@ -18974,11 +18974,11 @@
      "question": "很多人在做什麼？",
      "options": [
       "在吃飯。",
-      "在打折。",
-      "在排隊。"
+      "在排隊。",
+      "在打折。"
      ],
-     "answer": 2,
-     "why": "A long queue outside a shop → 排隊. A and B do not match."
+     "answer": 1,
+     "why": "A long queue outside a shop → 排隊. A and C do not match."
     },
     {
      "type": "listen_reply",
@@ -19030,12 +19030,12 @@
      ],
      "question": "他們現在要做什麼？",
      "options": [
-      "排隊",
       "去別家逛街",
+      "排隊",
       "回家"
      ],
-     "answer": 1,
-     "why": "先去別家逛一下. A is put off. C is not mentioned."
+     "answer": 0,
+     "why": "先去別家逛一下. B is put off. C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -19525,11 +19525,11 @@
      "question": "這位小姐的皮鞋多少錢？",
      "options": [
       "一百塊",
-      "兩千塊",
-      "兩千一百塊"
+      "兩千一百塊",
+      "兩千塊"
      ],
-     "answer": 1,
-     "why": "皮鞋兩千塊. A is the slippers. C is the total for both."
+     "answer": 2,
+     "why": "皮鞋兩千塊. A is the slippers. B is the total for both."
     },
     {
      "type": "listen_dialog",
@@ -19557,11 +19557,11 @@
      "options": [
       "太貴了",
       "她不喜歡毛衣",
-      "小的太小，大的顏色她不喜歡",
-      "不好看"
+      "不好看",
+      "小的太小，大的顏色她不喜歡"
      ],
-     "answer": 2,
-     "why": "小了一點 + 大的只有金色的，我不喜歡. A is not mentioned. B is not mentioned. D is the opposite (看起來很漂亮)."
+     "answer": 3,
+     "why": "小了一點 + 大的只有金色的，我不喜歡. A is not mentioned. B is not mentioned. C is the opposite (看起來很漂亮)."
     },
     {
      "type": "read_sent",
@@ -19594,12 +19594,12 @@
       "label": "slippers"
      },
      "options": [
-      "這是一雙皮鞋。",
+      "這是一雙拖鞋。",
       "這是一雙襪子。",
-      "這是一雙拖鞋。"
+      "這是一雙皮鞋。"
      ],
-     "answer": 2,
-     "why": "Flip-flops → 拖鞋. A and B are other things."
+     "answer": 0,
+     "why": "Flip-flops → 拖鞋. C and B are other things."
     },
     {
      "type": "read_gap",
@@ -19648,12 +19648,12 @@
      "question": "這個人為什麼沒買金色的上衣？",
      "options": [
       "不適合她",
-      "太貴了",
+      "不好看",
       "媽媽不喜歡",
-      "不好看"
+      "太貴了"
      ],
-     "answer": 1,
-     "why": "很漂亮，可是太貴了. A is not mentioned (it is the sweater that 適合). C: mum only commented on the sweater. D is the opposite (很漂亮)."
+     "answer": 3,
+     "why": "很漂亮，可是太貴了. A is not mentioned (it is the sweater that 適合). C: mum only commented on the sweater. B is the opposite (很漂亮)."
     }
    ],
    "grammar": [
@@ -19940,12 +19940,12 @@
      },
      "question": "他在做什麼？",
      "options": [
-      "在找零錢。",
+      "在刷卡。",
       "在給小費。",
-      "在刷卡。"
+      "在找零錢。"
      ],
-     "answer": 2,
-     "why": "Swiping a card at the till → 刷卡. A and B do not match."
+     "answer": 0,
+     "why": "Swiping a card at the till → 刷卡. C and B do not match."
     },
     {
      "type": "listen_pic",
@@ -19959,11 +19959,11 @@
      "question": "他想怎麼付錢？",
      "options": [
       "給零錢。",
-      "刷卡。",
-      "給小費。"
+      "給小費。",
+      "刷卡。"
      ],
-     "answer": 1,
-     "why": "Showing a card at the till → 刷卡. A and C do not match."
+     "answer": 2,
+     "why": "Showing a card at the till → 刷卡. A and B do not match."
     },
     {
      "type": "listen_pic",
@@ -20079,20 +20079,20 @@
      "text": "錢包裡沒有零錢了，只有一張一千塊。",
      "options": [
       {
-       "icon": "👛🪙🪙",
-       "label": "lots of coins"
-      },
-      {
        "icon": "👛💴",
        "label": "just one 1,000 note"
+      },
+      {
+       "icon": "👛🪙🪙",
+       "label": "lots of coins"
       },
       {
        "icon": "👛",
        "label": "a completely empty wallet"
       }
      ],
-     "answer": 1,
-     "why": "沒有零錢 + 只有一千塊. A is the opposite; C: there is still a note."
+     "answer": 0,
+     "why": "沒有零錢 + 只有一千塊. B is the opposite; C: there is still a note."
     },
     {
      "type": "read_pick",
@@ -20158,11 +20158,11 @@
      "options": [
       "要給小費",
       "店員要他帶",
-      "很多小店不能刷卡",
-      "他沒有信用卡"
+      "他沒有信用卡",
+      "很多小店不能刷卡"
      ],
-     "answer": 2,
-     "why": "很多小店不能刷卡，所以…帶零錢. A is the opposite (不用給小費). B and D are not mentioned."
+     "answer": 3,
+     "why": "很多小店不能刷卡，所以…帶零錢. A is the opposite (不用給小費). B and C are not mentioned."
     }
    ],
    "grammar": [
@@ -20455,12 +20455,12 @@
      },
      "question": "這家店的生意怎麼樣？",
      "options": [
-      "不太好，沒有客人。",
+      "很好，客人很多。",
       "今天不開。",
-      "很好，客人很多。"
+      "不太好，沒有客人。"
      ],
-     "answer": 2,
-     "why": "A shop full of customers → 生意很好. A and B are the opposite."
+     "answer": 0,
+     "why": "C shop full of customers → 生意很好. C and B are the opposite."
     },
     {
      "type": "listen_reply",
@@ -20544,12 +20544,12 @@
      "question": "這家店為什麼生意很好？",
      "options": [
       "水果很便宜",
-      "水果好，老闆娘也很客氣",
+      "老闆娘送東西",
       "店很大",
-      "老闆娘送東西"
+      "水果好，老闆娘也很客氣"
      ],
-     "answer": 1,
-     "why": "The fruit arrived this morning + she serves cheerfully. A, C and D are not mentioned."
+     "answer": 3,
+     "why": "The fruit arrived this morning + she serves cheerfully. A, C and B are not mentioned."
     },
     {
      "type": "read_sent",
@@ -20979,12 +20979,12 @@
      ],
      "question": "這位先生吃不慣什麼？",
      "options": [
-      "臺灣菜",
       "太甜的東西",
+      "臺灣菜",
       "太鹹的東西"
      ],
-     "answer": 1,
-     "why": "太甜的吃不慣. A: most of it is fine. C is not mentioned."
+     "answer": 0,
+     "why": "太甜的吃不慣. B: most of it is fine. C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -21012,11 +21012,11 @@
      "options": [
       "太大了",
       "不流行",
-      "顏色太淺",
-      "太貴了"
+      "太貴了",
+      "顏色太淺"
      ],
-     "answer": 2,
-     "why": "顏色太淺了 → that is the reason. A, B and D are not mentioned."
+     "answer": 3,
+     "why": "顏色太淺了 → that is the reason. A, B and C are not mentioned."
     },
     {
      "type": "read_sent",
@@ -21025,20 +21025,20 @@
      "text": "他看了看時鐘，已經十點鐘了。",
      "options": [
       {
-       "icon": "👀🕒",
-       "label": "looking at the clock, 3 o'clock"
-      },
-      {
        "icon": "👀🕙",
        "label": "looking at the clock, 10 o'clock"
+      },
+      {
+       "icon": "👀🕒",
+       "label": "looking at the clock, 3 o'clock"
       },
       {
        "icon": "😴🕙",
        "label": "asleep at 10"
       }
      ],
-     "answer": 1,
-     "why": "看了看時鐘 + 十點鐘. A is the wrong time; C: he is not asleep."
+     "answer": 0,
+     "why": "看了看時鐘 + 十點鐘. B is the wrong time; C: he is not asleep."
     },
     {
      "type": "read_pick",
@@ -21066,11 +21066,11 @@
      },
      "text": "我吃不（　）太甜的東西。",
      "options": [
-      "慣",
+      "深",
       "換",
-      "深"
+      "慣"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "吃不慣 = not used to eating. 吃不換 and 吃不深 make no sense."
     },
     {
@@ -21373,12 +21373,12 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "你的便當好吃嗎？",
      "options": [
-      "我中午吃便當。",
       "什麼都好吃，就是太鹹了。",
+      "我中午吃便當。",
       "便當在桌子上。"
      ],
-     "answer": 1,
-     "why": "The question is whether it tastes good → 什麼都好吃，就是…. A and C say nothing about the taste."
+     "answer": 0,
+     "why": "The question is whether it tastes good → 什麼都好吃，就是…. B and C say nothing about the taste."
     },
     {
      "type": "listen_reply",
@@ -21488,11 +21488,11 @@
      },
      "options": [
       "這是一碗湯。",
-      "這是一籃子水果。",
-      "這是一個便當。"
+      "這是一個便當。",
+      "這是一籃子水果。"
      ],
-     "answer": 2,
-     "why": "A lunch box → 便當. A and B do not match."
+     "answer": 1,
+     "why": "A lunch box → 便當. A and C do not match."
     },
     {
      "type": "read_gap",
@@ -21541,12 +21541,12 @@
      "question": "這個人現在覺得媽媽做的菜怎麼樣？",
      "options": [
       "沒有味道",
-      "最好吃",
+      "太油了",
       "太鹹了",
-      "太油了"
+      "最好吃"
      ],
-     "answer": 1,
-     "why": "現在…媽媽做的菜最好吃. A was the FIRST opinion. C and D describe food eaten out."
+     "answer": 3,
+     "why": "現在…媽媽做的菜最好吃. A was the FIRST opinion. C and B describe food eaten out."
     }
    ],
    "grammar": [
@@ -21787,12 +21787,12 @@
      },
      "question": "你要幾顆芒果？",
      "options": [
-      "兩顆。",
+      "三顆。",
       "十三顆。",
-      "三顆。"
+      "兩顆。"
      ],
-     "answer": 2,
-     "why": "Three mangoes → 三顆. A and B are the wrong number."
+     "answer": 0,
+     "why": "Three mangoes → 三顆. C and B are the wrong number."
     },
     {
      "type": "listen_pic",
@@ -21836,12 +21836,12 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "你喜歡吃什麼水果？",
      "options": [
-      "芒果很貴。",
       "我都喜歡，尤其是芒果。",
+      "芒果很貴。",
       "我在市場買水果。"
      ],
-     "answer": 1,
-     "why": "The question asks what she likes → 尤其是芒果. A and C do not answer."
+     "answer": 0,
+     "why": "The question asks what she likes → 尤其是芒果. B and C do not answer."
     },
     {
      "type": "listen_reply",
@@ -21912,12 +21912,12 @@
      "question": "這位先生要付多少錢？",
      "options": [
       "八十塊",
-      "一百五十塊",
+      "兩百塊",
       "一百六十塊",
-      "兩百塊"
+      "一百五十塊"
      ],
-     "answer": 1,
-     "why": "Two cost 150 (the deal price). A is one. C is 2 × 80, ignoring the deal. D is wrong."
+     "answer": 3,
+     "why": "Two cost 150 (the deal price). A is one. C is 2 × 80, ignoring the deal. B is wrong."
     },
     {
      "type": "read_sent",
@@ -22315,12 +22315,12 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "晚飯做好了沒有？",
      "options": [
-      "我不會做飯。",
       "做好了，快來吃吧！",
+      "我不會做飯。",
       "晚飯是牛排。"
      ],
-     "answer": 1,
-     "why": "The question is whether it's ready → 做好了. A does not answer; C gives the menu, not whether it's ready."
+     "answer": 0,
+     "why": "The question is whether it's ready → 做好了. B does not answer; C gives the menu, not whether it's ready."
     },
     {
      "type": "listen_reply",
@@ -22391,12 +22391,12 @@
      "question": "這位先生現在怎麼樣？",
      "options": [
       "很飽",
-      "很餓",
+      "在寫報告",
       "很累，想睡覺",
-      "在寫報告"
+      "很餓"
      ],
-     "answer": 1,
-     "why": "餓壞了吧 + 對 → very hungry. A is the opposite. C is not mentioned. D is what he was doing before."
+     "answer": 3,
+     "why": "餓壞了吧 + 對 → very hungry. A is the opposite. C is not mentioned. B is what he was doing before."
     },
     {
      "type": "read_sent",
@@ -22483,12 +22483,12 @@
      "question": "第一次做的牛排怎麼了？",
      "options": [
       "太鹹了",
-      "洋蔥太多",
       "外面黑了，裡面沒熟",
+      "洋蔥太多",
       "正好七分熟"
      ],
-     "answer": 2,
-     "why": "外面黑黑的，裡面還沒熟. A and B are not mentioned. D was the SECOND attempt."
+     "answer": 1,
+     "why": "外面黑黑的，裡面還沒熟. A and C are not mentioned. D was the SECOND attempt."
     }
    ],
    "grammar": [
@@ -22735,12 +22735,12 @@
      },
      "question": "我們的位子在哪裡？",
      "options": [
-      "在門口。",
+      "在窗戶旁邊。",
       "在廚房旁邊。",
-      "在窗戶旁邊。"
+      "在門口。"
      ],
-     "answer": 2,
-     "why": "The table pointed to is by the window → 窗戶旁邊. A and B are other places."
+     "answer": 0,
+     "why": "The table pointed to is by the window → 窗戶旁邊. C and B are other places."
     },
     {
      "type": "listen_pic",
@@ -22877,16 +22877,16 @@
        "label": "just a salad"
       },
       {
-       "icon": "🥗🍲🥤",
-       "label": "salad, soup, juice"
-      },
-      {
        "icon": "🍔🍟",
        "label": "a burger and fries"
+      },
+      {
+       "icon": "🥗🍲🥤",
+       "label": "salad, soup, juice"
       }
      ],
-     "answer": 1,
-     "why": "套餐 = 沙拉 + 湯 + 果汁. A is incomplete; C is different food."
+     "answer": 2,
+     "why": "套餐 = 沙拉 + 湯 + 果汁. A is incomplete; B is different food."
     },
     {
      "type": "read_pick",
@@ -22952,11 +22952,11 @@
      "options": [
       "訂位比較便宜",
       "週末不開",
-      "沒訂位要等很久",
-      "只有訂位才能吃套餐"
+      "只有訂位才能吃套餐",
+      "沒訂位要等很久"
      ],
-     "answer": 2,
-     "why": "要是沒訂位，常常要等一個小時. A, B and D are not mentioned."
+     "answer": 3,
+     "why": "要是沒訂位，常常要等一個小時. A, B and C are not mentioned."
     }
    ],
    "grammar": [
@@ -23183,11 +23183,11 @@
      "question": "她在喝什麼？",
      "options": [
       "牛奶。",
-      "烏龍茶。",
-      "豆漿。"
+      "豆漿。",
+      "烏龍茶。"
      ],
-     "answer": 2,
-     "why": "A glass + soybeans → 豆漿. A looks similar but is not soy; B is another drink."
+     "answer": 1,
+     "why": "A glass + soybeans → 豆漿. A looks similar but is not soy; C is another drink."
     },
     {
      "type": "listen_pic",
@@ -23244,12 +23244,12 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "你喝過烏龍茶嗎？",
      "options": [
-      "從來沒喝過，好喝嗎？",
+      "我喜歡喝飲料。",
       "烏龍茶很香。",
-      "我喜歡喝飲料。"
+      "從來沒喝過，好喝嗎？"
      ],
-     "answer": 0,
-     "why": "喝過嗎 → 從來沒喝過. B and C do not answer."
+     "answer": 2,
+     "why": "喝過嗎 → 從來沒喝過. B and A do not answer."
     },
     {
      "type": "listen_dialog",
@@ -23275,12 +23275,12 @@
      ],
      "question": "這位先生要喝什麼？",
      "options": [
-      "有糖的飲料",
       "烏龍茶",
+      "有糖的飲料",
       "豆漿"
      ],
-     "answer": 1,
-     "why": "那我喝烏龍茶. A is refused (從來不喝). C is not mentioned."
+     "answer": 0,
+     "why": "那我喝烏龍茶. B is refused (從來不喝). C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -23308,11 +23308,11 @@
      "options": [
       "巧克力",
       "糖果",
-      "餅乾",
-      "什麼都不吃"
+      "什麼都不吃",
+      "餅乾"
      ],
-     "answer": 2,
-     "why": "那我吃一塊 (餅乾). A is refused (一點也不喜歡吃甜的). B is not mentioned. D is the opposite."
+     "answer": 3,
+     "why": "那我吃一塊 (餅乾). A is refused (一點也不喜歡吃甜的). B is not mentioned. C is the opposite."
     },
     {
      "type": "read_sent",
@@ -23321,20 +23321,20 @@
      "text": "妹妹從來不吃糖果，也不吃巧克力。",
      "options": [
       {
-       "icon": "👧🍬",
-       "label": "eating sweets"
-      },
-      {
        "icon": "👧🙅🍬🍫",
        "label": "refusing sweets and chocolate"
+      },
+      {
+       "icon": "👧🍬",
+       "label": "eating sweets"
       },
       {
        "icon": "👧🍫",
        "label": "eating chocolate"
       }
      ],
-     "answer": 1,
-     "why": "從來不吃 → refuses both. A and C are the opposite."
+     "answer": 0,
+     "why": "從來不吃 → refuses both. B and C are the opposite."
     },
     {
      "type": "read_pick",
@@ -23399,12 +23399,12 @@
      "question": "這個人為什麼不吃泡麵了？",
      "options": [
       "媽媽不讓他吃",
-      "吃了以後身體不舒服",
+      "他沒有時間",
       "泡麵太貴",
-      "他沒有時間"
+      "吃了以後身體不舒服"
      ],
-     "answer": 1,
-     "why": "吃了一個月，身體一點也不舒服 → so she stopped. A: her mother was talking about fast food, long ago. C is not mentioned. D is actually why she used to eat instant noodles."
+     "answer": 3,
+     "why": "吃了一個月，身體一點也不舒服 → so she stopped. A: her mother was talking about fast food, long ago. C is not mentioned. B is actually why she used to eat instant noodles."
     }
    ],
    "grammar": [
@@ -23817,12 +23817,12 @@
      "question": "哪一個是對的？",
      "options": [
       "在學校也可以辦",
-      "居留證只能在這裡辦",
+      "要很多張照片",
       "要一個月",
-      "要很多張照片"
+      "居留證只能在這裡辦"
      ],
-     "answer": 1,
-     "why": "只有在這裡才能辦. A is the opposite. C: only a week. D is not mentioned."
+     "answer": 3,
+     "why": "只有在這裡才能辦. A is the opposite. C: only a week. B is not mentioned."
     },
     {
      "type": "read_sent",
@@ -23831,20 +23831,20 @@
      "text": "只有下雨的時候，他才坐公車。",
      "options": [
       {
-       "icon": "☀️🚌",
-       "label": "sunny, taking the bus"
-      },
-      {
        "icon": "🌧️🚌",
        "label": "rainy, taking the bus"
+      },
+      {
+       "icon": "☀️🚌",
+       "label": "sunny, taking the bus"
       },
       {
        "icon": "🌧️🚶",
        "label": "rainy, walking"
       }
      ],
-     "answer": 1,
-     "why": "只有下雨…才坐公車 → rain = bus. A: he doesn't take the bus when it's sunny. C is the opposite."
+     "answer": 0,
+     "why": "只有下雨…才坐公車 → rain = bus. B: he doesn't take the bus when it's sunny. C is the opposite."
     },
     {
      "type": "read_pick",
@@ -23909,12 +23909,12 @@
      "question": "一個要在臺灣住三個月的學生，要辦居留證嗎？",
      "options": [
       "要，一定要辦",
-      "不用，半年以上才要辦",
+      "只有在學校才能辦",
       "只要帶照片就好",
-      "只有在學校才能辦"
+      "不用，半年以上才要辦"
      ],
-     "answer": 1,
-     "why": "Three months is under half a year → not needed. A ignores the 半年以上 condition. C is a requirement, not an answer. D is the opposite (學校不能辦)."
+     "answer": 3,
+     "why": "Three months is under half a year → not needed. A ignores the 半年以上 condition. C is a requirement, not an answer. B is the opposite (學校不能辦)."
     }
    ],
    "grammar": [
@@ -24150,11 +24150,11 @@
      "question": "他在銀行做什麼？",
      "options": [
       "換錢。",
-      "寄信。",
-      "存錢。"
+      "存錢。",
+      "寄信。"
      ],
-     "answer": 2,
-     "why": "Paying money in at the counter → 存錢. A and B are other activities."
+     "answer": 1,
+     "why": "Paying money in at the counter → 存錢. A and C are other activities."
     },
     {
      "type": "listen_pic",
@@ -24198,12 +24198,12 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "你收到我的信了嗎？",
      "options": [
-      "我寄了一封信。",
       "收到了，我今天晚上回信。",
+      "我寄了一封信。",
       "信封很漂亮。"
      ],
-     "answer": 1,
-     "why": "The question is whether she received it → 收到了. A is about sending, not receiving; C comments on the envelope."
+     "answer": 0,
+     "why": "The question is whether she received it → 收到了. B is about sending, not receiving; C comments on the envelope."
     },
     {
      "type": "listen_reply",
@@ -24274,12 +24274,12 @@
      "question": "這位小姐怎麼知道信是誰寫的？",
      "options": [
       "信封上有名字",
-      "從字看出來的",
+      "她打電話問了",
       "小林告訴她的",
-      "她打電話問了"
+      "從字看出來的"
      ],
-     "answer": 1,
-     "why": "他的字很特別 → recognised by the handwriting. A contradicts 沒有名字. C and D are not mentioned."
+     "answer": 3,
+     "why": "他的字很特別 → recognised by the handwriting. A contradicts 沒有名字. C and B are not mentioned."
     },
     {
      "type": "read_sent",
@@ -24611,12 +24611,12 @@
      },
      "question": "小偷怎麼了？",
      "options": [
-      "跑走了。",
       "被抓住了。",
+      "跑走了。",
       "在睡覺。"
      ],
-     "answer": 1,
-     "why": "A police officer holding a masked thief → 被抓住了. A and C do not match."
+     "answer": 0,
+     "why": "B police officer holding a masked thief → 被抓住了. B and C do not match."
     },
     {
      "type": "listen_pic",
@@ -24655,12 +24655,12 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "你的手機找著了嗎？",
      "options": [
-      "還沒，可能丟在教室了。",
       "我的手機是新的。",
+      "還沒，可能丟在教室了。",
       "我在打電話。"
      ],
-     "answer": 0,
-     "why": "找著了嗎 → 還沒. B and C do not answer."
+     "answer": 1,
+     "why": "找著了嗎 → 還沒. A and C do not answer."
     },
     {
      "type": "listen_dialog",
@@ -24686,12 +24686,12 @@
      ],
      "question": "這位先生還沒找著什麼？",
      "options": [
-      "錢包",
       "鑰匙",
+      "錢包",
       "手機"
      ],
-     "answer": 1,
-     "why": "鑰匙還沒找著. A has been found. C is not mentioned."
+     "answer": 0,
+     "why": "鑰匙還沒找著. B has been found. C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -24719,11 +24719,11 @@
      "options": [
       "樓下太吵了",
       "他的東西丟了",
-      "樓下有東西被偷了，他很怕",
-      "他忘了鎖門"
+      "他忘了鎖門",
+      "樓下有東西被偷了，他很怕"
      ],
-     "answer": 2,
-     "why": "有人的東西被偷了 → he was scared. A is not mentioned. B: it was SOMEONE ELSE's things that were stolen. D is her advice, not the cause."
+     "answer": 3,
+     "why": "有人的東西被偷了 → he was scared. A is not mentioned. B: it was SOMEONE ELSE's things that were stolen. C is her advice, not the cause."
     },
     {
      "type": "read_sent",
@@ -24736,16 +24736,16 @@
        "label": "the thief escaping"
       },
       {
-       "icon": "👥🤲🦹",
-       "label": "people catching a thief"
-      },
-      {
        "icon": "🦹🏍️",
        "label": "the thief on a scooter"
+      },
+      {
+       "icon": "👥🤲🦹",
+       "label": "people catching a thief"
       }
      ],
-     "answer": 1,
-     "why": "大家抓住了小偷. A is the opposite; C does not match."
+     "answer": 2,
+     "why": "大家抓住了小偷. A is the opposite; B does not match."
     },
     {
      "type": "read_pick",
@@ -25048,12 +25048,12 @@
      },
      "question": "颱風天出門怎麼樣？",
      "options": [
-      "很安全。",
       "很危險。",
+      "很安全。",
       "很舒服。"
      ],
-     "answer": 1,
-     "why": "Someone outside in a typhoon + a danger sign → 很危險. A and C are the opposite."
+     "answer": 0,
+     "why": "Someone outside in a typhoon + a danger sign → 很危險. B and C are the opposite."
     },
     {
      "type": "listen_pic",
@@ -25067,11 +25067,11 @@
      "question": "你還喝酒嗎？",
      "options": [
       "我每天都喝。",
-      "我喝一點。",
-      "我不再喝酒了。"
+      "我不再喝酒了。",
+      "我喝一點。"
      ],
-     "answer": 2,
-     "why": "Refusing a glass of beer → 不再喝酒了. A and B are the opposite."
+     "answer": 1,
+     "why": "Refusing a glass of beer → 不再喝酒了. A and C are the opposite."
     },
     {
      "type": "listen_reply",
@@ -25092,12 +25092,12 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "明天會下雨嗎？",
      "options": [
-      "也許會，你帶傘吧。",
+      "昨天下雨了。",
       "我喜歡下雨。",
-      "昨天下雨了。"
+      "也許會，你帶傘吧。"
      ],
-     "answer": 0,
-     "why": "A guess → 也許會. B and C do not answer."
+     "answer": 2,
+     "why": "C guess → 也許會. B and A do not answer."
     },
     {
      "type": "listen_dialog",
@@ -25123,12 +25123,12 @@
      ],
      "question": "這位先生說以後會怎麼做？",
      "options": [
-      "不再來了",
       "早點出門",
+      "不再來了",
       "晚一點出門"
      ],
-     "answer": 1,
-     "why": "我會早點出門的. A misreads 不再 (it's being late he'll stop, not coming). C is the opposite."
+     "answer": 0,
+     "why": "我會早點出門的. B misreads 不再 (it's being late he'll stop, not coming). C is the opposite."
     },
     {
      "type": "listen_dialog",
@@ -25156,11 +25156,11 @@
      "options": [
       "一個人去",
       "不再爬山了",
-      "跟大家一起去",
-      "下個月一個人去"
+      "下個月一個人去",
+      "跟大家一起去"
      ],
-     "answer": 2,
-     "why": "不再 applies to going ALONE; he agrees to go with the group. A and D are the opposite. B goes too far: he'll still climb."
+     "answer": 3,
+     "why": "不再 applies to going ALONE; he agrees to go with the group. A and C are the opposite. B goes too far: he'll still climb."
     },
     {
      "type": "read_sent",
@@ -25483,11 +25483,11 @@
      "question": "天上有什麼？",
      "options": [
       "太陽。",
-      "星星。",
-      "月亮。"
+      "月亮。",
+      "星星。"
      ],
-     "answer": 2,
-     "why": "A big moon in the night sky → 月亮. A is daytime; B is not the main thing in the picture."
+     "answer": 1,
+     "why": "A big moon in the night sky → 月亮. A is daytime; C is not the main thing in the picture."
     },
     {
      "type": "listen_pic",
@@ -25501,11 +25501,11 @@
      "question": "天上有什麼？",
      "options": [
       "一個太陽。",
-      "很多星星。",
-      "很多鳥。"
+      "很多鳥。",
+      "很多星星。"
      ],
-     "answer": 1,
-     "why": "A night sky full of stars → 很多星星. A and C do not match."
+     "answer": 2,
+     "why": "A night sky full of stars → 很多星星. A and B do not match."
     },
     {
      "type": "listen_pic",
@@ -25607,12 +25607,12 @@
      "question": "他們要做什麼？",
      "options": [
       "去買椅子",
-      "坐在外面看月亮",
+      "休息睡覺",
       "看星星",
-      "休息睡覺"
+      "坐在外面看月亮"
      ],
-     "answer": 1,
-     "why": "把椅子搬出來，坐下來看 (the moon). A: they already have chairs. C and D are not mentioned."
+     "answer": 3,
+     "why": "把椅子搬出來，坐下來看 (the moon). A: they already have chairs. C and B are not mentioned."
     },
     {
      "type": "read_sent",
@@ -25621,20 +25621,20 @@
      "text": "院子裡有一朵一朵的紅花。",
      "options": [
       {
-       "icon": "🌳🌼",
-       "label": "one yellow flower"
-      },
-      {
        "icon": "🌳🌺🌺🌺",
        "label": "a yard full of red flowers"
+      },
+      {
+       "icon": "🌳🌼",
+       "label": "one yellow flower"
       },
       {
        "icon": "🌳",
        "label": "a yard with no flowers"
       }
      ],
-     "answer": 1,
-     "why": "一朵一朵的紅花 → lots of red flowers. A has the wrong number and colour; C has no flowers."
+     "answer": 0,
+     "why": "一朵一朵的紅花 → lots of red flowers. B has the wrong number and colour; C has no flowers."
     },
     {
      "type": "read_pick",
@@ -25699,12 +25699,12 @@
      "question": "為什麼山上的星星比市區多？",
      "options": [
       "那天有月亮",
-      "山上的空氣很好",
+      "山上的人很少",
       "他們看到半夜",
-      "山上的人很少"
+      "山上的空氣很好"
      ],
-     "answer": 1,
-     "why": "因為山上的空氣很好. A is the opposite (沒有月亮). C is not the reason. D is not mentioned."
+     "answer": 3,
+     "why": "因為山上的空氣很好. A is the opposite (沒有月亮). C is not the reason. B is not mentioned."
     }
    ],
    "grammar": [
@@ -25963,12 +25963,12 @@
      },
      "question": "海怎麼了？",
      "options": [
-      "很乾淨。",
+      "被污染了。",
       "很深。",
-      "被污染了。"
+      "很乾淨。"
      ],
-     "answer": 2,
-     "why": "A sea full of rubbish and dead fish → 被污染了. A is the opposite; B is not shown."
+     "answer": 0,
+     "why": "C sea full of rubbish and dead fish → 被污染了. C is the opposite; B is not shown."
     },
     {
      "type": "listen_pic",
@@ -25982,11 +25982,11 @@
      "question": "這條河怎麼樣？",
      "options": [
       "很乾淨。",
-      "被污染了。",
-      "很美麗。"
+      "很美麗。",
+      "被污染了。"
      ],
-     "answer": 1,
-     "why": "Rubbish + a waste pipe → 被污染了. A and C are the opposite."
+     "answer": 2,
+     "why": "Rubbish + a waste pipe → 被污染了. A and B are the opposite."
     },
     {
      "type": "listen_pic",
@@ -26102,20 +26102,20 @@
      "text": "海邊到處都是垃圾，連水裡都有瓶子。",
      "options": [
       {
-       "icon": "🏖️✨",
-       "label": "a clean beach"
-      },
-      {
        "icon": "🏖️🗑️🍾",
        "label": "a beach full of rubbish"
+      },
+      {
+       "icon": "🏖️✨",
+       "label": "a clean beach"
       },
       {
        "icon": "🌊🐟",
        "label": "a clean sea with fish"
       }
      ],
-     "answer": 1,
-     "why": "到處都是垃圾 + 連水裡都有瓶子. A and C are the opposite."
+     "answer": 0,
+     "why": "到處都是垃圾 + 連水裡都有瓶子. B and C are the opposite."
     },
     {
      "type": "read_pick",
@@ -26126,12 +26126,12 @@
       "label": "sorting rubbish"
      },
      "options": [
-      "他們在丟垃圾到河裡。",
+      "他們在做環保。",
       "他們在上課。",
-      "他們在做環保。"
+      "他們在丟垃圾到河裡。"
      ],
-     "answer": 2,
-     "why": "Sorting recycling → 做環保. A is the opposite; B does not match."
+     "answer": 0,
+     "why": "Sorting recycling → 做環保. C is the opposite; B does not match."
     },
     {
      "type": "read_gap",
@@ -26143,11 +26143,11 @@
      },
      "text": "在這裡你可以（　）地做你想做的事。",
      "options": [
-      "自由",
+      "社會",
       "環保",
-      "社會"
+      "自由"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "自由地 = freely. 環保地 and 社會地 are not natural."
     },
     {
@@ -26528,12 +26528,12 @@
      ],
      "question": "他們除夕吃什麼？",
      "options": [
-      "吃速食",
       "吃媽媽做的菜",
+      "吃速食",
       "去餐廳吃"
      ],
-     "answer": 1,
-     "why": "媽媽做什麼，我們就吃什麼 → whatever mum cooks. A and C are not mentioned."
+     "answer": 0,
+     "why": "媽媽做什麼，我們就吃什麼 → whatever mum cooks. B and C are not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -26560,12 +26560,12 @@
      "question": "這位小姐今年除夕在哪裡吃飯？",
      "options": [
       "她自己家",
-      "這位先生家",
+      "飛機上",
       "餐廳",
-      "飛機上"
+      "這位先生家"
      ],
-     "answer": 1,
-     "why": "除夕你來我家吃飯吧 + 太好了. A: she isn't going home. C and D are not mentioned."
+     "answer": 3,
+     "why": "除夕你來我家吃飯吧 + 太好了. A: she isn't going home. C and B are not mentioned."
     },
     {
      "type": "read_sent",
@@ -26574,20 +26574,20 @@
      "text": "除夕晚上，一家人坐在一起吃飯。",
      "options": [
       {
-       "icon": "🎄🎅",
-       "label": "Christmas"
-      },
-      {
        "icon": "🧧👨‍👩‍👧‍👦🍽️",
        "label": "a family's New Year's Eve dinner"
+      },
+      {
+       "icon": "🎄🎅",
+       "label": "Christmas"
       },
       {
        "icon": "🏖️",
        "label": "a beach"
       }
      ],
-     "answer": 1,
-     "why": "除夕 + 一家人吃飯. A is a different festival; C does not match."
+     "answer": 0,
+     "why": "除夕 + 一家人吃飯. B is a different festival; C does not match."
     },
     {
      "type": "read_pick",
@@ -26952,12 +26952,12 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "你怎麼看起來很擔心？",
      "options": [
-      "我很放心。",
       "我不知道明天考不考試。",
+      "我很放心。",
       "明天是晴天。"
      ],
-     "answer": 1,
-     "why": "The question asks why he's worried → 不知道…. A is the opposite; C does not answer."
+     "answer": 0,
+     "why": "The question asks why he's worried → 不知道…. B is the opposite; C does not answer."
     },
     {
      "type": "listen_reply",
@@ -27028,12 +27028,12 @@
      "question": "這位小姐為什麼一直看手機？",
      "options": [
       "她在玩遊戲",
-      "她擔心媽媽的情形",
       "她在等男朋友的電話",
+      "她擔心媽媽的情形",
       "她的手機壞了"
      ],
-     "answer": 1,
-     "why": "媽媽生病 + 不知道好一點了沒有 → worried about her mother. A, C and D are not mentioned."
+     "answer": 2,
+     "why": "媽媽生病 + 不知道好一點了沒有 → worried about her mother. A, B and D are not mentioned."
     },
     {
      "type": "read_sent",
@@ -27066,12 +27066,12 @@
       "label": "fed up with a pile of work"
      },
      "options": [
-      "他很放心。",
+      "他覺得很煩。",
       "他很高興。",
-      "他覺得很煩。"
+      "他很放心。"
      ],
-     "answer": 2,
-     "why": "An annoyed face + a pile of books → 很煩. A and B do not match."
+     "answer": 0,
+     "why": "An annoyed face + a pile of books → 很煩. C and B do not match."
     },
     {
      "type": "read_gap",
@@ -27121,11 +27121,11 @@
      "options": [
       "考試太難",
       "休息太多",
-      "準備得不夠",
-      "書太多"
+      "書太多",
+      "準備得不夠"
      ],
-     "answer": 2,
-     "why": "擔心的原因常常是準備得不夠. A, B and D are not given as causes."
+     "answer": 3,
+     "why": "擔心的原因常常是準備得不夠. A, B and C are not given as causes."
     }
    ],
    "grammar": [
@@ -27361,12 +27361,12 @@
      },
      "question": "他怎麼樣？",
      "options": [
-      "很擔心。",
+      "很開心。",
       "很累。",
-      "很開心。"
+      "很擔心。"
      ],
-     "answer": 2,
-     "why": "A very happy face → 開心. A and B do not match."
+     "answer": 0,
+     "why": "C very happy face → 開心. C and B do not match."
     },
     {
      "type": "listen_pic",
@@ -27397,12 +27397,12 @@
      },
      "question": "他說什麼？",
      "options": [
-      "你怎麼沒來？",
+      "沒想到你來了！",
       "你別來了。",
-      "沒想到你來了！"
+      "你怎麼沒來？"
      ],
-     "answer": 2,
-     "why": "Happily surprised his friend came with a present → 沒想到你來了. A and B do not match."
+     "answer": 0,
+     "why": "Happily surprised his friend came with a present → 沒想到你來了. C and B do not match."
     },
     {
      "type": "listen_reply",
@@ -27411,11 +27411,11 @@
      "audio": "考完試，你感覺怎麼樣？",
      "options": [
       "考試很難。",
-      "很輕鬆，而且很開心。",
-      "我考了三個小時。"
+      "我考了三個小時。",
+      "很輕鬆，而且很開心。"
      ],
-     "answer": 1,
-     "why": "The question asks how he feels → 很輕鬆，而且很開心. A judges the exam; C says how long."
+     "answer": 2,
+     "why": "The question asks how he feels → 很輕鬆，而且很開心. A judges the exam; B says how long."
     },
     {
      "type": "listen_reply",
@@ -27486,12 +27486,12 @@
      "question": "這位先生為什麼心情很好？",
      "options": [
       "他要去旅行",
-      "他考了第一名",
       "有人送他禮物",
+      "他考了第一名",
       "他數學不好"
      ],
-     "answer": 1,
-     "why": "沒想到我考了第一名. A and C are not mentioned. D is the opposite (數學也好)."
+     "answer": 2,
+     "why": "沒想到我考了第一名. A and B are not mentioned. D is the opposite (數學也好)."
     },
     {
      "type": "read_sent",
@@ -27579,11 +27579,11 @@
      "options": [
       "參加生日派對",
       "唱歌",
-      "只是一起吃飯",
-      "買蛋糕"
+      "買蛋糕",
+      "只是一起吃飯"
      ],
-     "answer": 2,
-     "why": "我以為只是一起吃飯. A is what actually happened (沒想到). B and D are part of the party."
+     "answer": 3,
+     "why": "我以為只是一起吃飯. A is what actually happened (沒想到). B and C are part of the party."
     }
    ],
    "grammar": [
@@ -27959,12 +27959,12 @@
      ],
      "question": "他們要先去哪裡？",
      "options": [
-      "日本",
       "韓國",
+      "日本",
       "臺灣"
      ],
-     "answer": 0,
-     "why": "先去日本，再去韓國. B: the second destination. C is not mentioned."
+     "answer": 1,
+     "why": "先去日本，再去韓國. A: the second destination. C is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -28020,11 +28020,11 @@
       "label": "unsure what to choose"
      },
      "options": [
-      "我不知道怎麼選擇。",
+      "我吃飽了。",
       "我都不想吃。",
-      "我吃飽了。"
+      "我不知道怎麼選擇。"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "選擇 = to choose."
     },
     {
@@ -28069,11 +28069,11 @@
      "text": "班上的意見：一半的同學想寫環保，三分之一想寫交通，別的同學沒有意見。",
      "question": "最多同學想寫什麼？",
      "options": [
-      "環保",
       "交通",
+      "環保",
       "沒有意見"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "一半 (1/2) > 三分之一 (1/3) → 環保."
     }
    ],
@@ -28292,11 +28292,11 @@
      "question": "住宿舍怎麼樣？",
      "options": [
       "只有好處，沒有壞處。",
-      "只有壞處，沒有好處。",
-      "有好處，也有壞處。"
+      "有好處，也有壞處。",
+      "只有壞處，沒有好處。"
      ],
-     "answer": 2,
-     "why": "There is both a plus AND a minus sign → 有好處，也有壞處. A and B each give only one side."
+     "answer": 1,
+     "why": "There is both a plus AND a minus sign → 有好處，也有壞處. A and C each give only one side."
     },
     {
      "type": "listen_pic",
@@ -28335,12 +28335,12 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "你了解臺灣的文化嗎？",
      "options": [
-      "我很了解你的心情。",
       "了解一點，還在學習。",
+      "我很了解你的心情。",
       "臺灣的東西很便宜。"
      ],
-     "answer": 1,
-     "why": "The question is how well he understands Taiwanese culture → 了解一點. A uses 了解 in another sense (feelings). C is about Taiwan but does not answer."
+     "answer": 0,
+     "why": "The question is how well he understands Taiwanese culture → 了解一點. B uses 了解 in another sense (feelings). C is about Taiwan but does not answer."
     },
     {
      "type": "listen_dialog",
@@ -28397,13 +28397,13 @@
      ],
      "question": "這位小姐為什麼不做了？",
      "options": [
-      "工作的時間太長",
-      "她不喜歡公司裡的人",
       "公司的錢太少",
+      "她不喜歡公司裡的人",
+      "工作的時間太長",
       "她要去念書"
      ],
-     "answer": 0,
-     "why": "每天工作到晚上十點 → the working hours are too long. B is not mentioned. C is the opposite (錢比較多). D is not mentioned."
+     "answer": 2,
+     "why": "每天工作到晚上十點 → the working hours are too long. B is not mentioned. A is the opposite (錢比較多). D is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -28429,13 +28429,13 @@
      ],
      "question": "這位小姐是什麼意思？",
      "options": [
-      "她的室友不會吵她",
+      "宿舍沒有壞處",
       "她要搬出宿舍",
       "她不喜歡室友",
-      "宿舍沒有壞處"
+      "她的室友不會吵她"
      ],
-     "answer": 0,
-     "why": "還好…很早就休息 → her roommate does not disturb her. B and C have no basis in the dialogue. D: the man actually mentions a 壞處."
+     "answer": 3,
+     "why": "還好…很早就休息 → her roommate does not disturb her. B and C have no basis in the dialogue. A: the man actually mentions a 壞處."
     },
     {
      "type": "read_sent",
@@ -28485,11 +28485,11 @@
      },
      "text": "下午下了很大的雨，（　）我帶了傘。",
      "options": [
-      "可惜",
+      "還好",
       "其實",
-      "還好"
+      "可惜"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "還好 = luckily (something good in a bad situation). 可惜 = what a pity (for something bad). 其實 = actually (corrects an assumption) — there is no assumption to correct here."
     },
     {
@@ -28794,11 +28794,11 @@
      },
      "question": "這本書你看得下去嗎？",
      "options": [
-      "看不下去了。",
       "我看完了。",
+      "看不下去了。",
       "我很喜歡看。"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "V不下去 = can't carry on."
     },
     {
@@ -28825,11 +28825,11 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "你還吃得下嗎？",
      "options": [
-      "吃不下了，我太飽了。",
+      "吃得嗎。",
       "我吃下。",
-      "吃得嗎。"
+      "吃不下了，我太飽了。"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "吃得下嗎 → 吃得下／吃不下."
     },
     {
@@ -28838,11 +28838,11 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "你喜歡哪一類的書？",
      "options": [
-      "我一類書。",
+      "我喜歡歷史類的書。",
       "書很類。",
-      "我喜歡歷史類的書。"
+      "我一類書。"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "類 = kind, type."
     },
     {
@@ -28892,11 +28892,11 @@
      ],
      "question": "這位小姐要這位先生做什麼？",
      "options": [
-      "接著說",
       "別說了",
+      "接著說",
       "說別的"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "說下去 = go on (telling the story)."
     },
     {
@@ -29224,11 +29224,11 @@
      },
      "question": "他買得起那個手錶嗎？",
      "options": [
-      "他不要手錶。",
       "買不起，太貴了。",
+      "他不要手錶。",
       "買得起。"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "V不起 = can't afford."
     },
     {
@@ -29260,11 +29260,11 @@
      },
      "question": "你買得起這個嗎？",
      "options": [
-      "買不起。",
       "買得起。",
+      "買不起。",
       "這是禮物。"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "V不起 = can't afford to buy."
     },
     {
@@ -29273,11 +29273,11 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "你拿得動嗎？",
      "options": [
-      "拿不動，太重了。",
       "我拿了。",
+      "拿不動，太重了。",
       "拿動嗎。"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "拿得動嗎 → 拿得動／拿不動 + a reason."
     },
     {
@@ -29340,11 +29340,11 @@
      ],
      "question": "這位小姐想做什麼？",
      "options": [
-      "休息",
       "再走一個小時",
+      "休息",
       "回家"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "走不動了 → 休息一下."
     },
     {
@@ -29680,10 +29680,10 @@
      "question": "大家怎麼了？",
      "options": [
       "大家都睡覺了。",
-      "大家都不說話。",
-      "大家都笑起來了。"
+      "大家都笑起來了。",
+      "大家都不說話。"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "V起來 = to start …."
     },
     {
@@ -29692,11 +29692,11 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "你還記得她的名字嗎？",
      "options": [
-      "我想起來了，她叫安妮。",
+      "她起來了。",
       "我記得了嗎。",
-      "她起來了。"
+      "我想起來了，她叫安妮。"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "想起來了 = have remembered."
     },
     {
@@ -29705,11 +29705,11 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "你忘記她的生日了嗎？",
      "options": [
-      "生日很忘記。",
+      "對不起，我完全忘記了。",
       "我忘記你。",
-      "對不起，我完全忘記了。"
+      "生日很忘記。"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "忘記 = to forget."
     },
     {
@@ -29759,11 +29759,11 @@
      ],
      "question": "這位先生怎麼了？",
      "options": [
-      "他忘了約會",
+      "他很早到",
       "他生病了",
-      "他很早到"
+      "他忘了約會"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "想起來了 + 對不起 → had forgotten the appointment."
     },
     {
@@ -30106,11 +30106,11 @@
      "instr": "Listen to the question, then choose the most suitable answer.",
      "audio": "你們聊了什麼？",
      "options": [
-      "我們聊起了小時候的事。",
       "我們聊天。",
+      "我們聊起了小時候的事。",
       "聊起來了嗎。"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "聊起 + topic = to start talking about …."
     },
     {
@@ -30174,12 +30174,12 @@
      "question": "這位小姐覺得那天怎麼樣？",
      "options": [
       "很無聊",
-      "很開心",
+      "太晚回家很生氣",
       "很累",
-      "太晚回家很生氣"
+      "很開心"
      ],
-     "answer": 1,
-     "why": "很好玩…大家都不想走. A & D: the opposite. C is not mentioned."
+     "answer": 3,
+     "why": "很好玩…大家都不想走. A & B: the opposite. C is not mentioned."
     },
     {
      "type": "read_sent",
@@ -30230,10 +30230,10 @@
      "text": "我們一見面就聊（　）了小時候的事。",
      "options": [
       "下",
-      "起",
-      "上"
+      "上",
+      "起"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "聊起 = to start talking about."
     },
     {
@@ -30470,10 +30470,10 @@
      "question": "盤子裡怎麼樣？",
      "options": [
       "只有一點水。",
-      "裝滿了菜。",
-      "什麼都沒有。"
+      "什麼都沒有。",
+      "裝滿了菜。"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "V滿 = full."
     },
     {
@@ -30554,11 +30554,11 @@
      ],
      "question": "電影院怎麼樣？",
      "options": [
-      "坐滿了",
       "人很少",
+      "坐滿了",
       "還有位子"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "坐滿了 = full."
     },
     {
@@ -30585,13 +30585,13 @@
      ],
      "question": "這位先生是什麼意思？",
      "options": [
-      "要慢慢吃、少拿一點",
+      "這家餐廳不好吃",
       "他不想吃",
       "一盤不夠吃",
-      "這家餐廳不好吃"
+      "要慢慢吃、少拿一點"
      ],
-     "answer": 0,
-     "why": "別一開始就拿滿滿一盤…吃太快就吃不下. B & D are unsupported. C: the opposite."
+     "answer": 3,
+     "why": "別一開始就拿滿滿一盤…吃太快就吃不下. B & A are unsupported. C: the opposite."
     },
     {
      "type": "read_sent",
@@ -30641,11 +30641,11 @@
      },
      "text": "杯子裡裝（　）了水。",
      "options": [
-      "滿",
       "完",
+      "滿",
       "夠"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "裝滿 = full."
     },
     {
@@ -30880,11 +30880,11 @@
      },
      "question": "考試要帶什麼？",
      "options": [
-      "學生證。",
       "手機。",
+      "學生證。",
       "書。"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "學生證 = student ID."
     },
     {
@@ -30965,11 +30965,11 @@
      ],
      "question": "這位小姐現在在哪裡？",
      "options": [
-      "圖書館",
+      "餐廳",
       "家",
-      "餐廳"
+      "圖書館"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "還在 (still on campus) → 在圖書館."
     },
     {
@@ -30996,13 +30996,13 @@
      ],
      "question": "考試的時候不能做什麼？",
      "options": [
-      "查書",
       "用手機",
+      "查書",
       "帶學生證",
       "進教室"
      ],
-     "answer": 1,
-     "why": "不能用手機. A: allowed. C: required. D: allowed with a student ID."
+     "answer": 0,
+     "why": "不能用手機. B: allowed. C: required. D: allowed with a student ID."
     },
     {
      "type": "read_sent",
@@ -31035,11 +31035,11 @@
       "label": "still studying at night"
      },
      "options": [
-      "他現在還在讀書。",
       "他已經睡覺了。",
+      "他現在還在讀書。",
       "他在看電影。"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "還 = still."
     },
     {
@@ -31052,11 +31052,11 @@
      },
      "text": "這學期你要（　）什麼課？",
      "options": [
-      "選",
+      "讀書",
       "資料",
-      "讀書"
+      "選"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "選課 = to choose courses."
     },
     {
@@ -31307,11 +31307,11 @@
      },
      "question": "這是什麼？",
      "options": [
-      "你要的麵包。",
+      "你要的便當。",
       "你要的水果。",
-      "你要的便當。"
+      "你要的麵包。"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "VP + 的 + N: 你要的便當 = the bento you wanted."
     },
     {
@@ -31369,11 +31369,11 @@
      "instr": "Listen to the sentence, then choose the most suitable response.",
      "audio": "你要的是什麼？",
      "options": [
-      "我要的是一個便當。",
       "便當的是。",
+      "我要的是一個便當。",
       "我是要。"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "VP + 的 = the one that …."
     },
     {
@@ -31400,12 +31400,12 @@
      ],
      "question": "東西最晚幾點會送到？",
      "options": [
-      "七點",
+      "八點",
       "六點",
-      "八點"
+      "七點"
      ],
-     "answer": 0,
-     "why": "七點以前一定送到. B = the time now. C is not mentioned."
+     "answer": 2,
+     "why": "七點以前一定送到. B = the time now. A is not mentioned."
     },
     {
      "type": "listen_dialog",
@@ -31441,15 +31441,15 @@
        "label": "sitting inside"
       },
       {
-       "icon": "🚪🧍",
-       "label": "waiting outside the door"
-      },
-      {
        "icon": "🏃",
        "label": "to go"
+      },
+      {
+       "icon": "🚪🧍",
+       "label": "waiting outside the door"
       }
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "門外 = outside the door."
     },
     {
@@ -31511,10 +31511,10 @@
      "question": "在臺北市以外，要多久？",
      "options": [
       "一個小時",
-      "兩個小時",
-      "三十分鐘"
+      "三十分鐘",
+      "兩個小時"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "臺北市以外，要兩個小時. 一個小時 is for within the city."
     }
    ],

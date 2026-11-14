@@ -53,20 +53,20 @@
    "question": "他們要帶什麼去？",
    "options": [
     {
-     "icon": "💐",
-     "label": "bunga"
-    },
-    {
      "icon": "🎂",
      "label": "kue"
+    },
+    {
+     "icon": "💐",
+     "label": "bunga"
     },
     {
      "icon": "🍷",
      "label": "anggur"
     }
    ],
-   "answer": 1,
-   "why": "還是帶蛋糕吧. A ditolak (太貴). C tidak disebut."
+   "answer": 0,
+   "why": "還是帶蛋糕吧. B ditolak (太貴). C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -98,15 +98,15 @@
     },
     {
      "icon": "📅",
-     "label": "Sabtu"
+     "label": "Minggu"
     },
     {
      "icon": "📅",
-     "label": "Minggu"
+     "label": "Sabtu"
     }
    ],
-   "answer": 1,
-   "why": "星期六可以. A: sudah ada janji. C tidak disebut."
+   "answer": 2,
+   "why": "星期六可以. A: sudah ada janji. B tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -133,12 +133,12 @@
    "question": "今天誰請客？",
    "options": [
     "這位先生",
-    "這位小姐",
+    "沒有人請客",
     "他們一起付錢",
-    "沒有人請客"
+    "這位小姐"
    ],
-   "answer": 1,
-   "why": "還是我請吧 + 那好 → si perempuan. A = tawaran awal yang dialihkan. C dan D tidak cocok."
+   "answer": 3,
+   "why": "還是我請吧 + 那好 → si perempuan. A = tawaran awal yang dialihkan. C dan B tidak cocok."
   },
   {
    "type": "read_sent",
@@ -147,20 +147,20 @@
    "text": "我們約好在捷運站出口見面。",
    "options": [
     {
-     "icon": "🏫👫",
-     "label": "bertemu di sekolah"
-    },
-    {
      "icon": "🚇🚪👫",
      "label": "bertemu di pintu keluar MRT"
+    },
+    {
+     "icon": "🏫👫",
+     "label": "bertemu di sekolah"
     },
     {
      "icon": "🍽️👫",
      "label": "bertemu di restoran"
     }
    ],
-   "answer": 1,
-   "why": "捷運站出口 → pintu keluar MRT. A dan C tempat lain."
+   "answer": 0,
+   "why": "捷運站出口 → pintu keluar MRT. B dan C tempat lain."
   },
   {
    "type": "read_pick",
@@ -331,16 +331,16 @@
      "label": "Taipei"
     },
     {
-     "icon": "⚓",
-     "label": "Kaohsiung"
-    },
-    {
      "icon": "🏞️",
      "label": "Taichung"
+    },
+    {
+     "icon": "⚓",
+     "label": "Kaohsiung"
     }
    ],
-   "answer": 1,
-   "why": "她住在高雄. A = tempat kantor si perempuan. C tidak disebut."
+   "answer": 2,
+   "why": "她住在高雄. A = tempat kantor si perempuan. B tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -366,13 +366,13 @@
    ],
    "question": "這位小姐的意思是什麼？",
    "options": [
-    "這位先生應該去國外",
     "弟弟也應該照顧爸爸",
+    "這位先生應該去國外",
     "這位先生的爸爸很好",
     "她想去照顧他爸爸"
    ],
-   "answer": 1,
-   "why": "讓你弟弟也去照顧他 → adiknya juga harus ikut merawat. A salah paham 國外. C: ayahnya sakit. D tidak disebut."
+   "answer": 0,
+   "why": "讓你弟弟也去照顧他 → adiknya juga harus ikut merawat. B salah paham 國外. C: ayahnya sakit. D tidak disebut."
   },
   {
    "type": "read_sent",
@@ -405,12 +405,12 @@
     "label": "perawat merawat pasien"
    },
    "options": [
-    "護士在照顧病人。",
+    "護士在吃飯。",
     "病人在照顧護士。",
-    "護士在吃飯。"
+    "護士在照顧病人。"
    ],
-   "answer": 0,
-   "why": "Perawat merawat pasien. B membalik peran; C kegiatan lain."
+   "answer": 2,
+   "why": "Perawat merawat pasien. B membalik peran; A kegiatan lain."
   },
   {
    "type": "read_gap",
@@ -460,11 +460,11 @@
    "options": [
     "外婆要他搬回家",
     "他在臺北沒有朋友",
-    "他想照顧外婆",
-    "他的父母回國了"
+    "他的父母回國了",
+    "他想照顧外婆"
    ],
-   "answer": 2,
-   "why": "現在我要照顧她. A, B, D: tidak disebut di teks."
+   "answer": 3,
+   "why": "現在我要照顧她. A, B, C: tidak disebut di teks."
   }
  ],
  "C27": [
@@ -521,20 +521,20 @@
    "question": "這位先生怎麼知道這個消息？",
    "options": [
     {
-     "icon": "🧑‍🏫",
-     "label": "dari guru"
-    },
-    {
      "icon": "📱✉️",
      "label": "pesan dari 小林"
+    },
+    {
+     "icon": "🧑‍🏫",
+     "label": "dari guru"
     },
     {
      "icon": "📰",
      "label": "dari berita"
     }
    ],
-   "answer": 1,
-   "why": "小林傳簡訊告訴我. A dibantah (不是老師說的). C tidak disebut."
+   "answer": 0,
+   "why": "小林傳簡訊告訴我. B dibantah (不是老師說的). C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -693,12 +693,12 @@
    "question": "說話的人是什麼意思？",
    "options": [
     "大家都不應該傳簡訊",
-    "重要的事最好打電話",
+    "老師不喜歡學生打電話",
     "打電話比傳簡訊便宜",
-    "老師不喜歡學生打電話"
+    "重要的事最好打電話"
    ],
-   "answer": 1,
-   "why": "Urusan penting → 打電話或是見面說比較有禮貌. A: berlebihan — SMS tetap 方便. C & D: tidak disebut."
+   "answer": 3,
+   "why": "Urusan penting → 打電話或是見面說比較有禮貌. A: berlebihan — SMS tetap 方便. C & B: tidak disebut."
   }
  ],
  "C28": [
@@ -731,12 +731,12 @@
    },
    "question": "他怎麼了？",
    "options": [
-    "他在洗澡。",
     "他流了很多汗。",
+    "他在洗澡。",
     "他發燒了。"
    ],
-   "answer": 1,
-   "why": "Berlari di bawah terik → 流汗. A dan C tidak cocok."
+   "answer": 0,
+   "why": "Berlari di bawah terik → 流汗. B dan C tidak cocok."
   },
   {
    "type": "listen_dialog",
@@ -835,12 +835,12 @@
    "question": "這位先生明天可能怎麼做？",
    "options": [
     "去爬山",
-    "在家休息",
+    "去上班",
     "去看醫生",
-    "去上班"
+    "在家休息"
    ],
-   "answer": 1,
-   "why": "最好再休息兩天 → istirahat. A = ajakan yang ditolak halus. C dan D tidak disebut."
+   "answer": 3,
+   "why": "最好再休息兩天 → istirahat. A = ajakan yang ditolak halus. C dan B tidak disebut."
   },
   {
    "type": "read_sent",
@@ -849,20 +849,20 @@
    "text": "弟弟被這個感冒弄得很累，一直在床上。",
    "options": [
     {
-     "icon": "👦⚽",
-     "label": "main bola"
+     "icon": "👦🛌🤒",
+     "label": "sakit di tempat tidur"
     },
     {
      "icon": "👦📚",
      "label": "belajar"
     },
     {
-     "icon": "👦🛌🤒",
-     "label": "sakit di tempat tidur"
+     "icon": "👦⚽",
+     "label": "main bola"
     }
    ],
-   "answer": 2,
-   "why": "被感冒弄得很累 + 在床上. A dan B tidak cocok."
+   "answer": 0,
+   "why": "被感冒弄得很累 + 在床上. C dan B tidak cocok."
   },
   {
    "type": "read_pick",
@@ -993,16 +993,16 @@
      "label": "jam 9"
     },
     {
-     "icon": "🕗",
-     "label": "jam 8"
-    },
-    {
      "icon": "🕙",
      "label": "jam 10"
+    },
+    {
+     "icon": "🕗",
+     "label": "jam 8"
     }
    ],
-   "answer": 1,
-   "why": "今天星期天，可能八點就關了. A = jam biasa. C tidak disebut."
+   "answer": 2,
+   "why": "今天星期天，可能八點就關了. A = jam biasa. B tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1107,12 +1107,12 @@
     "label": "wajah pucat"
    },
    "options": [
-    "他的精神很好。",
+    "他的臉色不太好。",
     "他很高興。",
-    "他的臉色不太好。"
+    "他的精神很好。"
    ],
-   "answer": 2,
-   "why": "Wajah pucat → 臉色不太好. A dan B kebalikannya."
+   "answer": 0,
+   "why": "Wajah pucat → 臉色不太好. C dan B kebalikannya."
   },
   {
    "type": "read_gap",
@@ -1161,12 +1161,12 @@
    "question": "藥房老闆覺得王先生怎麼了？",
    "options": [
     "他的病很重",
-    "他太累了",
+    "他吃錯藥了",
     "他應該多工作",
-    "他吃錯藥了"
+    "他太累了"
    ],
-   "answer": 1,
-   "why": "你需要的是休息 → hanya kelelahan. A: kebalikan (不用吃藥). C: kebalikan. D: tidak disebut."
+   "answer": 3,
+   "why": "你需要的是休息 → hanya kelelahan. A: kebalikan (不用吃藥). C: kebalikan. B: tidak disebut."
   }
  ],
  "C30": [
@@ -1181,12 +1181,12 @@
    },
    "question": "他的身高怎麼樣？",
    "options": [
-    "他很矮，腿很短。",
+    "他很高，腿也很長。",
     "他很胖，不太高。",
-    "他很高，腿也很長。"
+    "他很矮，腿很短。"
    ],
-   "answer": 2,
-   "why": "Orangnya tinggi dengan kaki panjang → 很高，腿也很長. A kebalikannya; C: badannya tidak gemuk."
+   "answer": 0,
+   "why": "Orangnya tinggi dengan kaki panjang → 很高，腿也很長. C kebalikannya; A: badannya tidak gemuk."
   },
   {
    "type": "listen_pic",
@@ -1228,15 +1228,15 @@
     },
     {
      "icon": "📏",
-     "label": "175 cm"
+     "label": "180 cm"
     },
     {
      "icon": "📏",
-     "label": "180 cm"
+     "label": "175 cm"
     }
    ],
-   "answer": 1,
-   "why": "沒有那麼高 membantah 180 → 一百七十五. C = tebakan si perempuan; A tidak disebut."
+   "answer": 2,
+   "why": "沒有那麼高 membantah 180 → 一百七十五. B = tebakan si perempuan; A tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1302,13 +1302,13 @@
    ],
    "question": "哪一個是對的？",
    "options": [
-    "她很喜歡游泳",
     "她的背有時候會痛",
+    "她很喜歡游泳",
     "學校離游泳池很遠",
     "她已經開始去爬山了"
    ],
-   "answer": 1,
-   "why": "要每天運動，背才不會痛 → tersirat punggungnya kadang sakit. A kebalikan (我才不去呢). C kebalikan (就在學校旁邊). D baru diajak, belum dilakukan."
+   "answer": 0,
+   "why": "要每天運動，背才不會痛 → tersirat punggungnya kadang sakit. B kebalikan (我才不去呢). C kebalikan (就在學校旁邊). D baru diajak, belum dilakukan."
   },
   {
    "type": "read_sent",
@@ -1395,12 +1395,12 @@
    "question": "醫生的意思是什麼？",
    "options": [
     "小孩不能喝牛奶",
-    "長高要做很多事",
+    "運動會讓腿變短",
     "睡覺的時候不能動",
-    "運動會讓腿變短"
+    "長高要做很多事"
    ],
-   "answer": 1,
-   "why": "Tidak cukup susu saja — perlu olahraga & tidur cukup. A: kebalikan (tetap boleh, hanya 不夠). C & D: tidak disebut / kebalikan."
+   "answer": 3,
+   "why": "Tidak cukup susu saja — perlu olahraga & tidur cukup. A: kebalikan (tetap boleh, hanya 不夠). C & B: tidak disebut / kebalikan."
   }
  ],
  "C31": [
@@ -1461,16 +1461,16 @@
      "label": "tepat waktu"
     },
     {
-     "icon": "⏰❌",
-     "label": "terlambat"
-    },
-    {
      "icon": "🏠",
      "label": "tidak datang"
+    },
+    {
+     "icon": "⏰❌",
+     "label": "terlambat"
     }
    ],
-   "answer": 1,
-   "why": "結果還是遲到了. A kebalikannya; C: dia datang."
+   "answer": 2,
+   "why": "結果還是遲到了. A kebalikannya; B: dia datang."
   },
   {
    "type": "listen_dialog",
@@ -1538,11 +1538,11 @@
    "options": [
     "她不會游泳",
     "她想去溫泉",
-    "水太冷了",
-    "她頭痛"
+    "她頭痛",
+    "水太冷了"
    ],
-   "answer": 2,
-   "why": "才下水，就覺得太冷了 → alasannya. A kebalikan (我會啊). B = usul si laki-laki sesudahnya. D tidak disebut."
+   "answer": 3,
+   "why": "才下水，就覺得太冷了 → alasannya. A kebalikan (我會啊). B = usul si laki-laki sesudahnya. C tidak disebut."
   },
   {
    "type": "read_sent",
@@ -1628,13 +1628,13 @@
    "text": "小明以為作業明天才要交，所以昨天晚上一個字都沒寫，只看了電視。今天早上一到教室，老師就說：「作業請立刻拿出來。」小明這才知道，作業今天就要交。結果他只好跟老師說對不起，老師讓他下課以後留下來寫。",
    "question": "小明為什麼沒寫作業？",
    "options": [
-    "他生病了",
     "他以為明天才要交",
+    "他生病了",
     "題目太難了",
     "老師沒說要寫"
    ],
-   "answer": 1,
-   "why": "以為作業明天才要交. A & C: tidak disebut. D: guru meminta 立刻拿出來 — tugas memang ada."
+   "answer": 0,
+   "why": "以為作業明天才要交. B & C: tidak disebut. D: guru meminta 立刻拿出來 — tugas memang ada."
   }
  ],
  "C32": [
@@ -1696,15 +1696,15 @@
     },
     {
      "icon": "📅",
-     "label": "1 Juli"
+     "label": "1 Juni"
     },
     {
      "icon": "📅",
-     "label": "1 Juni"
+     "label": "1 Juli"
     }
    ],
-   "answer": 1,
-   "why": "七月一號. A = tanggal tahun lalu (seminggu lebih lambat). C tidak disebut."
+   "answer": 2,
+   "why": "七月一號. A = tanggal tahun lalu (seminggu lebih lambat). B tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1731,20 +1731,20 @@
    "question": "這位小姐這個週末要做什麼？",
    "options": [
     {
-     "icon": "🎬",
-     "label": "menonton film"
-    },
-    {
      "icon": "⛰️",
      "label": "mendaki"
+    },
+    {
+     "icon": "🎬",
+     "label": "menonton film"
     },
     {
      "icon": "📚",
      "label": "belajar"
     }
    ],
-   "answer": 1,
-   "why": "這個週末我要去爬山. A hanya kebiasaan kadang-kadang. C tidak disebut."
+   "answer": 0,
+   "why": "這個週末我要去爬山. B hanya kebiasaan kadang-kadang. C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1772,11 +1772,11 @@
    "options": [
     "他只回家",
     "他只去日本",
-    "他想兩個地方都去",
-    "他暑假要打工"
+    "他暑假要打工",
+    "他想兩個地方都去"
    ],
-   "answer": 2,
-   "why": "兩個地方都去 (kalau uang cukup). A dan B hanya satu tempat. D tidak disebut."
+   "answer": 3,
+   "why": "兩個地方都去 (kalau uang cukup). A dan B hanya satu tempat. C tidak disebut."
   },
   {
    "type": "read_sent",
@@ -1809,12 +1809,12 @@
     "label": "musim dingin pulang kampung"
    },
    "options": [
-    "寒假他回家了。",
+    "他在上課。",
     "暑假他去海邊了。",
-    "他在上課。"
+    "寒假他回家了。"
    ],
-   "answer": 0,
-   "why": "Salju + pesawat pulang → 寒假回家. B musim panas; C tidak libur."
+   "answer": 2,
+   "why": "Salju + pesawat pulang → 寒假回家. B musim panas; A tidak libur."
   },
   {
    "type": "read_gap",
@@ -1864,11 +1864,11 @@
    "options": [
     "寒假",
     "春假",
-    "暑假",
-    "都一樣長"
+    "都一樣長",
+    "暑假"
    ],
-   "answer": 2,
-   "why": "暑假 兩個多月 > 寒假 一個月 > 春假 幾天. D: kebalikan."
+   "answer": 3,
+   "why": "暑假 兩個多月 > 寒假 一個月 > 春假 幾天. C: kebalikan."
   }
  ],
  "C33": [
@@ -2097,12 +2097,12 @@
    "question": "這個研究得到了什麼結果？",
    "options": [
     "大學畢業的人都很成功",
-    "願意學習的人工作比較好",
+    "工作十年就能成功",
     "教育程度最重要",
-    "工作十年就能成功"
+    "願意學習的人工作比較好"
    ],
-   "answer": 1,
-   "why": "跟是不是一直願意學習的關係比較大. A & C: kebalikan (不一定 / 關係不大). D: tidak disebut."
+   "answer": 3,
+   "why": "跟是不是一直願意學習的關係比較大. A & C: kebalikan (不一定 / 關係不大). B: tidak disebut."
   }
  ],
  "C34": [
@@ -2136,11 +2136,11 @@
    "question": "老師說什麼？",
    "options": [
     "請念十遍。",
-    "請再念一遍。",
-    "請別念了。"
+    "請別念了。",
+    "請再念一遍。"
    ],
-   "answer": 1,
-   "why": "Satu jari = sekali lagi → 再念一遍. A dan C tidak cocok."
+   "answer": 2,
+   "why": "Satu jari = sekali lagi → 再念一遍. A dan B tidak cocok."
   },
   {
    "type": "listen_dialog",
@@ -2240,11 +2240,11 @@
    "options": [
     "她要考試",
     "老師讓她學",
-    "她想用手機打中文",
-    "她想寫書法"
+    "她想寫書法",
+    "她想用手機打中文"
    ],
-   "answer": 2,
-   "why": "我想用手機打中文 → alasannya. A, B, D tidak disebut."
+   "answer": 3,
+   "why": "我想用手機打中文 → alasannya. A, B, C tidak disebut."
   },
   {
    "type": "read_sent",
@@ -2370,11 +2370,11 @@
    "question": "老師說什麼？",
    "options": [
     "請看書。",
-    "請看黑板。",
-    "請出去。"
+    "請出去。",
+    "請看黑板。"
    ],
-   "answer": 1,
-   "why": "Guru menunjuk papan, murid menoleh → 請看黑板. A dan C tidak cocok."
+   "answer": 2,
+   "why": "Guru menunjuk papan, murid menoleh → 請看黑板. A dan B tidak cocok."
   },
   {
    "type": "listen_dialog",
@@ -2397,16 +2397,16 @@
      "label": "menulis karangan"
     },
     {
-     "icon": "🏢📒",
-     "label": "mengambil buku karangan di kantor"
-    },
-    {
      "icon": "⬛",
      "label": "menulis di papan"
+    },
+    {
+     "icon": "🏢📒",
+     "label": "mengambil buku karangan di kantor"
     }
    ],
-   "answer": 1,
-   "why": "去辦公室拿作文本. A dan C tidak disebut."
+   "answer": 2,
+   "why": "去辦公室拿作文本. A dan B tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -2437,16 +2437,16 @@
      "label": "buku"
     },
     {
-     "icon": "📱",
-     "label": "ponsel"
-    },
-    {
      "icon": "⬛📝",
      "label": "contoh di papan tulis"
+    },
+    {
+     "icon": "📱",
+     "label": "ponsel"
     }
    ],
-   "answer": 2,
-   "why": "你看黑板上的例子. A dan C tidak disebut."
+   "answer": 1,
+   "why": "你看黑板上的例子. A dan B tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -2671,16 +2671,16 @@
      "label": "mendaki"
     },
     {
-     "icon": "👔🏢",
-     "label": "menghadiri acara resmi"
-    },
-    {
      "icon": "🏠",
      "label": "di rumah"
+    },
+    {
+     "icon": "👔🏢",
+     "label": "menghadiri acara resmi"
     }
    ],
-   "answer": 1,
-   "why": "去一個很正式的會. A: semua KECUALI 安安. C tidak disebut."
+   "answer": 2,
+   "why": "去一個很正式的會. A: semua KECUALI 安安. B tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -2707,12 +2707,12 @@
    "question": "這位先生為什麼知道很多知識？",
    "options": [
     "他是老師",
-    "他每天看很多書",
+    "他常常看電視",
     "他只上歷史課",
-    "他常常看電視"
+    "他每天看很多書"
    ],
-   "answer": 1,
-   "why": "除了上課以外，每天也看很多書. A dan D tidak disebut. C bertentangan (什麼都看)."
+   "answer": 3,
+   "why": "除了上課以外，每天也看很多書. A dan B tidak disebut. C bertentangan (什麼都看)."
   },
   {
    "type": "read_sent",
@@ -2745,12 +2745,12 @@
     "label": "buku hukum"
    },
    "options": [
-    "他在念歷史。",
     "他在念法律。",
+    "他在念歷史。",
     "他在上華語課。"
    ],
-   "answer": 1,
-   "why": "Timbangan keadilan → 法律. A dan C tidak cocok."
+   "answer": 0,
+   "why": "Timbangan keadilan → 法律. B dan C tidak cocok."
   },
   {
    "type": "read_gap",
@@ -2799,12 +2799,12 @@
    "question": "哥哥為什麼要學日語？",
    "options": [
     "他大學念的是日語",
-    "公司常跟日本公司合作",
+    "他下班以後沒事做",
     "他想去日本念法律",
-    "他下班以後沒事做"
+    "公司常跟日本公司合作"
    ],
-   "answer": 1,
-   "why": "公司常常跟日本公司合作 → 必須會說日語. A: kebalikan (念的是法律). C & D: tidak disebut."
+   "answer": 3,
+   "why": "公司常常跟日本公司合作 → 必須會說日語. A: kebalikan (念的是法律). C & B: tidak disebut."
   }
  ]
 }

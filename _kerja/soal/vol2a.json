@@ -187,10 +187,10 @@
    },
    "options": [
     "媽媽給她看相片。",
-    "她在畫圖。",
-    "媽媽說故事給她聽。"
+    "媽媽說故事給她聽。",
+    "她在畫圖。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "故事 = cerita."
   },
   {
@@ -203,11 +203,11 @@
    },
    "text": "學校有一個活動，你想（　）嗎？",
    "options": [
-    "照相",
+    "參加",
     "有空",
-    "參加"
+    "照相"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "參加 + 活動 = ikut kegiatan."
   },
   {
@@ -272,11 +272,11 @@
    },
    "question": "他們說什麼？",
    "options": [
-    "對不起！",
+    "加油！",
     "再見！",
-    "加油！"
+    "對不起！"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "加油 = ayo, semangat! 對不起 = maaf; 再見 = sampai jumpa."
   },
   {
@@ -299,19 +299,19 @@
    "text": "我買兩張門票。",
    "options": [
     {
-     "icon": "🎟️🎟️",
-     "label": "dua tiket"
-    },
-    {
      "icon": "📄📄",
      "label": "dua lembar kertas"
+    },
+    {
+     "icon": "🎟️🎟️",
+     "label": "dua tiket"
     },
     {
      "icon": "🎟️",
      "label": "satu tiket"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "門票 = tiket masuk; kata bantunya 張."
   },
   {
@@ -372,12 +372,12 @@
    "question": "這位先生昨天怎麼看比賽的？",
    "options": [
     "在學校看",
-    "在家看電視",
+    "跟這位小姐一起看",
     "沒有看",
-    "跟這位小姐一起看"
+    "在家看電視"
    ],
-   "answer": 1,
-   "why": "沒買到票，只能在家看電視. C: ia tetap menonton lewat TV. D: 下次 (lain kali). A tidak disebut."
+   "answer": 3,
+   "why": "沒買到票，只能在家看電視. C: ia tetap menonton lewat TV. B: 下次 (lain kali). A tidak disebut."
   }
  ],
  "B04": [
@@ -411,11 +411,11 @@
    "question": "你們在做什麼？",
    "options": [
     "我們在看電視。",
-    "我們在聊天。",
-    "我們在吃飯。"
+    "我們在吃飯。",
+    "我們在聊天。"
    ],
-   "answer": 1,
-   "why": "Dua orang mengobrol → 聊天. A: 看電視 = menonton TV. C: 吃飯 = makan."
+   "answer": 2,
+   "why": "Dua orang mengobrol → 聊天. A: 看電視 = menonton TV. B: 吃飯 = makan."
   },
   {
    "type": "listen_reply",
@@ -423,12 +423,12 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "你最近忙嗎？",
    "options": [
-    "很忙啊，每天都有功課。",
+    "我最近。",
     "最近很忙的。",
-    "我最近。"
+    "很忙啊，每天都有功課。"
    ],
-   "answer": 0,
-   "why": "Jawab dengan keadaan: 很忙. B tidak lengkap; C memakai 的 yang tidak perlu."
+   "answer": 2,
+   "why": "Jawab dengan keadaan: 很忙. B tidak lengkap; A memakai 的 yang tidak perlu."
   },
   {
    "type": "read_sent",
@@ -437,20 +437,20 @@
    "text": "他正在看電視。",
    "options": [
     {
-     "icon": "💻",
-     "label": "main internet"
-    },
-    {
      "icon": "📺",
      "label": "menonton TV"
+    },
+    {
+     "icon": "💻",
+     "label": "main internet"
     },
     {
      "icon": "📖",
      "label": "membaca buku"
     }
    ],
-   "answer": 1,
-   "why": "正在看電視 = sedang menonton TV. A: main internet = 上網. C: membaca buku = 看書."
+   "answer": 0,
+   "why": "正在看電視 = sedang menonton TV. B: main internet = 上網. C: membaca buku = 看書."
   },
   {
    "type": "read_pick",
@@ -509,13 +509,13 @@
    ],
    "question": "這位先生是什麼意思？",
    "options": [
-    "他現在不能聊天",
+    "他家沒有網路",
     "他不想跟這位小姐說話",
     "他在打電話",
-    "他家沒有網路"
+    "他現在不能聊天"
    ],
-   "answer": 0,
-   "why": "等一會兒 = sekarang sibuk, nanti saja. B: berlebihan (ia hanya menunda). C & D: kebalikan / tidak disebut."
+   "answer": 3,
+   "why": "等一會兒 = sekarang sibuk, nanti saja. B: berlebihan (ia hanya menunda). C & A: kebalikan / tidak disebut."
   }
  ],
  "B05": [
@@ -561,11 +561,11 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "麻煩你，我可以喝一杯水嗎？",
    "options": [
-    "不要客氣水。",
+    "好，請等一下。",
     "歡迎你。",
-    "好，請等一下。"
+    "不要客氣水。"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "麻煩你 = maaf merepotkan (permintaan sopan) → penuhi permintaannya."
   },
   {
@@ -616,11 +616,11 @@
    },
    "text": "這是我（　）你的。",
    "options": [
-    "送",
+    "祝",
     "歡迎",
-    "祝"
+    "送"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "送 = memberi (hadiah)."
   },
   {
@@ -647,12 +647,12 @@
    ],
    "question": "這位先生請這位小姐去哪裡坐？",
    "options": [
-    "客廳",
     "飯廳",
+    "客廳",
     "房間"
    ],
-   "answer": 0,
-   "why": "請到客廳坐. B & C tidak disebut."
+   "answer": 1,
+   "why": "請到客廳坐. A & C tidak disebut."
   }
  ],
  "B06": [
@@ -667,11 +667,11 @@
    },
    "question": "他們說什麼？",
    "options": [
-    "對不起！",
     "很高興認識你！",
+    "對不起！",
     "再見！"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "很高興認識你 = senang berkenalan denganmu. Diucapkan saat pertama bertemu."
   },
   {
@@ -785,12 +785,12 @@
    "question": "王大文是什麼人？",
    "options": [
     "新來的學生",
-    "這裡的老師",
+    "一個老人",
     "這位小姐的朋友",
-    "一個老人"
+    "這裡的老師"
    ],
-   "answer": 1,
-   "why": "我是這裡的老師. A: tebakan si perempuan yang dikoreksi. D: kebalikan (好年輕)."
+   "answer": 3,
+   "why": "我是這裡的老師. A: tebakan si perempuan yang dikoreksi. B: kebalikan (好年輕)."
   }
  ],
  "B07": [
@@ -922,13 +922,13 @@
    ],
    "question": "這位先生每個月的房租是多少？",
    "options": [
-    "五千塊",
     "一萬塊",
+    "五千塊",
     "一萬五千塊",
     "兩千五百塊"
    ],
-   "answer": 0,
-   "why": "一個人一個月五千塊. C = total bertiga (5000 × 3). B & D tidak disebut."
+   "answer": 1,
+   "why": "一個人一個月五千塊. C = total bertiga (5000 × 3). A & D tidak disebut."
   }
  ],
  "B08": [
@@ -944,10 +944,10 @@
    "question": "燈開著嗎？",
    "options": [
     "燈沒開。",
-    "燈開著。",
-    "窗戶開著。"
+    "窗戶開著。",
+    "燈開著。"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "燈開著 = lampu menyala. 沒開 = tidak menyala."
   },
   {
@@ -962,10 +962,10 @@
    "question": "洗手間在哪裡？",
    "options": [
     "在樓上。",
-    "在樓下。",
-    "在電梯旁邊。"
+    "在電梯旁邊。",
+    "在樓下。"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "樓下 = lantai bawah. 樓上 = lantai atas."
   },
   {
@@ -1012,11 +1012,11 @@
     "label": "jendela terbuka"
    },
    "options": [
-    "門開著。",
     "窗開著。",
+    "門開著。",
     "燈開著。"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "窗 = jendela."
   },
   {
@@ -1082,10 +1082,10 @@
    "question": "他在做什麼？",
    "options": [
     "他在洗碗。",
-    "他在關窗戶。",
-    "他在洗衣服。"
+    "他在洗衣服。",
+    "他在關窗戶。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "洗衣服 = mencuci baju. 洗碗 = mencuci piring."
   },
   {
@@ -1112,12 +1112,12 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "我來幫你，好嗎？",
    "options": [
-    "不客氣，我來。",
+    "好啊，謝謝你！",
     "我幫你好。",
-    "好啊，謝謝你！"
+    "不客氣，我來。"
    ],
-   "answer": 2,
-   "why": "Tawaran bantuan → terima dengan 謝謝. C tertukar peran."
+   "answer": 0,
+   "why": "Tawaran bantuan → terima dengan 謝謝. A tertukar peran."
   },
   {
    "type": "read_sent",
@@ -1126,19 +1126,19 @@
    "text": "房間很乾淨。",
    "options": [
     {
-     "icon": "🗑️",
-     "label": "kamar kotor"
+     "icon": "✨",
+     "label": "kamar bersih"
     },
     {
      "icon": "💤",
      "label": "orang tidur"
     },
     {
-     "icon": "✨",
-     "label": "kamar bersih"
+     "icon": "🗑️",
+     "label": "kamar kotor"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "乾淨 = bersih."
   },
   {
@@ -1199,12 +1199,12 @@
    "question": "這位先生要做什麼？",
    "options": [
     "洗碗",
-    "掛衣服",
+    "請這位小姐走",
     "關燈",
-    "請這位小姐走"
+    "掛衣服"
    ],
-   "answer": 1,
-   "why": "你洗碗，我去掛衣服. A = tugas si perempuan. C & D tidak disebut."
+   "answer": 3,
+   "why": "你洗碗，我去掛衣服. A = tugas si perempuan. C & B tidak disebut."
   }
  ],
  "B10": [
@@ -1336,13 +1336,13 @@
    ],
    "question": "這位小姐週末幾點起床？",
    "options": [
-    "六點",
+    "不一定",
     "七點",
     "八點",
-    "不一定"
+    "六點"
    ],
-   "answer": 0,
-   "why": "週末也一樣 = tetap jam 6 (makna tersirat). D: kebalikan dari 總是."
+   "answer": 3,
+   "why": "週末也一樣 = tetap jam 6 (makna tersirat). A: kebalikan dari 總是."
   }
  ],
  "B11": [
@@ -1474,13 +1474,13 @@
    ],
    "question": "這位先生覺得工作怎麼樣？",
    "options": [
-    "很忙，可是學到很多",
+    "沒有機會學到東西",
     "一點都不忙",
     "每天五點就下班",
-    "沒有機會學到東西"
+    "很忙，可是學到很多"
    ],
-   "answer": 0,
-   "why": "很忙，可是我學到很多經驗. B: kebalikan. C: sering 六點才下班. D: kebalikan."
+   "answer": 3,
+   "why": "很忙，可是我學到很多經驗. B: kebalikan. C: sering 六點才下班. A: kebalikan."
   }
  ],
  "B12": [
@@ -1513,11 +1513,11 @@
    },
    "question": "你小時候住在哪裡？",
    "options": [
-    "住在爺爺家。",
+    "住在大樓裡。",
     "住在學校。",
-    "住在大樓裡。"
+    "住在爺爺家。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "小時候 = waktu kecil; 爺爺家 = rumah kakek."
   },
   {
@@ -1544,15 +1544,15 @@
      "label": "satu kucing"
     },
     {
-     "icon": "👩🐕🐕",
-     "label": "dua anjing"
-    },
-    {
      "icon": "👩🐈🐈",
      "label": "bibi punya dua kucing"
+    },
+    {
+     "icon": "👩🐕🐕",
+     "label": "dua anjing"
     }
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "貓 = kucing."
   },
   {

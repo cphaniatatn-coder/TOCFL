@@ -29,12 +29,12 @@
    },
    "question": "今天誰付錢？",
    "options": [
-    "朋友請我。",
     "我請客！",
+    "朋友請我。",
     "我們一人付一半。"
    ],
-   "answer": 1,
-   "why": "Dia membayar tagihan untuk teman-temannya → 我請客. A kebalikannya; C tidak cocok."
+   "answer": 0,
+   "why": "Dia membayar tagihan untuk teman-temannya → 我請客. B kebalikannya; C tidak cocok."
   },
   {
    "type": "listen_reply",
@@ -129,11 +129,11 @@
    "question": "今天誰請客？",
    "options": [
     "這位小姐",
-    "這位先生",
-    "他們都不請"
+    "他們都不請",
+    "這位先生"
    ],
-   "answer": 1,
-   "why": "上次是你請的，今天我請 → si laki-laki. A = tawaran yang ditolak. C tidak cocok."
+   "answer": 2,
+   "why": "上次是你請的，今天我請 → si laki-laki. A = tawaran yang ditolak. B tidak cocok."
   }
  ],
  "C26": [
@@ -149,11 +149,11 @@
    "question": "你陪誰去醫院？",
    "options": [
     "陪媽媽。",
-    "陪奶奶。",
-    "陪弟弟。"
+    "陪弟弟。",
+    "陪奶奶。"
    ],
-   "answer": 1,
-   "why": "Menggandeng nenek ke rumah sakit → 陪奶奶. A dan C orang lain."
+   "answer": 2,
+   "why": "Menggandeng nenek ke rumah sakit → 陪奶奶. A dan B orang lain."
   },
   {
    "type": "listen_pic",
@@ -167,11 +167,11 @@
    "question": "護士在做什麼？",
    "options": [
     "她在看醫生。",
-    "她在打電話。",
-    "她在照顧病人。"
+    "她在照顧病人。",
+    "她在打電話。"
    ],
-   "answer": 2,
-   "why": "Perawat di samping ranjang pasien → 照顧病人. A dan B kegiatan lain."
+   "answer": 1,
+   "why": "Perawat di samping ranjang pasien → 照顧病人. A dan C kegiatan lain."
   },
   {
    "type": "listen_reply",
@@ -193,20 +193,20 @@
    "text": "媽媽不讓弟弟玩手機，讓他去寫作業。",
    "options": [
     {
-     "icon": "👦📱",
-     "label": "adik main ponsel"
-    },
-    {
      "icon": "👦📝",
      "label": "adik menulis PR"
+    },
+    {
+     "icon": "👦📱",
+     "label": "adik main ponsel"
     },
     {
      "icon": "👦📺",
      "label": "adik menonton TV"
     }
    ],
-   "answer": 1,
-   "why": "不讓…玩手機，讓他去寫作業 → menulis PR. A justru dilarang; C tidak disebut."
+   "answer": 0,
+   "why": "不讓…玩手機，讓他去寫作業 → menulis PR. B justru dilarang; C tidak disebut."
   },
   {
    "type": "read_pick",
@@ -330,20 +330,20 @@
    "text": "他戴著耳機，所以沒聽見手機。",
    "options": [
     {
-     "icon": "📱👂",
-     "label": "menerima telepon"
+     "icon": "🎧📱",
+     "label": "pakai earphone, ponsel berbunyi"
     },
     {
      "icon": "🎧❌",
      "label": "tanpa earphone"
     },
     {
-     "icon": "🎧📱",
-     "label": "pakai earphone, ponsel berbunyi"
+     "icon": "📱👂",
+     "label": "menerima telepon"
     }
    ],
-   "answer": 2,
-   "why": "戴著耳機 + 沒聽見手機. A dia menjawab telepon; B tanpa earphone."
+   "answer": 0,
+   "why": "戴著耳機 + 沒聽見手機. C dia menjawab telepon; B tanpa earphone."
   },
   {
    "type": "read_pick",
@@ -355,11 +355,11 @@
    },
    "options": [
     "他在寫信。",
-    "他在傳簡訊。",
-    "他在看報告。"
+    "他在看報告。",
+    "他在傳簡訊。"
    ],
-   "answer": 1,
-   "why": "Pesan di ponsel → 傳簡訊. A surat kertas; C tidak cocok."
+   "answer": 2,
+   "why": "Pesan di ponsel → 傳簡訊. A surat kertas; B tidak cocok."
   },
   {
    "type": "read_gap",
@@ -402,12 +402,12 @@
    ],
    "question": "他們在做什麼？",
    "options": [
-    "在網路上買東西",
     "一起寫報告",
+    "在網路上買東西",
     "準備考試"
    ],
-   "answer": 1,
-   "why": "合作 + 談報告 → mengerjakan laporan bersama. A dan C tidak disebut."
+   "answer": 0,
+   "why": "合作 + 談報告 → mengerjakan laporan bersama. B dan C tidak disebut."
   }
  ],
  "C28": [
@@ -467,20 +467,20 @@
    "text": "他跑了一個小時，流了很多汗。",
    "options": [
     {
-     "icon": "🤧",
-     "label": "bersin"
-    },
-    {
      "icon": "🏃💦",
      "label": "berlari berkeringat"
+    },
+    {
+     "icon": "🤧",
+     "label": "bersin"
     },
     {
      "icon": "🛌",
      "label": "tidur"
     }
    ],
-   "answer": 1,
-   "why": "跑 + 流汗 → berlari berkeringat. A dan C tidak cocok."
+   "answer": 0,
+   "why": "跑 + 流汗 → berlari berkeringat. B dan C tidak cocok."
   },
   {
    "type": "read_pick",
@@ -508,12 +508,12 @@
    },
    "text": "我的蛋糕被弟弟吃（　）了！",
    "options": [
-    "掉",
     "得",
+    "掉",
     "好"
    ],
-   "answer": 0,
-   "why": "被 + V掉了 = habis di-…. B & C: 吃得了 dan 吃好了 tidak cocok dengan kalimat 被 ini."
+   "answer": 1,
+   "why": "被 + V掉了 = habis di-…. A & C: 吃得了 dan 吃好了 tidak cocok dengan kalimat 被 ini."
   },
   {
    "type": "listen_dialog",
@@ -578,12 +578,12 @@
    },
    "question": "你去哪裡買藥？",
    "options": [
-    "藥局。",
     "醫院。",
+    "藥局。",
     "書店。"
    ],
-   "answer": 0,
-   "why": "Toko apotek → 藥局. B dan C tempat lain."
+   "answer": 1,
+   "why": "Toko apotek → 藥局. A dan C tempat lain."
   },
   {
    "type": "listen_reply",
@@ -591,12 +591,12 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "明天會下雨嗎？",
    "options": [
-    "我沒有傘。",
     "應該不會，今天的天氣很好。",
+    "我沒有傘。",
     "下雨很冷。"
    ],
-   "answer": 1,
-   "why": "Perkiraan → 應該不會. A dan C tidak menjawab."
+   "answer": 0,
+   "why": "Perkiraan → 應該不會. B dan C tidak menjawab."
   },
   {
    "type": "read_sent",
@@ -677,12 +677,12 @@
    ],
    "question": "這位先生明天應該會做什麼？",
    "options": [
-    "在家休息",
     "去上課",
+    "在家休息",
     "去看醫生"
    ],
-   "answer": 1,
-   "why": "明天應該可以去上課 → masuk kelas. A dan C tidak disebut."
+   "answer": 0,
+   "why": "明天應該可以去上課 → masuk kelas. B dan C tidak disebut."
   }
  ],
  "C30": [
@@ -697,12 +697,12 @@
    },
    "question": "媽媽可能說什麼？",
    "options": [
-    "你的手機真好看！",
     "別一直低頭看手機了！",
+    "你的手機真好看！",
     "你的手機在哪裡？"
    ],
-   "answer": 1,
-   "why": "Ibu marah, anak menunduk ke ponsel → menegur: 別一直低頭看手機了. A memuji (tidak cocok dengan wajah marah). C: ponselnya jelas di tangan anak."
+   "answer": 0,
+   "why": "Ibu marah, anak menunduk ke ponsel → menegur: 別一直低頭看手機了. B memuji (tidak cocok dengan wajah marah). C: ponselnya jelas di tangan anak."
   },
   {
    "type": "listen_pic",
@@ -767,11 +767,11 @@
    },
    "options": [
     "他在跟朋友打電話。",
-    "他在電腦前面工作。",
-    "他一直低頭看手機。"
+    "他一直低頭看手機。",
+    "他在電腦前面工作。"
    ],
-   "answer": 2,
-   "why": "Kepala menunduk ke ponsel → 低頭看手機. A: ponsel tidak ditempelkan ke telinga. B: tidak ada komputer."
+   "answer": 1,
+   "why": "Kepala menunduk ke ponsel → 低頭看手機. A: ponsel tidak ditempelkan ke telinga. C: tidak ada komputer."
   },
   {
    "type": "read_gap",
@@ -834,12 +834,12 @@
    },
    "question": "他上課怎麼了？",
    "options": [
-    "他生病了。",
     "他遲到了。",
+    "他生病了。",
     "他在睡覺。"
    ],
-   "answer": 1,
-   "why": "Guru melihat jam, murid baru masuk → 遲到了. A dan C tidak terlihat."
+   "answer": 0,
+   "why": "Guru melihat jam, murid baru masuk → 遲到了. B dan C tidak terlihat."
   },
   {
    "type": "listen_pic",
@@ -866,11 +866,11 @@
    "audio": "這一題的答案是什麼？",
    "options": [
     "這一題很難。",
-    "答案是B。",
-    "我已經寫完了。"
+    "我已經寫完了。",
+    "答案是B。"
    ],
-   "answer": 1,
-   "why": "Ditanya jawabannya → 答案是B. A dan C tidak menyebut jawaban."
+   "answer": 2,
+   "why": "Ditanya jawabannya → 答案是C. A dan B tidak menyebut jawaban."
   },
   {
    "type": "read_sent",
@@ -879,20 +879,20 @@
    "text": "老師才問完問題，他就立刻回答了。",
    "options": [
     {
-     "icon": "🤔",
-     "label": "berpikir lama"
+     "icon": "🙋‍♂️",
+     "label": "langsung mengangkat tangan menjawab"
     },
     {
      "icon": "😴",
      "label": "tidur"
     },
     {
-     "icon": "🙋‍♂️",
-     "label": "langsung mengangkat tangan menjawab"
+     "icon": "🤔",
+     "label": "berpikir lama"
     }
    ],
-   "answer": 2,
-   "why": "才…就…立刻 → langsung menjawab. A kebalikannya; B tidak cocok."
+   "answer": 0,
+   "why": "才…就…立刻 → langsung menjawab. C kebalikannya; B tidak cocok."
   },
   {
    "type": "read_pick",
@@ -952,12 +952,12 @@
    "question": "這位先生為什麼沒去看電影？",
    "options": [
     "他不想看電影",
-    "下雨了，他沒有傘",
+    "他弟弟生病了",
     "電影院太遠",
-    "他弟弟生病了"
+    "下雨了，他沒有傘"
    ],
-   "answer": 1,
-   "why": "下大雨 + 傘被弟弟帶走了 → alasannya. A kebalikan (dia berencana nonton). C dan D tidak disebut."
+   "answer": 3,
+   "why": "下大雨 + 傘被弟弟帶走了 → alasannya. A kebalikan (dia berencana nonton). C dan B tidak disebut."
   }
  ],
  "C32": [
@@ -1041,12 +1041,12 @@
     "label": "liburan musim panas"
    },
    "options": [
-    "他們在上課。",
+    "他們在過暑假。",
     "他們在過寒假。",
-    "他們在過暑假。"
+    "他們在上課。"
    ],
-   "answer": 2,
-   "why": "Pantai + matahari → 暑假. A tidak libur; B musim dingin."
+   "answer": 0,
+   "why": "Pantai + matahari → 暑假. C tidak libur; B musim dingin."
   },
   {
    "type": "read_gap",
@@ -1196,11 +1196,11 @@
    },
    "text": "你每天都練習，一定會（　）！",
    "options": [
-    "成功",
     "研究",
+    "成功",
     "教育"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "一定會成功 = pasti berhasil. 研究 dan 教育 butuh objek/konteks lain."
   },
   {
@@ -1228,12 +1228,12 @@
    "question": "這位小姐下個星期要做什麼？",
    "options": [
     "畢業",
-    "跟教授想新的題目",
+    "不做研究了",
     "去別的學校",
-    "不做研究了"
+    "跟教授想新的題目"
    ],
-   "answer": 1,
-   "why": "從下個星期起…再想一個題目. A, C tidak disebut. D kebalikannya."
+   "answer": 3,
+   "why": "從下個星期起…再想一個題目. A, C tidak disebut. B kebalikannya."
   }
  ],
  "C34": [
@@ -1366,12 +1366,12 @@
    "question": "這位小姐怎麼背詞？",
    "options": [
     "只看拼音",
-    "寫寫、念念，再用它說話",
+    "請老師幫她",
     "每個詞寫二十遍",
-    "請老師幫她"
+    "寫寫、念念，再用它說話"
    ],
-   "answer": 1,
-   "why": "寫寫、念念，再用它說一句話. A tidak disebut. C: 20 adalah jumlah kata per hari, bukan jumlah tulisan. D tidak disebut."
+   "answer": 3,
+   "why": "寫寫、念念，再用它說一句話. A tidak disebut. C: 20 adalah jumlah kata per hari, bukan jumlah tulisan. B tidak disebut."
   }
  ],
  "C35": [
@@ -1504,12 +1504,12 @@
    "question": "這位先生為什麼要再改作文？",
    "options": [
     "他還沒寫完",
-    "文法用錯了，例子也太少",
+    "老師叫他寫別的題目",
     "題目不對",
-    "老師叫他寫別的題目"
+    "文法用錯了，例子也太少"
    ],
-   "answer": 1,
-   "why": "文法用得不對，例子也不夠. A kebalikan (寫完了). C dan D tidak disebut."
+   "answer": 3,
+   "why": "文法用得不對，例子也不夠. A kebalikan (寫完了). C dan B tidak disebut."
   }
  ],
  "C36": [
@@ -1524,12 +1524,12 @@
    },
    "question": "你哥哥學什麼？",
    "options": [
-    "他學法律。",
+    "他學教育。",
     "他學歷史。",
-    "他學教育。"
+    "他學法律。"
    ],
-   "answer": 0,
-   "why": "Membaca buku hukum → 法律. B dan C bidang lain."
+   "answer": 2,
+   "why": "Membaca buku hukum → 法律. B dan A bidang lain."
   },
   {
    "type": "listen_pic",
@@ -1542,12 +1542,12 @@
    },
    "question": "你會說什麼話？",
    "options": [
-    "除了中文以外，我什麼都不會說。",
     "除了中文以外，我還會說臺語。",
+    "除了中文以外，我什麼都不會說。",
     "我只會說臺語。"
    ],
-   "answer": 1,
-   "why": "Dia mengucapkan 你好 dan 'Lí hó' → Mandarin + Taiwan. A memakai 除了…都 (hanya Mandarin); C hanya Taiwan."
+   "answer": 0,
+   "why": "Dia mengucapkan 你好 dan 'Lí hó' → Mandarin + Taiwan. B memakai 除了…都 (hanya Mandarin); C hanya Taiwan."
   },
   {
    "type": "listen_reply",
@@ -1641,12 +1641,12 @@
    ],
    "question": "這位先生除了新聞，還看什麼？",
    "options": [
-    "小說",
     "雜誌",
+    "小說",
     "電影"
    ],
-   "answer": 1,
-   "why": "除了新聞以外，我也看雜誌. A dan C tidak disebut."
+   "answer": 0,
+   "why": "除了新聞以外，我也看雜誌. B dan C tidak disebut."
   }
  ]
 }

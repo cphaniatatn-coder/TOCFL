@@ -95,10 +95,10 @@
      "options": [
       "夏天",
       "冬天",
-      "春天和秋天",
-      "每天"
+      "每天",
+      "春天和秋天"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "春天和秋天天氣最好. Musim panas panas & hujan; musim dingin agak dingin."
     },
     {
@@ -281,12 +281,12 @@
      ],
      "question": "這件衣服多少錢？",
      "options": [
-      "五百塊",
       "比那件貴",
+      "五百塊",
       "一千塊"
      ],
-     "answer": 0,
-     "why": "一樣貴，都是五百塊。 B: 比那件貴 dinegasikan (不). C: 一千塊 tidak disebut."
+     "answer": 1,
+     "why": "一樣貴，都是五百塊。 A: 比那件貴 dinegasikan (不). C: 一千塊 tidak disebut."
     },
     {
      "type": "read_mc",
@@ -462,12 +462,12 @@
      },
      "question": "這件外套怎麼樣？",
      "options": [
-      "太大了。",
       "太小了。",
+      "太大了。",
       "很好，不大也不小。"
      ],
-     "answer": 0,
-     "why": "Lengan jaket menutupi tangan → 太大了 (太 + Vs + 了 = terlalu …). B: 太小了 = terlalu kecil, kebalikannya. C: di gambar jaketnya tidak pas."
+     "answer": 1,
+     "why": "Lengan jaket menutupi tangan → 太大了 (太 + Vs + 了 = terlalu …). A: 太小了 = terlalu kecil, kebalikannya. C: di gambar jaketnya tidak pas."
     },
     {
      "type": "listen_reply",
@@ -498,13 +498,13 @@
      ],
      "question": "這位先生的意思是什麼？",
      "options": [
-      "他覺得外套有一點貴。",
+      "他要買兩件。",
       "外套太小了。",
       "他不喜歡外套。",
-      "他要買兩件。"
+      "他覺得外套有一點貴。"
      ],
-     "answer": 0,
-     "why": "很好看 (suka) + 可是有點貴 (keberatan harga). B tidak disebut; C membalik 很好看; D tidak ada dasarnya."
+     "answer": 3,
+     "why": "很好看 (suka) + 可是有點貴 (keberatan harga). B tidak disebut; C membalik 很好看; A tidak ada dasarnya."
     },
     {
      "type": "read_mc",
@@ -515,11 +515,11 @@
      "options": [
       "帽子",
       "外套",
-      "眼鏡和手錶",
-      "大衣"
+      "大衣",
+      "眼鏡和手錶"
      ],
-     "answer": 2,
-     "why": "可是我戴眼鏡和手錶。 A: 不戴帽子 — dinegasikan. B: 不穿外套 — dinegasikan. D: 大衣 tidak disebut."
+     "answer": 3,
+     "why": "可是我戴眼鏡和手錶。 A: 不戴帽子 — dinegasikan. B: 不穿外套 — dinegasikan. C: 大衣 tidak disebut."
     },
     {
      "type": "cloze",
@@ -712,12 +712,12 @@
      "text": "這雙鞋子有白色、黃色、藍色。白色的最輕，藍色的最重。",
      "question": "哪一雙最輕？",
      "options": [
-      "白色的",
+      "都一樣",
       "黃色的",
       "藍色的",
-      "都一樣"
+      "白色的"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "白色的最輕. 藍色的 justru paling berat (pembalikan)."
     },
     {
@@ -859,11 +859,11 @@
      },
      "question": "你買了什麼？",
      "options": [
-      "兩瓶水、一罐咖啡。",
+      "兩瓶水、兩罐咖啡。",
       "一瓶水、兩罐咖啡。",
-      "兩瓶水、兩罐咖啡。"
+      "兩瓶水、一罐咖啡。"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "瓶 = botol, 罐 = kaleng. Hitung: 2 botol + 1 kaleng."
     },
     {
@@ -897,11 +897,11 @@
      "options": [
       "多喝咖啡",
       "少喝水",
-      "多喝水，少喝咖啡",
-      "不喝水"
+      "不喝水",
+      "多喝水，少喝咖啡"
      ],
-     "answer": 2,
-     "why": "多喝水，少喝咖啡. A dan B menukar 多/少; D tidak ada dasarnya."
+     "answer": 3,
+     "why": "多喝水，少喝咖啡. A dan B menukar 多/少; C tidak ada dasarnya."
     },
     {
      "type": "read_mc",
@@ -911,11 +911,11 @@
      "question": "一盒蛋多少錢？",
      "options": [
       "四十五塊",
-      "六十塊",
+      "一百塊",
       "一塊",
-      "一百塊"
+      "六十塊"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "蛋一盒六十塊. Perhatikan kata bantu bilangan untuk mencocokkan barang dengan harganya."
     },
     {
@@ -1060,12 +1060,12 @@
      "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
      "audio": "可以用信用卡嗎？",
      "options": [
-      "可以，給我吧。",
+      "信用卡很好。",
       "我有信用卡。",
-      "信用卡很好。"
+      "可以，給我吧。"
      ],
-     "answer": 0,
-     "why": "可以…嗎 (minta izin) dijawab 可以／不可以. B dan C tidak menjawab."
+     "answer": 2,
+     "why": "可以…嗎 (minta izin) dijawab 可以／不可以. B dan A tidak menjawab."
     },
     {
      "type": "listen_pic",
@@ -1116,11 +1116,11 @@
      "question": "在這裡，不可以怎麼付錢？",
      "options": [
       "用信用卡",
-      "用手機",
+      "給老闆錢",
       "用錢",
-      "給老闆錢"
+      "用手機"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "不可以用手機付錢. Kartu kredit justru boleh (pembalikan)."
     },
     {
@@ -1310,10 +1310,10 @@
      "question": "這個菜的味道怎麼樣？",
      "options": [
       "很辣",
-      "有點鹹",
-      "很甜"
+      "很甜",
+      "有點鹹"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "不辣 → 有點鹹. A dinegasikan."
     },
     {
@@ -1324,11 +1324,11 @@
      "question": "安妮不喜歡什麼味道？",
      "options": [
       "甜",
-      "辣和酸",
+      "鹹",
       "香",
-      "鹹"
+      "辣和酸"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "不喜歡辣的…也不喜歡酸的. 甜 justru disukai; 鹹 dan 香 tidak disebut."
     },
     {
@@ -1532,11 +1532,11 @@
      "question": "青菜要炒幾分鐘？",
      "options": [
       "一分鐘",
-      "三分鐘",
+      "十分鐘",
       "五分鐘",
-      "十分鐘"
+      "三分鐘"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "炒三分鐘."
     },
     {

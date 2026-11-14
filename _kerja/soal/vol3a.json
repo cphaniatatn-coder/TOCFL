@@ -30,11 +30,11 @@
    "question": "媽媽在哪裡？",
    "options": [
     "在客廳看電視。",
-    "在廚房做飯。",
-    "在餐廳吃飯。"
+    "在餐廳吃飯。",
+    "在廚房做飯。"
    ],
-   "answer": 1,
-   "why": "Ibu sedang memasak di dapur → 在廚房做飯. A dan C tempat dan kegiatannya lain."
+   "answer": 2,
+   "why": "Ibu sedang memasak di dapur → 在廚房做飯. A dan B tempat dan kegiatannya lain."
   },
   {
    "type": "listen_reply",
@@ -218,12 +218,12 @@
     "label": "rak buku penuh buku, rapi"
    },
    "options": [
-    "書架上的書很亂。",
     "書都在書架上，一點也不亂。",
+    "書架上的書很亂。",
     "書桌上都是書。"
    ],
-   "answer": 1,
-   "why": "Buku tersusun rapi di rak → 一點也不亂. A kebalikannya; C: bukunya di rak, bukan di meja."
+   "answer": 0,
+   "why": "Buku tersusun rapi di rak → 一點也不亂. B kebalikannya; C: bukunya di rak, bukan di meja."
   },
   {
    "type": "read_gap",
@@ -267,12 +267,12 @@
    "question": "這位小姐的意思是什麼？",
    "options": [
     "這位先生的媽媽很忙",
-    "這位先生應該讓房間乾淨一點",
+    "房間不太亂",
     "這位先生明天要去看媽媽",
-    "房間不太亂"
+    "這位先生應該讓房間乾淨一點"
    ],
-   "answer": 1,
-   "why": "她看到會怎麼說？ = ibumu pasti tidak senang melihatnya → segera bersihkan. A: yang sibuk si laki-laki. C terbalik: ibunya yang datang. D kebalikannya."
+   "answer": 3,
+   "why": "她看到會怎麼說？ = ibumu pasti tidak senang melihatnya → segera bersihkan. A: yang sibuk si laki-laki. C terbalik: ibunya yang datang. B kebalikannya."
   }
  ],
  "C03": [
@@ -318,12 +318,12 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "洗衣機裡的衣服乾了嗎？",
    "options": [
-    "洗衣機是新的。",
     "還不太乾，再等一下吧。",
+    "洗衣機是新的。",
     "我明天洗衣服。"
    ],
-   "answer": 1,
-   "why": "Ditanya sudah kering atau belum → 還不太乾. A membicarakan mesinnya; C tidak menjawab."
+   "answer": 0,
+   "why": "Ditanya sudah kering atau belum → 還不太乾. B membicarakan mesinnya; C tidak menjawab."
   },
   {
    "type": "read_sent",
@@ -404,13 +404,13 @@
    ],
    "question": "這位先生是什麼意思？",
    "options": [
-    "這位小姐應該買新洗衣機",
-    "這件衣服很便宜",
     "衣服破了是因為用洗衣機洗",
+    "這件衣服很便宜",
+    "這位小姐應該買新洗衣機",
     "這位小姐的手破了"
    ],
-   "answer": 2,
-   "why": "要用手洗…已經破了 → rusak karena dicuci dengan mesin. A tidak disebut. B kebalikan (很貴). D salah paham kata 手."
+   "answer": 0,
+   "why": "要用手洗…已經破了 → rusak karena dicuci dengan mesin. C tidak disebut. B kebalikan (很貴). D salah paham kata 手."
   }
  ],
  "C04": [
@@ -581,12 +581,12 @@
    },
    "question": "他在做什麼？",
    "options": [
-    "他在用鑰匙鎖門。",
     "他在用鑰匙開信箱。",
+    "他在用鑰匙鎖門。",
     "他在找口袋裡的鑰匙。"
    ],
-   "answer": 0,
-   "why": "Kunci dipakai di pintu → 鎖門. B: tidak ada kotak surat. C: kuncinya sudah di tangan, tidak sedang dicari."
+   "answer": 1,
+   "why": "Kunci dipakai di pintu → 鎖門. A: tidak ada kotak surat. C: kuncinya sudah di tangan, tidak sedang dicari."
   },
   {
    "type": "listen_reply",
@@ -594,12 +594,12 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "你的零用錢是誰給你的？",
    "options": [
-    "我爸爸每個月給我。",
     "我每個月給我妹妹。",
+    "我爸爸每個月給我。",
     "我把零用錢放在口袋裡。"
    ],
-   "answer": 0,
-   "why": "Ditanya SIAPA yang memberi → 爸爸給我. B membalik arah (dia yang memberi adiknya). C menjawab di mana uangnya disimpan."
+   "answer": 1,
+   "why": "Ditanya SIAPA yang memberi → 爸爸給我. A membalik arah (dia yang memberi adiknya). C menjawab di mana uangnya disimpan."
   },
   {
    "type": "read_sent",
@@ -649,11 +649,11 @@
    },
    "text": "出去以前，別忘了（　）門鎖好。",
    "options": [
-    "把",
+    "被",
     "給",
-    "被"
+    "把"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Pola 把 + O + V + hasil: 把門鎖好 = mengunci pintu dengan baik. 給 = memberi/untuk; 被 = di-(pasif) — keduanya tidak cocok dengan 鎖好."
   },
   {
@@ -680,13 +680,13 @@
    ],
    "question": "這位小姐的意思是什麼？",
    "options": [
-    "這位先生常常找不到東西",
+    "這位先生每次都把鑰匙放在書包裡",
     "這位先生的口袋破了",
     "這位先生把鑰匙給了她",
-    "這位先生每次都把鑰匙放在書包裡"
+    "這位先生常常找不到東西"
    ],
-   "answer": 0,
-   "why": "你怎麼每次都要找這麼久 = kenapa setiap kali lama sekali mencarinya → dia sering kesulitan menemukan barangnya. B tidak disebut. C terbalik: kunci tidak diberikan kepadanya. D terlalu harfiah: keluhan 每次 merujuk kebiasaan mencari lama, bukan tempat menaruh kunci."
+   "answer": 3,
+   "why": "你怎麼每次都要找這麼久 = kenapa setiap kali lama sekali mencarinya → dia sering kesulitan menemukan barangnya. B tidak disebut. C terbalik: kunci tidak diberikan kepadanya. A terlalu harfiah: keluhan 每次 merujuk kebiasaan mencari lama, bukan tempat menaruh kunci."
   }
  ],
  "C06": [
@@ -719,12 +719,12 @@
    },
    "question": "他怎麼說話？",
    "options": [
-    "他哭著說話。",
+    "他笑著說話。",
     "他很生氣。",
-    "他笑著說話。"
+    "他哭著說話。"
    ],
-   "answer": 2,
-   "why": "Dia bicara sambil tersenyum → 笑著說話. A dan B ekspresi yang berlawanan."
+   "answer": 0,
+   "why": "Dia bicara sambil tersenyum → 笑著說話. C dan B ekspresi yang berlawanan."
   },
   {
    "type": "listen_reply",
@@ -770,12 +770,12 @@
     "label": "mencuci tangan dengan sabun"
    },
    "options": [
-    "他用洗髮精洗頭。",
     "他用肥皂洗手。",
+    "他用洗髮精洗頭。",
     "他在洗衣服。"
    ],
-   "answer": 1,
-   "why": "Sabun + tangan → 用肥皂洗手. A dan C kegiatan kamar mandi lain."
+   "answer": 0,
+   "why": "Sabun + tangan → 用肥皂洗手. B dan C kegiatan kamar mandi lain."
   },
   {
    "type": "read_gap",
@@ -787,11 +787,11 @@
    },
    "text": "廁所裡沒有（　）了，你去買一包吧。",
    "options": [
-    "衛生紙",
+    "牙刷",
     "毛巾",
-    "牙刷"
+    "衛生紙"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Tisu habis; kata penggolong 一包 cocok untuk 衛生紙. 毛巾 memakai 條, 牙刷 memakai 支."
   },
   {
@@ -820,11 +820,11 @@
    "options": [
     "超市的東西很便宜",
     "他要買毛巾",
-    "他的洗髮精用完了",
-    "這位小姐的洗髮精用完了"
+    "這位小姐的洗髮精用完了",
+    "他的洗髮精用完了"
    ],
-   "answer": 2,
-   "why": "Sampo yang ada milik si perempuan; milik si laki-laki 上個星期就用完了. D terbalik. A dan B tidak disebut."
+   "answer": 3,
+   "why": "Sampo yang ada milik si perempuan; milik si laki-laki 上個星期就用完了. C terbalik. A dan B tidak disebut."
   }
  ],
  "C07": [
@@ -1008,12 +1008,12 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "外面怎麼這麼吵？",
    "options": [
-    "外面很熱。",
     "鄰居在唱歌，唱個不停。",
+    "外面很熱。",
     "我在房間裡。"
    ],
-   "answer": 1,
-   "why": "Ditanya sebab bising → tetangga bernyanyi terus. A soal cuaca; C tidak menjelaskan."
+   "answer": 0,
+   "why": "Ditanya sebab bising → tetangga bernyanyi terus. B soal cuaca; C tidak menjelaskan."
   },
   {
    "type": "read_sent",
@@ -1095,12 +1095,12 @@
    "question": "這位先生昨天晚上為什麼沒睡覺？",
    "options": [
     "鄰居太吵",
-    "房間裡有蚊子",
+    "他在打電話",
     "窗戶壞了",
-    "他在打電話"
+    "房間裡有蚊子"
    ],
-   "answer": 1,
-   "why": "不停地打蚊子 → nyamuk. A = tebakan si perempuan yang dibantah (不是). C dan D tidak disebut."
+   "answer": 3,
+   "why": "不停地打蚊子 → nyamuk. A = tebakan si perempuan yang dibantah (不是). C dan B tidak disebut."
   }
  ],
  "C09": [
@@ -1116,11 +1116,11 @@
    "question": "你住在哪裡？",
    "options": [
     "我住在市區的大樓裡。",
-    "我住在鄉下。",
-    "我住在學校宿舍。"
+    "我住在學校宿舍。",
+    "我住在鄉下。"
    ],
-   "answer": 1,
-   "why": "Rumah di tengah sawah → 鄉下. A dan C tempat di kota."
+   "answer": 2,
+   "why": "Rumah di tengah sawah → 鄉下. A dan B tempat di kota."
   },
   {
    "type": "listen_pic",
@@ -1184,12 +1184,12 @@
     "label": "pusat kota"
    },
    "options": [
-    "這裡是鄉下，房子很少。",
     "這裡是市區，有很多高樓。",
+    "這裡是鄉下，房子很少。",
     "這裡很涼快，環境很好。"
    ],
-   "answer": 1,
-   "why": "Gedung-gedung tinggi → 市區. A kebalikannya; C tidak terlihat."
+   "answer": 0,
+   "why": "Gedung-gedung tinggi → 市區. B kebalikannya; C tidak terlihat."
   },
   {
    "type": "read_gap",
@@ -1270,12 +1270,12 @@
    },
    "question": "他晚上經常做什麼？",
    "options": [
-    "寫日記。",
+    "打電話。",
     "看電視。",
-    "打電話。"
+    "寫日記。"
    ],
-   "answer": 0,
-   "why": "Malam hari menulis buku harian → 寫日記. B dan C kegiatan lain."
+   "answer": 2,
+   "why": "Malam hari menulis buku harian → 寫日記. B dan A kegiatan lain."
   },
   {
    "type": "listen_reply",
@@ -1301,16 +1301,16 @@
      "label": "adik makan kue"
     },
     {
-     "icon": "👧🙅🍰",
-     "label": "adik menolak kue"
-    },
-    {
      "icon": "👧🏃",
      "label": "adik berolahraga"
+    },
+    {
+     "icon": "👧🙅🍰",
+     "label": "adik menolak kue"
     }
    ],
-   "answer": 1,
-   "why": "越吃越胖 → sekarang tidak makan kue lagi (menolak kue). A kebalikannya; C tidak disebut."
+   "answer": 2,
+   "why": "越吃越胖 → sekarang tidak makan kue lagi (menolak kue). A kebalikannya; B tidak disebut."
   },
   {
    "type": "read_pick",
@@ -1322,11 +1322,11 @@
    },
    "options": [
     "他的錢越來越多。",
-    "他的錢都花光了。",
-    "他的錢包裡有很多錢。"
+    "他的錢包裡有很多錢。",
+    "他的錢都花光了。"
    ],
-   "answer": 1,
-   "why": "Dompet kosong → 花光了. A dan C kebalikannya."
+   "answer": 2,
+   "why": "Dompet kosong → 花光了. A dan B kebalikannya."
   },
   {
    "type": "read_gap",
@@ -1421,12 +1421,12 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "你的鞋子怎麼溼了？",
    "options": [
-    "我沒帶傘，走路回來的。",
+    "明天會是晴天。",
     "這雙鞋子很貴。",
-    "明天會是晴天。"
+    "我沒帶傘，走路回來的。"
    ],
-   "answer": 0,
-   "why": "Ditanya SEBAB sepatu basah → tidak bawa payung. B dan C tidak menjelaskan sebabnya."
+   "answer": 2,
+   "why": "Ditanya SEBAB sepatu basah → tidak bawa payung. B dan A tidak menjelaskan sebabnya."
   },
   {
    "type": "read_sent",
@@ -1508,12 +1508,12 @@
    "question": "這位先生要帶什麼？",
    "options": [
     "他自己的傘",
-    "這位小姐的傘",
+    "什麼都不帶",
     "雨衣",
-    "什麼都不帶"
+    "這位小姐的傘"
    ],
-   "answer": 1,
-   "why": "我帶你的傘 → payung si perempuan. A: dia tidak menyebut payungnya sendiri. C tidak disebut. D = sikap awal yang berubah."
+   "answer": 3,
+   "why": "我帶你的傘 → payung si perempuan. A: dia tidak menyebut payungnya sendiri. C tidak disebut. B = sikap awal yang berubah."
   }
  ],
  "C12": [
@@ -1597,12 +1597,12 @@
     "label": "kakek yang sudah lanjut usia"
    },
    "options": [
-    "他年紀很大了。",
+    "他是大學生。",
     "他還是國小學生。",
-    "他是大學生。"
+    "他年紀很大了。"
    ],
-   "answer": 0,
-   "why": "Kakek tua → 年紀很大了. B dan C orang muda."
+   "answer": 2,
+   "why": "Kakek tua → 年紀很大了. B dan A orang muda."
   },
   {
    "type": "read_gap",
@@ -1646,12 +1646,12 @@
    "question": "這位小姐的中文為什麼說得很好？",
    "options": [
     "她在臺灣長大",
-    "她在家說中文",
+    "她的母語是英文",
     "她在大學學中文",
-    "她的母語是英文"
+    "她在家說中文"
    ],
-   "answer": 1,
-   "why": "爸媽在家只跟我說中文 → alasannya. A salah: dia besar di Amerika. C dan D tidak disebut."
+   "answer": 3,
+   "why": "爸媽在家只跟我說中文 → alasannya. A salah: dia besar di Amerika. C dan B tidak disebut."
   }
  ]
 }

@@ -11,12 +11,12 @@
    },
    "question": "小偷怎麼了？",
    "options": [
-    "跑走了。",
     "被抓住了。",
+    "跑走了。",
     "在睡覺。"
    ],
-   "answer": 1,
-   "why": "Polisi memegang pencuri bertopeng → 被抓住了. A dan C tidak cocok."
+   "answer": 0,
+   "why": "Polisi memegang pencuri bertopeng → 被抓住了. B dan C tidak cocok."
   },
   {
    "type": "listen_pic",
@@ -42,12 +42,12 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "你的手機找著了嗎？",
    "options": [
-    "還沒，可能丟在教室了。",
     "我的手機是新的。",
+    "還沒，可能丟在教室了。",
     "我在打電話。"
    ],
-   "answer": 0,
-   "why": "找著了嗎 → 還沒. B dan C tidak menjawab."
+   "answer": 1,
+   "why": "找著了嗎 → 還沒. A dan C tidak menjawab."
   },
   {
    "type": "read_sent",
@@ -60,16 +60,16 @@
      "label": "pencuri kabur"
     },
     {
-     "icon": "👥🤲🦹",
-     "label": "orang-orang menangkap pencuri"
-    },
-    {
      "icon": "🦹🏍️",
      "label": "pencuri naik motor"
+    },
+    {
+     "icon": "👥🤲🦹",
+     "label": "orang-orang menangkap pencuri"
     }
    ],
-   "answer": 1,
-   "why": "大家抓住了小偷. A kebalikannya; C tidak cocok."
+   "answer": 2,
+   "why": "大家抓住了小偷. A kebalikannya; B tidak cocok."
   },
   {
    "type": "read_pick",
@@ -130,11 +130,11 @@
    "options": [
     "樓下太吵了",
     "他的東西丟了",
-    "樓下有東西被偷了，他很怕",
-    "他忘了鎖門"
+    "他忘了鎖門",
+    "樓下有東西被偷了，他很怕"
    ],
-   "answer": 2,
-   "why": "有人的東西被偷了 → takut. A tidak disebut. B: barang ORANG LAIN yang dicuri. D = saran si perempuan, bukan penyebab."
+   "answer": 3,
+   "why": "有人的東西被偷了 → takut. A tidak disebut. B: barang ORANG LAIN yang dicuri. C = saran si perempuan, bukan penyebab."
   }
  ],
  "C53": [
@@ -149,12 +149,12 @@
    },
    "question": "颱風天出門怎麼樣？",
    "options": [
-    "很安全。",
     "很危險。",
+    "很安全。",
     "很舒服。"
    ],
-   "answer": 1,
-   "why": "Orang di luar saat topan + tanda bahaya → 很危險. A dan C kebalikannya."
+   "answer": 0,
+   "why": "Orang di luar saat topan + tanda bahaya → 很危險. B dan C kebalikannya."
   },
   {
    "type": "listen_pic",
@@ -168,11 +168,11 @@
    "question": "你還喝酒嗎？",
    "options": [
     "我每天都喝。",
-    "我喝一點。",
-    "我不再喝酒了。"
+    "我不再喝酒了。",
+    "我喝一點。"
    ],
-   "answer": 2,
-   "why": "Menolak gelas bir → 不再喝酒了. A dan B kebalikannya."
+   "answer": 1,
+   "why": "Menolak gelas bir → 不再喝酒了. A dan C kebalikannya."
   },
   {
    "type": "listen_reply",
@@ -180,12 +180,12 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "明天會下雨嗎？",
    "options": [
-    "也許會，你帶傘吧。",
+    "昨天下雨了。",
     "我喜歡下雨。",
-    "昨天下雨了。"
+    "也許會，你帶傘吧。"
    ],
-   "answer": 0,
-   "why": "Perkiraan → 也許會. B dan C tidak menjawab."
+   "answer": 2,
+   "why": "Perkiraan → 也許會. B dan A tidak menjawab."
   },
   {
    "type": "read_sent",
@@ -266,12 +266,12 @@
    ],
    "question": "這位先生說以後會怎麼做？",
    "options": [
-    "不再來了",
     "早點出門",
+    "不再來了",
     "晚一點出門"
    ],
-   "answer": 1,
-   "why": "我會早點出門的. A salah paham 不再 (yang dihentikan terlambatnya, bukan datangnya). C kebalikannya."
+   "answer": 0,
+   "why": "我會早點出門的. B salah paham 不再 (yang dihentikan terlambatnya, bukan datangnya). C kebalikannya."
   }
  ],
  "C54": [
@@ -287,11 +287,11 @@
    "question": "天上有什麼？",
    "options": [
     "一個太陽。",
-    "很多星星。",
-    "很多鳥。"
+    "很多鳥。",
+    "很多星星。"
    ],
-   "answer": 1,
-   "why": "Langit malam penuh bintang → 很多星星. A dan C tidak cocok."
+   "answer": 2,
+   "why": "Langit malam penuh bintang → 很多星星. A dan B tidak cocok."
   },
   {
    "type": "listen_pic",
@@ -331,20 +331,20 @@
    "text": "院子裡有一朵一朵的紅花。",
    "options": [
     {
-     "icon": "🌳🌼",
-     "label": "satu bunga kuning"
-    },
-    {
      "icon": "🌳🌺🌺🌺",
      "label": "halaman penuh bunga merah"
+    },
+    {
+     "icon": "🌳🌼",
+     "label": "satu bunga kuning"
     },
     {
      "icon": "🌳",
      "label": "halaman tanpa bunga"
     }
    ],
-   "answer": 1,
-   "why": "一朵一朵的紅花 → banyak bunga merah. A jumlah dan warnanya salah; C tanpa bunga."
+   "answer": 0,
+   "why": "一朵一朵的紅花 → banyak bunga merah. B jumlah dan warnanya salah; C tanpa bunga."
   },
   {
    "type": "read_pick",
@@ -404,12 +404,12 @@
    "question": "他們要做什麼？",
    "options": [
     "去買椅子",
-    "坐在外面看月亮",
+    "休息睡覺",
     "看星星",
-    "休息睡覺"
+    "坐在外面看月亮"
    ],
-   "answer": 1,
-   "why": "把椅子搬出來，坐下來看 (bulan). A: kursinya sudah ada. C dan D tidak disebut."
+   "answer": 3,
+   "why": "把椅子搬出來，坐下來看 (bulan). A: kursinya sudah ada. C dan B tidak disebut."
   }
  ],
  "C55": [
@@ -425,11 +425,11 @@
    "question": "這條河怎麼樣？",
    "options": [
     "很乾淨。",
-    "被污染了。",
-    "很美麗。"
+    "很美麗。",
+    "被污染了。"
    ],
-   "answer": 1,
-   "why": "Sampah + pipa limbah → 被污染了. A dan C kebalikannya."
+   "answer": 2,
+   "why": "Sampah + pipa limbah → 被污染了. A dan B kebalikannya."
   },
   {
    "type": "listen_pic",
@@ -469,20 +469,20 @@
    "text": "海邊到處都是垃圾，連水裡都有瓶子。",
    "options": [
     {
-     "icon": "🏖️✨",
-     "label": "pantai bersih"
-    },
-    {
      "icon": "🏖️🗑️🍾",
      "label": "pantai penuh sampah"
+    },
+    {
+     "icon": "🏖️✨",
+     "label": "pantai bersih"
     },
     {
      "icon": "🌊🐟",
      "label": "laut bersih ada ikan"
     }
    ],
-   "answer": 1,
-   "why": "到處都是垃圾 + 連水裡都有瓶子. A dan C kebalikannya."
+   "answer": 0,
+   "why": "到處都是垃圾 + 連水裡都有瓶子. B dan C kebalikannya."
   },
   {
    "type": "read_pick",
@@ -493,12 +493,12 @@
     "label": "memilah sampah"
    },
    "options": [
-    "他們在丟垃圾到河裡。",
+    "他們在做環保。",
     "他們在上課。",
-    "他們在做環保。"
+    "他們在丟垃圾到河裡。"
    ],
-   "answer": 2,
-   "why": "Memilah sampah daur ulang → 做環保. A kebalikannya; B tidak cocok."
+   "answer": 0,
+   "why": "Memilah sampah daur ulang → 做環保. C kebalikannya; B tidak cocok."
   },
   {
    "type": "read_gap",
@@ -510,11 +510,11 @@
    },
    "text": "在這裡你可以（　）地做你想做的事。",
    "options": [
-    "自由",
+    "社會",
     "環保",
-    "社會"
+    "自由"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "自由地 = dengan bebas. 環保地 dan 社會地 tidak lazim."
   },
   {
@@ -606,20 +606,20 @@
    "text": "除夕晚上，一家人坐在一起吃飯。",
    "options": [
     {
-     "icon": "🎄🎅",
-     "label": "Natal"
-    },
-    {
      "icon": "🧧👨‍👩‍👧‍👦🍽️",
      "label": "keluarga makan malam Imlek"
+    },
+    {
+     "icon": "🎄🎅",
+     "label": "Natal"
     },
     {
      "icon": "🏖️",
      "label": "pantai"
     }
    ],
-   "answer": 1,
-   "why": "除夕 + 一家人吃飯. A perayaan lain; C tidak cocok."
+   "answer": 0,
+   "why": "除夕 + 一家人吃飯. B perayaan lain; C tidak cocok."
   },
   {
    "type": "read_pick",
@@ -679,12 +679,12 @@
    "question": "這位小姐今年除夕在哪裡吃飯？",
    "options": [
     "她自己家",
-    "這位先生家",
+    "飛機上",
     "餐廳",
-    "飛機上"
+    "這位先生家"
    ],
-   "answer": 1,
-   "why": "除夕你來我家吃飯吧 + 太好了. A: dia tidak pulang. C dan D tidak disebut."
+   "answer": 3,
+   "why": "除夕你來我家吃飯吧 + 太好了. A: dia tidak pulang. C dan B tidak disebut."
   }
  ],
  "C57": [
@@ -768,12 +768,12 @@
     "label": "kesal dengan tumpukan tugas"
    },
    "options": [
-    "他很放心。",
+    "他覺得很煩。",
     "他很高興。",
-    "他覺得很煩。"
+    "他很放心。"
    ],
-   "answer": 2,
-   "why": "Wajah kesal + tumpukan buku → 很煩. A dan B tidak cocok."
+   "answer": 0,
+   "why": "Wajah kesal + tumpukan buku → 很煩. C dan B tidak cocok."
   },
   {
    "type": "read_gap",
@@ -854,12 +854,12 @@
    },
    "question": "他說什麼？",
    "options": [
-    "你怎麼沒來？",
+    "沒想到你來了！",
     "你別來了。",
-    "沒想到你來了！"
+    "你怎麼沒來？"
    ],
-   "answer": 2,
-   "why": "Terkejut gembira temannya datang membawa hadiah → 沒想到你來了. A dan B tidak cocok."
+   "answer": 0,
+   "why": "Terkejut gembira temannya datang membawa hadiah → 沒想到你來了. C dan B tidak cocok."
   },
   {
    "type": "listen_reply",
@@ -1042,11 +1042,11 @@
     "label": "bingung memilih"
    },
    "options": [
-    "我不知道怎麼選擇。",
+    "我吃飽了。",
     "我都不想吃。",
-    "我吃飽了。"
+    "我不知道怎麼選擇。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "選擇 = memilih."
   },
   {
@@ -1090,12 +1090,12 @@
    ],
    "question": "他們要先去哪裡？",
    "options": [
-    "日本",
     "韓國",
+    "日本",
     "臺灣"
    ],
-   "answer": 0,
-   "why": "先去日本，再去韓國. B: tujuan kedua. C tidak disebut."
+   "answer": 1,
+   "why": "先去日本，再去韓國. A: tujuan kedua. C tidak disebut."
   }
  ],
  "C60": [
@@ -1111,11 +1111,11 @@
    "question": "住宿舍怎麼樣？",
    "options": [
     "只有好處，沒有壞處。",
-    "只有壞處，沒有好處。",
-    "有好處，也有壞處。"
+    "有好處，也有壞處。",
+    "只有壞處，沒有好處。"
    ],
-   "answer": 2,
-   "why": "Ada tanda plus DAN minus → 有好處，也有壞處. A dan B masing-masing hanya satu sisi."
+   "answer": 1,
+   "why": "Ada tanda plus DAN minus → 有好處，也有壞處. A dan C masing-masing hanya satu sisi."
   },
   {
    "type": "listen_pic",
@@ -1141,12 +1141,12 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "你了解臺灣的文化嗎？",
    "options": [
-    "我很了解你的心情。",
     "了解一點，還在學習。",
+    "我很了解你的心情。",
     "臺灣的東西很便宜。"
    ],
-   "answer": 1,
-   "why": "Ditanya seberapa paham budaya Taiwan → 了解一點. A memakai 了解 dalam konteks lain (perasaan). C topik Taiwan tapi tidak menjawab."
+   "answer": 0,
+   "why": "Ditanya seberapa paham budaya Taiwan → 了解一點. B memakai 了解 dalam konteks lain (perasaan). C topik Taiwan tapi tidak menjawab."
   },
   {
    "type": "read_sent",
@@ -1196,11 +1196,11 @@
    },
    "text": "下午下了很大的雨，（　）我帶了傘。",
    "options": [
-    "可惜",
+    "還好",
     "其實",
-    "還好"
+    "可惜"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "還好 = untungnya (hal baik di tengah situasi buruk). 可惜 = sayang (untuk hal buruk). 其實 = sebenarnya (mengoreksi anggapan) — tidak ada anggapan yang dikoreksi."
   },
   {
@@ -1227,13 +1227,13 @@
    ],
    "question": "這位小姐是什麼意思？",
    "options": [
-    "她的室友不會吵她",
+    "宿舍沒有壞處",
     "她要搬出宿舍",
     "她不喜歡室友",
-    "宿舍沒有壞處"
+    "她的室友不會吵她"
    ],
-   "answer": 0,
-   "why": "還好…很早就休息 → teman sekamarnya tidak mengganggu. B & C tidak berdasar. D: si laki-laki justru menyebut ada 壞處."
+   "answer": 3,
+   "why": "還好…很早就休息 → teman sekamarnya tidak mengganggu. B & C tidak berdasar. A: si laki-laki justru menyebut ada 壞處."
   }
  ],
  "C61": [
@@ -1248,11 +1248,11 @@
    },
    "question": "這本書你看得下去嗎？",
    "options": [
-    "看不下去了。",
     "我看完了。",
+    "看不下去了。",
     "我很喜歡看。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "V不下去 = tidak sanggup meneruskan."
   },
   {
@@ -1279,11 +1279,11 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "你喜歡哪一類的書？",
    "options": [
-    "我一類書。",
+    "我喜歡歷史類的書。",
     "書很類。",
-    "我喜歡歷史類的書。"
+    "我一類書。"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "類 = jenis."
   },
   {
@@ -1403,11 +1403,11 @@
    },
    "question": "你買得起這個嗎？",
    "options": [
-    "買不起。",
     "買得起。",
+    "買不起。",
     "這是禮物。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "V不起 = tidak mampu membeli."
   },
   {
@@ -1541,10 +1541,10 @@
    "question": "大家怎麼了？",
    "options": [
     "大家都睡覺了。",
-    "大家都不說話。",
-    "大家都笑起來了。"
+    "大家都笑起來了。",
+    "大家都不說話。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "V起來 = mulai …."
   },
   {
@@ -1553,11 +1553,11 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "你忘記她的生日了嗎？",
    "options": [
-    "生日很忘記。",
+    "對不起，我完全忘記了。",
     "我忘記你。",
-    "對不起，我完全忘記了。"
+    "生日很忘記。"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "忘記 = lupa."
   },
   {
@@ -1746,10 +1746,10 @@
    "text": "我們一見面就聊（　）了小時候的事。",
    "options": [
     "下",
-    "起",
-    "上"
+    "上",
+    "起"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "聊起 = mulai membicarakan."
   },
   {
@@ -1777,12 +1777,12 @@
    "question": "這位小姐覺得那天怎麼樣？",
    "options": [
     "很無聊",
-    "很開心",
+    "太晚回家很生氣",
     "很累",
-    "太晚回家很生氣"
+    "很開心"
    ],
-   "answer": 1,
-   "why": "很好玩…大家都不想走. A & D: kebalikan. C tidak disebut."
+   "answer": 3,
+   "why": "很好玩…大家都不想走. A & B: kebalikan. C tidak disebut."
   }
  ],
  "C65": [
@@ -1883,11 +1883,11 @@
    },
    "text": "杯子裡裝（　）了水。",
    "options": [
-    "滿",
     "完",
+    "滿",
     "夠"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "裝滿 = terisi penuh."
   },
   {
@@ -1914,13 +1914,13 @@
    ],
    "question": "這位先生是什麼意思？",
    "options": [
-    "要慢慢吃、少拿一點",
+    "這家餐廳不好吃",
     "他不想吃",
     "一盤不夠吃",
-    "這家餐廳不好吃"
+    "要慢慢吃、少拿一點"
    ],
-   "answer": 0,
-   "why": "別一開始就拿滿滿一盤…吃太快就吃不下. B & D tidak berdasar. C: kebalikan."
+   "answer": 3,
+   "why": "別一開始就拿滿滿一盤…吃太快就吃不下. B & A tidak berdasar. C: kebalikan."
   }
  ],
  "C66": [
@@ -2004,11 +2004,11 @@
     "label": "masih belajar di malam hari"
    },
    "options": [
-    "他現在還在讀書。",
     "他已經睡覺了。",
+    "他現在還在讀書。",
     "他在看電影。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "還 = masih."
   },
   {
@@ -2021,11 +2021,11 @@
    },
    "text": "這學期你要（　）什麼課？",
    "options": [
-    "選",
+    "讀書",
     "資料",
-    "讀書"
+    "選"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "選課 = memilih mata kuliah."
   },
   {
@@ -2052,13 +2052,13 @@
    ],
    "question": "考試的時候不能做什麼？",
    "options": [
-    "查書",
     "用手機",
+    "查書",
     "帶學生證",
     "進教室"
    ],
-   "answer": 1,
-   "why": "不能用手機. A: boleh. C: wajib. D: boleh dengan kartu mahasiswa."
+   "answer": 0,
+   "why": "不能用手機. B: boleh. C: wajib. D: boleh dengan kartu mahasiswa."
   }
  ],
  "C67": [
@@ -2104,11 +2104,11 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "你要的是什麼？",
    "options": [
-    "我要的是一個便當。",
     "便當的是。",
+    "我要的是一個便當。",
     "我是要。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "VP + 的 = yang …."
   },
   {
@@ -2122,15 +2122,15 @@
      "label": "duduk di dalam"
     },
     {
-     "icon": "🚪🧍",
-     "label": "menunggu di luar pintu"
-    },
-    {
      "icon": "🏃",
      "label": "pergi"
+    },
+    {
+     "icon": "🚪🧍",
+     "label": "menunggu di luar pintu"
     }
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "門外 = di luar pintu."
   },
   {
@@ -2190,12 +2190,12 @@
    ],
    "question": "東西最晚幾點會送到？",
    "options": [
-    "七點",
+    "八點",
     "六點",
-    "八點"
+    "七點"
    ],
-   "answer": 0,
-   "why": "七點以前一定送到. B = jam sekarang. C tidak disebut."
+   "answer": 2,
+   "why": "七點以前一定送到. B = jam sekarang. A tidak disebut."
   }
  ]
 }

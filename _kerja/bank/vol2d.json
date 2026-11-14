@@ -29,11 +29,11 @@
    },
    "question": "你要做什麼？",
    "options": [
-    "我要寄信。",
     "我要借錢。",
+    "我要寄信。",
     "我要買書。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "寄信 = mengirim surat."
   },
   {
@@ -171,11 +171,11 @@
     "label": "amplop berperangko"
    },
    "options": [
-    "信上有郵票。",
+    "這是一張地圖。",
     "信上沒有郵票。",
-    "這是一張地圖。"
+    "信上有郵票。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "郵票 = perangko."
   },
   {
@@ -188,11 +188,11 @@
    },
    "text": "我跟圖書館（　）了三本書。",
    "options": [
-    "寄",
     "借",
+    "寄",
     "送"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "借 = meminjam."
   },
   {
@@ -224,13 +224,13 @@
    "text": "郵局：早上八點到下午五點。星期六上午開，星期天不開。",
    "question": "星期六下午可以去郵局嗎？",
    "options": [
-    "不可以",
+    "可以",
     "只能早上八點",
     "星期六不開",
-    "可以"
+    "不可以"
    ],
-   "answer": 0,
-   "why": "Sabtu hanya pagi (simpulan). D salah: Sabtu pagi buka."
+   "answer": 3,
+   "why": "Sabtu hanya pagi (simpulan). A salah: Sabtu pagi buka."
   }
  ],
  "B37": [
@@ -291,15 +291,15 @@
      "label": "menelepon"
     },
     {
-     "icon": "🏃",
-     "label": "lari"
-    },
-    {
      "icon": "🔍",
      "label": "membantu mencari"
+    },
+    {
+     "icon": "🏃",
+     "label": "lari"
     }
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "我幫你找."
   },
   {
@@ -385,15 +385,15 @@
      "label": "pena jatuh"
     },
     {
-     "icon": "✏️🎒",
-     "label": "pena di tas"
-    },
-    {
      "icon": "✏️🧑‍🎓",
      "label": "pena diambil teman"
+    },
+    {
+     "icon": "✏️🎒",
+     "label": "pena di tas"
     }
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "被 + pelaku + V."
   },
   {
@@ -565,15 +565,15 @@
      "label": "jam"
     },
     {
-     "icon": "📚",
-     "label": "buku"
-    },
-    {
      "icon": "📝",
      "label": "ujian besok"
+    },
+    {
+     "icon": "📚",
+     "label": "buku"
     }
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "明天的考試很重要."
   },
   {
@@ -601,11 +601,11 @@
    "question": "眼鏡在哪裡？",
    "options": [
     "這位小姐的書包裡",
-    "客廳的桌子上",
+    "房間的桌子上",
     "這位先生的手上",
-    "房間的桌子上"
+    "客廳的桌子上"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "客廳的 (桌子) — objek dihilangkan (零代詞)."
   },
   {
@@ -713,11 +713,11 @@
    },
    "question": "她去哪裡？",
    "options": [
-    "她去醫院看病。",
+    "她去銀行。",
     "她去學校。",
-    "她去銀行。"
+    "她去醫院看病。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "醫院 = rumah sakit."
   },
   {
@@ -731,11 +731,11 @@
    },
    "question": "他的臉怎麼樣？",
    "options": [
-    "很紅。",
     "他在睡覺。",
+    "很紅。",
     "他在唱歌。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "臉很紅 = wajahnya merah."
   },
   {
@@ -834,12 +834,12 @@
    ],
    "question": "這位小姐為什麼沒來上課？",
    "options": [
-    "吃太多，肚子痛",
+    "她頭痛",
     "她去夜市",
     "她不想上課",
-    "她頭痛"
+    "吃太多，肚子痛"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Sebab-akibat disimpulkan dari dua jawaban."
   },
   {
@@ -890,11 +890,11 @@
    },
    "text": "你（　）了？你的臉很白。",
    "options": [
-    "為什麼",
+    "怎麼",
     "什麼",
-    "怎麼"
+    "為什麼"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "怎麼了 = kenapa?"
   },
   {
@@ -927,11 +927,11 @@
    "question": "星期一下午一點可以去看病嗎？",
    "options": [
     "早上不可以",
-    "可以",
+    "不可以",
     "只有星期天可以",
-    "不可以"
+    "可以"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "12.00–14.00 istirahat → jam 13.00 tidak bisa."
   }
  ],
@@ -947,11 +947,11 @@
    },
    "question": "你怎麼樣？",
    "options": [
-    "雖然很累，但是我很高興。",
+    "我不累。",
     "我很累，不高興。",
-    "我不累。"
+    "雖然很累，但是我很高興。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "雖然……但是…… = walaupun … tetapi …."
   },
   {
@@ -1070,10 +1070,10 @@
    "options": [
     "衣服不漂亮",
     "衣服很便宜",
-    "她想買那件衣服",
-    "她不想買"
+    "她不想買",
+    "她想買那件衣服"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "雖然很貴，還是想買."
   },
   {
@@ -1108,10 +1108,10 @@
    },
    "options": [
     "水果不健康。",
-    "多吃糖，身體很健康。",
-    "多吃水果，身體很健康。"
+    "多吃水果，身體很健康。",
+    "多吃糖，身體很健康。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "健康 = sehat."
   },
   {
@@ -1162,11 +1162,11 @@
    "options": [
     "不吃甜點",
     "不喜歡甜點",
-    "吃很少的甜點",
-    "吃很多蛋糕"
+    "吃很多蛋糕",
+    "吃很少的甜點"
    ],
-   "answer": 2,
-   "why": "只吃一點. B terlalu jauh; D kebalikan."
+   "answer": 3,
+   "why": "只吃一點. B terlalu jauh; C kebalikan."
   }
  ],
  "B41": [
@@ -1223,19 +1223,19 @@
    "question": "這位小姐怎麼了？",
    "options": [
     {
-     "icon": "😠🎂",
-     "label": "marah, ulang tahunnya dilupakan"
-    },
-    {
      "icon": "😢🌧️",
      "label": "sedih karena hujan"
+    },
+    {
+     "icon": "😠🎂",
+     "label": "marah, ulang tahunnya dilupakan"
     },
     {
      "icon": "😊",
      "label": "senang"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "生氣 + alasan."
   },
   {
@@ -1267,15 +1267,15 @@
      "label": "berlibur"
     },
     {
-     "icon": "📚",
-     "label": "belajar"
-    },
-    {
      "icon": "💼",
      "label": "bekerja"
+    },
+    {
+     "icon": "📚",
+     "label": "belajar"
     }
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "去念書."
   },
   {
@@ -1317,19 +1317,19 @@
    "text": "大家都笑了。",
    "options": [
     {
-     "icon": "😂😂",
-     "label": "semua tertawa"
-    },
-    {
      "icon": "😠",
      "label": "marah"
+    },
+    {
+     "icon": "😂😂",
+     "label": "semua tertawa"
     },
     {
      "icon": "😭",
      "label": "menangis"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "笑 = tertawa."
   },
   {
@@ -1501,15 +1501,15 @@
      "label": "aneh"
     },
     {
-     "icon": "🧠😊",
-     "label": "pintar dan menggemaskan"
-    },
-    {
      "icon": "😠",
      "label": "pemarah"
+    },
+    {
+     "icon": "🧠😊",
+     "label": "pintar dan menggemaskan"
     }
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "聰明 + 可愛."
   },
   {
@@ -1575,11 +1575,11 @@
     "label": "anjing bertopi yang tampak aneh"
    },
    "options": [
-    "這隻狗很笨。",
     "這隻狗很奇怪。",
+    "這隻狗很笨。",
     "這隻狗很生氣。"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "奇怪 = aneh."
   },
   {
@@ -1592,11 +1592,11 @@
    },
    "text": "她是一個很好的人，她的（　）很好。",
    "options": [
-    "心",
+    "頭",
     "臉",
-    "頭"
+    "心"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "心 = hati."
   },
   {
@@ -1732,18 +1732,18 @@
    "options": [
     {
      "icon": "⏳",
-     "label": "8 jam"
+     "label": "12 jam"
     },
     {
      "icon": "⏳",
-     "label": "12 jam"
+     "label": "8 jam"
     },
     {
      "icon": "⏳",
      "label": "2 jam"
     }
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "十二個小時."
   },
   {
@@ -1809,11 +1809,11 @@
     "label": "pekerjaan berat"
    },
    "options": [
-    "這個工作很辛苦。",
     "這個工作很簡單。",
+    "這個工作很辛苦。",
     "這個工作很有意思。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "辛苦 = berat."
   },
   {
@@ -1864,10 +1864,10 @@
    "options": [
     "爸爸不回家",
     "爸爸生氣了",
-    "爸爸工作很辛苦，頭髮白了",
-    "我的頭髮白了"
+    "我的頭髮白了",
+    "爸爸工作很辛苦，頭髮白了"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Sebab tersirat dari dua kalimat sebelumnya."
   }
  ],
@@ -2043,11 +2043,11 @@
     "label": "angpau"
    },
    "options": [
-    "新年快樂！",
+    "再見！",
     "生日快樂！",
-    "再見！"
+    "新年快樂！"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Angpau → 新年快樂."
   },
   {
@@ -2097,11 +2097,11 @@
    "question": "哪個「不對」？",
    "options": [
     "有的人去旅行",
-    "臺灣人過年都回家",
+    "有的人回家",
     "有的人在家休息",
-    "有的人回家"
+    "臺灣人過年都回家"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Pilih yang SALAH: 都回家 bertentangan dengan 有的."
   }
  ],
@@ -2163,15 +2163,15 @@
      "label": "ragu"
     },
     {
-     "icon": "🤝😊",
-     "label": "bersedia membantu"
-    },
-    {
      "icon": "🙅",
      "label": "menolak"
+    },
+    {
+     "icon": "🤝😊",
+     "label": "bersedia membantu"
     }
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "當然願意."
   },
   {
@@ -2199,19 +2199,19 @@
    "question": "這位先生認為什麼方法最有用？",
    "options": [
     {
-     "icon": "✍️",
-     "label": "menulis"
+     "icon": "🎧",
+     "label": "mendengar setiap hari"
     },
     {
      "icon": "📖",
      "label": "membaca"
     },
     {
-     "icon": "🎧",
-     "label": "mendengar setiap hari"
+     "icon": "✍️",
+     "label": "menulis"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "每天聽中文."
   },
   {
@@ -2239,11 +2239,11 @@
    "question": "這位小姐是什麼意思？",
    "options": [
     "她很想去游泳",
-    "她不想去游泳",
+    "她想去旅行",
     "她上個星期沒去",
-    "她想去旅行"
+    "她不想去游泳"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Menolak halus: 希望在家休息."
   },
   {
@@ -2295,10 +2295,10 @@
    "text": "我（　）明年可以去臺灣。",
    "options": [
     "想法",
-    "又",
-    "希望"
+    "希望",
+    "又"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "希望 = berharap."
   },
   {
@@ -2393,19 +2393,19 @@
    "question": "這位先生打算做什麼？",
    "options": [
     {
-     "icon": "🧑‍⚕️",
-     "label": "dokter"
+     "icon": "🧑‍🏫",
+     "label": "guru"
     },
     {
      "icon": "👨‍🍳",
      "label": "koki"
     },
     {
-     "icon": "🧑‍🏫",
-     "label": "guru"
+     "icon": "🧑‍⚕️",
+     "label": "dokter"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "當老師."
   },
   {
@@ -2433,19 +2433,19 @@
    "question": "這位小姐今天早餐吃什麼？",
    "options": [
     {
-     "icon": "🥟",
-     "label": "bakpau"
+     "icon": "🍞",
+     "label": "roti"
     },
     {
      "icon": "🚫",
      "label": "tidak makan"
     },
     {
-     "icon": "🍞",
-     "label": "roti"
+     "icon": "🥟",
+     "label": "bakpau"
     }
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Hari ini: 一個包子. Kemarin tidak makan."
   },
   {
@@ -2472,12 +2472,12 @@
    ],
    "question": "這位先生為什麼去臺灣？",
    "options": [
-    "學校好也不太貴",
+    "臺灣很大",
     "他的朋友在臺灣",
     "他沒去過日本",
-    "臺灣很大"
+    "學校好也不太貴"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Alasan setelah 因為."
   },
   {

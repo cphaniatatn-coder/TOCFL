@@ -133,12 +133,12 @@
    "question": "這位先生接著要做什麼？",
    "options": [
     "洗完碗再去看",
-    "跟這位小姐去看電影",
+    "去廚房做飯",
     "自己一個人看電影",
-    "去廚房做飯"
+    "跟這位小姐去看電影"
    ],
-   "answer": 1,
-   "why": "別洗了 + 我們一起去看吧 → menonton bersama sekarang. A = rencana awal yang dibatalkan. C: mereka menonton bersama. D tidak disebut."
+   "answer": 3,
+   "why": "別洗了 + 我們一起去看吧 → menonton bersama sekarang. A = rencana awal yang dibatalkan. C: mereka menonton bersama. B tidak disebut."
   },
   {
    "type": "read_sent",
@@ -172,11 +172,11 @@
    },
    "options": [
     "餐桌旁邊有兩張椅子。",
-    "餐桌旁邊有四張椅子。",
-    "餐桌上有四個碗。"
+    "餐桌上有四個碗。",
+    "餐桌旁邊有四張椅子。"
    ],
-   "answer": 1,
-   "why": "Ada empat kursi → 四張椅子. A salah jumlah; C salah benda (mangkuk)."
+   "answer": 2,
+   "why": "Ada empat kursi → 四張椅子. A salah jumlah; B salah benda (mangkuk)."
   },
   {
    "type": "read_gap",
@@ -188,11 +188,11 @@
    },
    "text": "炒飯太好吃了，我們都吃（　）了。",
    "options": [
-    "光",
     "過",
+    "光",
     "剛"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "吃光了 = habis dimakan. 吃過了 = sudah makan (tidak berarti habis); 剛 = baru saja, tidak bisa di posisi ini."
   },
   {
@@ -263,12 +263,12 @@
    },
    "question": "衣服怎麼樣？",
    "options": [
-    "很新，很漂亮。",
+    "很髒，要洗一下。",
     "太大了。",
-    "很髒，要洗一下。"
+    "很新，很漂亮。"
    ],
-   "answer": 2,
-   "why": "Baju penuh noda → 很髒. A kebalikannya; B soal ukuran, tidak terlihat."
+   "answer": 0,
+   "why": "Baju penuh noda → 很髒. C kebalikannya; B soal ukuran, tidak terlihat."
   },
   {
    "type": "listen_dialog",
@@ -423,10 +423,10 @@
    "text": "這是新沙發，你（　）坐！",
    "options": [
     "要",
-    "別",
-    "趕快"
+    "趕快",
+    "別"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Tanda larangan → 別 (jangan). 要 dan 趕快 justru menyuruh duduk."
   },
   {
@@ -459,12 +459,12 @@
    "question": "李小姐的新家怎麼樣？",
    "options": [
     "房間比以前大",
-    "放不下所有的家具",
+    "妹妹也要一起住",
     "她已經買了新書架",
-    "妹妹也要一起住"
+    "放不下所有的家具"
    ],
-   "answer": 1,
-   "why": "放不下她的大沙發和兩個書架 = tidak muat semua perabot. A: kebalikan (新家很小). C: temannya justru bilang 別買新的家具. D: sofa diberikan ke adik, bukan adik ikut tinggal."
+   "answer": 3,
+   "why": "放不下她的大沙發和兩個書架 = tidak muat semua perabot. A: kebalikan (新家很小). C: temannya justru bilang 別買新的家具. B: sofa diberikan ke adik, bukan adik ikut tinggal."
   }
  ],
  "C03": [
@@ -565,16 +565,16 @@
      "label": "di tempat sampah"
     },
     {
-     "icon": "🧺🌀",
-     "label": "di sebelah mesin cuci"
-    },
-    {
      "icon": "🚪",
      "label": "di pintu"
+    },
+    {
+     "icon": "🧺🌀",
+     "label": "di sebelah mesin cuci"
     }
    ],
-   "answer": 1,
-   "why": "在洗衣機旁邊. A dan C tidak disebut."
+   "answer": 2,
+   "why": "在洗衣機旁邊. A dan B tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -601,12 +601,12 @@
    "question": "這位先生下午可能怎麼樣？",
    "options": [
     "不去打球了",
-    "穿別的鞋去打球",
+    "在家洗鞋子",
     "穿髒的球鞋去打球",
-    "在家洗鞋子"
+    "穿別的鞋去打球"
    ],
-   "answer": 1,
-   "why": "Sepatu masih basah → ibu menyuruh 穿別的鞋. A tidak disebut. C: sepatunya sudah dicuci dan masih basah. D: sudah dicuci ibunya."
+   "answer": 3,
+   "why": "Sepatu masih basah → ibu menyuruh 穿別的鞋. A tidak disebut. C: sepatunya sudah dicuci dan masih basah. B: sudah dicuci ibunya."
   },
   {
    "type": "read_sent",
@@ -639,12 +639,12 @@
     "label": "kantong sampah penuh"
    },
    "options": [
-    "垃圾袋裡沒有東西。",
     "垃圾袋裡都是垃圾。",
+    "垃圾袋裡沒有東西。",
     "垃圾袋破了。"
    ],
-   "answer": 1,
-   "why": "Kantong penuh → 都是垃圾. A kebalikannya; C tidak terlihat."
+   "answer": 0,
+   "why": "Kantong penuh → 都是垃圾. B kebalikannya; C tidak terlihat."
   },
   {
    "type": "read_gap",
@@ -657,10 +657,10 @@
    "text": "衣服太多了，我們用（　）洗吧。",
    "options": [
     "袋子",
-    "洗衣機",
-    "垃圾"
+    "垃圾",
+    "洗衣機"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Baju banyak → dicuci dengan 洗衣機. 袋子 dan 垃圾 bukan alat mencuci."
   },
   {
@@ -799,16 +799,16 @@
      "label": "kamar tidur"
     },
     {
-     "icon": "🛋️🍳",
-     "label": "ruang tamu dan dapur"
-    },
-    {
      "icon": "🌳",
      "label": "halaman"
+    },
+    {
+     "icon": "🛋️🍳",
+     "label": "ruang tamu dan dapur"
     }
    ],
-   "answer": 1,
-   "why": "樓下是客廳和廚房. A: kamar tidur ada di atas. C tidak disebut."
+   "answer": 2,
+   "why": "樓下是客廳和廚房. A: kamar tidur ada di atas. B tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -927,12 +927,12 @@
    "question": "王先生為什麼決定住第二個房子？",
    "options": [
     "離公車站比較近",
-    "家裡人多，也有狗",
+    "他不喜歡坐公車",
     "房子比較便宜",
-    "他不喜歡坐公車"
+    "家裡人多，也有狗"
    ],
-   "answer": 1,
-   "why": "五個人 + 兩隻大狗 → butuh 4 kamar & halaman. A: kebalikan (第二個離捷運站比較遠). C: harga tidak disebut. D: tidak disebut."
+   "answer": 3,
+   "why": "五個人 + 兩隻大狗 → butuh 4 kamar & halaman. A: kebalikan (第二個離捷運站比較遠). C: harga tidak disebut. B: tidak disebut."
   }
  ],
  "C05": [
@@ -947,12 +947,12 @@
    },
    "question": "他把鑰匙給誰了？",
    "options": [
-    "他把鑰匙給媽媽了。",
+    "他把鑰匙放在信箱裡了。",
     "媽媽把鑰匙給他了。",
-    "他把鑰匙放在信箱裡了。"
+    "他把鑰匙給媽媽了。"
    ],
-   "answer": 0,
-   "why": "Anak yang memberi, ibu yang menerima → 他把鑰匙給媽媽了. B membalik arah; C: tidak ada kotak surat."
+   "answer": 2,
+   "why": "Anak yang memberi, ibu yang menerima → 他把鑰匙給媽媽了. B membalik arah; A: tidak ada kotak surat."
   },
   {
    "type": "listen_pic",
@@ -966,11 +966,11 @@
    "question": "現在可以進去嗎？",
    "options": [
     "可以，門開著。",
-    "不行，門鎖了。",
-    "不行，裡面有人。"
+    "不行，裡面有人。",
+    "不行，門鎖了。"
    ],
-   "answer": 1,
-   "why": "Pintu terkunci → 不行，門鎖了. A kebalikannya; C alasannya tidak terlihat di gambar."
+   "answer": 2,
+   "why": "Pintu terkunci → 不行，門鎖了. A kebalikannya; B alasannya tidak terlihat di gambar."
   },
   {
    "type": "listen_dialog",
@@ -1125,10 +1125,10 @@
    "text": "我出去以前，把鑰匙交（　）媽媽了。",
    "options": [
     "在",
-    "給",
-    "到"
+    "到",
+    "給"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Pola 把 N1 V給 N2: 交給 = menyerahkan kepada. 在 dan 到 untuk tempat, bukan orang penerima."
   },
   {
@@ -1161,12 +1161,12 @@
    "question": "小明為什麼把鑰匙交給媽媽？",
    "options": [
     "他的口袋破了",
-    "他想少花一點錢",
+    "他常常找不到鑰匙",
     "媽媽要用他的錢",
-    "他常常找不到鑰匙"
+    "他想少花一點錢"
    ],
-   "answer": 1,
-   "why": "Ingin beli game → 要少花一點, jadi kunci dititipkan agar tidak mudah dipakai. A, C, D: tidak disebut di teks."
+   "answer": 3,
+   "why": "Ingin beli game → 要少花一點, jadi kunci dititipkan agar tidak mudah dipakai. A, C, B: tidak disebut di teks."
   }
  ],
  "C06": [
@@ -1227,16 +1227,16 @@
      "label": "di bak mandi"
     },
     {
-     "icon": "🚪🧺",
-     "label": "di balik pintu"
-    },
-    {
      "icon": "🪑",
      "label": "di kursi"
+    },
+    {
+     "icon": "🚪🧺",
+     "label": "di balik pintu"
     }
    ],
-   "answer": 1,
-   "why": "門後邊掛著 → di balik pintu. A dan C tidak disebut."
+   "answer": 2,
+   "why": "門後邊掛著 → di balik pintu. A dan B tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1304,11 +1304,11 @@
    "options": [
     "來要房租",
     "來找這位先生",
-    "來看壞了的廁所",
-    "來買日用品"
+    "來買日用品",
+    "來看壞了的廁所"
    ],
-   "answer": 2,
-   "why": "可能是來看浴室的 + 廁所壞了 → memeriksa toilet yang rusak. A, B, D tidak disebut."
+   "answer": 3,
+   "why": "可能是來看浴室的 + 廁所壞了 → memeriksa toilet yang rusak. A, B, C tidak disebut."
   },
   {
    "type": "read_sent",
@@ -1341,12 +1341,12 @@
     "label": "tiga pak tisu toilet"
    },
    "options": [
-    "廁所裡放著三包衛生紙。",
     "廁所裡沒有衛生紙。",
+    "廁所裡放著三包衛生紙。",
     "廁所裡放著一條毛巾。"
    ],
-   "answer": 0,
-   "why": "Ada tiga pak tisu → 三包衛生紙. B kebalikannya; C salah benda."
+   "answer": 1,
+   "why": "Ada tiga pak tisu → 三包衛生紙. A kebalikannya; C salah benda."
   },
   {
    "type": "read_gap",
@@ -1396,11 +1396,11 @@
    "options": [
     "洗澡用的毛巾",
     "廁所的衛生紙",
-    "洗頭用的東西",
-    "洗手用的肥皂"
+    "洗手用的肥皂",
+    "洗頭用的東西"
    ],
-   "answer": 2,
-   "why": "Tidak disediakan 牙刷、牙膏、洗髮精 = alat sikat gigi & keramas. A, B, D: sudah ada di kamar mandi."
+   "answer": 3,
+   "why": "Tidak disediakan 牙刷、牙膏、洗髮精 = alat sikat gigi & keramas. A, B, C: sudah ada di kamar mandi."
   }
  ],
  "C07": [
@@ -1433,12 +1433,12 @@
    },
    "question": "他怎麼了？",
    "options": [
-    "他三天沒洗澡了。",
+    "他每天都洗澡。",
     "他三天沒吃飯了。",
-    "他每天都洗澡。"
+    "他三天沒洗澡了。"
    ],
-   "answer": 0,
-   "why": "Tiga hari dicoret + badan bau → 三天沒洗澡了. B salah kegiatan; C kebalikannya."
+   "answer": 2,
+   "why": "Tiga hari dicoret + badan bau → 三天沒洗澡了. B salah kegiatan; A kebalikannya."
   },
   {
    "type": "listen_dialog",
@@ -1537,12 +1537,12 @@
    "question": "這位小姐的意思是什麼？",
    "options": [
     "她明天要坐飛機",
-    "她覺得這位先生明天可能又很晚才起床",
+    "這位先生上次很早就起床了",
     "她覺得五點太早",
-    "這位先生上次很早就起床了"
+    "她覺得這位先生明天可能又很晚才起床"
    ],
-   "answer": 1,
-   "why": "你上次也這麼說，可是九點才起床 → dia ragu si laki-laki bisa bangun pagi. A: tidak jelas siapa yang naik pesawat. C tidak disebut. D kebalikan (上次九點才起床)."
+   "answer": 3,
+   "why": "你上次也這麼說，可是九點才起床 → dia ragu si laki-laki bisa bangun pagi. A: tidak jelas siapa yang naik pesawat. C tidak disebut. B kebalikan (上次九點才起床)."
   },
   {
    "type": "read_sent",
@@ -1731,20 +1731,20 @@
    "question": "這位小姐為什麼搬家？",
    "options": [
     {
-     "icon": "🎤🏠",
-     "label": "tetangga bernyanyi"
+     "icon": "💰",
+     "label": "sewa mahal"
     },
     {
      "icon": "🦟",
      "label": "nyamuk"
     },
     {
-     "icon": "💰",
-     "label": "sewa mahal"
+     "icon": "🎤🏠",
+     "label": "tetangga bernyanyi"
     }
    ],
-   "answer": 0,
-   "why": "Alasan pindah: tetangga lama bernyanyi tiap hari. B = masalah di tempat BARU, bukan alasan pindah. C tidak disebut."
+   "answer": 2,
+   "why": "Alasan pindah: tetangga lama bernyanyi tiap hari. B = masalah di tempat BARU, bukan alasan pindah. A tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -1789,16 +1789,16 @@
      "label": "siang bernyanyi"
     },
     {
-     "icon": "🌙🎤",
-     "label": "malam bernyanyi"
-    },
-    {
      "icon": "🌙😴",
      "label": "malam tidur"
+    },
+    {
+     "icon": "🌙🎤",
+     "label": "malam bernyanyi"
     }
    ],
-   "answer": 1,
-   "why": "每天晚上 + 唱個不停 → malam bernyanyi. A waktunya salah; C kegiatannya salah."
+   "answer": 2,
+   "why": "每天晚上 + 唱個不停 → malam bernyanyi. A waktunya salah; B kegiatannya salah."
   },
   {
    "type": "read_pick",
@@ -1863,12 +1863,12 @@
    "question": "說話的人覺得搬到山上以後怎麼樣？",
    "options": [
     "比以前更吵了",
-    "不吵了，可是不方便",
+    "什麼都比以前好",
     "鄰居每天都很吵",
-    "什麼都比以前好"
+    "不吵了，可是不方便"
    ],
-   "answer": 1,
-   "why": "很安靜 tapi 買東西很不方便. A & C: kebalikan (沒有吵鬧的鄰居). D: berlebihan — ia menyebut ada hal yang tidak baik."
+   "answer": 3,
+   "why": "很安靜 tapi 買東西很不方便. A & C: kebalikan (沒有吵鬧的鄰居). B: berlebihan — ia menyebut ada hal yang tidak baik."
   }
  ],
  "C09": [
@@ -1884,11 +1884,11 @@
    "question": "這是哪裡？",
    "options": [
     "這是鄉下。",
-    "這是市區。",
-    "這是山上。"
+    "這是山上。",
+    "這是市區。"
    ],
-   "answer": 1,
-   "why": "Gedung-gedung tinggi → 市區. A dan C tidak cocok."
+   "answer": 2,
+   "why": "Gedung-gedung tinggi → 市區. A dan B tidak cocok."
   },
   {
    "type": "listen_pic",
@@ -1965,20 +1965,20 @@
    "question": "哪裡比較熱？",
    "options": [
     {
-     "icon": "🏙️",
-     "label": "Taipei"
+     "icon": "⛰️",
+     "label": "gunung"
     },
     {
      "icon": "🏠",
      "label": "negara asalnya"
     },
     {
-     "icon": "⛰️",
-     "label": "gunung"
+     "icon": "🏙️",
+     "label": "Taipei"
     }
    ],
-   "answer": 0,
-   "why": "我的國家沒有臺北這麼熱 → Taipei lebih panas. B terbalik; C tidak disebut."
+   "answer": 2,
+   "why": "我的國家沒有臺北這麼熱 → Taipei lebih panas. B terbalik; A tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -2006,11 +2006,11 @@
    "options": [
     "鄉下離公司很近",
     "她不工作了",
-    "她一個星期只去公司兩次",
-    "公司在鄉下"
+    "公司在鄉下",
+    "她一個星期只去公司兩次"
    ],
-   "answer": 2,
-   "why": "Boleh kerja dari rumah, ke kantor hanya dua kali seminggu. A dan D tidak disebut. B: dia tetap bekerja."
+   "answer": 3,
+   "why": "Boleh kerja dari rumah, ke kantor hanya dua kali seminggu. A dan C tidak disebut. B: dia tetap bekerja."
   },
   {
    "type": "read_sent",
@@ -2019,20 +2019,20 @@
    "text": "市區的房屋比鄉下貴得多。",
    "options": [
     {
-     "icon": "🌾🏡💰💰",
-     "label": "rumah desa mahal"
-    },
-    {
      "icon": "🏙️💰💰",
      "label": "rumah kota jauh lebih mahal"
+    },
+    {
+     "icon": "🌾🏡💰💰",
+     "label": "rumah desa mahal"
     },
     {
      "icon": "🏙️🏡",
      "label": "harganya sama"
     }
    ],
-   "answer": 1,
-   "why": "市區…貴得多 → rumah kota lebih mahal. A terbalik; C tidak ada perbedaan."
+   "answer": 0,
+   "why": "市區…貴得多 → rumah kota lebih mahal. B terbalik; C tidak ada perbedaan."
   },
   {
    "type": "read_pick",
@@ -2136,11 +2136,11 @@
    "question": "你經常做什麼？",
    "options": [
     "我經常寫信給朋友。",
-    "我經常寫日記。",
-    "我經常畫畫。"
+    "我經常畫畫。",
+    "我經常寫日記。"
    ],
-   "answer": 1,
-   "why": "Banyak halaman bertanggal → buku harian (日記). A surat tidak bertanggal per hari; C tidak cocok."
+   "answer": 2,
+   "why": "Banyak halaman bertanggal → buku harian (日記). A surat tidak bertanggal per hari; B tidak cocok."
   },
   {
    "type": "listen_dialog",
@@ -2253,20 +2253,20 @@
    "text": "天氣越來越冷了，大家都穿得很多。",
    "options": [
     {
-     "icon": "❄️🧥",
-     "label": "dingin, berbaju tebal"
-    },
-    {
      "icon": "☀️👕",
      "label": "panas, baju tipis"
+    },
+    {
+     "icon": "❄️🧥",
+     "label": "dingin, berbaju tebal"
     },
     {
      "icon": "🌧️☂️",
      "label": "hujan, payung"
     }
    ],
-   "answer": 0,
-   "why": "越來越冷 + 穿得很多 → dingin dan berbaju tebal. B kebalikannya; C tidak disebut."
+   "answer": 1,
+   "why": "越來越冷 + 穿得很多 → dingin dan berbaju tebal. A kebalikannya; C tidak disebut."
   },
   {
    "type": "read_pick",
@@ -2278,11 +2278,11 @@
    },
    "options": [
     "他在畫畫。",
-    "他在寫日記。",
-    "他在唱歌。"
+    "他在唱歌。",
+    "他在寫日記。"
    ],
-   "answer": 1,
-   "why": "Menulis di buku harian → 寫日記. A dan C kegiatan lain."
+   "answer": 2,
+   "why": "Menulis di buku harian → 寫日記. A dan B kegiatan lain."
   },
   {
    "type": "read_gap",
@@ -2332,11 +2332,11 @@
    "options": [
     "爸媽多給她生活費",
     "她跟我借了很多錢",
-    "她知道錢花在哪裡",
-    "她不再跟同學見面"
+    "她不再跟同學見面",
+    "她知道錢花在哪裡"
    ],
-   "answer": 2,
-   "why": "Menulis pengeluaran → tahu uangnya habis untuk barang tak perlu. A: tidak disebut. B: itu terjadi di bulan pertama, bukan alasan bisa menabung. D: berlebihan, tidak disebut."
+   "answer": 3,
+   "why": "Menulis pengeluaran → tahu uangnya habis untuk barang tak perlu. A: tidak disebut. B: itu terjadi di bulan pertama, bukan alasan bisa menabung. C: berlebihan, tidak disebut."
   }
  ],
  "C11": [
@@ -2370,11 +2370,11 @@
    "question": "媽媽說什麼？",
    "options": [
     "快來吃飯了！",
-    "手機在哪裡？",
-    "別再玩手機了！"
+    "別再玩手機了！",
+    "手機在哪裡？"
    ],
-   "answer": 2,
-   "why": "Ibu menegur anak yang main ponsel → 別再玩手機了. A tidak cocok; B: ponselnya jelas di tangan anak."
+   "answer": 1,
+   "why": "Ibu menegur anak yang main ponsel → 別再玩手機了. A tidak cocok; C: ponselnya jelas di tangan anak."
   },
   {
    "type": "listen_dialog",
@@ -2393,20 +2393,20 @@
    "question": "這位先生帶什麼？",
    "options": [
     {
-     "icon": "☂️",
-     "label": "payung"
-    },
-    {
      "icon": "🧥",
      "label": "jas hujan"
+    },
+    {
+     "icon": "☂️",
+     "label": "payung"
     },
     {
      "icon": "👢",
      "label": "sepatu bot"
     }
    ],
-   "answer": 1,
-   "why": "我帶雨衣. A ditolak (太大了); C tidak disebut."
+   "answer": 0,
+   "why": "我帶雨衣. B ditolak (太大了); C tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -2437,16 +2437,16 @@
      "label": "baju"
     },
     {
-     "icon": "🧥🌧️",
-     "label": "jas hujan"
-    },
-    {
      "icon": "💧",
      "label": "air"
+    },
+    {
+     "icon": "🧥🌧️",
+     "label": "jas hujan"
     }
    ],
-   "answer": 1,
-   "why": "請大家帶雨衣. A = tambahan dari si murid sendiri, bukan permintaan guru. C tidak disebut."
+   "answer": 2,
+   "why": "請大家帶雨衣. A = tambahan dari si murid sendiri, bukan permintaan guru. B tidak disebut."
   },
   {
    "type": "listen_dialog",
@@ -2565,12 +2565,12 @@
    "question": "如果明天從早上到晚上都在外頭，應該帶什麼？",
    "options": [
     "只帶雨傘",
-    "雨傘和外套",
+    "只帶外套",
     "什麼都不帶",
-    "只帶外套"
+    "雨傘和外套"
    ],
-   "answer": 1,
-   "why": "Siang–malam hujan (傘) dan malam 15 度很冷 (外套). A: kurang, malam dingin. C & D: kebalikan — besok hujan; cerah baru lusa."
+   "answer": 3,
+   "why": "Siang–malam hujan (傘) dan malam 15 度很冷 (外套). A: kurang, malam dingin. C & B: kebalikan — besok hujan; cerah baru lusa."
   }
  ],
  "C12": [
@@ -2708,11 +2708,11 @@
    "options": [
     "在印尼",
     "在大陸",
-    "在臺灣",
-    "在美國"
+    "在美國",
+    "在臺灣"
    ],
-   "answer": 2,
-   "why": "然後我在這裡上了國小 (這裡 = Taiwan). A, B, D tidak disebut."
+   "answer": 3,
+   "why": "然後我在這裡上了國小 (這裡 = Taiwan). A, B, C tidak disebut."
   },
   {
    "type": "read_sent",
@@ -2762,11 +2762,11 @@
    },
    "text": "我在鄉下（　），十八歲才搬到城市。",
    "options": [
-    "長大",
     "大學生",
+    "長大",
     "年紀"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "在鄉下長大 = dibesarkan di desa. 大學生 dan 年紀 kata benda, tidak bisa menjadi predikat di sini."
   },
   {
@@ -2799,12 +2799,12 @@
    "question": "張老師小時候有什麼問題？",
    "options": [
     "他不會說中文",
-    "他聽不懂同學說話",
+    "他在大陸找不到學校",
     "他不想來臺灣",
-    "他在大陸找不到學校"
+    "他聽不懂同學說話"
    ],
-   "answer": 1,
-   "why": "常常聽不懂同學說的話. A: yang tidak bisa adalah 臺灣話, bukan 中文. C & D: tidak disebut."
+   "answer": 3,
+   "why": "常常聽不懂同學說的話. A: yang tidak bisa adalah 臺灣話, bukan 中文. C & B: tidak disebut."
   }
  ]
 }

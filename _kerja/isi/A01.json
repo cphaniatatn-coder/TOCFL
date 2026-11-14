@@ -27,92 +27,174 @@
  ],
  "tasks": [
   {
-   "type": "listen_reply",
+   "type": "listen_dialog",
    "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "您貴姓？",
-   "options": [
-    "我姓王。",
-    "我叫名字。",
-    "謝謝。"
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "小姐，你叫什麼名字？"
+    },
+    {
+     "sp": "女",
+     "zh": "我叫張安妮。"
+    }
    ],
-   "answer": 0,
-   "why": "貴姓 menanyakan MARGA, jadi dijawab 我姓…。 B tidak bermakna (名字 bukan nama orang). C tidak menjawab pertanyaan."
+   "question": "小姐叫什麼名字？",
+   "options": [
+    {
+     "icon": "👨🪪",
+     "label": "seorang bapak berpapan nama 張安妮",
+     "img": "A01-L4a"
+    },
+    {
+     "icon": "👩🪪",
+     "label": "seorang nona berpapan nama 張安安",
+     "img": "A01-L4b"
+    },
+    {
+     "icon": "👩🪪",
+     "label": "seorang nona berpapan nama 張安妮",
+     "img": "A01-L4c"
+    }
+   ],
+   "answer": 2,
+   "why": "Yang menjawab perempuan: 我叫張安妮。 A: namanya benar, tetapi orangnya laki-laki (yang ditanya 小姐). B: perempuan, tetapi namanya 張安安, bukan 張安妮."
   },
   {
-   "type": "listen_pic",
-   "part": "聽力 Part 1 · Deskripsi gambar",
-   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
-   "picture": {
-    "icon": "🌙",
-    "label": "malam hari, mau pulang",
-    "img": "A01-1"
-   },
-   "question": "李小姐，你好！",
-   "options": [
-    "早安！",
-    "晚安！",
-    "謝謝！"
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "先生，您貴姓？"
+    },
+    {
+     "sp": "男",
+     "zh": "我姓林。"
+    }
    ],
-   "answer": 1,
-   "why": "Gambar malam hari → 晚安. 早安 dipakai pagi hari; 謝謝 = terima kasih, tidak cocok dengan gambar."
+   "question": "先生姓什麼？",
+   "options": [
+    {
+     "icon": "👨🪪",
+     "label": "seorang bapak berpapan nama 林",
+     "img": "A01-L5a"
+    },
+    {
+     "icon": "👩🪪",
+     "label": "seorang nona berpapan nama 林",
+     "img": "A01-L5b"
+    },
+    {
+     "icon": "👨🪪",
+     "label": "seorang bapak berpapan nama 李",
+     "img": "A01-L5c"
+    }
+   ],
+   "answer": 0,
+   "why": "Laki-laki menjawab 我姓林。 B: marganya 林, tetapi orangnya perempuan. C: 李 (lǐ) bunyinya mirip 林 (lín)."
   },
   {
    "type": "listen_dialog",
    "part": "聽力 Part 3 · Dialog beberapa putaran",
-   "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
    "lines": [
     {
      "sp": "男",
-     "zh": "你好！我叫王大文。你叫什麼名字？"
+     "zh": "您好！我姓王，叫王大文。您貴姓？"
     },
     {
      "sp": "女",
-     "zh": "我姓林，我叫林美美。"
+     "zh": "我姓李。"
+    },
+    {
+     "sp": "男",
+     "zh": "李小姐，你叫什麼名字？"
+    },
+    {
+     "sp": "女",
+     "zh": "我叫李安妮。"
     }
    ],
-   "question": "林小姐叫什麼名字？",
+   "question": "小姐叫什麼名字？",
    "options": [
-    "王大文",
-    "林美美",
-    "李美美"
+    {
+     "icon": "🪪",
+     "label": "kartu nama 王安妮",
+     "img": "A01-L6a"
+    },
+    {
+     "icon": "🪪",
+     "label": "kartu nama 李安妮",
+     "img": "A01-L6b"
+    },
+    {
+     "icon": "🪪",
+     "label": "kartu nama 李大文",
+     "img": "A01-L6c"
+    }
    ],
    "answer": 1,
-   "why": "Perempuan itu berkata 我姓林，我叫林美美。 C mirip bunyinya (美美) tapi marganya salah."
+   "why": "Perempuan itu bermarga 李 dan berkata 我叫李安妮。 A: 王 adalah marga si laki-laki. C: 大文 adalah nama kecil si laki-laki. Keduanya terdengar di dialog, tetapi bukan nama si perempuan."
   },
   {
-   "type": "read_pick",
-   "part": "閱讀 Part 2 · Gambar → kalimat",
-   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
-   "picture": {
-    "icon": "🌅🙋",
-    "label": "pagi hari, dua orang bertemu"
-   },
-   "options": [
-    "晚安！",
-    "早安！",
-    "再見！"
+   "type": "listen_dialog",
+   "part": "聽力 Part 4 · Dialog + makna tersirat",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "早安！您貴姓？"
+    },
+    {
+     "sp": "女",
+     "zh": "我姓張，叫張美美。先生，您貴姓？"
+    },
+    {
+     "sp": "男",
+     "zh": "我姓陳，名字叫志明。"
+    },
+    {
+     "sp": "女",
+     "zh": "陳先生，您好！"
+    }
    ],
-   "answer": 1,
-   "why": "Pagi hari dan bertemu → 早安。 晚安 untuk malam; 再見 untuk berpisah."
+   "question": "先生叫什麼名字？",
+   "options": [
+    "張志明",
+    "陳美美",
+    "張美美",
+    "陳志明"
+   ],
+   "answer": 3,
+   "why": "Laki-laki itu menyebut marga 陳 dan nama kecil 志明 secara terpisah; digabung menjadi 陳志明 (nama lengkap itu tidak diucapkan utuh). A: 張 adalah marga si perempuan. B: marga si laki-laki + nama kecil si perempuan. C: nama si perempuan."
   },
   {
-   "type": "cloze",
-   "part": "閱讀 Part 4 · Melengkapi paragraf",
-   "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-   "text": "早安！我（1）王，我（2）王大文。你叫（3）名字？",
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "王小姐，晚安！再見！",
    "options": [
-    "姓",
-    "叫",
-    "什麼",
-    "謝謝"
+    {
+     "icon": "🌙👩👋",
+     "label": "malam; seorang nona melambai berpisah",
+     "img": "A01-L8a"
+    },
+    {
+     "icon": "🌅👩👋",
+     "label": "pagi; seorang nona melambai berpisah",
+     "img": "A01-L8b"
+    },
+    {
+     "icon": "🌙👨👋",
+     "label": "malam; seorang bapak melambai berpisah",
+     "img": "A01-L8c"
+    }
    ],
-   "answers": [
-    0,
-    1,
-    2
-   ],
-   "why": "我姓 + marga；我叫 + nama lengkap；叫什麼名字 = siapa namamu. 謝謝 tidak cocok di titik mana pun (opsi berlebih, pola TOCFL)."
+   "answer": 0,
+   "why": "晚安 = malam, 小姐 = perempuan, 再見 = berpisah → A. B: perempuan dan berpisah, tetapi pagi hari. C: malam, tetapi laki-laki (先生)."
   }
  ],
  "grammar": [

@@ -43,10 +43,10 @@
    "audio": "你住在哪個市？",
    "options": [
     "我是市。",
-    "我住在五號。",
-    "我住在臺北市。"
+    "我住在臺北市。",
+    "我住在五號。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "市 = kota → sebut nama kota."
   },
   {
@@ -56,19 +56,19 @@
    "text": "所有的學生都是女生。",
    "options": [
     {
-     "icon": "👧👧👧",
-     "label": "semuanya perempuan"
+     "icon": "👦👧👦",
+     "label": "campuran"
     },
     {
      "icon": "👦👦👦",
      "label": "semuanya laki-laki"
     },
     {
-     "icon": "👦👧👦",
-     "label": "campuran"
+     "icon": "👧👧👧",
+     "label": "semuanya perempuan"
     }
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "所有的…都… = semua …."
   },
   {
@@ -128,13 +128,13 @@
    ],
    "question": "這位小姐住在哪裡？",
    "options": [
-    "臺北市中山路一百號",
+    "臺北市中山路一千號",
     "臺北市中山路十號",
     "臺中市中山路一百號",
-    "臺北市中山路一千號"
+    "臺北市中山路一百號"
    ],
-   "answer": 0,
-   "why": "臺北市中山路一百號. B & D: angka yang mirip bunyinya. C: 臺中 ≠ 臺北."
+   "answer": 3,
+   "why": "臺北市中山路一百號. B & A: angka yang mirip bunyinya. C: 臺中 ≠ 臺北."
   }
  ],
  "B14": [
@@ -266,13 +266,13 @@
    ],
    "question": "這位先生的班上有多少男生？",
    "options": [
-    "十幾個",
     "二十幾個",
+    "十幾個",
     "一個",
     "沒有男生"
    ],
-   "answer": 0,
-   "why": "二十幾個 × 一半 ≈ 十幾個. B = jumlah seluruh kelas. C & D tidak berdasar."
+   "answer": 1,
+   "why": "二十幾個 × 一半 ≈ 十幾個. A = jumlah seluruh kelas. C & D tidak berdasar."
   }
  ],
  "B15": [
@@ -288,10 +288,10 @@
    "question": "她什麼語言說得很好？",
    "options": [
     "她德文說得很好。",
-    "她日文說得很好。",
-    "她法文說得很好。"
+    "她法文說得很好。",
+    "她日文說得很好。"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "こんにちは adalah bahasa Jepang → 日文. V得很好 = … dengan baik."
   },
   {
@@ -356,11 +356,11 @@
     "label": "kamus"
    },
    "options": [
-    "這是一本字典。",
+    "這是一本故事書。",
     "這是一張紙。",
-    "這是一本故事書。"
+    "這是一本字典。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "字典 = kamus."
   },
   {
@@ -373,11 +373,11 @@
    },
    "text": "他的字寫得很（　）。",
    "options": [
-    "語言",
     "清楚",
+    "語言",
     "練習"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "寫得很清楚 = ditulis dengan jelas."
   },
   {
@@ -405,12 +405,12 @@
    "question": "這位小姐的日文怎麼樣？",
    "options": [
     "說得很好",
-    "會一點，說得不太清楚",
+    "每天都練習",
     "一點都不會",
-    "每天都練習"
+    "會一點，說得不太清楚"
    ],
-   "answer": 1,
-   "why": "會一點，可是說得不太清楚. A = tentang bahasa Mandarinnya. D = cara ia belajar Mandarin. C: kebalikan."
+   "answer": 3,
+   "why": "會一點，可是說得不太清楚. A = tentang bahasa Mandarinnya. B = cara ia belajar Mandarin. C: kebalikan."
   }
  ],
  "B16": [
@@ -425,11 +425,11 @@
    },
    "question": "明天考試，你要做什麼？",
    "options": [
-    "我要睡覺。",
     "我要準備考試。",
+    "我要睡覺。",
     "我要去玩。"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "準備 = mempersiapkan. 要 + V = harus/perlu …"
   },
   {
@@ -456,11 +456,11 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "這個字怎麼寫？你記得嗎？",
    "options": [
-    "我不記得，我們問老師吧。",
+    "我記得很怎麼。",
     "我寫字很記得。",
-    "我記得很怎麼。"
+    "我不記得，我們問老師吧。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "記得 = ingat."
   },
   {
@@ -512,10 +512,10 @@
    "text": "你要（　），每天練習。",
    "options": [
     "忘",
-    "簡單",
-    "努力"
+    "努力",
+    "簡單"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "要 + 努力 = harus berusaha keras."
   },
   {
@@ -631,11 +631,11 @@
     "label": "toko buku"
    },
    "options": [
-    "我去書店買書。",
+    "我去圖書館念書。",
     "我去餐廳吃飯。",
-    "我去圖書館念書。"
+    "我去書店買書。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Toko buku = 書店 (membeli), perpustakaan = 圖書館."
   },
   {
@@ -701,10 +701,10 @@
    "question": "明天會下雨嗎？",
    "options": [
     "會，下大雨。",
-    "不會下雨，可能會下雪。",
-    "不會，天氣很好。"
+    "不會，天氣很好。",
+    "不會下雨，可能會下雪。"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Gambar salju, bukan hujan → 可能會下雪."
   },
   {
@@ -769,11 +769,11 @@
     "label": "musim panas"
    },
    "options": [
-    "春天下雪。",
     "夏天很熱。",
+    "春天下雪。",
     "冬天很冷。"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "夏天 = musim panas."
   },
   {
@@ -786,11 +786,11 @@
    },
    "text": "天氣（　）冷了。",
    "options": [
-    "變",
+    "會",
     "如果",
-    "會"
+    "變"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "變 + Vs + 了 = menjadi …."
   },
   {
@@ -818,12 +818,12 @@
    "question": "如果明天下雪，他們要做什麼？",
    "options": [
     "在家看電視",
-    "去山上看雪",
+    "都在家裡",
     "去買衣服",
-    "都在家裡"
+    "去山上看雪"
    ],
-   "answer": 1,
-   "why": "要是下雪，我們去山上看雪 — disetujui (好啊). A: hanya sumber ramalan. C: hanya pesan pakai baju tebal. D: kebalikan."
+   "answer": 3,
+   "why": "要是下雪，我們去山上看雪 — disetujui (好啊). A: hanya sumber ramalan. C: hanya pesan pakai baju tebal. B: kebalikan."
   }
  ],
  "B19": [
@@ -838,12 +838,12 @@
    },
    "question": "臺北跟高雄，哪裡比較冷？",
    "options": [
-    "高雄比臺北冷。",
     "臺北比高雄冷。",
+    "高雄比臺北冷。",
     "一樣冷。"
    ],
-   "answer": 1,
-   "why": "Taipei 12°, Kaohsiung 28° → 臺北比高雄冷. A: terbalik. C: suhunya jelas berbeda."
+   "answer": 0,
+   "why": "Taipei 12°, Kaohsiung 28° → 臺北比高雄冷. B: terbalik. C: suhunya jelas berbeda."
   },
   {
    "type": "listen_pic",
@@ -870,11 +870,11 @@
    "audio": "臺中跟臺北一樣冷嗎？",
    "options": [
     "臺北很臺中。",
-    "不一樣，臺中比較熱。",
-    "臺中跟一樣。"
+    "臺中跟一樣。",
+    "不一樣，臺中比較熱。"
    ],
-   "answer": 1,
-   "why": "一樣…嗎 → jawab 一樣／不一樣 + perbandingan: 不一樣，臺中比較熱。 A: tidak gramatikal. C: setelah 跟 harus ada pembandingnya (臺中跟臺北一樣)."
+   "answer": 2,
+   "why": "一樣…嗎 → jawab 一樣／不一樣 + perbandingan: 不一樣，臺中比較熱。 A: tidak gramatikal. B: setelah 跟 harus ada pembandingnya (臺中跟臺北一樣)."
   },
   {
    "type": "read_sent",
@@ -924,12 +924,12 @@
    },
    "text": "臺灣很小，（　）很大。",
    "options": [
-    "世界",
+    "北部",
     "聲音",
-    "北部"
+    "世界"
    ],
-   "answer": 0,
-   "why": "Peta dunia → 世界. B: 聲音 = suara. C: 北部 = bagian utara."
+   "answer": 2,
+   "why": "Peta dunia → 世界. B: 聲音 = suara. A: 北部 = bagian utara."
   },
   {
    "type": "listen_dialog",
@@ -995,11 +995,11 @@
    "question": "你想試什麼？",
    "options": [
     "我想試這件外套。",
-    "我想試這個帽子。",
-    "我想試這件大衣。"
+    "我想試這件大衣。",
+    "我想試這個帽子。"
    ],
-   "answer": 2,
-   "why": "Mantel panjang (sampai lutut) → 大衣. A: 外套 = jaket pendek. B: 帽子 = topi."
+   "answer": 1,
+   "why": "Mantel panjang (sampai lutut) → 大衣. A: 外套 = jaket pendek. C: 帽子 = topi."
   },
   {
    "type": "listen_reply",
@@ -1025,16 +1025,16 @@
      "label": "memakai jaket"
     },
     {
-     "icon": "🧥👋",
-     "label": "melepas jaket"
-    },
-    {
      "icon": "🧢",
      "label": "memakai topi"
+    },
+    {
+     "icon": "🧥👋",
+     "label": "melepas jaket"
     }
    ],
-   "answer": 1,
-   "why": "脫 = melepas. A: memakai = 穿, kebalikan 脫. C: memakai topi = 戴帽子."
+   "answer": 2,
+   "why": "脫 = melepas. A: memakai = 穿, kebalikan 脫. B: memakai topi = 戴帽子."
   },
   {
    "type": "read_pick",
@@ -1093,12 +1093,12 @@
    ],
    "question": "第二件外套有什麼問題？",
    "options": [
-    "太大",
     "太貴",
+    "太大",
     "太小"
    ],
-   "answer": 1,
-   "why": "這件不大，可是太貴了. A = masalah jaket pertama. C tidak disebut."
+   "answer": 0,
+   "why": "這件不大，可是太貴了. B = masalah jaket pertama. C tidak disebut."
   }
  ],
  "B21": [
@@ -1131,11 +1131,11 @@
    },
    "question": "這個書包重不重？",
    "options": [
-    "很輕。",
+    "很大。",
     "很重。",
-    "很大。"
+    "很輕。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "輕 = ringan. 重 = berat."
   },
   {
@@ -1144,11 +1144,11 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "你喜歡什麼顏色？",
    "options": [
-    "我喜歡綠色。",
     "很綠。",
+    "我喜歡綠色。",
     "我喜歡顏色。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "什麼顏色 → sebut warnanya."
   },
   {
@@ -1182,11 +1182,11 @@
     "label": "pohon hijau"
    },
    "options": [
-    "樹是綠色的。",
+    "樹是藍色的。",
     "樹是黃色的。",
-    "樹是藍色的。"
+    "樹是綠色的。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "綠 = hijau."
   },
   {
@@ -1282,11 +1282,11 @@
    "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
    "audio": "你要袋子嗎？",
    "options": [
-    "我要袋。",
     "不要，謝謝。",
+    "我要袋。",
     "袋子很多買。"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "不要，謝謝 = tidak, terima kasih (menolak dengan sopan)."
   },
   {
@@ -1338,10 +1338,10 @@
    "text": "我買一（　）蛋。",
    "options": [
     "罐",
-    "瓶",
-    "盒"
+    "盒",
+    "瓶"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "盒 = kotak."
   },
   {
@@ -1506,12 +1506,12 @@
    "question": "這位先生會怎麼付錢？",
    "options": [
     "用錢包裡的錢",
-    "用信用卡",
+    "只付五百塊",
     "不買了",
-    "只付五百塊"
+    "用信用卡"
    ],
-   "answer": 1,
-   "why": "Uang tunai hanya 500 → 用信用卡 (makna tersirat). A: tidak cukup. D: harganya 2000. C tidak berdasar."
+   "answer": 3,
+   "why": "Uang tunai hanya 500 → 用信用卡 (makna tersirat). A: tidak cukup. B: harganya 2000. C tidak berdasar."
   }
  ],
  "B24": [
@@ -1558,10 +1558,10 @@
    "audio": "你喜歡吃辣的嗎？",
    "options": [
     "我很辣。",
-    "不太喜歡，我怕辣。",
-    "辣是味道的。"
+    "辣是味道的。",
+    "不太喜歡，我怕辣。"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Ditanya suka/tidak → 喜歡 / 不太喜歡."
   },
   {
@@ -1596,10 +1596,10 @@
    },
    "options": [
     "這個很辣。",
-    "這個很甜。",
-    "這個很酸。"
+    "這個很酸。",
+    "這個很甜。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "酸 = asam."
   },
   {
