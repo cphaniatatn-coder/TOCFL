@@ -31,127 +31,191 @@
  ],
  "tasks": [
   {
-   "type": "listen_pic",
-   "part": "聽力 Part 1 · Deskripsi gambar",
-   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
-   "picture": {
-    "icon": "🏀",
-    "label": "Pak Wang bermain basket",
-    "img": "B01-1"
-   },
-   "question": "王先生會打什麼球？",
-   "options": [
-    "他會踢足球。",
-    "他會打籃球。",
-    "他會打網球。"
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "你會打什麼球？"
+    },
+    {
+     "sp": "男",
+     "zh": "我會打網球。"
+    }
    ],
-   "answer": 1,
-   "why": "籃球 = bola basket. 足球 = sepak bola; 網球 = tenis — pengecoh dari kategori olahraga yang sama."
+   "question": "這位先生會打什麼球？",
+   "options": [
+    {
+     "icon": "🖼️",
+     "label": "seorang nona bermain tenis",
+     "img": "B01-L4a"
+    },
+    {
+     "icon": "🖼️",
+     "label": "seorang bapak bermain basket",
+     "img": "B01-L4b"
+    },
+    {
+     "icon": "🖼️",
+     "label": "seorang bapak bermain tenis",
+     "img": "B01-L4c"
+    }
+   ],
+   "answer": 2,
+   "why": "我會打網球 → bapak bermain tenis. A: tenis, tetapi perempuan (yang bertanya). B: olahraga lain."
   },
   {
-   "type": "listen_reply",
+   "type": "listen_dialog",
    "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-   "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你會游泳嗎？",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "你每天早上做什麼運動？"
+    },
+    {
+     "sp": "女",
+     "zh": "我每天早上去游泳。"
+    }
+   ],
+   "question": "這位小姐每天早上做什麼運動？",
    "options": [
-    "會，我常常游泳。",
-    "我喜歡喝水。",
-    "游泳池在學校。"
+    {
+     "icon": "🖼️",
+     "label": "seorang nona berenang",
+     "img": "B01-L5a"
+    },
+    {
+     "icon": "🖼️",
+     "label": "seorang nona berlari",
+     "img": "B01-L5b"
+    },
+    {
+     "icon": "🖼️",
+     "label": "seorang nona bermain sepak bola",
+     "img": "B01-L5c"
+    }
    ],
    "answer": 0,
-   "why": "Pertanyaan 會…嗎 dijawab 會／不會. B masih satu tema (air) tapi tidak menjawab. C menyebut 游泳池 tapi menjawab 'di mana', bukan 'bisa atau tidak'."
+   "why": "去游泳 → berenang. B dan C: olahraga lain."
   },
   {
    "type": "listen_dialog",
    "part": "聽力 Part 3 · Dialog beberapa putaran",
-   "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
+   "instr": "Dengarkan dialognya, lalu pilih gambar yang menjawab pertanyaan.",
    "lines": [
     {
      "sp": "男",
-     "zh": "你明天能跟我去打網球嗎？"
+     "zh": "星期六我們去踢足球吧！"
     },
     {
      "sp": "女",
-     "zh": "明天不能，我的手很痛。"
+     "zh": "我不會踢足球。打籃球呢？"
     },
     {
      "sp": "男",
-     "zh": "那星期天呢？"
+     "zh": "我的手很痛，不能打籃球。我們去游泳吧。"
     },
     {
      "sp": "女",
-     "zh": "星期天可以。"
+     "zh": "好！"
     }
    ],
-   "question": "這位小姐什麼時候能去打網球？",
+   "question": "他們星期六做什麼？",
    "options": [
-    "星期天",
-    "明天",
-    "今天"
+    {
+     "icon": "🖼️",
+     "label": "bermain sepak bola",
+     "img": "B01-L6a"
+    },
+    {
+     "icon": "🖼️",
+     "label": "berenang",
+     "img": "B01-L6b"
+    },
+    {
+     "icon": "🖼️",
+     "label": "bermain basket",
+     "img": "B01-L6c"
+    }
    ],
-   "answer": 0,
-   "why": "Besok tangannya sakit (不能); hari Minggu 可以. 明天 adalah jebakan karena disebut pertama kali."
+   "answer": 1,
+   "why": "Si nona tidak bisa sepak bola, tangan si laki-laki sakit untuk basket → akhirnya 游泳. A dan C: disebut, tetapi ditolak."
   },
   {
    "type": "listen_dialog",
    "part": "聽力 Part 4 · Dialog + makna tersirat",
-   "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
+   "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
    "lines": [
     {
+     "sp": "女",
+     "zh": "大文，下午我們去游泳，好嗎？"
+    },
+    {
      "sp": "男",
-     "zh": "你會踢足球嗎？星期六我們一起去踢吧！"
+     "zh": "我很想去，可是我的腳很痛。"
     },
     {
      "sp": "女",
-     "zh": "我會踢，可是我的腳不舒服，這個星期不能踢。"
+     "zh": "那我們星期天去吧。"
+    },
+    {
+     "sp": "男",
+     "zh": "好，星期天應該可以。"
     }
    ],
-   "question": "這位小姐的意思是什麼？",
+   "question": "這位先生的意思是什麼？",
    "options": [
-    "她不會踢足球。",
-    "她喜歡看足球。",
-    "她的腳很舒服。",
-    "她這個星期不踢足球。"
-   ],
-   "answer": 3,
-   "why": "Ia BISA (會) main, tapi minggu ini TIDAK BISA (不能) karena kakinya. A = salah membaca 會/能 (jebakan utama). C membalik makna. B tidak disebut dalam dialog."
-  },
-  {
-   "type": "cloze",
-   "part": "閱讀 Part 4 · Melengkapi paragraf",
-   "instr": "Pilih kata yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-   "text": "我叫王大文，我很喜歡運動。我（1）游泳，也會打籃球。每天早上，我去學校的（2）游泳。星期六，我常常跟朋友（3）足球。可是這個星期我的腳很痛，（4）踢。我想，星期六應該（5）去。",
-   "options": [
-    "會",
-    "游泳池",
-    "踢",
-    "不能",
-    "能",
-    "籃球"
-   ],
-   "answers": [
-    0,
-    1,
-    2,
-    3,
-    4
-   ],
-   "why": "(1) kemampuan hasil belajar → 會. (2) tempat berenang → 游泳池. (3) 踢足球. (4) kondisi kaki sakit → 不能. (5) perkiraan kondisi pulih → 能. 籃球 tidak cocok di titik mana pun."
-  },
-  {
-   "type": "read_mc",
-   "part": "閱讀 Part 5 · Pemahaman bacaan",
-   "instr": "Baca teksnya, lalu pilih jawaban yang benar.",
-   "text": "李小姐會打網球，也會游泳，可是她不會踢足球。她每天早上跑步，星期六去游泳。",
-   "question": "哪一個是對的？",
-   "options": [
-    "李小姐會踢足球。",
-    "李小姐星期六去游泳。",
-    "李小姐每天游泳。",
-    "李小姐不會打網球。"
+    "他不會游泳。",
+    "他今天不能游泳。",
+    "他不想游泳。",
+    "他星期天不能去。"
    ],
    "answer": 1,
-   "why": "Teks: 星期六去游泳. A dan D membalik makna; C mencampur detail (setiap hari itu 跑步, bukan 游泳)."
+   "why": "Ia mau (很想去) dan sebenarnya bisa berenang, tetapi kakinya sakit → hari ini tidak dapat berenang (能, bukan 會). A: 不會 = tidak bisa karena belum belajar, tidak sesuai. C: kebalikannya. D: kebalikannya."
+  },
+  {
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "王先生會打棒球，也會踢足球。",
+   "options": [
+    {
+     "icon": "🖼️",
+     "label": "seorang bapak dengan pemukul bisbol dan bola sepak",
+     "img": "B01-L8a"
+    },
+    {
+     "icon": "🖼️",
+     "label": "seorang bapak dengan pemukul bisbol dan bola basket",
+     "img": "B01-L8b"
+    },
+    {
+     "icon": "🖼️",
+     "label": "seorang nona dengan pemukul bisbol dan bola sepak",
+     "img": "B01-L8c"
+    }
+   ],
+   "answer": 0,
+   "why": "棒球 + 足球, laki-laki (先生) → A. B: basket, bukan sepak bola. C: perempuan."
+  },
+  {
+   "type": "read_pick",
+   "part": "閱讀 Part 2 · Gambar → kalimat",
+   "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
+   "picture": {
+    "icon": "🏃‍♀️🌅",
+    "label": "pagi hari; seorang nona berlari pelan di taman",
+    "img": "B01-L9"
+   },
+   "options": [
+    "她每天晚上慢跑。",
+    "她每天早上慢跑。",
+    "她每天早上游泳。"
+   ],
+   "answer": 1,
+   "why": "Matahari pagi + berlari → 她每天早上慢跑。 A: waktunya salah. C: kegiatannya salah."
   }
  ],
  "grammar": [

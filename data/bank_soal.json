@@ -6338,16 +6338,19 @@
    "question": "這位先生會什麼？",
    "options": [
     {
-     "icon": "🎾",
-     "label": "tenis"
+     "icon": "🖼️",
+     "label": "tenis",
+     "img": "B01-T3a"
     },
     {
-     "icon": "⚽",
-     "label": "sepak bola"
+     "icon": "🖼️",
+     "label": "sepak bola",
+     "img": "B01-T3b"
     },
     {
-     "icon": "🏀",
-     "label": "basket"
+     "icon": "🖼️",
+     "label": "basket",
+     "img": "B01-T3c"
     }
    ],
    "answer": 2,
@@ -6379,16 +6382,19 @@
    "question": "他們明天去做什麼？",
    "options": [
     {
-     "icon": "🏊",
-     "label": "berenang"
+     "icon": "🖼️",
+     "label": "berenang",
+     "img": "B01-T4a"
     },
     {
-     "icon": "🎾",
-     "label": "tenis"
+     "icon": "🖼️",
+     "label": "tenis",
+     "img": "B01-T4b"
     },
     {
-     "icon": "🏃",
-     "label": "lari"
+     "icon": "🖼️",
+     "label": "lari",
+     "img": "B01-T4c"
     }
    ],
    "answer": 0,
@@ -6432,19 +6438,22 @@
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他們在踢足球。",
+   "text": "他們每個星期六踢足球。",
    "options": [
     {
-     "icon": "🏀🧑‍🤝‍🧑",
-     "label": "main basket"
+     "icon": "🖼️",
+     "label": "main basket",
+     "img": "B01-T6a"
     },
     {
-     "icon": "⚽🧑‍🤝‍🧑",
-     "label": "main sepak bola"
+     "icon": "🖼️",
+     "label": "main sepak bola",
+     "img": "B01-T6b"
     },
     {
-     "icon": "⚾",
-     "label": "bisbol"
+     "icon": "🖼️",
+     "label": "bisbol",
+     "img": "B01-T6c"
     }
    ],
    "answer": 1,
@@ -6456,16 +6465,17 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🏊‍♂️",
-    "label": "laki-laki berenang di kolam"
+    "icon": "🏊",
+    "label": "laki-laki berenang di kolam",
+    "img": "B01-T7"
    },
    "options": [
-    "他在游泳池游泳。",
-    "他在打籃球。",
-    "他在公園跑步。"
+    "他很會打籃球。",
+    "他很會跑步。",
+    "他很會游泳。"
    ],
-   "answer": 0,
-   "why": "Kolam renang → 游泳池.",
+   "answer": 2,
+   "why": "Ia berenang dengan cepat di kolam → 他很會游泳。 A dan B: olahraga lain.",
    "id": "B01-07"
   },
   {
@@ -6473,8 +6483,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🧒🏊",
-    "label": "anak kecil sudah bisa berenang (hasil belajar)"
+    "icon": "🏊‍♂️",
+    "label": "anak kecil sudah bisa berenang (hasil belajar)",
+    "img": "B01-T8"
    },
    "text": "我弟弟五歲，他（　）游泳。",
    "options": [
@@ -6490,39 +6501,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我叫小明，我很喜歡運動。我（1）游泳，也會打籃球。每天早上，我去公園（2）。星期六我和同學一起（3）足球。可是今天我的腳很痛，我不（4）去踢球。我想在家看（5）。",
+   "text": "我叫小明，我很喜歡運動。我（1），也會打籃球。每天早上，我（2）。星期六我和同學（3）。可是今天我的腳很痛，（4）。我想（5）。",
    "options": [
-    "網球",
-    "踢",
-    "電視",
-    "能",
-    "跑步",
-    "會"
+    "一起踢足球",
+    "不會去踢球",
+    "下午看電視",
+    "很會游泳",
+    "不能去踢球",
+    "去公園跑步"
    ],
    "answers": [
-    5,
-    4,
-    1,
     3,
+    5,
+    0,
+    4,
     2
    ],
-   "why": "會 = kemampuan; 不能 = tidak bisa karena kaki sakit (kondisi); 踢足球; 看電視. 網球 tidak cocok.",
+   "why": "(1) 很會游泳. (2) 去公園跑步. (3) 一起踢足球. (4) kaki sakit → 不能去踢球. (5) 下午看電視. 不會去踢球 tidak cocok: masalahnya kondisi (能), bukan kemampuan (會).",
    "id": "B01-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "王先生去年不會游泳。他每個星期六都去游泳池學，現在他很會游泳。",
-   "question": "哪個是對的？",
+   "text": "王先生去年不會游泳，他覺得游泳很難。他每個星期六都去學校的游泳池學，現在他很會游泳，每天早上都游三十分鐘。他太太還不會游泳，可是她也想學。",
+   "question": "哪一個是對的？",
    "options": [
-    "王先生每天去游泳池",
-    "王先生不喜歡游泳",
-    "王先生現在會游泳",
-    "王先生去年很會游泳"
+    "王先生去年很會游泳。",
+    "王太太很會游泳。",
+    "王先生現在會游泳。",
+    "王先生覺得游泳很容易。"
    ],
    "answer": 2,
-   "why": "Sekarang 很會游泳. C kebalikan; B salah frekuensi (tiap Sabtu); D tidak disebut.",
+   "why": "Tahun lalu ia belum bisa, lalu belajar tiap Sabtu → sekarang bisa (parafrase 很會游泳). A: kebalikannya. B: istrinya 還不會. D: dulu ia merasa 很難.",
    "id": "B01-10"
   }
  ],
@@ -6538,11 +6549,11 @@
    },
    "question": "週末你要做什麼？",
    "options": [
-    "我要睡覺。",
     "我要去參加活動。",
+    "我要睡覺。",
     "我要看電視。"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "參加活動 = ikut kegiatan/acara. A dan C kegiatan di rumah.",
    "id": "B02-01"
   },
@@ -6582,16 +6593,19 @@
    "question": "這位小姐想做什麼？",
    "options": [
     {
-     "icon": "🎬",
-     "label": "menonton film"
+     "icon": "🖼️",
+     "label": "menonton film",
+     "img": "B02-T3a"
     },
     {
-     "icon": "🏊",
-     "label": "berenang"
+     "icon": "🖼️",
+     "label": "berenang",
+     "img": "B02-T3b"
     },
     {
-     "icon": "🧺",
-     "label": "piknik"
+     "icon": "🖼️",
+     "label": "piknik",
+     "img": "B02-T3c"
     }
    ],
    "answer": 2,
@@ -6623,16 +6637,19 @@
    "question": "這是什麼活動？",
    "options": [
     {
-     "icon": "🎵",
-     "label": "kegiatan musik"
+     "icon": "🖼️",
+     "label": "kegiatan musik",
+     "img": "B02-T4a"
     },
     {
-     "icon": "🧺",
-     "label": "piknik"
+     "icon": "🖼️",
+     "label": "piknik",
+     "img": "B02-T4b"
     },
     {
-     "icon": "⚽",
-     "label": "olahraga"
+     "icon": "🖼️",
+     "label": "olahraga",
+     "img": "B02-T4c"
     }
    ],
    "answer": 0,
@@ -6679,16 +6696,19 @@
    "text": "他給媽媽看相片。",
    "options": [
     {
-     "icon": "📷👩",
-     "label": "memperlihatkan foto ke ibu"
+     "icon": "🖼️",
+     "label": "memperlihatkan foto kepada ibu",
+     "img": "B02-T6a"
     },
     {
-     "icon": "📖👩",
-     "label": "membacakan cerita"
+     "icon": "🖼️",
+     "label": "membacakan cerita",
+     "img": "B02-T6b"
     },
     {
-     "icon": "🎵",
-     "label": "bermain musik"
+     "icon": "🖼️",
+     "label": "bermain musik",
+     "img": "B02-T6c"
     }
    ],
    "answer": 0,
@@ -6700,8 +6720,9 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "📖👨🧒",
-    "label": "ayah membacakan cerita"
+    "icon": "📖",
+    "label": "ayah membacakan cerita",
+    "img": "B02-T7"
    },
    "options": [
     "爸爸給我照相。",
@@ -6717,8 +6738,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🎶",
-    "label": "musik"
+    "icon": "🎵",
+    "label": "musik",
+    "img": "B02-T8"
    },
    "text": "我喜歡聽（　）。",
    "options": [
@@ -6734,23 +6756,23 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "這個週末學校有一個（1），我很想（2）。我們要去公園（3），也要一起聽（4）。我會帶我的手機（5）。",
+   "text": "這個週末學校有一個活動，我很想（1）。我們要去公園（2），也要一起（3）。我會帶我的手機（4）。你（5）？我們一塊去吧！",
    "options": [
-    "照相",
-    "有空",
-    "音樂",
-    "活動",
-    "野餐",
-    "參加"
+    "給大家照相",
+    "要去工作",
+    "週末有空嗎",
+    "去參加",
+    "聽音樂、唱歌",
+    "一塊野餐"
    ],
    "answers": [
     3,
     5,
     4,
-    2,
-    0
+    0,
+    2
    ],
-   "why": "一個活動 / 想參加 / 去公園野餐 / 聽音樂 / 帶手機照相.",
+   "why": "(1) 很想 + 去參加. (2) 去公園 + 一塊野餐. (3) 一起 + 聽音樂、唱歌. (4) 帶手機 + 給大家照相. (5) bertanya → 週末有空嗎. 要去工作 tidak cocok di titik mana pun.",
    "id": "B02-09"
   },
   {
@@ -6826,16 +6848,19 @@
    "question": "一張門票多少錢？",
    "options": [
     {
-     "icon": "🎟️",
-     "label": "NT$300"
+     "icon": "🏷️",
+     "label": "label harga: $300",
+     "img": "B03-T3a"
     },
     {
-     "icon": "🎟️",
-     "label": "NT$30"
+     "icon": "🏷️",
+     "label": "label harga: $30",
+     "img": "B03-T3b"
     },
     {
-     "icon": "🎟️",
-     "label": "NT$3.000"
+     "icon": "🏷️",
+     "label": "label harga: $3,000",
+     "img": "B03-T3c"
     }
    ],
    "answer": 0,
@@ -6867,16 +6892,19 @@
    "question": "第二場比賽幾點？",
    "options": [
     {
-     "icon": "🕗",
-     "label": "jam 20.00"
+     "icon": "🕐",
+     "label": "jam 8:00 malam",
+     "img": "B03-T4a"
     },
     {
-     "icon": "🕖",
-     "label": "jam 19.00"
+     "icon": "🕐",
+     "label": "jam 7:00 malam",
+     "img": "B03-T4b"
     },
     {
-     "icon": "🕑",
-     "label": "jam 14.00"
+     "icon": "🕐",
+     "label": "jam 2:00 siang",
+     "img": "B03-T4c"
     }
    ],
    "answer": 1,
@@ -6923,16 +6951,19 @@
    "text": "他們是這次比賽的第一名。",
    "options": [
     {
-     "icon": "😢",
-     "label": "kalah"
+     "icon": "🖼️",
+     "label": "kalah, sedih",
+     "img": "B03-T6a"
     },
     {
-     "icon": "🏆",
-     "label": "juara pertama"
+     "icon": "🖼️",
+     "label": "juara pertama",
+     "img": "B03-T6b"
     },
     {
-     "icon": "🥈",
-     "label": "juara kedua"
+     "icon": "🖼️",
+     "label": "juara kedua",
+     "img": "B03-T6c"
     }
    ],
    "answer": 1,
@@ -6944,8 +6975,9 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🎟️🎟️🎟️",
-    "label": "tiga tiket"
+    "icon": "🎫",
+    "label": "tiga tiket",
+    "img": "B03-T7"
    },
    "options": [
     "我有三張票。",
@@ -6961,8 +6993,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "📢",
-    "label": "sorakan keras"
+    "icon": "📣",
+    "label": "penonton bersorak keras",
+    "img": "B03-T8"
    },
    "text": "球場裡的加油（　）很大。",
    "options": [
@@ -6978,23 +7011,23 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "昨天我（1）球場去看棒球（2）。這是我（3）一次看棒球。我買一張（4），三百塊。大家都說：「（5）！」",
+   "text": "昨天我（1）看棒球比賽。這是我（2）。我買一張門票，（3）。球場裡大家都說（4）。我們學校是（5），真棒！",
    "options": [
-    "到",
-    "名",
-    "門票",
-    "第",
-    "加油",
-    "比賽"
+    "三百塊",
+    "第一場",
+    "「加油！」",
+    "到球場去",
+    "第一名",
+    "第一次看棒球"
    ],
    "answers": [
-    0,
-    5,
     3,
+    5,
+    0,
     2,
     4
    ],
-   "why": "到…去 / 比賽 / 第一次 / 門票 / 加油. 名 tidak cocok.",
+   "why": "(1) 到球場去 + kegiatan. (2) 第一次看棒球. (3) harga → 三百塊. (4) 都說 + 「加油！」. (5) 第一名, lalu 真棒. 第一場 tidak cocok di titik mana pun.",
    "id": "B03-09"
   },
   {
@@ -7026,11 +7059,11 @@
    },
    "question": "他在做什麼？",
    "options": [
+    "他在打電話。",
     "他在看電視。",
-    "他在上網。",
-    "他在打電話。"
+    "他在上網。"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "打電話 = menelepon.",
    "id": "B04-01"
   },
@@ -7070,16 +7103,19 @@
    "question": "這位小姐在做什麼？",
    "options": [
     {
-     "icon": "📖",
-     "label": "membaca"
+     "icon": "🖼️",
+     "label": "membaca",
+     "img": "B04-T3a"
     },
     {
-     "icon": "📺",
-     "label": "menonton TV"
+     "icon": "🖼️",
+     "label": "menonton TV",
+     "img": "B04-T3b"
     },
     {
-     "icon": "💻",
-     "label": "berinternet"
+     "icon": "🖼️",
+     "label": "berinternet",
+     "img": "B04-T3c"
     }
    ],
    "answer": 1,
@@ -7111,16 +7147,19 @@
    "question": "這位先生今天晚上想做什麼？",
    "options": [
     {
-     "icon": "😴",
-     "label": "tidur"
+     "icon": "🖼️",
+     "label": "tidur",
+     "img": "B04-T4a"
     },
     {
-     "icon": "💼",
-     "label": "bekerja"
+     "icon": "🖼️",
+     "label": "bekerja",
+     "img": "B04-T4b"
     },
     {
-     "icon": "💬",
-     "label": "mengobrol"
+     "icon": "🖼️",
+     "label": "mengobrol",
+     "img": "B04-T4c"
     }
    ],
    "answer": 2,
@@ -7167,16 +7206,19 @@
    "text": "媽媽正在看電視，爸爸正在上網。",
    "options": [
     {
-     "icon": "👩📺👨📺",
-     "label": "keduanya menonton TV"
+     "icon": "🖼️",
+     "label": "ayah dan ibu menonton TV",
+     "img": "B04-T6a"
     },
     {
-     "icon": "👩📺👨💻",
-     "label": "ibu TV, ayah internet"
+     "icon": "🖼️",
+     "label": "ibu menonton TV, ayah di komputer",
+     "img": "B04-T6b"
     },
     {
-     "icon": "👩💻👨📺",
-     "label": "ibu internet, ayah TV"
+     "icon": "🖼️",
+     "label": "ibu di komputer, ayah menonton TV",
+     "img": "B04-T6c"
     }
    ],
    "answer": 1,
@@ -7189,7 +7231,8 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "🌐",
-    "label": "situs web"
+    "label": "situs web sekolah di layar komputer",
+    "img": "B04-T7"
    },
    "options": [
     "這是學校的網站。",
@@ -7206,15 +7249,16 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "⏳",
-    "label": "sebentar"
+    "label": "seseorang meminta menunggu sebentar",
+    "img": "B04-T8"
    },
    "text": "請等（　），他馬上來。",
    "options": [
-    "一會",
     "最近",
-    "網路"
+    "網路",
+    "一會"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "等一會 = tunggu sebentar.",
    "id": "B04-08"
   },
@@ -7222,39 +7266,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "喂，你（1）做什麼（2）？我在（3）。（4）我很忙，功課很多。我們晚上再（5）吧！",
+   "text": "喂，你（1）？我在家上網。（2）我很忙，（3）。我現在要看老師的（4）。我們晚上（5）吧！",
    "options": [
-    "聊天",
+    "再聊天",
+    "電很多",
+    "在做什麼呢",
+    "功課很多",
     "最近",
-    "正在",
-    "上網",
-    "呢",
     "網站"
    ],
    "answers": [
     2,
     4,
     3,
-    1,
+    5,
     0
    ],
-   "why": "正在 + V + 呢 / 在上網 / 最近很忙 / 再聊天.",
+   "why": "(1) 在做什麼呢. (2) 最近 + 我很忙. (3) alasan → 功課很多. (4) 老師的 + 網站. (5) 晚上 + 再聊天. 電很多 tidak cocok di titik mana pun.",
    "id": "B04-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "小明最近每天晚上都上網，他在網路上跟外國朋友聊天，他們都說英文。",
-   "question": "小明最近晚上做什麼？",
+   "text": "小明最近每天晚上都上網，他在網路上跟外國朋友聊天，他們都說英文。小明的英文最近很好。",
+   "question": "小明的英文為什麼最近很好？",
    "options": [
-    "打電話給朋友",
-    "看電視",
-    "跟外國朋友吃飯",
-    "在網路上聊天"
+    "因為他上英文課。",
+    "因為他常常跟外國朋友說英文。",
+    "因為他看英文電視。",
+    "因為他的老師是外國人。"
    ],
-   "answer": 3,
-   "why": "Mengobrol online. C: bertemu langsung tidak disebut.",
+   "answer": 1,
+   "why": "Setiap malam ia mengobrol dalam bahasa Inggris dengan teman asing → bahasa Inggrisnya membaik (kesimpulan sebab-akibat). A, C, D: tidak disebut.",
    "id": "B04-10"
   }
  ],
@@ -7266,7 +7310,7 @@
    "picture": {
     "icon": "🚫🍔",
     "label": "tanda: dilarang makan di ruang tamu",
-    "img": "B05-3"
+    "img": "B05-4"
    },
    "question": "這裡可以吃東西嗎？",
    "options": [
@@ -7285,7 +7329,7 @@
    "picture": {
     "icon": "🙏📦",
     "label": "dia membawa banyak kotak dan minta tolong",
-    "img": "B05-4"
+    "img": "B05-5"
    },
    "question": "她說什麼？",
    "options": [
@@ -7314,16 +7358,19 @@
    "question": "這位先生做什麼？",
    "options": [
     {
-     "icon": "🎁",
-     "label": "memberi hadiah"
+     "icon": "🖼️",
+     "label": "memberi hadiah",
+     "img": "B05-T3a"
     },
     {
-     "icon": "🍽️",
-     "label": "makan"
+     "icon": "🖼️",
+     "label": "makan",
+     "img": "B05-T3b"
     },
     {
-     "icon": "📞",
-     "label": "menelepon"
+     "icon": "🖼️",
+     "label": "menelepon",
+     "img": "B05-T3c"
     }
    ],
    "answer": 0,
@@ -7355,16 +7402,19 @@
    "question": "這位小姐請這位先生喝什麼？",
    "options": [
     {
-     "icon": "☕",
-     "label": "kopi"
+     "icon": "🖼️",
+     "label": "kopi",
+     "img": "B05-T4a"
     },
     {
-     "icon": "🍵",
-     "label": "teh"
+     "icon": "🖼️",
+     "label": "teh",
+     "img": "B05-T4b"
     },
     {
-     "icon": "🍺",
-     "label": "bir"
+     "icon": "🖼️",
+     "label": "bir",
+     "img": "B05-T4c"
     }
    ],
    "answer": 1,
@@ -7408,19 +7458,22 @@
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "我們在飯廳吃飯。",
+   "text": "請到飯廳吃飯。",
    "options": [
     {
-     "icon": "🍽️",
-     "label": "ruang makan"
+     "icon": "🖼️",
+     "label": "ruang makan",
+     "img": "B05-T6a"
     },
     {
-     "icon": "🛋️",
-     "label": "ruang tamu"
+     "icon": "🖼️",
+     "label": "ruang tamu",
+     "img": "B05-T6b"
     },
     {
-     "icon": "🛏️",
-     "label": "kamar"
+     "icon": "🖼️",
+     "label": "kamar",
+     "img": "B05-T6c"
     }
    ],
    "answer": 0,
@@ -7432,8 +7485,9 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🚫👟",
-    "label": "larangan masuk memakai sepatu"
+    "icon": "🚫👞",
+    "label": "tanda: dilarang masuk memakai sepatu",
+    "img": "B05-T7"
    },
    "options": [
     "請坐。",
@@ -7449,8 +7503,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🙇",
-    "label": "meminta tolong dengan sopan"
+    "icon": "🙏",
+    "label": "seseorang meminta tolong dengan sopan",
+    "img": "B05-T8"
    },
    "text": "（　），我可以用你的電話嗎？",
    "options": [
@@ -7466,30 +7521,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "（1）你來我家！這是我們的（2），那是飯廳。（3）喝茶吧！不要（4）。謝謝你（5）我們水果。",
+   "text": "美美：「（1），請進！這是我們的（2），那是飯廳。請坐，（3）。不要客氣，（4）！」大文：「謝謝！這是（5）。」",
    "options": [
-    "客氣",
-    "祝",
-    "送",
-    "歡迎",
+    "多吃一點",
     "客廳",
-    "請"
+    "請不要進來",
+    "歡迎歡迎",
+    "送您的水果",
+    "請喝茶"
    ],
    "answers": [
     3,
-    4,
+    1,
     5,
     0,
-    2
+    4
    ],
-   "why": "歡迎 / 客廳 / 請 / 不要客氣 / 送. 祝 tidak cocok.",
+   "why": "(1) sambutan → 歡迎歡迎. (2) 我們的 + 客廳. (3) 請坐 + 請喝茶. (4) 不要客氣 + 多吃一點. (5) oleh-oleh → 送您的水果. 請不要進來 bertentangan dengan 請進.",
    "id": "B05-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "陳太太說：「歡迎你來！請坐，請喝茶。不要客氣，想吃什麼就吃。」",
+   "text": "今天我們到陳太太家去。陳太太說：「歡迎你們來！請坐，請喝茶。不要客氣，想吃什麼就吃。」我們吃很多，也喝很多茶。陳太太做的菜真好吃。",
    "question": "陳太太是什麼意思？",
    "options": [
     "大家應該走",
@@ -7558,16 +7613,19 @@
    "question": "他是誰？",
    "options": [
     {
-     "icon": "🧑‍⚕️",
-     "label": "dokter"
+     "icon": "🖼️",
+     "label": "dokter",
+     "img": "B06-T3a"
     },
     {
-     "icon": "🧑‍🎓",
-     "label": "teman sekelas"
+     "icon": "🖼️",
+     "label": "teman sekelas",
+     "img": "B06-T3b"
     },
     {
-     "icon": "🧑‍🏫",
-     "label": "guru"
+     "icon": "🖼️",
+     "label": "guru",
+     "img": "B06-T3c"
     }
    ],
    "answer": 1,
@@ -7599,16 +7657,19 @@
    "question": "這位小姐認識哪國的學生？",
    "options": [
     {
-     "icon": "🗾",
-     "label": "Jepang"
+     "icon": "🛂",
+     "label": "paspor JAPAN",
+     "img": "B06-T4a"
     },
     {
-     "icon": "🗽",
-     "label": "Amerika"
+     "icon": "🛂",
+     "label": "paspor USA",
+     "img": "B06-T4b"
     },
     {
-     "icon": "🏝️",
-     "label": "Indonesia"
+     "icon": "🛂",
+     "label": "paspor INDONESIA",
+     "img": "B06-T4c"
     }
    ],
    "answer": 0,
@@ -7655,16 +7716,19 @@
    "text": "大人和小朋友都在公園。",
    "options": [
     {
-     "icon": "🧒",
-     "label": "hanya anak"
+     "icon": "🖼️",
+     "label": "hanya anak-anak",
+     "img": "B06-T6a"
     },
     {
-     "icon": "👨🏢",
-     "label": "orang dewasa di kantor"
+     "icon": "🖼️",
+     "label": "orang dewasa di kantor",
+     "img": "B06-T6b"
     },
     {
-     "icon": "👨👩🧒🧒",
-     "label": "orang dewasa & anak di taman"
+     "icon": "🖼️",
+     "label": "orang dewasa dan anak-anak di taman",
+     "img": "B06-T6c"
     }
    ],
    "answer": 2,
@@ -7677,7 +7741,8 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "🤝",
-    "label": "dua orang berkenalan"
+    "label": "dua orang berkenalan",
+    "img": "B06-T7"
    },
    "options": [
     "明天見！",
@@ -7694,7 +7759,8 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "👴",
-    "label": "lansia"
+    "label": "seorang kakek lanjut usia",
+    "img": "B06-T8"
    },
    "text": "那位（　）今年八十歲。",
    "options": [
@@ -7710,39 +7776,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "今天學校有一個活動，我（1）很多新朋友。他們是（2）國的學生，有日本人，（3）有美國人。大家都很（4）。我很高興跟他們（5）。",
+   "text": "今天學校有一個活動，我（1）。他們是各國的學生，有日本人，（2）。他們都很（3）。大家說：「（4）！」我很高興（5）。",
    "options": [
-    "也",
-    "認識",
-    "各",
-    "別人",
-    "見面",
+    "不認識別人",
+    "也有美國人",
+    "很高興認識你",
+    "跟他們見面",
+    "認識很多新朋友",
     "年輕"
    ],
    "answers": [
+    4,
     1,
-    2,
-    0,
     5,
-    4
+    2,
+    3
    ],
-   "why": "認識 / 各國 / 也 / 年輕 / 見面.",
+   "why": "(1) 認識很多新朋友. (2) 有日本人 + 也有美國人. (3) 很 + 年輕. (4) salam perkenalan → 很高興認識你. (5) 很高興 + 跟他們見面. 不認識別人 bertentangan dengan 認識很多新朋友.",
    "id": "B06-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "公園裡有很多人：大人在聊天，小朋友在玩，老人在看書。",
-   "question": "誰在玩？",
+   "text": "公園裡有很多人：大人們正在聊天，小朋友們在玩球，老人們在看書。我媽媽也在那裡，她在跟朋友說話。",
+   "question": "我媽媽在做什麼？",
    "options": [
-    "老人",
-    "大人",
-    "小朋友",
-    "大家"
+    "看書",
+    "聊天",
+    "玩球",
+    "睡覺"
    ],
-   "answer": 2,
-   "why": "Anak-anak bermain.",
+   "answer": 1,
+   "why": "跟朋友說話 = mengobrol dengan teman → 聊天 (parafrase; ibu adalah orang dewasa). A: kegiatan para lansia. C: kegiatan anak-anak. D: tidak disebut.",
    "id": "B06-10"
   }
  ],
@@ -7777,11 +7843,11 @@
    },
    "question": "這個屋子大不大？",
    "options": [
-    "很大。",
     "很小。",
-    "不大也不小。"
+    "不大也不小。",
+    "很大。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "屋子很大 = rumahnya besar.",
    "id": "B07-02"
   },
@@ -7802,16 +7868,19 @@
    "question": "這位小姐要搬去哪裡？",
    "options": [
     {
-     "icon": "🏖️",
-     "label": "dekat pantai"
+     "icon": "🖼️",
+     "label": "dekat pantai",
+     "img": "B07-T3a"
     },
     {
-     "icon": "🏫",
-     "label": "dekat sekolah"
+     "icon": "🖼️",
+     "label": "dekat sekolah",
+     "img": "B07-T3b"
     },
     {
-     "icon": "🏙️",
-     "label": "pusat kota"
+     "icon": "🖼️",
+     "label": "pusat kota",
+     "img": "B07-T3c"
     }
    ],
    "answer": 1,
@@ -7843,16 +7912,19 @@
    "question": "宿舍一個月多少錢？",
    "options": [
     {
-     "icon": "💵",
-     "label": "NT$10.000"
+     "icon": "🏷️",
+     "label": "label harga: $10,000",
+     "img": "B07-T4a"
     },
     {
-     "icon": "💵",
-     "label": "NT$1.000"
+     "icon": "🏷️",
+     "label": "label harga: $1,000",
+     "img": "B07-T4b"
     },
     {
-     "icon": "💵",
-     "label": "NT$4.000"
+     "icon": "🏷️",
+     "label": "label harga: $4,000",
+     "img": "B07-T4c"
     }
    ],
    "answer": 2,
@@ -7899,16 +7971,19 @@
    "text": "大樓的大門在右邊。",
    "options": [
     {
-     "icon": "🏠",
-     "label": "rumah"
+     "icon": "🖼️",
+     "label": "rumah",
+     "img": "B07-T6a"
     },
     {
-     "icon": "🏢⬅️",
-     "label": "di kiri"
+     "icon": "🖼️",
+     "label": "pintu gerbang di kiri",
+     "img": "B07-T6b"
     },
     {
-     "icon": "🏢➡️",
-     "label": "pintu gerbang di kanan"
+     "icon": "🖼️",
+     "label": "pintu gerbang di kanan",
+     "img": "B07-T6c"
     }
    ],
    "answer": 2,
@@ -7920,8 +7995,9 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "📦🚚",
-    "label": "pindahan"
+    "icon": "📦",
+    "label": "pindahan: dua orang mengangkat kardus",
+    "img": "B07-T7"
    },
    "options": [
     "我們今天去上課。",
@@ -7937,8 +8013,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🏠🔑",
-    "label": "pemilik rumah sewaan"
+    "icon": "🔑",
+    "label": "pemilik rumah sewaan dengan kunci-kunci",
+    "img": "B07-T8"
    },
    "text": "這是（　），他有很多房子。",
    "options": [
@@ -7954,30 +8031,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "下個月我要（1）。我的新家在一個（2）的五樓。我跟我的（3）一起租，一個月的（4）是一萬二。（5）很好，常常送我們水果。",
+   "text": "下個月我要（1）。我的新家在一個（2）。我跟我的（3）一起租，（4）是一萬二。（5）很好，常常送我們水果。",
    "options": [
-    "搬家",
-    "大樓",
-    "大門",
-    "室友",
-    "房東",
-    "房租"
+    "好朋友",
+    "大樓的大門",
+    "房東王先生",
+    "新大樓裡",
+    "從宿舍搬出來",
+    "房租一個月"
    ],
    "answers": [
-    0,
-    1,
+    4,
     3,
+    0,
     5,
-    4
+    2
    ],
-   "why": "搬家 / 大樓 / 室友 / 房租 / 房東.",
+   "why": "(1) 從宿舍搬出來. (2) 一個 + 新大樓裡. (3) 我的 + 好朋友. (4) 房租一個月 + 是一萬二. (5) 房東王先生 + 很好. 大樓的大門 tidak cocok di titik mana pun.",
    "id": "B07-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "租房子：學校附近，三樓，兩個房間，一個月九千塊。想租的人，請打電話給王先生。",
+   "text": "租房子：學校附近的大樓，三樓，有兩個房間，可以住兩個人。房租一個月九千塊。想租的人，請打電話給王先生，他住在大樓的一樓。",
    "question": "王先生可能是誰？",
    "options": [
     "老師",
@@ -8046,16 +8123,19 @@
    "question": "洗手間在哪裡？",
    "options": [
     {
-     "icon": "🚻⬆️",
-     "label": "lantai atas"
+     "icon": "🖼️",
+     "label": "lantai atas",
+     "img": "B08-T3a"
     },
     {
-     "icon": "🛗🚻",
-     "label": "di seberang lift"
+     "icon": "🖼️",
+     "label": "di seberang lift",
+     "img": "B08-T3b"
     },
     {
-     "icon": "🪜🚻",
-     "label": "dekat tangga"
+     "icon": "🖼️",
+     "label": "dekat tangga",
+     "img": "B08-T3c"
     }
    ],
    "answer": 1,
@@ -8087,16 +8167,19 @@
    "question": "這位小姐的家有什麼？",
    "options": [
     {
-     "icon": "🛗",
-     "label": "lift"
+     "icon": "🖼️",
+     "label": "lift",
+     "img": "B08-T4a"
     },
     {
-     "icon": "🪜",
-     "label": "tangga"
+     "icon": "🖼️",
+     "label": "tangga",
+     "img": "B08-T4b"
     },
     {
-     "icon": "🏊",
-     "label": "kolam renang"
+     "icon": "🖼️",
+     "label": "kolam renang",
+     "img": "B08-T4c"
     }
    ],
    "answer": 1,
@@ -8143,16 +8226,19 @@
    "text": "門開著，燈也開著。",
    "options": [
     {
-     "icon": "💡",
-     "label": "hanya lampu menyala"
+     "icon": "🖼️",
+     "label": "hanya lampu menyala",
+     "img": "B08-T6a"
     },
     {
-     "icon": "🚪💡",
-     "label": "pintu terbuka, lampu menyala"
+     "icon": "🖼️",
+     "label": "pintu terbuka, lampu menyala",
+     "img": "B08-T6b"
     },
     {
-     "icon": "🚪",
-     "label": "hanya pintu terbuka"
+     "icon": "🖼️",
+     "label": "hanya pintu terbuka",
+     "img": "B08-T6c"
     }
    ],
    "answer": 1,
@@ -8165,7 +8251,8 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "🏠🏫",
-    "label": "rumah di seberang sekolah"
+    "label": "rumah di seberang sekolah",
+    "img": "B08-T7"
    },
    "options": [
     "我家在學校對面。",
@@ -8182,7 +8269,8 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "💡",
-    "label": "lampu menyala"
+    "label": "lampu menyala",
+    "img": "B08-T8"
    },
    "text": "房間裡的燈開（　）。",
    "options": [
@@ -8198,30 +8286,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我家的（1）在樓上，我常常在那裡看書。樓下有一個大（2），裡面有很多水果。天氣很熱，所以冷氣都開（3）。我的房間在客廳（4）。我們家沒有（5），要走樓梯。",
+   "text": "我家的（1）在樓上，我常常在那裡看書。樓下有一個大（2），裡面有很多水果。天氣很熱，所以（3）。我的房間在（4）。我們家沒有電梯，（5）。",
    "options": [
-    "著",
-    "電梯",
+    "客廳對面",
+    "冷氣都開著",
+    "坐電梯上樓",
     "書房",
     "冰箱",
-    "對面",
-    "旁邊"
+    "要走樓梯"
    ],
    "answers": [
-    2,
     3,
-    0,
     4,
-    1
+    1,
+    0,
+    5
    ],
-   "why": "書房 / 冰箱 / 開著 / 對面 / 沒有電梯. 旁邊 bisa di (4) juga — tapi 對面 hanya cocok di (4); pilih yang tidak terpakai: 旁邊.",
+   "why": "(1) 書房. (2) 冰箱 (berisi buah). (3) panas → 冷氣都開著. (4) 客廳對面. (5) tidak ada lift → 要走樓梯. 坐電梯上樓 bertentangan dengan 沒有電梯.",
    "id": "B08-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "王小姐家在大樓的十樓，可是她每天走樓梯上樓，她說這是運動。",
+   "text": "王小姐家在大樓的十樓。大樓有電梯，電梯很快，也很新。可是王小姐每天都走樓梯上樓，她說：「走樓梯是很好的運動。」她不常去公園跑步。",
    "question": "王小姐為什麼走樓梯？",
    "options": [
     "電梯很慢",
@@ -8290,16 +8378,19 @@
    "question": "這位小姐要做什麼？",
    "options": [
     {
-     "icon": "🍽️",
-     "label": "mencuci piring"
+     "icon": "🖼️",
+     "label": "mencuci piring",
+     "img": "B09-T3a"
     },
     {
-     "icon": "🧺",
-     "label": "mencuci baju"
+     "icon": "🖼️",
+     "label": "mencuci baju",
+     "img": "B09-T3b"
     },
     {
-     "icon": "🧹",
-     "label": "menyapu"
+     "icon": "🖼️",
+     "label": "menyapu",
+     "img": "B09-T3c"
     }
    ],
    "answer": 0,
@@ -8331,16 +8422,19 @@
    "question": "這位先生幫室友做什麼？",
    "options": [
     {
-     "icon": "🧹",
-     "label": "membersihkan kamar"
+     "icon": "🖼️",
+     "label": "membersihkan kamar",
+     "img": "B09-T4a"
     },
     {
-     "icon": "🍳",
-     "label": "memasak"
+     "icon": "🖼️",
+     "label": "memasak",
+     "img": "B09-T4b"
     },
     {
-     "icon": "🧺",
-     "label": "mencuci baju"
+     "icon": "🖼️",
+     "label": "mencuci baju",
+     "img": "B09-T4c"
     }
    ],
    "answer": 2,
@@ -8384,19 +8478,22 @@
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "門關了。",
+   "text": "門關了，窗戶也關了。",
    "options": [
     {
-     "icon": "🪟",
-     "label": "jendela terbuka"
+     "icon": "🖼️",
+     "label": "pintu terbuka",
+     "img": "B09-T6a"
     },
     {
-     "icon": "🚪🔒",
-     "label": "pintu tertutup"
+     "icon": "🖼️",
+     "label": "pintu dan jendela tertutup",
+     "img": "B09-T6b"
     },
     {
-     "icon": "🚪",
-     "label": "pintu terbuka"
+     "icon": "🖼️",
+     "label": "pintu tertutup, jendela terbuka",
+     "img": "B09-T6c"
     }
    ],
    "answer": 1,
@@ -8408,8 +8505,9 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🧺✨",
-    "label": "baju bersih"
+    "icon": "👕✨",
+    "label": "baju bersih",
+    "img": "B09-T7"
    },
    "options": [
     "衣服很乾淨了。",
@@ -8425,8 +8523,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🤝",
-    "label": "berterima kasih atas bantuan"
+    "icon": "🙏",
+    "label": "berterima kasih atas bantuan",
+    "img": "B09-T8"
    },
    "text": "謝謝你的（　）！",
    "options": [
@@ -8442,30 +8541,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "今天我在家（1）衣服，我室友（2）我洗碗。冷氣（3）了，房東來（4）。現在房間很（5），也不熱了。",
+   "text": "今天我在家（1），我室友（2）。可是冷氣（3），房東來（4）。現在房間很乾淨，（5）。",
    "options": [
-    "幫",
-    "拉",
-    "幫忙",
-    "洗",
-    "壞",
-    "乾淨"
+    "幫我們看",
+    "不乾淨了",
+    "洗衣服",
+    "也不熱了",
+    "幫我洗碗",
+    "壞了"
    ],
    "answers": [
-    3,
-    0,
-    4,
     2,
-    5
+    4,
+    5,
+    0,
+    3
    ],
-   "why": "洗衣服 / 幫我洗碗 / 冷氣壞了 / 來幫忙 / 乾淨. 拉 tidak cocok.",
+   "why": "(1) 在家 + 洗衣服. (2) 室友 + 幫我洗碗. (3) 冷氣 + 壞了. (4) 房東來 + 幫我們看. (5) 很乾淨，也不熱了. 不乾淨了 bertentangan dengan 房間很乾淨.",
    "id": "B09-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "媽媽說：「你的房間不乾淨，衣服都放在床上。」小明說：「好，我來洗衣服。」",
+   "text": "媽媽說：「小明，你的房間不乾淨，衣服都放在床上，書也放在椅子上。你的同學明天要來我們家。」小明說：「好，我現在就洗衣服。」",
    "question": "媽媽是什麼意思？",
    "options": [
     "小明的衣服很漂亮",
@@ -8534,16 +8633,19 @@
    "question": "這位先生每天看電視看多久？",
    "options": [
     {
-     "icon": "📺",
-     "label": "4 jam"
+     "icon": "⏱️",
+     "label": "4 jam",
+     "img": "B10-T3a"
     },
     {
-     "icon": "📺",
-     "label": "1 jam"
+     "icon": "⏱️",
+     "label": "1 jam",
+     "img": "B10-T3b"
     },
     {
-     "icon": "📺",
-     "label": "10 menit"
+     "icon": "⏱️",
+     "label": "10 menit",
+     "img": "B10-T3c"
     }
    ],
    "answer": 1,
@@ -8575,16 +8677,19 @@
    "question": "這位小姐週日在哪裡？",
    "options": [
     {
-     "icon": "🌳",
-     "label": "di taman"
+     "icon": "🖼️",
+     "label": "di taman",
+     "img": "B10-T4a"
     },
     {
-     "icon": "🏫",
-     "label": "di sekolah"
+     "icon": "🖼️",
+     "label": "di sekolah",
+     "img": "B10-T4b"
     },
     {
-     "icon": "🏠",
-     "label": "di rumah"
+     "icon": "🖼️",
+     "label": "di rumah",
+     "img": "B10-T4c"
     }
    ],
    "answer": 2,
@@ -8631,19 +8736,22 @@
    "text": "他一直打電話。",
    "options": [
     {
-     "icon": "📺",
-     "label": "menonton TV"
+     "icon": "🖼️",
+     "label": "terus menelepon",
+     "img": "B10-T6b"
     },
     {
-     "icon": "📞🔁",
-     "label": "terus menelepon"
+     "icon": "🖼️",
+     "label": "menonton TV",
+     "img": "B10-T6a"
     },
     {
-     "icon": "😴",
-     "label": "tidur"
+     "icon": "🖼️",
+     "label": "tidur",
+     "img": "B10-T6c"
     }
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "一直 = terus.",
    "id": "B10-06"
   },
@@ -8652,8 +8760,9 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🗓️",
-    "label": "hari terakhir dalam seminggu"
+    "icon": "📅",
+    "label": "kalender seminggu: hari terakhir (Minggu) ditandai",
+    "img": "B10-T7"
    },
    "options": [
     "今天不是週日。",
@@ -8669,8 +8778,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🔁",
-    "label": "selalu"
+    "icon": "🕘",
+    "label": "seorang laki-laki yang selalu masuk kelas jam 9",
+    "img": "B10-T8"
    },
    "text": "他（　）九點上課。",
    "options": [
@@ -8686,39 +8796,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我（1）早上六點起床。起床（2），我跑步跑三十（3），然後（4）。（5）我不跑步，我在家休息。",
+   "text": "我（1）早上六點起床。起床以後，我（2），然後（3）。（4）我不跑步，（5）。",
    "options": [
-    "週日",
-    "洗澡",
+    "在家休息",
+    "洗澡洗十分鐘",
     "平常",
-    "分鐘",
-    "白天",
-    "以後"
+    "跑步跑三十分鐘",
+    "洗澡洗兩天",
+    "週日"
    ],
    "answers": [
     2,
-    5,
     3,
     1,
+    5,
     0
    ],
-   "why": "平常 / 以後 / 分鐘 / 洗澡 / 週日.",
+   "why": "(1) 平常. (2) 跑步跑三十分鐘. (3) 然後 + 洗澡洗十分鐘. (4) 週日. (5) 在家休息. 洗澡洗兩天 tidak masuk akal.",
    "id": "B10-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "小明的習慣：星期一到星期五，他早上七點起床，晚上十一點睡覺。週末他十點起床。",
-   "question": "小明星期六幾點起床？",
+   "text": "小明的習慣：星期一到星期五，他早上七點起床，晚上十一點睡覺，白天上課。週末他十點起床，下午去打球。他說週末是休息的時間。",
+   "question": "星期六早上九點，小明在做什麼？",
    "options": [
-    "十點",
-    "七點",
-    "六點",
-    "十一點"
+    "上課",
+    "睡覺",
+    "打球",
+    "起床"
    ],
-   "answer": 0,
-   "why": "Sabtu = akhir pekan → 十點.",
+   "answer": 1,
+   "why": "Akhir pekan ia bangun jam 10 → jam 9 pagi masih tidur (kesimpulan). A: kuliah hanya hari biasa. C: main bola sore hari. D: ia bangun jam 10.",
    "id": "B10-10"
   }
  ],
@@ -8753,11 +8863,11 @@
    },
    "question": "你想當什麼？",
    "options": [
-    "我想當醫生。",
     "我想當老師。",
+    "我想當醫生。",
     "我想當學生。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "當 = menjadi (profesi). 醫生 = dokter.",
    "id": "B11-02"
   },
@@ -8778,16 +8888,19 @@
    "question": "他們幾點下班？",
    "options": [
     {
-     "icon": "🕘",
-     "label": "9.00"
+     "icon": "🕐",
+     "label": "jam 9:00",
+     "img": "B11-T3a"
     },
     {
-     "icon": "🕕",
-     "label": "18.00"
+     "icon": "🕐",
+     "label": "jam 6:00 sore",
+     "img": "B11-T3b"
     },
     {
-     "icon": "🕔",
-     "label": "17.00"
+     "icon": "🕐",
+     "label": "jam 5:00 sore",
+     "img": "B11-T3c"
     }
    ],
    "answer": 1,
@@ -8820,15 +8933,18 @@
    "options": [
     {
      "icon": "🏢",
-     "label": "lantai 20"
+     "label": "papan lantai: 20F",
+     "img": "B11-T4a"
     },
     {
      "icon": "🏢",
-     "label": "lantai 2"
+     "label": "papan lantai: 2F",
+     "img": "B11-T4b"
     },
     {
      "icon": "🏢",
-     "label": "lantai 12"
+     "label": "papan lantai: 12F",
+     "img": "B11-T4c"
     }
    ],
    "answer": 2,
@@ -8875,16 +8991,19 @@
    "text": "他從早上八點工作到晚上八點。",
    "options": [
     {
-     "icon": "🕘🕕",
-     "label": "09.00–18.00"
+     "icon": "🕘",
+     "label": "jam kerja: 9:00 sampai 6:00",
+     "img": "B11-T6a"
     },
     {
-     "icon": "🕗🕔",
-     "label": "08.00–17.00"
+     "icon": "🕘",
+     "label": "jam kerja: 8:00 sampai 5:00",
+     "img": "B11-T6b"
     },
     {
-     "icon": "🕗🕗",
-     "label": "08.00–20.00"
+     "icon": "🕘",
+     "label": "jam kerja: 8:00 pagi sampai 8:00 malam",
+     "img": "B11-T6c"
     }
    ],
    "answer": 2,
@@ -8896,8 +9015,9 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "📝📈",
-    "label": "rencana kerja"
+    "icon": "📋",
+    "label": "daftar rencana kerja tahun depan",
+    "img": "B11-T7"
    },
    "options": [
     "這是我的電話。",
@@ -8913,8 +9033,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "💪",
-    "label": "kemampuan"
+    "icon": "🏆",
+    "label": "karyawan terbaik dengan piala nomor 1",
+    "img": "B11-T8"
    },
    "text": "他的（　）很好，是公司的第一名。",
    "options": [
@@ -8930,23 +9051,23 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我今年（1）在一個公司上班。我每天（2）九點工作（3）五點。我沒有工作（4），可是我想學。明年我想（5）老師。",
+   "text": "我今年（1）。我每天（2），一個星期上班五天。我（3），可是我想學。王先生給我（4）。明年我想（5）。",
    "options": [
-    "當",
-    "到",
-    "開始",
-    "從",
-    "下班",
-    "經驗"
+    "很多機會",
+    "開始在公司上班",
+    "很有錢",
+    "當老師",
+    "從九點工作到五點",
+    "沒有工作經驗"
    ],
    "answers": [
-    2,
-    3,
     1,
+    4,
     5,
-    0
+    0,
+    3
    ],
-   "why": "開始 / 從…到… / 經驗 / 當.",
+   "why": "(1) 開始在公司上班. (2) 從九點工作到五點. (3) 沒有工作經驗, lalu 可是我想學. (4) 給我 + 很多機會. (5) 想 + 當老師. 很有錢 tidak cocok di titik mana pun.",
    "id": "B11-09"
   },
   {
@@ -8978,11 +9099,11 @@
    },
    "question": "你奶奶有幾隻貓？",
    "options": [
-    "她有三隻狗。",
     "她有三隻貓。",
+    "她有三隻狗。",
     "她有一隻貓。"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "三隻貓 = tiga kucing. A salah hewan; C salah jumlah.",
    "id": "B12-01"
   },
@@ -9022,19 +9143,22 @@
    "question": "這位先生在哪裡看過馬？",
    "options": [
     {
-     "icon": "👴🏡",
-     "label": "di rumah kakek"
+     "icon": "🖼️",
+     "label": "di sekolah",
+     "img": "B12-T3b"
     },
     {
-     "icon": "🏫",
-     "label": "di sekolah"
+     "icon": "🖼️",
+     "label": "di rumah kakek",
+     "img": "B12-T3a"
     },
     {
-     "icon": "🌳",
-     "label": "di taman"
+     "icon": "🖼️",
+     "label": "di taman",
+     "img": "B12-T3c"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "在爺爺家.",
    "id": "B12-03"
   },
@@ -9063,19 +9187,22 @@
    "question": "阿姨旁邊的人是誰？",
    "options": [
     {
-     "icon": "👨",
-     "label": "paman"
+     "icon": "🖼️",
+     "label": "kakek",
+     "img": "B12-T4b"
     },
     {
-     "icon": "👴",
-     "label": "kakek"
+     "icon": "🖼️",
+     "label": "bibi",
+     "img": "B12-T4c"
     },
     {
-     "icon": "👩",
-     "label": "bibi"
+     "icon": "🖼️",
+     "label": "paman",
+     "img": "B12-T4a"
     }
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "伯伯 = paman.",
    "id": "B12-04"
   },
@@ -9119,19 +9246,22 @@
    "text": "他家有一隻狗和兩隻貓。",
    "options": [
     {
-     "icon": "🐕🐈🐈",
-     "label": "satu anjing, dua kucing"
+     "icon": "🖼️",
+     "label": "dua anjing, satu kucing",
+     "img": "B12-T6b"
     },
     {
-     "icon": "🐕🐕🐈",
-     "label": "dua anjing, satu kucing"
+     "icon": "🖼️",
+     "label": "satu anjing, dua kucing",
+     "img": "B12-T6a"
     },
     {
-     "icon": "🐈🐈",
-     "label": "dua kucing"
+     "icon": "🖼️",
+     "label": "dua kucing saja",
+     "img": "B12-T6c"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Hitung dengan teliti.",
    "id": "B12-06"
   },
@@ -9141,7 +9271,8 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "👨‍👩‍👧‍👦",
-    "label": "foto keluarga"
+    "label": "foto keluarga besar",
+    "img": "B12-T7"
    },
    "options": [
     "這是我的公司。",
@@ -9157,16 +9288,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🧒📷",
-    "label": "foto masa kecil"
+    "icon": "🖼️",
+    "label": "foto masa kecil",
+    "img": "B12-T8"
    },
    "text": "這是我（　）的相片。",
    "options": [
+    "小時候",
     "以後",
-    "後來",
-    "小時候"
+    "後來"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "小時候 = waktu kecil.",
    "id": "B12-08"
   },
@@ -9174,39 +9306,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我小時候住在（1）家。她家有一隻（2），很大。我也去（3）叔叔的家，他家有馬。（4）我們搬去臺北。我（5）常常想爺爺奶奶。",
+   "text": "我小時候住在奶奶家。她家有（1）。我也（2）叔叔的家，他家有馬。（3）我們搬去臺北。我（4）常常想爺爺奶奶，（5）。",
    "options": [
-    "奶奶",
-    "後來",
-    "狗",
+    "沒看過馬",
     "現在",
-    "從前",
-    "過"
+    "後來",
+    "也很想那隻狗",
+    "去過",
+    "一隻很大的狗"
    ],
    "answers": [
-    0,
-    2,
     5,
+    4,
+    2,
     1,
     3
    ],
-   "why": "她 → 奶奶 / 狗 / 去過 / 後來 / 現在.",
+   "why": "(1) 一隻很大的狗. (2) 去過. (3) 後來. (4) 現在. (5) 也很想那隻狗. 沒看過馬 bertentangan dengan 去過叔叔的家 yang punya kuda.",
    "id": "B12-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "陳先生的家庭：他爺爺以前是醫生，他爸爸是老師，他叔叔在公司上班。現在陳先生也是老師。",
-   "question": "陳先生家誰以前是醫生？",
+   "text": "陳先生的家庭：他爺爺以前是醫生，後來當老師。他爸爸是老師，他叔叔在公司上班。現在陳先生也是老師。",
+   "question": "陳先生家有幾個人當過老師？",
    "options": [
-    "陳先生",
-    "他爸爸",
-    "他叔叔",
-    "他爺爺"
+    "一個",
+    "兩個",
+    "三個",
+    "四個"
    ],
-   "answer": 3,
-   "why": "爺爺以前是醫生.",
+   "answer": 2,
+   "why": "Kakek (後來當老師), ayah, dan Pak Chen sendiri → 3 orang (harus dihitung dari beberapa kalimat). A dan B: ada yang terlewat. D: paman bekerja di kantor.",
    "id": "B12-10"
   }
  ],
@@ -9227,7 +9359,7 @@
     "零九二一、三四五、六七八。"
    ],
    "answer": 0,
-   "why": "Nomor dibaca per angka; 0 = 零. B menukar 7 dan 8 di akhir; C menukar 1 dan 2 di awal.",
+   "why": "Layar: 0912-345-678 → A. B: 678 jadi 687. C: 0912 jadi 0921.",
    "id": "B13-01"
   },
   {
@@ -9266,20 +9398,23 @@
    "question": "這位先生的家在哪裡？",
    "options": [
     {
-     "icon": "🏙️",
-     "label": "Taichung, No. 5"
+     "icon": "🏠",
+     "label": "papan alamat: 臺中市 5號",
+     "img": "B13-T3a"
     },
     {
-     "icon": "🏙️",
-     "label": "Taipei, No. 15"
+     "icon": "🏠",
+     "label": "papan alamat: 臺北市中山路5號",
+     "img": "B13-T3c"
     },
     {
-     "icon": "🏙️",
-     "label": "Taipei, Jl. Zhongshan No. 5"
+     "icon": "🏠",
+     "label": "papan alamat: 臺北市 15號",
+     "img": "B13-T3b"
     }
    ],
-   "answer": 2,
-   "why": "Kota 臺北市, nomor 五號.",
+   "answer": 1,
+   "why": "臺北市中山路五號 → B. A: kotanya salah. C: nomornya 15.",
    "id": "B13-03"
   },
   {
@@ -9307,16 +9442,19 @@
    "question": "學校裡男生多還是女生多？",
    "options": [
     {
-     "icon": "👦👦👧",
-     "label": "lebih banyak laki-laki"
+     "icon": "🖼️",
+     "label": "lebih banyak laki-laki",
+     "img": "B13-T4a"
     },
     {
-     "icon": "👧👧👦",
-     "label": "lebih banyak perempuan"
+     "icon": "🖼️",
+     "label": "lebih banyak perempuan",
+     "img": "B13-T4b"
     },
     {
-     "icon": "👦👧",
-     "label": "sama banyak"
+     "icon": "🖼️",
+     "label": "sama banyak",
+     "img": "B13-T4c"
     }
    ],
    "answer": 1,
@@ -9364,15 +9502,18 @@
    "options": [
     {
      "icon": "🏷️",
-     "label": "semua barang NT$10"
+     "label": "semua barang berlabel $10",
+     "img": "B13-T6a"
     },
     {
      "icon": "🏷️",
-     "label": "harga berbeda-beda"
+     "label": "label harga berbeda-beda",
+     "img": "B13-T6b"
     },
     {
      "icon": "🏷️",
-     "label": "semua NT$100"
+     "label": "semua barang berlabel $100",
+     "img": "B13-T6c"
     }
    ],
    "answer": 0,
@@ -9385,7 +9526,8 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "📝",
-    "label": "formulir: nama, alamat, telepon"
+    "label": "formulir: 姓名 / 地址 / 電話",
+    "img": "B13-T7"
    },
    "options": [
     "請寫你的學校。",
@@ -9402,7 +9544,8 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "👩",
-    "label": "seorang perempuan"
+    "label": "seorang mahasiswi menunjuk teman perempuannya",
+    "img": "B13-T8"
    },
    "text": "那個（　）是我的同學。",
    "options": [
@@ -9418,39 +9561,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我叫小文，我住在臺北（1）。我家的（2）是中山路十號。我的電話（3）是0987-123-456。我們學校有兩百（4）個學生，（5）的學生都很好。",
+   "text": "我叫小文，我住在（1）。我家的（2）是中山路十號。我的（3）是0987-123-456。我們學校有（4），（5）都很好。",
    "options": [
-    "所有",
-    "樣子",
-    "市",
+    "所有的學生",
+    "電話號碼",
+    "兩百多個學生",
+    "臺北市",
     "地址",
-    "多",
-    "號碼"
+    "十多歲"
    ],
    "answers": [
-    2,
     3,
-    5,
     4,
+    1,
+    2,
     0
    ],
-   "why": "臺北市 / 地址 / 電話號碼 / 兩百多 / 所有的.",
+   "why": "(1) 住在 + 臺北市. (2) 家的 + 地址. (3) 電話號碼. (4) 兩百多個學生. (5) 所有的學生 + 都很好. 十多歲 tidak cocok di titik mana pun.",
    "id": "B13-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "陳老師教中文，他有二十七個學生：男生十二個，女生十五個。所有的學生都是外國人。",
-   "question": "哪個是對的？",
+   "text": "陳老師教中文，他有二十七個學生：男生十二個，女生十五個。所有的學生都是外國人，他們全都住在臺北市。陳老師說，他們的中文都很好。",
+   "question": "陳老師有幾個學生不是男生？",
    "options": [
-    "陳老師教英文",
-    "學生都是臺灣人",
-    "男生有十五個",
-    "陳老師的學生都是外國人"
+    "十二個",
+    "十五個",
+    "二十七個",
+    "三個"
    ],
-   "answer": 3,
-   "why": "所有的學生都是外國人. B tertukar angka; C & A kebalikan.",
+   "answer": 1,
+   "why": "Yang bukan laki-laki = perempuan → 15 (tidak tertulis langsung). A: jumlah laki-laki. C: jumlah seluruh murid. D: selisih 15 − 12.",
    "id": "B13-10"
   }
  ],
@@ -9510,16 +9653,19 @@
    "question": "這位小姐的班有多少學生？",
    "options": [
     {
-     "icon": "🧑‍🎓",
-     "label": "12 murid"
+     "icon": "🏫",
+     "label": "papan kelas: 12 murid",
+     "img": "B14-T3a"
     },
     {
-     "icon": "🧑‍🎓",
-     "label": "200-an murid"
+     "icon": "🏫",
+     "label": "papan kelas: 200-an murid",
+     "img": "B14-T3b"
     },
     {
-     "icon": "🧑‍🎓",
-     "label": "20-an murid"
+     "icon": "🏫",
+     "label": "papan kelas: 20-an murid",
+     "img": "B14-T3c"
     }
    ],
    "answer": 2,
@@ -9551,20 +9697,23 @@
    "question": "這位先生的妹妹上什麼學校？",
    "options": [
     {
-     "icon": "🎒",
-     "label": "SD kelas 3"
+     "icon": "🖼️",
+     "label": "SMA kelas 3",
+     "img": "B14-T4b"
     },
     {
-     "icon": "🏫",
-     "label": "SMA kelas 3"
+     "icon": "🖼️",
+     "label": "SD kelas 3",
+     "img": "B14-T4a"
     },
     {
-     "icon": "🏛️",
-     "label": "universitas"
+     "icon": "🖼️",
+     "label": "universitas",
+     "img": "B14-T4c"
     }
    ],
-   "answer": 0,
-   "why": "小學三年級.",
+   "answer": 1,
+   "why": "Adiknya 小學三年級 → SD kelas 3 → B. A: kelasnya sama, tetapi SMA. C: tidak disebut.",
    "id": "B14-04"
   },
   {
@@ -9607,19 +9756,22 @@
    "text": "小學的學生每天上學。",
    "options": [
     {
-     "icon": "👴",
-     "label": "kakek"
+     "icon": "🖼️",
+     "label": "anak SD berangkat sekolah",
+     "img": "B14-T6c"
     },
     {
-     "icon": "💼",
-     "label": "pegawai kantor"
+     "icon": "🖼️",
+     "label": "seorang kakek",
+     "img": "B14-T6a"
     },
     {
-     "icon": "🎒🏫",
-     "label": "anak SD berangkat sekolah"
+     "icon": "🖼️",
+     "label": "pegawai kantor",
+     "img": "B14-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "小學 = sekolah dasar.",
    "id": "B14-06"
   },
@@ -9628,8 +9780,9 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "📄💯",
-    "label": "rapor bernilai tinggi"
+    "icon": "📄",
+    "label": "rapor bernilai tinggi",
+    "img": "B14-T7"
    },
    "options": [
     "他的成績很好。",
@@ -9646,7 +9799,8 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "🎒",
-    "label": "tas sekolah"
+    "label": "tas sekolah berisi buku",
+    "img": "B14-T8"
    },
    "text": "我的書都在（　）裡。",
    "options": [
@@ -9662,39 +9816,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我妹妹今年七歲，上（1）一年級。九月一號（2），她很高興。她的班有二十（3）個學生，（4）是男生，一半是女生。她的（5）很好。",
+   "text": "我妹妹今年七歲，上（1）。九月一號（2），她很高興。她的班有（3），（4）是男生。她的（5）。",
    "options": [
-    "高中",
-    "一半",
-    "小學",
-    "成績",
+    "成績很好",
+    "小學一年級",
     "開學",
-    "幾"
+    "二十幾個學生",
+    "一半",
+    "高中二年級"
    ],
    "answers": [
-    2,
-    4,
-    5,
     1,
-    3
+    2,
+    3,
+    4,
+    0
    ],
-   "why": "Tujuh tahun → 小學; 開學; 二十幾; 一半…一半…; 成績.",
+   "why": "(1) 七歲 → 小學一年級. (2) 九月一號 + 開學. (3) 二十幾個學生. (4) 一半 + 是男生. (5) 成績很好. 高中二年級 tidak cocok untuk anak 7 tahun.",
    "id": "B14-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "在臺灣，上小學要六年，高中要三年。九月開學。",
-   "question": "臺灣的小學要上幾年？",
+   "text": "在臺灣，小孩子差不多七歲上小學。小學要上六年，高中要上三年。學校九月開學，二月也開學。一個班差不多有三十個學生。",
+   "question": "小學六年級的學生差不多幾歲？",
    "options": [
-    "九年",
-    "十二年",
-    "三年",
-    "六年"
+    "六歲",
+    "十二歲",
+    "十三歲",
+    "七歲"
    ],
-   "answer": 3,
-   "why": "小學六年. 三年 adalah SMA.",
+   "answer": 1,
+   "why": "Masuk SD sekitar umur 7; kelas 6 = lima tahun kemudian → sekitar 12 tahun (harus dihitung). A: 六 dari 六年級. C: 7 + 6, salah hitung. D: umur masuk SD.",
    "id": "B14-10"
   }
  ],
@@ -9754,16 +9908,19 @@
    "question": "這位先生會說什麼語言？",
    "options": [
     {
-     "icon": "🀄🗾",
-     "label": "Mandarin & Jepang"
+     "icon": "💬",
+     "label": "gelembung bicara: 你好 + こんにちは",
+     "img": "B15-T3a"
     },
     {
-     "icon": "🔤🗾",
-     "label": "Inggris & Jepang"
+     "icon": "💬",
+     "label": "gelembung bicara: Hello + こんにちは",
+     "img": "B15-T3b"
     },
     {
-     "icon": "🔤",
-     "label": "hanya Inggris"
+     "icon": "💬",
+     "label": "gelembung bicara: Hello saja",
+     "img": "B15-T3c"
     }
    ],
    "answer": 1,
@@ -9795,20 +9952,23 @@
    "question": "這位小姐會說什麼？",
    "options": [
     {
-     "icon": "🗣️",
-     "label": "bahasa Jerman"
+     "icon": "💬",
+     "label": "gelembung bicara: Bonjour (Prancis)",
+     "img": "B15-T4c"
     },
     {
-     "icon": "🗣️",
-     "label": "bahasa Jepang"
+     "icon": "💬",
+     "label": "gelembung bicara: Guten Tag (Jerman)",
+     "img": "B15-T4a"
     },
     {
-     "icon": "🗣️",
-     "label": "bahasa Prancis"
+     "icon": "💬",
+     "label": "gelembung bicara: こんにちは (Jepang)",
+     "img": "B15-T4b"
     }
    ],
-   "answer": 2,
-   "why": "法文 bisa; 德文 tidak.",
+   "answer": 0,
+   "why": "Ia bisa bahasa Prancis (法文說得很好) dan tidak bisa bahasa Jerman → A. B: 德文 disebut, tetapi ia tidak bisa. C: tidak disebut.",
    "id": "B15-04"
   },
   {
@@ -9841,7 +10001,7 @@
     "很快"
    ],
    "answer": 3,
-   "why": "說得很快.",
+   "why": "對不起，你說得很快 → guru berbicara cepat (karena itu ia minta diulang). A: kebalikannya. B dan C: justru ia sulit mengikuti.",
    "id": "B15-05"
   },
   {
@@ -9851,16 +10011,19 @@
    "text": "她日文寫得很漂亮。",
    "options": [
     {
-     "icon": "✍️🔤",
-     "label": "tulisan Inggris"
+     "icon": "🖼️",
+     "label": "tulisan bahasa Inggris",
+     "img": "B15-T6a"
     },
     {
-     "icon": "🗣️",
-     "label": "berbicara"
+     "icon": "🖼️",
+     "label": "orang berbicara",
+     "img": "B15-T6b"
     },
     {
-     "icon": "✍️🗾",
-     "label": "tulisan Jepang indah"
+     "icon": "🖼️",
+     "label": "tulisan bahasa Jepang yang indah",
+     "img": "B15-T6c"
     }
    ],
    "answer": 2,
@@ -9872,8 +10035,9 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🗣️🔁",
-    "label": "berlatih berbicara"
+    "icon": "🗣️",
+    "label": "seorang mahasiswa berlatih berbicara bahasa Mandarin",
+    "img": "B15-T7"
    },
    "options": [
     "我每天看電影。",
@@ -9889,8 +10053,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🗣️",
-    "label": "berbicara jelas"
+    "icon": "👩‍🏫",
+    "label": "guru berbicara, murid-murid mengangguk paham",
+    "img": "B15-T8"
    },
    "text": "老師說話說得很（　）。",
    "options": [
@@ -9906,39 +10071,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我會說很多（1），我的日文說得很（2）。我每天（3）說日文。我不懂的字，我用（4）。老師常常給我們（5）故事。",
+   "text": "我會說很多（1），我的日文（2）。我每天（3）。我不懂的字，我（4）。老師常常（5）。",
    "options": [
-    "德文",
-    "講",
+    "用中文講故事",
+    "練習說日文",
     "語言",
-    "練習",
-    "好",
-    "字典"
+    "說得很好",
+    "問中文老師",
+    "寫得不清楚"
    ],
    "answers": [
     2,
-    4,
     3,
-    5,
-    1
+    1,
+    4,
+    0
    ],
-   "why": "語言 / 說得很好 / 練習 / 用字典 / 講故事.",
+   "why": "(1) 很多 + 語言. (2) 日文 + 說得很好. (3) 每天 + 練習說日文. (4) 問中文老師. (5) 老師 + 用中文講故事. 寫得不清楚 tidak cocok di titik mana pun.",
    "id": "B15-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "王小姐是日本人。她會說日語、英語，也會說一點中文。她每天練習說中文。",
-   "question": "王小姐會說什麼？",
+   "text": "王小姐是日本人，現在在臺灣工作。她會說日語和英語，也會說一點中文。她的中文說得不太好，所以每天下班以後都練習說中文。她也很想學法文。",
+   "question": "王小姐什麼語言說得不太好？",
    "options": [
-    "法文",
-    "德文和英語",
-    "只會說日語",
-    "日語、英語和一點中文"
+    "日語",
+    "英語",
+    "中文",
+    "法文"
    ],
-   "answer": 3,
-   "why": "Tiga bahasa disebut.",
+   "answer": 2,
+   "why": "她的中文說得不太好 → C. A dan B: ia bisa dengan baik. D: baru ingin belajar, belum bisa sama sekali.",
    "id": "B15-10"
   }
  ],
@@ -9998,20 +10163,23 @@
    "question": "明天考什麼？",
    "options": [
     {
-     "icon": "🔤📝",
-     "label": "ujian bahasa Inggris"
+     "icon": "🖼️",
+     "label": "ujian Mandarin",
+     "img": "B16-T3b"
     },
     {
-     "icon": "🀄📝",
-     "label": "ujian Mandarin"
+     "icon": "🖼️",
+     "label": "ujian bahasa Inggris",
+     "img": "B16-T3a"
     },
     {
-     "icon": "➕📝",
-     "label": "ujian matematika"
+     "icon": "🖼️",
+     "label": "ujian matematika",
+     "img": "B16-T3c"
     }
    ],
-   "answer": 1,
-   "why": "考中文.",
+   "answer": 0,
+   "why": "考中文 → ujian Mandarin → A. B dan C: mata pelajaran lain.",
    "id": "B16-03"
   },
   {
@@ -10039,16 +10207,19 @@
    "question": "他們要做什麼？",
    "options": [
     {
-     "icon": "📘",
-     "label": "membuka kamus"
+     "icon": "🖼️",
+     "label": "membuka kamus",
+     "img": "B16-T4a"
     },
     {
-     "icon": "💻",
-     "label": "mencari di internet"
+     "icon": "🖼️",
+     "label": "mencari di internet",
+     "img": "B16-T4b"
     },
     {
-     "icon": "🧑‍🏫",
-     "label": "bertanya ke guru"
+     "icon": "🖼️",
+     "label": "bertanya ke guru",
+     "img": "B16-T4c"
     }
    ],
    "answer": 2,
@@ -10095,19 +10266,22 @@
    "text": "明天考試，他在準備。",
    "options": [
     {
-     "icon": "📚📝",
-     "label": "bersiap untuk ujian"
+     "icon": "🖼️",
+     "label": "pesta",
+     "img": "B16-T6b"
     },
     {
-     "icon": "🎉",
-     "label": "pesta"
+     "icon": "🖼️",
+     "label": "bersiap untuk ujian",
+     "img": "B16-T6a"
     },
     {
-     "icon": "🛌",
-     "label": "tidur"
+     "icon": "🖼️",
+     "label": "tidur",
+     "img": "B16-T6c"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "準備 = bersiap.",
    "id": "B16-06"
   },
@@ -10116,8 +10290,9 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "💪📚",
-    "label": "berusaha keras"
+    "icon": "📚",
+    "label": "seorang murid belajar keras sampai malam",
+    "img": "B16-T7"
    },
    "options": [
     "他學習很努力。",
@@ -10133,8 +10308,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🧠",
-    "label": "ingat"
+    "icon": "💭",
+    "label": "seseorang mengingat nama temannya",
+    "img": "B16-T8"
    },
    "text": "你（　）他的名字嗎？",
    "options": [
@@ -10150,30 +10326,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "下星期要（1），我每天都很（2）。老師說學習要有好（3）。我覺得寫字不（4），可是我常常（5）字怎麼寫。",
+   "text": "下星期要（1），我每天都（2）。老師說學習要有（3）。我覺得寫字（4），可是我常常（5）。",
    "options": [
-    "用功",
-    "方法",
-    "忘",
+    "好方法",
+    "忘了字怎麼寫",
     "考試",
-    "簡單",
-    "記得"
+    "不太簡單",
+    "很用功",
+    "記得很清楚"
    ],
    "answers": [
-    3,
-    0,
-    1,
+    2,
     4,
-    2
+    0,
+    3,
+    1
    ],
-   "why": "可是 menandai kontras → 常常忘. 記得 bertentangan.",
+   "why": "(1) 要 + 考試. (2) 每天都 + 很用功. (3) 有 + 好方法. (4) 寫字 + 不太簡單. (5) 常常 + 忘了字怎麼寫. 記得很清楚 bertentangan dengan 可是.",
    "id": "B16-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "明天有英文考試。小明說：「考試很簡單，我不準備。」他的姊姊說：「你要準備，不要不念書。」",
+   "text": "明天有英文考試。小明說：「考試很簡單，我不準備，我要去打球。」他的姊姊說：「你上次也說考試很簡單，可是考得不好。你要準備，不要只想玩。」",
    "question": "姊姊是什麼意思？",
    "options": [
     "姊姊明天考試",
@@ -10182,7 +10358,7 @@
     "小明應該準備考試"
    ],
    "answer": 3,
-   "why": "要2 = harus: 你要準備. B & D pendapat 小明, bukan kakak.",
+   "why": "上次也說…可是考得不好 + 你要準備 → kakaknya ingin Xiaoming belajar dulu (tidak dikatakan \"應該\"). A: yang ujian Xiaoming. B: itu kata Xiaoming. C: itu pendapat Xiaoming.",
    "id": "B16-10"
   }
  ],
@@ -10217,12 +10393,12 @@
    },
    "question": "你聽見了嗎？",
    "options": [
-    "我聽見了。",
     "我看見了。",
-    "我沒聽見。"
+    "我沒聽見。",
+    "我聽見了。"
    ],
-   "answer": 0,
-   "why": "聽見 = mendengar (hasil). Tangan di telinga + bunyi → 聽見了. 看見 = melihat.",
+   "answer": 2,
+   "why": "Ia mendengar bunyi bel → 我聽見了 → C. A: 看見 (melihat), bukan mendengar. B: kebalikannya.",
    "id": "B17-02"
   },
   {
@@ -10242,20 +10418,23 @@
    "question": "本子在哪裡？",
    "options": [
     {
-     "icon": "🛏️📓",
-     "label": "di kasur"
+     "icon": "🖼️",
+     "label": "di kasur",
+     "img": "B17-T3a"
     },
     {
-     "icon": "🪑📓",
-     "label": "di kursi"
+     "icon": "🖼️",
+     "label": "di dalam tas",
+     "img": "B17-T3c"
     },
     {
-     "icon": "🎒📓",
-     "label": "di dalam tas"
+     "icon": "🖼️",
+     "label": "di kursi",
+     "img": "B17-T3b"
     }
    ],
-   "answer": 2,
-   "why": "在書包裡.",
+   "answer": 1,
+   "why": "在書包裡 → di dalam tas → B. A dan C: tempat lain.",
    "id": "B17-03"
   },
   {
@@ -10283,16 +10462,19 @@
    "question": "今天的作業是什麼？",
    "options": [
     {
-     "icon": "✍️",
-     "label": "menulis 15 baris"
+     "icon": "🖼️",
+     "label": "menulis 15 baris",
+     "img": "B17-T4a"
     },
     {
-     "icon": "✍️",
-     "label": "menulis 5 baris"
+     "icon": "🖼️",
+     "label": "menulis 5 baris",
+     "img": "B17-T4b"
     },
     {
-     "icon": "📖",
-     "label": "membaca"
+     "icon": "🖼️",
+     "label": "membaca",
+     "img": "B17-T4c"
     }
    ],
    "answer": 1,
@@ -10339,16 +10521,19 @@
    "text": "我在圖書館寫作業。",
    "options": [
     {
-     "icon": "🏠✍️",
-     "label": "PR di rumah"
+     "icon": "🖼️",
+     "label": "mengerjakan PR di rumah",
+     "img": "B17-T6a"
     },
     {
-     "icon": "🏛️😴",
-     "label": "tidur di perpustakaan"
+     "icon": "🖼️",
+     "label": "tidur di perpustakaan",
+     "img": "B17-T6b"
     },
     {
-     "icon": "🏛️✍️",
-     "label": "PR di perpustakaan"
+     "icon": "🖼️",
+     "label": "mengerjakan PR di perpustakaan",
+     "img": "B17-T6c"
     }
    ],
    "answer": 2,
@@ -10360,8 +10545,9 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "📓✏️",
-    "label": "buku catatan dan pensil"
+    "icon": "📓",
+    "label": "buku catatan dan pensil",
+    "img": "B17-T7"
    },
    "options": [
     "這是我的報紙。",
@@ -10377,8 +10563,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🔍✅",
-    "label": "akhirnya ketemu"
+    "icon": "📗",
+    "label": "seorang anak gembira menemukan bukunya",
+    "img": "B17-T8"
    },
    "text": "我找（　）我的課本了！",
    "options": [
@@ -10394,30 +10581,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "今天老師給我們很多（1）。我去（2）找書，我找（3）一本很好的書。我也看（4）同學們在念書。晚上我在家看（5）。",
+   "text": "今天老師給我們很多（1）。我去（2），我（3）一本很好的書。我也（4）同學們在念書。晚上我在家（5）。",
    "options": [
+    "圖書館找書",
     "作業",
-    "到",
-    "行",
-    "見",
-    "報紙",
-    "圖書館"
+    "看報紙",
+    "找到了",
+    "看見",
+    "聽見書"
    ],
    "answers": [
-    0,
-    5,
     1,
+    0,
     3,
-    4
+    4,
+    2
    ],
-   "why": "作業 / 圖書館 / 找到 / 看見 / 報紙.",
+   "why": "(1) 很多 + 作業. (2) 去 + 圖書館找書. (3) 找到了 + 一本很好的書. (4) 看見 + 同學們. (5) 在家 + 看報紙. 聽見書 tidak masuk akal.",
    "id": "B17-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "學校圖書館的時間：星期一到星期五，早上八點到晚上十點；星期六，早上九點到下午五點；星期天不開。",
+   "text": "學校圖書館的時間：星期一到星期五，早上八點到晚上十點；星期六，早上九點到下午五點；星期天不開。圖書館裡不可以吃東西，也不可以講電話。",
    "question": "星期六晚上七點可以去圖書館嗎？",
    "options": [
     "可以",
@@ -10426,7 +10613,7 @@
     "只能上午去"
    ],
    "answer": 2,
-   "why": "Sabtu tutup jam 17.00 → jam 19.00 tidak bisa (simpulan).",
+   "why": "Sabtu buka sampai jam 5 sore → jam 7 malam sudah tutup (kesimpulan) → C. A: hari biasa memang buka sampai jam 10. B: Sabtu buka. D: Sabtu buka sampai sore, bukan hanya pagi.",
    "id": "B17-10"
   }
  ],
@@ -10486,20 +10673,23 @@
    "question": "明天天氣怎麼樣？",
    "options": [
     {
-     "icon": "❄️",
-     "label": "salju"
+     "icon": "🖼️",
+     "label": "turun salju",
+     "img": "B18-T3a"
     },
     {
-     "icon": "☀️",
-     "label": "cerah"
+     "icon": "🖼️",
+     "label": "hujan",
+     "img": "B18-T3c"
     },
     {
-     "icon": "🌧️",
-     "label": "hujan"
+     "icon": "🖼️",
+     "label": "cerah",
+     "img": "B18-T3b"
     }
    ],
-   "answer": 1,
-   "why": "不會下雨，好天氣.",
+   "answer": 2,
+   "why": "明天不會下雨，是好天氣 → cerah → C. A: tidak disebut. B: 下雨 disebut, tetapi disangkal.",
    "id": "B18-03"
   },
   {
@@ -10527,20 +10717,23 @@
    "question": "如果明天不下雪，他們做什麼？",
    "options": [
     {
-     "icon": "⛰️",
-     "label": "ke gunung"
+     "icon": "🖼️",
+     "label": "menonton film di rumah",
+     "img": "B18-T4c"
     },
     {
-     "icon": "⛷️",
-     "label": "bermain ski"
+     "icon": "🖼️",
+     "label": "pergi ke gunung",
+     "img": "B18-T4a"
     },
     {
-     "icon": "🏠🎬",
-     "label": "menonton film di rumah"
+     "icon": "🖼️",
+     "label": "bermain ski",
+     "img": "B18-T4b"
     }
    ],
-   "answer": 2,
-   "why": "要是不下雪 → 在家看電影.",
+   "answer": 0,
+   "why": "要是不下雪 → 在家看電影 → A. B: rencana kalau turun salju. C: tidak disebut.",
    "id": "B18-04"
   },
   {
@@ -10567,32 +10760,35 @@
    ],
    "question": "這位小姐為什麼不喜歡夏天？",
    "options": [
-    "因為夏天很熱",
+    "因為夏天會下雪",
     "因為她不會游泳",
     "因為她喜歡春天",
-    "因為夏天會下雪"
+    "因為夏天很熱"
    ],
-   "answer": 0,
-   "why": "Alasan: 夏天很熱. B tidak disebut.",
+   "answer": 3,
+   "why": "夏天很熱，我不喜歡 → D. A: yang bisa berenang si laki-laki. B: ia suka musim gugur. C: musim panas tidak bersalju.",
    "id": "B18-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "天氣變冷了。",
+   "text": "秋天到了，天氣變冷了。",
    "options": [
     {
-     "icon": "🥵",
-     "label": "menjadi panas"
+     "icon": "🖼️",
+     "label": "cuaca menjadi panas",
+     "img": "B18-T6a"
     },
     {
-     "icon": "🌧️",
-     "label": "hujan"
+     "icon": "🖼️",
+     "label": "hujan",
+     "img": "B18-T6b"
     },
     {
-     "icon": "🥶",
-     "label": "cuaca menjadi dingin"
+     "icon": "🖼️",
+     "label": "cuaca menjadi dingin",
+     "img": "B18-T6c"
     }
    ],
    "answer": 2,
@@ -10605,14 +10801,15 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "🌸",
-    "label": "bunga musim semi"
+    "label": "bunga musim semi",
+    "img": "B18-T7"
    },
    "options": [
-    "春天的花很漂亮。",
     "冬天下雪。",
+    "春天的花很漂亮。",
     "夏天很熱。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "春天 = musim semi.",
    "id": "B18-07"
   },
@@ -10621,8 +10818,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "❓🌧️",
-    "label": "kalau hujan"
+    "icon": "🌧️",
+    "label": "seseorang melihat hujan dari jendela, tidak jadi pergi",
+    "img": "B18-T8"
    },
    "text": "（　）下雨，我就不去。",
    "options": [
@@ -10638,30 +10836,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "（1）很冷，山上常常下（2）。（3）很熱，我喜歡游泳。（4）明天天氣好，我們就去游泳。天氣（5）冷了。",
+   "text": "（1）很冷，山上常常下雪。（2），我喜歡游泳。（3），我們就去游泳。今天是秋天，（4）。報紙說，週末山上（5）。",
    "options": [
-    "樹",
-    "變",
-    "夏天",
-    "如果",
-    "雪",
-    "冬天"
+    "冬天",
+    "夏天很熱",
+    "如果明天天氣好",
+    "天氣變冷了",
+    "會下雪",
+    "春天的花"
    ],
    "answers": [
-    5,
-    4,
+    0,
+    1,
     2,
     3,
-    1
+    4
    ],
-   "why": "冬天 / 下雪 / 夏天 / 如果…就 / 變冷.",
+   "why": "(1) 冬天 + 很冷. (2) 夏天很熱 → 游泳. (3) 如果明天天氣好 + 就. (4) 秋天 → 天氣變冷了. (5) 山上 + 會下雪. 春天的花 tidak cocok di titik mana pun.",
    "id": "B18-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "明天的天氣：臺北會下雨，山上可能會下雪。如果你要去山上，請帶很多衣服。",
+   "text": "明天的天氣：臺北會下雨，山上可能會下雪，晚上會很冷。如果你要去山上，請帶很多衣服。下個星期，天氣會變好，不會下雨了。",
    "question": "明天要去山上的人應該做什麼？",
    "options": [
     "去游泳",
@@ -10730,20 +10928,23 @@
    "question": "哪裡比較冷？",
    "options": [
     {
-     "icon": "🥵",
-     "label": "Taipei lebih panas"
+     "icon": "🌡️",
+     "label": "Taipei lebih dingin",
+     "img": "B19-T3c"
     },
     {
-     "icon": "🟰",
-     "label": "sama saja"
+     "icon": "🌡️",
+     "label": "Taipei lebih panas",
+     "img": "B19-T3a"
     },
     {
-     "icon": "🥶",
-     "label": "Taipei lebih dingin"
+     "icon": "🌡️",
+     "label": "sama saja",
+     "img": "B19-T3b"
     }
    ],
-   "answer": 2,
-   "why": "臺北比較冷.",
+   "answer": 0,
+   "why": "臺北比較冷 → A. B: kebalikannya. C: tidak sama.",
    "id": "B19-03"
   },
   {
@@ -10771,20 +10972,23 @@
    "question": "這位先生的家在臺北的哪邊？",
    "options": [
     {
-     "icon": "⬅️",
-     "label": "sebelah barat"
+     "icon": "🧭",
+     "label": "sebelah utara",
+     "img": "B19-T4b"
     },
     {
-     "icon": "⬆️",
-     "label": "sebelah utara"
+     "icon": "🧭",
+     "label": "sebelah barat",
+     "img": "B19-T4a"
     },
     {
-     "icon": "➡️",
-     "label": "sebelah timur"
+     "icon": "🧭",
+     "label": "sebelah timur",
+     "img": "B19-T4c"
     }
    ],
-   "answer": 0,
-   "why": "西邊 = barat (kiri pada peta).",
+   "answer": 1,
+   "why": "Rumah si laki-laki 在西邊 → barat → B. A: tidak disebut. C: 東邊 rumah si perempuan.",
    "id": "B19-04"
   },
   {
@@ -10827,16 +11031,19 @@
    "text": "臺灣的北部很冷，南邊很熱。",
    "options": [
     {
-     "icon": "🟰",
-     "label": "sama saja"
+     "icon": "🖼️",
+     "label": "utara dan selatan sama",
+     "img": "B19-T6a"
     },
     {
-     "icon": "🧭🥵",
-     "label": "utara panas, selatan dingin"
+     "icon": "🖼️",
+     "label": "utara panas, selatan dingin",
+     "img": "B19-T6b"
     },
     {
-     "icon": "🧭🥶",
-     "label": "utara dingin, selatan panas"
+     "icon": "🖼️",
+     "label": "utara dingin, selatan panas",
+     "img": "B19-T6c"
     }
    ],
    "answer": 2,
@@ -10848,8 +11055,9 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🌍",
-    "label": "bola dunia"
+    "icon": "🌏",
+    "label": "bola dunia",
+    "img": "B19-T7"
    },
    "options": [
     "世界很大。",
@@ -10865,8 +11073,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "⚖️",
-    "label": "sama"
+    "icon": "🎒",
+    "label": "dua tas sekolah yang sama",
+    "img": "B19-T8"
    },
    "text": "我的書包跟你的（　）。",
    "options": [
@@ -10882,30 +11091,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "臺北在臺灣的（1），高雄在臺灣的南邊。高雄（2）臺北熱，夏天高雄（3）熱。臺中的天氣跟臺北不（4）。我覺得臺灣是（5）上很漂亮的地方！",
+   "text": "臺北在臺灣的（1），高雄在臺灣的南邊。高雄（2），夏天高雄（3）。臺中的天氣（4）。我覺得臺灣是（5）很漂亮的地方！",
    "options": [
-    "聲音",
-    "比",
-    "世界",
-    "更",
-    "一樣",
-    "北部"
+    "北部",
+    "比臺北熱",
+    "更熱",
+    "跟臺北不一樣",
+    "世界上",
+    "聲音很小"
    ],
    "answers": [
-    5,
+    0,
     1,
+    2,
     3,
-    4,
-    2
+    4
    ],
-   "why": "北部 / 比 / 更熱 / 不一樣 / 世界上.",
+   "why": "(1) 北部. (2) 高雄 + 比臺北熱. (3) 夏天 + 更熱. (4) 跟臺北不一樣. (5) 世界上 + 很漂亮的地方. 聲音很小 tidak cocok di titik mana pun.",
    "id": "B19-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "我是印尼人，現在住在臺北。臺北冬天比雅加達冷，夏天跟雅加達一樣熱。",
+   "text": "我是印尼人，現在住在臺北。臺北冬天比雅加達冷，常常下雨；夏天跟雅加達一樣熱。我比較喜歡臺北的秋天，不冷也不熱。",
    "question": "哪個是對的？",
    "options": [
     "臺北夏天比較冷",
@@ -10975,15 +11184,18 @@
    "options": [
     {
      "icon": "🧥",
-     "label": "jaket"
+     "label": "jaket",
+     "img": "B20-T3a"
     },
     {
      "icon": "🧢",
-     "label": "topi"
+     "label": "topi",
+     "img": "B20-T3b"
     },
     {
      "icon": "👖",
-     "label": "celana"
+     "label": "celana",
+     "img": "B20-T3c"
     }
    ],
    "answer": 0,
@@ -11015,16 +11227,19 @@
    "question": "這位先生覺得第一個裙子怎麼樣？",
    "options": [
     {
-     "icon": "👗⬆️",
-     "label": "terlalu panjang"
+     "icon": "👗",
+     "label": "rok terlalu panjang",
+     "img": "B20-T4a"
     },
     {
-     "icon": "👗⬇️",
-     "label": "agak pendek"
+     "icon": "👗",
+     "label": "rok agak pendek",
+     "img": "B20-T4b"
     },
     {
-     "icon": "👗✅",
-     "label": "pas"
+     "icon": "👗",
+     "label": "rok pas",
+     "img": "B20-T4c"
     }
    ],
    "answer": 1,
@@ -11071,16 +11286,19 @@
    "text": "他戴眼鏡，也戴手錶。",
    "options": [
     {
-     "icon": "👓⌚",
-     "label": "kacamata & jam tangan"
+     "icon": "🖼️",
+     "label": "kacamata & jam tangan",
+     "img": "B20-T6a"
     },
     {
-     "icon": "👓",
-     "label": "hanya kacamata"
+     "icon": "🖼️",
+     "label": "hanya kacamata",
+     "img": "B20-T6b"
     },
     {
-     "icon": "🧢⌚",
-     "label": "topi & jam tangan"
+     "icon": "🖼️",
+     "label": "topi & jam tangan",
+     "img": "B20-T6c"
     }
    ],
    "answer": 0,
@@ -11093,14 +11311,15 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "👖",
-    "label": "celana terlalu pendek"
+    "label": "celana yang terlalu pendek",
+    "img": "B20-T7"
    },
    "options": [
-    "這個褲子太短了。",
     "這個褲子很新。",
+    "這個褲子太短了。",
     "這個褲子太長了。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "太短了.",
    "id": "B20-07"
   },
@@ -11110,7 +11329,8 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "🧥",
-    "label": "melepas jaket"
+    "label": "ruangan panas; seseorang melepas jaket",
+    "img": "B20-T8"
    },
    "text": "房間很熱，我想（　）外套。",
    "options": [
@@ -11126,30 +11346,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "今天天氣很冷，我穿（1），也戴（2）。我去買褲子，我（3）一個，可是那個褲子（4）長了。這個（5）短，可是很好看。",
+   "text": "今天天氣很冷，我穿（1），也（2）。我去買褲子，我（3），可是那個褲子（4）。這個（5），可是很好看。",
    "options": [
     "外套",
-    "試",
-    "帽子",
-    "太",
-    "脫",
-    "有點"
+    "戴帽子",
+    "試了一個",
+    "太長了",
+    "有點短",
+    "脫了大衣"
    ],
    "answers": [
     0,
-    2,
     1,
+    2,
     3,
-    5
+    4
    ],
-   "why": "穿外套 / 戴帽子 / 試 / 太長了 / 有點短.",
+   "why": "(1) 穿 + 外套. (2) 也 + 戴帽子. (3) 試了一個. (4) 那個 + 太長了. (5) 這個 + 有點短, lalu 可是很好看. 脫了大衣 bertentangan dengan 天氣很冷.",
    "id": "B20-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "王小姐買衣服：外套三千塊，太貴了；裙子八百塊，有點短；褲子一千塊，很好。她最後買褲子。",
+   "text": "王小姐去買衣服：外套三千塊，太貴了；裙子八百塊，有點短；褲子一千塊，很好看。她最後買了褲子，明天要穿新褲子去上班。",
    "question": "王小姐為什麼不買外套？",
    "options": [
     "有點短",
@@ -11219,15 +11439,18 @@
    "options": [
     {
      "icon": "🟩",
-     "label": "hijau"
+     "label": "hijau",
+     "img": "B21-T3a"
     },
     {
      "icon": "🟨",
-     "label": "kuning"
+     "label": "kuning",
+     "img": "B21-T3b"
     },
     {
      "icon": "🟦",
-     "label": "biru"
+     "label": "biru",
+     "img": "B21-T3c"
     }
    ],
    "answer": 0,
@@ -11259,20 +11482,23 @@
    "question": "這位先生要哪條褲子？",
    "options": [
     {
-     "icon": "🟦👖",
-     "label": "biru"
+     "icon": "🟦",
+     "label": "celana biru",
+     "img": "B21-T4a"
     },
     {
-     "icon": "⬛👖",
-     "label": "hitam, lebih besar"
+     "icon": "⬛",
+     "label": "celana hitam, lebih kecil",
+     "img": "B21-T4c"
     },
     {
-     "icon": "⬛👖",
-     "label": "hitam, lebih kecil"
+     "icon": "⬛",
+     "label": "celana hitam, lebih besar",
+     "img": "B21-T4b"
     }
    ],
-   "answer": 2,
-   "why": "Hitam + 小一點.",
+   "answer": 1,
+   "why": "Hitam + lebih kecil → B. A: warnanya salah. C: hitam, tetapi lebih besar (yang pertama 有點大).",
    "id": "B21-04"
   },
   {
@@ -11315,19 +11541,22 @@
    "text": "她穿一條黃色的裙子。",
    "options": [
     {
-     "icon": "🟩👗",
-     "label": "rok hijau"
+     "icon": "🟨",
+     "label": "rok kuning",
+     "img": "B21-T6c"
     },
     {
-     "icon": "🟥👗",
-     "label": "rok merah"
+     "icon": "🟩",
+     "label": "rok hijau",
+     "img": "B21-T6a"
     },
     {
-     "icon": "🟨👗",
-     "label": "rok kuning"
+     "icon": "🟥",
+     "label": "rok merah",
+     "img": "B21-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "黃色 = kuning.",
    "id": "B21-06"
   },
@@ -11336,15 +11565,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🌶️",
-    "label": "cabai merah pedas"
+    "icon": "🟥",
+    "label": "cabai merah",
+    "img": "B21-T7"
    },
    "options": [
-    "這個是紅色的。",
     "這個是藍色的。",
-    "這個是綠色的。"
+    "這個是綠色的。",
+    "這個是紅色的。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Cabai merah → 紅色.",
    "id": "B21-07"
   },
@@ -11353,8 +11583,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "👟👟",
-    "label": "sepasang sepatu"
+    "icon": "👟",
+    "label": "sepasang sepatu",
+    "img": "B21-T8"
    },
    "text": "我買一（　）鞋子。",
    "options": [
@@ -11370,30 +11601,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我想買一（1）褲子。小姐問我要什麼（2）。我說：「我要藍色的，大（3）的。」小姐說：「藍的（4）黑的？」我說：「藍的。」這條褲子很（5），我很喜歡。",
+   "text": "我想買（1）。小姐問我要（2）。我說：「我要藍色的，（3）。」小姐說：「（4）？」我說：「藍的。」這條褲子（5），我很喜歡。",
    "options": [
-    "顏色",
-    "一點",
-    "還是",
-    "雙",
-    "輕",
-    "條"
+    "一條褲子",
+    "什麼顏色",
+    "大一點的",
+    "藍的還是黑的",
+    "很輕",
+    "兩雙鞋子"
    ],
    "answers": [
-    5,
     0,
     1,
     2,
+    3,
     4
    ],
-   "why": "一條褲子 / 顏色 / 大一點 / A 還是 B / 很輕.",
+   "why": "(1) 一條褲子. (2) 要 + 什麼顏色. (3) 大一點的. (4) 藍的還是黑的 (pertanyaan pilihan). (5) 很輕, lalu 我很喜歡. 兩雙鞋子 tidak cocok di titik mana pun.",
    "id": "B21-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "小明的書包很重，因為裡面有很多書。他妹妹的書包很輕，裡面只有一本書。",
+   "text": "小明的書包很重，因為裡面有很多書和本子。他妹妹的書包很輕，裡面只有一本書和一支筆。小明說他要買一個大一點的書包。",
    "question": "為什麼小明的書包很重？",
    "options": [
     "妹妹的書在裡面",
@@ -11462,16 +11693,19 @@
    "question": "這位小姐怎麼做？",
    "options": [
     {
-     "icon": "📦",
-     "label": "minta kotak"
+     "icon": "🖼️",
+     "label": "meminta kotak",
+     "img": "B22-T3a"
     },
     {
-     "icon": "👜",
-     "label": "memakai tas sendiri"
+     "icon": "🖼️",
+     "label": "memakai tas sendiri",
+     "img": "B22-T3b"
     },
     {
-     "icon": "🛍️",
-     "label": "minta kantong"
+     "icon": "🖼️",
+     "label": "meminta kantong",
+     "img": "B22-T3c"
     }
    ],
    "answer": 1,
@@ -11503,20 +11737,23 @@
    "question": "水果要在哪裡買？",
    "options": [
     {
-     "icon": "🛒",
-     "label": "supermarket"
+     "icon": "🖼️",
+     "label": "mal",
+     "img": "B22-T4b"
     },
     {
-     "icon": "🏬",
-     "label": "mal"
+     "icon": "🖼️",
+     "label": "minimarket",
+     "img": "B22-T4c"
     },
     {
-     "icon": "🏪",
-     "label": "minimarket"
+     "icon": "🖼️",
+     "label": "supermarket",
+     "img": "B22-T4a"
     }
    ],
-   "answer": 0,
-   "why": "去超市買.",
+   "answer": 2,
+   "why": "水果要去超市買 → supermarket → C. A: tidak disebut. B: minimarket tidak menjual buah.",
    "id": "B22-04"
   },
   {
@@ -11543,13 +11780,13 @@
    ],
    "question": "醫生說這位先生應該怎麼做？",
    "options": [
-    "多吃菜，少喝咖啡",
     "不要吃飯",
     "少吃菜",
-    "多喝咖啡"
+    "多喝咖啡",
+    "多吃菜，少喝咖啡"
    ],
-   "answer": 0,
-   "why": "多/少 + V.",
+   "answer": 3,
+   "why": "醫生說我要多吃菜，少喝咖啡 → D. A: tidak disebut. B dan C: kebalikannya.",
    "id": "B22-05"
   },
   {
@@ -11559,19 +11796,22 @@
    "text": "桌子上有三個罐子。",
    "options": [
     {
-     "icon": "🍾🍾🍾",
-     "label": "tiga botol"
+     "icon": "🖼️",
+     "label": "tiga kaleng",
+     "img": "B22-T6b"
     },
     {
-     "icon": "🥫🥫🥫",
-     "label": "tiga kaleng"
+     "icon": "🖼️",
+     "label": "tiga botol",
+     "img": "B22-T6a"
     },
     {
-     "icon": "📦📦📦",
-     "label": "tiga kotak"
+     "icon": "🖼️",
+     "label": "tiga kotak",
+     "img": "B22-T6c"
     }
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "罐子 = kaleng.",
    "id": "B22-06"
   },
@@ -11581,14 +11821,15 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "🏬",
-    "label": "mal besar"
+    "label": "mal besar dengan barang mahal",
+    "img": "B22-T7"
    },
    "options": [
     "便利商店的東西都很便宜。",
-    "超市沒有東西。",
-    "百貨公司的東西都很貴。"
+    "百貨公司的東西都很貴。",
+    "超市沒有東西。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Gambar mal → 百貨公司.",
    "id": "B22-07"
   },
@@ -11598,7 +11839,8 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "🛍️",
-    "label": "kantong belanja"
+    "label": "kantong belanja",
+    "img": "B22-T8"
    },
    "text": "請給我一個（　）。",
    "options": [
@@ -11614,39 +11856,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我家附近有（1），二十四小時都開。我常常去那裡買一（2）蛋和兩（3）水。媽媽說我要（4）喝水，（5）喝咖啡。",
+   "text": "我家附近有（1），二十四小時都開。我常常去那裡買（2）和（3）。媽媽說我要（4），（5）。",
    "options": [
-    "盒",
-    "瓶",
-    "多",
-    "少",
-    "袋",
-    "便利商店"
+    "一家便利商店",
+    "一盒蛋",
+    "兩瓶水",
+    "多喝水",
+    "少喝咖啡",
+    "一家百貨公司"
    ],
    "answers": [
-    5,
     0,
     1,
     2,
-    3
+    3,
+    4
    ],
-   "why": "便利商店 / 一盒蛋 / 兩瓶水 / 多喝水，少喝咖啡.",
+   "why": "(1) 一家便利商店 + 二十四小時都開. (2) 一盒蛋. (3) 兩瓶水. (4) 多喝水. (5) 少喝咖啡. 一家百貨公司 tidak buka 24 jam.",
    "id": "B22-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "超市今天的東西：蛋一盒六十塊，牛奶一瓶八十塊，水一瓶二十塊。",
-   "question": "一盒蛋和兩瓶水，一共多少錢？",
+   "text": "超市今天的東西：蛋一盒六十塊，牛奶一瓶八十塊，水一瓶二十塊，袋子一個一塊。我要買一盒蛋和兩瓶水，也要一個袋子。",
+   "question": "我一共要給多少錢？",
    "options": [
+    "一百塊",
+    "一百零一塊",
     "一百四十塊",
-    "一百六十塊",
-    "八十塊",
-    "一百塊"
+    "八十一塊"
    ],
-   "answer": 3,
-   "why": "60 + 20 × 2 = 100 (hitung).",
+   "answer": 1,
+   "why": "60 + 20 × 2 + 1 = 101 (harus dihitung) → B. A: lupa kantong. C: menghitung susu, bukan air. D: hanya satu botol air.",
    "id": "B22-10"
   }
  ],
@@ -11706,20 +11948,23 @@
    "question": "這位小姐應該怎麼付錢？",
    "options": [
     {
-     "icon": "💵",
-     "label": "uang tunai"
+     "icon": "🖼️",
+     "label": "kartu kredit",
+     "img": "B23-T3b"
     },
     {
-     "icon": "💳",
-     "label": "kartu kredit"
+     "icon": "🖼️",
+     "label": "uang tunai",
+     "img": "B23-T3a"
     },
     {
-     "icon": "📱",
-     "label": "ponsel"
+     "icon": "🖼️",
+     "label": "ponsel",
+     "img": "B23-T3c"
     }
    ],
-   "answer": 0,
-   "why": "Kartu tidak boleh → tunai (simpulan).",
+   "answer": 1,
+   "why": "Kartu kredit tidak boleh → bayar dengan uang tunai → B. A: 信用卡 disebut, tetapi tidak boleh. C: tidak disebut.",
    "id": "B23-03"
   },
   {
@@ -11747,16 +11992,19 @@
    "question": "老闆找客人多少錢？",
    "options": [
     {
-     "icon": "💵",
-     "label": "NT$1.000"
+     "icon": "🏷️",
+     "label": "label harga $1000",
+     "img": "B23-T4a"
     },
     {
-     "icon": "💵",
-     "label": "NT$200"
+     "icon": "🏷️",
+     "label": "label harga $200",
+     "img": "B23-T4b"
     },
     {
-     "icon": "💵",
-     "label": "NT$800"
+     "icon": "🏷️",
+     "label": "label harga $800",
+     "img": "B23-T4c"
     }
    ],
    "answer": 1,
@@ -11800,22 +12048,25 @@
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "客人很多。",
+   "text": "這家店的客人很多。",
    "options": [
     {
-     "icon": "🔒",
-     "label": "toko tutup"
+     "icon": "🖼️",
+     "label": "toko tutup",
+     "img": "B23-T6a"
     },
     {
-     "icon": "🧑‍🤝‍🧑🧑‍🤝‍🧑🏪",
-     "label": "toko ramai pembeli"
+     "icon": "🖼️",
+     "label": "toko sepi",
+     "img": "B23-T6c"
     },
     {
-     "icon": "🏪",
-     "label": "toko sepi"
+     "icon": "🖼️",
+     "label": "toko ramai pembeli",
+     "img": "B23-T6b"
     }
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "客人 = pelanggan.",
    "id": "B23-06"
   },
@@ -11825,7 +12076,8 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "🎒",
-    "label": "ransel"
+    "label": "ransel",
+    "img": "B23-T7"
    },
    "options": [
     "這是我的背包。",
@@ -11842,7 +12094,8 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "💳",
-    "label": "membayar dengan kartu"
+    "label": "membayar dengan kartu",
+    "img": "B23-T8"
    },
    "text": "我用信用卡（　）錢。",
    "options": [
@@ -11858,30 +12111,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我去商店買一個（1）。（2）說這個一千二。我問：「可以用（3）嗎？」他說可以。他幫我（4）起來。店裡的（5）很多，大家都在買東西。",
+   "text": "我去商店買（1）。（2）說這個一千二。我問：「（3）？」他說可以。他（4）。店裡的（5），大家都在買東西。",
    "options": [
+    "一個背包",
     "老闆",
-    "客人",
-    "算",
-    "背包",
-    "信用卡",
-    "包"
+    "可以用信用卡嗎",
+    "幫我包起來",
+    "客人很多",
+    "錢包沒有錢"
    ],
    "answers": [
-    3,
     0,
-    4,
-    5,
-    1
+    1,
+    2,
+    3,
+    4
    ],
-   "why": "背包 / 老闆 / 信用卡 / 包起來 / 客人.",
+   "why": "(1) 買 + 一個背包. (2) 老闆 + 說. (3) 可以用信用卡嗎. (4) 幫我包起來. (5) 客人很多 + 大家都在買東西. 錢包沒有錢 tidak cocok di titik mana pun.",
    "id": "B23-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "這個商店的老闆說：學生來買東西，一百塊的東西算八十塊。不能用信用卡。",
+   "text": "這個商店的老闆說：學生來買東西，一百塊的東西算八十塊。不能用信用卡。今天是星期六，店裡的客人很多，大家都在買東西。",
    "question": "學生買兩百塊的東西，要付多少錢？",
    "options": [
     "八十塊",
@@ -11925,12 +12178,12 @@
    },
    "question": "你要什麼？",
    "options": [
+    "一個蛋糕和一杯咖啡。",
     "一個冰淇淋和一杯咖啡。",
-    "一個蛋糕和一杯茶。",
-    "一個蛋糕和一杯咖啡。"
+    "一個蛋糕和一杯茶。"
    ],
-   "answer": 2,
-   "why": "蛋糕 + 咖啡 (kopi hitam di cangkir). A salah makanan; B salah minuman.",
+   "answer": 0,
+   "why": "Sepotong kue dan secangkir kopi → A. B: es krim, bukan kue. C: teh, bukan kopi.",
    "id": "B24-02"
   },
   {
@@ -11951,15 +12204,18 @@
    "options": [
     {
      "icon": "🍋",
-     "label": "asam"
+     "label": "asam",
+     "img": "B24-T3a"
     },
     {
      "icon": "🍰",
-     "label": "manis"
+     "label": "manis",
+     "img": "B24-T3b"
     },
     {
      "icon": "🌶️",
-     "label": "pedas"
+     "label": "pedas",
+     "img": "B24-T3c"
     }
    ],
    "answer": 1,
@@ -11991,20 +12247,23 @@
    "question": "這個點心怎麼樣？",
    "options": [
     {
-     "icon": "😋🍬",
-     "label": "harum & manis"
-    },
-    {
      "icon": "🧂",
-     "label": "asin"
+     "label": "asin",
+     "img": "B24-T4b"
     },
     {
      "icon": "🌶️",
-     "label": "pedas"
+     "label": "pedas",
+     "img": "B24-T4c"
+    },
+    {
+     "icon": "🍰",
+     "label": "harum & manis",
+     "img": "B24-T4a"
     }
    ],
-   "answer": 0,
-   "why": "又香又甜.",
+   "answer": 2,
+   "why": "又香又甜 → harum dan manis → C. A dan B: tidak disebut.",
    "id": "B24-04"
   },
   {
@@ -12048,15 +12307,18 @@
    "options": [
     {
      "icon": "🍦",
-     "label": "es krim kecil"
+     "label": "es krim kecil",
+     "img": "B24-T6a"
     },
     {
-     "icon": "🍦😋",
-     "label": "es krim besar dan manis"
+     "icon": "🍦",
+     "label": "es krim besar dan manis",
+     "img": "B24-T6b"
     },
     {
      "icon": "🍋",
-     "label": "asam"
+     "label": "lemon asam",
+     "img": "B24-T6c"
     }
    ],
    "answer": 1,
@@ -12068,15 +12330,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🌶️🔥",
-    "label": "cabai pedas"
+    "icon": "🌶️",
+    "label": "cabai pedas",
+    "img": "B24-T7"
    },
    "options": [
-    "這個很甜！",
     "這個很辣！",
+    "這個很甜！",
     "這個很香！"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "辣 = pedas.",
    "id": "B24-07"
   },
@@ -12086,7 +12349,8 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "🍬",
-    "label": "gula"
+    "label": "gula",
+    "img": "B24-T8"
    },
    "text": "咖啡裡不要放（　）。",
    "options": [
@@ -12102,30 +12366,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我很喜歡吃（1）。這家店的蛋糕（2）香又甜。我也喜歡（3）。我不喜歡吃（4）的，也不喜歡酸的。這個菜的（5）很好。",
+   "text": "我很喜歡吃（1）。這家店的蛋糕（2）。我也喜歡（3）。我不喜歡吃（4），也不喜歡酸的。這個菜的（5）。",
    "options": [
-    "辣",
     "甜點",
-    "臭",
-    "又",
+    "又香又甜",
     "冰淇淋",
-    "味道"
+    "辣的",
+    "味道很好",
+    "一雙鞋子"
    ],
    "answers": [
-    1,
-    3,
-    4,
     0,
-    5
+    1,
+    2,
+    3,
+    4
    ],
-   "why": "甜點 / 又…又 / 冰淇淋 / 辣的 / 味道.",
+   "why": "(1) 吃 + 甜點. (2) 蛋糕 + 又香又甜. (3) 也喜歡 + 冰淇淋. (4) 不喜歡吃 + 辣的. (5) 菜的 + 味道很好. 一雙鞋子 tidak cocok di titik mana pun.",
    "id": "B24-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "這家餐廳的菜：牛肉麵有點辣，湯有點鹹，甜點又香又甜。小明不喜歡辣的。",
+   "text": "這家餐廳的菜：牛肉麵有點辣，湯有點鹹，甜點又香又甜。小明不喜歡辣的，也不喜歡鹹的，他最喜歡甜的東西。",
    "question": "小明可以吃什麼？",
    "options": [
     "甜點",
@@ -12169,12 +12433,12 @@
    },
    "question": "你要什麼？",
    "options": [
-    "刀子。",
     "叉子。",
+    "刀子。",
     "湯匙。"
    ],
-   "answer": 1,
-   "why": "叉子 = garpu.",
+   "answer": 0,
+   "why": "Sebuah garpu → 叉子 → A. B dan C: alat makan lain.",
    "id": "B25-02"
   },
   {
@@ -12194,16 +12458,19 @@
    "question": "這位先生怎麼樣？",
    "options": [
     {
-     "icon": "😴",
-     "label": "mengantuk"
+     "icon": "🖼️",
+     "label": "mengantuk",
+     "img": "B25-T3a"
     },
     {
-     "icon": "😫",
-     "label": "lapar"
+     "icon": "🖼️",
+     "label": "lapar",
+     "img": "B25-T3b"
     },
     {
-     "icon": "😌",
-     "label": "kenyang"
+     "icon": "🖼️",
+     "label": "kenyang",
+     "img": "B25-T3c"
     }
    ],
    "answer": 2,
@@ -12235,20 +12502,23 @@
    "question": "這位先生要做什麼？",
    "options": [
     {
-     "icon": "🍖🔥",
-     "label": "memanggang daging"
+     "icon": "🖼️",
+     "label": "menumis sayur",
+     "img": "B25-T4b"
     },
     {
-     "icon": "🥬",
-     "label": "menumis sayur"
+     "icon": "🖼️",
+     "label": "memanggang daging",
+     "img": "B25-T4a"
     },
     {
-     "icon": "🍗",
-     "label": "menggoreng"
+     "icon": "🖼️",
+     "label": "menggoreng",
+     "img": "B25-T4c"
     }
    ],
-   "answer": 0,
-   "why": "你烤肉 → laki-laki memanggang.",
+   "answer": 1,
+   "why": "女: 我炒青菜，你烤肉 → si laki-laki memanggang daging → B. A: tugas si perempuan. C: tidak disebut.",
    "id": "B25-04"
   },
   {
@@ -12291,16 +12561,19 @@
    "text": "盤子裡有火腿和蛋。",
    "options": [
     {
-     "icon": "🍽️🥬",
-     "label": "sayur"
+     "icon": "🖼️",
+     "label": "sayur",
+     "img": "B25-T6a"
     },
     {
-     "icon": "🍽️🥩",
-     "label": "daging"
+     "icon": "🖼️",
+     "label": "daging",
+     "img": "B25-T6b"
     },
     {
-     "icon": "🍽️🥓🥚",
-     "label": "ham dan telur"
+     "icon": "🖼️",
+     "label": "ham dan telur",
+     "img": "B25-T6c"
     }
    ],
    "answer": 2,
@@ -12313,14 +12586,15 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "🔪",
-    "label": "pisau"
+    "label": "pisau",
+    "img": "B25-T7"
    },
    "options": [
+    "這是刀子。",
     "這是叉子。",
-    "這是湯匙。",
-    "這是刀子。"
+    "這是湯匙。"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "刀子 = pisau.",
    "id": "B25-07"
   },
@@ -12330,15 +12604,16 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "🧊",
-    "label": "es batu"
+    "label": "segelas air dengan es batu",
+    "img": "B25-T8"
    },
    "text": "我的水裡要放（　）。",
    "options": [
-    "冰塊",
     "火腿",
+    "冰塊",
     "盤子"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "冰塊 = es batu.",
    "id": "B25-08"
   },
@@ -12346,39 +12621,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "今天我們在家做飯。我在房子裡（1）青菜，我哥哥在外頭（2）肉。我用（3）吃肉，用（4）喝湯。吃（5）了，大家都很高興。",
+   "text": "今天我們在家做飯。我在房子裡（1），我哥哥在外頭（2）。我用（3），用（4）喝湯。（5），大家都很高興。",
    "options": [
-    "叉子",
-    "炒",
-    "刀子",
-    "烤",
+    "炒青菜",
+    "烤肉",
+    "叉子吃肉",
     "湯匙",
-    "飽"
+    "吃飽了",
+    "冰塊炸雞"
    ],
    "answers": [
-    1,
-    3,
     0,
-    4,
-    5
+    1,
+    2,
+    3,
+    4
    ],
-   "why": "炒青菜 / di luar → 烤肉 / 叉子 untuk daging / 湯匙 untuk sup / 吃飽.",
+   "why": "(1) 炒青菜. (2) 在外頭 + 烤肉. (3) 用 + 叉子吃肉. (4) 用 + 湯匙 + 喝湯. (5) 吃飽了 + 大家都很高興. 冰塊炸雞 tidak masuk akal.",
    "id": "B25-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "王太太做晚餐：她先洗青菜，然後炒青菜。魚要炸十分鐘。",
-   "question": "王太太先做什麼？",
+   "text": "王太太做晚餐：她先洗青菜，然後炒青菜。魚要炸十分鐘，炸了魚就吃飯。王先生六點半到家，他很餓。",
+   "question": "吃飯以前，王太太最後做什麼？",
    "options": [
     "炸魚",
     "洗青菜",
     "炒青菜",
     "吃飯"
    ],
-   "answer": 1,
-   "why": "先洗青菜.",
+   "answer": 0,
+   "why": "Urutan: cuci sayur → tumis sayur → goreng ikan → makan → yang terakhir sebelum makan: 炸魚 → A. B: yang pertama. C: yang kedua. D: sesudahnya.",
    "id": "B25-10"
   }
  ],
@@ -12439,15 +12714,18 @@
    "options": [
     {
      "icon": "🧃",
-     "label": "jus"
+     "label": "jus",
+     "img": "B26-T3a"
     },
     {
      "icon": "☕",
-     "label": "kopi"
+     "label": "kopi",
+     "img": "B26-T3b"
     },
     {
      "icon": "🍺",
-     "label": "bir"
+     "label": "bir",
+     "img": "B26-T3c"
     }
    ],
    "answer": 0,
@@ -12480,19 +12758,22 @@
    "options": [
     {
      "icon": "🍺",
-     "label": "bir"
+     "label": "bir",
+     "img": "B26-T4a"
     },
     {
-     "icon": "🥤⬆️",
-     "label": "cola gelas besar"
+     "icon": "🥤",
+     "label": "cola gelas kecil",
+     "img": "B26-T4c"
     },
     {
-     "icon": "🥤⬇️",
-     "label": "cola gelas kecil"
+     "icon": "🥤",
+     "label": "cola gelas besar",
+     "img": "B26-T4b"
     }
    ],
-   "answer": 1,
-   "why": "Cola + 大杯.",
+   "answer": 2,
+   "why": "可樂 + 大杯 → C. A: tidak disebut. B: cola, tetapi gelas kecil.",
    "id": "B26-04"
   },
   {
@@ -12536,18 +12817,21 @@
    "options": [
     {
      "icon": "🍎",
-     "label": "satu apel"
+     "label": "satu apel",
+     "img": "B26-T6a"
     },
     {
-     "icon": "🍌🍌🍌",
-     "label": "tiga pisang"
+     "icon": "🍎",
+     "label": "tiga apel",
+     "img": "B26-T6c"
     },
     {
-     "icon": "🍎🍎🍎",
-     "label": "tiga apel"
+     "icon": "🍌",
+     "label": "tiga pisang",
+     "img": "B26-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "蘋果 = apel.",
    "id": "B26-06"
   },
@@ -12557,7 +12841,8 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "🧋",
-    "label": "teh susu"
+    "label": "teh susu",
+    "img": "B26-T7"
    },
    "options": [
     "我喜歡喝奶茶。",
@@ -12573,16 +12858,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "😖💊",
-    "label": "obat cair yang pahit"
+    "icon": "💊",
+    "label": "obat cair yang pahit",
+    "img": "B26-T8"
    },
    "text": "這個藥很難（　）。",
    "options": [
-    "喝",
     "看",
-    "聽"
+    "聽",
+    "喝"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "難喝 = tidak enak diminum.",
    "id": "B26-08"
   },
@@ -12590,30 +12876,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "天氣很熱，我很（1）。我去買一杯（2），是蘋果的。我妹妹九歲，她喜歡喝（3）。我爸爸喜歡喝（4），可是他不能喝很多。這杯果汁很好（5）！",
+   "text": "天氣很熱，我（1）。我去買一杯（2）。我妹妹九歲，她喜歡喝（3）。我爸爸喜歡喝（4），可是他不能喝很多。這杯果汁（5）！",
    "options": [
-    "渴",
-    "啤酒",
-    "喝",
-    "果汁",
-    "香蕉",
-    "可樂"
+    "覺得很渴",
+    "蘋果果汁",
+    "冰的可樂",
+    "冰的啤酒",
+    "很好喝",
+    "很難看"
    ],
    "answers": [
     0,
-    3,
-    5,
     1,
-    2
+    2,
+    3,
+    4
    ],
-   "why": "Anak 9 tahun → 可樂; ayah → 啤酒; 好喝.",
+   "why": "(1) 天氣很熱 → 覺得很渴. (2) 一杯 + 蘋果果汁. (3) 喝 + 冰的可樂. (4) 爸爸 + 冰的啤酒 (不能喝很多). (5) 果汁 + 很好喝. 很難看 tidak cocok untuk minuman.",
    "id": "B26-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "小明的店：紅茶二十五塊，奶茶三十五塊，果汁五十塊。大杯多十塊。",
+   "text": "小明的店：紅茶二十五塊，奶茶三十五塊，果汁五十塊。大杯多十塊。今天天氣很熱，客人很多，大家都想喝冰的。",
    "question": "一杯大杯的紅茶多少錢？",
    "options": [
     "二十五塊",
@@ -12682,20 +12968,23 @@
    "question": "這位先生的早餐吃什麼？",
    "options": [
     {
-     "icon": "🍔",
-     "label": "hamburger"
+     "icon": "🥪",
+     "label": "sandwich",
+     "img": "B27-T3b"
     },
     {
-     "icon": "🥪",
-     "label": "sandwich"
+     "icon": "🍔",
+     "label": "hamburger",
+     "img": "B27-T3a"
     },
     {
      "icon": "🌭",
-     "label": "hot dog"
+     "label": "hot dog",
+     "img": "B27-T3c"
     }
    ],
-   "answer": 1,
-   "why": "三明治 = sandwich.",
+   "answer": 0,
+   "why": "一個三明治 → sandwich → A. B dan C: roti lain.",
    "id": "B27-03"
   },
   {
@@ -12723,20 +13012,23 @@
    "question": "這位小姐要吃什麼？",
    "options": [
     {
-     "icon": "🌭",
-     "label": "hot dog"
+     "icon": "🍔",
+     "label": "hamburger",
+     "img": "B27-T4b"
     },
     {
-     "icon": "🍔",
-     "label": "hamburger"
+     "icon": "🌭",
+     "label": "hot dog",
+     "img": "B27-T4a"
     },
     {
      "icon": "🥟",
-     "label": "pangsit"
+     "label": "pangsit",
+     "img": "B27-T4c"
     }
    ],
-   "answer": 0,
-   "why": "我要吃熱狗.",
+   "answer": 1,
+   "why": "我要吃熱狗 → hot dog → B. A: tidak disebut. C: 餃子 disebut sebagai contoh jajanan.",
    "id": "B27-04"
   },
   {
@@ -12776,22 +13068,25 @@
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "我買兩個饅頭。",
+   "text": "我在市場買兩個饅頭。",
    "options": [
     {
-     "icon": "🥯",
-     "label": "satu mantou"
+     "icon": "🖼️",
+     "label": "satu mantou",
+     "img": "B27-T6a"
     },
     {
-     "icon": "🥯🥯",
-     "label": "dua mantou"
+     "icon": "🖼️",
+     "label": "dua pangsit",
+     "img": "B27-T6c"
     },
     {
-     "icon": "🥟🥟",
-     "label": "dua pangsit"
+     "icon": "🖼️",
+     "label": "dua mantou",
+     "img": "B27-T6b"
     }
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "饅頭 = roti kukus mantou.",
    "id": "B27-06"
   },
@@ -12801,14 +13096,15 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "🍔",
-    "label": "hamburger"
+    "label": "hamburger",
+    "img": "B27-T7"
    },
    "options": [
+    "我要一個漢堡。",
     "我要一份餃子。",
-    "我要一個三明治。",
-    "我要一個漢堡。"
+    "我要一個三明治。"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "漢堡 = hamburger.",
    "id": "B27-07"
   },
@@ -12818,15 +13114,16 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "🚶",
-    "label": "berjalan ke arah pembicara"
+    "label": "seseorang berjalan mendekat ke arah pembicara",
+    "img": "B27-T8"
    },
    "text": "你看，他走（　）了。",
    "options": [
     "種",
-    "道",
-    "來"
+    "來",
+    "道"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Mendekat ke pembicara → V來.",
    "id": "B27-08"
   },
@@ -12834,30 +13131,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "今天晚上我們（1）去夜市。夜市有很多（2）小吃。我想吃一（3）餃子，我妹妹要吃（4）。我們也要去（5）買水果。",
+   "text": "今天晚上我們（1）。夜市有（2）。我想吃（3），我妹妹要吃熱狗。明天早上我們也要（4），（5）。",
    "options": [
-    "種",
-    "要",
-    "道",
-    "熱狗",
-    "份",
-    "市場"
+    "要去夜市",
+    "很多種小吃",
+    "一份餃子",
+    "去市場",
+    "買水果和菜",
+    "兩道熱狗"
    ],
    "answers": [
-    1,
     0,
-    4,
+    1,
+    2,
     3,
-    5
+    4
    ],
-   "why": "要 (rencana) / 種 / 一份 / 熱狗 / 市場.",
+   "why": "(1) 要去夜市. (2) 很多種小吃. (3) 吃 + 一份餃子. (4) 去市場. (5) 買水果和菜. 兩道熱狗 salah kata penggolong.",
    "id": "B27-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "夜市的小吃：餃子一份六十塊，饅頭一個十五塊，熱狗一個四十塊。",
+   "text": "夜市的小吃：餃子一份六十塊，饅頭一個十五塊，熱狗一個四十塊。今天晚上我和哥哥去夜市，我想吃熱狗，哥哥想吃餃子。",
    "question": "兩個熱狗和一份餃子，一共多少錢？",
    "options": [
     "一百四十塊",
@@ -12878,7 +13175,7 @@
    "picture": {
     "icon": "🍽️⭐",
     "label": "restoran dengan antrean panjang dan bintang",
-    "img": "B28-3"
+    "img": "B28-4"
    },
    "question": "這家餐廳怎麼樣？",
    "options": [
@@ -12897,16 +13194,16 @@
    "picture": {
     "icon": "🍵🏮",
     "label": "orang-orang minum teh di dalam kedai teh",
-    "img": "B28-4"
+    "img": "B28-5"
    },
    "question": "他們在哪裡？",
    "options": [
-    "在茶館。",
     "在飯店。",
-    "在市場。"
+    "在市場。",
+    "在茶館。"
    ],
-   "answer": 0,
-   "why": "茶館 = kedai teh (teko & cangkir teh di meja).",
+   "answer": 2,
+   "why": "Orang-orang minum teh di kedai teh → 在茶館 → C. A dan B: tempat lain.",
    "id": "B28-02"
   },
   {
@@ -12926,20 +13223,23 @@
    "question": "他們要去哪裡？",
    "options": [
     {
-     "icon": "🍜",
-     "label": "warung mi"
+     "icon": "🖼️",
+     "label": "warung mi",
+     "img": "B28-T3a"
     },
     {
-     "icon": "🏨",
-     "label": "hotel"
+     "icon": "🖼️",
+     "label": "kedai teh",
+     "img": "B28-T3c"
     },
     {
-     "icon": "🍵",
-     "label": "kedai teh"
+     "icon": "🖼️",
+     "label": "hotel",
+     "img": "B28-T3b"
     }
    ],
-   "answer": 2,
-   "why": "茶館 = kedai teh.",
+   "answer": 1,
+   "why": "那家茶館 → kedai teh → B. A: tidak disebut. C: tempat lain.",
    "id": "B28-03"
   },
   {
@@ -12968,15 +13268,18 @@
    "options": [
     {
      "icon": "🍔",
-     "label": "hamburger"
+     "label": "hamburger",
+     "img": "B28-T4a"
     },
     {
      "icon": "🍜",
-     "label": "mi sapi"
+     "label": "mi sapi",
+     "img": "B28-T4b"
     },
     {
      "icon": "🥟",
-     "label": "pangsit"
+     "label": "pangsit",
+     "img": "B28-T4c"
     }
    ],
    "answer": 2,
@@ -13007,32 +13310,35 @@
    ],
    "question": "這位小姐覺得第一家飯店怎麼樣？",
    "options": [
-    "很貴",
     "很便宜",
     "很特別",
-    "很有名"
+    "很有名",
+    "很貴"
    ],
-   "answer": 0,
-   "why": "Setuju mencari yang lain karena 這麼貴.",
+   "answer": 3,
+   "why": "這家飯店這麼貴 → D. A: itu restoran kedua. B dan C: tidak disebut.",
    "id": "B28-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他在看菜單。",
+   "text": "他在餐廳看菜單。",
    "options": [
     {
-     "icon": "📱",
-     "label": "melihat ponsel"
+     "icon": "🖼️",
+     "label": "melihat ponsel",
+     "img": "B28-T6a"
     },
     {
-     "icon": "📋",
-     "label": "membaca menu"
+     "icon": "🖼️",
+     "label": "membaca menu",
+     "img": "B28-T6b"
     },
     {
-     "icon": "📰",
-     "label": "membaca koran"
+     "icon": "🖼️",
+     "label": "membaca koran",
+     "img": "B28-T6c"
     }
    ],
    "answer": 1,
@@ -13044,15 +13350,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🍽️🍽️🍽️",
-    "label": "tiga hidangan"
+    "icon": "🍽️",
+    "label": "menu spesial dengan tiga hidangan",
+    "img": "B28-T7"
    },
    "options": [
+    "今天的特別餐有三道菜。",
     "今天沒有菜。",
-    "今天只有一道菜。",
-    "今天的特別餐有三道菜。"
+    "今天只有一道菜。"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "三道菜 = tiga hidangan.",
    "id": "B28-07"
   },
@@ -13062,7 +13369,8 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "🍵",
-    "label": "kedai teh"
+    "label": "kedai teh",
+    "img": "B28-T8"
    },
    "text": "我們去那（　）茶館吧。",
    "options": [
@@ -13078,30 +13386,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "週末我們去那（1）有名的餐廳，（2）？那家餐廳很（3），菜單上有很多（4）的菜。牛肉麵（5）餃子都可以。",
+   "text": "週末我們去（1），（2）？那家餐廳（3），菜單上有（4）。牛肉麵（5）都可以。",
    "options": [
-    "道",
-    "有名",
-    "或是",
+    "那家有名的餐廳",
     "怎麼樣",
-    "特別",
-    "家"
+    "很有名",
+    "很多特別的菜",
+    "或是餃子",
+    "這麼一份"
    ],
    "answers": [
-    5,
-    3,
+    0,
     1,
-    4,
-    2
+    2,
+    3,
+    4
    ],
-   "why": "那家 / …，怎麼樣？ / 有名 / 特別 / 或是 (pernyataan).",
+   "why": "(1) 去 + 那家有名的餐廳. (2) usulan + 怎麼樣. (3) 很有名. (4) 菜單上有 + 很多特別的菜. (5) 牛肉麵 + 或是餃子 + 都可以. 這麼一份 tidak cocok di titik mana pun.",
    "id": "B28-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "這間茶館很有名。這裡的茶很好喝，也有特別的點心。週末人很多，要早一點去。",
+   "text": "這間茶館很有名。這裡的茶很好喝，也有特別的點心。週末人很多，要早一點去。星期一到星期五人比較少，下午去也可以。",
    "question": "週末去茶館應該怎麼做？",
    "options": [
     "帶點心去",
@@ -13170,16 +13478,19 @@
    "question": "這位先生的家離學校怎麼樣？",
    "options": [
     {
-     "icon": "🚌⏳",
-     "label": "jauh, 1 jam naik kendaraan"
+     "icon": "🖼️",
+     "label": "jauh, 1 jam naik kendaraan",
+     "img": "B29-T3a"
     },
     {
-     "icon": "🚶",
-     "label": "dekat, jalan kaki"
+     "icon": "🖼️",
+     "label": "dekat, jalan kaki",
+     "img": "B29-T3b"
     },
     {
-     "icon": "🚲",
-     "label": "10 menit bersepeda"
+     "icon": "🖼️",
+     "label": "10 menit bersepeda",
+     "img": "B29-T3c"
     }
    ],
    "answer": 0,
@@ -13211,20 +13522,23 @@
    "question": "書店在哪裡？",
    "options": [
     {
-     "icon": "🚶",
-     "label": "5 menit jalan, di sisi ini"
+     "icon": "🖼️",
+     "label": "harus naik bus",
+     "img": "B29-T4b"
     },
     {
-     "icon": "🚌",
-     "label": "harus naik bus"
+     "icon": "🖼️",
+     "label": "5 menit jalan, di sisi ini",
+     "img": "B29-T4a"
     },
     {
-     "icon": "🛣️",
-     "label": "di seberang jalan"
+     "icon": "🖼️",
+     "label": "di seberang jalan",
+     "img": "B29-T4c"
     }
    ],
-   "answer": 0,
-   "why": "Tidak menyeberang, 5 menit.",
+   "answer": 1,
+   "why": "走五分鐘 + 不要過馬路 → di sisi ini → B. A: tidak disebut. C: tidak perlu menyeberang.",
    "id": "B29-04"
   },
   {
@@ -13253,11 +13567,11 @@
    "options": [
     "她沒有地圖",
     "車站很遠",
-    "她不想走路",
-    "車站不遠"
+    "車站不遠",
+    "她不想走路"
    ],
-   "answer": 3,
-   "why": "哪有那麼遠 = tidak sejauh itu (retoris).",
+   "answer": 2,
+   "why": "哪有那麼遠 = tidak sejauh itu → stasiun tidak jauh → C. A: mereka sedang melihat peta. B: kebalikannya. D: tidak disebut.",
    "id": "B29-05"
   },
   {
@@ -13267,19 +13581,22 @@
    "text": "學校離公園很近。",
    "options": [
     {
-     "icon": "🏫",
-     "label": "tidak ada taman"
+     "icon": "🖼️",
+     "label": "sekolah dekat taman",
+     "img": "B29-T6c"
     },
     {
-     "icon": "🏫🛣️🌳",
-     "label": "sekolah jauh dari taman"
+     "icon": "🖼️",
+     "label": "tidak ada taman",
+     "img": "B29-T6a"
     },
     {
-     "icon": "🏫🌳",
-     "label": "sekolah dekat taman"
+     "icon": "🖼️",
+     "label": "sekolah jauh dari taman",
+     "img": "B29-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "A 離 B 很近.",
    "id": "B29-06"
   },
@@ -13289,14 +13606,15 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "🗺️",
-    "label": "peta"
+    "label": "peta",
+    "img": "B29-T7"
    },
    "options": [
     "我們看電影吧。",
-    "我們看報紙吧。",
-    "我們看地圖吧。"
+    "我們看地圖吧。",
+    "我們看報紙吧。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "地圖 = peta.",
    "id": "B29-07"
   },
@@ -13305,16 +13623,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🛣️",
-    "label": "jalan raya ramai"
+    "icon": "🚗",
+    "label": "jalan raya yang ramai",
+    "img": "B29-T8"
    },
    "text": "這條（　）車很多。",
    "options": [
-    "馬路",
     "車站",
-    "地圖"
+    "地圖",
+    "馬路"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "馬路 = jalan raya.",
    "id": "B29-08"
   },
@@ -13322,30 +13641,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我家（1）學校很（2），走路五分鐘。可是我家離（3）很遠，坐火車不方便。我每天早上七點（4）家。我家在一條很小的（5）上。",
+   "text": "我家（1），走路五分鐘。可是我家（2），坐火車不方便。我每天早上七點（3）。我家在（4）。我常常（5）走到學校。",
    "options": [
-    "車站",
-    "街",
-    "近",
-    "離開",
-    "離",
-    "地圖"
+    "離學校很近",
+    "離車站很遠",
+    "離開家",
+    "一條很小的街上",
+    "從這條街",
+    "看了地圖"
    ],
    "answers": [
-    4,
-    2,
     0,
+    1,
+    2,
     3,
-    1
+    4
    ],
-   "why": "離 / 近 / 車站 / 離開 / 街.",
+   "why": "(1) 離學校很近. (2) 離車站很遠. (3) 七點 + 離開家. (4) 在 + 一條很小的街上. (5) 從這條街 + 走到學校. 看了地圖 tidak cocok di titik mana pun.",
    "id": "B29-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "從王小姐家到學校：從她家出來，走過兩條街，就是學校。學校離她家不遠，可是離車站很遠。",
+   "text": "從王小姐家到學校：從她家出來，走過兩條街，就是學校。學校離她家不遠，可是離車站很遠。週末她坐公車去車站。",
    "question": "哪個是對的？",
    "options": [
     "她坐車去學校",
@@ -13414,20 +13733,23 @@
    "question": "圖書館怎麼走？",
    "options": [
     {
-     "icon": "⬅️🏛️",
-     "label": "belok kiri"
-    },
-    {
-     "icon": "🌳🏛️",
-     "label": "lurus, lewat taman"
+     "icon": "🗺️",
+     "label": "denah rute: belok kiri",
+     "img": "B30-T3a"
     },
     {
      "icon": "🚌",
-     "label": "naik bus"
+     "label": "naik bus",
+     "img": "B30-T3c"
+    },
+    {
+     "icon": "🗺️",
+     "label": "denah rute: lurus, lewat taman",
+     "img": "B30-T3b"
     }
    ],
-   "answer": 1,
-   "why": "往前走 + 經過公園.",
+   "answer": 2,
+   "why": "往前走，經過一個公園 → C. A: tidak belok. B: cukup jalan kaki.",
    "id": "B30-03"
   },
   {
@@ -13455,20 +13777,23 @@
    "question": "他們在哪裡轉？",
    "options": [
     {
-     "icon": "↩️",
-     "label": "persimpangan ke-1, ke kiri"
+     "icon": "🗺️",
+     "label": "denah rute: perempatan ke-2, ke kiri",
+     "img": "B30-T4b"
     },
     {
-     "icon": "⬅️",
-     "label": "persimpangan ke-2, ke kiri"
+     "icon": "🗺️",
+     "label": "denah rute: perempatan ke-1, ke kiri",
+     "img": "B30-T4a"
     },
     {
-     "icon": "➡️",
-     "label": "persimpangan ke-2, ke kanan"
+     "icon": "🗺️",
+     "label": "denah rute: perempatan ke-2, ke kanan",
+     "img": "B30-T4c"
     }
    ],
-   "answer": 1,
-   "why": "第二個 + 往左.",
+   "answer": 0,
+   "why": "第二個 + 往左 → A. B: perempatannya salah. C: arahnya salah.",
    "id": "B30-04"
   },
   {
@@ -13496,34 +13821,37 @@
    "question": "這位小姐回家以前要做什麼？",
    "options": [
     "去公園",
+    "去超市買東西",
     "在家做飯",
-    "去學校",
-    "去超市買東西"
+    "去學校"
    ],
-   "answer": 3,
-   "why": "先去超市，然後回家.",
+   "answer": 1,
+   "why": "我去超市買東西，然後回家 → B. A dan D: tidak disebut. C: dilakukan sesudah pulang, bukan sebelumnya.",
    "id": "B30-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "書放在桌子上。",
+   "text": "我的書放在桌子上。",
    "options": [
     {
-     "icon": "📚",
-     "label": "buku di atas meja"
+     "icon": "🖼️",
+     "label": "buku di kasur",
+     "img": "B30-T6b"
     },
     {
-     "icon": "🛏️📚",
-     "label": "buku di kasur"
+     "icon": "🖼️",
+     "label": "buku di tas",
+     "img": "B30-T6c"
     },
     {
-     "icon": "🎒📚",
-     "label": "buku di tas"
+     "icon": "🖼️",
+     "label": "buku di atas meja",
+     "img": "B30-T6a"
     }
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "V在 + tempat.",
    "id": "B30-06"
   },
@@ -13533,14 +13861,15 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "🚦",
-    "label": "perempatan"
+    "label": "perempatan",
+    "img": "B30-T7"
    },
    "options": [
     "這是公園。",
-    "這是車站。",
-    "這是十字路口。"
+    "這是十字路口。",
+    "這是車站。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "十字路口 = perempatan.",
    "id": "B30-07"
   },
@@ -13550,7 +13879,8 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "⬆️",
-    "label": "menuju ke depan"
+    "label": "anak panah menuju ke depan",
+    "img": "B30-T8"
    },
    "text": "你（　）前走，就到了。",
    "options": [
@@ -13566,30 +13896,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "從學校（1）前走，（2）一個公園，在第二個（3）往右（4），就是我家。我每天六點（5）家。",
+   "text": "從學校（1），（2），在第二個路口（3），就是我家。我每天六點（4）。今天我（5）。",
    "options": [
-    "回到",
-    "經過",
-    "往",
-    "離",
-    "路口",
-    "轉"
+    "往前走",
+    "經過一個公園",
+    "往右轉",
+    "回到家",
+    "經過夜市",
+    "往家前"
    ],
    "answers": [
-    2,
+    0,
     1,
-    4,
-    5,
-    0
+    2,
+    3,
+    4
    ],
-   "why": "往前走 / 經過 / 路口 / 轉 / 回到家.",
+   "why": "(1) 往前走. (2) 經過一個公園. (3) 在路口 + 往右轉. (4) 六點 + 回到家. (5) 今天 + 經過夜市. 往家前 tidak gramatikal.",
    "id": "B30-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "去車站：從學校大門出來，往右走，經過兩個路口，在第三個路口往左轉，就到車站。",
+   "text": "去車站：從學校大門出來，往右走，經過兩個路口，在第三個路口往左轉，就到車站。從學校走到車站要十五分鐘。",
    "question": "去車站要在第幾個路口轉？",
    "options": [
     "第三個",
@@ -13633,12 +13963,12 @@
    },
    "question": "你去車站做什麼？",
    "options": [
-    "接我媽媽。",
     "坐飛機。",
+    "接我媽媽。",
     "去學校。"
    ],
-   "answer": 0,
-   "why": "接 = menjemput. Ibu turun dari kereta dan disambut.",
+   "answer": 1,
+   "why": "Menyambut ibu yang turun dari kereta → 接我媽媽 → B. A dan C: tujuan lain.",
    "id": "B31-02"
   },
   {
@@ -13658,16 +13988,19 @@
    "question": "坐巴士要多久？",
    "options": [
     {
-     "icon": "🚌",
-     "label": "2 jam"
+     "icon": "⏱️",
+     "label": "2 jam",
+     "img": "B31-T3a"
     },
     {
-     "icon": "🚆",
-     "label": "1,5 jam"
+     "icon": "⏱️",
+     "label": "1,5 jam",
+     "img": "B31-T3b"
     },
     {
-     "icon": "🚌",
-     "label": "5 jam"
+     "icon": "⏱️",
+     "label": "5 jam",
+     "img": "B31-T3c"
     }
    ],
    "answer": 2,
@@ -13700,19 +14033,22 @@
    "options": [
     {
      "icon": "🚗",
-     "label": "satu mobil"
+     "label": "dua mobil",
+     "img": "B31-T4b"
     },
     {
-     "icon": "🚗🚗",
-     "label": "dua mobil"
+     "icon": "🚗",
+     "label": "satu mobil",
+     "img": "B31-T4a"
     },
     {
-     "icon": "🚗🚗🚗",
-     "label": "tiga mobil"
+     "icon": "🚗",
+     "label": "tiga mobil",
+     "img": "B31-T4c"
     }
    ],
-   "answer": 1,
-   "why": "兩臺.",
+   "answer": 0,
+   "why": "兩臺 → dua mobil → A. B dan C: jumlah lain.",
    "id": "B31-04"
   },
   {
@@ -13739,35 +14075,38 @@
    ],
    "question": "這位先生為什麼不坐公共汽車？",
    "options": [
+    "公共汽車上人很多",
     "公共汽車很貴",
     "他不會騎腳踏車",
-    "公共汽車上人很多",
     "公共汽車站很遠"
    ],
-   "answer": 2,
-   "why": "Alasan: 人太多了.",
+   "answer": 0,
+   "why": "公共汽車人太多了 → A. B: ia justru naik sepeda. C dan D: tidak disebut.",
    "id": "B31-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "司機開巴士。",
+   "text": "這位司機每天開巴士。",
    "options": [
     {
      "icon": "🚕",
-     "label": "taksi"
-    },
-    {
-     "icon": "🧑‍✈️🚌",
-     "label": "sopir bus"
+     "label": "taksi",
+     "img": "B31-T6a"
     },
     {
      "icon": "✈️",
-     "label": "pilot"
+     "label": "pilot",
+     "img": "B31-T6c"
+    },
+    {
+     "icon": "🚌",
+     "label": "sopir bus",
+     "img": "B31-T6b"
     }
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "司機 = sopir.",
    "id": "B31-06"
   },
@@ -13776,8 +14115,9 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🚲🚲🚲",
-    "label": "tiga sepeda"
+    "icon": "🚲",
+    "label": "tiga sepeda",
+    "img": "B31-T7"
    },
    "options": [
     "這裡有三個司機。",
@@ -13794,7 +14134,8 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "🚗",
-    "label": "ibu menjemput anak"
+    "label": "ibu menjemput anak dengan mobil",
+    "img": "B31-T8"
    },
    "text": "下課以後，媽媽開車來（　）我。",
    "options": [
@@ -13810,23 +14151,23 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "（1）臺北到臺中，我坐（2）。（3）開車開得很好。到臺中以後，我爸爸開車來（4）我。我弟弟不會開車，他（5）腳踏車。",
+   "text": "（1），我坐巴士。巴士的（2）。到臺中以後，（3）。我弟弟不會開車，他（4）。我們家有（5）。",
    "options": [
-    "司機",
-    "巴士",
-    "接",
-    "騎",
-    "從",
-    "部"
+    "從臺北到臺中",
+    "司機開車開得很好",
+    "我爸爸開車來接我",
+    "騎腳踏車",
+    "兩臺汽車",
+    "從巴士到司機"
    ],
    "answers": [
-    4,
-    1,
     0,
+    1,
     2,
-    3
+    3,
+    4
    ],
-   "why": "從…到 / 巴士 / 司機 / 接 / 騎.",
+   "why": "(1) 從臺北到臺中. (2) 司機開車開得很好. (3) 爸爸開車來接我. (4) 不會開車 → 騎腳踏車. (5) 有 + 兩臺汽車. 從巴士到司機 tidak masuk akal.",
    "id": "B31-09"
   },
   {
@@ -13903,15 +14244,18 @@
    "options": [
     {
      "icon": "📅",
-     "label": "bulan depan"
+     "label": "bulan depan",
+     "img": "B32-T3a"
     },
     {
      "icon": "📅",
-     "label": "besok"
+     "label": "besok",
+     "img": "B32-T3b"
     },
     {
      "icon": "📅",
-     "label": "minggu depan"
+     "label": "minggu depan",
+     "img": "B32-T3c"
     }
    ],
    "answer": 2,
@@ -13943,20 +14287,23 @@
    "question": "他們還有多少時間？",
    "options": [
     {
-     "icon": "⏳",
-     "label": "4 jam"
+     "icon": "⏱️",
+     "label": "2 jam",
+     "img": "B32-T4b"
     },
     {
-     "icon": "⏳",
-     "label": "2 jam"
+     "icon": "⏱️",
+     "label": "4 jam",
+     "img": "B32-T4a"
     },
     {
-     "icon": "⏳",
-     "label": "40 menit"
+     "icon": "⏱️",
+     "label": "40 menit",
+     "img": "B32-T4c"
     }
    ],
-   "answer": 1,
-   "why": "還有兩個小時. 40 menit adalah waktu perjalanan.",
+   "answer": 0,
+   "why": "還有兩個小時 → 2 jam → A. B: 四 dari 四十. C: 40 menit adalah lama perjalanan.",
    "id": "B32-04"
   },
   {
@@ -13983,13 +14330,13 @@
    ],
    "question": "這位先生要做什麼？",
    "options": [
+    "幫這位小姐拿東西上樓",
     "在樓下等",
     "坐電梯",
-    "回家",
-    "幫這位小姐拿東西上樓"
+    "回家"
    ],
-   "answer": 3,
-   "why": "拿上去 = membawa naik.",
+   "answer": 0,
+   "why": "我幫你拿上去 → membawakan barang ke atas → A. B: tidak disebut. C: tidak ada lift. D: tidak disebut.",
    "id": "B32-05"
   },
   {
@@ -13999,19 +14346,22 @@
    "text": "他跑進教室來。",
    "options": [
     {
-     "icon": "🏫🏃",
-     "label": "berlari keluar"
+     "icon": "🖼️",
+     "label": "berlari keluar",
+     "img": "B32-T6a"
     },
     {
-     "icon": "🪑",
-     "label": "duduk"
+     "icon": "🖼️",
+     "label": "berlari masuk kelas",
+     "img": "B32-T6c"
     },
     {
-     "icon": "🏃🏫",
-     "label": "berlari masuk kelas"
+     "icon": "🖼️",
+     "label": "duduk",
+     "img": "B32-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "V進來 = masuk.",
    "id": "B32-06"
   },
@@ -14020,15 +14370,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🛫",
-    "label": "bandara"
+    "icon": "✈️",
+    "label": "bandara",
+    "img": "B32-T7"
    },
    "options": [
-    "這是機場。",
     "這是學校。",
-    "這是車站。"
+    "這是車站。",
+    "這是機場。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "機場 = bandara.",
    "id": "B32-07"
   },
@@ -14038,15 +14389,16 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "🧋",
-    "label": "menambah gula"
+    "label": "menambah gula ke teh susu",
+    "img": "B32-T8"
    },
    "text": "你的奶茶要（　）糖嗎？",
    "options": [
-    "加",
     "飛",
+    "加",
     "空"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "加 = menambah.",
    "id": "B32-08"
   },
@@ -14054,30 +14406,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "今天我要坐飛機回印尼。我們從家裡走（1），坐計程車去（2）。到機場以後，我們（3）有一個小時。我的朋友跑（4）說：「你忘了手機！」然後我走（5）機場。",
+   "text": "今天我要坐飛機回印尼。我們（1），（2）去機場。到機場以後，我們（3）。我的朋友（4）說：「你忘了手機！」然後我（5）。",
    "options": [
-    "進",
-    "過來",
-    "加",
-    "還",
-    "出來",
-    "機場"
+    "從家裡走出來",
+    "坐計程車",
+    "還有一個小時",
+    "跑過來",
+    "走進機場",
+    "加了糖"
    ],
    "answers": [
-    4,
-    5,
-    3,
+    0,
     1,
-    0
+    2,
+    3,
+    4
    ],
-   "why": "走出來 / 機場 / 還有 / 跑過來 / 走進.",
+   "why": "(1) 從家裡走出來. (2) 坐計程車 + 去機場. (3) 還有一個小時. (4) 朋友 + 跑過來. (5) 走進機場. 加了糖 tidak cocok di titik mana pun.",
    "id": "B32-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "小明：我明天回來！我的飛機晚上八點到臺北。你可以開車來機場接我嗎？",
+   "text": "小明：我明天回來！我的飛機晚上八點到臺北。我買了很多東西，有點重。你可以開車來機場接我嗎？",
    "question": "小明請朋友做什麼？",
    "options": [
     "坐飛機",
@@ -14146,20 +14498,23 @@
    "question": "這位小姐跟誰來？",
    "options": [
     {
-     "icon": "👨",
-     "label": "bersama ayah"
+     "icon": "🖼️",
+     "label": "bersama kakak perempuan",
+     "img": "B33-T3c"
     },
     {
-     "icon": "🧍",
-     "label": "sendirian"
+     "icon": "🖼️",
+     "label": "bersama ayah",
+     "img": "B33-T3a"
     },
     {
-     "icon": "👩👩",
-     "label": "bersama kakak perempuan"
+     "icon": "🖼️",
+     "label": "sendirian",
+     "img": "B33-T3b"
     }
    ],
-   "answer": 2,
-   "why": "跟我姊姊.",
+   "answer": 0,
+   "why": "跟我姊姊來的 → A. B: orang lain. C: ia tidak sendirian.",
    "id": "B33-03"
   },
   {
@@ -14188,15 +14543,18 @@
    "options": [
     {
      "icon": "📅",
-     "label": "15 hari"
+     "label": "15 hari",
+     "img": "B33-T4a"
     },
     {
      "icon": "📅",
-     "label": "5 hari"
+     "label": "5 hari",
+     "img": "B33-T4b"
     },
     {
      "icon": "📅",
-     "label": "2 hari"
+     "label": "2 hari",
+     "img": "B33-T4c"
     }
    ],
    "answer": 1,
@@ -14227,13 +14585,13 @@
    ],
    "question": "哪個是對的？",
    "options": [
-    "這位小姐是韓國人",
     "這位小姐是日本人",
     "這位先生是日本人",
-    "這位先生是韓國人"
+    "這位先生是韓國人",
+    "這位小姐是韓國人"
    ],
-   "answer": 0,
-   "why": "以為 = mengira (ternyata salah).",
+   "answer": 3,
+   "why": "我是韓國人 → D. A: perkiraan si laki-laki yang salah. B dan C: tentang si laki-laki, tidak disebut.",
    "id": "B33-05"
   },
   {
@@ -14243,19 +14601,22 @@
    "text": "我剛剛吃了兩個包子。",
    "options": [
     {
-     "icon": "🥟",
-     "label": "satu bakpau"
+     "icon": "🖼️",
+     "label": "baru makan dua bakpau",
+     "img": "B33-T6c"
     },
     {
-     "icon": "🥟🥟🥟",
-     "label": "tiga bakpau"
+     "icon": "🖼️",
+     "label": "satu bakpau",
+     "img": "B33-T6a"
     },
     {
-     "icon": "🥟🥟",
-     "label": "baru makan dua bakpau"
+     "icon": "🖼️",
+     "label": "tiga bakpau",
+     "img": "B33-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "V了 + jumlah.",
    "id": "B33-06"
   },
@@ -14264,15 +14625,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🧳🗺️",
-    "label": "bepergian"
+    "icon": "🧳",
+    "label": "keluarga bepergian membawa koper",
+    "img": "B33-T7"
    },
    "options": [
-    "我們去旅行。",
     "我們回家。",
-    "我們去上班。"
+    "我們去上班。",
+    "我們去旅行。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "旅行 = bepergian.",
    "id": "B33-07"
   },
@@ -14281,16 +14643,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "😮",
-    "label": "salah mengira"
+    "icon": "📅",
+    "label": "seseorang terkejut melihat kalender: hari Jumat",
+    "img": "B33-T8"
    },
    "text": "我（　）今天是星期六，今天是星期五！",
    "options": [
-    "以為",
     "好像",
+    "以為",
     "當然"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "以為 = mengira (keliru).",
    "id": "B33-08"
   },
@@ -14298,30 +14661,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我（1）去年來臺灣的。我（2）想去日本，後來來臺灣。我（3）在臺灣住了一年。朋友說：「你的中文（4）很好！」我說：「（5）不是，我的中文還不好。」",
+   "text": "我是去年（1）來臺灣的。我（2），後來來了臺灣。我（3）一年了。朋友說：「你的中文（4）！」我說：「（5），我的中文還不好。」",
    "options": [
-    "已經",
-    "好像",
-    "本來",
-    "以為",
-    "當然",
-    "是"
+    "坐飛機",
+    "本來想去日本",
+    "已經在臺灣住了",
+    "好像很好",
+    "當然不是",
+    "以為是韓國人"
    ],
    "answers": [
-    5,
-    2,
     0,
     1,
+    2,
+    3,
     4
    ],
-   "why": "是…的 / 本來 / 已經 / 好像 / 當然不是.",
+   "why": "(1) 是去年 + 坐飛機 + 來…的. (2) 本來想去日本, lalu 後來來了臺灣. (3) 已經在臺灣住了 + 一年了. (4) 好像很好. (5) 當然不是 → 還不好. 以為是韓國人 tidak cocok di titik mana pun.",
    "id": "B33-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "我本來想週末去花蓮旅行，可是我姊姊週末要來臺北，所以我不去了。",
+   "text": "我本來想週末去花蓮旅行，可是我姊姊週末要來臺北，所以我不去了。我們要一起去淡水玩，晚上去夜市吃小吃。",
    "question": "他週末可能做什麼？",
    "options": [
     "去花蓮旅行",
@@ -14391,15 +14754,18 @@
    "options": [
     {
      "icon": "🐕",
-     "label": "anjing"
+     "label": "anjing",
+     "img": "B34-T3a"
     },
     {
      "icon": "🐟",
-     "label": "ikan"
+     "label": "ikan",
+     "img": "B34-T3b"
     },
     {
      "icon": "🐦",
-     "label": "burung"
+     "label": "burung",
+     "img": "B34-T3c"
     }
    ],
    "answer": 2,
@@ -14431,20 +14797,23 @@
    "question": "他們坐在哪裡？",
    "options": [
     {
-     "icon": "🌿",
-     "label": "di rumput"
+     "icon": "🖼️",
+     "label": "di kursi",
+     "img": "B34-T4b"
     },
     {
-     "icon": "🪑",
-     "label": "di kursi"
+     "icon": "🖼️",
+     "label": "di rumput",
+     "img": "B34-T4a"
     },
     {
-     "icon": "🏖️",
-     "label": "di pasir"
+     "icon": "🖼️",
+     "label": "di pasir",
+     "img": "B34-T4c"
     }
    ],
-   "answer": 0,
-   "why": "坐在草地上.",
+   "answer": 1,
+   "why": "坐在草地上 → di rumput → B. A: tidak disebut. C: mereka melihat laut, tetapi tidak duduk di pasir.",
    "id": "B34-04"
   },
   {
@@ -14473,11 +14842,11 @@
    "options": [
     "洗澡",
     "看電視",
-    "吃晚餐",
-    "睡覺"
+    "睡覺",
+    "吃晚餐"
    ],
-   "answer": 3,
-   "why": "一到家就睡覺.",
+   "answer": 2,
+   "why": "只想睡覺 → C. A dan B: tidak disebut. D: ia tidak makan malam.",
    "id": "B34-05"
   },
   {
@@ -14487,19 +14856,22 @@
    "text": "河裡有很多魚。",
    "options": [
     {
-     "icon": "🌊🐟",
-     "label": "ikan di laut"
+     "icon": "🖼️",
+     "label": "ikan di sungai",
+     "img": "B34-T6c"
     },
     {
-     "icon": "🐦",
-     "label": "burung"
+     "icon": "🖼️",
+     "label": "ikan di laut",
+     "img": "B34-T6a"
     },
     {
-     "icon": "🏞️🐟",
-     "label": "ikan di sungai"
+     "icon": "🖼️",
+     "label": "burung",
+     "img": "B34-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "河 = sungai.",
    "id": "B34-06"
   },
@@ -14508,15 +14880,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🚶🪜",
-    "label": "turun tangga"
+    "icon": "🚶",
+    "label": "seseorang menuruni tangga",
+    "img": "B34-T7"
    },
    "options": [
     "他坐下來。",
-    "他從樓上走下來。",
-    "他從樓下走上去。"
+    "他從樓下走上去。",
+    "他從樓上走下來。"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "V下來 = turun.",
    "id": "B34-07"
   },
@@ -14526,7 +14899,8 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "🌊",
-    "label": "hamparan laut"
+    "label": "hamparan laut",
+    "img": "B34-T8"
    },
    "text": "那（　）海很漂亮。",
    "options": [
@@ -14542,30 +14916,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我們（1）下車，（2）看到海了。這（3）海很漂亮，（4）很美。我們在（5）上坐下來休息。",
+   "text": "我們（1），就看到海了。（2）很漂亮，（3）也很美。我們在（4）坐下來休息，看了（5）。",
    "options": [
-    "草地",
-    "一",
-    "就",
-    "片",
-    "河",
-    "風景"
+    "一下車",
+    "這片海",
+    "這裡的風景",
+    "草地上",
+    "很多鳥和魚",
+    "一條鳥"
    ],
    "answers": [
+    0,
     1,
     2,
     3,
-    5,
-    0
+    4
    ],
-   "why": "一…就… / 片 / 風景 / 草地.",
+   "why": "(1) 一下車 + 就. (2) 這片海. (3) 這裡的風景 + 也很美. (4) 在草地上 + 坐下來. (5) 看了 + 很多鳥和魚. 一條鳥 salah kata penggolong.",
    "id": "B34-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "週末我們去河邊玩。河邊有很多草和樹，也有很多鳥。我們一到那裡就坐下來吃東西。",
+   "text": "週末我們去河邊玩。河邊有很多草和樹，也有很多鳥。我們一到那裡就坐下來吃東西。吃了東西以後，我們在河邊走了一個小時。",
    "question": "他們到河邊以後，先做什麼？",
    "options": [
     "坐下來吃東西",
@@ -14609,12 +14983,12 @@
    },
    "question": "媽媽讓你去旅行嗎？",
    "options": [
+    "她讓我去。",
     "我在家。",
-    "她不讓我去。",
-    "她讓我去。"
+    "她不讓我去。"
    ],
-   "answer": 2,
-   "why": "讓 + orang + V = membolehkan … Ibu tersenyum, anak membawa koper.",
+   "answer": 0,
+   "why": "Ibu tersenyum mengizinkan → 她讓我去 → A. B: tidak menjawab. C: kebalikannya.",
    "id": "B35-02"
   },
   {
@@ -14634,20 +15008,23 @@
    "question": "這位先生要做什麼？",
    "options": [
     {
-     "icon": "🤝🎒",
-     "label": "membawakan barang"
+     "icon": "🖼️",
+     "label": "membayar",
+     "img": "B35-T3b"
     },
     {
-     "icon": "💵",
-     "label": "membayar"
+     "icon": "🖼️",
+     "label": "membawakan barang",
+     "img": "B35-T3a"
     },
     {
-     "icon": "📞",
-     "label": "menelepon"
+     "icon": "🖼️",
+     "label": "menelepon",
+     "img": "B35-T3c"
     }
    ],
-   "answer": 0,
-   "why": "替你拿 = membawakan untukmu.",
+   "answer": 1,
+   "why": "我替你拿 → membawakan barang → B. A dan C: kegiatan lain dengan 替.",
    "id": "B35-03"
   },
   {
@@ -14675,16 +15052,19 @@
    "question": "他們住在哪裡？",
    "options": [
     {
-     "icon": "🏠",
-     "label": "rumah teman"
+     "icon": "🖼️",
+     "label": "rumah teman",
+     "img": "B35-T4a"
     },
     {
-     "icon": "🏨⛰️",
-     "label": "di gunung"
+     "icon": "🖼️",
+     "label": "di gunung",
+     "img": "B35-T4b"
     },
     {
-     "icon": "🏨🌊",
-     "label": "penginapan di tepi laut"
+     "icon": "🖼️",
+     "label": "penginapan di tepi laut",
+     "img": "B35-T4c"
     }
    ],
    "answer": 2,
@@ -14716,34 +15096,37 @@
    "question": "今天誰付錢？",
    "options": [
     "這位先生",
+    "這位小姐",
     "這位先生和這位小姐一起",
-    "他們都不付",
-    "這位小姐"
+    "他們都不付"
    ],
-   "answer": 3,
-   "why": "Kemarin laki-laki; hari ini perempuan.",
+   "answer": 1,
+   "why": "今天你付 → si perempuan → B. A: kemarin yang membayar si laki-laki. C dan D: tidak disebut.",
    "id": "B35-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "爸爸替我照相。",
+   "text": "爸爸在公園替我照相。",
    "options": [
     {
-     "icon": "🤳",
-     "label": "swafoto"
+     "icon": "🖼️",
+     "label": "ayah memotret aku",
+     "img": "B35-T6b"
     },
     {
-     "icon": "👨📷🧒",
-     "label": "ayah memotret aku"
+     "icon": "🖼️",
+     "label": "swafoto",
+     "img": "B35-T6a"
     },
     {
-     "icon": "🧒📷👨",
-     "label": "aku memotret ayah"
+     "icon": "🖼️",
+     "label": "aku memotret ayah",
+     "img": "B35-T6c"
     }
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "替 = untuk.",
    "id": "B35-06"
   },
@@ -14753,14 +15136,15 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "🏨",
-    "label": "penginapan"
+    "label": "penginapan besar",
+    "img": "B35-T7"
    },
    "options": [
-    "這家旅館很大。",
     "這家店很小。",
+    "這家旅館很大。",
     "這是我的家。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "旅館 = penginapan.",
    "id": "B35-07"
   },
@@ -14769,16 +15153,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🙆",
-    "label": "boleh"
+    "icon": "👌",
+    "label": "seseorang mengangguk \"boleh\"",
+    "img": "B35-T8"
    },
    "text": "「我可以用你的筆嗎？」「（　）！」",
    "options": [
-    "行",
     "讓",
-    "替"
+    "替",
+    "行"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "行 = boleh/oke.",
    "id": "B35-08"
   },
@@ -14786,30 +15171,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "上個週末我（1）兩個朋友去旅行。我們住在一家（2）。我朋友（3）我付錢，我很不好意思。他說：「沒關係，下次你（4）我吃飯吧。」我說：「（5）！」",
+   "text": "上個週末我（1）去旅行。我們住在（2）。我朋友（3），我很不好意思。他說：「沒關係，下次你（4）吧。」我說：「（5）！」",
    "options": [
-    "旅館",
+    "跟兩個朋友",
+    "一家旅館",
+    "替我付錢",
+    "請我吃飯",
     "行",
-    "請",
-    "跟",
-    "讓",
-    "替"
+    "讓旅館"
    ],
    "answers": [
-    3,
     0,
-    5,
+    1,
     2,
-    1
+    3,
+    4
    ],
-   "why": "跟 / 旅館 / 替 / 請 (traktir) / 行.",
+   "why": "(1) 跟兩個朋友 + 去旅行. (2) 住在 + 一家旅館. (3) 替我付錢. (4) 下次你 + 請我吃飯. (5) setuju → 行. 讓旅館 tidak gramatikal.",
    "id": "B35-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "爸爸不讓我一個人去旅行。他說：「你跟哥哥一起去，我就讓你去。」",
+   "text": "爸爸不讓我一個人去旅行。他說：「你跟哥哥一起去，我就讓你去。」可是哥哥這個月很忙，下個月有空。",
    "question": "爸爸是什麼意思？",
    "options": [
     "我可以一個人去",
@@ -14878,16 +15263,19 @@
    "question": "郵局在哪裡？",
    "options": [
     {
-     "icon": "🏤🏦",
-     "label": "di seberang bank"
+     "icon": "🖼️",
+     "label": "di seberang bank",
+     "img": "B36-T3a"
     },
     {
-     "icon": "🏤🏫",
-     "label": "di samping sekolah"
+     "icon": "🖼️",
+     "label": "di samping sekolah",
+     "img": "B36-T3b"
     },
     {
-     "icon": "🏤🌳",
-     "label": "di dalam taman"
+     "icon": "🖼️",
+     "label": "di dalam taman",
+     "img": "B36-T3c"
     }
    ],
    "answer": 0,
@@ -14919,20 +15307,23 @@
    "question": "這位先生要付多少錢？",
    "options": [
     {
-     "icon": "💵",
-     "label": "NT$30"
+     "icon": "🏷️",
+     "label": "NT$30",
+     "img": "B36-T4a"
     },
     {
-     "icon": "💵",
-     "label": "NT$60"
+     "icon": "🏷️",
+     "label": "NT$2",
+     "img": "B36-T4c"
     },
     {
-     "icon": "💵",
-     "label": "NT$2"
+     "icon": "🏷️",
+     "label": "NT$60",
+     "img": "B36-T4b"
     }
    ],
-   "answer": 1,
-   "why": "一共六十塊.",
+   "answer": 2,
+   "why": "一共六十塊 → C. A: harga satu prangko. B: 兩 adalah jumlah prangko.",
    "id": "B36-04"
   },
   {
@@ -14959,13 +15350,13 @@
    ],
    "question": "這位小姐借幾支筆？",
    "options": [
+    "一支",
     "兩支",
     "很多支",
-    "她不借",
-    "一支"
+    "她不借"
    ],
-   "answer": 3,
-   "why": "一支就夠了.",
+   "answer": 0,
+   "why": "一支就夠了 → A. B dan C: tidak disebut. D: ia jadi meminjam.",
    "id": "B36-05"
   },
   {
@@ -14975,19 +15366,22 @@
    "text": "他在銀行工作。",
    "options": [
     {
-     "icon": "🏦💼",
-     "label": "bekerja di bank"
+     "icon": "🖼️",
+     "label": "di sekolah",
+     "img": "B36-T6b"
     },
     {
-     "icon": "🏫",
-     "label": "di sekolah"
+     "icon": "🖼️",
+     "label": "bekerja di bank",
+     "img": "B36-T6a"
     },
     {
-     "icon": "🏤",
-     "label": "di kantor pos"
+     "icon": "🖼️",
+     "label": "di kantor pos",
+     "img": "B36-T6c"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "銀行.",
    "id": "B36-06"
   },
@@ -14996,15 +15390,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "✉️🏷️",
-    "label": "amplop berperangko"
+    "icon": "✉️",
+    "label": "amplop berperangko",
+    "img": "B36-T7"
    },
    "options": [
+    "信上有郵票。",
     "這是一張地圖。",
-    "信上沒有郵票。",
-    "信上有郵票。"
+    "信上沒有郵票。"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "郵票 = perangko.",
    "id": "B36-07"
   },
@@ -15013,16 +15408,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "📚🤝",
-    "label": "meminjam dari perpustakaan"
+    "icon": "📚",
+    "label": "meminjam buku di perpustakaan",
+    "img": "B36-T8"
    },
    "text": "我跟圖書館（　）了三本書。",
    "options": [
-    "借",
     "寄",
+    "借",
     "送"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "借 = meminjam.",
    "id": "B36-08"
   },
@@ -15030,30 +15426,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "（1），郵局在哪裡？我想（2）信到印尼。我要買五張（3）。然後我要去（4）拿錢。上個星期，我的朋友跟我（5）了一百塊。",
+   "text": "（1），郵局在哪裡？我想（2）。我要買（3）。然後我要去（4）拿錢。上個星期，我的朋友（5）一百塊。",
    "options": [
-    "寄",
-    "郵票",
-    "銀行",
     "請問",
-    "信",
-    "借"
+    "寄信到印尼",
+    "五張郵票",
+    "銀行",
+    "跟我借了",
+    "借郵局"
    ],
    "answers": [
-    3,
     0,
     1,
     2,
-    5
+    3,
+    4
    ],
-   "why": "請問 / 寄信 / 郵票 / 銀行 / 借.",
+   "why": "(1) 請問 + pertanyaan. (2) 想 + 寄信到印尼. (3) 買 + 五張郵票. (4) 去銀行 + 拿錢. (5) 朋友 + 跟我借了 + 一百塊. 借郵局 tidak masuk akal.",
    "id": "B36-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "郵局：早上八點到下午五點。星期六上午開，星期天不開。",
+   "text": "郵局：早上八點到下午五點。星期六上午開，星期天不開。星期一到星期五，下午三點以後人很多，要早一點去。",
    "question": "星期六下午可以去郵局嗎？",
    "options": [
     "可以",
@@ -15122,16 +15518,19 @@
    "question": "這位小姐要做什麼？",
    "options": [
     {
-     "icon": "📞",
-     "label": "menelepon"
+     "icon": "🖼️",
+     "label": "menelepon",
+     "img": "B37-T3a"
     },
     {
-     "icon": "🔍",
-     "label": "membantu mencari"
+     "icon": "🖼️",
+     "label": "membantu mencari",
+     "img": "B37-T3b"
     },
     {
-     "icon": "🏃",
-     "label": "lari"
+     "icon": "🖼️",
+     "label": "lari",
+     "img": "B37-T3c"
     }
    ],
    "answer": 1,
@@ -15163,20 +15562,23 @@
    "question": "誰吃了蛋糕？",
    "options": [
     {
+     "icon": "🐕",
+     "label": "anjing",
+     "img": "B37-T4c"
+    },
+    {
      "icon": "🐈",
-     "label": "kucing"
+     "label": "kucing",
+     "img": "B37-T4a"
     },
     {
      "icon": "👦",
-     "label": "adik"
-    },
-    {
-     "icon": "🐕",
-     "label": "anjing"
+     "label": "adik",
+     "img": "B37-T4b"
     }
    ],
-   "answer": 2,
-   "why": "被小狗吃了.",
+   "answer": 0,
+   "why": "被小狗吃了 → anjing → A. B dan C: tidak disebut.",
    "id": "B37-04"
   },
   {
@@ -15204,12 +15606,12 @@
    "question": "他們應該做什麼？",
    "options": [
     "去睡覺",
+    "打電話，出去",
     "去看火",
-    "在房間裡等",
-    "打電話，出去"
+    "在房間裡等"
    ],
-   "answer": 3,
-   "why": "Saran laki-laki: 打電話，出去.",
+   "answer": 1,
+   "why": "快打電話，我們出去 → B. A: tidak masuk akal. C dan D: berbahaya, kebalikannya.",
    "id": "B37-05"
   },
   {
@@ -15219,19 +15621,22 @@
    "text": "我的筆被同學拿走了。",
    "options": [
     {
-     "icon": "✏️⬇️",
-     "label": "pena jatuh"
+     "icon": "🖼️",
+     "label": "pena jatuh",
+     "img": "B37-T6a"
     },
     {
-     "icon": "✏️🧑‍🎓",
-     "label": "pena diambil teman"
+     "icon": "🖼️",
+     "label": "pena di tas",
+     "img": "B37-T6c"
     },
     {
-     "icon": "✏️🎒",
-     "label": "pena di tas"
+     "icon": "🖼️",
+     "label": "pena diambil teman",
+     "img": "B37-T6b"
     }
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "被 + pelaku + V.",
    "id": "B37-06"
   },
@@ -15240,15 +15645,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🔑⬇️",
-    "label": "barang terjatuh"
+    "icon": "👜",
+    "label": "barang-barang terjatuh dari tas",
+    "img": "B37-T7"
    },
    "options": [
-    "東西掉了。",
     "東西很多。",
+    "東西掉了。",
     "東西很貴。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "掉 = jatuh.",
    "id": "B37-07"
   },
@@ -15257,8 +15663,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "😰",
-    "label": "bingung"
+    "icon": "😟",
+    "label": "seseorang bingung, dompetnya tidak ada",
+    "img": "B37-T8"
    },
    "text": "我的錢包不見了，（　）？",
    "options": [
@@ -15274,30 +15681,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "昨天我的錢包（1）了！可能在公車上（2）了，也可能（3）別人拿走了。我不知道（4）。朋友說：「別怕，我（5）你找。」",
+   "text": "昨天我的錢包（1）！可能在公車上（2），也可能（3）。我（4）。朋友說：「別怕，（5）。」",
    "options": [
-    "幫",
-    "火",
-    "被",
-    "怎麼辦",
-    "掉",
-    "不見"
+    "不見了",
+    "掉了",
+    "被別人拿走了",
+    "不知道怎麼辦",
+    "我幫你找",
+    "被火錢包"
    ],
    "answers": [
-    5,
-    4,
+    0,
+    1,
     2,
     3,
-    0
+    4
    ],
-   "why": "不見了 / 掉了 / 被 / 怎麼辦 / 幫.",
+   "why": "(1) 錢包 + 不見了. (2) 在公車上 + 掉了. (3) 也可能 + 被別人拿走了. (4) 不知道怎麼辦. (5) 我幫你找. 被火錢包 tidak gramatikal.",
    "id": "B37-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "王小姐在公車上睡覺，她的皮包被別人拿走了。",
+   "text": "王小姐在公車上睡覺，她的皮包被別人拿走了。皮包裡有她的錢包和手機。下車以後，她給公車公司打了電話，可是沒找到。",
    "question": "哪個是對的？",
    "options": [
     "王小姐的皮包不見了",
@@ -15366,20 +15773,23 @@
    "question": "這裡可以照相嗎？",
    "options": [
     {
-     "icon": "🚫🍔",
-     "label": "tidak boleh makan"
+     "icon": "🚫",
+     "label": "tanda: dilarang memotret",
+     "img": "B38-T3c"
     },
     {
-     "icon": "📷✅",
-     "label": "boleh memotret"
+     "icon": "🚫",
+     "label": "tanda: dilarang makan",
+     "img": "B38-T3a"
     },
     {
-     "icon": "🚫📷",
-     "label": "tidak boleh memotret"
+     "icon": "✅",
+     "label": "tanda: boleh memotret",
+     "img": "B38-T3b"
     }
    ],
-   "answer": 2,
-   "why": "不能.",
+   "answer": 0,
+   "why": "不能 (照相) → dilarang memotret → A. B: larangan lain. C: kebalikannya.",
    "id": "B38-03"
   },
   {
@@ -15408,19 +15818,22 @@
    "options": [
     {
      "icon": "⏰",
-     "label": "jam"
+     "label": "jam",
+     "img": "B38-T4a"
+    },
+    {
+     "icon": "📕",
+     "label": "buku",
+     "img": "B38-T4c"
     },
     {
      "icon": "📝",
-     "label": "ujian besok"
-    },
-    {
-     "icon": "📚",
-     "label": "buku"
+     "label": "ujian besok",
+     "img": "B38-T4b"
     }
    ],
-   "answer": 1,
-   "why": "明天的考試很重要.",
+   "answer": 2,
+   "why": "明天的考試很重要 → C. A: 時間 disebut, tetapi hanya untuk diperhatikan. B: tidak disebut.",
    "id": "B38-04"
   },
   {
@@ -15447,13 +15860,13 @@
    ],
    "question": "眼鏡在哪裡？",
    "options": [
+    "客廳的桌子上",
     "這位小姐的書包裡",
     "房間的桌子上",
-    "這位先生的手上",
-    "客廳的桌子上"
+    "這位先生的手上"
    ],
-   "answer": 3,
-   "why": "客廳的 (桌子) — objek dihilangkan (零代詞).",
+   "answer": 0,
+   "why": "客廳的 (桌子) → A. B: meja, tetapi bukan di kamar. C dan D: tidak disebut.",
    "id": "B38-05"
   },
   {
@@ -15463,19 +15876,22 @@
    "text": "請注意，這裡不能說話。",
    "options": [
     {
-     "icon": "🤫",
-     "label": "dilarang berbicara"
+     "icon": "🚫",
+     "label": "tanda: dilarang memakai ponsel",
+     "img": "B38-T6b"
     },
     {
-     "icon": "🚫📱",
-     "label": "dilarang ponsel"
+     "icon": "🚫",
+     "label": "tanda: dilarang berbicara",
+     "img": "B38-T6a"
     },
     {
-     "icon": "🚫🍔",
-     "label": "dilarang makan"
+     "icon": "🚫",
+     "label": "tanda: dilarang makan",
+     "img": "B38-T6c"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "不能說話.",
    "id": "B38-06"
   },
@@ -15484,15 +15900,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "📋❗",
-    "label": "dokumen penting"
+    "icon": "📄",
+    "label": "dokumen penting bertanda merah",
+    "img": "B38-T7"
    },
    "options": [
-    "這件事很簡單。",
     "這件事很重要。",
+    "這件事很簡單。",
     "這件事不重要。"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "重要 = penting.",
    "id": "B38-07"
   },
@@ -15501,16 +15918,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "⚠️🌧️",
-    "label": "jalan licin karena hujan"
+    "icon": "🌧️",
+    "label": "jalan licin karena hujan",
+    "img": "B38-T8"
    },
    "text": "外頭下雨，路上要（　）。",
    "options": [
-    "小心",
     "重要",
+    "小心",
     "能"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "要小心.",
    "id": "B38-08"
   },
@@ -15518,30 +15936,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "明天的考試很（1）。老師說：「請大家（2）：考試不（3）用手機，也不能說話。」我對自己說：「（4）一點，別忘了帶筆和（5）。」",
+   "text": "明天的考試很（1）。老師說：「請大家（2）：考試（3），也不能說話。」我對自己說：「（4），別忘了帶筆和（5）。」",
    "options": [
-    "火",
+    "重要",
     "注意",
+    "不能用手機",
+    "小心一點",
     "課本",
-    "小心",
-    "能",
-    "重要"
+    "能很重要"
    ],
    "answers": [
-    5,
+    0,
     1,
-    4,
+    2,
     3,
-    2
+    4
    ],
-   "why": "重要 / 請注意 / 不能 / 小心 / 課本.",
+   "why": "(1) 考試很 + 重要. (2) 請大家 + 注意. (3) 考試 + 不能用手機. (4) 小心一點. (5) 筆和 + 課本. 能很重要 tidak gramatikal.",
    "id": "B38-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "游泳池：一、不能在這裡跑。二、不能吃東西。三、小朋友要跟大人一起游泳。",
+   "text": "游泳池：一、不能在這裡跑。二、不能吃東西。三、小朋友要跟大人一起游泳。游泳池的時間：早上六點到晚上九點。",
    "question": "哪個是對的？",
    "options": [
     "可以吃東西",
@@ -15610,16 +16028,19 @@
    "question": "這位小姐怎麼了？",
    "options": [
     {
-     "icon": "🤢",
-     "label": "sakit perut"
+     "icon": "🖼️",
+     "label": "sakit perut",
+     "img": "B39-T3a"
     },
     {
-     "icon": "🦷",
-     "label": "sakit gigi"
+     "icon": "🖼️",
+     "label": "sakit gigi",
+     "img": "B39-T3b"
     },
     {
-     "icon": "🤕",
-     "label": "sakit kepala"
+     "icon": "🖼️",
+     "label": "sakit kepala",
+     "img": "B39-T3c"
     }
    ],
    "answer": 0,
@@ -15651,20 +16072,23 @@
    "question": "這位小姐要等多久？",
    "options": [
     {
-     "icon": "⏳",
-     "label": "2 jam"
+     "icon": "⏱️",
+     "label": "2 jam",
+     "img": "B39-T4a"
     },
     {
-     "icon": "⏳",
-     "label": "10 menit"
+     "icon": "⏱️",
+     "label": "20 menit",
+     "img": "B39-T4c"
     },
     {
-     "icon": "⏳",
-     "label": "20 menit"
+     "icon": "⏱️",
+     "label": "10 menit",
+     "img": "B39-T4b"
     }
    ],
-   "answer": 2,
-   "why": "二十分鐘.",
+   "answer": 1,
+   "why": "二十分鐘 → B. A: 二 tanpa 十. C: jumlahnya salah.",
    "id": "B39-04"
   },
   {
@@ -15691,35 +16115,38 @@
    ],
    "question": "這位小姐為什麼沒來上課？",
    "options": [
+    "吃太多，肚子痛",
     "她頭痛",
     "她去夜市",
-    "她不想上課",
-    "吃太多，肚子痛"
+    "她不想上課"
    ],
-   "answer": 3,
-   "why": "Sebab-akibat disimpulkan dari dua jawaban.",
+   "answer": 0,
+   "why": "Makan banyak di pasar malam lalu sakit perut → A. B: sakitnya bukan kepala. C: ke pasar malam kemarin, bukan alasannya langsung. D: tidak disebut.",
    "id": "B39-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "她的頭髮很短。",
+   "text": "我妹妹的頭髮很短。",
    "options": [
     {
-     "icon": "👩",
-     "label": "rambut pendek"
+     "icon": "🖼️",
+     "label": "rambut panjang",
+     "img": "B39-T6b"
     },
     {
-     "icon": "👩",
-     "label": "rambut panjang"
+     "icon": "🖼️",
+     "label": "rambut kuning",
+     "img": "B39-T6c"
     },
     {
-     "icon": "👩",
-     "label": "rambut kuning"
+     "icon": "🖼️",
+     "label": "rambut pendek",
+     "img": "B39-T6a"
     }
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "頭髮 = rambut.",
    "id": "B39-06"
   },
@@ -15728,15 +16155,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "👩‍⚕️🛏️",
-    "label": "perawat dan pasien di rumah sakit"
+    "icon": "🏥",
+    "label": "perawat dan pasien di rumah sakit",
+    "img": "B39-T7"
    },
    "options": [
+    "護士和病人在醫院。",
     "病人在家睡覺。",
-    "醫生在學校上課。",
-    "護士和病人在醫院。"
+    "醫生在學校上課。"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "護士 + 病人 + 醫院.",
    "id": "B39-07"
   },
@@ -15745,16 +16173,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "❓",
-    "label": "menanyakan keadaan"
+    "icon": "😟",
+    "label": "teman khawatir melihat wajah pucat",
+    "img": "B39-T8"
    },
    "text": "你（　）了？你的臉很白。",
    "options": [
-    "怎麼",
     "什麼",
+    "怎麼",
     "為什麼"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "怎麼了 = kenapa?",
    "id": "B39-08"
   },
@@ -15762,30 +16191,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "昨天我（1）痛，我去（2）看病。醫生說我吃了不乾淨的東西。（3）小姐給我藥。我的朋友問我：「你（4）了？」她也問我：「你（5）不來上課？」",
+   "text": "昨天我（1），我去（2）看病。醫生說我吃了不乾淨的東西。（3）給我藥。我的朋友問我：「你（4）？」她也問我：「你（5）不來上課？」",
    "options": [
-    "護士",
-    "肚子",
+    "肚子痛",
     "醫院",
+    "護士小姐",
+    "怎麼了",
     "為什麼",
-    "頭髮",
-    "怎麼"
+    "頭髮很短"
    ],
    "answers": [
+    0,
     1,
     2,
-    0,
-    5,
-    3
+    3,
+    4
    ],
-   "why": "肚子痛 / 醫院 / 護士 / 怎麼了 / 為什麼.",
+   "why": "(1) 肚子痛. (2) 去 + 醫院 + 看病. (3) 護士小姐 + 給我藥. (4) 你 + 怎麼了. (5) 為什麼 + 不來上課. 頭髮很短 tidak cocok di titik mana pun.",
    "id": "B39-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "醫院：看病時間早上八點到十二點，下午兩點到五點。星期天不看病。",
+   "text": "醫院：看病時間早上八點到十二點，下午兩點到五點。星期天不看病。病人很多，要早一點去。",
    "question": "星期一下午一點可以去看病嗎？",
    "options": [
     "早上不可以",
@@ -15854,16 +16283,19 @@
    "question": "這位先生的身體怎麼樣？",
    "options": [
     {
-     "icon": "😴",
-     "label": "lelah"
+     "icon": "🖼️",
+     "label": "lelah",
+     "img": "B40-T3a"
     },
     {
-     "icon": "💪",
-     "label": "sehat"
+     "icon": "🖼️",
+     "label": "sehat",
+     "img": "B40-T3b"
     },
     {
-     "icon": "🤒",
-     "label": "sakit"
+     "icon": "🖼️",
+     "label": "sakit",
+     "img": "B40-T3c"
     }
    ],
    "answer": 1,
@@ -15895,20 +16327,23 @@
    "question": "這位小姐現在怎麼樣？",
    "options": [
     {
-     "icon": "🤒",
-     "label": "makin parah"
+     "icon": "🖼️",
+     "label": "agak baikan, masih lelah",
+     "img": "B40-T4c"
     },
     {
-     "icon": "😊",
-     "label": "sehat sepenuhnya"
+     "icon": "🖼️",
+     "label": "makin parah",
+     "img": "B40-T4a"
     },
     {
-     "icon": "🙂",
-     "label": "agak baikan, masih lelah"
+     "icon": "🖼️",
+     "label": "sehat sepenuhnya",
+     "img": "B40-T4b"
     }
    ],
-   "answer": 2,
-   "why": "好一點了，不過還有點累.",
+   "answer": 0,
+   "why": "好一點了，不過還有點累 → A. B: kebalikannya. C: masih lelah.",
    "id": "B40-04"
   },
   {
@@ -15936,12 +16371,12 @@
    "question": "這位小姐是什麼意思？",
    "options": [
     "衣服不漂亮",
+    "她想買那件衣服",
     "衣服很便宜",
-    "她不想買",
-    "她想買那件衣服"
+    "她不想買"
    ],
-   "answer": 3,
-   "why": "雖然很貴，還是想買.",
+   "answer": 1,
+   "why": "雖然很貴，我還是想買 → B. A dan C: kebalikannya. D: kebalikannya.",
    "id": "B40-05"
   },
   {
@@ -15951,19 +16386,22 @@
    "text": "因為他生病，所以沒去上課。",
    "options": [
     {
-     "icon": "🤒🏠",
-     "label": "sakit, tidak sekolah"
+     "icon": "🖼️",
+     "label": "main bola",
+     "img": "B40-T6b"
     },
     {
-     "icon": "⚽",
-     "label": "main bola"
+     "icon": "🖼️",
+     "label": "ke sekolah",
+     "img": "B40-T6c"
     },
     {
-     "icon": "🏫",
-     "label": "ke sekolah"
+     "icon": "🖼️",
+     "label": "sakit, tidak sekolah",
+     "img": "B40-T6a"
     }
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "因為…所以….",
    "id": "B40-06"
   },
@@ -15972,8 +16410,9 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🍎💪",
-    "label": "buah dan tubuh sehat"
+    "icon": "🍎",
+    "label": "buah-buahan dan tubuh sehat",
+    "img": "B40-T7"
    },
    "options": [
     "水果不健康。",
@@ -15989,16 +16428,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🕙",
-    "label": "baru datang jam 10"
+    "icon": "⏰",
+    "label": "jam 10, seseorang baru datang",
+    "img": "B40-T8"
    },
    "text": "他早上八點上課，可是十點（　）來。",
    "options": [
-    "才",
     "但是",
+    "才",
     "就"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "才 = baru (lebih lambat dari seharusnya).",
    "id": "B40-08"
   },
@@ -16006,30 +16446,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我每天運動，所以身體很（1）。（2）我很忙，（3）我每天都跑步。昨天我很累，十一點（4）睡覺，（5）今天還是很早起床。",
+   "text": "我每天運動，所以身體（1）。（2），（3）我每天都跑步。昨天我很累，十一點（4），（5）今天還是很早起床。",
    "options": [
-    "雖然",
+    "很健康",
+    "雖然我很忙",
+    "但是",
+    "才睡覺",
     "不過",
-    "健康",
-    "才",
-    "因為",
-    "但是"
+    "因為生病了"
    ],
    "answers": [
-    2,
     0,
-    5,
+    1,
+    2,
     3,
-    1
+    4
    ],
-   "why": "健康 / 雖然…但是 / 才 / 不過.",
+   "why": "(1) 所以身體 + 很健康. (2) 雖然我很忙 + (3) 但是. (4) 十一點 + 才睡覺. (5) 不過 + 還是很早起床. 因為生病了 bertentangan dengan 身體很健康.",
    "id": "B40-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "小明很喜歡吃甜點，但是醫生說他要少吃糖。雖然他很想吃蛋糕，不過他現在每天只吃一點。",
+   "text": "小明很喜歡吃甜點，但是醫生說他要少吃糖。雖然他很想吃蛋糕，不過他現在每天只吃一點。他說：「身體健康很重要。」",
    "question": "小明現在怎麼樣？",
    "options": [
     "不吃甜點",
@@ -16098,20 +16538,23 @@
    "question": "這位小姐怎麼了？",
    "options": [
     {
-     "icon": "😢🌧️",
-     "label": "sedih karena hujan"
+     "icon": "🖼️",
+     "label": "sedih karena hujan",
+     "img": "B41-T3a"
     },
     {
-     "icon": "😠🎂",
-     "label": "marah, ulang tahunnya dilupakan"
+     "icon": "🖼️",
+     "label": "senang",
+     "img": "B41-T3c"
     },
     {
-     "icon": "😊",
-     "label": "senang"
+     "icon": "🖼️",
+     "label": "marah, ulang tahunnya dilupakan",
+     "img": "B41-T3b"
     }
    ],
-   "answer": 1,
-   "why": "生氣 + alasan.",
+   "answer": 2,
+   "why": "他忘了我的生日 → ia marah → C. A: alasan lain. B: kebalikannya.",
    "id": "B41-03"
   },
   {
@@ -16139,20 +16582,23 @@
    "question": "這位先生去日本做什麼？",
    "options": [
     {
-     "icon": "🧳",
-     "label": "berlibur"
+     "icon": "🖼️",
+     "label": "belajar",
+     "img": "B41-T4c"
     },
     {
-     "icon": "💼",
-     "label": "bekerja"
+     "icon": "🖼️",
+     "label": "berlibur",
+     "img": "B41-T4a"
     },
     {
-     "icon": "📚",
-     "label": "belajar"
+     "icon": "🖼️",
+     "label": "bekerja",
+     "img": "B41-T4b"
     }
    ],
-   "answer": 2,
-   "why": "去念書.",
+   "answer": 0,
+   "why": "去念書 → belajar → A. B dan C: tidak disebut.",
    "id": "B41-04"
   },
   {
@@ -16179,32 +16625,35 @@
    ],
    "question": "她現在怎麼樣？",
    "options": [
-    "還很生氣",
     "很高興",
     "在哭",
+    "還很生氣",
     "不生氣了"
    ],
-   "answer": 0,
-   "why": "還在生氣.",
+   "answer": 2,
+   "why": "說了，可是她還在生氣 → C. A dan D: kebalikannya. B: tidak disebut.",
    "id": "B41-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "大家都笑了。",
+   "text": "大家聽了以後都笑了。",
    "options": [
     {
      "icon": "😠",
-     "label": "marah"
+     "label": "marah",
+     "img": "B41-T6a"
     },
     {
-     "icon": "😂😂",
-     "label": "semua tertawa"
+     "icon": "😄",
+     "label": "semua tertawa",
+     "img": "B41-T6b"
     },
     {
-     "icon": "😭",
-     "label": "menangis"
+     "icon": "😢",
+     "label": "menangis",
+     "img": "B41-T6c"
     }
    ],
    "answer": 1,
@@ -16216,8 +16665,9 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🍎🍌🍇",
-    "label": "berbagai buah"
+    "icon": "🍎🍌",
+    "label": "berbagai buah: apel, pisang",
+    "img": "B41-T7"
    },
    "options": [
     "我不喜歡水果。",
@@ -16233,16 +16683,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🗣️🧑‍🏫",
-    "label": "berbicara dengan guru"
+    "icon": "🗣️",
+    "label": "murid berbicara kepada guru",
+    "img": "B41-T8"
    },
    "text": "我想（　）老師說一件事。",
    "options": [
     "比方說",
-    "替",
-    "跟"
+    "跟",
+    "替"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "跟 + orang + 說.",
    "id": "B41-08"
   },
@@ -16250,30 +16701,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "昨天我忘了朋友的生日，她很（1），也很難過，她（2）了。我（3）她說對不起。（4）我說了對不起，（5）她還是不高興。",
+   "text": "昨天我忘了朋友的生日，她很（1），也很難過，她（2）了。我（3）。（4），（5）她還是不高興。",
    "options": [
-    "哭",
-    "跟",
-    "可是",
-    "雖然",
     "生氣",
-    "笑"
+    "哭",
+    "跟她說對不起",
+    "雖然我說了對不起",
+    "可是",
+    "比方說蘋果"
    ],
    "answers": [
-    4,
     0,
     1,
+    2,
     3,
-    2
+    4
    ],
-   "why": "生氣 / 哭 / 跟 / 雖然…可是.",
+   "why": "(1) 很 + 生氣. (2) 她 + 哭了. (3) 跟她說對不起. (4) 雖然我說了對不起 + (5) 可是. 比方說蘋果 tidak cocok di titik mana pun.",
    "id": "B41-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "聽說王先生最近常常不高興。比方說，昨天他跟同學說話，說了兩句就生氣了。",
+   "text": "聽說王先生最近常常不高興。比方說，昨天他跟同學說話，說了兩句就生氣了。他的朋友說，可能是因為他最近太累了。",
    "question": "王先生最近怎麼樣？",
    "options": [
     "不跟同學說話",
@@ -16317,12 +16768,12 @@
    },
    "question": "她從皮包裡拿出什麼？",
    "options": [
-    "手機。",
     "錢包。",
+    "手機。",
     "書。"
    ],
-   "answer": 1,
-   "why": "拿出錢包 = mengeluarkan dompet.",
+   "answer": 0,
+   "why": "Ia mengeluarkan dompet dari tas tangan → 錢包 → A. B dan C: benda lain.",
    "id": "B42-02"
   },
   {
@@ -16342,20 +16793,23 @@
    "question": "這本書怎麼樣？",
    "options": [
     {
-     "icon": "📖😄",
-     "label": "menarik"
+     "icon": "🖼️",
+     "label": "membosankan",
+     "img": "B42-T3b"
     },
     {
-     "icon": "📖😴",
-     "label": "membosankan"
+     "icon": "🖼️",
+     "label": "mahal",
+     "img": "B42-T3c"
     },
     {
-     "icon": "📖💰",
-     "label": "mahal"
+     "icon": "🖼️",
+     "label": "menarik",
+     "img": "B42-T3a"
     }
    ],
-   "answer": 0,
-   "why": "有意思 = menarik.",
+   "answer": 2,
+   "why": "很有意思 → menarik → C. A: kebalikannya. B: tidak disebut.",
    "id": "B42-03"
   },
   {
@@ -16383,20 +16837,23 @@
    "question": "這位小姐喜歡的人怎麼樣？",
    "options": [
     {
-     "icon": "🤪",
-     "label": "aneh"
+     "icon": "🖼️",
+     "label": "aneh",
+     "img": "B42-T4a"
     },
     {
-     "icon": "😠",
-     "label": "pemarah"
+     "icon": "🖼️",
+     "label": "pintar dan menggemaskan",
+     "img": "B42-T4c"
     },
     {
-     "icon": "🧠😊",
-     "label": "pintar dan menggemaskan"
+     "icon": "🖼️",
+     "label": "pemarah",
+     "img": "B42-T4b"
     }
    ],
-   "answer": 2,
-   "why": "聰明 + 可愛.",
+   "answer": 1,
+   "why": "很聰明，也很可愛 → B. A dan C: tidak disebut.",
    "id": "B42-04"
   },
   {
@@ -16423,35 +16880,38 @@
    ],
    "question": "這位先生覺得那個東西怎麼樣？",
    "options": [
+    "很有用",
     "很笨",
     "很可愛",
-    "沒有用",
-    "很有用"
+    "沒有用"
    ],
-   "answer": 3,
-   "why": "可是很有用.",
+   "answer": 0,
+   "why": "很奇怪，可是很有用 → A. B dan C: tidak disebut. D: kebalikannya.",
    "id": "B42-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "我買的蛋糕很好吃。",
+   "text": "我昨天買的蛋糕很好吃。",
    "options": [
     {
-     "icon": "🍰😋",
-     "label": "kue yang kubeli enak"
+     "icon": "🖼️",
+     "label": "kue tidak enak",
+     "img": "B42-T6b"
     },
     {
-     "icon": "🍰🤢",
-     "label": "kue tidak enak"
+     "icon": "🖼️",
+     "label": "kue yang kubeli enak",
+     "img": "B42-T6a"
     },
     {
-     "icon": "🍦",
-     "label": "es krim"
+     "icon": "🖼️",
+     "label": "es krim",
+     "img": "B42-T6c"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "VP 的 N.",
    "id": "B42-06"
   },
@@ -16460,15 +16920,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🐕🎩",
-    "label": "anjing bertopi yang tampak aneh"
+    "icon": "🐕",
+    "label": "anjing bertopi yang tampak aneh",
+    "img": "B42-T7"
    },
    "options": [
-    "這隻狗很奇怪。",
     "這隻狗很笨。",
-    "這隻狗很生氣。"
+    "這隻狗很生氣。",
+    "這隻狗很奇怪。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "奇怪 = aneh.",
    "id": "B42-07"
   },
@@ -16478,15 +16939,16 @@
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
     "icon": "❤️",
-    "label": "hati yang baik"
+    "label": "perempuan baik hati menolong orang",
+    "img": "B42-T8"
    },
    "text": "她是一個很好的人，她的（　）很好。",
    "options": [
+    "心",
     "頭",
-    "臉",
-    "心"
+    "臉"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "心 = hati.",
    "id": "B42-08"
   },
@@ -16494,39 +16956,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我（1）的人是我的同學。他很（2），考試都是第一名。他說話很（3），大家都喜歡聽。有一天，他從書包裡拿（4）一本書給我，是一本很（5）的書。",
+   "text": "（1）是我的同學。他很（2），考試都是第一名。他說話（3），大家都喜歡聽。有一天，他從書包裡（4）給我，是一本（5）。",
    "options": [
-    "有意思",
-    "笨",
-    "出",
+    "我喜歡的人",
     "聰明",
-    "喜歡",
-    "有用"
+    "很有意思",
+    "拿出一本書",
+    "很有用的書",
+    "很笨的書包"
    ],
    "answers": [
-    4,
-    3,
     0,
+    1,
     2,
-    5
+    3,
+    4
    ],
-   "why": "我喜歡的人 / 聰明 / 有意思 / 拿出 / 有用.",
+   "why": "(1) 我喜歡的人. (2) 很 + 聰明. (3) 說話 + 很有意思. (4) 拿出一本書. (5) 一本 + 很有用的書. 很笨的書包 tidak masuk akal.",
    "id": "B42-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "王先生家的狗很聰明，會開門，也會拿報紙給王先生。",
-   "question": "這隻狗怎麼樣？",
+   "text": "王先生家的狗很聰明，會開門，也會拿報紙給王先生。王先生說，這隻狗是他的好朋友。這隻狗也很可愛，大家都喜歡這隻狗。",
+   "question": "這隻狗會做什麼？",
    "options": [
-    "很可愛",
-    "很聰明",
-    "很奇怪",
-    "很笨"
+    "開門和拿報紙",
+    "開車",
+    "做飯",
+    "看報紙"
    ],
-   "answer": 1,
-   "why": "很聰明. D tidak disebut.",
+   "answer": 0,
+   "why": "會開門，也會拿報紙給王先生 → A. B dan C: tidak disebut. D: ia membawa koran, bukan membacanya.",
    "id": "B42-10"
   }
  ],
@@ -16586,16 +17048,19 @@
    "question": "這位小姐怎麼樣？",
    "options": [
     {
-     "icon": "😰📝",
-     "label": "gugup karena ujian"
+     "icon": "🖼️",
+     "label": "gugup karena ujian",
+     "img": "B43-T3a"
     },
     {
-     "icon": "😊",
-     "label": "santai"
+     "icon": "🖼️",
+     "label": "santai",
+     "img": "B43-T3b"
     },
     {
-     "icon": "😴",
-     "label": "mengantuk"
+     "icon": "🖼️",
+     "label": "mengantuk",
+     "img": "B43-T3c"
     }
    ],
    "answer": 0,
@@ -16627,20 +17092,23 @@
    "question": "這位先生每天工作多久？",
    "options": [
     {
-     "icon": "⏳",
-     "label": "12 jam"
+     "icon": "⏱️",
+     "label": "8 jam",
+     "img": "B43-T4b"
     },
     {
-     "icon": "⏳",
-     "label": "8 jam"
+     "icon": "⏱️",
+     "label": "12 jam",
+     "img": "B43-T4a"
     },
     {
-     "icon": "⏳",
-     "label": "2 jam"
+     "icon": "⏱️",
+     "label": "2 jam",
+     "img": "B43-T4c"
     }
    ],
-   "answer": 0,
-   "why": "十二個小時.",
+   "answer": 1,
+   "why": "十二個小時 → B. A: tidak disebut. C: 二 tanpa 十.",
    "id": "B43-04"
   },
   {
@@ -16668,12 +17136,12 @@
    "question": "這位小姐是什麼意思？",
    "options": [
     "她不相信這位先生",
+    "她拿錯了錢包",
     "錢包不見了",
-    "這位先生拿了她的錢包",
-    "她拿錯了錢包"
+    "這位先生拿了她的錢包"
    ],
-   "answer": 3,
-   "why": "Akhirnya mengaku: 拿錯了.",
+   "answer": 1,
+   "why": "是我拿錯了 → B. A: awalnya ia tidak percaya, tetapi lalu mengaku. C: dompetnya tidak hilang. D: kebalikannya.",
    "id": "B43-05"
   },
   {
@@ -16683,19 +17151,22 @@
    "text": "他的話聽起來很奇怪。",
    "options": [
     {
-     "icon": "🤐",
-     "label": "diam"
+     "icon": "🖼️",
+     "label": "kedengarannya aneh",
+     "img": "B43-T6c"
     },
     {
-     "icon": "🗣️😄",
-     "label": "kedengarannya lucu"
+     "icon": "🖼️",
+     "label": "diam",
+     "img": "B43-T6a"
     },
     {
-     "icon": "🗣️❓",
-     "label": "kedengarannya aneh"
+     "icon": "🖼️",
+     "label": "kedengarannya lucu",
+     "img": "B43-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "聽起來 = kedengarannya.",
    "id": "B43-06"
   },
@@ -16704,15 +17175,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🏋️😓",
-    "label": "pekerjaan berat"
+    "icon": "🏗️",
+    "label": "pekerjaan berat",
+    "img": "B43-T7"
    },
    "options": [
     "這個工作很簡單。",
-    "這個工作很辛苦。",
-    "這個工作很有意思。"
+    "這個工作很有意思。",
+    "這個工作很辛苦。"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "辛苦 = berat.",
    "id": "B43-07"
   },
@@ -16721,16 +17193,17 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🔍",
-    "label": "menyadari"
+    "icon": "😮",
+    "label": "seseorang menyadari ponselnya hilang",
+    "img": "B43-T8"
    },
    "text": "我（　）我的手機不見了。",
    "options": [
+    "發現",
     "相信",
-    "敢",
-    "發現"
+    "敢"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "發現 = mendapati.",
    "id": "B43-08"
   },
@@ -16738,30 +17211,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "明天我要在大家前面說中文，我很（1）。朋友說：「你看（2）很緊張。別怕，你是一個很好（3）學生。我（4）你可以！」我說：「好，我（5）說了！」",
+   "text": "明天我要在大家前面說中文，我很（1）。朋友說：「你看起來（2）。別怕，你是一個（3）。我（4）！」我說：「好，我（5）！」",
    "options": [
     "緊張",
-    "敢",
-    "苦",
-    "起來",
-    "的",
-    "相信"
+    "很緊張",
+    "很好的學生",
+    "相信你可以",
+    "敢說了",
+    "很苦地"
    ],
    "answers": [
     0,
+    1,
+    2,
     3,
-    4,
-    5,
-    1
+    4
    ],
-   "why": "緊張 / 看起來 / 很好的 / 相信 / 敢.",
+   "why": "(1) 很 + 緊張. (2) 看起來 + 很緊張. (3) 一個 + 很好的學生. (4) 相信你可以. (5) 敢說了. 很苦地 tidak cocok di titik mana pun.",
    "id": "B43-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "爸爸每天工作到很晚，很辛苦。有一天我發現他的頭髮白了很多。我很難過。",
+   "text": "爸爸每天工作到很晚，很辛苦。有一天我發現他的頭髮白了很多。我很難過，我跟爸爸說：「爸爸，您要多休息。」",
    "question": "「我」為什麼難過？",
    "options": [
     "爸爸不回家",
@@ -16830,16 +17303,19 @@
    "question": "這位先生過年做什麼？",
    "options": [
     {
-     "icon": "🏫",
-     "label": "ke sekolah"
+     "icon": "🖼️",
+     "label": "ke sekolah",
+     "img": "B44-T3a"
     },
     {
-     "icon": "🏠",
-     "label": "pulang"
+     "icon": "🖼️",
+     "label": "pulang",
+     "img": "B44-T3b"
     },
     {
-     "icon": "🧳",
-     "label": "bepergian"
+     "icon": "🖼️",
+     "label": "bepergian",
+     "img": "B44-T3c"
     }
    ],
    "answer": 2,
@@ -16871,20 +17347,23 @@
    "question": "這位小姐說什麼很有意思？",
    "options": [
     {
-     "icon": "🧧🥟",
-     "label": "makan pangsit saat Imlek"
+     "icon": "🖼️",
+     "label": "pohon Natal",
+     "img": "B44-T4b"
     },
     {
-     "icon": "🎄",
-     "label": "Natal"
+     "icon": "🖼️",
+     "label": "makan pangsit saat Imlek",
+     "img": "B44-T4a"
     },
     {
-     "icon": "🏮",
-     "label": "lampion"
+     "icon": "🖼️",
+     "label": "lampion",
+     "img": "B44-T4c"
     }
    ],
-   "answer": 0,
-   "why": "過年吃餃子.",
+   "answer": 1,
+   "why": "比方說過年吃餃子 → B. A dan C: tidak disebut.",
    "id": "B44-04"
   },
   {
@@ -16911,13 +17390,13 @@
    ],
    "question": "哪個是對的？",
    "options": [
-    "這位先生昨天第一次去夜市",
     "這位先生常常去夜市",
     "這位小姐昨天去夜市",
+    "這位先生昨天第一次去夜市",
     "這位先生不喜歡夜市"
    ],
-   "answer": 1,
-   "why": "又 + 上個星期也去 → sering.",
+   "answer": 0,
+   "why": "又去 + 上個星期也去了 → sering ke pasar malam (kesimpulan) → A. B: yang ke pasar malam si laki-laki. C: bukan yang pertama. D: kebalikannya.",
    "id": "B44-05"
   },
   {
@@ -16927,19 +17406,22 @@
    "text": "有的人喝茶，有的人喝咖啡。",
    "options": [
     {
-     "icon": "🍵☕",
-     "label": "sebagian teh, sebagian kopi"
+     "icon": "🖼️",
+     "label": "semua minum teh",
+     "img": "B44-T6b"
     },
     {
-     "icon": "🍵🍵",
-     "label": "semua teh"
+     "icon": "🖼️",
+     "label": "semua minum kopi",
+     "img": "B44-T6c"
     },
     {
-     "icon": "☕☕",
-     "label": "semua kopi"
+     "icon": "🖼️",
+     "label": "sebagian teh, sebagian kopi",
+     "img": "B44-T6a"
     }
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "有的…有的….",
    "id": "B44-06"
   },
@@ -16949,14 +17431,15 @@
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
     "icon": "🧧",
-    "label": "angpau"
+    "label": "amplop merah tahun baru",
+    "img": "B44-T7"
    },
    "options": [
+    "新年快樂！",
     "再見！",
-    "生日快樂！",
-    "新年快樂！"
+    "生日快樂！"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Angpau → 新年快樂.",
    "id": "B44-07"
   },
@@ -16965,8 +17448,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🔁",
-    "label": "lagi"
+    "icon": "🚪",
+    "label": "anak yang sama datang lagi hari ini",
+    "img": "B44-T8"
    },
    "text": "他昨天來了，今天（　）來了。",
    "options": [
@@ -16982,30 +17466,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "「（1）快樂！」過年快到了。在臺灣，（2）人回家，有的人去旅行。我去年（3）家過年，今年我（4）要回家。我很喜歡這裡的（5）。",
+   "text": "「（1）！」過年快到了。在臺灣，（2）回家，有的人去旅行。我去年（3）過年，今年我（4）。我很喜歡這裡的（5）。",
    "options": [
-    "新年",
-    "回",
-    "過年",
-    "有的",
-    "文化",
-    "又"
+    "新年快樂",
+    "有的人",
+    "回家",
+    "又要回家",
+    "過年文化",
+    "有的又"
    ],
    "answers": [
     0,
-    3,
     1,
-    5,
+    2,
+    3,
     4
    ],
-   "why": "新年快樂 / 有的 / 回家 / 又 / 文化.",
+   "why": "(1) 新年快樂. (2) 有的人 + 回家. (3) 去年 + 回家 + 過年. (4) 今年 + 又要回家. (5) 這裡的 + 過年文化. 有的又 tidak gramatikal.",
    "id": "B44-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "臺灣人過年，有的人回家跟家人一起吃飯，有的人去外國旅行，也有的人在家休息。",
+   "text": "臺灣人過年，有的人回家跟家人一起吃飯，有的人去外國旅行，也有的人在家休息。我今年過年在臺北，跟朋友一起吃飯。",
    "question": "哪個「不對」？",
    "options": [
     "有的人去旅行",
@@ -17026,7 +17510,7 @@
    "picture": {
     "icon": "🙏",
     "label": "dia memberi undangan dan berharap temannya datang",
-    "img": "B45-3"
+    "img": "B45-4"
    },
    "question": "你希望什麼？",
    "options": [
@@ -17045,7 +17529,7 @@
    "picture": {
     "icon": "🍰✅",
     "label": "dia teringat pernah makan kue ini",
-    "img": "B45-4"
+    "img": "B45-5"
    },
    "question": "這個蛋糕你吃過嗎？",
    "options": [
@@ -17074,20 +17558,23 @@
    "question": "這位小姐願意嗎？",
    "options": [
     {
-     "icon": "🤔",
-     "label": "ragu"
+     "icon": "🖼️",
+     "label": "bersedia membantu",
+     "img": "B45-T3c"
     },
     {
-     "icon": "🙅",
-     "label": "menolak"
+     "icon": "🖼️",
+     "label": "ragu",
+     "img": "B45-T3a"
     },
     {
-     "icon": "🤝😊",
-     "label": "bersedia membantu"
+     "icon": "🖼️",
+     "label": "menolak",
+     "img": "B45-T3b"
     }
    ],
-   "answer": 2,
-   "why": "當然願意.",
+   "answer": 0,
+   "why": "當然願意 → A. B dan C: tidak sesuai.",
    "id": "B45-03"
   },
   {
@@ -17115,20 +17602,23 @@
    "question": "這位先生認為什麼方法最有用？",
    "options": [
     {
-     "icon": "🎧",
-     "label": "mendengar setiap hari"
+     "icon": "🖼️",
+     "label": "membaca",
+     "img": "B45-T4b"
     },
     {
-     "icon": "📖",
-     "label": "membaca"
+     "icon": "🖼️",
+     "label": "mendengar setiap hari",
+     "img": "B45-T4a"
     },
     {
-     "icon": "✍️",
-     "label": "menulis"
+     "icon": "🖼️",
+     "label": "menulis",
+     "img": "B45-T4c"
     }
    ],
-   "answer": 0,
-   "why": "每天聽中文.",
+   "answer": 1,
+   "why": "每天聽中文最有用 → B. A dan C: tidak disebut.",
    "id": "B45-04"
   },
   {
@@ -17156,12 +17646,12 @@
    "question": "這位小姐是什麼意思？",
    "options": [
     "她很想去游泳",
+    "她不想去游泳",
     "她想去旅行",
-    "她上個星期沒去",
-    "她不想去游泳"
+    "她上個星期沒去"
    ],
-   "answer": 3,
-   "why": "Menolak halus: 希望在家休息.",
+   "answer": 1,
+   "why": "又要去？+ 我希望在家休息 → ia tidak mau berenang lagi (tersirat) → B. A: kebalikannya. C: ia pergi minggu lalu. D: tidak disebut.",
    "id": "B45-05"
   },
   {
@@ -17171,19 +17661,22 @@
    "text": "這杯咖啡，我不喝。",
    "options": [
     {
-     "icon": "☕🚫",
-     "label": "tidak mau minum kopi ini"
+     "icon": "🖼️",
+     "label": "teh",
+     "img": "B45-T6b"
     },
     {
-     "icon": "🍵",
-     "label": "teh"
+     "icon": "🖼️",
+     "label": "minum kopi",
+     "img": "B45-T6c"
     },
     {
-     "icon": "☕😋",
-     "label": "minum kopi"
+     "icon": "🖼️",
+     "label": "tidak mau minum kopi ini",
+     "img": "B45-T6a"
     }
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Topik di depan.",
    "id": "B45-06"
   },
@@ -17192,15 +17685,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🙋‍♂️🗣️",
-    "label": "menyampaikan pendapat di kelas"
+    "icon": "🙋",
+    "label": "murid menyampaikan pendapat di kelas",
+    "img": "B45-T7"
    },
    "options": [
-    "我想去睡覺。",
     "我想說我的想法。",
+    "我想去睡覺。",
     "我不想說話。"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "想法 = pendapat.",
    "id": "B45-07"
   },
@@ -17209,8 +17703,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🤞",
-    "label": "berharap"
+    "icon": "💭",
+    "label": "seseorang membayangkan pergi ke Taiwan",
+    "img": "B45-T8"
    },
    "text": "我（　）明年可以去臺灣。",
    "options": [
@@ -17226,30 +17721,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "老師問我們：「你們有什麼（1）？」我（2）學中文要多聽多說。我（3）每天都能跟臺灣人說話。我媽媽說：「你（4）不是小孩，要自己學！」我的朋友說：「我（5）幫你練習。」",
+   "text": "老師問我們：「你們有什麼（1）？」我（2）要多聽多說。我（3）每天都能跟臺灣人說話。我媽媽說：「你（4）小孩，要自己學！」我的朋友說：「我（5）練習。」",
    "options": [
-    "又",
-    "願意",
+    "好想法",
+    "認為學中文",
     "希望",
-    "想法",
-    "相信",
-    "認為"
+    "又不是",
+    "願意幫你",
+    "這個字"
    ],
    "answers": [
-    3,
-    5,
-    2,
     0,
-    1
+    1,
+    2,
+    3,
+    4
    ],
-   "why": "想法 / 認為 / 希望 / 又 (penegasan) / 願意.",
+   "why": "(1) 什麼 + 好想法. (2) 我 + 認為學中文. (3) 我 + 希望. (4) 你 + 又不是 + 小孩 (penegasan). (5) 我 + 願意幫你 + 練習. 這個字 tidak cocok di titik mana pun.",
    "id": "B45-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "王老師認為學語言最重要的是每天練習。她希望學生每天說十分鐘中文。",
+   "text": "王老師認為學語言最重要的是每天練習。她希望學生每天說十分鐘中文。可是很多學生說，他們不好意思說中文。",
    "question": "王老師希望學生做什麼？",
    "options": [
     "每天寫十個字",
@@ -17318,20 +17813,23 @@
    "question": "這位先生打算做什麼？",
    "options": [
     {
-     "icon": "🧑‍🏫",
-     "label": "guru"
-    },
-    {
      "icon": "👨‍🍳",
-     "label": "koki"
+     "label": "koki",
+     "img": "B46-T3b"
     },
     {
-     "icon": "🧑‍⚕️",
-     "label": "dokter"
+     "icon": "👨‍⚕️",
+     "label": "dokter",
+     "img": "B46-T3c"
+    },
+    {
+     "icon": "👨‍🏫",
+     "label": "guru",
+     "img": "B46-T3a"
     }
    ],
-   "answer": 0,
-   "why": "當老師.",
+   "answer": 2,
+   "why": "打算當老師 → C. A dan B: pekerjaan lain.",
    "id": "B46-03"
   },
   {
@@ -17360,19 +17858,22 @@
    "options": [
     {
      "icon": "🍞",
-     "label": "roti"
-    },
-    {
-     "icon": "🚫",
-     "label": "tidak makan"
+     "label": "roti",
+     "img": "B46-T4a"
     },
     {
      "icon": "🥟",
-     "label": "bakpau"
+     "label": "bakpau",
+     "img": "B46-T4c"
+    },
+    {
+     "icon": "🖼️",
+     "label": "tidak makan",
+     "img": "B46-T4b"
     }
    ],
-   "answer": 2,
-   "why": "Hari ini: 一個包子. Kemarin tidak makan.",
+   "answer": 1,
+   "why": "今天吃了一個包子 → B. A: tidak disebut. C: itu kemarin.",
    "id": "B46-04"
   },
   {
@@ -17399,35 +17900,38 @@
    ],
    "question": "這位先生為什麼去臺灣？",
    "options": [
+    "學校好也不太貴",
     "臺灣很大",
     "他的朋友在臺灣",
-    "他沒去過日本",
-    "學校好也不太貴"
+    "他沒去過日本"
    ],
-   "answer": 3,
-   "why": "Alasan setelah 因為.",
+   "answer": 0,
+   "why": "臺灣的學校很好，也不太貴 → A. B, C, D: tidak disebut.",
    "id": "B46-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Kalimat → gambar",
    "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他沒買東西。",
+   "text": "他今天在超市沒買東西。",
    "options": [
     {
-     "icon": "💳",
-     "label": "membayar"
+     "icon": "🖼️",
+     "label": "tidak membeli",
+     "img": "B46-T6b"
     },
     {
-     "icon": "🛒🚫",
-     "label": "tidak membeli"
+     "icon": "🖼️",
+     "label": "membayar",
+     "img": "B46-T6a"
     },
     {
-     "icon": "🛍️",
-     "label": "membeli"
+     "icon": "🖼️",
+     "label": "membeli",
+     "img": "B46-T6c"
     }
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "沒買.",
    "id": "B46-06"
   },
@@ -17436,15 +17940,16 @@
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "📅✏️",
-    "label": "menulis rencana"
+    "icon": "📝",
+    "label": "menulis daftar rencana",
+    "img": "B46-T7"
    },
    "options": [
     "這是我的名字。",
-    "這是我的生日。",
-    "這是我的打算。"
+    "這是我的打算。",
+    "這是我的生日。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "打算 = rencana.",
    "id": "B46-07"
   },
@@ -17453,8 +17958,9 @@
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🎯",
-    "label": "memang yang itu"
+    "icon": "👉",
+    "label": "menunjuk satu buku: \"memang yang ini\"",
+    "img": "B46-T8"
    },
    "text": "我要的（　）是這本書！",
    "options": [
@@ -17470,30 +17976,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Melengkapi paragraf",
    "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
-   "text": "我想了很久，最後（1）明年去臺灣念書。我媽媽說：「你想去，（2）去吧。」我昨天（3）睡覺，太高興了！我（4）先學三個月的中文，（5）念大學。",
+   "text": "我想了很久，最後（1）明年去臺灣念書。我媽媽說：「你想去，（2）。」我昨天（3），太高興了！我（4），（5）念大學。",
    "options": [
     "決定",
-    "就",
-    "又",
-    "沒",
+    "就去吧",
+    "沒睡覺",
+    "打算先學中文",
     "然後",
-    "打算"
+    "又不是"
    ],
    "answers": [
     0,
     1,
+    2,
     3,
-    5,
     4
    ],
-   "why": "最後決定 / 就 / 沒睡覺 / 打算 / 然後.",
+   "why": "(1) 最後 + 決定. (2) 你想去 + 就去吧. (3) 沒睡覺 + 太高興了. (4) 打算先學中文. (5) 然後 + 念大學. 又不是 tidak cocok di titik mana pun.",
    "id": "B46-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
-   "text": "李小姐本來打算去美國工作，可是她的爸爸媽媽希望她在臺灣。最後她決定在臺灣工作。",
+   "text": "李小姐本來打算去美國工作，可是她的爸爸媽媽希望她在臺灣。最後她決定在臺灣工作。她說，在臺灣可以常常跟家人吃飯。",
    "question": "李小姐最後在哪裡工作？",
    "options": [
     "臺灣",

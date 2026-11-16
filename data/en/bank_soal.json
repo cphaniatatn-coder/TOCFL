@@ -6338,16 +6338,19 @@
    "question": "這位先生會什麼？",
    "options": [
     {
-     "icon": "🎾",
-     "label": "tennis"
+     "icon": "🖼️",
+     "label": "tennis",
+     "img": "B01-T3a"
     },
     {
-     "icon": "⚽",
-     "label": "football, soccer"
+     "icon": "🖼️",
+     "label": "football, soccer",
+     "img": "B01-T3b"
     },
     {
-     "icon": "🏀",
-     "label": "basketball"
+     "icon": "🖼️",
+     "label": "basketball",
+     "img": "B01-T3c"
     }
    ],
    "answer": 2,
@@ -6379,16 +6382,19 @@
    "question": "他們明天去做什麼？",
    "options": [
     {
-     "icon": "🏊",
-     "label": "to swim"
+     "icon": "🖼️",
+     "label": "to swim",
+     "img": "B01-T4a"
     },
     {
-     "icon": "🎾",
-     "label": "tennis"
+     "icon": "🖼️",
+     "label": "tennis",
+     "img": "B01-T4b"
     },
     {
-     "icon": "🏃",
-     "label": "running"
+     "icon": "🖼️",
+     "label": "running",
+     "img": "B01-T4c"
     }
    ],
    "answer": 0,
@@ -6432,19 +6438,22 @@
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "他們在踢足球。",
+   "text": "他們每個星期六踢足球。",
    "options": [
     {
-     "icon": "🏀🧑‍🤝‍🧑",
-     "label": "playing basketball"
+     "icon": "🖼️",
+     "label": "playing basketball",
+     "img": "B01-T6a"
     },
     {
-     "icon": "⚽🧑‍🤝‍🧑",
-     "label": "playing football"
+     "icon": "🖼️",
+     "label": "playing football",
+     "img": "B01-T6b"
     },
     {
-     "icon": "⚾",
-     "label": "baseball"
+     "icon": "🖼️",
+     "label": "baseball",
+     "img": "B01-T6c"
     }
    ],
    "answer": 1,
@@ -6456,16 +6465,17 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🏊‍♂️",
-    "label": "a man swimming in a pool"
+    "icon": "🏊",
+    "label": "a man swimming in a pool",
+    "img": "B01-T7"
    },
    "options": [
-    "他在游泳池游泳。",
-    "他在打籃球。",
-    "他在公園跑步。"
+    "他很會打籃球。",
+    "他很會跑步。",
+    "他很會游泳。"
    ],
-   "answer": 0,
-   "why": "Swimming pool → 游泳池.",
+   "answer": 2,
+   "why": "He is swimming fast in a pool → 他很會游泳。 A and B: other sports.",
    "id": "B01-07"
   },
   {
@@ -6473,8 +6483,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🧒🏊",
-    "label": "a small child who can already swim (a learned ability)"
+    "icon": "🏊‍♂️",
+    "label": "a small child who can already swim (a learned ability)",
+    "img": "B01-T8"
    },
    "text": "我弟弟五歲，他（　）游泳。",
    "options": [
@@ -6490,39 +6501,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我叫小明，我很喜歡運動。我（1）游泳，也會打籃球。每天早上，我去公園（2）。星期六我和同學一起（3）足球。可是今天我的腳很痛，我不（4）去踢球。我想在家看（5）。",
+   "text": "我叫小明，我很喜歡運動。我（1），也會打籃球。每天早上，我（2）。星期六我和同學（3）。可是今天我的腳很痛，（4）。我想（5）。",
    "options": [
-    "網球",
-    "踢",
-    "電視",
-    "能",
-    "跑步",
-    "會"
+    "一起踢足球",
+    "不會去踢球",
+    "下午看電視",
+    "很會游泳",
+    "不能去踢球",
+    "去公園跑步"
    ],
    "answers": [
-    5,
-    4,
-    1,
     3,
+    5,
+    0,
+    4,
     2
    ],
-   "why": "會 = ability; 不能 = can't because of a sore foot (a condition); 踢足球; 看電視. 網球 doesn't fit.",
+   "why": "(1) 很會游泳. (2) 去公園跑步. (3) 一起踢足球. (4) his foot hurts → 不能去踢球. (5) 下午看電視. 不會去踢球 does not fit: the problem is his condition (能), not his ability (會).",
    "id": "B01-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "王先生去年不會游泳。他每個星期六都去游泳池學，現在他很會游泳。",
-   "question": "哪個是對的？",
+   "text": "王先生去年不會游泳，他覺得游泳很難。他每個星期六都去學校的游泳池學，現在他很會游泳，每天早上都游三十分鐘。他太太還不會游泳，可是她也想學。",
+   "question": "哪一個是對的？",
    "options": [
-    "王先生每天去游泳池",
-    "王先生不喜歡游泳",
-    "王先生現在會游泳",
-    "王先生去年很會游泳"
+    "王先生去年很會游泳。",
+    "王太太很會游泳。",
+    "王先生現在會游泳。",
+    "王先生覺得游泳很容易。"
    ],
    "answer": 2,
-   "why": "Now 很會游泳. C is the opposite; B has the wrong frequency (every Saturday); D is not mentioned.",
+   "why": "Last year he could not swim, then he learned every Saturday → now he can (a paraphrase of 很會游泳). A: the opposite. B: his wife 還不會. D: he used to find it 很難.",
    "id": "B01-10"
   }
  ],
@@ -6538,11 +6549,11 @@
    },
    "question": "週末你要做什麼？",
    "options": [
-    "我要睡覺。",
     "我要去參加活動。",
+    "我要睡覺。",
     "我要看電視。"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "參加活動 = to take part in an activity/event. A and C are activities at home.",
    "id": "B02-01"
   },
@@ -6582,16 +6593,19 @@
    "question": "這位小姐想做什麼？",
    "options": [
     {
-     "icon": "🎬",
-     "label": "watching a film"
+     "icon": "🖼️",
+     "label": "watching a film",
+     "img": "B02-T3a"
     },
     {
-     "icon": "🏊",
-     "label": "to swim"
+     "icon": "🖼️",
+     "label": "to swim",
+     "img": "B02-T3b"
     },
     {
-     "icon": "🧺",
-     "label": "picnic"
+     "icon": "🖼️",
+     "label": "picnic",
+     "img": "B02-T3c"
     }
    ],
    "answer": 2,
@@ -6623,16 +6637,19 @@
    "question": "這是什麼活動？",
    "options": [
     {
-     "icon": "🎵",
-     "label": "a music activity"
+     "icon": "🖼️",
+     "label": "a music activity",
+     "img": "B02-T4a"
     },
     {
-     "icon": "🧺",
-     "label": "picnic"
+     "icon": "🖼️",
+     "label": "picnic",
+     "img": "B02-T4b"
     },
     {
-     "icon": "⚽",
-     "label": "sport; exercise"
+     "icon": "🖼️",
+     "label": "sport; exercise",
+     "img": "B02-T4c"
     }
    ],
    "answer": 0,
@@ -6679,16 +6696,19 @@
    "text": "他給媽媽看相片。",
    "options": [
     {
-     "icon": "📷👩",
-     "label": "showing photos to mum"
+     "icon": "🖼️",
+     "label": "showing photos to Mother",
+     "img": "B02-T6a"
     },
     {
-     "icon": "📖👩",
-     "label": "reading a story aloud"
+     "icon": "🖼️",
+     "label": "reading a story aloud",
+     "img": "B02-T6b"
     },
     {
-     "icon": "🎵",
-     "label": "playing music"
+     "icon": "🖼️",
+     "label": "playing music",
+     "img": "B02-T6c"
     }
    ],
    "answer": 0,
@@ -6700,8 +6720,9 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "📖👨🧒",
-    "label": "dad reading a story aloud"
+    "icon": "📖",
+    "label": "dad reading a story aloud",
+    "img": "B02-T7"
    },
    "options": [
     "爸爸給我照相。",
@@ -6717,8 +6738,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🎶",
-    "label": "music"
+    "icon": "🎵",
+    "label": "music",
+    "img": "B02-T8"
    },
    "text": "我喜歡聽（　）。",
    "options": [
@@ -6734,23 +6756,23 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "這個週末學校有一個（1），我很想（2）。我們要去公園（3），也要一起聽（4）。我會帶我的手機（5）。",
+   "text": "這個週末學校有一個活動，我很想（1）。我們要去公園（2），也要一起（3）。我會帶我的手機（4）。你（5）？我們一塊去吧！",
    "options": [
-    "照相",
-    "有空",
-    "音樂",
-    "活動",
-    "野餐",
-    "參加"
+    "給大家照相",
+    "要去工作",
+    "週末有空嗎",
+    "去參加",
+    "聽音樂、唱歌",
+    "一塊野餐"
    ],
    "answers": [
     3,
     5,
     4,
-    2,
-    0
+    0,
+    2
    ],
-   "why": "一個活動 / 想參加 / 去公園野餐 / 聽音樂 / 帶手機照相.",
+   "why": "(1) 很想 + 去參加. (2) 去公園 + 一塊野餐. (3) 一起 + 聽音樂、唱歌. (4) 帶手機 + 給大家照相. (5) a question → 週末有空嗎. 要去工作 fits no blank.",
    "id": "B02-09"
   },
   {
@@ -6826,16 +6848,19 @@
    "question": "一張門票多少錢？",
    "options": [
     {
-     "icon": "🎟️",
-     "label": "NT$300"
+     "icon": "🏷️",
+     "label": "price tag: $300",
+     "img": "B03-T3a"
     },
     {
-     "icon": "🎟️",
-     "label": "NT$30"
+     "icon": "🏷️",
+     "label": "price tag: $30",
+     "img": "B03-T3b"
     },
     {
-     "icon": "🎟️",
-     "label": "NT$3,000"
+     "icon": "🏷️",
+     "label": "price tag: $3,000",
+     "img": "B03-T3c"
     }
    ],
    "answer": 0,
@@ -6867,16 +6892,19 @@
    "question": "第二場比賽幾點？",
    "options": [
     {
-     "icon": "🕗",
-     "label": "20:00"
+     "icon": "🕐",
+     "label": "clock showing 8:00 (evening)",
+     "img": "B03-T4a"
     },
     {
-     "icon": "🕖",
-     "label": "19:00"
+     "icon": "🕐",
+     "label": "clock showing 7:00 (evening)",
+     "img": "B03-T4b"
     },
     {
-     "icon": "🕑",
-     "label": "14:00"
+     "icon": "🕐",
+     "label": "clock showing 2:00 (afternoon)",
+     "img": "B03-T4c"
     }
    ],
    "answer": 1,
@@ -6923,16 +6951,19 @@
    "text": "他們是這次比賽的第一名。",
    "options": [
     {
-     "icon": "😢",
-     "label": "losing"
+     "icon": "🖼️",
+     "label": "losing, sad",
+     "img": "B03-T6a"
     },
     {
-     "icon": "🏆",
-     "label": "first place"
+     "icon": "🖼️",
+     "label": "first place",
+     "img": "B03-T6b"
     },
     {
-     "icon": "🥈",
-     "label": "second place"
+     "icon": "🖼️",
+     "label": "second place",
+     "img": "B03-T6c"
     }
    ],
    "answer": 1,
@@ -6944,8 +6975,9 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🎟️🎟️🎟️",
-    "label": "three tickets"
+    "icon": "🎫",
+    "label": "three tickets",
+    "img": "B03-T7"
    },
    "options": [
     "我有三張票。",
@@ -6961,8 +6993,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "📢",
-    "label": "loud cheering"
+    "icon": "📣",
+    "label": "a crowd cheering loudly",
+    "img": "B03-T8"
    },
    "text": "球場裡的加油（　）很大。",
    "options": [
@@ -6978,23 +7011,23 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "昨天我（1）球場去看棒球（2）。這是我（3）一次看棒球。我買一張（4），三百塊。大家都說：「（5）！」",
+   "text": "昨天我（1）看棒球比賽。這是我（2）。我買一張門票，（3）。球場裡大家都說（4）。我們學校是（5），真棒！",
    "options": [
-    "到",
-    "名",
-    "門票",
-    "第",
-    "加油",
-    "比賽"
+    "三百塊",
+    "第一場",
+    "「加油！」",
+    "到球場去",
+    "第一名",
+    "第一次看棒球"
    ],
    "answers": [
-    0,
-    5,
     3,
+    5,
+    0,
     2,
     4
    ],
-   "why": "到…去 / 比賽 / 第一次 / 門票 / 加油. 名 doesn't fit.",
+   "why": "(1) 到球場去 + an activity. (2) 第一次看棒球. (3) the price → 三百塊. (4) 都說 + 「加油！」. (5) 第一名, then 真棒. 第一場 fits no blank.",
    "id": "B03-09"
   },
   {
@@ -7026,11 +7059,11 @@
    },
    "question": "他在做什麼？",
    "options": [
+    "他在打電話。",
     "他在看電視。",
-    "他在上網。",
-    "他在打電話。"
+    "他在上網。"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "打電話 = to make a phone call.",
    "id": "B04-01"
   },
@@ -7070,16 +7103,19 @@
    "question": "這位小姐在做什麼？",
    "options": [
     {
-     "icon": "📖",
-     "label": "to read; to study"
+     "icon": "🖼️",
+     "label": "to read; to study",
+     "img": "B04-T3a"
     },
     {
-     "icon": "📺",
-     "label": "watching TV"
+     "icon": "🖼️",
+     "label": "watching TV",
+     "img": "B04-T3b"
     },
     {
-     "icon": "💻",
-     "label": "going online"
+     "icon": "🖼️",
+     "label": "going online",
+     "img": "B04-T3c"
     }
    ],
    "answer": 1,
@@ -7111,16 +7147,19 @@
    "question": "這位先生今天晚上想做什麼？",
    "options": [
     {
-     "icon": "😴",
-     "label": "to sleep"
+     "icon": "🖼️",
+     "label": "to sleep",
+     "img": "B04-T4a"
     },
     {
-     "icon": "💼",
-     "label": "working"
+     "icon": "🖼️",
+     "label": "working",
+     "img": "B04-T4b"
     },
     {
-     "icon": "💬",
-     "label": "to chat"
+     "icon": "🖼️",
+     "label": "to chat",
+     "img": "B04-T4c"
     }
    ],
    "answer": 2,
@@ -7167,16 +7206,19 @@
    "text": "媽媽正在看電視，爸爸正在上網。",
    "options": [
     {
-     "icon": "👩📺👨📺",
-     "label": "both watching TV"
+     "icon": "🖼️",
+     "label": "father and mother watching TV",
+     "img": "B04-T6a"
     },
     {
-     "icon": "👩📺👨💻",
-     "label": "mum TV, dad internet"
+     "icon": "🖼️",
+     "label": "mother watching TV, father at the computer",
+     "img": "B04-T6b"
     },
     {
-     "icon": "👩💻👨📺",
-     "label": "mum internet, dad TV"
+     "icon": "🖼️",
+     "label": "mother at the computer, father watching TV",
+     "img": "B04-T6c"
     }
    ],
    "answer": 1,
@@ -7189,7 +7231,8 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "🌐",
-    "label": "website"
+    "label": "a school website on a computer screen",
+    "img": "B04-T7"
    },
    "options": [
     "這是學校的網站。",
@@ -7206,15 +7249,16 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "⏳",
-    "label": "a moment"
+    "label": "someone asking another person to wait a moment",
+    "img": "B04-T8"
    },
    "text": "請等（　），他馬上來。",
    "options": [
-    "一會",
     "最近",
-    "網路"
+    "網路",
+    "一會"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "等一會 = wait a moment.",
    "id": "B04-08"
   },
@@ -7222,39 +7266,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "喂，你（1）做什麼（2）？我在（3）。（4）我很忙，功課很多。我們晚上再（5）吧！",
+   "text": "喂，你（1）？我在家上網。（2）我很忙，（3）。我現在要看老師的（4）。我們晚上（5）吧！",
    "options": [
-    "聊天",
+    "再聊天",
+    "電很多",
+    "在做什麼呢",
+    "功課很多",
     "最近",
-    "正在",
-    "上網",
-    "呢",
     "網站"
    ],
    "answers": [
     2,
     4,
     3,
-    1,
+    5,
     0
    ],
-   "why": "正在 + V + 呢 / 在上網 / 最近很忙 / 再聊天.",
+   "why": "(1) 在做什麼呢. (2) 最近 + 我很忙. (3) the reason → 功課很多. (4) 老師的 + 網站. (5) 晚上 + 再聊天. 電很多 fits no blank.",
    "id": "B04-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "小明最近每天晚上都上網，他在網路上跟外國朋友聊天，他們都說英文。",
-   "question": "小明最近晚上做什麼？",
+   "text": "小明最近每天晚上都上網，他在網路上跟外國朋友聊天，他們都說英文。小明的英文最近很好。",
+   "question": "小明的英文為什麼最近很好？",
    "options": [
-    "打電話給朋友",
-    "看電視",
-    "跟外國朋友吃飯",
-    "在網路上聊天"
+    "因為他上英文課。",
+    "因為他常常跟外國朋友說英文。",
+    "因為他看英文電視。",
+    "因為他的老師是外國人。"
    ],
-   "answer": 3,
-   "why": "Chatting online. C: meeting in person is not mentioned.",
+   "answer": 1,
+   "why": "Every evening he chats in English with foreign friends → his English has improved (cause and effect). A, C, D: not mentioned.",
    "id": "B04-10"
   }
  ],
@@ -7266,7 +7310,7 @@
    "picture": {
     "icon": "🚫🍔",
     "label": "a sign: no eating in the living room",
-    "img": "B05-3"
+    "img": "B05-4"
    },
    "question": "這裡可以吃東西嗎？",
    "options": [
@@ -7285,7 +7329,7 @@
    "picture": {
     "icon": "🙏📦",
     "label": "he is carrying lots of boxes and asking for help",
-    "img": "B05-4"
+    "img": "B05-5"
    },
    "question": "她說什麼？",
    "options": [
@@ -7314,16 +7358,19 @@
    "question": "這位先生做什麼？",
    "options": [
     {
-     "icon": "🎁",
-     "label": "giving a present"
+     "icon": "🖼️",
+     "label": "giving a present",
+     "img": "B05-T3a"
     },
     {
-     "icon": "🍽️",
-     "label": "to eat"
+     "icon": "🖼️",
+     "label": "to eat",
+     "img": "B05-T3b"
     },
     {
-     "icon": "📞",
-     "label": "making a phone call"
+     "icon": "🖼️",
+     "label": "making a phone call",
+     "img": "B05-T3c"
     }
    ],
    "answer": 0,
@@ -7355,16 +7402,19 @@
    "question": "這位小姐請這位先生喝什麼？",
    "options": [
     {
-     "icon": "☕",
-     "label": "coffee"
+     "icon": "🖼️",
+     "label": "coffee",
+     "img": "B05-T4a"
     },
     {
-     "icon": "🍵",
-     "label": "tea"
+     "icon": "🖼️",
+     "label": "tea",
+     "img": "B05-T4b"
     },
     {
-     "icon": "🍺",
-     "label": "beer"
+     "icon": "🖼️",
+     "label": "beer",
+     "img": "B05-T4c"
     }
    ],
    "answer": 1,
@@ -7408,19 +7458,22 @@
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "我們在飯廳吃飯。",
+   "text": "請到飯廳吃飯。",
    "options": [
     {
-     "icon": "🍽️",
-     "label": "dining room"
+     "icon": "🖼️",
+     "label": "dining room",
+     "img": "B05-T6a"
     },
     {
-     "icon": "🛋️",
-     "label": "living room"
+     "icon": "🖼️",
+     "label": "living room",
+     "img": "B05-T6b"
     },
     {
-     "icon": "🛏️",
-     "label": "room"
+     "icon": "🖼️",
+     "label": "room",
+     "img": "B05-T6c"
     }
    ],
    "answer": 0,
@@ -7432,8 +7485,9 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🚫👟",
-    "label": "no shoes indoors"
+    "icon": "🚫👞",
+    "label": "sign: no shoes inside",
+    "img": "B05-T7"
    },
    "options": [
     "請坐。",
@@ -7449,8 +7503,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🙇",
-    "label": "politely asking for help"
+    "icon": "🙏",
+    "label": "someone asking a favour politely",
+    "img": "B05-T8"
    },
    "text": "（　），我可以用你的電話嗎？",
    "options": [
@@ -7466,30 +7521,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "（1）你來我家！這是我們的（2），那是飯廳。（3）喝茶吧！不要（4）。謝謝你（5）我們水果。",
+   "text": "美美：「（1），請進！這是我們的（2），那是飯廳。請坐，（3）。不要客氣，（4）！」大文：「謝謝！這是（5）。」",
    "options": [
-    "客氣",
-    "祝",
-    "送",
-    "歡迎",
+    "多吃一點",
     "客廳",
-    "請"
+    "請不要進來",
+    "歡迎歡迎",
+    "送您的水果",
+    "請喝茶"
    ],
    "answers": [
     3,
-    4,
+    1,
     5,
     0,
-    2
+    4
    ],
-   "why": "歡迎 / 客廳 / 請 / 不要客氣 / 送. 祝 doesn't fit.",
+   "why": "(1) a welcome → 歡迎歡迎. (2) 我們的 + 客廳. (3) 請坐 + 請喝茶. (4) 不要客氣 + 多吃一點. (5) a gift → 送您的水果. 請不要進來 contradicts 請進.",
    "id": "B05-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "陳太太說：「歡迎你來！請坐，請喝茶。不要客氣，想吃什麼就吃。」",
+   "text": "今天我們到陳太太家去。陳太太說：「歡迎你們來！請坐，請喝茶。不要客氣，想吃什麼就吃。」我們吃很多，也喝很多茶。陳太太做的菜真好吃。",
    "question": "陳太太是什麼意思？",
    "options": [
     "大家應該走",
@@ -7558,16 +7613,19 @@
    "question": "他是誰？",
    "options": [
     {
-     "icon": "🧑‍⚕️",
-     "label": "doctor"
+     "icon": "🖼️",
+     "label": "doctor",
+     "img": "B06-T3a"
     },
     {
-     "icon": "🧑‍🎓",
-     "label": "classmate"
+     "icon": "🖼️",
+     "label": "classmate",
+     "img": "B06-T3b"
     },
     {
-     "icon": "🧑‍🏫",
-     "label": "teacher"
+     "icon": "🖼️",
+     "label": "teacher",
+     "img": "B06-T3c"
     }
    ],
    "answer": 1,
@@ -7599,16 +7657,19 @@
    "question": "這位小姐認識哪國的學生？",
    "options": [
     {
-     "icon": "🗾",
-     "label": "Japan"
+     "icon": "🛂",
+     "label": "JAPAN passport",
+     "img": "B06-T4a"
     },
     {
-     "icon": "🗽",
-     "label": "America"
+     "icon": "🛂",
+     "label": "USA passport",
+     "img": "B06-T4b"
     },
     {
-     "icon": "🏝️",
-     "label": "Indonesia"
+     "icon": "🛂",
+     "label": "INDONESIA passport",
+     "img": "B06-T4c"
     }
    ],
    "answer": 0,
@@ -7655,16 +7716,19 @@
    "text": "大人和小朋友都在公園。",
    "options": [
     {
-     "icon": "🧒",
-     "label": "only children"
+     "icon": "🖼️",
+     "label": "only children",
+     "img": "B06-T6a"
     },
     {
-     "icon": "👨🏢",
-     "label": "adults in an office"
+     "icon": "🖼️",
+     "label": "adults in an office",
+     "img": "B06-T6b"
     },
     {
-     "icon": "👨👩🧒🧒",
-     "label": "adults & children in a park"
+     "icon": "🖼️",
+     "label": "adults and children in a park",
+     "img": "B06-T6c"
     }
    ],
    "answer": 2,
@@ -7677,7 +7741,8 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "🤝",
-    "label": "two people meeting"
+    "label": "two people meeting",
+    "img": "B06-T7"
    },
    "options": [
     "明天見！",
@@ -7694,7 +7759,8 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "👴",
-    "label": "an elderly person"
+    "label": "an elderly man",
+    "img": "B06-T8"
    },
    "text": "那位（　）今年八十歲。",
    "options": [
@@ -7710,39 +7776,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "今天學校有一個活動，我（1）很多新朋友。他們是（2）國的學生，有日本人，（3）有美國人。大家都很（4）。我很高興跟他們（5）。",
+   "text": "今天學校有一個活動，我（1）。他們是各國的學生，有日本人，（2）。他們都很（3）。大家說：「（4）！」我很高興（5）。",
    "options": [
-    "也",
-    "認識",
-    "各",
-    "別人",
-    "見面",
+    "不認識別人",
+    "也有美國人",
+    "很高興認識你",
+    "跟他們見面",
+    "認識很多新朋友",
     "年輕"
    ],
    "answers": [
+    4,
     1,
-    2,
-    0,
     5,
-    4
+    2,
+    3
    ],
-   "why": "認識 / 各國 / 也 / 年輕 / 見面.",
+   "why": "(1) 認識很多新朋友. (2) 有日本人 + 也有美國人. (3) 很 + 年輕. (4) a greeting → 很高興認識你. (5) 很高興 + 跟他們見面. 不認識別人 contradicts 認識很多新朋友.",
    "id": "B06-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "公園裡有很多人：大人在聊天，小朋友在玩，老人在看書。",
-   "question": "誰在玩？",
+   "text": "公園裡有很多人：大人們正在聊天，小朋友們在玩球，老人們在看書。我媽媽也在那裡，她在跟朋友說話。",
+   "question": "我媽媽在做什麼？",
    "options": [
-    "老人",
-    "大人",
-    "小朋友",
-    "大家"
+    "看書",
+    "聊天",
+    "玩球",
+    "睡覺"
    ],
-   "answer": 2,
-   "why": "Children playing.",
+   "answer": 1,
+   "why": "跟朋友說話 = chatting with a friend → 聊天 (a paraphrase; Mother is an adult). A: what the old people are doing. C: what the children are doing. D: not mentioned.",
    "id": "B06-10"
   }
  ],
@@ -7777,11 +7843,11 @@
    },
    "question": "這個屋子大不大？",
    "options": [
-    "很大。",
     "很小。",
-    "不大也不小。"
+    "不大也不小。",
+    "很大。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "屋子很大 = the house is big.",
    "id": "B07-02"
   },
@@ -7802,16 +7868,19 @@
    "question": "這位小姐要搬去哪裡？",
    "options": [
     {
-     "icon": "🏖️",
-     "label": "near the beach"
+     "icon": "🖼️",
+     "label": "near the beach",
+     "img": "B07-T3a"
     },
     {
-     "icon": "🏫",
-     "label": "near the school"
+     "icon": "🖼️",
+     "label": "near the school",
+     "img": "B07-T3b"
     },
     {
-     "icon": "🏙️",
-     "label": "city centre"
+     "icon": "🖼️",
+     "label": "city centre",
+     "img": "B07-T3c"
     }
    ],
    "answer": 1,
@@ -7843,16 +7912,19 @@
    "question": "宿舍一個月多少錢？",
    "options": [
     {
-     "icon": "💵",
-     "label": "NT$10,000"
+     "icon": "🏷️",
+     "label": "price tag: $10,000",
+     "img": "B07-T4a"
     },
     {
-     "icon": "💵",
-     "label": "NT$1,000"
+     "icon": "🏷️",
+     "label": "price tag: $1,000",
+     "img": "B07-T4b"
     },
     {
-     "icon": "💵",
-     "label": "NT$4,000"
+     "icon": "🏷️",
+     "label": "price tag: $4,000",
+     "img": "B07-T4c"
     }
    ],
    "answer": 2,
@@ -7899,16 +7971,19 @@
    "text": "大樓的大門在右邊。",
    "options": [
     {
-     "icon": "🏠",
-     "label": "home, house"
+     "icon": "🖼️",
+     "label": "home, house",
+     "img": "B07-T6a"
     },
     {
-     "icon": "🏢⬅️",
-     "label": "on the left"
+     "icon": "🖼️",
+     "label": "the main gate on the left",
+     "img": "B07-T6b"
     },
     {
-     "icon": "🏢➡️",
-     "label": "the main entrance on the right"
+     "icon": "🖼️",
+     "label": "the main entrance on the right",
+     "img": "B07-T6c"
     }
    ],
    "answer": 2,
@@ -7920,8 +7995,9 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "📦🚚",
-    "label": "moving house"
+    "icon": "📦",
+    "label": "moving day: two people carrying a box",
+    "img": "B07-T7"
    },
    "options": [
     "我們今天去上課。",
@@ -7937,8 +8013,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🏠🔑",
-    "label": "landlord"
+    "icon": "🔑",
+    "label": "a landlord with keys",
+    "img": "B07-T8"
    },
    "text": "這是（　），他有很多房子。",
    "options": [
@@ -7954,30 +8031,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "下個月我要（1）。我的新家在一個（2）的五樓。我跟我的（3）一起租，一個月的（4）是一萬二。（5）很好，常常送我們水果。",
+   "text": "下個月我要（1）。我的新家在一個（2）。我跟我的（3）一起租，（4）是一萬二。（5）很好，常常送我們水果。",
    "options": [
-    "搬家",
-    "大樓",
-    "大門",
-    "室友",
-    "房東",
-    "房租"
+    "好朋友",
+    "大樓的大門",
+    "房東王先生",
+    "新大樓裡",
+    "從宿舍搬出來",
+    "房租一個月"
    ],
    "answers": [
-    0,
-    1,
+    4,
     3,
+    0,
     5,
-    4
+    2
    ],
-   "why": "搬家 / 大樓 / 室友 / 房租 / 房東.",
+   "why": "(1) 從宿舍搬出來. (2) 一個 + 新大樓裡. (3) 我的 + 好朋友. (4) 房租一個月 + 是一萬二. (5) 房東王先生 + 很好. 大樓的大門 fits no blank.",
    "id": "B07-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "租房子：學校附近，三樓，兩個房間，一個月九千塊。想租的人，請打電話給王先生。",
+   "text": "租房子：學校附近的大樓，三樓，有兩個房間，可以住兩個人。房租一個月九千塊。想租的人，請打電話給王先生，他住在大樓的一樓。",
    "question": "王先生可能是誰？",
    "options": [
     "老師",
@@ -8046,16 +8123,19 @@
    "question": "洗手間在哪裡？",
    "options": [
     {
-     "icon": "🚻⬆️",
-     "label": "upstairs"
+     "icon": "🖼️",
+     "label": "upstairs",
+     "img": "B08-T3a"
     },
     {
-     "icon": "🛗🚻",
-     "label": "opposite the lift"
+     "icon": "🖼️",
+     "label": "opposite the lift",
+     "img": "B08-T3b"
     },
     {
-     "icon": "🪜🚻",
-     "label": "near the stairs"
+     "icon": "🖼️",
+     "label": "near the stairs",
+     "img": "B08-T3c"
     }
    ],
    "answer": 1,
@@ -8087,16 +8167,19 @@
    "question": "這位小姐的家有什麼？",
    "options": [
     {
-     "icon": "🛗",
-     "label": "lift, elevator"
+     "icon": "🖼️",
+     "label": "lift, elevator",
+     "img": "B08-T4a"
     },
     {
-     "icon": "🪜",
-     "label": "stairs"
+     "icon": "🖼️",
+     "label": "stairs",
+     "img": "B08-T4b"
     },
     {
-     "icon": "🏊",
-     "label": "swimming pool"
+     "icon": "🖼️",
+     "label": "swimming pool",
+     "img": "B08-T4c"
     }
    ],
    "answer": 1,
@@ -8143,16 +8226,19 @@
    "text": "門開著，燈也開著。",
    "options": [
     {
-     "icon": "💡",
-     "label": "only the light is on"
+     "icon": "🖼️",
+     "label": "only the light is on",
+     "img": "B08-T6a"
     },
     {
-     "icon": "🚪💡",
-     "label": "the door open, the light on"
+     "icon": "🖼️",
+     "label": "the door open, the light on",
+     "img": "B08-T6b"
     },
     {
-     "icon": "🚪",
-     "label": "only the door open"
+     "icon": "🖼️",
+     "label": "only the door open",
+     "img": "B08-T6c"
     }
    ],
    "answer": 1,
@@ -8165,7 +8251,8 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "🏠🏫",
-    "label": "a house opposite a school"
+    "label": "a house opposite a school",
+    "img": "B08-T7"
    },
    "options": [
     "我家在學校對面。",
@@ -8182,7 +8269,8 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "💡",
-    "label": "a light that is on"
+    "label": "a light that is on",
+    "img": "B08-T8"
    },
    "text": "房間裡的燈開（　）。",
    "options": [
@@ -8198,30 +8286,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我家的（1）在樓上，我常常在那裡看書。樓下有一個大（2），裡面有很多水果。天氣很熱，所以冷氣都開（3）。我的房間在客廳（4）。我們家沒有（5），要走樓梯。",
+   "text": "我家的（1）在樓上，我常常在那裡看書。樓下有一個大（2），裡面有很多水果。天氣很熱，所以（3）。我的房間在（4）。我們家沒有電梯，（5）。",
    "options": [
-    "著",
-    "電梯",
+    "客廳對面",
+    "冷氣都開著",
+    "坐電梯上樓",
     "書房",
     "冰箱",
-    "對面",
-    "旁邊"
+    "要走樓梯"
    ],
    "answers": [
-    2,
     3,
-    0,
     4,
-    1
+    1,
+    0,
+    5
    ],
-   "why": "書房 / 冰箱 / 開著 / 對面 / 沒有電梯. 旁邊 could also go in (4) — but only 對面 fits (4); the unused option is 旁邊.",
+   "why": "(1) 書房. (2) 冰箱 (with fruit inside). (3) it is hot → 冷氣都開著. (4) 客廳對面. (5) no lift → 要走樓梯. 坐電梯上樓 contradicts 沒有電梯.",
    "id": "B08-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "王小姐家在大樓的十樓，可是她每天走樓梯上樓，她說這是運動。",
+   "text": "王小姐家在大樓的十樓。大樓有電梯，電梯很快，也很新。可是王小姐每天都走樓梯上樓，她說：「走樓梯是很好的運動。」她不常去公園跑步。",
    "question": "王小姐為什麼走樓梯？",
    "options": [
     "電梯很慢",
@@ -8290,16 +8378,19 @@
    "question": "這位小姐要做什麼？",
    "options": [
     {
-     "icon": "🍽️",
-     "label": "washing the dishes"
+     "icon": "🖼️",
+     "label": "washing the dishes",
+     "img": "B09-T3a"
     },
     {
-     "icon": "🧺",
-     "label": "washing clothes"
+     "icon": "🖼️",
+     "label": "washing clothes",
+     "img": "B09-T3b"
     },
     {
-     "icon": "🧹",
-     "label": "sweeping"
+     "icon": "🖼️",
+     "label": "sweeping",
+     "img": "B09-T3c"
     }
    ],
    "answer": 0,
@@ -8331,16 +8422,19 @@
    "question": "這位先生幫室友做什麼？",
    "options": [
     {
-     "icon": "🧹",
-     "label": "cleaning the room"
+     "icon": "🖼️",
+     "label": "cleaning the room",
+     "img": "B09-T4a"
     },
     {
-     "icon": "🍳",
-     "label": "cooking"
+     "icon": "🖼️",
+     "label": "cooking",
+     "img": "B09-T4b"
     },
     {
-     "icon": "🧺",
-     "label": "washing clothes"
+     "icon": "🖼️",
+     "label": "washing clothes",
+     "img": "B09-T4c"
     }
    ],
    "answer": 2,
@@ -8384,19 +8478,22 @@
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "門關了。",
+   "text": "門關了，窗戶也關了。",
    "options": [
     {
-     "icon": "🪟",
-     "label": "an open window"
+     "icon": "🖼️",
+     "label": "an open door",
+     "img": "B09-T6a"
     },
     {
-     "icon": "🚪🔒",
-     "label": "a closed door"
+     "icon": "🖼️",
+     "label": "the door and the window closed",
+     "img": "B09-T6b"
     },
     {
-     "icon": "🚪",
-     "label": "an open door"
+     "icon": "🖼️",
+     "label": "the door closed, the window open",
+     "img": "B09-T6c"
     }
    ],
    "answer": 1,
@@ -8408,8 +8505,9 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🧺✨",
-    "label": "clean clothes"
+    "icon": "👕✨",
+    "label": "clean clothes",
+    "img": "B09-T7"
    },
    "options": [
     "衣服很乾淨了。",
@@ -8425,8 +8523,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🤝",
-    "label": "thanking someone for their help"
+    "icon": "🙏",
+    "label": "thanking someone for their help",
+    "img": "B09-T8"
    },
    "text": "謝謝你的（　）！",
    "options": [
@@ -8442,30 +8541,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "今天我在家（1）衣服，我室友（2）我洗碗。冷氣（3）了，房東來（4）。現在房間很（5），也不熱了。",
+   "text": "今天我在家（1），我室友（2）。可是冷氣（3），房東來（4）。現在房間很乾淨，（5）。",
    "options": [
-    "幫",
-    "拉",
-    "幫忙",
-    "洗",
-    "壞",
-    "乾淨"
+    "幫我們看",
+    "不乾淨了",
+    "洗衣服",
+    "也不熱了",
+    "幫我洗碗",
+    "壞了"
    ],
    "answers": [
-    3,
-    0,
-    4,
     2,
-    5
+    4,
+    5,
+    0,
+    3
    ],
-   "why": "洗衣服 / 幫我洗碗 / 冷氣壞了 / 來幫忙 / 乾淨. 拉 doesn't fit.",
+   "why": "(1) 在家 + 洗衣服. (2) 室友 + 幫我洗碗. (3) 冷氣 + 壞了. (4) 房東來 + 幫我們看. (5) 很乾淨，也不熱了. 不乾淨了 contradicts 房間很乾淨.",
    "id": "B09-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "媽媽說：「你的房間不乾淨，衣服都放在床上。」小明說：「好，我來洗衣服。」",
+   "text": "媽媽說：「小明，你的房間不乾淨，衣服都放在床上，書也放在椅子上。你的同學明天要來我們家。」小明說：「好，我現在就洗衣服。」",
    "question": "媽媽是什麼意思？",
    "options": [
     "小明的衣服很漂亮",
@@ -8534,16 +8633,19 @@
    "question": "這位先生每天看電視看多久？",
    "options": [
     {
-     "icon": "📺",
-     "label": "4 hours"
+     "icon": "⏱️",
+     "label": "4 hours",
+     "img": "B10-T3a"
     },
     {
-     "icon": "📺",
-     "label": "1 hour"
+     "icon": "⏱️",
+     "label": "1 hour",
+     "img": "B10-T3b"
     },
     {
-     "icon": "📺",
-     "label": "10 minutes"
+     "icon": "⏱️",
+     "label": "10 minutes",
+     "img": "B10-T3c"
     }
    ],
    "answer": 1,
@@ -8575,16 +8677,19 @@
    "question": "這位小姐週日在哪裡？",
    "options": [
     {
-     "icon": "🌳",
-     "label": "at the park"
+     "icon": "🖼️",
+     "label": "at the park",
+     "img": "B10-T4a"
     },
     {
-     "icon": "🏫",
-     "label": "at school"
+     "icon": "🖼️",
+     "label": "at school",
+     "img": "B10-T4b"
     },
     {
-     "icon": "🏠",
-     "label": "at home"
+     "icon": "🖼️",
+     "label": "at home",
+     "img": "B10-T4c"
     }
    ],
    "answer": 2,
@@ -8631,19 +8736,22 @@
    "text": "他一直打電話。",
    "options": [
     {
-     "icon": "📺",
-     "label": "watching TV"
+     "icon": "🖼️",
+     "label": "on the phone non-stop",
+     "img": "B10-T6b"
     },
     {
-     "icon": "📞🔁",
-     "label": "on the phone non-stop"
+     "icon": "🖼️",
+     "label": "watching TV",
+     "img": "B10-T6a"
     },
     {
-     "icon": "😴",
-     "label": "to sleep"
+     "icon": "🖼️",
+     "label": "to sleep",
+     "img": "B10-T6c"
     }
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "一直 = continuously.",
    "id": "B10-06"
   },
@@ -8652,8 +8760,9 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🗓️",
-    "label": "the last day of the week"
+    "icon": "📅",
+    "label": "weekly calendar: the last day (Sunday) marked",
+    "img": "B10-T7"
    },
    "options": [
     "今天不是週日。",
@@ -8669,8 +8778,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🔁",
-    "label": "always"
+    "icon": "🕘",
+    "label": "a man who always starts class at 9",
+    "img": "B10-T8"
    },
    "text": "他（　）九點上課。",
    "options": [
@@ -8686,39 +8796,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我（1）早上六點起床。起床（2），我跑步跑三十（3），然後（4）。（5）我不跑步，我在家休息。",
+   "text": "我（1）早上六點起床。起床以後，我（2），然後（3）。（4）我不跑步，（5）。",
    "options": [
-    "週日",
-    "洗澡",
+    "在家休息",
+    "洗澡洗十分鐘",
     "平常",
-    "分鐘",
-    "白天",
-    "以後"
+    "跑步跑三十分鐘",
+    "洗澡洗兩天",
+    "週日"
    ],
    "answers": [
     2,
-    5,
     3,
     1,
+    5,
     0
    ],
-   "why": "平常 / 以後 / 分鐘 / 洗澡 / 週日.",
+   "why": "(1) 平常. (2) 跑步跑三十分鐘. (3) 然後 + 洗澡洗十分鐘. (4) 週日. (5) 在家休息. 洗澡洗兩天 makes no sense.",
    "id": "B10-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "小明的習慣：星期一到星期五，他早上七點起床，晚上十一點睡覺。週末他十點起床。",
-   "question": "小明星期六幾點起床？",
+   "text": "小明的習慣：星期一到星期五，他早上七點起床，晚上十一點睡覺，白天上課。週末他十點起床，下午去打球。他說週末是休息的時間。",
+   "question": "星期六早上九點，小明在做什麼？",
    "options": [
-    "十點",
-    "七點",
-    "六點",
-    "十一點"
+    "上課",
+    "睡覺",
+    "打球",
+    "起床"
    ],
-   "answer": 0,
-   "why": "Saturday = the weekend → 十點.",
+   "answer": 1,
+   "why": "At the weekend he gets up at 10 → at 9 a.m. he is still asleep (an inference). A: class is only on weekdays. C: he plays ball in the afternoon. D: he gets up at 10.",
    "id": "B10-10"
   }
  ],
@@ -8753,11 +8863,11 @@
    },
    "question": "你想當什麼？",
    "options": [
-    "我想當醫生。",
     "我想當老師。",
+    "我想當醫生。",
     "我想當學生。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "當 = to become (a profession). 醫生 = doctor.",
    "id": "B11-02"
   },
@@ -8778,16 +8888,19 @@
    "question": "他們幾點下班？",
    "options": [
     {
-     "icon": "🕘",
-     "label": "9.00"
+     "icon": "🕐",
+     "label": "clock showing 9:00",
+     "img": "B11-T3a"
     },
     {
-     "icon": "🕕",
-     "label": "18.00"
+     "icon": "🕐",
+     "label": "clock showing 6:00 (afternoon)",
+     "img": "B11-T3b"
     },
     {
-     "icon": "🕔",
-     "label": "17.00"
+     "icon": "🕐",
+     "label": "clock showing 5:00 (afternoon)",
+     "img": "B11-T3c"
     }
    ],
    "answer": 1,
@@ -8820,15 +8933,18 @@
    "options": [
     {
      "icon": "🏢",
-     "label": "20th floor"
+     "label": "floor sign: 20F",
+     "img": "B11-T4a"
     },
     {
      "icon": "🏢",
-     "label": "2nd floor"
+     "label": "floor sign: 2F",
+     "img": "B11-T4b"
     },
     {
      "icon": "🏢",
-     "label": "12th floor"
+     "label": "floor sign: 12F",
+     "img": "B11-T4c"
     }
    ],
    "answer": 2,
@@ -8875,16 +8991,19 @@
    "text": "他從早上八點工作到晚上八點。",
    "options": [
     {
-     "icon": "🕘🕕",
-     "label": "09.00–18.00"
+     "icon": "🕘",
+     "label": "working hours: 9:00 to 6:00",
+     "img": "B11-T6a"
     },
     {
-     "icon": "🕗🕔",
-     "label": "08.00–17.00"
+     "icon": "🕘",
+     "label": "working hours: 8:00 to 5:00",
+     "img": "B11-T6b"
     },
     {
-     "icon": "🕗🕗",
-     "label": "08.00–20.00"
+     "icon": "🕘",
+     "label": "working hours: 8:00 a.m. to 8:00 p.m.",
+     "img": "B11-T6c"
     }
    ],
    "answer": 2,
@@ -8896,8 +9015,9 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "📝📈",
-    "label": "a work plan"
+    "icon": "📋",
+    "label": "a list of next year's work plans",
+    "img": "B11-T7"
    },
    "options": [
     "這是我的電話。",
@@ -8913,8 +9033,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "💪",
-    "label": "ability"
+    "icon": "🏆",
+    "label": "the best employee with a no. 1 trophy",
+    "img": "B11-T8"
    },
    "text": "他的（　）很好，是公司的第一名。",
    "options": [
@@ -8930,23 +9051,23 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我今年（1）在一個公司上班。我每天（2）九點工作（3）五點。我沒有工作（4），可是我想學。明年我想（5）老師。",
+   "text": "我今年（1）。我每天（2），一個星期上班五天。我（3），可是我想學。王先生給我（4）。明年我想（5）。",
    "options": [
-    "當",
-    "到",
-    "開始",
-    "從",
-    "下班",
-    "經驗"
+    "很多機會",
+    "開始在公司上班",
+    "很有錢",
+    "當老師",
+    "從九點工作到五點",
+    "沒有工作經驗"
    ],
    "answers": [
-    2,
-    3,
     1,
+    4,
     5,
-    0
+    0,
+    3
    ],
-   "why": "開始 / 從…到… / 經驗 / 當.",
+   "why": "(1) 開始在公司上班. (2) 從九點工作到五點. (3) 沒有工作經驗, then 可是我想學. (4) 給我 + 很多機會. (5) 想 + 當老師. 很有錢 fits no blank.",
    "id": "B11-09"
   },
   {
@@ -8978,11 +9099,11 @@
    },
    "question": "你奶奶有幾隻貓？",
    "options": [
-    "她有三隻狗。",
     "她有三隻貓。",
+    "她有三隻狗。",
     "她有一隻貓。"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "三隻貓 = three cats. A has the wrong animal; C the wrong number.",
    "id": "B12-01"
   },
@@ -9022,19 +9143,22 @@
    "question": "這位先生在哪裡看過馬？",
    "options": [
     {
-     "icon": "👴🏡",
-     "label": "at grandfather's house"
+     "icon": "🖼️",
+     "label": "at school",
+     "img": "B12-T3b"
     },
     {
-     "icon": "🏫",
-     "label": "at school"
+     "icon": "🖼️",
+     "label": "at grandfather's house",
+     "img": "B12-T3a"
     },
     {
-     "icon": "🌳",
-     "label": "at the park"
+     "icon": "🖼️",
+     "label": "at the park",
+     "img": "B12-T3c"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "在爺爺家.",
    "id": "B12-03"
   },
@@ -9063,19 +9187,22 @@
    "question": "阿姨旁邊的人是誰？",
    "options": [
     {
-     "icon": "👨",
-     "label": "uncle"
+     "icon": "🖼️",
+     "label": "grandfather",
+     "img": "B12-T4b"
     },
     {
-     "icon": "👴",
-     "label": "grandfather"
+     "icon": "🖼️",
+     "label": "aunt",
+     "img": "B12-T4c"
     },
     {
-     "icon": "👩",
-     "label": "aunt"
+     "icon": "🖼️",
+     "label": "uncle",
+     "img": "B12-T4a"
     }
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "伯伯 = uncle.",
    "id": "B12-04"
   },
@@ -9119,19 +9246,22 @@
    "text": "他家有一隻狗和兩隻貓。",
    "options": [
     {
-     "icon": "🐕🐈🐈",
-     "label": "one dog, two cats"
+     "icon": "🖼️",
+     "label": "two dogs, one cat",
+     "img": "B12-T6b"
     },
     {
-     "icon": "🐕🐕🐈",
-     "label": "two dogs, one cat"
+     "icon": "🖼️",
+     "label": "one dog, two cats",
+     "img": "B12-T6a"
     },
     {
-     "icon": "🐈🐈",
-     "label": "two cats"
+     "icon": "🖼️",
+     "label": "two cats only",
+     "img": "B12-T6c"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Count carefully.",
    "id": "B12-06"
   },
@@ -9141,7 +9271,8 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "👨‍👩‍👧‍👦",
-    "label": "family photo"
+    "label": "a photo of the extended family",
+    "img": "B12-T7"
    },
    "options": [
     "這是我的公司。",
@@ -9157,16 +9288,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🧒📷",
-    "label": "a childhood photo"
+    "icon": "🖼️",
+    "label": "a childhood photo",
+    "img": "B12-T8"
    },
    "text": "這是我（　）的相片。",
    "options": [
+    "小時候",
     "以後",
-    "後來",
-    "小時候"
+    "後來"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "小時候 = in childhood.",
    "id": "B12-08"
   },
@@ -9174,39 +9306,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我小時候住在（1）家。她家有一隻（2），很大。我也去（3）叔叔的家，他家有馬。（4）我們搬去臺北。我（5）常常想爺爺奶奶。",
+   "text": "我小時候住在奶奶家。她家有（1）。我也（2）叔叔的家，他家有馬。（3）我們搬去臺北。我（4）常常想爺爺奶奶，（5）。",
    "options": [
-    "奶奶",
-    "後來",
-    "狗",
+    "沒看過馬",
     "現在",
-    "從前",
-    "過"
+    "後來",
+    "也很想那隻狗",
+    "去過",
+    "一隻很大的狗"
    ],
    "answers": [
-    0,
-    2,
     5,
+    4,
+    2,
     1,
     3
    ],
-   "why": "她 → 奶奶 / 狗 / 去過 / 後來 / 現在.",
+   "why": "(1) 一隻很大的狗. (2) 去過. (3) 後來. (4) 現在. (5) 也很想那隻狗. 沒看過馬 contradicts having been to my uncle's house, which has horses.",
    "id": "B12-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "陳先生的家庭：他爺爺以前是醫生，他爸爸是老師，他叔叔在公司上班。現在陳先生也是老師。",
-   "question": "陳先生家誰以前是醫生？",
+   "text": "陳先生的家庭：他爺爺以前是醫生，後來當老師。他爸爸是老師，他叔叔在公司上班。現在陳先生也是老師。",
+   "question": "陳先生家有幾個人當過老師？",
    "options": [
-    "陳先生",
-    "他爸爸",
-    "他叔叔",
-    "他爺爺"
+    "一個",
+    "兩個",
+    "三個",
+    "四個"
    ],
-   "answer": 3,
-   "why": "爺爺以前是醫生.",
+   "answer": 2,
+   "why": "Grandfather (後來當老師), father and Mr. Chen himself → 3 people (counted across several sentences). A and B: someone is left out. D: the uncle works in an office.",
    "id": "B12-10"
   }
  ],
@@ -9227,7 +9359,7 @@
     "零九二一、三四五、六七八。"
    ],
    "answer": 0,
-   "why": "Numbers are read digit by digit; 0 = 零. B swaps 7 and 8 at the end; C swaps 1 and 2 at the start.",
+   "why": "Screen: 0912-345-678 → A. B: 678 becomes 687. C: 0912 becomes 0921.",
    "id": "B13-01"
   },
   {
@@ -9266,20 +9398,23 @@
    "question": "這位先生的家在哪裡？",
    "options": [
     {
-     "icon": "🏙️",
-     "label": "Taichung, No. 5"
+     "icon": "🏠",
+     "label": "address plate: 臺中市 5號",
+     "img": "B13-T3a"
     },
     {
-     "icon": "🏙️",
-     "label": "Taipei, No. 15"
+     "icon": "🏠",
+     "label": "address plate: 臺北市中山路5號",
+     "img": "B13-T3c"
     },
     {
-     "icon": "🏙️",
-     "label": "Taipei, No. 5 Zhongshan Rd"
+     "icon": "🏠",
+     "label": "address plate: 臺北市 15號",
+     "img": "B13-T3b"
     }
    ],
-   "answer": 2,
-   "why": "The city is 臺北市, the number is 五號.",
+   "answer": 1,
+   "why": "臺北市中山路五號 → B. A: the wrong city. C: the number is 15.",
    "id": "B13-03"
   },
   {
@@ -9307,16 +9442,19 @@
    "question": "學校裡男生多還是女生多？",
    "options": [
     {
-     "icon": "👦👦👧",
-     "label": "more men"
+     "icon": "🖼️",
+     "label": "more men",
+     "img": "B13-T4a"
     },
     {
-     "icon": "👧👧👦",
-     "label": "more women"
+     "icon": "🖼️",
+     "label": "more women",
+     "img": "B13-T4b"
     },
     {
-     "icon": "👦👧",
-     "label": "the same number"
+     "icon": "🖼️",
+     "label": "the same number",
+     "img": "B13-T4c"
     }
    ],
    "answer": 1,
@@ -9364,15 +9502,18 @@
    "options": [
     {
      "icon": "🏷️",
-     "label": "everything NT$10"
+     "label": "every item tagged $10",
+     "img": "B13-T6a"
     },
     {
      "icon": "🏷️",
-     "label": "different prices"
+     "label": "different price tags",
+     "img": "B13-T6b"
     },
     {
      "icon": "🏷️",
-     "label": "everything NT$100"
+     "label": "every item tagged $100",
+     "img": "B13-T6c"
     }
    ],
    "answer": 0,
@@ -9385,7 +9526,8 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "📝",
-    "label": "a form: name, address, phone"
+    "label": "form: 姓名 / 地址 / 電話",
+    "img": "B13-T7"
    },
    "options": [
     "請寫你的學校。",
@@ -9402,7 +9544,8 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "👩",
-    "label": "a woman"
+    "label": "a student pointing at her female friend",
+    "img": "B13-T8"
    },
    "text": "那個（　）是我的同學。",
    "options": [
@@ -9418,39 +9561,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我叫小文，我住在臺北（1）。我家的（2）是中山路十號。我的電話（3）是0987-123-456。我們學校有兩百（4）個學生，（5）的學生都很好。",
+   "text": "我叫小文，我住在（1）。我家的（2）是中山路十號。我的（3）是0987-123-456。我們學校有（4），（5）都很好。",
    "options": [
-    "所有",
-    "樣子",
-    "市",
+    "所有的學生",
+    "電話號碼",
+    "兩百多個學生",
+    "臺北市",
     "地址",
-    "多",
-    "號碼"
+    "十多歲"
    ],
    "answers": [
-    2,
     3,
-    5,
     4,
+    1,
+    2,
     0
    ],
-   "why": "臺北市 / 地址 / 電話號碼 / 兩百多 / 所有的.",
+   "why": "(1) 住在 + 臺北市. (2) 家的 + 地址. (3) 電話號碼. (4) 兩百多個學生. (5) 所有的學生 + 都很好. 十多歲 fits no blank.",
    "id": "B13-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "陳老師教中文，他有二十七個學生：男生十二個，女生十五個。所有的學生都是外國人。",
-   "question": "哪個是對的？",
+   "text": "陳老師教中文，他有二十七個學生：男生十二個，女生十五個。所有的學生都是外國人，他們全都住在臺北市。陳老師說，他們的中文都很好。",
+   "question": "陳老師有幾個學生不是男生？",
    "options": [
-    "陳老師教英文",
-    "學生都是臺灣人",
-    "男生有十五個",
-    "陳老師的學生都是外國人"
+    "十二個",
+    "十五個",
+    "二十七個",
+    "三個"
    ],
-   "answer": 3,
-   "why": "所有的學生都是外國人. B mixes up the numbers; C & A are the opposite.",
+   "answer": 1,
+   "why": "Not boys = girls → 15 (not written directly). A: the number of boys. C: the total number of students. D: the difference 15 − 12.",
    "id": "B13-10"
   }
  ],
@@ -9510,16 +9653,19 @@
    "question": "這位小姐的班有多少學生？",
    "options": [
     {
-     "icon": "🧑‍🎓",
-     "label": "12 students"
+     "icon": "🏫",
+     "label": "class sign: 12 students",
+     "img": "B14-T3a"
     },
     {
-     "icon": "🧑‍🎓",
-     "label": "200-odd students"
+     "icon": "🏫",
+     "label": "class sign: two hundred-odd students",
+     "img": "B14-T3b"
     },
     {
-     "icon": "🧑‍🎓",
-     "label": "twenty-odd students"
+     "icon": "🏫",
+     "label": "class sign: twenty-odd students",
+     "img": "B14-T3c"
     }
    ],
    "answer": 2,
@@ -9551,20 +9697,23 @@
    "question": "這位先生的妹妹上什麼學校？",
    "options": [
     {
-     "icon": "🎒",
-     "label": "primary school, year 3"
+     "icon": "🖼️",
+     "label": "high school, year 3",
+     "img": "B14-T4b"
     },
     {
-     "icon": "🏫",
-     "label": "high school, year 3"
+     "icon": "🖼️",
+     "label": "primary school, year 3",
+     "img": "B14-T4a"
     },
     {
-     "icon": "🏛️",
-     "label": "university"
+     "icon": "🖼️",
+     "label": "university",
+     "img": "B14-T4c"
     }
    ],
-   "answer": 0,
-   "why": "小學三年級.",
+   "answer": 1,
+   "why": "Her little sister is 小學三年級 → primary school, year 3 → B. A: the same year, but high school. C: not mentioned.",
    "id": "B14-04"
   },
   {
@@ -9607,19 +9756,22 @@
    "text": "小學的學生每天上學。",
    "options": [
     {
-     "icon": "👴",
-     "label": "grandfather"
+     "icon": "🖼️",
+     "label": "a primary school child going to school",
+     "img": "B14-T6c"
     },
     {
-     "icon": "💼",
-     "label": "an office worker"
+     "icon": "🖼️",
+     "label": "an elderly man",
+     "img": "B14-T6a"
     },
     {
-     "icon": "🎒🏫",
-     "label": "a primary school child going to school"
+     "icon": "🖼️",
+     "label": "an office worker",
+     "img": "B14-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "小學 = primary school.",
    "id": "B14-06"
   },
@@ -9628,8 +9780,9 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "📄💯",
-    "label": "a report card with high marks"
+    "icon": "📄",
+    "label": "a report card with high marks",
+    "img": "B14-T7"
    },
    "options": [
     "他的成績很好。",
@@ -9646,7 +9799,8 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "🎒",
-    "label": "schoolbag"
+    "label": "a school bag holding books",
+    "img": "B14-T8"
    },
    "text": "我的書都在（　）裡。",
    "options": [
@@ -9662,39 +9816,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我妹妹今年七歲，上（1）一年級。九月一號（2），她很高興。她的班有二十（3）個學生，（4）是男生，一半是女生。她的（5）很好。",
+   "text": "我妹妹今年七歲，上（1）。九月一號（2），她很高興。她的班有（3），（4）是男生。她的（5）。",
    "options": [
-    "高中",
-    "一半",
-    "小學",
-    "成績",
+    "成績很好",
+    "小學一年級",
     "開學",
-    "幾"
+    "二十幾個學生",
+    "一半",
+    "高中二年級"
    ],
    "answers": [
-    2,
-    4,
-    5,
     1,
-    3
+    2,
+    3,
+    4,
+    0
    ],
-   "why": "Seven years old → 小學; 開學; 二十幾; 一半…一半…; 成績.",
+   "why": "(1) 七歲 → 小學一年級. (2) 九月一號 + 開學. (3) 二十幾個學生. (4) 一半 + 是男生. (5) 成績很好. 高中二年級 does not fit a 7-year-old.",
    "id": "B14-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "在臺灣，上小學要六年，高中要三年。九月開學。",
-   "question": "臺灣的小學要上幾年？",
+   "text": "在臺灣，小孩子差不多七歲上小學。小學要上六年，高中要上三年。學校九月開學，二月也開學。一個班差不多有三十個學生。",
+   "question": "小學六年級的學生差不多幾歲？",
    "options": [
-    "九年",
-    "十二年",
-    "三年",
-    "六年"
+    "六歲",
+    "十二歲",
+    "十三歲",
+    "七歲"
    ],
-   "answer": 3,
-   "why": "小學六年. 三年 is high school.",
+   "answer": 1,
+   "why": "Children start primary school at about 7; year 6 is five years later → about 12 (needs calculating). A: 六 comes from 六年級. C: 7 + 6, a miscalculation. D: the age when primary school starts.",
    "id": "B14-10"
   }
  ],
@@ -9754,16 +9908,19 @@
    "question": "這位先生會說什麼語言？",
    "options": [
     {
-     "icon": "🀄🗾",
-     "label": "Mandarin & Japanese"
+     "icon": "💬",
+     "label": "speech bubbles: 你好 + こんにちは",
+     "img": "B15-T3a"
     },
     {
-     "icon": "🔤🗾",
-     "label": "English & Japanese"
+     "icon": "💬",
+     "label": "speech bubbles: Hello + こんにちは",
+     "img": "B15-T3b"
     },
     {
-     "icon": "🔤",
-     "label": "English only"
+     "icon": "💬",
+     "label": "speech bubble: Hello only",
+     "img": "B15-T3c"
     }
    ],
    "answer": 1,
@@ -9795,20 +9952,23 @@
    "question": "這位小姐會說什麼？",
    "options": [
     {
-     "icon": "🗣️",
-     "label": "German"
+     "icon": "💬",
+     "label": "speech bubble: Bonjour (French)",
+     "img": "B15-T4c"
     },
     {
-     "icon": "🗣️",
-     "label": "Japanese (language)"
+     "icon": "💬",
+     "label": "speech bubble: Guten Tag (German)",
+     "img": "B15-T4a"
     },
     {
-     "icon": "🗣️",
-     "label": "French"
+     "icon": "💬",
+     "label": "speech bubble: こんにちは (Japanese)",
+     "img": "B15-T4b"
     }
    ],
-   "answer": 2,
-   "why": "Can speak 法文; not 德文.",
+   "answer": 0,
+   "why": "She speaks French (法文說得很好) and cannot speak German → A. B: 德文 is mentioned, but she cannot speak it. C: not mentioned.",
    "id": "B15-04"
   },
   {
@@ -9841,7 +10001,7 @@
     "很快"
    ],
    "answer": 3,
-   "why": "說得很快.",
+   "why": "對不起，你說得很快 → the teacher speaks fast (which is why she asks him to repeat). A: the opposite. B and C: in fact she finds it hard to follow.",
    "id": "B15-05"
   },
   {
@@ -9851,16 +10011,19 @@
    "text": "她日文寫得很漂亮。",
    "options": [
     {
-     "icon": "✍️🔤",
-     "label": "English writing"
+     "icon": "🖼️",
+     "label": "writing in English",
+     "img": "B15-T6a"
     },
     {
-     "icon": "🗣️",
-     "label": "to speak"
+     "icon": "🖼️",
+     "label": "a person speaking",
+     "img": "B15-T6b"
     },
     {
-     "icon": "✍️🗾",
-     "label": "beautiful Japanese handwriting"
+     "icon": "🖼️",
+     "label": "beautiful writing in Japanese",
+     "img": "B15-T6c"
     }
    ],
    "answer": 2,
@@ -9872,8 +10035,9 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🗣️🔁",
-    "label": "practising speaking"
+    "icon": "🗣️",
+    "label": "a student practising speaking Chinese",
+    "img": "B15-T7"
    },
    "options": [
     "我每天看電影。",
@@ -9889,8 +10053,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🗣️",
-    "label": "speaking clearly"
+    "icon": "👩‍🏫",
+    "label": "a teacher speaking, the students nodding in understanding",
+    "img": "B15-T8"
    },
    "text": "老師說話說得很（　）。",
    "options": [
@@ -9906,39 +10071,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我會說很多（1），我的日文說得很（2）。我每天（3）說日文。我不懂的字，我用（4）。老師常常給我們（5）故事。",
+   "text": "我會說很多（1），我的日文（2）。我每天（3）。我不懂的字，我（4）。老師常常（5）。",
    "options": [
-    "德文",
-    "講",
+    "用中文講故事",
+    "練習說日文",
     "語言",
-    "練習",
-    "好",
-    "字典"
+    "說得很好",
+    "問中文老師",
+    "寫得不清楚"
    ],
    "answers": [
     2,
-    4,
     3,
-    5,
-    1
+    1,
+    4,
+    0
    ],
-   "why": "語言 / 說得很好 / 練習 / 用字典 / 講故事.",
+   "why": "(1) 很多 + 語言. (2) 日文 + 說得很好. (3) 每天 + 練習說日文. (4) 問中文老師. (5) 老師 + 用中文講故事. 寫得不清楚 fits no blank.",
    "id": "B15-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "王小姐是日本人。她會說日語、英語，也會說一點中文。她每天練習說中文。",
-   "question": "王小姐會說什麼？",
+   "text": "王小姐是日本人，現在在臺灣工作。她會說日語和英語，也會說一點中文。她的中文說得不太好，所以每天下班以後都練習說中文。她也很想學法文。",
+   "question": "王小姐什麼語言說得不太好？",
    "options": [
-    "法文",
-    "德文和英語",
-    "只會說日語",
-    "日語、英語和一點中文"
+    "日語",
+    "英語",
+    "中文",
+    "法文"
    ],
-   "answer": 3,
-   "why": "Three languages are mentioned.",
+   "answer": 2,
+   "why": "她的中文說得不太好 → C. A and B: she speaks them well. D: she only wants to learn it; she cannot speak it yet.",
    "id": "B15-10"
   }
  ],
@@ -9998,20 +10163,23 @@
    "question": "明天考什麼？",
    "options": [
     {
-     "icon": "🔤📝",
-     "label": "an English exam"
+     "icon": "🖼️",
+     "label": "a Mandarin exam",
+     "img": "B16-T3b"
     },
     {
-     "icon": "🀄📝",
-     "label": "a Mandarin exam"
+     "icon": "🖼️",
+     "label": "an English exam",
+     "img": "B16-T3a"
     },
     {
-     "icon": "➕📝",
-     "label": "a maths exam"
+     "icon": "🖼️",
+     "label": "a maths exam",
+     "img": "B16-T3c"
     }
    ],
-   "answer": 1,
-   "why": "考中文.",
+   "answer": 0,
+   "why": "考中文 → a Chinese exam → A. B and C: other subjects.",
    "id": "B16-03"
   },
   {
@@ -10039,16 +10207,19 @@
    "question": "他們要做什麼？",
    "options": [
     {
-     "icon": "📘",
-     "label": "opening a dictionary"
+     "icon": "🖼️",
+     "label": "opening a dictionary",
+     "img": "B16-T4a"
     },
     {
-     "icon": "💻",
-     "label": "searching the internet"
+     "icon": "🖼️",
+     "label": "searching the internet",
+     "img": "B16-T4b"
     },
     {
-     "icon": "🧑‍🏫",
-     "label": "asking the teacher"
+     "icon": "🖼️",
+     "label": "asking the teacher",
+     "img": "B16-T4c"
     }
    ],
    "answer": 2,
@@ -10095,19 +10266,22 @@
    "text": "明天考試，他在準備。",
    "options": [
     {
-     "icon": "📚📝",
-     "label": "preparing for an exam"
+     "icon": "🖼️",
+     "label": "a party",
+     "img": "B16-T6b"
     },
     {
-     "icon": "🎉",
-     "label": "a party"
+     "icon": "🖼️",
+     "label": "preparing for an exam",
+     "img": "B16-T6a"
     },
     {
-     "icon": "🛌",
-     "label": "to sleep"
+     "icon": "🖼️",
+     "label": "to sleep",
+     "img": "B16-T6c"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "準備 = to prepare.",
    "id": "B16-06"
   },
@@ -10116,8 +10290,9 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "💪📚",
-    "label": "trying hard"
+    "icon": "📚",
+    "label": "a student studying hard late into the night",
+    "img": "B16-T7"
    },
    "options": [
     "他學習很努力。",
@@ -10133,8 +10308,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🧠",
-    "label": "to remember"
+    "icon": "💭",
+    "label": "someone remembering a friend's name",
+    "img": "B16-T8"
    },
    "text": "你（　）他的名字嗎？",
    "options": [
@@ -10150,30 +10326,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "下星期要（1），我每天都很（2）。老師說學習要有好（3）。我覺得寫字不（4），可是我常常（5）字怎麼寫。",
+   "text": "下星期要（1），我每天都（2）。老師說學習要有（3）。我覺得寫字（4），可是我常常（5）。",
    "options": [
-    "用功",
-    "方法",
-    "忘",
+    "好方法",
+    "忘了字怎麼寫",
     "考試",
-    "簡單",
-    "記得"
+    "不太簡單",
+    "很用功",
+    "記得很清楚"
    ],
    "answers": [
-    3,
-    0,
-    1,
+    2,
     4,
-    2
+    0,
+    3,
+    1
    ],
-   "why": "可是 marks a contrast → 常常忘. 記得 contradicts it.",
+   "why": "(1) 要 + 考試. (2) 每天都 + 很用功. (3) 有 + 好方法. (4) 寫字 + 不太簡單. (5) 常常 + 忘了字怎麼寫. 記得很清楚 contradicts 可是.",
    "id": "B16-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "明天有英文考試。小明說：「考試很簡單，我不準備。」他的姊姊說：「你要準備，不要不念書。」",
+   "text": "明天有英文考試。小明說：「考試很簡單，我不準備，我要去打球。」他的姊姊說：「你上次也說考試很簡單，可是考得不好。你要準備，不要只想玩。」",
    "question": "姊姊是什麼意思？",
    "options": [
     "姊姊明天考試",
@@ -10182,7 +10358,7 @@
     "小明應該準備考試"
    ],
    "answer": 3,
-   "why": "要2 = must: 你要準備. B & D are 小明's opinions, not the older sibling's.",
+   "why": "上次也說…可是考得不好 + 你要準備 → his sister wants Xiaoming to study first (she does not say \"應該\"). A: it is Xiaoming who has the exam. B: that is what Xiaoming said. C: that is Xiaoming's opinion.",
    "id": "B16-10"
   }
  ],
@@ -10217,12 +10393,12 @@
    },
    "question": "你聽見了嗎？",
    "options": [
-    "我聽見了。",
     "我看見了。",
-    "我沒聽見。"
+    "我沒聽見。",
+    "我聽見了。"
    ],
-   "answer": 0,
-   "why": "聽見 = to hear (result). A hand at the ear + a sound → 聽見了. 看見 = to see.",
+   "answer": 2,
+   "why": "She hears a bell ringing → 我聽見了 → C. A: 看見 (saw), not heard. B: the opposite.",
    "id": "B17-02"
   },
   {
@@ -10242,20 +10418,23 @@
    "question": "本子在哪裡？",
    "options": [
     {
-     "icon": "🛏️📓",
-     "label": "on the bed"
+     "icon": "🖼️",
+     "label": "on the bed",
+     "img": "B17-T3a"
     },
     {
-     "icon": "🪑📓",
-     "label": "on the chair"
+     "icon": "🖼️",
+     "label": "in the bag",
+     "img": "B17-T3c"
     },
     {
-     "icon": "🎒📓",
-     "label": "in the bag"
+     "icon": "🖼️",
+     "label": "on the chair",
+     "img": "B17-T3b"
     }
    ],
-   "answer": 2,
-   "why": "在書包裡.",
+   "answer": 1,
+   "why": "在書包裡 → in the bag → B. A and C: other places.",
    "id": "B17-03"
   },
   {
@@ -10283,16 +10462,19 @@
    "question": "今天的作業是什麼？",
    "options": [
     {
-     "icon": "✍️",
-     "label": "writing 15 lines"
+     "icon": "🖼️",
+     "label": "writing 15 lines",
+     "img": "B17-T4a"
     },
     {
-     "icon": "✍️",
-     "label": "writing 5 lines"
+     "icon": "🖼️",
+     "label": "writing 5 lines",
+     "img": "B17-T4b"
     },
     {
-     "icon": "📖",
-     "label": "to read; to study"
+     "icon": "🖼️",
+     "label": "to read; to study",
+     "img": "B17-T4c"
     }
    ],
    "answer": 1,
@@ -10339,16 +10521,19 @@
    "text": "我在圖書館寫作業。",
    "options": [
     {
-     "icon": "🏠✍️",
-     "label": "homework at home"
+     "icon": "🖼️",
+     "label": "doing homework at home",
+     "img": "B17-T6a"
     },
     {
-     "icon": "🏛️😴",
-     "label": "sleeping in the library"
+     "icon": "🖼️",
+     "label": "sleeping in the library",
+     "img": "B17-T6b"
     },
     {
-     "icon": "🏛️✍️",
-     "label": "homework at the library"
+     "icon": "🖼️",
+     "label": "doing homework in the library",
+     "img": "B17-T6c"
     }
    ],
    "answer": 2,
@@ -10360,8 +10545,9 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "📓✏️",
-    "label": "a notebook and a pencil"
+    "icon": "📓",
+    "label": "a notebook and a pencil",
+    "img": "B17-T7"
    },
    "options": [
     "這是我的報紙。",
@@ -10377,8 +10563,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🔍✅",
-    "label": "found it at last"
+    "icon": "📗",
+    "label": "a child happy to find his book",
+    "img": "B17-T8"
    },
    "text": "我找（　）我的課本了！",
    "options": [
@@ -10394,30 +10581,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "今天老師給我們很多（1）。我去（2）找書，我找（3）一本很好的書。我也看（4）同學們在念書。晚上我在家看（5）。",
+   "text": "今天老師給我們很多（1）。我去（2），我（3）一本很好的書。我也（4）同學們在念書。晚上我在家（5）。",
    "options": [
+    "圖書館找書",
     "作業",
-    "到",
-    "行",
-    "見",
-    "報紙",
-    "圖書館"
+    "看報紙",
+    "找到了",
+    "看見",
+    "聽見書"
    ],
    "answers": [
-    0,
-    5,
     1,
+    0,
     3,
-    4
+    4,
+    2
    ],
-   "why": "作業 / 圖書館 / 找到 / 看見 / 報紙.",
+   "why": "(1) 很多 + 作業. (2) 去 + 圖書館找書. (3) 找到了 + 一本很好的書. (4) 看見 + 同學們. (5) 在家 + 看報紙. 聽見書 makes no sense.",
    "id": "B17-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "學校圖書館的時間：星期一到星期五，早上八點到晚上十點；星期六，早上九點到下午五點；星期天不開。",
+   "text": "學校圖書館的時間：星期一到星期五，早上八點到晚上十點；星期六，早上九點到下午五點；星期天不開。圖書館裡不可以吃東西，也不可以講電話。",
    "question": "星期六晚上七點可以去圖書館嗎？",
    "options": [
     "可以",
@@ -10426,7 +10613,7 @@
     "只能上午去"
    ],
    "answer": 2,
-   "why": "On Saturday it closes at 17:00 → 19:00 isn't possible (an inference).",
+   "why": "On Saturday it is open until 5 p.m. → at 7 p.m. it is already closed (an inference) → C. A: on weekdays it is open until 10. B: it does open on Saturday. D: on Saturday it is open until the afternoon, not only in the morning.",
    "id": "B17-10"
   }
  ],
@@ -10486,20 +10673,23 @@
    "question": "明天天氣怎麼樣？",
    "options": [
     {
-     "icon": "❄️",
-     "label": "snow"
+     "icon": "🖼️",
+     "label": "to snow",
+     "img": "B18-T3a"
     },
     {
-     "icon": "☀️",
-     "label": "sunny"
+     "icon": "🖼️",
+     "label": "rain",
+     "img": "B18-T3c"
     },
     {
-     "icon": "🌧️",
-     "label": "rain"
+     "icon": "🖼️",
+     "label": "sunny",
+     "img": "B18-T3b"
     }
    ],
-   "answer": 1,
-   "why": "不會下雨，好天氣.",
+   "answer": 2,
+   "why": "明天不會下雨，是好天氣 → fine weather → C. A: not mentioned. B: 下雨 is mentioned, but denied.",
    "id": "B18-03"
   },
   {
@@ -10527,20 +10717,23 @@
    "question": "如果明天不下雪，他們做什麼？",
    "options": [
     {
-     "icon": "⛰️",
-     "label": "going to the mountains"
+     "icon": "🖼️",
+     "label": "watching a film at home",
+     "img": "B18-T4c"
     },
     {
-     "icon": "⛷️",
-     "label": "skiing"
+     "icon": "🖼️",
+     "label": "going to the mountains",
+     "img": "B18-T4a"
     },
     {
-     "icon": "🏠🎬",
-     "label": "watching a film at home"
+     "icon": "🖼️",
+     "label": "skiing",
+     "img": "B18-T4b"
     }
    ],
-   "answer": 2,
-   "why": "要是不下雪 → 在家看電影.",
+   "answer": 0,
+   "why": "要是不下雪 → 在家看電影 → A. B: the plan if it snows. C: not mentioned.",
    "id": "B18-04"
   },
   {
@@ -10567,32 +10760,35 @@
    ],
    "question": "這位小姐為什麼不喜歡夏天？",
    "options": [
-    "因為夏天很熱",
+    "因為夏天會下雪",
     "因為她不會游泳",
     "因為她喜歡春天",
-    "因為夏天會下雪"
+    "因為夏天很熱"
    ],
-   "answer": 0,
-   "why": "The reason: 夏天很熱. B is not mentioned.",
+   "answer": 3,
+   "why": "夏天很熱，我不喜歡 → D. A: it is the man who can swim. B: she likes autumn. C: it does not snow in summer.",
    "id": "B18-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "天氣變冷了。",
+   "text": "秋天到了，天氣變冷了。",
    "options": [
     {
-     "icon": "🥵",
-     "label": "getting hot"
+     "icon": "🖼️",
+     "label": "the weather getting hot",
+     "img": "B18-T6a"
     },
     {
-     "icon": "🌧️",
-     "label": "rain"
+     "icon": "🖼️",
+     "label": "rain",
+     "img": "B18-T6b"
     },
     {
-     "icon": "🥶",
-     "label": "the weather getting cold"
+     "icon": "🖼️",
+     "label": "the weather getting cold",
+     "img": "B18-T6c"
     }
    ],
    "answer": 2,
@@ -10605,14 +10801,15 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "🌸",
-    "label": "spring flowers"
+    "label": "spring flowers",
+    "img": "B18-T7"
    },
    "options": [
-    "春天的花很漂亮。",
     "冬天下雪。",
+    "春天的花很漂亮。",
     "夏天很熱。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "春天 = spring.",
    "id": "B18-07"
   },
@@ -10621,8 +10818,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "❓🌧️",
-    "label": "if it rains"
+    "icon": "🌧️",
+    "label": "someone watching the rain from a window and not going out",
+    "img": "B18-T8"
    },
    "text": "（　）下雨，我就不去。",
    "options": [
@@ -10638,30 +10836,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "（1）很冷，山上常常下（2）。（3）很熱，我喜歡游泳。（4）明天天氣好，我們就去游泳。天氣（5）冷了。",
+   "text": "（1）很冷，山上常常下雪。（2），我喜歡游泳。（3），我們就去游泳。今天是秋天，（4）。報紙說，週末山上（5）。",
    "options": [
-    "樹",
-    "變",
-    "夏天",
-    "如果",
-    "雪",
-    "冬天"
+    "冬天",
+    "夏天很熱",
+    "如果明天天氣好",
+    "天氣變冷了",
+    "會下雪",
+    "春天的花"
    ],
    "answers": [
-    5,
-    4,
+    0,
+    1,
     2,
     3,
-    1
+    4
    ],
-   "why": "冬天 / 下雪 / 夏天 / 如果…就 / 變冷.",
+   "why": "(1) 冬天 + 很冷. (2) 夏天很熱 → 游泳. (3) 如果明天天氣好 + 就. (4) autumn → 天氣變冷了. (5) 山上 + 會下雪. 春天的花 fits no blank.",
    "id": "B18-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "明天的天氣：臺北會下雨，山上可能會下雪。如果你要去山上，請帶很多衣服。",
+   "text": "明天的天氣：臺北會下雨，山上可能會下雪，晚上會很冷。如果你要去山上，請帶很多衣服。下個星期，天氣會變好，不會下雨了。",
    "question": "明天要去山上的人應該做什麼？",
    "options": [
     "去游泳",
@@ -10730,20 +10928,23 @@
    "question": "哪裡比較冷？",
    "options": [
     {
-     "icon": "🥵",
-     "label": "Taipei is hotter"
+     "icon": "🌡️",
+     "label": "Taipei is colder",
+     "img": "B19-T3c"
     },
     {
-     "icon": "🟰",
-     "label": "they're the same"
+     "icon": "🌡️",
+     "label": "Taipei is hotter",
+     "img": "B19-T3a"
     },
     {
-     "icon": "🥶",
-     "label": "Taipei is colder"
+     "icon": "🌡️",
+     "label": "they're the same",
+     "img": "B19-T3b"
     }
    ],
-   "answer": 2,
-   "why": "臺北比較冷.",
+   "answer": 0,
+   "why": "臺北比較冷 → A. B: the opposite. C: not the same.",
    "id": "B19-03"
   },
   {
@@ -10771,20 +10972,23 @@
    "question": "這位先生的家在臺北的哪邊？",
    "options": [
     {
-     "icon": "⬅️",
-     "label": "to the west"
+     "icon": "🧭",
+     "label": "to the north",
+     "img": "B19-T4b"
     },
     {
-     "icon": "⬆️",
-     "label": "to the north"
+     "icon": "🧭",
+     "label": "to the west",
+     "img": "B19-T4a"
     },
     {
-     "icon": "➡️",
-     "label": "to the east"
+     "icon": "🧭",
+     "label": "to the east",
+     "img": "B19-T4c"
     }
    ],
-   "answer": 0,
-   "why": "西邊 = west (the left side of the map).",
+   "answer": 1,
+   "why": "The man's home is 在西邊 → the west → B. A: not mentioned. C: 東邊 is the woman's home.",
    "id": "B19-04"
   },
   {
@@ -10827,16 +11031,19 @@
    "text": "臺灣的北部很冷，南邊很熱。",
    "options": [
     {
-     "icon": "🟰",
-     "label": "they're the same"
+     "icon": "🖼️",
+     "label": "the north and the south are the same",
+     "img": "B19-T6a"
     },
     {
-     "icon": "🧭🥵",
-     "label": "hot in the north, cold in the south"
+     "icon": "🖼️",
+     "label": "hot in the north, cold in the south",
+     "img": "B19-T6b"
     },
     {
-     "icon": "🧭🥶",
-     "label": "cold in the north, hot in the south"
+     "icon": "🖼️",
+     "label": "cold in the north, hot in the south",
+     "img": "B19-T6c"
     }
    ],
    "answer": 2,
@@ -10848,8 +11055,9 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🌍",
-    "label": "a globe"
+    "icon": "🌏",
+    "label": "a globe",
+    "img": "B19-T7"
    },
    "options": [
     "世界很大。",
@@ -10865,8 +11073,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "⚖️",
-    "label": "the same"
+    "icon": "🎒",
+    "label": "two identical school bags",
+    "img": "B19-T8"
    },
    "text": "我的書包跟你的（　）。",
    "options": [
@@ -10882,30 +11091,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "臺北在臺灣的（1），高雄在臺灣的南邊。高雄（2）臺北熱，夏天高雄（3）熱。臺中的天氣跟臺北不（4）。我覺得臺灣是（5）上很漂亮的地方！",
+   "text": "臺北在臺灣的（1），高雄在臺灣的南邊。高雄（2），夏天高雄（3）。臺中的天氣（4）。我覺得臺灣是（5）很漂亮的地方！",
    "options": [
-    "聲音",
-    "比",
-    "世界",
-    "更",
-    "一樣",
-    "北部"
+    "北部",
+    "比臺北熱",
+    "更熱",
+    "跟臺北不一樣",
+    "世界上",
+    "聲音很小"
    ],
    "answers": [
-    5,
+    0,
     1,
+    2,
     3,
-    4,
-    2
+    4
    ],
-   "why": "北部 / 比 / 更熱 / 不一樣 / 世界上.",
+   "why": "(1) 北部. (2) 高雄 + 比臺北熱. (3) 夏天 + 更熱. (4) 跟臺北不一樣. (5) 世界上 + 很漂亮的地方. 聲音很小 fits no blank.",
    "id": "B19-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "我是印尼人，現在住在臺北。臺北冬天比雅加達冷，夏天跟雅加達一樣熱。",
+   "text": "我是印尼人，現在住在臺北。臺北冬天比雅加達冷，常常下雨；夏天跟雅加達一樣熱。我比較喜歡臺北的秋天，不冷也不熱。",
    "question": "哪個是對的？",
    "options": [
     "臺北夏天比較冷",
@@ -10975,15 +11184,18 @@
    "options": [
     {
      "icon": "🧥",
-     "label": "jacket"
+     "label": "jacket",
+     "img": "B20-T3a"
     },
     {
      "icon": "🧢",
-     "label": "hat"
+     "label": "hat",
+     "img": "B20-T3b"
     },
     {
      "icon": "👖",
-     "label": "trousers"
+     "label": "trousers",
+     "img": "B20-T3c"
     }
    ],
    "answer": 0,
@@ -11015,16 +11227,19 @@
    "question": "這位先生覺得第一個裙子怎麼樣？",
    "options": [
     {
-     "icon": "👗⬆️",
-     "label": "too long"
+     "icon": "👗",
+     "label": "a skirt that is too long",
+     "img": "B20-T4a"
     },
     {
-     "icon": "👗⬇️",
-     "label": "a bit short"
+     "icon": "👗",
+     "label": "a skirt that is a little short",
+     "img": "B20-T4b"
     },
     {
-     "icon": "👗✅",
-     "label": "just right"
+     "icon": "👗",
+     "label": "a skirt that fits",
+     "img": "B20-T4c"
     }
    ],
    "answer": 1,
@@ -11071,16 +11286,19 @@
    "text": "他戴眼鏡，也戴手錶。",
    "options": [
     {
-     "icon": "👓⌚",
-     "label": "glasses & a watch"
+     "icon": "🖼️",
+     "label": "glasses & a watch",
+     "img": "B20-T6a"
     },
     {
-     "icon": "👓",
-     "label": "glasses only"
+     "icon": "🖼️",
+     "label": "glasses only",
+     "img": "B20-T6b"
     },
     {
-     "icon": "🧢⌚",
-     "label": "a hat & a watch"
+     "icon": "🖼️",
+     "label": "a hat & a watch",
+     "img": "B20-T6c"
     }
    ],
    "answer": 0,
@@ -11093,14 +11311,15 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "👖",
-    "label": "trousers that are too short"
+    "label": "trousers that are too short",
+    "img": "B20-T7"
    },
    "options": [
-    "這個褲子太短了。",
     "這個褲子很新。",
+    "這個褲子太短了。",
     "這個褲子太長了。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "太短了.",
    "id": "B20-07"
   },
@@ -11110,7 +11329,8 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "🧥",
-    "label": "taking off a jacket"
+    "label": "a hot room; someone taking off a jacket",
+    "img": "B20-T8"
    },
    "text": "房間很熱，我想（　）外套。",
    "options": [
@@ -11126,30 +11346,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "今天天氣很冷，我穿（1），也戴（2）。我去買褲子，我（3）一個，可是那個褲子（4）長了。這個（5）短，可是很好看。",
+   "text": "今天天氣很冷，我穿（1），也（2）。我去買褲子，我（3），可是那個褲子（4）。這個（5），可是很好看。",
    "options": [
     "外套",
-    "試",
-    "帽子",
-    "太",
-    "脫",
-    "有點"
+    "戴帽子",
+    "試了一個",
+    "太長了",
+    "有點短",
+    "脫了大衣"
    ],
    "answers": [
     0,
-    2,
     1,
+    2,
     3,
-    5
+    4
    ],
-   "why": "穿外套 / 戴帽子 / 試 / 太長了 / 有點短.",
+   "why": "(1) 穿 + 外套. (2) 也 + 戴帽子. (3) 試了一個. (4) 那個 + 太長了. (5) 這個 + 有點短, then 可是很好看. 脫了大衣 contradicts 天氣很冷.",
    "id": "B20-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "王小姐買衣服：外套三千塊，太貴了；裙子八百塊，有點短；褲子一千塊，很好。她最後買褲子。",
+   "text": "王小姐去買衣服：外套三千塊，太貴了；裙子八百塊，有點短；褲子一千塊，很好看。她最後買了褲子，明天要穿新褲子去上班。",
    "question": "王小姐為什麼不買外套？",
    "options": [
     "有點短",
@@ -11219,15 +11439,18 @@
    "options": [
     {
      "icon": "🟩",
-     "label": "green"
+     "label": "green",
+     "img": "B21-T3a"
     },
     {
      "icon": "🟨",
-     "label": "yellow"
+     "label": "yellow",
+     "img": "B21-T3b"
     },
     {
      "icon": "🟦",
-     "label": "blue"
+     "label": "blue",
+     "img": "B21-T3c"
     }
    ],
    "answer": 0,
@@ -11259,20 +11482,23 @@
    "question": "這位先生要哪條褲子？",
    "options": [
     {
-     "icon": "🟦👖",
-     "label": "blue"
+     "icon": "🟦",
+     "label": "blue trousers",
+     "img": "B21-T4a"
     },
     {
-     "icon": "⬛👖",
-     "label": "black, bigger"
+     "icon": "⬛",
+     "label": "black trousers, smaller",
+     "img": "B21-T4c"
     },
     {
-     "icon": "⬛👖",
-     "label": "black, smaller"
+     "icon": "⬛",
+     "label": "black trousers, bigger",
+     "img": "B21-T4b"
     }
    ],
-   "answer": 2,
-   "why": "Black + 小一點.",
+   "answer": 1,
+   "why": "Black + smaller → B. A: the wrong colour. C: black, but bigger (the first pair was 有點大).",
    "id": "B21-04"
   },
   {
@@ -11315,19 +11541,22 @@
    "text": "她穿一條黃色的裙子。",
    "options": [
     {
-     "icon": "🟩👗",
-     "label": "a green skirt"
+     "icon": "🟨",
+     "label": "a yellow skirt",
+     "img": "B21-T6c"
     },
     {
-     "icon": "🟥👗",
-     "label": "a red skirt"
+     "icon": "🟩",
+     "label": "a green skirt",
+     "img": "B21-T6a"
     },
     {
-     "icon": "🟨👗",
-     "label": "a yellow skirt"
+     "icon": "🟥",
+     "label": "a red skirt",
+     "img": "B21-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "黃色 = yellow.",
    "id": "B21-06"
   },
@@ -11336,15 +11565,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🌶️",
-    "label": "hot red chillies"
+    "icon": "🟥",
+    "label": "a red chilli",
+    "img": "B21-T7"
    },
    "options": [
-    "這個是紅色的。",
     "這個是藍色的。",
-    "這個是綠色的。"
+    "這個是綠色的。",
+    "這個是紅色的。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Red chillies → 紅色.",
    "id": "B21-07"
   },
@@ -11353,8 +11583,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "👟👟",
-    "label": "a pair of shoes"
+    "icon": "👟",
+    "label": "a pair of shoes",
+    "img": "B21-T8"
    },
    "text": "我買一（　）鞋子。",
    "options": [
@@ -11370,30 +11601,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我想買一（1）褲子。小姐問我要什麼（2）。我說：「我要藍色的，大（3）的。」小姐說：「藍的（4）黑的？」我說：「藍的。」這條褲子很（5），我很喜歡。",
+   "text": "我想買（1）。小姐問我要（2）。我說：「我要藍色的，（3）。」小姐說：「（4）？」我說：「藍的。」這條褲子（5），我很喜歡。",
    "options": [
-    "顏色",
-    "一點",
-    "還是",
-    "雙",
-    "輕",
-    "條"
+    "一條褲子",
+    "什麼顏色",
+    "大一點的",
+    "藍的還是黑的",
+    "很輕",
+    "兩雙鞋子"
    ],
    "answers": [
-    5,
     0,
     1,
     2,
+    3,
     4
    ],
-   "why": "一條褲子 / 顏色 / 大一點 / A 還是 B / 很輕.",
+   "why": "(1) 一條褲子. (2) 要 + 什麼顏色. (3) 大一點的. (4) 藍的還是黑的 (a choice question). (5) 很輕, then 我很喜歡. 兩雙鞋子 fits no blank.",
    "id": "B21-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "小明的書包很重，因為裡面有很多書。他妹妹的書包很輕，裡面只有一本書。",
+   "text": "小明的書包很重，因為裡面有很多書和本子。他妹妹的書包很輕，裡面只有一本書和一支筆。小明說他要買一個大一點的書包。",
    "question": "為什麼小明的書包很重？",
    "options": [
     "妹妹的書在裡面",
@@ -11462,16 +11693,19 @@
    "question": "這位小姐怎麼做？",
    "options": [
     {
-     "icon": "📦",
-     "label": "asking for a box"
+     "icon": "🖼️",
+     "label": "asking for a box",
+     "img": "B22-T3a"
     },
     {
-     "icon": "👜",
-     "label": "using her own bag"
+     "icon": "🖼️",
+     "label": "using her own bag",
+     "img": "B22-T3b"
     },
     {
-     "icon": "🛍️",
-     "label": "asking for a bag"
+     "icon": "🖼️",
+     "label": "asking for a bag",
+     "img": "B22-T3c"
     }
    ],
    "answer": 1,
@@ -11503,20 +11737,23 @@
    "question": "水果要在哪裡買？",
    "options": [
     {
-     "icon": "🛒",
-     "label": "supermarket"
+     "icon": "🖼️",
+     "label": "department store",
+     "img": "B22-T4b"
     },
     {
-     "icon": "🏬",
-     "label": "department store"
+     "icon": "🖼️",
+     "label": "convenience store",
+     "img": "B22-T4c"
     },
     {
-     "icon": "🏪",
-     "label": "convenience store"
+     "icon": "🖼️",
+     "label": "supermarket",
+     "img": "B22-T4a"
     }
    ],
-   "answer": 0,
-   "why": "去超市買.",
+   "answer": 2,
+   "why": "水果要去超市買 → the supermarket → C. A: not mentioned. B: the convenience store does not sell fruit.",
    "id": "B22-04"
   },
   {
@@ -11543,13 +11780,13 @@
    ],
    "question": "醫生說這位先生應該怎麼做？",
    "options": [
-    "多吃菜，少喝咖啡",
     "不要吃飯",
     "少吃菜",
-    "多喝咖啡"
+    "多喝咖啡",
+    "多吃菜，少喝咖啡"
    ],
-   "answer": 0,
-   "why": "多/少 + V.",
+   "answer": 3,
+   "why": "醫生說我要多吃菜，少喝咖啡 → D. A: not mentioned. B and C: the opposite.",
    "id": "B22-05"
   },
   {
@@ -11559,19 +11796,22 @@
    "text": "桌子上有三個罐子。",
    "options": [
     {
-     "icon": "🍾🍾🍾",
-     "label": "three bottles"
+     "icon": "🖼️",
+     "label": "three cans",
+     "img": "B22-T6b"
     },
     {
-     "icon": "🥫🥫🥫",
-     "label": "three cans"
+     "icon": "🖼️",
+     "label": "three bottles",
+     "img": "B22-T6a"
     },
     {
-     "icon": "📦📦📦",
-     "label": "three boxes"
+     "icon": "🖼️",
+     "label": "three boxes",
+     "img": "B22-T6c"
     }
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "罐子 = can.",
    "id": "B22-06"
   },
@@ -11581,14 +11821,15 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "🏬",
-    "label": "a big mall"
+    "label": "a big department store with expensive goods",
+    "img": "B22-T7"
    },
    "options": [
     "便利商店的東西都很便宜。",
-    "超市沒有東西。",
-    "百貨公司的東西都很貴。"
+    "百貨公司的東西都很貴。",
+    "超市沒有東西。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "A picture of a mall → 百貨公司.",
    "id": "B22-07"
   },
@@ -11598,7 +11839,8 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "🛍️",
-    "label": "a shopping bag"
+    "label": "a shopping bag",
+    "img": "B22-T8"
    },
    "text": "請給我一個（　）。",
    "options": [
@@ -11614,39 +11856,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我家附近有（1），二十四小時都開。我常常去那裡買一（2）蛋和兩（3）水。媽媽說我要（4）喝水，（5）喝咖啡。",
+   "text": "我家附近有（1），二十四小時都開。我常常去那裡買（2）和（3）。媽媽說我要（4），（5）。",
    "options": [
-    "盒",
-    "瓶",
-    "多",
-    "少",
-    "袋",
-    "便利商店"
+    "一家便利商店",
+    "一盒蛋",
+    "兩瓶水",
+    "多喝水",
+    "少喝咖啡",
+    "一家百貨公司"
    ],
    "answers": [
-    5,
     0,
     1,
     2,
-    3
+    3,
+    4
    ],
-   "why": "便利商店 / 一盒蛋 / 兩瓶水 / 多喝水，少喝咖啡.",
+   "why": "(1) 一家便利商店 + 二十四小時都開. (2) 一盒蛋. (3) 兩瓶水. (4) 多喝水. (5) 少喝咖啡. A department store (一家百貨公司) is not open 24 hours.",
    "id": "B22-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "超市今天的東西：蛋一盒六十塊，牛奶一瓶八十塊，水一瓶二十塊。",
-   "question": "一盒蛋和兩瓶水，一共多少錢？",
+   "text": "超市今天的東西：蛋一盒六十塊，牛奶一瓶八十塊，水一瓶二十塊，袋子一個一塊。我要買一盒蛋和兩瓶水，也要一個袋子。",
+   "question": "我一共要給多少錢？",
    "options": [
+    "一百塊",
+    "一百零一塊",
     "一百四十塊",
-    "一百六十塊",
-    "八十塊",
-    "一百塊"
+    "八十一塊"
    ],
-   "answer": 3,
-   "why": "60 + 20 × 2 = 100 (work it out).",
+   "answer": 1,
+   "why": "60 + 20 × 2 + 1 = 101 (needs calculating) → B. A: forgets the bag. C: counts milk instead of water. D: only one bottle of water.",
    "id": "B22-10"
   }
  ],
@@ -11706,20 +11948,23 @@
    "question": "這位小姐應該怎麼付錢？",
    "options": [
     {
-     "icon": "💵",
-     "label": "cash"
+     "icon": "🖼️",
+     "label": "credit card",
+     "img": "B23-T3b"
     },
     {
-     "icon": "💳",
-     "label": "credit card"
+     "icon": "🖼️",
+     "label": "cash",
+     "img": "B23-T3a"
     },
     {
-     "icon": "📱",
-     "label": "mobile phone"
+     "icon": "🖼️",
+     "label": "mobile phone",
+     "img": "B23-T3c"
     }
    ],
-   "answer": 0,
-   "why": "Cards aren't allowed → cash (an inference).",
+   "answer": 1,
+   "why": "Cards are not accepted → pay in cash → B. A: 信用卡 is mentioned, but not accepted. C: not mentioned.",
    "id": "B23-03"
   },
   {
@@ -11747,16 +11992,19 @@
    "question": "老闆找客人多少錢？",
    "options": [
     {
-     "icon": "💵",
-     "label": "NT$1,000"
+     "icon": "🏷️",
+     "label": "price tag $1000",
+     "img": "B23-T4a"
     },
     {
-     "icon": "💵",
-     "label": "NT$200"
+     "icon": "🏷️",
+     "label": "price tag $200",
+     "img": "B23-T4b"
     },
     {
-     "icon": "💵",
-     "label": "NT$800"
+     "icon": "🏷️",
+     "label": "price tag $800",
+     "img": "B23-T4c"
     }
    ],
    "answer": 1,
@@ -11800,22 +12048,25 @@
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "客人很多。",
+   "text": "這家店的客人很多。",
    "options": [
     {
-     "icon": "🔒",
-     "label": "a closed shop"
+     "icon": "🖼️",
+     "label": "a closed shop",
+     "img": "B23-T6a"
     },
     {
-     "icon": "🧑‍🤝‍🧑🧑‍🤝‍🧑🏪",
-     "label": "a shop busy with customers"
+     "icon": "🖼️",
+     "label": "a quiet shop",
+     "img": "B23-T6c"
     },
     {
-     "icon": "🏪",
-     "label": "a quiet shop"
+     "icon": "🖼️",
+     "label": "a shop busy with customers",
+     "img": "B23-T6b"
     }
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "客人 = customer.",
    "id": "B23-06"
   },
@@ -11825,7 +12076,8 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "🎒",
-    "label": "a backpack"
+    "label": "a backpack",
+    "img": "B23-T7"
    },
    "options": [
     "這是我的背包。",
@@ -11842,7 +12094,8 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "💳",
-    "label": "to pay by card"
+    "label": "to pay by card",
+    "img": "B23-T8"
    },
    "text": "我用信用卡（　）錢。",
    "options": [
@@ -11858,30 +12111,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我去商店買一個（1）。（2）說這個一千二。我問：「可以用（3）嗎？」他說可以。他幫我（4）起來。店裡的（5）很多，大家都在買東西。",
+   "text": "我去商店買（1）。（2）說這個一千二。我問：「（3）？」他說可以。他（4）。店裡的（5），大家都在買東西。",
    "options": [
+    "一個背包",
     "老闆",
-    "客人",
-    "算",
-    "背包",
-    "信用卡",
-    "包"
+    "可以用信用卡嗎",
+    "幫我包起來",
+    "客人很多",
+    "錢包沒有錢"
    ],
    "answers": [
-    3,
     0,
-    4,
-    5,
-    1
+    1,
+    2,
+    3,
+    4
    ],
-   "why": "背包 / 老闆 / 信用卡 / 包起來 / 客人.",
+   "why": "(1) 買 + 一個背包. (2) 老闆 + 說. (3) 可以用信用卡嗎. (4) 幫我包起來. (5) 客人很多 + 大家都在買東西. 錢包沒有錢 fits no blank.",
    "id": "B23-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "這個商店的老闆說：學生來買東西，一百塊的東西算八十塊。不能用信用卡。",
+   "text": "這個商店的老闆說：學生來買東西，一百塊的東西算八十塊。不能用信用卡。今天是星期六，店裡的客人很多，大家都在買東西。",
    "question": "學生買兩百塊的東西，要付多少錢？",
    "options": [
     "八十塊",
@@ -11925,12 +12178,12 @@
    },
    "question": "你要什麼？",
    "options": [
+    "一個蛋糕和一杯咖啡。",
     "一個冰淇淋和一杯咖啡。",
-    "一個蛋糕和一杯茶。",
-    "一個蛋糕和一杯咖啡。"
+    "一個蛋糕和一杯茶。"
    ],
-   "answer": 2,
-   "why": "蛋糕 + 咖啡 (black coffee in a cup). A has the wrong food; B the wrong drink.",
+   "answer": 0,
+   "why": "A slice of cake and a cup of coffee → A. B: ice cream, not cake. C: tea, not coffee.",
    "id": "B24-02"
   },
   {
@@ -11951,15 +12204,18 @@
    "options": [
     {
      "icon": "🍋",
-     "label": "sour"
+     "label": "sour",
+     "img": "B24-T3a"
     },
     {
      "icon": "🍰",
-     "label": "sweet"
+     "label": "sweet",
+     "img": "B24-T3b"
     },
     {
      "icon": "🌶️",
-     "label": "spicy"
+     "label": "spicy",
+     "img": "B24-T3c"
     }
    ],
    "answer": 1,
@@ -11991,20 +12247,23 @@
    "question": "這個點心怎麼樣？",
    "options": [
     {
-     "icon": "😋🍬",
-     "label": "fragrant & sweet"
-    },
-    {
      "icon": "🧂",
-     "label": "salty"
+     "label": "salty",
+     "img": "B24-T4b"
     },
     {
      "icon": "🌶️",
-     "label": "spicy"
+     "label": "spicy",
+     "img": "B24-T4c"
+    },
+    {
+     "icon": "🍰",
+     "label": "fragrant & sweet",
+     "img": "B24-T4a"
     }
    ],
-   "answer": 0,
-   "why": "又香又甜.",
+   "answer": 2,
+   "why": "又香又甜 → fragrant and sweet → C. A and B: not mentioned.",
    "id": "B24-04"
   },
   {
@@ -12048,15 +12307,18 @@
    "options": [
     {
      "icon": "🍦",
-     "label": "a small ice cream"
+     "label": "a small ice cream",
+     "img": "B24-T6a"
     },
     {
-     "icon": "🍦😋",
-     "label": "a big, sweet ice cream"
+     "icon": "🍦",
+     "label": "a big, sweet ice cream",
+     "img": "B24-T6b"
     },
     {
      "icon": "🍋",
-     "label": "sour"
+     "label": "a sour lemon",
+     "img": "B24-T6c"
     }
    ],
    "answer": 1,
@@ -12068,15 +12330,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🌶️🔥",
-    "label": "hot chillies"
+    "icon": "🌶️",
+    "label": "hot chillies",
+    "img": "B24-T7"
    },
    "options": [
-    "這個很甜！",
     "這個很辣！",
+    "這個很甜！",
     "這個很香！"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "辣 = spicy.",
    "id": "B24-07"
   },
@@ -12086,7 +12349,8 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "🍬",
-    "label": "sugar"
+    "label": "sugar",
+    "img": "B24-T8"
    },
    "text": "咖啡裡不要放（　）。",
    "options": [
@@ -12102,30 +12366,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我很喜歡吃（1）。這家店的蛋糕（2）香又甜。我也喜歡（3）。我不喜歡吃（4）的，也不喜歡酸的。這個菜的（5）很好。",
+   "text": "我很喜歡吃（1）。這家店的蛋糕（2）。我也喜歡（3）。我不喜歡吃（4），也不喜歡酸的。這個菜的（5）。",
    "options": [
-    "辣",
     "甜點",
-    "臭",
-    "又",
+    "又香又甜",
     "冰淇淋",
-    "味道"
+    "辣的",
+    "味道很好",
+    "一雙鞋子"
    ],
    "answers": [
-    1,
-    3,
-    4,
     0,
-    5
+    1,
+    2,
+    3,
+    4
    ],
-   "why": "甜點 / 又…又 / 冰淇淋 / 辣的 / 味道.",
+   "why": "(1) 吃 + 甜點. (2) 蛋糕 + 又香又甜. (3) 也喜歡 + 冰淇淋. (4) 不喜歡吃 + 辣的. (5) 菜的 + 味道很好. 一雙鞋子 fits no blank.",
    "id": "B24-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "這家餐廳的菜：牛肉麵有點辣，湯有點鹹，甜點又香又甜。小明不喜歡辣的。",
+   "text": "這家餐廳的菜：牛肉麵有點辣，湯有點鹹，甜點又香又甜。小明不喜歡辣的，也不喜歡鹹的，他最喜歡甜的東西。",
    "question": "小明可以吃什麼？",
    "options": [
     "甜點",
@@ -12169,12 +12433,12 @@
    },
    "question": "你要什麼？",
    "options": [
-    "刀子。",
     "叉子。",
+    "刀子。",
     "湯匙。"
    ],
-   "answer": 1,
-   "why": "叉子 = fork.",
+   "answer": 0,
+   "why": "A fork → 叉子 → A. B and C: other cutlery.",
    "id": "B25-02"
   },
   {
@@ -12194,16 +12458,19 @@
    "question": "這位先生怎麼樣？",
    "options": [
     {
-     "icon": "😴",
-     "label": "sleepy"
+     "icon": "🖼️",
+     "label": "sleepy",
+     "img": "B25-T3a"
     },
     {
-     "icon": "😫",
-     "label": "hungry"
+     "icon": "🖼️",
+     "label": "hungry",
+     "img": "B25-T3b"
     },
     {
-     "icon": "😌",
-     "label": "full (after eating)"
+     "icon": "🖼️",
+     "label": "full (after eating)",
+     "img": "B25-T3c"
     }
    ],
    "answer": 2,
@@ -12235,20 +12502,23 @@
    "question": "這位先生要做什麼？",
    "options": [
     {
-     "icon": "🍖🔥",
-     "label": "grilling meat"
+     "icon": "🖼️",
+     "label": "stir-frying vegetables",
+     "img": "B25-T4b"
     },
     {
-     "icon": "🥬",
-     "label": "stir-frying vegetables"
+     "icon": "🖼️",
+     "label": "grilling meat",
+     "img": "B25-T4a"
     },
     {
-     "icon": "🍗",
-     "label": "to deep-fry"
+     "icon": "🖼️",
+     "label": "to deep-fry",
+     "img": "B25-T4c"
     }
    ],
-   "answer": 0,
-   "why": "你烤肉 → the man does the barbecue.",
+   "answer": 1,
+   "why": "女: 我炒青菜，你烤肉 → the man grills the meat → B. A: the woman's job. C: not mentioned.",
    "id": "B25-04"
   },
   {
@@ -12291,16 +12561,19 @@
    "text": "盤子裡有火腿和蛋。",
    "options": [
     {
-     "icon": "🍽️🥬",
-     "label": "vegetables"
+     "icon": "🖼️",
+     "label": "vegetables",
+     "img": "B25-T6a"
     },
     {
-     "icon": "🍽️🥩",
-     "label": "meat"
+     "icon": "🖼️",
+     "label": "meat",
+     "img": "B25-T6b"
     },
     {
-     "icon": "🍽️🥓🥚",
-     "label": "ham and eggs"
+     "icon": "🖼️",
+     "label": "ham and eggs",
+     "img": "B25-T6c"
     }
    ],
    "answer": 2,
@@ -12313,14 +12586,15 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "🔪",
-    "label": "knife"
+    "label": "knife",
+    "img": "B25-T7"
    },
    "options": [
+    "這是刀子。",
     "這是叉子。",
-    "這是湯匙。",
-    "這是刀子。"
+    "這是湯匙。"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "刀子 = knife.",
    "id": "B25-07"
   },
@@ -12330,15 +12604,16 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "🧊",
-    "label": "ice cubes"
+    "label": "a glass of water with ice cubes",
+    "img": "B25-T8"
    },
    "text": "我的水裡要放（　）。",
    "options": [
-    "冰塊",
     "火腿",
+    "冰塊",
     "盤子"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "冰塊 = ice cubes.",
    "id": "B25-08"
   },
@@ -12346,39 +12621,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "今天我們在家做飯。我在房子裡（1）青菜，我哥哥在外頭（2）肉。我用（3）吃肉，用（4）喝湯。吃（5）了，大家都很高興。",
+   "text": "今天我們在家做飯。我在房子裡（1），我哥哥在外頭（2）。我用（3），用（4）喝湯。（5），大家都很高興。",
    "options": [
-    "叉子",
-    "炒",
-    "刀子",
-    "烤",
+    "炒青菜",
+    "烤肉",
+    "叉子吃肉",
     "湯匙",
-    "飽"
+    "吃飽了",
+    "冰塊炸雞"
    ],
    "answers": [
-    1,
-    3,
     0,
-    4,
-    5
+    1,
+    2,
+    3,
+    4
    ],
-   "why": "炒青菜 / outside → 烤肉 / 叉子 for the meat / 湯匙 for the soup / 吃飽.",
+   "why": "(1) 炒青菜. (2) 在外頭 + 烤肉. (3) 用 + 叉子吃肉. (4) 用 + 湯匙 + 喝湯. (5) 吃飽了 + 大家都很高興. 冰塊炸雞 makes no sense.",
    "id": "B25-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "王太太做晚餐：她先洗青菜，然後炒青菜。魚要炸十分鐘。",
-   "question": "王太太先做什麼？",
+   "text": "王太太做晚餐：她先洗青菜，然後炒青菜。魚要炸十分鐘，炸了魚就吃飯。王先生六點半到家，他很餓。",
+   "question": "吃飯以前，王太太最後做什麼？",
    "options": [
     "炸魚",
     "洗青菜",
     "炒青菜",
     "吃飯"
    ],
-   "answer": 1,
-   "why": "先洗青菜.",
+   "answer": 0,
+   "why": "Order: wash the vegetables → stir-fry them → fry the fish → eat → the last thing before eating is 炸魚 → A. B: the first step. C: the second step. D: comes afterwards.",
    "id": "B25-10"
   }
  ],
@@ -12439,15 +12714,18 @@
    "options": [
     {
      "icon": "🧃",
-     "label": "juice"
+     "label": "juice",
+     "img": "B26-T3a"
     },
     {
      "icon": "☕",
-     "label": "coffee"
+     "label": "coffee",
+     "img": "B26-T3b"
     },
     {
      "icon": "🍺",
-     "label": "beer"
+     "label": "beer",
+     "img": "B26-T3c"
     }
    ],
    "answer": 0,
@@ -12480,19 +12758,22 @@
    "options": [
     {
      "icon": "🍺",
-     "label": "beer"
+     "label": "beer",
+     "img": "B26-T4a"
     },
     {
-     "icon": "🥤⬆️",
-     "label": "a large cola"
+     "icon": "🥤",
+     "label": "a small cola",
+     "img": "B26-T4c"
     },
     {
-     "icon": "🥤⬇️",
-     "label": "a small cola"
+     "icon": "🥤",
+     "label": "a large cola",
+     "img": "B26-T4b"
     }
    ],
-   "answer": 1,
-   "why": "Cola + 大杯.",
+   "answer": 2,
+   "why": "可樂 + 大杯 → C. A: not mentioned. B: cola, but a small glass.",
    "id": "B26-04"
   },
   {
@@ -12536,18 +12817,21 @@
    "options": [
     {
      "icon": "🍎",
-     "label": "one apple"
+     "label": "one apple",
+     "img": "B26-T6a"
     },
     {
-     "icon": "🍌🍌🍌",
-     "label": "three bananas"
+     "icon": "🍎",
+     "label": "three apples",
+     "img": "B26-T6c"
     },
     {
-     "icon": "🍎🍎🍎",
-     "label": "three apples"
+     "icon": "🍌",
+     "label": "three bananas",
+     "img": "B26-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "蘋果 = apple.",
    "id": "B26-06"
   },
@@ -12557,7 +12841,8 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "🧋",
-    "label": "milk tea"
+    "label": "milk tea",
+    "img": "B26-T7"
    },
    "options": [
     "我喜歡喝奶茶。",
@@ -12573,16 +12858,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "😖💊",
-    "label": "bitter liquid medicine"
+    "icon": "💊",
+    "label": "bitter liquid medicine",
+    "img": "B26-T8"
    },
    "text": "這個藥很難（　）。",
    "options": [
-    "喝",
     "看",
-    "聽"
+    "聽",
+    "喝"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "難喝 = unpleasant to drink.",
    "id": "B26-08"
   },
@@ -12590,30 +12876,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "天氣很熱，我很（1）。我去買一杯（2），是蘋果的。我妹妹九歲，她喜歡喝（3）。我爸爸喜歡喝（4），可是他不能喝很多。這杯果汁很好（5）！",
+   "text": "天氣很熱，我（1）。我去買一杯（2）。我妹妹九歲，她喜歡喝（3）。我爸爸喜歡喝（4），可是他不能喝很多。這杯果汁（5）！",
    "options": [
-    "渴",
-    "啤酒",
-    "喝",
-    "果汁",
-    "香蕉",
-    "可樂"
+    "覺得很渴",
+    "蘋果果汁",
+    "冰的可樂",
+    "冰的啤酒",
+    "很好喝",
+    "很難看"
    ],
    "answers": [
     0,
-    3,
-    5,
     1,
-    2
+    2,
+    3,
+    4
    ],
-   "why": "The 9-year-old → 可樂; dad → 啤酒; 好喝.",
+   "why": "(1) 天氣很熱 → 覺得很渴. (2) 一杯 + 蘋果果汁. (3) 喝 + 冰的可樂. (4) 爸爸 + 冰的啤酒 (不能喝很多). (5) 果汁 + 很好喝. 很難看 does not suit a drink.",
    "id": "B26-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "小明的店：紅茶二十五塊，奶茶三十五塊，果汁五十塊。大杯多十塊。",
+   "text": "小明的店：紅茶二十五塊，奶茶三十五塊，果汁五十塊。大杯多十塊。今天天氣很熱，客人很多，大家都想喝冰的。",
    "question": "一杯大杯的紅茶多少錢？",
    "options": [
     "二十五塊",
@@ -12682,20 +12968,23 @@
    "question": "這位先生的早餐吃什麼？",
    "options": [
     {
-     "icon": "🍔",
-     "label": "hamburger"
+     "icon": "🥪",
+     "label": "sandwich",
+     "img": "B27-T3b"
     },
     {
-     "icon": "🥪",
-     "label": "sandwich"
+     "icon": "🍔",
+     "label": "hamburger",
+     "img": "B27-T3a"
     },
     {
      "icon": "🌭",
-     "label": "hot dog"
+     "label": "hot dog",
+     "img": "B27-T3c"
     }
    ],
-   "answer": 1,
-   "why": "三明治 = sandwich.",
+   "answer": 0,
+   "why": "一個三明治 → a sandwich → A. B and C: other kinds of bread.",
    "id": "B27-03"
   },
   {
@@ -12723,20 +13012,23 @@
    "question": "這位小姐要吃什麼？",
    "options": [
     {
-     "icon": "🌭",
-     "label": "hot dog"
+     "icon": "🍔",
+     "label": "hamburger",
+     "img": "B27-T4b"
     },
     {
-     "icon": "🍔",
-     "label": "hamburger"
+     "icon": "🌭",
+     "label": "hot dog",
+     "img": "B27-T4a"
     },
     {
      "icon": "🥟",
-     "label": "dumplings"
+     "label": "dumplings",
+     "img": "B27-T4c"
     }
    ],
-   "answer": 0,
-   "why": "我要吃熱狗.",
+   "answer": 1,
+   "why": "我要吃熱狗 → a hot dog → B. A: not mentioned. C: 餃子 is only mentioned as an example of the snacks.",
    "id": "B27-04"
   },
   {
@@ -12776,22 +13068,25 @@
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "我買兩個饅頭。",
+   "text": "我在市場買兩個饅頭。",
    "options": [
     {
-     "icon": "🥯",
-     "label": "one mantou"
+     "icon": "🖼️",
+     "label": "one mantou",
+     "img": "B27-T6a"
     },
     {
-     "icon": "🥯🥯",
-     "label": "two mantou"
+     "icon": "🖼️",
+     "label": "two dumplings",
+     "img": "B27-T6c"
     },
     {
-     "icon": "🥟🥟",
-     "label": "two dumplings"
+     "icon": "🖼️",
+     "label": "two mantou",
+     "img": "B27-T6b"
     }
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "饅頭 = mantou (steamed bread).",
    "id": "B27-06"
   },
@@ -12801,14 +13096,15 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "🍔",
-    "label": "hamburger"
+    "label": "hamburger",
+    "img": "B27-T7"
    },
    "options": [
+    "我要一個漢堡。",
     "我要一份餃子。",
-    "我要一個三明治。",
-    "我要一個漢堡。"
+    "我要一個三明治。"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "漢堡 = hamburger.",
    "id": "B27-07"
   },
@@ -12818,15 +13114,16 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "🚶",
-    "label": "walking towards the speaker"
+    "label": "someone walking towards the speaker",
+    "img": "B27-T8"
    },
    "text": "你看，他走（　）了。",
    "options": [
     "種",
-    "道",
-    "來"
+    "來",
+    "道"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Coming towards the speaker → V來.",
    "id": "B27-08"
   },
@@ -12834,30 +13131,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "今天晚上我們（1）去夜市。夜市有很多（2）小吃。我想吃一（3）餃子，我妹妹要吃（4）。我們也要去（5）買水果。",
+   "text": "今天晚上我們（1）。夜市有（2）。我想吃（3），我妹妹要吃熱狗。明天早上我們也要（4），（5）。",
    "options": [
-    "種",
-    "要",
-    "道",
-    "熱狗",
-    "份",
-    "市場"
+    "要去夜市",
+    "很多種小吃",
+    "一份餃子",
+    "去市場",
+    "買水果和菜",
+    "兩道熱狗"
    ],
    "answers": [
-    1,
     0,
-    4,
+    1,
+    2,
     3,
-    5
+    4
    ],
-   "why": "要 (plan) / 種 / 一份 / 熱狗 / 市場.",
+   "why": "(1) 要去夜市. (2) 很多種小吃. (3) 吃 + 一份餃子. (4) 去市場. (5) 買水果和菜. 兩道熱狗 uses the wrong measure word.",
    "id": "B27-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "夜市的小吃：餃子一份六十塊，饅頭一個十五塊，熱狗一個四十塊。",
+   "text": "夜市的小吃：餃子一份六十塊，饅頭一個十五塊，熱狗一個四十塊。今天晚上我和哥哥去夜市，我想吃熱狗，哥哥想吃餃子。",
    "question": "兩個熱狗和一份餃子，一共多少錢？",
    "options": [
     "一百四十塊",
@@ -12878,7 +13175,7 @@
    "picture": {
     "icon": "🍽️⭐",
     "label": "a restaurant with a long queue and stars",
-    "img": "B28-3"
+    "img": "B28-4"
    },
    "question": "這家餐廳怎麼樣？",
    "options": [
@@ -12897,16 +13194,16 @@
    "picture": {
     "icon": "🍵🏮",
     "label": "people drinking tea inside a teahouse",
-    "img": "B28-4"
+    "img": "B28-5"
    },
    "question": "他們在哪裡？",
    "options": [
-    "在茶館。",
     "在飯店。",
-    "在市場。"
+    "在市場。",
+    "在茶館。"
    ],
-   "answer": 0,
-   "why": "茶館 = teahouse (a teapot & teacups on the table).",
+   "answer": 2,
+   "why": "People drinking tea in a teahouse → 在茶館 → C. A and B: other places.",
    "id": "B28-02"
   },
   {
@@ -12926,20 +13223,23 @@
    "question": "他們要去哪裡？",
    "options": [
     {
-     "icon": "🍜",
-     "label": "a noodle shop"
+     "icon": "🖼️",
+     "label": "a noodle shop",
+     "img": "B28-T3a"
     },
     {
-     "icon": "🏨",
-     "label": "hotel"
+     "icon": "🖼️",
+     "label": "teahouse",
+     "img": "B28-T3c"
     },
     {
-     "icon": "🍵",
-     "label": "teahouse"
+     "icon": "🖼️",
+     "label": "hotel",
+     "img": "B28-T3b"
     }
    ],
-   "answer": 2,
-   "why": "茶館 = teahouse.",
+   "answer": 1,
+   "why": "那家茶館 → the teahouse → B. A: not mentioned. C: a different place.",
    "id": "B28-03"
   },
   {
@@ -12968,15 +13268,18 @@
    "options": [
     {
      "icon": "🍔",
-     "label": "hamburger"
+     "label": "hamburger",
+     "img": "B28-T4a"
     },
     {
      "icon": "🍜",
-     "label": "beef noodles"
+     "label": "beef noodles",
+     "img": "B28-T4b"
     },
     {
      "icon": "🥟",
-     "label": "dumplings"
+     "label": "dumplings",
+     "img": "B28-T4c"
     }
    ],
    "answer": 2,
@@ -13007,32 +13310,35 @@
    ],
    "question": "這位小姐覺得第一家飯店怎麼樣？",
    "options": [
-    "很貴",
     "很便宜",
     "很特別",
-    "很有名"
+    "很有名",
+    "很貴"
    ],
-   "answer": 0,
-   "why": "Agrees to look for another one because it's 這麼貴.",
+   "answer": 3,
+   "why": "這家飯店這麼貴 → D. A: that is the second restaurant. B and C: not mentioned.",
    "id": "B28-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "他在看菜單。",
+   "text": "他在餐廳看菜單。",
    "options": [
     {
-     "icon": "📱",
-     "label": "looking at a phone"
+     "icon": "🖼️",
+     "label": "looking at a phone",
+     "img": "B28-T6a"
     },
     {
-     "icon": "📋",
-     "label": "reading the menu"
+     "icon": "🖼️",
+     "label": "reading the menu",
+     "img": "B28-T6b"
     },
     {
-     "icon": "📰",
-     "label": "reading a newspaper"
+     "icon": "🖼️",
+     "label": "reading a newspaper",
+     "img": "B28-T6c"
     }
    ],
    "answer": 1,
@@ -13044,15 +13350,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🍽️🍽️🍽️",
-    "label": "three dishes"
+    "icon": "🍽️",
+    "label": "a set-meal menu with three dishes",
+    "img": "B28-T7"
    },
    "options": [
+    "今天的特別餐有三道菜。",
     "今天沒有菜。",
-    "今天只有一道菜。",
-    "今天的特別餐有三道菜。"
+    "今天只有一道菜。"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "三道菜 = three dishes.",
    "id": "B28-07"
   },
@@ -13062,7 +13369,8 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "🍵",
-    "label": "teahouse"
+    "label": "teahouse",
+    "img": "B28-T8"
    },
    "text": "我們去那（　）茶館吧。",
    "options": [
@@ -13078,30 +13386,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "週末我們去那（1）有名的餐廳，（2）？那家餐廳很（3），菜單上有很多（4）的菜。牛肉麵（5）餃子都可以。",
+   "text": "週末我們去（1），（2）？那家餐廳（3），菜單上有（4）。牛肉麵（5）都可以。",
    "options": [
-    "道",
-    "有名",
-    "或是",
+    "那家有名的餐廳",
     "怎麼樣",
-    "特別",
-    "家"
+    "很有名",
+    "很多特別的菜",
+    "或是餃子",
+    "這麼一份"
    ],
    "answers": [
-    5,
-    3,
+    0,
     1,
-    4,
-    2
+    2,
+    3,
+    4
    ],
-   "why": "那家 / …，怎麼樣？ / 有名 / 特別 / 或是 (statement).",
+   "why": "(1) 去 + 那家有名的餐廳. (2) suggestion + 怎麼樣. (3) 很有名. (4) 菜單上有 + 很多特別的菜. (5) 牛肉麵 + 或是餃子 + 都可以. 這麼一份 fits no blank.",
    "id": "B28-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "這間茶館很有名。這裡的茶很好喝，也有特別的點心。週末人很多，要早一點去。",
+   "text": "這間茶館很有名。這裡的茶很好喝，也有特別的點心。週末人很多，要早一點去。星期一到星期五人比較少，下午去也可以。",
    "question": "週末去茶館應該怎麼做？",
    "options": [
     "帶點心去",
@@ -13170,16 +13478,19 @@
    "question": "這位先生的家離學校怎麼樣？",
    "options": [
     {
-     "icon": "🚌⏳",
-     "label": "far, 1 hour by vehicle"
+     "icon": "🖼️",
+     "label": "far, 1 hour by vehicle",
+     "img": "B29-T3a"
     },
     {
-     "icon": "🚶",
-     "label": "near, on foot"
+     "icon": "🖼️",
+     "label": "near, on foot",
+     "img": "B29-T3b"
     },
     {
-     "icon": "🚲",
-     "label": "10 minutes by bike"
+     "icon": "🖼️",
+     "label": "10 minutes by bike",
+     "img": "B29-T3c"
     }
    ],
    "answer": 0,
@@ -13211,20 +13522,23 @@
    "question": "書店在哪裡？",
    "options": [
     {
-     "icon": "🚶",
-     "label": "a 5-minute walk, on this side"
+     "icon": "🖼️",
+     "label": "have to take the bus",
+     "img": "B29-T4b"
     },
     {
-     "icon": "🚌",
-     "label": "have to take the bus"
+     "icon": "🖼️",
+     "label": "a 5-minute walk, on this side",
+     "img": "B29-T4a"
     },
     {
-     "icon": "🛣️",
-     "label": "across the road"
+     "icon": "🖼️",
+     "label": "across the road",
+     "img": "B29-T4c"
     }
    ],
-   "answer": 0,
-   "why": "No crossing, 5 minutes.",
+   "answer": 1,
+   "why": "走五分鐘 + 不要過馬路 → on this side → B. A: not mentioned. C: there is no need to cross.",
    "id": "B29-04"
   },
   {
@@ -13253,11 +13567,11 @@
    "options": [
     "她沒有地圖",
     "車站很遠",
-    "她不想走路",
-    "車站不遠"
+    "車站不遠",
+    "她不想走路"
    ],
-   "answer": 3,
-   "why": "哪有那麼遠 = it's not that far (rhetorical).",
+   "answer": 2,
+   "why": "哪有那麼遠 = it is not that far → the station is not far → C. A: they are looking at a map. B: the opposite. D: not mentioned.",
    "id": "B29-05"
   },
   {
@@ -13267,19 +13581,22 @@
    "text": "學校離公園很近。",
    "options": [
     {
-     "icon": "🏫",
-     "label": "there's no park"
+     "icon": "🖼️",
+     "label": "the school is near the park",
+     "img": "B29-T6c"
     },
     {
-     "icon": "🏫🛣️🌳",
-     "label": "the school is far from the park"
+     "icon": "🖼️",
+     "label": "there's no park",
+     "img": "B29-T6a"
     },
     {
-     "icon": "🏫🌳",
-     "label": "the school is near the park"
+     "icon": "🖼️",
+     "label": "the school is far from the park",
+     "img": "B29-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "A 離 B 很近.",
    "id": "B29-06"
   },
@@ -13289,14 +13606,15 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "🗺️",
-    "label": "map"
+    "label": "map",
+    "img": "B29-T7"
    },
    "options": [
     "我們看電影吧。",
-    "我們看報紙吧。",
-    "我們看地圖吧。"
+    "我們看地圖吧。",
+    "我們看報紙吧。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "地圖 = map.",
    "id": "B29-07"
   },
@@ -13305,16 +13623,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🛣️",
-    "label": "a busy main road"
+    "icon": "🚗",
+    "label": "a busy road",
+    "img": "B29-T8"
    },
    "text": "這條（　）車很多。",
    "options": [
-    "馬路",
     "車站",
-    "地圖"
+    "地圖",
+    "馬路"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "馬路 = main road.",
    "id": "B29-08"
   },
@@ -13322,30 +13641,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我家（1）學校很（2），走路五分鐘。可是我家離（3）很遠，坐火車不方便。我每天早上七點（4）家。我家在一條很小的（5）上。",
+   "text": "我家（1），走路五分鐘。可是我家（2），坐火車不方便。我每天早上七點（3）。我家在（4）。我常常（5）走到學校。",
    "options": [
-    "車站",
-    "街",
-    "近",
-    "離開",
-    "離",
-    "地圖"
+    "離學校很近",
+    "離車站很遠",
+    "離開家",
+    "一條很小的街上",
+    "從這條街",
+    "看了地圖"
    ],
    "answers": [
-    4,
-    2,
     0,
+    1,
+    2,
     3,
-    1
+    4
    ],
-   "why": "離 / 近 / 車站 / 離開 / 街.",
+   "why": "(1) 離學校很近. (2) 離車站很遠. (3) 七點 + 離開家. (4) 在 + 一條很小的街上. (5) 從這條街 + 走到學校. 看了地圖 fits no blank.",
    "id": "B29-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "從王小姐家到學校：從她家出來，走過兩條街，就是學校。學校離她家不遠，可是離車站很遠。",
+   "text": "從王小姐家到學校：從她家出來，走過兩條街，就是學校。學校離她家不遠，可是離車站很遠。週末她坐公車去車站。",
    "question": "哪個是對的？",
    "options": [
     "她坐車去學校",
@@ -13414,20 +13733,23 @@
    "question": "圖書館怎麼走？",
    "options": [
     {
-     "icon": "⬅️🏛️",
-     "label": "turning left"
-    },
-    {
-     "icon": "🌳🏛️",
-     "label": "straight on, past the park"
+     "icon": "🗺️",
+     "label": "route map: turn left",
+     "img": "B30-T3a"
     },
     {
      "icon": "🚌",
-     "label": "by bus"
+     "label": "by bus",
+     "img": "B30-T3c"
+    },
+    {
+     "icon": "🗺️",
+     "label": "route map: straight on, past a park",
+     "img": "B30-T3b"
     }
    ],
-   "answer": 1,
-   "why": "往前走 + 經過公園.",
+   "answer": 2,
+   "why": "往前走，經過一個公園 → C. A: no turn. B: it is just a walk.",
    "id": "B30-03"
   },
   {
@@ -13455,20 +13777,23 @@
    "question": "他們在哪裡轉？",
    "options": [
     {
-     "icon": "↩️",
-     "label": "1st junction, to the left"
+     "icon": "🗺️",
+     "label": "route map: 2nd crossroads, to the left",
+     "img": "B30-T4b"
     },
     {
-     "icon": "⬅️",
-     "label": "2nd junction, to the left"
+     "icon": "🗺️",
+     "label": "route map: 1st crossroads, to the left",
+     "img": "B30-T4a"
     },
     {
-     "icon": "➡️",
-     "label": "2nd junction, to the right"
+     "icon": "🗺️",
+     "label": "route map: 2nd crossroads, to the right",
+     "img": "B30-T4c"
     }
    ],
-   "answer": 1,
-   "why": "第二個 + 往左.",
+   "answer": 0,
+   "why": "第二個 + 往左 → A. B: the wrong crossroads. C: the wrong direction.",
    "id": "B30-04"
   },
   {
@@ -13496,34 +13821,37 @@
    "question": "這位小姐回家以前要做什麼？",
    "options": [
     "去公園",
+    "去超市買東西",
     "在家做飯",
-    "去學校",
-    "去超市買東西"
+    "去學校"
    ],
-   "answer": 3,
-   "why": "先去超市，然後回家.",
+   "answer": 1,
+   "why": "我去超市買東西，然後回家 → B. A and D: not mentioned. C: that happens after she gets home, not before.",
    "id": "B30-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "書放在桌子上。",
+   "text": "我的書放在桌子上。",
    "options": [
     {
-     "icon": "📚",
-     "label": "a book on the table"
+     "icon": "🖼️",
+     "label": "a book on the bed",
+     "img": "B30-T6b"
     },
     {
-     "icon": "🛏️📚",
-     "label": "a book on the bed"
+     "icon": "🖼️",
+     "label": "a book in the bag",
+     "img": "B30-T6c"
     },
     {
-     "icon": "🎒📚",
-     "label": "a book in the bag"
+     "icon": "🖼️",
+     "label": "a book on the table",
+     "img": "B30-T6a"
     }
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "V在 + place.",
    "id": "B30-06"
   },
@@ -13533,14 +13861,15 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "🚦",
-    "label": "crossroads"
+    "label": "crossroads",
+    "img": "B30-T7"
    },
    "options": [
     "這是公園。",
-    "這是車站。",
-    "這是十字路口。"
+    "這是十字路口。",
+    "這是車站。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "十字路口 = crossroads.",
    "id": "B30-07"
   },
@@ -13550,7 +13879,8 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "⬆️",
-    "label": "heading forward"
+    "label": "an arrow pointing straight ahead",
+    "img": "B30-T8"
    },
    "text": "你（　）前走，就到了。",
    "options": [
@@ -13566,30 +13896,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "從學校（1）前走，（2）一個公園，在第二個（3）往右（4），就是我家。我每天六點（5）家。",
+   "text": "從學校（1），（2），在第二個路口（3），就是我家。我每天六點（4）。今天我（5）。",
    "options": [
-    "回到",
-    "經過",
-    "往",
-    "離",
-    "路口",
-    "轉"
+    "往前走",
+    "經過一個公園",
+    "往右轉",
+    "回到家",
+    "經過夜市",
+    "往家前"
    ],
    "answers": [
-    2,
+    0,
     1,
-    4,
-    5,
-    0
+    2,
+    3,
+    4
    ],
-   "why": "往前走 / 經過 / 路口 / 轉 / 回到家.",
+   "why": "(1) 往前走. (2) 經過一個公園. (3) 在路口 + 往右轉. (4) 六點 + 回到家. (5) 今天 + 經過夜市. 往家前 is ungrammatical.",
    "id": "B30-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "去車站：從學校大門出來，往右走，經過兩個路口，在第三個路口往左轉，就到車站。",
+   "text": "去車站：從學校大門出來，往右走，經過兩個路口，在第三個路口往左轉，就到車站。從學校走到車站要十五分鐘。",
    "question": "去車站要在第幾個路口轉？",
    "options": [
     "第三個",
@@ -13633,12 +13963,12 @@
    },
    "question": "你去車站做什麼？",
    "options": [
-    "接我媽媽。",
     "坐飛機。",
+    "接我媽媽。",
     "去學校。"
    ],
-   "answer": 0,
-   "why": "接 = to pick up. Mum gets off the train and is met.",
+   "answer": 1,
+   "why": "Meeting her mother off the train → 接我媽媽 → B. A and C: other purposes.",
    "id": "B31-02"
   },
   {
@@ -13658,16 +13988,19 @@
    "question": "坐巴士要多久？",
    "options": [
     {
-     "icon": "🚌",
-     "label": "2 hours"
+     "icon": "⏱️",
+     "label": "2 hours",
+     "img": "B31-T3a"
     },
     {
-     "icon": "🚆",
-     "label": "1.5 hours"
+     "icon": "⏱️",
+     "label": "1.5 hours",
+     "img": "B31-T3b"
     },
     {
-     "icon": "🚌",
-     "label": "5 hours"
+     "icon": "⏱️",
+     "label": "5 hours",
+     "img": "B31-T3c"
     }
    ],
    "answer": 2,
@@ -13700,19 +14033,22 @@
    "options": [
     {
      "icon": "🚗",
-     "label": "one car"
+     "label": "two cars",
+     "img": "B31-T4b"
     },
     {
-     "icon": "🚗🚗",
-     "label": "two cars"
+     "icon": "🚗",
+     "label": "one car",
+     "img": "B31-T4a"
     },
     {
-     "icon": "🚗🚗🚗",
-     "label": "three cars"
+     "icon": "🚗",
+     "label": "three cars",
+     "img": "B31-T4c"
     }
    ],
-   "answer": 1,
-   "why": "兩臺.",
+   "answer": 0,
+   "why": "兩臺 → two cars → A. B and C: other numbers.",
    "id": "B31-04"
   },
   {
@@ -13739,35 +14075,38 @@
    ],
    "question": "這位先生為什麼不坐公共汽車？",
    "options": [
+    "公共汽車上人很多",
     "公共汽車很貴",
     "他不會騎腳踏車",
-    "公共汽車上人很多",
     "公共汽車站很遠"
    ],
-   "answer": 2,
-   "why": "The reason: 人太多了.",
+   "answer": 0,
+   "why": "公共汽車人太多了 → A. B: he actually cycles. C and D: not mentioned.",
    "id": "B31-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "司機開巴士。",
+   "text": "這位司機每天開巴士。",
    "options": [
     {
      "icon": "🚕",
-     "label": "taxi"
-    },
-    {
-     "icon": "🧑‍✈️🚌",
-     "label": "a bus driver"
+     "label": "taxi",
+     "img": "B31-T6a"
     },
     {
      "icon": "✈️",
-     "label": "a pilot"
+     "label": "a pilot",
+     "img": "B31-T6c"
+    },
+    {
+     "icon": "🚌",
+     "label": "a bus driver",
+     "img": "B31-T6b"
     }
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "司機 = driver.",
    "id": "B31-06"
   },
@@ -13776,8 +14115,9 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🚲🚲🚲",
-    "label": "three bicycles"
+    "icon": "🚲",
+    "label": "three bicycles",
+    "img": "B31-T7"
    },
    "options": [
     "這裡有三個司機。",
@@ -13794,7 +14134,8 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "🚗",
-    "label": "a mother picking up her child"
+    "label": "a mother picking up her child by car",
+    "img": "B31-T8"
    },
    "text": "下課以後，媽媽開車來（　）我。",
    "options": [
@@ -13810,23 +14151,23 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "（1）臺北到臺中，我坐（2）。（3）開車開得很好。到臺中以後，我爸爸開車來（4）我。我弟弟不會開車，他（5）腳踏車。",
+   "text": "（1），我坐巴士。巴士的（2）。到臺中以後，（3）。我弟弟不會開車，他（4）。我們家有（5）。",
    "options": [
-    "司機",
-    "巴士",
-    "接",
-    "騎",
-    "從",
-    "部"
+    "從臺北到臺中",
+    "司機開車開得很好",
+    "我爸爸開車來接我",
+    "騎腳踏車",
+    "兩臺汽車",
+    "從巴士到司機"
    ],
    "answers": [
-    4,
-    1,
     0,
+    1,
     2,
-    3
+    3,
+    4
    ],
-   "why": "從…到 / 巴士 / 司機 / 接 / 騎.",
+   "why": "(1) 從臺北到臺中. (2) 司機開車開得很好. (3) 爸爸開車來接我. (4) cannot drive → 騎腳踏車. (5) 有 + 兩臺汽車. 從巴士到司機 makes no sense.",
    "id": "B31-09"
   },
   {
@@ -13903,15 +14244,18 @@
    "options": [
     {
      "icon": "📅",
-     "label": "next month"
+     "label": "next month",
+     "img": "B32-T3a"
     },
     {
      "icon": "📅",
-     "label": "tomorrow"
+     "label": "tomorrow",
+     "img": "B32-T3b"
     },
     {
      "icon": "📅",
-     "label": "next week"
+     "label": "next week",
+     "img": "B32-T3c"
     }
    ],
    "answer": 2,
@@ -13943,20 +14287,23 @@
    "question": "他們還有多少時間？",
    "options": [
     {
-     "icon": "⏳",
-     "label": "4 hours"
+     "icon": "⏱️",
+     "label": "2 hours",
+     "img": "B32-T4b"
     },
     {
-     "icon": "⏳",
-     "label": "2 hours"
+     "icon": "⏱️",
+     "label": "4 hours",
+     "img": "B32-T4a"
     },
     {
-     "icon": "⏳",
-     "label": "40 minutes"
+     "icon": "⏱️",
+     "label": "40 minutes",
+     "img": "B32-T4c"
     }
    ],
-   "answer": 1,
-   "why": "還有兩個小時. 40 minutes is the travel time.",
+   "answer": 0,
+   "why": "還有兩個小時 → 2 hours → A. B: 四 comes from 四十. C: 40 minutes is the journey time.",
    "id": "B32-04"
   },
   {
@@ -13983,13 +14330,13 @@
    ],
    "question": "這位先生要做什麼？",
    "options": [
+    "幫這位小姐拿東西上樓",
     "在樓下等",
     "坐電梯",
-    "回家",
-    "幫這位小姐拿東西上樓"
+    "回家"
    ],
-   "answer": 3,
-   "why": "拿上去 = to take up.",
+   "answer": 0,
+   "why": "我幫你拿上去 → carrying her things upstairs → A. B: not mentioned. C: there is no lift. D: not mentioned.",
    "id": "B32-05"
   },
   {
@@ -13999,19 +14346,22 @@
    "text": "他跑進教室來。",
    "options": [
     {
-     "icon": "🏫🏃",
-     "label": "running out"
+     "icon": "🖼️",
+     "label": "running out",
+     "img": "B32-T6a"
     },
     {
-     "icon": "🪑",
-     "label": "to sit; to ride (a vehicle)"
+     "icon": "🖼️",
+     "label": "running into the classroom",
+     "img": "B32-T6c"
     },
     {
-     "icon": "🏃🏫",
-     "label": "running into the classroom"
+     "icon": "🖼️",
+     "label": "to sit; to ride (a vehicle)",
+     "img": "B32-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "V進來 = to come in.",
    "id": "B32-06"
   },
@@ -14020,15 +14370,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🛫",
-    "label": "airport"
+    "icon": "✈️",
+    "label": "airport",
+    "img": "B32-T7"
    },
    "options": [
-    "這是機場。",
     "這是學校。",
-    "這是車站。"
+    "這是車站。",
+    "這是機場。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "機場 = airport.",
    "id": "B32-07"
   },
@@ -14038,15 +14389,16 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "🧋",
-    "label": "adding sugar"
+    "label": "adding sugar to milk tea",
+    "img": "B32-T8"
    },
    "text": "你的奶茶要（　）糖嗎？",
    "options": [
-    "加",
     "飛",
+    "加",
     "空"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "加 = to add.",
    "id": "B32-08"
   },
@@ -14054,30 +14406,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "今天我要坐飛機回印尼。我們從家裡走（1），坐計程車去（2）。到機場以後，我們（3）有一個小時。我的朋友跑（4）說：「你忘了手機！」然後我走（5）機場。",
+   "text": "今天我要坐飛機回印尼。我們（1），（2）去機場。到機場以後，我們（3）。我的朋友（4）說：「你忘了手機！」然後我（5）。",
    "options": [
-    "進",
-    "過來",
-    "加",
-    "還",
-    "出來",
-    "機場"
+    "從家裡走出來",
+    "坐計程車",
+    "還有一個小時",
+    "跑過來",
+    "走進機場",
+    "加了糖"
    ],
    "answers": [
-    4,
-    5,
-    3,
+    0,
     1,
-    0
+    2,
+    3,
+    4
    ],
-   "why": "走出來 / 機場 / 還有 / 跑過來 / 走進.",
+   "why": "(1) 從家裡走出來. (2) 坐計程車 + 去機場. (3) 還有一個小時. (4) 朋友 + 跑過來. (5) 走進機場. 加了糖 fits no blank.",
    "id": "B32-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "小明：我明天回來！我的飛機晚上八點到臺北。你可以開車來機場接我嗎？",
+   "text": "小明：我明天回來！我的飛機晚上八點到臺北。我買了很多東西，有點重。你可以開車來機場接我嗎？",
    "question": "小明請朋友做什麼？",
    "options": [
     "坐飛機",
@@ -14146,20 +14498,23 @@
    "question": "這位小姐跟誰來？",
    "options": [
     {
-     "icon": "👨",
-     "label": "with dad"
+     "icon": "🖼️",
+     "label": "with the older sister",
+     "img": "B33-T3c"
     },
     {
-     "icon": "🧍",
-     "label": "alone"
+     "icon": "🖼️",
+     "label": "with dad",
+     "img": "B33-T3a"
     },
     {
-     "icon": "👩👩",
-     "label": "with the older sister"
+     "icon": "🖼️",
+     "label": "alone",
+     "img": "B33-T3b"
     }
    ],
-   "answer": 2,
-   "why": "跟我姊姊.",
+   "answer": 0,
+   "why": "跟我姊姊來的 → A. B: a different person. C: she did not come alone.",
    "id": "B33-03"
   },
   {
@@ -14188,15 +14543,18 @@
    "options": [
     {
      "icon": "📅",
-     "label": "15 days"
+     "label": "15 days",
+     "img": "B33-T4a"
     },
     {
      "icon": "📅",
-     "label": "5 days"
+     "label": "5 days",
+     "img": "B33-T4b"
     },
     {
      "icon": "📅",
-     "label": "2 days"
+     "label": "2 days",
+     "img": "B33-T4c"
     }
    ],
    "answer": 1,
@@ -14227,13 +14585,13 @@
    ],
    "question": "哪個是對的？",
    "options": [
-    "這位小姐是韓國人",
     "這位小姐是日本人",
     "這位先生是日本人",
-    "這位先生是韓國人"
+    "這位先生是韓國人",
+    "這位小姐是韓國人"
    ],
-   "answer": 0,
-   "why": "以為 = to (wrongly) think.",
+   "answer": 3,
+   "why": "我是韓國人 → D. A: the man's wrong guess. B and C: about the man, not mentioned.",
    "id": "B33-05"
   },
   {
@@ -14243,19 +14601,22 @@
    "text": "我剛剛吃了兩個包子。",
    "options": [
     {
-     "icon": "🥟",
-     "label": "one steamed bun"
+     "icon": "🖼️",
+     "label": "has only eaten two steamed buns",
+     "img": "B33-T6c"
     },
     {
-     "icon": "🥟🥟🥟",
-     "label": "three steamed buns"
+     "icon": "🖼️",
+     "label": "one steamed bun",
+     "img": "B33-T6a"
     },
     {
-     "icon": "🥟🥟",
-     "label": "has only eaten two steamed buns"
+     "icon": "🖼️",
+     "label": "three steamed buns",
+     "img": "B33-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "V了 + amount.",
    "id": "B33-06"
   },
@@ -14264,15 +14625,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🧳🗺️",
-    "label": "to travel"
+    "icon": "🧳",
+    "label": "a family travelling with suitcases",
+    "img": "B33-T7"
    },
    "options": [
-    "我們去旅行。",
     "我們回家。",
-    "我們去上班。"
+    "我們去上班。",
+    "我們去旅行。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "旅行 = to travel.",
    "id": "B33-07"
   },
@@ -14281,16 +14643,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "😮",
-    "label": "wrongly thinking"
+    "icon": "📅",
+    "label": "someone surprised to see on the calendar that it is Friday",
+    "img": "B33-T8"
    },
    "text": "我（　）今天是星期六，今天是星期五！",
    "options": [
-    "以為",
     "好像",
+    "以為",
     "當然"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "以為 = to (wrongly) think.",
    "id": "B33-08"
   },
@@ -14298,30 +14661,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我（1）去年來臺灣的。我（2）想去日本，後來來臺灣。我（3）在臺灣住了一年。朋友說：「你的中文（4）很好！」我說：「（5）不是，我的中文還不好。」",
+   "text": "我是去年（1）來臺灣的。我（2），後來來了臺灣。我（3）一年了。朋友說：「你的中文（4）！」我說：「（5），我的中文還不好。」",
    "options": [
-    "已經",
-    "好像",
-    "本來",
-    "以為",
-    "當然",
-    "是"
+    "坐飛機",
+    "本來想去日本",
+    "已經在臺灣住了",
+    "好像很好",
+    "當然不是",
+    "以為是韓國人"
    ],
    "answers": [
-    5,
-    2,
     0,
     1,
+    2,
+    3,
     4
    ],
-   "why": "是…的 / 本來 / 已經 / 好像 / 當然不是.",
+   "why": "(1) 是去年 + 坐飛機 + 來…的. (2) 本來想去日本, then 後來來了臺灣. (3) 已經在臺灣住了 + 一年了. (4) 好像很好. (5) 當然不是 → 還不好. 以為是韓國人 fits no blank.",
    "id": "B33-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "我本來想週末去花蓮旅行，可是我姊姊週末要來臺北，所以我不去了。",
+   "text": "我本來想週末去花蓮旅行，可是我姊姊週末要來臺北，所以我不去了。我們要一起去淡水玩，晚上去夜市吃小吃。",
    "question": "他週末可能做什麼？",
    "options": [
     "去花蓮旅行",
@@ -14391,15 +14754,18 @@
    "options": [
     {
      "icon": "🐕",
-     "label": "dog"
+     "label": "dog",
+     "img": "B34-T3a"
     },
     {
      "icon": "🐟",
-     "label": "fish"
+     "label": "fish",
+     "img": "B34-T3b"
     },
     {
      "icon": "🐦",
-     "label": "bird"
+     "label": "bird",
+     "img": "B34-T3c"
     }
    ],
    "answer": 2,
@@ -14431,20 +14797,23 @@
    "question": "他們坐在哪裡？",
    "options": [
     {
-     "icon": "🌿",
-     "label": "on the grass"
+     "icon": "🖼️",
+     "label": "on the chair",
+     "img": "B34-T4b"
     },
     {
-     "icon": "🪑",
-     "label": "on the chair"
+     "icon": "🖼️",
+     "label": "on the grass",
+     "img": "B34-T4a"
     },
     {
-     "icon": "🏖️",
-     "label": "on the sand"
+     "icon": "🖼️",
+     "label": "on the sand",
+     "img": "B34-T4c"
     }
    ],
-   "answer": 0,
-   "why": "坐在草地上.",
+   "answer": 1,
+   "why": "坐在草地上 → on the grass → B. A: not mentioned. C: they see the sea, but do not sit on the sand.",
    "id": "B34-04"
   },
   {
@@ -14473,11 +14842,11 @@
    "options": [
     "洗澡",
     "看電視",
-    "吃晚餐",
-    "睡覺"
+    "睡覺",
+    "吃晚餐"
    ],
-   "answer": 3,
-   "why": "一到家就睡覺.",
+   "answer": 2,
+   "why": "只想睡覺 → C. A and B: not mentioned. D: he does not eat dinner.",
    "id": "B34-05"
   },
   {
@@ -14487,19 +14856,22 @@
    "text": "河裡有很多魚。",
    "options": [
     {
-     "icon": "🌊🐟",
-     "label": "fish in the sea"
+     "icon": "🖼️",
+     "label": "fish in a river",
+     "img": "B34-T6c"
     },
     {
-     "icon": "🐦",
-     "label": "bird"
+     "icon": "🖼️",
+     "label": "fish in the sea",
+     "img": "B34-T6a"
     },
     {
-     "icon": "🏞️🐟",
-     "label": "fish in a river"
+     "icon": "🖼️",
+     "label": "bird",
+     "img": "B34-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "河 = river.",
    "id": "B34-06"
   },
@@ -14508,15 +14880,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🚶🪜",
-    "label": "going down the stairs"
+    "icon": "🚶",
+    "label": "someone walking down the stairs",
+    "img": "B34-T7"
    },
    "options": [
     "他坐下來。",
-    "他從樓上走下來。",
-    "他從樓下走上去。"
+    "他從樓下走上去。",
+    "他從樓上走下來。"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "V下來 = to come down.",
    "id": "B34-07"
   },
@@ -14526,7 +14899,8 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "🌊",
-    "label": "an expanse of sea"
+    "label": "an expanse of sea",
+    "img": "B34-T8"
    },
    "text": "那（　）海很漂亮。",
    "options": [
@@ -14542,30 +14916,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我們（1）下車，（2）看到海了。這（3）海很漂亮，（4）很美。我們在（5）上坐下來休息。",
+   "text": "我們（1），就看到海了。（2）很漂亮，（3）也很美。我們在（4）坐下來休息，看了（5）。",
    "options": [
-    "草地",
-    "一",
-    "就",
-    "片",
-    "河",
-    "風景"
+    "一下車",
+    "這片海",
+    "這裡的風景",
+    "草地上",
+    "很多鳥和魚",
+    "一條鳥"
    ],
    "answers": [
+    0,
     1,
     2,
     3,
-    5,
-    0
+    4
    ],
-   "why": "一…就… / 片 / 風景 / 草地.",
+   "why": "(1) 一下車 + 就. (2) 這片海. (3) 這裡的風景 + 也很美. (4) 在草地上 + 坐下來. (5) 看了 + 很多鳥和魚. 一條鳥 uses the wrong measure word.",
    "id": "B34-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "週末我們去河邊玩。河邊有很多草和樹，也有很多鳥。我們一到那裡就坐下來吃東西。",
+   "text": "週末我們去河邊玩。河邊有很多草和樹，也有很多鳥。我們一到那裡就坐下來吃東西。吃了東西以後，我們在河邊走了一個小時。",
    "question": "他們到河邊以後，先做什麼？",
    "options": [
     "坐下來吃東西",
@@ -14609,12 +14983,12 @@
    },
    "question": "媽媽讓你去旅行嗎？",
    "options": [
+    "她讓我去。",
     "我在家。",
-    "她不讓我去。",
-    "她讓我去。"
+    "她不讓我去。"
    ],
-   "answer": 2,
-   "why": "讓 + person + V = to let … The mother smiles; the child carries a suitcase.",
+   "answer": 0,
+   "why": "Mum smiles and agrees → 她讓我去 → A. B: does not answer. C: the opposite.",
    "id": "B35-02"
   },
   {
@@ -14634,20 +15008,23 @@
    "question": "這位先生要做什麼？",
    "options": [
     {
-     "icon": "🤝🎒",
-     "label": "carrying things for someone"
+     "icon": "🖼️",
+     "label": "to pay",
+     "img": "B35-T3b"
     },
     {
-     "icon": "💵",
-     "label": "to pay"
+     "icon": "🖼️",
+     "label": "carrying things for someone",
+     "img": "B35-T3a"
     },
     {
-     "icon": "📞",
-     "label": "making a phone call"
+     "icon": "🖼️",
+     "label": "making a phone call",
+     "img": "B35-T3c"
     }
    ],
-   "answer": 0,
-   "why": "替你拿 = carry it for you.",
+   "answer": 1,
+   "why": "我替你拿 → carrying things for her → B. A and C: other things you can do for someone (替).",
    "id": "B35-03"
   },
   {
@@ -14675,16 +15052,19 @@
    "question": "他們住在哪裡？",
    "options": [
     {
-     "icon": "🏠",
-     "label": "a friend's house"
+     "icon": "🖼️",
+     "label": "a friend's house",
+     "img": "B35-T4a"
     },
     {
-     "icon": "🏨⛰️",
-     "label": "in the mountains"
+     "icon": "🖼️",
+     "label": "in the mountains",
+     "img": "B35-T4b"
     },
     {
-     "icon": "🏨🌊",
-     "label": "an inn by the sea"
+     "icon": "🖼️",
+     "label": "an inn by the sea",
+     "img": "B35-T4c"
     }
    ],
    "answer": 2,
@@ -14716,34 +15096,37 @@
    "question": "今天誰付錢？",
    "options": [
     "這位先生",
+    "這位小姐",
     "這位先生和這位小姐一起",
-    "他們都不付",
-    "這位小姐"
+    "他們都不付"
    ],
-   "answer": 3,
-   "why": "Yesterday the man; today the woman.",
+   "answer": 1,
+   "why": "今天你付 → the woman → B. A: the man paid yesterday. C and D: not mentioned.",
    "id": "B35-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "爸爸替我照相。",
+   "text": "爸爸在公園替我照相。",
    "options": [
     {
-     "icon": "🤳",
-     "label": "a selfie"
+     "icon": "🖼️",
+     "label": "dad taking a photo of me",
+     "img": "B35-T6b"
     },
     {
-     "icon": "👨📷🧒",
-     "label": "dad taking a photo of me"
+     "icon": "🖼️",
+     "label": "a selfie",
+     "img": "B35-T6a"
     },
     {
-     "icon": "🧒📷👨",
-     "label": "me taking a photo of dad"
+     "icon": "🖼️",
+     "label": "me taking a photo of dad",
+     "img": "B35-T6c"
     }
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "替 = for.",
    "id": "B35-06"
   },
@@ -14753,14 +15136,15 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "🏨",
-    "label": "inn"
+    "label": "a big hotel",
+    "img": "B35-T7"
    },
    "options": [
-    "這家旅館很大。",
     "這家店很小。",
+    "這家旅館很大。",
     "這是我的家。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "旅館 = inn.",
    "id": "B35-07"
   },
@@ -14769,16 +15153,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🙆",
-    "label": "may, can"
+    "icon": "👌",
+    "label": "someone nodding \"OK\"",
+    "img": "B35-T8"
    },
    "text": "「我可以用你的筆嗎？」「（　）！」",
    "options": [
-    "行",
     "讓",
-    "替"
+    "替",
+    "行"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "行 = OK, fine.",
    "id": "B35-08"
   },
@@ -14786,30 +15171,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "上個週末我（1）兩個朋友去旅行。我們住在一家（2）。我朋友（3）我付錢，我很不好意思。他說：「沒關係，下次你（4）我吃飯吧。」我說：「（5）！」",
+   "text": "上個週末我（1）去旅行。我們住在（2）。我朋友（3），我很不好意思。他說：「沒關係，下次你（4）吧。」我說：「（5）！」",
    "options": [
-    "旅館",
+    "跟兩個朋友",
+    "一家旅館",
+    "替我付錢",
+    "請我吃飯",
     "行",
-    "請",
-    "跟",
-    "讓",
-    "替"
+    "讓旅館"
    ],
    "answers": [
-    3,
     0,
-    5,
+    1,
     2,
-    1
+    3,
+    4
    ],
-   "why": "跟 / 旅館 / 替 / 請 (to treat) / 行.",
+   "why": "(1) 跟兩個朋友 + 去旅行. (2) 住在 + 一家旅館. (3) 替我付錢. (4) 下次你 + 請我吃飯. (5) agreeing → 行. 讓旅館 is ungrammatical.",
    "id": "B35-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "爸爸不讓我一個人去旅行。他說：「你跟哥哥一起去，我就讓你去。」",
+   "text": "爸爸不讓我一個人去旅行。他說：「你跟哥哥一起去，我就讓你去。」可是哥哥這個月很忙，下個月有空。",
    "question": "爸爸是什麼意思？",
    "options": [
     "我可以一個人去",
@@ -14878,16 +15263,19 @@
    "question": "郵局在哪裡？",
    "options": [
     {
-     "icon": "🏤🏦",
-     "label": "opposite the bank"
+     "icon": "🖼️",
+     "label": "opposite the bank",
+     "img": "B36-T3a"
     },
     {
-     "icon": "🏤🏫",
-     "label": "next to the school"
+     "icon": "🖼️",
+     "label": "next to the school",
+     "img": "B36-T3b"
     },
     {
-     "icon": "🏤🌳",
-     "label": "inside the park"
+     "icon": "🖼️",
+     "label": "inside the park",
+     "img": "B36-T3c"
     }
    ],
    "answer": 0,
@@ -14919,20 +15307,23 @@
    "question": "這位先生要付多少錢？",
    "options": [
     {
-     "icon": "💵",
-     "label": "NT$30"
+     "icon": "🏷️",
+     "label": "NT$30",
+     "img": "B36-T4a"
     },
     {
-     "icon": "💵",
-     "label": "NT$60"
+     "icon": "🏷️",
+     "label": "NT$2",
+     "img": "B36-T4c"
     },
     {
-     "icon": "💵",
-     "label": "NT$2"
+     "icon": "🏷️",
+     "label": "NT$60",
+     "img": "B36-T4b"
     }
    ],
-   "answer": 1,
-   "why": "一共六十塊.",
+   "answer": 2,
+   "why": "一共六十塊 → C. A: the price of one stamp. B: 兩 is the number of stamps.",
    "id": "B36-04"
   },
   {
@@ -14959,13 +15350,13 @@
    ],
    "question": "這位小姐借幾支筆？",
    "options": [
+    "一支",
     "兩支",
     "很多支",
-    "她不借",
-    "一支"
+    "她不借"
    ],
-   "answer": 3,
-   "why": "一支就夠了.",
+   "answer": 0,
+   "why": "一支就夠了 → A. B and C: not mentioned. D: she does borrow one.",
    "id": "B36-05"
   },
   {
@@ -14975,19 +15366,22 @@
    "text": "他在銀行工作。",
    "options": [
     {
-     "icon": "🏦💼",
-     "label": "working at a bank"
+     "icon": "🖼️",
+     "label": "at school",
+     "img": "B36-T6b"
     },
     {
-     "icon": "🏫",
-     "label": "at school"
+     "icon": "🖼️",
+     "label": "working at a bank",
+     "img": "B36-T6a"
     },
     {
-     "icon": "🏤",
-     "label": "at the post office"
+     "icon": "🖼️",
+     "label": "at the post office",
+     "img": "B36-T6c"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "銀行.",
    "id": "B36-06"
   },
@@ -14996,15 +15390,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "✉️🏷️",
-    "label": "an envelope with a stamp"
+    "icon": "✉️",
+    "label": "an envelope with a stamp",
+    "img": "B36-T7"
    },
    "options": [
+    "信上有郵票。",
     "這是一張地圖。",
-    "信上沒有郵票。",
-    "信上有郵票。"
+    "信上沒有郵票。"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "郵票 = stamp.",
    "id": "B36-07"
   },
@@ -15013,16 +15408,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "📚🤝",
-    "label": "borrowing from the library"
+    "icon": "📚",
+    "label": "borrowing books at the library",
+    "img": "B36-T8"
    },
    "text": "我跟圖書館（　）了三本書。",
    "options": [
-    "借",
     "寄",
+    "借",
     "送"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "借 = to borrow.",
    "id": "B36-08"
   },
@@ -15030,30 +15426,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "（1），郵局在哪裡？我想（2）信到印尼。我要買五張（3）。然後我要去（4）拿錢。上個星期，我的朋友跟我（5）了一百塊。",
+   "text": "（1），郵局在哪裡？我想（2）。我要買（3）。然後我要去（4）拿錢。上個星期，我的朋友（5）一百塊。",
    "options": [
-    "寄",
-    "郵票",
-    "銀行",
     "請問",
-    "信",
-    "借"
+    "寄信到印尼",
+    "五張郵票",
+    "銀行",
+    "跟我借了",
+    "借郵局"
    ],
    "answers": [
-    3,
     0,
     1,
     2,
-    5
+    3,
+    4
    ],
-   "why": "請問 / 寄信 / 郵票 / 銀行 / 借.",
+   "why": "(1) 請問 + a question. (2) 想 + 寄信到印尼. (3) 買 + 五張郵票. (4) 去銀行 + 拿錢. (5) 朋友 + 跟我借了 + 一百塊. 借郵局 makes no sense.",
    "id": "B36-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "郵局：早上八點到下午五點。星期六上午開，星期天不開。",
+   "text": "郵局：早上八點到下午五點。星期六上午開，星期天不開。星期一到星期五，下午三點以後人很多，要早一點去。",
    "question": "星期六下午可以去郵局嗎？",
    "options": [
     "可以",
@@ -15122,16 +15518,19 @@
    "question": "這位小姐要做什麼？",
    "options": [
     {
-     "icon": "📞",
-     "label": "making a phone call"
+     "icon": "🖼️",
+     "label": "making a phone call",
+     "img": "B37-T3a"
     },
     {
-     "icon": "🔍",
-     "label": "helping to look"
+     "icon": "🖼️",
+     "label": "helping to look",
+     "img": "B37-T3b"
     },
     {
-     "icon": "🏃",
-     "label": "running"
+     "icon": "🖼️",
+     "label": "running",
+     "img": "B37-T3c"
     }
    ],
    "answer": 1,
@@ -15163,20 +15562,23 @@
    "question": "誰吃了蛋糕？",
    "options": [
     {
+     "icon": "🐕",
+     "label": "dog",
+     "img": "B37-T4c"
+    },
+    {
      "icon": "🐈",
-     "label": "cat"
+     "label": "cat",
+     "img": "B37-T4a"
     },
     {
      "icon": "👦",
-     "label": "younger sibling"
-    },
-    {
-     "icon": "🐕",
-     "label": "dog"
+     "label": "younger sibling",
+     "img": "B37-T4b"
     }
    ],
-   "answer": 2,
-   "why": "被小狗吃了.",
+   "answer": 0,
+   "why": "被小狗吃了 → the dog → A. B and C: not mentioned.",
    "id": "B37-04"
   },
   {
@@ -15204,12 +15606,12 @@
    "question": "他們應該做什麼？",
    "options": [
     "去睡覺",
+    "打電話，出去",
     "去看火",
-    "在房間裡等",
-    "打電話，出去"
+    "在房間裡等"
    ],
-   "answer": 3,
-   "why": "The man's advice: 打電話，出去.",
+   "answer": 1,
+   "why": "快打電話，我們出去 → B. A: makes no sense. C and D: dangerous, the opposite.",
    "id": "B37-05"
   },
   {
@@ -15219,19 +15621,22 @@
    "text": "我的筆被同學拿走了。",
    "options": [
     {
-     "icon": "✏️⬇️",
-     "label": "a pen falling"
+     "icon": "🖼️",
+     "label": "a pen falling",
+     "img": "B37-T6a"
     },
     {
-     "icon": "✏️🧑‍🎓",
-     "label": "a pen taken by a friend"
+     "icon": "🖼️",
+     "label": "a pen in the bag",
+     "img": "B37-T6c"
     },
     {
-     "icon": "✏️🎒",
-     "label": "a pen in the bag"
+     "icon": "🖼️",
+     "label": "a pen taken by a friend",
+     "img": "B37-T6b"
     }
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "被 + doer + V.",
    "id": "B37-06"
   },
@@ -15240,15 +15645,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🔑⬇️",
-    "label": "something falling"
+    "icon": "👜",
+    "label": "things falling out of a bag",
+    "img": "B37-T7"
    },
    "options": [
-    "東西掉了。",
     "東西很多。",
+    "東西掉了。",
     "東西很貴。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "掉 = to fall, to drop.",
    "id": "B37-07"
   },
@@ -15257,8 +15663,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "😰",
-    "label": "confused"
+    "icon": "😟",
+    "label": "someone confused, their wallet gone",
+    "img": "B37-T8"
    },
    "text": "我的錢包不見了，（　）？",
    "options": [
@@ -15274,30 +15681,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "昨天我的錢包（1）了！可能在公車上（2）了，也可能（3）別人拿走了。我不知道（4）。朋友說：「別怕，我（5）你找。」",
+   "text": "昨天我的錢包（1）！可能在公車上（2），也可能（3）。我（4）。朋友說：「別怕，（5）。」",
    "options": [
-    "幫",
-    "火",
-    "被",
-    "怎麼辦",
-    "掉",
-    "不見"
+    "不見了",
+    "掉了",
+    "被別人拿走了",
+    "不知道怎麼辦",
+    "我幫你找",
+    "被火錢包"
    ],
    "answers": [
-    5,
-    4,
+    0,
+    1,
     2,
     3,
-    0
+    4
    ],
-   "why": "不見了 / 掉了 / 被 / 怎麼辦 / 幫.",
+   "why": "(1) 錢包 + 不見了. (2) 在公車上 + 掉了. (3) 也可能 + 被別人拿走了. (4) 不知道怎麼辦. (5) 我幫你找. 被火錢包 is ungrammatical.",
    "id": "B37-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "王小姐在公車上睡覺，她的皮包被別人拿走了。",
+   "text": "王小姐在公車上睡覺，她的皮包被別人拿走了。皮包裡有她的錢包和手機。下車以後，她給公車公司打了電話，可是沒找到。",
    "question": "哪個是對的？",
    "options": [
     "王小姐的皮包不見了",
@@ -15366,20 +15773,23 @@
    "question": "這裡可以照相嗎？",
    "options": [
     {
-     "icon": "🚫🍔",
-     "label": "no eating"
+     "icon": "🚫",
+     "label": "sign: no photos",
+     "img": "B38-T3c"
     },
     {
-     "icon": "📷✅",
-     "label": "photography allowed"
+     "icon": "🚫",
+     "label": "sign: no eating",
+     "img": "B38-T3a"
     },
     {
-     "icon": "🚫📷",
-     "label": "no photography"
+     "icon": "✅",
+     "label": "sign: photos allowed",
+     "img": "B38-T3b"
     }
    ],
-   "answer": 2,
-   "why": "不能.",
+   "answer": 0,
+   "why": "不能 (照相) → no photos → A. B: a different rule. C: the opposite.",
    "id": "B38-03"
   },
   {
@@ -15408,19 +15818,22 @@
    "options": [
     {
      "icon": "⏰",
-     "label": "clock"
+     "label": "clock",
+     "img": "B38-T4a"
+    },
+    {
+     "icon": "📕",
+     "label": "book",
+     "img": "B38-T4c"
     },
     {
      "icon": "📝",
-     "label": "tomorrow's exam"
-    },
-    {
-     "icon": "📚",
-     "label": "book"
+     "label": "tomorrow's exam",
+     "img": "B38-T4b"
     }
    ],
-   "answer": 1,
-   "why": "明天的考試很重要.",
+   "answer": 2,
+   "why": "明天的考試很重要 → C. A: 時間 is mentioned, but only as something to watch. B: not mentioned.",
    "id": "B38-04"
   },
   {
@@ -15447,13 +15860,13 @@
    ],
    "question": "眼鏡在哪裡？",
    "options": [
+    "客廳的桌子上",
     "這位小姐的書包裡",
     "房間的桌子上",
-    "這位先生的手上",
-    "客廳的桌子上"
+    "這位先生的手上"
    ],
-   "answer": 3,
-   "why": "客廳的 (桌子) — the object is left out (零代詞).",
+   "answer": 0,
+   "why": "客廳的 (桌子) → A. B: a table, but not in the bedroom. C and D: not mentioned.",
    "id": "B38-05"
   },
   {
@@ -15463,19 +15876,22 @@
    "text": "請注意，這裡不能說話。",
    "options": [
     {
-     "icon": "🤫",
-     "label": "no talking"
+     "icon": "🚫",
+     "label": "sign: no phones",
+     "img": "B38-T6b"
     },
     {
-     "icon": "🚫📱",
-     "label": "no phones"
+     "icon": "🚫",
+     "label": "sign: no talking",
+     "img": "B38-T6a"
     },
     {
-     "icon": "🚫🍔",
-     "label": "no eating"
+     "icon": "🚫",
+     "label": "sign: no eating",
+     "img": "B38-T6c"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "不能說話.",
    "id": "B38-06"
   },
@@ -15484,15 +15900,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "📋❗",
-    "label": "an important document"
+    "icon": "📄",
+    "label": "an important document marked in red",
+    "img": "B38-T7"
    },
    "options": [
-    "這件事很簡單。",
     "這件事很重要。",
+    "這件事很簡單。",
     "這件事不重要。"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "重要 = important.",
    "id": "B38-07"
   },
@@ -15501,16 +15918,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "⚠️🌧️",
-    "label": "a road slippery from the rain"
+    "icon": "🌧️",
+    "label": "a road slippery from the rain",
+    "img": "B38-T8"
    },
    "text": "外頭下雨，路上要（　）。",
    "options": [
-    "小心",
     "重要",
+    "小心",
     "能"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "要小心.",
    "id": "B38-08"
   },
@@ -15518,30 +15936,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "明天的考試很（1）。老師說：「請大家（2）：考試不（3）用手機，也不能說話。」我對自己說：「（4）一點，別忘了帶筆和（5）。」",
+   "text": "明天的考試很（1）。老師說：「請大家（2）：考試（3），也不能說話。」我對自己說：「（4），別忘了帶筆和（5）。」",
    "options": [
-    "火",
+    "重要",
     "注意",
+    "不能用手機",
+    "小心一點",
     "課本",
-    "小心",
-    "能",
-    "重要"
+    "能很重要"
    ],
    "answers": [
-    5,
+    0,
     1,
-    4,
+    2,
     3,
-    2
+    4
    ],
-   "why": "重要 / 請注意 / 不能 / 小心 / 課本.",
+   "why": "(1) 考試很 + 重要. (2) 請大家 + 注意. (3) 考試 + 不能用手機. (4) 小心一點. (5) 筆和 + 課本. 能很重要 is ungrammatical.",
    "id": "B38-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "游泳池：一、不能在這裡跑。二、不能吃東西。三、小朋友要跟大人一起游泳。",
+   "text": "游泳池：一、不能在這裡跑。二、不能吃東西。三、小朋友要跟大人一起游泳。游泳池的時間：早上六點到晚上九點。",
    "question": "哪個是對的？",
    "options": [
     "可以吃東西",
@@ -15610,16 +16028,19 @@
    "question": "這位小姐怎麼了？",
    "options": [
     {
-     "icon": "🤢",
-     "label": "a stomach ache"
+     "icon": "🖼️",
+     "label": "a stomach ache",
+     "img": "B39-T3a"
     },
     {
-     "icon": "🦷",
-     "label": "a toothache"
+     "icon": "🖼️",
+     "label": "a toothache",
+     "img": "B39-T3b"
     },
     {
-     "icon": "🤕",
-     "label": "a headache"
+     "icon": "🖼️",
+     "label": "a headache",
+     "img": "B39-T3c"
     }
    ],
    "answer": 0,
@@ -15651,20 +16072,23 @@
    "question": "這位小姐要等多久？",
    "options": [
     {
-     "icon": "⏳",
-     "label": "2 hours"
+     "icon": "⏱️",
+     "label": "2 hours",
+     "img": "B39-T4a"
     },
     {
-     "icon": "⏳",
-     "label": "10 minutes"
+     "icon": "⏱️",
+     "label": "20 minutes",
+     "img": "B39-T4c"
     },
     {
-     "icon": "⏳",
-     "label": "20 minutes"
+     "icon": "⏱️",
+     "label": "10 minutes",
+     "img": "B39-T4b"
     }
    ],
-   "answer": 2,
-   "why": "二十分鐘.",
+   "answer": 1,
+   "why": "二十分鐘 → B. A: 二 without 十. C: the wrong amount.",
    "id": "B39-04"
   },
   {
@@ -15691,35 +16115,38 @@
    ],
    "question": "這位小姐為什麼沒來上課？",
    "options": [
+    "吃太多，肚子痛",
     "她頭痛",
     "她去夜市",
-    "她不想上課",
-    "吃太多，肚子痛"
+    "她不想上課"
    ],
-   "answer": 3,
-   "why": "Cause and effect is inferred from two answers.",
+   "answer": 0,
+   "why": "She ate a lot at the night market and got a stomach ache → A. B: it is not her head. C: going to the night market was yesterday, not the direct reason. D: not mentioned.",
    "id": "B39-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "她的頭髮很短。",
+   "text": "我妹妹的頭髮很短。",
    "options": [
     {
-     "icon": "👩",
-     "label": "short hair"
+     "icon": "🖼️",
+     "label": "long hair",
+     "img": "B39-T6b"
     },
     {
-     "icon": "👩",
-     "label": "long hair"
+     "icon": "🖼️",
+     "label": "blond hair",
+     "img": "B39-T6c"
     },
     {
-     "icon": "👩",
-     "label": "blond hair"
+     "icon": "🖼️",
+     "label": "short hair",
+     "img": "B39-T6a"
     }
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "頭髮 = hair.",
    "id": "B39-06"
   },
@@ -15728,15 +16155,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "👩‍⚕️🛏️",
-    "label": "a nurse and a patient at the hospital"
+    "icon": "🏥",
+    "label": "a nurse and a patient at the hospital",
+    "img": "B39-T7"
    },
    "options": [
+    "護士和病人在醫院。",
     "病人在家睡覺。",
-    "醫生在學校上課。",
-    "護士和病人在醫院。"
+    "醫生在學校上課。"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "護士 + 病人 + 醫院.",
    "id": "B39-07"
   },
@@ -15745,16 +16173,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "❓",
-    "label": "asking how someone is"
+    "icon": "😟",
+    "label": "a friend worried by someone's pale face",
+    "img": "B39-T8"
    },
    "text": "你（　）了？你的臉很白。",
    "options": [
-    "怎麼",
     "什麼",
+    "怎麼",
     "為什麼"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "怎麼了 = what's wrong?",
    "id": "B39-08"
   },
@@ -15762,30 +16191,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "昨天我（1）痛，我去（2）看病。醫生說我吃了不乾淨的東西。（3）小姐給我藥。我的朋友問我：「你（4）了？」她也問我：「你（5）不來上課？」",
+   "text": "昨天我（1），我去（2）看病。醫生說我吃了不乾淨的東西。（3）給我藥。我的朋友問我：「你（4）？」她也問我：「你（5）不來上課？」",
    "options": [
-    "護士",
-    "肚子",
+    "肚子痛",
     "醫院",
+    "護士小姐",
+    "怎麼了",
     "為什麼",
-    "頭髮",
-    "怎麼"
+    "頭髮很短"
    ],
    "answers": [
+    0,
     1,
     2,
-    0,
-    5,
-    3
+    3,
+    4
    ],
-   "why": "肚子痛 / 醫院 / 護士 / 怎麼了 / 為什麼.",
+   "why": "(1) 肚子痛. (2) 去 + 醫院 + 看病. (3) 護士小姐 + 給我藥. (4) 你 + 怎麼了. (5) 為什麼 + 不來上課. 頭髮很短 fits no blank.",
    "id": "B39-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "醫院：看病時間早上八點到十二點，下午兩點到五點。星期天不看病。",
+   "text": "醫院：看病時間早上八點到十二點，下午兩點到五點。星期天不看病。病人很多，要早一點去。",
    "question": "星期一下午一點可以去看病嗎？",
    "options": [
     "早上不可以",
@@ -15854,16 +16283,19 @@
    "question": "這位先生的身體怎麼樣？",
    "options": [
     {
-     "icon": "😴",
-     "label": "tired"
+     "icon": "🖼️",
+     "label": "tired",
+     "img": "B40-T3a"
     },
     {
-     "icon": "💪",
-     "label": "healthy"
+     "icon": "🖼️",
+     "label": "healthy",
+     "img": "B40-T3b"
     },
     {
-     "icon": "🤒",
-     "label": "painful, to hurt"
+     "icon": "🖼️",
+     "label": "painful, to hurt",
+     "img": "B40-T3c"
     }
    ],
    "answer": 1,
@@ -15895,20 +16327,23 @@
    "question": "這位小姐現在怎麼樣？",
    "options": [
     {
-     "icon": "🤒",
-     "label": "getting worse"
+     "icon": "🖼️",
+     "label": "a bit better, still tired",
+     "img": "B40-T4c"
     },
     {
-     "icon": "😊",
-     "label": "completely well"
+     "icon": "🖼️",
+     "label": "getting worse",
+     "img": "B40-T4a"
     },
     {
-     "icon": "🙂",
-     "label": "a bit better, still tired"
+     "icon": "🖼️",
+     "label": "completely well",
+     "img": "B40-T4b"
     }
    ],
-   "answer": 2,
-   "why": "好一點了，不過還有點累.",
+   "answer": 0,
+   "why": "好一點了，不過還有點累 → A. B: the opposite. C: she is still tired.",
    "id": "B40-04"
   },
   {
@@ -15936,12 +16371,12 @@
    "question": "這位小姐是什麼意思？",
    "options": [
     "衣服不漂亮",
+    "她想買那件衣服",
     "衣服很便宜",
-    "她不想買",
-    "她想買那件衣服"
+    "她不想買"
    ],
-   "answer": 3,
-   "why": "雖然很貴，還是想買.",
+   "answer": 1,
+   "why": "雖然很貴，我還是想買 → B. A and C: the opposite. D: the opposite.",
    "id": "B40-05"
   },
   {
@@ -15951,19 +16386,22 @@
    "text": "因為他生病，所以沒去上課。",
    "options": [
     {
-     "icon": "🤒🏠",
-     "label": "ill, not at school"
+     "icon": "🖼️",
+     "label": "playing ball",
+     "img": "B40-T6b"
     },
     {
-     "icon": "⚽",
-     "label": "playing ball"
+     "icon": "🖼️",
+     "label": "going to school",
+     "img": "B40-T6c"
     },
     {
-     "icon": "🏫",
-     "label": "going to school"
+     "icon": "🖼️",
+     "label": "ill, not at school",
+     "img": "B40-T6a"
     }
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "因為…所以….",
    "id": "B40-06"
   },
@@ -15972,8 +16410,9 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🍎💪",
-    "label": "fruit and a healthy body"
+    "icon": "🍎",
+    "label": "fruit and a healthy body",
+    "img": "B40-T7"
    },
    "options": [
     "水果不健康。",
@@ -15989,16 +16428,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🕙",
-    "label": "didn't come until 10"
+    "icon": "⏰",
+    "label": "10 o'clock, someone only just arriving",
+    "img": "B40-T8"
    },
    "text": "他早上八點上課，可是十點（　）來。",
    "options": [
-    "才",
     "但是",
+    "才",
     "就"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "才 = only then (later than it should be).",
    "id": "B40-08"
   },
@@ -16006,30 +16446,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我每天運動，所以身體很（1）。（2）我很忙，（3）我每天都跑步。昨天我很累，十一點（4）睡覺，（5）今天還是很早起床。",
+   "text": "我每天運動，所以身體（1）。（2），（3）我每天都跑步。昨天我很累，十一點（4），（5）今天還是很早起床。",
    "options": [
-    "雖然",
+    "很健康",
+    "雖然我很忙",
+    "但是",
+    "才睡覺",
     "不過",
-    "健康",
-    "才",
-    "因為",
-    "但是"
+    "因為生病了"
    ],
    "answers": [
-    2,
     0,
-    5,
+    1,
+    2,
     3,
-    1
+    4
    ],
-   "why": "健康 / 雖然…但是 / 才 / 不過.",
+   "why": "(1) 所以身體 + 很健康. (2) 雖然我很忙 + (3) 但是. (4) 十一點 + 才睡覺. (5) 不過 + 還是很早起床. 因為生病了 contradicts 身體很健康.",
    "id": "B40-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "小明很喜歡吃甜點，但是醫生說他要少吃糖。雖然他很想吃蛋糕，不過他現在每天只吃一點。",
+   "text": "小明很喜歡吃甜點，但是醫生說他要少吃糖。雖然他很想吃蛋糕，不過他現在每天只吃一點。他說：「身體健康很重要。」",
    "question": "小明現在怎麼樣？",
    "options": [
     "不吃甜點",
@@ -16098,20 +16538,23 @@
    "question": "這位小姐怎麼了？",
    "options": [
     {
-     "icon": "😢🌧️",
-     "label": "sad because of the rain"
+     "icon": "🖼️",
+     "label": "sad because of the rain",
+     "img": "B41-T3a"
     },
     {
-     "icon": "😠🎂",
-     "label": "angry because her birthday was forgotten"
+     "icon": "🖼️",
+     "label": "happy",
+     "img": "B41-T3c"
     },
     {
-     "icon": "😊",
-     "label": "happy"
+     "icon": "🖼️",
+     "label": "angry because her birthday was forgotten",
+     "img": "B41-T3b"
     }
    ],
-   "answer": 1,
-   "why": "生氣 + a reason.",
+   "answer": 2,
+   "why": "他忘了我的生日 → she is angry → C. A: a different reason. B: the opposite.",
    "id": "B41-03"
   },
   {
@@ -16139,20 +16582,23 @@
    "question": "這位先生去日本做什麼？",
    "options": [
     {
-     "icon": "🧳",
-     "label": "going on holiday"
+     "icon": "🖼️",
+     "label": "to learn, to study",
+     "img": "B41-T4c"
     },
     {
-     "icon": "💼",
-     "label": "working"
+     "icon": "🖼️",
+     "label": "going on holiday",
+     "img": "B41-T4a"
     },
     {
-     "icon": "📚",
-     "label": "to learn, to study"
+     "icon": "🖼️",
+     "label": "working",
+     "img": "B41-T4b"
     }
    ],
-   "answer": 2,
-   "why": "去念書.",
+   "answer": 0,
+   "why": "去念書 → to study → A. B and C: not mentioned.",
    "id": "B41-04"
   },
   {
@@ -16179,32 +16625,35 @@
    ],
    "question": "她現在怎麼樣？",
    "options": [
-    "還很生氣",
     "很高興",
     "在哭",
+    "還很生氣",
     "不生氣了"
    ],
-   "answer": 0,
-   "why": "還在生氣.",
+   "answer": 2,
+   "why": "說了，可是她還在生氣 → C. A and D: the opposite. B: not mentioned.",
    "id": "B41-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "大家都笑了。",
+   "text": "大家聽了以後都笑了。",
    "options": [
     {
      "icon": "😠",
-     "label": "angry"
+     "label": "angry",
+     "img": "B41-T6a"
     },
     {
-     "icon": "😂😂",
-     "label": "everyone laughing"
+     "icon": "😄",
+     "label": "everyone laughing",
+     "img": "B41-T6b"
     },
     {
-     "icon": "😭",
-     "label": "crying"
+     "icon": "😢",
+     "label": "crying",
+     "img": "B41-T6c"
     }
    ],
    "answer": 1,
@@ -16216,8 +16665,9 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🍎🍌🍇",
-    "label": "all kinds of fruit"
+    "icon": "🍎🍌",
+    "label": "all kinds of fruit: apples, bananas",
+    "img": "B41-T7"
    },
    "options": [
     "我不喜歡水果。",
@@ -16233,16 +16683,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🗣️🧑‍🏫",
-    "label": "talking to the teacher"
+    "icon": "🗣️",
+    "label": "a student talking to a teacher",
+    "img": "B41-T8"
    },
    "text": "我想（　）老師說一件事。",
    "options": [
     "比方說",
-    "替",
-    "跟"
+    "跟",
+    "替"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "跟 + person + 說.",
    "id": "B41-08"
   },
@@ -16250,30 +16701,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "昨天我忘了朋友的生日，她很（1），也很難過，她（2）了。我（3）她說對不起。（4）我說了對不起，（5）她還是不高興。",
+   "text": "昨天我忘了朋友的生日，她很（1），也很難過，她（2）了。我（3）。（4），（5）她還是不高興。",
    "options": [
-    "哭",
-    "跟",
-    "可是",
-    "雖然",
     "生氣",
-    "笑"
+    "哭",
+    "跟她說對不起",
+    "雖然我說了對不起",
+    "可是",
+    "比方說蘋果"
    ],
    "answers": [
-    4,
     0,
     1,
+    2,
     3,
-    2
+    4
    ],
-   "why": "生氣 / 哭 / 跟 / 雖然…可是.",
+   "why": "(1) 很 + 生氣. (2) 她 + 哭了. (3) 跟她說對不起. (4) 雖然我說了對不起 + (5) 可是. 比方說蘋果 fits no blank.",
    "id": "B41-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "聽說王先生最近常常不高興。比方說，昨天他跟同學說話，說了兩句就生氣了。",
+   "text": "聽說王先生最近常常不高興。比方說，昨天他跟同學說話，說了兩句就生氣了。他的朋友說，可能是因為他最近太累了。",
    "question": "王先生最近怎麼樣？",
    "options": [
     "不跟同學說話",
@@ -16317,12 +16768,12 @@
    },
    "question": "她從皮包裡拿出什麼？",
    "options": [
-    "手機。",
     "錢包。",
+    "手機。",
     "書。"
    ],
-   "answer": 1,
-   "why": "拿出錢包 = to take out a wallet.",
+   "answer": 0,
+   "why": "She is taking a wallet out of her handbag → 錢包 → A. B and C: other things.",
    "id": "B42-02"
   },
   {
@@ -16342,20 +16793,23 @@
    "question": "這本書怎麼樣？",
    "options": [
     {
-     "icon": "📖😄",
-     "label": "to pull"
+     "icon": "🖼️",
+     "label": "boring",
+     "img": "B42-T3b"
     },
     {
-     "icon": "📖😴",
-     "label": "boring"
+     "icon": "🖼️",
+     "label": "expensive",
+     "img": "B42-T3c"
     },
     {
-     "icon": "📖💰",
-     "label": "expensive"
+     "icon": "🖼️",
+     "label": "to pull",
+     "img": "B42-T3a"
     }
    ],
-   "answer": 0,
-   "why": "有意思 = interesting.",
+   "answer": 2,
+   "why": "很有意思 → interesting → C. A: the opposite. B: not mentioned.",
    "id": "B42-03"
   },
   {
@@ -16383,20 +16837,23 @@
    "question": "這位小姐喜歡的人怎麼樣？",
    "options": [
     {
-     "icon": "🤪",
-     "label": "strange"
+     "icon": "🖼️",
+     "label": "strange",
+     "img": "B42-T4a"
     },
     {
-     "icon": "😠",
-     "label": "bad-tempered"
+     "icon": "🖼️",
+     "label": "clever and adorable",
+     "img": "B42-T4c"
     },
     {
-     "icon": "🧠😊",
-     "label": "clever and adorable"
+     "icon": "🖼️",
+     "label": "bad-tempered",
+     "img": "B42-T4b"
     }
    ],
-   "answer": 2,
-   "why": "聰明 + 可愛.",
+   "answer": 1,
+   "why": "很聰明，也很可愛 → B. A and C: not mentioned.",
    "id": "B42-04"
   },
   {
@@ -16423,35 +16880,38 @@
    ],
    "question": "這位先生覺得那個東西怎麼樣？",
    "options": [
+    "很有用",
     "很笨",
     "很可愛",
-    "沒有用",
-    "很有用"
+    "沒有用"
    ],
-   "answer": 3,
-   "why": "可是很有用.",
+   "answer": 0,
+   "why": "很奇怪，可是很有用 → A. B and C: not mentioned. D: the opposite.",
    "id": "B42-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "我買的蛋糕很好吃。",
+   "text": "我昨天買的蛋糕很好吃。",
    "options": [
     {
-     "icon": "🍰😋",
-     "label": "the cake I bought is tasty"
+     "icon": "🖼️",
+     "label": "the cake isn't tasty",
+     "img": "B42-T6b"
     },
     {
-     "icon": "🍰🤢",
-     "label": "the cake isn't tasty"
+     "icon": "🖼️",
+     "label": "the cake I bought is tasty",
+     "img": "B42-T6a"
     },
     {
-     "icon": "🍦",
-     "label": "ice cream"
+     "icon": "🖼️",
+     "label": "ice cream",
+     "img": "B42-T6c"
     }
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "VP 的 N.",
    "id": "B42-06"
   },
@@ -16460,15 +16920,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🐕🎩",
-    "label": "a dog in a hat that looks strange"
+    "icon": "🐕",
+    "label": "a dog in a hat that looks strange",
+    "img": "B42-T7"
    },
    "options": [
-    "這隻狗很奇怪。",
     "這隻狗很笨。",
-    "這隻狗很生氣。"
+    "這隻狗很生氣。",
+    "這隻狗很奇怪。"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "奇怪 = strange.",
    "id": "B42-07"
   },
@@ -16478,15 +16939,16 @@
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
     "icon": "❤️",
-    "label": "a kind heart"
+    "label": "a kind woman helping someone",
+    "img": "B42-T8"
    },
    "text": "她是一個很好的人，她的（　）很好。",
    "options": [
+    "心",
     "頭",
-    "臉",
-    "心"
+    "臉"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "心 = heart.",
    "id": "B42-08"
   },
@@ -16494,39 +16956,39 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我（1）的人是我的同學。他很（2），考試都是第一名。他說話很（3），大家都喜歡聽。有一天，他從書包裡拿（4）一本書給我，是一本很（5）的書。",
+   "text": "（1）是我的同學。他很（2），考試都是第一名。他說話（3），大家都喜歡聽。有一天，他從書包裡（4）給我，是一本（5）。",
    "options": [
-    "有意思",
-    "笨",
-    "出",
+    "我喜歡的人",
     "聰明",
-    "喜歡",
-    "有用"
+    "很有意思",
+    "拿出一本書",
+    "很有用的書",
+    "很笨的書包"
    ],
    "answers": [
-    4,
-    3,
     0,
+    1,
     2,
-    5
+    3,
+    4
    ],
-   "why": "我喜歡的人 / 聰明 / 有意思 / 拿出 / 有用.",
+   "why": "(1) 我喜歡的人. (2) 很 + 聰明. (3) 說話 + 很有意思. (4) 拿出一本書. (5) 一本 + 很有用的書. 很笨的書包 makes no sense.",
    "id": "B42-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "王先生家的狗很聰明，會開門，也會拿報紙給王先生。",
-   "question": "這隻狗怎麼樣？",
+   "text": "王先生家的狗很聰明，會開門，也會拿報紙給王先生。王先生說，這隻狗是他的好朋友。這隻狗也很可愛，大家都喜歡這隻狗。",
+   "question": "這隻狗會做什麼？",
    "options": [
-    "很可愛",
-    "很聰明",
-    "很奇怪",
-    "很笨"
+    "開門和拿報紙",
+    "開車",
+    "做飯",
+    "看報紙"
    ],
-   "answer": 1,
-   "why": "很聰明. D is not mentioned.",
+   "answer": 0,
+   "why": "會開門，也會拿報紙給王先生 → A. B and C: not mentioned. D: it brings the paper; it does not read it.",
    "id": "B42-10"
   }
  ],
@@ -16586,16 +17048,19 @@
    "question": "這位小姐怎麼樣？",
    "options": [
     {
-     "icon": "😰📝",
-     "label": "nervous because of an exam"
+     "icon": "🖼️",
+     "label": "nervous because of an exam",
+     "img": "B43-T3a"
     },
     {
-     "icon": "😊",
-     "label": "relaxed"
+     "icon": "🖼️",
+     "label": "relaxed",
+     "img": "B43-T3b"
     },
     {
-     "icon": "😴",
-     "label": "sleepy"
+     "icon": "🖼️",
+     "label": "sleepy",
+     "img": "B43-T3c"
     }
    ],
    "answer": 0,
@@ -16627,20 +17092,23 @@
    "question": "這位先生每天工作多久？",
    "options": [
     {
-     "icon": "⏳",
-     "label": "12 hours"
+     "icon": "⏱️",
+     "label": "8 hours",
+     "img": "B43-T4b"
     },
     {
-     "icon": "⏳",
-     "label": "8 hours"
+     "icon": "⏱️",
+     "label": "12 hours",
+     "img": "B43-T4a"
     },
     {
-     "icon": "⏳",
-     "label": "2 hours"
+     "icon": "⏱️",
+     "label": "2 hours",
+     "img": "B43-T4c"
     }
    ],
-   "answer": 0,
-   "why": "十二個小時.",
+   "answer": 1,
+   "why": "十二個小時 → B. A: not mentioned. C: 二 without 十.",
    "id": "B43-04"
   },
   {
@@ -16668,12 +17136,12 @@
    "question": "這位小姐是什麼意思？",
    "options": [
     "她不相信這位先生",
+    "她拿錯了錢包",
     "錢包不見了",
-    "這位先生拿了她的錢包",
-    "她拿錯了錢包"
+    "這位先生拿了她的錢包"
    ],
-   "answer": 3,
-   "why": "In the end admits: 拿錯了.",
+   "answer": 1,
+   "why": "是我拿錯了 → B. A: she did not believe him at first, but then admits it. C: the wallet is not lost. D: the opposite.",
    "id": "B43-05"
   },
   {
@@ -16683,19 +17151,22 @@
    "text": "他的話聽起來很奇怪。",
    "options": [
     {
-     "icon": "🤐",
-     "label": "silent"
+     "icon": "🖼️",
+     "label": "sounds strange",
+     "img": "B43-T6c"
     },
     {
-     "icon": "🗣️😄",
-     "label": "sounds funny"
+     "icon": "🖼️",
+     "label": "silent",
+     "img": "B43-T6a"
     },
     {
-     "icon": "🗣️❓",
-     "label": "sounds strange"
+     "icon": "🖼️",
+     "label": "sounds funny",
+     "img": "B43-T6b"
     }
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "聽起來 = sounds.",
    "id": "B43-06"
   },
@@ -16704,15 +17175,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🏋️😓",
-    "label": "hard work"
+    "icon": "🏗️",
+    "label": "hard work",
+    "img": "B43-T7"
    },
    "options": [
     "這個工作很簡單。",
-    "這個工作很辛苦。",
-    "這個工作很有意思。"
+    "這個工作很有意思。",
+    "這個工作很辛苦。"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "辛苦 = hard.",
    "id": "B43-07"
   },
@@ -16721,16 +17193,17 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🔍",
-    "label": "realising"
+    "icon": "😮",
+    "label": "someone realising their phone is gone",
+    "img": "B43-T8"
    },
    "text": "我（　）我的手機不見了。",
    "options": [
+    "發現",
     "相信",
-    "敢",
-    "發現"
+    "敢"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "發現 = to discover, to find.",
    "id": "B43-08"
   },
@@ -16738,30 +17211,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "明天我要在大家前面說中文，我很（1）。朋友說：「你看（2）很緊張。別怕，你是一個很好（3）學生。我（4）你可以！」我說：「好，我（5）說了！」",
+   "text": "明天我要在大家前面說中文，我很（1）。朋友說：「你看起來（2）。別怕，你是一個（3）。我（4）！」我說：「好，我（5）！」",
    "options": [
     "緊張",
-    "敢",
-    "苦",
-    "起來",
-    "的",
-    "相信"
+    "很緊張",
+    "很好的學生",
+    "相信你可以",
+    "敢說了",
+    "很苦地"
    ],
    "answers": [
     0,
+    1,
+    2,
     3,
-    4,
-    5,
-    1
+    4
    ],
-   "why": "緊張 / 看起來 / 很好的 / 相信 / 敢.",
+   "why": "(1) 很 + 緊張. (2) 看起來 + 很緊張. (3) 一個 + 很好的學生. (4) 相信你可以. (5) 敢說了. 很苦地 fits no blank.",
    "id": "B43-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "爸爸每天工作到很晚，很辛苦。有一天我發現他的頭髮白了很多。我很難過。",
+   "text": "爸爸每天工作到很晚，很辛苦。有一天我發現他的頭髮白了很多。我很難過，我跟爸爸說：「爸爸，您要多休息。」",
    "question": "「我」為什麼難過？",
    "options": [
     "爸爸不回家",
@@ -16830,16 +17303,19 @@
    "question": "這位先生過年做什麼？",
    "options": [
     {
-     "icon": "🏫",
-     "label": "going to school"
+     "icon": "🖼️",
+     "label": "going to school",
+     "img": "B44-T3a"
     },
     {
-     "icon": "🏠",
-     "label": "going home"
+     "icon": "🖼️",
+     "label": "going home",
+     "img": "B44-T3b"
     },
     {
-     "icon": "🧳",
-     "label": "to travel"
+     "icon": "🖼️",
+     "label": "to travel",
+     "img": "B44-T3c"
     }
    ],
    "answer": 2,
@@ -16871,20 +17347,23 @@
    "question": "這位小姐說什麼很有意思？",
    "options": [
     {
-     "icon": "🧧🥟",
-     "label": "eating dumplings at Lunar New Year"
+     "icon": "🖼️",
+     "label": "a Christmas tree",
+     "img": "B44-T4b"
     },
     {
-     "icon": "🎄",
-     "label": "Christmas"
+     "icon": "🖼️",
+     "label": "eating dumplings at Lunar New Year",
+     "img": "B44-T4a"
     },
     {
-     "icon": "🏮",
-     "label": "lanterns"
+     "icon": "🖼️",
+     "label": "lanterns",
+     "img": "B44-T4c"
     }
    ],
-   "answer": 0,
-   "why": "過年吃餃子.",
+   "answer": 1,
+   "why": "比方說過年吃餃子 → B. A and C: not mentioned.",
    "id": "B44-04"
   },
   {
@@ -16911,13 +17390,13 @@
    ],
    "question": "哪個是對的？",
    "options": [
-    "這位先生昨天第一次去夜市",
     "這位先生常常去夜市",
     "這位小姐昨天去夜市",
+    "這位先生昨天第一次去夜市",
     "這位先生不喜歡夜市"
    ],
-   "answer": 1,
-   "why": "又 + 上個星期也去 → often.",
+   "answer": 0,
+   "why": "又去 + 上個星期也去了 → he goes to the night market often (an inference) → A. B: it is the man who went. C: it is not the first time. D: the opposite.",
    "id": "B44-05"
   },
   {
@@ -16927,19 +17406,22 @@
    "text": "有的人喝茶，有的人喝咖啡。",
    "options": [
     {
-     "icon": "🍵☕",
-     "label": "some tea, some coffee"
+     "icon": "🖼️",
+     "label": "everyone drinking tea",
+     "img": "B44-T6b"
     },
     {
-     "icon": "🍵🍵",
-     "label": "all tea"
+     "icon": "🖼️",
+     "label": "everyone drinking coffee",
+     "img": "B44-T6c"
     },
     {
-     "icon": "☕☕",
-     "label": "all coffee"
+     "icon": "🖼️",
+     "label": "some tea, some coffee",
+     "img": "B44-T6a"
     }
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "有的…有的….",
    "id": "B44-06"
   },
@@ -16949,14 +17431,15 @@
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
     "icon": "🧧",
-    "label": "red envelopes"
+    "label": "a red New Year envelope",
+    "img": "B44-T7"
    },
    "options": [
+    "新年快樂！",
     "再見！",
-    "生日快樂！",
-    "新年快樂！"
+    "生日快樂！"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Red envelopes → 新年快樂.",
    "id": "B44-07"
   },
@@ -16965,8 +17448,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🔁",
-    "label": "again"
+    "icon": "🚪",
+    "label": "the same boy coming again today",
+    "img": "B44-T8"
    },
    "text": "他昨天來了，今天（　）來了。",
    "options": [
@@ -16982,30 +17466,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "「（1）快樂！」過年快到了。在臺灣，（2）人回家，有的人去旅行。我去年（3）家過年，今年我（4）要回家。我很喜歡這裡的（5）。",
+   "text": "「（1）！」過年快到了。在臺灣，（2）回家，有的人去旅行。我去年（3）過年，今年我（4）。我很喜歡這裡的（5）。",
    "options": [
-    "新年",
-    "回",
-    "過年",
-    "有的",
-    "文化",
-    "又"
+    "新年快樂",
+    "有的人",
+    "回家",
+    "又要回家",
+    "過年文化",
+    "有的又"
    ],
    "answers": [
     0,
-    3,
     1,
-    5,
+    2,
+    3,
     4
    ],
-   "why": "新年快樂 / 有的 / 回家 / 又 / 文化.",
+   "why": "(1) 新年快樂. (2) 有的人 + 回家. (3) 去年 + 回家 + 過年. (4) 今年 + 又要回家. (5) 這裡的 + 過年文化. 有的又 is ungrammatical.",
    "id": "B44-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "臺灣人過年，有的人回家跟家人一起吃飯，有的人去外國旅行，也有的人在家休息。",
+   "text": "臺灣人過年，有的人回家跟家人一起吃飯，有的人去外國旅行，也有的人在家休息。我今年過年在臺北，跟朋友一起吃飯。",
    "question": "哪個「不對」？",
    "options": [
     "有的人去旅行",
@@ -17026,7 +17510,7 @@
    "picture": {
     "icon": "🙏",
     "label": "she hands over an invitation, hoping her friend will come",
-    "img": "B45-3"
+    "img": "B45-4"
    },
    "question": "你希望什麼？",
    "options": [
@@ -17045,7 +17529,7 @@
    "picture": {
     "icon": "🍰✅",
     "label": "he remembers having eaten this cake before",
-    "img": "B45-4"
+    "img": "B45-5"
    },
    "question": "這個蛋糕你吃過嗎？",
    "options": [
@@ -17074,20 +17558,23 @@
    "question": "這位小姐願意嗎？",
    "options": [
     {
-     "icon": "🤔",
-     "label": "hesitant"
+     "icon": "🖼️",
+     "label": "willing to help",
+     "img": "B45-T3c"
     },
     {
-     "icon": "🙅",
-     "label": "refusing"
+     "icon": "🖼️",
+     "label": "hesitant",
+     "img": "B45-T3a"
     },
     {
-     "icon": "🤝😊",
-     "label": "willing to help"
+     "icon": "🖼️",
+     "label": "refusing",
+     "img": "B45-T3b"
     }
    ],
-   "answer": 2,
-   "why": "當然願意.",
+   "answer": 0,
+   "why": "當然願意 → A. B and C: do not match.",
    "id": "B45-03"
   },
   {
@@ -17115,20 +17602,23 @@
    "question": "這位先生認為什麼方法最有用？",
    "options": [
     {
-     "icon": "🎧",
-     "label": "listening every day"
+     "icon": "🖼️",
+     "label": "to read; to study",
+     "img": "B45-T4b"
     },
     {
-     "icon": "📖",
-     "label": "to read; to study"
+     "icon": "🖼️",
+     "label": "listening every day",
+     "img": "B45-T4a"
     },
     {
-     "icon": "✍️",
-     "label": "to write"
+     "icon": "🖼️",
+     "label": "to write",
+     "img": "B45-T4c"
     }
    ],
-   "answer": 0,
-   "why": "每天聽中文.",
+   "answer": 1,
+   "why": "每天聽中文最有用 → B. A and C: not mentioned.",
    "id": "B45-04"
   },
   {
@@ -17156,12 +17646,12 @@
    "question": "這位小姐是什麼意思？",
    "options": [
     "她很想去游泳",
+    "她不想去游泳",
     "她想去旅行",
-    "她上個星期沒去",
-    "她不想去游泳"
+    "她上個星期沒去"
    ],
-   "answer": 3,
-   "why": "A polite refusal: 希望在家休息.",
+   "answer": 1,
+   "why": "又要去？+ 我希望在家休息 → she does not want to go swimming again (implied) → B. A: the opposite. C: she went last week. D: not mentioned.",
    "id": "B45-05"
   },
   {
@@ -17171,19 +17661,22 @@
    "text": "這杯咖啡，我不喝。",
    "options": [
     {
-     "icon": "☕🚫",
-     "label": "doesn't want to drink this coffee"
+     "icon": "🖼️",
+     "label": "tea",
+     "img": "B45-T6b"
     },
     {
-     "icon": "🍵",
-     "label": "tea"
+     "icon": "🖼️",
+     "label": "drinking coffee",
+     "img": "B45-T6c"
     },
     {
-     "icon": "☕😋",
-     "label": "drinking coffee"
+     "icon": "🖼️",
+     "label": "doesn't want to drink this coffee",
+     "img": "B45-T6a"
     }
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "The topic comes first.",
    "id": "B45-06"
   },
@@ -17192,15 +17685,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "🙋‍♂️🗣️",
-    "label": "giving an opinion in class"
+    "icon": "🙋",
+    "label": "a student giving an opinion in class",
+    "img": "B45-T7"
    },
    "options": [
-    "我想去睡覺。",
     "我想說我的想法。",
+    "我想去睡覺。",
     "我不想說話。"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "想法 = opinion.",
    "id": "B45-07"
   },
@@ -17209,8 +17703,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🤞",
-    "label": "to hope"
+    "icon": "💭",
+    "label": "someone imagining going to Taiwan",
+    "img": "B45-T8"
    },
    "text": "我（　）明年可以去臺灣。",
    "options": [
@@ -17226,30 +17721,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "老師問我們：「你們有什麼（1）？」我（2）學中文要多聽多說。我（3）每天都能跟臺灣人說話。我媽媽說：「你（4）不是小孩，要自己學！」我的朋友說：「我（5）幫你練習。」",
+   "text": "老師問我們：「你們有什麼（1）？」我（2）要多聽多說。我（3）每天都能跟臺灣人說話。我媽媽說：「你（4）小孩，要自己學！」我的朋友說：「我（5）練習。」",
    "options": [
-    "又",
-    "願意",
+    "好想法",
+    "認為學中文",
     "希望",
-    "想法",
-    "相信",
-    "認為"
+    "又不是",
+    "願意幫你",
+    "這個字"
    ],
    "answers": [
-    3,
-    5,
-    2,
     0,
-    1
+    1,
+    2,
+    3,
+    4
    ],
-   "why": "想法 / 認為 / 希望 / 又 (emphasis) / 願意.",
+   "why": "(1) 什麼 + 好想法. (2) 我 + 認為學中文. (3) 我 + 希望. (4) 你 + 又不是 + 小孩 (emphatic). (5) 我 + 願意幫你 + 練習. 這個字 fits no blank.",
    "id": "B45-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "王老師認為學語言最重要的是每天練習。她希望學生每天說十分鐘中文。",
+   "text": "王老師認為學語言最重要的是每天練習。她希望學生每天說十分鐘中文。可是很多學生說，他們不好意思說中文。",
    "question": "王老師希望學生做什麼？",
    "options": [
     "每天寫十個字",
@@ -17318,20 +17813,23 @@
    "question": "這位先生打算做什麼？",
    "options": [
     {
-     "icon": "🧑‍🏫",
-     "label": "teacher"
-    },
-    {
      "icon": "👨‍🍳",
-     "label": "a cook"
+     "label": "a cook",
+     "img": "B46-T3b"
     },
     {
-     "icon": "🧑‍⚕️",
-     "label": "doctor"
+     "icon": "👨‍⚕️",
+     "label": "doctor",
+     "img": "B46-T3c"
+    },
+    {
+     "icon": "👨‍🏫",
+     "label": "teacher",
+     "img": "B46-T3a"
     }
    ],
-   "answer": 0,
-   "why": "當老師.",
+   "answer": 2,
+   "why": "打算當老師 → C. A and B: other jobs.",
    "id": "B46-03"
   },
   {
@@ -17360,19 +17858,22 @@
    "options": [
     {
      "icon": "🍞",
-     "label": "bread"
-    },
-    {
-     "icon": "🚫",
-     "label": "not eating"
+     "label": "bread",
+     "img": "B46-T4a"
     },
     {
      "icon": "🥟",
-     "label": "steamed bun"
+     "label": "steamed bun",
+     "img": "B46-T4c"
+    },
+    {
+     "icon": "🖼️",
+     "label": "not eating",
+     "img": "B46-T4b"
     }
    ],
-   "answer": 2,
-   "why": "Today: 一個包子. Yesterday she didn't eat.",
+   "answer": 1,
+   "why": "今天吃了一個包子 → B. A: not mentioned. C: that was yesterday.",
    "id": "B46-04"
   },
   {
@@ -17399,35 +17900,38 @@
    ],
    "question": "這位先生為什麼去臺灣？",
    "options": [
+    "學校好也不太貴",
     "臺灣很大",
     "他的朋友在臺灣",
-    "他沒去過日本",
-    "學校好也不太貴"
+    "他沒去過日本"
    ],
-   "answer": 3,
-   "why": "The reason after 因為.",
+   "answer": 0,
+   "why": "臺灣的學校很好，也不太貴 → A. B, C, D: not mentioned.",
    "id": "B46-05"
   },
   {
    "type": "read_sent",
    "part": "閱讀 Part 1 · Sentence → picture",
    "instr": "Read the sentence, then choose the matching picture.",
-   "text": "他沒買東西。",
+   "text": "他今天在超市沒買東西。",
    "options": [
     {
-     "icon": "💳",
-     "label": "to pay"
+     "icon": "🖼️",
+     "label": "not buying",
+     "img": "B46-T6b"
     },
     {
-     "icon": "🛒🚫",
-     "label": "not buying"
+     "icon": "🖼️",
+     "label": "to pay",
+     "img": "B46-T6a"
     },
     {
-     "icon": "🛍️",
-     "label": "to buy"
+     "icon": "🖼️",
+     "label": "to buy",
+     "img": "B46-T6c"
     }
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "沒買.",
    "id": "B46-06"
   },
@@ -17436,15 +17940,16 @@
    "part": "閱讀 Part 2 · Picture → sentence",
    "instr": "Look at the picture, then choose the matching sentence.",
    "picture": {
-    "icon": "📅✏️",
-    "label": "writing a plan"
+    "icon": "📝",
+    "label": "writing a list of plans",
+    "img": "B46-T7"
    },
    "options": [
     "這是我的名字。",
-    "這是我的生日。",
-    "這是我的打算。"
+    "這是我的打算。",
+    "這是我的生日。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "打算 = plan.",
    "id": "B46-07"
   },
@@ -17453,8 +17958,9 @@
    "part": "閱讀 Part 3 · Gap fill with picture",
    "instr": "Look at the picture, then choose the right word for the blank.",
    "picture": {
-    "icon": "🎯",
-    "label": "that's exactly the one"
+    "icon": "👉",
+    "label": "pointing at one book: \"this is the one\"",
+    "img": "B46-T8"
    },
    "text": "我要的（　）是這本書！",
    "options": [
@@ -17470,30 +17976,30 @@
    "type": "cloze",
    "part": "閱讀 Part 4 · Paragraph completion",
    "instr": "Fill in each blank. Each option can be used only once, and ONE option is not used.",
-   "text": "我想了很久，最後（1）明年去臺灣念書。我媽媽說：「你想去，（2）去吧。」我昨天（3）睡覺，太高興了！我（4）先學三個月的中文，（5）念大學。",
+   "text": "我想了很久，最後（1）明年去臺灣念書。我媽媽說：「你想去，（2）。」我昨天（3），太高興了！我（4），（5）念大學。",
    "options": [
     "決定",
-    "就",
-    "又",
-    "沒",
+    "就去吧",
+    "沒睡覺",
+    "打算先學中文",
     "然後",
-    "打算"
+    "又不是"
    ],
    "answers": [
     0,
     1,
+    2,
     3,
-    5,
     4
    ],
-   "why": "最後決定 / 就 / 沒睡覺 / 打算 / 然後.",
+   "why": "(1) 最後 + 決定. (2) 你想去 + 就去吧. (3) 沒睡覺 + 太高興了. (4) 打算先學中文. (5) 然後 + 念大學. 又不是 fits no blank.",
    "id": "B46-09"
   },
   {
    "type": "read_mc",
    "part": "閱讀 Part 5 · Reading comprehension",
    "instr": "Read the text, then choose the most suitable answer.",
-   "text": "李小姐本來打算去美國工作，可是她的爸爸媽媽希望她在臺灣。最後她決定在臺灣工作。",
+   "text": "李小姐本來打算去美國工作，可是她的爸爸媽媽希望她在臺灣。最後她決定在臺灣工作。她說，在臺灣可以常常跟家人吃飯。",
    "question": "李小姐最後在哪裡工作？",
    "options": [
     "臺灣",

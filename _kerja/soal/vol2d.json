@@ -5,6 +5,24 @@
    "part": "聽力 Part 1 · Deskripsi gambar",
    "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
    "picture": {
+    "icon": "🏷️",
+    "label": "selembar prangko",
+    "img": "B36-1"
+   },
+   "question": "你要買什麼？",
+   "options": [
+    "郵票。",
+    "信。",
+    "書。"
+   ],
+   "answer": 0,
+   "why": "Selembar prangko → 郵票 → A. B dan C: benda lain."
+  },
+  {
+   "type": "listen_pic",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+   "picture": {
     "icon": "🏤",
     "label": "kantor pos: dia mengirim surat di loket",
     "img": "B36-2"
@@ -12,11 +30,11 @@
    "question": "你去哪裡寄信？",
    "options": [
     "便利商店。",
-    "銀行。",
-    "郵局。"
+    "郵局。",
+    "銀行。"
    ],
-   "answer": 2,
-   "why": "郵局 = kantor pos; 寄信 = mengirim surat."
+   "answer": 1,
+   "why": "Mengirim surat di loket kantor pos → 郵局 → B. A dan C: tempat lain."
   },
   {
    "type": "listen_pic",
@@ -30,114 +48,104 @@
    "question": "你要借什麼？",
    "options": [
     "借錢。",
-    "借筆。",
-    "借書。"
-   ],
-   "answer": 1,
-   "why": "借 = meminjam. Tangan menunjuk pulpen."
-  },
-  {
-   "type": "listen_reply",
-   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "寄到印尼要幾天？",
-   "options": [
-    "我要寄郵票。",
-    "寄信很印尼。",
-    "差不多一個星期。"
+    "借書。",
+    "借筆。"
    ],
    "answer": 2,
-   "why": "Ditanya berapa hari → lamanya waktu."
-  },
-  {
-   "type": "read_sent",
-   "part": "閱讀 Part 1 · Kalimat → gambar",
-   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "我要買十張郵票。",
-   "options": [
-    {
-     "icon": "✉️",
-     "label": "sepuluh amplop"
-    },
-    {
-     "icon": "🏷️",
-     "label": "sepuluh perangko"
-    },
-    {
-     "icon": "🏷️",
-     "label": "satu perangko"
-    }
-   ],
-   "answer": 1,
-   "why": "郵票 = perangko; kata bantu 張."
+   "why": "Ia ingin meminjam pulpen → 借筆 → C. A dan B: benda lain."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🏦💵",
-    "label": "bank"
+    "icon": "📮",
+    "label": "perempuan membeli prangko di loket kantor pos",
+    "img": "B36-L9"
    },
    "options": [
-    "我去郵局寄信。",
-    "我去書店買書。",
-    "我去銀行拿錢。"
+    "她在銀行拿錢。",
+    "她在書店買書。",
+    "她在郵局買郵票。"
    ],
    "answer": 2,
-   "why": "銀行 = bank."
+   "why": "Loket kantor pos + prangko → C. A dan B: tempat dan kegiatan lain."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "📚🤝",
-    "label": "meminjam buku dari teman"
+    "icon": "🙋",
+    "label": "turis bertanya dengan sopan kepada petugas",
+    "img": "B36-L10"
    },
-   "text": "我跟朋友（　）了一本書。",
+   "text": "（　），車站在哪裡？",
    "options": [
-    "借",
-    "寄",
-    "送"
+    "請問",
+    "可以",
+    "借"
    ],
    "answer": 0,
-   "why": "跟 + orang + 借 = meminjam dari seseorang."
+   "why": "請問 = permisi, mau tanya (sebelum bertanya). B: 可以 = boleh/bisa. C: 借 = meminjam."
   },
   {
-   "type": "listen_dialog",
-   "part": "聽力 Part 4 · Dialog + makna tersirat",
-   "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
-   "lines": [
-    {
-     "sp": "女",
-     "zh": "請問，郵局在哪裡？"
-    },
-    {
-     "sp": "男",
-     "zh": "在銀行旁邊。你要寄信嗎？"
-    },
-    {
-     "sp": "女",
-     "zh": "對，我要寄信到日本。"
-    },
-    {
-     "sp": "男",
-     "zh": "那你要買郵票。"
-    }
-   ],
-   "question": "這位小姐要去郵局做什麼？",
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "我想寄信和茶給我媽媽，可是我沒有筆，所以我（1）。我問一位小姐：「（2），郵局在哪裡？」她說：「（3）。」在郵局，我問：「這裡（4）寄東西到印尼嗎？」小姐說可以，我也買了（5）。",
    "options": [
-    "去銀行",
-    "去日本",
-    "借錢",
-    "寄信到日本"
+    "跟美美借了一支",
+    "請問",
+    "在銀行旁邊",
+    "可以",
+    "三張郵票",
+    "寄給銀行"
    ],
-   "answer": 3,
-   "why": "我要寄信到日本. A: 銀行 hanya penanda lokasi. B: suratnya ke Jepang, bukan dirinya. C tidak disebut."
+   "answers": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "why": "(1) 沒有筆 → 跟美美借了一支. (2) 請問 + pertanyaan. (3) 在銀行旁邊. (4) 這裡 + 可以 + 寄…嗎. (5) 買了 + 三張郵票. 寄給銀行 tidak cocok di titik mana pun."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "上個月我寄了一本書給我在美國的朋友。郵局的小姐說，寄到美國差不多要十天。可是我朋友說他三個星期以後拿到書。",
+   "question": "這本書寄到美國要了多久？",
+   "options": [
+    "十天",
+    "一個月",
+    "差不多三個星期",
+    "一個星期"
+   ],
+   "answer": 2,
+   "why": "Kata petugas 10 hari, tetapi temannya baru menerima setelah 3 minggu → C. A: perkiraan petugas. B dan D: tidak disebut."
   }
  ],
  "B37": [
+  {
+   "type": "listen_pic",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+   "picture": {
+    "icon": "👛⬇️",
+    "label": "dompet jatuh dari saku celananya",
+    "img": "B37-1"
+   },
+   "question": "什麼掉了？",
+   "options": [
+    "他的錢包掉了。",
+    "他的手機掉了。",
+    "他的書掉了。"
+   ],
+   "answer": 0,
+   "why": "Dompet jatuh dari saku → 錢包掉了 → A. B dan C: benda lain."
+  },
   {
    "type": "listen_pic",
    "part": "聽力 Part 1 · Deskripsi gambar",
@@ -149,12 +157,12 @@
    },
    "question": "你的錢包呢？",
    "options": [
-    "我的錢包不見了！",
     "我用信用卡。",
+    "我的錢包不見了！",
     "我找到錢包了。"
    ],
-   "answer": 0,
-   "why": "不見了 = hilang. Saku kosong + tanda tanya."
+   "answer": 1,
+   "why": "Saku kosong, ia bingung → 錢包不見了 → B. A: tidak menjawab. C: kebalikannya."
   },
   {
    "type": "listen_pic",
@@ -172,110 +180,100 @@
     "掉到地上了。"
    ],
    "answer": 2,
-   "why": "掉到地上 = jatuh ke lantai."
-  },
-  {
-   "type": "listen_reply",
-   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "我的書不見了，怎麼辦？",
-   "options": [
-    "書很怎麼辦。",
-    "我幫你找。",
-    "我的書被。"
-   ],
-   "answer": 1,
-   "why": "怎麼辦 = bagaimana ini? → tawarkan solusi."
-  },
-  {
-   "type": "read_sent",
-   "part": "閱讀 Part 1 · Kalimat → gambar",
-   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "我的蛋糕被弟弟吃了。",
-   "options": [
-    {
-     "icon": "🍰🐕",
-     "label": "kue dimakan anjing"
-    },
-    {
-     "icon": "🍰👦",
-     "label": "kue dimakan adik"
-    },
-    {
-     "icon": "🍰",
-     "label": "kue masih utuh"
-    }
-   ],
-   "answer": 1,
-   "why": "被 + pelaku + V = di-… oleh …."
+   "why": "Ponsel jatuh ke lantai → 掉到地上了 → C. A dan B: tempat lain."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🔥",
-    "label": "api"
+    "icon": "🥛",
+    "label": "gelas jatuh ke lantai",
+    "img": "B37-L9"
    },
    "options": [
-    "這裡有火！",
-    "這裡有水！",
-    "這裡有雪！"
+    "杯子掉到地上了。",
+    "杯子在桌子上。",
+    "杯子被拿走了。"
    ],
    "answer": 0,
-   "why": "火 = api."
+   "why": "Gelas jatuh ke lantai → A. B: kebalikannya. C: tidak ada yang mengambil."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "👛🚌",
-    "label": "dompet diambil orang di bus"
+    "icon": "🚲",
+    "label": "kakak laki-laki mengendarai sepeda adiknya pergi",
+    "img": "B37-L10"
    },
-   "text": "我的錢包（　）別人拿走了。",
+   "text": "我的腳踏車（　）哥哥騎走了。",
    "options": [
     "在",
     "從",
     "被"
    ],
    "answer": 2,
-   "why": "Kalimat pasif: 被 + pelaku + V."
+   "why": "Benda + 被 + pelaku + V: 被哥哥騎走了. A dan B: tidak membentuk kalimat pasif."
   },
   {
-   "type": "listen_dialog",
-   "part": "聽力 Part 4 · Dialog + makna tersirat",
-   "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
-   "lines": [
-    {
-     "sp": "男",
-     "zh": "我的錢包不見了！怎麼辦？"
-    },
-    {
-     "sp": "女",
-     "zh": "你想一想，最後在哪裡用的？"
-    },
-    {
-     "sp": "男",
-     "zh": "在咖啡店……啊，可能掉在那裡了。"
-    },
-    {
-     "sp": "女",
-     "zh": "那我們快回去找！"
-    }
-   ],
-   "question": "這位先生覺得錢包可能在哪裡？",
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "在公車站，我看到我的錢包（1）！美美問我：「你最後在哪裡（2）？」我想了想，說：「在夜市買烤肉。」我們不知道（3），晚上就回到夜市。老闆說：「這是你的錢包嗎？它（4）了，我（5）。」",
    "options": [
-    "被人拿走了",
-    "在咖啡店",
-    "在家裡",
-    "在這位小姐那裡"
+    "不見了",
+    "用了錢包",
+    "怎麼辦",
+    "掉在地上",
+    "替你拿著",
+    "被火"
    ],
-   "answer": 1,
-   "why": "可能掉在那裡 (咖啡店). A, C, D tidak disebut."
+   "answers": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "why": "(1) 錢包 + 不見了. (2) 在哪裡 + 用了錢包. (3) 不知道 + 怎麼辦. (4) 它 + 掉在地上了. (5) 我 + 替你拿著. 被火 tidak cocok di titik mana pun."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "昨天我在公園跑步，跑了一個小時。回到家，我看到我的手機不見了。我打電話給我的手機，一位先生說：「我在公園的椅子上看到這支手機，你來拿吧。」",
+   "question": "我的手機可能掉在哪裡？",
+   "options": [
+    "家裡",
+    "那位先生的家",
+    "公車上",
+    "公園的椅子上"
+   ],
+   "answer": 3,
+   "why": "Seorang bapak menemukannya di kursi taman → kemungkinan jatuh di sana → D. A: ia sadar hilang di rumah. C: tidak disebut. B: bapak itu hanya menemukannya."
   }
  ],
  "B38": [
+  {
+   "type": "listen_pic",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+   "picture": {
+    "icon": "🚫🏊",
+    "label": "kolam dengan tanda dilarang berenang",
+    "img": "B38-1"
+   },
+   "question": "這裡能游泳嗎？",
+   "options": [
+    "這裡不能游泳。",
+    "這裡不能照相。",
+    "這裡不能吃東西。"
+   ],
+   "answer": 0,
+   "why": "Tanda dilarang berenang → 這裡不能游泳 → A. B dan C: larangan lain."
+  },
   {
    "type": "listen_pic",
    "part": "聽力 Part 1 · Deskripsi gambar",
@@ -288,11 +286,11 @@
    "question": "她說什麼？",
    "options": [
     "謝謝！",
-    "再見！",
-    "小心！"
+    "小心！",
+    "再見！"
    ],
-   "answer": 2,
-   "why": "小心 = hati-hati!"
+   "answer": 1,
+   "why": "Temannya hampir tersandung → 小心！ → B. A dan C: ucapan lain."
   },
   {
    "type": "listen_pic",
@@ -306,113 +304,104 @@
    "question": "這裡能照相嗎？",
    "options": [
     "不能游泳。",
-    "不能照相。",
-    "不能吃東西。"
-   ],
-   "answer": 1,
-   "why": "Kamera dicoret → 不能照相."
-  },
-  {
-   "type": "listen_reply",
-   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "明天的考試很重要嗎？",
-   "options": [
-    "很重要，你要好好準備。",
-    "重要很明天。",
-    "考試是重要。"
-   ],
-   "answer": 0,
-   "why": "重要 = penting."
-  },
-  {
-   "type": "read_sent",
-   "part": "閱讀 Part 1 · Kalimat → gambar",
-   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "請注意，這裡不能吃東西。",
-   "options": [
-    {
-     "icon": "🚫📱",
-     "label": "dilarang memakai ponsel"
-    },
-    {
-     "icon": "🚫📷",
-     "label": "dilarang memotret"
-    },
-    {
-     "icon": "🚫🍔",
-     "label": "dilarang makan"
-    }
+    "不能吃東西。",
+    "不能照相。"
    ],
    "answer": 2,
-   "why": "注意 = perhatian."
+   "why": "Tanda dilarang memotret → 不能照相 → C. A dan B: larangan lain."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "⚠️🌊",
-    "label": "papan peringatan di sungai"
+    "icon": "🚸",
+    "label": "seseorang menyeberang jalan dengan hati-hati, mobil datang",
+    "img": "B38-L9"
    },
    "options": [
-    "注意！這裡不能游泳。",
-    "歡迎來游泳！",
-    "這裡可以游泳。"
+    "這裡能游泳。",
+    "這件事很重要。",
+    "過馬路要小心。"
    ],
-   "answer": 0,
-   "why": "Tanda bahaya → 不能游泳."
+   "answer": 2,
+   "why": "Menyeberang dengan hati-hati → 過馬路要小心 → C. A: tempat lain. B: tidak sesuai gambar."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🚗⚠️",
-    "label": "jalan raya yang ramai"
+    "icon": "🏊",
+    "label": "tepi kolam renang dengan tanda dilarang berlari",
+    "img": "B38-L10"
    },
-   "text": "過馬路要（　）。",
+   "text": "游泳池旁邊不（　）跑。",
    "options": [
-    "重要",
     "能",
-    "小心"
+    "會",
+    "重要"
    ],
-   "answer": 2,
-   "why": "要小心 = harus hati-hati."
+   "answer": 0,
+   "why": "不能 + V = tidak boleh (aturan). B: 不會 = tidak bisa (kemampuan). C: 重要 kata sifat."
   },
   {
-   "type": "listen_dialog",
-   "part": "聽力 Part 3 · Dialog beberapa putaran",
-   "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
-   "lines": [
-    {
-     "sp": "女",
-     "zh": "你看，那裡寫著：這裡不能游泳。"
-    },
-    {
-     "sp": "男",
-     "zh": "為什麼？水很乾淨啊。"
-    },
-    {
-     "sp": "女",
-     "zh": "這裡的水很冷，要注意身體。"
-    },
-    {
-     "sp": "男",
-     "zh": "好，那我們去別的地方。"
-    }
-   ],
-   "question": "這位先生最後要怎麼做？",
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "在河邊，我想游泳，可是安妮說：「你看，那裡寫著：（1）。」美美也說：「這裡的水很冷，（2）。」第二天，陳老師說：「明天的考試很（3）。請大家（4）：考試（5），也不能看書。」",
    "options": [
-    "在這裡游泳",
-    "去別的地方",
-    "在這裡喝水"
+    "這裡不能游泳",
+    "你要小心",
+    "重要",
+    "注意",
+    "不能用手機",
+    "能很小心"
    ],
-   "answer": 1,
-   "why": "那我們去別的地方. A: dilarang. C tidak disebut."
+   "answers": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "why": "(1) papan: 這裡不能游泳. (2) airnya dingin → 你要小心. (3) 考試很 + 重要. (4) 請大家 + 注意. (5) 考試 + 不能用手機, lalu 也不能…. 能很小心 tidak gramatikal."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "我們學校的圖書館有很多要注意的事：不能吃東西，不能大聲說話，也不能講電話。可是可以喝水。我常常在圖書館念書，我很喜歡那裡。",
+   "question": "在圖書館可以做什麼？",
+   "options": [
+    "吃東西",
+    "講電話",
+    "喝水",
+    "大聲說話"
+   ],
+   "answer": 2,
+   "why": "可是可以喝水 → C. A, B, D: semuanya dilarang."
   }
  ],
  "B39": [
+  {
+   "type": "listen_pic",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+   "picture": {
+    "icon": "👩‍⚕️",
+    "label": "perawat dengan topi bertanda palang",
+    "img": "B39-1"
+   },
+   "question": "她做什麼工作？",
+   "options": [
+    "她是護士。",
+    "她是老師。",
+    "她是學生。"
+   ],
+   "answer": 0,
+   "why": "Topi bertanda palang → 她是護士 → A. B dan C: pekerjaan lain."
+  },
   {
    "type": "listen_pic",
    "part": "聽力 Part 1 · Deskripsi gambar",
@@ -425,11 +414,11 @@
    "question": "你怎麼了？",
    "options": [
     "我很累。",
-    "我頭很痛。",
-    "我肚子痛。"
+    "我肚子痛。",
+    "我頭很痛。"
    ],
-   "answer": 2,
-   "why": "怎麼了 = kenapa? 肚子痛 = sakit perut. Tangan memegang perut."
+   "answer": 1,
+   "why": "Memegangi perut → 我肚子痛 → B. A: keadaan lain. C: bagian tubuh lain."
   },
   {
    "type": "listen_pic",
@@ -443,114 +432,104 @@
    "question": "她的頭髮怎麼樣？",
    "options": [
     "很短。",
-    "很長。",
-    "她沒有頭髮。"
-   ],
-   "answer": 1,
-   "why": "頭髮很長 = rambutnya panjang."
-  },
-  {
-   "type": "listen_reply",
-   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你怎麼了？臉這麼紅。",
-   "options": [
-    "我的臉很好。",
-    "我怎麼了。",
-    "我有點不舒服。"
+    "她沒有頭髮。",
+    "很長。"
    ],
    "answer": 2,
-   "why": "怎麼了 = kenapa? → jelaskan keadaan."
-  },
-  {
-   "type": "read_sent",
-   "part": "閱讀 Part 1 · Kalimat → gambar",
-   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "護士在醫院工作。",
-   "options": [
-    {
-     "icon": "👩‍🏫🏫",
-     "label": "guru di sekolah"
-    },
-    {
-     "icon": "👩‍🍳",
-     "label": "koki"
-    },
-    {
-     "icon": "👩‍⚕️🏥",
-     "label": "perawat di rumah sakit"
-    }
-   ],
-   "answer": 2,
-   "why": "護士 = perawat; 醫院 = rumah sakit."
+   "why": "Rambut sangat panjang → 很長 → C. A: kebalikannya. B: tidak sesuai gambar."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🏥🛏️",
-    "label": "pasien di rumah sakit"
+    "icon": "💇",
+    "label": "laki-laki berambut sangat pendek",
+    "img": "B39-L9"
    },
    "options": [
-    "病人在醫院休息。",
-    "病人在夜市吃東西。",
-    "病人在學校上課。"
+    "他的頭髮很長。",
+    "他沒有頭髮。",
+    "他的頭髮很短。"
    ],
-   "answer": 0,
-   "why": "病人 = pasien."
+   "answer": 2,
+   "why": "Rambut sangat pendek → C. A: kebalikannya. B: masih ada rambut."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "❓",
-    "label": "bertanya alasan"
+    "icon": "🍚",
+    "label": "teman bertanya kepada orang yang tidak menyentuh makanannya",
+    "img": "B39-L10"
    },
-   "text": "你（　）不去上課？",
+   "text": "你（　）不吃飯？",
    "options": [
-    "什麼",
     "為什麼",
-    "怎麼了"
+    "怎麼了",
+    "什麼"
    ],
-   "answer": 1,
-   "why": "為什麼 = mengapa (menanyakan alasan)."
+   "answer": 0,
+   "why": "為什麼 + VP = mengapa: 為什麼不吃飯. B: 怎麼了 berdiri sendiri (你怎麼了？). C: 什麼 tidak bertanya alasan."
   },
   {
-   "type": "listen_dialog",
-   "part": "聽力 Part 4 · Dialog + makna tersirat",
-   "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
-   "lines": [
-    {
-     "sp": "女",
-     "zh": "你怎麼了？臉這麼紅。"
-    },
-    {
-     "sp": "男",
-     "zh": "我肚子很痛，頭也很熱。"
-    },
-    {
-     "sp": "女",
-     "zh": "我帶你去醫院吧！"
-    },
-    {
-     "sp": "男",
-     "zh": "好，謝謝。"
-    }
-   ],
-   "question": "這位先生哪裡不舒服？",
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "早上志明看到我（1），問我：「（2）？」我說：「（3）。」他問我：「（4）？」我說昨天在夜市吃了很多東西。志明就（5）。",
    "options": [
-    "臉",
-    "眼睛",
-    "手",
-    "肚子和頭"
+    "的臉很白",
+    "你怎麼了",
+    "我肚子很痛",
+    "你為什麼肚子痛",
+    "帶我去醫院",
+    "頭髮很長"
+   ],
+   "answers": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "why": "(1) 我 + 的臉很白. (2) 你怎麼了. (3) 我肚子很痛. (4) bertanya alasan → 你為什麼肚子痛. (5) 帶我去醫院. 頭髮很長 tidak cocok di titik mana pun."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "我姊姊是護士，在臺中的醫院工作。她說醫院的病人很多，她每天都很忙，常常沒有時間吃飯。昨天她肚子痛，可是她還在醫院工作。下班以後，她去看醫生。",
+   "question": "我姊姊昨天什麼時候去看醫生？",
+   "options": [
+    "早上",
+    "吃飯以前",
+    "沒去看醫生",
+    "下班以後"
    ],
    "answer": 3,
-   "why": "肚子很痛，頭也很熱. A: wajah hanya terlihat merah (gejala), bukan yang sakit. C & B tidak disebut."
+   "why": "下班以後，她去看醫生 → D. A dan B: tidak disebut. C: kebalikannya."
   }
  ],
  "B40": [
+  {
+   "type": "listen_pic",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+   "picture": {
+    "icon": "🤧🛏️",
+    "label": "dia sakit flu, berbaring di rumah",
+    "img": "B40-1"
+   },
+   "question": "她為什麼在家？",
+   "options": [
+    "因為她感冒了。",
+    "因為她要運動。",
+    "因為她要念書。"
+   ],
+   "answer": 0,
+   "why": "Ia sakit flu dan berbaring di rumah → 因為她感冒了 → A. B dan C: alasan lain."
+  },
   {
    "type": "listen_pic",
    "part": "聽力 Part 1 · Deskripsi gambar",
@@ -567,7 +546,7 @@
     "他生病了。"
    ],
    "answer": 1,
-   "why": "Bugar dan berlari → 很健康，每天運動。 A: ia tidak sedang tidur. C: 生病 = sakit, kebalikannya."
+   "why": "Bugar dan berlari setiap hari → 很健康，每天運動 → B. A dan C: keadaan lain."
   },
   {
    "type": "listen_pic",
@@ -585,109 +564,100 @@
     "十一點才起床。"
    ],
    "answer": 2,
-   "why": "Jam 11 baru bangun sambil menguap → 十一點才起床 (才 = baru, terlambat). A: 七點就起床了 = sudah bangun jam 7. B: 睡覺 = tidur, bukan bangun."
-  },
-  {
-   "type": "listen_reply",
-   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "雨很大，你還要去嗎？",
-   "options": [
-    "雖然雨很大，但是我還是要去。",
-    "雨很大所以。",
-    "我去雨。"
-   ],
-   "answer": 0,
-   "why": "雖然…但是… = meskipun …, tetapi …: 雖然雨很大，但是我還是要去。 B: kalimatnya belum selesai setelah 所以. C: tidak gramatikal."
-  },
-  {
-   "type": "read_sent",
-   "part": "閱讀 Part 1 · Kalimat → gambar",
-   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "因為下雨，所以我們不去公園。",
-   "options": [
-    {
-     "icon": "🌧️🌳",
-     "label": "hujan, tetap ke taman"
-    },
-    {
-     "icon": "🌧️🏠",
-     "label": "hujan, tinggal di rumah"
-    },
-    {
-     "icon": "☀️🌳",
-     "label": "cerah, ke taman"
-    }
-   ],
-   "answer": 1,
-   "why": "因為下雨，所以我們不去公園 → hujan, tidak ke taman. A: 不去 = tidak pergi. C: kalimatnya menyebut 下雨, bukan cerah."
+   "why": "Jam 11 baru bangun → 十一點才起床 → C. A: kebalikannya. B: 11 adalah jam bangun, bukan tidur."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🥗🏃",
-    "label": "makan sehat dan olahraga"
+    "icon": "⏰",
+    "label": "jam 9:30, seorang murid baru masuk; kelas mulai jam 8",
+    "img": "B40-L9"
    },
    "options": [
-    "多運動，身體很健康。",
-    "他不喜歡運動。",
-    "他常常生病。"
+    "他八點就來了。",
+    "他沒來上課。",
+    "他九點半才來。"
    ],
-   "answer": 0,
-   "why": "Makan sehat & olahraga → 多運動，身體很健康。 B: 不喜歡運動 kebalikannya. C: 生病 = sakit, kebalikannya."
+   "answer": 2,
+   "why": "Kelas jam 8, ia baru datang jam 9:30 → 才來 → C. A: kebalikannya. B: ia datang."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🌧️🚶",
-    "label": "hujan, tetapi tetap berangkat"
+    "icon": "🏃",
+    "label": "seorang laki-laki berolahraga setiap hari dan tampak sehat",
+    "img": "B40-L10"
    },
-   "text": "雖然下雨，（　）我還是去學校。",
+   "text": "因為他每天運動，（　）身體很健康。",
    "options": [
-    "因為",
+    "所以",
     "但是",
-    "所以"
+    "才"
    ],
-   "answer": 1,
-   "why": "Pasangan 雖然 adalah 但是/可是. A: 因為 = karena. C: 所以 = maka — tidak berpasangan dengan 雖然."
+   "answer": 0,
+   "why": "因為…，所以… = sebab-akibat. B: 但是 untuk pertentangan. C: 才 = baru."
   },
   {
-   "type": "listen_dialog",
-   "part": "聽力 Part 3 · Dialog beberapa putaran",
-   "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
-   "lines": [
-    {
-     "sp": "男",
-     "zh": "你怎麼今天才來上課？"
-    },
-    {
-     "sp": "女",
-     "zh": "因為我感冒了，所以昨天沒來。"
-    },
-    {
-     "sp": "男",
-     "zh": "現在好了嗎？"
-    },
-    {
-     "sp": "女",
-     "zh": "雖然頭還有一點痛，但是好多了。"
-    }
-   ],
-   "question": "這位小姐昨天為什麼沒來上課？",
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "我感冒了，所以打電話給陳老師：「老師，（1），我今天不能上課。」老師說：「好，你要多休息。」下午美美來看我。（2），（3）我很高興。美美說：「你昨天幾點睡覺？」我說：「一點（4）睡覺。」她說：「（5），你要早一點睡覺。」",
    "options": [
-    "她忘了上課",
-    "她去旅行",
-    "她感冒了"
+    "因為我生病了",
+    "雖然我很不舒服",
+    "但是",
+    "才",
+    "身體健康很重要",
+    "所以很健康"
+   ],
+   "answers": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "why": "(1) alasan → 因為我生病了. (2) 雖然我很不舒服 + (3) 但是 + 我很高興. (4) 一點 + 才 + 睡覺. (5) 身體健康很重要 → 要早一點睡覺. 所以很健康 bertentangan dengan ia sedang sakit."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "我哥哥工作很忙，常常晚上十二點才回家。因為他沒有時間運動，所以身體不太健康。醫生說他要早一點睡覺，也要多運動。現在他每天早上跑步半個小時。",
+   "question": "哥哥現在怎麼做？",
+   "options": [
+    "每天十二點才睡覺",
+    "不去上班",
+    "每天早上跑步",
+    "不吃早飯"
    ],
    "answer": 2,
-   "why": "因為我感冒了，所以昨天沒來. B & A tidak disebut."
+   "why": "現在他每天早上跑步半個小時 → C. A: kebiasaan lamanya. B dan D: tidak disebut."
   }
  ],
  "B41": [
+  {
+   "type": "listen_pic",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+   "picture": {
+    "icon": "😢",
+    "label": "dia menangis",
+    "img": "B41-1"
+   },
+   "question": "她怎麼了？",
+   "options": [
+    "她哭了。",
+    "她笑了。",
+    "她生氣了。"
+   ],
+   "answer": 0,
+   "why": "Ia menangis → 她哭了 → A. B: kebalikannya. C: perasaan lain."
+  },
   {
    "type": "listen_pic",
    "part": "聽力 Part 1 · Deskripsi gambar",
@@ -699,12 +669,12 @@
    },
    "question": "她怎麼了？",
    "options": [
-    "她很生氣。",
     "她在笑。",
+    "她很生氣。",
     "她很難過。"
    ],
-   "answer": 0,
-   "why": "生氣 = marah (alis turun, kepulan)."
+   "answer": 1,
+   "why": "Ia sangat marah → 她很生氣 → B. A: kebalikannya. C: perasaan lain."
   },
   {
    "type": "listen_pic",
@@ -718,113 +688,104 @@
    "question": "小孩在做什麼？",
    "options": [
     "在哭。",
-    "在笑。",
-    "在睡覺。"
-   ],
-   "answer": 1,
-   "why": "笑 = tertawa."
-  },
-  {
-   "type": "listen_reply",
-   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "聽說你明天要搬家？",
-   "options": [
-    "我聽說搬家。",
-    "明天很聽說。",
-    "對，我要搬到學校附近。"
+    "在睡覺。",
+    "在笑。"
    ],
    "answer": 2,
-   "why": "聽說 = dengar-dengar."
-  },
-  {
-   "type": "read_sent",
-   "part": "閱讀 Part 1 · Kalimat → gambar",
-   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他哭了。",
-   "options": [
-    {
-     "icon": "😊",
-     "label": "senang"
-    },
-    {
-     "icon": "😠",
-     "label": "marah"
-    },
-    {
-     "icon": "😭",
-     "label": "menangis"
-    }
-   ],
-   "answer": 2,
-   "why": "哭 = menangis."
+   "why": "Anak tertawa → 在笑 → C. A: kebalikannya. B: kegiatan lain."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "😢",
-    "label": "wajah sedih"
+    "icon": "😆",
+    "label": "seorang anak laki-laki tertawa terbahak-bahak",
+    "img": "B41-L9"
    },
    "options": [
-    "她很高興。",
-    "她很生氣。",
-    "她很難過。"
+    "他很生氣。",
+    "他很難過。",
+    "他在笑。"
    ],
    "answer": 2,
-   "why": "難過 = sedih."
+   "why": "Tertawa → 他在笑 → C. A dan B: perasaan lain."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🙇",
-    "label": "minta maaf kepada teman"
+    "icon": "☂️",
+    "label": "hujan, tetapi keluarga tetap pergi ke taman membawa payung",
+    "img": "B41-L10"
    },
-   "text": "我（　）朋友說對不起。",
+   "text": "雖然下雨，（　）我們還是去公園。",
    "options": [
-    "讓",
-    "跟",
-    "給"
-   ],
-   "answer": 1,
-   "why": "跟 + orang + 說 = berbicara kepada …."
-  },
-  {
-   "type": "listen_dialog",
-   "part": "聽力 Part 3 · Dialog beberapa putaran",
-   "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
-   "lines": [
-    {
-     "sp": "女",
-     "zh": "你跟他說對不起了嗎？"
-    },
-    {
-     "sp": "男",
-     "zh": "說了。可是他還在生氣。"
-    },
-    {
-     "sp": "女",
-     "zh": "聽說他昨天難過得哭了。"
-    },
-    {
-     "sp": "男",
-     "zh": "我知道，我明天再請他吃飯。"
-    }
-   ],
-   "question": "那個人現在怎麼樣？",
-   "options": [
-    "還在生氣",
-    "很高興",
-    "在笑"
+    "可是",
+    "因為",
+    "所以"
    ],
    "answer": 0,
-   "why": "他還在生氣. B & C: kebalikan."
+   "why": "雖然…，可是… = meskipun …, tetapi …. B dan C: untuk sebab-akibat."
+  },
+  {
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "我忘了安妮的生日，她（1）。美美說：「（2），你也去吧。」第二天，我（3）。（4），可是她看到蛋糕就（5）。",
+   "options": [
+    "很生氣",
+    "聽說安妮明天請朋友吃飯",
+    "跟安妮說對不起",
+    "雖然她還有一點生氣",
+    "笑了",
+    "比方說蘋果"
+   ],
+   "answers": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "why": "(1) 很生氣. (2) 聽說 + kabar acara makan. (3) 跟安妮說對不起. (4) 雖然她還有一點生氣 + 可是…. (5) 就 + 笑了. 比方說蘋果 tidak cocok di titik mana pun."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "我很喜歡看電影。我喜歡會讓我笑的電影，比方說，美國的小孩看的電影。可是我的姊姊喜歡會讓人哭的電影，所以我們常常看不一樣的電影。",
+   "question": "我和姊姊為什麼常常看不一樣的電影？",
+   "options": [
+    "因為姊姊不喜歡看電影。",
+    "因為我們喜歡的電影不一樣。",
+    "因為我不喜歡笑。",
+    "因為電影太貴了。"
+   ],
+   "answer": 1,
+   "why": "Ia suka film lucu, kakaknya suka film sedih → selera berbeda (parafrase) → B. A dan C: kebalikannya. D: tidak disebut."
   }
  ],
  "B42": [
+  {
+   "type": "listen_pic",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+   "picture": {
+    "icon": "🎒➡️📕",
+    "label": "dia mengeluarkan buku dari tas",
+    "img": "B42-1"
+   },
+   "question": "他從書包裡拿出什麼？",
+   "options": [
+    "一本書。",
+    "一支筆。",
+    "他的手機。"
+   ],
+   "answer": 0,
+   "why": "Ia mengeluarkan buku dari tas → 一本書 → A. B dan C: benda lain."
+  },
   {
    "type": "listen_pic",
    "part": "聽力 Part 1 · Deskripsi gambar",
@@ -837,11 +798,11 @@
    "question": "這隻貓怎麼樣？",
    "options": [
     "很奇怪。",
-    "很可愛。",
-    "很笨。"
+    "很笨。",
+    "很可愛。"
    ],
-   "answer": 1,
-   "why": "可愛 = lucu/imut."
+   "answer": 2,
+   "why": "Anak kucing yang lucu → 很可愛 → C. A dan B: sifat lain."
   },
   {
    "type": "listen_pic",
@@ -859,110 +820,100 @@
     "沒有意思。"
    ],
    "answer": 1,
-   "why": "有意思 = menarik. Orang membaca sambil tertawa."
-  },
-  {
-   "type": "listen_reply",
-   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你喜歡的人是什麼樣子？",
-   "options": [
-    "他很聰明，也很可愛。",
-    "我喜歡的樣子。",
-    "他很奇怪的人喜歡。"
-   ],
-   "answer": 0,
-   "why": "VP 的 N: 你喜歡的人 = orang yang kamu sukai."
-  },
-  {
-   "type": "read_sent",
-   "part": "閱讀 Part 1 · Kalimat → gambar",
-   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "她從皮包裡拿出手機。",
-   "options": [
-    {
-     "icon": "👛",
-     "label": "dompet"
-    },
-    {
-     "icon": "📱👜",
-     "label": "memasukkan ponsel ke tas"
-    },
-    {
-     "icon": "👜📱",
-     "label": "mengeluarkan ponsel dari tas"
-    }
-   ],
-   "answer": 2,
-   "why": "V出 = (mengambil) keluar."
+   "why": "Ia membaca sambil tertawa → 很有意思 → B. A: tidak terlihat. C: kebalikannya."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🧠💡",
-    "label": "orang pintar"
+    "icon": "💯",
+    "label": "anak laki-laki memegang kertas ujian bernilai 100",
+    "img": "B42-L9"
    },
    "options": [
     "他很笨。",
     "他很聰明。",
-    "他很可愛。"
+    "他很奇怪。"
    ],
    "answer": 1,
-   "why": "聰明 = pintar."
+   "why": "Nilai 100 → 很聰明 → B. A: kebalikannya. C: tidak sesuai gambar."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🔧",
-    "label": "alat yang berguna"
+    "icon": "📕",
+    "label": "seorang perempuan menunjukkan buku yang ia beli kemarin",
+    "img": "B42-L10"
    },
-   "text": "這個東西很（　）。",
+   "text": "這是我昨天買（　）書。",
    "options": [
-    "聰明",
-    "笨",
-    "有用"
+    "了",
+    "出",
+    "的"
    ],
    "answer": 2,
-   "why": "有用 = berguna. 聰明/笨 untuk makhluk, bukan benda."
+   "why": "VP + 的 + N: 昨天買的書 = buku yang kemarin kubeli. A: 買了書 tidak bisa di sini. B: 買出 tidak bermakna."
   },
   {
-   "type": "listen_dialog",
-   "part": "聽力 Part 4 · Dialog + makna tersirat",
-   "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
-   "lines": [
-    {
-     "sp": "男",
-     "zh": "你喜歡的人是什麼樣子？"
-    },
-    {
-     "sp": "女",
-     "zh": "我喜歡聰明、有意思的人。"
-    },
-    {
-     "sp": "男",
-     "zh": "那我呢？我很聰明啊！"
-    },
-    {
-     "sp": "女",
-     "zh": "你很可愛，可是有時候有點笨。"
-    }
-   ],
-   "question": "這位小姐覺得這位先生怎麼樣？",
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "志明有（1）。我問他：「你喜歡的人（2）？」他說：「她很（3），也很可愛。」第二天我問安妮：「你覺得志明怎麼樣？」安妮說：「他是一個（4）。」她從皮包裡（5），說：「這是志明送我的書。」",
    "options": [
-    "很聰明",
-    "沒有用",
-    "很奇怪",
-    "可愛，可是有點笨"
+    "喜歡的人",
+    "是什麼樣子",
+    "聰明",
+    "很有意思的人",
+    "拿出一本書",
+    "很笨的心"
+   ],
+   "answers": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "why": "(1) 有 + 喜歡的人. (2) 是什麼樣子. (3) 很 + 聰明. (4) 一個 + 很有意思的人. (5) 拿出一本書. 很笨的心 tidak masuk akal."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "我的妹妹今年五歲，她很可愛，也很聰明。她會說中文和英語，也會唱很多歌。可是她有時候很奇怪，比方說，她喜歡跟她的小狗說話，她說小狗也會跟她說話。",
+   "question": "哪一件事讓人覺得妹妹很奇怪？",
+   "options": [
+    "她會唱歌",
+    "她會說英語",
+    "她吃很多飯",
+    "她跟小狗說話"
    ],
    "answer": 3,
-   "why": "你很可愛，可是有時候有點笨. A = klaim si pria sendiri. C & B tidak disebut."
+   "why": "奇怪，比方說，她喜歡跟她的小狗說話 → D. A dan B: hal yang menunjukkan ia pintar. C: tidak disebut."
   }
  ],
  "B43": [
+  {
+   "type": "listen_pic",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+   "picture": {
+    "icon": "😰",
+    "label": "dia gugup, berkeringat, tangan gemetar",
+    "img": "B43-1"
+   },
+   "question": "她看起來怎麼樣？",
+   "options": [
+    "很高興。",
+    "很緊張。",
+    "很累。"
+   ],
+   "answer": 1,
+   "why": "Berkeringat dan tangan gemetar → 很緊張 → B. A dan C: perasaan lain."
+  },
   {
    "type": "listen_pic",
    "part": "聽力 Part 1 · Deskripsi gambar",
@@ -974,12 +925,12 @@
    },
    "question": "他看起來怎麼樣？",
    "options": [
+    "很緊張。",
     "很高興。",
-    "不緊張。",
-    "很緊張。"
+    "不緊張。"
    ],
-   "answer": 2,
-   "why": "緊張 = gugup."
+   "answer": 0,
+   "why": "Ia gugup sebelum tampil → 很緊張 → A. B: perasaan lain. C: kebalikannya."
   },
   {
    "type": "listen_pic",
@@ -997,109 +948,100 @@
     "很苦。"
    ],
    "answer": 2,
-   "why": "苦 = pahit."
-  },
-  {
-   "type": "listen_reply",
-   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你敢一個人去旅行嗎？",
-   "options": [
-    "我敢旅行一個。",
-    "一個人很敢。",
-    "敢，我不怕。"
-   ],
-   "answer": 2,
-   "why": "敢 = berani."
-  },
-  {
-   "type": "read_sent",
-   "part": "閱讀 Part 1 · Kalimat → gambar",
-   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "工作很辛苦，他很累。",
-   "options": [
-    {
-     "icon": "🛌",
-     "label": "tidur nyenyak"
-    },
-    {
-     "icon": "😩💼",
-     "label": "kerja berat, lelah"
-    },
-    {
-     "icon": "🎉",
-     "label": "pesta"
-    }
-   ],
-   "answer": 1,
-   "why": "辛苦 = berat/melelahkan."
+   "why": "Minum obat sambil mengernyit → 很苦 → C. A dan B: rasa lain."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "😋🍜",
-    "label": "makanan yang kelihatan enak"
+    "icon": "📦",
+    "label": "laki-laki mengangkat kardus berat sambil berkeringat",
+    "img": "B43-L9"
    },
    "options": [
-    "這個菜看起來很好吃。",
-    "這個菜很苦。",
-    "這個菜聽起來很好吃。"
+    "他的工作很辛苦。",
+    "他的工作很簡單。",
+    "他在休息。"
    ],
    "answer": 0,
-   "why": "Dilihat → 看起來; didengar → 聽起來."
+   "why": "Mengangkat barang berat sambil berkeringat → 很辛苦 → A. B: kebalikannya. C: ia sedang bekerja."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🔍",
-    "label": "menemukan"
+    "icon": "🏃",
+    "label": "seorang anak berlari cepat pulang ke rumah",
+    "img": "B43-L10"
    },
-   "text": "我（　）我的錢包在書包裡。",
+   "text": "他很快（　）跑回家了。",
    "options": [
-    "發現",
-    "敢",
-    "相信"
+    "的",
+    "地",
+    "得"
    ],
-   "answer": 0,
-   "why": "發現 = menemukan/menyadari."
+   "answer": 1,
+   "why": "Vs + 地 + V: 很快地跑 (secara cepat). A: 的 untuk kata benda. C: 得 sesudah kata kerja."
   },
   {
-   "type": "listen_dialog",
-   "part": "聽力 Part 3 · Dialog beberapa putaran",
-   "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
-   "lines": [
-    {
-     "sp": "女",
-     "zh": "你看起來很緊張，怎麼了？"
-    },
-    {
-     "sp": "男",
-     "zh": "明天要考試，我怕考不好。"
-    },
-    {
-     "sp": "女",
-     "zh": "你那麼努力，一定沒問題。"
-    },
-    {
-     "sp": "男",
-     "zh": "謝謝你相信我。"
-    }
-   ],
-   "question": "這位先生為什麼緊張？",
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "明天我要在大家前面說中文，我（1）。美美說：「你（2）。」我說：「我（3）。」美美說：「別怕，（4）！」說了以後，我（5）說中文很有意思。",
    "options": [
-    "這位小姐不相信他",
-    "他工作很辛苦",
-    "明天要考試"
+    "很緊張",
+    "看起來不太好",
+    "不敢說",
+    "我相信你可以",
+    "發現",
+    "很苦地跑"
    ],
-   "answer": 2,
-   "why": "明天要考試，我怕考不好. A: kebalikan (謝謝你相信我). B tidak disebut."
+   "answers": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "why": "(1) 很緊張. (2) 看起來不太好. (3) 不敢說. (4) 我相信你可以. (5) 發現 + 說中文很有意思. 很苦地跑 tidak cocok di titik mana pun."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "我姊姊在醫院當護士，工作很辛苦，有時候晚上也要上班。可是她說，看到病人好了，她就很高興。我發現她雖然很累，但是很喜歡她的工作。",
+   "question": "姊姊覺得她的工作怎麼樣？",
+   "options": [
+    "很簡單",
+    "很辛苦，可是她很喜歡",
+    "不喜歡",
+    "很有錢"
+   ],
+   "answer": 1,
+   "why": "雖然很累，但是很喜歡她的工作 → B. A dan C: kebalikannya. D: tidak disebut."
   }
  ],
  "B44": [
+  {
+   "type": "listen_pic",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+   "picture": {
+    "icon": "🎤💃",
+    "label": "di pesta: ada yang menyanyi, ada yang menari",
+    "img": "B44-1"
+   },
+   "question": "大家在做什麼？",
+   "options": [
+    "有的人在唱歌，有的人在跳舞。",
+    "大家都在唱歌。",
+    "大家都在跳舞。"
+   ],
+   "answer": 0,
+   "why": "Ada yang menyanyi, ada yang menari → 有的…，有的… → A. B dan C: hanya satu kegiatan untuk semua."
+  },
   {
    "type": "listen_pic",
    "part": "聽力 Part 1 · Deskripsi gambar",
@@ -1111,12 +1053,12 @@
    },
    "question": "過年你們吃什麼？",
    "options": [
-    "吃餃子。",
     "吃蛋糕。",
+    "吃餃子。",
     "吃漢堡。"
    ],
-   "answer": 0,
-   "why": "過年 = merayakan Tahun Baru Imlek; tradisi makan 餃子."
+   "answer": 1,
+   "why": "Keluarga makan pangsit saat Imlek → 吃餃子 → B. A dan C: makanan lain."
   },
   {
    "type": "listen_pic",
@@ -1134,107 +1076,79 @@
     "新年快樂！"
    ],
    "answer": 2,
-   "why": "新年快樂 = selamat tahun baru."
-  },
-  {
-   "type": "listen_reply",
-   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你喜歡臺灣的文化嗎？",
-   "options": [
-    "喜歡，我覺得很有意思。",
-    "文化很喜歡。",
-    "我是臺灣文化。"
-   ],
-   "answer": 0,
-   "why": "文化 = budaya."
-  },
-  {
-   "type": "read_sent",
-   "part": "閱讀 Part 1 · Kalimat → gambar",
-   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "他今天又去夜市了。",
-   "options": [
-    {
-     "icon": "🏮1️⃣",
-     "label": "pertama kali ke pasar malam"
-    },
-    {
-     "icon": "🏠",
-     "label": "di rumah"
-    },
-    {
-     "icon": "🏮🔁",
-     "label": "ke pasar malam lagi"
-    }
-   ],
-   "answer": 2,
-   "why": "又 = lagi (sudah terjadi)."
+   "why": "Kembang api tahun baru → 新年快樂 → C. A dan B: ucapan lain."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "📖🎤",
-    "label": "sebagian membaca, sebagian bernyanyi"
+    "icon": "🚪",
+    "label": "kemarin dan hari ini, anak yang sama datang ke pintu",
+    "img": "B44-L9"
    },
    "options": [
-    "大家都唱歌。",
-    "有的人看書，有的人唱歌。",
-    "大家都看書。"
+    "他第一次來。",
+    "他又來了。",
+    "他沒來。"
    ],
    "answer": 1,
-   "why": "有的…，有的… = sebagian …, sebagian …."
+   "why": "Kemarin datang, hari ini datang lagi → 又來了 → B. A: bukan yang pertama. C: kebalikannya."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🧧",
-    "label": "angpau tahun baru"
+    "icon": "🥟",
+    "label": "orang asing makan pangsit bersama keluarga Taiwan saat Imlek",
+    "img": "B44-L10"
    },
-   "text": "（　）快樂！",
+   "text": "我很喜歡臺灣的（　），比方說過年吃餃子。",
    "options": [
-    "文化",
     "新年",
-    "有的"
+    "有的",
+    "文化"
    ],
-   "answer": 1,
-   "why": "新年快樂 = selamat tahun baru."
+   "answer": 2,
+   "why": "臺灣的文化 + 比方說 (contoh budaya). A: 臺灣的新年, lalu 比方說過年 kurang wajar. B: 有的 tidak bisa sesudah 的."
   },
   {
-   "type": "listen_dialog",
-   "part": "聽力 Part 4 · Dialog + makna tersirat",
-   "instr": "Dengarkan dialognya, lalu pilih jawaban yang benar.",
-   "lines": [
-    {
-     "sp": "男",
-     "zh": "過年你要做什麼？"
-    },
-    {
-     "sp": "女",
-     "zh": "有的人回家，有的人去旅行，我要回家。"
-    },
-    {
-     "sp": "男",
-     "zh": "你家在哪裡？"
-    },
-    {
-     "sp": "女",
-     "zh": "在南部，坐火車要四個小時。"
-    }
-   ],
-   "question": "這位小姐過年要去哪裡？",
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "過年快到了，在臺灣，（1）回家，有的人去旅行。美美說：「你（2）跟我回臺中過年吧！」在美美家，大家（3）。過了新年，安妮說：「我（4）去花蓮了。」我說：「我很喜歡臺灣的（5）！」",
    "options": [
-    "去旅行",
-    "去北部",
-    "在臺北",
-    "回南部的家"
+    "有的人",
+    "要不要",
+    "一起吃飯",
+    "又",
+    "過年文化",
+    "新年快"
+   ],
+   "answers": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "why": "(1) 有的人 + 回家. (2) 要不要 + 跟我…. (3) 大家 + 一起吃飯. (4) 又 + 去花蓮了. (5) 臺灣的 + 過年文化. 新年快 tidak lengkap."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "我的同學是從很多國家來的。過年，有的同學回國看家人，有的同學去旅行，也有的同學在臺灣跟朋友一起過年。我去年回了印尼，今年我又在臺灣過年。",
+   "question": "今年過年我在哪裡？",
+   "options": [
+    "印尼",
+    "同學的國家",
+    "旅行",
+    "臺灣"
    ],
    "answer": 3,
-   "why": "我要回家 + 家在南部. A: yang dilakukan sebagian orang. C & B tidak berdasar."
+   "why": "今年我又在臺灣過年 → D. A: tahun lalu. B dan C: kegiatan teman-teman lain."
   }
  ],
  "B45": [
@@ -1243,9 +1157,27 @@
    "part": "聽力 Part 1 · Deskripsi gambar",
    "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
    "picture": {
+    "icon": "💡",
+    "label": "di kelas, seorang perempuan mengangkat tangan dengan lampu ide di atas kepala",
+    "img": "B45-1"
+   },
+   "question": "她有什麼？",
+   "options": [
+    "她有一個問題。",
+    "她有一本書。",
+    "她有一個好想法。"
+   ],
+   "answer": 2,
+   "why": "Lampu ide di atas kepala → 一個好想法 → C. A: tanda tanya tidak ada di gambar. B: benda lain."
+  },
+  {
+   "type": "listen_pic",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+   "picture": {
     "icon": "🙏☀️",
     "label": "dia berharap besok cerah",
-    "img": "B45-1"
+    "img": "B45-2"
    },
    "question": "你希望明天怎麼樣？",
    "options": [
@@ -1254,7 +1186,7 @@
     "希望明天下雪。"
    ],
    "answer": 1,
-   "why": "希望 = berharap. Gelembung pikiran: matahari."
+   "why": "Ia berharap besok cerah → 希望明天不下雨 → B. A dan C: cuaca lain."
   },
   {
    "type": "listen_pic",
@@ -1263,7 +1195,7 @@
    "picture": {
     "icon": "🤝",
     "label": "dia dengan senang hati membantu membawa kotak",
-    "img": "B45-2"
+    "img": "B45-3"
    },
    "question": "他願意幫你嗎？",
    "options": [
@@ -1272,109 +1204,100 @@
     "他在睡覺。"
    ],
    "answer": 0,
-   "why": "願意 = bersedia."
-  },
-  {
-   "type": "listen_reply",
-   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你認為中文難不難？",
-   "options": [
-    "中文很認為。",
-    "我認為中文。",
-    "我認為不太難。"
-   ],
-   "answer": 2,
-   "why": "認為 = menganggap → sampaikan pendapat."
-  },
-  {
-   "type": "read_sent",
-   "part": "閱讀 Part 1 · Kalimat → gambar",
-   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "這個蛋糕，我很喜歡。",
-   "options": [
-    {
-     "icon": "🍦❤️",
-     "label": "suka es krim"
-    },
-    {
-     "icon": "🍰❤️",
-     "label": "suka kue ini"
-    },
-    {
-     "icon": "🍰👎",
-     "label": "tidak suka kue ini"
-    }
-   ],
-   "answer": 1,
-   "why": "Topik di depan: 這個蛋糕 → yang disukai."
+   "why": "Ia dengan senang hati membantu → 他願意幫我 → A. B: kebalikannya. C: kegiatan lain."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "💡",
-    "label": "punya ide"
+    "icon": "✈️",
+    "label": "laki-laki membayangkan naik pesawat ke Taiwan",
+    "img": "B45-L9"
    },
    "options": [
-    "我有一個朋友。",
-    "我有一個想法。",
-    "我沒有錢。"
+    "他不願意去臺灣。",
+    "他去過臺灣。",
+    "他希望去臺灣。"
    ],
-   "answer": 1,
-   "why": "想法 = pendapat/ide."
+   "answer": 2,
+   "why": "Membayangkan pergi → 希望去臺灣 → C. A: kebalikannya. B: belum pergi, masih berharap."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🙋",
-    "label": "bersedia ikut"
+    "icon": "👩",
+    "label": "ibu menunjuk anak besar yang meminta dibantu mencuci baju",
+    "img": "B45-L10"
    },
-   "text": "你（　）跟我一起去嗎？",
+   "text": "我（　）不是你的媽媽，你自己洗吧！",
    "options": [
-    "願意",
-    "想法",
-    "認為"
+    "又",
+    "認為",
+    "希望"
    ],
    "answer": 0,
-   "why": "願意 = bersedia."
+   "why": "又 + 不是 = penegasan/bantahan (\"kan aku bukan …\"). B dan C: tidak cocok dengan pola ini."
   },
   {
-   "type": "listen_dialog",
-   "part": "聽力 Part 3 · Dialog beberapa putaran",
-   "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
-   "lines": [
-    {
-     "sp": "男",
-     "zh": "我認為看電影以後再吃飯比較好。"
-    },
-    {
-     "sp": "女",
-     "zh": "我的想法不一樣，我希望先吃飯。"
-    },
-    {
-     "sp": "男",
-     "zh": "好吧，我願意聽你的。"
-    },
-    {
-     "sp": "女",
-     "zh": "謝謝！"
-    }
-   ],
-   "question": "他們會先做什麼？",
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "在課上，陳老師問：「學中文，你們有什麼（1）？」我說：「我（2）最重要。」美美說：「我（3）每天練習。」下課以後，安妮問我一個字。我說：「這個字，（4）。」安妮說：「你（5）看字典嗎？」",
    "options": [
-    "回家",
-    "看電影",
-    "吃飯"
+    "好想法",
+    "認為多說",
+    "希望大家",
+    "我也不認識",
+    "願意幫我",
+    "又不是我"
    ],
-   "answer": 2,
-   "why": "Si pria mengalah (我願意聽你的) → 先吃飯. B: usul awal si pria. A tidak disebut."
+   "answers": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "why": "(1) 什麼 + 好想法. (2) 認為多說 + 最重要. (3) 希望大家 + 每天練習. (4) 這個字 (topik), 我也不認識. (5) 你 + 願意幫我 + 看字典嗎. 又不是我 tidak cocok di titik mana pun."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "我的中文老師認為，學語言很好的方法是多說。可是很多同學不好意思說中文。老師希望我們每天找一個臺灣人說話。我認為這個想法很好，我願意每天說。",
+   "question": "老師希望學生做什麼？",
+   "options": [
+    "每天寫字",
+    "每天看書",
+    "不要說中文",
+    "每天找臺灣人說話"
+   ],
+   "answer": 3,
+   "why": "老師希望我們每天找一個臺灣人說話 → D. A dan B: tidak disebut. C: kebalikannya."
   }
  ],
  "B46": [
+  {
+   "type": "listen_pic",
+   "part": "聽力 Part 1 · Deskripsi gambar",
+   "instr": "Lihat gambar. Dengarkan pertanyaan dan jawaban A–C, lalu pilih jawaban yang cocok dengan gambar.",
+   "picture": {
+    "icon": "🍳❌",
+    "label": "dia buru-buru keluar, sarapan di meja tidak disentuh",
+    "img": "B46-1"
+   },
+   "question": "他今天吃早餐了嗎？",
+   "options": [
+    "他沒吃早餐。",
+    "他吃了早餐。",
+    "他在做早餐。"
+   ],
+   "answer": 0,
+   "why": "Sarapan di meja tidak disentuh → 他沒吃早餐 → A. B: kebalikannya. C: kegiatan lain."
+  },
   {
    "type": "listen_pic",
    "part": "聽力 Part 1 · Deskripsi gambar",
@@ -1387,11 +1310,11 @@
    "question": "你決定做什麼？",
    "options": [
     "去工作。",
-    "去臺灣念書。",
-    "在家。"
+    "在家。",
+    "去臺灣念書。"
    ],
-   "answer": 1,
-   "why": "決定 = memutuskan."
+   "answer": 2,
+   "why": "Ia membayangkan kuliah di Taiwan → 去臺灣念書 → C. A dan B: rencana lain."
   },
   {
    "type": "listen_pic",
@@ -1404,111 +1327,84 @@
    },
    "question": "他昨天來上課了嗎？",
    "options": [
-    "他沒來上課。",
     "他來上課了。",
+    "他沒來上課。",
     "他在教室。"
    ],
-   "answer": 0,
-   "why": "沒來上課 = tidak masuk kelas."
-  },
-  {
-   "type": "listen_reply",
-   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-   "instr": "Dengarkan kalimatnya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你打算什麼時候回國？",
-   "options": [
-    "我打算明年回去。",
-    "我打算回國。",
-    "明年是打算。"
-   ],
-   "answer": 0,
-   "why": "Ditanya KAPAN → sebut waktunya."
-  },
-  {
-   "type": "read_sent",
-   "part": "閱讀 Part 1 · Kalimat → gambar",
-   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
-   "text": "我今天沒喝咖啡。",
-   "options": [
-    {
-     "icon": "🍵",
-     "label": "minum teh"
-    },
-    {
-     "icon": "🚫☕",
-     "label": "tidak minum kopi"
-    },
-    {
-     "icon": "☕",
-     "label": "minum kopi"
-    }
-   ],
    "answer": 1,
-   "why": "沒喝 = tidak minum (hari ini)."
+   "why": "Kursinya kosong kemarin → 他沒來上課 → B. A dan C: kebalikannya."
   },
   {
    "type": "read_pick",
    "part": "閱讀 Part 2 · Gambar → kalimat",
    "instr": "Lihat gambarnya, lalu pilih kalimat yang cocok.",
    "picture": {
-    "icon": "🤔✅",
-    "label": "akhirnya memutuskan"
+    "icon": "📝",
+    "label": "perempuan menulis daftar rencana: tahun depan ke Taiwan",
+    "img": "B46-L9"
    },
    "options": [
-    "我沒有想法。",
-    "我不知道。",
-    "我決定了！"
+    "這是我的名字。",
+    "我沒有打算。",
+    "這是我明年的打算。"
    ],
    "answer": 2,
-   "why": "決定了 = sudah memutuskan."
+   "why": "Daftar rencana tahun depan → 明年的打算 → C. A: bukan nama. B: kebalikannya."
   },
   {
    "type": "read_gap",
    "part": "閱讀 Part 3 · Isian bergambar",
    "instr": "Lihat gambarnya, lalu pilih kata yang tepat untuk titik kosong.",
    "picture": {
-    "icon": "🗓️",
-    "label": "rencana akhir pekan"
+    "icon": "🍰",
+    "label": "ibu menyodorkan kue kepada anak yang tampak ingin",
+    "img": "B46-L10"
    },
-   "text": "週末你（　）做什麼？",
+   "text": "你想吃，（　）吃吧！",
    "options": [
     "就",
     "沒",
     "打算"
    ],
-   "answer": 2,
-   "why": "打算 = berencana."
+   "answer": 0,
+   "why": "就 + V = (kalau begitu) langsung saja …. B: 沒 = tidak (lampau). C: 打算 = berencana."
   },
   {
-   "type": "listen_dialog",
-   "part": "聽力 Part 3 · Dialog beberapa putaran",
-   "instr": "Dengarkan dialognya, lalu jawab pertanyaannya.",
-   "lines": [
-    {
-     "sp": "女",
-     "zh": "你要去臺灣還是日本念書？"
-    },
-    {
-     "sp": "男",
-     "zh": "我決定了，就去臺灣念書！"
-    },
-    {
-     "sp": "女",
-     "zh": "為什麼？"
-    },
-    {
-     "sp": "男",
-     "zh": "因為我打算以後在臺灣工作。"
-    }
-   ],
-   "question": "這位先生要去哪裡念書？",
+   "type": "cloze",
+   "part": "閱讀 Part 4 · Melengkapi paragraf",
+   "instr": "Isi setiap titik kosong. Satu pilihan hanya boleh dipakai sekali, dan ada SATU pilihan yang tidak terpakai.",
+   "text": "安妮的弟弟（1），他打電話問安妮。安妮說：「我（2）。」弟弟問：「臺灣的學校貴嗎？」安妮說：「不太貴。」弟弟想了很久，說：「我決定了，（3）！」他（4），（5）念大學。",
    "options": [
-    "美國",
-    "日本",
-    "臺灣"
+    "不知道去哪裡念書",
+    "覺得臺灣很好",
+    "就去臺灣",
+    "打算先學半年中文",
+    "然後",
+    "沒有去過"
    ],
-   "answer": 2,
-   "why": "就去臺灣念書. B: pilihan lain yang tidak dipilih. A tidak disebut."
+   "answers": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "why": "(1) 不知道去哪裡念書. (2) 覺得臺灣很好. (3) 決定了 + 就去臺灣. (4) 打算先學半年中文. (5) 然後 + 念大學. 沒有去過 tidak cocok di titik mana pun."
+  },
+  {
+   "type": "read_mc",
+   "part": "閱讀 Part 5 · Pemahaman bacaan",
+   "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
+   "text": "我本來打算念了大學就工作，可是我發現我的英文不太好。所以我決定先去美國念一年英文，然後再回來找工作。我爸爸媽媽也說這個想法很好。",
+   "question": "我決定先做什麼？",
+   "options": [
+    "找工作",
+    "在家休息",
+    "念大學",
+    "去美國念英文"
+   ],
+   "answer": 3,
+   "why": "決定先去美國念一年英文 → D. A: dilakukan sesudahnya. C: sudah/tidak disebut sebagai rencana. B: tidak disebut."
   }
  ]
 }
