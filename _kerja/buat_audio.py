@@ -189,7 +189,7 @@ async def satu(sem, pool, prof, kunci_prof, text, path, gagal):
     ucap, ambil = ucapan(kunci_prof, text)
     p = profil(prof, ambil)
     async with sem:
-        for coba in range(4):
+        for coba in range(8):   # suara YunJhe kadang tidak mengirim audio (NoAudioReceived) → coba lebih sering
             try:
                 tmp = os.path.join(tempfile.gettempdir(), os.path.basename(path) + '.raw.mp3')
                 iris = await rekam(p, ucap, ambil, tmp)
@@ -197,7 +197,7 @@ async def satu(sem, pool, prof, kunci_prof, text, path, gagal):
                 os.remove(tmp)
                 return
             except Exception:  # jaringan/limit: coba lagi pelan-pelan
-                await asyncio.sleep(2 + coba * 3)
+                await asyncio.sleep(2 + coba * 4)
         gagal.append(text)
 
 
@@ -216,7 +216,7 @@ async def main():
     todo = [(*v, f'{OUT}/{n}.mp3') for n, v in target.items()
             if not os.path.exists(f'{OUT}/{n}.mp3') or versi.get(n) != baru[n]]
     print(f'{len(job)} teks; perlu direkam (baru/aturan berubah): {len(todo)}')
-    sem, gagal = asyncio.Semaphore(8), []
+    sem, gagal = asyncio.Semaphore(4), []
     with ThreadPoolExecutor(6) as pool:
         for k in range(0, len(todo), 200):
             await asyncio.gather(*(satu(sem, pool, *x, gagal) for x in todo[k:k + 200]))
