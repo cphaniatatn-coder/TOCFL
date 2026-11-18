@@ -32,17 +32,74 @@
  ],
  "tasks": [
   {
-   "type": "listen_reply",
+   "type": "listen_dialog",
    "part": "聽力 Part 2 · Tanya-jawab satu putaran",
-   "instr": "Dengarkan pertanyaannya, lalu pilih jawaban yang paling cocok.",
-   "audio": "你吃過晚飯了嗎？",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "女",
+     "zh": "你吃過晚飯了嗎？"
+    },
+    {
+     "sp": "男",
+     "zh": "吃過了，我剛才吃了一碗炒飯。"
+    }
+   ],
+   "question": "這位先生晚飯吃了什麼？",
    "options": [
-    "晚飯在餐桌上。",
-    "我不喜歡吃晚飯。",
-    "吃過了，剛才吃的。"
+    {
+     "icon": "🖼️",
+     "label": "mangkuk nasi goreng yang sudah kosong",
+     "img": "C01-L4a"
+    },
+    {
+     "icon": "🖼️",
+     "label": "mangkuk mi yang sudah kosong",
+     "img": "C01-L4b"
+    },
+    {
+     "icon": "🖼️",
+     "label": "nasi goreng yang belum dimakan",
+     "img": "C01-L4c"
+    }
+   ],
+   "answer": 0,
+   "why": "吃過了 + 一碗炒飯 → A. B: makanannya lain. C: belum dimakan."
+  },
+  {
+   "type": "listen_dialog",
+   "part": "聽力 Part 2 · Tanya-jawab satu putaran",
+   "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
+   "lines": [
+    {
+     "sp": "男",
+     "zh": "電影幾點結束？"
+    },
+    {
+     "sp": "女",
+     "zh": "十一點半才結束。"
+    }
+   ],
+   "question": "電影幾點結束？",
+   "options": [
+    {
+     "icon": "🕐",
+     "label": "jam 11:00",
+     "img": "C01-L5a"
+    },
+    {
+     "icon": "🕐",
+     "label": "jam 1:30",
+     "img": "C01-L5b"
+    },
+    {
+     "icon": "🕐",
+     "label": "jam 11:30",
+     "img": "C01-L5c"
+    }
    ],
    "answer": 2,
-   "why": "Ditanya sudah makan atau belum → 吃過了. A hanya menyebut letak makanan; B tidak menjawab pertanyaan."
+   "why": "十一點半 → C. A: kurang setengah jam. B: 半 benar, jamnya salah."
   },
   {
    "type": "listen_dialog",
@@ -68,12 +125,24 @@
    ],
    "question": "這位先生現在要先做什麼？",
    "options": [
-    "看電影",
-    "寫中文功課",
-    "寫英文功課"
+    {
+     "icon": "🖼️",
+     "label": "menonton film",
+     "img": "C01-L6a"
+    },
+    {
+     "icon": "🖼️",
+     "label": "menulis PR bahasa Mandarin",
+     "img": "C01-L6b"
+    },
+    {
+     "icon": "🖼️",
+     "label": "menulis PR bahasa Inggris",
+     "img": "C01-L6c"
+    }
    ],
    "answer": 1,
-   "why": "PR bahasa Inggris sudah selesai (寫完了); PR bahasa Mandarin masih satu jam lagi, film baru sesudahnya (接著). A = kegiatan berikutnya; C sudah selesai."
+   "why": "英文寫完了，中文的還要寫一個小時 → sekarang menulis PR Mandarin → B. A: sesudah PR selesai (接著). C: sudah selesai."
   },
   {
    "type": "listen_dialog",
@@ -108,41 +177,29 @@
    "why": "已經吃光了吧 = mungkin sudah habis dimakan. A terbalik: kue dibeli si laki-laki. B: kue sudah tidak di meja. C: yang makan 小明."
   },
   {
-   "type": "cloze",
-   "part": "閱讀 Part 4 · Melengkapi paragraf",
-   "instr": "Pilih frasa yang tepat untuk tiap titik kosong. Ada SATU pilihan yang tidak terpakai.",
-   "text": "昨天我七點才下課，回到宿舍，覺得很餓。我到廚房一看，餐桌上（1），只有一碗炒飯。室友說：「那是我做的，你吃吧！」我很快就（2），真好吃。吃完飯，我洗了碗，然後（3）。十點功課寫完了，室友問我要不要一起看電影，我們就（4）。電影很長，十二點才（5），所以今天早上我很累。",
+   "type": "read_sent",
+   "part": "閱讀 Part 1 · Kalimat → gambar",
+   "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
+   "text": "他吃完飯，接著在餐桌上寫功課。",
    "options": [
-    "結束",
-    "吃光了",
-    "接著看了一部電影",
-    "開始寫功課",
-    "已經吃過了",
-    "沒有什麼菜"
+    {
+     "icon": "🖼️",
+     "label": "ia sedang makan",
+     "img": "C01-L8a"
+    },
+    {
+     "icon": "🖼️",
+     "label": "ia menonton TV",
+     "img": "C01-L8c"
+    },
+    {
+     "icon": "🖼️",
+     "label": "ia menulis PR di meja makan",
+     "img": "C01-L8b"
+    }
    ],
-   "answers": [
-    5,
-    1,
-    3,
-    2,
-    0
-   ],
-   "why": "(1) meja hampir kosong, hanya ada nasi goreng. (2) cepat dihabiskan (吃光了). (3) sesudah makan & cuci piring → mulai mengerjakan PR. (4) lanjut menonton film. (5) film baru selesai jam 12. 「已經吃過了」 bertentangan: dia datang dalam keadaan lapar."
-  },
-  {
-   "type": "read_mc",
-   "part": "閱讀 Part 5 · Pemahaman bacaan",
-   "instr": "Baca pengumuman ini, lalu pilih jawaban yang benar.",
-   "text": "我的室友安安每天都很忙。今天她早上八點就去學校了，晚上九點才回來。她說中午只吃了一個麵包，晚飯也沒吃。我剛才做了一些湯，還在廚房裡，就請她吃。她很快就吃光了，接著又去寫功課。她說功課明天早上要交，今天一定要寫完。",
-   "question": "這個人覺得安安今天怎麼樣？",
-   "options": [
-    "很忙，也很餓",
-    "很忙，可是不餓",
-    "很早就回家了",
-    "不想寫功課"
-   ],
-   "answer": 0,
-   "why": "Seharian sibuk, hanya makan roti, lalu cepat menghabiskan sup → sibuk dan lapar. B bertentangan dengan 很快就吃光了. C: dia baru pulang jam 9 malam. D: PR-nya 一定要寫完."
+   "answer": 2,
+   "why": "吃完飯 + 接著在餐桌上寫功課 → C. A: makannya sudah selesai. B: kegiatan lain."
   }
  ],
  "grammar": [

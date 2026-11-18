@@ -157,6 +157,29 @@ def pasang_catatan(m):
     return masalah
 
 
+TES_KATA = {k: v for k, v in json.load(open(f'{K}/tes_kata.json', encoding='utf-8')).items() if not k.startswith('_')}
+
+
+def pasang_tes_kata(m):
+    """Kalimat rumpang Tes Kosakata (butir 9–10) → m['tes_kata']. Mengembalikan daftar masalah format."""
+    salah = []
+    items = TES_KATA.get(m['code'], [])
+    inti = {v['w'] for v in m['vocab']['core']}
+    for i, t in enumerate(items, 1):
+        if t.get('zh', '').count('（　）') != 1:
+            salah.append(f"{m['code']} tes kata {i}: kalimat harus punya tepat satu （　）")
+        if t.get('a') not in inti:
+            salah.append(f"{m['code']} tes kata {i}: jawaban 「{t.get('a')}」 bukan kata 核心 bab ini")
+        x = t.get('x', [])
+        if len(x) != 3 or len(set(x)) != 3 or t.get('a') in x:
+            salah.append(f"{m['code']} tes kata {i}: pengecoh harus 3 kata berbeda dan bukan jawabannya")
+        if not t.get('id'):
+            salah.append(f"{m['code']} tes kata {i}: arti kalimat (id) kosong")
+    if items:
+        m['tes_kata'] = items
+    return salah
+
+
 def load_soal():
     """Soal tambahan di _kerja/soal/*.json: {"A01": [soal, ...], ...}"""
     out = {}
@@ -194,6 +217,7 @@ def main():
                 masalah += cek_soal(code, t)
             m['vocab'] = {'core': [entry(lv, t, ov) for t in f[5].split()],
                           'supplement': [entry(lv, t, ov) for t in (f[6].split() if len(f) > 6 else [])]}
+            masalah += pasang_tes_kata(m)
             # pinyin dipisah per suku kata (wǎnān → wǎn ān) & dicek jumlah/bacaannya terhadap hanzi
             for obj, zh, key in ([(v, v['w'], 'py') for L in m['vocab'].values() for v in L] + [(m, m['title'], 'title_py')] +
                                  [(l, l['zh'], 'py') for d in m['dialogs'] for l in d['lines']]):

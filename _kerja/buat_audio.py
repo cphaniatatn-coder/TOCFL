@@ -192,7 +192,8 @@ async def satu(sem, pool, prof, kunci_prof, text, path, gagal):
         for coba in range(8):   # suara YunJhe kadang tidak mengirim audio (NoAudioReceived) → coba lebih sering
             try:
                 tmp = os.path.join(tempfile.gettempdir(), os.path.basename(path) + '.raw.mp3')
-                iris = await rekam(p, ucap, ambil, tmp)
+                # batas waktu: koneksi edge-tts kadang menggantung tanpa error → seluruh run macet (2026-11-18)
+                iris = await asyncio.wait_for(rekam(p, ucap, ambil, tmp), timeout=60)
                 await asyncio.get_running_loop().run_in_executor(pool, potong, tmp, path, iris)
                 os.remove(tmp)
                 return

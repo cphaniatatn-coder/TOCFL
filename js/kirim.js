@@ -27,6 +27,7 @@ const Kirim = {
       selesai: !!p.done,
       tugas_best: p.tasks?.best ?? '', tugas_last: p.tasks?.last ?? '', tugas_kali: p.tasks?.tries ?? '',
       tes_best: p.tes?.best ?? '', tes_last: p.tes?.last ?? '', tes_kali: p.tes?.tries ?? '',
+      teskata_best: p.kata?.best ?? '', teskata_last: p.kata?.last ?? '', teskata_kali: p.kata?.tries ?? '',
       kata_hafal: Object.values(p.known || {}).filter(Boolean).length,
       yakin: (p.cando || []).filter(x => x === 2).length,
       target: p.goal || '', sulit: p.diff || '',

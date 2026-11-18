@@ -13,7 +13,8 @@ var KOLOM = {
   Peserta: ['uid', 'nama', 'kelas', 'terakhir_kirim', 'perangkat', 'modul_dibuka', 'modul_selesai', 'tes_bab', 'rata_tes',
             'ujian', 'kata_dilatih', 'jawaban_benar', 'jawaban_salah', 'jumlah_kirim'],
   Modul: ['uid', 'nama', 'kelas', 'kode', 'tahap', 'selesai', 'tugas_best', 'tugas_last', 'tugas_kali',
-          'tes_best', 'tes_last', 'tes_kali', 'kata_hafal', 'yakin', 'target', 'sulit', 'diperbarui'],
+          'tes_best', 'tes_last', 'tes_kali', 'kata_hafal', 'yakin', 'target', 'sulit', 'diperbarui',
+          'teskata_best', 'teskata_last', 'teskata_kali'],
   Ujian: ['uid', 'nama', 'kelas', 'vol', 'waktu', 'soal', 'nilai', 'dengar', 'baca'],
 };
 
@@ -39,7 +40,8 @@ function doPost(e) {
     simpanBanyak(sheet(ss, 'Modul'), function (x) { return x[0] + '|' + x[3]; },
       (d.modul || []).slice(0, 200).map(function (m) {
         return [uid, nama, kelas, teks(m.kode, 6), m.tahap, m.selesai ? 'ya' : '', m.tugas_best, m.tugas_last, m.tugas_kali,
-                m.tes_best, m.tes_last, m.tes_kali, m.kata_hafal, m.yakin, teks(m.target, 500), teks(m.sulit, 500), sekarang];
+                m.tes_best, m.tes_last, m.tes_kali, m.kata_hafal, m.yakin, teks(m.target, 500), teks(m.sulit, 500), sekarang,
+                m.teskata_best, m.teskata_last, m.teskata_kali];
       }));
     simpanBanyak(sheet(ss, 'Ujian'), function (x) { return x[0] + '|' + x[4]; },
       (d.ujian || []).slice(0, 500).map(function (u) {
@@ -59,6 +61,9 @@ function sheet(ss, nama) {
     s = ss.insertSheet(nama);
     s.getRange(1, 1, 1, KOLOM[nama].length).setValues([KOLOM[nama]]).setFontWeight('bold');
     s.setFrozenRows(1);
+  } else if (s.getLastColumn() < KOLOM[nama].length) {
+    // sheet lama dari versi sebelumnya: tambahkan judul kolom baru di kanan
+    s.getRange(1, 1, 1, KOLOM[nama].length).setValues([KOLOM[nama]]).setFontWeight('bold');
   }
   return s;
 }

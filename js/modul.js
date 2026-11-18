@@ -236,7 +236,7 @@ const Modul = {
     if (this.vlist) {
       return toolbar + `<div class="vgrid">${all.map((v, i) => `
         <button class="vcell ${v.layer}" onclick="Modul.keepScroll(()=>{Modul.vlist=false;Modul.vi=${i};Modul.vflip=true})">
-          <b lang="zh-TW">${esc(v.w)}</b>${this.showVpy ? `<small>${esc(v.py)}</small>` : ''}${known[v.w] ? '<i class="known">✓</i>' : ''}</button>`).join('')}</div>`;
+          <b lang="zh-TW">${esc(v.w)}</b>${this.showVpy ? `<small>${esc(v.py)}</small>` : ''}${known[v.w] ? '<i class="known">✓</i>' : ''}</button>`).join('')}</div>` + this.kataCard();
     }
     const i = Math.min(this.vi, all.length - 1), v = all[i];
     return toolbar + `
@@ -257,7 +257,16 @@ const Modul = {
         <button class="btn ghost" ${i === 0 ? 'disabled' : ''} onclick="Modul.keepScroll(()=>{Modul.vi=${i - 1};Modul.vflip=false})">‹</button>
         <div class="dots">${all.map((x, k) => `<i class="${k === i ? 'cur' : ''} ${known[x.w] ? 'k' : ''}"></i>`).join('')}</div>
         <button class="btn ghost" ${i === all.length - 1 ? 'disabled' : ''} onclick="Modul.keepScroll(()=>{Modul.vi=${i + 1};Modul.vflip=false})">›</button>
-      </div>`;
+      </div>` + this.kataCard();
+  },
+  // Tes Kosakata di akhir tahap 詞彙: 8 butir kata 核心 + kalimat rumpang; tanpa batas lulus, skor dicatat
+  kataCard() {
+    const m = this.m, k = App.getP(m.code).kata, n = Latihan.tesCount(m);
+    return `<button class="card kata-card" onclick="Latihan.startTes(${this.vol}, '${m.code}', location.hash)">
+        ${Pic.html('📝', 'mode-ic')}
+        <div><b>${T(`Vocabulary check · ${n} questions`, `Tes Kosakata · ${n} soal`)}</b>
+          <span>${T('核心 + 補充 words: listen, read, recall, use in a sentence', 'Kata 核心 + 補充: dengar, baca, ingat, pakai dalam kalimat')}${k ? ` · ${T('best', 'terbaik')} ${k.best}% (${k.tries}×)` : ''}</span></div>
+        <span class="chev">›</span></button>`;
   },
   toggleKnown(w) {
     const k = App.getP(this.m.code).known || {};

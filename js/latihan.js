@@ -11,7 +11,10 @@ const Latihan = {
     dengar: { ic: '🎧', name: T('Listen → Meaning', 'Dengar → Arti'), desc: T('Sound only, no text — trains your ear like 聽力.', 'Hanya suara, tanpa tulisan — melatih telinga seperti 聽力.') },
     hanzi:  { ic: '📖', name: T('Hanzi → Meaning', 'Hanzi → Arti'), desc: T('Recognise the written word without pinyin — like 閱讀.', 'Kenali kata tertulis tanpa pinyin — seperti 閱讀.') },
     arti:   { ic: '🔁', name: T('Meaning → Hanzi', 'Arti → Hanzi'), desc: T('From English, choose the right hanzi.', 'Dari bahasa Indonesia, pilih hanzi yang tepat.') },
+    tes:    { ic: '📝', name: T('Vocabulary check', 'Tes Kosakata'), desc: '' },
   },
+  // Tes Kosakata per bab: 3 dengar→arti, 3 hanzi→arti, 2 arti→hanzi (kata 核心), lalu kalimat rumpang dari data
+  TES_KINDS: ['dengar', 'dengar', 'dengar', 'hanzi', 'hanzi', 'hanzi', 'arti', 'arti'],
 
   stats() { return Store.get(VSTATS_KEY, {}); },
   id(code, w) { return `${code}:${w}`; },
@@ -43,7 +46,7 @@ const Latihan = {
       <div class="field-k">${T('Take words from modules…', 'Ambil kata dari modul…')}</div>
       <div class="seg wrap">${scopes.map(([k, l, ok]) => `<button class="${k === scope ? 'on' : ''}" ${ok ? '' : 'disabled'} onclick="Latihan._scope='${k}';App.route()">${l}</button>`).join('')}</div>
       <div class="field-k">${T('Choose a practice mode · 10 words per session', 'Pilih cara latihan · 10 kata per sesi')}</div>
-      <div class="mode-list">${Object.entries(this.MODES).map(([k, m]) => `
+      <div class="mode-list">${Object.entries(this.MODES).filter(([k]) => k !== 'tes').map(([k, m]) => `
         <button class="card mode-card" onclick="Latihan.startScope(${vol}, '${k}')">
           ${Pic.html(m.ic, 'mode-ic')}<div><b>${m.name}</b><span>${m.desc}</span></div><span class="chev">›</span></button>`).join('')}
       </div>
@@ -68,6 +71,38 @@ const Latihan = {
       vol, mode, from: from || `#/v/${vol}/kata`, i: 0, res: [], flip: false,
       items: shuffle(pool).map(v => ({ v, opts: mode === 'kartu' ? null : this.options(v, distract, codes) })),
     };
+    Soal.plays = {};
+    App.go('#/latihan');
+  },
+  // jumlah butir otomatis: 8, atau 2× jumlah kata bila bab hanya punya sedikit kata
+  tesAuto(nWords) { return Math.min(this.TES_KINDS.length, nWords * 2); },
+  tesCount(m) { return this.tesAuto(m.vocab.core.length + m.vocab.supplement.length) + (m.tes_kata || []).length; },
+  /* Tes Kosakata satu bab: 8 butir otomatis dari kata 核心 + kalimat rumpang (m.tes_kata). Skor → progres .kata */
+  startTes(vol, code, from) {
+    const m = App.volData[vol].modules.find(x => x.code === code);
+    const all = this.words(vol), core = all.filter(v => v.code === code && v.layer === 'core');
+    if (!core.length) return App.toast(T('No words to test yet.', 'Belum ada kata untuk dites.'));
+    // kata 核心 + 補充 (keputusan Carli 2026-11-18): ±5 核心 + ±3 補充 per tes, kekurangan diisi dari lapis lain.
+    // Tiap kata paling banyak 2× (jenis soal berbeda), jadi bab dengan sedikit kata punya tes lebih pendek.
+    const sup = shuffle(all.filter(v => v.code === code && v.layer === 'sup')), c = shuffle(core);
+    const nSup = Math.min(sup.length, Math.max(3, this.TES_KINDS.length - c.length));
+    const words = shuffle(c.slice(0, this.TES_KINDS.length - nSup).concat(sup.slice(0, nSup)))
+      .concat(c.slice(this.TES_KINDS.length - nSup), sup.slice(nSup));
+    const n = this.tesAuto(words.length), first = {}, items = [];
+    for (let i = 0; i < n; i++) {
+      const v = words[i % words.length];
+      let kind = this.TES_KINDS[Math.floor(i / n * this.TES_KINDS.length)];
+      if (first[v.w] === kind) kind = ['dengar', 'hanzi', 'arti'].find(k => k !== kind);
+      first[v.w] = first[v.w] || kind;
+      items.push({ kind, v, opts: this.options(v, all, [code]) });
+    }
+    const urut = { dengar: 0, hanzi: 1, arti: 2 };
+    items.sort((a, b) => urut[a.kind] - urut[b.kind]);
+    for (const t of m.tes_kata || []) {
+      const v = core.find(x => x.w === t.a) || { w: t.a, py: '', meaning: '', code };
+      items.push({ kind: 'kalimat', v, t, opts: shuffle([t.a, ...t.x]) });
+    }
+    this.session = { vol, mode: 'tes', code, from: from || location.hash, i: 0, res: [], flip: false, items };
     Soal.plays = {};
     App.go('#/latihan');
   },
@@ -102,37 +137,44 @@ const Latihan = {
             <button class="btn ok" onclick="Latihan.mark(true)">${Pic.html('✅', 'ic-sm')} ${T('Got it', 'Ingat')}</button></div>`
                  : `<button class="btn primary block" onclick="Latihan.flip()">${T('Flip card', 'Balik kartu')}</button>`}`;
     } else {
-      const prompt = s.mode === 'dengar'
+      const kind = this.kind(it);
+      const hint = { dengar: T('Listen, then choose the meaning', 'Dengarkan, lalu pilih artinya'), hanzi: T('Choose the meaning of this word', 'Pilih arti kata ini'),
+                     arti: T('Choose the matching word', 'Pilih kata yang sesuai'), kalimat: T('Choose the word that fits the gap', 'Pilih kata yang tepat untuk titik kosong') };
+      const prompt = kind === 'dengar'
         ? `<button class="play-big" id="play-lw" onclick="Speech.word('${esc(v.say || v.w)}')">${Pic.html('🔊', 'play-ic')}<span>${T('Listen', 'Dengarkan')}</span><small>${T('tap to play again', 'ketuk untuk memutar lagi')}</small></button>`
-        : s.mode === 'hanzi' ? `<div class="vword static" lang="zh-TW">${esc(v.w)}</div>`
+        : kind === 'hanzi' ? `<div class="vword static" lang="zh-TW">${esc(v.w)}</div>`
+        : kind === 'kalimat' ? `<div class="lsent" lang="zh-TW">${esc(it.t.zh).replace('（　）', `<span class="gap">${r != null ? esc(it.t.a) : '（　）'}</span>`)}</div>`
         : `<div class="lmean">${esc(v.meaning)}<small>${esc(v.pos)}</small></div>`;
-      const lab = x => s.mode === 'arti' ? `<span lang="zh-TW" class="big-zh">${esc(x.w)}</span>` : `<span>${esc(x.meaning)}</span>`;
-      h = `<div class="q-card">${prompt}
+      const lab = x => kind === 'kalimat' ? `<span lang="zh-TW" class="big-zh">${esc(x)}</span>`
+        : kind === 'arti' ? `<span lang="zh-TW" class="big-zh">${esc(x.w)}</span>` : `<span>${esc(x.meaning)}</span>`;
+      const benar = x => kind === 'kalimat' ? x === it.t.a : x === v;
+      h = `<div class="q-card">${s.mode === 'tes' ? `<p class="hint">${hint[kind]}</p>` : ''}${prompt}
         <div class="opts">${it.opts.map((x, oi) => {
-          const cls = r == null ? '' : x === v ? 'right' : oi === r.pick ? 'wrong' : 'dim';
+          const cls = r == null ? '' : benar(x) ? 'right' : oi === r.pick ? 'wrong' : 'dim';
           return `<button class="opt ${cls}" ${r == null ? `onclick="Latihan.pick(${oi})"` : 'disabled'}><b class="opt-l">${'ABCD'[oi]}</b>${lab(x)}</button>`;
         }).join('')}</div>
         ${r != null ? `<div class="feedback ${r.ok ? 'ok' : 'no'}">${Pic.html(r.ok ? '✅' : '🔁', 'fb-ic')}
             <div><b lang="zh-TW">${esc(v.w)}</b> <span>${esc(v.py)}</span>
               <button class="say-btn" onclick="Speech.word('${esc(v.say || v.w)}')">${Pic.html('🔊', 'ic-xs')}</button>
-              <p>${esc(v.meaning)} · <small>${v.code}</small></p></div></div>` : ''}
+              <p>${esc(v.meaning)} · <small>${v.code}</small></p>${kind === 'kalimat' ? `<p>${esc(it.t.id)}</p>` : ''}</div></div>` : ''}
       </div>
       ${r != null ? `<button class="btn primary block" onclick="Latihan.next()">${s.i + 1 < n ? T('Next ›', 'Berikutnya ›') : T('See results ›', 'Lihat hasil ›')}</button>` : ''}`;
     }
     App.main(prog + h);
     Speech.preload([[v.say || v.w, 'W'], ...(s.items[s.i + 1] ? [[s.items[s.i + 1].v.say || s.items[s.i + 1].v.w, 'W']] : [])]);
-    if (s.mode === 'dengar' && r == null && !Soal.plays['lw' + s.i]) { Soal.plays['lw' + s.i] = 1; setTimeout(() => Speech.word(v.say || v.w), 250); }
+    if (this.kind(it) === 'dengar' && r == null && !Soal.plays['lw' + s.i]) { Soal.plays['lw' + s.i] = 1; setTimeout(() => Speech.word(v.say || v.w), 250); }
   },
+  kind(it) { return this.session.mode === 'tes' ? it.kind : this.session.mode; },
   record(v, ok) {
     const st = this.stats(), x = st[v.id] || { r: 0, w: 0 };
     ok ? x.r++ : x.w++; x.t = Date.now(); st[v.id] = x;
     Store.set(VSTATS_KEY, st);
   },
   pick(oi) {
-    const s = this.session, it = s.items[s.i], ok = it.opts[oi] === it.v;
+    const s = this.session, it = s.items[s.i], ok = it.kind === 'kalimat' ? it.opts[oi] === it.t.a : it.opts[oi] === it.v;
     s.res[s.i] = { pick: oi, ok };
-    this.record(it.v, ok);
-    if (s.mode !== 'dengar') Speech.word(it.v.say || it.v.w);
+    if (it.v.id) this.record(it.v, ok);
+    if (this.kind(it) !== 'dengar') Speech.word(it.v.say || it.v.w);
     this.render();
   },
   flip() { const v = this.session.items[this.session.i].v; this.session.flip = true; Speech.word(v.say || v.w); this.render(); },
@@ -141,8 +183,9 @@ const Latihan = {
 
   summary() {
     const s = this.session, ok = s.res.filter(r => r && r.ok).length, n = s.items.length;
-    const wrong = s.items.filter((_, i) => !s.res[i]?.ok);
+    let wrong = s.items.filter((_, i) => !s.res[i]?.ok);
     const pct = Math.round(ok / n * 100);
+    if (s.mode === 'tes') return this.summaryTes(s, ok, n, pct, wrong);
     App.main(`
       <div class="result ${pct >= 80 ? 'hi' : pct >= 60 ? 'mid' : 'lo'}">
         ${App.ring(pct, `${ok}/${n}`, 'ring-lg')}
@@ -156,6 +199,36 @@ const Latihan = {
         <button class="btn ghost" onclick="Latihan.again(false)">${T('New session', 'Sesi baru')}</button>
       </div>
       <button class="btn ghost block" onclick="App.go('${s.from}')">${T('Done', 'Selesai')}</button>`);
+  },
+  summaryTes(s, ok, n, pct, wrong) {
+    if (!s.saved) {   // simpan sekali per sesi: terbaik, terakhir, jumlah percobaan
+      const k = App.getP(s.code).kata || { best: 0, tries: 0 };
+      App.setP(s.code, { kata: { best: Math.max(k.best || 0, pct), last: pct, tries: (k.tries || 0) + 1 } });
+      s.saved = true;
+    }
+    const best = App.getP(s.code).kata.best;
+    const seen = new Set(), words = wrong.map(x => x.v).filter(v => v.id && !seen.has(v.w) && seen.add(v.w));
+    App.main(`
+      <div class="result ${pct >= 80 ? 'hi' : pct >= 60 ? 'mid' : 'lo'}">
+        ${App.ring(pct, `${ok}/${n}`, 'ring-lg')}
+        <p>${pct >= 80 ? T('Great — you know this unit\'s key words well. You are ready for the tasks.', 'Hebat — kamu sudah menguasai kata inti bab ini. Siap lanjut ke tugas.')
+          : pct >= 60 ? T('Good. Review the words below once more before the tasks.', 'Bagus. Ulangi sekali lagi kata di bawah sebelum mengerjakan tugas.')
+          : T('That is fine — this check shows which words need more practice. Review them and try again.', 'Tidak apa-apa — tes ini menunjukkan kata yang perlu dilatih lagi. Ulangi lalu coba lagi.')}</p>
+        <small>${T('Best score', 'Skor terbaik')}: ${best}%</small>
+      </div>
+      ${words.length ? `<h3 class="sub-title">${T('To review', 'Perlu diulang')}</h3>
+        <div class="wlist">${words.map(v => `<button class="wrow" onclick="Speech.word('${esc(v.say || v.w)}')">
+          <b lang="zh-TW">${esc(v.w)}</b><span>${esc(v.py)}</span><small>${esc(v.meaning)}</small>${Pic.html('🔊', 'ic-xs')}</button>`).join('')}</div>` : ''}
+      <div class="row2">
+        ${words.length ? `<button class="btn primary" onclick="Latihan.latihSalah()">${T('Practise the missed words', 'Latih kata yang salah')}</button>` : ''}
+        <button class="btn ghost" onclick="Latihan.startTes(${s.vol}, '${s.code}', '${s.from}')">${T('Take the check again', 'Ulangi tes')}</button>
+      </div>
+      <button class="btn ghost block" onclick="App.go('${s.from}')">${T('Back to the module', 'Kembali ke modul')}</button>`);
+  },
+  latihSalah() {
+    const s = this.session, seen = new Set();
+    const list = s.items.filter((_, i) => !s.res[i]?.ok).map(x => x.v).filter(v => v.id && !seen.has(v.w) && seen.add(v.w));
+    this.start({ vol: s.vol, mode: 'dengar', from: s.from, list });
   },
   again(wrongOnly) {
     const s = this.session;
