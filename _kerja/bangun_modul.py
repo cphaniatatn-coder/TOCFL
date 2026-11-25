@@ -191,6 +191,23 @@ def load_soal():
     return out
 
 
+def cek_kaidah_latihan():
+    """Peringatan ◇ kaidah 華測會〈命題設計概述〉2022 untuk soal latihan (sama dengan bank soal, lihat bangun_bank.py).
+    Yang sudah ditinjau & diterima → _kerja/soal_kaidah_diterima.txt. Peringatan tidak menggagalkan perakitan."""
+    from bangun_bank import cek_kaidah, cek_posisi   # impor di sini: bangun_bank mengimpor modul ini
+    f = f'{K}/soal_kaidah_diterima.txt'
+    terima = {l.strip() for l in open(f, encoding='utf-8') if l.strip() and not l.startswith('#')} if os.path.exists(f) else set()
+    semua, out = {}, []
+    for lv in (1, 2, 3):
+        for m in json.load(open(f'{ROOT}/data/modul_vol{lv}.json', encoding='utf-8'))['modules']:
+            semua[m['code']] = m['tasks']
+            out += cek_kaidah(m['code'], m['tasks'])
+    out += cek_posisi(semua)
+    for s in out:
+        if s.split(' — ')[0] not in terima:
+            print('  ', s)
+
+
 def main():
     isi = load_isi()
     soal = load_soal()
@@ -230,6 +247,7 @@ def main():
                   open(f'{ROOT}/data/modul_vol{lv}.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         total[lv] = len(mods)
     print('Modul terakit:', total)
+    cek_kaidah_latihan()
     masalah += [f'{c}: soal tambahan untuk modul yang tidak ada' for c in soal]
     for s in masalah:
         print('   ✗ format soal —', s)

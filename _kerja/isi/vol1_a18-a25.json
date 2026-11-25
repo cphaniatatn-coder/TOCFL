@@ -178,11 +178,11 @@
      "options": [
       "二十五塊",
       "四十塊",
-      "一百塊",
-      "七十五塊"
+      "七十五塊",
+      "一百塊"
      ],
-     "answer": 2,
-     "why": "4 × 25 = 100, uangnya pas (夠) → ia membayar 100 (angka totalnya tidak diucapkan). A: harga satu bakpao. B: salah hitung. D: kembalian kalau membayar 100 untuk satu bakpao."
+     "answer": 3,
+     "why": "4 × 25 = 100, uangnya pas (夠) → ia membayar 100 (angka totalnya tidak diucapkan). A: harga satu bakpao. B: salah hitung. C: kembalian kalau membayar 100 untuk satu bakpao."
     },
     {
      "type": "read_sent",
@@ -846,13 +846,13 @@
      ],
      "question": "這位先生的意思是什麼？",
      "options": [
-      "他們應該走左邊",
       "他們走錯路，應該走右邊",
+      "他們應該走左邊",
       "他們想去公園",
       "火車站在左邊"
      ],
-     "answer": 1,
-     "why": "又到公園 = mereka kembali ke taman lagi, jadi tadi salah jalan; ia mengusulkan 走右邊. A: kebalikannya. C: mereka tidak ingin ke taman. D: tidak disebut; justru kiri salah."
+     "answer": 0,
+     "why": "又到公園 = mereka kembali ke taman lagi, jadi tadi salah jalan; ia mengusulkan 走右邊. B: kebalikannya. C: mereka tidak ingin ke taman. D: tidak disebut; justru kiri salah."
     },
     {
      "type": "read_sent",
@@ -1059,9 +1059,9 @@
      "question": "這位先生怎麼樣？",
      "options": [
       "他身體不舒服，沒聽見",
-      "他不想聽",
-      "他很好",
-      "他的手很痛"
+      "他不想聽這位小姐說話",
+      "他很好，明天去上課",
+      "他的手和腳都很痛"
      ],
      "answer": 0,
      "why": "Ia tidak mendengar karena kepala dan telinganya sakit → tidak enak badan. B: ia bukan tidak mau mendengar. C: kebalikannya. D: tidak disebut."
@@ -1183,7 +1183,7 @@
        "zh": "因為我生病。"
       }
      ],
-     "question": "這位小姐為什麼不上課？",
+     "question": "這位小姐怎麼樣？",
      "options": [
       {
        "icon": "🖼️",
@@ -1271,7 +1271,7 @@
      ],
      "question": "這位小姐的意思是什麼？",
      "options": [
-      "大文沒事",
+      "大文沒事，很好",
       "大文生病，應該去看醫生",
       "大文應該去吃飯",
       "她想自己去看病"
@@ -1485,12 +1485,12 @@
      "question": "他們可能哪天去山上？",
      "options": [
       "星期六",
-      "星期天",
+      "不去",
       "今天",
-      "不去"
+      "星期天"
      ],
-     "answer": 1,
-     "why": "Sabtu hujan dan berangin (penolakan halus), Minggu cuacanya bagus → kemungkinan Minggu. A: disebut, tetapi cuacanya buruk. C: tidak disebut. D: mereka tetap mau pergi."
+     "answer": 3,
+     "why": "Sabtu hujan dan berangin (penolakan halus), Minggu cuacanya bagus → kemungkinan Minggu. A: disebut, tetapi cuacanya buruk. C: tidak disebut. B: mereka tetap mau pergi."
     },
     {
      "type": "read_sent",
@@ -1702,15 +1702,15 @@
        "zh": "好，那我們晚上說吧。"
       }
      ],
-     "question": "這位小姐下午為什麼沒說話？",
+     "question": "這位小姐下午做什麼？",
      "options": [
-      "因為她上課，不能說話",
-      "因為她不想跟他說話",
-      "因為她沒有手機",
-      "因為老師打電話給她"
+      "上課",
+      "睡覺",
+      "打電話給老師",
+      "跟大文說話"
      ],
      "answer": 0,
-     "why": "Saat itu ia sedang ada kelas dan gurunya di kelas → tidak boleh bicara. B: ia justru minta maaf. C: tidak disebut. D: guru ada di kelas, bukan menelepon."
+     "why": "你那時候上課吧？→ 對 → ia sedang ada kelas → A. B dan C: tidak disebut. D: justru ia tidak bisa bicara (我不能說話)."
     },
     {
      "type": "read_sent",

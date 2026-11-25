@@ -2272,11 +2272,11 @@
      "options": [
       "兩個人",
       "三個人",
-      "五個人",
-      "四個人"
+      "四個人",
+      "五個人"
      ],
-     "answer": 2,
-     "why": "Tiga anak (兩個兒子、一個女兒) + Pak Chen + istrinya = 五個人; jumlah ini tidak diucapkan. A: 兩 = jumlah anak laki-laki. B: 三 = jumlah anak saja. D: lupa menghitung satu orang."
+     "answer": 3,
+     "why": "Tiga anak (兩個兒子、一個女兒) + Pak Chen + istrinya = 五個人; jumlah ini tidak diucapkan. A: 兩 = jumlah anak laki-laki. B: 三 = jumlah anak saja. C: lupa menghitung satu orang."
     },
     {
      "type": "read_sent",
@@ -2363,13 +2363,13 @@
      "text": "我叫林美美，我們是臺灣人。我家有七個人：爸爸、媽媽、哥哥、姊姊、我和兩個弟弟。",
      "question": "林美美的爸爸媽媽有幾個孩子？",
      "options": [
-      "五個",
-      "七個",
       "兩個",
-      "四個"
+      "四個",
+      "五個",
+      "七個"
      ],
-     "answer": 0,
-     "why": "七個人 dikurangi ayah dan ibu = lima anak (哥哥、姊姊、美美、兩個弟弟); angka 5 tidak tertulis. B: 七 = seluruh keluarga. C: 兩 = jumlah adik laki-laki. D: lupa menghitung Meimei sendiri."
+     "answer": 2,
+     "why": "七個人 dikurangi ayah dan ibu = lima anak (哥哥、姊姊、美美、兩個弟弟); angka 5 tidak tertulis. D: 七 = seluruh keluarga. A: 兩 = jumlah adik laki-laki. B: lupa menghitung Meimei sendiri."
     }
    ],
    "grammar": [
@@ -2749,12 +2749,12 @@
      },
      "question": "你的生日是幾月幾號？",
      "options": [
-      "五月三號。",
       "三月五號。",
+      "五月三號。",
       "五月十三號。"
      ],
-     "answer": 0,
-     "why": "Kalender: tanggal 3 bulan 5 → 五月三號。 B: bulan dan tanggal tertukar. C: 十三 = 13, bukan 3."
+     "answer": 1,
+     "why": "Kalender: tanggal 3 bulan 5 → 五月三號。 A: bulan dan tanggal tertukar. C: 十三 = 13, bukan 3."
     },
     {
      "type": "listen_pic",
@@ -2930,12 +2930,12 @@
      "question": "這位小姐的姊姊今年幾歲？",
      "options": [
       "二十歲",
+      "二十一歲",
       "二十二歲",
-      "二十三歲",
-      "二十一歲"
+      "二十三歲"
      ],
-     "answer": 1,
-     "why": "Kakaknya 明年二十三歲 (tahun depan 23) → tahun ini 22; angka ini tidak diucapkan. A: umur Meimei sendiri. C: umur kakaknya tahun DEPAN. D: salah hitung."
+     "answer": 2,
+     "why": "Kakaknya 明年二十三歲 (tahun depan 23) → tahun ini 22; angka ini tidak diucapkan. A: umur Meimei sendiri. D: umur kakaknya tahun DEPAN. B: salah hitung."
     },
     {
      "type": "read_sent",
@@ -3022,13 +3022,13 @@
      "text": "我叫小明。我家有四個人：爸爸、媽媽、姊姊和我。爸爸今年四十五歲，媽媽四十二歲。姊姊十六歲，我十二歲。",
      "question": "小明的姊姊明年幾歲？",
      "options": [
-      "十六歲",
-      "十三歲",
       "十二歲",
+      "十三歲",
+      "十六歲",
       "十七歲"
      ],
      "answer": 3,
-     "why": "Kakaknya tahun ini 16 → tahun depan 17 (tidak tertulis). A: umurnya TAHUN INI. B: umur Xiaoming tahun depan. C: umur Xiaoming sekarang."
+     "why": "Kakaknya tahun ini 16 → tahun depan 17 (tidak tertulis). C: umurnya TAHUN INI. B: umur Xiaoming tahun depan. A: umur Xiaoming sekarang."
     }
    ],
    "grammar": [
@@ -3487,7 +3487,7 @@
       "想，她喜歡打球。",
       "她不想打球，想看電影。",
       "她想打球，也想看電影。",
-      "她想唱歌。"
+      "她想唱歌，不想看電影。"
      ],
      "answer": 1,
      "why": "打球？我不愛運動 = penolakan halus: ia tidak mau bermain bola, tetap ingin menonton film. A: menganggap 打球？ sebagai persetujuan. C: kebalikan dari maksudnya. D: 唱歌 tidak disebut."
@@ -5809,11 +5809,11 @@
      "question": "現在幾點？",
      "options": [
       "現在兩點。",
-      "現在十點半。",
-      "現在十點。"
+      "現在十點。",
+      "現在十點半。"
      ],
-     "answer": 2,
-     "why": "Jam menunjukkan 10:00 → 現在十點。 A: 兩點 = 2:00. B: 十點半 = 10:30."
+     "answer": 1,
+     "why": "Jam menunjukkan 10:00 → 現在十點。 A: 兩點 = 2:00. C: 十點半 = 10:30."
     },
     {
      "type": "listen_pic",
@@ -6561,13 +6561,13 @@
      ],
      "question": "這位先生星期天想打球嗎？",
      "options": [
-      "想，他常常打球。",
       "不想，他想在家睡覺。",
+      "想，他常常打球。",
       "想，星期天他在公園。",
       "他星期六不想去。"
      ],
-     "answer": 1,
-     "why": "星期天？我星期天常常在家睡覺 = penolakan halus untuk hari Minggu; ia setuju hari Sabtu. A: tidak disebut. C: 公園 adalah usul si nona. D: kebalikannya (星期六好)."
+     "answer": 0,
+     "why": "星期天？我星期天常常在家睡覺 = penolakan halus untuk hari Minggu; ia setuju hari Sabtu. B: tidak disebut. C: 公園 adalah usul si nona. D: kebalikannya (星期六好)."
     },
     {
      "type": "read_sent",
@@ -7235,13 +7235,13 @@
      "text": "我叫小明，我是學生。我哥哥大文是大學的老師，他教中文。我姊姊是大學的學生，她在大文的學校學英文。",
      "question": "小明的姊姊在哪裡上課？",
      "options": [
-      "小明的學校",
       "哥哥的大學",
+      "小明的學校",
       "家裡",
       "英文老師的家"
      ],
-     "answer": 1,
-     "why": "大文的學校 = universitas tempat kakak laki-laki (大文) mengajar → 哥哥的大學 (parafrase). A: itu sekolah Xiaoming. C dan D: tidak disebut."
+     "answer": 0,
+     "why": "大文的學校 = universitas tempat kakak laki-laki (大文) mengajar → 哥哥的大學 (parafrase). B: itu sekolah Xiaoming. C dan D: tidak disebut."
     }
    ],
    "grammar": [],
@@ -7693,9 +7693,9 @@
      "question": "這位先生的意思是什麼？",
      "options": [
       "他知道這個句子的意思",
-      "美美不在教室",
+      "美美今天不在教室",
       "美美知道這個句子的意思",
-      "他想問老師"
+      "他想問老師這個句子"
      ],
      "answer": 2,
      "why": "美美是臺灣人，你問她吧 = Meimei (penutur asli) pasti tahu artinya; ini tidak dikatakan langsung. A: ia sendiri 不懂. B: kebalikannya (她在教室). D: tidak disebut."
@@ -8801,7 +8801,7 @@
      "question": "這位小姐的意思是什麼？",
      "options": [
       "她想喝咖啡。",
-      "她要一杯水，不喝咖啡和茶。",
+      "她要一杯水，不要茶。",
       "她要一杯茶。",
       "她不想睡覺。"
      ],
@@ -9908,13 +9908,13 @@
      ],
      "question": "他們的麵，幾碗有牛肉？",
      "options": [
-      "三碗",
       "兩碗",
+      "三碗",
       "一碗",
       "沒有"
      ],
-     "answer": 1,
-     "why": "Tiga mangkuk, satu tanpa daging → dua mangkuk berdaging (kesimpulan). A: semua mangkuk. C: yang tanpa daging. D: kebalikannya."
+     "answer": 0,
+     "why": "Tiga mangkuk, satu tanpa daging → dua mangkuk berdaging (kesimpulan). B: semua mangkuk. C: yang tanpa daging. D: kebalikannya."
     },
     {
      "type": "read_sent",
@@ -10271,12 +10271,12 @@
      },
      "question": "一共多少錢？",
      "options": [
+      "五十三塊。",
       "三百五十塊。",
-      "五百三十塊。",
-      "五十三塊。"
+      "五百三十塊。"
      ],
-     "answer": 0,
-     "why": "Struk: total $350 → 三百五十塊。 B: angkanya terbalik (530). C: 五十三 = 53."
+     "answer": 1,
+     "why": "Struk: total $350 → 三百五十塊。 C: angkanya terbalik (530). A: 五十三 = 53."
     },
     {
      "type": "listen_pic",
@@ -10453,11 +10453,11 @@
      "options": [
       "二十五塊",
       "四十塊",
-      "一百塊",
-      "七十五塊"
+      "七十五塊",
+      "一百塊"
      ],
-     "answer": 2,
-     "why": "4 × 25 = 100, uangnya pas (夠) → ia membayar 100 (angka totalnya tidak diucapkan). A: harga satu bakpao. B: salah hitung. D: kembalian kalau membayar 100 untuk satu bakpao."
+     "answer": 3,
+     "why": "4 × 25 = 100, uangnya pas (夠) → ia membayar 100 (angka totalnya tidak diucapkan). A: harga satu bakpao. B: salah hitung. C: kembalian kalau membayar 100 untuk satu bakpao."
     },
     {
      "type": "read_sent",
@@ -12165,13 +12165,13 @@
      ],
      "question": "這位先生的意思是什麼？",
      "options": [
-      "他們應該走左邊",
       "他們走錯路，應該走右邊",
+      "他們應該走左邊",
       "他們想去公園",
       "火車站在左邊"
      ],
-     "answer": 1,
-     "why": "又到公園 = mereka kembali ke taman lagi, jadi tadi salah jalan; ia mengusulkan 走右邊. A: kebalikannya. C: mereka tidak ingin ke taman. D: tidak disebut; justru kiri salah."
+     "answer": 0,
+     "why": "又到公園 = mereka kembali ke taman lagi, jadi tadi salah jalan; ia mengusulkan 走右邊. B: kebalikannya. C: mereka tidak ingin ke taman. D: tidak disebut; justru kiri salah."
     },
     {
      "type": "read_sent",
@@ -12568,8 +12568,8 @@
      },
      "question": "你怎麼樣？",
      "options": [
-      "我頭很痛。",
-      "我很累。",
+      "我頭很痛，不想吃飯。",
+      "我很累，想睡覺。",
       "我感冒，鼻子不舒服。"
      ],
      "answer": 2,
@@ -12713,9 +12713,9 @@
      "question": "這位先生怎麼樣？",
      "options": [
       "他身體不舒服，沒聽見",
-      "他不想聽",
-      "他很好",
-      "他的手很痛"
+      "他不想聽這位小姐說話",
+      "他很好，明天去上課",
+      "他的手和腳都很痛"
      ],
      "answer": 0,
      "why": "Ia tidak mendengar karena kepala dan telinganya sakit → tidak enak badan. B: ia bukan tidak mau mendengar. C: kebalikannya. D: tidak disebut."
@@ -13182,7 +13182,7 @@
        "zh": "因為我生病。"
       }
      ],
-     "question": "這位小姐為什麼不上課？",
+     "question": "這位小姐怎麼樣？",
      "options": [
       {
        "icon": "🖼️",
@@ -13270,7 +13270,7 @@
      ],
      "question": "這位小姐的意思是什麼？",
      "options": [
-      "大文沒事",
+      "大文沒事，很好",
       "大文生病，應該去看醫生",
       "大文應該去吃飯",
       "她想自己去看病"
@@ -13365,13 +13365,13 @@
      "text": "醫生給大文藥：早上一個，中午一個，晚上一個。大文要吃兩天。",
      "question": "大文一共要吃幾個藥？",
      "options": [
-      "三個",
       "兩個",
-      "六個",
-      "五個"
+      "三個",
+      "五個",
+      "六個"
      ],
-     "answer": 2,
-     "why": "3 kali sehari × 2 hari = 6 (tidak tertulis). A: hanya satu hari. B: jumlah hari. D: salah hitung."
+     "answer": 3,
+     "why": "3 kali sehari × 2 hari = 6 (tidak tertulis). B: hanya satu hari. A: jumlah hari. C: salah hitung."
     }
    ],
    "grammar": [],
@@ -13795,12 +13795,12 @@
      "question": "他們可能哪天去山上？",
      "options": [
       "星期六",
-      "星期天",
+      "不去",
       "今天",
-      "不去"
+      "星期天"
      ],
-     "answer": 1,
-     "why": "Sabtu hujan dan berangin (penolakan halus), Minggu cuacanya bagus → kemungkinan Minggu. A: disebut, tetapi cuacanya buruk. C: tidak disebut. D: mereka tetap mau pergi."
+     "answer": 3,
+     "why": "Sabtu hujan dan berangin (penolakan halus), Minggu cuacanya bagus → kemungkinan Minggu. A: disebut, tetapi cuacanya buruk. C: tidak disebut. B: mereka tetap mau pergi."
     },
     {
      "type": "read_sent",
@@ -13887,13 +13887,13 @@
      "text": "臺北的天氣：一月很冷，可是不常下雨；五月、六月常常下雨；七月最熱。安妮不喜歡下雨，也怕熱，可是她不怕冷。",
      "question": "安妮想去臺北，幾月去好？",
      "options": [
+      "一月",
       "五月",
-      "七月",
       "六月",
-      "一月"
+      "七月"
      ],
-     "answer": 3,
-     "why": "Mei–Juni sering hujan, Juli paling panas; Januari dingin, tetapi ia tidak takut dingin → Januari (kesimpulan). A dan C: sering hujan. B: paling panas."
+     "answer": 0,
+     "why": "Mei–Juni sering hujan, Juli paling panas; Januari dingin, tetapi ia tidak takut dingin → Januari (kesimpulan). B dan C: sering hujan. D: paling panas."
     }
    ],
    "grammar": [],
@@ -14319,15 +14319,15 @@
        "zh": "好，那我們晚上說吧。"
       }
      ],
-     "question": "這位小姐下午為什麼沒說話？",
+     "question": "這位小姐下午做什麼？",
      "options": [
-      "因為她上課，不能說話",
-      "因為她不想跟他說話",
-      "因為她沒有手機",
-      "因為老師打電話給她"
+      "上課",
+      "睡覺",
+      "打電話給老師",
+      "跟大文說話"
      ],
      "answer": 0,
-     "why": "Saat itu ia sedang ada kelas dan gurunya di kelas → tidak boleh bicara. B: ia justru minta maaf. C: tidak disebut. D: guru ada di kelas, bukan menelepon."
+     "why": "你那時候上課吧？→ 對 → ia sedang ada kelas → A. B dan C: tidak disebut. D: justru ia tidak bisa bicara (我不能說話)."
     },
     {
      "type": "read_sent",
@@ -14417,12 +14417,12 @@
      "question": "誰是臺灣人？",
      "options": [
       "只有志明",
-      "志明和美美",
+      "大文",
       "大文和志明",
-      "大文"
+      "志明和美美"
      ],
-     "answer": 1,
-     "why": "Zhiming orang Taiwan, dan Meimei berkata 我也是臺灣人 → keduanya (digabung). A: Meimei juga. C dan D: Dawen tidak disebut orang Taiwan."
+     "answer": 3,
+     "why": "Zhiming orang Taiwan, dan Meimei berkata 我也是臺灣人 → keduanya (digabung). A: Meimei juga. B dan C: Dawen tidak disebut orang Taiwan."
     }
    ],
    "grammar": [],

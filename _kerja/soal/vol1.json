@@ -492,13 +492,13 @@
    "text": "我叫林美美，我們是臺灣人。我家有七個人：爸爸、媽媽、哥哥、姊姊、我和兩個弟弟。",
    "question": "林美美的爸爸媽媽有幾個孩子？",
    "options": [
-    "五個",
-    "七個",
     "兩個",
-    "四個"
+    "四個",
+    "五個",
+    "七個"
    ],
-   "answer": 0,
-   "why": "七個人 dikurangi ayah dan ibu = lima anak (哥哥、姊姊、美美、兩個弟弟); angka 5 tidak tertulis. B: 七 = seluruh keluarga. C: 兩 = jumlah adik laki-laki. D: lupa menghitung Meimei sendiri."
+   "answer": 2,
+   "why": "七個人 dikurangi ayah dan ibu = lima anak (哥哥、姊姊、美美、兩個弟弟); angka 5 tidak tertulis. D: 七 = seluruh keluarga. A: 兩 = jumlah adik laki-laki. B: lupa menghitung Meimei sendiri."
   }
  ],
  "A05": [
@@ -513,12 +513,12 @@
    },
    "question": "你的生日是幾月幾號？",
    "options": [
-    "五月三號。",
     "三月五號。",
+    "五月三號。",
     "五月十三號。"
    ],
-   "answer": 0,
-   "why": "Kalender: tanggal 3 bulan 5 → 五月三號。 B: bulan dan tanggal tertukar. C: 十三 = 13, bukan 3."
+   "answer": 1,
+   "why": "Kalender: tanggal 3 bulan 5 → 五月三號。 A: bulan dan tanggal tertukar. C: 十三 = 13, bukan 3."
   },
   {
    "type": "listen_pic",
@@ -616,13 +616,13 @@
    "text": "我叫小明。我家有四個人：爸爸、媽媽、姊姊和我。爸爸今年四十五歲，媽媽四十二歲。姊姊十六歲，我十二歲。",
    "question": "小明的姊姊明年幾歲？",
    "options": [
-    "十六歲",
-    "十三歲",
     "十二歲",
+    "十三歲",
+    "十六歲",
     "十七歲"
    ],
    "answer": 3,
-   "why": "Kakaknya tahun ini 16 → tahun depan 17 (tidak tertulis). A: umurnya TAHUN INI. B: umur Xiaoming tahun depan. C: umur Xiaoming sekarang."
+   "why": "Kakaknya tahun ini 16 → tahun depan 17 (tidak tertulis). C: umurnya TAHUN INI. B: umur Xiaoming tahun depan. A: umur Xiaoming sekarang."
   }
  ],
  "A06": [
@@ -1158,11 +1158,11 @@
    "question": "現在幾點？",
    "options": [
     "現在兩點。",
-    "現在十點半。",
-    "現在十點。"
+    "現在十點。",
+    "現在十點半。"
    ],
-   "answer": 2,
-   "why": "Jam menunjukkan 10:00 → 現在十點。 A: 兩點 = 2:00. B: 十點半 = 10:30."
+   "answer": 1,
+   "why": "Jam menunjukkan 10:00 → 現在十點。 A: 兩點 = 2:00. C: 十點半 = 10:30."
   },
   {
    "type": "listen_pic",
@@ -1479,13 +1479,13 @@
    "text": "我叫小明，我是學生。我哥哥大文是大學的老師，他教中文。我姊姊是大學的學生，她在大文的學校學英文。",
    "question": "小明的姊姊在哪裡上課？",
    "options": [
-    "小明的學校",
     "哥哥的大學",
+    "小明的學校",
     "家裡",
     "英文老師的家"
    ],
-   "answer": 1,
-   "why": "大文的學校 = universitas tempat kakak laki-laki (大文) mengajar → 哥哥的大學 (parafrase). A: itu sekolah Xiaoming. C dan D: tidak disebut."
+   "answer": 0,
+   "why": "大文的學校 = universitas tempat kakak laki-laki (大文) mengajar → 哥哥的大學 (parafrase). B: itu sekolah Xiaoming. C dan D: tidak disebut."
   }
  ],
  "A13": [
@@ -2126,12 +2126,12 @@
    },
    "question": "一共多少錢？",
    "options": [
+    "五十三塊。",
     "三百五十塊。",
-    "五百三十塊。",
-    "五十三塊。"
+    "五百三十塊。"
    ],
-   "answer": 0,
-   "why": "Struk: total $350 → 三百五十塊。 B: angkanya terbalik (530). C: 五十三 = 53."
+   "answer": 1,
+   "why": "Struk: total $350 → 三百五十塊。 C: angkanya terbalik (530). A: 五十三 = 53."
   },
   {
    "type": "listen_pic",
@@ -2664,8 +2664,8 @@
    },
    "question": "你怎麼樣？",
    "options": [
-    "我頭很痛。",
-    "我很累。",
+    "我頭很痛，不想吃飯。",
+    "我很累，想睡覺。",
     "我感冒，鼻子不舒服。"
    ],
    "answer": 2,
@@ -2857,13 +2857,13 @@
    "text": "醫生給大文藥：早上一個，中午一個，晚上一個。大文要吃兩天。",
    "question": "大文一共要吃幾個藥？",
    "options": [
-    "三個",
     "兩個",
-    "六個",
-    "五個"
+    "三個",
+    "五個",
+    "六個"
    ],
-   "answer": 2,
-   "why": "3 kali sehari × 2 hari = 6 (tidak tertulis). A: hanya satu hari. B: jumlah hari. D: salah hitung."
+   "answer": 3,
+   "why": "3 kali sehari × 2 hari = 6 (tidak tertulis). B: hanya satu hari. A: jumlah hari. C: salah hitung."
   }
  ],
  "A24": [
@@ -2981,13 +2981,13 @@
    "text": "臺北的天氣：一月很冷，可是不常下雨；五月、六月常常下雨；七月最熱。安妮不喜歡下雨，也怕熱，可是她不怕冷。",
    "question": "安妮想去臺北，幾月去好？",
    "options": [
+    "一月",
     "五月",
-    "七月",
     "六月",
-    "一月"
+    "七月"
    ],
-   "answer": 3,
-   "why": "Mei–Juni sering hujan, Juli paling panas; Januari dingin, tetapi ia tidak takut dingin → Januari (kesimpulan). A dan C: sering hujan. B: paling panas."
+   "answer": 0,
+   "why": "Mei–Juni sering hujan, Juli paling panas; Januari dingin, tetapi ia tidak takut dingin → Januari (kesimpulan). B dan C: sering hujan. D: paling panas."
   }
  ],
  "A25": [
@@ -3108,12 +3108,12 @@
    "question": "誰是臺灣人？",
    "options": [
     "只有志明",
-    "志明和美美",
+    "大文",
     "大文和志明",
-    "大文"
+    "志明和美美"
    ],
-   "answer": 1,
-   "why": "Zhiming orang Taiwan, dan Meimei berkata 我也是臺灣人 → keduanya (digabung). A: Meimei juga. C dan D: Dawen tidak disebut orang Taiwan."
+   "answer": 3,
+   "why": "Zhiming orang Taiwan, dan Meimei berkata 我也是臺灣人 → keduanya (digabung). A: Meimei juga. B dan C: Dawen tidak disebut orang Taiwan."
   }
  ]
 }

@@ -5,9 +5,10 @@
   3. huruf A–D di `why` (Indonesia) ikut disesuaikan. terjemahan_en.json TIDAK disentuh (English tidak
      dipakai lagi sejak 2026-11-25).
 
-Pemakaian:  py _kerja/rapikan_opsi.py <huruf volume: A|B|C> [tulis]
+Pemakaian:  py _kerja/rapikan_opsi.py <huruf volume: A|B|C> [latihan] [tulis]
+  tanpa 'latihan' = bank soal (_kerja/bank); dengan 'latihan' = soal latihan (_kerja/isi + _kerja/soal).
   tanpa 'tulis' = pratinjau saja (tampilkan setiap why sebelum/sesudah — WAJIB diperiksa).
-Sesudahnya: bangun_bank.py → terjemah.py → buat_audio.py (urutan pilihan 聽力 Part 1 ikut terekam).
+Sesudahnya: bangun_bank.py / bangun_modul.py → terjemah.py → buat_audio.py (urutan pilihan 聽力 Part 1 ikut terekam).
 """
 import hashlib, json, os, re, sys
 sys.stdout.reconfigure(encoding='utf-8')
@@ -45,12 +46,28 @@ def terapkan(t, urutan, log, alasan):
     log.append((alasan, t, why0))
 
 
+def sumber(latihan):
+    """{path: teks asli}. Bank soal: _kerja/bank/*.json; soal latihan: _kerja/isi/*.json + _kerja/soal/*.json."""
+    dirs = [f'{K}/isi', f'{K}/soal'] if latihan else [f'{K}/bank']
+    return {f'{d}/{fn}': open(f'{d}/{fn}', encoding='utf-8').read() for d in dirs for fn in sorted(os.listdir(d))
+            if fn.endswith('.json')}
+
+
+def daftar(data, path):
+    """(kode, daftar soal) dari format bank/soal ({kode: [soal]}), isi ({"modules": [{code, tasks}]}),
+    atau isi satu bab (A01/B01/C01.json: {"tasks": […]}, kode = nama file)."""
+    if 'modules' in data:
+        return [(m['code'], m.get('tasks', [])) for m in data['modules']]
+    if 'tasks' in data:
+        return [(os.path.basename(path)[:-5], data['tasks'])]
+    return list(data.items())
+
+
 def main():
-    vol, tulis = sys.argv[1], 'tulis' in sys.argv[2:]
-    d = f'{K}/bank'
-    asli = {fn: open(f'{d}/{fn}', encoding='utf-8').read() for fn in sorted(os.listdir(d)) if fn.endswith('.json')}
-    files = {fn: json.loads(s) for fn, s in asli.items()}
-    items = [(code, t) for data in files.values() for code, ts in data.items() if code.startswith(vol)
+    vol, tulis, latihan = sys.argv[1], 'tulis' in sys.argv[2:], 'latihan' in sys.argv[2:]
+    asli = sumber(latihan)
+    files = {p: json.loads(s) for p, s in asli.items()}
+    items = [(code, t) for p, data in files.items() for code, ts in daftar(data, p) if code.startswith(vol)
              for t in ts if berlaku(t)]
     log = []
     # 1. urutkan pilihan angka/waktu
@@ -86,10 +103,12 @@ def main():
         print(f'\n## {alasan}\n  pilihan: {t["options"]}  kunci={"ABCD"[t["answer"]]}\n  why lama: {why0}\n  why baru: {t["why"]}')
     print(f'\n{len(log)} butir diubah.' + ('' if tulis else ' (pratinjau — tambahkan "tulis" untuk menyimpan)'))
     if tulis:
-        for fn, data in files.items():   # hanya file yang berubah; format sama dengan aslinya (indent 1 + baris akhir)
-            baru = json.dumps(data, ensure_ascii=False, indent=1) + '\n'
-            if baru != asli[fn]:
-                open(f'{d}/{fn}', 'w', encoding='utf-8').write(baru)
+        # hanya file yang berubah; format asli dipertahankan (isi/ memakai format ringkas → hanya objek soal
+        # yang berubah yang diganti di tempatnya, lihat simpan_json.py / seimbang_jawaban.simpan_aman)
+        from seimbang_jawaban import simpan_aman
+        for p, data in files.items():
+            if json.loads(asli[p]) != data:
+                simpan_aman(p, data)
 
 
 if __name__ == '__main__':
