@@ -45,6 +45,61 @@ Dibaca: abstrak, kesimpulan, dan bagian kunci (bukan seluruh isi).
 4. Mengukur kecemasan ujian pra-pasca intervensi.
 5. Pembuatan soal berbantuan AI + validator level + pola pengecoh, diuji ke pemelajar.
 
+---
+
+## D. Modul persiapan ujian: pendahulu & landasan teori (diskusi 2026-11-22)
+
+### Pendahulu (dibaca dari folder ini)
+- **《基於越南學生需求的華語文測驗教材設計與編寫研究》** (NTNU, 114) — PALING MIRIP: buku ajar persiapan TOCFL
+  untuk pemula nol (24 tema, kosakata/grammar TBCL, latihan format TOCFL, 應試策略指導 [manajemen waktu, analisis
+  soal, teknik menjawab], 模擬測驗, audio QR). Memakai **10 原則 趙金銘 (2009)** yang disesuaikan untuk buku ujian:
+  定向 (「側重應試技巧與實際語言應用並重」), 目標, 特色 (「提供針對 TOCFL 的模擬題型與應試策略」), 認知, 時代,
+  語體 (「確保教學內容反映標準華語特徵，避免過於文言或俚語化」), 文化, 趣味, 實用 (「確保所選詞彙與句型符合
+  TOCFL 考試要求…練習活動應兼顧語言輸入與輸出」), 立體.
+- **《以初級華語文能力測驗為導向之課程設計》** (Wenzao, 109) — pendahulu kombinasi **TBLT + TOCFL Band A**.
+  Mengutip **曾文璇 (2008)**: 「初級華語文能力測驗，以任務為設計導向且注重語言溝通的功能」 → TOCFL Band A sendiri
+  berbasis tugas komunikatif (membeli, bertanya jalan, memesan), diuji lewat 聽力 & 閱讀. Argumen: TBLT dan
+  persiapan ujian TIDAK bertentangan. (Cari sumber primer 曾文璇 2008.)
+- Lainnya: 越南籍移工—TOCFL A2 (jam belajar & jumlah kata per level), 線上主題式—TOCFL A1 (tematik + tugas),
+  故事教學法—TOCFL A2 (cerita bersambung), 電腦輔助 TOCFL 閱讀 (latihan simulasi berbantuan teknologi).
+
+### Prinsip penyusunan buku ajar (sumber sekunder lewat tesis di folder — kutip primernya)
+- 趙賢州 (1988): 針對性、實踐性、趣味性、科學性.
+- 呂必松 (1993): 實用、交際、知識、趣味、科學 (termasuk 詞彙數量、語法順序、內容連貫性、難度漸進性、**重現頻率**)、針對.
+- 束定芳 (1996): 真實性、循序漸進、趣味、多樣性、現代性、實用.
+- 劉珣 (2000): 針對性、實用性、科學性、趣味性、系統性.
+- 李泉 (2006): inti 針對/實用/趣味/科學; 趙金銘 (2009): 10 原則 di atas.
+  (Dirangkum di 《以西方國家學習者為對象之身心健康華語教材之編寫設計研究》 tabel 2-2 dan
+  《基於越南學生需求…》 bab 2.)
+- Nation (2007) **Four Strands** (input bermakna, output bermakna, fokus bahasa, kelancaran) — via
+  《印尼基礎中文教材編寫與遠距教學應用研究》.
+
+### Landasan teori yang TIDAK ada di folder — WAJIB diverifikasi ke sumber asli sebelum dikutip
+- **Washback / 回沖效應** (pengaruh ujian terhadap belajar-mengajar) — teori paling pas untuk "modul persiapan ujian":
+  - Alderson, J. C., & Wall, D. (1993). Does washback exist? *Applied Linguistics*, 14(2).
+  - Hughes, A. (1989/2003). *Testing for Language Teachers*. Cambridge UP. — **beneficial washback**: persiapan
+    ujian yang baik membangun kemampuan bahasa yang sebenarnya.
+  - Bailey, K. M. (1996). Working for washback. *Language Testing*, 13(3).
+  - Messick, S. (1996). Validity and washback in language testing. *Language Testing*, 13(3).
+- **Bachman & Palmer (1996)** *Language Testing in Practice* (sudah di prinsip-thesis.md): autentisitas & TLU domain →
+  bagi peserta ujian, situasi ujian adalah bagian dari ranah pemakaian bahasa sasaran → tugas berformat TOCFL =
+  tugas autentik.
+
+### Posisi yang diusulkan untuk thesis
+**Modul persiapan ujian yang sengaja menghasilkan washback positif**: tujuan utama lulus TOCFL Band A, dicapai lewat
+pemakaian bahasa dalam situasi nyata (dialog cerita + tugas), bukan hafalan soal. Ini membenarkan sekaligus
+dialog berbasis cerita, alur TBLL 6 tahap, dan latihan format resmi.
+
+### Implikasi untuk Vol.1 (hasil penilaian 2026-11-22, belum dikerjakan)
+- Tetap penting: **pengulangan kata** (±43% kata inti A01–A20 tidak muncul lagi di dialog Vol.1 sesudahnya);
+  **語言點** kata fungsi di 15 bab tanpa 語法聚焦 (A10–A18, A20–A25); ketepatan (arti kosakata per 義項, pinyin nama
+  diri, catatan di atas level di A05/A10).
+- Kekurangan khas modul ujian: **應試策略 per bagian ujian** belum sistematis (baru satu kalimat `exam_link` per
+  bab; 6 pola pengecoh belum diajarkan ke siswa — terkait variabel kecemasan); dialog belum sengaja memuat jenis
+  informasi yang sering diuji (angka, jam, harga, lokasi, penolakan, perubahan rencana); belum jelas apakah app
+  memberi umpan balik per bagian ujian.
+- Turun prioritas: tugas berbicara/menulis (Band A hanya 聽力 & 閱讀), variasi bentuk latihan, kotak budaya.
+
 ## E. Kaidah resmi penyusunan soal TOCFL, CAT, HSK & ujian internasional (penelusuran 2026-11-25)
 
 PDF yang disimpan ke `我要用的論文/` (folder di-.gitignore, salinan lokal saja):
