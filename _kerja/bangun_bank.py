@@ -129,7 +129,7 @@ def cek_kaidah(code, ts):
         tag = f'{code} {p}'
         if q and t['type'] != 'listen_pic':
             q2 = re.sub(r'(.)[不沒]\1', '', q)
-            for w in ('不舒服', '差不多', '不好意思', '對不起', '不客氣', '不只', '不見'):
+            for w in ('不舒服', '差不多', '不好意思', '對不起', '不客氣', '不只', '不見', '不一樣'):
                 q2 = q2.replace(w, '')
             if re.search(r'[不沒]', q2):
                 out.append(f'{tag}: ◇ pertanyaan negatif 「{q}」 (hindari 否定問法)')

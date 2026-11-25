@@ -17,12 +17,20 @@ sys.path.insert(0, K)
 from bangun_bank import nilai_urut
 
 HURUF = re.compile(r'(?<![A-Za-z0-9])([A-D])(?![A-Za-z0-9–-])'
-                   r'(?=\s*[:,)=]|\.(?:\s|$)|$|\s+&\s|\s+(?:dan|and|atau|or|salah|keliru|kebalikan|kebalikannya|tidak|has|is|'
-                   r'are|does|wrong|juga|also|hanya|only|menyebut|menjawab|mentions|says|berkata)\b)')
+                   r'(?=\s*[:,)=]|\.(?:\s|$)|$|\s+&\s|\s+\(|\s+(?:dan|and|atau|or|salah|keliru|kebalikan|kebalikannya|tidak|has|is|'
+                   r'are|does|wrong|juga|justru|also|hanya|only|menyebut|menjawab|mentions|says|berkata)\b)')
+
+
+LETTER = re.compile(r'(?<![A-Za-z0-9])([A-D])(?![A-Za-z0-9–-])')
+DAFTAR = re.compile(r'[A-D](?:, | dan | & | and )$')   # huruf di dalam daftar: "A, B, C dilakukan…" → C juga huruf pilihan
 
 
 def ganti_huruf(s, peta):
-    s = HURUF.sub(lambda m: 'ABCD'[peta['ABCD'.index(m.group(1))]] if 'ABCD'.index(m.group(1)) in peta else m.group(1), s)
+    def f(m):
+        i = 'ABCD'.index(m.group(1))
+        pilihan = HURUF.match(s, m.start()) or DAFTAR.search(s[max(0, m.start() - 6):m.start()])
+        return 'ABCD'[peta[i]] if pilihan and i in peta else m.group(1)
+    s = LETTER.sub(f, s)
     # daftar huruf yang jadi tak berurutan ("D, B, C:" / "D dan C:" / "D & C:") diurutkan kembali
     s = re.sub(r'(?<![A-Za-z])([A-D](?:, [A-D])+)(?=:)', lambda m: ', '.join(sorted(m.group(1).split(', '))), s)
     return re.sub(r'(?<![A-Za-z])([A-D]) (dan|and|&) ([A-D])(?=:)', lambda m: f'{min(m[1], m[3])} {m[2]} {max(m[1], m[3])}', s)

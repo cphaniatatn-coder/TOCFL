@@ -86,8 +86,8 @@
    "lines": [{"sp": "女", "zh": "我們的房間幾號？"}, {"sp": "男", "zh": "三零五。"}, {"sp": "女", "zh": "在三樓嗎？"}, {"sp": "男", "zh": "對。"}], "question": "他們的房間在幾樓？", "options": [{"icon": "🏨", "label": "papan lantai: 5F", "img": "B35-L6a"}, {"icon": "🏨", "label": "papan lantai: 3F", "img": "B35-L6b"}, {"icon": "🏨", "label": "papan lantai: 30F", "img": "B35-L6c"}], "answer": 1,
    "why": "三零五 → lantai 3 → B. A: 五 adalah nomor kamarnya. C: 三零 bukan 三十."},
   {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
-   "lines": [{"sp": "男", "zh": "我們三個人住旅館的錢，我先替你們付吧。"}, {"sp": "女", "zh": "好，一共多少錢？"}, {"sp": "男", "zh": "三千塊。"}, {"sp": "女", "zh": "那我給你一千。"}], "question": "一個人要付多少錢？", "options": ["三千塊", "一千塊", "兩千塊", "五百塊"], "answer": 1,
-   "why": "Tiga orang, total 3000 → satu orang 1000 (harus dihitung) → B. A: totalnya. C dan D: salah hitung."},
+   "lines": [{"sp": "男", "zh": "我們三個人住旅館的錢，我先替你們付吧。"}, {"sp": "女", "zh": "好，一共多少錢？"}, {"sp": "男", "zh": "三千塊。"}, {"sp": "女", "zh": "那我給你一千。"}], "question": "一個人要付多少錢？", "options": ["五百塊", "一千塊", "兩千塊", "三千塊"], "answer": 1,
+   "why": "Tiga orang, total 3000 → satu orang 1000 (harus dihitung) → B. D: totalnya. A dan C: salah hitung."},
   {"type": "read_sent", "part": "閱讀 Part 1 · Kalimat → gambar", "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
    "text": "我替媽媽買菜。", "options": [{"icon": "🖼️", "label": "ibu membeli sayur", "img": "B35-L8a"}, {"icon": "🖼️", "label": "anak membeli sayur, teringat ibu", "img": "B35-L8b"}, {"icon": "🖼️", "label": "anak memasak sayur", "img": "B35-L8c"}], "answer": 1,
    "why": "替媽媽 + 買菜 → anak yang membeli, untuk ibu → B. A: ibunya sendiri yang membeli. C: kegiatannya salah."}
@@ -189,7 +189,7 @@
    "lines": [{"sp": "女", "zh": "我的蛋糕呢？"}, {"sp": "男", "zh": "被弟弟吃了。"}, {"sp": "女", "zh": "那我的冰淇淋呢？"}, {"sp": "男", "zh": "也被他吃了。"}], "question": "誰吃了冰淇淋？", "options": [{"icon": "🐈", "label": "kucing", "img": "B37-L6a"}, {"icon": "👦", "label": "adik laki-laki", "img": "B37-L6b"}, {"icon": "👨", "label": "laki-laki yang menjawab", "img": "B37-L6c"}], "answer": 1,
    "why": "也被他吃了 → 他 = 弟弟 → B. A: tidak disebut. C: ia yang menjawab, bukan yang makan."},
   {"type": "listen_dialog", "part": "聽力 Part 4 · Dialog + makna tersirat", "instr": "Dengarkan dialognya, lalu pilih jawaban yang paling tepat.",
-   "lines": [{"sp": "男", "zh": "我的錢包不見了，怎麼辦？"}, {"sp": "女", "zh": "你最後在哪裡用了錢包？"}, {"sp": "男", "zh": "在夜市買了東西。"}, {"sp": "女", "zh": "那我們打電話問老闆吧。"}], "question": "他們現在要做什麼？", "options": ["去銀行", "打電話給夜市的老闆", "再買一個錢包", "去公車上找"], "answer": 1,
+   "lines": [{"sp": "男", "zh": "我的錢包不見了，怎麼辦？"}, {"sp": "女", "zh": "你最後在哪裡用了錢包？"}, {"sp": "男", "zh": "在夜市買了東西。"}, {"sp": "女", "zh": "那我們打電話問老闆吧。"}], "question": "他們現在要做什麼？", "options": ["去銀行找錢包", "給老闆打電話", "再買一個錢包", "去公車上找"], "answer": 1,
    "why": "Terakhir dipakai di pasar malam → 打電話問老闆 = pemilik kios di pasar malam (kesimpulan) → B. A, C, D: tidak disebut."},
   {"type": "read_sent", "part": "閱讀 Part 1 · Kalimat → gambar", "instr": "Baca kalimatnya, lalu pilih gambar yang cocok.",
    "text": "我的手機被小狗拿走了。", "options": [{"icon": "🖼️", "label": "kucing membawa lari ponsel", "img": "B37-L8a"}, {"icon": "🖼️", "label": "anjing membawa lari ponsel", "img": "B37-L8b"}, {"icon": "🖼️", "label": "anjing membawa lari sepatu", "img": "B37-L8c"}], "answer": 1,
@@ -335,7 +335,7 @@
  ],
  "tasks": [
   {"type": "listen_dialog", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
-   "lines": [{"sp": "女", "zh": "你為什麼沒去公園？"}, {"sp": "男", "zh": "因為下雨了。"}], "question": "這位先生為什麼沒去公園？", "options": [{"icon": "🖼️", "label": "cuaca cerah", "img": "B40-L4a"}, {"icon": "🖼️", "label": "ia sakit", "img": "B40-L4b"}, {"icon": "🖼️", "label": "hujan", "img": "B40-L4c"}], "answer": 2,
+   "lines": [{"sp": "女", "zh": "你為什麼沒去公園？"}, {"sp": "男", "zh": "因為下雨了。"}], "question": "那天天氣怎麼樣？", "options": [{"icon": "🖼️", "label": "cuaca cerah", "img": "B40-L4a"}, {"icon": "🖼️", "label": "ia sakit", "img": "B40-L4b"}, {"icon": "🖼️", "label": "hujan", "img": "B40-L4c"}], "answer": 2,
    "why": "因為下雨了 → C. A: kebalikannya. B: alasan lain."},
   {"type": "listen_dialog", "part": "聽力 Part 2 · Tanya-jawab satu putaran", "instr": "Dengarkan tanya-jawab singkat, lalu pilih gambar yang cocok.",
    "lines": [{"sp": "男", "zh": "你昨天幾點睡覺？"}, {"sp": "女", "zh": "十二點才睡覺。"}], "question": "這位小姐昨天幾點睡覺？", "options": [{"icon": "🕛", "label": "jam 12 malam", "img": "B40-L5a"}, {"icon": "🕙", "label": "jam 10 malam", "img": "B40-L5b"}, {"icon": "🕛", "label": "jam 12 siang", "img": "B40-L5c"}], "answer": 0,

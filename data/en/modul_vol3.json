@@ -317,11 +317,11 @@
      "options": [
       "小明買了蛋糕",
       "蛋糕在餐桌上",
-      "媽媽吃了蛋糕",
-      "蛋糕可能沒有了"
+      "蛋糕可能沒有了",
+      "媽媽吃了蛋糕"
      ],
-     "answer": 3,
-     "why": "已經吃光了吧 = it has probably all been eaten. A is reversed: the man bought the cake. B: the cake is no longer on the table. C: 小明 ate it."
+     "answer": 2,
+     "why": "已經吃光了吧 = mungkin sudah habis dimakan. A terbalik: kue dibeli si laki-laki. B: kue sudah tidak di meja. D: yang makan 小明."
     },
     {
      "type": "read_sent",
@@ -932,7 +932,7 @@
      "question": "這位小姐的意思是什麼？",
      "options": [
       "這位先生的媽媽很忙",
-      "房間不太亂",
+      "房間一點也不亂",
       "這位先生明天要去看媽媽",
       "這位先生應該讓房間乾淨一點"
      ],
@@ -1311,9 +1311,9 @@
      },
      "question": "袋子怎麼了？",
      "options": [
-      "袋子太小了。",
+      "袋子太小了，放不下。",
       "袋子破了，東西都掉出來了。",
-      "袋子裡沒有東西。"
+      "袋子裡一個東西也沒有。"
      ],
      "answer": 1,
      "why": "A torn bag with things falling out → 袋子破了 → B. A and C: do not match the picture."
@@ -1890,8 +1890,8 @@
      "question": "你們家有幾個臥室？",
      "options": [
       "兩個臥室，一個客廳。",
-      "三個臥室。",
-      "三層樓。"
+      "有三個臥室。",
+      "有三層樓。"
      ],
      "answer": 1,
      "why": "Floor plan: three bedrooms → 三個臥室 → B. A: the wrong number. C: 層 (floors), not rooms."
@@ -3197,7 +3197,7 @@
      "question": "這位先生為什麼現在要去超市？",
      "options": [
       "超市的東西很便宜",
-      "他要買毛巾",
+      "他要去買新毛巾",
       "這位小姐的洗髮精用完了",
       "他的洗髮精用完了"
      ],
@@ -3293,13 +3293,13 @@
      "text": "我上個月搬到新宿舍。房間不大，可是有自己的浴室。浴室的門後邊掛著兩條毛巾，桌子上放著牙刷、牙膏和洗髮精。第一天晚上我想洗澡，才發現沒有肥皂，也沒有沐浴乳。我就去樓下的商店買了一瓶沐浴乳。",
      "question": "這個人第一天晚上為什麼去商店？",
      "options": [
-      "買毛巾",
+      "買洗澡用的東西",
       "買衛生紙",
       "買牙刷",
-      "買洗澡用的東西"
+      "買毛巾"
      ],
-     "answer": 3,
-     "why": "No soap or body wash → bought 沐浴乳 (for showering). A and C are already in the bathroom. B is not mentioned."
+     "answer": 0,
+     "why": "Tidak ada sabun & sabun cair → membeli 沐浴乳 (untuk mandi). D dan C sudah ada di kamar mandi. B tidak disebut."
     }
    ],
    "grammar": [
@@ -3601,12 +3601,12 @@
      },
      "question": "鬧鐘上是幾點？",
      "options": [
-      "六點。",
       "十二點。",
+      "六點。",
       "六點半。"
      ],
-     "answer": 0,
-     "why": "The alarm clock shows exactly six → 六點 → A. B: the short hand is not on 12. C: not half past."
+     "answer": 1,
+     "why": "Jam weker menunjukkan jam 6 tepat → 六點 → B. A: jarum pendek tidak di 12. C: bukan setengah."
     },
     {
      "type": "listen_pic",
@@ -3781,13 +3781,13 @@
      ],
      "question": "這位小姐為什麼這麼累？",
      "options": [
-      "她工作太多",
+      "她晚上不能好好睡覺",
       "她每天走很多路",
       "她還沒吃飯",
-      "她晚上不能好好睡覺"
+      "她工作太多"
      ],
-     "answer": 3,
-     "why": "Every night someone walks back and forth upstairs → her sleep is disturbed. A is not mentioned. B misreads 走來走去 (she is not the one walking). C: 還沒 refers to talking to the neighbours."
+     "answer": 0,
+     "why": "Tiap malam ada orang mondar-mandir di lantai atas → tidurnya terganggu. D tidak disebut. B salah paham 走來走去 (bukan dia yang berjalan). C: 還沒 merujuk bicara dengan tetangga."
     },
     {
      "type": "read_sent",
@@ -3876,7 +3876,7 @@
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the correct answer.",
      "text": "大文這一週都很忙，每天半夜兩點才上床，早上七點就要起床。昨天上課，他一直想睡覺，老師問他問題，他也沒聽見。下課以後，他跟朋友說：「我兩天沒好好睡覺了，今天晚上一定要早點上床。」",
-     "question": "大文昨天上課為什麼沒聽見老師的問題？",
+     "question": "大文昨天在課上為什麼一直想睡覺？",
      "options": [
       "老師說得太小聲",
       "他在聽音樂",
@@ -4375,15 +4375,15 @@
        "zh": "那今天晚上把窗戶關好吧。"
       }
      ],
-     "question": "這位先生昨天晚上為什麼沒睡覺？",
+     "question": "這位先生昨天晚上怎麼了？",
      "options": [
-      "鄰居太吵",
-      "他在打電話",
-      "窗戶壞了",
-      "房間裡有蚊子"
+      "一直在打蚊子",
+      "一直在打電話",
+      "窗戶壞了，很冷",
+      "鄰居太吵了"
      ],
-     "answer": 3,
-     "why": "不停地打蚊子 → mosquitoes. A is the woman's guess, which he rejects (不是). C and B are not mentioned."
+     "answer": 0,
+     "why": "不停地打蚊子 → A. B dan C: tidak disebut. D: tebakan si perempuan yang dibantah (不是)."
     },
     {
      "type": "read_sent",
@@ -4475,8 +4475,8 @@
      "question": "這個人每天為什麼很累？",
      "options": [
       "他晚上十一點才下班",
-      "他晚上要念書",
-      "他生病了",
+      "他每天晚上要念書",
+      "他自己生病了，很不舒服",
       "鄰居的孩子晚上一直哭"
      ],
      "answer": 3,
@@ -4891,13 +4891,13 @@
      ],
      "question": "這位小姐為什麼想搬家？",
      "options": [
-      "市區不方便",
       "她想住大一點的房子",
+      "市區不方便",
       "鄉下的東西便宜",
       "她不喜歡超市"
      ],
-     "answer": 1,
-     "why": "市區的房子沒有鄉下那麼大 + needs a yard → wants a bigger house. A is the opposite (很方便). C and D are not mentioned."
+     "answer": 0,
+     "why": "市區的房子沒有鄉下那麼大 + perlu halaman → ingin rumah lebih besar. B kebalikan (很方便). C dan D tidak disebut."
     },
     {
      "type": "read_sent",
@@ -4990,11 +4990,11 @@
      "options": [
       "工作比城市多",
       "比城市方便得多",
-      "房子比城市貴",
-      "不太方便，可是他很喜歡"
+      "不太方便，可是他很喜歡",
+      "房子比城市貴"
      ],
-     "answer": 3,
-     "why": "It takes an hour to get to town (less convenient), but 這樣的生活很好. B is the opposite. C: housing is expensive in the city. A: the jobs are in the city."
+     "answer": 2,
+     "why": "Ke kota butuh 1 jam (kurang praktis), tapi 這樣的生活很好. B kebalikannya. D: yang mahal rumah di kota. A: pekerjaan banyak justru di kota."
     }
    ],
    "grammar": [
@@ -6050,11 +6050,11 @@
      "options": [
       "他自己的傘",
       "什麼都不帶",
-      "雨衣",
-      "這位小姐的傘"
+      "這位小姐的傘",
+      "雨衣"
      ],
-     "answer": 3,
-     "why": "我帶你的傘 → the woman's umbrella. A: he doesn't mention his own. C is not mentioned. B was his first attitude, which changes."
+     "answer": 2,
+     "why": "我帶你的傘 → payung si perempuan. A: dia tidak menyebut payungnya sendiri. D tidak disebut. B = sikap awal yang berubah."
     },
     {
      "type": "read_sent",
@@ -7192,12 +7192,12 @@
      "question": "哪一個是對的？",
      "options": [
       "照片裡只有三個人",
-      "這位先生是外公外婆的孩子",
-      "這位小姐也在照片裡",
-      "這位先生是外公外婆年紀最大的孫子"
+      "他是外公外婆的孩子",
+      "他是年紀最大的孫子",
+      "這位小姐也在照片裡"
      ],
-     "answer": 3,
-     "why": "他們的孫子…其中我年紀最大 → the eldest grandchild. A contradicts 好多人. B: he is a grandchild, not a child. C is not mentioned."
+     "answer": 2,
+     "why": "他們的孫子…其中我年紀最大 → cucu tertua. A bertentangan (好多人). B: dia cucu, bukan anak. D tidak disebut."
     },
     {
      "type": "read_sent",
@@ -7870,13 +7870,13 @@
      "text": "小林和美美是大學的同班同學，今年十二月就要結婚了。小林的父母住在高雄，美美的父母住在臺北，所以他們要回兩個地方跟家人吃飯。美美說，她母親已經開始準備了，每天都很忙；她父親很少說話，可是晚上常常一個人看她小時候的照片。",
      "question": "美美的父親為什麼常常看她小時候的照片？",
      "options": [
-      "他在找結婚要用的照片",
       "女兒快要結婚了，他有點難過",
+      "他在找結婚要用的照片",
       "他想念高雄的家",
       "他在找結婚的地方"
      ],
-     "answer": 1,
-     "why": "Quietly looking at childhood photos of the daughter who is about to marry → sad to 'let her go'. A and D are not mentioned. C: the house in 高雄 belongs to 小林's family, not his."
+     "answer": 0,
+     "why": "Diam + melihat foto masa kecil putrinya yang sebentar lagi menikah → sedih akan 'melepas' anaknya. B dan D tidak disebut. C: rumah di 高雄 milik keluarga 小林, bukan keluarganya."
     }
    ],
    "grammar": [
@@ -8365,7 +8365,7 @@
      "options": [
       "他不在書店打工了",
       "他來喝咖啡",
-      "他感冒了",
+      "他自己感冒了",
       "他替生病的朋友工作"
      ],
      "answer": 3,
@@ -8460,10 +8460,10 @@
      "text": "很多大學生都在打工。有的人是為了生活費，有的人是為了多學一點東西。我的朋友小王在一家公司打工，他說打工的目的不是錢，是想知道自己以後想不想做那樣的工作。我在書店打工，因為我很喜歡看書，也可以替老闆介紹好書給客人。",
      "question": "小王為什麼去公司打工？",
      "options": [
-      "他需要生活費",
-      "老闆是他爸爸",
-      "他很喜歡看書",
-      "他想知道自己以後想做什麼工作"
+      "他每個月需要生活費",
+      "那家公司的老闆是他爸爸",
+      "他很喜歡看書，想多學",
+      "他想知道自己以後想不想做"
      ],
      "answer": 3,
      "why": "目的不是錢，是想知道…想不想做那樣的工作 → that is the reason. A: he says it is not about money. C is the writer's reason, not 小王's. B is not mentioned."
@@ -8894,7 +8894,7 @@
       }
      ],
      "answer": 1,
-     "why": "九點。不對，王先生說十點 → C. A: corrected. B: not mentioned."
+     "why": "九點。不對，王先生說十點 → B. A: dikoreksi. C: tidak disebut."
     },
     {
      "type": "listen_dialog",
@@ -9020,7 +9020,7 @@
       "寫開會的報告",
       "早上十點開會",
       "替小林開會，然後交報告",
-      "在家休息"
+      "明天在家休息"
      ],
      "answer": 2,
      "why": "請你替我開會 + 開完會就交給他. A: 小林 has already written the report. B: the meeting is at 9; 10 is the deadline for the report. D is not mentioned."
@@ -9475,11 +9475,11 @@
      "options": [
       "他還想再爬",
       "他想拍照",
-      "他們已經到了",
-      "他不相信快到了"
+      "他不相信快到了",
+      "他們已經到了"
      ],
-     "answer": 3,
-     "why": "你半個小時以前也這麼說 → he no longer believes her. A is the opposite (爬不上去了). C: they are only about to arrive. B is not mentioned."
+     "answer": 2,
+     "why": "你半個小時以前也這麼說 → dia tidak percaya lagi. A kebalikan (爬不上去了). D: baru akan sampai. B tidak disebut."
     },
     {
      "type": "read_sent",
@@ -10024,13 +10024,13 @@
      ],
      "question": "這位小姐的意思是什麼？",
      "options": [
-      "她很喜歡這個遊戲",
       "這位先生可以玩她的遊戲",
+      "她很喜歡這個遊戲",
       "大家都覺得遊戲很無聊",
       "她想買新的遊戲"
      ],
-     "answer": 1,
-     "why": "那你玩我的吧 → B. A: the opposite (不太有意思). C: the opposite — other people say it is fun. D: it is the man who wants to buy it."
+     "answer": 0,
+     "why": "那你玩我的吧 → A. B: kebalikannya (不太有意思). C: kebalikannya — orang lain bilang seru. D: si laki-laki yang mau membeli."
     },
     {
      "type": "read_sent",
@@ -10123,11 +10123,11 @@
      "options": [
       "爺爺一直說話",
       "電視新聞有趣極了",
-      "大家一起看電視",
-      "大家都在看新聞，很無聊"
+      "大家都在看新聞，很無聊",
+      "大家一起看電視"
      ],
-     "answer": 3,
-     "why": "大家都不說話，無聊極了. A is the opposite (不說話). B is not mentioned. C: only grandpa watches TV."
+     "answer": 2,
+     "why": "大家都不說話，無聊極了. A kebalikan (不說話). B tidak disebut. D: hanya kakek yang menonton TV."
     }
    ],
    "grammar": [
@@ -10580,13 +10580,13 @@
      ],
      "question": "他們什麼時候去故宮？",
      "options": [
-      "星期五",
       "星期六早上",
+      "星期五",
       "今天",
       "星期六下午"
      ],
-     "answer": 1,
-     "why": "星期六早上一開門就去 → B. A: the woman is working. C: today they only book tickets. D: not the afternoon."
+     "answer": 0,
+     "why": "星期六早上一開門就去 → A. B: si perempuan bekerja. C: hari ini hanya memesan tiket. D: bukan sore."
     },
     {
      "type": "read_sent",
@@ -10675,15 +10675,15 @@
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read this plan, then choose the correct answer.",
      "text": "這個假日，我跟朋友在臺北玩。第一天我們先去參觀故宮，看了很多有名畫家的畫。晚上我們去逛夜市，一邊吃一邊逛，到處都是人。第二天我們想去爬山，可是下雨了，就在旅館休息了一天。",
-     "question": "他們第二天為什麼沒去爬山？",
+     "question": "他們第二天為什麼在旅館休息？",
      "options": [
-      "太累了",
+      "天氣不好",
       "要去逛夜市",
       "要參觀故宮",
-      "天氣不好"
+      "太累了"
      ],
-     "answer": 3,
-     "why": "可是下雨了 → bad weather. A is not mentioned. B and C were on the first day."
+     "answer": 0,
+     "why": "可是下雨了 → cuaca buruk. D tidak disebut. B dan C kegiatan hari pertama."
     }
    ],
    "grammar": [
@@ -10991,12 +10991,12 @@
      },
      "question": "從幾號出口出去？",
      "options": [
-      "二號出口。",
       "一號出口。",
+      "二號出口。",
       "十二號出口。"
      ],
-     "answer": 0,
-     "why": "An Exit 2 sign → 二號出口 → A. B and C: the wrong number."
+     "answer": 1,
+     "why": "Papan pintu keluar nomor 2 → 二號出口 → B. A dan C: nomornya salah."
     },
     {
      "type": "listen_pic",
@@ -11169,7 +11169,7 @@
        "zh": "對，我們走遠一點，去搭捷運吧。"
       }
      ],
-     "question": "他們為什麼不坐公車？",
+     "question": "他們為什麼決定搭捷運？",
      "options": [
       "公車站太遠",
       "下班時間公車很慢",
@@ -11731,7 +11731,7 @@
        "zh": "謝謝！"
       }
      ],
-     "question": "這位小姐為什麼看不清楚？",
+     "question": "這位小姐為什麼要坐到這位先生那裡？",
      "options": [
       "她坐得太遠",
       "字太小",
@@ -12326,13 +12326,13 @@
      ],
      "question": "哪一個是對的？",
      "options": [
-      "這位先生還沒拿到簽證",
+      "這位先生很晚才準備出國的東西",
       "這位先生明天出國",
       "這位先生的行李準備好了",
-      "這位先生很晚才準備出國的東西"
+      "這位先生還沒拿到簽證"
      ],
-     "answer": 3,
-     "why": "昨天才拿到 + 今天晚上才開始準備 → D. A: he already has his visa. B: the day after tomorrow, not tomorrow. C: it is not packed yet."
+     "answer": 0,
+     "why": "昨天才拿到 + 今天晚上才開始準備 → A. D: ia sudah dapat visa. B: lusa, bukan besok. C: belum disiapkan."
     },
     {
      "type": "read_sent",
@@ -12894,10 +12894,10 @@
      ],
      "question": "這位小姐的意思是什麼？",
      "options": [
-      "她不想去綠島了",
+      "她明天不想去綠島了",
       "如果船不開，她就下個週末去",
-      "她要坐飛機去",
-      "明天天氣很好"
+      "她要坐飛機去綠島",
+      "明天的天氣會很好"
      ],
      "answer": 1,
      "why": "風太大…船不開 → 只好下個週末再去 → B. A: she still wants to go. C: not mentioned. D: the opposite."
@@ -12989,15 +12989,15 @@
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read this notice, then choose the correct answer.",
      "text": "這個夏天我想去日本玩，可是飛機票太貴了，飯店也都客滿了。我只好在臺灣玩。我利用這兩個星期，坐火車去了花蓮和臺南。沒有出國，可是我覺得在臺灣玩也很有意思。",
-     "question": "這個人為什麼沒有去日本？",
+     "question": "這個人為什麼只好在臺灣玩？",
      "options": [
-      "他不喜歡日本",
-      "他要去花蓮工作",
-      "他沒有時間",
-      "飛機票太貴，飯店也客滿了"
+      "他不喜歡去日本玩",
+      "他要去花蓮找工作",
+      "飛機票太貴，飯店也客滿了",
+      "他這個夏天沒有時間"
      ],
-     "answer": 3,
-     "why": "飛機票太貴 + 飯店客滿 → that is the reason. A is the opposite (他想去). C: he had two weeks. B: he went to Hualien on holiday."
+     "answer": 2,
+     "why": "飛機票太貴 + 飯店客滿 → alasannya. A kebalikan (他想去). D: dia punya dua minggu. B: dia ke Hualien untuk berlibur."
     }
    ],
    "grammar": [
@@ -13552,13 +13552,13 @@
      "text": "新聞說，颱風的中心現在在臺灣的南方，方向是往北，大概明天晚上會到臺北。要是颱風來了，學校和公司都不上課、不上班。所以媽媽今天就去超市買了很多東西，她說颱風來的話，就不能出門了。",
      "question": "媽媽為什麼今天去超市買很多東西？",
      "options": [
-      "超市明天不開",
-      "她要去南部",
+      "超市明天不開門",
+      "她明天要去南部",
       "明天學校不上課",
-      "颱風來的話，就不能出門了"
+      "颱風來了，不能出去買"
      ],
      "answer": 3,
-     "why": "颱風來的話，就不能出門了 → that is the reason. A is not mentioned. C is true but not why she shopped. B: the typhoon is in the south; she is not going there."
+     "why": "颱風來的話，就不能出門了 → harus belanja sebelum topan datang → D. A: tidak disebut. B: topannya di selatan, bukan ia yang ke sana. C: benar, tetapi bukan alasan belanja."
     }
    ],
    "grammar": [
@@ -14605,9 +14605,9 @@
      "question": "這位小姐明天會不會去上課？",
      "options": [
       "姊姊回來的話，她就去",
-      "她一定會去",
+      "她明天一定會去",
       "她爸爸不讓她去",
-      "她不去了"
+      "她明天不會去了"
      ],
      "answer": 0,
      "why": "要是我姊姊回來，我就能去 → A. B and D: it is not certain. C: her dad has not forbidden it."
@@ -14701,13 +14701,13 @@
      "text": "我奶奶八十歲了，一個人住在鄉下。爸爸工作很忙，常常不能回去看她，所以每個週末都讓我去陪奶奶。一開始我覺得鄉下很無聊，可是跟奶奶在一起久了，我發現她知道很多有意思的事。現在不用爸爸說，我自己就想去。奶奶說：「你來看我，讓我每天都很高興。」",
      "question": "這個人現在為什麼想去奶奶家？",
      "options": [
-      "爸爸讓他去",
-      "鄉下很好玩",
-      "奶奶生病了",
-      "他覺得跟奶奶在一起很有意思"
+      "他覺得跟奶奶在一起很有意思",
+      "鄉下很好玩，他很喜歡",
+      "奶奶生病了，要他去看",
+      "爸爸讓他每個週末去"
      ],
-     "answer": 3,
-     "why": "發現她知道很多有意思的事 + 我自己就想去. A was the reason AT FIRST (now 不用爸爸說). B contradicts it (鄉下很無聊). C is not mentioned."
+     "answer": 0,
+     "why": "發現她知道很多有意思的事 + 我自己就想去. D = alasan AWAL (sekarang 不用爸爸說). B bertentangan (鄉下很無聊). C tidak disebut."
     }
    ],
    "grammar": [
@@ -15236,10 +15236,10 @@
      "text": "上個星期我們班做了一個報告，我跟小林、安安合作。小林很會說話，安安很會寫，我做照片。我們每天晚上用手機傳簡訊談報告的事。報告的時候，老師說我們合作得很好，也很有禮貌。我覺得，一個人做得好不難，大家一起做得好比較難。",
      "question": "這個人覺得什麼比較難？",
      "options": [
-      "寫報告",
+      "一個人寫報告",
       "在老師前面報告",
       "大家一起合作得好",
-      "傳簡訊"
+      "每天晚上傳簡訊"
      ],
      "answer": 2,
      "why": "大家一起做得好比較難. A, B and D are not described as hard."
@@ -15809,13 +15809,13 @@
      "text": "上個星期弟弟感冒了，後來我也感冒了。我一直咳嗽、流鼻水，晚上也常常頭痛。醫生給了我一些藥，說一天吃三次。可是第三天我找不到藥了，問了媽媽才知道，是被弟弟吃掉了，他以為那是他的藥。媽媽只好再帶我去看醫生。",
      "question": "為什麼媽媽又帶他去看醫生？",
      "options": [
-      "他的病越來越嚴重",
+      "他的藥被弟弟吃掉了",
       "醫生讓他再去",
       "弟弟也感冒了",
-      "他的藥被弟弟吃掉了"
+      "他的病越來越嚴重"
      ],
-     "answer": 3,
-     "why": "藥被弟弟吃掉了 → the medicine was gone. A is not mentioned. C is true, but not why he went back to the doctor. B is not mentioned."
+     "answer": 0,
+     "why": "藥被弟弟吃掉了 → obat habis. D tidak disebut. C benar, tapi bukan alasan kembali ke dokter. B tidak disebut."
     }
    ],
    "grammar": [
@@ -16416,15 +16416,15 @@
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read these instructions for use, then choose the correct answer.",
      "text": "藥局的小姐說：這個藥一天吃三次，應該飯後吃，不能空肚子吃。吃了以後可能會想睡覺，所以吃藥以後最好別開車。吃三天以後，要是還發燒，就應該去醫院看醫生。",
-     "question": "吃了這個藥以後，最好不要做什麼？",
+     "question": "吃了這個藥以後，要注意什麼？",
      "options": [
-      "吃飯",
-      "喝水",
-      "看醫生",
-      "開車"
+      "別開車",
+      "多喝水",
+      "馬上去看醫生",
+      "不吃飯"
      ],
-     "answer": 3,
-     "why": "最好別開車 (it can make you sleepy). A: you must eat first. B is not mentioned. C is advised if the fever continues."
+     "answer": 0,
+     "why": "可能會想睡覺，所以…最好別開車 → A. B: tidak disebut. C: hanya bila tiga hari masih demam. D: justru harus diminum sesudah makan (飯後吃)."
     }
    ],
    "grammar": [
@@ -16865,13 +16865,13 @@
      ],
      "question": "這位小姐的意思是什麼？",
      "options": [
-      "這位先生應該多看天氣",
       "她不相信這位先生在看天氣",
+      "這位先生應該多看天氣",
       "她想知道今天的天氣",
       "這位先生的眼睛不好"
      ],
-     "answer": 1,
-     "why": "天氣有那麼多可以看嗎？ → she does not believe him → B. A: the opposite. C and D: not mentioned."
+     "answer": 0,
+     "why": "天氣有那麼多可以看嗎？ → ia tidak percaya → A. B: kebalikannya. C dan D: tidak disebut."
     },
     {
      "type": "read_sent",
@@ -17427,12 +17427,12 @@
        "zh": "我的傘被我弟弟帶走了。"
       }
      ],
-     "question": "這位先生為什麼沒去看電影？",
+     "question": "這位先生出門以後怎麼了？",
      "options": [
-      "他不想看電影",
-      "下雨了，他沒有傘",
+      "他不想看電影了",
+      "下雨了，可是他沒有傘",
       "他弟弟生病了",
-      "電影院太遠"
+      "電影院太遠了"
      ],
      "answer": 1,
      "why": "才出門，就下大雨 + 傘被弟弟帶走了 → B. A: he wanted to see it. C and D: not mentioned."
@@ -17964,7 +17964,7 @@
        "zh": "好，那我們星期五就去。"
       }
      ],
-     "question": "這位先生為什麼不想去太遠的地方？",
+     "question": "這位先生為什麼想去近一點的地方？",
      "options": [
       "他不喜歡旅行",
       "春假很短",
@@ -18065,11 +18065,11 @@
      "options": [
       "寒假",
       "週末",
-      "春假",
-      "暑假"
+      "暑假",
+      "春假"
      ],
-     "answer": 3,
-     "why": "暑假 is over two months — the longest. A is about a month. C is only a few days. B is not discussed."
+     "answer": 2,
+     "why": "暑假 ±dua bulan lebih — paling panjang. A sekitar sebulan. D hanya beberapa hari. B tidak dibahas."
     }
    ],
    "grammar": [
@@ -18500,7 +18500,7 @@
      ],
      "question": "這位小姐下個星期要做什麼？",
      "options": [
-      "畢業",
+      "準備畢業",
       "跟教授想新的題目",
       "不做研究了",
       "去別的學校"
@@ -19047,13 +19047,13 @@
      ],
      "question": "這位小姐怎麼背詞？",
      "options": [
-      "只看拼音",
       "寫寫、念念，再用它說話",
+      "每個詞只看拼音",
       "請老師幫她",
       "每個詞寫二十遍"
      ],
-     "answer": 1,
-     "why": "我每個詞都寫寫、念念，再用它說一句話 → B. A and C: not mentioned. D: twenty is the number of words, not how many times she writes them."
+     "answer": 0,
+     "why": "我每個詞都寫寫、念念，再用它說一句話 → A. B dan C: tidak disebut. D: 二十 itu jumlah kata, bukan berapa kali ditulis."
     },
     {
      "type": "read_sent",
@@ -19144,13 +19144,13 @@
      "text": "很多外國學生覺得漢字很難。我的方法是：不會的字先查字典，看看它是什麼意思，然後寫五遍，再念三遍。每天睡覺以前，我再看看今天學的詞。這樣我每個星期可以背一百個詞。朋友說我的方法很好，也想試試看。",
      "question": "睡覺以前這個人做什麼？",
      "options": [
-      "寫五遍",
-      "查字典",
-      "念三遍",
-      "再看看今天學的詞"
+      "把字寫五遍",
+      "不會的字查字典",
+      "把今天的詞再看一次",
+      "把字念三遍"
      ],
-     "answer": 3,
-     "why": "每天睡覺以前，我再看看今天學的詞. A, B and C are done earlier while studying."
+     "answer": 2,
+     "why": "每天睡覺以前，我再看看今天學的詞. A, B, D dilakukan sebelumnya, saat belajar."
     }
    ],
    "grammar": [
@@ -19592,10 +19592,10 @@
      ],
      "question": "這位先生為什麼要再改作文？",
      "options": [
-      "他還沒寫完",
+      "他的作文還沒寫完",
       "文法用錯了，例子也太少",
       "老師叫他寫別的題目",
-      "題目不對"
+      "作文的題目不對"
      ],
      "answer": 1,
      "why": "文法用得不對，例子也不夠 → B. A: he has finished. C and D: not mentioned."
@@ -19692,7 +19692,7 @@
       "老師說得太多",
       "作業太多",
       "文法太難",
-      "比只聽老師說有意思"
+      "這樣上課很有意思"
      ],
      "answer": 3,
      "why": "比只聽老師說有意思多了. A is the opposite (很少自己一直說). B and C are not mentioned."
@@ -19988,7 +19988,7 @@
      "question": "你會說什麼話？",
      "options": [
       "除了中文以外，我什麼都不會說。",
-      "我只會說臺語。",
+      "我只會說臺語，不會說中文。",
       "除了中文以外，我還會說臺語。"
      ],
      "answer": 2,
@@ -20230,11 +20230,11 @@
      "options": [
       "法律課太少",
       "他想當歷史老師",
-      "老師叫他上",
-      "他對現代歷史有興趣"
+      "他對現代歷史有興趣",
+      "老師叫他上"
      ],
-     "answer": 3,
-     "why": "因為我對現代歷史很有興趣. A, C and B are not mentioned."
+     "answer": 2,
+     "why": "因為我對現代歷史很有興趣. A, D, B tidak disebut."
     }
    ],
    "grammar": [
@@ -20843,13 +20843,13 @@
      "text": "我弟弟今年八歲，他覺得數學很困難，每次數學都只有六十分。我發現他不是不認真，是不喜歡數學。所以我叫他數家裡的東西，例如：桌子上有幾個蘋果，一個蘋果二十塊，一共多少錢。現在他覺得數學很有意思，上個月考了九十分。",
      "question": "弟弟為什麼現在覺得數學有意思？",
      "options": [
-      "他很認真",
+      "他一直很認真",
       "他考了九十分",
-      "他有了新老師",
-      "哥哥用家裡的東西教他"
+      "哥哥教他數東西",
+      "他有了新老師"
      ],
-     "answer": 3,
-     "why": "叫他數家裡的東西 → a new way that made him like it. A: he was serious from the start. B is the result, not the cause. C is not mentioned."
+     "answer": 2,
+     "why": "叫他數家裡的東西 → cara baru membuatnya suka. A: dia memang serius sejak awal. B = hasilnya, bukan penyebab. D tidak disebut."
     }
    ],
    "grammar": [
@@ -21301,15 +21301,15 @@
        "zh": "包括飛機票和飯店，可是不包括吃飯的錢。"
       }
      ],
-     "question": "一萬兩千塊不包括什麼？",
+     "question": "一萬兩千塊包括什麼？",
      "options": [
-      "飛機票",
+      "只有飛機票",
+      "飛機票和飯店的錢",
       "吃飯的錢",
-      "飯店",
-      "一切都包括"
+      "什麼都包括"
      ],
      "answer": 1,
-     "why": "不包括吃飯的錢 → B. A and C: they are included. D: the opposite."
+     "why": "包括飛機票和飯店，可是不包括吃飯的錢 → B. A: hotel juga termasuk. C: makan tidak termasuk. D: kebalikannya (不包括吃飯的錢)."
     },
     {
      "type": "read_sent",
@@ -21403,7 +21403,7 @@
       "功課太多",
       "住得太遠",
       "喜歡玩手機",
-      "晚上要打工"
+      "晚上還要工作"
      ],
      "answer": 3,
      "why": "當中許多人說是因為晚上要打工. A, C and B are not mentioned."
@@ -21679,10 +21679,10 @@
      "options": [
       "十二歲以下的小孩。",
       "十二歲以上的人。",
-      "大人。"
+      "六十五歲以上的老人。"
      ],
      "answer": 0,
-     "why": "Sign: no children under 12 → 十二歲以下的小孩 → A. B: the opposite. C: adults may go in."
+     "why": "Rambu: anak di bawah 12 dilarang → 十二歲以下的小孩 → A. B: kebalikannya. C: orang tua boleh masuk."
     },
     {
      "type": "listen_dialog",
@@ -21821,13 +21821,13 @@
      ],
      "question": "這位先生上次買的鞋子大概多少錢？",
      "options": [
-      "三千塊",
-      "一千塊",
       "三百塊",
+      "一千塊",
+      "三千塊",
       "九千塊"
      ],
      "answer": 1,
-     "why": "三千塊左右 + 是我上次買的三倍 → 3,000 ÷ 3 = 1,000 → B. A: the price now. C: the wrong number. D: multiplied instead of divided."
+     "why": "三千塊左右 + 是我上次買的三倍 → 3.000 ÷ 3 = 1.000 → B. C: harga sekarang. A: angka salah. D: dikali, bukan dibagi."
     },
     {
      "type": "read_sent",
@@ -22179,11 +22179,11 @@
      "question": "今天打幾折？",
      "options": [
       "打二折。",
-      "打八折。",
-      "打五折。"
+      "打五折。",
+      "打八折。"
      ],
-     "answer": 1,
-     "why": "$100 crossed out to $80 → 打八折 → B. A: only the amount off (20%). C: a different discount."
+     "answer": 2,
+     "why": "$100 dicoret menjadi $80 → 打八折 → C. A: hanya selisihnya (20%). B: diskon lain."
     },
     {
      "type": "listen_pic",
@@ -22915,15 +22915,15 @@
        "zh": "大的只有金色的，我不喜歡。"
       }
      ],
-     "question": "這位小姐為什麼不買？",
+     "question": "這位小姐覺得怎麼樣？",
      "options": [
-      "太貴了",
-      "小的太小，大的顏色她不喜歡",
-      "她不喜歡毛衣",
-      "不好看"
+      "小的太小，大的顏色不好",
+      "毛衣太貴了，買不起",
+      "她不喜歡穿毛衣",
+      "毛衣看起來不好看"
      ],
-     "answer": 1,
-     "why": "小了一點 + 大的只有金色的，我不喜歡 → B. A: the price is not mentioned. C: she likes jumpers. D: he says she looks pretty."
+     "answer": 0,
+     "why": "小了一點 + 大的只有金色的，我不喜歡 → A. B: harga tidak disebut. C: ia suka sweter. D: katanya tampak cantik."
     },
     {
      "type": "read_sent",
@@ -23012,15 +23012,15 @@
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the correct answer.",
      "text": "冬天到了，我去買衣服。我先看了一件金色的上衣，很漂亮，可是太貴了。後來我買了一件紅紅的毛衣，賣衣服的小姐說這件毛衣很適合我。我也買了手套和襪子，因為我的手和腳常常很冷。回家以後，媽媽說：「這件毛衣看起來很舒服，很合適。」",
-     "question": "這個人為什麼沒買金色的上衣？",
+     "question": "這個人覺得金色的上衣怎麼樣？",
      "options": [
       "不適合她",
       "不好看",
       "媽媽不喜歡",
-      "太貴了"
+      "好看，可是太貴"
      ],
      "answer": 3,
-     "why": "很漂亮，可是太貴了. A is not mentioned (it is the sweater that 適合). C: mum only commented on the sweater. B is the opposite (很漂亮)."
+     "why": "很漂亮，可是太貴了 → D. A: yang 適合 adalah sweter. B: kebalikannya (很漂亮). C: ibu hanya menilai sweter."
     }
    ],
    "grammar": [
@@ -23509,8 +23509,8 @@
      ],
      "question": "這位先生怎麼付錢？",
      "options": [
-      "刷卡",
-      "不買了",
+      "刷卡付錢",
+      "不買東西了",
       "給一百塊",
       "給九十五塊零錢"
      ],
@@ -23609,7 +23609,7 @@
       "要給小費",
       "店員要他帶",
       "他沒有信用卡",
-      "很多小店不能刷卡"
+      "常常有店不能刷卡"
      ],
      "answer": 3,
      "why": "很多小店不能刷卡，所以…帶零錢. A is the opposite (不用給小費). B and C are not mentioned."
@@ -24071,10 +24071,10 @@
      ],
      "question": "這家店為什麼生意很好？",
      "options": [
-      "水果很便宜",
+      "水果比別家便宜",
       "水果好，老闆娘也很客氣",
-      "老闆娘送東西",
-      "店很大"
+      "老闆娘常常送東西",
+      "這家店很大，很好找"
      ],
      "answer": 1,
      "why": "水果都是今天早上才到的 + 高高興興地跟客人說話 → B. A, C, D: not mentioned."
@@ -24622,7 +24622,7 @@
      "question": "這位先生為什麼要換毛衣？",
      "options": [
       "太大了",
-      "顏色太淺",
+      "顏色不夠深",
       "不流行",
       "太貴了"
      ],
@@ -24720,11 +24720,11 @@
      "options": [
       "還吃不慣",
       "房間太小",
-      "很想回印尼",
-      "已經住慣了"
+      "已經住慣了",
+      "很想回印尼"
      ],
-     "answer": 3,
-     "why": "我慢慢住慣了 + 最喜歡臺灣的小吃 → D. A: before, not now. B: before. C: the opposite."
+     "answer": 2,
+     "why": "我慢慢住慣了 + 最喜歡臺灣的小吃 → C. A: dulu, bukan sekarang. B: dulu. D: kebalikannya."
     }
    ],
    "grammar": [
@@ -25142,13 +25142,13 @@
      ],
      "question": "這位先生覺得這家餐廳怎麼樣？",
      "options": [
-      "菜很難吃",
       "菜都很好，只是太油",
-      "老闆不好",
-      "太鹹了"
+      "菜都很難吃",
+      "老闆不太客氣",
+      "菜太鹹了"
      ],
-     "answer": 1,
-     "why": "什麼都好，就是油太多了 → B. A: the opposite. C: not mentioned. D: a different taste."
+     "answer": 0,
+     "why": "什麼都好，就是油太多了 → A. B: kebalikannya. C: tidak disebut. D: rasa lain."
     },
     {
      "type": "read_sent",
@@ -25508,12 +25508,12 @@
      },
      "question": "你要幾顆芒果？",
      "options": [
+      "兩顆。",
       "三顆。",
-      "十三顆。",
-      "兩顆。"
+      "十三顆。"
      ],
-     "answer": 0,
-     "why": "Three mangoes → 三顆 → A. B and C: the wrong number."
+     "answer": 1,
+     "why": "Tiga buah mangga → 三顆 → B. A dan C: jumlahnya salah."
     },
     {
      "type": "listen_pic",
@@ -25690,11 +25690,11 @@
      "options": [
       "八十塊",
       "一百五十塊",
-      "兩百塊",
-      "一百六十塊"
+      "一百六十塊",
+      "兩百塊"
      ],
      "answer": 1,
-     "why": "兩顆一百五 → B. A: the price of one. C: not mentioned. D: 80 × 2, but there is a two-for price."
+     "why": "兩顆一百五 → B. A: harga satu. D: tidak disebut. C: 80 × 2, padahal ada harga paket."
     },
     {
      "type": "read_sent",
@@ -26347,8 +26347,8 @@
      "text": "我第一次做牛排的時候，不知道做法，放了太多油，牛排外面黑黑的，裡面還沒熟。朋友教我：先放一點洋蔥，再放牛排，每邊三分鐘就好。第二次我做好了，朋友吃了說：「正好七分熟，太好吃了！」",
      "question": "第一次做的牛排怎麼了？",
      "options": [
-      "太鹹了",
-      "洋蔥太多",
+      "放了太多鹽",
+      "放了太多洋蔥",
       "正好七分熟",
       "外面黑了，裡面沒熟"
      ],
@@ -26804,11 +26804,11 @@
      "options": [
       "她想吃海鮮套餐",
       "她已經吃飽了",
-      "她不想吃沙拉",
-      "她不能吃海鮮"
+      "她不能吃海鮮",
+      "她不想吃沙拉"
      ],
-     "answer": 3,
-     "why": "我不太能吃海鮮，吃了會不舒服 → D. A: the opposite. B: not mentioned. C: she actually asks for a salad."
+     "answer": 2,
+     "why": "我不太能吃海鮮，吃了會不舒服 → C. A: kebalikannya. B: tidak disebut. D: ia justru minta salad."
     },
     {
      "type": "read_sent",
@@ -26901,7 +26901,7 @@
      "options": [
       "訂位比較便宜",
       "沒訂位要等很久",
-      "週末不開",
+      "週末餐廳不開",
       "只有訂位才能吃套餐"
      ],
      "answer": 1,
@@ -27173,7 +27173,7 @@
      "options": [
       "好啊，我很想吃。",
       "我一點也不想吃速食。",
-      "我吃過了。"
+      "我已經吃過了，不想吃。"
      ],
      "answer": 1,
      "why": "Refusing a burger and chips → 我一點也不想吃速食 → B. A: the opposite. C: does not fit."
@@ -27333,13 +27333,13 @@
      ],
      "question": "這位小姐要吃什麼？",
      "options": [
-      "巧克力",
       "餅乾",
+      "巧克力",
       "糖果",
       "什麼都不吃"
      ],
-     "answer": 1,
-     "why": "那餅乾呢？不太甜 → 好，那我吃一塊 → B. A: she does not like sweet things. C: not mentioned. D: she does eat a biscuit."
+     "answer": 0,
+     "why": "那餅乾呢？不太甜 → 好，那我吃一塊 → A. B: ia tidak suka manis. C: tidak disebut. D: ia makan biskuit."
     },
     {
      "type": "read_sent",
@@ -27428,15 +27428,15 @@
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the correct answer.",
      "text": "我從小就很少吃速食，因為媽媽說速食的油太多。上大學以後，我一個人住，常常沒時間做飯，有時候就吃泡麵。可是吃了一個月，我覺得身體一點也不舒服。從那時候起，我每天早上喝豆漿，中午吃便當，晚上自己做飯，現在我從來不吃泡麵了。",
-     "question": "這個人為什麼不吃泡麵了？",
+     "question": "這個人後來為什麼自己做飯？",
      "options": [
-      "吃了以後身體不舒服",
-      "媽媽不讓他吃",
-      "他沒有時間",
-      "泡麵太貴"
+      "吃泡麵以後身體不舒服",
+      "媽媽不讓他吃泡麵",
+      "他現在比較有時間",
+      "泡麵越來越貴了"
      ],
      "answer": 0,
-     "why": "我覺得身體一點也不舒服 → A. B, C, D: not given as the reason."
+     "why": "吃了一個月，我覺得身體一點也不舒服 → A. B: ibu hanya menyebut makanan cepat saji sejak kecil. C dan D: tidak disebut."
     }
    ],
    "grammar": [
@@ -27929,7 +27929,7 @@
       "在學校也可以辦",
       "居留證只能在這裡辦",
       "要很多張照片",
-      "要一個月"
+      "要等一個月"
      ],
      "answer": 1,
      "why": "只有在這裡才能辦 → B. A: the opposite. C: only two photos. D: one week."
@@ -28991,15 +28991,15 @@
        "zh": "那你要把門鎖好啊！"
       }
      ],
-     "question": "這位先生為什麼睡不著？",
+     "question": "這位先生昨天晚上怎麼了？",
      "options": [
-      "樓下太吵了",
-      "樓下有東西被偷了，他很怕",
-      "他的東西丟了",
+      "樓下太吵，他睡不著",
+      "他很怕，一直睡不著",
+      "他的東西被偷了",
       "他忘了鎖門"
      ],
      "answer": 1,
-     "why": "有人的東西被偷了 → he is scared → B. A: not because of noise. C: his things are not lost. D: not mentioned."
+     "why": "樓下…有人的東西被偷了 → ia takut dan tidak bisa tidur → B. A: bukan karena berisik. C: yang dicuri barang orang lain. D: tidak disebut."
     },
     {
      "type": "read_sent",
@@ -29092,7 +29092,7 @@
      "options": [
       "他沒有跑",
       "他偷到了機車",
-      "他跑得太慢",
+      "他跑得不夠快",
       "他自己回來了"
      ],
      "answer": 2,
@@ -29612,7 +29612,7 @@
      "options": [
       "路上有很多人",
       "窗戶還沒關好",
-      "也許還會下雨",
+      "可能還會下雨",
       "家裡有老人"
      ],
      "answer": 2,
@@ -30148,7 +30148,7 @@
       "那天有月亮",
       "山上的人很少",
       "他們看到半夜",
-      "山上的空氣很好"
+      "山上的空氣比較乾淨"
      ],
      "answer": 3,
      "why": "因為山上的空氣很好. A is the opposite (沒有月亮). C is not the reason. B is not mentioned."
@@ -30614,11 +30614,11 @@
      "options": [
       "他週末要洗衣服",
       "他沒有房間",
-      "他不想吃飯",
-      "他週末也很忙"
+      "他週末也很忙",
+      "他不想吃飯"
      ],
-     "answer": 3,
-     "why": "週末不是寫報告，就是去打工 → busy at weekends too → D. A and B: not mentioned. C: he has no time to eat, not that he doesn't want to."
+     "answer": 2,
+     "why": "週末不是寫報告，就是去打工 → juga sibuk → C. A dan B: tidak disebut. D: ia tidak sempat makan, bukan tidak mau."
     },
     {
      "type": "read_sent",
@@ -30711,7 +30711,7 @@
      "options": [
       "魚都不見了",
       "附近的人越來越多",
-      "大家越來越注意環保",
+      "大家開始注意環保了",
       "河邊有人散步"
      ],
      "answer": 2,
@@ -31818,7 +31818,7 @@
       "考試太難",
       "書太多",
       "休息太多",
-      "準備得不夠"
+      "沒有好好準備"
      ],
      "answer": 3,
      "why": "擔心的原因常常是準備得不夠 → D. A and B: not given as the reason. C: the opposite (the advice is to rest more)."
@@ -32259,13 +32259,13 @@
      ],
      "question": "這位先生為什麼心情很好？",
      "options": [
-      "他要去旅行",
       "他考了第一名",
+      "他要去旅行",
       "有人送他禮物",
       "他數學不好"
      ],
-     "answer": 1,
-     "why": "沒想到我考了第一名 → B. A and C: not mentioned. D: the opposite (數學也好)."
+     "answer": 0,
+     "why": "沒想到我考了第一名 → A. B dan C: tidak disebut. D: kebalikannya (數學也好)."
     },
     {
      "type": "read_sent",
@@ -32356,7 +32356,7 @@
      "text": "上個週末我去朋友家。我以為只是一起吃飯，沒想到一開門，大家都說：「生日快樂！」我才知道他們給我辦了一個生日派對。他們不但準備了蛋糕，而且還唱歌給我聽。那天我的心情好得不得了，覺得很輕鬆，也很開心。",
      "question": "這個人去朋友家以前，以為要做什麼？",
      "options": [
-      "只是一起吃飯",
+      "大家一起吃飯",
       "參加生日派對",
       "唱歌",
       "買蛋糕"
@@ -32855,7 +32855,7 @@
       "去爬山",
       "在家休息",
       "去買雨傘",
-      "去看電影"
+      "到電影院看電影"
      ],
      "answer": 3,
      "why": "那麼，我們去看電影吧 + 這個建議不錯 → D. A: he disagrees because of the rain. B and C: not mentioned."
@@ -32951,11 +32951,11 @@
      "options": [
       "山上",
       "還沒決定",
-      "去哪裡都可以",
-      "海邊"
+      "海邊",
+      "去哪裡都可以"
      ],
-     "answer": 3,
-     "why": "一半的同學想去海邊 + 選擇人最多的地方 → D. A: the smaller group (十個). B: it has been decided. C: only a few people's view."
+     "answer": 2,
+     "why": "一半的同學想去海邊 + 選擇人最多的地方 → C. A: pilihan yang lebih sedikit (十個). B: sudah diputuskan. D: hanya pendapat beberapa orang."
     }
    ],
    "grammar": [
@@ -34026,7 +34026,7 @@
      "question": "老師新買的小說放在哪裡？",
      "options": [
       "書架上",
-      "另外一個箱子裡",
+      "別的箱子裡",
       "老師的家",
       "同學的書包"
      ],
@@ -35087,9 +35087,9 @@
      "question": "奶奶為什麼坐在公園裡？",
      "options": [
       "她想不起來怎麼回家",
-      "她想休息",
+      "她走累了想休息",
       "她在等鄰居",
-      "她在買菜"
+      "她還要去買菜"
      ],
      "answer": 0,
      "why": "想不起來家在哪裡，就坐在公園裡等 → A. B: not mentioned. C: the neighbour just happened to see her. D: she had finished shopping."
@@ -35502,8 +35502,8 @@
      "options": [
       "很無聊",
       "很開心",
-      "太晚回家很生氣",
-      "很累"
+      "回家太晚很生氣",
+      "覺得很累"
      ],
      "answer": 1,
      "why": "很好玩 + 大家都不想走 → B. A: the opposite. C and D: not mentioned."
@@ -35595,7 +35595,7 @@
      "part": "閱讀 Part 5 · Reading comprehension",
      "instr": "Read the text, then choose the most suitable answer.",
      "text": "我哥哥去年考上了臺北的大學，搬到臺北一個人住。剛開始他常常打電話回家，說很想家。後來他愛上了打球，認識了很多朋友，電話就越來越少了。上個月他回家，跟我們聊起了大學的生活，一聊就是一個晚上。媽媽說，他已經習慣了。",
-     "question": "哥哥後來為什麼不常打電話了？",
+     "question": "哥哥的電話後來為什麼越來越少？",
      "options": [
       "他很想家",
       "他沒有手機",
@@ -36513,15 +36513,15 @@
        "zh": "要，沒有學生證不能進教室。"
       }
      ],
-     "question": "考試的時候不能做什麼？",
+     "question": "考試的時候要注意什麼？",
      "options": [
-      "查書",
-      "帶學生證",
-      "進教室",
-      "用手機"
+      "不能查書",
+      "不用帶學生證",
+      "手機不可以用",
+      "不能進教室"
      ],
-     "answer": 3,
-     "why": "可以查書，可是不能用手機 → D. A: allowed. B: required. C: allowed with a student card."
+     "answer": 2,
+     "why": "可以查書，可是不能用手機 → C. A: buku boleh dibuka. B: kartu pelajar wajib dibawa. D: boleh masuk asal membawa kartu pelajar."
     },
     {
      "type": "read_sent",
@@ -36612,13 +36612,13 @@
      "text": "王大文今年第一次在臺灣的大學選課。他本來想選七門課，可是老師說太多了，一個學期最好選五門就好。後來他選了中文、歷史、電腦、音樂和英文。現在他每天都很忙，晚上還在圖書館讀書，可是他覺得還可以，因為每門課都很有意思。",
      "question": "大文覺得現在的生活怎麼樣？",
      "options": [
-      "太忙了，不想上課",
+      "還可以，課很有意思",
       "課太少了",
-      "很無聊",
-      "還可以，課很有意思"
+      "課很無聊",
+      "太忙了，不想上課"
      ],
-     "answer": 3,
-     "why": "他覺得還可以，因為每門課都很有意思 → D. A: he is busy but still enjoys it. B: not mentioned. C: the opposite."
+     "answer": 0,
+     "why": "他覺得還可以，因為每門課都很有意思 → A. D: ia sibuk tapi tetap suka. B: tidak disebut. C: kebalikannya."
     }
    ],
    "grammar": [
