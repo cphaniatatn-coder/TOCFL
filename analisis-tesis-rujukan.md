@@ -157,13 +157,15 @@ Sumber: https://tocfl.edu.tw/tocfl/index.php/test/cat (sub-halaman list/1–5, d
 - Cari lanjut: NDLTD (ndltd.ncl.edu.tw) 「華語文能力測驗 教材」「TOCFL 教材」; CNKI 「HSK 教材 编写」「考教结合」
   「HSK 命题」 (tidak bisa diakses Claude).
 
-### E7. Cocokkan dengan app — pemeriksa otomatis di `bangun_bank.py` (2026-11-25); Vol.1 & Vol.2 SELESAI, Vol.3 belum
+### E7. Cocokkan dengan app — pemeriksa otomatis di `bangun_bank.py` (2026-11-25); Vol.1–3 SELESAI
 Audit awal bank soal (1.380 butir): kunci 4 pilihan menumpuk di D (A0 28/50, A1 42/92, A2 51/134); pilihan angka/waktu
 sering tidak urut; 41 butir panjang pilihan timpang; 34 kunci disalin persis; ±7 pertanyaan negatif; 31 giliran ≤2 hanzi.
 Pilot Vol.1: 12 butir diurutkan, 14 kunci dipindah (4 pilihan jadi A12 B13 C12 D13), 15 butir ditulis ulang, 1 `why`
 yang salah sejak awal diperbaiki (A05 閱讀 P5), 3 giliran penutup diterima.
 Vol.2: 25 butir diurutkan/kunci dipindah (4 pilihan jadi A23 B24 C24 D21), ±40 butir ditulis ulang, 6 `why` salah huruf
 diperbaiki (B03, B12, B13, B19, B36 + B07), 19 peringatan diterima (giliran wajar, kalimat syarat, waktu setelah penolakan).
+Vol.3: 33 butir diurutkan/kunci dipindah (4 pilihan jadi A33 B34 C33 D34), 41 butir ditulis ulang, 5 `why` salah huruf
+diperbaiki (C06, C07, C08, C38, C41), 11 peringatan diterima. Hasil akhir: 1.380 butir, 0 peringatan terbuka.
 Bandingkan soal latihan, bank soal & ujian dengan kaidah E1: pilihan ≤15 hanzi & panjang setara; posisi kunci
 merata; tanpa pertanyaan negatif; tanpa soal yang bisa dijawab dengan pengetahuan umum; kunci = parafrase; pilihan
 tidak saling mencakup; giliran dialog seimbang; antarsoal tidak saling membocorkan. Yang sudah sesuai: sudut orang

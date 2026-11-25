@@ -235,13 +235,13 @@
    "text": "小林住在學校宿舍，每天晚上都自己在廚房做飯。今天他剛下課回到宿舍，打開冰箱，發現裡面的東西都已經被室友吃光了。他沒辦法，只能接著去學校旁邊的小吃店吃了一碗麵。回到宿舍以後，他在餐桌上放了一張紙：「請大家吃完自己的東西，別吃別人的。」",
    "question": "小林為什麼在餐桌上放那張紙？",
    "options": [
-    "他想請室友吃麵",
     "室友吃了他的東西",
+    "他想請室友吃麵",
     "他不會在廚房做飯",
     "小吃店的麵不好吃"
    ],
-   "answer": 1,
-   "why": "Isi kulkasnya 被室友吃光了 → ia minta orang lain tidak makan milik orang lain. A: teks tak menyebut mentraktir. C: kebalikan — ia 每天自己做飯. D: rasa mi tidak disebut."
+   "answer": 0,
+   "why": "Isi kulkasnya 被室友吃光了 → ia minta orang lain tidak makan milik orang lain. B: teks tak menyebut mentraktir. C: kebalikan — ia 每天自己做飯. D: rasa mi tidak disebut."
   }
  ],
  "C02": [
@@ -428,10 +428,10 @@
    "options": [
     "這個沙發很舊了。",
     "我們買了一個新沙發。",
-    "沙發壞了。"
+    "這個沙發已經壞了。"
    ],
    "answer": 1,
-   "why": "Tanda NEW → sofa baru. B dan C kebalikannya."
+   "why": "Tanda NEW → sofa baru → B. A dan C: kebalikannya."
   },
   {
    "type": "read_gap",
@@ -519,12 +519,12 @@
    },
    "question": "衣服乾了嗎？",
    "options": [
-    "還在洗衣機裡。",
-    "衣服很髒。",
+    "還在洗衣機裡洗。",
+    "衣服很髒，要再洗。",
     "都乾了，可以拿進來了。"
    ],
    "answer": 2,
-   "why": "Baju dijemur di bawah matahari dan sudah kering → 都乾了. A tempatnya salah; B: bajunya bersih."
+   "why": "Baju dijemur di bawah matahari dan sudah kering → 都乾了 → C. A: tempatnya salah. B: bajunya bersih."
   },
   {
    "type": "listen_dialog",
@@ -1118,13 +1118,13 @@
    ],
    "question": "這位先生是什麼意思？",
    "options": [
-    "這位小姐應該多買東西",
     "這位小姐應該少出去吃飯",
+    "這位小姐應該多買東西",
     "這位先生想跟她一起吃飯",
     "這位小姐的零用錢太少了"
    ],
-   "answer": 1,
-   "why": "你下個月還是自己做飯吧 → jangan terlalu sering makan di luar (tersirat) → B. A, C, D: tidak dimaksud."
+   "answer": 0,
+   "why": "你下個月還是自己做飯吧 → jangan terlalu sering makan di luar (tersirat) → A. B, C, D: tidak dimaksud."
   },
   {
    "type": "read_sent",
@@ -1411,7 +1411,7 @@
     "廁所裡放著三包衛生紙。"
    ],
    "answer": 2,
-   "why": "Ada tiga pak tisu → 三包衛生紙. A kebalikannya; C salah benda."
+   "why": "Ada tiga pak tisu → 三包衛生紙 → C. A: kebalikannya. B: salah benda."
   },
   {
    "type": "read_gap",
@@ -1460,13 +1460,13 @@
    "text": "歡迎住在我們的旅館！每個房間的浴室裡都有毛巾、肥皂和衛生紙，可是不放牙刷、牙膏，也不放洗髮精和沐浴乳。如果您需要，可以到一樓的商店買。毛巾用完了，請放在浴室的地上，我們每天都會給您新的。",
    "question": "住這家旅館的人，可能要自己準備什麼？",
    "options": [
-    "洗澡用的毛巾",
+    "洗頭用的東西",
     "廁所的衛生紙",
     "洗手用的肥皂",
-    "洗頭用的東西"
+    "洗澡用的毛巾"
    ],
-   "answer": 3,
-   "why": "Tidak disediakan 牙刷、牙膏、洗髮精 = alat sikat gigi & keramas. A, B, C: sudah ada di kamar mandi."
+   "answer": 0,
+   "why": "Tidak disediakan 牙刷、牙膏、洗髮精 = alat sikat gigi & keramas. B, C, D: sudah ada di kamar mandi."
   }
  ],
  "C07": [
@@ -1608,13 +1608,13 @@
    ],
    "question": "這位小姐的意思是什麼？",
    "options": [
+    "她怕他明天又很晚起床",
     "她明天要坐飛機",
-    "她覺得這位先生明天可能又很晚才起床",
-    "這位先生上次很早就起床了",
+    "他上次很早就起床了",
     "她覺得五點太早"
    ],
-   "answer": 1,
-   "why": "你上次也這麼說，可是九點才起床 → ia ragu (tersirat) → B. A: yang naik pesawat mungkin keduanya, bukan maksudnya. C: kebalikannya. D: tidak dikatakan."
+   "answer": 0,
+   "why": "你上次也這麼說，可是九點才起床 → ia ragu (tersirat) → A. B: bukan maksudnya. C: kebalikannya. D: tidak dikatakan."
   },
   {
    "type": "read_sent",
@@ -1656,7 +1656,7 @@
     "他在寫信。"
    ],
    "answer": 0,
-   "why": "Gelembung mimpi berisi ujian → 夢見了考試. A: ujiannya hanya di mimpi. B tidak terlihat."
+   "why": "Gelembung mimpi berisi ujian → 夢見了考試 → A. B: ujiannya hanya di mimpi. C: tidak terlihat."
   },
   {
    "type": "read_gap",
@@ -1901,7 +1901,7 @@
     "房間裡的蚊子多死了。"
    ],
    "answer": 2,
-   "why": "Banyak nyamuk → 多死了. A dan C salah jumlah."
+   "why": "Banyak nyamuk → 多死了 → C. A dan B: salah jumlah."
   },
   {
    "type": "read_gap",
@@ -1952,11 +1952,11 @@
    "options": [
     "比以前更吵了",
     "什麼都比以前好",
-    "鄰居每天都很吵",
-    "不吵了，可是不方便"
+    "不吵了，可是不方便",
+    "鄰居每天都很吵"
    ],
-   "answer": 3,
-   "why": "很安靜 tapi 買東西很不方便. A & C: kebalikan (沒有吵鬧的鄰居). B: berlebihan — ia menyebut ada hal yang tidak baik."
+   "answer": 2,
+   "why": "很安靜 tapi 買東西很不方便. A & D: kebalikan (沒有吵鬧的鄰居). B: berlebihan — ia menyebut ada hal yang tidak baik."
   }
  ],
  "C09": [
@@ -2100,7 +2100,7 @@
    "options": [
     "鄉下離公司很近",
     "她不工作了",
-    "她一個星期只去公司兩次",
+    "她常常在家工作",
     "公司在鄉下"
    ],
    "answer": 2,
@@ -2195,13 +2195,13 @@
    "text": "很多年輕人覺得城市的生活比較好，所以都搬到市區去。可是最近有不少人開始回鄉下住。他們說，城市裡工作機會多，可是房子太貴，環境也不好；鄉下沒有城市那麼方便，可是空氣好、房屋大，生活也比較舒服。現在上網就可以工作，住在哪裡已經不那麼重要了。",
    "question": "這裡說的是什麼事？",
    "options": [
-    "年輕人都不喜歡城市",
     "有人決定回鄉下住",
+    "年輕人都不喜歡城市",
     "鄉下的工作比城市多",
     "城市的房子很便宜"
    ],
-   "answer": 1,
-   "why": "有不少人開始回鄉下住 = gagasan utama. A: berlebihan (banyak justru pindah ke kota). C: kebalikan (城市裡工作機會多). D: kebalikan (房子太貴)."
+   "answer": 0,
+   "why": "有不少人開始回鄉下住 = gagasan utama. B: berlebihan (banyak justru pindah ke kota). C: kebalikan (城市裡工作機會多). D: kebalikan (房子太貴)."
   }
  ],
  "C10": [
@@ -2588,13 +2588,13 @@
    ],
    "question": "這位小姐為什麼要帶傘？",
    "options": [
-    "現在正在下雨",
+    "下午可能會下雨",
     "天氣太熱了",
     "公園很遠",
-    "下午可能會下雨"
+    "現在正在下雨"
    ],
-   "answer": 3,
-   "why": "電視上說下午會下雨 → alasannya. A: sekarang cuaca bagus. B dan C tidak disebut."
+   "answer": 0,
+   "why": "電視上說下午會下雨 → alasannya. D: sekarang cuaca bagus. B dan C tidak disebut."
   },
   {
    "type": "read_sent",
@@ -2930,13 +2930,13 @@
    "text": "張老師今年六十歲了。他是在大陸出生的，十歲那年跟家人來到臺灣。當時他一句臺灣話都不會說，在學校常常聽不懂同學說的話。後來他每天跟鄰居的孩子一起玩，慢慢就學會了。現在他在大學當老師已經三十年了，學生都說他的臺灣話說得比中文更好。",
    "question": "張老師小時候有什麼問題？",
    "options": [
-    "他不會說中文",
+    "他聽不懂同學說話",
     "他在大陸找不到學校",
     "他不想來臺灣",
-    "他聽不懂同學說話"
+    "他不會說中文"
    ],
-   "answer": 3,
-   "why": "常常聽不懂同學說的話. A: yang tidak bisa adalah 臺灣話, bukan 中文. C & B: tidak disebut."
+   "answer": 0,
+   "why": "常常聽不懂同學說的話. D: yang tidak bisa adalah 臺灣話, bukan 中文. B & C: tidak disebut."
   }
  ]
 }

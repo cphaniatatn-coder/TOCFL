@@ -103,12 +103,20 @@ def _nilai(o):
     if m:
         return _angka(m.group(1)) * 100 + _angka(m.group(2))
     m = re.search(f'({N})點(半|({N})分)?', o)
-    if m and '小時' not in o:   # jam dinding: 十二點 sebelum 一點
+    if m and '小時' not in o and _angka(m.group(1)) <= 24:   # jam dinding: 十二點 sebelum 一點 (點 >24 = desimal)
         return (_angka(m.group(1)) % 12) * 60 + (30 if m.group(2) == '半' else _angka(m.group(3)) if m.group(3) else 0)
     m = re.search(N, o)
     if not m or m.start() > 2 or len(_hz(o)) - len(m.group(0)) > 4:
         return None
     return _angka(m.group(0))
+
+
+def nilai_urut(opts):
+    """Nilai urut tiap pilihan bila SEMUA pilihan angka/waktu dengan satuan yang sama (sisa teks tanpa angka
+    identik, mis. 三個/十二個); None bila bukan (mis. 兩層/二樓/三個臥室 = besaran berbeda, jangan diurutkan)."""
+    nil = [_nilai(o) for o in opts]
+    sisa = {re.sub('[零一二兩三四五六七八九十百千萬半]', '', _hz(o)) for o in opts}
+    return nil if None not in nil and len(sisa) == 1 else None
 
 
 def cek_kaidah(code, ts):
@@ -121,7 +129,7 @@ def cek_kaidah(code, ts):
         tag = f'{code} {p}'
         if q and t['type'] != 'listen_pic':
             q2 = re.sub(r'(.)[不沒]\1', '', q)
-            for w in ('不舒服', '差不多', '不好意思', '對不起', '不客氣'):
+            for w in ('不舒服', '差不多', '不好意思', '對不起', '不客氣', '不只', '不見'):
                 q2 = q2.replace(w, '')
             if re.search(r'[不沒]', q2):
                 out.append(f'{tag}: ◇ pertanyaan negatif 「{q}」 (hindari 否定問法)')
@@ -144,8 +152,8 @@ def cek_kaidah(code, ts):
             out.append(f'{tag}: ◇ pilihan {max(ls)} hanzi (maks. 15)')
         if min(ls) and max(ls) - min(ls) >= 5 and max(ls) >= 2 * min(ls):
             out.append(f'{tag}: ◇ panjang pilihan timpang {ls} (長度差異不要太大)')
-        nil = [_nilai(o) for o in opts]
-        if None not in nil and nil != sorted(nil) and nil != sorted(nil, reverse=True):
+        nil = nilai_urut(opts)
+        if nil and nil != sorted(nil) and nil != sorted(nil, reverse=True):
             out.append(f'{tag}: ◇ pilihan angka/waktu tidak urut {opts} (依邏輯次序/時序)')
         if t['type'] != 'listen_pic' and len(opts) == 4 and sum('我' in o.replace('「我」', '') for o in opts) >= 2:
             out.append(f'{tag}: ◇ pilihan memakai 我 (敘述方式為第三人稱視角)')

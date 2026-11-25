@@ -138,13 +138,13 @@
    ],
    "question": "答案是多少？",
    "options": [
-    "十二",
-    "十",
     "二",
+    "十",
+    "十二",
     "十四"
    ],
    "answer": 1,
-   "why": "三乘四是十二，十二減二是十 → B. A: hasil sementara. C dan D: angka lain."
+   "why": "三乘四是十二，十二減二是十 → B. C: hasil sementara. A dan D: angka lain."
   },
   {
    "type": "read_sent",
@@ -383,13 +383,13 @@
    ],
    "question": "今天來了多少人？",
    "options": [
+    "三個",
     "十個",
-    "三十個",
     "二十個",
-    "三個"
+    "三十個"
    ],
    "answer": 2,
-   "why": "30 − 10 = 20 → C. A: yang tidak datang. B: jumlah semua. D: dari \"sepertiga\"."
+   "why": "30 − 10 = 20 → C. B: yang tidak datang. D: jumlah semua. A: dari \"sepertiga\"."
   },
   {
    "type": "read_sent",
@@ -431,7 +431,7 @@
     "四分之三。"
    ],
    "answer": 2,
-   "why": "3/4 dibaca 四分之三 (penyebut dulu). A urutannya terbalik; C salah."
+   "why": "3/4 dibaca 四分之三 (penyebut dulu) → C. A: urutannya terbalik. B: angkanya salah."
   },
   {
    "type": "read_gap",
@@ -480,13 +480,13 @@
    "text": "有一個研究問了兩千個臺灣的大學生，每天花多少時間用手機。結果發現，百分之八十的學生一天用手機不只四個小時；包括上課的時間，有四分之一的學生每天用手機不只八個小時。許多老師看了這個結果，都覺得不太好。",
    "question": "每天用手機不只八個小時的學生大概有多少個？",
    "options": [
-    "兩千個",
-    "一千六百個",
     "八十個",
-    "五百個"
+    "五百個",
+    "一千六百個",
+    "兩千個"
    ],
-   "answer": 3,
-   "why": "四分之一 × 2000 = 500. B: 百分之八十 (lebih dari 4 jam). A: semua responden. C: salah membaca 百分之八十."
+   "answer": 1,
+   "why": "四分之一 × 2000 = 500. C: 百分之八十 (lebih dari 4 jam). D: semua responden. A: salah membaca 百分之八十."
   }
  ],
  "C39": [
@@ -626,15 +626,15 @@
      "zh": "對，所以辦公室不夠用了。"
     }
    ],
-   "question": "這位先生的公司為什麼辦公室不夠用？",
+   "question": "這位先生的公司為什麼需要更大的辦公室？",
    "options": [
-    "公司搬家了",
     "人比以前多了一倍",
+    "公司搬家了",
     "公司只有一百個人",
     "辦公室太舊"
    ],
-   "answer": 1,
-   "why": "現在是以前的兩倍 → 辦公室不夠用 → B. A dan D: tidak disebut. C: itu dulu."
+   "answer": 0,
+   "why": "現在是以前的兩倍 → 辦公室不夠用 → A. B dan D: tidak disebut. C: itu dulu."
   },
   {
    "type": "read_sent",
@@ -1118,13 +1118,13 @@
    ],
    "question": "他們要買什麼顏色的襪子？",
    "options": [
-    "黑色",
     "白色",
+    "黑色",
     "紅色",
     "金色"
    ],
-   "answer": 1,
-   "why": "那我們買白色的吧 + 白色的比較適合 → B. A: usul awal yang batal. C: tidak disebut. D: warna sepatunya."
+   "answer": 0,
+   "why": "那我們買白色的吧 + 白色的比較適合 → A. B: usul awal yang batal. C: tidak disebut. D: warna sepatunya."
   },
   {
    "type": "read_sent",
@@ -1149,7 +1149,7 @@
     }
    ],
    "answer": 2,
-   "why": "手套黑黑的 + 襪子也黑黑的 → keduanya hitam. C dan B salah satunya putih."
+   "why": "手套黑黑的 + 襪子也黑黑的 → keduanya hitam → C. A dan B: salah satunya putih."
   },
   {
    "type": "read_pick",
@@ -1213,15 +1213,15 @@
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
    "text": "李小姐下個月要去日本玩，那時候的日本很冷。她的朋友說：「你帶的衣服看起來太少了，除了毛衣以外，最好再帶一件大外套和一雙手套。」李小姐說：「沒關係，我打算到了日本再買。那裡的衣服很好看，我也想買新的。」",
-   "question": "李小姐為什麼不多帶衣服？",
+   "question": "李小姐打算怎麼辦？",
    "options": [
-    "她不怕冷",
-    "她想在日本買衣服",
-    "日本不冷",
-    "她沒有毛衣"
+    "到日本再買衣服",
+    "不去日本了",
+    "多帶一件外套",
+    "跟朋友借毛衣"
    ],
-   "answer": 1,
-   "why": "打算到了日本再買. A: tidak disebut. C: kebalikan (很冷). D: tidak disebut."
+   "answer": 0,
+   "why": "我打算到了日本再買 → A. B: ia tetap pergi. C: itu saran temannya, tidak ia ikuti. D: tidak disebut."
   }
  ],
  "C42": [
@@ -1237,8 +1237,8 @@
    "question": "你有零錢嗎？",
    "options": [
     "沒有零錢，只有一千塊的。",
-    "有很多零錢。",
-    "我刷卡了。"
+    "有，我有很多零錢。",
+    "我等一下再刷卡。"
    ],
    "answer": 0,
    "why": "Dompet koin kosong, hanya uang besar → 沒有零錢. B kebalikannya; C tidak menjawab."
@@ -1363,10 +1363,10 @@
    ],
    "question": "這位小姐的意思是什麼？",
    "options": [
-    "應該給小費",
-    "不用給小費，說謝謝就好",
-    "店員不好",
-    "她要給小費"
+    "應該給店員小費",
+    "跟店員說謝謝就好",
+    "店員對他們不好",
+    "她自己要給小費"
    ],
    "answer": 1,
    "why": "這裡不用給 + 跟他說謝謝就好了 → B. A dan D: kebalikannya. C: si pegawai baik."
@@ -1463,10 +1463,10 @@
     "給百分之二十的小費",
     "把錢給店員就走",
     "用美國的方法",
-    "不用給小費"
+    "只付飯錢就可以"
    ],
    "answer": 3,
-   "why": "在臺灣，一般的餐廳不用給小費. A & C: kebiasaan Amerika. B: tidak disebut."
+   "why": "在臺灣，一般的餐廳不用給小費 → cukup membayar makanan → D. A dan C: kebiasaan Amerika. B: tidak disebut."
   }
  ],
  "C43": [
@@ -1608,10 +1608,10 @@
    ],
    "question": "哪一個是對的？",
    "options": [
-    "籃子很貴",
+    "這個籃子很貴",
     "主人是一位老太太",
     "籃子是在市場買的",
-    "這位先生不喜歡這個籃子"
+    "這位先生不喜歡籃子"
    ],
    "answer": 2,
    "why": "市場裡一家老店 → C. A: kebalikannya. B: pemiliknya kakek. D: kebalikannya."
@@ -1951,12 +1951,12 @@
    "question": "很多人在網路上買衣服以前會做什麼？",
    "options": [
     "先去店裡試穿",
-    "問清楚能不能換",
+    "先問能不能換",
     "只買深色的衣服",
     "買比較貴的衣服"
    ],
    "answer": 1,
-   "why": "會先問清楚能不能換 (dan membaca komentar pembeli lain). A: masuk akal tapi tidak disebut. C & D: tidak disebut."
+   "why": "會先問清楚能不能換 (dan membaca komentar pembeli lain) → B. A: masuk akal tapi tidak disebut. C dan D: tidak disebut."
   }
  ],
  "C45": [
@@ -2193,7 +2193,7 @@
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
    "text": "臺灣的便當又便宜又方便，一個大概八十到一百塊，有米飯、一樣肉和三樣菜。可是醫生說，便當的菜常常用太多油和鹽，每天吃對身體不好。所以我現在一個星期只買兩次便當，其他時間自己做飯，少放一點醬油和鹽。",
-   "question": "說話的人為什麼不每天買便當？",
+   "question": "說話的人為什麼一個星期只買兩次便當？",
    "options": [
     "便當太貴了",
     "他沒有時間買",
@@ -3079,7 +3079,7 @@
    "question": "這位小姐的意思是什麼？",
    "options": [
     "她也想吃速食",
-    "他這個星期吃了太多速食",
+    "他最近常常吃速食",
     "速食很便宜",
     "他應該多工作"
    ],
@@ -3175,13 +3175,13 @@
    "text": "我奶奶今年九十歲，身體還很好。她說她從來沒吃過速食，也從來不喝甜的飲料，只喝烏龍茶和豆漿。她每天吃的東西都很簡單：米飯、青菜和一點魚。她說：「吃得簡單，身體就好。」",
    "question": "奶奶覺得自己身體好是因為什麼？",
    "options": [
-    "常常吃速食",
+    "吃的東西很簡單",
     "常常吃巧克力",
     "每天喝很多飲料",
-    "吃的東西很簡單"
+    "常常吃速食"
    ],
-   "answer": 3,
-   "why": "吃得簡單，身體就好. A & C: kebalikan (從來沒/從來不). B: tidak disebut."
+   "answer": 0,
+   "why": "吃得簡單，身體就好. C & D: kebalikan (從來沒/從來不). B: tidak disebut."
   }
  ],
  "C50": [
@@ -3214,9 +3214,9 @@
    },
    "question": "要多少錢？",
    "options": [
-    "不用錢。",
+    "不用錢，你拿去吧。",
     "只要一百塊就可以。",
-    "要一千塊。"
+    "要一千塊才可以。"
    ],
    "answer": 1,
    "why": "Label $100 dengan centang → 只要一百塊就可以 → B. A: harus bayar. C: angka salah."
@@ -3323,13 +3323,13 @@
    ],
    "question": "這位小姐覺得怎麼樣才能說得好？",
    "options": [
-    "只看書",
+    "每天說中文",
     "多寫漢字",
     "去臺灣旅行",
-    "每天說中文"
+    "只看書"
    ],
-   "answer": 3,
-   "why": "只有每天說，才能說得好 → D. A, B, C: tidak disebut."
+   "answer": 0,
+   "why": "只有每天說，才能說得好 → A. B, C, D: tidak disebut."
   },
   {
    "type": "read_sent",
@@ -3423,10 +3423,10 @@
     "帶居留證去銀行",
     "不用帶居留證",
     "去別的銀行",
-    "星期一再去"
+    "等銀行開門再去"
    ],
    "answer": 3,
-   "why": "星期六、日銀行不開 → 只能等到星期一. A & C: bank tutup hari Sabtu. B: kebalikan (只有帶居留證才能換)."
+   "why": "星期六、星期天銀行不開 → tunggu bank buka (Senin) → D. A dan C: bank tutup hari Sabtu. B: kebalikan (只有帶居留證才能換)."
   }
  ],
  "C51": [
