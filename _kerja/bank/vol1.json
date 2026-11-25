@@ -381,13 +381,13 @@
    ],
    "question": "這位小姐會說什麼？",
    "options": [
-    "她會說中文和英文。",
+    "她會說中文。",
     "她會說臺灣話。",
     "她會說英文。",
-    "她會說中文。"
+    "她會說中文和英文。"
    ],
-   "answer": 3,
-   "why": "Ditanya 她說英文嗎？, jawabannya hanya 她說中文 — artinya ia tidak (atau tidak dikatakan) berbahasa Inggris. A dan C: memasukkan 英文 yang justru tidak dibenarkan. B: 臺灣話 tidak disebut."
+   "answer": 0,
+   "why": "Ditanya 她說英文嗎？, jawabannya hanya 她說中文 — artinya ia tidak (atau tidak dikatakan) berbahasa Inggris. C dan D: memasukkan 英文 yang justru tidak dibenarkan. B: 臺灣話 tidak disebut."
   },
   {
    "type": "read_sent",
@@ -474,13 +474,13 @@
    "text": "這位小姐姓林，她是外國人，她會說中文和英文。她說：「我是日本人，我會說日語。」",
    "question": "林小姐會說什麼話？",
    "options": [
+    "日語和中文",
     "中文和英文",
-    "日語、中文和英文",
-    "日語",
-    "日語和臺灣話"
+    "日語和臺灣話",
+    "日語、中文和英文"
    ],
-   "answer": 1,
-   "why": "Kalimat pertama: 中文和英文; kutipannya: 日語 → semuanya 日語、中文和英文 (harus digabung). A dan C: hanya sebagian. D: 臺灣話 tidak disebut."
+   "answer": 3,
+   "why": "Kalimat pertama: 中文和英文; kutipannya: 日語 → semuanya 日語、中文和英文 (harus digabung). A dan B: hanya sebagian. C: 臺灣話 tidak disebut."
   }
  ],
  "A03": [
@@ -715,13 +715,13 @@
    "text": "這是我的家人。他是我爸爸，她是我媽媽。這是我哥哥，那是我姊姊。我是妹妹。",
    "question": "「我」是誰的妹妹？",
    "options": [
-    "弟弟的妹妹",
+    "哥哥、姊姊的妹妹",
     "爸爸的妹妹",
     "媽媽的妹妹",
-    "哥哥、姊姊的妹妹"
+    "弟弟的妹妹"
    ],
-   "answer": 3,
-   "why": "「我」 menyebut 哥哥 dan 姊姊, lalu 我是妹妹 → adik perempuan kakak-kakaknya. A: tidak ada 弟弟. B dan C: 妹妹 di sini adik dari kakak-kakak, bukan adik ayah/ibu."
+   "answer": 0,
+   "why": "「我」 menyebut 哥哥 dan 姊姊, lalu 我是妹妹 → adik perempuan kakak-kakaknya. D: tidak ada 弟弟. B dan C: 妹妹 di sini adik dari kakak-kakak, bukan adik ayah/ibu."
   }
  ],
  "A04": [
@@ -863,12 +863,12 @@
    ],
    "question": "王太太的孩子是什麼？",
    "options": [
-    "兩個兒子，兩個女兒",
+    "四個兒子",
     "四個女兒",
     "一個兒子",
-    "四個兒子"
+    "兩個兒子，兩個女兒"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Empat anak + tidak punya anak perempuan → keempatnya anak laki-laki (simpulan)."
   },
   {
@@ -956,13 +956,13 @@
    "text": "陳先生家有七個人：陳先生、陳太太、陳先生的爸爸媽媽和他們的孩子。他們有兩個女兒。",
    "question": "陳先生有幾個兒子？",
    "options": [
-    "兩個",
     "一個",
+    "兩個",
     "三個",
     "七個"
    ],
-   "answer": 1,
-   "why": "7 orang − Pak & Bu Chen − ayah-ibu Pak Chen = 3 anak; 2 perempuan → 1 anak laki-laki (tidak tertulis). A: 兩 = jumlah anak perempuan. C: 三 = semua anak. D: 七 = seluruh keluarga."
+   "answer": 0,
+   "why": "7 orang − Pak & Bu Chen − ayah-ibu Pak Chen = 3 anak; 2 perempuan → 1 anak laki-laki (tidak tertulis). B: 兩 = jumlah anak perempuan. C: 三 = semua anak. D: 七 = seluruh keluarga."
   }
  ],
  "A05": [
@@ -995,12 +995,12 @@
    },
    "question": "你的生日是幾月幾號？",
    "options": [
-    "十月十號。",
     "一月十號。",
-    "十月一號。"
+    "十月一號。",
+    "十月十號。"
    ],
-   "answer": 0,
-   "why": "Kalender menunjukkan bulan 10 tanggal 10 → 十月十號. C salah tanggal (1); B salah bulan (Januari)."
+   "answer": 2,
+   "why": "Kalender menunjukkan bulan 10 tanggal 10 → 十月十號. B salah tanggal (1); A salah bulan (Januari)."
   },
   {
    "type": "listen_dialog",
@@ -1199,11 +1199,11 @@
    "options": [
     "二十三歲",
     "二十四歲",
-    "二十六歲",
-    "二十五歲"
+    "二十五歲",
+    "二十六歲"
    ],
-   "answer": 2,
-   "why": "Tahun ini 25 → tahun depan 26 (simpulan). B umur tahun ini."
+   "answer": 3,
+   "why": "Kakak laki-laki tahun ini 25 → tahun depan 26 (simpulan). C: umurnya tahun ini. A: umur kakak perempuan. B: tidak disebut."
   }
  ],
  "A06": [
@@ -1631,7 +1631,7 @@
    "options": [
     "這位男生很高，女生很矮。",
     "這位男生很矮，女生很高。",
-    "他們一樣高。"
+    "這位男生和女生都很高。"
    ],
    "answer": 0,
    "why": "Perhatikan pasangan orang–sifat."
@@ -1828,12 +1828,12 @@
    "question": "這位女生在哪裡？",
    "options": [
     "男生的房間裡面",
-    "女生的家",
-    "公園",
+    "女生的家門口",
+    "公園門口",
     "男生的家門口"
    ],
    "answer": 3,
-   "why": "我在你家門口 = di depan pintu rumah si laki-laki."
+   "why": "我在你家門口 = di depan pintu rumah si laki-laki (你 = laki-laki yang bertanya). A: ia belum masuk; pintu baru dibuka. B: itu bukan rumah si perempuan. C: 公園 tidak disebut."
   },
   {
    "type": "read_sent",
@@ -1920,13 +1920,13 @@
    "text": "王先生家有四個房間：王先生和太太一個，他們的兩個兒子一個，女兒一個，還有一個房間沒有人住。",
    "question": "王先生有幾個孩子？",
    "options": [
+    "一個",
     "兩個",
-    "四個",
     "三個",
-    "一個"
+    "四個"
    ],
    "answer": 2,
-   "why": "Anak-anaknya: 兩個兒子 + 一個女兒 = tiga (tidak tertulis). A: hanya anak laki-laki. B: jumlah kamar. D: jumlah anak perempuan."
+   "why": "Anak-anaknya: 兩個兒子 + 一個女兒 = tiga (tidak tertulis). B: hanya anak laki-laki. D: jumlah kamar. A: jumlah anak perempuan."
   }
  ],
  "A09": [
@@ -2068,13 +2068,13 @@
    ],
    "question": "電視在哪裡？",
    "options": [
-    "床上",
+    "門旁邊",
     "桌子下",
     "房間外頭",
-    "門旁邊"
+    "床上"
    ],
-   "answer": 3,
-   "why": "TV 在桌子旁邊, dan meja 在門旁邊 → TV juga di dekat pintu (kesimpulan dua langkah). A, B, C: tidak disebut."
+   "answer": 0,
+   "why": "TV 在桌子旁邊, dan meja 在門旁邊 → TV juga di dekat pintu (kesimpulan dua langkah). B, C, D: tidak disebut."
   },
   {
    "type": "read_sent",
@@ -2200,11 +2200,11 @@
    },
    "question": "現在幾點？",
    "options": [
+    "十二點。",
     "十二點半。",
-    "一點半。",
-    "十二點。"
+    "一點半。"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "半 = setengah → 十二點半 = 12.30. 一點半 = 1.30."
   },
   {
@@ -2310,11 +2310,11 @@
    "question": "這位小姐睡覺的時間是幾個小時？",
    "options": [
     "四個小時",
-    "十一個小時",
     "七個小時",
-    "八個小時"
+    "八個小時",
+    "十一個小時"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "23.00 sampai 07.00 = 8 jam (hitung sendiri)."
   },
   {
@@ -2423,11 +2423,11 @@
    },
    "question": "昨天星期幾？",
    "options": [
+    "昨天星期一。",
     "昨天星期六。",
-    "昨天星期天。",
-    "昨天星期一。"
+    "昨天星期天。"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "星期天 = Minggu. 星期六 = Sabtu; 星期一 = Senin."
   },
   {
@@ -2502,7 +2502,7 @@
     },
     {
      "sp": "女",
-     "zh": "好！"
+     "zh": "好，我也想去。"
     }
    ],
    "question": "他們星期幾去看電影？",
@@ -2541,22 +2541,22 @@
     },
     {
      "sp": "女",
-     "zh": "下星期一呢？"
+     "zh": "星期一呢？"
     },
     {
      "sp": "男",
-     "zh": "好，一起去吧！"
+     "zh": "星期一我也不想去，星期二去吧！"
     }
    ],
-   "question": "他們什麼時候去公園？",
+   "question": "這位先生想什麼時候去公園？",
    "options": [
-    "星期天",
-    "今天",
     "明天",
-    "下星期一"
+    "星期一",
+    "星期二",
+    "星期三"
    ],
-   "answer": 3,
-   "why": "Besok ditolak; disetujui 下星期一."
+   "answer": 2,
+   "why": "Besok ditolak (不想去), Senin juga (也不想去); ia memilih 星期二. A dan B: hari yang ditolak. D: tidak disebut."
   },
   {
    "type": "read_sent",
@@ -2643,13 +2643,13 @@
    "text": "我以前常常去看電影，現在有時候去。昨天是星期天，我去看電影。明天我想去公園。",
    "question": "明天星期幾？",
    "options": [
-    "星期天",
     "星期一",
     "星期二",
-    "星期六"
+    "星期六",
+    "星期天"
    ],
-   "answer": 2,
-   "why": "昨天是星期天 → hari ini Senin → besok Selasa (kesimpulan dua langkah). A: itu kemarin. B: hari ini. D: tidak sesuai."
+   "answer": 1,
+   "why": "昨天是星期天 → hari ini Senin → besok Selasa (kesimpulan dua langkah). D: itu kemarin. A: hari ini. C: tidak sesuai."
   }
  ],
  "A12": [
@@ -2789,15 +2789,15 @@
      "zh": "不是，我有很多功課。"
     }
    ],
-   "question": "這位先生明天有什麼？",
+   "question": "這位先生明天要做什麼？",
    "options": [
-    "很多同學",
-    "工作",
-    "電影",
-    "很多功課"
+    "他明天不忙",
+    "他要去工作",
+    "他要去看電影",
+    "他要做功課"
    ],
    "answer": 3,
-   "why": "Sibuk karena PR, bukan bekerja (不是)."
+   "why": "我有很多功課 → besok ia harus mengerjakan PR. A: ia berkata 很忙. B: ia menjawab 不是 saat ditanya apakah bekerja. C: ia menolak ajakan nonton karena sibuk."
   },
   {
    "type": "read_sent",
@@ -2978,18 +2978,18 @@
     },
     {
      "sp": "男",
-     "zh": "我有一枝筆。"
+     "zh": "我沒有筆，也沒有紙。"
     },
     {
      "sp": "女",
-     "zh": "你有紙嗎？"
+     "zh": "你有什麼？"
     },
     {
      "sp": "男",
-     "zh": "沒有，我有書。"
+     "zh": "我有一本書。"
     }
    ],
-   "question": "這位先生沒有什麼？",
+   "question": "這位先生有什麼？",
    "options": [
     {
      "icon": "🖼️",
@@ -3007,8 +3007,8 @@
      "img": "A13-T4b"
     }
    ],
-   "answer": 1,
-   "why": "Kertas: 沒有."
+   "answer": 2,
+   "why": "Ia tidak punya pena dan kertas (沒有筆，也沒有紙), hanya 一本書."
   },
   {
    "type": "listen_dialog",
@@ -3025,7 +3025,7 @@
     },
     {
      "sp": "男",
-     "zh": "不懂。"
+     "zh": "不懂，這個字的意思我不知道。"
     },
     {
      "sp": "女",
@@ -3034,13 +3034,13 @@
    ],
    "question": "這位先生懂這個句子嗎？",
    "options": [
-    "懂",
-    "不懂",
-    "他知道意思",
-    "他沒有問題"
+    "他都懂。",
+    "他不懂。",
+    "老師不懂。",
+    "他沒有問題。"
    ],
    "answer": 1,
-   "why": "這位先生：不懂."
+   "why": "Ia berkata 不懂，這個字的意思我不知道 → ia tidak paham. A: kebalikannya. C: yang bertanya adalah si laki-laki, bukan gurunya. D: ia justru bertanya (是什麼意思？)."
   },
   {
    "type": "read_sent",
@@ -3275,13 +3275,13 @@
    ],
    "question": "這位小姐是什麼意思？",
    "options": [
-    "這位先生不應該考試。",
-    "考試很難。",
-    "她很怕。",
-    "考試不難。"
+    "她覺得考試很難。",
+    "她很怕考試。",
+    "她覺得考試不難。",
+    "她明天不考試。"
    ],
-   "answer": 3,
-   "why": "不怕，不難."
+   "answer": 2,
+   "why": "Ia berkata 不怕，我覺得不難 → menurutnya ujiannya tidak sulit. A: kebalikannya. B: ia berkata 不怕. D: ujiannya besok (明天考試)."
   },
   {
    "type": "read_sent",
@@ -3609,13 +3609,13 @@
    "text": "李小姐早上喝兩杯咖啡，下午喝一杯咖啡和一杯茶。她不喝牛奶。",
    "question": "李小姐每天喝幾杯咖啡？",
    "options": [
-    "兩杯",
     "一杯",
+    "兩杯",
     "三杯",
     "四杯"
    ],
    "answer": 2,
-   "why": "Pagi 2 + sore 1 = 3 gelas kopi (tidak tertulis). A: hanya pagi. B: hanya sore. D: semua minuman termasuk teh."
+   "why": "Pagi 2 + sore 1 = 3 gelas kopi (tidak tertulis). B: hanya pagi. A: hanya sore. D: semua minuman termasuk teh."
   }
  ],
  "A16": [
@@ -3757,12 +3757,12 @@
    ],
    "question": "他們晚餐可能吃什麼？",
    "options": [
-    "不吃晚餐",
+    "魚",
     "菜、肉",
     "肉",
-    "魚"
+    "不吃晚餐"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Usul terakhir (kompromi): 吃魚吧."
   },
   {
@@ -3872,10 +3872,10 @@
    "question": "請問，幾位？",
    "options": [
     "一位。",
-    "三位。",
-    "兩位。"
+    "兩位。",
+    "三位。"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "三位 = tiga orang (sopan). Hitung orang di gambar."
   },
   {
@@ -4112,11 +4112,11 @@
    },
    "question": "這個多少錢？",
    "options": [
-    "三千塊。",
     "三十塊。",
-    "三百塊。"
+    "三百塊。",
+    "三千塊。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "三百 = 300. 三千 = 3.000; 三十 = 30."
   },
   {
@@ -4230,7 +4230,7 @@
     },
     {
      "sp": "女",
-     "zh": "很貴！"
+     "zh": "八千塊很貴！"
     },
     {
      "sp": "男",
@@ -4239,13 +4239,13 @@
    ],
    "question": "這位小姐是什麼意思？",
    "options": [
-    "這個不漂亮。",
+    "她覺得很貴。",
     "她想買兩個。",
     "她覺得很便宜。",
-    "她覺得很貴。"
+    "這個不漂亮。"
    ],
-   "answer": 3,
-   "why": "很貴 → ia merasa mahal (D). A: kebalikannya (ia bilang 很漂亮). B: tidak disebut. C: kebalikannya."
+   "answer": 0,
+   "why": "很貴 → ia merasa mahal (A). D: kebalikannya (ia bilang 很漂亮). B: tidak disebut. C: kebalikannya."
   },
   {
    "type": "read_sent",
@@ -4334,12 +4334,12 @@
    "text": "李小姐去店裡買東西。她買一個一千塊的東西，她有八百塊，錢不夠。",
    "question": "李小姐還要多少錢？",
    "options": [
-    "一千塊",
     "一百塊",
+    "兩百塊",
     "八百塊",
-    "兩百塊"
+    "一千塊"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "1.000 − 800 = 200 (hitung sendiri)."
   }
  ],
@@ -4484,10 +4484,10 @@
    "options": [
     "白的衣服",
     "小的鞋子",
-    "大的紅衣服",
-    "小的紅衣服"
+    "小的紅衣服",
+    "大的紅衣服"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Suka yang merah tapi terlalu besar → mau yang kecil."
   },
   {
@@ -4577,11 +4577,11 @@
    "options": [
     "紅的",
     "白的",
-    "她都不買",
-    "黑的"
+    "黑的",
+    "她都不買"
    ],
-   "answer": 3,
-   "why": "Ia mau yang 不大也不小 dan itu yang hitam → 黑的 (kesimpulan). A: kekecilan. B: kebesaran. C: ia membeli satu."
+   "answer": 2,
+   "why": "Ia mau yang 不大也不小 dan itu yang hitam → 黑的 (kesimpulan). A: kekecilan. B: kebesaran. D: ia membeli satu."
   }
  ],
  "A20": [
@@ -4710,26 +4710,26 @@
     },
     {
      "sp": "男",
-     "zh": "不，坐公車不方便。"
+     "zh": "不，坐公車不方便，我也沒有車子。"
     },
     {
      "sp": "女",
-     "zh": "你開車去嗎？"
+     "zh": "我開車，你坐我的車子，好嗎？"
     },
     {
      "sp": "男",
-     "zh": "我沒有車子，我坐計程車。"
+     "zh": "好，謝謝你！"
     }
    ],
    "question": "這位先生怎麼去？",
    "options": [
     "坐公車",
-    "走路",
-    "開車",
-    "坐計程車"
+    "坐計程車",
+    "開他的車子",
+    "坐這位小姐的車"
    ],
    "answer": 3,
-   "why": "Bus ditolak, tidak punya mobil → taksi."
+   "why": "Bus tidak praktis dan ia tidak punya mobil; si perempuan menawarkan mobilnya (你坐我的車子) dan ia setuju (好). A: ia berkata 不方便. B: taksi tidak disebut. C: ia tidak punya mobil."
   },
   {
    "type": "read_sent",
@@ -4964,13 +4964,13 @@
    ],
    "question": "這位先生是什麼意思？",
    "options": [
-    "這位小姐應該過來。",
-    "他在火車站。",
-    "他不來。",
-    "他很快就到。"
+    "他很快就到。",
+    "他在火車站裡。",
+    "他不想來。",
+    "這位小姐應該過來。"
    ],
-   "answer": 3,
-   "why": "馬上到 = segera sampai."
+   "answer": 0,
+   "why": "馬上到 = segera sampai → ia akan cepat datang. D: justru si laki-laki yang datang. B: yang di stasiun adalah si perempuan (外頭 = di luar). C: kebalikannya."
   },
   {
    "type": "read_sent",
@@ -5200,18 +5200,18 @@
     },
     {
      "sp": "男",
-     "zh": "不上，我想在家睡覺。"
+     "zh": "不上，我今天不出去。"
     }
    ],
    "question": "這位先生今天可能做什麼？",
    "options": [
-    "去看電影",
+    "在家睡覺",
     "上課",
     "去工作",
-    "在家睡覺"
+    "去看電影"
    ],
-   "answer": 3,
-   "why": "不上課，在家睡覺."
+   "answer": 0,
+   "why": "Ia sakit, tidak masuk kelas, dan 今天不出去 → kemungkinan besar ia di rumah dan tidur. B, C, D: semuanya harus keluar rumah."
   },
   {
    "type": "read_sent",
@@ -5296,15 +5296,15 @@
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
    "text": "李小姐感冒，她頭痛，眼睛也痛。她今天沒去上課，在家睡覺。",
-   "question": "哪個「不對」？",
+   "question": "哪個是對的？",
    "options": [
-    "李小姐頭痛。",
-    "李小姐在家睡覺。",
+    "李小姐眼睛不痛。",
+    "李小姐今天在家。",
     "李小姐今天上課。",
-    "李小姐感冒。"
+    "李小姐沒有感冒。"
    ],
-   "answer": 2,
-   "why": "Pilih yang SALAH: ia 沒去上課."
+   "answer": 1,
+   "why": "她今天沒去上課，在家睡覺 → hari ini ia di rumah. A: matanya juga sakit (眼睛也痛). C: ia 沒去上課. D: ia 感冒."
   }
  ],
  "A23": [
@@ -5448,10 +5448,10 @@
    "options": [
     "在家休息",
     "去工作",
-    "來上課",
-    "去看醫生"
+    "去看醫生",
+    "來上課"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "看病 = berobat ke dokter."
   },
   {
@@ -5541,10 +5541,10 @@
    "options": [
     "告訴醫生",
     "去看醫生",
-    "去工作",
-    "在家休息"
+    "在家休息",
+    "去工作"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "不去工作 + harus istirahat → di rumah (simpulan)."
   }
  ],
@@ -5778,15 +5778,15 @@
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
    "text": "臺北的天氣：一月、二月很冷，七月、八月最熱，五月、六月常常下雨。",
-   "question": "六月去臺北，天氣可能怎麼樣？",
+   "question": "哪個月去臺北，最可能下雨？",
    "options": [
-    "很冷",
-    "最熱",
-    "常常下雨",
-    "風很大"
+    "一月",
+    "六月",
+    "八月",
+    "十二月"
    ],
-   "answer": 2,
-   "why": "Juni termasuk 五月、六月常常下雨 → sering hujan (harus dicocokkan dengan bulannya). A: Januari–Februari. B: Juli–Agustus. D: tidak disebut."
+   "answer": 1,
+   "why": "五月、六月常常下雨 → Juni (harus dicocokkan dengan bulannya). A: Januari dingin. C: Agustus paling panas. D: Desember tidak disebut."
   }
  ],
  "A25": [
@@ -6023,12 +6023,12 @@
    "text": "小明打電話給林小姐。他說：「對不起，我明天不能去看電影。」林小姐說：「沒關係，我們下星期去吧。」",
    "question": "他們什麼時候去看電影？",
    "options": [
-    "明天",
+    "下星期",
     "今天",
     "他們不去",
-    "下星期"
+    "明天"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Besok batal; diganti 下星期."
   }
  ]

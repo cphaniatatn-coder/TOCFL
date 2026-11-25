@@ -139,12 +139,12 @@
    "question": "這位先生覺得這位小姐的家人怎麼樣？",
    "options": [
     "只有姊姊漂亮",
-    "姊姊現在不漂亮",
-    "都不漂亮",
-    "都很漂亮"
+    "她的家人都很漂亮",
+    "她的家人都不漂亮",
+    "姊姊現在不漂亮"
    ],
-   "answer": 3,
-   "why": "全家都很漂亮. B salah fokus; D kebalikan (現在也很漂亮)."
+   "answer": 1,
+   "why": "你們全家都很漂亮 → semua keluarganya cantik → B. A: salah fokus (bukan hanya kakaknya). C dan D: kebalikannya (現在也很漂亮)."
   },
   {
    "type": "read_sent",
@@ -233,15 +233,15 @@
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
    "text": "陳老師教中文，他有二十七個學生：男生十二個，女生十五個。所有的學生都是外國人，他們全都住在臺北市。陳老師說，他們的中文都很好。",
-   "question": "陳老師有幾個學生不是男生？",
+   "question": "陳老師有幾個女學生？",
    "options": [
+    "三個",
     "十二個",
     "十五個",
-    "二十七個",
-    "三個"
+    "二十七個"
    ],
-   "answer": 1,
-   "why": "Yang bukan laki-laki = perempuan → 15 (tidak tertulis langsung). A: jumlah laki-laki. C: jumlah seluruh murid. D: selisih 15 − 12."
+   "answer": 2,
+   "why": "女生十五個 → 15 → C. B: jumlah laki-laki. D: jumlah seluruh murid. A: selisih 15 − 12."
   }
  ],
  "B14": [
@@ -481,12 +481,12 @@
    "question": "小學六年級的學生差不多幾歲？",
    "options": [
     "六歲",
+    "七歲",
     "十二歲",
-    "十三歲",
-    "七歲"
+    "十三歲"
    ],
-   "answer": 1,
-   "why": "Masuk SD sekitar umur 7; kelas 6 = lima tahun kemudian → sekitar 12 tahun (harus dihitung). A: 六 dari 六年級. C: 7 + 6, salah hitung. D: umur masuk SD."
+   "answer": 2,
+   "why": "Masuk SD sekitar umur 7; kelas 6 = lima tahun kemudian → sekitar 12 tahun (harus dihitung). A: 六 dari 六年級. D: 7 + 6, salah hitung. B: umur masuk SD."
   }
  ],
  "B15": [
@@ -723,7 +723,7 @@
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
    "text": "王小姐是日本人，現在在臺灣工作。她會說日語和英語，也會說一點中文。她的中文說得不太好，所以每天下班以後都練習說中文。她也很想學法文。",
-   "question": "王小姐什麼語言說得不太好？",
+   "question": "王小姐每天要練習說什麼語言？",
    "options": [
     "日語",
     "英語",
@@ -731,7 +731,7 @@
     "法文"
    ],
    "answer": 2,
-   "why": "她的中文說得不太好 → C. A dan B: ia bisa dengan baik. D: baru ingin belajar, belum bisa sama sekali."
+   "why": "她的中文說得不太好，所以每天…練習說中文 → C. A dan B: ia sudah bisa. D: baru ingin belajar."
   }
  ],
  "B16": [
@@ -874,12 +874,12 @@
    "question": "這位小姐覺得學中文要怎麼做？",
    "options": [
     "去臺灣",
-    "每天聽、每天說",
+    "常常聽，常常說",
     "買很多書",
     "找一個好老師"
    ],
    "answer": 1,
-   "why": "Metodenya: 每天聽，每天說. B–D tidak disebut."
+   "why": "Metodenya 每天聽，每天說 = sering mendengar dan berbicara → B. A, C, D: tidak disebut."
   },
   {
    "type": "read_sent",
@@ -971,12 +971,12 @@
    "question": "姊姊是什麼意思？",
    "options": [
     "姊姊明天考試",
-    "小明不準備",
+    "小明應該準備考試",
     "考試很簡單",
-    "小明應該準備考試"
+    "小明不準備"
    ],
-   "answer": 3,
-   "why": "上次也說…可是考得不好 + 你要準備 → kakaknya ingin Xiaoming belajar dulu (tidak dikatakan \"應該\"). A: yang ujian Xiaoming. B: itu kata Xiaoming. C: itu pendapat Xiaoming."
+   "answer": 1,
+   "why": "上次也說…可是考得不好 + 你要準備 → kakaknya ingin Xiaoming belajar dulu (tidak dikatakan \"應該\"). A: yang ujian Xiaoming. D: itu kata Xiaoming. C: itu pendapat Xiaoming."
   }
  ],
  "B17": [
@@ -1361,15 +1361,15 @@
      "zh": "夏天很熱，我不喜歡。"
     }
    ],
-   "question": "這位小姐為什麼不喜歡夏天？",
+   "question": "這位小姐覺得夏天怎麼樣？",
    "options": [
-    "因為夏天會下雪",
-    "因為她不會游泳",
-    "因為她喜歡春天",
-    "因為夏天很熱"
+    "夏天常常下雪",
+    "夏天很熱",
+    "夏天不冷也不熱",
+    "夏天可以游泳，很好"
    ],
-   "answer": 3,
-   "why": "夏天很熱，我不喜歡 → D. A: yang bisa berenang si laki-laki. B: ia suka musim gugur. C: musim panas tidak bersalju."
+   "answer": 1,
+   "why": "夏天很熱，我不喜歡 → menurutnya terlalu panas → B. A: musim panas tidak bersalju. C: itu pendapatnya tentang musim gugur. D: itu pendapat si laki-laki."
   },
   {
    "type": "read_sent",
@@ -1463,10 +1463,10 @@
     "去游泳",
     "不要去山上",
     "去臺北",
-    "帶很多衣服"
+    "多帶衣服"
    ],
    "answer": 3,
-   "why": "Saran langsung dalam teks."
+   "why": "請帶很多衣服 = bawalah banyak baju (di gunung dingin) → D. A dan C: tidak disarankan. B: teks tidak melarang pergi ke gunung."
   }
  ],
  "B19": [
@@ -1705,13 +1705,13 @@
    "text": "我是印尼人，現在住在臺北。臺北冬天比雅加達冷，常常下雨；夏天跟雅加達一樣熱。我比較喜歡臺北的秋天，不冷也不熱。",
    "question": "哪個是對的？",
    "options": [
-    "臺北夏天比較冷",
+    "臺北冬天比較冷",
     "臺北夏天比雅加達熱",
     "雅加達冬天比較冷",
-    "臺北冬天比雅加達冷"
+    "臺北夏天比較冷"
    ],
-   "answer": 3,
-   "why": "D salah: musim panas 一樣熱."
+   "answer": 0,
+   "why": "臺北冬天比雅加達冷 → musim dingin di Taipei lebih dingin → A. B: musim panas 一樣熱. C: kebalikannya. D: musim panas di Taipei sama panas, tidak lebih dingin."
   }
  ],
  "B20": [
@@ -1948,15 +1948,15 @@
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
    "text": "王小姐去買衣服：外套三千塊，太貴了；裙子八百塊，有點短；褲子一千塊，很好看。她最後買了褲子，明天要穿新褲子去上班。",
-   "question": "王小姐為什麼不買外套？",
+   "question": "王小姐覺得外套怎麼樣？",
    "options": [
     "有點短",
-    "太大了",
-    "不漂亮",
-    "太貴了"
+    "太貴了",
+    "很好看",
+    "太大了"
    ],
-   "answer": 3,
-   "why": "Jaket: 太貴了. 有點短 alasan untuk rok."
+   "answer": 1,
+   "why": "外套三千塊，太貴了 → B. A: itu tentang rok. C: itu tentang celana. D: tidak disebut."
   }
  ],
  "B21": [
@@ -2098,13 +2098,13 @@
    ],
    "question": "這位先生要什麼？",
    "options": [
-    "兩支紅筆",
-    "一支筆",
-    "兩支藍筆",
-    "一支紅筆和一支藍筆"
+    "兩支都是紅的",
+    "他要一支筆",
+    "兩支都是藍的",
+    "紅的、藍的各一支"
    ],
    "answer": 3,
-   "why": "Dua pena: merah + biru."
+   "why": "兩支 + 一支紅的，一支藍的 → satu merah, satu biru → D. A dan C: warnanya hanya satu. B: ia minta dua."
   },
   {
    "type": "read_sent",
@@ -2198,10 +2198,10 @@
     "妹妹的書在裡面",
     "書包是黃色的",
     "書包很大",
-    "裡面有很多書"
+    "他的書和本子很多"
    ],
    "answer": 3,
-   "why": "Alasan setelah 因為."
+   "why": "因為裡面有很多書和本子 → D. A: buku adiknya ada di tas adiknya. B: tidak disebut. C: tasnya justru ingin diganti yang lebih besar."
   }
  ],
  "B22": [
@@ -2343,13 +2343,13 @@
    ],
    "question": "醫生說這位先生應該怎麼做？",
    "options": [
-    "不要吃飯",
-    "少吃菜",
-    "多喝咖啡",
-    "多吃菜，少喝咖啡"
+    "飯要少吃，咖啡要多喝",
+    "菜要少吃，咖啡要多喝",
+    "菜要多吃，咖啡要少喝",
+    "菜要多吃，咖啡不能喝"
    ],
-   "answer": 3,
-   "why": "醫生說我要多吃菜，少喝咖啡 → D. A: tidak disebut. B dan C: kebalikannya."
+   "answer": 2,
+   "why": "醫生說我要多吃菜，少喝咖啡 → C. A dan B: kebalikannya. D: dokter berkata 少喝 (sedikit), bukan tidak boleh sama sekali."
   },
   {
    "type": "read_sent",
@@ -2440,13 +2440,13 @@
    "text": "超市今天的東西：蛋一盒六十塊，牛奶一瓶八十塊，水一瓶二十塊，袋子一個一塊。我要買一盒蛋和兩瓶水，也要一個袋子。",
    "question": "我一共要給多少錢？",
    "options": [
+    "八十一塊",
     "一百塊",
     "一百零一塊",
-    "一百四十塊",
-    "八十一塊"
+    "一百四十塊"
    ],
-   "answer": 1,
-   "why": "60 + 20 × 2 + 1 = 101 (harus dihitung) → B. A: lupa kantong. C: menghitung susu, bukan air. D: hanya satu botol air."
+   "answer": 2,
+   "why": "60 + 20 × 2 + 1 = 101 (harus dihitung) → C. B: lupa kantong. D: menghitung susu, bukan air. A: hanya satu botol air."
   }
  ],
  "B23": [
@@ -2588,12 +2588,12 @@
    ],
    "question": "這位小姐最後付多少錢？",
    "options": [
-    "八百塊",
+    "九百塊",
     "不知道",
     "一千塊",
-    "九百塊"
+    "八百塊"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "好吧 = setuju dengan 九百塊."
   },
   {

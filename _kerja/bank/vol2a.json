@@ -136,15 +136,15 @@
      "zh": "明天可能可以。"
     }
    ],
-   "question": "這位先生今天為什麼不跑步？",
+   "question": "這位先生今天怎麼樣？",
    "options": [
-    "因為他明天要跑",
-    "因為他不喜歡運動",
-    "因為他不會跑步",
-    "因為他的腳很痛"
+    "他明天要去跑步",
+    "他不喜歡運動",
+    "他不會跑步",
+    "他的腳很痛"
    ],
    "answer": 3,
-   "why": "能 = bisa karena kondisi: kakinya sakit. B salah (masalahnya kondisi, bukan kemampuan)."
+   "why": "Ditanya 能跑步嗎 → 我的腳很痛: kakinya sakit → D. A: besok baru 可能可以. B: tidak disebut. C: masalahnya kondisi (能), bukan kemampuan (會)."
   },
   {
    "type": "read_sent",
@@ -385,10 +385,10 @@
    "options": [
     "他們不去",
     "週末",
-    "星期六早上",
-    "星期五晚上"
+    "星期五晚上",
+    "星期六早上"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Akhir pekan tidak bisa; Jumat malam disetujui."
   },
   {
@@ -482,11 +482,11 @@
    "options": [
     "星期六去學校",
     "帶音樂",
-    "告訴陳老師",
+    "跟陳老師說",
     "給老師錢"
    ],
    "answer": 2,
-   "why": "Kalimat terakhir. B: tempatnya taman, bukan sekolah."
+   "why": "請告訴陳老師 = beri tahu Guru Chen → 跟陳老師說 → C. A: kegiatannya di taman, bukan sekolah. B: musiknya sudah disediakan. D: tidak disebut."
   }
  ],
  "B03": [
@@ -519,11 +519,11 @@
    },
    "question": "他們是第幾名？",
    "options": [
-    "第三名。",
     "第一名。",
-    "第二名。"
+    "第二名。",
+    "第三名。"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "第二名 = juara kedua."
   },
   {
@@ -629,12 +629,12 @@
    "question": "哪個是對的？",
    "options": [
     "這位先生有兩張票",
-    "他們不去看比賽",
+    "這位小姐有兩張票",
     "他們都沒有票",
-    "這位小姐有兩張票"
+    "他們不去看比賽"
    ],
-   "answer": 3,
-   "why": "這位小姐：我有兩張. B hanya dugaan laki-laki di awal."
+   "answer": 1,
+   "why": "這位小姐說：我有兩張 → yang punya tiket si perempuan. A: bukan si laki-laki. C: hanya dugaan si laki-laki di awal (我們沒有票). D: mereka jadi pergi."
   },
   {
    "type": "read_sent",
@@ -725,12 +725,12 @@
    "text": "這個星期六有兩場籃球比賽。第一場是上午十點，第二場是下午三點。學生的門票一張一百塊，老師兩百塊。",
    "question": "陳老師和一個學生去看比賽，門票一共多少錢？",
    "options": [
+    "一百塊",
     "兩百塊",
     "三百塊",
-    "一百塊",
     "四百塊"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Guru 200 + murid 100 = 300 (hitung)."
   }
  ],
@@ -873,13 +873,13 @@
    ],
    "question": "這位小姐是什麼意思？",
    "options": [
-    "她現在很忙",
+    "她現在很忙，不能說話",
     "她等一下再打電話",
     "她不想跟這位先生說話",
     "這位先生應該打給她"
    ],
    "answer": 1,
-   "why": "一會再打 = nanti menelepon lagi."
+   "why": "一會我再打給你 = nanti aku telepon lagi → B. A: yang sibuk (sedang makan) si laki-laki. C: ia justru ingin bicara. D: yang akan menelepon si perempuan."
   },
   {
    "type": "read_sent",
@@ -1009,12 +1009,12 @@
    },
    "question": "她說什麼？",
    "options": [
-    "再見！",
-    "我不要。",
+    "不客氣，再見！",
+    "我不要，謝謝。",
     "不好意思，麻煩你。"
    ],
    "answer": 2,
-   "why": "不好意思，麻煩你 = maaf, boleh minta tolong. Cara sopan meminta bantuan."
+   "why": "不好意思，麻煩你 = maaf, boleh minta tolong → cara sopan meminta bantuan → C. A: jawaban saat dibilang terima kasih. B: menolak tawaran."
   },
   {
    "type": "listen_dialog",
@@ -1161,7 +1161,7 @@
     "img": "B05-T7"
    },
    "options": [
-    "請坐。",
+    "請坐在這裡等。",
     "請不要穿鞋子進來。",
     "請穿鞋子進來。"
    ],
@@ -1608,13 +1608,13 @@
    ],
    "question": "哪個是對的？",
    "options": [
-    "這位小姐一個人住",
-    "房東不好",
-    "房租很貴",
-    "這位小姐跟室友一起住"
+    "她一個人住",
+    "她的房東不好",
+    "她的房租很貴",
+    "她跟室友一起住"
    ],
    "answer": 3,
-   "why": "跟室友一起租 → tinggal bersama. B & D kebalikan."
+   "why": "我跟室友一起租 → ia tinggal bersama teman sekamar → D. A: kebalikannya. B: 房東很好 (sering memberi buah). C: 房租不貴."
   },
   {
    "type": "read_sent",
@@ -2098,13 +2098,13 @@
    ],
    "question": "他們有什麼問題？",
    "options": [
-    "房東壞了",
-    "菜不好吃",
-    "電話壞了",
-    "冰箱壞了"
+    "電話不能用了",
+    "冰箱不能用了",
+    "他們沒有冰箱",
+    "冰箱很小"
    ],
-   "answer": 3,
-   "why": "冰箱壞了."
+   "answer": 1,
+   "why": "冰箱壞了 = kulkasnya rusak → tidak bisa dipakai → B. A: teleponnya justru dipakai untuk menelepon pemilik rumah. C: mereka punya kulkas. D: tidak disebut."
   },
   {
    "type": "read_sent",
@@ -2343,12 +2343,12 @@
    ],
    "question": "這位先生星期六什麼時候跑步？",
    "options": [
-    "晚上",
+    "下午",
     "早上",
     "下課以後",
-    "下午"
+    "晚上"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Sabtu termasuk 週末 → 下午 (simpulan)."
   },
   {
@@ -2386,7 +2386,7 @@
     "img": "B10-T7"
    },
    "options": [
-    "今天不是週日。",
+    "週日是這個禮拜的第一天。",
     "週一是這個禮拜的最後一天。",
     "週日是這個禮拜的最後一天。"
    ],
@@ -2711,7 +2711,7 @@
     "她有一隻貓。"
    ],
    "answer": 0,
-   "why": "三隻貓 = tiga kucing. A salah hewan; C salah jumlah."
+   "why": "三隻貓 = tiga kucing → A. B salah hewan (狗 = anjing); C salah jumlah."
   },
   {
    "type": "listen_pic",

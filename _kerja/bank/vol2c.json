@@ -327,7 +327,7 @@
     },
     {
      "sp": "男",
-     "zh": "可樂。"
+     "zh": "我要一杯可樂。"
     },
     {
      "sp": "女",
@@ -335,7 +335,7 @@
     },
     {
      "sp": "男",
-     "zh": "大杯。"
+     "zh": "大杯的，謝謝。"
     }
    ],
    "question": "這位先生要什麼？",
@@ -385,10 +385,10 @@
    "options": [
     "吃西瓜",
     "買西瓜",
-    "找西瓜",
-    "幫她拿西瓜"
+    "幫她拿西瓜",
+    "找西瓜"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "你幫我拿."
   },
   {
@@ -480,12 +480,12 @@
    "text": "小明的店：紅茶二十五塊，奶茶三十五塊，果汁五十塊。大杯多十塊。今天天氣很熱，客人很多，大家都想喝冰的。",
    "question": "一杯大杯的紅茶多少錢？",
    "options": [
-    "二十五塊",
     "十塊",
-    "四十五塊",
-    "三十五塊"
+    "二十五塊",
+    "三十五塊",
+    "四十五塊"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "25 + 10 = 35 (hitung)."
   }
  ],
@@ -628,13 +628,13 @@
    ],
    "question": "明天早上這位小姐可能做什麼？",
    "options": [
-    "在家睡覺",
-    "去學校",
-    "去夜市",
-    "跟這位先生去市場"
+    "跟這位先生去市場",
+    "一個人去學校",
+    "跟朋友去夜市",
+    "一個人在家睡覺"
    ],
-   "answer": 3,
-   "why": "Ikut ke pasar (disetujui)."
+   "answer": 0,
+   "why": "我可以跟你去嗎？→ 好 → ia ikut ke pasar → A. B, C, D: tidak disebut."
   },
   {
    "type": "read_sent",
@@ -725,12 +725,12 @@
    "text": "夜市的小吃：餃子一份六十塊，饅頭一個十五塊，熱狗一個四十塊。今天晚上我和哥哥去夜市，我想吃熱狗，哥哥想吃餃子。",
    "question": "兩個熱狗和一份餃子，一共多少錢？",
    "options": [
-    "一百四十塊",
     "一百塊",
     "一百二十塊",
+    "一百四十塊",
     "一百五十五塊"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "40 × 2 + 60 = 140."
   }
  ],
@@ -782,7 +782,7 @@
     },
     {
      "sp": "女",
-     "zh": "好啊！"
+     "zh": "好啊！那家的茶很好喝。"
     }
    ],
    "question": "他們要去哪裡？",
@@ -917,8 +917,8 @@
    },
    "options": [
     "今天的特別餐有三道菜。",
-    "今天沒有菜。",
-    "今天只有一道菜。"
+    "今天的特別餐沒有菜。",
+    "今天的特別餐只有一道菜。"
    ],
    "answer": 0,
    "why": "三道菜 = tiga hidangan."
@@ -973,10 +973,10 @@
     "帶點心去",
     "不要去",
     "晚一點去",
-    "早一點去"
+    "不要太晚去"
    ],
    "answer": 3,
-   "why": "Saran di akhir teks."
+   "why": "週末人很多，要早一點去 → jangan datang terlambat → D. A: kudapan tersedia di sana. B: teks tidak melarang. C: kebalikannya."
   }
  ],
  "B29": [
@@ -1307,7 +1307,7 @@
     },
     {
      "sp": "男",
-     "zh": "第二個。"
+     "zh": "第二個路口。"
     },
     {
      "sp": "女",
@@ -1315,7 +1315,7 @@
     },
     {
      "sp": "男",
-     "zh": "往左。"
+     "zh": "往左轉。"
     }
    ],
    "question": "他們在哪裡轉？",
@@ -1364,12 +1364,12 @@
    "question": "這位小姐回家以前要做什麼？",
    "options": [
     "去公園",
-    "去超市買東西",
+    "先去超市",
     "在家做飯",
     "去學校"
    ],
    "answer": 1,
-   "why": "我去超市買東西，然後回家 → B. A dan D: tidak disebut. C: dilakukan sesudah pulang, bukan sebelumnya."
+   "why": "我去超市買東西，然後回家 → ke supermarket dulu → B. A dan D: tidak disebut. C: dilakukan sesudah pulang, bukan sebelumnya."
   },
   {
    "type": "read_sent",
@@ -1606,15 +1606,15 @@
      "zh": "公共汽車人太多了。"
     }
    ],
-   "question": "這位先生為什麼不坐公共汽車？",
+   "question": "這位先生覺得公共汽車怎麼樣？",
    "options": [
-    "公共汽車上人很多",
-    "公共汽車很貴",
-    "他不會騎腳踏車",
-    "公共汽車站很遠"
+    "車上人太多",
+    "車票很貴",
+    "比腳踏車慢",
+    "車站很遠"
    ],
    "answer": 0,
-   "why": "公共汽車人太多了 → A. B: ia justru naik sepeda. C dan D: tidak disebut."
+   "why": "公共汽車人太多了 → A. B, C, D: tidak disebut."
   },
   {
    "type": "read_sent",
@@ -1708,10 +1708,10 @@
     "開車",
     "騎腳踏車",
     "走路",
-    "坐公共汽車"
+    "坐公車"
    ],
    "answer": 3,
-   "why": "10 menit paling cepat."
+   "why": "公共汽車十分鐘 = paling cepat → D. A: tidak disebut. B: 20 menit. C: 40 menit."
   }
  ],
  "B32": [
@@ -1853,13 +1853,13 @@
    ],
    "question": "這位先生要做什麼？",
    "options": [
-    "幫這位小姐拿東西上樓",
-    "在樓下等",
-    "坐電梯",
-    "回家"
+    "幫她拿東西上樓",
+    "在樓下等她",
+    "跟她一起坐電梯",
+    "一個人先回家"
    ],
    "answer": 0,
-   "why": "我幫你拿上去 → membawakan barang ke atas → A. B: tidak disebut. C: tidak ada lift. D: tidak disebut."
+   "why": "我幫你拿上去 → membawakan barang ke atas → A. B dan D: tidak disebut. C: tidak ada lift (沒有)."
   },
   {
    "type": "read_sent",
@@ -1950,12 +1950,12 @@
    "text": "小明：我明天回來！我的飛機晚上八點到臺北。我買了很多東西，有點重。你可以開車來機場接我嗎？",
    "question": "小明請朋友做什麼？",
    "options": [
-    "坐飛機",
+    "去機場接他",
     "晚上八點回家",
     "開車去臺中",
-    "去機場接他"
+    "坐飛機"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Permintaan: 來機場接我."
   }
  ],
@@ -2098,13 +2098,13 @@
    ],
    "question": "哪個是對的？",
    "options": [
-    "這位小姐是日本人",
+    "這位小姐是韓國人",
     "這位先生是日本人",
     "這位先生是韓國人",
-    "這位小姐是韓國人"
+    "這位小姐是日本人"
    ],
-   "answer": 3,
-   "why": "我是韓國人 → D. A: perkiraan si laki-laki yang salah. B dan C: tentang si laki-laki, tidak disebut."
+   "answer": 0,
+   "why": "我是韓國人 → A. D: perkiraan si laki-laki yang salah. B dan C: tentang si laki-laki, tidak disebut."
   },
   {
    "type": "read_sent",
@@ -2195,12 +2195,12 @@
    "text": "我本來想週末去花蓮旅行，可是我姊姊週末要來臺北，所以我不去了。我們要一起去淡水玩，晚上去夜市吃小吃。",
    "question": "他週末可能做什麼？",
    "options": [
-    "去花蓮旅行",
+    "在臺北跟姊姊見面",
     "一個人去旅行",
     "去姊姊家",
-    "在臺北跟姊姊見面"
+    "去花蓮旅行"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "本來 = semula; rencana batal karena kakak datang."
   }
  ],
@@ -2440,13 +2440,13 @@
    "text": "週末我們去河邊玩。河邊有很多草和樹，也有很多鳥。我們一到那裡就坐下來吃東西。吃了東西以後，我們在河邊走了一個小時。",
    "question": "他們到河邊以後，先做什麼？",
    "options": [
-    "坐下來吃東西",
-    "游泳",
-    "看鳥",
-    "照相"
+    "坐著吃東西",
+    "去河裡游泳",
+    "看樹上的鳥",
+    "在河邊照相"
    ],
    "answer": 0,
-   "why": "一到那裡就坐下來吃東西."
+   "why": "一到那裡就坐下來吃東西 → yang pertama: duduk dan makan → A. B dan D: tidak disebut. C: burung hanya ada di sana, bukan kegiatan pertama."
   }
  ],
  "B35": [
@@ -2590,11 +2590,11 @@
    "options": [
     "這位先生",
     "這位小姐",
-    "這位先生和這位小姐一起",
-    "他們都不付"
+    "兩個人一起付",
+    "兩個人都不付"
    ],
    "answer": 1,
-   "why": "今天你付 → si perempuan → B. A: kemarin yang membayar si laki-laki. C dan D: tidak disebut."
+   "why": "好吧，今天你付 → si perempuan → B. A: kemarin yang membayar si laki-laki. C dan D: tidak disebut."
   },
   {
    "type": "read_sent",
@@ -2685,13 +2685,13 @@
    "text": "爸爸不讓我一個人去旅行。他說：「你跟哥哥一起去，我就讓你去。」可是哥哥這個月很忙，下個月有空。",
    "question": "爸爸是什麼意思？",
    "options": [
-    "我可以一個人去",
-    "我可以跟哥哥一起去",
-    "我不能去旅行",
+    "「我」可以一個人去",
+    "「我」跟哥哥去就可以",
+    "「我」不能去旅行",
     "哥哥不能去"
    ],
    "answer": 1,
-   "why": "Syarat: 跟哥哥一起 → boleh."
+   "why": "你跟哥哥一起去，我就讓你去 → boleh asal bersama kakak → B. A: ayah tidak mengizinkan pergi sendiri. C: masih boleh dengan syarat. D: kakak hanya sibuk bulan ini."
   }
  ]
 }

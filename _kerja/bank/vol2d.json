@@ -235,13 +235,13 @@
    "text": "郵局：早上八點到下午五點。星期六上午開，星期天不開。星期一到星期五，下午三點以後人很多，要早一點去。",
    "question": "星期六下午可以去郵局嗎？",
    "options": [
-    "可以",
+    "不可以",
     "只能早上八點",
     "星期六不開",
-    "不可以"
+    "可以"
    ],
-   "answer": 3,
-   "why": "Sabtu hanya pagi (simpulan). A salah: Sabtu pagi buka."
+   "answer": 0,
+   "why": "Sabtu hanya buka pagi (星期六上午開) → sore tidak bisa (simpulan). B: kantor pos buka jam 8 sampai 5, bukan hanya jam 8. C salah: Sabtu pagi buka. D: kebalikannya."
   }
  ],
  "B37": [
@@ -725,13 +725,13 @@
    "text": "游泳池：一、不能在這裡跑。二、不能吃東西。三、小朋友要跟大人一起游泳。游泳池的時間：早上六點到晚上九點。",
    "question": "哪個是對的？",
    "options": [
-    "可以吃東西",
-    "大人不能游泳",
-    "小朋友不能一個人游泳",
-    "可以在這裡跑"
+    "在這裡可以吃東西",
+    "大人不能在這裡游泳",
+    "小朋友不能自己游泳",
+    "在游泳池旁邊可以跑"
    ],
    "answer": 2,
-   "why": "Aturan ketiga → anak tidak boleh berenang sendiri (simpulan)."
+   "why": "小朋友要跟大人一起游泳 → anak tidak boleh berenang sendiri (simpulan) → C. A dan D: kebalikan aturan 1 dan 2. B: tidak disebut."
   }
  ],
  "B39": [
@@ -871,7 +871,7 @@
      "zh": "對，痛了一個晚上。"
     }
    ],
-   "question": "這位小姐為什麼沒來上課？",
+   "question": "這位小姐怎麼了？",
    "options": [
     "吃太多，肚子痛",
     "她頭痛",
@@ -879,7 +879,7 @@
     "她不想上課"
    ],
    "answer": 0,
-   "why": "Makan banyak di pasar malam lalu sakit perut → A. B: sakitnya bukan kepala. C: ke pasar malam kemarin, bukan alasannya langsung. D: tidak disebut."
+   "why": "Makan banyak di pasar malam lalu sakit perut semalaman → A. B: sakitnya bukan kepala. C: ke pasar malam kemarin, bukan keadaannya sekarang. D: tidak disebut."
   },
   {
    "type": "read_sent",
@@ -970,13 +970,13 @@
    "text": "醫院：看病時間早上八點到十二點，下午兩點到五點。星期天不看病。病人很多，要早一點去。",
    "question": "星期一下午一點可以去看病嗎？",
    "options": [
-    "早上不可以",
-    "不可以",
+    "可以，下午都可以",
+    "不可以，要兩點以後",
     "只有星期天可以",
-    "可以"
+    "可以，一點就開始"
    ],
    "answer": 1,
-   "why": "12.00–14.00 istirahat → jam 13.00 tidak bisa."
+   "why": "12.00–14.00 tidak ada praktik → jam 13.00 belum bisa, harus sesudah jam 14.00 → B. A dan D: kebalikannya. C: hari Minggu justru tutup."
   }
  ],
  "B40": [
@@ -991,12 +991,12 @@
    },
    "question": "你怎麼樣？",
    "options": [
-    "我不累。",
-    "我很累，不高興。",
+    "我不累，可是不太高興。",
+    "因為很累，所以不高興。",
     "雖然很累，但是我很高興。"
    ],
    "answer": 2,
-   "why": "雖然……但是…… = walaupun … tetapi …."
+   "why": "雖然……但是…… = walaupun … tetapi …. Gambar: lelah tetapi senang → C. A: ia lelah. B: ia senang."
   },
   {
    "type": "listen_pic",
@@ -1406,8 +1406,8 @@
     "img": "B41-T7"
    },
    "options": [
-    "我不喜歡水果。",
-    "我只喜歡蘋果。",
+    "我不喜歡水果，比方說蘋果、香蕉。",
+    "我只喜歡蘋果，不喜歡香蕉。",
     "我喜歡水果，比方說蘋果、香蕉。"
    ],
    "answer": 2,
@@ -1462,10 +1462,10 @@
    "options": [
     "不跟同學說話",
     "常常笑",
-    "很快樂",
-    "常常生氣"
+    "常常生氣",
+    "很快樂"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Contoh menunjukkan mudah marah."
   }
  ],
@@ -1746,7 +1746,7 @@
    "options": [
     "我們一起去吧。",
     "我不敢一個人去。",
-    "我敢。"
+    "我敢，我一個人去。"
    ],
    "answer": 1,
    "why": "不敢 = tidak berani."
@@ -1855,7 +1855,7 @@
    "options": [
     "她不相信這位先生",
     "她拿錯了錢包",
-    "錢包不見了",
+    "這位先生的錢包不見了",
     "這位先生拿了她的錢包"
    ],
    "answer": 1,
@@ -1950,13 +1950,13 @@
    "text": "爸爸每天工作到很晚，很辛苦。有一天我發現他的頭髮白了很多。我很難過，我跟爸爸說：「爸爸，您要多休息。」",
    "question": "「我」為什麼難過？",
    "options": [
-    "爸爸不回家",
     "爸爸生氣了",
-    "我的頭髮白了",
-    "爸爸工作很辛苦，頭髮白了"
+    "爸爸的頭髮白了很多",
+    "「我」的頭髮白了很多",
+    "爸爸不回家了"
    ],
-   "answer": 3,
-   "why": "Sebab tersirat dari dua kalimat sebelumnya."
+   "answer": 1,
+   "why": "有一天我發現他的頭髮白了很多。我很難過 → sebabnya rambut ayah memutih (tersirat dari kalimat sebelumnya) → B. A dan D: tidak disebut. C: yang memutih rambut ayah, bukan rambut 「我」."
   }
  ],
  "B44": [
@@ -2193,15 +2193,15 @@
    "part": "閱讀 Part 5 · Pemahaman bacaan",
    "instr": "Baca teksnya, lalu pilih jawaban yang paling tepat.",
    "text": "臺灣人過年，有的人回家跟家人一起吃飯，有的人去外國旅行，也有的人在家休息。我今年過年在臺北，跟朋友一起吃飯。",
-   "question": "哪個「不對」？",
+   "question": "哪個是對的？",
    "options": [
-    "有的人去旅行",
-    "有的人回家",
-    "有的人在家休息",
-    "臺灣人過年都回家"
+    "臺灣人過年都回家",
+    "臺灣人過年都去旅行",
+    "有的人過年在家休息",
+    "「我」今年回家過年"
    ],
-   "answer": 3,
-   "why": "Pilih yang SALAH: 都回家 bertentangan dengan 有的."
+   "answer": 2,
+   "why": "也有的人在家休息 → C. A dan B: teks memakai 有的 (sebagian), bukan 都 (semua). D: 「我」 tahun ini di Taipei bersama teman."
   }
  ],
  "B45": [
@@ -2442,11 +2442,11 @@
    "options": [
     "每天寫十個字",
     "每天考試",
-    "每天說十分鐘中文",
+    "每天練習說中文",
     "每天看電影"
    ],
    "answer": 2,
-   "why": "希望學生每天說十分鐘中文."
+   "why": "希望學生每天說十分鐘中文 → setiap hari berlatih bicara bahasa Mandarin → C. A, B, D: tidak disebut."
   }
  ],
  "B46": [

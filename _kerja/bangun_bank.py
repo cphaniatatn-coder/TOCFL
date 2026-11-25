@@ -71,6 +71,107 @@ def cek_grammar(code, ts, urut):
     return out
 
 
+# Kaidah penulisan soal resmi 華測會〈命題設計概述〉2022 (slide 34–45; ringkasan di analisis-tesis-rujukan.md E1).
+# Hasilnya PERINGATAN ◇ untuk ditinjau; yang sudah ditinjau & diterima dicatat di bank_kaidah_diterima.txt
+# (satu baris = teks peringatan sampai sebelum " — ").
+HZ = re.compile(r'[一-鿿]')
+ANGKA = {'零': 0, '一': 1, '二': 2, '兩': 2, '三': 3, '四': 4, '五': 5, '六': 6, '七': 7, '八': 8, '九': 9}
+
+
+def _hz(s):
+    return ''.join(HZ.findall(s or ''))
+
+
+def _angka(s):
+    n, cur = 0, 0
+    for ch in s:
+        if ch in ANGKA:
+            cur = ANGKA[ch]
+        else:
+            n += (cur or 1) * {'十': 10, '百': 100, '千': 1000, '萬': 10000}[ch]
+            cur = 0
+    return n + cur
+
+
+def _nilai(o):
+    """Nilai urut sebuah pilihan bila berupa angka/hari/tanggal/jam (untuk kaidah 'urut logis'); None bila bukan."""
+    N = '[零一二兩三四五六七八九十百千萬]+'
+    m = re.search(r'星期([一二三四五六天日])', o)
+    if m:
+        return {'天': 7, '日': 7}.get(m.group(1), ANGKA.get(m.group(1)))
+    m = re.search(f'({N})月({N})[號日]', o)
+    if m:
+        return _angka(m.group(1)) * 100 + _angka(m.group(2))
+    m = re.search(f'({N})點(半|({N})分)?', o)
+    if m and '小時' not in o:   # jam dinding: 十二點 sebelum 一點
+        return (_angka(m.group(1)) % 12) * 60 + (30 if m.group(2) == '半' else _angka(m.group(3)) if m.group(3) else 0)
+    m = re.search(N, o)
+    if not m or m.start() > 2 or len(_hz(o)) - len(m.group(0)) > 4:
+        return None
+    return _angka(m.group(0))
+
+
+def cek_kaidah(code, ts):
+    out = []
+    for t in ts:
+        p = t['part'][:9]
+        opts = [o for o in t.get('options', []) if isinstance(o, str)]
+        stem = _hz(t.get('text', '') + ''.join(l['zh'] for l in t.get('lines', [])))
+        q = t.get('question', '')
+        tag = f'{code} {p}'
+        if q and t['type'] != 'listen_pic':
+            q2 = re.sub(r'(.)[不沒]\1', '', q)
+            for w in ('不舒服', '差不多', '不好意思', '對不起', '不客氣'):
+                q2 = q2.replace(w, '')
+            if re.search(r'[不沒]', q2):
+                out.append(f'{tag}: ◇ pertanyaan negatif 「{q}」 (hindari 否定問法)')
+        for l in t.get('lines', []):
+            if 0 < len(_hz(l['zh'])) <= 2:
+                out.append(f'{tag}: ◇ giliran sangat pendek 「{l["zh"]}」 (話輪分配平均)')
+                break
+        if isinstance(t.get('answer'), int) and len(t.get('options', [])) >= 3:
+            # huruf di `why` harus cocok dengan kunci (kesalahan lama yang ditemukan: A05, B03, B13, B19, B36)
+            L, w = 'ABCD'[t['answer']], t.get('why', '')
+            if (re.search(rf'(?<![A-Za-z0-9]){L}(?:(?:,| dan| &) [A-D])*\s*(?::|salah|keliru)', w)
+                    or re.search(rf'(?<![A-Za-z0-9])[A-D](?:,| dan| &) {L}\s*:', w)):
+                out.append(f'{tag}: ◇ penjelasan menyebut kunci {L} sebagai pilihan salah')
+            if any(x != L for x in re.findall(r'→ ([A-D])(?![A-Za-z0-9])', w)):
+                out.append(f'{tag}: ◇ penjelasan menunjuk huruf selain kunci {L}')
+        if len(opts) < 3 or t['type'] in ('cloze', 'read_gap'):
+            continue
+        ls = [len(_hz(o)) for o in opts]
+        if max(ls) > 15:
+            out.append(f'{tag}: ◇ pilihan {max(ls)} hanzi (maks. 15)')
+        if min(ls) and max(ls) - min(ls) >= 5 and max(ls) >= 2 * min(ls):
+            out.append(f'{tag}: ◇ panjang pilihan timpang {ls} (長度差異不要太大)')
+        nil = [_nilai(o) for o in opts]
+        if None not in nil and nil != sorted(nil) and nil != sorted(nil, reverse=True):
+            out.append(f'{tag}: ◇ pilihan angka/waktu tidak urut {opts} (依邏輯次序/時序)')
+        if t['type'] != 'listen_pic' and len(opts) == 4 and sum('我' in o.replace('「我」', '') for o in opts) >= 2:
+            out.append(f'{tag}: ◇ pilihan memakai 我 (敘述方式為第三人稱視角)')
+        if isinstance(t.get('answer'), int) and stem:
+            k = _hz(opts[t['answer']])
+            if len(k) >= 4 and k in stem:
+                out.append(f'{tag}: ◇ kunci 「{opts[t["answer"]]}」 disalin persis dari teks (必須換句話說)')
+    return out
+
+
+def cek_posisi(out):
+    """Kaidah 以隨機方式平均分配正確選項的位置: sebaran kunci per volume & jumlah pilihan."""
+    hasil, hit = [], {}
+    for code, ts in out.items():
+        for t in ts:
+            if isinstance(t.get('answer'), int) and len(t.get('options', [])) in (3, 4):
+                key = (code[0], len(t['options']))
+                hit.setdefault(key, [0] * key[1])[t['answer']] += 1
+    for (v, n), c in sorted(hit.items()):
+        tot = sum(c)
+        teks = ' '.join(f'{"ABCD"[i]}={x}' for i, x in enumerate(c))
+        if tot >= 2 * n and max(c) - min(c) > max(2, round(0.12 * tot)):
+            hasil.append(f'◇ posisi kunci {v}-bab {n} pilihan tidak merata: {teks} (以隨機方式平均分配)')
+    return hasil
+
+
 def main():
     src = {}
     d = f'{K}/bank'
@@ -100,10 +201,15 @@ def main():
                 if w in s and (code, w) not in diterima and not any(len(k) > len(w) and w in k and k in s for k in ok):
                     masalah.append(f'{code}: ⚠ kata resmi 「{w}」 belum diajarkan — di: {s[:40]}')
         tinjau += cek_grammar(code, ts, urut)
+        tinjau += cek_kaidah(code, ts)
         for i, t in enumerate(ts):
             t['id'] = f'{code}-{i + 1:02d}'
         out[code] = ts
-    diterima_g = {l.strip() for l in open(f'{K}/bank_grammar_diterima.txt', encoding='utf-8')} if os.path.exists(f'{K}/bank_grammar_diterima.txt') else set()
+    diterima_g = set()
+    for fn in ('bank_grammar_diterima.txt', 'bank_kaidah_diterima.txt'):
+        if os.path.exists(f'{K}/{fn}'):
+            diterima_g |= {l.strip() for l in open(f'{K}/{fn}', encoding='utf-8') if l.strip() and not l.startswith('#')}
+    tinjau += cek_posisi(out)
     for m in tinjau:
         if m.split(' — ')[0] not in diterima_g:
             print('  ', m)
