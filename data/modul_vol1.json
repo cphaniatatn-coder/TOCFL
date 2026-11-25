@@ -38,9 +38,9 @@
       },
       {
        "sp": "王大文",
-       "zh": "你好！我姓王，我叫王大文。你叫什麼名字？",
-       "py": "Nǐ hǎo! Wǒ xìng wáng, wǒ jiào wáng Dà wén. Nǐ jiào shén me míng zì?",
-       "id": "Halo! Marga saya Wang, nama saya Wang Dawen. Siapa namamu?"
+       "zh": "我姓王，我叫王大文。你叫什麼名字？",
+       "py": "Wǒ xìng wáng, wǒ jiào wáng Dà wén. Nǐ jiào shén me míng zì?",
+       "id": "Marga saya Wang, nama saya Wang Dawen. Siapa namamu?"
       },
       {
        "sp": "李美美",
@@ -80,15 +80,21 @@
       },
       {
        "sp": "陳先生",
-       "zh": "王大文，再見！",
-       "py": "Wáng Dà wén, zài jiàn!",
-       "id": "Sampai jumpa, Wang Dawen!"
+       "zh": "王大文……好！",
+       "py": "Wáng Dà wén…… Hǎo!",
+       "id": "Wang Dawen… (mencari nama di daftar) baik!"
       },
       {
        "sp": "王大文",
        "zh": "謝謝您！陳先生，再見！",
        "py": "Xiè xie nín! Chén xiān shēng, zài jiàn!",
        "id": "Terima kasih, Pak! Sampai jumpa, Pak Chen!"
+      },
+      {
+       "sp": "陳先生",
+       "zh": "再見！",
+       "py": "Zài jiàn!",
+       "id": "Sampai jumpa!"
       }
      ]
     }
@@ -650,7 +656,7 @@
    ],
    "title_py": "Qǐng wèn, nǐ shì nǎ guó rén?",
    "title_id": "Permisi, kamu orang mana?",
-   "scene": "Istirahat di sela kuliah. Meimei bertanya asal negara Dawen, lalu di luar kelas Dawen menyapa mahasiswa asing yang belum ia kenal dan bertanya asal negaranya.",
+   "scene": "Istirahat di sela kuliah. Meimei bertanya asal negara Dawen, lalu di luar kelas Dawen menyapa dua mahasiswa yang belum ia kenal dan bertanya asal negara mereka.",
    "can_do": [
     "Menanyakan dan menyebut asal negara (你是哪國人？我是印尼人。)",
     "Menyebut bahasa yang saya gunakan (我說中文、英文)",
@@ -676,15 +682,15 @@
       },
       {
        "sp": "李美美",
-       "zh": "是，我是臺灣人。你會說中文嗎？",
-       "py": "Shì, wǒ shì Tái wān rén. Nǐ huì shuō Zhōng wén ma?",
-       "id": "Iya, aku orang Taiwan. Kamu bisa berbahasa Mandarin?"
+       "zh": "是，我是臺灣人。你會說英文嗎？",
+       "py": "Shì, wǒ shì Tái wān rén. Nǐ huì shuō Yīng wén ma?",
+       "id": "Iya, aku orang Taiwan. Kamu bisa berbahasa Inggris?"
       },
       {
        "sp": "王大文",
-       "zh": "我會說中文。",
-       "py": "Wǒ huì shuō Zhōng wén.",
-       "id": "Aku bisa berbahasa Mandarin."
+       "zh": "會，我會說英文。",
+       "py": "Huì, wǒ huì shuō Yīng wén.",
+       "id": "Bisa, aku bisa berbahasa Inggris."
       }
      ]
     },
@@ -694,39 +700,27 @@
      "lines": [
       {
        "sp": "王大文",
-       "zh": "美美，他是外國人嗎？",
-       "py": "Měi měi, tā shì wài guó rén ma?",
-       "id": "Meimei, dia orang asing?"
-      },
-      {
-       "sp": "李美美",
-       "zh": "是的。",
-       "py": "Shì de.",
-       "id": "Iya."
-      },
-      {
-       "sp": "王大文",
-       "zh": "你好！請問，你是哪國人？",
-       "py": "Nǐ hǎo! Qǐng wèn, nǐ shì nǎ guó rén?",
-       "id": "Halo! Permisi, kamu orang mana?"
+       "zh": "你好！請問，你是外國人嗎？",
+       "py": "Nǐ hǎo! Qǐng wèn, nǐ shì wài guó rén ma?",
+       "id": "Halo! Permisi, kamu orang asing?"
       },
       {
        "sp": "美國學生",
-       "zh": "你好！我是美國人。",
-       "py": "Nǐ hǎo! Wǒ shì Měi guó rén.",
-       "id": "Halo! Aku orang Amerika."
+       "zh": "是，我是美國人。你呢？",
+       "py": "Shì, wǒ shì Měi guó rén. Nǐ ne?",
+       "id": "Iya, aku orang Amerika. Kamu?"
       },
       {
        "sp": "王大文",
-       "zh": "她呢？她是哪國人？",
-       "py": "Tā ne? Tā shì nǎ guó rén?",
-       "id": "Kalau dia (perempuan)? Dia orang mana?"
+       "zh": "我是印尼人。她呢？她是哪國人？",
+       "py": "Wǒ shì Yìn ní rén. Tā ne? Tā shì nǎ guó rén?",
+       "id": "Aku orang Indonesia. Kalau dia (perempuan)? Dia orang mana?"
       },
       {
        "sp": "美國學生",
-       "zh": "她是日本人。她說日語、英文和中文。",
-       "py": "Tā shì Rì běn rén. Tā shuō Rì yǔ, Yīng wén hàn Zhōng wén.",
-       "id": "Dia orang Jepang. Dia berbahasa Jepang, Inggris, dan Mandarin."
+       "zh": "她是日本人。她會說日語、英文和中文。",
+       "py": "Tā shì Rì běn rén. Tā huì shuō Rì yǔ, Yīng wén hàn Zhōng wén.",
+       "id": "Dia orang Jepang. Dia bisa berbahasa Jepang, Inggris, dan Mandarin."
       }
      ]
     }
@@ -1402,8 +1396,8 @@
       },
       {
        "sp": "李美美",
-       "zh": "那是誰？你妹妹嗎？",
-       "py": "Nà shì shéi? Nǐ mèi mèi ma?",
+       "zh": "那是誰？是你妹妹嗎？",
+       "py": "Nà shì shéi? Shì nǐ mèi mèi ma?",
        "id": "Itu siapa? Adik perempuanmu?"
       },
       {
@@ -2023,33 +2017,33 @@
      "lines": [
       {
        "sp": "李美美",
-       "zh": "大文，你家有幾個人？",
-       "py": "Dà wén, nǐ jiā yǒu jǐ ge rén?",
-       "id": "Dawen, keluargamu ada berapa orang?"
+       "zh": "大文，這是你的家人嗎？一、二、三、四、五……你家有幾個人？",
+       "py": "Dà wén, zhè shì nǐ de jiā rén ma? Yī, èr, sān, sì, wǔ…… Nǐ jiā yǒu jǐ ge rén?",
+       "id": "Dawen, ini keluargamu? Satu, dua, tiga, empat, lima… keluargamu ada berapa orang?"
       },
       {
        "sp": "王大文",
-       "zh": "一，二，三，四，五！我家有五個人：爸爸、媽媽、哥哥、姊姊，和我。",
-       "py": "Yī, èr, sān, sì, wǔ! Wǒ jiā yǒu wǔ ge rén: bà ba, mā ma, gē ge, jiě jie, hàn wǒ.",
-       "id": "Satu, dua, tiga, empat, lima! Keluargaku lima orang: ayah, ibu, kakak laki-laki, kakak perempuan, dan aku."
+       "zh": "我家有五個人：爸爸、媽媽、哥哥、姊姊和我。",
+       "py": "Wǒ jiā yǒu wǔ ge rén: bà ba, mā ma, gē ge, jiě jie hàn wǒ.",
+       "id": "Keluargaku lima orang: ayah, ibu, kakak laki-laki, kakak perempuan, dan aku."
       },
       {
        "sp": "李美美",
-       "zh": "你有弟弟嗎？",
-       "py": "Nǐ yǒu dì di ma?",
-       "id": "Kamu punya adik laki-laki?"
+       "zh": "你沒有弟弟、妹妹嗎？",
+       "py": "Nǐ méi yǒu dì di, mèi mèi ma?",
+       "id": "Kamu tidak punya adik?"
       },
       {
        "sp": "王大文",
-       "zh": "我沒有弟弟。你家有幾個人？",
-       "py": "Wǒ méi yǒu dì di. Nǐ jiā yǒu jǐ ge rén?",
-       "id": "Aku tidak punya adik laki-laki. Keluargamu berapa orang?"
+       "zh": "沒有。你家呢？",
+       "py": "Méi yǒu. Nǐ jiā ne?",
+       "id": "Tidak. Kalau keluargamu?"
       },
       {
        "sp": "李美美",
-       "zh": "我家有四個人。我有一個弟弟。",
-       "py": "Wǒ jiā yǒu sì ge rén. Wǒ yǒu yí ge dì di.",
-       "id": "Keluargaku empat orang. Aku punya satu adik laki-laki."
+       "zh": "我家有四個人：爸爸、媽媽、弟弟和我。",
+       "py": "Wǒ jiā yǒu sì ge rén: bà ba, mā ma, dì di hàn wǒ.",
+       "id": "Keluargaku empat orang: ayah, ibu, adik laki-laki, dan aku."
       }
      ]
     },
@@ -3261,27 +3255,15 @@
       },
       {
        "sp": "李美美",
-       "zh": "我也喜歡運動，我不喜歡打球。",
-       "py": "Wǒ yě xǐ huān yùn dòng, wǒ bù xǐ huān dǎ qiú.",
-       "id": "Aku juga suka olahraga, (tapi) aku tidak suka main bola."
+       "zh": "我不喜歡打球。我愛看電影、聽音樂，也喜歡唱歌、跳舞。",
+       "py": "Wǒ bù xǐ huān dǎ qiú. Wǒ ài kàn diàn yǐng, tīng yīn lè, yě xǐ huān chàng gē, tiào wǔ.",
+       "id": "Aku tidak suka main bola. Aku suka sekali nonton film dan mendengarkan musik, juga suka bernyanyi dan menari."
       },
       {
        "sp": "王大文",
-       "zh": "那你喜歡做什麼？",
-       "py": "Nà nǐ xǐ huān zuò shén me?",
-       "id": "Lalu kamu suka melakukan apa?"
-      },
-      {
-       "sp": "李美美",
-       "zh": "我愛看電影和聽音樂，也喜歡唱歌和跳舞。",
-       "py": "Wǒ ài kàn diàn yǐng hàn tīng yīn lè, yě xǐ huān chàng gē hàn tiào wǔ.",
-       "id": "Aku suka sekali nonton film dan mendengarkan musik, juga suka bernyanyi dan menari."
-      },
-      {
-       "sp": "王大文",
-       "zh": "我不唱歌，也不跳舞。我喜歡聽歌。",
-       "py": "Wǒ bú chàng gē, yě bú tiào wǔ. Wǒ xǐ huān tīng gē.",
-       "id": "Aku tidak menyanyi, juga tidak menari. Aku suka mendengarkan lagu."
+       "zh": "我不喜歡唱歌，也不喜歡跳舞。我喜歡聽歌。",
+       "py": "Wǒ bù xǐ huān chàng gē, yě bù xǐ huān tiào wǔ. Wǒ xǐ huān tīng gē.",
+       "id": "Aku tidak suka menyanyi, juga tidak suka menari. Aku suka mendengarkan lagu."
       }
      ]
     },
@@ -3291,21 +3273,21 @@
      "lines": [
       {
        "sp": "王大文",
-       "zh": "美美，你週末想要做什麼？",
-       "py": "Měi měi, nǐ zhōu mò xiǎng yào zuò shén me?",
+       "zh": "美美，你週末想做什麼？",
+       "py": "Měi měi, nǐ zhōu mò xiǎng zuò shén me?",
        "id": "Meimei, akhir pekan kamu mau melakukan apa?"
       },
       {
        "sp": "李美美",
-       "zh": "我週末想要看電影。你呢？",
-       "py": "Wǒ zhōu mò xiǎng yào kàn diàn yǐng. Nǐ ne?",
-       "id": "Akhir pekan aku mau nonton film. Kamu?"
+       "zh": "我想看電影。你呢？",
+       "py": "Wǒ xiǎng kàn diàn yǐng. Nǐ ne?",
+       "id": "Aku mau nonton film. Kamu?"
       },
       {
        "sp": "王大文",
-       "zh": "我想要運動，也想要看電影！",
-       "py": "Wǒ xiǎng yào yùn dòng, yě xiǎng yào kàn diàn yǐng!",
-       "id": "Aku mau olahraga, juga mau nonton film!"
+       "zh": "我想運動。我也愛看電影！",
+       "py": "Wǒ xiǎng yùn dòng. Wǒ yě ài kàn diàn yǐng!",
+       "id": "Aku mau olahraga. Aku juga suka sekali nonton film!"
       }
      ]
     }
@@ -3933,9 +3915,9 @@
       },
       {
        "sp": "王大文",
-       "zh": "不一樣。我哥哥很高，我很矮，也很胖！",
-       "py": "Bù yí yàng. Wǒ gē ge hěn gāo, wǒ hěn ǎi, yě hěn pàng!",
-       "id": "Tidak sama. Kakakku tinggi, aku pendek, juga gemuk!"
+       "zh": "不一樣高。我哥哥很高，我很矮，也很胖！",
+       "py": "Bù yí yàng gāo. Wǒ gē ge hěn gāo, wǒ hěn ǎi, yě hěn pàng!",
+       "id": "Tidak sama tinggi. Kakakku tinggi, aku pendek, juga gemuk!"
       }
      ]
     }
@@ -4470,21 +4452,21 @@
      "lines": [
       {
        "sp": "李美美",
-       "zh": "大文，你住在哪裡？",
-       "py": "Dà wén, nǐ zhù zài nǎ lǐ?",
-       "id": "Dawen, kamu tinggal di mana?"
+       "zh": "大文，你家在哪裡？",
+       "py": "Dà wén, nǐ jiā zài nǎ lǐ?",
+       "id": "Dawen, rumah keluargamu di mana?"
       },
       {
        "sp": "王大文",
-       "zh": "我住在臺北。你家在哪裡？",
-       "py": "Wǒ zhù zài Tái běi. Nǐ jiā zài nǎ lǐ?",
-       "id": "Aku tinggal di Taipei. Rumahmu di mana?"
+       "zh": "我家在印尼，我住在臺北。你呢？",
+       "py": "Wǒ jiā zài Yìn ní, wǒ zhù zài Tái běi. Nǐ ne?",
+       "id": "Rumah keluargaku di Indonesia, aku tinggal di Taipei. Kamu?"
       },
       {
        "sp": "李美美",
-       "zh": "我家在臺中，我住在臺北。",
-       "py": "Wǒ jiā zài Tái zhōng, wǒ zhù zài Tái běi.",
-       "id": "Rumah keluargaku di Taichung, aku tinggal di Taipei."
+       "zh": "我家在臺中，我也住在臺北。",
+       "py": "Wǒ jiā zài Tái zhōng, wǒ yě zhù zài Tái běi.",
+       "id": "Rumah keluargaku di Taichung, aku juga tinggal di Taipei."
       },
       {
        "sp": "王大文",
@@ -4524,27 +4506,15 @@
       },
       {
        "sp": "李美美",
-       "zh": "你的房間很漂亮！附近有公園嗎？",
-       "py": "Nǐ de fáng jiān hěn piào liàng! Fù jìn yǒu gōng yuán ma?",
-       "id": "Kamarmu bagus! Di dekat sini ada taman?"
+       "zh": "你的房間很漂亮！外面是公園嗎？",
+       "py": "Nǐ de fáng jiān hěn piào liàng! Wài miàn shì gōng yuán ma?",
+       "id": "Kamarmu bagus! Yang di luar itu taman?"
       },
       {
        "sp": "王大文",
-       "zh": "有，附近有一個公園。",
-       "py": "Yǒu, fù jìn yǒu yí ge gōng yuán.",
-       "id": "Ada, di dekat sini ada sebuah taman."
-      },
-      {
-       "sp": "李美美",
-       "zh": "你的家人也住在臺北嗎？",
-       "py": "Nǐ de jiā rén yě zhù zài Tái běi ma?",
-       "id": "Keluargamu juga tinggal di Taipei?"
-      },
-      {
-       "sp": "王大文",
-       "zh": "不，他們住在印尼。",
-       "py": "Bù, tā men zhù zài Yìn ní.",
-       "id": "Tidak, mereka tinggal di Indonesia."
+       "zh": "是，附近有一個公園。",
+       "py": "Shì, fù jìn yǒu yí ge gōng yuán.",
+       "id": "Iya, di dekat sini ada sebuah taman."
       }
      ]
     }
@@ -5132,33 +5102,33 @@
      "lines": [
       {
        "sp": "李美美",
-       "zh": "大文，桌子上有電視！你喜歡看電影嗎？",
-       "py": "Dà wén, zhuō zi shàng yǒu diàn shì! Nǐ xǐ huān kàn diàn yǐng ma?",
-       "id": "Dawen, di atas meja ada televisi! Kamu suka nonton film?"
+       "zh": "大文，桌子上有電視！我們看電影，好不好？",
+       "py": "Dà wén, zhuō zi shàng yǒu diàn shì! Wǒ men kàn diàn yǐng, hǎo bù hǎo?",
+       "id": "Dawen, di atas meja ada televisi! Kita nonton film, yuk?"
       },
       {
        "sp": "王大文",
-       "zh": "喜歡！我們看電影！你拿椅子。",
-       "py": "Xǐ huān! Wǒ men kàn diàn yǐng! Nǐ ná yǐ zi.",
-       "id": "Suka! Ayo kita nonton film! Kamu ambil kursi."
+       "zh": "好！你拿椅子。",
+       "py": "Hǎo! Nǐ ná yǐ zi.",
+       "id": "Oke! Kamu ambil kursi."
       },
       {
        "sp": "李美美",
-       "zh": "好。椅子在哪裡？",
-       "py": "Hǎo. Yǐ zi zài nǎ lǐ?",
-       "id": "Oke. Kursinya di mana?"
+       "zh": "椅子在哪裡？",
+       "py": "Yǐ zi zài nǎ lǐ?",
+       "id": "Kursinya di mana?"
       },
       {
        "sp": "王大文",
-       "zh": "在床旁邊。你弟弟也喜歡看電影嗎？",
-       "py": "Zài chuáng páng biān. Nǐ dì di yě xǐ huān kàn diàn yǐng ma?",
-       "id": "Di samping tempat tidur. Adikmu juga suka nonton film?"
+       "zh": "在床旁邊。小明呢？他也要看嗎？",
+       "py": "Zài chuáng páng biān. Xiǎo míng ne? Tā yě yào kàn ma?",
+       "id": "Di samping tempat tidur. Xiaoming bagaimana? Dia juga mau nonton?"
       },
       {
        "sp": "李美美",
-       "zh": "喜歡。小明！小明！……他在哪裡？",
-       "py": "Xǐ huān. Xiǎo míng! Xiǎo míng!…… Tā zài nǎ lǐ?",
-       "id": "Suka. Xiaoming! Xiaoming! …Dia di mana?"
+       "zh": "要！他很喜歡看電影。小明！小明！……他在哪裡？",
+       "py": "Yào! Tā hěn xǐ huān kàn diàn yǐng. Xiǎo míng! Xiǎo míng!…… Tā zài nǎ lǐ?",
+       "id": "Mau! Dia suka sekali nonton film. Xiaoming! Xiaoming! …Dia di mana?"
       }
      ]
     },
@@ -5723,9 +5693,9 @@
      "lines": [
       {
        "sp": "李美美",
-       "zh": "大文，你好晚！現在九點二十分。",
-       "py": "Dà wén, nǐ hǎo wǎn! Xiàn zài jiǔ diǎn èr shí fēn.",
-       "id": "Dawen, kamu telat sekali! Sekarang jam sembilan lewat dua puluh."
+       "zh": "大文，現在九點二十分！你幾點起床？",
+       "py": "Dà wén, xiàn zài jiǔ diǎn èr shí fēn! Nǐ jǐ diǎn qǐ chuáng?",
+       "id": "Dawen, sekarang jam sembilan lewat dua puluh! Kamu bangun jam berapa?"
       },
       {
        "sp": "王大文",
@@ -5747,8 +5717,8 @@
       },
       {
        "sp": "李美美",
-       "zh": "兩點？很晚！我每天晚上十一點睡覺，早上六點半起床。",
-       "py": "Liǎng diǎn? Hěn wǎn! Wǒ měi tiān wǎn shàng shí yī diǎn shuì jiào, zǎo shàng liù diǎn bàn qǐ chuáng.",
+       "zh": "兩點？好晚！我每天晚上十一點睡覺，早上六點半起床。",
+       "py": "Liǎng diǎn? Hǎo wǎn! Wǒ měi tiān wǎn shàng shí yī diǎn shuì jiào, zǎo shàng liù diǎn bàn qǐ chuáng.",
        "id": "Jam dua? Malam sekali! Setiap malam aku tidur jam sebelas, bangun jam setengah tujuh pagi."
       },
       {
@@ -5759,9 +5729,9 @@
       },
       {
        "sp": "李美美",
-       "zh": "我早上去公園運動。大文，你也去！",
-       "py": "Wǒ zǎo shàng qù gōng yuán yùn dòng. Dà wén, nǐ yě qù!",
-       "id": "Pagi hari aku olahraga ke taman. Dawen, kamu juga ikut!"
+       "zh": "我早上去公園運動。大文，你也去運動！",
+       "py": "Wǒ zǎo shàng qù gōng yuán yùn dòng. Dà wén, nǐ yě qù yùn dòng!",
+       "id": "Pagi hari aku olahraga ke taman. Dawen, kamu juga ikut olahraga!"
       },
       {
        "sp": "王大文",
@@ -5801,9 +5771,9 @@
       },
       {
        "sp": "李美美",
-       "zh": "現在六點四十分！晚上不看電影，十一點睡覺！",
-       "py": "Xiàn zài liù diǎn sì shí fēn! Wǎn shàng bú kàn diàn yǐng, shí yī diǎn shuì jiào!",
-       "id": "Sekarang jam enam lewat empat puluh! Nanti malam jangan nonton film, tidur jam sebelas!"
+       "zh": "現在六點四十分！你晚上不要看電影，十一點睡覺！",
+       "py": "Xiàn zài liù diǎn sì shí fēn! Nǐ wǎn shàng bú yào kàn diàn yǐng, shí yī diǎn shuì jiào!",
+       "id": "Sekarang jam enam lewat empat puluh! Malam nanti jangan nonton film, tidur jam sebelas!"
       }
      ]
     }
@@ -6374,15 +6344,15 @@
      "lines": [
       {
        "sp": "李美美",
-       "zh": "大文，你常常去公園嗎？",
-       "py": "Dà wén, nǐ cháng cháng qù gōng yuán ma?",
-       "id": "Dawen, kamu sering ke taman?"
+       "zh": "大文，昨天早上你在公園嗎？",
+       "py": "Dà wén, zuó tiān zǎo shàng nǐ zài gōng yuán ma?",
+       "id": "Dawen, kemarin pagi kamu di taman?"
       },
       {
        "sp": "王大文",
-       "zh": "常常去。我星期一和星期五早上去公園運動，昨天早上我也去。",
-       "py": "Cháng cháng qù. Wǒ xīng qī yī hàn xīng qī wǔ zǎo shàng qù gōng yuán yùn dòng, zuó tiān zǎo shàng wǒ yě qù.",
-       "id": "Sering. Senin dan Jumat pagi aku olahraga ke taman, kemarin pagi aku juga pergi."
+       "zh": "在。我常常去公園運動，星期一和星期五早上都去。",
+       "py": "Zài. Wǒ cháng cháng qù gōng yuán yùn dòng, xīng qī yī hàn xīng qī wǔ zǎo shàng dōu qù.",
+       "id": "Iya. Aku sering olahraga ke taman, setiap Senin dan Jumat pagi aku pergi."
       },
       {
        "sp": "李美美",
@@ -6911,15 +6881,15 @@
       },
       {
        "sp": "陳老師",
-       "zh": "你好！你是哪個大學的學生？",
-       "py": "Nǐ hǎo! Nǐ shì nǎ ge dà xué de xué shēng?",
-       "id": "Halo! Kamu mahasiswa universitas mana?"
+       "zh": "你好！你是我們學校的學生嗎？",
+       "py": "Nǐ hǎo! Nǐ shì wǒ men xué xiào de xué shēng ma?",
+       "id": "Halo! Kamu mahasiswa kampus kita?"
       },
       {
        "sp": "王大文",
-       "zh": "我是臺北大學的學生，美美是我的同學。",
-       "py": "Wǒ shì Tái běi dà xué de xué shēng, Měi měi shì wǒ de tóng xué.",
-       "id": "Saya mahasiswa Universitas Taipei, Meimei teman sekelas saya."
+       "zh": "是，我是臺北大學的學生。美美是我的同學。",
+       "py": "Shì, wǒ shì Tái běi dà xué de xué shēng. Měi měi shì wǒ de tóng xué.",
+       "id": "Iya, saya mahasiswa Universitas Taipei. Meimei teman sekelas saya."
       },
       {
        "sp": "陳老師",
@@ -7443,7 +7413,7 @@
    ],
    "title_py": "Zhè ge zì zěn me xiě?",
    "title_id": "Karakter ini bagaimana menulisnya?",
-   "scene": "Dawen tidak mengerti sebuah kalimat di buku. Meimei, yang orang Taiwan, mengerti kalimatnya tetapi tidak bisa menjelaskannya dalam bahasa Inggris, jadi mereka bertanya kepada Guru Chen.",
+   "scene": "Dawen tidak mengerti sebuah kalimat di buku. Meimei menjelaskan artinya sambil menunjuk benda aslinya; lalu Dawen bertanya kepada Guru Chen cara menulis hurufnya.",
    "can_do": [
     "Bertanya kepada guru: 這個字怎麼寫？什麼意思？",
     "Memakai kata bantu bilangan alat tulis: 一本書、兩枝筆、三張紙",
@@ -7463,27 +7433,27 @@
       },
       {
        "sp": "李美美",
-       "zh": "我看……這個句子，我不會用英文說。",
-       "py": "Wǒ kàn…… Zhè ge jù zi, wǒ bú huì yòng Yīng wén shuō.",
-       "id": "Coba kulihat… kalimat ini, aku tidak bisa menjelaskannya dalam bahasa Inggris."
+       "zh": "這個句子說：「我有三本書。」",
+       "py": "Zhè ge jù zi shuō: \"Wǒ yǒu sān běn shū.\"",
+       "id": "Kalimat ini bilang: \"Aku punya tiga buku.\""
       },
       {
        "sp": "王大文",
-       "zh": "我們問老師吧。",
-       "py": "Wǒ men wèn lǎo shī ba.",
-       "id": "Kita tanya guru saja."
+       "zh": "「書」是什麼意思？我不懂。",
+       "py": "\"Shū\" shì shén me yì si? Wǒ bù dǒng.",
+       "id": "Artinya \"書\" apa? Aku tidak mengerti."
       },
       {
        "sp": "李美美",
-       "zh": "好。你有筆和紙嗎？",
-       "py": "Hǎo. Nǐ yǒu bǐ hàn zhǐ ma?",
-       "id": "Oke. Kamu punya pena dan kertas?"
+       "zh": "你看，這是一本書。",
+       "py": "Nǐ kàn, zhè shì yì běn shū.",
+       "id": "Lihat, ini sebuah buku."
       },
       {
        "sp": "王大文",
-       "zh": "有，我有兩枝筆。你用這枝。",
-       "py": "Yǒu, wǒ yǒu liǎng zhī bǐ. Nǐ yòng zhè zhī.",
-       "id": "Ada, aku punya dua pena. Kamu pakai yang ini."
+       "zh": "喔，書！我懂！謝謝你！",
+       "py": "Ō, shū! Wǒ dǒng! Xiè xie nǐ!",
+       "id": "Oh, buku! Aku mengerti! Terima kasih!"
       }
      ]
     },
@@ -7493,27 +7463,27 @@
      "lines": [
       {
        "sp": "王大文",
-       "zh": "老師，我們有問題。這個字是什麼意思？",
-       "py": "Lǎo shī, wǒ men yǒu wèn tí. Zhè ge zì shì shén me yì si?",
-       "id": "Bu, kami punya pertanyaan. Huruf ini artinya apa?"
+       "zh": "老師，我有一個問題。「書」這個字怎麼寫？",
+       "py": "Lǎo shī, wǒ yǒu yí ge wèn tí. \"Shū\" zhè ge zì zěn me xiě?",
+       "id": "Bu, saya punya satu pertanyaan. Huruf \"書\" ditulis bagaimana?"
       },
       {
        "sp": "陳老師",
-       "zh": "這是「書」。你看，這是一本書。",
-       "py": "Zhè shì \"Shū\". Nǐ kàn, zhè shì yì běn shū.",
-       "id": "Ini \"書\". Lihat, ini sebuah buku."
+       "zh": "你有筆和紙嗎？",
+       "py": "Nǐ yǒu bǐ hàn zhǐ ma?",
+       "id": "Kamu punya pena dan kertas?"
       },
       {
        "sp": "王大文",
-       "zh": "喔，書！這個字怎麼寫？",
-       "py": "Ō, shū! Zhè ge zì zěn me xiě?",
-       "id": "Oh, buku! Huruf ini ditulis bagaimana?"
+       "zh": "有。這是我的筆，這是紙。",
+       "py": "Yǒu. Zhè shì wǒ de bǐ, zhè shì zhǐ.",
+       "id": "Ada. Ini pena saya, ini kertasnya."
       },
       {
        "sp": "陳老師",
-       "zh": "你們看這張紙，我寫。",
-       "py": "Nǐ men kàn zhè zhāng zhǐ, wǒ xiě.",
-       "id": "Lihat kertas ini, saya tuliskan."
+       "zh": "你看這張紙，我寫。……你也寫。",
+       "py": "Nǐ kàn zhè zhāng zhǐ, wǒ xiě.…… Nǐ yě xiě.",
+       "id": "Lihat kertas ini, saya tuliskan. …Kamu juga tulis."
       },
       {
        "sp": "王大文",
@@ -8025,61 +7995,67 @@
        "sp": "王大文",
        "zh": "我很怕！中文考試非常難。",
        "py": "Wǒ hěn pà! Zhōng wén kǎo shì fēi cháng nán.",
-       "id": "Takut sekali! Ujian Mandarin susah banget."
+       "id": "Takut sekali! Ujian Mandarin susah sekali."
       },
       {
        "sp": "李美美",
-       "zh": "我覺得說中文很容易，寫字很難。",
-       "py": "Wǒ jué de shuō Zhōng wén hěn róng yì, xiě zì hěn nán.",
-       "id": "Menurutku berbicara bahasa Mandarin mudah, menulis karakternya yang susah."
+       "zh": "你覺得什麼很難？",
+       "py": "Nǐ jué de shén me hěn nán?",
+       "id": "Menurutmu apa yang susah?"
       },
       {
        "sp": "王大文",
-       "zh": "對！今天我得寫很多字！你會寫這個字嗎？",
-       "py": "Duì! Jīn tiān wǒ děi xiě hěn duō zì! Nǐ huì xiě zhè ge zì ma?",
-       "id": "Betul! Hari ini aku harus menulis banyak karakter! Kamu bisa menulis karakter ini?"
+       "zh": "我覺得說中文很容易，寫字很難。今天我得寫很多字！這個字怎麼寫？",
+       "py": "Wǒ jué de shuō Zhōng wén hěn róng yì, xiě zì hěn nán. Jīn tiān wǒ děi xiě hěn duō zì! Zhè ge zì zěn me xiě?",
+       "id": "Menurutku berbicara bahasa Mandarin mudah, menulis karakternya yang susah. Hari ini aku harus menulis banyak karakter! Karakter ini ditulis bagaimana?"
       },
       {
        "sp": "李美美",
-       "zh": "會！你看，我寫。",
-       "py": "Huì! Nǐ kàn, wǒ xiě.",
-       "id": "Bisa! Lihat, kutuliskan."
+       "zh": "你看，我寫。",
+       "py": "Nǐ kàn, wǒ xiě.",
+       "id": "Lihat, kutuliskan."
       }
      ]
     },
     {
-     "place": "在教室",
-     "title_id": "Di kelas",
+     "place": "在教室，問老師",
+     "title_id": "Di kelas, bertanya kepada guru",
      "lines": [
       {
        "sp": "王大文",
-       "zh": "美美，這個句子對不對？",
-       "py": "Měi měi, zhè ge jù zi duì bú duì?",
-       "id": "Meimei, kalimat ini benar tidak?"
+       "zh": "老師，我可以問您一個問題嗎？",
+       "py": "Lǎo shī, wǒ kě yǐ wèn nín yí ge wèn tí ma?",
+       "id": "Bu, boleh saya bertanya satu hal?"
       },
       {
-       "sp": "李美美",
-       "zh": "不對，這是錯字。",
-       "py": "Bú duì, zhè shì cuò zì.",
-       "id": "Salah, ini karakter yang keliru."
-      },
-      {
-       "sp": "王大文",
-       "zh": "我可以問老師嗎？",
-       "py": "Wǒ kě yǐ wèn lǎo shī ma?",
-       "id": "Aku boleh tanya guru?"
-      },
-      {
-       "sp": "李美美",
-       "zh": "可以。明天考試，你應該問老師。",
-       "py": "Kě yǐ. Míng tiān kǎo shì, nǐ yīng gāi wèn lǎo shī.",
-       "id": "Boleh. Besok ujian, sebaiknya kamu tanya guru."
+       "sp": "陳老師",
+       "zh": "可以。什麼問題？",
+       "py": "Kě yǐ. Shén me wèn tí?",
+       "id": "Boleh. Pertanyaan apa?"
       },
       {
        "sp": "王大文",
-       "zh": "對！明天我一定可以！",
-       "py": "Duì! Míng tiān wǒ yí dìng kě yǐ!",
-       "id": "Betul! Besok aku pasti bisa!"
+       "zh": "這個句子對不對？",
+       "py": "Zhè ge jù zi duì bú duì?",
+       "id": "Kalimat ini benar tidak?"
+      },
+      {
+       "sp": "陳老師",
+       "zh": "不對，這是錯字。你應該寫這個字。",
+       "py": "Bú duì, zhè shì cuò zì. Nǐ yīng gāi xiě zhè ge zì.",
+       "id": "Salah, ini karakter yang keliru. Seharusnya kamu menulis karakter ini."
+      },
+      {
+       "sp": "王大文",
+       "zh": "喔，我懂！謝謝老師！",
+       "py": "Ō, wǒ dǒng! Xiè xie lǎo shī!",
+       "id": "Oh, saya mengerti! Terima kasih, Bu!"
+      },
+      {
+       "sp": "陳老師",
+       "zh": "明天考試，你一定可以！",
+       "py": "Míng tiān kǎo shì, nǐ yí dìng kě yǐ!",
+       "id": "Besok ujian, kamu pasti bisa!"
       }
      ]
     }
@@ -8577,15 +8553,15 @@
       },
       {
        "sp": "店員",
-       "zh": "咖啡要冰嗎？",
-       "py": "Kā fēi yào bīng ma?",
-       "id": "Kopinya pakai es?"
+       "zh": "要冰的嗎？",
+       "py": "Yào bīng de ma?",
+       "id": "Mau yang dingin (pakai es)?"
       },
       {
        "sp": "王大文",
-       "zh": "要冰。要一點牛奶，別太甜。",
-       "py": "Yào bīng. Yào yì diǎn niú nǎi, bié tài tián.",
-       "id": "Pakai es. Tambah sedikit susu, jangan terlalu manis."
+       "zh": "要冰的。我要一點牛奶，不要太甜。",
+       "py": "Yào bīng de. Wǒ yào yì diǎn niú nǎi, bú yào tài tián.",
+       "id": "Yang dingin. Saya mau sedikit susu, jangan terlalu manis."
       },
       {
        "sp": "店員",
@@ -8595,9 +8571,9 @@
       },
       {
        "sp": "李美美",
-       "zh": "我要一杯茶，少一點冰。",
-       "py": "Wǒ yào yì bēi chá, shǎo yì diǎn bīng.",
-       "id": "Saya mau segelas teh, esnya sedikit saja."
+       "zh": "我要一杯茶，冰少一點。還要一杯水，謝謝。",
+       "py": "Wǒ yào yì bēi chá, bīng shǎo yì diǎn. Hái yào yì bēi shuǐ, xiè xie.",
+       "id": "Saya mau segelas teh, esnya sedikit saja. Juga segelas air putih, terima kasih."
       }
      ]
     },
@@ -8607,21 +8583,27 @@
      "lines": [
       {
        "sp": "王大文",
-       "zh": "美美，你喝酒嗎？",
-       "py": "Měi měi, nǐ hē jiǔ ma?",
-       "id": "Meimei, kamu minum alkohol?"
+       "zh": "美美，你不喝咖啡嗎？",
+       "py": "Měi měi, nǐ bù hē kā fēi ma?",
+       "id": "Meimei, kamu tidak minum kopi?"
       },
       {
        "sp": "李美美",
-       "zh": "我不喝酒。我每天喝牛奶。",
-       "py": "Wǒ bù hē jiǔ. Wǒ měi tiān hē niú nǎi.",
-       "id": "Aku tidak minum alkohol. Setiap hari aku minum susu."
+       "zh": "我不喝咖啡，也不喝酒。我每天喝茶和牛奶。",
+       "py": "Wǒ bù hē kā fēi, yě bù hē jiǔ. Wǒ měi tiān hē chá hàn niú nǎi.",
+       "id": "Aku tidak minum kopi, juga tidak minum alkohol. Setiap hari aku minum teh dan susu."
       },
       {
        "sp": "王大文",
        "zh": "我每天喝兩杯咖啡！",
        "py": "Wǒ měi tiān hē liǎng bēi kā fēi!",
        "id": "Aku minum dua cangkir kopi sehari!"
+      },
+      {
+       "sp": "李美美",
+       "zh": "兩杯？很多！",
+       "py": "Liǎng bēi? Hěn duō!",
+       "id": "Dua cangkir? Banyak sekali!"
       }
      ]
     }
@@ -9139,9 +9121,9 @@
       },
       {
        "sp": "王大文",
-       "zh": "這裡的雞肉很好吃！……我很飽！晚餐我不吃！",
-       "py": "Zhè lǐ de jī ròu hěn hǎo chī!…… Wǒ hěn bǎo! Wǎn cān wǒ bù chī!",
-       "id": "Daging ayam di sini enak sekali! …Aku kenyang sekali! Makan malam aku tidak makan!"
+       "zh": "這裡的雞肉很好吃！……我很飽！我不吃晚餐！",
+       "py": "Zhè lǐ de jī ròu hěn hǎo chī!…… Wǒ hěn bǎo! Wǒ bù chī wǎn cān!",
+       "id": "Daging ayam di sini enak sekali! …Aku kenyang sekali! Aku tidak makan malam!"
       },
       {
        "sp": "李美美",
@@ -9661,9 +9643,9 @@
       },
       {
        "sp": "老闆",
-       "zh": "請進。要吃什麼？",
-       "py": "Qǐng jìn. Yào chī shén me?",
-       "id": "Silakan masuk. Mau makan apa?"
+       "zh": "請進！你們要吃什麼？",
+       "py": "Qǐng jìn! Nǐ men yào chī shén me?",
+       "id": "Silakan masuk! Kalian mau makan apa?"
       },
       {
        "sp": "王大文",
@@ -9703,27 +9685,33 @@
       },
       {
        "sp": "李美美",
-       "zh": "你先吃麵，然後喝湯。",
-       "py": "Nǐ xiān chī miàn, rán hòu hē tāng.",
-       "id": "Makan minya dulu, lalu minum kuahnya."
+       "zh": "你先喝湯，然後吃麵。別吃太快！",
+       "py": "Nǐ xiān hē tāng, rán hòu chī miàn. Bié chī tài kuài!",
+       "id": "Cicipi kuahnya dulu, lalu makan minya. Jangan makan terlalu cepat!"
       },
       {
        "sp": "王大文",
-       "zh": "好吃！臺灣的小吃很好吃，我也喜歡臺灣的麵包。",
-       "py": "Hǎo chī! Tái wān de xiǎo chī hěn hǎo chī, wǒ yě xǐ huān Tái wān de miàn bāo.",
-       "id": "Enak! Jajanan Taiwan enak sekali, aku juga suka roti Taiwan."
+       "zh": "好吃！美美，包子是麵包嗎？",
+       "py": "Hǎo chī! Měi měi, bāo zi shì miàn bāo ma?",
+       "id": "Enak! Meimei, bakpao itu roti?"
       },
       {
        "sp": "李美美",
-       "zh": "別吃太快！我吃飯很慢。",
-       "py": "Bié chī tài kuài! Wǒ chī fàn hěn màn.",
-       "id": "Jangan makan terlalu cepat! Aku makannya pelan."
+       "zh": "不是。包子裡面有肉。你吃一個！",
+       "py": "Bú shì. Bāo zi lǐ miàn yǒu ròu. Nǐ chī yí ge!",
+       "id": "Bukan. Di dalam bakpao ada dagingnya. Coba makan satu!"
       },
       {
        "sp": "王大文",
-       "zh": "這個餐廳的菜很好吃。明天我們跟陳老師一起去吧！",
-       "py": "Zhè ge cān tīng de cài hěn hǎo chī. Míng tiān wǒ men gēn Chén lǎo shī yì qǐ qù ba!",
-       "id": "Masakan restoran ini enak sekali. Besok kita ajak Guru Chen ke sini, yuk!"
+       "zh": "真好吃！臺灣的小吃都很好吃。我不想去餐廳，我每天都想吃小吃！",
+       "py": "Zhēn hǎo chī! Tái wān de xiǎo chī dōu hěn hǎo chī. Wǒ bù xiǎng qù cān tīng, wǒ měi tiān dōu xiǎng chī xiǎo chī!",
+       "id": "Enak sekali! Jajanan Taiwan semuanya enak. Aku tidak mau ke restoran, setiap hari aku mau makan jajanan!"
+      },
+      {
+       "sp": "李美美",
+       "zh": "好！明天我們跟陳老師一起吃小吃吧！",
+       "py": "Hǎo! Míng tiān wǒ men gēn Chén lǎo shī yì qǐ chī xiǎo chī ba!",
+       "id": "Oke! Besok kita makan jajanan bersama Guru Chen, yuk!"
       }
      ]
     }
@@ -10234,21 +10222,21 @@
      "lines": [
       {
        "sp": "李美美",
-       "zh": "大文，你買什麼東西？",
-       "py": "Dà wén, nǐ mǎi shén me dōng xi?",
-       "id": "Dawen, kamu beli apa?"
+       "zh": "大文，那是什麼東西？",
+       "py": "Dà wén, nà shì shén me dōng xi?",
+       "id": "Dawen, itu apa?"
       },
       {
        "sp": "王大文",
-       "zh": "我買兩枝筆。明天考試！",
-       "py": "Wǒ mǎi liǎng zhī bǐ. Míng tiān kǎo shì!",
-       "id": "Aku beli dua pena. Besok ujian!"
+       "zh": "兩枝筆。明天考試！",
+       "py": "Liǎng zhī bǐ. Míng tiān kǎo shì!",
+       "id": "Dua pena. Besok ujian!"
       },
       {
        "sp": "李美美",
-       "zh": "這個店的東西貴嗎？",
-       "py": "Zhè ge diàn de dōng xi guì ma?",
-       "id": "Barang di toko ini mahal?"
+       "zh": "這裡的東西貴嗎？",
+       "py": "Zhè lǐ de dōng xi guì ma?",
+       "id": "Barang di sini mahal?"
       },
       {
        "sp": "王大文",
@@ -10778,20 +10766,20 @@
       },
       {
        "sp": "李美美",
-       "zh": "你穿大的吧！大的不錯。",
-       "py": "Nǐ chuān dà de ba! Dà de bú cuò.",
-       "id": "Coba pakai yang besar! Yang besar bagus."
+       "zh": "你穿大的吧！",
+       "py": "Nǐ chuān dà de ba!",
+       "id": "Coba pakai yang besar!"
       },
       {
        "sp": "王大文",
-       "zh": "好，我買大的。",
-       "py": "Hǎo, wǒ mǎi dà de.",
-       "id": "Oke, aku beli yang besar."
+       "zh": "……大的不錯！好，我買大的。",
+       "py": "…… Dà de bú cuò! Hǎo, wǒ mǎi dà de.",
+       "id": "…Yang besar bagus! Oke, aku beli yang besar."
       }
      ]
     },
     {
-     "place": "在鞋子店",
+     "place": "在鞋店",
      "title_id": "Di toko sepatu",
      "lines": [
       {
@@ -10802,9 +10790,9 @@
       },
       {
        "sp": "李美美",
-       "zh": "是新的。我的舊鞋子是黑的。",
-       "py": "Shì xīn de. Wǒ de jiù xié zi shì hēi de.",
-       "id": "Iya, baru. Sepatu lamaku yang hitam."
+       "zh": "是新的！這裡的鞋子很不錯。",
+       "py": "Shì xīn de! Zhè lǐ de xié zi hěn bú cuò.",
+       "id": "Iya, baru! Sepatu di sini bagus-bagus."
       },
       {
        "sp": "王大文",
@@ -11392,15 +11380,21 @@
       },
       {
        "sp": "李美美",
-       "zh": "我住在學校附近，我走路來學校。",
-       "py": "Wǒ zhù zài xué xiào fù jìn, wǒ zǒu lù lái xué xiào.",
-       "id": "Aku tinggal di dekat kampus, aku jalan kaki ke kampus."
+       "zh": "我住在學校附近，我走路來。",
+       "py": "Wǒ zhù zài xué xiào fù jìn, wǒ zǒu lù lái.",
+       "id": "Aku tinggal di dekat kampus, aku jalan kaki."
       },
       {
        "sp": "王大文",
-       "zh": "走路也很方便！",
-       "py": "Zǒu lù yě hěn fāng biàn!",
-       "id": "Jalan kaki juga praktis!"
+       "zh": "你不坐計程車嗎？",
+       "py": "Nǐ bú zuò jì chéng chē ma?",
+       "id": "Kamu tidak naik taksi?"
+      },
+      {
+       "sp": "李美美",
+       "zh": "不坐，計程車很貴！走路很方便。",
+       "py": "Bú zuò, jì chéng chē hěn guì! Zǒu lù hěn fāng biàn.",
+       "id": "Tidak, taksi mahal! Jalan kaki praktis."
       }
      ]
     },
@@ -11422,15 +11416,15 @@
       },
       {
        "sp": "王大文",
-       "zh": "你不坐計程車嗎？",
-       "py": "Nǐ bú zuò jì chéng chē ma?",
-       "id": "Kamu tidak naik taksi?"
+       "zh": "你家有車子嗎？",
+       "py": "Nǐ jiā yǒu chē zi ma?",
+       "id": "Keluargamu punya mobil?"
       },
       {
        "sp": "李美美",
-       "zh": "不坐，計程車很貴！我爸爸有一輛車子，有時候他開車來臺北。",
-       "py": "Bú zuò, jì chéng chē hěn guì! Wǒ bà ba yǒu yí liàng chē zi, yǒu shí hòu tā kāi chē lái Tái běi.",
-       "id": "Tidak, taksi mahal! Ayahku punya mobil, kadang-kadang dia menyetir ke Taipei."
+       "zh": "有，我爸爸有一輛車子。有時候他開車來臺北。",
+       "py": "Yǒu, wǒ bà ba yǒu yí liàng chē zi. Yǒu shí hòu tā kāi chē lái Tái běi.",
+       "id": "Punya, ayahku punya satu mobil. Kadang-kadang dia menyetir ke Taipei."
       },
       {
        "sp": "王大文",
@@ -11948,27 +11942,27 @@
      "lines": [
       {
        "sp": "李美美",
-       "zh": "大文，你看到火車站嗎？",
-       "py": "Dà wén, nǐ kàn dào huǒ chē zhàn ma?",
-       "id": "Dawen, kamu lihat stasiunnya?"
+       "zh": "大文，火車站在哪裡？",
+       "py": "Dà wén, huǒ chē zhàn zài nǎ lǐ?",
+       "id": "Dawen, stasiunnya di mana?"
       },
       {
        "sp": "王大文",
-       "zh": "沒有。這是什麼地方？……你看，這裡又是公園！",
-       "py": "Méi yǒu. Zhè shì shén me dì fāng?…… Nǐ kàn, zhè lǐ yòu shì gōng yuán!",
-       "id": "Tidak. Ini tempat apa? …Lihat, ini taman lagi!"
+       "zh": "我不知道。這是什麼地方？……你看，這裡又是公園！",
+       "py": "Wǒ bù zhī dào. Zhè shì shén me dì fāng?…… Nǐ kàn, zhè lǐ yòu shì gōng yuán!",
+       "id": "Aku tidak tahu. Ini tempat apa? …Lihat, ini taman lagi!"
       },
       {
        "sp": "李美美",
-       "zh": "大文，我們走左邊！先生說右邊！",
-       "py": "Dà wén, wǒ men zǒu zuǒ biān! Xiān shēng shuō yòu biān!",
-       "id": "Dawen, kita jalan ke kiri! Bapak tadi bilang kanan!"
+       "zh": "大文，這是左邊！先生說右邊！",
+       "py": "Dà wén, zhè shì zuǒ biān! Xiān shēng shuō yòu biān!",
+       "id": "Dawen, ini sebelah kiri! Bapak tadi bilang kanan!"
       },
       {
        "sp": "王大文",
-       "zh": "對！我們走右邊。……你看，我看見火車站！在那裡！",
-       "py": "Duì! Wǒ men zǒu yòu biān.…… Nǐ kàn, wǒ kàn jiàn huǒ chē zhàn! Zài nà lǐ!",
-       "id": "Iya! Kita ke kanan. …Lihat, aku lihat stasiunnya! Di sana!"
+       "zh": "對！我們走右邊。……你看，火車站在那裡！",
+       "py": "Duì! Wǒ men zǒu yòu biān.…… Nǐ kàn, huǒ chē zhàn zài nà lǐ!",
+       "id": "Iya! Kita ke kanan. …Lihat, stasiunnya di sana!"
       },
       {
        "sp": "李美美",
@@ -12471,8 +12465,8 @@
       },
       {
        "sp": "王大文",
-       "zh": "可能是。我很累，眼睛也很痛。",
-       "py": "Kě néng shì. Wǒ hěn lèi, yǎn jīng yě hěn tòng.",
+       "zh": "可能。我很累，眼睛也很痛。",
+       "py": "Kě néng. Wǒ hěn lèi, yǎn jīng yě hěn tòng.",
        "id": "Mungkin. Aku capek sekali, mataku juga sakit."
       },
       {
@@ -13023,15 +13017,15 @@
       },
       {
        "sp": "王大文",
-       "zh": "為什麼？我自己休息就好。",
-       "py": "Wèi shén me? Wǒ zì jǐ xiū xí jiù hǎo.",
-       "id": "Kenapa? Aku istirahat sendiri saja sudah cukup."
+       "zh": "為什麼？我想自己休息。",
+       "py": "Wèi shén me? Wǒ xiǎng zì jǐ xiū xí.",
+       "id": "Kenapa? Aku mau istirahat sendiri saja."
       },
       {
        "sp": "李美美",
-       "zh": "我去告訴老師。你等我，我們一起去！",
-       "py": "Wǒ qù gào sù lǎo shī. Nǐ děng wǒ, wǒ men yì qǐ qù!",
-       "id": "Aku beri tahu guru dulu. Tunggu aku, kita pergi bersama!"
+       "zh": "我去告訴老師。你等我，我們一起去看醫生！",
+       "py": "Wǒ qù gào sù lǎo shī. Nǐ děng wǒ, wǒ men yì qǐ qù kàn yī shēng!",
+       "id": "Aku beri tahu guru dulu. Tunggu aku, kita ke dokter bersama!"
       },
       {
        "sp": "王大文",
@@ -13583,9 +13577,9 @@
       },
       {
        "sp": "王大文",
-       "zh": "這裡的山都很低，走路不累。我最喜歡山上！",
-       "py": "Zhè lǐ de shān dōu hěn dī, zǒu lù bú lèi. Wǒ zuì xǐ huān shān shàng!",
-       "id": "Gunung di sini rendah-rendah, jalan kaki tidak capek. Aku paling suka di gunung!"
+       "zh": "這裡的山都很低，走路不累。我最喜歡山！",
+       "py": "Zhè lǐ de shān dōu hěn dī, zǒu lù bú lèi. Wǒ zuì xǐ huān shān!",
+       "id": "Gunung di sini rendah-rendah, jalan kaki tidak capek. Aku paling suka gunung!"
       },
       {
        "sp": "李美美",
@@ -14048,7 +14042,7 @@
    ],
    "title_py": "Wǒ dǎ diàn huà gěi nǐ.",
    "title_id": "Aku telepon kamu ya.",
-   "scene": "Dawen menelepon Meimei saat Meimei sedang di kelas, lalu menelepon lagi malam harinya. Keesokan harinya ia memperkenalkan temannya, Zhiming, kepada Meimei.",
+   "scene": "Dawen menelepon Meimei saat Meimei sedang di kelas; ia hanya sempat menyampaikan bahwa besok akan membawa seorang teman. Keesokan harinya ia memperkenalkan temannya, Zhiming, kepada Meimei.",
    "can_do": [
     "Menelepon dan berjanji menelepon lagi (我打電話給你)",
     "Meminta maaf dan menanggapinya (對不起 — 沒關係)",
@@ -14074,33 +14068,15 @@
       },
       {
        "sp": "王大文",
-       "zh": "沒關係。晚上我打電話給你。",
-       "py": "Méi guān xì. Wǎn shàng wǒ dǎ diàn huà gěi nǐ.",
-       "id": "Tidak apa-apa. Nanti malam aku telepon kamu."
-      }
-     ]
-    },
-    {
-     "place": "晚上，打電話",
-     "title_id": "Malam hari, menelepon",
-     "lines": [
-      {
-       "sp": "李美美",
-       "zh": "大文，你打電話給我，什麼事？",
-       "py": "Dà wén, nǐ dǎ diàn huà gěi wǒ, shén me shì?",
-       "id": "Dawen, kamu meneleponku, ada apa?"
-      },
-      {
-       "sp": "王大文",
-       "zh": "明天我帶一個朋友去學校，我給你介紹。",
-       "py": "Míng tiān wǒ dài yí ge péng yǒu qù xué xiào, wǒ gěi nǐ jiè shào.",
-       "id": "Besok aku bawa seorang teman ke kampus, akan kuperkenalkan padamu."
+       "zh": "沒關係。明天我帶一個朋友去學校，我給你介紹。",
+       "py": "Méi guān xì. Míng tiān wǒ dài yí ge péng yǒu qù xué xiào, wǒ gěi nǐ jiè shào.",
+       "id": "Tidak apa-apa. Besok aku bawa seorang teman ke kampus, akan kuperkenalkan padamu."
       },
       {
        "sp": "李美美",
-       "zh": "好！明天學校見！",
-       "py": "Hǎo! Míng tiān xué xiào jiàn!",
-       "id": "Oke! Sampai ketemu besok di kampus!"
+       "zh": "好！明天見！",
+       "py": "Hǎo! Míng tiān jiàn!",
+       "id": "Oke! Sampai ketemu besok!"
       }
      ]
     },
@@ -14116,9 +14092,9 @@
       },
       {
        "sp": "志明",
-       "zh": "你好！我叫志明，我是臺灣人。",
-       "py": "Nǐ hǎo! Wǒ jiào Zhì míng, wǒ shì Tái wān rén.",
-       "id": "Halo! Namaku Zhiming, aku orang Taiwan."
+       "zh": "你好！我叫志明。",
+       "py": "Nǐ hǎo! Wǒ jiào Zhì míng.",
+       "id": "Halo! Namaku Zhiming."
       },
       {
        "sp": "李美美",
@@ -14134,21 +14110,21 @@
       },
       {
        "sp": "李美美",
-       "zh": "你有手機嗎？我打電話給你。",
-       "py": "Nǐ yǒu shǒu jī ma? Wǒ dǎ diàn huà gěi nǐ.",
-       "id": "Kamu punya HP? Nanti aku telepon kamu."
+       "zh": "志明，你的手機號碼是多少？以後我們可以打電話。",
+       "py": "Zhì míng, nǐ de shǒu jī hào mǎ shì duō shǎo? Yǐ hòu wǒ men kě yǐ dǎ diàn huà.",
+       "id": "Zhiming, nomor HP-mu berapa? Nanti kita bisa saling menelepon."
       },
       {
        "sp": "志明",
-       "zh": "有。",
-       "py": "Yǒu.",
-       "id": "Punya."
+       "zh": "我現在打電話給你。你看，這是我的手機號碼。",
+       "py": "Wǒ xiàn zài dǎ diàn huà gěi nǐ. Nǐ kàn, zhè shì wǒ de shǒu jī hào mǎ.",
+       "id": "Aku telepon kamu sekarang. Lihat, ini nomor HP-ku."
       },
       {
        "sp": "李美美",
-       "zh": "今天我請你們喝咖啡！",
-       "py": "Jīn tiān wǒ qǐng nǐ men hē kā fēi!",
-       "id": "Hari ini aku traktir kalian minum kopi!"
+       "zh": "好！今天我請你們喝咖啡！",
+       "py": "Hǎo! Jīn tiān wǒ qǐng nǐ men hē kā fēi!",
+       "id": "Oke! Hari ini aku traktir kalian minum kopi!"
       }
      ]
     }
@@ -14462,10 +14438,11 @@
    ],
    "catatan": [
     {
-     "point": "給 dan 不能",
+     "point": "給, 不能, dan 號碼",
      "note": [
       "打電話給 + orang = menelepon seseorang: 晚上我打電話給你。 Pola 給 lengkap di B23.",
-      "不能 + V = tidak bisa (karena keadaan): 我現在上課，不能說話。 Pola 能 di B01 dan B38."
+      "不能 + V = tidak bisa (karena keadaan): 我現在上課，不能說話。 Pola 能 di B01 dan B38.",
+      "號碼 = nomor. 你的手機號碼是多少？ = Nomor HP-mu berapa? (kata Level 2, dipelajari lengkap di B13)"
      ]
     }
    ],

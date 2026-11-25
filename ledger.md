@@ -297,3 +297,31 @@ Perubahan per baris tercatat di `_kerja/revisi_vol2.py` (sudah dijalankan; cerit
 - Kosakata: 濕 dihapus dari B20 (resmi TBCL Level 3, entri 溼/濕 di C11); 家 'kata bantu bilangan toko' pindah B28 → B17
   (pemakaian pertama 這家書店). Ditambah di luar TBCL: 球場 (B03), 哪裡哪裡 (B15); nama diri 雅加達 (B06), 高雄 (B19), 淡水 (B33).
 
+## Revisi Vol.3 berdasarkan laporan review Carli (2026-11-04)
+Perubahan per baris tercatat di `_kerja/revisi_vol3.py` (sudah dijalankan). Ke-67 bab kini di `cerita_vol3.py`;
+pilot C24 C30 C44 C61 C63 C64 dipindah dari dialog_cerita.py (BARU di sana kini kosong).
+- Tokoh: C12 pewawancara = 張小姐 (suara F1); C16 atasan = 黃先生 (sama dengan B11); C33 陳教授 → 林教授 (juga di soal C33).
+- Konsistensi cerita: C07 Dawen dua malam tidak tidur di ranjang (pola judul kini logis); C09 desa = rumah nenek
+  (Dawen orang Jakarta); C13 foto Imlek masa kecil Meimei; C15 cita-cita tetap guru Mandarin; C18 Meimei 'akhir-akhir
+  ini jarang' menonton film; C22 tiket pesawat (orang Indonesia tidak perlu visa pulang — 簽證 dipakai di baris itu);
+  C25 pesta ulang tahun Annie (bukan di rumahnya); C27 laporan berikutnya; C30 'dulu kamu bilang sibuk'; C41 bukan
+  musim dingin pertama; C44 sweter terlalu GELAP (C41 beli yang hitam) → biru muda; C56 Imlek tahun lalu di rumah
+  Meimei, siapa datang duluan membantu memasak.
+- Judul diubah agar sesuai dialog: C12, C31, C33, C56, C60.
+- Kewajaran: 包 (tisu), 美麗 → 好美, 一切, 主人 (pemilik kucing), 換了, 住慣/吃慣, stereotip C55 diganti candaan 不自由.
+- Pola yang dihindari sebelum babnya: 還是…吧 (C21), 好好 (C08), V一V (C30).
+- Kosakata: 已 (C01) & 子 (C14) dipindah ke 補充 (bentuk tulis/morfem, tidak wajar di dialog). Di luar TBCL: 炒飯 (C01),
+  數學 (C37), 小偷 (C52), 小說 (C61), 吃到飽 (C65); nama diri 陽明山 (C17), 故宮 (C19), 綠島 (C23), 北投 (C24).
+
+## Revisi kewajaran dialog Vol.1 (2026-11-21)
+Berdasarkan ciri dialog 當代中文 / 來學華語 / 時代華語 (analisis-modul.md Bagian 5). Maks 2 dialog per bab
+(A25: 3 → 2, telepon sore + malam digabung). Diubah: A01 (陳先生 mencari nama di daftar, penutup 再見), A02
+(tanya bahasa Inggris, bukan bahasa Mandarin yang sedang dipakai), A04 (tidak bertanya ulang hal yang sudah
+disebut), A06 (kontras tanpa 可是; 想要 → 想), A08 (外面是公園嗎), A09 (tidak menanyakan lagi hobi film dari A06;
+小明 jelas ikut), A10 (pertanyaan jam bangun sebelum jawabannya), A11 (昨天 tanpa 了: 昨天早上你在公園嗎),
+A12 (guru tidak menanyakan "universitas mana" — Dawen & Meimei = mahasiswa kampus yang sama; 我學中文 = jurusannya),
+A13 (Meimei penutur asli menjelaskan 書 dengan menunjuk; Dawen sendiri bertanya cara menulis ke guru), A14 (Meimei
+tidak berlaku seperti pembelajar; 可以 diberi alasan: guru sibuk), A15 (酒 dikaitkan dengan minuman Meimei),
+A17 (麵包 lewat pertanyaan 包子是麵包嗎; 餐廳 vs 小吃; tidak lagi menyebut warung mi sebagai 餐廳), A21
+(這是左邊 — bukan ajakan ke kiri), A25.
+

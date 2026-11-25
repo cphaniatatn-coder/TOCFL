@@ -149,3 +149,21 @@ pilot C24 C30 C44 C61 C63 C64 dipindah dari dialog_cerita.py (BARU di sana kini 
 - Pola yang dihindari sebelum babnya: 還是…吧 (C21), 好好 (C08), V一V (C30).
 - Kosakata: 已 (C01) & 子 (C14) dipindah ke 補充 (bentuk tulis/morfem, tidak wajar di dialog). Di luar TBCL: 炒飯 (C01),
   數學 (C37), 小偷 (C52), 小說 (C61), 吃到飽 (C65); nama diri 陽明山 (C17), 故宮 (C19), 綠島 (C23), 北投 (C24).
+
+## Revisi kewajaran dialog Vol.1 (2026-11-21)
+Berdasarkan ciri dialog 當代中文 / 來學華語 / 時代華語 (analisis-modul.md Bagian 5). Maks 2 dialog per bab
+(A25: 3 → 2, telepon sore + malam digabung). Diubah: A01 (陳先生 mencari nama di daftar, penutup 再見), A02
+(tanya bahasa Inggris, bukan bahasa Mandarin yang sedang dipakai), A04 (tidak bertanya ulang hal yang sudah
+disebut), A06 (kontras tanpa 可是; 想要 → 想), A08 (外面是公園嗎), A09 (tidak menanyakan lagi hobi film dari A06;
+小明 jelas ikut), A10 (pertanyaan jam bangun sebelum jawabannya), A11 (昨天 tanpa 了: 昨天早上你在公園嗎),
+A12 (guru tidak menanyakan "universitas mana" — Dawen & Meimei = mahasiswa kampus yang sama; 我學中文 = jurusannya),
+A13 (Meimei penutur asli menjelaskan 書 dengan menunjuk; Dawen sendiri bertanya cara menulis ke guru), A14 (Meimei
+tidak berlaku seperti pembelajar; 可以 diberi alasan: guru sibuk), A15 (酒 dikaitkan dengan minuman Meimei),
+A17 (麵包 lewat pertanyaan 包子是麵包嗎; 餐廳 vs 小吃; tidak lagi menyebut warung mi sebagai 餐廳), A21
+(這是左邊 — bukan ajakan ke kiri), A25.
+Putaran 2 (2026-11-22, aturan Carli: santai tapi BAKU untuk pelajar asing, logis): A01 (tanpa sapaan ganda), A02 (Meimei
+tahu orang asing dari bahasanya; 會說), A04 (tanpa menghitung keras), A06, A07, A08 (tanya rumah keluarga, bukan kota yang
+sudah jelas), A09, A10 (不要), A13 (tanpa 在+tempat+V), A14 (izin bertanya ke guru, bukan ke Meimei), A15 (bahasa memesan
+baku), A16 (我不吃晚餐), A17 (先喝湯; tanpa pengulangan), A18 (tanpa kalimat lampau tanpa 了), A19, A20 (Taipei–Taichung
+tidak naik taksi), A21, A22, A23, A25 (你的手機號碼是多少 — 號碼 L2 dipakai lebih awal + 💡, tetap diajarkan B13).
+A24 tetap 星期六下雨嗎 (keputusan laporan review 2026-11-04).
