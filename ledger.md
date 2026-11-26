@@ -324,4 +324,10 @@ A13 (Meimei penutur asli menjelaskan 書 dengan menunjuk; Dawen sendiri bertanya
 tidak berlaku seperti pembelajar; 可以 diberi alasan: guru sibuk), A15 (酒 dikaitkan dengan minuman Meimei),
 A17 (麵包 lewat pertanyaan 包子是麵包嗎; 餐廳 vs 小吃; tidak lagi menyebut warung mi sebagai 餐廳), A21
 (這是左邊 — bukan ajakan ke kiri), A25.
+Putaran 2 (2026-11-22, aturan Carli: santai tapi BAKU untuk pelajar asing, logis): A01 (tanpa sapaan ganda), A02 (Meimei
+tahu orang asing dari bahasanya; 會說), A04 (tanpa menghitung keras), A06, A07, A08 (tanya rumah keluarga, bukan kota yang
+sudah jelas), A09, A10 (不要), A13 (tanpa 在+tempat+V), A14 (izin bertanya ke guru, bukan ke Meimei), A15 (bahasa memesan
+baku), A16 (我不吃晚餐), A17 (先喝湯; tanpa pengulangan), A18 (tanpa kalimat lampau tanpa 了), A19, A20 (Taipei–Taichung
+tidak naik taksi), A21, A22, A23, A25 (你的手機號碼是多少 — 號碼 L2 dipakai lebih awal + 💡, tetap diajarkan B13).
+A24 tetap 星期六下雨嗎 (keputusan laporan review 2026-11-04).
 

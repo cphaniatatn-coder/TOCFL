@@ -11,7 +11,7 @@ BARU = {
     'B01': ('Semester baru dimulai. Di dekat kolam renang kampus Meimei dan Dawen saling bertanya olahraga apa yang bisa mereka lakukan dan berjanji berlatih bersama, tetapi keesokan harinya kaki Meimei sakit.', [
         ('在學校的游泳池旁邊', 'Di samping kolam renang kampus', [
             ('李美美', '大文，你會游泳嗎？', 'Dawen, kamu bisa berenang?'),
-            ('王大文', '會，我很喜歡游泳。學校的游泳池很大，我常常來游。你呢？', 'Bisa, aku suka sekali berenang. Kolam renang kampus besar, aku sering berenang ke sini. Kamu?'),
+            ('王大文', '會，我很喜歡游泳。學校的游泳池很大，我常常來游泳。你呢？', 'Bisa, aku suka sekali berenang. Kolam renang kampus besar, aku sering berenang ke sini. Kamu?'),
             ('李美美', '我不會游泳，可是我會打網球。', 'Aku tidak bisa berenang, tapi aku bisa main tenis.'),
             ('王大文', '我不會打網球，我會踢足球，也會打籃球。', 'Aku tidak bisa main tenis, aku bisa main sepak bola, juga basket.'),
             ('李美美', '臺灣人很喜歡棒球，你會打棒球嗎？', 'Orang Taiwan suka sekali bisbol, kamu bisa main bisbol?'),
@@ -149,7 +149,7 @@ BARU = {
     'B08': ('Meimei pertama kali datang ke apartemen baru Dawen di lantai tujuh. Lift-nya tidak bisa dipakai, dan di dalam rumah jendela, AC, dan lampu ternyata menyala semua karena teman sekamarnya lupa.', [
         ('在大樓樓下', 'Di lantai bawah gedung', [
             ('李美美', '大文，你家在幾樓？', 'Dawen, rumahmu di lantai berapa?'),
-            ('王大文', '在七樓。可是今天電梯不能坐，我們走樓梯吧。', 'Di lantai tujuh. Tapi hari ini lift-nya tidak bisa dipakai, kita naik tangga saja.'),
+            ('王大文', '在七樓。可是今天電梯不能用，我們走樓梯吧。', 'Di lantai tujuh. Tapi hari ini lift-nya tidak bisa dipakai, kita naik tangga saja.'),
             ('李美美', '七樓！好高啊！你家樓上還有人嗎？', 'Lantai tujuh! Tinggi sekali! Di atas rumahmu masih ada orang?'),
             ('王大文', '有，樓上有一個老先生。他每天都走樓梯！', 'Ada, di lantai atas ada seorang kakek. Dia setiap hari naik tangga!'),
         ]),
@@ -166,7 +166,7 @@ BARU = {
             ('王大文', '窗戶也開著啊！', 'Jendelanya juga terbuka!'),
             ('李美美', '我們去樓下的咖啡店坐吧。', 'Kita duduk di kedai kopi di bawah saja yuk.'),
             ('王大文', '好！我們坐電梯吧。', 'Oke! Kita naik lift ya.'),
-            ('李美美', '電梯今天不能坐啊！', 'Lift-nya hari ini kan tidak bisa dipakai!'),
+            ('李美美', '電梯今天不能用啊！', 'Lift-nya hari ini kan tidak bisa dipakai!'),
         ]),
     ]),
     'B09': ('Seminggu setelah pindahan, apartemen Dawen masih berantakan. Meimei membantu bersih-bersih, lalu AC-nya rusak; Dawen menelepon pemilik rumah.', [
@@ -241,8 +241,8 @@ BARU = {
             ('王大文', '對。小時候，我每天跟這隻狗一起玩。現在它住在我叔叔家。', 'Iya. Waktu kecil, setiap hari aku main dengan anjing ini. Sekarang dia tinggal di rumah pamanku.'),
         ]),
         ('說家人', 'Bercerita tentang keluarga', [
-            ('李美美', '你的家庭很大嗎？', 'Keluargamu besar?'),
-            ('王大文', '很大！我有兩個伯伯、三個叔叔、四個阿姨。從前我們都住在一起。', 'Besar sekali! Aku punya dua kakak ayah, tiga adik ayah, dan empat bibi. Dulu kami semua tinggal bersama.'),
+            ('李美美', '你的家人很多嗎？', 'Anggota keluargamu banyak?'),
+            ('王大文', '很多！我們是一個大家庭。我有兩個伯伯、三個叔叔、四個阿姨。從前我們都住在一起。', 'Banyak sekali! Kami keluarga besar. Aku punya dua kakak ayah, tiga adik ayah, dan empat bibi. Dulu kami semua tinggal bersama.'),
             ('李美美', '好多人！我沒去過印尼，以前只看過印尼的照片。', 'Banyak sekali! Aku belum pernah ke Indonesia, dulu hanya pernah lihat foto Indonesia.'),
             ('王大文', '下次你跟我去印尼吧！我奶奶家有兩隻貓，還有馬！', 'Lain kali ikut aku pulang ke Indonesia! Di rumah nenekku ada dua kucing, ada kuda juga!'),
             ('李美美', '真的嗎？我沒看過馬！', 'Serius? Aku belum pernah lihat kuda!'),
@@ -817,17 +817,18 @@ BARU = {
             ('李美美', '你看，我說你可以吧！', 'Tuh kan, sudah kubilang kamu bisa!'),
         ]),
     ]),
-    'B44': ('Menjelang Tahun Baru Imlek, Meimei mengajak Dawen merayakannya bersama keluarganya di Taichung. Setelah liburan, Dawen dan Annie saling bercerita.', [
+    'B44': ('Menjelang Tahun Baru Imlek, Meimei mengajak Dawen merayakannya bersama keluarganya di rumah nenek Meimei di Tainan, kota yang terkenal dengan jajanan kakilimanya. Setelah liburan, Dawen dan Annie saling bercerita.', [
         ('過年以前', 'Sebelum Tahun Baru Imlek', [
             ('王大文', '美美，臺灣人過年做什麼？', 'Meimei, orang Taiwan merayakan Tahun Baru dengan apa?'),
             ('李美美', '過年，有的人回家，有的人去旅行。', 'Saat Tahun Baru, sebagian orang pulang kampung, sebagian lagi bepergian.'),
             ('王大文', '你呢？', 'Kamu?'),
-            ('李美美', '我回臺中，我們家人一起吃飯。你也來吧！', 'Aku pulang ke Taichung, keluargaku makan bersama. Kamu ikut juga ya!'),
+            ('李美美', '我跟家人去臺南的奶奶家，大家一起吃飯。你也來吧！', 'Aku dan keluargaku pergi ke rumah nenek di Tainan, semua makan bersama. Kamu ikut juga ya!'),
             ('王大文', '好！我想看臺灣的新年文化。', 'Oke! Aku ingin melihat budaya Tahun Baru di Taiwan.'),
+            ('李美美', '臺南的小吃很好吃，我帶你去吃！', 'Jajanan di Tainan enak sekali, nanti aku ajak kamu makan!'),
         ]),
         ('過年以後', 'Setelah Tahun Baru', [
-            ('安妮', '大文，你過年又去臺中了嗎？', 'Dawen, Tahun Baru kemarin kamu ke Taichung lagi?'),
-            ('王大文', '對，我又去了。美美的媽媽又做了很多菜！', 'Iya, aku ke sana lagi. Ibu Meimei memasak banyak sekali lagi!'),
+            ('安妮', '大文，你過年又跟美美去玩了嗎？', 'Dawen, Tahun Baru kemarin kamu jalan-jalan sama Meimei lagi?'),
+            ('王大文', '對，我又跟她去了。這次我們去臺南，美美的奶奶做了很多菜，我們還吃了很多小吃！', 'Iya, aku ikut dia lagi. Kali ini kami ke Tainan, nenek Meimei memasak banyak sekali, kami juga makan banyak jajanan!'),
             ('安妮', '我們班的同學，有的回國，有的在臺灣過年。', 'Teman-teman sekelas kita, ada yang pulang ke negaranya, ada yang merayakan di Taiwan.'),
             ('王大文', '你呢？', 'Kamu sendiri?'),
             ('安妮', '我在宿舍看電視，還吃了很多餃子！', 'Aku nonton TV di asrama, dan juga makan banyak pangsit!'),
@@ -852,8 +853,8 @@ BARU = {
         ('打電話到印尼', 'Menelepon ke Indonesia', [
             ('安妮的弟弟', '姊姊，我不知道要去哪裡念書。', 'Kak, aku tidak tahu mau kuliah di mana.'),
             ('安妮', '你打算念什麼？', 'Kamu berencana kuliah apa?'),
-            ('安妮的弟弟', '我打算學中文。我想去臺北或是臺中。', 'Aku berencana belajar Mandarin. Aku ingin ke Taipei atau Taichung.'),
-            ('安妮', '臺北很好！我在臺北念書，很高興。', 'Taipei bagus! Aku kuliah di Taipei, senang sekali.'),
+            ('安妮的弟弟', '我打算學中文。我想去臺北或是花蓮。', 'Aku berencana belajar Mandarin. Aku ingin ke Taipei atau Hualien.'),
+            ('安妮', '臺北很好！我在臺北念書，很高興。花蓮的海也很漂亮！', 'Taipei bagus! Aku kuliah di Taipei, senang sekali. Laut di Hualien juga indah!'),
             ('安妮的弟弟', '你在臺灣念書累不累？', 'Kuliah di Taiwan capek tidak?'),
             ('安妮', '不累！你來，我就帶你去夜市。', 'Tidak! Kalau kamu datang, aku langsung ajak kamu ke pasar malam.'),
             ('安妮的弟弟', '好！我決定了，就去臺灣念書！', 'Oke! Aku sudah memutuskan, aku kuliah di Taiwan saja!'),
