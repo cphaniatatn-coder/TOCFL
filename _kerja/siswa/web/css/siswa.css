@@ -1,0 +1,51 @@
+/* 全字庫正楷體 (TW-Kai) — bentuk huruf standar 教育部 untuk HP yang tidak punya 標楷體.
+   File dibuat _kerja/buat_siswa.py (hanya huruf yang dipakai). Urutan: 標楷體 lokal → TW-Kai → cadangan lama. */
+@font-face {
+  font-family: 'KaiSiswa';
+  src: url('../fonts/twkai-siswa.woff2') format('woff2');
+  font-display: swap;
+  size-adjust: 110%;
+  unicode-range: U+02C7, U+02C9-02CB, U+02D9, U+2E80-2FDF, U+3000-303F, U+3100-312F, U+31A0-31BF, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FF00-FFEF, U+20000-2FA1F;
+}
+:root { --kai: 'KaiLocal', 'KaiSiswa', 'KaiWeb', 'DFKai-SB', 'BiauKai', serif; }
+
+/* Langkah di beranda (data diri, penempatan, tes akhir, evaluasi) */
+.step-card.st-lock { opacity: .55; }
+.step-card.st-cur { outline: 2px solid var(--pri); }
+.step-card.st-done b { color: var(--ok); }
+.section-title small { color: var(--sub); font-weight: 600; margin-left: 6px; }
+.mode-card.on { outline: 2px solid var(--pri); }
+
+/* Bab terkunci */
+.mod-row.st-lock, .mod-row:disabled { opacity: .5; cursor: not-allowed; }
+.mod-row.st-lulus .mod-state { color: var(--ok); font-weight: 800; }
+.mod-row.st-kini { box-shadow: inset 4px 0 0 var(--pri); }
+.vol-card.vol-kunci { opacity: .55; }
+.kunci-info { margin: 0 0 12px; padding: 10px 12px; border-radius: 10px; background: var(--surface2); color: var(--sub); font-size: 14px; display: flex; gap: 8px; align-items: flex-start; }
+.lulus-banner { margin: 0 0 14px; padding: 12px 14px; border-radius: var(--r); font-weight: 600; display: flex; gap: 10px; align-items: flex-start; }
+.lulus-banner.ok { background: var(--ok-bg, #e6f6ec); color: var(--ok); }
+.lulus-banner.belum { background: var(--warn-bg); color: var(--text); }
+.lulus-banner small { display: block; font-weight: 400; color: var(--sub); margin-top: 2px; }
+
+/* Penempatan */
+.tahap-list { margin: 6px 0 0; padding: 0; list-style: none; }
+.tahap-list li { display: flex; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.tahap-list li:last-child { border-bottom: 0; }
+.tahap-list b.ok { color: var(--ok); }
+
+/* Skala Likert (evaluasi): satu pernyataan per kartu, lima tombol besar (ramah HP) */
+.likert { background: var(--surface); border-radius: var(--r); padding: 14px; margin-bottom: 10px; box-shadow: var(--shadow); }
+.likert.ok { box-shadow: inset 4px 0 0 var(--ok), var(--shadow); }
+.likert p { margin: 0 0 10px; }
+.likert-seg button { min-height: 44px; font-size: 16px; }
+.likert-ends { display: flex; justify-content: space-between; margin-top: 4px; color: var(--muted); font-size: 12px; }
+.likert-legend { margin: 8px 0 0; padding-left: 18px; color: var(--sub); font-size: 13.5px; }
+
+/* Mode admin */
+.admin-panel { box-shadow: inset 4px 0 0 var(--warn), var(--shadow); }
+.admin-act { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.admin-act .btn { flex: 1; min-height: 40px; font-size: 14px; }
+
+/* Petunjuk */
+.bar-help { margin-left: 6px; width: 28px; height: 28px; padding: 0; display: inline-grid; place-items: center; font-weight: 800; color: var(--pri); border: 0; cursor: pointer; }
+ul.ptj { margin: 6px 0 0; padding-left: 20px; display: grid; gap: 8px; }

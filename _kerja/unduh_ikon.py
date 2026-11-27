@@ -54,6 +54,10 @@ if os.path.isdir(MINI):
         if fn.startswith('tes_') and fn.endswith('.json'):
             for icon in re.findall(r'"icon": "([^"]*)"', open(f'{MINI}/{fn}', encoding='utf-8').read()):
                 semua.update(clusters(icon))
+# tampilan siswa: semua emoji di siswa.js (termasuk bentuk Pic.html(ok ? '🔓' : '🔒', …))
+SISWA_JS = f'{R}/_kerja/siswa/web/js/siswa.js'
+if os.path.exists(SISWA_JS):
+    semua.update(clusters(''.join(re.findall(r"'([^'\n]{1,8})'", open(SISWA_JS, encoding='utf-8').read()))))
 emoji = sorted(c for c in semua if is_emoji(c))
 gagal = []
 for c in emoji:
