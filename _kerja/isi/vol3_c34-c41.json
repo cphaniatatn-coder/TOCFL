@@ -158,10 +158,10 @@
   {"place": "在美美家", "title_id": "Di rumah Meimei", "lines": [
    {"sp": "王大文", "zh": "小明，今天的數學功課是什麼？", "py": "Xiǎo míng, jīn tiān de shù xué gōng kè shì shén me?", "id": "Xiaoming, PR matematika hari ini apa?"},
    {"sp": "小明", "zh": "加、減、乘、除。我覺得很困難。", "py": "Jiā, jiǎn, chéng, chú. Wǒ jué de hěn kùn nán.", "id": "Tambah, kurang, kali, bagi. Menurutku sulit sekali."},
-   {"sp": "王大文", "zh": "沒關係，我們一起做。三加五是多少？", "py": "Méi guān xì, wǒ men yì qǐ zuò. Sān jiā wǔ shì duō shǎo?", "id": "Tidak apa-apa, kita kerjakan bersama. Tiga tambah lima berapa?"},
+   {"sp": "王大文", "zh": "沒關係，我們一起做。三加五等於多少？", "py": "Méi guān xì, wǒ men yì qǐ zuò. Sān jiā wǔ děng yú duō shǎo?", "id": "Tidak apa-apa, kita kerjakan bersama. Tiga tambah lima sama dengan berapa?"},
    {"sp": "小明", "zh": "是八！", "py": "Shì bā!", "id": "Delapan!"},
    {"sp": "王大文", "zh": "很好。十減四呢？", "py": "Hěn hǎo. Shí jiǎn sì ne?", "id": "Bagus. Sepuluh kurang empat?"},
-   {"sp": "小明", "zh": "六。三乘四是十二，四除十二是三。", "py": "Liù. Sān chéng sì shì shí èr, sì chú shí èr shì sān.", "id": "Enam. Tiga kali empat dua belas, dua belas dibagi empat tiga."},
+   {"sp": "小明", "zh": "六。三乘四等於十二，十二除以四等於三。", "py": "Liù. Sān chéng sì děng yú shí èr, shí èr chú yǐ sì děng yú sān.", "id": "Enam. Tiga kali empat sama dengan dua belas, dua belas dibagi empat sama dengan tiga."},
    {"sp": "王大文", "zh": "對！十和四差多少？", "py": "Duì! Shí hàn sì chà duō shǎo?", "id": "Betul! Sepuluh dan empat selisihnya berapa?"},
    {"sp": "小明", "zh": "差六！", "py": "Chà liù!", "id": "Selisih enam!"}
   ]},
@@ -192,9 +192,9 @@
    "why": "二乘六是十二 → B. A dan C: operasi lain."}
   ],
  "grammar": [
-  {"tbcl_id": 238, "point": "四則運算 — empat operasi hitung", "pattern": "A + 加/減/乘/除 + B + 是 + C", "blocks": [["三", "A"], ["加", "operasi"], ["五", "B"], ["是", "是"], ["八", "hasil"]],
-   "explain": "加 (tambah), 減 (kurang), 乘 (kali), 除 (bagi; dalam bahasa lisan 十二除四 = 12 ÷ 4). Hasil diperkenalkan dengan 是.",
-   "examples": [{"zh": "三加五是八。", "id": "3 + 5 = 8"}, {"zh": "十二除四是三。", "id": "12 ÷ 4 = 3"}],
+  {"tbcl_id": 238, "point": "四則運算 — empat operasi hitung", "pattern": "A + 加/減/乘/除(以) + B + 是/等於 + C", "blocks": [["三", "A"], ["加", "operasi"], ["五", "B"], ["是", "是"], ["八", "hasil"]],
+   "explain": "加 (tambah), 減 (kurang), 乘 (kali), 除以 (bagi: 十二除以四 = 12 ÷ 4; dalam bahasa lisan sering cukup 十二除四). Hasil diperkenalkan dengan 是 atau 等於 (sama dengan — lebih resmi, dipakai di pelajaran matematika).",
+   "examples": [{"zh": "三加五是八。", "id": "3 + 5 = 8"}, {"zh": "十二除以四等於三。", "id": "12 ÷ 4 = 3"}],
    "check": {"q": "'7 × 3 = 21' =", "options": ["七乘三是二十一。", "七加三是二十一。", "七除三是二十一。"], "answer": 0}},
   {"tbcl_id": 239, "point": "小數點 — bilangan desimal", "pattern": "bilangan bulat + 點 + digit (dibaca satu per satu)", "blocks": [["二", "bulat"], ["點", "點"], ["五", "desimal"]],
    "explain": "Koma desimal dibaca 點; digit di belakangnya dibaca satu per satu: 3,14 = 三點一四. Angka nol di depan: 零點五 (0,5).",

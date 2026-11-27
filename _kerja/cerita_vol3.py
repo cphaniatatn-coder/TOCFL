@@ -160,7 +160,7 @@ BARU = {
             ('李美美', '大文，你怎麼每天都吃饅頭？', 'Dawen, kenapa kamu tiap hari makan bakpao?'),
             ('王大文', '到月底了，我的生活費不夠了。', 'Sudah akhir bulan, biaya hidupku tidak cukup.'),
             ('李美美', '你一個月花多少錢？', 'Sebulan kamu menghabiskan berapa?'),
-            ('王大文', '一般是一萬五。可是東西越來越貴了！', 'Biasanya lima belas ribu. Tapi barang-barang makin lama makin mahal!'),
+            ('王大文', '我一般花一萬五。可是東西越來越貴了！', 'Biasanya aku menghabiskan lima belas ribu. Tapi barang-barang makin lama makin mahal!'),
             ('李美美', '加上房租呢？', 'Ditambah sewa?'),
             ('王大文', '兩萬多。我經常在日記裡寫我花了多少錢，你看。', 'Dua puluh ribu lebih. Aku sering menulis pengeluaranku di buku harian, lihat.'),
         ]),
@@ -173,15 +173,15 @@ BARU = {
     ]),
     'C11': ('Guru mengumumkan study tour ke gunung dan meminta semua membawa jas hujan dan payung. Keesokan paginya langit mendung, dan Meimei mengingatkan Dawen membawa payung.', [
         ('上課的時候', 'Saat pelajaran', [
-            ('陳老師', '同學們，明天我們去山上。山上很涼，請大家多穿一點衣服。', 'Anak-anak, besok kita ke gunung. Di gunung sejuk, semuanya tolong pakai baju lebih tebal.'),
+            ('陳老師', '同學們，明天早上八點，我們在學校門口坐車去山上。山上很涼，請大家多穿一點衣服。', 'Anak-anak, besok jam delapan pagi kita naik bus dari gerbang kampus ke gunung. Di gunung sejuk, semuanya tolong pakai baju lebih tebal.'),
             ('王大文', '老師，要帶傘嗎？', 'Bu, perlu bawa payung?'),
             ('陳老師', '要。山上的天氣常常變，晴天也會下雨。請大家帶雨衣和雨傘。', 'Perlu. Cuaca di gunung sering berubah, cerah pun bisa hujan. Semuanya tolong bawa jas hujan dan payung.'),
         ]),
         ('第二天早上，在大文家門口', 'Keesokan paginya, di depan rumah Dawen', [
             ('李美美', '大文，今天是陰天，別忘了帶傘！', 'Dawen, hari ini mendung, jangan lupa bawa payung!'),
             ('王大文', '好……啊，外面已經下雨了！', 'Oke… ah, di luar sudah hujan!'),
-            ('李美美', '你的鞋子都溼了！別再走路了，我們坐車去學校吧。', 'Sepatumu sudah basah semua! Jangan jalan kaki lagi, kita naik kendaraan ke kampus saja.'),
-            ('王大文', '好。希望山上是晴天！', 'Oke. Semoga di gunung cerah!'),
+            ('李美美', '你的鞋子都溼了！別再走路了，我們坐公車去學校吧。', 'Sepatumu sudah basah semua! Jangan jalan kaki lagi, kita naik bus ke kampus saja.'),
+            ('王大文', '好。這裡下雨，希望山上是晴天！', 'Oke. Di sini hujan, semoga di gunung cerah!'),
         ]),
     ]),
     'C12': ('Annie diwawancarai untuk beasiswa: ia menceritakan tempat lahir, bahasa ibu, kapan pindah ke Taipei, riwayat sekolah, dan perjalanannya ke Tiongkok daratan semasa kecil.', [
@@ -192,7 +192,7 @@ BARU = {
             ('安妮', '印尼話。我家是華人，所以我也會說一點中文。', 'Bahasa Indonesia. Keluarga saya keturunan Tionghoa, jadi saya juga bisa sedikit bahasa Mandarin.'),
             ('張小姐', '你是什麼時候來臺灣的？', 'Kapan Anda datang ke Taiwan?'),
             ('安妮', '去年。我在雅加達長大，在那裡上國小和中學。', 'Tahun lalu. Saya besar di Jakarta, dan bersekolah SD sampai SMA di sana.'),
-            ('張小姐', '你去過大陸嗎？', 'Anda pernah ke Tiongkok daratan?'),
+            ('張小姐', '你去過中國大陸嗎？', 'Anda pernah ke Tiongkok daratan?'),
             ('安妮', '去過一次。當時我年紀很小，只有八歲。', 'Pernah sekali. Waktu itu saya masih kecil, baru delapan tahun.'),
             ('張小姐', '好。請寫一下你的住址和電話。', 'Baik. Silakan tulis alamat dan nomor telepon Anda.'),
             ('安妮', '好。我的住址是臺北市大學路一百號。', 'Baik. Alamat saya Jalan Daxue nomor seratus, Kota Taipei.'),
@@ -222,11 +222,9 @@ BARU = {
             ('李美美', '你姊姊的先生是誰？', 'Suami kakakmu siapa?'),
             ('王大文', '他叫做小林，是我姊姊大學的同班同學。', 'Namanya Xiaolin, teman sekelas kakakku di universitas.'),
             ('李美美', '他帥不帥？', 'Dia ganteng tidak?'),
-            ('王大文', '很帥！我父母也很喜歡他。', 'Ganteng sekali! Orang tuaku juga suka padanya.'),
-            ('李美美', '你家有幾口人？', 'Keluargamu ada berapa orang?'),
-            ('王大文', '五口人：父親、母親、哥哥、姊姊和我。', 'Lima orang: ayah, ibu, kakak laki-laki, kakak perempuan, dan aku.'),
+            ('王大文', '很帥！我父母也很喜歡他。他們結婚以後，我們家就多了一口人！', 'Ganteng sekali! Orang tuaku juga suka padanya. Setelah mereka menikah, keluarga kami bertambah satu orang!'),
             ('李美美', '你外婆也會來嗎？', 'Nenekmu juga akan datang?'),
-            ('王大文', '會！她已經是八十歲的老太太了，可是她說：「孫女結婚，我一定要去！」', 'Ya! Beliau sudah nenek-nenek berumur delapan puluh, tapi katanya: Cucuku menikah, aku pasti datang!'),
+            ('王大文', '會！她已經是八十歲的老太太了，走路很慢，可是她說：「孫女結婚，我一定要去！」', 'Ya! Beliau sudah nenek-nenek berumur delapan puluh, jalannya pelan, tapi katanya: "Cucuku menikah, aku pasti datang!"'),
             ('李美美', '太好了！回來以後，給我看結婚的照片吧！', 'Bagus sekali! Pulangnya nanti, tunjukkan foto pernikahannya ya!'),
         ]),
     ]),
@@ -329,16 +327,18 @@ BARU = {
             ('李美美', '快到了……到了！我們從三號出口出去，可以直接到百貨公司。', 'Hampir sampai… sudah sampai! Kita keluar dari pintu keluar nomor tiga, bisa langsung ke department store.'),
         ]),
     ]),
-    'C21': ('Meimei mengajari Dawen naik motor seperti kebanyakan orang Taiwan. Dawen takut karena lalu lintasnya semrawut, jadi mereka berlatih dulu di tempat parkir.', [
+    'C21': ('Meimei mengajari Dawen naik motor seperti kebanyakan orang Taiwan. Dawen takut karena lalu lintasnya semrawut, jadi mereka berlatih dulu di tempat latihan motor.', [
         ('在路上', 'Di jalan', [
             ('李美美', '大文，臺灣人都騎機車，你會騎嗎？', 'Dawen, orang Taiwan semuanya naik motor, kamu bisa?'),
             ('王大文', '不會。臺灣的交通太亂了，我騎不了機車。', 'Tidak bisa. Lalu lintas di Taiwan terlalu semrawut, aku tidak sanggup naik motor.'),
             ('李美美', '沒關係，我教你。', 'Tidak apa-apa, aku ajari.'),
             ('王大文', '可是公路上的速度太快了。', 'Tapi kecepatan di jalan raya terlalu tinggi.'),
-            ('李美美', '我們先在停車場練習。', 'Kita latihan dulu di tempat parkir.'),
+            ('李美美', '我們先去機車練習場吧。', 'Kita ke tempat latihan motor dulu saja.'),
         ]),
-        ('在停車場', 'Di tempat parkir', [
-            ('李美美', '你看，這是我的摩托車。你坐在這裡。', 'Lihat, ini motorku. Kamu duduk di sini.'),
+        ('在機車練習場', 'Di tempat latihan motor', [
+            ('李美美', '你看，這是我的機車。你坐在這裡。', 'Lihat, ini motorku. Kamu duduk di sini.'),
+            ('王大文', '機車就是摩托車嗎？', 'Jīchē itu sama dengan mótuōchē?'),
+            ('李美美', '對，在臺灣，大家都說「機車」。', 'Iya, di Taiwan semua orang bilang jīchē.'),
             ('王大文', '好。騎完了，機車要停在哪裡？', 'Oke. Setelah selesai, motornya diparkir di mana?'),
             ('李美美', '要停在停車場，路邊不能停。', 'Harus diparkir di tempat parkir, di pinggir jalan tidak boleh.'),
             ('王大文', '你說得很清楚，我都聽得懂。你騎車也很標準！', 'Penjelasanmu jelas sekali, aku mengerti semuanya. Caramu naik motor juga benar sekali!'),
@@ -533,7 +533,7 @@ BARU = {
             ('李美美', '春假只有幾天，去近一點的地方吧。', 'Libur musim semi cuma beberapa hari, ke tempat yang lebih dekat saja.'),
         ]),
     ]),
-    'C33': ('Dawen akan lulus Juni tahun depan dan ingin meneliti pendidikan bahasa Mandarin untuk mahasiswa Indonesia. Meimei menyemangatinya untuk menemui Profesor Lin.', [
+    'C33': ('Dawen akan lulus Juni tahun depan dan ingin meneliti pendidikan bahasa Mandarin untuk mahasiswa Indonesia. Meimei menyemangatinya untuk menemui Profesor Zhang.', [
         ('在學校', 'Di kampus', [
             ('李美美', '大文，你什麼時候畢業？', 'Dawen, kapan kamu lulus?'),
             ('王大文', '明年六月。從明年七月起，我就不是學生了！', 'Juni tahun depan. Mulai Juli tahun depan, aku bukan mahasiswa lagi!'),
@@ -542,8 +542,8 @@ BARU = {
             ('李美美', '研究什麼呢？', 'Meneliti apa?'),
             ('王大文', '題目就是「印尼學生怎麼學中文」。', 'Judulnya ya itu: Bagaimana mahasiswa Indonesia belajar Mandarin.'),
             ('李美美', '很有意思！你需要教授幫你嗎？', 'Menarik sekali! Kamu perlu bantuan profesor?'),
-            ('王大文', '對。林教授說我的中文程度很高，我希望得到他的幫助。', 'Iya. Profesor Lin bilang tingkat Mandarinku tinggi, aku berharap mendapat bantuannya.'),
-            ('李美美', '林教授的辦公室就在那邊，你現在去問他吧！', 'Kantor Profesor Lin ada di sana, tanya dia sekarang saja!'),
+            ('王大文', '對。張教授說我的中文程度很高，我希望得到他的幫助。', 'Iya. Profesor Zhang bilang tingkat Mandarinku tinggi, aku berharap mendapat bantuannya.'),
+            ('李美美', '張教授的辦公室就在那邊，你現在去問他吧！', 'Kantor Profesor Zhang ada di sana, tanya dia sekarang saja!'),
             ('王大文', '好！從今天起，我每天看三個小時的書。我說了，就一定要做到！', 'Oke! Mulai hari ini aku belajar tiga jam setiap hari. Yang sudah kukatakan pasti kulakukan!'),
             ('李美美', '你一定會成功！', 'Kamu pasti berhasil!'),
         ]),
@@ -598,10 +598,10 @@ BARU = {
         ('在美美家', 'Di rumah Meimei', [
             ('王大文', '小明，今天的數學功課是什麼？', 'Xiaoming, PR matematika hari ini apa?'),
             ('小明', '加、減、乘、除。我覺得很困難。', 'Tambah, kurang, kali, bagi. Menurutku sulit sekali.'),
-            ('王大文', '沒關係，我們一起做。三加五是多少？', 'Tidak apa-apa, kita kerjakan bersama. Tiga tambah lima berapa?'),
+            ('王大文', '沒關係，我們一起做。三加五等於多少？', 'Tidak apa-apa, kita kerjakan bersama. Tiga tambah lima sama dengan berapa?'),
             ('小明', '是八！', 'Delapan!'),
             ('王大文', '很好。十減四呢？', 'Bagus. Sepuluh kurang empat?'),
-            ('小明', '六。三乘四是十二，四除十二是三。', 'Enam. Tiga kali empat dua belas, dua belas dibagi empat tiga.'),
+            ('小明', '六。三乘四等於十二，十二除以四等於三。', 'Enam. Tiga kali empat sama dengan dua belas, dua belas dibagi empat sama dengan tiga.'),
             ('王大文', '對！十和四差多少？', 'Betul! Sepuluh dan empat selisihnya berapa?'),
             ('小明', '差六！', 'Selisih enam!'),
         ]),
@@ -794,7 +794,7 @@ BARU = {
             ('王大文', '美美，我們中午去吃速食吧！', 'Meimei, siang ini kita makan makanan cepat saji yuk!'),
             ('李美美', '我一點也不想吃速食，速食對身體不好。', 'Aku sama sekali tidak mau makan makanan cepat saji, tidak baik untuk badan.'),
             ('王大文', '那你都吃什麼？', 'Lalu kamu biasanya makan apa?'),
-            ('李美美', '我從來不吃速食，也從來不吃泡麵。早上我喝豆漿，吃一個餅。', 'Aku tidak pernah makan makanan cepat saji, juga tidak pernah makan mi instan. Pagi aku minum susu kedelai dan makan satu bing.'),
+            ('李美美', '我從來不吃速食，也從來不吃泡麵。早上我喝豆漿，吃一個蛋餅。', 'Aku tidak pernah makan makanan cepat saji, juga tidak pernah makan mi instan. Pagi aku minum susu kedelai dan makan satu dànbǐng (crepe telur).'),
             ('王大文', '我昨天晚上吃了兩包泡麵……', 'Semalam aku makan dua bungkus mi instan…'),
             ('李美美', '你應該少吃一點泡麵！', 'Kamu harus kurangi makan mi instan!'),
         ]),
@@ -885,23 +885,23 @@ BARU = {
             ('王大文', '美麗的花、美麗的山……那我們每個季節都來吧！', 'Bunga yang indah, gunung yang indah… kalau begitu kita datang setiap musim ya!'),
         ]),
     ]),
-    'C55': ('Dawen belajar memilah sampah di Taiwan: kertas dan botol harus dipisah. Ia lalu membandingkan masalah sampah di Indonesia dan Taiwan, dan ingin menularkan kebiasaan ini sepulang nanti.', [
+    'C55': ('Dawen belajar memilah sampah di Taiwan: kertas dan botol harus dipisah. Ia lalu bercerita tentang masalah sampah di banyak negara dan ingin membawa kebiasaan ini pulang bersama keluarganya.', [
         ('在大文家門口', 'Di depan rumah Dawen', [
             ('王大文', '美美，這個袋子裡的垃圾，不是紙，就是瓶子。都放在一起可以嗎？', 'Meimei, sampah di kantong ini kalau bukan kertas, ya botol. Boleh dicampur?'),
             ('李美美', '不行，紙和瓶子要放在不同的地方。', 'Tidak boleh, kertas dan botol harus ditaruh di tempat berbeda.'),
             ('王大文', '為什麼？', 'Kenapa?'),
             ('李美美', '為了環保。垃圾太多，會污染環境。', 'Demi lingkungan. Sampah terlalu banyak akan mencemari lingkungan.'),
-            ('王大文', '在印尼，很多地方的垃圾都放在一起。', 'Di Indonesia, di banyak tempat sampahnya dicampur jadi satu.'),
+            ('王大文', '我以前都把垃圾放在一起。', 'Dulu aku selalu menaruh sampah jadi satu.'),
             ('李美美', '在臺灣不行，連一個小瓶子都要放對地方。', 'Di Taiwan tidak boleh, bahkan satu botol kecil pun harus ditaruh di tempat yang benar.'),
             ('王大文', '在臺灣丟垃圾，真不自由！', 'Buang sampah di Taiwan, sungguh tidak bebas!'),
             ('李美美', '可是環境很乾淨啊！', 'Tapi lingkungannya bersih, kan!'),
         ]),
         ('在學校', 'Di kampus', [
-            ('王大文', '印尼的垃圾問題很嚴重，連海邊都有很多垃圾。', 'Masalah sampah di Indonesia serius, bahkan di pantai pun banyak sampah.'),
+            ('王大文', '我在新聞上看到，很多國家都有垃圾問題，連海邊都有很多垃圾。', 'Aku lihat di berita, banyak negara punya masalah sampah, bahkan di pantai pun banyak sampah.'),
             ('李美美', '臺灣以前也是。', 'Taiwan dulu juga begitu.'),
             ('王大文', '現在呢？', 'Sekarang?'),
             ('李美美', '現在社會上大家都很注意環保。', 'Sekarang semua orang di masyarakat sangat memperhatikan lingkungan.'),
-            ('王大文', '我回印尼以後，也要告訴大家怎麼做！', 'Setelah pulang ke Indonesia, aku juga mau memberi tahu orang-orang caranya!'),
+            ('王大文', '我回印尼以後，也要跟家人一起做！', 'Setelah pulang ke Indonesia, aku juga mau melakukannya bersama keluargaku!'),
         ]),
     ]),
     'C56': ('Dawen mengenang Tahun Baru Imlek tahun lalu di rumah Meimei. Meimei menjelaskan tradisi malam Imlek: hidangan khas dan siapa yang datang duluan harus membantu memasak. Dawen bercerita tentang perayaan di Indonesia, lalu Meimei mengundangnya lagi.', [
@@ -1077,7 +1077,7 @@ BARU = {
         ('打電話到便當店', 'Menelepon toko bento', [
             ('王大文', '你好，我要一個牛肉便當。', 'Halo, saya pesan satu bento daging sapi.'),
             ('店員', '好。還要別的嗎？', 'Baik. Ada yang lain?'),
-            ('王大文', '不要了。一個小時以內送得到嗎？', 'Tidak. Bisa diantar dalam satu jam?'),
+            ('王大文', '沒了。一個小時以內送得到嗎？', 'Itu saja. Bisa diantar dalam satu jam?'),
             ('店員', '送得到，三十分鐘以內就到。', 'Bisa, dalam tiga puluh menit sudah sampai.'),
             ('王大文', '我家在學校旁邊，中山路八號。', 'Rumah saya di sebelah kampus, Jalan Zhongshan nomor delapan.'),
         ]),
